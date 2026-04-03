@@ -1,0 +1,41 @@
+---
+import { localeChrome } from '../../data/locales';
+import type { SiteLocale } from '../../lib/i18n';
+import { siteConfig } from '../../data/site';
+
+interface Props {
+  locale?: SiteLocale;
+}
+
+const { locale = 'en' } = Astro.props;
+const chrome = localeChrome[locale];
+const year = new Date().getFullYear();
+---
+
+<footer class="border-t border-[var(--color-line)] bg-[rgba(6,16,24,0.32)]">
+  <div class="mx-auto grid max-w-[78rem] gap-8 px-5 py-10 sm:px-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:px-10">
+    <div>
+      <p class="font-[family:var(--font-display)] text-[1.9rem] leading-none tracking-[-0.035em] text-[var(--color-ink)]">
+        {chrome.brandName}
+      </p>
+      <p class="type-label mt-4 text-[var(--color-muted)]">
+        © {year} {locale === 'cn' ? '谢玢' : siteConfig.name}
+      </p>
+    </div>
+
+    <nav aria-label="Footer" class="flex flex-wrap items-start gap-x-5 gap-y-3">
+      {
+        chrome.footerLinks.map((link) => (
+          <a
+            class="type-action text-[var(--color-muted)] underline decoration-[var(--color-line)] transition-colors duration-500 hover:text-[var(--color-cyan)]"
+            href={link.href}
+            rel="noreferrer"
+            target="_blank"
+          >
+            {link.label}
+          </a>
+        ))
+      }
+    </nav>
+  </div>
+</footer>

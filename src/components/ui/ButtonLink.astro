@@ -1,0 +1,33 @@
+---
+interface Props {
+  href: string;
+  variant?: 'primary' | 'secondary' | 'ghost';
+  external?: boolean;
+  className?: string;
+}
+
+const { href, variant = 'primary', external = false, className = '' } = Astro.props;
+
+const variants = {
+  primary:
+    'border-[rgba(0,229,255,0.18)] bg-[linear-gradient(180deg,rgba(30,144,255,0.16),rgba(0,229,255,0.1))] text-[var(--color-ink)] hover:border-[rgba(0,229,255,0.34)] hover:shadow-[0_10px_30px_rgba(0,229,255,0.08)]',
+  secondary:
+    'border-[var(--color-line)] bg-[rgba(8,25,37,0.46)] text-[var(--color-ink)] hover:border-[rgba(46,230,166,0.3)] hover:text-[var(--color-ink)]',
+  ghost:
+    'border-transparent bg-transparent text-[var(--color-muted)] hover:text-[var(--color-ink)]',
+};
+---
+
+<a
+  href={href}
+  class:list={[
+    'type-action inline-flex items-center gap-2 rounded-full border px-4 py-2.5 transition-all duration-700 ease-out hover:-translate-y-[1px]',
+    variants[variant],
+    className,
+  ]}
+  rel={external ? 'noreferrer' : undefined}
+  target={external ? '_blank' : undefined}
+>
+  <slot />
+  <span aria-hidden="true">{external ? '↗' : '→'}</span>
+</a>

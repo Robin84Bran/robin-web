@@ -1,0 +1,61 @@
+---
+import { absoluteUrl } from '../../lib/seo';
+import { siteConfig } from '../../data/site';
+
+type SchemaObject = Record<string, unknown>;
+
+interface Props {
+  title: string;
+  description: string;
+  path?: string;
+  image?: string;
+  type?: 'website' | 'article';
+  schema?: SchemaObject | SchemaObject[];
+  noindex?: boolean;
+}
+
+const {
+  title,
+  description,
+  path = Astro.url.pathname,
+  image = '/og/home.jpg',
+  type = 'website',
+  schema = [],
+  noindex = false,
+} = Astro.props;
+
+const schemaItems = Array.isArray(schema) ? schema : [schema];
+const jsonLd =
+  schemaItems.length > 1
+    ? {
+        '@context': 'https://schema.org',
+        '@graph': schemaItems,
+      }
+    : schemaItems[0];
+---
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="generator" content={Astro.generator} />
+<meta name="theme-color" content="#0b1d2a" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" href="/favicon.ico" />
+
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={absoluteUrl(path)} />
+<meta name="robots" content={noindex ? 'noindex, nofollow' : 'index, follow'} />
+
+<meta property="og:site_name" content={siteConfig.name} />
+<meta property="og:type" content={type} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={absoluteUrl(path)} />
+<meta property="og:image" content={absoluteUrl(image)} />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={absoluteUrl(image)} />
+
+{jsonLd && <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}

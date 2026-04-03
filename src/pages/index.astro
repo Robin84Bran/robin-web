@@ -1,0 +1,45 @@
+---
+import { getCollection } from 'astro:content';
+import ContactLinks from '../components/common/ContactLinks.astro';
+import FeaturedBooks from '../components/home/FeaturedBooks.astro';
+import Hero from '../components/home/Hero.astro';
+import IdentityStrip from '../components/home/IdentityStrip.astro';
+import ProjectsGrid from '../components/home/ProjectsGrid.astro';
+import SignalBlock from '../components/home/SignalBlock.astro';
+import { siteConfig } from '../data/site';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { featuredOnly, sortCollectionByOrder } from '../lib/content';
+import { createPersonSchema, createWebsiteSchema } from '../lib/seo';
+
+const books = featuredOnly(sortCollectionByOrder(await getCollection('books'))).slice(0, 4);
+const projects = featuredOnly(sortCollectionByOrder(await getCollection('projects'))).slice(0, 4);
+---
+
+<BaseLayout
+  description={siteConfig.description}
+  image="/og/home.jpg"
+  path="/"
+  schema={[createWebsiteSchema(), createPersonSchema()]}
+  title={siteConfig.title}
+>
+  <Hero />
+  <div class="section-reveal section-reveal-1">
+    <IdentityStrip />
+  </div>
+  <div class="section-reveal section-reveal-2">
+    <FeaturedBooks books={books} />
+  </div>
+  <div class="section-reveal section-reveal-3">
+    <ProjectsGrid projects={projects} />
+  </div>
+  <div class="section-reveal section-reveal-4">
+    <SignalBlock />
+  </div>
+  <div class="section-reveal section-reveal-5">
+    <ContactLinks
+      description="If there is real overlap, start with context and a real thesis."
+      eyebrow="Contact"
+      title="A working identity site, open to the right conversations."
+    />
+  </div>
+</BaseLayout>

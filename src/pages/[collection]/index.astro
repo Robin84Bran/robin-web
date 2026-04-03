@@ -1,0 +1,134 @@
+---
+import { render } from 'astro:content';
+import type { LayerCollection, LayerEntry, LayerEntryWithSlug } from '../../lib/layers';
+import { getLayerEntries, layerCollections, layerMeta, normalizeLayerSlug } from '../../lib/layers';
+import PageIntro from '../../components/common/PageIntro.astro';
+import ButtonLink from '../../components/ui/ButtonLink.astro';
+import { systemLayers } from '../../data/site';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { createPersonSchema } from '../../lib/seo';
+
+export async function getStaticPaths() {
+  const paths = [];
+
+  for (const collection of layerCollections) {
+    const entries = (await getLayerEntries(collection))
+      .map((entry) => ({ entry, slug: normalizeLayerSlug(entry.id) }))
+      .sort((left, right) => left.entry.data.title.localeCompare(right.entry.data.title));
+
+    const rootEntry =
+      collection === 'taste' && entries.length === 1 && entries[0] && entries[0].slug === 'taste'
+        ? entries[0].entry
+        : undefined;
+
+    paths.push({
+      params: { collection },
+      props: { collection, entries, rootEntry },
+    });
+  }
+
+  return paths;
+}
+
+const {
+  collection,
+  entries,
+  rootEntry,
+} = Astro.props as {
+  collection: LayerCollection;
+  entries: LayerEntryWithSlug[];
+  rootEntry?: LayerEntry;
+};
+
+const meta = layerMeta[collection];
+const collectionPath = `/${collection}/`;
+const pageTitle = rootEntry ? `${rootEntry.data.title} | Robin Xie` : `${meta.title} | Robin Xie`;
+const pageDescription = rootEntry ? rootEntry.data.description : meta.description;
+const pageKicker = rootEntry?.data.kicker ?? meta.kicker;
+const pageHeading = rootEntry?.data.title ?? meta.title;
+const pageUpdated = rootEntry?.data.updated;
+const renderedRootEntry = rootEntry ? await render(rootEntry) : undefined;
+const Content = renderedRootEntry?.Content;
+---
+
+<BaseLayout
+  description={pageDescription}
+  path={collectionPath}
+  schema={createPersonSchema()}
+  title={pageTitle}
+>
+  <PageIntro
+    description={pageDescription}
+    kicker={pageKicker}
+    title={pageHeading}
+    updated={pageUpdated}
+  />
+
+  <nav aria-label="RobinOS layers" class="mt-8 flex flex-wrap gap-2">
+    {
+      systemLayers.map((layer) => (
+        <a
+          class:list={[
+            'type-label rounded-full border px-3 py-1.5 no-underline transition-all duration-700 ease-out hover:-translate-y-[1px]',
+            layer.href === collectionPath
+              ? 'border-[rgba(0,229,255,0.28)] bg-[rgba(30,144,255,0.14)] text-[var(--color-ink)]'
+              : 'border-[var(--color-line)] bg-[rgba(8,24,36,0.34)] text-[var(--color-muted)] hover:border-[rgba(0,229,255,0.24)] hover:text-[var(--color-ink)]',
+          ]}
+          href={layer.href}
+        >
+          {layer.label}
+        </a>
+      ))
+    }
+  </nav>
+
+  {
+    rootEntry && Content ? (
+      <section class="section-shell">
+        <article class="glass-card max-w-4xl p-7 sm:p-10">
+          <div class="prose-robin">
+            <Content />
+          </div>
+        </article>
+
+        <div class="mt-8 flex flex-wrap gap-3">
+          <ButtonLink href="/" variant="ghost">
+            Return to surface
+          </ButtonLink>
+        </div>
+      </section>
+    ) : (
+      <section class="section-shell">
+        {
+          entries.length > 0 ? (
+            <div class="grid gap-4 lg:grid-cols-2">
+              {
+                entries.map((item, index) => (
+                  <a
+                    class:list={[
+                      'glass-card block p-6 no-underline transition-transform duration-700 ease-out hover:-translate-y-1',
+                      index % 2 === 1 && 'lg:mt-8',
+                    ]}
+                    href={`${collectionPath}${item.slug}/`}
+                  >
+                    <p class="eyebrow">{item.entry.data.kicker ?? meta.kicker}</p>
+                    <h2 class="type-card-title mt-4 text-[var(--color-ink)]">
+                      {item.entry.data.title}
+                    </h2>
+                    <p class="type-body mt-4 text-[var(--color-muted)]">{item.entry.data.description}</p>
+                  </a>
+                ))
+              }
+            </div>
+          ) : (
+            <div class="glass-card max-w-3xl p-7 sm:p-9">
+              <p class="type-body text-[var(--color-muted)]">
+                No public entries are live in this layer yet. The layer is active; publication is selective.
+              </p>
+            </div>
+          )
+        }
+      </section>
+    )
+  }
+</BaseLayout>

@@ -1,0 +1,35 @@
+---
+import { writingTracks } from '../../data/site';
+import SectionHeading from '../ui/SectionHeading.astro';
+---
+
+<section class="section-shell">
+  <SectionHeading
+    description="Some signals rise to the surface. Others stay archived, relayed, or routed into deeper layers."
+    eyebrow="Writing"
+    title="Signals with a longer half-life."
+  />
+
+  <div class="mt-8 grid gap-4 lg:grid-cols-3">
+    {
+      writingTracks.map((track, index) => (
+        <a
+          class:list={[
+            'glass-card flex h-full flex-col p-6 no-underline transition-transform duration-700 ease-out hover:-translate-y-1',
+            index === 1 && 'lg:translate-y-6',
+          ]}
+          href={track.href}
+          rel={track.href.startsWith('http') ? 'noreferrer' : undefined}
+          target={track.href.startsWith('http') ? '_blank' : undefined}
+        >
+          <p class="eyebrow">{track.href.startsWith('http') ? 'External' : 'Internal'}</p>
+          <h3 class="type-card-title mt-4 text-[var(--color-ink)]">{track.title}</h3>
+          <p class="type-body mt-4 flex-1 text-[var(--color-muted)]">{track.description}</p>
+          <span class="type-action mt-5 inline-flex items-center gap-2 text-[var(--color-accent)]">
+            Follow this trail <span aria-hidden="true">→</span>
+          </span>
+        </a>
+      ))
+    }
+  </div>
+</section>

@@ -1,0 +1,66 @@
+---
+import ButtonLink from '../../components/ui/ButtonLink.astro';
+import PageIntro from '../../components/common/PageIntro.astro';
+import SectionHeading from '../../components/ui/SectionHeading.astro';
+import { cnAbout, cnSeo } from '../../data/cn';
+import { localeChrome } from '../../data/locales';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { createPersonSchema } from '../../lib/seo';
+---
+
+<BaseLayout
+  description={cnSeo.about.description}
+  image="/og/home.jpg"
+  locale="cn"
+  path="/cn/about/"
+  schema={createPersonSchema()}
+  title={cnSeo.about.title}
+>
+  <PageIntro
+    description={cnAbout.intro.description}
+    kicker={cnAbout.intro.kicker}
+    title={cnAbout.intro.title}
+    updated={cnAbout.intro.updated}
+    updatedLabel={localeChrome.cn.updatedLabel}
+  />
+
+  <section class="section-shell">
+    <div class="grid gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
+      <div class="prose-robin prose-robin--lead">
+        {cnAbout.body.map((line) => <p>{line}</p>)}
+      </div>
+
+      <div class="space-y-4">
+        {
+          cnAbout.pillars.map((pillar) => (
+            <article class="glass-card p-6">
+              <h2 class="type-card-title text-[var(--color-ink)]">{pillar.title}</h2>
+              <p class="type-body mt-3 text-[var(--color-muted)]">{pillar.description}</p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section-shell pt-0">
+    <SectionHeading description="哲学准则、独特审美" eyebrow="原则" title="系统洞察" />
+
+    <div class="mt-8 grid gap-4 md:grid-cols-2">
+      {
+        cnAbout.principles.map((principle) => (
+          <article class="glass-card p-6">
+            <p class="type-body text-[var(--color-muted)]">{principle}</p>
+          </article>
+        ))
+      }
+    </div>
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      <ButtonLink href="/cn/projects/">看项目</ButtonLink>
+      <ButtonLink href="/cn/writing/" variant="secondary">
+        看写作
+      </ButtonLink>
+    </div>
+  </section>
+</BaseLayout>

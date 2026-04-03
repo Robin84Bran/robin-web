@@ -1,0 +1,111 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import BaseLayout from './BaseLayout.astro';
+
+type SchemaObject = Record<string, unknown>;
+
+interface Props {
+  title: string;
+  description: string;
+  path: string;
+  image?: string;
+  schema?: SchemaObject | SchemaObject[];
+  bookTitle: string;
+  bookHref: string;
+  bookCode?: string;
+  cover?: ImageMetadata;
+  coverAlt?: string;
+  section: string;
+  readingTime: string;
+  updated: string;
+}
+
+const {
+  title,
+  description,
+  path,
+  image,
+  schema,
+  bookTitle,
+  bookHref,
+  bookCode,
+  cover,
+  coverAlt,
+  section,
+  readingTime,
+  updated,
+} = Astro.props;
+---
+
+<BaseLayout
+  description={description}
+  image={image}
+  path={path}
+  schema={schema}
+  title={`${title} | ${bookTitle} | Robin Xie`}
+  type="article"
+>
+  <section class="section-shell pt-0">
+    <header class="glass-card manuscript-stage p-5 sm:p-7 lg:p-8">
+      <div class="grid gap-7 xl:grid-cols-[minmax(0,1fr)_11rem] xl:items-start">
+        <div class="manuscript-copy-panel max-w-4xl">
+          <nav
+            aria-label="Breadcrumb"
+            class="type-action flex flex-wrap items-center gap-2 text-[var(--color-muted)]"
+          >
+            <a class="transition-colors hover:text-[var(--color-ink)]" href="/books/">Books</a>
+            <span aria-hidden="true">/</span>
+            <a class="transition-colors hover:text-[var(--color-ink)]" href={bookHref}>
+              {bookTitle}
+            </a>
+          </nav>
+
+          <div class="mt-8 flex flex-wrap items-center gap-3">
+            <p class="eyebrow">{section}</p>
+            {bookCode && (
+              <span class="type-meta rounded-full border border-[var(--color-line)] px-3 py-1 text-[var(--color-muted)]">
+                {bookCode}
+              </span>
+            )}
+          </div>
+          <h1 class="type-heading mt-4 max-w-4xl text-[var(--color-ink)] sm:text-[clamp(2.4rem,4vw,3.5rem)]">
+            {title}
+          </h1>
+          <p class="type-lead mt-5 max-w-3xl text-[var(--color-ink)]/86">{description}</p>
+
+          <div class="type-meta mt-6 flex flex-wrap gap-x-6 gap-y-2 text-[var(--color-muted)]">
+            <span>{readingTime}</span>
+            <span>Updated {updated}</span>
+          </div>
+        </div>
+
+        {
+          cover && (
+            <a class="manuscript-cover-frame manuscript-cover-frame--mini mx-auto block w-full max-w-[11rem]" href={bookHref}>
+              <Image
+                alt={coverAlt ?? `${bookTitle} cover`}
+                class="h-full w-full object-cover"
+                sizes="(min-width: 1280px) 11rem, 40vw"
+                src={cover}
+                width={320}
+              />
+            </a>
+          )
+        }
+      </div>
+    </header>
+  </section>
+
+  <section class="section-shell pt-0 pb-10">
+    <article class="glass-card reading-shell p-6 sm:p-8 lg:p-10">
+      <div class="reading-prose">
+        <slot />
+      </div>
+    </article>
+
+    <div class="glass-card reading-actions mt-8 flex flex-wrap gap-3 p-4 sm:p-5">
+      <slot name="actions" />
+    </div>
+  </section>
+</BaseLayout>

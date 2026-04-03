@@ -1,0 +1,64 @@
+---
+import PageIntro from '../../components/common/PageIntro.astro';
+import SectionHeading from '../../components/ui/SectionHeading.astro';
+import { cnSeo, cnWriting } from '../../data/cn';
+import { localeChrome } from '../../data/locales';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { createPersonSchema } from '../../lib/seo';
+---
+
+<BaseLayout
+  description={cnSeo.writing.description}
+  image="/og/writing.jpg"
+  locale="cn"
+  path="/cn/writing/"
+  schema={createPersonSchema()}
+  title={cnSeo.writing.title}
+>
+  <PageIntro
+    description={cnWriting.intro.description}
+    kicker={cnWriting.intro.kicker}
+    title={cnWriting.intro.title}
+    updated={cnWriting.intro.updated}
+    updatedLabel={localeChrome.cn.updatedLabel}
+  />
+
+  <section class="section-shell">
+    <div class="prose-robin">
+      {cnWriting.body.map((line) => <p>{line}</p>)}
+    </div>
+  </section>
+
+  <section class="section-shell pt-0">
+    <div class="grid gap-4 lg:grid-cols-3">
+      {
+        cnWriting.tracks.map((track) => (
+          <a
+            class="glass-card flex h-full flex-col p-6 no-underline transition-transform hover:-translate-y-0.5"
+            href={track.href}
+            rel={track.href.startsWith('http') ? 'noreferrer' : undefined}
+            target={track.href.startsWith('http') ? '_blank' : undefined}
+          >
+            <p class="eyebrow">{track.label}</p>
+            <h2 class="type-card-title mt-4 text-[var(--color-ink)]">{track.title}</h2>
+            <p class="type-body mt-4 flex-1 text-[var(--color-muted)]">{track.description}</p>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="section-shell pt-0">
+    <SectionHeading description="几条反复回来的线。" eyebrow="脉络" title="写作常去之处。" />
+
+    <div class="mt-8 grid gap-4 md:grid-cols-3">
+      {
+        cnWriting.themes.map((theme) => (
+          <article class="glass-card p-6">
+            <p class="type-body text-[var(--color-muted)]">{theme}</p>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>

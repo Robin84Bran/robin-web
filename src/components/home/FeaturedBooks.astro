@@ -1,0 +1,55 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import SectionHeading from '../ui/SectionHeading.astro';
+import SymbolReveal from '../ui/SymbolReveal.astro';
+
+interface Props {
+  books: CollectionEntry<'books'>[];
+}
+
+const { books } = Astro.props;
+const bookGlyphs = {
+  'agi-awakening': 'agi',
+  'build-1-billion-block': 'block',
+  'longevity-cheat-code': 'longevity',
+  derivatives: 'derivatives',
+} as const;
+---
+
+<section class="section-shell">
+  <SectionHeading
+    description="These books are written in public. Each evolves as the questions sharpen."
+    eyebrow="Books"
+    title="Living manuscripts on intelligence, capital, longevity, and leverage."
+  />
+
+  <div class="mt-8 grid gap-5 lg:grid-cols-2">
+    {
+      books.map((book) => (
+        <article class="glass-card p-6 sm:p-7 transition-transform duration-700 ease-out hover:-translate-y-1">
+          <div class="flex flex-wrap items-center gap-3">
+            <p class="eyebrow">{book.data.status}</p>
+            <span class="type-meta rounded-full border border-[var(--color-line)] px-3 py-1 text-[var(--color-muted)]">
+              {book.data.theme}
+            </span>
+          </div>
+          <h3 class="type-card-title mt-4 text-[var(--color-ink)]">{book.data.title}</h3>
+          <p class="type-body mt-4 text-[var(--color-muted)]">{book.data.summary}</p>
+          <div class="mt-5">
+            <SymbolReveal
+              kind={bookGlyphs[book.id as keyof typeof bookGlyphs]}
+              label={`${book.data.title} current question`}
+              text={book.data.currentQuestion}
+            />
+          </div>
+          <a
+            class="type-action mt-5 inline-flex items-center gap-2 text-[var(--color-accent)] no-underline transition-colors hover:text-[var(--color-ink)]"
+            href={`/books/${book.id}/`}
+          >
+            Open the shelf <span aria-hidden="true">→</span>
+          </a>
+        </article>
+      ))
+    }
+  </div>
+</section>

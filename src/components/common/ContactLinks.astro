@@ -1,0 +1,58 @@
+---
+import { socialLinks } from '../../data/site';
+import ButtonLink from '../ui/ButtonLink.astro';
+
+interface ContactLink {
+  label: string;
+  href: string;
+  blurb: string;
+}
+
+interface Props {
+  eyebrow?: string;
+  title?: string;
+  description?: string;
+  links?: readonly ContactLink[];
+  primaryCtaLabel?: string;
+}
+
+const {
+  eyebrow = 'Connect',
+  title = 'Start where the work already lives.',
+  description = 'Use the channel that fits the context. GitHub stays closest to the work.',
+  links = socialLinks,
+  primaryCtaLabel = 'Visit GitHub',
+} = Astro.props;
+
+const [githubLink, ...otherLinks] = links;
+---
+
+<section class="section-shell">
+  <div class="grid gap-5 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)]">
+    <div class="glass-card p-7 sm:p-8">
+      <p class="eyebrow">{eyebrow}</p>
+      <h2 class="type-heading mt-3 text-[var(--color-ink)]">{title}</h2>
+      <p class="type-body mt-4 max-w-xl text-[var(--color-muted)]">{description}</p>
+      <ButtonLink className="mt-7" external href={githubLink.href}>
+        {primaryCtaLabel}
+      </ButtonLink>
+      <p class="type-body mt-4 text-[var(--color-muted)]">{githubLink.blurb}</p>
+    </div>
+
+    <div class="grid gap-5 sm:grid-cols-2">
+      {
+        otherLinks.map((link) => (
+          <a
+            class="glass-card p-5 transition-transform duration-700 ease-out hover:-translate-y-1"
+            href={link.href}
+            rel="noreferrer"
+            target="_blank"
+          >
+            <p class="type-action text-[var(--color-ink)]">{link.label}</p>
+            <p class="type-body mt-2 text-[var(--color-muted)]">{link.blurb}</p>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</section>

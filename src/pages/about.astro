@@ -1,0 +1,76 @@
+---
+import { getEntry, render } from 'astro:content';
+import PageIntro from '../components/common/PageIntro.astro';
+import ButtonLink from '../components/ui/ButtonLink.astro';
+import SectionHeading from '../components/ui/SectionHeading.astro';
+import { aboutPillars, operatingPrinciples } from '../data/site';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { createPersonSchema } from '../lib/seo';
+
+const entry = await getEntry('pages', 'about');
+
+if (!entry) {
+  throw new Error('Missing about page content.');
+}
+
+const { Content } = await render(entry);
+---
+
+<BaseLayout
+  description="About Robin Xie: engineer, executive, investor, writer, and systems thinker working across AI, markets, and digital identity."
+  image="/og/home.jpg"
+  path="/about/"
+  schema={createPersonSchema()}
+  title="About | Robin Xie"
+>
+  <PageIntro
+    description={entry.data.description}
+    kicker={entry.data.kicker}
+    title={entry.data.title}
+    updated={entry.data.updated}
+  />
+
+  <section class="section-shell">
+    <div class="grid gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
+      <div class="prose-robin prose-robin--lead">
+        <Content />
+      </div>
+
+      <div class="space-y-4">
+        {
+          aboutPillars.map((pillar) => (
+            <article class="glass-card p-6">
+              <h2 class="type-card-title text-[var(--color-ink)]">{pillar.title}</h2>
+              <p class="type-body mt-3 text-[var(--color-muted)]">{pillar.description}</p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section-shell pt-0">
+    <SectionHeading
+      description="A few durable constraints behind the site, the work, and how ideas develop here."
+      eyebrow="Principles"
+      title="How the work is meant to feel."
+    />
+
+    <div class="mt-8 grid gap-4 md:grid-cols-2">
+      {
+        operatingPrinciples.map((principle) => (
+          <article class="glass-card p-6">
+            <p class="type-body text-[var(--color-muted)]">{principle}</p>
+          </article>
+        ))
+      }
+    </div>
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      <ButtonLink href="/projects/">Browse selected projects</ButtonLink>
+      <ButtonLink href="/writing/" variant="secondary">
+        Follow the writing
+      </ButtonLink>
+    </div>
+  </section>
+</BaseLayout>

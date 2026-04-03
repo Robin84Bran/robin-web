@@ -1,0 +1,98 @@
+---
+import { render } from 'astro:content';
+import type { LayerCollection, LayerEntry } from '../../lib/layers';
+import { getLayerEntries, layerCollections, layerMeta, normalizeLayerSlug } from '../../lib/layers';
+import PageIntro from '../../components/common/PageIntro.astro';
+import ButtonLink from '../../components/ui/ButtonLink.astro';
+import { systemLayers } from '../../data/site';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { createPersonSchema } from '../../lib/seo';
+
+export async function getStaticPaths() {
+  const paths = [];
+
+  for (const collection of layerCollections) {
+    const entries = (await getLayerEntries(collection))
+      .map((entry) => ({ entry, slug: normalizeLayerSlug(entry.id) }))
+      .sort((left, right) => left.entry.data.title.localeCompare(right.entry.data.title));
+
+    const skipRootEntry =
+      collection === 'taste' && entries.length === 1 && entries[0] && entries[0].slug === 'taste';
+
+    for (const item of entries) {
+      if (skipRootEntry && item.slug === 'taste') {
+        continue;
+      }
+
+      paths.push({
+        params: { collection, slug: item.slug },
+        props: { collection, entry: item.entry, entries },
+      });
+    }
+  }
+
+  return paths;
+}
+
+const {
+  collection,
+  entry,
+} = Astro.props as {
+  collection: LayerCollection;
+  entry: LayerEntry;
+};
+
+const meta = layerMeta[collection];
+const collectionPath = `/${collection}/`;
+const pagePath = `${collectionPath}${normalizeLayerSlug(entry.id)}/`;
+const { Content } = await render(entry);
+---
+
+<BaseLayout
+  description={entry.data.description}
+  path={pagePath}
+  schema={createPersonSchema()}
+  title={`${entry.data.title} | Robin Xie`}
+>
+  <PageIntro
+    description={entry.data.description}
+    kicker={entry.data.kicker ?? meta.kicker}
+    title={entry.data.title}
+    updated={entry.data.updated}
+  />
+
+  <nav aria-label="RobinOS layers" class="mt-8 flex flex-wrap gap-2">
+    {
+      systemLayers.map((layer) => (
+        <a
+          class:list={[
+            'type-label rounded-full border px-3 py-1.5 no-underline transition-all duration-700 ease-out hover:-translate-y-[1px]',
+            layer.href === collectionPath
+              ? 'border-[rgba(0,229,255,0.28)] bg-[rgba(30,144,255,0.14)] text-[var(--color-ink)]'
+              : 'border-[var(--color-line)] bg-[rgba(8,24,36,0.34)] text-[var(--color-muted)] hover:border-[rgba(0,229,255,0.24)] hover:text-[var(--color-ink)]',
+          ]}
+          href={layer.href}
+        >
+          {layer.label}
+        </a>
+      ))
+    }
+  </nav>
+
+  <section class="section-shell">
+    <article class="glass-card max-w-4xl p-7 sm:p-10">
+      <div class="prose-robin">
+        <Content />
+      </div>
+    </article>
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      <ButtonLink href={collectionPath} variant="secondary">
+        Back to {meta.title}
+      </ButtonLink>
+      <ButtonLink href="/" variant="ghost">
+        Return to surface
+      </ButtonLink>
+    </div>
+  </section>
+</BaseLayout>

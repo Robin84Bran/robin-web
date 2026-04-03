@@ -1,0 +1,57 @@
+---
+import ButtonLink from '../../components/ui/ButtonLink.astro';
+import PageIntro from '../../components/common/PageIntro.astro';
+import { cnProjects, cnSeo } from '../../data/cn';
+import { localeChrome } from '../../data/locales';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { createPersonSchema } from '../../lib/seo';
+---
+
+<BaseLayout
+  description={cnSeo.projects.description}
+  image="/og/projects.jpg"
+  locale="cn"
+  path="/cn/projects/"
+  schema={createPersonSchema()}
+  title={cnSeo.projects.title}
+>
+  <PageIntro
+    description={cnProjects.intro.description}
+    kicker={cnProjects.intro.kicker}
+    title={cnProjects.intro.title}
+    updated={cnProjects.intro.updated}
+    updatedLabel={localeChrome.cn.updatedLabel}
+  />
+
+  <section class="section-shell">
+    <div class="prose-robin">
+      {cnProjects.body.map((line) => <p>{line}</p>)}
+    </div>
+  </section>
+
+  <section class="section-shell pt-0">
+    <div class="grid gap-5 lg:grid-cols-2">
+      {
+        cnProjects.items.map((project) => (
+          <article class="glass-card p-7" id={project.slug}>
+            <div class="flex flex-wrap items-center gap-3">
+              <p class="eyebrow">{project.status}</p>
+              <span class="type-meta rounded-full border border-[var(--color-line)] px-3 py-1 text-[var(--color-muted)]">
+                {project.domain}
+              </span>
+            </div>
+            <h2 class="type-card-title mt-4 text-[var(--color-ink)]">{project.title}</h2>
+            <p class="type-body mt-4 text-[var(--color-muted)]">{project.summary}</p>
+            <p class="type-body mt-4 text-[var(--color-muted)]">{project.impact}</p>
+          </article>
+        ))
+      }
+    </div>
+
+    <div class="mt-8">
+      <ButtonLink href="/cn/contact/" variant="secondary">
+        若有同频，可继续
+      </ButtonLink>
+    </div>
+  </section>
+</BaseLayout>

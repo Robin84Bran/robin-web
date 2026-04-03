@@ -1,0 +1,64 @@
+---
+import { getCollection, getEntry, render } from 'astro:content';
+import PageIntro from '../components/common/PageIntro.astro';
+import ButtonLink from '../components/ui/ButtonLink.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { sortCollectionByOrder } from '../lib/content';
+import { createPersonSchema } from '../lib/seo';
+
+const entry = await getEntry('pages', 'projects');
+const projects = sortCollectionByOrder(await getCollection('projects'));
+
+if (!entry) {
+  throw new Error('Missing projects page content.');
+}
+
+const { Content } = await render(entry);
+---
+
+<BaseLayout
+  description="Selected projects by Robin Xie across AI, markets, infrastructure, and education."
+  image="/og/projects.jpg"
+  path="/projects/"
+  schema={createPersonSchema()}
+  title="Projects | Robin Xie"
+>
+  <PageIntro
+    description={entry.data.description}
+    kicker={entry.data.kicker}
+    title={entry.data.title}
+    updated={entry.data.updated}
+  />
+
+  <section class="section-shell">
+    <div class="prose-robin">
+      <Content />
+    </div>
+  </section>
+
+  <section class="section-shell pt-0">
+    <div class="grid gap-5 lg:grid-cols-2">
+      {
+        projects.map((project) => (
+          <article class="glass-card p-7" id={project.id}>
+            <div class="flex flex-wrap items-center gap-3">
+              <p class="eyebrow">{project.data.status}</p>
+              <span class="type-meta rounded-full border border-[var(--color-line)] px-3 py-1 text-[var(--color-muted)]">
+                {project.data.domain}
+              </span>
+            </div>
+            <h2 class="type-card-title mt-4 text-[var(--color-ink)]">{project.data.title}</h2>
+            <p class="type-body mt-4 text-[var(--color-muted)]">{project.data.summary}</p>
+            <p class="type-body mt-4 text-[var(--color-muted)]">{project.data.impact}</p>
+          </article>
+        ))
+      }
+    </div>
+
+    <div class="mt-8">
+      <ButtonLink href="/contact/" variant="secondary">
+        Start a thoughtful conversation
+      </ButtonLink>
+    </div>
+  </section>
+</BaseLayout>

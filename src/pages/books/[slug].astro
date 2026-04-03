@@ -1,0 +1,165 @@
+---
+import { getCollection } from 'astro:content';
+import ButtonLink from '../../components/ui/ButtonLink.astro';
+import BookDetailLayout from '../../layouts/BookDetailLayout.astro';
+import {
+  getBookChapterPath,
+  getBookManuscript,
+  getBookPath,
+  getFeaturedChapter,
+  groupBookChapters,
+  sortBookChapters,
+  type BookChapterEntry,
+  type BookEntry,
+} from '../../lib/books';
+import { sortCollectionByOrder } from '../../lib/content';
+import { createBookSchemas, createPersonSchema } from '../../lib/seo';
+
+export async function getStaticPaths() {
+  const books = sortCollectionByOrder(await getCollection('books'));
+  const chapters = await getCollection('bookChapters');
+
+  return books.map((book) => ({
+    params: { slug: book.id },
+    props: {
+      book,
+      chapters: sortBookChapters(chapters.filter((chapter) => chapter.data.book === book.id)),
+    },
+  }));
+}
+
+const { book, chapters } = Astro.props as {
+  book: BookEntry;
+  chapters: BookChapterEntry[];
+};
+
+const manuscript = getBookManuscript(book.id);
+const pagePath = getBookPath(book.id);
+const featuredChapter = getFeaturedChapter(chapters) ?? chapters[0];
+const chapterGroups = groupBookChapters(chapters);
+---
+
+<BookDetailLayout
+  cover={manuscript.cover}
+  coverAlt={manuscript.coverAlt}
+  description={manuscript.intro}
+  image={manuscript.cover.src}
+  path={pagePath}
+  schema={[createPersonSchema(), ...createBookSchemas([book])]}
+  shortCode={manuscript.shortCode}
+  status={book.data.status}
+  theme={book.data.theme}
+  thesis={manuscript.thesis}
+  title={book.data.title}
+>
+  <Fragment slot="intro-actions">
+    {
+      featuredChapter && (
+        <ButtonLink href={getBookChapterPath(featuredChapter)}>
+          Read featured chapter
+        </ButtonLink>
+      )
+    }
+    <ButtonLink href="/books/" variant="ghost">
+      Back to shelf
+    </ButtonLink>
+  </Fragment>
+
+  <section class="section-shell pt-0">
+    <div class="manuscript-section-frame">
+      <div class="manuscript-section-head max-w-2xl">
+        <p class="eyebrow">Themes</p>
+        <h2 class="type-heading mt-4 text-[var(--color-ink)]">Sections</h2>
+      </div>
+
+      <div class="mt-7 grid gap-4 lg:grid-cols-3">
+        {
+          manuscript.themes.map((theme) => (
+            <article class="manuscript-note">
+              <h3 class="type-card-title text-[var(--color-ink)]">{theme.title}</h3>
+              <p class="type-body mt-3 text-[var(--color-muted)]">{theme.description}</p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section-shell pt-0">
+    <div class="manuscript-section-frame">
+      <div class="manuscript-section-head max-w-2xl">
+        <p class="eyebrow">Chapters</p>
+        <h2 class="type-heading mt-4 text-[var(--color-ink)]">Selected chapters.</h2>
+        <p class="type-body mt-4 text-[var(--color-muted)]">
+          Some chapters sit near the surface. The rest keep evolving beneath.
+        </p>
+      </div>
+
+      <div class="mt-8 space-y-6">
+        {
+          chapterGroups.map((group) => (
+            <section class="chapter-group-frame">
+              <div class="max-w-2xl">
+                <p class="eyebrow">Section</p>
+                <h3 class="type-card-title mt-4 text-[var(--color-ink)]">{group.title}</h3>
+                <p class="type-body mt-3 text-[var(--color-muted)]">{group.description}</p>
+              </div>
+
+              <div class="mt-5 grid gap-4 lg:grid-cols-2">
+                {
+                  group.chapters.map((chapter) => (
+                    <a
+                      class:list={[
+                        'chapter-card',
+                        chapter.data.visibility === 'featured' && 'chapter-card--feature lg:col-span-2',
+                      ]}
+                      href={getBookChapterPath(chapter)}
+                    >
+                      <div class="flex flex-wrap items-center gap-3">
+                        <p class="eyebrow">
+                          {chapter.data.visibility === 'featured' ? 'Featured chapter' : 'Selected chapter'}
+                        </p>
+                        <span class="type-meta text-[var(--color-muted)]">{chapter.data.readingTime}</span>
+                      </div>
+                      <h4 class="type-card-title mt-4 text-[var(--color-ink)]">{chapter.data.title}</h4>
+                      <p class="type-body mt-3 text-[var(--color-muted)]">{chapter.data.summary}</p>
+                      <p class="type-action mt-5 text-[var(--color-accent)]">Enter chapter →</p>
+                    </a>
+                  ))
+                }
+              </div>
+            </section>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section-shell pt-0">
+    <div class="manuscript-section-frame">
+      <details class="archive-disclosure">
+        <summary>
+          <span>Archive</span>
+          <span class="text-[var(--color-muted)]">{manuscript.archive.length} quieter threads</span>
+        </summary>
+
+        <div class="mt-5">
+          <p class="type-body max-w-2xl text-[var(--color-muted)]">
+            Earlier fragments and side paths stay below the fold until their form is clearer.
+          </p>
+
+          <div class="mt-4">
+            {
+              manuscript.archive.map((item) => (
+                <article class="archive-item">
+                  <h3 class="type-action text-[var(--color-ink)]">{item.title}</h3>
+                  <p class="type-body mt-2 text-[var(--color-muted)]">{item.note}</p>
+                </article>
+              ))
+            }
+          </div>
+        </div>
+      </details>
+    </div>
+  </section>
+</BookDetailLayout>

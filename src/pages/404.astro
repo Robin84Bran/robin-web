@@ -1,0 +1,32 @@
+---
+import ButtonLink from '../components/ui/ButtonLink.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const description = 'The page you were looking for does not exist on iamrobin.ai.';
+---
+
+<BaseLayout
+  description={description}
+  image="/og/home.jpg"
+  noindex={true}
+  path="/404/"
+  title="Page Not Found | Robin Xie"
+>
+  <section class="section-shell flex flex-1 items-center">
+    <div class="glass-card max-w-3xl p-8 sm:p-10">
+      <p class="eyebrow">404</p>
+      <h1 class="type-heading mt-4 text-[var(--color-ink)]">
+        This trail runs out here.
+      </h1>
+      <p class="type-body mt-5 max-w-2xl text-[var(--color-muted)]">
+        The page may have moved, never existed, or belongs to another system entirely. The main routes are still intact.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <ButtonLink href="/">Back home</ButtonLink>
+        <ButtonLink href="/projects/" variant="secondary">
+          See projects
+        </ButtonLink>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

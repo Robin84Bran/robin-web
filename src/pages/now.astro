@@ -1,0 +1,101 @@
+---
+import { getEntry, render } from 'astro:content';
+import PageIntro from '../components/common/PageIntro.astro';
+import SectionHeading from '../components/ui/SectionHeading.astro';
+import { nowSignals, pressFeatures } from '../data/site';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { createPersonSchema } from '../lib/seo';
+
+const entry = await getEntry('pages', 'now');
+
+if (!entry) {
+  throw new Error('Missing now page content.');
+}
+
+const { Content } = await render(entry);
+const openLoops = [
+  'How AI-native education can feel playful instead of extractive.',
+  'What tokenized capital should look like when distribution, compliance, and liquidity are redesigned together.',
+  'How to make a personal site feel more like a durable index of work than a brochure.',
+];
+---
+
+<BaseLayout
+  description="Current focus areas for Robin Xie across AI-native systems, markets, tokenized capital, media, and education."
+  image="/og/home.jpg"
+  path="/now/"
+  schema={createPersonSchema()}
+  title="Now | Robin Xie"
+>
+  <PageIntro
+    description={entry.data.description}
+    kicker={entry.data.kicker}
+    title={entry.data.title}
+    updated={entry.data.updated}
+  />
+
+  <section class="section-shell">
+    <div class="prose-robin">
+      <Content />
+    </div>
+  </section>
+
+  <section class="section-shell pt-0">
+    <SectionHeading
+      description="The current operating state in a few lines."
+      eyebrow="Snapshot"
+      title="What is active right now."
+    />
+
+    <div class="mt-8 grid gap-4 md:grid-cols-3">
+      {
+        nowSignals.map((signal) => (
+          <article class="glass-card p-6">
+            <p class="type-label text-[var(--color-accent)]">
+              {signal.label}
+            </p>
+            <p class="type-body mt-3 text-[var(--color-muted)]">{signal.value}</p>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="section-shell pt-0">
+    <SectionHeading
+      description="Questions that still deserve real attention."
+      eyebrow="Open loops"
+      title="What I am still trying to understand."
+    />
+
+    <div class="mt-8 grid gap-4">
+      {
+        openLoops.map((loop) => (
+          <article class="glass-card p-6">
+            <p class="type-body text-[var(--color-muted)]">{loop}</p>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="section-shell pt-0">
+    <SectionHeading
+      description="Past press moments that still map part of the arc."
+      eyebrow="Press"
+      title="Public markers from an earlier build cycle."
+    />
+
+    <div class="mt-8 grid gap-4 lg:grid-cols-3">
+      {
+        pressFeatures.map((item) => (
+          <a class="glass-card p-6 no-underline transition-transform hover:-translate-y-0.5" href={item.href} rel="noreferrer" target="_blank">
+            <p class="eyebrow">{item.source}</p>
+            <h2 class="type-card-title mt-4 text-[var(--color-ink)]">{item.title}</h2>
+            <p class="type-body mt-4 text-[var(--color-muted)]">{item.description}</p>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>

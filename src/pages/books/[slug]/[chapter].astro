@@ -1,0 +1,79 @@
+---
+import { getCollection, getEntry, render } from 'astro:content';
+import ButtonLink from '../../../components/ui/ButtonLink.astro';
+import { getBookChapterPath, getBookManuscript, getBookPath, parseBookChapterId, sortBookChapters } from '../../../lib/books';
+import ReadingLayout from '../../../layouts/ReadingLayout.astro';
+import { createArticleSchema, createPersonSchema } from '../../../lib/seo';
+
+export async function getStaticPaths() {
+  const chapters = await getCollection('bookChapters');
+
+  return chapters.map((entry) => {
+    const { bookSlug, chapterSlug } = parseBookChapterId(entry.id);
+
+    return {
+      params: { slug: bookSlug, chapter: chapterSlug },
+      props: { entry },
+    };
+  });
+}
+
+const { entry } = Astro.props;
+const { bookSlug } = parseBookChapterId(entry.id);
+const { Content } = await render(entry);
+const book = await getEntry('books', bookSlug);
+
+if (!book) {
+  throw new Error(`Missing book entry for chapter: ${entry.id}`);
+}
+
+const chapters = sortBookChapters(
+  await getCollection('bookChapters', (chapter) => chapter.data.book === bookSlug),
+);
+const manuscript = getBookManuscript(bookSlug);
+const currentIndex = chapters.findIndex((chapter) => chapter.id === entry.id);
+const previousChapter = currentIndex > 0 ? chapters[currentIndex - 1] : undefined;
+const nextChapter = currentIndex >= 0 && currentIndex < chapters.length - 1 ? chapters[currentIndex + 1] : undefined;
+const bookPath = getBookPath(bookSlug);
+const pagePath = getBookChapterPath(entry);
+---
+
+<ReadingLayout
+  bookHref={bookPath}
+  bookCode={manuscript.shortCode}
+  bookTitle={book.data.title}
+  cover={manuscript.cover}
+  coverAlt={manuscript.coverAlt}
+  description={entry.data.summary}
+  image="/og/books.jpg"
+  path={pagePath}
+  readingTime={entry.data.readingTime}
+  schema={[
+    createPersonSchema(),
+    createArticleSchema({
+      title: entry.data.title,
+      description: entry.data.summary,
+      path: pagePath,
+      dateModified: entry.data.updated,
+    }),
+  ]}
+  section={entry.data.section}
+  title={entry.data.title}
+  updated={entry.data.updated}
+>
+  <Content />
+
+  <Fragment slot="actions">
+    <ButtonLink href={bookPath} variant="secondary">
+      Back to manuscript
+    </ButtonLink>
+
+    {previousChapter && (
+      <ButtonLink href={getBookChapterPath(previousChapter)} variant="ghost">
+        Previous chapter
+      </ButtonLink>
+    )}
+
+    {nextChapter && <ButtonLink href={getBookChapterPath(nextChapter)}>Next chapter</ButtonLink>}
+  </Fragment>
+</ReadingLayout>

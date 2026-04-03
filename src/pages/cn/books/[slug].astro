@@ -1,0 +1,117 @@
+---
+import ButtonLink from '../../../components/ui/ButtonLink.astro';
+import { cnBooks } from '../../../data/cn';
+import { localeChrome } from '../../../data/locales';
+import BookDetailLayout from '../../../layouts/BookDetailLayout.astro';
+import { getBookManuscript } from '../../../lib/books';
+import { createPersonSchema } from '../../../lib/seo';
+
+export function getStaticPaths() {
+  return cnBooks.map((book) => ({
+    params: { slug: book.slug },
+    props: { book },
+  }));
+}
+
+const { book } = Astro.props as {
+  book: (typeof cnBooks)[number];
+};
+
+const manuscript = getBookManuscript(book.slug);
+const pagePath = `/cn/books/${book.slug}/`;
+---
+
+<BookDetailLayout
+  collectionHref="/cn/books/"
+  collectionLabel={localeChrome.cn.booksLabel}
+  cover={manuscript.cover}
+  coverAlt={manuscript.coverAlt}
+  description={book.introLines.join(' ')}
+  descriptionLines={book.introLines}
+  image={manuscript.cover.src}
+  locale="cn"
+  path={pagePath}
+  schema={createPersonSchema()}
+  shortCode={manuscript.shortCode}
+  status={book.status}
+  theme={book.theme}
+  thesis={book.thesis}
+  title={book.titleCn}
+  titleSecondary={book.titleEn}
+>
+  <Fragment slot="intro-actions">
+    <ButtonLink href="/cn/books/" variant="ghost">
+      返回书架
+    </ButtonLink>
+  </Fragment>
+
+  <section class="section-shell pt-0">
+    <div class="manuscript-section-frame">
+      <div class="manuscript-section-head max-w-2xl">
+        <p class="eyebrow">线索</p>
+        <h2 class="type-heading mt-4 text-[var(--color-ink)]">结构</h2>
+      </div>
+
+      <div class="mt-7 grid gap-4 lg:grid-cols-3">
+        {
+          book.themes.map((theme) => (
+            <article class="manuscript-note">
+              <h3 class="type-card-title text-[var(--color-ink)]">{theme.title}</h3>
+              <p class="type-body mt-3 text-[var(--color-muted)]">{theme.description}</p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section-shell pt-0">
+    <div class="manuscript-section-frame">
+      <div class="manuscript-section-head max-w-2xl">
+        <p class="eyebrow">表层</p>
+        <h2 class="type-heading mt-4 text-[var(--color-ink)]">先浮出的部分</h2>
+        <p class="type-body mt-4 text-[var(--color-muted)]">有些已经见光，有些仍在缓慢生长。</p>
+      </div>
+
+      <div class="mt-5 grid gap-4 lg:grid-cols-2">
+        {
+          book.surfaces.map((surface) => (
+            <article class="chapter-card">
+              <div class="flex flex-wrap items-center gap-3">
+                <p class="eyebrow">片段</p>
+              </div>
+              <h3 class="type-card-title mt-4 text-[var(--color-ink)]">{surface.title}</h3>
+              <p class="type-body mt-3 text-[var(--color-muted)]">{surface.description}</p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section-shell pt-0">
+    <div class="manuscript-section-frame">
+      <details class="archive-disclosure">
+        <summary>
+          <span>底层</span>
+          <span class="text-[var(--color-muted)]">{book.archive.length} 条静线</span>
+        </summary>
+
+        <div class="mt-5">
+          <p class="type-body max-w-2xl text-[var(--color-muted)]">更早的线索与旁枝，先留在更深一层。</p>
+
+          <div class="mt-4">
+            {
+              book.archive.map((item) => (
+                <article class="archive-item">
+                  <h3 class="type-action text-[var(--color-ink)]">{item.title}</h3>
+                  <p class="type-body mt-2 text-[var(--color-muted)]">{item.note}</p>
+                </article>
+              ))
+            }
+          </div>
+        </div>
+      </details>
+    </div>
+  </section>
+</BookDetailLayout>

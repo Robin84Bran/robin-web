@@ -1,0 +1,76 @@
+---
+import PageIntro from '../../components/common/PageIntro.astro';
+import SectionHeading from '../../components/ui/SectionHeading.astro';
+import { cnNow, cnSeo } from '../../data/cn';
+import { localeChrome } from '../../data/locales';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { createPersonSchema } from '../../lib/seo';
+---
+
+<BaseLayout
+  description={cnSeo.now.description}
+  image="/og/home.jpg"
+  locale="cn"
+  path="/cn/now/"
+  schema={createPersonSchema()}
+  title={cnSeo.now.title}
+>
+  <PageIntro
+    description={cnNow.intro.description}
+    kicker={cnNow.intro.kicker}
+    title={cnNow.intro.title}
+    updated={cnNow.intro.updated}
+    updatedLabel={localeChrome.cn.updatedLabel}
+  />
+
+  <section class="section-shell">
+    <div class="prose-robin">
+      {cnNow.body.map((line) => <p>{line}</p>)}
+    </div>
+  </section>
+
+  <section class="section-shell pt-0">
+    <SectionHeading description="此刻的状态，先落成几句。" eyebrow="所见" title="此刻的重心。" />
+
+    <div class="mt-8 grid gap-4 md:grid-cols-3">
+      {
+        cnNow.snapshot.map((signal) => (
+          <article class="glass-card p-6">
+            <p class="type-label text-[var(--color-accent)]">{signal.label}</p>
+            <p class="type-body mt-3 text-[var(--color-muted)]">{signal.value}</p>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="section-shell pt-0">
+    <SectionHeading description="——" eyebrow="仍在思考" title="仍在思考" />
+
+    <div class="mt-8 grid gap-4">
+      {
+        cnNow.loops.map((loop) => (
+          <article class="glass-card p-6">
+            <p class="type-body text-[var(--color-muted)]">{loop}</p>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="section-shell pt-0">
+    <SectionHeading description="旧日公开坐标，仍可回看。" eyebrow="旧闻" title="过去的媒体记录。" />
+
+    <div class="mt-8 grid gap-4 lg:grid-cols-3">
+      {
+        cnNow.press.map((item) => (
+          <a class="glass-card p-6 no-underline transition-transform hover:-translate-y-0.5" href={item.href} rel="noreferrer" target="_blank">
+            <p class="eyebrow">{item.source}</p>
+            <h2 class="type-card-title mt-4 text-[var(--color-ink)]">{item.title}</h2>
+            <p class="type-body mt-4 text-[var(--color-muted)]">{item.description}</p>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>

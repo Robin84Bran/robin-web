@@ -1,0 +1,82 @@
+---
+import { localeChrome } from '../../data/locales';
+import { siteConfig } from '../../data/site';
+import { getLanguageSwitchTargets, type SiteLocale } from '../../lib/i18n';
+import ButtonLink from '../ui/ButtonLink.astro';
+
+interface Props {
+  locale?: SiteLocale;
+}
+
+const { locale = 'en' } = Astro.props;
+const pathname = Astro.url.pathname;
+const chrome = localeChrome[locale];
+const switchTargets = getLanguageSwitchTargets(pathname);
+const isActive = (href: string) =>
+  href === '/' || href === '/cn/' ? pathname === href : pathname.startsWith(href);
+---
+
+<header class="sticky top-0 z-40 border-b border-[var(--color-line)] bg-[rgba(7,19,28,0.62)] backdrop-blur-xl">
+  <div class="mx-auto flex max-w-[78rem] flex-wrap items-center gap-4 px-5 py-4 sm:px-8 lg:px-10">
+    <a class="group flex items-center gap-3 no-underline" href={chrome.brandHref}>
+      <span class="flex h-11 w-11 items-center justify-center rounded-full border border-[var(--color-line)] bg-[rgba(8,24,36,0.72)] text-[0.84rem] uppercase tracking-[0.24em] text-[var(--color-cyan)] transition-colors group-hover:border-[rgba(0,229,255,0.3)]">
+        RX
+      </span>
+      <span>
+        <span class="type-action block text-[var(--color-ink)]">{chrome.brandName}</span>
+        <span class="type-label block text-[var(--color-muted)]">
+          {chrome.brandSubline}
+        </span>
+      </span>
+    </a>
+
+    <nav
+      aria-label="Primary"
+      class="order-3 flex basis-full gap-1 overflow-x-auto pb-1 text-sm md:order-2 md:ml-auto md:basis-auto md:pb-0"
+    >
+      {
+        chrome.navigation.map((item) => (
+          <a
+            class:list={[
+              'type-action rounded-full px-3 py-2 no-underline transition-colors duration-500',
+              isActive(item.href)
+                ? 'bg-[rgba(30,144,255,0.12)] text-[var(--color-ink)]'
+                : 'text-[var(--color-muted)] hover:text-[var(--color-ink)]',
+            ]}
+            href={item.href}
+          >
+            {item.label}
+          </a>
+        ))
+      }
+    </nav>
+
+    <div class="order-2 ml-auto flex items-center gap-3 md:order-3 md:ml-0">
+      <nav aria-label="Language switch" class="type-action flex items-center gap-2 text-[var(--color-muted)]">
+        <a
+          class:list={[
+            'rounded-full px-2 py-1 no-underline transition-colors duration-500',
+            locale === 'en' ? 'text-[var(--color-ink)]' : 'hover:text-[var(--color-ink)]',
+          ]}
+          href={switchTargets.en}
+        >
+          EN
+        </a>
+        <span aria-hidden="true">|</span>
+        <a
+          class:list={[
+            'rounded-full px-2 py-1 no-underline transition-colors duration-500',
+            locale === 'cn' ? 'text-[var(--color-ink)]' : 'hover:text-[var(--color-ink)]',
+          ]}
+          href={switchTargets.cn}
+        >
+          中文
+        </a>
+      </nav>
+
+      <ButtonLink external href={siteConfig.blogUrl}>
+        {chrome.blogCta}
+      </ButtonLink>
+    </div>
+  </div>
+</header>

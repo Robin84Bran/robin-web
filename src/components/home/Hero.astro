@@ -1,0 +1,79 @@
+---
+import heroWatchUrl from '../../../pics/hero_watch.jpg?url';
+import { heroLens, siteConfig } from '../../data/site';
+import ButtonLink from '../ui/ButtonLink.astro';
+---
+
+<section class="section-shell relative pt-6 sm:pt-10">
+  <div aria-hidden="true" class="hero-depth-field pointer-events-none absolute inset-x-[8%] top-0 -z-10"></div>
+  <div
+    aria-hidden="true"
+    class="pointer-events-none absolute inset-x-[16%] top-0 -z-10 h-56 rounded-full bg-[radial-gradient(circle,rgba(234,246,255,0.12),rgba(0,229,255,0.06)_34%,transparent_72%)] blur-3xl"
+  ></div>
+
+  <div class="grid gap-10 lg:grid-cols-[minmax(0,1.18fr)_minmax(18rem,0.58fr)] lg:items-start lg:gap-16">
+    <div class="hero-rise max-w-[42rem] pt-2 lg:max-w-none">
+      <p class="type-hero-kicker">{siteConfig.heroEyebrow}</p>
+
+      <h1 class="type-display mt-6 text-[var(--color-ink)] lg:whitespace-nowrap">
+        {siteConfig.heroTitle}
+      </h1>
+
+      <p class="type-display mt-2 text-[var(--color-cyan)]/92 lg:whitespace-nowrap">
+        {siteConfig.heroSubline}
+      </p>
+
+      <div class="type-lead mt-8 max-w-[33rem] space-y-2 text-[var(--color-ink)]/92">
+        {siteConfig.heroBody.map((line) => <p class="max-w-[30rem]">{line}</p>)}
+      </div>
+
+      <div class="mt-9 flex flex-wrap gap-3">
+        <ButtonLink external href={siteConfig.officialWebsiteUrl}>
+          Official Website
+        </ButtonLink>
+        <ButtonLink href="/projects/" variant="secondary">
+          Enter the System
+        </ButtonLink>
+      </div>
+
+      <div class="hero-rise-delayed mt-10 max-w-[44rem]">
+        <p class="eyebrow">Current lens</p>
+        <div class="mt-5 grid gap-5 sm:grid-cols-3 sm:gap-6">
+          {
+            heroLens.map((item) => (
+              <div class="space-y-2">
+                <p class="type-label text-[var(--color-accent)]">
+                  {item.label}
+                </p>
+                <p class="type-body text-[var(--color-muted)]">{item.value}</p>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+
+    <div class="lg:max-w-[20.5rem] lg:justify-self-end">
+      <div class="glass-card hero-rise p-3">
+        <a
+          class="group block no-underline"
+          href={siteConfig.ensUrl}
+          rel="noreferrer"
+          target="_blank"
+        >
+          <div class="relative overflow-hidden rounded-[1.45rem]">
+            <img
+              alt="Hero image of Robin Xie framed within a watch face"
+              class="aspect-[829/1122] w-full object-cover brightness-[0.9] saturate-[0.88] transition-transform duration-[1400ms] ease-out group-hover:scale-[1.012]"
+              decoding="async"
+              loading="eager"
+              src={heroWatchUrl}
+            />
+            <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_42%,rgba(7,19,28,0.16)_78%,rgba(7,19,28,0.26)_100%)]"></div>
+            <div class="pointer-events-none absolute inset-[-2%] rounded-[1.6rem] border border-[rgba(234,246,255,0.05)] [box-shadow:inset_0_0_32px_rgba(7,19,28,0.12)]"></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

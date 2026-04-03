@@ -1,0 +1,51 @@
+---
+import ContactLinks from '../../components/common/ContactLinks.astro';
+import PageIntro from '../../components/common/PageIntro.astro';
+import { cnContact, cnSeo } from '../../data/cn';
+import { localeChrome } from '../../data/locales';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { createPersonSchema } from '../../lib/seo';
+---
+
+<BaseLayout
+  description={cnSeo.contact.description}
+  image="/og/home.jpg"
+  locale="cn"
+  path="/cn/contact/"
+  schema={createPersonSchema()}
+  title={cnSeo.contact.title}
+>
+  <PageIntro
+    description={cnContact.intro.description}
+    kicker={cnContact.intro.kicker}
+    title={cnContact.intro.title}
+    updated={cnContact.intro.updated}
+    updatedLabel={localeChrome.cn.updatedLabel}
+  />
+
+  <section class="section-shell">
+    <div class="prose-robin">
+      {cnContact.body.map((line) => <p>{line}</p>)}
+    </div>
+  </section>
+
+  <section class="section-shell pt-0">
+    <div class="grid gap-4 md:grid-cols-3">
+      {
+        cnContact.prompts.map((prompt) => (
+          <article class="glass-card p-6">
+            <h2 class="type-card-title text-[var(--color-ink)]">{prompt.title}</h2>
+            <p class="type-body mt-3 text-[var(--color-muted)]">{prompt.description}</p>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <ContactLinks
+    description="言之有物，来意自明，便已足够。"
+    links={localeChrome.cn.socialLinks}
+    primaryCtaLabel="打开 GitHub"
+    title="选一条合适的路。"
+  />
+</BaseLayout>

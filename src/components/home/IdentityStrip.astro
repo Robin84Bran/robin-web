@@ -1,0 +1,60 @@
+---
+import { identityPillars } from '../../data/site';
+---
+
+<section class="section-shell pt-2">
+  <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10">
+    {
+      identityPillars.map((pillar) => (
+        <article
+          aria-label={pillar.title}
+          class="identity-node group"
+          tabindex="0"
+        >
+          <div class="identity-glyph" aria-hidden="true">
+            <svg fill="none" viewBox="0 0 64 64">
+              {
+                pillar.id === 'engineer' && (
+                  <>
+                    <rect height="34" rx="9" width="34" x="15" y="15"></rect>
+                    <path d="M26 15v34M38 15v34M15 26h34M15 38h34"></path>
+                  </>
+                )
+              }
+              {
+                pillar.id === 'capital' && (
+                  <>
+                    <path d="M18 24c4-6 11-9 18-8 7 1 13 6 16 13"></path>
+                    <path d="M46 15l8 4-3 8"></path>
+                    <path d="M46 40c-4 6-11 9-18 8-7-1-13-6-16-13"></path>
+                    <path d="M18 49l-8-4 3-8"></path>
+                  </>
+                )
+              }
+              {
+                pillar.id === 'writer' && (
+                  <>
+                    <path d="M12 24h10l5 7 7-15 6 22 5-10h7"></path>
+                    <path d="M14 40h36"></path>
+                    <path d="M20 48h24"></path>
+                  </>
+                )
+              }
+              {
+                pillar.id === 'builder' && (
+                  <>
+                    <path d="M18 21l14-8 14 8v22l-14 8-14-8z"></path>
+                    <path d="M32 13v30"></path>
+                    <path d="M18 21l14 8 14-8"></path>
+                  </>
+                )
+              }
+            </svg>
+          </div>
+          <p class="sr-only">{pillar.title}</p>
+          <p class="identity-reveal type-body">{pillar.description}</p>
+        </article>
+      ))
+    }
+  </div>
+</section>

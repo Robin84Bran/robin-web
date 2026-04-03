@@ -1,0 +1,86 @@
+---
+import { Image } from 'astro:assets';
+import ButtonLink from '../../components/ui/ButtonLink.astro';
+import PageIntro from '../../components/common/PageIntro.astro';
+import { cnBooks, cnBooksPage, cnSeo } from '../../data/cn';
+import { localeChrome } from '../../data/locales';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getBookManuscript } from '../../lib/books';
+import { createPersonSchema } from '../../lib/seo';
+---
+
+<BaseLayout
+  description={cnSeo.books.description}
+  image="/og/books.jpg"
+  locale="cn"
+  path="/cn/books/"
+  schema={createPersonSchema()}
+  title={cnSeo.books.title}
+>
+  <PageIntro
+    description={cnBooksPage.intro.description}
+    kicker={cnBooksPage.intro.kicker}
+    title={cnBooksPage.intro.title}
+    updated={cnBooksPage.intro.updated}
+    updatedLabel={localeChrome.cn.updatedLabel}
+  />
+
+  <section class="section-shell">
+    <div class="prose-robin">
+      {cnBooksPage.body.map((line) => <p>{line}</p>)}
+    </div>
+  </section>
+
+  <section class="section-shell pt-0">
+    <div class="grid gap-6 xl:grid-cols-2">
+      {
+        cnBooks.map((book) => {
+          const manuscript = getBookManuscript(book.slug);
+
+          return (
+            <article class="manuscript-shelf-card" id={book.slug}>
+              <a
+                class="manuscript-cover-frame block"
+                href={`/cn/books/${book.slug}/`}
+                aria-label={`进入 ${book.titleCn}`}
+              >
+                <Image
+                  alt={manuscript.coverAlt}
+                  class="h-full w-full object-cover"
+                  loading="eager"
+                  sizes="(min-width: 1280px) 18rem, (min-width: 640px) 11rem, 100vw"
+                  src={manuscript.cover}
+                  width={440}
+                />
+              </a>
+
+              <div class="flex h-full flex-col">
+                <div class="flex flex-wrap items-center gap-3">
+                  <p class="eyebrow">{book.status}</p>
+                  <span class="type-meta rounded-full border border-[var(--color-line)] px-3 py-1 text-[var(--color-muted)]">
+                    {book.theme}
+                  </span>
+                </div>
+
+                <h2 class="type-card-title mt-5 text-[var(--color-ink)]">{book.titleCn}</h2>
+                <p class="type-action mt-2 text-[var(--color-muted)]">{book.titleEn}</p>
+                <p class="type-body mt-4 max-w-xl text-[var(--color-muted)]">{book.thesis}</p>
+                <div class="mt-6">
+                  <ButtonLink href={`/cn/books/${book.slug}/`} variant="secondary">
+                    进入书稿
+                  </ButtonLink>
+                </div>
+              </div>
+            </article>
+          );
+        })
+      }
+    </div>
+
+    <div class="mt-10">
+      <ButtonLink external href="https://iamrobin.ghost.io" variant="ghost">
+        更多长文在 Ghost
+      </ButtonLink>
+    </div>
+  </section>
+</BaseLayout>

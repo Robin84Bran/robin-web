@@ -1,0 +1,55 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import SectionHeading from '../ui/SectionHeading.astro';
+import SymbolReveal from '../ui/SymbolReveal.astro';
+
+interface Props {
+  projects: CollectionEntry<'projects'>[];
+}
+
+const { projects } = Astro.props;
+const projectGlyphs = {
+  robinos: 'robinos',
+  'quant-lab': 'quant',
+  'watts-to-satoshi': 'watts',
+  'childrens-ai-education-apps': 'children',
+} as const;
+---
+
+<section class="section-shell">
+  <SectionHeading
+    description="A curated set of systems under construction, where ideas meet pressure and become real."
+    eyebrow="Projects"
+    title="Curated builds across systems, capital, energy, and learning."
+  />
+
+  <div class="mt-8 grid gap-5 lg:grid-cols-2">
+    {
+      projects.map((project) => (
+        <article class="glass-card p-6 sm:p-7 transition-transform duration-700 ease-out hover:-translate-y-1">
+          <div class="flex flex-wrap items-center gap-3">
+            <p class="eyebrow">{project.data.status}</p>
+            <span class="type-meta rounded-full border border-[var(--color-line)] px-3 py-1 text-[var(--color-muted)]">
+              {project.data.domain}
+            </span>
+          </div>
+          <h3 class="type-card-title mt-4 text-[var(--color-ink)]">{project.data.title}</h3>
+          <p class="type-body mt-4 text-[var(--color-muted)]">{project.data.summary}</p>
+          <div class="mt-5">
+            <SymbolReveal
+              kind={projectGlyphs[project.id as keyof typeof projectGlyphs]}
+              label={`${project.data.title} why it matters`}
+              text={project.data.impact}
+            />
+          </div>
+          <a
+            class="type-action mt-5 inline-flex items-center gap-2 text-[var(--color-accent)] no-underline transition-colors hover:text-[var(--color-ink)]"
+            href={`/projects/#${project.id}`}
+          >
+            View project notes <span aria-hidden="true">→</span>
+          </a>
+        </article>
+      ))
+    }
+  </div>
+</section>

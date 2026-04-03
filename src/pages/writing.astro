@@ -1,0 +1,79 @@
+---
+import { getEntry, render } from 'astro:content';
+import PageIntro from '../components/common/PageIntro.astro';
+import SectionHeading from '../components/ui/SectionHeading.astro';
+import { writingTracks } from '../data/site';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { createPersonSchema } from '../lib/seo';
+
+const entry = await getEntry('pages', 'writing');
+
+if (!entry) {
+  throw new Error('Missing writing page content.');
+}
+
+const { Content } = await render(entry);
+const themes = [
+  'AI, agency, and what remains meaningfully human.',
+  'Capital allocation, market structure, and tokenized value flow.',
+  'Identity, media, and how systems shape attention and selfhood.',
+];
+---
+
+<BaseLayout
+  description="Writing by Robin Xie on AI, markets, systems, capital, and identity, with Ghost as the canonical home."
+  image="/og/writing.jpg"
+  path="/writing/"
+  schema={createPersonSchema()}
+  title="Writing | Robin Xie"
+>
+  <PageIntro
+    description={entry.data.description}
+    kicker={entry.data.kicker}
+    title={entry.data.title}
+    updated={entry.data.updated}
+  />
+
+  <section class="section-shell">
+    <div class="prose-robin">
+      <Content />
+    </div>
+  </section>
+
+  <section class="section-shell pt-0">
+    <div class="grid gap-4 lg:grid-cols-3">
+      {
+        writingTracks.map((track) => (
+          <a
+            class="glass-card flex h-full flex-col p-6 no-underline transition-transform hover:-translate-y-0.5"
+            href={track.href}
+            rel={track.href.startsWith('http') ? 'noreferrer' : undefined}
+            target={track.href.startsWith('http') ? '_blank' : undefined}
+          >
+            <p class="eyebrow">{track.href.startsWith('http') ? 'External' : 'Internal'}</p>
+            <h2 class="type-card-title mt-4 text-[var(--color-ink)]">{track.title}</h2>
+            <p class="type-body mt-4 flex-1 text-[var(--color-muted)]">{track.description}</p>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="section-shell pt-0">
+    <SectionHeading
+      description="The recurring obsessions behind the essays and notes."
+      eyebrow="Themes"
+      title="What the writing tends to follow."
+    />
+
+    <div class="mt-8 grid gap-4 md:grid-cols-3">
+      {
+        themes.map((theme) => (
+          <article class="glass-card p-6">
+            <p class="type-body text-[var(--color-muted)]">{theme}</p>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,65 @@
+---
+import MetaTags from '../components/seo/MetaTags.astro';
+import SiteFooter from '../components/layout/SiteFooter.astro';
+import SiteHeader from '../components/layout/SiteHeader.astro';
+import { localeChrome } from '../data/locales';
+import type { SiteLocale } from '../lib/i18n';
+import '../styles/global.css';
+
+type SchemaObject = Record<string, unknown>;
+
+interface Props {
+  title: string;
+  description: string;
+  path?: string;
+  image?: string;
+  type?: 'website' | 'article';
+  schema?: SchemaObject | SchemaObject[];
+  noindex?: boolean;
+  locale?: SiteLocale;
+}
+
+const {
+  title,
+  description,
+  path,
+  image,
+  type = 'website',
+  schema,
+  noindex = false,
+  locale = 'en',
+} = Astro.props;
+
+const lang = locale === 'cn' ? 'zh-Hans' : 'en';
+const chrome = localeChrome[locale];
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <MetaTags
+      description={description}
+      image={image}
+      noindex={noindex}
+      path={path}
+      schema={schema}
+      title={title}
+      type={type}
+    />
+  </head>
+  <body class="bg-[var(--color-canvas)] text-[var(--color-ink)] antialiased">
+    <div aria-hidden="true" class="page-grid pointer-events-none fixed inset-0 -z-20 opacity-70"></div>
+    <div aria-hidden="true" class="beam-field pointer-events-none fixed inset-0 -z-10"></div>
+    <a
+      class="sr-only absolute left-4 top-4 z-50 rounded-full border border-[var(--color-line)] bg-[rgba(7,19,28,0.92)] px-4 py-2 text-sm text-[var(--color-ink)] focus:not-sr-only"
+      href="#content"
+    >
+      {chrome.skipToContent}
+    </a>
+    <SiteHeader locale={locale} />
+    <main class="mx-auto flex w-full max-w-[78rem] flex-1 flex-col px-5 pb-20 pt-8 sm:px-8 lg:px-10 lg:pt-12" id="content">
+      <slot />
+    </main>
+    <SiteFooter locale={locale} />
+  </body>
+</html>
