@@ -33,3 +33,7 @@ src/styles/global 2.css
 # local language tooling
 *.pyc
 __pycache__/
+
+.dev.vars*
+!.dev.vars.example
+!.env.example
