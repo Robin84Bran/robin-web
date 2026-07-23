@@ -16,11 +16,11 @@ const bookGlyphs = {
 } as const;
 ---
 
-<section class="section-shell">
+<section class="section-shell" id="books">
   <SectionHeading
-    description="These books are written in public. Each evolves as the questions sharpen."
+    description="Enter where the questions are already alive."
     eyebrow="Books"
-    title="Living manuscripts on intelligence, capital, longevity, and leverage."
+    title="Four books, each still becoming."
   />
 
   <div class="mt-8 grid gap-5 lg:grid-cols-2">
@@ -46,7 +46,7 @@ const bookGlyphs = {
             class="type-action mt-5 inline-flex items-center gap-2 text-[var(--color-accent)] no-underline transition-colors hover:text-[var(--color-ink)]"
             href={`/books/${book.id}/`}
           >
-            Open the shelf <span aria-hidden="true">→</span>
+            Enter manuscript <span aria-hidden="true">→</span>
           </a>
         </article>
       ))

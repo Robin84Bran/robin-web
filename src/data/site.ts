@@ -3,152 +3,146 @@ export const siteConfig = {
   title: 'Robin Xie | Engineer, Capital Allocator, Writer',
   description:
     'Personal site of Robin Xie: engineer, capital allocator, writer, and builder across AI, markets, systems, and digital identity.',
-  siteUrl: 'https://www.iamrobin.ai',
+  siteUrl: 'https://iamrobin.ai',
   blogUrl: 'https://iamrobin.ghost.io',
   officialWebsiteUrl: 'https://www.tideisun.com/en/robin',
+  officialWebsiteUrlCn: 'https://www.tideisun.com/robin',
   ensUrl: 'https://app.ens.domains/iamrobin.eth',
   mediumUrl: 'https://medium.com/@iamrobin-ai',
   githubUrl: 'https://github.com/Robin84Bran/',
   xUrl: 'https://x.com/nanobin1984',
   linkedinUrl: 'https://www.linkedin.com/in/nanobin',
-  location: 'Hong Kong',
   portraitUrl: '/social/robin-portrait.jpg',
-  heroEyebrow: 'Ms. Robin Xie',
-  heroTitle: 'Engineer. Executive. Mother.',
-  heroSubline: 'Flow. Capital. Token. ♾️',
+  releaseLabel: 'Website v1.2 · July 2026',
+  releaseLabelCn: '网站 v1.2 · 2026年7月',
+  heroEyebrow: 'Robin Xie',
+  heroTitle: 'Engineer, investor, writer.',
+  heroSubline: 'I work where intelligence and capital begin to converge.',
   heroBody: [
-    'This is a living system. A system that filters.',
-    'The attuned understand. Most will not.',
+    'I build systems, write essays, and allocate time, attention, and capital.',
+    'I care about clarity, warmth, and what still matters after the noise fades.',
+    'Only the public edge lives here.',
   ],
-  quote: 'Where capital, consciousness, and curiosity converge.',
+  quote: 'What lasts usually arrives quietly.',
 } as const;
 
 export const navigation = [
-  { label: 'Home', href: '/' },
-  { label: 'About', href: '/about/' },
-  { label: 'Books', href: '/books/' },
-  { label: 'Writing', href: '/writing/' },
   { label: 'Projects', href: '/projects/' },
-  { label: 'Now', href: '/now/' },
-  { label: 'Contact', href: '/contact/' },
+  { label: 'Portfolio', href: '/portfolio/' },
+  { label: 'Press', href: '/now/' },
+  { label: 'Books', href: '/books/' },
 ] as const;
 
 export const socialLinks = [
   {
     label: 'GitHub',
     href: siteConfig.githubUrl,
-    blurb: 'Source code, experiments, and systems work in public.',
+    blurb: 'Code and working systems.',
   },
   {
     label: 'Ghost blog',
     href: siteConfig.blogUrl,
-    blurb: 'Canonical home for essays, notes, and longer arcs.',
+    blurb: 'Longer essays and notes.',
   },
   {
     label: 'Medium',
     href: siteConfig.mediumUrl,
-    blurb: 'Selective syndication for chosen essays.',
+    blurb: 'Selective reposts.',
   },
   {
     label: 'X',
     href: siteConfig.xUrl,
-    blurb: 'Short-form signals and running commentary.',
+    blurb: 'Short notes.',
   },
   {
     label: 'LinkedIn',
     href: siteConfig.linkedinUrl,
-    blurb: 'Professional context and institutional outreach.',
+    blurb: 'Professional context.',
   },
 ] as const;
 
 export const footerLinks = [
-  { label: 'Ghost blog', href: siteConfig.blogUrl },
-  { label: 'Medium', href: siteConfig.mediumUrl },
-  { label: 'GitHub', href: siteConfig.githubUrl },
-  { label: 'X', href: siteConfig.xUrl },
+  { label: 'ENS', href: siteConfig.ensUrl },
   { label: 'LinkedIn', href: siteConfig.linkedinUrl },
+  { label: 'Medium', href: siteConfig.mediumUrl },
+  { label: 'Blog', href: siteConfig.blogUrl },
 ] as const;
 
 export const identityPillars = [
   {
     id: 'engineer',
     title: 'Engineer',
-    description: 'Systems that hold their shape.',
+    description: 'Engineering is my core.',
   },
   {
     id: 'capital',
-    title: 'Capital Allocator',
-    description: 'Flows that compound under pressure.',
+    title: 'Investor',
+    description: 'Time, attention, and capital, placed to grow and compound.',
   },
   {
     id: 'writer',
     title: 'Writer',
-    description: 'Signal shaped into language.',
+    description: 'Only the public edge lives here.',
   },
   {
     id: 'builder',
     title: 'Builder',
-    description: 'Form assembled into operating reality.',
+    description: 'Find how value moves, then build something that can survive reality.',
   },
 ] as const;
 
 export const aboutPillars = [
   {
-    title: 'Operator turned allocator',
-    description:
-      'Robin moves from shipping systems to reading incentives, structures, and second-order effects.',
+    title: 'Teddy’s gift',
+    description: 'Asymmetry is the source of all power. Systems break beautifully. Time is not linear but a loop.',
   },
   {
-    title: 'Physical flow to capital flow',
-    description: 'Understand how value moves, then design better interfaces for it.',
+    title: 'Global citizen',
+    description: 'Invest in the United States. Spend in China. Work in Hong Kong. Play in Macau. I belong to the system worth building.',
   },
   {
-    title: 'A personal operating system',
-    description:
-      'RobinOS is an attempt to make thinking, writing, investing, and building feel coherent under one roof.',
+    title: 'Keep the human texture',
+    description: 'Warmth, humor, and taste are part of the architecture. Smiling randomly is not a bug, but a feature.',
   },
 ] as const;
 
 export const operatingPrinciples = [
-  'Prefer clarity over cleverness, signal over noise, and systems over slogans.',
-  'Design for longevity: calmer interfaces, stronger ideas, less disposable content.',
-  'Treat books, products, and essays as living artifacts that can keep compounding.',
-  'Keep technology humane by making room for judgment, humor, and texture.',
+  'I seek. I become. I AM.',
+  '99% false signal fades. 1% true alpha lives.',
+  'Build for the long arc, not the loud cycle.',
+  'Love creates coherence and resonance.',
 ] as const;
 
 export const writingTracks = [
   {
-    title: 'Archive signal on Ghost',
-    description:
-      'The deepest published signal lives on Ghost, where longer arcs stay legible.',
+    title: 'Ghost archive',
+    description: 'Longer essays and ongoing arcs.',
     href: siteConfig.blogUrl,
   },
   {
-    title: 'Relay selected signal on Medium',
-    description:
-      'Some pieces travel through Medium without flattening the archive.',
+    title: 'Medium reposts',
+    description: 'A smaller secondary lane.',
     href: siteConfig.mediumUrl,
   },
   {
-    title: 'Enter the signal layer',
-    description:
-      'A quieter RobinOS layer for filtered notes and traces.',
+    title: 'Signal layer',
+    description: 'Filtered notes closer to the system.',
     href: '/signal/',
   },
 ] as const;
 
 export const heroLens = [
   {
-    label: 'Focus',
-    value: 'AI-native operating systems, agentic architecture, tokenized capital and media with real alpha.',
+    label: 'In motion',
+    value: 'RobinOS, blogs in progress, Bran Lab, and a quieter market practice.',
   },
   {
-    label: 'Operating across',
-    value: 'English and Chinese, capital and intelligence, markets and media.',
+    label: 'Between',
+    value: 'English and Chinese; software and capital.',
   },
   {
-    label: 'Building',
-    value: 'RobinOS, Quant Lab, Watts to Satoshi, and children’s AI labs.',
+    label: 'Elsewhere',
+    value: 'The rest stays in RobinOS until it earns daylight.',
   },
 ] as const;
 
@@ -161,36 +155,36 @@ export const systemLayers = [
 
 export const nowSignals = [
   {
-    label: 'Focus',
-    value: 'AI-native operating systems, tokenized capital, and media surfaces with real signal.',
+    label: 'Platform',
+    value: 'Blockchain banking and platform design.',
   },
   {
-    label: 'Operating across',
-    value: 'Cross-border systems, long-horizon infrastructure, and work between software, capital, and narrative.',
+    label: 'Scale',
+    value: 'One million users across regional infrastructure.',
   },
   {
-    label: 'Building',
-    value: 'RobinOS, Quant Lab, Watts to Satoshi, and children’s AI labs.',
+    label: 'Reach',
+    value: 'Cross-border payments for markets the legacy rails did not care to reach.',
   },
 ] as const;
 
 export const pressFeatures = [
   {
-    title: 'Nasdaq Interview on Robin Xie',
+    title: 'Nasdaq interview',
     href: 'https://financialit.net/news/blockchain/isunone-indicated-nasdaq-interview-future-blockchain-banking',
-    description: 'A Nasdaq-linked interview moment around blockchain banking, platform design, and global ambition.',
+    description: 'An early conversation about blockchain banking and platform design.',
     source: 'Financial IT',
   },
   {
-    title: 'What does blockchain banking look like in ASEAN',
+    title: 'One million users',
     href: 'https://hong-kong.media-outreach.com/news/hong-kong/2019/11/20/21203/isunone-reaches-1-million-users-and-promotes-blockchain-development-in-asean/',
-    description: 'A milestone around scale, user growth, and the shape of blockchain banking across ASEAN.',
+    description: 'A milestone in scale, infrastructure, and cross-border finance. Still not a bank.',
     source: 'Media Outreach',
   },
   {
-    title: 'Financial inclusion and cross-border payment for 2 billion unbanked population',
+    title: 'Financial inclusion',
     href: 'https://www.media-outreach.com/news/hong-kong/2019/07/17/9617/isunone-teams-up-with-digital-bank-to-benefit-2-billion-underprivileged-population/',
-    description: 'A public marker on financial inclusion, cross-border payments, and the unbanked population.',
+    description: 'Payments and money flow for markets the legacy rails did not care to reach.',
     source: 'Media Outreach',
   },
 ] as const;
@@ -198,16 +192,14 @@ export const pressFeatures = [
 export const contactPrompts = [
   {
     title: 'Thoughtful partnerships',
-    description: 'Early-stage AI, capital formation, media systems, and long-horizon internet work.',
+    description: 'AI, capital, media, and long-horizon work.',
   },
   {
     title: 'Sharp conversations',
-    description:
-      'If you have a real thesis or a serious build in motion, context helps more than pitch decks.',
+    description: 'A real thesis and a little context go a long way.',
   },
   {
     title: 'Clear channels',
-    description:
-      'Start where the conversation belongs: GitHub for work, Ghost for writing, LinkedIn or X for outreach.',
+    description: 'Start in the channel that fits the work.',
   },
 ] as const;

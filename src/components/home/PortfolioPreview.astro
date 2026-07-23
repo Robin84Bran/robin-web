@@ -1,0 +1,23 @@
+---
+import SectionHeading from '../ui/SectionHeading.astro';
+import ButtonLink from '../ui/ButtonLink.astro';
+
+interface Props {
+  eyebrow: string;
+  title: string;
+  description: string;
+  note: string;
+  href?: string;
+  action?: string;
+}
+
+const { eyebrow, title, description, note, href, action = 'Enter portfolio' } = Astro.props;
+---
+
+<section class="section-shell" id="portfolio">
+  <SectionHeading description={description} eyebrow={eyebrow} title={title} />
+  <div class="mt-8 border-y border-[var(--color-line)] py-7">
+    <p class="type-body max-w-2xl text-[var(--color-muted)]">{note}</p>
+    {href && <ButtonLink className="mt-5" href={href}>{action}</ButtonLink>}
+  </div>
+</section>

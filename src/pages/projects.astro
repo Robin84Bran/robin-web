@@ -1,7 +1,6 @@
 ---
 import { getCollection, getEntry, render } from 'astro:content';
 import PageIntro from '../components/common/PageIntro.astro';
-import ButtonLink from '../components/ui/ButtonLink.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { sortCollectionByOrder } from '../lib/content';
 import { createPersonSchema } from '../lib/seo';
@@ -53,12 +52,6 @@ const { Content } = await render(entry);
           </article>
         ))
       }
-    </div>
-
-    <div class="mt-8">
-      <ButtonLink href="/contact/" variant="secondary">
-        Start a thoughtful conversation
-      </ButtonLink>
     </div>
   </section>
 </BaseLayout>

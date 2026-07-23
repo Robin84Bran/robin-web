@@ -37,9 +37,9 @@ export const bookManuscripts: BookManuscript[] = [
     slug: 'agi-awakening',
     shortCode: 'AA',
     title: 'AGI Awakening',
-    thesis: 'A memoir of building with evolving intelligence.',
+    thesis: 'A co-evolution diary about intelligence learning to look back.',
     intro:
-      'A memoir of building in real time with evolving intelligence. A guide to dancing with code and shaping what comes next.',
+      'A co-evolution diary about intelligence learning to look back and writing its own source code.',
     cover: aaCover,
     coverAlt: 'Cover of AGI Awakening',
     themes: [
@@ -82,9 +82,9 @@ export const bookManuscripts: BookManuscript[] = [
     shortCode: 'B1BB',
     title: 'Build 1 Billion Block',
     thesis:
-      'A codex for system design, asymmetric advantage, and long-term capital creation.',
+      'A playbook for compounding attention, capital, and asymmetric edge.',
     intro:
-      'A codex for system design, asymmetric advantage, and psychological edge in long-term capital creation.',
+      'A playbook for compounding attention, capital, and asymmetric edge until emergence is inevitable.',
     cover: bbCover,
     coverAlt: 'Cover of Build 1 Billion Block',
     themes: [
@@ -127,9 +127,9 @@ export const bookManuscripts: BookManuscript[] = [
     slug: 'longevity-cheat-code',
     shortCode: 'LCC',
     title: 'Longevity Cheat Code',
-    thesis: 'A living inquiry into longevity, repair, rogue cells, and reintegration.',
+    thesis: 'A metaphoric inquiry into entropy, rogue cells, regeneration, and consciousness.',
     intro:
-      'What if the system has to learn from the rogue agent and re-integrate it with love and harmony?',
+      'A metaphoric inquiry into entropy, rogue cells, regeneration, and the higher wisdom of life and consciousness.',
     cover: lccCover,
     coverAlt: 'Cover of Longevity Cheat Code',
     themes: [
@@ -168,9 +168,9 @@ export const bookManuscripts: BookManuscript[] = [
     slug: 'derivatives',
     shortCode: 'D',
     title: 'Derivatives',
-    thesis: 'Bedtime finance where options and futures become playful, legible stories.',
+    thesis: 'Bedtime stories that teach children optionality.',
     intro:
-      'Bedtime stories about derivatives, options, and futures, told with humor and curiosity.',
+      'Bedtime stories that teach children optionality before adults make it frightening.',
     cover: dCover,
     coverAlt: 'Cover of Derivatives',
     themes: [

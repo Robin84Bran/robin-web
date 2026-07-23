@@ -1,4 +1,9 @@
-export type SiteLocale = 'en' | 'cn';
+export type SiteLocale = 'en' | 'cn' | 'tw' | 'jp';
+
+export interface SeoAlternate {
+  hreflang: 'en' | 'zh-Hans' | 'zh-Hant' | 'ja';
+  path: string;
+}
 
 const mirroredBasePaths = new Set([
   '/',
@@ -27,17 +32,32 @@ export function normalizePath(pathname: string) {
 }
 
 export function getLocaleFromPath(pathname: string): SiteLocale {
-  return normalizePath(pathname).startsWith('/cn/') ? 'cn' : 'en';
+  const normalized = normalizePath(pathname);
+
+  if (normalized.startsWith('/cn/')) {
+    return 'cn';
+  }
+
+  if (normalized.startsWith('/tw/')) {
+    return 'tw';
+  }
+
+  if (normalized.startsWith('/jp/')) {
+    return 'jp';
+  }
+
+  return 'en';
 }
 
 export function stripLocalePrefix(pathname: string) {
   const normalized = normalizePath(pathname);
+  const localePrefix = ['/cn/', '/tw/', '/jp/'].find((prefix) => normalized.startsWith(prefix));
 
-  if (normalized === '/cn/') {
+  if (localePrefix && normalized === localePrefix) {
     return '/';
   }
 
-  return normalized.startsWith('/cn/') ? normalized.slice(3) : normalized;
+  return localePrefix ? normalized.slice(3) : normalized;
 }
 
 function hasMirroredRoute(pathname: string) {
@@ -45,6 +65,10 @@ function hasMirroredRoute(pathname: string) {
 }
 
 export function getLocalizedPath(pathname: string, targetLocale: SiteLocale) {
+  if (targetLocale === 'tw' || targetLocale === 'jp') {
+    return `/${targetLocale}/`;
+  }
+
   if (!hasMirroredRoute(pathname)) {
     return targetLocale === 'cn' ? '/cn/' : '/';
   }
@@ -65,5 +89,29 @@ export function getLanguageSwitchTargets(pathname: string) {
     locale,
     en: getLocalizedPath(pathname, 'en'),
     cn: getLocalizedPath(pathname, 'cn'),
+    tw: getLocalizedPath(pathname, 'tw'),
+    jp: getLocalizedPath(pathname, 'jp'),
   };
+}
+
+export function getSeoAlternates(pathname: string): SeoAlternate[] {
+  const basePath = stripLocalePrefix(pathname);
+
+  if (basePath === '/') {
+    return [
+      { hreflang: 'en', path: '/' },
+      { hreflang: 'zh-Hans', path: '/cn/' },
+      { hreflang: 'zh-Hant', path: '/tw/' },
+      { hreflang: 'ja', path: '/jp/' },
+    ];
+  }
+
+  if (mirroredBasePaths.has(basePath)) {
+    return [
+      { hreflang: 'en', path: basePath },
+      { hreflang: 'zh-Hans', path: `/cn${basePath}` },
+    ];
+  }
+
+  return [];
 }

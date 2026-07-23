@@ -1,0 +1,40 @@
+---
+import SectionHeading from '../ui/SectionHeading.astro';
+
+interface PressItem {
+  source: string;
+  title: string;
+  description: string;
+  href: string;
+}
+
+interface Props {
+  eyebrow: string;
+  title: string;
+  description: string;
+  items: readonly PressItem[];
+}
+
+const { eyebrow, title, description, items } = Astro.props;
+---
+
+<section class="section-shell" id="press">
+  <SectionHeading description={description} eyebrow={eyebrow} title={title} />
+
+  <div class="mt-8 grid gap-4 lg:grid-cols-3">
+    {
+      items.map((item) => (
+        <a
+          class="glass-card p-6 no-underline transition-transform duration-700 ease-out hover:-translate-y-0.5"
+          href={item.href}
+          rel="noreferrer"
+          target="_blank"
+        >
+          <p class="eyebrow">{item.source}</p>
+          <h3 class="type-card-title mt-4 text-[var(--color-ink)]">{item.title}</h3>
+          <p class="type-body mt-4 text-[var(--color-muted)]">{item.description}</p>
+        </a>
+      ))
+    }
+  </div>
+</section>

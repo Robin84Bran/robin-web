@@ -1,6 +1,5 @@
 ---
 import PageIntro from '../../components/common/PageIntro.astro';
-import SectionHeading from '../../components/ui/SectionHeading.astro';
 import { cnSeo, cnWriting } from '../../data/cn';
 import { localeChrome } from '../../data/locales';
 import BaseLayout from '../../layouts/BaseLayout.astro';
@@ -43,20 +42,6 @@ import { createPersonSchema } from '../../lib/seo';
             <h2 class="type-card-title mt-4 text-[var(--color-ink)]">{track.title}</h2>
             <p class="type-body mt-4 flex-1 text-[var(--color-muted)]">{track.description}</p>
           </a>
-        ))
-      }
-    </div>
-  </section>
-
-  <section class="section-shell pt-0">
-    <SectionHeading description="几条反复回来的线。" eyebrow="脉络" title="写作常去之处。" />
-
-    <div class="mt-8 grid gap-4 md:grid-cols-3">
-      {
-        cnWriting.themes.map((theme) => (
-          <article class="glass-card p-6">
-            <p class="type-body text-[var(--color-muted)]">{theme}</p>
-          </article>
         ))
       }
     </div>

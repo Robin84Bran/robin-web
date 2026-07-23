@@ -1,6 +1,7 @@
 ---
 import { absoluteUrl } from '../../lib/seo';
 import { siteConfig } from '../../data/site';
+import type { SeoAlternate, SiteLocale } from '../../lib/i18n';
 
 type SchemaObject = Record<string, unknown>;
 
@@ -12,6 +13,8 @@ interface Props {
   type?: 'website' | 'article';
   schema?: SchemaObject | SchemaObject[];
   noindex?: boolean;
+  locale?: SiteLocale;
+  alternates?: SeoAlternate[];
 }
 
 const {
@@ -22,6 +25,8 @@ const {
   type = 'website',
   schema = [],
   noindex = false,
+  locale = 'en',
+  alternates = [],
 } = Astro.props;
 
 const schemaItems = Array.isArray(schema) ? schema : [schema];
@@ -32,12 +37,30 @@ const jsonLd =
         '@graph': schemaItems,
       }
     : schemaItems[0];
+const openGraphLocales: Record<SiteLocale, string> = {
+  en: 'en_US',
+  cn: 'zh_CN',
+  tw: 'zh_TW',
+  jp: 'ja_JP',
+};
+const alternateOpenGraphLocales = alternates
+  .map((alternate) => {
+    const localeByHreflang: Record<SeoAlternate['hreflang'], string> = {
+      en: 'en_US',
+      'zh-Hans': 'zh_CN',
+      'zh-Hant': 'zh_TW',
+      ja: 'ja_JP',
+    };
+    return localeByHreflang[alternate.hreflang];
+  })
+  .filter((alternateLocale) => alternateLocale !== openGraphLocales[locale]);
+const defaultAlternate = alternates.find((alternate) => alternate.hreflang === 'en');
 ---
 
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="generator" content={Astro.generator} />
-<meta name="theme-color" content="#0b1d2a" />
+<meta name="theme-color" content="#f7f2ea" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="icon" href="/favicon.ico" />
 
@@ -48,14 +71,28 @@ const jsonLd =
 
 <meta property="og:site_name" content={siteConfig.name} />
 <meta property="og:type" content={type} />
+<meta property="og:locale" content={openGraphLocales[locale]} />
+{alternateOpenGraphLocales.map((alternateLocale) => <meta property="og:locale:alternate" content={alternateLocale} />)}
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:url" content={absoluteUrl(path)} />
 <meta property="og:image" content={absoluteUrl(image)} />
 
 <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@nanobin1984" />
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={absoluteUrl(image)} />
+
+{
+  alternates.map((alternate) => (
+    <link rel="alternate" hreflang={alternate.hreflang} href={absoluteUrl(alternate.path)} />
+  ))
+}
+{
+  defaultAlternate && (
+    <link rel="alternate" hreflang="x-default" href={absoluteUrl(defaultAlternate.path)} />
+  )
+}
 
 {jsonLd && <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}

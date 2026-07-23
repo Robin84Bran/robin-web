@@ -19,10 +19,6 @@ export function createPersonSchema(): SchemaObject {
     description: siteConfig.description,
     jobTitle: 'Engineer, Capital Allocator, Writer',
     url: absoluteUrl('/'),
-    homeLocation: {
-      '@type': 'Place',
-      name: siteConfig.location,
-    },
     sameAs: socialLinks.map((link) => link.href),
   };
 }

@@ -1,0 +1,171 @@
+---
+import heroWatchUrl from '../../../pics/hero_watch.jpg?url';
+import { parallelHome } from '../../data/parallel';
+import { siteConfig } from '../../data/site';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import type { SiteLocale } from '../../lib/i18n';
+import { createPersonSchema, createWebsiteSchema } from '../../lib/seo';
+import ButtonLink from '../ui/ButtonLink.astro';
+import SectionHeading from '../ui/SectionHeading.astro';
+import HomeAbout from './HomeAbout.astro';
+import IdentityStrip from './IdentityStrip.astro';
+import PortfolioPreview from './PortfolioPreview.astro';
+import PressPreview from './PressPreview.astro';
+
+interface Props {
+  locale: Extract<SiteLocale, 'tw' | 'jp'>;
+}
+
+const { locale } = Astro.props;
+const page = parallelHome[locale];
+const path = `/${locale}/`;
+---
+
+<BaseLayout
+  description={page.seo.description}
+  image="/og/home.jpg"
+  locale={locale}
+  path={path}
+  schema={[createWebsiteSchema(), createPersonSchema()]}
+  title={page.seo.title}
+>
+  <section class="section-shell relative pt-6 sm:pt-10">
+    <div aria-hidden="true" class="hero-depth-field pointer-events-none absolute inset-x-[5%] top-0 -z-10"></div>
+    <div
+      aria-hidden="true"
+      class="pointer-events-none absolute inset-x-[16%] top-0 -z-10 h-56 rounded-full bg-[radial-gradient(circle,rgba(232,188,205,0.18),rgba(159,182,201,0.08)_34%,transparent_72%)] blur-3xl"
+    ></div>
+
+    <div class="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(17rem,22rem)] lg:items-center lg:gap-16">
+      <div class="hero-rise max-w-[40rem] pt-2 lg:max-w-none">
+        <p class="type-hero-kicker">{page.hero.eyebrow}</p>
+        <h1 class="type-display mt-6 max-w-[14ch] text-[var(--color-ink)]">{page.hero.title}</h1>
+        <p class="type-lead mt-5 max-w-[34rem] text-[var(--color-accent-strong)]">{page.hero.subline}</p>
+        <div class="prose-robin prose-robin--lead mt-7 max-w-[34rem] text-[var(--color-muted)]">
+          {page.hero.body.map((line) => <p>{line}</p>)}
+        </div>
+
+        <div class="mt-9 flex flex-wrap gap-3">
+          <ButtonLink external href={page.officialUrl}>{page.officialLabel}</ButtonLink>
+          <ButtonLink external href={siteConfig.linkedinUrl} variant="secondary">{page.linkedinLabel}</ButtonLink>
+        </div>
+
+        <div class="hero-rise-delayed mt-9 max-w-[34rem]">
+          <p class="eyebrow">{page.hero.currentLabel}</p>
+          <div class="mt-4 space-y-2.5">
+            {
+              page.hero.lens.map((item) => (
+                <p class="type-meta text-[var(--color-muted)]">
+                  <span class="text-[var(--color-ink)]">{item.label}。</span>{item.value}
+                </p>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-rise-delayed lg:justify-self-end">
+        <div class="hero-portrait-shell p-3">
+          <div class="relative overflow-hidden rounded-[1.6rem]">
+            <a
+              aria-label="Open iamrobin.eth on ENS"
+              class="group block"
+              href={siteConfig.ensUrl}
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                alt={locale === 'jp' ? 'ロビン・シエ' : '謝玢'}
+                class="aspect-[829/1122] w-full object-cover brightness-[0.98] saturate-[0.82] sepia-[0.08] transition-transform duration-[1600ms] ease-out group-hover:scale-[1.01]"
+                decoding="async"
+                loading="eager"
+                src={heroWatchUrl}
+              />
+            </a>
+            <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_44%,rgba(57,48,39,0.08)_78%,rgba(57,48,39,0.16)_100%)]"></div>
+          </div>
+          <p class="type-meta mt-4 text-[var(--color-muted)]">
+            {locale === 'tw' ? siteConfig.releaseLabelCn : siteConfig.releaseLabel}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <IdentityStrip pillars={page.identityPillars} />
+
+  <section class="section-shell" id="projects">
+    <SectionHeading
+      description={page.projects.description}
+      eyebrow={page.projects.eyebrow}
+      title={page.projects.title}
+    />
+
+    <div class="mt-8 grid gap-5 lg:grid-cols-2">
+      {
+        page.projects.items.map((project) => (
+          <article class="glass-card p-6 sm:p-7">
+            <div class="flex flex-wrap items-center gap-3">
+              <p class="eyebrow">{project.status}</p>
+              <span class="type-meta rounded-full border border-[var(--color-line)] px-3 py-1 text-[var(--color-muted)]">
+                {project.domain}
+              </span>
+            </div>
+            <h3 class="type-card-title mt-4 text-[var(--color-ink)]">{project.title}</h3>
+            <p class="type-body mt-4 text-[var(--color-muted)]">{project.summary}</p>
+            <a
+              class="type-action mt-5 inline-flex items-center gap-2 text-[var(--color-accent)] no-underline transition-colors hover:text-[var(--color-ink)]"
+              href={project.href}
+            >
+              {page.projects.action} <span aria-hidden="true">→</span>
+            </a>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <PortfolioPreview {...page.portfolio} />
+  <PressPreview {...page.press} />
+
+  <section class="section-shell" id="books">
+    <SectionHeading
+      description={page.books.description}
+      eyebrow={page.books.eyebrow}
+      title={page.books.title}
+    />
+
+    <div class="mt-8 grid gap-5 lg:grid-cols-2">
+      {
+        page.books.items.map((book) => (
+          <article class="glass-card p-6 sm:p-7">
+            <h3 class="type-card-title text-[var(--color-ink)]">{book.title}</h3>
+            <p class="type-action mt-2 text-[var(--color-muted)]">{book.titleEn}</p>
+            <p class="type-body mt-4 text-[var(--color-muted)]">{book.summary}</p>
+            <a
+              class="type-action mt-5 inline-flex items-center gap-2 text-[var(--color-accent)] no-underline transition-colors hover:text-[var(--color-ink)]"
+              href={book.href}
+            >
+              {page.books.action} <span aria-hidden="true">→</span>
+            </a>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <HomeAbout
+    description={page.about.description}
+    eyebrow={page.about.eyebrow}
+    pillars={page.about.pillars}
+    principles={page.about.principles}
+    principlesDescription={page.about.principlesDescription}
+    principlesEyebrow={page.about.principlesEyebrow}
+    principlesTitle={page.about.principlesTitle}
+    title={page.about.title}
+  >
+    <div slot="body">
+      {page.about.body.map((line) => <p>{line}</p>)}
+    </div>
+  </HomeAbout>
+</BaseLayout>

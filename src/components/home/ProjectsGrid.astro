@@ -16,11 +16,11 @@ const projectGlyphs = {
 } as const;
 ---
 
-<section class="section-shell">
+<section class="section-shell" id="projects">
   <SectionHeading
-    description="A curated set of systems under construction, where ideas meet pressure and become real."
+    description="A small set of active systems and long-horizon bets."
     eyebrow="Projects"
-    title="Curated builds across systems, capital, energy, and learning."
+    title="Selected work in motion."
   />
 
   <div class="mt-8 grid gap-5 lg:grid-cols-2">
@@ -46,7 +46,7 @@ const projectGlyphs = {
             class="type-action mt-5 inline-flex items-center gap-2 text-[var(--color-accent)] no-underline transition-colors hover:text-[var(--color-ink)]"
             href={`/projects/#${project.id}`}
           >
-            View project notes <span aria-hidden="true">→</span>
+            See project <span aria-hidden="true">→</span>
           </a>
         </article>
       ))

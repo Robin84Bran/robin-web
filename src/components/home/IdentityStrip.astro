@@ -1,11 +1,23 @@
 ---
 import { identityPillars } from '../../data/site';
+
+interface IdentityPillar {
+  id: 'engineer' | 'capital' | 'writer' | 'builder';
+  title: string;
+  description: string;
+}
+
+interface Props {
+  pillars?: readonly IdentityPillar[];
+}
+
+const { pillars = identityPillars } = Astro.props;
 ---
 
 <section class="section-shell pt-2">
   <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10">
     {
-      identityPillars.map((pillar) => (
+      pillars.map((pillar) => (
         <article
           aria-label={pillar.title}
           class="identity-node group"

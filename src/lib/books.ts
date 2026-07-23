@@ -22,7 +22,9 @@ export function getBookManuscript(slug: string): BookManuscript {
 }
 
 export function parseBookChapterId(id: string) {
-  const [bookSlug, chapterSlug] = id.split('/');
+  const segments = id.split('/').filter(Boolean);
+  const bookSlug = segments[0];
+  const chapterSlug = segments.at(-1);
 
   if (!bookSlug || !chapterSlug) {
     throw new Error(`Invalid book chapter id: ${id}`);

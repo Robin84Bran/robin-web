@@ -1,18 +1,26 @@
 ---
-import { getCollection } from 'astro:content';
-import ContactLinks from '../components/common/ContactLinks.astro';
+import { getCollection, getEntry, render } from 'astro:content';
 import FeaturedBooks from '../components/home/FeaturedBooks.astro';
 import Hero from '../components/home/Hero.astro';
+import HomeAbout from '../components/home/HomeAbout.astro';
 import IdentityStrip from '../components/home/IdentityStrip.astro';
+import PortfolioPreview from '../components/home/PortfolioPreview.astro';
+import PressPreview from '../components/home/PressPreview.astro';
 import ProjectsGrid from '../components/home/ProjectsGrid.astro';
-import SignalBlock from '../components/home/SignalBlock.astro';
-import { siteConfig } from '../data/site';
+import { aboutPillars, operatingPrinciples, pressFeatures, siteConfig } from '../data/site';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { featuredOnly, sortCollectionByOrder } from '../lib/content';
 import { createPersonSchema, createWebsiteSchema } from '../lib/seo';
 
 const books = featuredOnly(sortCollectionByOrder(await getCollection('books'))).slice(0, 4);
 const projects = featuredOnly(sortCollectionByOrder(await getCollection('projects'))).slice(0, 4);
+const aboutEntry = await getEntry('pages', 'about');
+
+if (!aboutEntry) {
+  throw new Error('Missing about page content.');
+}
+
+const { Content: AboutContent } = await render(aboutEntry);
 ---
 
 <BaseLayout
@@ -27,19 +35,43 @@ const projects = featuredOnly(sortCollectionByOrder(await getCollection('project
     <IdentityStrip />
   </div>
   <div class="section-reveal section-reveal-2">
-    <FeaturedBooks books={books} />
-  </div>
-  <div class="section-reveal section-reveal-3">
     <ProjectsGrid projects={projects} />
   </div>
+  <div class="section-reveal section-reveal-3">
+    <PortfolioPreview
+      action="Enter portfolio"
+      description="Time, attention, and capital, placed to grow and compound."
+      eyebrow="Portfolio"
+      href="/portfolio/"
+      note="Bitcoin is the truth. AGI finds the meaning. Eight allocations. One unified field."
+      title="Portfolio"
+    />
+  </div>
   <div class="section-reveal section-reveal-4">
-    <SignalBlock />
+    <PressPreview
+      description="A few public moments from before the system had a name."
+      eyebrow="Press"
+      items={pressFeatures}
+      title="Earlier footprints."
+    />
   </div>
   <div class="section-reveal section-reveal-5">
-    <ContactLinks
-      description="If there is real overlap, start with context and a real thesis."
-      eyebrow="Contact"
-      title="A working identity site, open to the right conversations."
-    />
+    <FeaturedBooks books={books} />
+  </div>
+  <div class="section-reveal section-reveal-5">
+    <HomeAbout
+      description={aboutEntry.data.description}
+      eyebrow={aboutEntry.data.kicker}
+      pillars={aboutPillars}
+      principles={operatingPrinciples}
+      principlesDescription="Clarity, warmth, and the long arc."
+      principlesEyebrow="Principles"
+      principlesTitle="What holds."
+      title="Robin Xie"
+    >
+      <div slot="body">
+        <AboutContent />
+      </div>
+    </HomeAbout>
   </div>
 </BaseLayout>

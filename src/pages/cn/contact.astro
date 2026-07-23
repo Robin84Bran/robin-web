@@ -29,21 +29,8 @@ import { createPersonSchema } from '../../lib/seo';
     </div>
   </section>
 
-  <section class="section-shell pt-0">
-    <div class="grid gap-4 md:grid-cols-3">
-      {
-        cnContact.prompts.map((prompt) => (
-          <article class="glass-card p-6">
-            <h2 class="type-card-title text-[var(--color-ink)]">{prompt.title}</h2>
-            <p class="type-body mt-3 text-[var(--color-muted)]">{prompt.description}</p>
-          </article>
-        ))
-      }
-    </div>
-  </section>
-
   <ContactLinks
-    description="言之有物，来意自明，便已足够。"
+    description="有些语境，一两句就够。"
     links={localeChrome.cn.socialLinks}
     primaryCtaLabel="打开 GitHub"
     title="选一条合适的路。"

@@ -1,0 +1,138 @@
+---
+import PortfolioIcon from './PortfolioIcon.astro';
+
+const petals = [
+  {
+    label: 'Bitcoin and Ethereum',
+    icons: [
+      { icon: 'bitcoin', label: 'Bitcoin', href: 'https://bitcoin.org/en/' },
+      { icon: 'ethereum', label: 'Ethereum', href: 'https://ethereum.foundation' },
+    ],
+  },
+  {
+    label: 'USDT and USDC',
+    icons: [
+      { icon: 'usdt', label: 'USDT', href: 'https://tether.to' },
+      { icon: 'usdc', label: 'USDC', href: 'https://www.circle.com/usdc' },
+    ],
+  },
+  {
+    label: 'ChatGPT',
+    icons: [{ icon: 'chatgpt', label: 'ChatGPT', href: 'https://chatgpt.com' }],
+  },
+  {
+    label: 'Oceaneering and NASA',
+    icons: [
+      { icon: 'oceaneering', label: 'Oceaneering', href: 'https://www.oceaneering.com' },
+      { icon: 'nasa', label: 'NASA', href: 'https://www.nasa.gov' },
+    ],
+  },
+  {
+    label: 'Tesla and SpaceX',
+    icons: [
+      { icon: 'tesla', label: 'Tesla', href: 'https://www.tesla.com' },
+      { icon: 'spacex', label: 'SpaceX', href: 'https://www.spacex.com' },
+    ],
+  },
+  {
+    label: 'Gifted Class and Rice University',
+    icons: [
+      {
+        icon: 'gifted',
+        label: 'Special Class for the Gifted Young',
+        href: 'https://en.wikipedia.org/wiki/Special_Class_for_the_Gifted_Young',
+      },
+      { icon: 'rice', label: 'Rice University', href: 'https://www.rice.edu' },
+    ],
+  },
+  {
+    label: 'iSunOne',
+    icons: [{ icon: 'isunone', label: 'iSunOne', href: 'https://www.isun1.com' }],
+  },
+  {
+    label: 'RobinOS',
+    icons: [{ icon: 'robinos', label: 'RobinOS', href: 'https://iamrobin.ai' }],
+  },
+] as const;
+
+const petalTones = [
+  'rgba(232, 188, 205, 0.5)',
+  'rgba(159, 182, 201, 0.46)',
+  'rgba(211, 190, 158, 0.48)',
+  'rgba(229, 207, 214, 0.52)',
+  'rgba(174, 194, 209, 0.48)',
+  'rgba(221, 199, 168, 0.5)',
+  'rgba(238, 210, 220, 0.52)',
+  'rgba(166, 187, 202, 0.46)',
+] as const;
+---
+
+<div class="portfolio-lotus" data-portfolio-lotus>
+  <div aria-hidden="true" class="portfolio-lotus__halo"></div>
+  <div class="portfolio-lotus__viewport">
+    <div class="portfolio-lotus__system">
+      {
+        petals.map((petal, index) => {
+          const angle = index * 45;
+          const direction = index % 2 === 0 ? 'normal' : 'reverse';
+          const style = [
+            `--petal-angle: ${angle}deg`,
+            `--petal-counter-angle: ${-angle}deg`,
+            `--petal-tone: ${petalTones[index]}`,
+            `--petal-lift: ${index % 2 === 0 ? 8 : 0}px`,
+            `--orbit-duration: ${22 + index * 2.25}s`,
+            `--orbit-direction: ${direction}`,
+          ].join(';');
+
+          return (
+            <article aria-label={petal.label} class="portfolio-petal" style={style}>
+              <div aria-hidden="true" class="portfolio-petal__surface"></div>
+              <div class="portfolio-petal__content">
+                <div
+                  class:list={[
+                    'portfolio-quantum',
+                    petal.icons.length === 1 ? 'portfolio-quantum--single' : 'portfolio-quantum--pair',
+                  ]}
+                >
+                  <span aria-hidden="true" class="portfolio-quantum__track"></span>
+                  <div class="portfolio-quantum__orbit">
+                    {
+                      petal.icons.map((item, iconIndex) => (
+                        <span
+                          class:list={[
+                            'portfolio-quantum__node',
+                            `portfolio-quantum__node--${iconIndex + 1}`,
+                          ]}
+                        >
+                          <PortfolioIcon {...item} />
+                        </span>
+                      ))
+                    }
+                    {petal.icons.length === 1 && <span aria-hidden="true" class="portfolio-quantum__electron"></span>}
+                  </div>
+                </div>
+              </div>
+            </article>
+          );
+        })
+      }
+
+      <div aria-hidden="true" class="portfolio-lotus__core">
+        <span>∞</span>
+      </div>
+    </div>
+  </div>
+
+  <button
+    aria-label="Pause portfolio motion"
+    aria-pressed="false"
+    class="portfolio-motion-toggle"
+    data-portfolio-motion-toggle
+    title="Pause motion"
+    type="button"
+  >
+    <span aria-hidden="true" data-portfolio-motion-symbol>Ⅱ</span>
+  </button>
+</div>
+
+<script defer is:inline src="/scripts/portfolio-lotus.js"></script>

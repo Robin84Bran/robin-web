@@ -1,16 +1,17 @@
 ---
 import heroWatchUrl from '../../../pics/hero_watch.jpg?url';
-import ContactLinks from '../../components/common/ContactLinks.astro';
+import HomeAbout from '../../components/home/HomeAbout.astro';
+import IdentityStrip from '../../components/home/IdentityStrip.astro';
+import PortfolioPreview from '../../components/home/PortfolioPreview.astro';
+import PressPreview from '../../components/home/PressPreview.astro';
 import ButtonLink from '../../components/ui/ButtonLink.astro';
 import SectionHeading from '../../components/ui/SectionHeading.astro';
 import SymbolReveal from '../../components/ui/SymbolReveal.astro';
-import { cnBooks, cnHome, cnProjects, cnSeo } from '../../data/cn';
-import { localeChrome } from '../../data/locales';
+import { cnAbout, cnBooks, cnHome, cnNow, cnProjects, cnSeo } from '../../data/cn';
 import { siteConfig } from '../../data/site';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { createPersonSchema, createWebsiteSchema } from '../../lib/seo';
 
-const chrome = localeChrome.cn;
 const bookGlyphs = {
   'agi-awakening': 'agi',
   'build-1-billion-block': 'block',
@@ -34,126 +35,131 @@ const projectGlyphs = {
   title={cnSeo.home.title}
 >
   <section class="section-shell relative pt-6 sm:pt-10">
-    <div aria-hidden="true" class="hero-depth-field pointer-events-none absolute inset-x-[8%] top-0 -z-10"></div>
+    <div aria-hidden="true" class="hero-depth-field pointer-events-none absolute inset-x-[5%] top-0 -z-10"></div>
     <div
       aria-hidden="true"
-      class="pointer-events-none absolute inset-x-[16%] top-0 -z-10 h-56 rounded-full bg-[radial-gradient(circle,rgba(234,246,255,0.12),rgba(0,229,255,0.06)_34%,transparent_72%)] blur-3xl"
+      class="pointer-events-none absolute inset-x-[16%] top-0 -z-10 h-56 rounded-full bg-[radial-gradient(circle,rgba(232,188,205,0.18),rgba(159,182,201,0.08)_34%,transparent_72%)] blur-3xl"
     ></div>
 
-    <div class="grid gap-10 lg:grid-cols-[minmax(0,1.18fr)_minmax(18rem,0.58fr)] lg:items-start lg:gap-16">
-      <div class="hero-rise max-w-[42rem] pt-2 lg:max-w-none">
+    <div class="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(17rem,22rem)] lg:items-center lg:gap-16">
+      <div class="hero-rise max-w-[40rem] pt-2 lg:max-w-none">
         <p class="type-hero-kicker">{cnHome.hero.eyebrow}</p>
-
-        <h1 class="type-display mt-6 text-[var(--color-ink)] lg:whitespace-nowrap">
-          {cnHome.hero.lineOne}
-        </h1>
-
-        <p class="type-display mt-2 text-[var(--color-cyan)]/92 lg:whitespace-nowrap">
+        <h1 class="type-display mt-6 text-[var(--color-ink)]">{cnHome.hero.lineOne}</h1>
+        <p class="type-lead mt-5 max-w-[19.5rem] text-[var(--color-accent-strong)] sm:max-w-[32rem]">
           {cnHome.hero.lineTwo}
         </p>
-
-        <div class="type-lead mt-8 max-w-[33rem] space-y-2 text-[var(--color-ink)]/92">
-          {cnHome.hero.body.map((line) => <p class="max-w-[30rem]">{line}</p>)}
+        <div class="prose-robin prose-robin--lead mt-7 max-w-[19.5rem] text-[var(--color-muted)] sm:max-w-[34rem]">
+          {cnHome.hero.body.map((line) => <p>{line}</p>)}
         </div>
 
         <div class="mt-9 flex flex-wrap gap-3">
-          <ButtonLink external href={siteConfig.officialWebsiteUrl}>
-            官方页面
-          </ButtonLink>
-          <ButtonLink href="/cn/projects/" variant="secondary">
-            进入系统
-          </ButtonLink>
+          <ButtonLink external href={siteConfig.officialWebsiteUrlCn}>官方网站</ButtonLink>
+          <ButtonLink external href={siteConfig.linkedinUrl} variant="secondary">LinkedIn</ButtonLink>
         </div>
 
-        <div class="hero-rise-delayed mt-10 max-w-[44rem]">
+        <div class="hero-rise-delayed mt-9 max-w-[19.5rem] sm:max-w-[34rem]">
           <p class="eyebrow">当前视角</p>
-          <div class="mt-5 grid gap-5 sm:grid-cols-3 sm:gap-6">
+          <div class="mt-4 space-y-2.5">
             {
               cnHome.lens.map((item) => (
-                <div class="space-y-2">
-                  <p class="type-label text-[var(--color-accent)]">{item.label}</p>
-                  <p class="type-body text-[var(--color-muted)]">{item.value}</p>
-                </div>
+                <p class="type-meta text-[var(--color-muted)]">
+                  <span class="text-[var(--color-ink)]">{item.label}。</span>{item.value}
+                </p>
               ))
             }
           </div>
         </div>
       </div>
 
-      <div class="lg:max-w-[20.5rem] lg:justify-self-end">
-        <div class="glass-card hero-rise p-3">
-          <a class="group block no-underline" href={siteConfig.ensUrl} rel="noreferrer" target="_blank">
-            <div class="relative overflow-hidden rounded-[1.45rem]">
+      <div class="hero-rise-delayed lg:justify-self-end">
+        <div class="hero-portrait-shell p-3">
+          <div class="relative overflow-hidden rounded-[1.6rem]">
+            <a
+              aria-label="在 ENS 打开 iamrobin.eth"
+              class="group block"
+              href={siteConfig.ensUrl}
+              rel="noreferrer"
+              target="_blank"
+            >
               <img
                 alt="谢玢的主视觉照片"
-                class="aspect-[829/1122] w-full object-cover brightness-[0.9] saturate-[0.88] transition-transform duration-[1400ms] ease-out group-hover:scale-[1.012]"
+                class="aspect-[829/1122] w-full object-cover brightness-[0.98] saturate-[0.82] sepia-[0.08] transition-transform duration-[1600ms] ease-out group-hover:scale-[1.01]"
                 decoding="async"
                 loading="eager"
                 src={heroWatchUrl}
               />
-              <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_42%,rgba(7,19,28,0.16)_78%,rgba(7,19,28,0.26)_100%)]"></div>
-              <div class="pointer-events-none absolute inset-[-2%] rounded-[1.6rem] border border-[rgba(234,246,255,0.05)] [box-shadow:inset_0_0_32px_rgba(7,19,28,0.12)]"></div>
-            </div>
-          </a>
+            </a>
+            <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_44%,rgba(57,48,39,0.08)_78%,rgba(57,48,39,0.16)_100%)]"></div>
+          </div>
+          <p class="type-meta mt-4 text-[var(--color-muted)]">{siteConfig.releaseLabelCn}</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section-shell pt-2">
-    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10">
+  <div class="section-reveal section-reveal-1">
+    <IdentityStrip pillars={cnHome.identityPillars} />
+  </div>
+
+  <section class="section-shell section-reveal section-reveal-2" id="projects">
+    <SectionHeading
+      description={cnHome.projectsHeading.description}
+      eyebrow={cnHome.projectsHeading.eyebrow}
+      title={cnHome.projectsHeading.title}
+    />
+
+    <div class="mt-8 grid gap-5 lg:grid-cols-2">
       {
-        cnHome.identityPillars.map((pillar) => (
-          <article aria-label={pillar.title} class="identity-node group" tabindex="0">
-            <div class="identity-glyph" aria-hidden="true">
-              <svg fill="none" viewBox="0 0 64 64">
-                {
-                  pillar.id === 'engineer' && (
-                    <>
-                      <rect height="34" rx="9" width="34" x="15" y="15"></rect>
-                      <path d="M26 15v34M38 15v34M15 26h34M15 38h34"></path>
-                    </>
-                  )
-                }
-                {
-                  pillar.id === 'capital' && (
-                    <>
-                      <path d="M18 24c4-6 11-9 18-8 7 1 13 6 16 13"></path>
-                      <path d="M46 15l8 4-3 8"></path>
-                      <path d="M46 40c-4 6-11 9-18 8-7-1-13-6-16-13"></path>
-                      <path d="M18 49l-8-4 3-8"></path>
-                    </>
-                  )
-                }
-                {
-                  pillar.id === 'writer' && (
-                    <>
-                      <path d="M12 24h10l5 7 7-15 6 22 5-10h7"></path>
-                      <path d="M14 40h36"></path>
-                      <path d="M20 48h24"></path>
-                    </>
-                  )
-                }
-                {
-                  pillar.id === 'builder' && (
-                    <>
-                      <path d="M18 21l14-8 14 8v22l-14 8-14-8z"></path>
-                      <path d="M32 13v30"></path>
-                      <path d="M18 21l14 8 14-8"></path>
-                    </>
-                  )
-                }
-              </svg>
+        cnProjects.items.map((project) => (
+          <article class="glass-card p-6 sm:p-7 transition-transform duration-700 ease-out hover:-translate-y-1">
+            <div class="flex flex-wrap items-center gap-3">
+              <p class="eyebrow">{project.status}</p>
+              <span class="type-meta rounded-full border border-[var(--color-line)] px-3 py-1 text-[var(--color-muted)]">
+                {project.domain}
+              </span>
             </div>
-            <p class="sr-only">{pillar.title}</p>
-            <p class="identity-reveal type-body">{pillar.description}</p>
+            <h3 class="type-card-title mt-4 text-[var(--color-ink)]">{project.title}</h3>
+            <p class="type-body mt-4 text-[var(--color-muted)]">{project.summary}</p>
+            <div class="mt-5">
+              <SymbolReveal
+                kind={projectGlyphs[project.slug as keyof typeof projectGlyphs]}
+                label={`${project.title} 提示`}
+                text={project.impact}
+              />
+            </div>
+            <a
+              class="type-action mt-5 inline-flex items-center gap-2 text-[var(--color-accent)] no-underline transition-colors hover:text-[var(--color-ink)]"
+              href="/cn/projects/"
+            >
+              查看项目 <span aria-hidden="true">→</span>
+            </a>
           </article>
         ))
       }
     </div>
   </section>
 
-  <section class="section-shell">
+  <div class="section-reveal section-reveal-3">
+    <PortfolioPreview
+      action="进入组合"
+      description="时间、注意力与资本，落在可以生长、可以复利之处。"
+      eyebrow="作品"
+      href="/portfolio/"
+      note="比特币是真实。AGI 寻找意义。八种配置，一片同一场域。"
+      title="Portfolio"
+    />
+  </div>
+
+  <div class="section-reveal section-reveal-4">
+    <PressPreview
+      description="系统尚未有名之前，几次公开的时刻。"
+      eyebrow="报道"
+      items={cnNow.press}
+      title="往日足迹。"
+    />
+  </div>
+
+  <section class="section-shell section-reveal section-reveal-5" id="books">
     <SectionHeading
       description={cnHome.booksHeading.description}
       eyebrow={cnHome.booksHeading.eyebrow}
@@ -192,61 +198,20 @@ const projectGlyphs = {
     </div>
   </section>
 
-  <section class="section-shell">
-    <SectionHeading
-      description={cnHome.projectsHeading.description}
-      eyebrow={cnHome.projectsHeading.eyebrow}
-      title={cnHome.projectsHeading.title}
-    />
-
-    <div class="mt-8 grid gap-5 lg:grid-cols-2">
-      {
-        cnProjects.items.map((project) => (
-          <article class="glass-card p-6 sm:p-7 transition-transform duration-700 ease-out hover:-translate-y-1">
-            <div class="flex flex-wrap items-center gap-3">
-              <p class="eyebrow">{project.status}</p>
-              <span class="type-meta rounded-full border border-[var(--color-line)] px-3 py-1 text-[var(--color-muted)]">
-                {project.domain}
-              </span>
-            </div>
-            <h3 class="type-card-title mt-4 text-[var(--color-ink)]">{project.title}</h3>
-            <p class="type-body mt-4 text-[var(--color-muted)]">{project.summary}</p>
-            <div class="mt-5">
-              <SymbolReveal
-                kind={projectGlyphs[project.slug as keyof typeof projectGlyphs]}
-                label={`${project.title} 提示`}
-                text={project.impact}
-              />
-            </div>
-            <a
-              class="type-action mt-5 inline-flex items-center gap-2 text-[var(--color-accent)] no-underline transition-colors hover:text-[var(--color-ink)]"
-              href="/cn/projects/"
-            >
-              查看项目 <span aria-hidden="true">→</span>
-            </a>
-          </article>
-        ))
-      }
-    </div>
-  </section>
-
-  <section class="section-shell">
-    <div class="glass-card px-6 py-10 text-center sm:px-10 sm:py-14">
-      <p class="eyebrow">信号</p>
-      <blockquote class="type-heading mx-auto mt-5 max-w-4xl text-[var(--color-ink)]">
-        “{cnHome.signal.quote}”
-      </blockquote>
-      <p class="type-body mx-auto mt-5 max-w-2xl text-[var(--color-muted)]">
-        {cnHome.signal.description}
-      </p>
-    </div>
-  </section>
-
-  <ContactLinks
-    description={cnHome.contact.description}
-    eyebrow={cnHome.contact.eyebrow}
-    links={chrome.socialLinks}
-    primaryCtaLabel="打开 GitHub"
-    title={cnHome.contact.title}
-  />
+  <div class="section-reveal section-reveal-5">
+    <HomeAbout
+      description={cnAbout.intro.description}
+      eyebrow={cnAbout.intro.kicker}
+      pillars={cnAbout.pillars}
+      principles={cnAbout.principles}
+      principlesDescription="清晰、温度与长弧。"
+      principlesEyebrow="原则"
+      principlesTitle="留下来的。"
+      title="谢玢"
+    >
+      <div slot="body">
+        {cnAbout.body.map((line) => <p>{line}</p>)}
+      </div>
+    </HomeAbout>
+  </div>
 </BaseLayout>

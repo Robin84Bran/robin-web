@@ -1,5 +1,6 @@
 # build output
 dist/
+
 # generated types
 .astro/
 
@@ -20,15 +21,14 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
-# jetbrains setting folder
+# local editor and QA state
 .idea/
+.vscode/
+.codex-preview/
+.playwright-cli/
+output/
+src/styles/global 2.css
 
-# minimal
-cat > .gitignore <<'EOF'
-node_modules/
-dist/
-.DS_Store
+# local language tooling
 *.pyc
 __pycache__/
-.env
-EOF

@@ -1,8 +1,6 @@
 ---
 import { localeChrome } from '../../data/locales';
-import { siteConfig } from '../../data/site';
 import { getLanguageSwitchTargets, type SiteLocale } from '../../lib/i18n';
-import ButtonLink from '../ui/ButtonLink.astro';
 
 interface Props {
   locale?: SiteLocale;
@@ -16,15 +14,17 @@ const isActive = (href: string) =>
   href === '/' || href === '/cn/' ? pathname === href : pathname.startsWith(href);
 ---
 
-<header class="sticky top-0 z-40 border-b border-[var(--color-line)] bg-[rgba(7,19,28,0.62)] backdrop-blur-xl">
-  <div class="mx-auto flex max-w-[78rem] flex-wrap items-center gap-4 px-5 py-4 sm:px-8 lg:px-10">
+<header class="sticky top-0 z-40 border-b border-[var(--color-line)] bg-[rgba(247,242,234,0.82)] backdrop-blur-xl">
+  <div class="mx-auto flex max-w-[72rem] flex-wrap items-center gap-4 px-4 py-4 sm:px-6 lg:px-8">
     <a class="group flex items-center gap-3 no-underline" href={chrome.brandHref}>
-      <span class="flex h-11 w-11 items-center justify-center rounded-full border border-[var(--color-line)] bg-[rgba(8,24,36,0.72)] text-[0.84rem] uppercase tracking-[0.24em] text-[var(--color-cyan)] transition-colors group-hover:border-[rgba(0,229,255,0.3)]">
+      <span class="flex h-10 w-10 items-center justify-center rounded-full border border-[var(--color-line)] bg-[rgba(255,255,255,0.6)] text-[0.78rem] uppercase tracking-[0.24em] text-[var(--color-accent)] transition-colors group-hover:border-[rgba(188,157,112,0.34)]">
         RX
       </span>
       <span>
-        <span class="type-action block text-[var(--color-ink)]">{chrome.brandName}</span>
-        <span class="type-label block text-[var(--color-muted)]">
+        <span class="block font-[family:var(--font-display)] text-[1.15rem] tracking-[-0.03em] text-[var(--color-ink)]">
+          {chrome.brandName}
+        </span>
+        <span class="type-meta block text-[var(--color-muted)]">
           {chrome.brandSubline}
         </span>
       </span>
@@ -40,7 +40,7 @@ const isActive = (href: string) =>
             class:list={[
               'type-action rounded-full px-3 py-2 no-underline transition-colors duration-500',
               isActive(item.href)
-                ? 'bg-[rgba(30,144,255,0.12)] text-[var(--color-ink)]'
+                ? 'bg-[rgba(255,255,255,0.72)] text-[var(--color-ink)] shadow-[0_10px_24px_rgba(88,76,64,0.06)]'
                 : 'text-[var(--color-muted)] hover:text-[var(--color-ink)]',
             ]}
             href={item.href}
@@ -51,32 +51,42 @@ const isActive = (href: string) =>
       }
     </nav>
 
-    <div class="order-2 ml-auto flex items-center gap-3 md:order-3 md:ml-0">
-      <nav aria-label="Language switch" class="type-action flex items-center gap-2 text-[var(--color-muted)]">
-        <a
-          class:list={[
-            'rounded-full px-2 py-1 no-underline transition-colors duration-500',
-            locale === 'en' ? 'text-[var(--color-ink)]' : 'hover:text-[var(--color-ink)]',
-          ]}
-          href={switchTargets.en}
+    <div class="order-2 ml-auto flex items-center md:order-3 md:ml-0">
+      <details class="language-menu relative">
+        <summary
+          aria-label="Choose language"
+          class="flex h-10 w-10 cursor-pointer list-none items-center justify-center rounded-full border border-transparent text-[1.2rem] transition-colors duration-500 hover:border-[var(--color-line)] hover:bg-[rgba(255,255,255,0.58)] focus-visible:outline focus-visible:outline-1 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)]"
+          title="Language"
         >
-          EN
-        </a>
-        <span aria-hidden="true">|</span>
-        <a
-          class:list={[
-            'rounded-full px-2 py-1 no-underline transition-colors duration-500',
-            locale === 'cn' ? 'text-[var(--color-ink)]' : 'hover:text-[var(--color-ink)]',
-          ]}
-          href={switchTargets.cn}
+          <span aria-hidden="true">🌐</span>
+        </summary>
+        <nav
+          aria-label="Language"
+          class="language-menu-panel absolute right-0 top-[calc(100%+0.65rem)] z-50 min-w-[12.5rem] rounded-[1.35rem] border border-[var(--color-line)] bg-[rgba(255,252,247,0.96)] p-2 shadow-[0_18px_44px_rgba(71,57,45,0.12)] backdrop-blur-xl"
         >
-          中文
-        </a>
-      </nav>
-
-      <ButtonLink external href={siteConfig.blogUrl}>
-        {chrome.blogCta}
-      </ButtonLink>
+          {
+            [
+              { code: 'en', label: 'English', href: switchTargets.en },
+              { code: 'cn', label: '简体中文', href: switchTargets.cn },
+              { code: 'tw', label: '繁體中文', href: switchTargets.tw },
+              { code: 'jp', label: '日本語', href: switchTargets.jp },
+            ].map((language) => (
+              <a
+                aria-current={locale === language.code ? 'page' : undefined}
+                class:list={[
+                  'type-action flex items-center justify-between rounded-xl px-3 py-2.5 no-underline transition-colors duration-500 hover:bg-[rgba(188,157,112,0.09)] hover:text-[var(--color-ink)]',
+                  locale === language.code ? 'text-[var(--color-ink)]' : 'text-[var(--color-muted)]',
+                ]}
+                data-locale-choice={language.code}
+                href={language.href}
+              >
+                <span>{language.label}</span>
+                {locale === language.code && <span aria-hidden="true" class="text-[var(--color-accent)]">•</span>}
+              </a>
+            ))
+          }
+        </nav>
+      </details>
     </div>
   </div>
 </header>

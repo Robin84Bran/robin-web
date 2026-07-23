@@ -1,0 +1,21 @@
+---
+import PortfolioLotus from '../components/portfolio/PortfolioLotus.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  ambientMotion={false}
+  description="Robin Xie's portfolio of capital, systems, tools, institutions, and long-horizon attention."
+  image="/og/projects.jpg"
+  path="/portfolio/"
+  title="Portfolio | Robin Xie"
+>
+  <section class="portfolio-page section-shell pt-4 sm:pt-8">
+    <header class="relative z-10 max-w-3xl">
+      <p class="eyebrow">Portfolio</p>
+      <h1 class="type-display mt-5 text-[var(--color-ink)]">Capital follows attention.</h1>
+    </header>
+
+    <PortfolioLotus />
+  </section>
+</BaseLayout>

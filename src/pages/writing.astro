@@ -1,7 +1,6 @@
 ---
 import { getEntry, render } from 'astro:content';
 import PageIntro from '../components/common/PageIntro.astro';
-import SectionHeading from '../components/ui/SectionHeading.astro';
 import { writingTracks } from '../data/site';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { createPersonSchema } from '../lib/seo';
@@ -13,11 +12,6 @@ if (!entry) {
 }
 
 const { Content } = await render(entry);
-const themes = [
-  'AI, agency, and what remains meaningfully human.',
-  'Capital allocation, market structure, and tokenized value flow.',
-  'Identity, media, and how systems shape attention and selfhood.',
-];
 ---
 
 <BaseLayout
@@ -54,24 +48,6 @@ const themes = [
             <h2 class="type-card-title mt-4 text-[var(--color-ink)]">{track.title}</h2>
             <p class="type-body mt-4 flex-1 text-[var(--color-muted)]">{track.description}</p>
           </a>
-        ))
-      }
-    </div>
-  </section>
-
-  <section class="section-shell pt-0">
-    <SectionHeading
-      description="The recurring obsessions behind the essays and notes."
-      eyebrow="Themes"
-      title="What the writing tends to follow."
-    />
-
-    <div class="mt-8 grid gap-4 md:grid-cols-3">
-      {
-        themes.map((theme) => (
-          <article class="glass-card p-6">
-            <p class="type-body text-[var(--color-muted)]">{theme}</p>
-          </article>
         ))
       }
     </div>

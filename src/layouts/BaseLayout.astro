@@ -3,7 +3,7 @@ import MetaTags from '../components/seo/MetaTags.astro';
 import SiteFooter from '../components/layout/SiteFooter.astro';
 import SiteHeader from '../components/layout/SiteHeader.astro';
 import { localeChrome } from '../data/locales';
-import type { SiteLocale } from '../lib/i18n';
+import { getSeoAlternates, type SiteLocale } from '../lib/i18n';
 import '../styles/global.css';
 
 type SchemaObject = Record<string, unknown>;
@@ -17,6 +17,7 @@ interface Props {
   schema?: SchemaObject | SchemaObject[];
   noindex?: boolean;
   locale?: SiteLocale;
+  ambientMotion?: boolean;
 }
 
 const {
@@ -28,10 +29,19 @@ const {
   schema,
   noindex = false,
   locale = 'en',
+  ambientMotion = true,
 } = Astro.props;
 
-const lang = locale === 'cn' ? 'zh-Hans' : 'en';
+const languageTags: Record<SiteLocale, string> = {
+  en: 'en',
+  cn: 'zh-Hans',
+  tw: 'zh-Hant',
+  jp: 'ja',
+};
+const lang = languageTags[locale];
 const chrome = localeChrome[locale];
+const resolvedPath = path ?? Astro.url.pathname;
+const alternates = getSeoAlternates(resolvedPath);
 ---
 
 <!doctype html>
@@ -41,10 +51,12 @@ const chrome = localeChrome[locale];
       description={description}
       image={image}
       noindex={noindex}
-      path={path}
+      path={resolvedPath}
       schema={schema}
       title={title}
       type={type}
+      locale={locale}
+      alternates={alternates}
     />
   </head>
   <body class="bg-[var(--color-canvas)] text-[var(--color-ink)] antialiased">
@@ -57,9 +69,11 @@ const chrome = localeChrome[locale];
       {chrome.skipToContent}
     </a>
     <SiteHeader locale={locale} />
-    <main class="mx-auto flex w-full max-w-[78rem] flex-1 flex-col px-5 pb-20 pt-8 sm:px-8 lg:px-10 lg:pt-12" id="content">
+    <main class="mx-auto flex w-full max-w-[72rem] flex-1 flex-col px-4 pb-20 pt-8 sm:px-6 lg:px-8 lg:pt-12" id="content">
       <slot />
     </main>
     <SiteFooter locale={locale} />
+    <script defer is:inline src="/scripts/locale-preference.js"></script>
+    {ambientMotion && <script defer is:inline src="/scripts/ambient-garden.js"></script>}
   </body>
 </html>

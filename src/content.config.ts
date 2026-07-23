@@ -3,7 +3,7 @@ import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
 const books = defineCollection({
-  loader: glob({ base: './src/content/books', pattern: '**/*.md' }),
+  loader: glob({ base: './src/content/books/_shared_docs', pattern: '*.md' }),
   schema: z.object({
     title: z.string(),
     order: z.number(),
@@ -16,7 +16,7 @@ const books = defineCollection({
 });
 
 const bookChapters = defineCollection({
-  loader: glob({ base: './src/content/book-chapters', pattern: '**/*.md' }),
+  loader: glob({ base: './src/content/book-chapters', pattern: '*/_shared_docs/*.md' }),
   schema: z.object({
     book: z.enum([
       'agi-awakening',
@@ -37,7 +37,7 @@ const bookChapters = defineCollection({
 });
 
 const projects = defineCollection({
-  loader: glob({ base: './src/content/projects', pattern: '**/*.md' }),
+  loader: glob({ base: './src/content/projects/_shared_docs', pattern: '*.md' }),
   schema: z.object({
     title: z.string(),
     order: z.number(),
@@ -50,7 +50,7 @@ const projects = defineCollection({
 });
 
 const pages = defineCollection({
-  loader: glob({ base: './src/content/pages', pattern: '**/*.md' }),
+  loader: glob({ base: './src/content/pages/_shared_docs', pattern: '*.md' }),
   schema: z.object({
     title: z.string(),
     description: z.string(),

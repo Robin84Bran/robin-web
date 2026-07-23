@@ -2,7 +2,6 @@
 import { getEntry, render } from 'astro:content';
 import ContactLinks from '../components/common/ContactLinks.astro';
 import PageIntro from '../components/common/PageIntro.astro';
-import { contactPrompts } from '../data/site';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { createPersonSchema } from '../lib/seo';
 
@@ -35,21 +34,8 @@ const { Content } = await render(entry);
     </div>
   </section>
 
-  <section class="section-shell pt-0">
-    <div class="grid gap-4 md:grid-cols-3">
-      {
-        contactPrompts.map((prompt) => (
-          <article class="glass-card p-6">
-            <h2 class="type-card-title text-[var(--color-ink)]">{prompt.title}</h2>
-            <p class="type-body mt-3 text-[var(--color-muted)]">{prompt.description}</p>
-          </article>
-        ))
-      }
-    </div>
-  </section>
-
   <ContactLinks
-    description="The best first message has context, a real reason for reaching out, and enough specificity to know where the conversation belongs."
-    title="Use the channel that matches the work."
+    description="A little context is enough."
+    title="Use the channel that fits."
   />
 </BaseLayout>

@@ -10,9 +10,9 @@ interface Props {
 const { kicker, title, description, updated, updatedLabel = 'Updated' } = Astro.props;
 ---
 
-<header class="max-w-4xl">
+<header class="max-w-3xl">
   <p class="eyebrow">{kicker}</p>
   <h1 class="type-heading mt-4 text-[var(--color-ink)]">{title}</h1>
-  <p class="type-body mt-5 max-w-3xl text-[var(--color-muted)]">{description}</p>
-  {updated && <p class="type-action mt-4 text-[var(--color-muted)]">{updatedLabel} {updated}</p>}
+  <p class="type-lead mt-5 max-w-2xl text-[var(--color-muted)]">{description}</p>
+  {updated && <p class="type-meta mt-5 text-[var(--color-muted)]">{updatedLabel} {updated}</p>}
 </header>

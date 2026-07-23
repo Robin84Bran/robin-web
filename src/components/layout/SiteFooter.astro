@@ -13,13 +13,16 @@ const year = new Date().getFullYear();
 ---
 
 <footer class="border-t border-[var(--color-line)] bg-[rgba(6,16,24,0.32)]">
-  <div class="mx-auto grid max-w-[78rem] gap-8 px-5 py-10 sm:px-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:px-10">
+  <div class="mx-auto grid max-w-[72rem] gap-8 px-4 py-10 sm:px-6 lg:grid-cols-[minmax(0,1fr)_auto] lg:px-8">
     <div>
-      <p class="font-[family:var(--font-display)] text-[1.9rem] leading-none tracking-[-0.035em] text-[var(--color-ink)]">
+      <p class="font-[family:var(--font-display)] text-[1.75rem] leading-none tracking-[-0.035em] text-[var(--color-ink)]">
         {chrome.brandName}
       </p>
-      <p class="type-label mt-4 text-[var(--color-muted)]">
-        © {year} {locale === 'cn' ? '谢玢' : siteConfig.name}
+      <p class="type-meta mt-3 text-[var(--color-muted)]">
+        © {year} {locale === 'cn' ? '谢玢' : locale === 'tw' ? '謝玢' : locale === 'jp' ? 'ロビン・シエ' : siteConfig.name}
+      </p>
+      <p class="type-meta mt-1 text-[var(--color-muted)]">
+        {locale === 'cn' || locale === 'tw' ? siteConfig.releaseLabelCn : siteConfig.releaseLabel}
       </p>
     </div>
 
@@ -27,7 +30,7 @@ const year = new Date().getFullYear();
       {
         chrome.footerLinks.map((link) => (
           <a
-            class="type-action text-[var(--color-muted)] underline decoration-[var(--color-line)] transition-colors duration-500 hover:text-[var(--color-cyan)]"
+            class="type-action text-[var(--color-muted)] no-underline transition-colors duration-500 hover:text-[var(--color-ink)]"
             href={link.href}
             rel="noreferrer"
             target="_blank"
