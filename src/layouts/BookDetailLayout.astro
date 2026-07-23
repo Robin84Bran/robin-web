@@ -1,6 +1,4 @@
 ---
-import { Image } from 'astro:assets';
-import type { ImageMetadata } from 'astro';
 import { localeChrome } from '../data/locales';
 import type { SiteLocale } from '../lib/i18n';
 import BaseLayout from './BaseLayout.astro';
@@ -14,7 +12,7 @@ interface Props {
   path: string;
   image?: string;
   schema?: SchemaObject | SchemaObject[];
-  cover: ImageMetadata;
+  cover: string;
   coverAlt: string;
   status: string;
   theme: string;
@@ -58,13 +56,13 @@ const {
     <div class="glass-card manuscript-stage p-5 sm:p-7 lg:p-8">
       <div class="grid gap-8 xl:grid-cols-[minmax(0,19rem)_1fr] xl:items-start">
         <div class="manuscript-cover-frame mx-auto w-full max-w-[19rem]">
-          <Image
+          <img
             alt={coverAlt}
             class="h-full w-full object-cover"
             loading="eager"
-            sizes="(min-width: 1280px) 19rem, 80vw"
             src={cover}
             width={760}
+            height={1140}
           />
         </div>
 

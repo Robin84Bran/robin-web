@@ -1,5 +1,4 @@
 ---
-import { Image } from 'astro:assets';
 import ButtonLink from '../../components/ui/ButtonLink.astro';
 import PageIntro from '../../components/common/PageIntro.astro';
 import { cnBooks, cnBooksPage, cnSeo } from '../../data/cn';
@@ -44,13 +43,13 @@ import { createPersonSchema } from '../../lib/seo';
                 href={`/cn/books/${book.slug}/`}
                 aria-label={`进入 ${book.titleCn}`}
               >
-                <Image
+                <img
                   alt={manuscript.coverAlt}
                   class="h-full w-full object-cover"
                   loading="eager"
-                  sizes="(min-width: 1280px) 18rem, (min-width: 640px) 11rem, 100vw"
-                  src={manuscript.cover}
+                  src={manuscript.coverPublic}
                   width={440}
+                  height={660}
                 />
               </a>
 

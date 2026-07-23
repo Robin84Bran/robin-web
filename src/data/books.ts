@@ -1,9 +1,3 @@
-import type { ImageMetadata } from 'astro';
-import aaCover from '../assets/books/aa_cover.jpg';
-import bbCover from '../assets/books/bb_cover.jpg';
-import dCover from '../assets/books/d_cover.jpg';
-import lccCover from '../assets/books/lcc_cover.jpg';
-
 export type BookSlug =
   | 'agi-awakening'
   | 'build-1-billion-block'
@@ -26,7 +20,7 @@ export interface BookManuscript {
   title: string;
   thesis: string;
   intro: string;
-  cover: ImageMetadata;
+  coverPublic: string;
   coverAlt: string;
   themes: BookTheme[];
   archive: ArchiveEntry[];
@@ -40,7 +34,7 @@ export const bookManuscripts: BookManuscript[] = [
     thesis: 'A co-evolution diary about intelligence learning to look back.',
     intro:
       'A co-evolution diary about intelligence learning to look back and writing its own source code.',
-    cover: aaCover,
+    coverPublic: '/books/agi-awakening.webp',
     coverAlt: 'Cover of AGI Awakening',
     themes: [
       {
@@ -85,7 +79,7 @@ export const bookManuscripts: BookManuscript[] = [
       'A playbook for compounding attention, capital, and asymmetric edge.',
     intro:
       'A playbook for compounding attention, capital, and asymmetric edge until emergence is inevitable.',
-    cover: bbCover,
+    coverPublic: '/books/build-1-billion-block.webp',
     coverAlt: 'Cover of Build 1 Billion Block',
     themes: [
       {
@@ -130,7 +124,7 @@ export const bookManuscripts: BookManuscript[] = [
     thesis: 'A metaphoric inquiry into entropy, rogue cells, regeneration, and consciousness.',
     intro:
       'A metaphoric inquiry into entropy, rogue cells, regeneration, and the higher wisdom of life and consciousness.',
-    cover: lccCover,
+    coverPublic: '/books/longevity-cheat-code.webp',
     coverAlt: 'Cover of Longevity Cheat Code',
     themes: [
       {
@@ -171,7 +165,7 @@ export const bookManuscripts: BookManuscript[] = [
     thesis: 'Bedtime stories that teach children optionality.',
     intro:
       'Bedtime stories that teach children optionality before adults make it frightening.',
-    cover: dCover,
+    coverPublic: '/books/derivatives.webp',
     coverAlt: 'Cover of Derivatives',
     themes: [
       {

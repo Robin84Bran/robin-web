@@ -24,11 +24,11 @@ const pagePath = `/cn/books/${book.slug}/`;
 <BookDetailLayout
   collectionHref="/cn/books/"
   collectionLabel={localeChrome.cn.booksLabel}
-  cover={manuscript.cover}
+  cover={manuscript.coverPublic}
   coverAlt={manuscript.coverAlt}
   description={book.introLines.join(' ')}
   descriptionLines={book.introLines}
-  image={manuscript.cover.src}
+  image={manuscript.coverPublic}
   locale="cn"
   path={pagePath}
   schema={createPersonSchema()}

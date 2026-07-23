@@ -40,10 +40,10 @@ const chapterGroups = groupBookChapters(chapters);
 ---
 
 <BookDetailLayout
-  cover={manuscript.cover}
+  cover={manuscript.coverPublic}
   coverAlt={manuscript.coverAlt}
   description={manuscript.intro}
-  image={manuscript.cover.src}
+  image={manuscript.coverPublic}
   path={pagePath}
   schema={[createPersonSchema(), ...createBookSchemas([book])]}
   shortCode={manuscript.shortCode}
