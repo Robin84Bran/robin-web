@@ -26,6 +26,7 @@ pnpm-debug.log*
 .vscode/
 .codex-preview/
 .playwright-cli/
+.wrangler/
 output/
 src/styles/global 2.css
 
