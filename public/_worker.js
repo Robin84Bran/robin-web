@@ -1,13 +1,5 @@
 const canonicalHost = 'iamrobin.ai';
 
-const countryLocales = {
-  CN: '/cn/',
-  HK: '/tw/',
-  MO: '/tw/',
-  TW: '/tw/',
-  JP: '/jp/',
-};
-
 const securityHeaders = {
   'Content-Security-Policy':
     "default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests",
@@ -40,17 +32,6 @@ export default {
       url.hostname = canonicalHost;
       url.port = '';
       return redirect(url, 301);
-    }
-
-    if (url.pathname === '/') {
-      const cookie = request.headers.get('cookie') ?? '';
-      const hasPreference = /(?:^|;\s*)robin_locale=(?:en|cn|tw|jp)(?:;|$)/.test(cookie);
-      const destination = hasPreference ? undefined : countryLocales[request.cf?.country];
-
-      if (destination) {
-        url.pathname = destination;
-        return redirect(url, 302);
-      }
     }
 
     const response = await env.ASSETS.fetch(request);

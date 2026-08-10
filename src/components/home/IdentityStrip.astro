@@ -18,11 +18,7 @@ const { pillars = identityPillars } = Astro.props;
   <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10">
     {
       pillars.map((pillar) => (
-        <article
-          aria-label={pillar.title}
-          class="identity-node group"
-          tabindex="0"
-        >
+        <article class="identity-node group">
           <div class="identity-glyph" aria-hidden="true">
             <svg fill="none" viewBox="0 0 64 64">
               {
@@ -63,7 +59,7 @@ const { pillars = identityPillars } = Astro.props;
               }
             </svg>
           </div>
-          <p class="sr-only">{pillar.title}</p>
+          <h2 class="type-card-title mt-4 text-[var(--color-ink)]">{pillar.title}</h2>
           <p class="identity-reveal type-body">{pillar.description}</p>
         </article>
       ))

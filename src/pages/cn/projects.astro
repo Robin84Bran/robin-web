@@ -3,6 +3,7 @@ import PageIntro from '../../components/common/PageIntro.astro';
 import { cnProjects, cnSeo } from '../../data/cn';
 import { localeChrome } from '../../data/locales';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getProjectPath } from '../../lib/projects';
 import { createPersonSchema } from '../../lib/seo';
 ---
 
@@ -39,9 +40,19 @@ import { createPersonSchema } from '../../lib/seo';
                 {project.domain}
               </span>
             </div>
-            <h2 class="type-card-title mt-4 text-[var(--color-ink)]">{project.title}</h2>
+            <h2 class="type-card-title mt-4 text-[var(--color-ink)]">
+              <a class="no-underline hover:text-[var(--color-accent-text)]" href={getProjectPath(project.slug)}>
+                {project.title}
+              </a>
+            </h2>
             <p class="type-body mt-4 text-[var(--color-muted)]">{project.summary}</p>
             <p class="type-body mt-4 text-[var(--color-muted)]">{project.impact}</p>
+            <a
+              class="type-action mt-5 inline-flex items-center gap-2 text-[var(--color-accent-text)] no-underline hover:text-[var(--color-ink)]"
+              href={getProjectPath(project.slug)}
+            >
+              英文项目详情 <span aria-hidden="true">→</span>
+            </a>
           </article>
         ))
       }

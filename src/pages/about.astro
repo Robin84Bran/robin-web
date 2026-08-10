@@ -3,9 +3,9 @@ import { getEntry, render } from 'astro:content';
 import PageIntro from '../components/common/PageIntro.astro';
 import ButtonLink from '../components/ui/ButtonLink.astro';
 import SectionHeading from '../components/ui/SectionHeading.astro';
-import { aboutPillars, operatingPrinciples } from '../data/site';
+import { aboutPillars, operatingPrinciples, siteConfig } from '../data/site';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { createPersonSchema } from '../lib/seo';
+import { createBreadcrumbSchema, createPersonSchema, createProfilePageSchema } from '../lib/seo';
 
 const entry = await getEntry('pages', 'about');
 
@@ -14,13 +14,23 @@ if (!entry) {
 }
 
 const { Content } = await render(entry);
+const identityLinks = [
+  { label: 'GitHub', href: siteConfig.githubUrl },
+  { label: 'LinkedIn', href: siteConfig.linkedinUrl },
+  { label: 'Ghost', href: siteConfig.blogUrl },
+  { label: 'Official profile', href: siteConfig.officialWebsiteUrl },
+];
 ---
 
 <BaseLayout
   description="About Robin Xie: engineer, executive, investor, writer, and systems thinker working across AI, markets, and digital identity."
   image="/og/home.jpg"
   path="/about/"
-  schema={createPersonSchema()}
+  schema={[
+    createPersonSchema(),
+    createProfilePageSchema('/about/'),
+    createBreadcrumbSchema([{ name: 'About Robin Xie', path: '/about/' }]),
+  ]}
   title="About | Robin Xie"
 >
   <PageIntro
@@ -68,6 +78,18 @@ const { Content } = await render(entry);
 
     <div class="mt-8 flex flex-wrap gap-3">
       <ButtonLink href="/projects/">Browse selected projects</ButtonLink>
+    </div>
+  </section>
+
+  <section class="section-shell pt-0">
+    <SectionHeading
+      description="Public identity anchors used across this site."
+      eyebrow="Official links"
+      title="Find Robin elsewhere."
+    />
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      {identityLinks.map((link) => <ButtonLink external href={link.href}>{link.label}</ButtonLink>)}
     </div>
   </section>
 </BaseLayout>

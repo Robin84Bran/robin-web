@@ -4,6 +4,7 @@ import type { SiteLocale } from '../lib/i18n';
 interface NavItem {
   label: string;
   href: string;
+  external?: boolean;
 }
 
 interface FooterLink {
@@ -22,6 +23,7 @@ interface LocaleChrome {
   brandHref: string;
   brandSubline: string;
   navigation: readonly NavItem[];
+  siteLinks: readonly NavItem[];
   blogCta: string;
   footerLinks: readonly FooterLink[];
   socialLinks: readonly SocialLink[];
@@ -36,10 +38,23 @@ export const localeChrome: Record<SiteLocale, LocaleChrome> = {
     brandHref: '/',
     brandSubline: 'iamrobin.ai',
     navigation: [
+      { label: 'About', href: '/about/' },
       { label: 'Projects', href: '/projects/' },
       { label: 'Portfolio', href: '/portfolio/' },
-      { label: 'Press', href: '/now/' },
       { label: 'Books', href: '/books/' },
+      { label: 'Writing', href: '/writing/' },
+      { label: 'Press', href: '/now/' },
+      { label: 'Contact', href: '/contact/' },
+      { label: 'GitHub', href: siteConfig.githubUrl, external: true },
+    ],
+    siteLinks: [
+      { label: 'About', href: '/about/' },
+      { label: 'Projects', href: '/projects/' },
+      { label: 'Portfolio', href: '/portfolio/' },
+      { label: 'Books', href: '/books/' },
+      { label: 'Writing', href: '/writing/' },
+      { label: 'Press', href: '/now/' },
+      { label: 'Contact', href: '/contact/' },
     ],
     blogCta: 'Ghost',
     footerLinks,
@@ -53,18 +68,26 @@ export const localeChrome: Record<SiteLocale, LocaleChrome> = {
     brandHref: '/cn/',
     brandSubline: 'iamrobin.ai',
     navigation: [
+      { label: '关于', href: '/cn/about/' },
       { label: '项目', href: '/cn/projects/' },
       { label: '作品', href: '/portfolio/' },
-      { label: '报道', href: '/cn/now/' },
       { label: '书籍', href: '/cn/books/' },
+      { label: '写作', href: '/cn/writing/' },
+      { label: '报道', href: '/cn/now/' },
+      { label: '联系', href: '/cn/contact/' },
+      { label: 'GitHub', href: siteConfig.githubUrl, external: true },
+    ],
+    siteLinks: [
+      { label: '关于', href: '/cn/about/' },
+      { label: '项目', href: '/cn/projects/' },
+      { label: '作品', href: '/portfolio/' },
+      { label: '书籍', href: '/cn/books/' },
+      { label: '写作', href: '/cn/writing/' },
+      { label: '报道', href: '/cn/now/' },
+      { label: '联系', href: '/cn/contact/' },
     ],
     blogCta: '博客',
-    footerLinks: [
-      { label: 'ENS', href: siteConfig.ensUrl },
-      { label: 'LinkedIn', href: siteConfig.linkedinUrl },
-      { label: 'Medium', href: siteConfig.mediumUrl },
-      { label: 'Blog', href: siteConfig.blogUrl },
-    ],
+    footerLinks,
     socialLinks: [
       {
         label: 'GitHub',
@@ -101,18 +124,25 @@ export const localeChrome: Record<SiteLocale, LocaleChrome> = {
     brandHref: '/tw/',
     brandSubline: 'iamrobin.ai',
     navigation: [
+      { label: '關於', href: '/tw/#about' },
       { label: '專案', href: '/tw/#projects' },
       { label: '作品', href: '/portfolio/' },
-      { label: '報導', href: '/tw/#press' },
       { label: '書籍', href: '/tw/#books' },
+      { label: '寫作', href: siteConfig.blogUrl, external: true },
+      { label: '報導', href: '/tw/#press' },
+      { label: '聯絡', href: '/contact/' },
+      { label: 'GitHub', href: siteConfig.githubUrl, external: true },
+    ],
+    siteLinks: [
+      { label: '關於', href: '/tw/#about' },
+      { label: '專案', href: '/tw/#projects' },
+      { label: '作品', href: '/portfolio/' },
+      { label: '書籍', href: '/tw/#books' },
+      { label: '報導', href: '/tw/#press' },
+      { label: '聯絡', href: '/contact/' },
     ],
     blogCta: '部落格',
-    footerLinks: [
-      { label: 'ENS', href: siteConfig.ensUrl },
-      { label: 'LinkedIn', href: siteConfig.linkedinUrl },
-      { label: 'Medium', href: siteConfig.mediumUrl },
-      { label: 'Blog', href: siteConfig.blogUrl },
-    ],
+    footerLinks,
     socialLinks: [],
     skipToContent: '跳至內容',
     updatedLabel: '更新',
@@ -123,18 +153,25 @@ export const localeChrome: Record<SiteLocale, LocaleChrome> = {
     brandHref: '/jp/',
     brandSubline: 'iamrobin.ai',
     navigation: [
+      { label: '紹介', href: '/jp/#about' },
       { label: 'プロジェクト', href: '/jp/#projects' },
       { label: 'ポートフォリオ', href: '/portfolio/' },
-      { label: 'プレス', href: '/jp/#press' },
       { label: '書籍', href: '/jp/#books' },
+      { label: '執筆', href: siteConfig.blogUrl, external: true },
+      { label: 'プレス', href: '/jp/#press' },
+      { label: '連絡', href: '/contact/' },
+      { label: 'GitHub', href: siteConfig.githubUrl, external: true },
+    ],
+    siteLinks: [
+      { label: '紹介', href: '/jp/#about' },
+      { label: 'プロジェクト', href: '/jp/#projects' },
+      { label: 'ポートフォリオ', href: '/portfolio/' },
+      { label: '書籍', href: '/jp/#books' },
+      { label: 'プレス', href: '/jp/#press' },
+      { label: '連絡', href: '/contact/' },
     ],
     blogCta: 'ブログ',
-    footerLinks: [
-      { label: 'ENS', href: siteConfig.ensUrl },
-      { label: 'LinkedIn', href: siteConfig.linkedinUrl },
-      { label: 'Medium', href: siteConfig.mediumUrl },
-      { label: 'Blog', href: siteConfig.blogUrl },
-    ],
+    footerLinks,
     socialLinks: [],
     skipToContent: '本文へ',
     updatedLabel: '更新',

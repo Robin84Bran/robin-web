@@ -7,9 +7,10 @@
   --color-surface: rgba(255, 252, 247, 0.78);
   --color-surface-strong: rgba(255, 255, 255, 0.9);
   --color-ink: #342d27;
-  --color-muted: #786f66;
+  --color-muted: #71675e;
   --color-accent: #bc9d70;
-  --color-accent-strong: #8d7050;
+  --color-accent-strong: #775b3f;
+  --color-accent-text: #775b3f;
   --color-petal: #e8bccd;
   --color-mist: #9fb6c9;
   --color-line: rgba(113, 96, 79, 0.14);
@@ -100,6 +101,11 @@ body > footer {
   a {
     text-decoration-thickness: 0.08em;
     text-underline-offset: 0.18em;
+  }
+
+  :where(a, button, summary):focus-visible {
+    outline: 2px solid var(--color-accent-text) !important;
+    outline-offset: 3px;
   }
 }
 
@@ -729,7 +735,7 @@ body > footer {
     font-weight: 600;
     letter-spacing: 0.16em;
     text-transform: uppercase;
-    color: var(--color-accent);
+    color: var(--color-accent-text);
   }
 
   .type-display {
@@ -890,6 +896,8 @@ body > footer {
     min-height: 11.5rem;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 0.7rem;
     padding: 1.9rem 1.2rem 1.45rem;
     border-radius: 1.8rem;
     border: 1px solid rgba(113, 96, 79, 0.1);
@@ -901,8 +909,7 @@ body > footer {
       background 700ms ease;
   }
 
-  .identity-node:hover,
-  .identity-node:focus-visible {
+  .identity-node:hover {
     transform: translateY(-2px);
     border-color: rgba(188, 157, 112, 0.22);
     box-shadow: 0 18px 40px rgba(71, 57, 45, 0.08);
@@ -927,28 +934,16 @@ body > footer {
     stroke-linejoin: round;
   }
 
-  .identity-node:hover .identity-glyph,
-  .identity-node:focus-visible .identity-glyph {
+  .identity-node:hover .identity-glyph {
     color: rgba(188, 157, 112, 0.95);
     transform: translateY(-1px);
   }
 
   .identity-reveal {
-    position: absolute;
-    inset: auto 1.2rem 1.2rem;
+    position: static;
     text-align: center;
     color: var(--color-muted);
-    opacity: 0;
-    transform: translateY(8px);
-    transition:
-      opacity 700ms ease,
-      transform 700ms ease;
-  }
-
-  .identity-node:hover .identity-reveal,
-  .identity-node:focus-visible .identity-reveal {
     opacity: 1;
-    transform: translateY(0);
   }
 
   .symbol-reveal {

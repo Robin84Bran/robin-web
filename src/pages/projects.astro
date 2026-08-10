@@ -1,8 +1,9 @@
 ---
-import { getCollection, getEntry, render } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
 import PageIntro from '../components/common/PageIntro.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { sortCollectionByOrder } from '../lib/content';
+import { getProjectPath } from '../lib/projects';
 import { createPersonSchema } from '../lib/seo';
 
 const entry = await getEntry('pages', 'projects');
@@ -12,7 +13,6 @@ if (!entry) {
   throw new Error('Missing projects page content.');
 }
 
-const { Content } = await render(entry);
 ---
 
 <BaseLayout
@@ -30,12 +30,6 @@ const { Content } = await render(entry);
   />
 
   <section class="section-shell">
-    <div class="prose-robin">
-      <Content />
-    </div>
-  </section>
-
-  <section class="section-shell pt-0">
     <div class="grid gap-5 lg:grid-cols-2">
       {
         projects.map((project) => (
@@ -46,9 +40,19 @@ const { Content } = await render(entry);
                 {project.data.domain}
               </span>
             </div>
-            <h2 class="type-card-title mt-4 text-[var(--color-ink)]">{project.data.title}</h2>
+            <h2 class="type-card-title mt-4 text-[var(--color-ink)]">
+              <a class="no-underline hover:text-[var(--color-accent-text)]" href={getProjectPath(project.id)}>
+                {project.data.title}
+              </a>
+            </h2>
             <p class="type-body mt-4 text-[var(--color-muted)]">{project.data.summary}</p>
             <p class="type-body mt-4 text-[var(--color-muted)]">{project.data.impact}</p>
+            <a
+              class="type-action mt-5 inline-flex items-center gap-2 text-[var(--color-accent-text)] no-underline hover:text-[var(--color-ink)]"
+              href={getProjectPath(project.id)}
+            >
+              Read project <span aria-hidden="true">→</span>
+            </a>
           </article>
         ))
       }

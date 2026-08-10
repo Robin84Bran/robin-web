@@ -17,7 +17,7 @@ const isActive = (href: string) =>
 <header class="sticky top-0 z-40 border-b border-[var(--color-line)] bg-[rgba(247,242,234,0.82)] backdrop-blur-xl">
   <div class="mx-auto flex max-w-[72rem] flex-wrap items-center gap-4 px-4 py-4 sm:px-6 lg:px-8">
     <a class="group flex items-center gap-3 no-underline" href={chrome.brandHref}>
-      <span class="flex h-10 w-10 items-center justify-center rounded-full border border-[var(--color-line)] bg-[rgba(255,255,255,0.6)] text-[0.78rem] uppercase tracking-[0.24em] text-[var(--color-accent)] transition-colors group-hover:border-[rgba(188,157,112,0.34)]">
+      <span class="flex h-10 w-10 items-center justify-center rounded-full border border-[var(--color-line)] bg-[rgba(255,255,255,0.6)] text-[0.78rem] uppercase tracking-[0.24em] text-[var(--color-accent-text)] transition-colors group-hover:border-[rgba(188,157,112,0.34)]">
         RX
       </span>
       <span>
@@ -44,6 +44,8 @@ const isActive = (href: string) =>
                 : 'text-[var(--color-muted)] hover:text-[var(--color-ink)]',
             ]}
             href={item.href}
+            rel={item.external ? 'noreferrer' : undefined}
+            target={item.external ? '_blank' : undefined}
           >
             {item.label}
           </a>
@@ -55,7 +57,7 @@ const isActive = (href: string) =>
       <details class="language-menu relative">
         <summary
           aria-label="Choose language"
-          class="flex h-10 w-10 cursor-pointer list-none items-center justify-center rounded-full border border-transparent text-[1.2rem] transition-colors duration-500 hover:border-[var(--color-line)] hover:bg-[rgba(255,255,255,0.58)] focus-visible:outline focus-visible:outline-1 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)]"
+          class="flex h-10 w-10 cursor-pointer list-none items-center justify-center rounded-full border border-transparent text-[1.2rem] transition-colors duration-500 hover:border-[var(--color-line)] hover:bg-[rgba(255,255,255,0.58)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent-text)]"
           title="Language"
         >
           <span aria-hidden="true">🌐</span>
@@ -81,7 +83,7 @@ const isActive = (href: string) =>
                 href={language.href}
               >
                 <span>{language.label}</span>
-                {locale === language.code && <span aria-hidden="true" class="text-[var(--color-accent)]">•</span>}
+                {locale === language.code && <span aria-hidden="true" class="text-[var(--color-accent-text)]">•</span>}
               </a>
             ))
           }

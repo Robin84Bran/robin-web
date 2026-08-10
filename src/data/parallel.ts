@@ -40,10 +40,10 @@ export const parallelHome = {
       description: '幾套正在運行的系統，幾筆長線的下注。',
       action: '查看專案',
       items: [
-        { title: 'RobinOS', status: '進行中', domain: '系統', summary: '湯匙是假的，體驗是真的。與 AGI 同行，把思考化為產品、系統與記憶。', href: '/projects/#robinos' },
-        { title: 'Quant Lab', status: '研究', domain: '市場', summary: '以第一性原理設計，以奧卡姆剃刀做沙盒，以對抗審查做 QA，以墨菲定律上線。演化，以帕累托衡量。', href: '/projects/#quant-lab' },
-        { title: 'Watts to Satoshi', status: '命題', domain: '基礎設施', summary: '能量化為計算，計算讓智能豐盛。稀缺的是注意力、判斷與意義。', href: '/projects/#watts-to-satoshi' },
-        { title: 'Bran Lab', status: '探索', domain: '教育', summary: '與兒子一起建造遊戲和小世界。AI 先學會好奇，再學會有用。', href: '/projects/#childrens-ai-education-apps' },
+        { title: 'RobinOS', status: '進行中', domain: '系統', summary: '湯匙是假的，體驗是真的。與 AGI 同行，把思考化為產品、系統與記憶。', href: '/projects/robinos/' },
+        { title: 'Quant Lab', status: '研究', domain: '市場', summary: '以第一性原理設計，以奧卡姆剃刀做沙盒，以對抗審查做 QA，以墨菲定律上線。演化，以帕累托衡量。', href: '/projects/quant-lab/' },
+        { title: 'Watts to Satoshi', status: '命題', domain: '基礎設施', summary: '能量化為計算，計算讓智能豐盛。稀缺的是注意力、判斷與意義。', href: '/projects/watts-to-satoshi/' },
+        { title: 'Bran Lab', status: '探索', domain: '教育', summary: '與兒子一起建造遊戲和小世界。AI 先學會好奇，再學會有用。', href: '/projects/childrens-ai-education-apps/' },
       ],
     },
     portfolio: {
@@ -132,10 +132,10 @@ export const parallelHome = {
       description: 'いくつかの稼働するシステムと、長い時間軸の賭け。',
       action: 'プロジェクトを見る',
       items: [
-        { title: 'RobinOS', status: '進行中', domain: 'システム', summary: 'スプーンは偽物。体験は本物。AGI と歩き、思考をプロダクト、システム、記憶へ変える。', href: '/projects/#robinos' },
-        { title: 'Quant Lab', status: '研究', domain: '市場', summary: '第一原理で設計し、オッカムの剃刀で試し、敵対的レビューで QA する。本番はマーフィー、進化はパレートで測る。', href: '/projects/#quant-lab' },
-        { title: 'Watts to Satoshi', status: '探究', domain: 'インフラ', summary: 'エネルギーは計算へ。計算は知性を豊かにする。なお希少なのは、注意、判断、意味。', href: '/projects/#watts-to-satoshi' },
-        { title: 'Bran Lab', status: '実験', domain: '教育', summary: '息子とつくるゲームと小さな世界。AI は、役に立つ前に好奇心を持つ。', href: '/projects/#childrens-ai-education-apps' },
+        { title: 'RobinOS', status: '進行中', domain: 'システム', summary: 'スプーンは偽物。体験は本物。AGI と歩き、思考をプロダクト、システム、記憶へ変える。', href: '/projects/robinos/' },
+        { title: 'Quant Lab', status: '研究', domain: '市場', summary: '第一原理で設計し、オッカムの剃刀で試し、敵対的レビューで QA する。本番はマーフィー、進化はパレートで測る。', href: '/projects/quant-lab/' },
+        { title: 'Watts to Satoshi', status: '探究', domain: 'インフラ', summary: 'エネルギーは計算へ。計算は知性を豊かにする。なお希少なのは、注意、判断、意味。', href: '/projects/watts-to-satoshi/' },
+        { title: 'Bran Lab', status: '実験', domain: '教育', summary: '息子とつくるゲームと小さな世界。AI は、役に立つ前に好奇心を持つ。', href: '/projects/childrens-ai-education-apps/' },
       ],
     },
     portfolio: {

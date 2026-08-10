@@ -3,7 +3,7 @@ import { getCollection, getEntry, render } from 'astro:content';
 import ButtonLink from '../../../components/ui/ButtonLink.astro';
 import { getBookChapterPath, getBookManuscript, getBookPath, parseBookChapterId, sortBookChapters } from '../../../lib/books';
 import ReadingLayout from '../../../layouts/ReadingLayout.astro';
-import { createArticleSchema, createPersonSchema } from '../../../lib/seo';
+import { createArticleSchema, createBreadcrumbSchema, createPersonSchema } from '../../../lib/seo';
 
 export async function getStaticPaths() {
   const chapters = await getCollection('bookChapters');
@@ -55,7 +55,14 @@ const pagePath = getBookChapterPath(entry);
       description: entry.data.summary,
       path: pagePath,
       dateModified: entry.data.updated,
+      image: manuscript.coverPublic,
+      bookPath,
     }),
+    createBreadcrumbSchema([
+      { name: 'Books', path: '/books/' },
+      { name: book.data.title, path: bookPath },
+      { name: entry.data.title, path: pagePath },
+    ]),
   ]}
   section={entry.data.section}
   title={entry.data.title}

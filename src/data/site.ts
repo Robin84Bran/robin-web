@@ -62,7 +62,7 @@ export const socialLinks = [
 ] as const;
 
 export const footerLinks = [
-  { label: 'ENS', href: siteConfig.ensUrl },
+  { label: 'GitHub', href: siteConfig.githubUrl },
   { label: 'LinkedIn', href: siteConfig.linkedinUrl },
   { label: 'Medium', href: siteConfig.mediumUrl },
   { label: 'Blog', href: siteConfig.blogUrl },

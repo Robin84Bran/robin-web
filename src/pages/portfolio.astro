@@ -1,6 +1,7 @@
 ---
 import PortfolioLotus from '../components/portfolio/PortfolioLotus.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { createBreadcrumbSchema, createPersonSchema } from '../lib/seo';
 ---
 
 <BaseLayout
@@ -8,12 +9,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   description="Robin Xie's portfolio of capital, systems, tools, institutions, and long-horizon attention."
   image="/og/projects.jpg"
   path="/portfolio/"
+  schema={[
+    createPersonSchema(),
+    createBreadcrumbSchema([{ name: 'Portfolio', path: '/portfolio/' }]),
+  ]}
   title="Portfolio | Robin Xie"
 >
   <section class="portfolio-page section-shell pt-4 sm:pt-8">
     <header class="relative z-10 max-w-3xl">
       <p class="eyebrow">Portfolio</p>
       <h1 class="type-display mt-5 text-[var(--color-ink)]">Capital follows attention.</h1>
+      <p class="type-lead mt-5 max-w-2xl text-[var(--color-muted)]">
+        A visual map of technologies, institutions, and systems that have shaped my attention. Each orbiting mark is a labeled external link; it is context, not a current-holdings disclosure.
+      </p>
     </header>
 
     <PortfolioLotus />

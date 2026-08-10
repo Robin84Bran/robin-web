@@ -13,7 +13,7 @@ import {
   type BookEntry,
 } from '../../lib/books';
 import { sortCollectionByOrder } from '../../lib/content';
-import { createBookSchemas, createPersonSchema } from '../../lib/seo';
+import { createBookSchemas, createBreadcrumbSchema, createPersonSchema } from '../../lib/seo';
 
 export async function getStaticPaths() {
   const books = sortCollectionByOrder(await getCollection('books'));
@@ -45,7 +45,14 @@ const chapterGroups = groupBookChapters(chapters);
   description={manuscript.intro}
   image={manuscript.coverPublic}
   path={pagePath}
-  schema={[createPersonSchema(), ...createBookSchemas([book])]}
+  schema={[
+    createPersonSchema(),
+    ...createBookSchemas([book]),
+    createBreadcrumbSchema([
+      { name: 'Books', path: '/books/' },
+      { name: book.data.title, path: pagePath },
+    ]),
+  ]}
   shortCode={manuscript.shortCode}
   status={book.data.status}
   theme={book.data.theme}
@@ -123,7 +130,7 @@ const chapterGroups = groupBookChapters(chapters);
                       </div>
                       <h4 class="type-card-title mt-4 text-[var(--color-ink)]">{chapter.data.title}</h4>
                       <p class="type-body mt-3 text-[var(--color-muted)]">{chapter.data.summary}</p>
-                      <p class="type-action mt-5 text-[var(--color-accent)]">Enter chapter →</p>
+                      <p class="type-action mt-5 text-[var(--color-accent-text)]">Enter chapter →</p>
                     </a>
                   ))
                 }

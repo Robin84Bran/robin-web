@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content';
+import { getProjectPath } from '../../lib/projects';
 import SectionHeading from '../ui/SectionHeading.astro';
 import SymbolReveal from '../ui/SymbolReveal.astro';
 
@@ -33,7 +34,11 @@ const projectGlyphs = {
               {project.data.domain}
             </span>
           </div>
-          <h3 class="type-card-title mt-4 text-[var(--color-ink)]">{project.data.title}</h3>
+          <h3 class="type-card-title mt-4 text-[var(--color-ink)]">
+            <a class="no-underline hover:text-[var(--color-accent-text)]" href={getProjectPath(project.id)}>
+              {project.data.title}
+            </a>
+          </h3>
           <p class="type-body mt-4 text-[var(--color-muted)]">{project.data.summary}</p>
           <div class="mt-5">
             <SymbolReveal
@@ -43,8 +48,8 @@ const projectGlyphs = {
             />
           </div>
           <a
-            class="type-action mt-5 inline-flex items-center gap-2 text-[var(--color-accent)] no-underline transition-colors hover:text-[var(--color-ink)]"
-            href={`/projects/#${project.id}`}
+            class="type-action mt-5 inline-flex items-center gap-2 text-[var(--color-accent-text)] no-underline transition-colors hover:text-[var(--color-ink)]"
+            href={getProjectPath(project.id)}
           >
             See project <span aria-hidden="true">→</span>
           </a>

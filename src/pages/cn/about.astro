@@ -4,8 +4,16 @@ import PageIntro from '../../components/common/PageIntro.astro';
 import SectionHeading from '../../components/ui/SectionHeading.astro';
 import { cnAbout, cnSeo } from '../../data/cn';
 import { localeChrome } from '../../data/locales';
+import { siteConfig } from '../../data/site';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { createPersonSchema } from '../../lib/seo';
+import { createBreadcrumbSchema, createPersonSchema, createProfilePageSchema } from '../../lib/seo';
+
+const identityLinks = [
+  { label: 'GitHub', href: siteConfig.githubUrl },
+  { label: 'LinkedIn', href: siteConfig.linkedinUrl },
+  { label: 'Ghost', href: siteConfig.blogUrl },
+  { label: '官方简介', href: siteConfig.officialWebsiteUrlCn },
+];
 ---
 
 <BaseLayout
@@ -13,7 +21,11 @@ import { createPersonSchema } from '../../lib/seo';
   image="/og/home.jpg"
   locale="cn"
   path="/cn/about/"
-  schema={createPersonSchema()}
+  schema={[
+    createPersonSchema(),
+    createProfilePageSchema('/cn/about/', 'zh-CN', '关于 Robin Xie'),
+    createBreadcrumbSchema([{ name: '关于 Robin Xie', path: '/cn/about/' }]),
+  ]}
   title={cnSeo.about.title}
 >
   <PageIntro
@@ -58,6 +70,14 @@ import { createPersonSchema } from '../../lib/seo';
 
     <div class="mt-8 flex flex-wrap gap-3">
       <ButtonLink href="/cn/projects/">看项目</ButtonLink>
+    </div>
+  </section>
+
+  <section class="section-shell pt-0">
+    <SectionHeading description="本站使用的公开身份链接。" eyebrow="官方链接" title="在其他平台找到 Robin。" />
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      {identityLinks.map((link) => <ButtonLink external href={link.href}>{link.label}</ButtonLink>)}
     </div>
   </section>
 </BaseLayout>
