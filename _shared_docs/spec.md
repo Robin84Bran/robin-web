@@ -25,7 +25,7 @@ Create the main identity site for `iamrobin.ai` as a fast, elegant, static-first
 - Home: hero, identity strip, featured books, writing preview, project grid, signal block, contact links
 - About: positioning, background, operating principles
 - Books: living manuscript shelf, no dead product-page energy
-- Writing: Ghost as canonical home, Medium as secondary syndication
+- Writing: Ghost remains the current external archive; the future canonical writing home is `iamrobin.ai/blog`, with migration deferred to a separately approved release
 - Projects: curated project list, not a full archive
 - Now: current focus snapshot with exact update date
 - Contact: channel-based outreach, no generic form
@@ -70,4 +70,4 @@ Create the main identity site for `iamrobin.ai` as a fast, elegant, static-first
 - No fancy animation system
 - No complex backend
 - No automation pipeline
-- No attempt to merge Ghost into the same repo
+- No `/blog` migration or Ghost-content import in this release

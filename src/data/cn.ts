@@ -117,7 +117,7 @@ export const cnAbout = {
     kicker: '关于',
     title: '谢玢',
     description: '工程是我的根。随后，系统、资本、媒体与书，次第生长。',
-    updated: '2026年7月',
+    updated: '2026年8月',
   },
   body: [
     '工程是我的根。随后，系统、资本、媒体与书，次第生长。',
@@ -138,7 +138,7 @@ export const cnBooksPage = {
     kicker: '书籍',
     title: '四本书，仍在成为。',
     description: '问题已醒，入内便是。',
-    updated: '2026年7月',
+    updated: '2026年8月',
   },
   body: ['书未完成，问题已醒。', '各自生长，各自成形。'],
 } as const;
@@ -243,7 +243,7 @@ export const cnWriting = {
     kicker: '写作',
     title: '写作',
     description: '文字在边界处慢慢聚拢',
-    updated: '2026年7月',
+    updated: '2026年8月',
   },
   body: ['不急完整，只留方向', '有的成文，有的未定', '够用的那部分，先留下'],
   tracks: [
@@ -274,7 +274,7 @@ export const cnProjects = {
     kicker: '项目',
     title: '动势中的作品。',
     description: '几套正在运行的系统，几笔长线的下注。',
-    updated: '2026年7月',
+    updated: '2026年8月',
   },
   body: ['小而关键。只留正在发生的部分。'],
   items: [
@@ -318,7 +318,7 @@ export const cnNow = {
     kicker: '报道',
     title: '往日足迹。',
     description: '系统尚未有名之前，几次公开的时刻。',
-    updated: '2026年7月',
+    updated: '2026年8月',
   },
   body: ['系统尚未有名，路径已经留下。'],
   snapshot: [
@@ -354,7 +354,7 @@ export const cnContact = {
     kicker: '联系',
     title: '联系',
     description: '不设入口，自有来路',
-    updated: '2026年7月',
+    updated: '2026年8月',
   },
   body: ['若有缘份，自会相遇', '不急回应，重在真实', '有话直说，就很好'],
   prompts: [

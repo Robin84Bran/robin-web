@@ -1,6 +1,6 @@
 # iamrobin.ai Visual Standards
 
-Version: Website v1.2, July 2026
+Version: Website v1.3, August 2026
 
 The visual system is a quiet zen garden: warm, spacious, slightly transient, and precise. It uses wabi-sabi restraint rather than decorative minimalism. Every surface should feel composed, but never over-resolved.
 

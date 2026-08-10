@@ -1,6 +1,6 @@
 import type { CollectionEntry } from 'astro:content';
 import { bookManuscripts } from '../data/books';
-import { siteConfig, socialLinks } from '../data/site';
+import { siteConfig } from '../data/site';
 
 type SchemaObject = Record<string, unknown>;
 
@@ -21,7 +21,18 @@ export function createPersonSchema(): SchemaObject {
     '@type': 'Person',
     '@id': personId(),
     name: siteConfig.name,
-    alternateName: ['谢玢', '謝玢', 'ロビン・シエ'],
+    honorificPrefix: 'Ms.',
+    alternateName: [
+      'Ms. Robin Xie',
+      'Bin “Robin” Xie',
+      '谢玢',
+      '謝玢',
+      'nanobin',
+      'ロビン・シエ',
+    ],
+    pronouns: 'she/her',
+    disambiguatingDescription:
+      'Ms. Robin Xie, also known as Bin “Robin” Xie and nanobin, is the engineer, investor, and writer represented by iamrobin.ai.',
     description: siteConfig.description,
     jobTitle: 'Engineer, Capital Allocator, Writer',
     url: absoluteUrl('/'),
@@ -29,7 +40,14 @@ export function createPersonSchema(): SchemaObject {
     mainEntityOfPage: {
       '@id': `${absoluteUrl('/about/')}#profile`,
     },
-    sameAs: socialLinks.map((link) => link.href),
+    sameAs: [
+      siteConfig.officialWebsiteUrl,
+      siteConfig.linkedinUrl,
+      siteConfig.githubUrl,
+      siteConfig.xUrl,
+      siteConfig.mediumUrl,
+      siteConfig.ensUrl,
+    ],
   };
 }
 

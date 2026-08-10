@@ -5,6 +5,7 @@ import { pathToFileURL } from 'node:url';
 const root = process.cwd();
 const dist = join(root, 'dist');
 const origin = 'https://iamrobin.ai';
+const stablePersonId = `${origin}/#person`;
 const failures = [];
 
 function check(condition, message) {
@@ -38,6 +39,33 @@ function attributeValues(html, attribute) {
   return [...html.matchAll(pattern)].map((match) => match[1].replaceAll('&amp;', '&'));
 }
 
+function anchorLinks(html) {
+  return [...html.matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/gi)].flatMap((match) => {
+    const href = match[1].match(/\bhref=["']([^"']+)["']/i)?.[1];
+    if (!href) return [];
+
+    return [
+      {
+        href: href.replaceAll('&amp;', '&'),
+        label: match[2].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim(),
+      },
+    ];
+  });
+}
+
+function schemaNodes(schema) {
+  if (Array.isArray(schema)) return schema.flatMap(schemaNodes);
+  if (!schema || typeof schema !== 'object') return [];
+  if (Array.isArray(schema['@graph'])) return schema['@graph'].flatMap(schemaNodes);
+  return [schema];
+}
+
+function visitObjects(value, callback) {
+  if (!value || typeof value !== 'object') return;
+  callback(value);
+  for (const child of Object.values(value)) visitObjects(child, callback);
+}
+
 function relativeLuminance(hex) {
   const channels = [1, 3, 5]
     .map((index) => Number.parseInt(hex.slice(index, index + 2), 16) / 255)
@@ -61,6 +89,7 @@ if (existsSync(dist)) {
   const htmlFiles = files.filter((file) => file.endsWith('.html') && relative(dist, file) !== '404.html');
   const pageByRoute = new Map(htmlFiles.map((file) => [routeFromHtml(file), file]));
   const graph = new Map();
+  const schemasByRoute = new Map();
 
   for (const [route, file] of pageByRoute) {
     const html = readFileSync(file, 'utf8');
@@ -76,13 +105,15 @@ if (existsSync(dist)) {
     );
 
     const jsonLdBlocks = [...html.matchAll(/<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)];
+    const routeSchemas = [];
     for (const [, json] of jsonLdBlocks) {
       try {
-        JSON.parse(json);
+        routeSchemas.push(...schemaNodes(JSON.parse(json)));
       } catch (error) {
         failures.push(`${route}: invalid JSON-LD (${error.message}).`);
       }
     }
+    schemasByRoute.set(route, routeSchemas);
 
     const linkedRoutes = new Set();
     for (const href of attributeValues(html, 'href')) {
@@ -135,6 +166,109 @@ if (existsSync(dist)) {
     for (const [language, href] of requiredAlternates) {
       check(alternates.get(language) === href, `${route}: missing or incorrect ${language} alternate.`);
     }
+  }
+
+  const expectedPrimaryLinks = new Map([
+    ['/', [
+      { label: 'Projects', href: '/projects/' },
+      { label: 'Portfolio', href: '/portfolio/' },
+      { label: 'Press', href: '/now/' },
+      { label: 'Books', href: '/books/' },
+    ]],
+    ['/cn/', [
+      { label: '项目', href: '/cn/projects/' },
+      { label: '作品', href: '/portfolio/' },
+      { label: '报道', href: '/cn/now/' },
+      { label: '书籍', href: '/cn/books/' },
+    ]],
+    ['/tw/', [
+      { label: '專案', href: '/tw/#projects' },
+      { label: '作品', href: '/portfolio/' },
+      { label: '報導', href: '/tw/#press' },
+      { label: '書籍', href: '/tw/#books' },
+    ]],
+    ['/jp/', [
+      { label: 'プロジェクト', href: '/jp/#projects' },
+      { label: 'ポートフォリオ', href: '/portfolio/' },
+      { label: 'プレス', href: '/jp/#press' },
+      { label: '書籍', href: '/jp/#books' },
+    ]],
+  ]);
+  const requiredFooterLinks = new Map([
+    ['/', ['/about/', '/writing/', '/contact/', 'https://github.com/Robin84Bran/']],
+    ['/cn/', ['/cn/about/', '/cn/writing/', '/cn/contact/', 'https://github.com/Robin84Bran/']],
+    ['/tw/', ['/tw/#about', '/writing/', '/contact/', 'https://github.com/Robin84Bran/']],
+    ['/jp/', ['/jp/#about', '/writing/', '/contact/', 'https://github.com/Robin84Bran/']],
+  ]);
+
+  for (const route of homepageLocales) {
+    const html = readFileSync(pageByRoute.get(route), 'utf8');
+    const header = html.match(/<header\b[\s\S]*?<\/header>/i)?.[0] ?? '';
+    const primaryNav = header.match(/<nav\b[^>]*aria-label=["']Primary["'][^>]*>[\s\S]*?<\/nav>/i)?.[0] ?? '';
+    const primaryLinks = anchorLinks(primaryNav);
+    const expectedLinks = expectedPrimaryLinks.get(route);
+    check(
+      primaryLinks.length === expectedLinks.length &&
+        primaryLinks.every(
+          (link, index) => link.label === expectedLinks[index].label && link.href === expectedLinks[index].href,
+        ),
+      `${route}: primary navigation is not the required four-link set in the required order.`,
+    );
+
+    const footer = html.match(/<footer\b[\s\S]*?<\/footer>/i)?.[0] ?? '';
+    const footerHrefs = new Set(anchorLinks(footer).map((link) => link.href));
+    for (const href of requiredFooterLinks.get(route)) {
+      check(footerHrefs.has(href), `${route}: visible footer/site index is missing ${href}.`);
+    }
+    check(
+      !/\bhidden(?:\s|=|>)|\bsr-only\b|display\s*:\s*none|visibility\s*:\s*hidden/i.test(footer),
+      `${route}: footer/site index contains hidden-link styling or attributes.`,
+    );
+  }
+
+  const expectedAlternateNames = [
+    'Ms. Robin Xie',
+    'Bin “Robin” Xie',
+    '谢玢',
+    '謝玢',
+    'nanobin',
+    'ロビン・シエ',
+  ];
+  const expectedSameAs = [
+    'https://www.tideisun.com/en/robin',
+    'https://www.linkedin.com/in/nanobin',
+    'https://github.com/Robin84Bran/',
+    'https://x.com/nanobin1984',
+    'https://medium.com/@iamrobin-ai',
+    'https://app.ens.domains/iamrobin.eth',
+  ];
+  const allSchemas = [...schemasByRoute.values()].flat();
+  const personSchemas = allSchemas.filter((schema) => schema['@type'] === 'Person');
+  check(personSchemas.length > 0, 'No canonical Person schema was emitted.');
+  for (const person of personSchemas) {
+    check(person['@id'] === stablePersonId, 'A Person schema does not use the stable Person @id.');
+    check(person.name === 'Robin Xie', 'Person name is not Robin Xie.');
+    check(person.honorificPrefix === 'Ms.', 'Person honorificPrefix is not Ms.');
+    check(
+      JSON.stringify(person.alternateName) === JSON.stringify(expectedAlternateNames),
+      'Person alternateName values are incomplete or out of order.',
+    );
+    check(person.pronouns === 'she/her', 'Person pronouns are not she/her.');
+    check(
+      typeof person.disambiguatingDescription === 'string' && person.disambiguatingDescription.length > 40,
+      'Person disambiguatingDescription is missing or too short.',
+    );
+    check(
+      JSON.stringify(person.sameAs) === JSON.stringify(expectedSameAs),
+      'Person sameAs links are incomplete or out of order.',
+    );
+  }
+  for (const schema of allSchemas) {
+    visitObjects(schema, (node) => {
+      if (typeof node['@id'] === 'string' && node['@id'].endsWith('#person')) {
+        check(node['@id'] === stablePersonId, `Schema reference ${node['@id']} does not use the stable Person @id.`);
+      }
+    });
   }
 
   const reached = new Set(['/']);
@@ -230,5 +364,5 @@ if (failures.length) {
   for (const failure of failures) console.error(`- ${failure}`);
   process.exitCode = 1;
 } else {
-  console.log('SEO verification passed: routes, links, canonicals, hreflang, JSON-LD, sitemap, edge routing, crawler policy, contrast, and semantics.');
+  console.log('SEO verification passed: routes, visible navigation, links, canonicals, hreflang, Person JSON-LD, sitemap, edge routing, crawler policy, contrast, and semantics.');
 }

@@ -12,9 +12,10 @@ Policy intent approved by Robin: **Search and generative citation allowed; model
 |---|---|---|
 | Stable locale routing | `/` no longer redirects by `request.cf.country`; explicit `/cn/`, `/tw/`, and `/jp/` routes and the visible language selector remain | `astro check`, production build, and `scripts/verify-seo.mjs` |
 | Crawler policy | `robots.txt` explicitly allows Googlebot, Bingbot, and OAI-SearchBot; explicitly blocks GPTBot and named training/extended crawlers | Generated `dist/robots.txt` comparison |
-| Internal discovery | Persistent header/footer links expose About, Projects, Portfolio, Books, Writing, Press, Contact, GitHub, and locale destinations | Static internal-link crawl from `/` |
+| Internal discovery | The visible header exposes only Projects, Portfolio, Press, and Books; the visible footer/site index exposes About, Writing, Contact, GitHub, and the remaining ordinary HTML discovery links | Static internal-link crawl from `/` and visible-navigation assertions |
 | Project destinations | Four project cards now resolve to dedicated static pages with unique canonicals, titles, openings, breadcrumbs, and CreativeWork schema | Generated-route and JSON-LD checks |
-| Person entity | One `https://iamrobin.ai/#person` ID is reused by WebSite, ProfilePage, Book, Article, and CreativeWork nodes | JSON-LD parse and source review |
+| Person entity | One `https://iamrobin.ai/#person` ID is reused by WebSite, ProfilePage, Book, Article, and CreativeWork nodes, with maintained names, pronouns, disambiguation, and sameAs profiles | JSON-LD parse and source review |
+| Writing architecture | Ghost remains the current external archive; `iamrobin.ai/blog` is the approved future canonical writing home, but no migration is implemented in this release | Documentation review; no `/blog` route expected yet |
 | Books and chapters | Book images, canonical IDs, `isPartOf`, chapter images, and BreadcrumbList nodes are emitted from maintained content | JSON-LD parse and source review |
 | Accessibility and clarity | Text-use tokens exceed 4.5:1 on the canvas; non-actions were removed from the tab order; identity labels persist; focus is visible; duplicated openings are removed; portfolio context is visible | Contrast calculation, static source checks, and visual/keyboard QA |
 
