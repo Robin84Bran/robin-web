@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "build:sites": "astro build && node scripts/prepare-sites.mjs",
+    "build:sites": "SITES_BUILD=1 astro build && node scripts/prepare-sites.mjs",
     "check": "astro check",
     "verify:seo": "node scripts/verify-seo.mjs",
     "release:check": "pnpm run check && pnpm run build && pnpm run verify:seo",

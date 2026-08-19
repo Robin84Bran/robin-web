@@ -2,6 +2,8 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import { sites } from '@openai/sites-vite-plugin';
 
+const isSitesBuild = process.env.SITES_BUILD === '1';
+
 export default defineConfig({
   site: 'https://iamrobin.ai',
   output: 'static',
@@ -12,6 +14,6 @@ export default defineConfig({
   ],
   trailingSlash: 'always',
   vite: {
-    plugins: [sites()],
+    plugins: isSitesBuild ? [sites()] : [],
   },
 });
