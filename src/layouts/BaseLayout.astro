@@ -1,78 +1,38 @@
 ---
-import MetaTags from '../components/seo/MetaTags.astro';
-import SiteFooter from '../components/layout/SiteFooter.astro';
-import SiteHeader from '../components/layout/SiteHeader.astro';
-import { localeChrome } from '../data/locales';
-import { getSeoAlternates, type SiteLocale } from '../lib/i18n';
+import SiteFooter from '../components/SiteFooter.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import SeoHead from '../components/SeoHead.astro';
+import type { SchemaNode } from '../lib/seo';
 import '../styles/global.css';
-
-type SchemaObject = Record<string, unknown>;
+import '../styles/zen.css';
 
 interface Props {
   title: string;
   description: string;
-  path?: string;
+  path: string;
   image?: string;
-  type?: 'website' | 'article';
-  schema?: SchemaObject | SchemaObject[];
+  imageAlt?: string;
+  imageWidth?: number;
+  imageHeight?: number;
   noindex?: boolean;
-  locale?: SiteLocale;
-  ambientMotion?: boolean;
+  schema?: SchemaNode | SchemaNode[];
 }
 
-const {
-  title,
-  description,
-  path,
-  image,
-  type = 'website',
-  schema,
-  noindex = false,
-  locale = 'en',
-  ambientMotion = true,
-} = Astro.props;
-
-const languageTags: Record<SiteLocale, string> = {
-  en: 'en',
-  cn: 'zh-Hans',
-  tw: 'zh-Hant',
-  jp: 'ja',
-};
-const lang = languageTags[locale];
-const chrome = localeChrome[locale];
-const resolvedPath = path ?? Astro.url.pathname;
-const alternates = getSeoAlternates(resolvedPath);
+const { title, description, path, image, imageAlt, imageWidth, imageHeight, noindex, schema } = Astro.props;
 ---
 
 <!doctype html>
-<html lang={lang}>
+<html lang="en">
   <head>
-    <MetaTags
-      description={description}
-      image={image}
-      noindex={noindex}
-      path={resolvedPath}
-      schema={schema}
-      title={title}
-      type={type}
-      locale={locale}
-      alternates={alternates}
-    />
+    <SeoHead {title} {description} {path} {image} {imageAlt} {imageWidth} {imageHeight} {noindex} {schema} />
   </head>
-  <body class="bg-[var(--color-canvas)] text-[var(--color-ink)] antialiased">
-    <div aria-hidden="true" class="page-grid pointer-events-none fixed inset-0 -z-20 opacity-70"></div>
-    <div aria-hidden="true" class="beam-field pointer-events-none fixed inset-0 -z-10"></div>
-    <a
-      class="sr-only absolute left-4 top-4 z-50 rounded-full border border-[var(--color-line)] bg-[rgba(7,19,28,0.92)] px-4 py-2 text-sm text-[var(--color-ink)] focus:not-sr-only"
-      href="#content"
-    >
-      {chrome.skipToContent}
-    </a>
-    <SiteHeader locale={locale} />
-    <main class="mx-auto flex w-full max-w-[72rem] flex-1 flex-col px-4 pb-20 pt-8 sm:px-6 lg:px-8 lg:pt-12" id="content">
+  <body data-path={path}>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <div class="ambient-field" aria-hidden="true"></div>
+    <SiteHeader currentPath={path} />
+    <main id="content">
       <slot />
     </main>
-    <SiteFooter locale={locale} />
-    {ambientMotion && <script defer is:inline src="/scripts/ambient-garden.js"></script>}
+    <SiteFooter />
   </body>
 </html>

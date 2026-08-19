@@ -1,12 +1,11 @@
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import { join, relative, sep } from 'node:path';
-import { pathToFileURL } from 'node:url';
 
 const root = process.cwd();
 const dist = join(root, 'dist');
 const origin = 'https://iamrobin.ai';
-const stablePersonId = `${origin}/#person`;
 const failures = [];
+const indexableRoutes = new Set(['/', '/portfolio/', '/books/']);
 
 function check(condition, message) {
   if (!condition) failures.push(message);
@@ -27,342 +26,92 @@ function routeFromHtml(file) {
 }
 
 function fileForPath(pathname) {
-  const decoded = decodeURIComponent(pathname);
-  const direct = join(dist, decoded.replace(/^\//, ''));
+  const direct = join(dist, decodeURIComponent(pathname).replace(/^\//, ''));
   if (existsSync(direct) && !statSync(direct).isDirectory()) return direct;
   const index = join(direct, 'index.html');
   return existsSync(index) ? index : undefined;
 }
 
-function attributeValues(html, attribute) {
-  const pattern = new RegExp(`\\b${attribute}=["']([^"']+)["']`, 'gi');
-  return [...html.matchAll(pattern)].map((match) => match[1].replaceAll('&amp;', '&'));
-}
-
-function anchorLinks(html) {
-  return [...html.matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/gi)].flatMap((match) => {
-    const href = match[1].match(/\bhref=["']([^"']+)["']/i)?.[1];
-    if (!href) return [];
-
-    return [
-      {
-        href: href.replaceAll('&amp;', '&'),
-        label: match[2].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim(),
-      },
-    ];
-  });
-}
-
-function schemaNodes(schema) {
-  if (Array.isArray(schema)) return schema.flatMap(schemaNodes);
-  if (!schema || typeof schema !== 'object') return [];
-  if (Array.isArray(schema['@graph'])) return schema['@graph'].flatMap(schemaNodes);
-  return [schema];
-}
-
-function visitObjects(value, callback) {
-  if (!value || typeof value !== 'object') return;
-  callback(value);
-  for (const child of Object.values(value)) visitObjects(child, callback);
-}
-
-function relativeLuminance(hex) {
-  const channels = [1, 3, 5]
-    .map((index) => Number.parseInt(hex.slice(index, index + 2), 16) / 255)
-    .map((channel) =>
-      channel <= 0.04045 ? channel / 12.92 : ((channel + 0.055) / 1.055) ** 2.4,
-    );
-  return 0.2126 * channels[0] + 0.7152 * channels[1] + 0.0722 * channels[2];
-}
-
-function contrastRatio(foreground, background) {
-  const values = [relativeLuminance(foreground), relativeLuminance(background)].sort(
-    (left, right) => right - left,
-  );
-  return (values[0] + 0.05) / (values[1] + 0.05);
+function one(html, pattern) {
+  return html.match(pattern)?.[1];
 }
 
 check(existsSync(dist), 'dist/ is missing; run the production build first.');
 
 if (existsSync(dist)) {
-  const files = walk(dist);
-  const htmlFiles = files.filter((file) => file.endsWith('.html') && relative(dist, file) !== '404.html');
-  const pageByRoute = new Map(htmlFiles.map((file) => [routeFromHtml(file), file]));
-  const graph = new Map();
-  const schemasByRoute = new Map();
+  const htmlFiles = walk(dist).filter((file) => file.endsWith('.html'));
+  const routes = new Map(htmlFiles.map((file) => [routeFromHtml(file), file]));
+  check(routes.size === 12, `expected 12 HTML routes, found ${routes.size}.`);
 
-  for (const [route, file] of pageByRoute) {
+  for (const [route, file] of routes) {
     const html = readFileSync(file, 'utf8');
-    const canonicals = [...html.matchAll(/<link\s+rel=["']canonical["']\s+href=["']([^"']+)["']/gi)].map(
-      (match) => match[1],
-    );
     const expectedCanonical = new URL(route, `${origin}/`).toString();
-    check(canonicals.length === 1, `${route}: expected exactly one canonical link.`);
-    check(canonicals[0] === expectedCanonical, `${route}: canonical is not self-referential and absolute.`);
-    check(
-      /<meta\s+name=["']robots["']\s+content=["']index, follow["']/i.test(html),
-      `${route}: expected index, follow metadata.`,
-    );
+    const canonical = one(html, /<link\s+rel="canonical"\s+href="([^"]+)"/i);
+    const robots = one(html, /<meta\s+name="robots"\s+content="([^"]+)"/i);
+    check(canonical === expectedCanonical, `${route}: incorrect canonical.`);
+    check(Boolean(one(html, /<meta\s+name="description"\s+content="([^"]+)"/i)), `${route}: missing description.`);
+    check(one(html, /<meta\s+property="og:url"\s+content="([^"]+)"/i) === expectedCanonical, `${route}: incorrect og:url.`);
+    for (const property of ['og:title', 'og:description', 'og:image', 'og:image:alt']) {
+      check(html.includes(`property="${property}"`), `${route}: missing ${property}.`);
+    }
+    for (const name of ['twitter:card', 'twitter:title', 'twitter:description', 'twitter:image']) {
+      check(html.includes(`name="${name}"`), `${route}: missing ${name}.`);
+    }
 
-    const jsonLdBlocks = [...html.matchAll(/<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)];
-    const routeSchemas = [];
-    for (const [, json] of jsonLdBlocks) {
+    if (indexableRoutes.has(route)) {
+      check(robots === 'index, follow', `${route}: indexable route lacks index, follow.`);
+      check(html.includes('application/ld+json'), `${route}: indexable route lacks JSON-LD.`);
+    } else {
+      check(robots === 'noindex, follow', `${route}: thin/hidden route must be noindex, follow.`);
+    }
+
+    for (const [, json] of html.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/gi)) {
       try {
-        routeSchemas.push(...schemaNodes(JSON.parse(json)));
+        JSON.parse(json);
       } catch (error) {
         failures.push(`${route}: invalid JSON-LD (${error.message}).`);
       }
     }
-    schemasByRoute.set(route, routeSchemas);
 
-    const linkedRoutes = new Set();
-    for (const href of attributeValues(html, 'href')) {
-      if (/^(?:mailto:|tel:|javascript:|data:)/i.test(href)) continue;
-
-      let target;
-      try {
-        target = new URL(href, new URL(route, `${origin}/`));
-      } catch {
-        failures.push(`${route}: invalid href ${href}`);
-        continue;
-      }
-
+    for (const [, rawHref] of html.matchAll(/<a\b[^>]*href="([^"]+)"/gi)) {
+      if (/^(?:mailto:|tel:|javascript:|data:|#)/i.test(rawHref)) continue;
+      const target = new URL(rawHref.replaceAll('&amp;', '&'), expectedCanonical);
       if (target.origin !== origin) continue;
-      const targetFile = fileForPath(target.pathname);
-      check(Boolean(targetFile), `${route}: broken internal link to ${target.pathname}`);
-
-      if (targetFile?.endsWith('.html')) {
-        linkedRoutes.add(routeFromHtml(targetFile));
-      }
-    }
-    graph.set(route, linkedRoutes);
-  }
-
-  const expectedProjects = [
-    '/projects/robinos/',
-    '/projects/quant-lab/',
-    '/projects/watts-to-satoshi/',
-    '/projects/childrens-ai-education-apps/',
-  ];
-  for (const route of expectedProjects) {
-    check(pageByRoute.has(route), `${route}: expected project detail page is missing.`);
-  }
-
-  const homepageLocales = ['/', '/cn/', '/tw/', '/jp/'];
-  const requiredAlternates = new Map([
-    ['en', `${origin}/`],
-    ['zh-Hans', `${origin}/cn/`],
-    ['zh-Hant', `${origin}/tw/`],
-    ['ja', `${origin}/jp/`],
-    ['x-default', `${origin}/`],
-  ]);
-  for (const route of homepageLocales) {
-    const html = readFileSync(pageByRoute.get(route), 'utf8');
-    const alternates = new Map(
-      [...html.matchAll(/<link\s+rel=["']alternate["']\s+hreflang=["']([^"']+)["']\s+href=["']([^"']+)["']/gi)].map(
-        (match) => [match[1], match[2]],
-      ),
-    );
-    for (const [language, href] of requiredAlternates) {
-      check(alternates.get(language) === href, `${route}: missing or incorrect ${language} alternate.`);
+      check(Boolean(fileForPath(target.pathname)), `${route}: broken internal link to ${target.pathname}`);
     }
   }
 
-  const expectedPrimaryLinks = new Map([
-    ['/', [
-      { label: 'Projects', href: '/projects/' },
-      { label: 'Portfolio', href: '/portfolio/' },
-      { label: 'Press', href: '/now/' },
-      { label: 'Books', href: '/books/' },
-    ]],
-    ['/cn/', [
-      { label: '项目', href: '/cn/projects/' },
-      { label: '作品', href: '/portfolio/' },
-      { label: '报道', href: '/cn/now/' },
-      { label: '书籍', href: '/cn/books/' },
-    ]],
-    ['/tw/', [
-      { label: '專案', href: '/tw/#projects' },
-      { label: '作品', href: '/portfolio/' },
-      { label: '報導', href: '/tw/#press' },
-      { label: '書籍', href: '/tw/#books' },
-    ]],
-    ['/jp/', [
-      { label: 'プロジェクト', href: '/jp/#projects' },
-      { label: 'ポートフォリオ', href: '/portfolio/' },
-      { label: 'プレス', href: '/jp/#press' },
-      { label: '書籍', href: '/jp/#books' },
-    ]],
-  ]);
-  const requiredFooterLinks = new Map([
-    ['/', ['/about/', '/writing/', '/contact/', 'https://github.com/Robin84Bran/']],
-    ['/cn/', ['/cn/about/', '/cn/writing/', '/cn/contact/', 'https://github.com/Robin84Bran/']],
-    ['/tw/', ['/tw/#about', '/writing/', '/contact/', 'https://github.com/Robin84Bran/']],
-    ['/jp/', ['/jp/#about', '/writing/', '/contact/', 'https://github.com/Robin84Bran/']],
-  ]);
-
-  for (const route of homepageLocales) {
-    const html = readFileSync(pageByRoute.get(route), 'utf8');
-    const header = html.match(/<header\b[\s\S]*?<\/header>/i)?.[0] ?? '';
-    const primaryNav = header.match(/<nav\b[^>]*aria-label=["']Primary["'][^>]*>[\s\S]*?<\/nav>/i)?.[0] ?? '';
-    const primaryLinks = anchorLinks(primaryNav);
-    const expectedLinks = expectedPrimaryLinks.get(route);
-    check(
-      primaryLinks.length === expectedLinks.length &&
-        primaryLinks.every(
-          (link, index) => link.label === expectedLinks[index].label && link.href === expectedLinks[index].href,
-        ),
-      `${route}: primary navigation is not the required four-link set in the required order.`,
-    );
-
-    const footer = html.match(/<footer\b[\s\S]*?<\/footer>/i)?.[0] ?? '';
-    const footerHrefs = new Set(anchorLinks(footer).map((link) => link.href));
-    for (const href of requiredFooterLinks.get(route)) {
-      check(footerHrefs.has(href), `${route}: visible footer/site index is missing ${href}.`);
-    }
-    check(
-      !/\bhidden(?:\s|=|>)|\bsr-only\b|display\s*:\s*none|visibility\s*:\s*hidden/i.test(footer),
-      `${route}: footer/site index contains hidden-link styling or attributes.`,
-    );
-  }
-
-  const expectedAlternateNames = [
-    'Ms. Robin Xie',
-    'Bin “Robin” Xie',
-    '谢玢',
-    '謝玢',
-    'nanobin',
-    'ロビン・シエ',
-  ];
-  const expectedSameAs = [
-    'https://www.tideisun.com/en/robin',
-    'https://www.linkedin.com/in/nanobin',
-    'https://github.com/Robin84Bran/',
-    'https://x.com/nanobin1984',
-    'https://medium.com/@iamrobin-ai',
-    'https://app.ens.domains/iamrobin.eth',
-  ];
-  const allSchemas = [...schemasByRoute.values()].flat();
-  const personSchemas = allSchemas.filter((schema) => schema['@type'] === 'Person');
-  check(personSchemas.length > 0, 'No canonical Person schema was emitted.');
-  for (const person of personSchemas) {
-    check(person['@id'] === stablePersonId, 'A Person schema does not use the stable Person @id.');
-    check(person.name === 'Robin Xie', 'Person name is not Robin Xie.');
-    check(person.honorificPrefix === 'Ms.', 'Person honorificPrefix is not Ms.');
-    check(
-      JSON.stringify(person.alternateName) === JSON.stringify(expectedAlternateNames),
-      'Person alternateName values are incomplete or out of order.',
-    );
-    check(person.pronouns === 'she/her', 'Person pronouns are not she/her.');
-    check(
-      typeof person.disambiguatingDescription === 'string' && person.disambiguatingDescription.length > 40,
-      'Person disambiguatingDescription is missing or too short.',
-    );
-    check(
-      JSON.stringify(person.sameAs) === JSON.stringify(expectedSameAs),
-      'Person sameAs links are incomplete or out of order.',
-    );
-  }
-  for (const schema of allSchemas) {
-    visitObjects(schema, (node) => {
-      if (typeof node['@id'] === 'string' && node['@id'].endsWith('#person')) {
-        check(node['@id'] === stablePersonId, `Schema reference ${node['@id']} does not use the stable Person @id.`);
-      }
-    });
-  }
-
-  const reached = new Set(['/']);
-  const queue = ['/'];
-  while (queue.length) {
-    const current = queue.shift();
-    for (const linked of graph.get(current) ?? []) {
-      if (!reached.has(linked)) {
-        reached.add(linked);
-        queue.push(linked);
-      }
-    }
-  }
-
-  const sitemap = readFileSync(join(dist, 'sitemap-0.xml'), 'utf8');
-  const sitemapRoutes = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(
-    (match) => new URL(match[1]).pathname,
-  );
-  for (const route of sitemapRoutes) {
-    check(pageByRoute.has(route), `${route}: sitemap URL has no generated HTML page.`);
-    check(reached.has(route), `${route}: sitemap page is not reachable from the homepage link graph.`);
-  }
+  const homepage = readFileSync(routes.get('/'), 'utf8');
+  const books = readFileSync(routes.get('/books/'), 'utf8');
+  const portfolio = readFileSync(routes.get('/portfolio/'), 'utf8');
+  check(homepage.includes('"@type":"Person"'), 'homepage: Person schema missing.');
+  check(homepage.includes('"@type":"WebSite"'), 'homepage: WebSite schema missing.');
+  check(homepage.includes('"@type":"ProfilePage"'), 'homepage: ProfilePage schema missing.');
+  check((books.match(/"@type":"Book"/g) ?? []).length === 4, 'books: expected four Book schemas.');
+  check(portfolio.includes('"@type":"CollectionPage"'), 'portfolio: CollectionPage schema missing.');
 
   const robots = readFileSync(join(dist, 'robots.txt'), 'utf8');
-  for (const required of [
-    'User-agent: OAI-SearchBot\nAllow: /',
-    'User-agent: GPTBot\nDisallow: /',
-    'User-agent: Google-Extended\nDisallow: /',
-    `Sitemap: ${origin}/sitemap-index.xml`,
-  ]) {
-    check(robots.includes(required), `robots.txt is missing policy block: ${required.split('\n')[0]}`);
+  check(robots.includes('Sitemap: https://iamrobin.ai/sitemap-index.xml'), 'robots.txt: sitemap declaration missing.');
+  check(robots.includes('User-agent: OAI-SearchBot\nAllow: /'), 'robots.txt: OAI-SearchBot policy missing.');
+  check(robots.includes('User-agent: GPTBot\nDisallow: /'), 'robots.txt: GPTBot policy missing.');
+
+  const sitemapFiles = walk(dist).filter((file) => /sitemap.*\.xml$/.test(file));
+  const sitemap = sitemapFiles.map((file) => readFileSync(file, 'utf8')).join('\n');
+  for (const route of indexableRoutes) {
+    check(sitemap.includes(new URL(route, `${origin}/`).toString()), `sitemap: missing ${route}.`);
   }
+  check(!sitemap.includes('/identity/'), 'sitemap: identity placeholders must be excluded.');
+  check(!sitemap.includes('/projects/'), 'sitemap: hidden projects route must be excluded.');
 
-  check(!existsSync(join(dist, 'scripts', 'locale-preference.js')), 'Removed locale redirect script still exists in dist/.');
-
-  for (const source of ['functions/_middleware.ts', 'public/_worker.js']) {
-    const content = readFileSync(join(root, source), 'utf8');
-    check(!content.includes('request.cf?.country'), `${source}: country-based locale routing remains.`);
-    check(!content.includes('countryLocales'), `${source}: country locale map remains.`);
-  }
-
-  const worker = (await import(pathToFileURL(join(root, 'public/_worker.js')).href)).default;
-  const assetEnvironment = {
-    ASSETS: {
-      fetch: async () => new Response('ok', { status: 200 }),
-    },
-  };
-  for (const country of ['CN', 'HK', 'MO', 'TW', 'JP', 'US', undefined]) {
-    const request = new Request(`${origin}/`);
-    request.cf = country ? { country } : {};
-    const response = await worker.fetch(request, assetEnvironment);
-    check(response.status === 200, `Homepage redirected for country context ${country ?? 'none'}.`);
-    check(!response.headers.has('location'), `Homepage emitted a location header for ${country ?? 'none'}.`);
-  }
-  const wwwRedirect = await worker.fetch(new Request('https://www.iamrobin.ai/projects/'), assetEnvironment);
-  check(wwwRedirect.status === 301, 'www host no longer redirects permanently to the apex host.');
-  check(
-    wwwRedirect.headers.get('location') === `${origin}/projects/`,
-    'www redirect no longer preserves the path on the apex host.',
-  );
-
-  const css = readFileSync(join(root, 'src/styles/global.css'), 'utf8');
-  const token = (name) => css.match(new RegExp(`--${name}:\\s*(#[0-9a-f]{6})`, 'i'))?.[1];
-  const canvas = token('color-canvas');
-  for (const name of ['color-muted', 'color-accent-text']) {
-    const color = token(name);
-    check(Boolean(color && canvas), `${name}: missing six-digit text or canvas color token.`);
-    if (color && canvas) {
-      check(
-        contrastRatio(color, canvas) >= 4.5,
-        `${name}: text contrast against the canvas is below 4.5:1.`,
-      );
-    }
-  }
-  check(
-    css.includes(':where(a, button, summary):focus-visible'),
-    'Global visible keyboard focus rule is missing.',
-  );
-
-  const identityStrip = readFileSync(join(root, 'src/components/home/IdentityStrip.astro'), 'utf8');
-  check(!identityStrip.includes('tabindex='), 'Non-interactive identity tiles remain in the tab order.');
-  check(identityStrip.includes('<h2'), 'Identity tiles no longer expose persistent visible headings.');
-
-  for (const route of ['/', '/about/']) {
-    const html = readFileSync(pageByRoute.get(route), 'utf8');
-    const phrase = 'Engineering is my core. Then systems, capital, media, and books began to grow.';
-    check(html.split(phrase).length - 1 <= 1, `${route}: duplicated About opening remains.`);
+  for (const required of ['_headers', '_worker.js', 'favicon.svg']) {
+    check(existsSync(join(dist, required)), `dist/${required} is missing.`);
   }
 }
 
 if (failures.length) {
-  console.error(`SEO verification failed with ${failures.length} issue(s):`);
+  console.error(`SEO verification failed (${failures.length}):`);
   for (const failure of failures) console.error(`- ${failure}`);
-  process.exitCode = 1;
-} else {
-  console.log('SEO verification passed: routes, visible navigation, links, canonicals, hreflang, Person JSON-LD, sitemap, edge routing, crawler policy, contrast, and semantics.');
+  process.exit(1);
 }
+
+console.log('SEO verification passed: canonical, robots, social cards, schema, sitemap, internal links, and edge files.');

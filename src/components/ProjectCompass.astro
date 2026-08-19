@@ -1,0 +1,43 @@
+---
+import { projects } from '../data/site';
+
+interface Props {
+  preview?: boolean;
+}
+
+const { preview = false } = Astro.props;
+---
+
+<section class:list={['project-section', { 'project-section--preview': preview }]} aria-labelledby="project-map-title">
+  <div class="project-compass" id="project-map-title">
+    <span class="compass-axis compass-axis--vertical" aria-hidden="true"></span>
+    <span class="compass-axis compass-axis--horizontal" aria-hidden="true"></span>
+    <div class="compass-core">
+      <span>R</span>
+      <small>Robin</small>
+    </div>
+    {
+      projects.map((project) => (
+        <a class={`project-point project-point--${project.position}`} href={`/projects/#${project.slug}`} id={preview ? undefined : project.slug}>
+          <div class={`project-visual project-visual--${project.visual}`} aria-hidden="true">
+            {project.visual === 'loop' && <><span class="loop-ring"></span><span class="loop-mark">∞</span></>}
+            {project.visual === 'wave' && (
+              <span class="wave-bars">
+                {[2, 4, 7, 5, 9, 6, 11, 7, 4, 8, 5, 3].map((height) => <i style={`--bar:${height}`}></i>)}
+              </span>
+            )}
+            {project.visual === 'flow' && (
+              <span class="energy-flow"><i>W</i><b>→</b><i>⚡</i><b>→</b><i>₿</i></span>
+            )}
+            {project.visual === 'blocks' && (
+              <span class="bran-blocks"><i></i><i></i><i></i><i></i><i></i></span>
+            )}
+          </div>
+          <span class="project-state">{project.state}</span>
+          <strong>{project.name}</strong>
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </a>
+      ))
+    }
+  </div>
+</section>

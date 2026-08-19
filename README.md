@@ -1,28 +1,26 @@
-# iamrobin.ai — website v1.2
+# iamrobin.ai — Website v2 / Zen Loop
 
-July 2026 working copy for the next personal-site release.
+A static-first Astro website that turns the I AM ROBIN mnemonic into a quiet
+identity cycle: nucleus, growth, sakura drift, and return.
 
-## What changed
+The public site is deployed as the Cloudflare Worker `robin-web`. Cloudflare
+Workers Builds watches the GitHub `main` branch and performs the production
+build and deployment.
 
-- warmer zen-garden / wabi-sabi visual system
-- lighter navigation and contact surface
-- shorter public copy and reduced secondary explanation
-- canonical host set to `https://iamrobin.ai`
-- security headers added in [`public/_headers`](./public/_headers)
-- CI guardrail added in [`.github/workflows/site-guard.yml`](./.github/workflows/site-guard.yml)
+## Local preview
 
-## Local
-
-```bash
-npm install
-npm run check
-npm run build
-npm run preview:host
+```sh
+pnpm install
+pnpm dev
 ```
 
-## Deployment notes
+## Validation
 
-- Canonical host is `https://iamrobin.ai`
-- Cloudflare Pages/Workers should enforce HTTPS
-- `www` to apex still needs a Cloudflare Redirect Rule or Single Redirect because domain-level redirects are not supported in Pages `_redirects`
-- Email DNS is intentionally unchanged in this release
+```sh
+pnpm run release:check
+pnpm audit --prod
+```
+
+The release check validates Astro/TypeScript, builds all routes, and inspects
+canonical URLs, robots directives, Open Graph/Twitter metadata, JSON-LD,
+sitemaps, internal links, and edge files.

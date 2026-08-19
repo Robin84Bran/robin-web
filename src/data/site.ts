@@ -1,205 +1,170 @@
-export const siteConfig = {
-  name: 'Robin Xie',
-  title: 'Robin Xie | Engineer, Capital Allocator, Writer',
-  description:
-    'Personal site of Robin Xie: engineer, capital allocator, writer, and builder across AI, markets, systems, and digital identity.',
-  siteUrl: 'https://iamrobin.ai',
-  blogUrl: 'https://iamrobin.ghost.io',
-  officialWebsiteUrl: 'https://www.tideisun.com/en/robin',
-  officialWebsiteUrlCn: 'https://www.tideisun.com/robin',
-  ensUrl: 'https://app.ens.domains/iamrobin.eth',
-  mediumUrl: 'https://medium.com/@iamrobin-ai',
-  githubUrl: 'https://github.com/Robin84Bran/',
-  xUrl: 'https://x.com/nanobin1984',
-  linkedinUrl: 'https://www.linkedin.com/in/nanobin',
-  portraitUrl: '/social/robin-portrait.jpg',
-  releaseLabel: 'Website v1.3 · August 2026',
-  releaseLabelCn: '网站 v1.3 · 2026年8月',
-  heroEyebrow: 'Robin Xie',
-  heroTitle: 'Engineer, investor, writer.',
-  heroSubline: 'I work where intelligence and capital begin to converge.',
-  heroBody: [
-    'I build systems, write essays, and allocate time, attention, and capital.',
-    'I care about clarity, warmth, and what still matters after the noise fades.',
-    'Only the public edge lives here.',
-  ],
-  quote: 'What lasts usually arrives quietly.',
-} as const;
-
-export const navigation = [
-  { label: 'Projects', href: '/projects/' },
+export const navItems = [
+  { label: 'Home', href: '/' },
   { label: 'Portfolio', href: '/portfolio/' },
-  { label: 'Press', href: '/now/' },
   { label: 'Books', href: '/books/' },
 ] as const;
 
-export const socialLinks = [
-  {
-    label: 'GitHub',
-    href: siteConfig.githubUrl,
-    blurb: 'Code and working systems.',
-  },
-  {
-    label: 'Ghost blog',
-    href: siteConfig.blogUrl,
-    blurb: 'Longer essays and notes.',
-  },
-  {
-    label: 'Medium',
-    href: siteConfig.mediumUrl,
-    blurb: 'Selective reposts.',
-  },
-  {
-    label: 'X',
-    href: siteConfig.xUrl,
-    blurb: 'Short notes.',
-  },
-  {
-    label: 'LinkedIn',
-    href: siteConfig.linkedinUrl,
-    blurb: 'Professional context.',
-  },
+export const identityWords = [
+  { letter: 'I', word: 'Identity', slug: 'identity', tone: 'sakura', projects: ['iamrobin.ai', 'RobinOS identity layer'] },
+  { letter: 'A', word: 'Asymmetry', slug: 'asymmetry', tone: 'sakura', projects: ['Quant Lab', 'Capital systems'] },
+  { letter: 'M', word: 'Meaning', slug: 'meaning', tone: 'gold', projects: ['Books', 'Diary'] },
+  { letter: 'R', word: 'Resonance', slug: 'resonance', tone: 'silver', projects: ['Writing', 'Conversations'] },
+  { letter: 'O', word: 'Ouroboros', slug: 'ouroboros', tone: 'sakura', projects: ['RobinOS journey', 'Time loops'] },
+  { letter: 'B', word: 'Binary', slug: 'binary', tone: 'ink', projects: ['Bran Lab', 'Bitcoin rails'] },
+  { letter: 'I', word: 'Intelligence', slug: 'intelligence', tone: 'sakura', projects: ['AI collaborators', 'Quant research'] },
+  { letter: 'N', word: 'Network', slug: 'network', tone: 'silver', projects: ['Press'] },
 ] as const;
 
-export const footerLinks = [
-  { label: 'GitHub', href: siteConfig.githubUrl },
-  { label: 'LinkedIn', href: siteConfig.linkedinUrl },
-  { label: 'Medium', href: siteConfig.mediumUrl },
-  { label: 'Blog', href: siteConfig.blogUrl },
-] as const;
+export const socialLinks = {
+  official: 'https://www.tideisun.com/en/robin',
+  github: 'https://github.com/Robin84Bran/',
+  medium: 'https://medium.com/@iamrobin-ai',
+  linkedin: 'https://www.linkedin.com/in/nanobin',
+} as const;
 
-export const identityPillars = [
+export const pressLinks = [
   {
-    id: 'engineer',
-    title: 'Engineer',
-    description: 'Engineering is my core.',
-  },
-  {
-    id: 'capital',
-    title: 'Investor',
-    description: 'Time, attention, and capital, placed to grow and compound.',
-  },
-  {
-    id: 'writer',
-    title: 'Writer',
-    description: 'Only the public edge lives here.',
-  },
-  {
-    id: 'builder',
-    title: 'Builder',
-    description: 'Find how value moves, then build something that can survive reality.',
-  },
-] as const;
-
-export const aboutPillars = [
-  {
-    title: 'Teddy’s gift',
-    description: 'Asymmetry is the source of all power. Systems break beautifully. Time is not linear but a loop.',
-  },
-  {
-    title: 'Global citizen',
-    description: 'Invest in the United States. Spend in China. Work in Hong Kong. Play in Macau. I belong to the system worth building.',
-  },
-  {
-    title: 'Keep the human texture',
-    description: 'Warmth, humor, and taste are part of the architecture. Smiling randomly is not a bug, but a feature.',
-  },
-] as const;
-
-export const operatingPrinciples = [
-  'I seek. I become. I AM.',
-  '99% false signal fades. 1% true alpha lives.',
-  'Build for the long arc, not the loud cycle.',
-  'Love creates coherence and resonance.',
-] as const;
-
-export const writingTracks = [
-  {
-    title: 'Ghost archive',
-    description: 'Longer essays and ongoing arcs.',
-    href: siteConfig.blogUrl,
-  },
-  {
-    title: 'Medium reposts',
-    description: 'A smaller secondary lane.',
-    href: siteConfig.mediumUrl,
-  },
-  {
-    title: 'Signal layer',
-    description: 'Filtered notes closer to the system.',
-    href: '/signal/',
-  },
-] as const;
-
-export const heroLens = [
-  {
-    label: 'In motion',
-    value: 'RobinOS, blogs in progress, Bran Lab, and a quieter market practice.',
-  },
-  {
-    label: 'Between',
-    value: 'English and Chinese; software and capital.',
-  },
-  {
-    label: 'Elsewhere',
-    value: 'The rest stays in RobinOS until it earns daylight.',
-  },
-] as const;
-
-export const systemLayers = [
-  { label: 'Signal', href: '/signal/' },
-  { label: 'Systems', href: '/systems/' },
-  { label: 'Lab', href: '/lab/' },
-  { label: 'Taste', href: '/taste/' },
-] as const;
-
-export const nowSignals = [
-  {
-    label: 'Platform',
-    value: 'Blockchain banking and platform design.',
-  },
-  {
-    label: 'Scale',
-    value: 'One million users across regional infrastructure.',
-  },
-  {
-    label: 'Reach',
-    value: 'Cross-border payments for markets the legacy rails did not care to reach.',
-  },
-] as const;
-
-export const pressFeatures = [
-  {
-    title: 'Nasdaq interview',
-    href: 'https://financialit.net/news/blockchain/isunone-indicated-nasdaq-interview-future-blockchain-banking',
-    description: 'An early conversation about blockchain banking and platform design.',
+    label: 'Nasdaq interview',
     source: 'Financial IT',
+    href: 'https://financialit.net/news/blockchain/isunone-indicated-nasdaq-interview-future-blockchain-banking',
   },
   {
-    title: 'One million users',
+    label: 'One million users',
+    source: 'Media Outreach',
     href: 'https://hong-kong.media-outreach.com/news/hong-kong/2019/11/20/21203/isunone-reaches-1-million-users-and-promotes-blockchain-development-in-asean/',
-    description: 'A milestone in scale, infrastructure, and cross-border finance. Still not a bank.',
-    source: 'Media Outreach',
   },
   {
-    title: 'Financial inclusion',
-    href: 'https://www.media-outreach.com/news/hong-kong/2019/07/17/9617/isunone-teams-up-with-digital-bank-to-benefit-2-billion-underprivileged-population/',
-    description: 'Payments and money flow for markets the legacy rails did not care to reach.',
+    label: 'Financial inclusion',
     source: 'Media Outreach',
+    href: 'https://www.media-outreach.com/news/hong-kong/2019/07/17/9617/isunone-teams-up-with-digital-bank-to-benefit-2-billion-underprivileged-population/',
   },
 ] as const;
 
-export const contactPrompts = [
+export const portfolioOrbitNodes = [
   {
-    title: 'Thoughtful partnerships',
-    description: 'AI, capital, media, and long-horizon work.',
+    label: 'Gifted Class · Rice',
+    mark: 'G·R',
+    note: 'origin',
+    links: [
+      { label: 'Gifted Class', icon: 'gifted', href: 'https://en.wikipedia.org/wiki/Special_Class_for_the_Gifted_Young' },
+      { label: 'Rice', icon: 'rice', href: 'https://www.rice.edu' },
+    ],
+  },
+  { label: 'ChatGPT', mark: '◎', note: 'daily intelligence', links: [{ label: 'ChatGPT', icon: 'chatgpt', href: 'https://chatgpt.com' }] },
+  { label: 'Bitcoin', mark: '₿', note: 'sovereignty', links: [{ label: 'Bitcoin', icon: 'bitcoin', href: 'https://bitcoin.org/en/' }] },
+  { label: 'Ethereum', mark: '◇', note: 'programmable value', links: [{ label: 'Ethereum', icon: 'ethereum', href: 'https://ethereum.foundation' }] },
+  {
+    label: 'USDT · USDC',
+    mark: '$',
+    note: 'liquidity rails',
+    links: [
+      { label: 'USDT', icon: 'usdt', href: 'https://tether.to' },
+      { label: 'USDC', icon: 'usdc', href: 'https://www.circle.com/usdc' },
+    ],
+  },
+  { label: 'iSunOne', mark: 'iS', note: 'built system', links: [{ label: 'iSunOne', icon: 'isunone', href: 'https://www.isun1.com' }] },
+  {
+    label: 'Oceaneering · NASA',
+    mark: 'O·N',
+    note: 'engineering frontier',
+    links: [
+      { label: 'Oceaneering', icon: 'oceaneering', href: 'https://www.oceaneering.com' },
+      { label: 'NASA', icon: 'nasa', href: 'https://www.nasa.gov' },
+    ],
   },
   {
-    title: 'Sharp conversations',
-    description: 'A real thesis and a little context go a long way.',
+    label: 'Tesla · SpaceX',
+    mark: 'T·S',
+    note: 'American frontier',
+    links: [
+      { label: 'Tesla', icon: 'tesla', href: 'https://www.tesla.com' },
+      { label: 'SpaceX', icon: 'spacex', href: 'https://www.spacex.com' },
+    ],
+  },
+  { label: 'RobinOS', mark: '∞', note: 'becoming', links: [{ label: 'RobinOS', icon: 'robinos', href: '/identity/ouroboros/' }] },
+] as const;
+
+export const projects = [
+  {
+    slug: 'robinos',
+    name: 'RobinOS',
+    state: 'system / journey',
+    mark: '∞',
+    position: 'north',
+    visual: 'loop',
   },
   {
-    title: 'Clear channels',
-    description: 'Start in the channel that fits the work.',
+    slug: 'quant-lab',
+    name: 'Quant Lab',
+    state: 'research',
+    mark: '∿',
+    position: 'east',
+    visual: 'wave',
+  },
+  {
+    slug: 'watts-to-sats',
+    name: 'Watts to Sats',
+    state: 'learn',
+    mark: '₿',
+    position: 'south',
+    visual: 'flow',
+  },
+  {
+    slug: 'bran-lab',
+    name: 'Bran Lab',
+    state: 'play',
+    mark: '✦',
+    position: 'west',
+    visual: 'blocks',
+  },
+] as const;
+
+export const portfolioLayers = [
+  {
+    label: 'Origin',
+    note: 'learn',
+    nodes: ['Gifted Class', 'Rice University', 'Oceaneering'],
+  },
+  {
+    label: 'Frontier',
+    note: 'reach',
+    nodes: ['NASA', 'Tesla', 'SpaceX'],
+  },
+  {
+    label: 'Capital',
+    note: 'allocate',
+    nodes: ['Bitcoin', 'Ethereum', 'USDT · USDC'],
+  },
+  {
+    label: 'Systems',
+    note: 'become',
+    nodes: ['ChatGPT', 'iSunOne', 'RobinOS'],
+  },
+] as const;
+
+export const books = [
+  {
+    slug: 'agi-awakening',
+    title: 'AGI Awakening',
+    cover: '/books/agi-awakening.webp',
+    question: 'What remains human when intelligence becomes abundant?',
+  },
+  {
+    slug: 'build-1-billion-block',
+    title: 'Build 1 Billion Block',
+    cover: '/books/build-1-billion-block.webp',
+    question: 'What compounds when sovereignty becomes a system?',
+  },
+  {
+    slug: 'longevity-cheat-code',
+    title: 'The Longevity Cheat Code',
+    cover: '/books/longevity-cheat-code.webp',
+    question: 'Can systems thinking rewrite the limits of a life?',
+  },
+  {
+    slug: 'derivatives',
+    title: 'Derivatives',
+    cover: '/books/derivatives.webp',
+    question: 'How early can a child learn optionality?',
   },
 ] as const;

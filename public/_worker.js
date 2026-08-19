@@ -14,10 +14,7 @@ const securityHeaders = {
 function redirect(url, status) {
   return new Response(null, {
     status,
-    headers: {
-      ...securityHeaders,
-      Location: url.toString(),
-    },
+    headers: { ...securityHeaders, Location: url.toString() },
   });
 }
 
@@ -36,10 +33,7 @@ export default {
 
     const response = await env.ASSETS.fetch(request);
     const headers = new Headers(response.headers);
-
-    for (const [name, value] of Object.entries(securityHeaders)) {
-      headers.set(name, value);
-    }
+    for (const [name, value] of Object.entries(securityHeaders)) headers.set(name, value);
 
     return new Response(response.body, {
       status: response.status,

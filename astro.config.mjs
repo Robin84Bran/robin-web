@@ -1,14 +1,17 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
-import tailwindcss from '@tailwindcss/vite';
+import { sites } from '@openai/sites-vite-plugin';
 
-// https://astro.build/config
 export default defineConfig({
-  site: process.env.PUBLIC_SITE_URL ?? 'https://iamrobin.ai',
+  site: 'https://iamrobin.ai',
   output: 'static',
-  integrations: [sitemap()],
+  integrations: [
+    sitemap({
+      filter: (page) => ['/', '/portfolio/', '/books/'].includes(new URL(page).pathname),
+    }),
+  ],
+  trailingSlash: 'always',
   vite: {
-    plugins: [tailwindcss()],
+    plugins: [sites()],
   },
 });

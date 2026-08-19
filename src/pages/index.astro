@@ -1,77 +1,37 @@
 ---
-import { getCollection, getEntry, render } from 'astro:content';
-import FeaturedBooks from '../components/home/FeaturedBooks.astro';
-import Hero from '../components/home/Hero.astro';
-import HomeAbout from '../components/home/HomeAbout.astro';
-import IdentityStrip from '../components/home/IdentityStrip.astro';
-import PortfolioPreview from '../components/home/PortfolioPreview.astro';
-import PressPreview from '../components/home/PressPreview.astro';
-import ProjectsGrid from '../components/home/ProjectsGrid.astro';
-import { aboutPillars, operatingPrinciples, pressFeatures, siteConfig } from '../data/site';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { featuredOnly, sortCollectionByOrder } from '../lib/content';
-import { createPersonSchema, createWebsiteSchema } from '../lib/seo';
-
-const books = featuredOnly(sortCollectionByOrder(await getCollection('books'))).slice(0, 4);
-const projects = featuredOnly(sortCollectionByOrder(await getCollection('projects'))).slice(0, 4);
-const aboutEntry = await getEntry('pages', 'about');
-
-if (!aboutEntry) {
-  throw new Error('Missing about page content.');
-}
-
-const { Content: AboutContent } = await render(aboutEntry);
+import IdentityGarden from '../components/IdentityGarden.astro';
+import { createHomeSchemas } from '../lib/seo';
 ---
 
 <BaseLayout
-  description={siteConfig.description}
-  image="/og/home.jpg"
+  title="Robin Xie — Engineer · Investor · Builder"
+  description="The visual world of Robin Xie: identity, systems, capital, books, and becoming."
   path="/"
-  schema={[createWebsiteSchema(), createPersonSchema()]}
-  title={siteConfig.title}
+  schema={createHomeSchemas()}
 >
-  <Hero />
-  <div class="section-reveal section-reveal-1">
-    <IdentityStrip />
-  </div>
-  <div class="section-reveal section-reveal-2">
-    <ProjectsGrid projects={projects} />
-  </div>
-  <div class="section-reveal section-reveal-3">
-    <PortfolioPreview
-      action="Enter portfolio"
-      description="Time, attention, and capital, placed to grow and compound."
-      eyebrow="Portfolio"
-      href="/portfolio/"
-      note="Bitcoin is the truth. AGI finds the meaning. Eight allocations. One unified field."
-      title="Portfolio"
-    />
-  </div>
-  <div class="section-reveal section-reveal-4">
-    <PressPreview
-      description="A few public moments from before the system had a name."
-      eyebrow="Press"
-      items={pressFeatures}
-      title="Earlier footprints."
-    />
-  </div>
-  <div class="section-reveal section-reveal-5">
-    <FeaturedBooks books={books} />
-  </div>
-  <div class="section-reveal section-reveal-5">
-    <HomeAbout
-      description={aboutEntry.data.description}
-      eyebrow={aboutEntry.data.kicker}
-      pillars={aboutPillars}
-      principles={operatingPrinciples}
-      principlesDescription="Clarity, warmth, and the long arc."
-      principlesEyebrow="Principles"
-      principlesTitle="What holds."
-      title="Robin Xie"
-    >
-      <div slot="body">
-        <AboutContent />
-      </div>
-    </HomeAbout>
-  </div>
+  <section class="zen-home shell" aria-labelledby="zen-home-title">
+    <header class="zen-name">
+      <p class="eyebrow">Engineer · Investor · Builder</p>
+      <h1 id="zen-home-title"><span>Ms.</span> Robin Xie</h1>
+    </header>
+
+    <figure class="time-portrait">
+      <img src="/photos/hero-watch.jpg" alt="Robin pictured inside a watch face" width="829" height="1122" />
+      <span class="time-portrait__orbit time-portrait__orbit--one" aria-hidden="true"></span>
+      <span class="time-portrait__orbit time-portrait__orbit--two" aria-hidden="true"></span>
+      <figcaption><span>Time is a loop.</span><small>HK ↔ US</small></figcaption>
+    </figure>
+
+    <span class="zen-axis" aria-hidden="true"></span>
+    <div class="zen-garden"><IdentityGarden /></div>
+
+    <p class="zen-mantra">I seek. <span>I become.</span> I AM.</p>
+    <nav class="zen-portals" aria-label="Continue exploring">
+      <a href="/portfolio/">Portfolio</a>
+      <span aria-hidden="true">·</span>
+      <a href="/books/">Books</a>
+    </nav>
+    <p class="zen-side-note" aria-hidden="true">AMERICAN FRONTIER MIND · JAPANESE ZEN SURFACE</p>
+  </section>
 </BaseLayout>

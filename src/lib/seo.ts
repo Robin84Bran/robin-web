@@ -1,182 +1,68 @@
-import type { CollectionEntry } from 'astro:content';
-import { bookManuscripts } from '../data/books';
-import { siteConfig } from '../data/site';
+import { books, portfolioOrbitNodes, socialLinks } from '../data/site';
 
-type SchemaObject = Record<string, unknown>;
+export type SchemaNode = Record<string, unknown>;
 
-const personId = () => `${absoluteUrl('/')}#person`;
-const websiteId = () => `${absoluteUrl('/')}#website`;
+export const SITE_URL = 'https://iamrobin.ai';
+export const SITE_NAME = 'Robin Xie';
+export const DEFAULT_IMAGE = '/photos/hero-watch.jpg';
 
-export function resolveSiteUrl() {
-  return (import.meta.env.PUBLIC_SITE_URL || siteConfig.siteUrl).replace(/\/$/, '');
-}
+const personId = `${SITE_URL}/#person`;
+const websiteId = `${SITE_URL}/#website`;
 
 export function absoluteUrl(path = '/') {
-  return new URL(path, `${resolveSiteUrl()}/`).toString();
+  return new URL(path, `${SITE_URL}/`).toString();
 }
 
-export function createPersonSchema(): SchemaObject {
+export function createPersonSchema(): SchemaNode {
   return {
     '@context': 'https://schema.org',
     '@type': 'Person',
-    '@id': personId(),
-    name: siteConfig.name,
+    '@id': personId,
+    name: SITE_NAME,
     honorificPrefix: 'Ms.',
-    alternateName: [
-      'Ms. Robin Xie',
-      'Bin “Robin” Xie',
-      '谢玢',
-      '謝玢',
-      'nanobin',
-      'ロビン・シエ',
-    ],
+    alternateName: ['Ms. Robin Xie', 'Bin “Robin” Xie', '谢玢', '謝玢', 'nanobin'],
     pronouns: 'she/her',
-    disambiguatingDescription:
-      'Ms. Robin Xie, also known as Bin “Robin” Xie and nanobin, is the engineer, investor, and writer represented by iamrobin.ai.',
-    description: siteConfig.description,
-    jobTitle: 'Engineer, Capital Allocator, Writer',
+    description:
+      'Robin Xie is an engineer, investor, writer, and builder working across intelligent systems, capital, and human meaning.',
+    jobTitle: ['Engineer', 'Investor', 'Writer', 'Builder'],
     url: absoluteUrl('/'),
-    image: absoluteUrl(siteConfig.portraitUrl),
-    mainEntityOfPage: {
-      '@id': `${absoluteUrl('/about/')}#profile`,
-    },
-    sameAs: [
-      siteConfig.officialWebsiteUrl,
-      siteConfig.linkedinUrl,
-      siteConfig.githubUrl,
-      siteConfig.xUrl,
-      siteConfig.mediumUrl,
-      siteConfig.ensUrl,
-    ],
+    image: absoluteUrl(DEFAULT_IMAGE),
+    sameAs: [socialLinks.official, socialLinks.linkedin, socialLinks.github, socialLinks.medium],
   };
 }
 
-export function createWebsiteSchema(): SchemaObject {
+export function createWebsiteSchema(): SchemaNode {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    '@id': websiteId(),
-    name: siteConfig.name,
+    '@id': websiteId,
+    name: SITE_NAME,
+    alternateName: 'I AM ROBIN',
     url: absoluteUrl('/'),
-    description: siteConfig.description,
-    inLanguage: ['en', 'zh-CN', 'zh-TW', 'ja'],
-    publisher: {
-      '@id': personId(),
-    },
-  };
-}
-
-export function createBookSchemas(books: CollectionEntry<'books'>[]): SchemaObject[] {
-  return books.map((book) => {
-    const path = `/books/${book.id}/`;
-    const manuscript = bookManuscripts.find((item) => item.slug === book.id);
-
-    return {
-      '@context': 'https://schema.org',
-      '@type': 'Book',
-      '@id': `${absoluteUrl(path)}#book`,
-      name: book.data.title,
-      description: book.data.summary,
-      inLanguage: 'en',
-      author: {
-        '@id': personId(),
-      },
-      url: absoluteUrl(path),
-      mainEntityOfPage: absoluteUrl(path),
-      isPartOf: {
-        '@id': websiteId(),
-      },
-      ...(manuscript ? { image: absoluteUrl(manuscript.coverPublic) } : {}),
-      genre: book.data.theme,
-    };
-  });
-}
-
-export function createArticleSchema({
-  title,
-  description,
-  path,
-  dateModified,
-  image,
-  bookPath,
-}: {
-  title: string;
-  description: string;
-  path: string;
-  dateModified?: string;
-  image?: string;
-  bookPath?: string;
-}): SchemaObject {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    '@id': `${absoluteUrl(path)}#article`,
-    headline: title,
-    description,
-    url: absoluteUrl(path),
-    mainEntityOfPage: absoluteUrl(path),
-    author: {
-      '@id': personId(),
-    },
-    publisher: {
-      '@id': personId(),
-    },
-    isPartOf: {
-      '@id': bookPath ? `${absoluteUrl(bookPath)}#book` : websiteId(),
-    },
+    description: 'The visual world of Robin Xie: identity, systems, capital, books, and becoming.',
     inLanguage: 'en',
-    ...(image ? { image: absoluteUrl(image) } : {}),
-    ...(dateModified ? { dateModified } : {}),
+    publisher: { '@id': personId },
   };
 }
 
-export function createProfilePageSchema(
-  path: string,
-  inLanguage = 'en',
-  name = `About ${siteConfig.name}`,
-): SchemaObject {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'ProfilePage',
-    '@id': `${absoluteUrl(path)}#profile`,
-    name,
-    url: absoluteUrl(path),
-    inLanguage,
-    mainEntity: {
-      '@id': personId(),
+export function createHomeSchemas(): SchemaNode[] {
+  return [
+    createPersonSchema(),
+    createWebsiteSchema(),
+    {
+      '@context': 'https://schema.org',
+      '@type': 'ProfilePage',
+      '@id': `${absoluteUrl('/')}#profile`,
+      name: 'Robin Xie — Engineer, Investor & Builder',
+      url: absoluteUrl('/'),
+      mainEntity: { '@id': personId },
+      isPartOf: { '@id': websiteId },
+      inLanguage: 'en',
     },
-    isPartOf: {
-      '@id': websiteId(),
-    },
-  };
+  ];
 }
 
-export function createProjectSchema(project: CollectionEntry<'projects'>): SchemaObject {
-  const path = `/projects/${project.id}/`;
-
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'CreativeWork',
-    '@id': `${absoluteUrl(path)}#project`,
-    name: project.data.title,
-    description: project.data.summary,
-    abstract: project.data.impact,
-    keywords: project.data.domain,
-    creativeWorkStatus: project.data.status,
-    url: absoluteUrl(path),
-    mainEntityOfPage: absoluteUrl(path),
-    creator: {
-      '@id': personId(),
-    },
-    isPartOf: {
-      '@id': websiteId(),
-    },
-  };
-}
-
-export function createBreadcrumbSchema(
-  items: Array<{ name: string; path: string }>,
-): SchemaObject {
+export function createBreadcrumbSchema(items: Array<{ name: string; path: string }>): SchemaNode {
   return {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -187,4 +73,72 @@ export function createBreadcrumbSchema(
       item: absoluteUrl(item.path),
     })),
   };
+}
+
+export function createPortfolioSchemas(): SchemaNode[] {
+  const about = portfolioOrbitNodes.flatMap((node) =>
+    node.links.map((link) => ({
+      '@type': 'Thing',
+      name: link.label,
+      sameAs: link.href.startsWith('http') ? link.href : absoluteUrl(link.href),
+    })),
+  );
+
+  return [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      '@id': `${absoluteUrl('/portfolio/')}#page`,
+      name: 'Portfolio — Robin Xie',
+      description: "A visual field of the institutions, frontiers, capital, and systems that shape Robin Xie's attention.",
+      url: absoluteUrl('/portfolio/'),
+      isPartOf: { '@id': websiteId },
+      about,
+      inLanguage: 'en',
+    },
+    createBreadcrumbSchema([
+      { name: 'Home', path: '/' },
+      { name: 'Portfolio', path: '/portfolio/' },
+    ]),
+  ];
+}
+
+export function createBooksSchemas(): SchemaNode[] {
+  const bookNodes = books.map((book) => ({
+    '@context': 'https://schema.org',
+    '@type': 'Book',
+    '@id': `${absoluteUrl(`/books/#${book.slug}`)}-book`,
+    name: book.title,
+    description: book.question,
+    image: absoluteUrl(book.cover),
+    author: { '@id': personId },
+    url: absoluteUrl(`/books/#${book.slug}`),
+    inLanguage: 'en',
+  }));
+
+  return [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      '@id': `${absoluteUrl('/books/')}#page`,
+      name: 'Books — Robin Xie',
+      description: 'Four living books by Robin Xie, presented as objects and questions.',
+      url: absoluteUrl('/books/'),
+      isPartOf: { '@id': websiteId },
+      mainEntity: {
+        '@type': 'ItemList',
+        itemListElement: bookNodes.map((book, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          item: { '@id': book['@id'] },
+        })),
+      },
+      inLanguage: 'en',
+    },
+    ...bookNodes,
+    createBreadcrumbSchema([
+      { name: 'Home', path: '/' },
+      { name: 'Books', path: '/books/' },
+    ]),
+  ];
 }

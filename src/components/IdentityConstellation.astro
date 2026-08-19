@@ -1,0 +1,31 @@
+---
+import { identityWords } from '../data/site';
+
+interface Props {
+  compact?: boolean;
+}
+
+const { compact = false } = Astro.props;
+---
+
+<section class:list={['identity-section', { 'identity-section--compact': compact }]} aria-labelledby="identity-title">
+  <div class="identity-copy">
+    <p class="eyebrow">Eight words · one evolving system</p>
+    <h2 id="identity-title">I AM ROBIN</h2>
+  </div>
+  <div class="identity-map" role="img" aria-label="I AM ROBIN identity constellation">
+    <span class="identity-orbit identity-orbit--one" aria-hidden="true"></span>
+    <span class="identity-orbit identity-orbit--two" aria-hidden="true"></span>
+    <ol>
+      {
+        identityWords.map((item, index) => (
+          <li class={`identity-node identity-node--${index + 1}`}>
+            <span class="identity-letter">{item.letter}</span>
+            <span class="identity-word">{item.word}</span>
+          </li>
+        ))
+      }
+    </ol>
+    <span class="identity-core" aria-hidden="true">I AM</span>
+  </div>
+</section>

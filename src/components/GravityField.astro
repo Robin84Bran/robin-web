@@ -1,0 +1,56 @@
+---
+import { portfolioOrbitNodes } from '../data/site';
+import PortfolioGlyph from './PortfolioGlyph.astro';
+---
+
+<section class="orbit-section" aria-labelledby="gravity-title">
+  <h2 class="sr-only" id="gravity-title">Robin's attention orbits, from nearest to farthest</h2>
+  <div class="orbitarium orbitarium--nine">
+    <span class="orbitarium__axis orbitarium__axis--x" aria-hidden="true"></span>
+    <span class="orbitarium__axis orbitarium__axis--y" aria-hidden="true"></span>
+
+    <figure class="orbit-watch">
+      <img src="/photos/hero-watch.jpg" alt="Robin pictured inside a watch face, aligned to the orbit center" width="829" height="1122" />
+      <figcaption><span>attention</span><strong>Robin</strong></figcaption>
+    </figure>
+
+    <div class="orbit-lotus" aria-hidden="true">
+      {[0, 45, 90, 135, 180, 225, 270, 315].map((angle, index) => <i style={`--petal-angle:${angle}deg;--lotus-step:${index}`}></i>)}
+    </div>
+
+    <ol class="space-system" aria-label="Attention ordered from nearest to farthest">
+      {
+        portfolioOrbitNodes.map((node, index) => {
+          const diameterMobile = 7 + index * 1.8;
+          const diameterDesktop = 10 + index * 5.4;
+          const speed = 24 + index * 4.5;
+          const start = (index * 47 + 12) % 360;
+          const style = `--diameter-mobile:${diameterMobile}rem;--diameter-desktop:${diameterDesktop}rem;--speed:${speed}s;--start:${start}deg;--node-step:${index}`;
+
+          return (
+            <li class:list={['space-orbit', { 'space-orbit--reverse': index % 2 === 1 }]} style={style}>
+              <span class="space-orbit__ring" aria-hidden="true"></span>
+              <div class="space-orbit__counter">
+                <details class="space-node">
+                  <summary aria-label={`Show ${node.label}`}>
+                    <span class="space-node__icons">
+                      {node.links.map((link) => <PortfolioGlyph icon={link.icon} />)}
+                    </span>
+                  </summary>
+                  <div class="space-node__label">
+                    <strong>{node.label}</strong>
+                    <small>{node.note}</small>
+                    <nav aria-label={`${node.label} links`}>
+                      {node.links.map((link) => <a href={link.href} rel="noreferrer" target={link.href.startsWith('http') ? '_blank' : undefined}>{link.label} ↗</a>)}
+                    </nav>
+                  </div>
+                </details>
+              </div>
+            </li>
+          );
+        })
+      }
+    </ol>
+  </div>
+  <p class="gravity-caption">near → lived daily · far → still shaping the horizon</p>
+</section>

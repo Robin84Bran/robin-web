@@ -1,0 +1,58 @@
+---
+import { identityWords } from '../data/site';
+
+const positions = [
+  { dx: '-12rem', dy: '-11.5rem', mdx: '-7.4rem', mdy: '-10.2rem', driftX: '-1.1rem', driftY: '-1.6rem' },
+  { dx: '8.8rem', dy: '-11rem', mdx: '5.8rem', mdy: '-8.6rem', driftX: '1.4rem', driftY: '-1.2rem' },
+  { dx: '14rem', dy: '-4rem', mdx: '7.2rem', mdy: '-3.1rem', driftX: '1.8rem', driftY: '-0.2rem' },
+  { dx: '13rem', dy: '4rem', mdx: '7.1rem', mdy: '3rem', driftX: '1.4rem', driftY: '1rem' },
+  { dx: '8rem', dy: '11rem', mdx: '5.2rem', mdy: '8.2rem', driftX: '0.6rem', driftY: '1.8rem' },
+  { dx: '-2rem', dy: '13rem', mdx: '-1rem', mdy: '9.8rem', driftX: '-0.6rem', driftY: '1.8rem' },
+  { dx: '-13rem', dy: '7rem', mdx: '-7.2rem', mdy: '6rem', driftX: '-1.6rem', driftY: '0.8rem' },
+  { dx: '-15rem', dy: '-2rem', mdx: '-7.7rem', mdy: '-1.2rem', driftX: '-1.8rem', driftY: '-0.5rem' },
+];
+
+const petals = [
+  ['-10rem', '-8rem', '-38deg'], ['-4rem', '-12rem', '18deg'], ['4rem', '-11rem', '54deg'],
+  ['10rem', '-7rem', '92deg'], ['12rem', '1rem', '126deg'], ['9rem', '8rem', '162deg'],
+  ['3rem', '12rem', '204deg'], ['-4rem', '11rem', '238deg'], ['-10rem', '7rem', '272deg'],
+  ['-12rem', '0rem', '310deg'], ['6rem', '5rem', '148deg'], ['-6rem', '-3rem', '24deg'],
+];
+---
+
+<section class="identity-garden" aria-labelledby="identity-garden-title">
+  <h2 class="sr-only" id="identity-garden-title">I AM ROBIN — an evolving identity map</h2>
+
+  <span class="identity-garden__orbit identity-garden__orbit--one" aria-hidden="true"></span>
+  <span class="identity-garden__orbit identity-garden__orbit--two" aria-hidden="true"></span>
+  <span class="identity-garden__orbit identity-garden__orbit--three" aria-hidden="true"></span>
+
+  <div class="identity-garden__stems" aria-hidden="true">
+    {positions.map((_, index) => <i class={`identity-garden__stem identity-garden__stem--${index + 1}`}></i>)}
+  </div>
+
+  <ol class="identity-garden__words">
+    {
+      identityWords.map((item, index) => {
+        const position = positions[index];
+        const style = `--dx:${position.dx};--dy:${position.dy};--mdx:${position.mdx};--mdy:${position.mdy};--drift-x:${position.driftX};--drift-y:${position.driftY};--step:${index}`;
+        return (
+          <li class={`identity-garden__node identity-garden__node--${item.tone}`} style={style}>
+            <a href={`/identity/${item.slug}/`} aria-label={`${item.word} project directory`}>
+              <span class="identity-garden__letter">{item.letter}</span><span class="identity-garden__tail">{item.word.slice(1)}</span>
+            </a>
+          </li>
+        );
+      })
+    }
+  </ol>
+
+  <a class="identity-garden__core" href="/identity/identity/" aria-label="Open the Identity project directory">
+    <span class="identity-garden__core-mark"><b>I</b> AM ROBIN</span>
+    <small>eight doors</small>
+  </a>
+
+  <div class="identity-garden__petals" aria-hidden="true">
+    {petals.map(([x, y, rotation], index) => <i style={`--px:${x};--py:${y};--pr:${rotation};--petal:${index}`}></i>)}
+  </div>
+</section>
