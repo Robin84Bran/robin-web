@@ -30,7 +30,13 @@ const latestBriefing = isOuroborosDirectory
       (a, b) => b.data.date.getTime() - a.data.date.getTime(),
     )[0]
   : undefined;
+const latestActionItem = isOuroborosDirectory
+  ? (await getCollection('actionItem', ({ data }) => !data.draft)).sort(
+      (a, b) => b.data.date.getTime() - a.data.date.getTime(),
+    )[0]
+  : undefined;
 const briefingDate = latestBriefing?.data.date.toISOString().slice(0, 10).replaceAll('-', '');
+const actionDate = latestActionItem?.data.date.toISOString().slice(0, 10).replaceAll('-', '');
 ---
 
 <BaseLayout
@@ -54,6 +60,13 @@ const briefingDate = latestBriefing?.data.date.toISOString().slice(0, 10).replac
               <strong>Signals in motion.</strong>
               <span aria-hidden="true">→</span>
             </a>
+            {latestActionItem && actionDate && (
+              <a href={`/ouroboros/${actionDate.slice(0, 6)}/${actionDate}/action_item/`}>
+                <small>Daily Action Item</small>
+                <strong>{latestActionItem.data.title}</strong>
+                <span aria-hidden="true">→</span>
+              </a>
+            )}
           </nav>
         </section>
       ) : isPressDirectory ? (

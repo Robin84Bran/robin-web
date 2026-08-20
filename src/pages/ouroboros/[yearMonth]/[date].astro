@@ -5,20 +5,23 @@ import { createArticleSchemas } from '../../../lib/seo';
 
 export async function getStaticPaths() {
   const entries = await getCollection('dailyBriefing', ({ data }) => !data.draft);
+  const actionItems = await getCollection('actionItem', ({ data }) => !data.draft);
   return entries.map((entry) => {
     const date = entry.data.date.toISOString().slice(0, 10).replaceAll('-', '');
+    const hasActionItem = actionItems.some((item) => item.data.date.toISOString().slice(0, 10).replaceAll('-', '') === date);
     return {
       params: { yearMonth: date.slice(0, 6), date },
-      props: { entry },
+      props: { entry, hasActionItem },
     };
   });
 }
 
 interface Props {
   entry: CollectionEntry<'dailyBriefing'>;
+  hasActionItem: boolean;
 }
 
-const { entry } = Astro.props;
+const { entry, hasActionItem } = Astro.props;
 const { Content } = await render(entry);
 const publicationDate = entry.data.date.toISOString().slice(0, 10);
 const compactDate = publicationDate.replaceAll('-', '');
@@ -71,6 +74,7 @@ const displayDate = entry.data.date.toLocaleDateString('en-US', {
     <footer class="briefing-end" aria-label="End of briefing">
       <span>∞</span>
       <p>Observed. Interpreted. Returned to the loop.</p>
+      {hasActionItem && <a href={`${path}action_item/`}>Read today’s action item →</a>}
     </footer>
   </article>
 </BaseLayout>
@@ -189,6 +193,7 @@ const displayDate = entry.data.date.toLocaleDateString('en-US', {
 
   .briefing-end span { color: var(--sakura); font-family: var(--serif); font-size: 2rem; }
   .briefing-end p { font-family: var(--serif); font-size: .9rem; font-style: italic; }
+  .briefing-end a { margin-top: .8rem; color: var(--gold-dark); font-size: .72rem; letter-spacing: .08em; text-decoration: none; text-transform: uppercase; }
 
   @media (min-width: 50rem) {
     .briefing-hero { grid-template-columns: minmax(15rem, .55fr) 1fr; column-gap: 3rem; }

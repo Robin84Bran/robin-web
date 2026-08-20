@@ -24,4 +24,27 @@ const dailyBriefing = defineCollection({
   }),
 });
 
-export const collections = { dailyBriefing };
+const actionItem = defineCollection({
+  loader: glob({ pattern: '**/article.md', base: './src/content/action-item' }),
+  schema: z.object({
+    title: z.string(),
+    date: z.coerce.date(),
+    updated: z.coerce.date(),
+    section: z.literal('Ouroboros'),
+    series: z.literal('Daily Action Item'),
+    tags: z.array(z.string()),
+    keywords: z.array(z.string()),
+    categories: z.array(z.string()),
+    excerpt: z.string(),
+    hero: z.string(),
+    ogImage: z.string(),
+    canonical: z.string().url(),
+    author: z.string().url(),
+    inLanguage: z.literal('en'),
+    draft: z.boolean().default(false),
+    sourceAction: z.string(),
+    ledgerId: z.string(),
+  }),
+});
+
+export const collections = { dailyBriefing, actionItem };

@@ -41,7 +41,9 @@ check(existsSync(dist), 'dist/ is missing; run the production build first.');
 if (existsSync(dist)) {
   const htmlFiles = walk(dist).filter((file) => file.endsWith('.html'));
   const routes = new Map(htmlFiles.map((file) => [routeFromHtml(file), file]));
-  const articleRoutes = [...routes.keys()].filter((route) => /^\/ouroboros\/\d{6}\/\d{8}\/$/.test(route));
+  const briefingRoutes = [...routes.keys()].filter((route) => /^\/ouroboros\/\d{6}\/\d{8}\/$/.test(route));
+  const actionRoutes = [...routes.keys()].filter((route) => /^\/ouroboros\/\d{6}\/\d{8}\/action_item\/$/.test(route));
+  const articleRoutes = [...briefingRoutes, ...actionRoutes];
   for (const route of articleRoutes) indexableRoutes.add(route);
   check(routes.size === 12 + articleRoutes.length, `expected ${12 + articleRoutes.length} HTML routes, found ${routes.size}.`);
 
@@ -97,6 +99,12 @@ if (existsSync(dist)) {
     check(article.includes('"@type":"Person"'), `${route}: Person schema missing.`);
     check(/<meta\s+property="og:type"\s+content="article"/i.test(article), `${route}: og:type must be article.`);
   }
+  for (const route of actionRoutes) {
+    const article = readFileSync(routes.get(route), 'utf8');
+    check(article.includes('Google'), `${route}: expected Google analysis.`);
+    check(article.includes('Marvell'), `${route}: expected Marvell analysis.`);
+    check(article.includes('AI Circularity'), `${route}: ledger framing missing.`);
+  }
 
   const robots = readFileSync(join(dist, 'robots.txt'), 'utf8');
   check(robots.includes('Sitemap: https://iamrobin.ai/sitemap-index.xml'), 'robots.txt: sitemap declaration missing.');
@@ -110,6 +118,7 @@ if (existsSync(dist)) {
   }
   check(!sitemap.includes('/identity/'), 'sitemap: identity placeholders must be excluded.');
   check(!sitemap.includes('/projects/'), 'sitemap: hidden projects route must be excluded.');
+  check(!sitemap.includes('/ouroborous/'), 'sitemap: misspelled alias must stay excluded.');
 
   for (const required of ['_headers', '_worker.js', 'favicon.svg']) {
     check(existsSync(join(dist, required)), `dist/${required} is missing.`);

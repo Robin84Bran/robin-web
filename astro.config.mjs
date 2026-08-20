@@ -11,7 +11,9 @@ export default defineConfig({
     sitemap({
       filter: (page) => {
         const path = new URL(page).pathname;
-        return ['/', '/portfolio/', '/books/'].includes(path) || /^\/ouroboros\/\d{6}\/\d{8}\/$/.test(path);
+        return ['/', '/portfolio/', '/books/'].includes(path)
+          || /^\/ouroboros\/\d{6}\/\d{8}\/$/.test(path)
+          || /^\/ouroboros\/\d{6}\/\d{8}\/action_item\/$/.test(path);
       },
     }),
   ],

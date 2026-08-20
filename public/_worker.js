@@ -31,6 +31,11 @@ export default {
       return redirect(url, 301);
     }
 
+    if (/^\/ouroborous\//.test(url.pathname)) {
+      url.pathname = url.pathname.replace(/^\/ouroborous\//, '/ouroboros/');
+      return redirect(url, 301);
+    }
+
     const response = await env.ASSETS.fetch(request);
     const headers = new Headers(response.headers);
     for (const [name, value] of Object.entries(securityHeaders)) headers.set(name, value);
