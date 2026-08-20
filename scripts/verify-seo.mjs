@@ -41,7 +41,9 @@ check(existsSync(dist), 'dist/ is missing; run the production build first.');
 if (existsSync(dist)) {
   const htmlFiles = walk(dist).filter((file) => file.endsWith('.html'));
   const routes = new Map(htmlFiles.map((file) => [routeFromHtml(file), file]));
-  check(routes.size === 12, `expected 12 HTML routes, found ${routes.size}.`);
+  const articleRoutes = [...routes.keys()].filter((route) => /^\/ouroboros\/\d{6}\/\d{8}\/$/.test(route));
+  for (const route of articleRoutes) indexableRoutes.add(route);
+  check(routes.size === 12 + articleRoutes.length, `expected ${12 + articleRoutes.length} HTML routes, found ${routes.size}.`);
 
   for (const [route, file] of routes) {
     const html = readFileSync(file, 'utf8');
@@ -89,6 +91,12 @@ if (existsSync(dist)) {
   check(homepage.includes('"@type":"ProfilePage"'), 'homepage: ProfilePage schema missing.');
   check((books.match(/"@type":"Book"/g) ?? []).length === 4, 'books: expected four Book schemas.');
   check(portfolio.includes('"@type":"CollectionPage"'), 'portfolio: CollectionPage schema missing.');
+  for (const route of articleRoutes) {
+    const article = readFileSync(routes.get(route), 'utf8');
+    check(article.includes('"@type":"Article"'), `${route}: Article schema missing.`);
+    check(article.includes('"@type":"Person"'), `${route}: Person schema missing.`);
+    check(/<meta\s+property="og:type"\s+content="article"/i.test(article), `${route}: og:type must be article.`);
+  }
 
   const robots = readFileSync(join(dist, 'robots.txt'), 'utf8');
   check(robots.includes('Sitemap: https://iamrobin.ai/sitemap-index.xml'), 'robots.txt: sitemap declaration missing.');

@@ -142,3 +142,42 @@ export function createBooksSchemas(): SchemaNode[] {
     ]),
   ];
 }
+
+export function createArticleSchemas(input: {
+  title: string;
+  description: string;
+  path: string;
+  image: string;
+  datePublished: string;
+  dateModified: string;
+  keywords: string[];
+  inLanguage: string;
+}): SchemaNode[] {
+  const url = absoluteUrl(input.path);
+  return [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      '@id': `${url}#article`,
+      headline: input.title,
+      description: input.description,
+      url,
+      mainEntityOfPage: url,
+      image: [absoluteUrl(input.image)],
+      datePublished: input.datePublished,
+      dateModified: input.dateModified,
+      author: { '@id': personId },
+      publisher: { '@id': personId },
+      isPartOf: { '@id': websiteId },
+      articleSection: 'Ouroboros',
+      keywords: input.keywords,
+      inLanguage: input.inLanguage,
+    },
+    createPersonSchema(),
+    createBreadcrumbSchema([
+      { name: 'Home', path: '/' },
+      { name: 'Ouroboros', path: '/identity/ouroboros/' },
+      { name: input.title, path: input.path },
+    ]),
+  ];
+}

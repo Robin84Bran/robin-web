@@ -9,7 +9,10 @@ export default defineConfig({
   output: 'static',
   integrations: [
     sitemap({
-      filter: (page) => ['/', '/portfolio/', '/books/'].includes(new URL(page).pathname),
+      filter: (page) => {
+        const path = new URL(page).pathname;
+        return ['/', '/portfolio/', '/books/'].includes(path) || /^\/ouroboros\/\d{6}\/\d{8}\/$/.test(path);
+      },
     }),
   ],
   trailingSlash: 'always',
