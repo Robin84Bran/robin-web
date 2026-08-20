@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { identityWords, pressLinks } from '../../data/site';
+import { getCollection } from 'astro:content';
 
 export function getStaticPaths() {
   return identityWords.map((entry, index) => ({
@@ -23,6 +24,13 @@ interface Props {
 
 const { entry, index, previous, next } = Astro.props;
 const isPressDirectory = entry.slug === 'network';
+const isOuroborosDirectory = entry.slug === 'ouroboros';
+const latestBriefing = isOuroborosDirectory
+  ? (await getCollection('dailyBriefing', ({ data }) => !data.draft)).sort(
+      (a, b) => b.data.date.getTime() - a.data.date.getTime(),
+    )[0]
+  : undefined;
+const briefingDate = latestBriefing?.data.date.toISOString().slice(0, 10).replaceAll('-', '');
 ---
 
 <BaseLayout
@@ -37,7 +45,18 @@ const isPressDirectory = entry.slug === 'network';
     <p class="eyebrow">{String(index + 1).padStart(2, '0')} / 08 · project directory</p>
     <h1>{entry.word}</h1>
     {
-      isPressDirectory ? (
+      isOuroborosDirectory && latestBriefing && briefingDate ? (
+        <section class="press-directory" aria-labelledby="briefing-directory-title">
+          <h2 id="briefing-directory-title">Daily Briefing</h2>
+          <nav aria-label="Latest Daily Briefing">
+            <a href={`/ouroboros/${briefingDate.slice(0, 6)}/${briefingDate}/`}>
+              <small>{latestBriefing.data.date.toLocaleDateString('en-US', { timeZone: 'UTC', month: 'long', day: 'numeric', year: 'numeric' })}</small>
+              <strong>Signals in motion.</strong>
+              <span aria-hidden="true">→</span>
+            </a>
+          </nav>
+        </section>
+      ) : isPressDirectory ? (
         <section class="press-directory" aria-labelledby="press-directory-title">
           <h2 id="press-directory-title">Press</h2>
           <nav aria-label="Selected press">
