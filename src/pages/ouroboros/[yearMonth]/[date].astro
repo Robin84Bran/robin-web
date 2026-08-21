@@ -2,22 +2,23 @@
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import OuroborosPublication from '../../../components/OuroborosPublication.astro';
 import { createArticleSchemas } from '../../../lib/seo';
+import { actionFlows } from '../../../lib/actionFlows';
 
 export async function getStaticPaths() {
   const entries = await getCollection('dailyBriefing', ({ data }) => !data.draft);
-  const actionItems = await getCollection('actionItem', ({ data }) => !data.draft);
   return entries.map((entry) => {
     const date = entry.data.date.toISOString().slice(0, 10).replaceAll('-', '');
     return {
       params: { yearMonth: date.slice(0, 6), date },
-      props: { entry, hasActionItem: actionItems.some((item) => item.data.date.toISOString().slice(0, 10).replaceAll('-', '') === date) },
+      props: { entry, hasActionFlow: actionFlows.some((flow) => flow.date.replaceAll('-', '') === date) },
     };
   });
 }
 
-interface Props { entry: CollectionEntry<'dailyBriefing'>; hasActionItem: boolean; }
-const { entry, hasActionItem } = Astro.props;
+interface Props { entry: CollectionEntry<'dailyBriefing'>; hasActionFlow: boolean; }
+const { entry, hasActionFlow } = Astro.props;
 const { Content } = await render(entry);
+const signalCount = ((entry.body ?? '').match(/^##\s+/gm) ?? []).length;
 const publicationDate = entry.data.date.toISOString().slice(0, 10);
 const compactDate = publicationDate.replaceAll('-', '');
 const path = `/ouroboros/${compactDate.slice(0, 6)}/${compactDate}/`;
@@ -42,10 +43,10 @@ const displayDate = entry.data.date.toLocaleDateString('en-US', { timeZone: 'UTC
   {publicationDate} {displayDate} schema={schemas} language="en" alternates={languages}
   languageLinks={languages.filter((item) => item.hreflang !== 'en')}
   crumbs={[{ label: 'Ouroboros', href: '/ouroboros/' }, { label: 'Daily Briefing' }]}
-  intro="Eight signals. Four languages. One moving field."
+  intro={`${signalCount === 7 ? 'Seven' : 'Eight'} signals. Four languages. One moving field.`}
   footerText="Observed. Interpreted. Returned to the loop."
-  footerLink={hasActionItem ? `${path}action_item/` : undefined}
-  footerLinkLabel={hasActionItem ? 'Read today’s action item →' : undefined}
+  footerLink={hasActionFlow ? `${path}actions/` : undefined}
+  footerLinkLabel={hasActionFlow ? 'Enter today’s action flow →' : undefined}
 >
   <Content />
 </OuroborosPublication>

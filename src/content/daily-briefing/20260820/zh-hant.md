@@ -15,7 +15,7 @@ keywords:
   - stablecoins
   - physical AI
   - robotics
-excerpt: "八個訊號，涵蓋前沿模型、資本流動、支付軌道、公開市場、基礎設施、一級市場、Physical AI 與機器人。"
+excerpt: "七個訊號，涵蓋前沿模型、資本流動、支付軌道、公開市場、基礎設施與一級市場。"
 hero: /daily-briefing/20260820/hero.webp
 ogImage: /daily-briefing/20260820/og.webp
 canonical: "https://iamrobin.ai/ouroboros/202608/20260820/zh-hant/"

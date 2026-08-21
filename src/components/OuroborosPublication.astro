@@ -14,7 +14,7 @@ interface LanguageLink {
 }
 
 interface Props {
-  kind: 'briefing' | 'action';
+  kind: 'briefing' | 'action' | 'blog';
   title: string;
   description: string;
   path: string;
@@ -113,8 +113,7 @@ const {
   .publication-kicker { display: flex; flex-wrap: wrap; gap: .65rem; align-items: center; margin-bottom: clamp(2.5rem, 8vw, 5.5rem); color: var(--gold-dark); font-size: .66rem; font-weight: 650; letter-spacing: .15em; text-transform: uppercase; }
   .publication-kicker a { text-decoration: none; }
   .publication-index { margin: 0 0 1.15rem .18rem; color: var(--muted); font-size: .66rem; letter-spacing: .13em; text-transform: uppercase; }
-  .publication h1 { position: relative; z-index: 2; max-width: 12ch; margin: 0; font-family: var(--serif); font-size: clamp(2.2rem, 8.67vw, 5.2rem); font-weight: 400; letter-spacing: -.045em; line-height: .96; text-wrap: balance; }
-  .publication--action h1 { max-width: 21ch; font-size: clamp(1.75rem, 4vw, 2.75rem); letter-spacing: -.025em; line-height: 1.06; }
+  .publication h1 { position: relative; z-index: 2; max-width: min(22ch, 100%); margin: 0; font-family: var(--serif); font-size: clamp(1.75rem, 4vw, 2.75rem); font-weight: 400; letter-spacing: -.025em; line-height: 1.06; text-wrap: balance; }
   .publication-date { position: relative; z-index: 2; margin: 1.4rem 0 0 .2rem; color: var(--muted); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; }
   .publication-languages { position: relative; z-index: 2; display: flex; flex-wrap: wrap; gap: .45rem 1rem; margin: .9rem 0 0 .2rem; }
   .publication-languages a { color: var(--gold-dark); font-size: .64rem; letter-spacing: .06em; text-decoration-color: rgba(180,145,93,.38); text-underline-offset: .22em; }
@@ -144,8 +143,7 @@ const {
     .publication-intro { grid-column: 2; }
   }
   @media (max-width: 30rem) {
-    .publication h1 { font-size: clamp(2rem, 10.5vw, 3.35rem); }
-    .publication--action h1 { max-width: 22ch; font-size: clamp(1.6rem, 7vw, 2.1rem); line-height: 1.1; }
+    .publication h1 { max-width: min(22ch, 100%); font-size: clamp(1.6rem, 7vw, 2.1rem); line-height: 1.1; }
     .publication-languages { gap: .5rem .85rem; }
   }
 </style>

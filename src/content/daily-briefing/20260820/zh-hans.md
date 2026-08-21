@@ -15,7 +15,7 @@ keywords:
   - stablecoins
   - physical AI
   - robotics
-excerpt: "八个信号，覆盖前沿模型、资本流动、支付轨道、公开市场、基础设施、一级市场、Physical AI 与机器人。"
+excerpt: "七个信号，覆盖前沿模型、资本流动、支付轨道、公开市场、基础设施与一级市场。"
 hero: /daily-briefing/20260820/hero.webp
 ogImage: /daily-briefing/20260820/og.webp
 canonical: "https://iamrobin.ai/ouroboros/202608/20260820/zh-hans/"

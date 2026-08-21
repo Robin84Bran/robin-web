@@ -843,6 +843,20 @@ body[data-path="/portfolio/"] .page-lead h1 {
   color: inherit;
   border-top: 1px solid rgba(83, 74, 65, 0.08);
 }
+.ouroboros-shelf__day + .ouroboros-shelf__day { border-top: 1px solid rgba(83, 74, 65, 0.08); }
+.identity-directory .ouroboros-shelf__day > a { border-top: 0; }
+.identity-directory .ouroboros-shelf__day .ouroboros-shelf__deep {
+  min-height: 2.65rem;
+  padding: 0.45rem 0 0.75rem 0.8rem;
+  border-left: 1px solid rgba(180, 145, 93, 0.3);
+}
+.ouroboros-shelf__deep small {
+  color: var(--muted);
+  font-size: 0.54rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.ouroboros-shelf__deep strong { font-size: 0.72rem; }
 .ouroboros-shelf__list time {
   color: var(--gold-dark);
   font-size: 0.62rem;
