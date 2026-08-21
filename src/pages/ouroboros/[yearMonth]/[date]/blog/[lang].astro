@@ -27,10 +27,10 @@ const languages = [
 ];
 const localeMap = { 'zh-Hans': 'zh-CN', 'zh-Hant': 'zh-TW', ja: 'ja-JP' } as const;
 const localized = entry.data.inLanguage === 'ja'
-  ? { intro: '再び戻る価値のある、ひとつの考え。', footer: '意思決定の高度で書く。出典はつながったまま。', back: 'この日のシグナルへ戻る →' }
+  ? { intro: '再び戻る価値のある、ひとつの考え。', footer: '意思決定の高度で書く。出典はつながったまま。', back: 'Ouroboros に戻る →', distribution: '外部掲載' }
   : entry.data.inLanguage === 'zh-Hant'
-    ? { intro: '一個值得反覆思考的觀點。', footer: '在決策高度寫作。來源始終相連。', back: '返回當日訊號 →' }
-    : { intro: '一个值得反复思考的观点。', footer: '在决策高度写作。来源始终相连。', back: '返回当日信号 →' };
+    ? { intro: '一個值得反覆思考的觀點。', footer: '在決策高度寫作。來源始終相連。', back: '返回 Ouroboros →', distribution: '外部發布' }
+    : { intro: '一个值得反复思考的观点。', footer: '在决策高度写作。来源始终相连。', back: '返回 Ouroboros →', distribution: '外部发布' };
 const schemas = createArticleSchemas({
   title: entry.data.title, description: entry.data.excerpt, path, image: entry.data.ogImage,
   datePublished: publicationDate, dateModified: entry.data.updated.toISOString().slice(0, 10),
@@ -47,7 +47,24 @@ const displayDate = entry.data.date.toLocaleDateString(localeMap[entry.data.inLa
   languageLinks={languages.filter((item) => item.hreflang !== entry.data.inLanguage)}
   crumbs={[{ label: 'Ouroboros', href: '/ouroboros/' }, { label: 'Blog' }, { label: entry.data.lane }]}
   indexLabel={`${entry.data.lane} · M / W / F`} intro={localized.intro}
-  footerText={localized.footer} footerLink={`${briefingPath}${entry.data.languageSlug}/`} footerLinkLabel={localized.back}
+  footerText={localized.footer} footerLink="/ouroboros/" footerLinkLabel={localized.back}
 >
   <Content />
+  <aside class="distribution-links" aria-label="Article distribution">
+    <p>{localized.distribution}</p>
+    {entry.data.mediumUrl
+      ? <a href={entry.data.mediumUrl} rel="noreferrer" target="_blank">Medium ↗</a>
+      : <span>Medium</span>}
+    {entry.data.linkedinUrl
+      ? <a href={entry.data.linkedinUrl} rel="noreferrer" target="_blank">LinkedIn ↗</a>
+      : <span>LinkedIn</span>}
+  </aside>
 </OuroborosPublication>
+
+<style>
+  .distribution-links { display: flex; flex-wrap: wrap; gap: .7rem 1rem; margin-top: 5rem; padding-top: 1.3rem; border-top: 1px solid var(--line); }
+  .distribution-links p { flex-basis: 100%; margin: 0; color: var(--muted); font-family: var(--sans); font-size: .6rem; letter-spacing: .13em; text-transform: uppercase; }
+  .distribution-links a, .distribution-links span { font-family: var(--sans); font-size: .7rem; }
+  .distribution-links a { color: var(--gold-dark); }
+  .distribution-links span { color: var(--muted); }
+</style>

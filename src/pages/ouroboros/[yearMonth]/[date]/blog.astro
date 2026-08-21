@@ -41,21 +41,24 @@ const displayDate = entry.data.date.toLocaleDateString('en-US', { timeZone: 'UTC
   crumbs={[{ label: 'Ouroboros', href: '/ouroboros/' }, { label: 'Blog' }, { label: entry.data.lane }]}
   indexLabel={`${entry.data.lane} · M / W / F`} intro="One idea worth returning to."
   footerText="Written at decision altitude. Sources remain attached."
-  footerLink={briefingPath} footerLinkLabel="Return to the day’s signals →"
+  footerLink="/ouroboros/" footerLinkLabel="Return to Ouroboros →"
 >
   <Content />
-  {(entry.data.mediumUrl || entry.data.linkedinUrl) && (
-    <aside class="distribution-links" aria-label="Article distribution">
-      <p>Also published</p>
-      {entry.data.mediumUrl && <a href={entry.data.mediumUrl} rel="noreferrer" target="_blank">Medium ↗</a>}
-      {entry.data.linkedinUrl && <a href={entry.data.linkedinUrl} rel="noreferrer" target="_blank">LinkedIn ↗</a>}
-    </aside>
-  )}
+  <aside class="distribution-links" aria-label="Article distribution">
+    <p>Also published</p>
+    {entry.data.mediumUrl
+      ? <a href={entry.data.mediumUrl} rel="noreferrer" target="_blank">Medium ↗</a>
+      : <span>Medium</span>}
+    {entry.data.linkedinUrl
+      ? <a href={entry.data.linkedinUrl} rel="noreferrer" target="_blank">LinkedIn ↗</a>
+      : <span>LinkedIn</span>}
+  </aside>
 </OuroborosPublication>
 
 <style>
   .distribution-links { display: flex; flex-wrap: wrap; gap: .7rem 1rem; margin-top: 5rem; padding-top: 1.3rem; border-top: 1px solid var(--line); }
   .distribution-links p { flex-basis: 100%; margin: 0; color: var(--muted); font-family: var(--sans); font-size: .6rem; letter-spacing: .13em; text-transform: uppercase; }
-  .distribution-links a { color: var(--gold-dark); font-family: var(--sans); font-size: .7rem; }
+  .distribution-links a, .distribution-links span { font-family: var(--sans); font-size: .7rem; }
+  .distribution-links a { color: var(--gold-dark); }
+  .distribution-links span { color: var(--muted); }
 </style>
-
