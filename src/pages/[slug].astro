@@ -1,0 +1,20 @@
+---
+import IdentityDirectory from '../components/IdentityDirectory.astro';
+import { identityWords } from '../data/site';
+
+export function getStaticPaths() {
+  return identityWords.map((entry, index) => ({
+    params: { slug: entry.slug },
+    props: {
+      entry,
+      index,
+      previous: identityWords[(index + identityWords.length - 1) % identityWords.length],
+      next: identityWords[(index + 1) % identityWords.length],
+    },
+  }));
+}
+
+const { entry, index, previous, next } = Astro.props;
+---
+
+<IdentityDirectory {entry} {index} {previous} {next} />

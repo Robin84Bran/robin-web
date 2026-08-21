@@ -1,5 +1,5 @@
 ---
-title: "1,000億ドルのAI信用ループ：Broadcomが自社チップ需要を金融化するとき"
+title: "Broadcomの1,000億ドルAIチップ融資"
 date: 2026-08-21
 updated: 2026-08-21
 section: Ouroboros

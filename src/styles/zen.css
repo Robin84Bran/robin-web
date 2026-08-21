@@ -768,12 +768,108 @@ body[data-path="/portfolio/"] .page-lead h1 {
 .directory-letter--silver { color: rgba(170, 182, 191, 0.2); }
 .directory-letter--ink { color: rgba(46, 42, 38, 0.08); }
 .identity-directory h1 { max-width: 10ch; margin-bottom: 2.5rem; font-family: var(--serif); font-size: clamp(2.8rem, 10vw, 5.5rem); font-weight: 400; letter-spacing: -0.05em; line-height: 0.92; }
+.identity-directory--library h1 { margin-bottom: clamp(2rem, 6vw, 3.4rem); font-size: clamp(2.7rem, 8vw, 4.5rem); }
 .identity-directory ul { display: grid; gap: 0.7rem; width: min(100%, 28rem); margin: 0 0 4rem; padding: 0; list-style: none; }
 .identity-directory li { display: flex; gap: 0.7rem; align-items: center; padding-block: 0.6rem; font-family: var(--serif); border-bottom: 1px solid var(--line); }
 .identity-directory li span { width: 0.35rem; height: 0.35rem; background: var(--sakura); border-radius: 50%; }
 .identity-directory .directory-future { color: var(--muted); font-style: italic; }
 .identity-directory nav { display: flex; justify-content: space-between; gap: 1rem; color: var(--gold-dark); font-size: 0.7rem; letter-spacing: 0.09em; text-transform: uppercase; }
 .identity-directory nav a { text-decoration: none; }
+
+.ouroboros-library {
+  width: min(100%, 46rem);
+  margin-bottom: clamp(3rem, 8vw, 5rem);
+  border-top: 1px solid var(--line);
+}
+
+.ouroboros-shelf { border-bottom: 1px solid var(--line); }
+.ouroboros-shelf summary {
+  display: grid;
+  grid-template-columns: 2.2rem minmax(0, 1fr) auto;
+  gap: 0.25rem 0.9rem;
+  align-items: baseline;
+  min-height: 4.6rem;
+  padding-block: 1rem;
+  cursor: pointer;
+  list-style: none;
+}
+.ouroboros-shelf summary::-webkit-details-marker { display: none; }
+.ouroboros-shelf summary:focus-visible { outline: 1px solid var(--gold); outline-offset: 0.35rem; }
+.ouroboros-shelf__number {
+  grid-row: 1 / 3;
+  color: var(--muted);
+  font-size: 0.54rem;
+  letter-spacing: 0.12em;
+}
+.ouroboros-shelf__name {
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: clamp(1.05rem, 3.7vw, 1.42rem);
+}
+.ouroboros-shelf summary em {
+  grid-column: 2;
+  color: var(--muted);
+  font-family: var(--serif);
+  font-size: 0.74rem;
+  font-weight: 400;
+}
+.ouroboros-shelf__toggle {
+  grid-column: 3;
+  grid-row: 1 / 3;
+  align-self: center;
+  color: var(--gold-dark);
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  transition: transform 220ms ease;
+}
+.ouroboros-shelf[open] .ouroboros-shelf__toggle { transform: rotate(45deg); }
+
+.identity-directory .ouroboros-shelf__list {
+  display: grid;
+  gap: 0;
+  padding: 0 0 1.1rem 3.1rem;
+  color: inherit;
+  font-size: inherit;
+  letter-spacing: normal;
+  text-transform: none;
+}
+.identity-directory .ouroboros-shelf__list a {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.2rem 1rem;
+  align-items: center;
+  min-height: 3.2rem;
+  padding-block: 0.65rem;
+  color: inherit;
+  border-top: 1px solid rgba(83, 74, 65, 0.08);
+}
+.ouroboros-shelf__list time {
+  color: var(--gold-dark);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.ouroboros-shelf__list strong {
+  grid-column: 1;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 0.82rem;
+  font-weight: 400;
+  line-height: 1.35;
+}
+.ouroboros-shelf__list a > span:last-child {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  color: var(--gold-dark);
+}
+.ouroboros-shelf__empty {
+  margin: 0;
+  padding: 0.2rem 0 1.3rem 3.1rem;
+  color: var(--muted);
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
 
 .press-directory {
   width: min(100%, 34rem);
@@ -834,6 +930,7 @@ body[data-path="/portfolio/"] .page-lead h1 {
 
   .identity-directory { min-height: calc(100svh - 4.9rem); }
   .identity-directory h1 { font-size: clamp(3.6rem, 6.5vw, 5.5rem); }
+  .identity-directory--library h1 { font-size: clamp(3rem, 4.8vw, 4.5rem); }
 }
 
 @media (prefers-reduced-motion: no-preference) {

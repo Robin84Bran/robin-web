@@ -5,7 +5,7 @@ const root = process.cwd();
 const dist = join(root, 'dist');
 const origin = 'https://iamrobin.ai';
 const failures = [];
-const indexableRoutes = new Set(['/', '/portfolio/', '/books/']);
+const indexableRoutes = new Set(['/', '/portfolio/', '/books/', '/ouroboros/']);
 
 function check(condition, message) {
   if (!condition) failures.push(message);
@@ -108,11 +108,15 @@ if (existsSync(dist)) {
   const homepage = readFileSync(routes.get('/'), 'utf8');
   const books = readFileSync(routes.get('/books/'), 'utf8');
   const portfolio = readFileSync(routes.get('/portfolio/'), 'utf8');
+  const ouroboros = readFileSync(routes.get('/ouroboros/'), 'utf8');
   check(homepage.includes('"@type":"Person"'), 'homepage: Person schema missing.');
   check(homepage.includes('"@type":"WebSite"'), 'homepage: WebSite schema missing.');
   check(homepage.includes('"@type":"ProfilePage"'), 'homepage: ProfilePage schema missing.');
   check((books.match(/"@type":"Book"/g) ?? []).length === 4, 'books: expected four Book schemas.');
   check(portfolio.includes('"@type":"CollectionPage"'), 'portfolio: CollectionPage schema missing.');
+  check(ouroboros.includes('"@type":"CollectionPage"'), 'ouroboros: CollectionPage schema missing.');
+  check((ouroboros.match(/<details class="ouroboros-shelf"/g) ?? []).length === 3, 'ouroboros: expected three expandable publication shelves.');
+  check(ouroboros.includes('August 20, 2026') && ouroboros.includes('August 21, 2026'), 'ouroboros: archive must expose prior and current dates.');
   for (const route of articleRoutes) {
     const article = readFileSync(routes.get(route), 'utf8');
     check(article.includes('"@type":"Article"'), `${route}: Article schema missing.`);
@@ -134,11 +138,14 @@ if (existsSync(dist)) {
       : null;
     check(Boolean(displayDate) && article.includes(`🏹 Robin’s Daily Signal Brief, ${displayDate}`), `${route}: canonical Daily Briefing title formula is missing.`);
     check(article.includes('Eight signals. Four languages. One moving field.'), `${route}: eight-signal four-language field line is missing.`);
+    check(!article.includes('**</u>') && !article.includes('** •'), `${route}: malformed visible Markdown leaked into HTML.`);
+    check(/<p>Date:[\s\S]*?<\/p>\s*<p><strong>Fact:<\/strong>/i.test(article), `${route}: Date and Fact must render as separate paragraphs.`);
   }
 
   const publicationComponent = readFileSync(join(root, 'src', 'components', 'OuroborosPublication.astro'), 'utf8');
   check(publicationComponent.includes('clamp(2.2rem, 8.67vw, 5.2rem)'), 'publication H1: Daily Briefing two-thirds scale missing.');
-  check(publicationComponent.includes('clamp(2.03rem, 8vw, 4.83rem)'), 'publication H1: Action Item two-thirds scale missing.');
+  check(publicationComponent.includes('clamp(1.75rem, 4vw, 2.75rem)'), 'publication H1: compact Action Item scale missing.');
+  check(publicationComponent.includes('clamp(1.6rem, 7vw, 2.1rem)'), 'publication H1: compact mobile Action Item scale missing.');
 
   const robots = readFileSync(join(dist, 'robots.txt'), 'utf8');
   check(robots.includes('Sitemap: https://iamrobin.ai/sitemap-index.xml'), 'robots.txt: sitemap declaration missing.');
@@ -157,6 +164,9 @@ if (existsSync(dist)) {
   for (const required of ['_headers', '_worker.js', 'favicon.svg']) {
     check(existsSync(join(dist, required)), `dist/${required} is missing.`);
   }
+
+  const worker = readFileSync(join(dist, '_worker.js'), 'utf8');
+  check(worker.includes('legacyIdentity'), 'edge: legacy /identity/{word}/ redirects are missing.');
 }
 
 if (failures.length) {

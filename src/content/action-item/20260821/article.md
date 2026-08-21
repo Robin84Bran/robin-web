@@ -1,5 +1,5 @@
 ---
-title: "The $100 Billion AI Credit Loop: When Broadcom Finances Demand for Its Own Chips"
+title: "Broadcom’s $100 Billion AI Chip Financing"
 date: 2026-08-21
 updated: 2026-08-21
 section: Ouroboros

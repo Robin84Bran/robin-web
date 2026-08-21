@@ -48,7 +48,7 @@ const localized = entry.data.inLanguage === 'ja'
   hero={entry.data.hero} heroAlt={`Abstract orbital field for ${displayDate}`}
   {publicationDate} {displayDate} schema={schemas} language={entry.data.inLanguage} alternates={languages}
   languageLinks={languages.filter((item) => item.hreflang !== entry.data.inLanguage)}
-  crumbs={[{ label: 'Ouroboros', href: '/identity/ouroboros/' }, { label: 'Daily Briefing' }]}
+  crumbs={[{ label: 'Ouroboros', href: '/ouroboros/' }, { label: 'Daily Briefing' }]}
   intro={localized.intro} footerText={localized.footer}
   footerLink={hasActionItem ? `${basePath}action_item/${entry.data.languageSlug}/` : undefined}
   footerLinkLabel={hasActionItem ? localized.action : undefined}

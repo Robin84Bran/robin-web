@@ -34,11 +34,11 @@ const displayDate = entry.data.date.toLocaleDateString('en-US', { timeZone: 'UTC
 
 <OuroborosPublication
   kind="action" title={entry.data.title} description={entry.data.excerpt} {path}
-  image={entry.data.ogImage} imageAlt={`Google and Marvell AI circularity flow diagram for ${displayDate}`}
-  hero={entry.data.hero} heroAlt="Google purchase demand, Marvell revenue, and warrant vesting arranged as a circular flow"
+  image={entry.data.ogImage} imageAlt={`Ouroboros action-item relationship map for ${entry.data.title}`}
+  hero={entry.data.hero} heroAlt={`Relationship map for ${entry.data.title}`}
   {publicationDate} {displayDate} schema={schemas} language="en" alternates={languages}
   languageLinks={languages.filter((item) => item.hreflang !== 'en')}
-  crumbs={[{ label: 'Ouroboros', href: '/identity/ouroboros/' }, { label: 'Daily Briefing', href: briefingPath }, { label: 'Action Item' }]}
+  crumbs={[{ label: 'Ouroboros', href: '/ouroboros/' }, { label: 'Daily Briefing', href: briefingPath }, { label: 'Action Item' }]}
   indexLabel="01 · AI Circularity Ledger" intro="A commercial loop with a scoreboard."
   footerText="From signal to ledger. From ledger to memory."
   footerLink={briefingPath} footerLinkLabel="Return to today’s eight signals →"

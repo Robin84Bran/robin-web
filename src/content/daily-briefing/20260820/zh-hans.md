@@ -30,7 +30,7 @@ sourceThread: "https://chatgpt.com/c/6a77f5a4-e74c-83e8-866a-508fb67d7fd2"
 
 ## 1. 前沿模型｜GLM‑5.3：中美差距在漏洞发现上几乎消失，但在真正攻击能力上仍然明显
 
-**日期：2026年8月19日｜来源：[WIRED](https://www.wired.com/story/zai-open-weight-ai-models-release-cybersecurity-hacking)、[Reuters](https://www.reuters.com/technology/chinas-zai-says-new-model-nears-anthropics-mythos-5-cyber-defence-tests-2026-08-14/)**
+日期：2026年8月19日｜来源：[WIRED](https://www.wired.com/story/zai-open-weight-ai-models-release-cybersecurity-hacking)、[Reuters](https://www.reuters.com/technology/chinas-zai-says-new-model-nears-anthropics-mythos-5-cyber-defence-tests-2026-08-14/)
 
 **事实：** 智谱/Z.ai 的 GLM‑5.3 在漏洞发现基准 CyberGym 得分 84.5%，略高于 Anthropic Mythos 5 的 83.8%；但在 ExploitBench 的真实利用能力上只有 54.4%，明显落后 Mythos 5 的 78%。目前仅向部分用户开放，API 与权重将分阶段推出，Z.ai 正因网络安全风险进行额外加固。
 
@@ -44,7 +44,7 @@ sourceThread: "https://chatgpt.com/c/6a77f5a4-e74c-83e8-866a-508fb67d7fd2"
 
 ## 2. 加密资本流｜BTC 突破 69,000 美元，但目前更像政策与空头挤压，而非已确认的机构资金回流
 
-**日期：2026年8月19日｜来源：[Reuters：白宫加密会议](https://www.reuters.com/legal/government/trump-host-crypto-executives-sec-weighs-regulations-2026-08-19/)、[MarketWatch](https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-bond-market-selloff-wanes-fed-minutes-target-earnings/card/bitcoin-surges-to-near-3-month-high-as-shorts-get-crushed-c3g8h9ETVKu8786zL5lH)、[已结算ETF周度数据](https://www.kucoin.com/news/flash/bitcoin-etfs-lost-389-71m-in-week-sol-etfs-attract-10-26m)**
+日期：2026年8月19日｜来源：[Reuters：白宫加密会议](https://www.reuters.com/legal/government/trump-host-crypto-executives-sec-weighs-regulations-2026-08-19/)、[MarketWatch](https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-bond-market-selloff-wanes-fed-minutes-target-earnings/card/bitcoin-surges-to-near-3-month-high-as-shorts-get-crushed-c3g8h9ETVKu8786zL5lH)、[已结算ETF周度数据](https://www.kucoin.com/news/flash/bitcoin-etfs-lost-389-71m-in-week-sol-etfs-attract-10-26m)
 
 **事实：** BTC 单日上涨超过6%、突破69,000美元，约一小时内有超过10亿美元空头被强平；当天同时举行白宫加密行业会议，推动《Clarity Act》的政治预期。但最近完整结算的8月10–14日数据仍显示美国现货BTC ETF净流出约3.9亿美元，ETH ETF亦小幅流出。
 
@@ -58,7 +58,7 @@ sourceThread: "https://chatgpt.com/c/6a77f5a4-e74c-83e8-866a-508fb67d7fd2"
 
 ## 3. 稳定币与支付｜USD1 获国家信托银行初步批准：稳定币竞争正变成“谁拥有完整监管堆栈”
 
-**日期：2026年8月14日｜来源：[美国OCC Corporate Decision 1385](https://www.occ.treas.gov/topics/charters-and-licensing/interpretations-and-decisions/index-interpretations-and-decisions.html)、[Reuters](https://www.reuters.com/world/us-regulator-approves-bank-charter-trump-backed-crypto-company-world-liberty-2026-08-14/)**
+日期：2026年8月14日｜来源：[美国OCC Corporate Decision 1385](https://www.occ.treas.gov/topics/charters-and-licensing/interpretations-and-decisions/index-interpretations-and-decisions.html)、[Reuters](https://www.reuters.com/world/us-regulator-approves-bank-charter-trump-backed-crypto-company-world-liberty-2026-08-14/)
 
 **事实：** OCC 对 World Liberty Trust Company 发出国家信托银行牌照的初步附条件批准；最终批准后，该实体可把USD1发行、赎回、储备管理与数字资产托管整合到一个联邦监管架构下。它不是普通商业银行，不能吸收传统存款或发放贷款，而且目前尚未获得最终开业许可。
 
@@ -72,7 +72,7 @@ sourceThread: "https://chatgpt.com/c/6a77f5a4-e74c-83e8-866a-508fb67d7fd2"
 
 ## 4. 公开市场｜Google 用最高122亿美元认股权绑定 Marvell：这既是客户承诺，也是新型供应链金融
 
-**日期：2026年8月19日美股收盘｜来源：[Reuters](https://www.reuters.com/technology/marvell-grants-google-122-billion-stock-warrant-custom-chip-deal-2026-08-19/)、[MarketWatch](https://www.marketwatch.com/story/marvells-stock-soars-on-news-of-google-chip-deal-and-broadcoms-falls-c2a7f559)、[AP市场收盘](https://apnews.com/article/cb67d83b0638d31e5fe3c80c8de5934c)**
+日期：2026年8月19日美股收盘｜来源：[Reuters](https://www.reuters.com/technology/marvell-grants-google-122-billion-stock-warrant-custom-chip-deal-2026-08-19/)、[MarketWatch](https://www.marketwatch.com/story/marvells-stock-soars-on-news-of-google-chip-deal-and-broadcoms-falls-c2a7f559)、[AP市场收盘](https://apnews.com/article/cb67d83b0638d31e5fe3c80c8de5934c)
 
 **事实：** Google 获得以每股206.58美元购买最多5,897万股Marvell股票的认股权，部分归属与Google采购和定制芯片收入挂钩，潜在名义价值约122亿美元；Reuters称该合作到Marvell 2033财年可能对应最高1,200亿美元收入，但取决于绩效条件。MRVL当日约涨8%–10%，AVGO跌约4.6%–5%，而Nasdaq Composite仅涨0.2%；由于截稿时无法从同一可靠数据源核实QQQ最终结算价，本期不虚构QQQ绝对价格。
 
@@ -86,7 +86,7 @@ sourceThread: "https://chatgpt.com/c/6a77f5a4-e74c-83e8-866a-508fb67d7fd2"
 
 ## 5. iamrobin.ai 内容与分发｜过去七天没有新的重大平台规则；当前瓶颈仍是“可索引的思想资产”不足
 
-**日期：截至2026年8月20日；重要常设来源：[Google Search Profiles公告，2026年6月4日](https://blog.google/products-and-platforms/products/search/a-new-profile-to-help-publishers-and-creators-highlight-their-work-on-search/)**
+日期：截至2026年8月20日；重要常设来源：[Google Search Profiles公告，2026年6月4日](https://blog.google/products-and-platforms/products/search/a-new-profile-to-help-publishers-and-creators-highlight-their-work-on-search/)
 
 **事实：** 最近七天没有发现足以改变Robin分发策略的新Google、LinkedIn或AI搜索规则。Google现有的Search Profiles机制允许符合条件的创作者把网站、文章、视频和社交账号连接到同一身份实体，但初期仍以美国和已有一定受众规模的创作者为主。
 
@@ -100,7 +100,7 @@ sourceThread: "https://chatgpt.com/c/6a77f5a4-e74c-83e8-866a-508fb67d7fd2"
 
 ## 6. AI基础设施与职业路径｜欧洲数据中心选址从“靠近城市”转向“靠近可交付电力”
 
-**日期：2026年8月19日｜来源：[Reuters](https://www.reuters.com/business/europe-ai-data-centres-seek-cheaper-quicker-energy-land-2026-08-19/)**
+日期：2026年8月19日｜来源：[Reuters](https://www.reuters.com/business/europe-ai-data-centres-seek-cheaper-quicker-energy-land-2026-08-19/)
 
 **事实：** JLL数据显示，2026–2028年欧洲新建超大规模数据中心平均距离主要城市约175公里，远高于2022–2025年的46公里；开发商正转向土地、电力更便宜、并网更快的二三线地区。AI训练对低延迟城市接近性的依赖较小，使电力、冷却和审批逐渐压倒传统地产位置。
 
@@ -114,7 +114,7 @@ sourceThread: "https://chatgpt.com/c/6a77f5a4-e74c-83e8-866a-508fb67d7fd2"
 
 ## 7. 一级市场｜Etched 一个月内估值再翻倍至210亿美元：已有芯片与订单，但定价跑得比财务记录快
 
-**日期：2026年8月18日｜来源：[Reuters](https://www.reuters.com/technology/ai-chip-startup-etched-valued-21-billion-latest-funding-round-2026-08-18/)、[Etched此前Series C公告](https://www.globenewswire.com/news-release/2026/07/23/3332366/0/en/Etched-raises-300M-at-a-10-3B-Valuation-to-Scale-Production-of-Frontier-Scale-Inference-Hardware.html)**
+日期：2026年8月18日｜来源：[Reuters](https://www.reuters.com/technology/ai-chip-startup-etched-valued-21-billion-latest-funding-round-2026-08-18/)、[Etched此前Series C公告](https://www.globenewswire.com/news-release/2026/07/23/3332366/0/en/Etched-raises-300M-at-a-10-3B-Valuation-to-Scale-Production-of-Frontier-Scale-Inference-Hardware.html)
 
 **事实：** Etched获得Jane Street领投的7亿美元新增长融资，估值210亿美元；这是其7月23日以103亿美元估值完成3亿美元Series C之后的快速追加融资。公司已有可工作的推理芯片、超过400名员工和逾10亿美元客户合同；Jane Street既是领投者也是首位部署客户，而本轮详细优先权条款及具体资金用途尚未披露。
 
@@ -125,6 +125,3 @@ sourceThread: "https://chatgpt.com/c/6a77f5a4-e74c-83e8-866a-508fb67d7fd2"
 **唯一决策：** **WATCH，不追投**；只有在能核实合同取消条款、量产良率、单位经济和非Jane Street客户占比后再升级为INVESTIGATE。
 
 ---
-
-
-

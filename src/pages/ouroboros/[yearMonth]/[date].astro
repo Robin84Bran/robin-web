@@ -41,7 +41,7 @@ const displayDate = entry.data.date.toLocaleDateString('en-US', { timeZone: 'UTC
   hero={entry.data.hero} heroAlt={`Abstract orbital field for ${displayDate}`}
   {publicationDate} {displayDate} schema={schemas} language="en" alternates={languages}
   languageLinks={languages.filter((item) => item.hreflang !== 'en')}
-  crumbs={[{ label: 'Ouroboros', href: '/identity/ouroboros/' }, { label: 'Daily Briefing' }]}
+  crumbs={[{ label: 'Ouroboros', href: '/ouroboros/' }, { label: 'Daily Briefing' }]}
   intro="Eight signals. Four languages. One moving field."
   footerText="Observed. Interpreted. Returned to the loop."
   footerLink={hasActionItem ? `${path}action_item/` : undefined}

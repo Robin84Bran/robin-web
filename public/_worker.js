@@ -36,6 +36,12 @@ export default {
       return redirect(url, 301);
     }
 
+    const legacyIdentity = url.pathname.match(/^\/identity\/(identity|asymmetry|meaning|resonance|ouroboros|binary|intelligence|network)\/?$/);
+    if (legacyIdentity) {
+      url.pathname = `/${legacyIdentity[1]}/`;
+      return redirect(url, 301);
+    }
+
     const response = await env.ASSETS.fetch(request);
     const headers = new Headers(response.headers);
     for (const [name, value] of Object.entries(securityHeaders)) headers.set(name, value);

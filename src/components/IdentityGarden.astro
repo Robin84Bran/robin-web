@@ -38,7 +38,7 @@ const petals = [
         const style = `--dx:${position.dx};--dy:${position.dy};--mdx:${position.mdx};--mdy:${position.mdy};--drift-x:${position.driftX};--drift-y:${position.driftY};--step:${index}`;
         return (
           <li class={`identity-garden__node identity-garden__node--${item.tone}`} style={style}>
-            <a href={`/identity/${item.slug}/`} aria-label={`${item.word} project directory`}>
+            <a href={`/${item.slug}/`} aria-label={`${item.word} project directory`}>
               <span class="identity-garden__letter">{item.letter}</span><span class="identity-garden__tail">{item.word.slice(1)}</span>
             </a>
           </li>
@@ -47,7 +47,7 @@ const petals = [
     }
   </ol>
 
-  <a class="identity-garden__core" href="/identity/identity/" aria-label="Open the Identity project directory">
+  <a class="identity-garden__core" href="/identity/" aria-label="Open the Identity project directory">
     <span class="identity-garden__core-mark"><b>I</b> AM ROBIN</span>
     <small>eight doors</small>
   </a>

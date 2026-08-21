@@ -176,7 +176,7 @@ export function createArticleSchemas(input: {
     createPersonSchema(),
     createBreadcrumbSchema([
       { name: 'Home', path: '/' },
-      { name: 'Ouroboros', path: '/identity/ouroboros/' },
+      { name: 'Ouroboros', path: '/ouroboros/' },
       { name: input.title, path: input.path },
     ]),
   ];

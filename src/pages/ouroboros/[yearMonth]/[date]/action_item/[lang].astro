@@ -41,11 +41,11 @@ const localized = entry.data.inLanguage === 'ja'
 
 <OuroborosPublication
   kind="action" title={entry.data.title} description={entry.data.excerpt} {path}
-  image={entry.data.ogImage} imageAlt={`Google and Marvell AI circularity flow diagram for ${displayDate}`}
-  hero={entry.data.hero} heroAlt="Google purchase demand, Marvell revenue, and warrant vesting arranged as a circular flow"
+  image={entry.data.ogImage} imageAlt={`Ouroboros action-item relationship map for ${entry.data.title}`}
+  hero={entry.data.hero} heroAlt={`Relationship map for ${entry.data.title}`}
   {publicationDate} {displayDate} schema={schemas} language={entry.data.inLanguage} alternates={languages}
   languageLinks={languages.filter((item) => item.hreflang !== entry.data.inLanguage)}
-  crumbs={[{ label: 'Ouroboros', href: '/identity/ouroboros/' }, { label: 'Daily Briefing', href: `${briefingPath}${entry.data.languageSlug}/` }, { label: 'Action Item' }]}
+  crumbs={[{ label: 'Ouroboros', href: '/ouroboros/' }, { label: 'Daily Briefing', href: `${briefingPath}${entry.data.languageSlug}/` }, { label: 'Action Item' }]}
   indexLabel="01 · AI Circularity Ledger" intro={localized.intro}
   footerText={localized.footer} footerLink={`${briefingPath}${entry.data.languageSlug}/`} footerLinkLabel={localized.back}
 >

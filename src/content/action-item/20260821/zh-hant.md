@@ -1,5 +1,5 @@
 ---
-title: "千億美元AI信貸閉環：當Broadcom為自己的晶片需求融資"
+title: "Broadcom千億美元AI晶片融資"
 date: 2026-08-21
 updated: 2026-08-21
 section: Ouroboros

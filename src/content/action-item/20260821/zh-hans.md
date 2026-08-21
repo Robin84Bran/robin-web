@@ -1,5 +1,5 @@
 ---
-title: "千亿美元AI信贷闭环：当Broadcom为自己的芯片需求融资"
+title: "Broadcom千亿美元AI芯片融资"
 date: 2026-08-21
 updated: 2026-08-21
 section: Ouroboros

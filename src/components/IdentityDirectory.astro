@@ -1,0 +1,147 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { identityWords, pressLinks } from '../data/site';
+import { getCollection } from 'astro:content';
+import { createBreadcrumbSchema, createPersonSchema } from '../lib/seo';
+
+interface Props {
+  entry: (typeof identityWords)[number];
+  index: number;
+  previous: (typeof identityWords)[number];
+  next: (typeof identityWords)[number];
+}
+
+const { entry, index, previous, next } = Astro.props;
+const isPressDirectory = entry.slug === 'network';
+const isOuroborosDirectory = entry.slug === 'ouroboros';
+const briefings = isOuroborosDirectory
+  ? (await getCollection('dailyBriefing', ({ data }) => !data.draft)).sort(
+      (a, b) => b.data.date.getTime() - a.data.date.getTime(),
+    )
+  : [];
+const actionItems = isOuroborosDirectory
+  ? (await getCollection('actionItem', ({ data }) => !data.draft)).sort(
+      (a, b) => b.data.date.getTime() - a.data.date.getTime(),
+    )
+  : [];
+
+const compactDate = (date: Date) => date.toISOString().slice(0, 10).replaceAll('-', '');
+const displayDate = (date: Date) => date.toLocaleDateString('en-US', {
+  timeZone: 'UTC', month: 'long', day: 'numeric', year: 'numeric',
+});
+const path = `/${entry.slug}/`;
+const ouroborosSchemas = isOuroborosDirectory
+  ? [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        '@id': 'https://iamrobin.ai/ouroboros/#archive',
+        name: 'Ouroboros — Robin Xie',
+        description: 'Robin Xie’s Daily Briefings, Daily Action Items, and returning essays.',
+        url: 'https://iamrobin.ai/ouroboros/',
+        inLanguage: 'en',
+        author: { '@id': 'https://iamrobin.ai/#person' },
+      },
+      createPersonSchema(),
+      createBreadcrumbSchema([
+        { name: 'Home', path: '/' },
+        { name: 'Ouroboros', path: '/ouroboros/' },
+      ]),
+    ]
+  : undefined;
+---
+
+<BaseLayout
+  title={`${entry.word} — I AM ROBIN`}
+  description={isOuroborosDirectory
+    ? 'Daily Briefings, Daily Action Items, and returning essays by Robin Xie.'
+    : `${entry.word}: a living project directory inside the I AM ROBIN identity map.`}
+  {path}
+  noindex={!isOuroborosDirectory}
+  schema={ouroborosSchemas}
+>
+  <section class:list={['identity-directory', { 'identity-directory--library': isOuroborosDirectory }, 'shell']}>
+    <a class="directory-back" href="/">← I AM ROBIN</a>
+    <div class={`directory-letter directory-letter--${entry.tone}`} aria-hidden="true">{entry.letter}</div>
+    <p class="eyebrow">{String(index + 1).padStart(2, '0')} / 08 · project directory</p>
+    <h1>{entry.word}</h1>
+    {
+      isOuroborosDirectory ? (
+        <section class="ouroboros-library" aria-label="Ouroboros publication archive">
+          <details class="ouroboros-shelf" open>
+            <summary>
+              <span class="ouroboros-shelf__number">01</span>
+              <span class="ouroboros-shelf__name">Daily Briefing</span>
+              <em>Signals in motion.</em>
+              <span class="ouroboros-shelf__toggle" aria-hidden="true">+</span>
+            </summary>
+            <nav class="ouroboros-shelf__list" aria-label="Daily Briefing archive">
+              {briefings.map((briefing) => {
+                const date = compactDate(briefing.data.date);
+                return (
+                  <a href={`/ouroboros/${date.slice(0, 6)}/${date}/`}>
+                    <time datetime={briefing.data.date.toISOString().slice(0, 10)}>{displayDate(briefing.data.date)}</time>
+                    <span aria-hidden="true">→</span>
+                  </a>
+                );
+              })}
+            </nav>
+          </details>
+
+          <details class="ouroboros-shelf">
+            <summary>
+              <span class="ouroboros-shelf__number">02</span>
+              <span class="ouroboros-shelf__name">Daily Action Item</span>
+              <em>Signal into memory.</em>
+              <span class="ouroboros-shelf__toggle" aria-hidden="true">+</span>
+            </summary>
+            <nav class="ouroboros-shelf__list" aria-label="Daily Action Item archive">
+              {actionItems.map((action) => {
+                const date = compactDate(action.data.date);
+                return (
+                  <a href={`/ouroboros/${date.slice(0, 6)}/${date}/action_item/`}>
+                    <time datetime={action.data.date.toISOString().slice(0, 10)}>{displayDate(action.data.date)}</time>
+                    <strong>{action.data.title}</strong>
+                    <span aria-hidden="true">→</span>
+                  </a>
+                );
+              })}
+            </nav>
+          </details>
+
+          <details class="ouroboros-shelf">
+            <summary>
+              <span class="ouroboros-shelf__number">03</span>
+              <span class="ouroboros-shelf__name">Blog</span>
+              <em>Longer returns.</em>
+              <span class="ouroboros-shelf__toggle" aria-hidden="true">+</span>
+            </summary>
+            <p class="ouroboros-shelf__empty">M / W / F · arriving soon</p>
+          </details>
+        </section>
+      ) : isPressDirectory ? (
+        <section class="press-directory" aria-labelledby="press-directory-title">
+          <h2 id="press-directory-title">Press</h2>
+          <nav aria-label="Selected press">
+            {pressLinks.map((item) => (
+              <a href={item.href} rel="noreferrer" target="_blank">
+                <small>{item.source}</small>
+                <strong>{item.label}</strong>
+                <span aria-hidden="true">↗</span>
+              </a>
+            ))}
+          </nav>
+        </section>
+      ) : (
+        <ul>
+          {entry.projects.map((project) => <li><span></span>{project}</li>)}
+          <li class="directory-future"><span></span>more, as it becomes</li>
+        </ul>
+      )
+    }
+    <nav class="directory-cycle" aria-label="Identity directories">
+      <a href={`/${previous.slug}/`}>← {previous.word}</a>
+      <a href={`/${next.slug}/`}>{next.word} →</a>
+    </nav>
+  </section>
+</BaseLayout>

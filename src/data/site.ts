@@ -81,7 +81,7 @@ export const portfolioOrbitNodes = [
       { label: 'SpaceX', icon: 'spacex', href: 'https://www.spacex.com' },
     ],
   },
-  { label: 'RobinOS', mark: '∞', note: 'becoming', links: [{ label: 'RobinOS', icon: 'robinos', href: '/identity/ouroboros/' }] },
+  { label: 'RobinOS', mark: '∞', note: 'becoming', links: [{ label: 'RobinOS', icon: 'robinos', href: '/ouroboros/' }] },
 ] as const;
 
 export const projects = [
