@@ -617,7 +617,7 @@ body[data-path="/portfolio/"] .page-lead h1 {
   width: var(--diameter);
   height: var(--diameter);
   pointer-events: none;
-  transform: translate(-50%, -50%) rotateX(64deg) rotateZ(var(--start));
+  transform: translate(-50%, -50%) rotateY(64deg) rotateZ(var(--start));
   transform-style: preserve-3d;
 }
 
@@ -639,7 +639,7 @@ body[data-path="/portfolio/"] .page-lead h1 {
   top: 50%;
   right: 0;
   pointer-events: auto;
-  transform: translate(50%, -50%) rotateZ(calc(0deg - var(--start))) rotateX(-64deg);
+  transform: translate(50%, -50%) rotateZ(calc(0deg - var(--start))) rotateY(-64deg);
   transform-style: preserve-3d;
 }
 
@@ -925,7 +925,11 @@ body[data-path="/portfolio/"] .page-lead h1 {
 
   .orbitarium--nine .orbit-watch img { width: min(10vw, 6.5rem); }
   .orbitarium--nine .orbit-watch figcaption { top: calc(50% + 4.2rem); }
-  .space-orbit { --diameter: var(--diameter-desktop); }
+  .space-orbit {
+    --diameter: var(--diameter-desktop);
+    transform: translate(-50%, -50%) rotateX(64deg) rotateZ(var(--start));
+  }
+  .space-orbit__counter { transform: translate(50%, -50%) rotateZ(calc(0deg - var(--start))) rotateX(-64deg); }
   .space-node__icons { min-width: 2.45rem; height: 2.45rem; }
   .portfolio-glyph { width: 1.75rem; height: 1.75rem; }
 
@@ -958,6 +962,11 @@ body[data-path="/portfolio/"] .page-lead h1 {
   .portfolio-glyph { animation: glyph-self-turn 9s ease-in-out infinite; }
 }
 
+@media (min-width: 46rem) and (prefers-reduced-motion: no-preference) {
+  .space-orbit { animation-name: space-orbit-turn-desktop; }
+  .space-orbit__counter { animation-name: space-orbit-counter-desktop; }
+}
+
 @keyframes lotus-bloom {
   0%, 8%, 100% { opacity: 0.72; transform: translateX(-50%) rotate(var(--petal-angle)) translateY(-1.8rem) scaleY(0.25); }
   22%, 34% { opacity: 0.82; transform: translateX(-50%) rotate(var(--petal-angle)) translateY(-3.4rem) scaleY(1); }
@@ -975,11 +984,21 @@ body[data-path="/portfolio/"] .page-lead h1 {
 }
 
 @keyframes space-orbit-turn {
+  from { transform: translate(-50%, -50%) rotateY(64deg) rotateZ(var(--start)); }
+  to { transform: translate(-50%, -50%) rotateY(64deg) rotateZ(calc(var(--start) + 360deg)); }
+}
+
+@keyframes space-orbit-counter {
+  from { transform: translate(50%, -50%) rotateZ(calc(0deg - var(--start))) rotateY(-64deg); }
+  to { transform: translate(50%, -50%) rotateZ(calc(-360deg - var(--start))) rotateY(-64deg); }
+}
+
+@keyframes space-orbit-turn-desktop {
   from { transform: translate(-50%, -50%) rotateX(64deg) rotateZ(var(--start)); }
   to { transform: translate(-50%, -50%) rotateX(64deg) rotateZ(calc(var(--start) + 360deg)); }
 }
 
-@keyframes space-orbit-counter {
+@keyframes space-orbit-counter-desktop {
   from { transform: translate(50%, -50%) rotateZ(calc(0deg - var(--start))) rotateX(-64deg); }
   to { transform: translate(50%, -50%) rotateZ(calc(-360deg - var(--start))) rotateX(-64deg); }
 }
@@ -992,5 +1011,9 @@ body[data-path="/portfolio/"] .page-lead h1 {
 @media (prefers-reduced-motion: reduce) {
   .orbit-lotus { opacity: 0.28; }
   .portfolio-orbit { opacity: 1; }
+  .space-orbit { transform: translate(-50%, -50%) rotateY(64deg) rotateZ(var(--start)); }
+}
+
+@media (min-width: 46rem) and (prefers-reduced-motion: reduce) {
   .space-orbit { transform: translate(-50%, -50%) rotateX(64deg) rotateZ(var(--start)); }
 }

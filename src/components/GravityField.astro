@@ -21,7 +21,10 @@ import PortfolioGlyph from './PortfolioGlyph.astro';
     <ol class="space-system" aria-label="Attention ordered from nearest to farthest">
       {
         portfolioOrbitNodes.map((node, index) => {
-          const diameterMobile = 7 + index * 1.8;
+          // Mobile is intentionally a taller, looser universe: the circular
+          // planes are projected vertically in CSS instead of compressed into
+          // the shallow desktop ellipse.
+          const diameterMobile = 9 + index * 2.5;
           const diameterDesktop = 10 + index * 5.4;
           const speed = 24 + index * 4.5;
           const start = (index * 47 + 12) % 360;
