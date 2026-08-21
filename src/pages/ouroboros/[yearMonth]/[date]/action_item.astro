@@ -1,114 +1,47 @@
 ---
 import { getCollection, render, type CollectionEntry } from 'astro:content';
-import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import OuroborosPublication from '../../../../components/OuroborosPublication.astro';
 import { createArticleSchemas } from '../../../../lib/seo';
 
 export async function getStaticPaths() {
   const entries = await getCollection('actionItem', ({ data }) => !data.draft);
   return entries.map((entry) => {
     const date = entry.data.date.toISOString().slice(0, 10).replaceAll('-', '');
-    return {
-      params: { yearMonth: date.slice(0, 6), date },
-      props: { entry },
-    };
+    return { params: { yearMonth: date.slice(0, 6), date }, props: { entry } };
   });
 }
 
-interface Props {
-  entry: CollectionEntry<'actionItem'>;
-}
-
+interface Props { entry: CollectionEntry<'actionItem'>; }
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const publicationDate = entry.data.date.toISOString().slice(0, 10);
 const compactDate = publicationDate.replaceAll('-', '');
-const path = `/ouroboros/${compactDate.slice(0, 6)}/${compactDate}/action_item/`;
 const briefingPath = `/ouroboros/${compactDate.slice(0, 6)}/${compactDate}/`;
+const path = `${briefingPath}action_item/`;
+const languages = [
+  { hreflang: 'en', label: 'English', path },
+  { hreflang: 'zh-Hans', label: '简体中文', path: `${path}zh-hans/` },
+  { hreflang: 'zh-Hant', label: '繁體中文', path: `${path}zh-hant/` },
+  { hreflang: 'ja', label: '日本語', path: `${path}ja/` },
+];
 const schemas = createArticleSchemas({
-  title: entry.data.title,
-  description: entry.data.excerpt,
-  path,
-  image: entry.data.ogImage,
-  datePublished: publicationDate,
-  dateModified: entry.data.updated.toISOString().slice(0, 10),
-  keywords: entry.data.keywords,
-  inLanguage: entry.data.inLanguage,
+  title: entry.data.title, description: entry.data.excerpt, path, image: entry.data.ogImage,
+  datePublished: publicationDate, dateModified: entry.data.updated.toISOString().slice(0, 10),
+  keywords: entry.data.keywords, inLanguage: entry.data.inLanguage,
 });
-const displayDate = entry.data.date.toLocaleDateString('en-US', {
-  timeZone: 'UTC', month: 'long', day: 'numeric', year: 'numeric',
-});
+const displayDate = entry.data.date.toLocaleDateString('en-US', { timeZone: 'UTC', month: 'long', day: 'numeric', year: 'numeric' });
 ---
 
-<BaseLayout
-  title={`${entry.data.title} | Robin Xie`}
-  description={entry.data.excerpt}
-  path={path}
-  image={entry.data.ogImage}
-  imageAlt={`Google and Marvell AI circularity flow diagram for ${displayDate}`}
-  imageWidth={1200}
-  imageHeight={630}
-  type="article"
-  schema={schemas}
+<OuroborosPublication
+  kind="action" title={entry.data.title} description={entry.data.excerpt} {path}
+  image={entry.data.ogImage} imageAlt={`Google and Marvell AI circularity flow diagram for ${displayDate}`}
+  hero={entry.data.hero} heroAlt="Google purchase demand, Marvell revenue, and warrant vesting arranged as a circular flow"
+  {publicationDate} {displayDate} schema={schemas} language="en" alternates={languages}
+  languageLinks={languages.filter((item) => item.hreflang !== 'en')}
+  crumbs={[{ label: 'Ouroboros', href: '/identity/ouroboros/' }, { label: 'Daily Briefing', href: briefingPath }, { label: 'Action Item' }]}
+  indexLabel="01 · AI Circularity Ledger" intro="A commercial loop with a scoreboard."
+  footerText="From signal to ledger. From ledger to memory."
+  footerLink={briefingPath} footerLinkLabel="Return to today’s eight signals →"
 >
-  <article class="action shell">
-    <header class="action-hero">
-      <div class="action-kicker">
-        <a href="/identity/ouroboros/">Ouroboros</a>
-        <span aria-hidden="true">/</span>
-        <a href={briefingPath}>Daily Briefing</a>
-        <span aria-hidden="true">/</span>
-        <span>Action Item</span>
-      </div>
-      <p class="action-index">01 · AI Circularity Ledger</p>
-      <h1>Google’s<br /><em>$12.2B</em><br />option.</h1>
-      <p class="action-date"><time datetime={publicationDate}>{displayDate}</time></p>
-      <figure class="action-visual">
-        <img src={entry.data.hero} alt="Google purchase demand, Marvell revenue, and warrant vesting arranged as a circular flow" width="1600" height="900" fetchpriority="high" />
-      </figure>
-      <p class="action-intro">A commercial loop with a scoreboard.</p>
-    </header>
-
-    <div class="action-body">
-      <Content />
-    </div>
-
-    <footer class="action-end" aria-label="End of action item">
-      <span>∞</span>
-      <p>From signal to ledger. From ledger to memory.</p>
-      <a href={briefingPath}>Return to today’s seven signals →</a>
-    </footer>
-  </article>
-</BaseLayout>
-
-<style>
-  .action { padding-block: clamp(2rem, 6vw, 5rem) 6rem; }
-  .action-hero { position: relative; min-height: min(88svh, 58rem); display: grid; align-content: start; }
-  .action-kicker { display: flex; flex-wrap: wrap; gap: .65rem; align-items: center; margin-bottom: clamp(2.6rem, 8vw, 5.6rem); color: var(--gold-dark); font-size: .66rem; font-weight: 650; letter-spacing: .15em; text-transform: uppercase; }
-  .action-kicker a { text-decoration: none; }
-  .action-index { margin: 0 0 1.15rem .18rem; color: var(--muted); font-size: .66rem; letter-spacing: .13em; text-transform: uppercase; }
-  .action h1 { position: relative; z-index: 2; width: min-content; margin: 0; font-family: var(--serif); font-size: clamp(3.05rem, 12vw, 7.25rem); font-weight: 400; letter-spacing: -.055em; line-height: .84; }
-  .action h1 em { color: var(--sakura-dark); font-weight: 400; }
-  .action-date { position: relative; z-index: 2; margin: 1.55rem 0 0 .2rem; color: var(--muted); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; }
-  .action-visual { position: relative; z-index: 1; width: min(100%, 57rem); margin: clamp(2rem, 8vw, 5rem) 0 0 auto; overflow: hidden; background: var(--stone); border: 1px solid rgba(83, 74, 65, .1); box-shadow: 0 2.2rem 5rem rgba(70, 58, 47, .08); }
-  .action-visual img { width: 100%; height: auto; }
-  .action-intro { justify-self: end; margin: 1.15rem 0 0; color: var(--muted); font-family: var(--serif); font-size: clamp(1rem, 3vw, 1.3rem); font-style: italic; }
-  .action-body { width: min(100%, 47rem); margin: clamp(4rem, 12vw, 9rem) auto 0; font-family: var(--serif); font-size: clamp(1.02rem, 2vw, 1.16rem); line-height: 1.86; }
-  .action-body :global(h2) { margin: 7rem 0 2.2rem; padding-top: 2rem; font-size: clamp(1.5rem, 4vw, 2.25rem); font-weight: 400; line-height: 1.15; border-top: 1px solid var(--line); }
-  .action-body :global(p) { margin-bottom: 1.45rem; }
-  .action-body :global(strong) { font-family: var(--sans); font-size: .92em; }
-  .action-body :global(a) { text-decoration-color: var(--sakura); text-underline-offset: .22em; overflow-wrap: anywhere; }
-  .action-body :global(blockquote) { margin: 3.2rem 0; padding: 1.6rem 0 1.6rem clamp(1.25rem, 4vw, 2.4rem); border-left: 1px solid var(--gold); color: var(--ink); font-size: clamp(1.2rem, 3vw, 1.55rem); line-height: 1.55; }
-  .action-body :global(ol), .action-body :global(ul) { padding-left: 1.3rem; }
-  .action-body :global(li) { margin-bottom: .75rem; padding-left: .4rem; }
-  .action-end { display: grid; justify-items: center; gap: .65rem; margin-top: 7rem; color: var(--muted); text-align: center; }
-  .action-end span { color: var(--sakura); font-family: var(--serif); font-size: 2rem; }
-  .action-end p { margin: 0; font-family: var(--serif); font-size: .9rem; font-style: italic; }
-  .action-end a { margin-top: .8rem; color: var(--gold-dark); font-size: .72rem; letter-spacing: .08em; text-decoration: none; text-transform: uppercase; }
-  @media (min-width: 50rem) {
-    .action-hero { grid-template-columns: minmax(16rem, .55fr) 1fr; column-gap: 3rem; }
-    .action-kicker { grid-column: 1 / -1; }
-    .action-index, .action h1, .action-date { grid-column: 1; }
-    .action-visual { grid-column: 2; grid-row: 2 / span 4; margin-top: -1.5rem; }
-    .action-intro { grid-column: 2; }
-  }
-</style>
+  <Content />
+</OuroborosPublication>

@@ -1,0 +1,150 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import type { SchemaNode } from '../lib/seo';
+
+interface Crumb {
+  label: string;
+  href?: string;
+}
+
+interface LanguageLink {
+  label: string;
+  path: string;
+  hreflang: string;
+}
+
+interface Props {
+  kind: 'briefing' | 'action';
+  title: string;
+  description: string;
+  path: string;
+  image: string;
+  imageAlt: string;
+  hero: string;
+  heroAlt: string;
+  publicationDate: string;
+  displayDate: string;
+  schema: SchemaNode | SchemaNode[];
+  language: string;
+  alternates: Array<{ hreflang: string; path: string }>;
+  languageLinks: LanguageLink[];
+  crumbs: Crumb[];
+  indexLabel?: string;
+  intro: string;
+  footerText: string;
+  footerLink?: string;
+  footerLinkLabel?: string;
+}
+
+const {
+  kind,
+  title,
+  description,
+  path,
+  image,
+  imageAlt,
+  hero,
+  heroAlt,
+  publicationDate,
+  displayDate,
+  schema,
+  language,
+  alternates,
+  languageLinks,
+  crumbs,
+  indexLabel,
+  intro,
+  footerText,
+  footerLink,
+  footerLinkLabel,
+} = Astro.props;
+---
+
+<BaseLayout
+  title={`${title} | Robin Xie`}
+  description={description}
+  {path}
+  {image}
+  {imageAlt}
+  imageWidth={1200}
+  imageHeight={630}
+  type="article"
+  {schema}
+  {language}
+  {alternates}
+>
+  <article class:list={['publication', `publication--${kind}`, 'shell']}>
+    <header class="publication-hero">
+      <div class="publication-kicker">
+        {crumbs.map((crumb, index) => (
+          <>
+            {index > 0 && <span aria-hidden="true">/</span>}
+            {crumb.href ? <a href={crumb.href}>{crumb.label}</a> : <span>{crumb.label}</span>}
+          </>
+        ))}
+      </div>
+      {indexLabel && <p class="publication-index">{indexLabel}</p>}
+      <h1>{title}</h1>
+      <p class="publication-date"><time datetime={publicationDate}>{displayDate}</time></p>
+      <nav class="publication-languages" aria-label="Other language editions">
+        {languageLinks.map((link) => <a href={link.path} hreflang={link.hreflang} lang={link.hreflang}>{link.label}</a>)}
+      </nav>
+      <figure class="publication-visual">
+        <img src={hero} alt={heroAlt} width="1600" height="900" fetchpriority="high" />
+      </figure>
+      <p class="publication-intro">{intro}</p>
+    </header>
+
+    <div class="publication-body">
+      <slot />
+    </div>
+
+    <footer class="publication-end" aria-label="End of publication">
+      <span>∞</span>
+      <p>{footerText}</p>
+      {footerLink && footerLinkLabel && <a href={footerLink}>{footerLinkLabel}</a>}
+    </footer>
+  </article>
+</BaseLayout>
+
+<style>
+  .publication { padding-block: clamp(2rem, 6vw, 5rem) 6rem; }
+  .publication-hero { position: relative; min-height: min(84svh, 55rem); display: grid; align-content: start; }
+  .publication-kicker { display: flex; flex-wrap: wrap; gap: .65rem; align-items: center; margin-bottom: clamp(2.5rem, 8vw, 5.5rem); color: var(--gold-dark); font-size: .66rem; font-weight: 650; letter-spacing: .15em; text-transform: uppercase; }
+  .publication-kicker a { text-decoration: none; }
+  .publication-index { margin: 0 0 1.15rem .18rem; color: var(--muted); font-size: .66rem; letter-spacing: .13em; text-transform: uppercase; }
+  .publication h1 { position: relative; z-index: 2; max-width: 12ch; margin: 0; font-family: var(--serif); font-size: clamp(2.2rem, 8.67vw, 5.2rem); font-weight: 400; letter-spacing: -.045em; line-height: .96; text-wrap: balance; }
+  .publication--action h1 { max-width: 11ch; font-size: clamp(2.03rem, 8vw, 4.83rem); }
+  .publication-date { position: relative; z-index: 2; margin: 1.4rem 0 0 .2rem; color: var(--muted); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; }
+  .publication-languages { position: relative; z-index: 2; display: flex; flex-wrap: wrap; gap: .45rem 1rem; margin: .9rem 0 0 .2rem; }
+  .publication-languages a { color: var(--gold-dark); font-size: .64rem; letter-spacing: .06em; text-decoration-color: rgba(180,145,93,.38); text-underline-offset: .22em; }
+  .publication-visual { position: relative; z-index: 1; width: min(100%, 57rem); margin: clamp(2rem, 8vw, 5rem) 0 0 auto; overflow: hidden; background: var(--stone); border: 1px solid rgba(83,74,65,.1); box-shadow: 0 2.2rem 5rem rgba(70,58,47,.08); }
+  .publication-visual img { width: 100%; height: auto; }
+  .publication-intro { justify-self: end; margin: 1.15rem 0 0; color: var(--muted); font-family: var(--serif); font-size: clamp(1rem, 3vw, 1.3rem); font-style: italic; }
+  .publication-body { width: min(100%, 47rem); margin: clamp(4rem, 12vw, 9rem) auto 0; font-family: var(--serif); font-size: clamp(1.02rem, 2vw, 1.16rem); line-height: 1.86; }
+  .publication-body :global(h1) { margin: 0 0 4rem; font-size: clamp(1.8rem, 5vw, 3rem); line-height: 1.15; }
+  .publication-body :global(h2) { margin: 7rem 0 2.4rem; padding-top: 2rem; font-size: clamp(1.5rem, 4vw, 2.3rem); font-weight: 400; line-height: 1.2; border-top: 1px solid var(--line); }
+  .publication-body :global(h3) { margin: 4.8rem 0 2rem; font-size: clamp(1.3rem, 3vw, 1.75rem); font-weight: 400; line-height: 1.35; }
+  .publication-body :global(p) { margin-bottom: 1.45rem; }
+  .publication-body :global(strong) { font-family: var(--sans); font-size: .92em; }
+  .publication-body :global(a) { text-decoration-color: var(--sakura); text-underline-offset: .22em; overflow-wrap: anywhere; }
+  .publication-body :global(hr) { width: 3rem; margin: 4.5rem auto; border: 0; border-top: 1px solid var(--gold); }
+  .publication-body :global(blockquote) { margin: 3.2rem 0; padding: 1.6rem 0 1.6rem clamp(1.25rem, 4vw, 2.4rem); border-left: 1px solid var(--gold); color: var(--ink); font-size: clamp(1.2rem, 3vw, 1.55rem); line-height: 1.55; }
+  .publication-body :global(ol), .publication-body :global(ul) { padding-left: 1.3rem; }
+  .publication-body :global(li) { margin-bottom: .75rem; padding-left: .4rem; }
+  .publication-end { display: grid; justify-items: center; gap: .65rem; margin-top: 7rem; color: var(--muted); text-align: center; }
+  .publication-end span { color: var(--sakura); font-family: var(--serif); font-size: 2rem; }
+  .publication-end p { margin: 0; font-family: var(--serif); font-size: .9rem; font-style: italic; }
+  .publication-end a { margin-top: .8rem; color: var(--gold-dark); font-size: .72rem; letter-spacing: .08em; text-decoration: none; text-transform: uppercase; }
+  @media (min-width: 50rem) {
+    .publication-hero { grid-template-columns: minmax(17rem, .58fr) 1fr; column-gap: 3rem; }
+    .publication-kicker { grid-column: 1 / -1; }
+    .publication-index, .publication h1, .publication-date, .publication-languages { grid-column: 1; }
+    .publication-visual { grid-column: 2; grid-row: 2 / span 5; margin-top: -1.5rem; }
+    .publication-intro { grid-column: 2; }
+  }
+  @media (max-width: 30rem) {
+    .publication h1, .publication--action h1 { font-size: clamp(2rem, 10.5vw, 3.35rem); }
+    .publication-languages { gap: .5rem .85rem; }
+  }
+</style>

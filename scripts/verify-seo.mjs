@@ -42,8 +42,10 @@ if (existsSync(dist)) {
   const htmlFiles = walk(dist).filter((file) => file.endsWith('.html'));
   const routes = new Map(htmlFiles.map((file) => [routeFromHtml(file), file]));
   const briefingRoutes = [...routes.keys()].filter((route) => /^\/ouroboros\/\d{6}\/\d{8}\/$/.test(route));
+  const briefingTranslationRoutes = [...routes.keys()].filter((route) => /^\/ouroboros\/\d{6}\/\d{8}\/(?:zh-hans|zh-hant|ja)\/$/.test(route));
   const actionRoutes = [...routes.keys()].filter((route) => /^\/ouroboros\/\d{6}\/\d{8}\/action_item\/$/.test(route));
-  const articleRoutes = [...briefingRoutes, ...actionRoutes];
+  const actionTranslationRoutes = [...routes.keys()].filter((route) => /^\/ouroboros\/\d{6}\/\d{8}\/action_item\/(?:zh-hans|zh-hant|ja)\/$/.test(route));
+  const articleRoutes = [...briefingRoutes, ...briefingTranslationRoutes, ...actionRoutes, ...actionTranslationRoutes];
   for (const route of articleRoutes) indexableRoutes.add(route);
   check(routes.size === 12 + articleRoutes.length, `expected ${12 + articleRoutes.length} HTML routes, found ${routes.size}.`);
 
@@ -67,6 +69,24 @@ if (existsSync(dist)) {
       check(html.includes('application/ld+json'), `${route}: indexable route lacks JSON-LD.`);
     } else {
       check(robots === 'noindex, follow', `${route}: thin/hidden route must be noindex, follow.`);
+    }
+
+    if (articleRoutes.includes(route)) {
+      const slugMatch = route.match(/\/(zh-hans|zh-hant|ja)\/$/);
+      const locale = slugMatch ? ({ 'zh-hans': 'zh-Hans', 'zh-hant': 'zh-Hant', ja: 'ja' })[slugMatch[1]] : 'en';
+      const family = slugMatch ? route.slice(0, -`${slugMatch[1]}/`.length) : route;
+      const expectedAlternates = {
+        en: new URL(family, `${origin}/`).toString(),
+        'zh-Hans': new URL(`${family}zh-hans/`, `${origin}/`).toString(),
+        'zh-Hant': new URL(`${family}zh-hant/`, `${origin}/`).toString(),
+        ja: new URL(`${family}ja/`, `${origin}/`).toString(),
+      };
+      check(html.includes(`<html lang="${locale}">`), `${route}: html lang must be ${locale}.`);
+      for (const [hreflang, href] of Object.entries(expectedAlternates)) {
+        check(html.includes(`rel="alternate" hreflang="${hreflang}" href="${href}"`), `${route}: missing reciprocal ${hreflang} alternate.`);
+      }
+      check(html.includes(`rel="alternate" hreflang="x-default" href="${expectedAlternates.en}"`), `${route}: x-default must point to English canon.`);
+      check(html.includes(`"inLanguage":"${locale}"`), `${route}: Article schema language must be ${locale}.`);
     }
 
     for (const [, json] of html.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/gi)) {
@@ -99,12 +119,26 @@ if (existsSync(dist)) {
     check(article.includes('"@type":"Person"'), `${route}: Person schema missing.`);
     check(/<meta\s+property="og:type"\s+content="article"/i.test(article), `${route}: og:type must be article.`);
   }
-  for (const route of actionRoutes) {
+  for (const route of [...actionRoutes, ...actionTranslationRoutes]) {
     const article = readFileSync(routes.get(route), 'utf8');
-    check(article.includes('Google'), `${route}: expected Google analysis.`);
-    check(article.includes('Marvell'), `${route}: expected Marvell analysis.`);
+    check(article.includes('>Action Item</span>'), `${route}: Action Item series marker missing.`);
     check(article.includes('AI Circularity'), `${route}: ledger framing missing.`);
   }
+
+  for (const route of briefingRoutes) {
+    const article = readFileSync(routes.get(route), 'utf8');
+    const compact = route.match(/\/(\d{8})\/$/)?.[1];
+    const date = compact ? `${compact.slice(0, 4)}-${compact.slice(4, 6)}-${compact.slice(6, 8)}` : null;
+    const displayDate = date
+      ? new Date(`${date}T12:00:00+08:00`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
+      : null;
+    check(Boolean(displayDate) && article.includes(`🏹 Robin’s Daily Signal Brief, ${displayDate}`), `${route}: canonical Daily Briefing title formula is missing.`);
+    check(article.includes('Eight signals. Four languages. One moving field.'), `${route}: eight-signal four-language field line is missing.`);
+  }
+
+  const publicationComponent = readFileSync(join(root, 'src', 'components', 'OuroborosPublication.astro'), 'utf8');
+  check(publicationComponent.includes('clamp(2.2rem, 8.67vw, 5.2rem)'), 'publication H1: Daily Briefing two-thirds scale missing.');
+  check(publicationComponent.includes('clamp(2.03rem, 8vw, 4.83rem)'), 'publication H1: Action Item two-thirds scale missing.');
 
   const robots = readFileSync(join(dist, 'robots.txt'), 'utf8');
   check(robots.includes('Sitemap: https://iamrobin.ai/sitemap-index.xml'), 'robots.txt: sitemap declaration missing.');

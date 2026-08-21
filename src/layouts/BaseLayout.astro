@@ -17,15 +17,17 @@ interface Props {
   type?: 'website' | 'article';
   noindex?: boolean;
   schema?: SchemaNode | SchemaNode[];
+  language?: string;
+  alternates?: Array<{ hreflang: string; path: string }>;
 }
 
-const { title, description, path, image, imageAlt, imageWidth, imageHeight, type, noindex, schema } = Astro.props;
+const { title, description, path, image, imageAlt, imageWidth, imageHeight, type, noindex, schema, language = 'en', alternates } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={language}>
   <head>
-    <SeoHead {title} {description} {path} {image} {imageAlt} {imageWidth} {imageHeight} {type} {noindex} {schema} />
+    <SeoHead {title} {description} {path} {image} {imageAlt} {imageWidth} {imageHeight} {type} {noindex} {schema} {language} {alternates} />
   </head>
   <body data-path={path}>
     <a class="skip-link" href="#content">Skip to content</a>

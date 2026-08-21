@@ -12,6 +12,8 @@ interface Props {
   type?: 'website' | 'article';
   noindex?: boolean;
   schema?: SchemaNode | SchemaNode[];
+  language?: string;
+  alternates?: Array<{ hreflang: string; path: string }>;
 }
 
 const {
@@ -25,6 +27,8 @@ const {
   type = 'website',
   noindex = false,
   schema = [],
+  language = 'en',
+  alternates = [{ hreflang: 'en', path }],
 } = Astro.props;
 
 const schemaItems = Array.isArray(schema) ? schema : [schema];
@@ -37,6 +41,13 @@ const jsonLd = graphItems.length
   : undefined;
 const canonical = absoluteUrl(path);
 const imageUrl = absoluteUrl(image);
+const ogLocales: Record<string, string> = {
+  en: 'en_US',
+  'zh-Hans': 'zh_CN',
+  'zh-Hant': 'zh_TW',
+  ja: 'ja_JP',
+};
+const ogLocale = ogLocales[language] ?? 'en_US';
 ---
 
 <meta charset="UTF-8" />
@@ -48,13 +59,16 @@ const imageUrl = absoluteUrl(image);
 
 <title>{title}</title>
 <link rel="canonical" href={canonical} />
-<link rel="alternate" hreflang="en" href={canonical} />
-<link rel="alternate" hreflang="x-default" href={canonical} />
+{alternates.map((alternate) => <link rel="alternate" hreflang={alternate.hreflang} href={absoluteUrl(alternate.path)} />)}
+<link rel="alternate" hreflang="x-default" href={absoluteUrl(alternates.find((alternate) => alternate.hreflang === 'en')?.path ?? path)} />
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 
 <meta property="og:site_name" content={SITE_NAME} />
 <meta property="og:type" content={type} />
-<meta property="og:locale" content="en_US" />
+<meta property="og:locale" content={ogLocale} />
+{alternates.filter((alternate) => alternate.hreflang !== language).map((alternate) => (
+  <meta property="og:locale:alternate" content={ogLocales[alternate.hreflang] ?? alternate.hreflang} />
+))}
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:url" content={canonical} />
