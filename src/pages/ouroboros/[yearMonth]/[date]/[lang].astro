@@ -2,22 +2,23 @@
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import OuroborosPublication from '../../../../components/OuroborosPublication.astro';
 import { createArticleSchemas } from '../../../../lib/seo';
+import { actionFlows } from '../../../../lib/actionFlows';
 
 export async function getStaticPaths() {
   const entries = await getCollection('dailyBriefingTranslation', ({ data }) => !data.draft);
-  const actionItems = await getCollection('actionItem', ({ data }) => !data.draft);
   return entries.map((entry) => {
     const date = entry.data.date.toISOString().slice(0, 10).replaceAll('-', '');
     return {
       params: { yearMonth: date.slice(0, 6), date, lang: entry.data.languageSlug },
-      props: { entry, hasActionItem: actionItems.some((item) => item.data.date.toISOString().slice(0, 10).replaceAll('-', '') === date) },
+      props: { entry, hasActionFlow: actionFlows.some((flow) => flow.date.replaceAll('-', '') === date) },
     };
   });
 }
 
-interface Props { entry: CollectionEntry<'dailyBriefingTranslation'>; hasActionItem: boolean; }
-const { entry, hasActionItem } = Astro.props as Props;
+interface Props { entry: CollectionEntry<'dailyBriefingTranslation'>; hasActionFlow: boolean; }
+const { entry, hasActionFlow } = Astro.props as Props;
 const { Content } = await render(entry);
+const signalCount = ((entry.body ?? '').match(/^##\s+/gm) ?? []).length;
 const publicationDate = entry.data.date.toISOString().slice(0, 10);
 const compactDate = publicationDate.replaceAll('-', '');
 const basePath = `/ouroboros/${compactDate.slice(0, 6)}/${compactDate}/`;
@@ -36,10 +37,10 @@ const schemas = createArticleSchemas({
 });
 const displayDate = entry.data.date.toLocaleDateString(localeMap[entry.data.inLanguage], { timeZone: 'UTC', year: 'numeric', month: 'long', day: 'numeric' });
 const localized = entry.data.inLanguage === 'ja'
-  ? { intro: '8つのシグナル。4つの言語。ひとつの動く場。', footer: '観察し、解釈し、再びループへ。', action: '本日のアクションアイテムを読む →' }
+  ? { intro: `${signalCount}つのシグナル。4つの言語。ひとつの動く場。`, footer: '観察し、解釈し、再びループへ。', action: '本日のアクション・フローへ →' }
   : entry.data.inLanguage === 'zh-Hant'
-    ? { intro: '八個訊號。四種語言。一個流動的場。', footer: '觀察。解讀。回到循環。', action: '閱讀今日行動項目 →' }
-    : { intro: '八个信号。四种语言。一个流动的场。', footer: '观察。解读。回到循环。', action: '阅读今日行动项目 →' };
+    ? { intro: `${signalCount === 7 ? '七' : '八'}個訊號。四種語言。一個流動的場。`, footer: '觀察。解讀。回到循環。', action: '進入今日行動流 →' }
+    : { intro: `${signalCount === 7 ? '七' : '八'}个信号。四种语言。一个流动的场。`, footer: '观察。解读。回到循环。', action: '进入今日行动流 →' };
 ---
 
 <OuroborosPublication
@@ -50,8 +51,8 @@ const localized = entry.data.inLanguage === 'ja'
   languageLinks={languages.filter((item) => item.hreflang !== entry.data.inLanguage)}
   crumbs={[{ label: 'Ouroboros', href: '/ouroboros/' }, { label: 'Daily Briefing' }]}
   intro={localized.intro} footerText={localized.footer}
-  footerLink={hasActionItem ? `${basePath}action_item/${entry.data.languageSlug}/` : undefined}
-  footerLinkLabel={hasActionItem ? localized.action : undefined}
+  footerLink={hasActionFlow ? `${basePath}actions/${entry.data.languageSlug}/` : undefined}
+  footerLinkLabel={hasActionFlow ? localized.action : undefined}
 >
   <Content />
 </OuroborosPublication>

@@ -15,7 +15,7 @@ keywords:
   - stablecoins
   - physical AI
   - robotics
-excerpt: "Eight signals across frontier models, capital flows, payment rails, public markets, infrastructure, private capital, Physical AI, and robotics."
+excerpt: "Seven signals across frontier models, capital flows, payment rails, public markets, infrastructure, and private capital."
 hero: /daily-briefing/20260820/hero.webp
 ogImage: /daily-briefing/20260820/og.webp
 canonical: "https://iamrobin.ai/ouroboros/202608/20260820/"

@@ -1,0 +1,227 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { createArticleSchemas } from '../lib/seo';
+import {
+  actionFlowLanguages,
+  actionFlowPath,
+  type ActionFlow,
+  type ActionFlowEdition,
+} from '../lib/actionFlows';
+
+interface Props {
+  flow: ActionFlow;
+  edition: ActionFlowEdition;
+}
+
+const { flow, edition } = Astro.props;
+const path = actionFlowPath(flow, edition);
+const languages = actionFlowLanguages(flow);
+const displayDate = new Date(`${flow.date}T12:00:00Z`).toLocaleDateString(
+  edition.inLanguage === 'ja' ? 'ja-JP' : edition.inLanguage === 'zh-Hant' ? 'zh-TW' : edition.inLanguage === 'zh-Hans' ? 'zh-CN' : 'en-US',
+  { timeZone: 'UTC', year: 'numeric', month: 'long', day: 'numeric' },
+);
+const localized = edition.inLanguage === 'ja'
+  ? { kicker: 'Ouroboros / デイリー・アクション・フロー', judgment: '中心判断', steps: '実行', done: '完了条件', sources: '出典', deep: '正典の深掘りを読む', ledger: 'CIO ステータス台帳', complete: '完了', ready: '実行可能', watching: '監視中', return: 'デイリー・ブリーフへ戻る' }
+  : edition.inLanguage === 'zh-Hant'
+    ? { kicker: 'Ouroboros / 每日行動流', judgment: '核心判斷', steps: '執行', done: '完成定義', sources: '來源', deep: '閱讀權威深度文章', ledger: 'CIO 狀態台帳', complete: '已完成', ready: '可執行', watching: '觀察中', return: '返回每日簡報' }
+    : edition.inLanguage === 'zh-Hans'
+      ? { kicker: 'Ouroboros / 每日行动流', judgment: '核心判断', steps: '执行', done: '完成定义', sources: '来源', deep: '阅读权威深度文章', ledger: 'CIO 状态台账', complete: '已完成', ready: '可执行', watching: '观察中', return: '返回每日简报' }
+      : { kicker: 'Ouroboros / Daily Action Flow', judgment: 'Central judgment', steps: 'Execution', done: 'Definition of done', sources: 'Sources', deep: 'Read the canonical deep dive', ledger: 'CIO status ledger', complete: 'Complete', ready: 'Ready', watching: 'Watching', return: 'Return to Daily Briefing' };
+const counts = flow.actions.reduce((acc, action) => {
+  acc[action.priority] += 1;
+  return acc;
+}, { NOW: 0, NEXT: 0, WATCH: 0 });
+const statusLabel = (status: string) => status === 'COMPLETE' ? localized.complete : status === 'READY' ? localized.ready : localized.watching;
+const schemas = createArticleSchemas({
+  title: edition.title,
+  description: edition.description,
+  path,
+  image: flow.ogImage,
+  datePublished: flow.date,
+  dateModified: flow.updated,
+  keywords: ['Daily Action Flow', 'Ouroboros', 'CIO report', 'Robin Xie', 'decision system'],
+  inLanguage: edition.inLanguage,
+});
+---
+
+<BaseLayout
+  title={`${edition.title} | Robin Xie`}
+  description={edition.description}
+  {path}
+  image={flow.ogImage}
+  imageAlt={`Ouroboros Daily Action Flow for ${displayDate}`}
+  imageWidth={1200}
+  imageHeight={630}
+  type="article"
+  schema={schemas}
+  language={edition.inLanguage}
+  alternates={languages}
+>
+  <article class="action-flow shell">
+    <header class="action-flow__hero">
+      <div class="action-flow__topline">
+        <a href="/ouroboros/">{localized.kicker}</a>
+        <time datetime={flow.date}>{displayDate}</time>
+      </div>
+      <h1>{edition.title}</h1>
+      <nav class="action-flow__languages" aria-label="Other language editions">
+        {languages.filter((item) => item.hreflang !== edition.inLanguage).map((item) => (
+          <a href={item.path} hreflang={item.hreflang} lang={item.hreflang}>{item.label}</a>
+        ))}
+      </nav>
+      <figure class="action-flow__image">
+        <img src={flow.hero} alt={`Signal field for ${displayDate}`} width="1600" height="900" fetchpriority="high" />
+      </figure>
+      <div class="action-flow__judgment">
+        <p>{localized.judgment}</p>
+        <h2>{edition.centralJudgment}</h2>
+      </div>
+      <nav class="action-flow__priority" aria-label="Priority order">
+        <a href="#now"><span>{String(counts.NOW).padStart(2, '0')}</span>NOW</a>
+        <a href="#next"><span>{String(counts.NEXT).padStart(2, '0')}</span>NEXT</a>
+        <a href="#watch"><span>{String(counts.WATCH).padStart(2, '0')}</span>WATCH</a>
+      </nav>
+      <p class="action-flow__field">{edition.fieldLine}</p>
+    </header>
+
+    <div class="action-flow__chapters">
+      {flow.actions.map((action, index) => {
+        const chapter = edition.actions[index];
+        const isDeepDive = action.signal === 5;
+        return (
+          <section class:list={['action-chapter', { 'action-chapter--deep': isDeepDive }]} id={action.priority.toLowerCase()}>
+            <div class="action-chapter__rail" aria-hidden="true">
+              <span>{String(action.signal).padStart(2, '0')}</span>
+              <i></i>
+            </div>
+            <div class="action-chapter__heading">
+              <p>{chapter.domain}</p>
+              <h2>{chapter.title}</h2>
+              <div class="action-chapter__state">
+                <span class={`priority priority--${action.priority.toLowerCase()}`}>{action.priority}</span>
+                <span class={`status status--${action.status.toLowerCase()}`}>{statusLabel(action.status)}</span>
+              </div>
+            </div>
+            <div class="action-chapter__visual">
+              {isDeepDive ? (
+                <a href={edition.languageSlug ? `${flow.actionItemPath}${edition.languageSlug}/` : flow.actionItemPath} aria-label={chapter.deepDiveTitle}>
+                  <img src={flow.actionHero} alt={chapter.deepDiveTitle} width="1600" height="900" loading="lazy" />
+                </a>
+              ) : (
+                <div class="action-chapter__number">
+                  <strong>{action.visualValue}</strong>
+                  <span>{action.visualLabel}</span>
+                </div>
+              )}
+            </div>
+            <div class="action-chapter__why">
+              <p>{chapter.why}</p>
+            </div>
+            <div class="action-chapter__execution">
+              <h3>{localized.steps}</h3>
+              <ol>{chapter.steps.map((step) => <li>{step}</li>)}</ol>
+              <h3>{localized.done}</h3>
+              <p>{chapter.done}</p>
+              {isDeepDive && (
+                <a class="action-chapter__deep-link" href={edition.languageSlug ? `${flow.actionItemPath}${edition.languageSlug}/` : flow.actionItemPath}>
+                  {localized.deep} →
+                </a>
+              )}
+            </div>
+            <footer class="action-chapter__sources">
+              <span>{localized.sources}</span>
+              {action.sources.map((source) => <a href={source.url} rel="noreferrer" target="_blank">{source.label} ↗</a>)}
+            </footer>
+          </section>
+        );
+      })}
+    </div>
+
+    <footer class="action-flow__ledger">
+      <p>{localized.ledger}</p>
+      <div>
+        <span><strong>{flow.actions.filter((item) => item.status === 'COMPLETE').length}</strong>{localized.complete}</span>
+        <span><strong>{flow.actions.filter((item) => item.status === 'READY').length}</strong>{localized.ready}</span>
+        <span><strong>{flow.actions.filter((item) => item.status === 'WATCHING').length}</strong>{localized.watching}</span>
+      </div>
+      <a href={edition.languageSlug ? `${flow.briefingPath}${edition.languageSlug}/` : flow.briefingPath}>{localized.return} →</a>
+    </footer>
+  </article>
+</BaseLayout>
+
+<style>
+  .action-flow { padding-block: clamp(2rem, 6vw, 5rem) 7rem; }
+  .action-flow__hero { display: grid; grid-template-columns: 1fr; }
+  .action-flow__topline { display: flex; justify-content: space-between; gap: 1rem; color: var(--gold-dark); font-size: .66rem; font-weight: 650; letter-spacing: .13em; text-transform: uppercase; }
+  .action-flow__topline a { text-decoration: none; }
+  .action-flow h1 { max-width: min(22ch, 100%); margin: clamp(3rem, 9vw, 6.5rem) 0 0; font-family: var(--serif); font-size: clamp(1.75rem, 4vw, 2.75rem); font-weight: 400; letter-spacing: -.025em; line-height: 1.06; text-wrap: balance; }
+  .action-flow__languages { display: flex; flex-wrap: wrap; gap: .45rem 1rem; margin-top: 1rem; }
+  .action-flow__languages a { color: var(--gold-dark); font-size: .64rem; letter-spacing: .06em; text-decoration-color: rgba(180,145,93,.38); text-underline-offset: .22em; }
+  .action-flow__image { width: min(100%, 64rem); margin: clamp(2.5rem, 9vw, 6.5rem) 0 0 auto; overflow: hidden; background: var(--stone); border: 1px solid rgba(83,74,65,.1); box-shadow: 0 2.2rem 5rem rgba(70,58,47,.08); }
+  .action-flow__image img { width: 100%; height: auto; transition: transform 16s ease; }
+  .action-flow__image:hover img { transform: scale(1.015); }
+  .action-flow__judgment { width: min(100%, 53rem); margin: clamp(3.5rem, 10vw, 8rem) auto 0; }
+  .action-flow__judgment p, .action-flow__ledger > p { color: var(--gold-dark); font-size: .65rem; font-weight: 650; letter-spacing: .14em; text-transform: uppercase; }
+  .action-flow__judgment h2 { margin: 1rem 0 0; font-family: var(--serif); font-size: clamp(1.55rem, 4vw, 2.8rem); font-weight: 400; letter-spacing: -.025em; line-height: 1.25; text-wrap: balance; }
+  .action-flow__priority { display: grid; grid-template-columns: repeat(3, 1fr); width: min(100%, 53rem); margin: 3.5rem auto 0; border-block: 1px solid var(--line); }
+  .action-flow__priority a { display: grid; gap: .45rem; padding: 1.15rem 0; color: var(--muted); font-size: .6rem; letter-spacing: .14em; text-align: center; text-decoration: none; }
+  .action-flow__priority a + a { border-left: 1px solid var(--line); }
+  .action-flow__priority span { color: var(--ink); font-family: var(--serif); font-size: 1.35rem; letter-spacing: 0; }
+  .action-flow__field { margin: 1.15rem 0 0; color: var(--muted); font-family: var(--serif); font-size: .95rem; font-style: italic; text-align: center; }
+  .action-flow__chapters { width: min(100%, 69rem); margin: clamp(5rem, 14vw, 11rem) auto 0; }
+  .action-chapter { position: relative; display: grid; grid-template-columns: 2.5rem minmax(0, 1fr); column-gap: clamp(1rem, 3vw, 2.5rem); padding-bottom: clamp(6rem, 14vw, 11rem); scroll-margin-top: 2rem; }
+  .action-chapter__rail { grid-row: 1 / span 5; display: flex; flex-direction: column; align-items: center; color: var(--gold-dark); font-size: .62rem; letter-spacing: .1em; }
+  .action-chapter__rail i { flex: 1; width: 1px; min-height: 6rem; margin-top: 1rem; background: linear-gradient(var(--gold), rgba(180,145,93,.08)); }
+  .action-chapter__heading p { margin: 0; color: var(--muted); font-size: .62rem; letter-spacing: .13em; text-transform: uppercase; }
+  .action-chapter__heading h2 { max-width: 18ch; margin: .8rem 0 0; font-family: var(--serif); font-size: clamp(1.75rem, 5vw, 3.65rem); font-weight: 400; letter-spacing: -.035em; line-height: 1.02; text-wrap: balance; }
+  .action-chapter__state { display: flex; flex-wrap: wrap; gap: .55rem; margin-top: 1.3rem; }
+  .priority, .status { padding: .38rem .58rem; border: 1px solid var(--line); color: var(--muted); font-size: .56rem; font-style: normal; letter-spacing: .12em; text-transform: uppercase; }
+  .priority--now { border-color: rgba(195,131,144,.45); color: #8d5b66; }
+  .priority--next { border-color: rgba(180,145,93,.45); color: var(--gold-dark); }
+  .priority--watch { border-color: rgba(115,131,142,.36); color: #687784; }
+  .status--complete { background: rgba(180,145,93,.08); }
+  .action-chapter__visual { margin-top: clamp(2rem, 6vw, 4rem); }
+  .action-chapter__number { min-height: clamp(13rem, 33vw, 23rem); display: grid; place-content: center; justify-items: center; padding: 2rem; background: rgba(231,225,215,.34); border-block: 1px solid var(--line); text-align: center; }
+  .action-chapter__number strong { color: var(--ink); font-family: var(--serif); font-size: clamp(3.2rem, 11vw, 8.5rem); font-weight: 400; letter-spacing: -.055em; line-height: .9; }
+  .action-chapter__number span { max-width: 22rem; margin-top: 1.5rem; color: var(--muted); font-size: .62rem; letter-spacing: .14em; text-transform: uppercase; }
+  .action-chapter__visual a, .action-chapter__visual img { display: block; width: 100%; }
+  .action-chapter__visual a { overflow: hidden; box-shadow: 0 2rem 5rem rgba(70,58,47,.08); }
+  .action-chapter__why { margin-top: 2rem; }
+  .action-chapter__why p { max-width: 38rem; margin: 0; font-family: var(--serif); font-size: clamp(1.25rem, 3vw, 1.8rem); line-height: 1.42; }
+  .action-chapter__execution { margin-top: 2.2rem; }
+  .action-chapter__execution h3 { margin: 2rem 0 .8rem; color: var(--gold-dark); font-size: .62rem; letter-spacing: .13em; text-transform: uppercase; }
+  .action-chapter__execution ol { margin: 0; padding-left: 1.15rem; }
+  .action-chapter__execution li, .action-chapter__execution p { margin-bottom: .7rem; color: var(--muted); font-size: .87rem; line-height: 1.65; }
+  .action-chapter__deep-link { display: inline-block; margin-top: 1rem; color: var(--gold-dark); font-size: .7rem; letter-spacing: .08em; text-decoration: none; text-transform: uppercase; }
+  .action-chapter__sources { display: flex; flex-wrap: wrap; gap: .65rem 1rem; align-items: baseline; margin-top: 2rem; padding-top: 1.1rem; border-top: 1px solid var(--line); }
+  .action-chapter__sources span { color: var(--muted); font-size: .56rem; letter-spacing: .13em; text-transform: uppercase; }
+  .action-chapter__sources a { color: var(--gold-dark); font-size: .66rem; text-underline-offset: .18em; }
+  .action-flow__ledger { width: min(100%, 53rem); margin: 0 auto; padding-top: 3rem; border-top: 1px solid var(--line); text-align: center; }
+  .action-flow__ledger div { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 1.5rem; }
+  .action-flow__ledger div span { display: grid; gap: .4rem; color: var(--muted); font-size: .62rem; letter-spacing: .08em; text-transform: uppercase; }
+  .action-flow__ledger div span + span { border-left: 1px solid var(--line); }
+  .action-flow__ledger strong { color: var(--ink); font-family: var(--serif); font-size: 2.3rem; font-weight: 400; }
+  .action-flow__ledger > a { display: inline-block; margin-top: 2.6rem; color: var(--gold-dark); font-size: .68rem; letter-spacing: .08em; text-decoration: none; text-transform: uppercase; }
+  @media (min-width: 52rem) {
+    .action-flow__image { width: 78%; }
+    .action-chapter { grid-template-columns: 3rem minmax(15rem, .82fr) minmax(19rem, 1.18fr); }
+    .action-chapter__heading { grid-column: 2; }
+    .action-chapter__visual { grid-column: 3; grid-row: 1 / span 2; margin-top: 0; }
+    .action-chapter__why { grid-column: 2; }
+    .action-chapter__execution, .action-chapter__sources { grid-column: 3; }
+    .action-chapter:nth-child(even) { grid-template-columns: 3rem minmax(19rem, 1.18fr) minmax(15rem, .82fr); }
+    .action-chapter:nth-child(even) .action-chapter__heading, .action-chapter:nth-child(even) .action-chapter__why { grid-column: 3; }
+    .action-chapter:nth-child(even) .action-chapter__visual { grid-column: 2; }
+    .action-chapter:nth-child(even) .action-chapter__execution, .action-chapter:nth-child(even) .action-chapter__sources { grid-column: 2; }
+  }
+  @media (max-width: 30rem) {
+    .action-flow h1 { font-size: clamp(1.6rem, 7vw, 2.1rem); line-height: 1.1; }
+    .action-flow__topline { align-items: flex-start; flex-direction: column; }
+    .action-chapter { grid-template-columns: 1.8rem minmax(0, 1fr); column-gap: .9rem; }
+    .action-chapter__heading h2 { font-size: clamp(1.65rem, 9vw, 2.4rem); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .action-flow__image img { transition: none; }
+  }
+</style>
+

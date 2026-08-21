@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { identityWords, pressLinks } from '../data/site';
 import { getCollection } from 'astro:content';
 import { createBreadcrumbSchema, createPersonSchema } from '../lib/seo';
+import { actionFlows } from '../lib/actionFlows';
 
 interface Props {
   entry: (typeof identityWords)[number];
@@ -21,6 +22,11 @@ const briefings = isOuroborosDirectory
   : [];
 const actionItems = isOuroborosDirectory
   ? (await getCollection('actionItem', ({ data }) => !data.draft)).sort(
+      (a, b) => b.data.date.getTime() - a.data.date.getTime(),
+    )
+  : [];
+const blogEntries = isOuroborosDirectory
+  ? (await getCollection('blog', ({ data }) => !data.draft)).sort(
       (a, b) => b.data.date.getTime() - a.data.date.getTime(),
     )
   : [];
@@ -88,22 +94,32 @@ const ouroborosSchemas = isOuroborosDirectory
             </nav>
           </details>
 
-          <details class="ouroboros-shelf">
+          <details class="ouroboros-shelf" open>
             <summary>
               <span class="ouroboros-shelf__number">02</span>
-              <span class="ouroboros-shelf__name">Daily Action Item</span>
-              <em>Signal into memory.</em>
+              <span class="ouroboros-shelf__name">Daily Action Flow</span>
+              <em>Signal into execution.</em>
               <span class="ouroboros-shelf__toggle" aria-hidden="true">+</span>
             </summary>
-            <nav class="ouroboros-shelf__list" aria-label="Daily Action Item archive">
-              {actionItems.map((action) => {
-                const date = compactDate(action.data.date);
+            <nav class="ouroboros-shelf__list" aria-label="Daily Action Flow archive">
+              {actionFlows.map((flow) => {
+                const date = flow.date.replaceAll('-', '');
+                const action = actionItems.find((item) => compactDate(item.data.date) === date);
                 return (
-                  <a href={`/ouroboros/${date.slice(0, 6)}/${date}/action_item/`}>
-                    <time datetime={action.data.date.toISOString().slice(0, 10)}>{displayDate(action.data.date)}</time>
-                    <strong>{action.data.title}</strong>
-                    <span aria-hidden="true">→</span>
-                  </a>
+                  <div class="ouroboros-shelf__day">
+                    <a href={`/ouroboros/${date.slice(0, 6)}/${date}/actions/`}>
+                      <time datetime={flow.date}>{displayDate(new Date(`${flow.date}T12:00:00Z`))}</time>
+                      <strong>{flow.signalCount} signals · Daily Action Flow</strong>
+                      <span aria-hidden="true">→</span>
+                    </a>
+                    {action && (
+                      <a class="ouroboros-shelf__deep" href={`/ouroboros/${date.slice(0, 6)}/${date}/action_item/`}>
+                        <small>Signal 05 · canonical deep dive</small>
+                        <strong>{action.data.title}</strong>
+                        <span aria-hidden="true">→</span>
+                      </a>
+                    )}
+                  </div>
                 );
               })}
             </nav>
@@ -116,7 +132,22 @@ const ouroborosSchemas = isOuroborosDirectory
               <em>Longer returns.</em>
               <span class="ouroboros-shelf__toggle" aria-hidden="true">+</span>
             </summary>
-            <p class="ouroboros-shelf__empty">M / W / F · arriving soon</p>
+            {blogEntries.length ? (
+              <nav class="ouroboros-shelf__list" aria-label="Blog archive">
+                {blogEntries.map((article) => {
+                  const date = compactDate(article.data.date);
+                  return (
+                    <a href={`/ouroboros/${date.slice(0, 6)}/${date}/blog/`}>
+                      <time datetime={article.data.date.toISOString().slice(0, 10)}>{displayDate(article.data.date)}</time>
+                      <strong>{article.data.lane} · {article.data.title}</strong>
+                      <span aria-hidden="true">→</span>
+                    </a>
+                  );
+                })}
+              </nav>
+            ) : (
+              <p class="ouroboros-shelf__empty">M / W / F · no forced issue</p>
+            )}
           </details>
         </section>
       ) : isPressDirectory ? (

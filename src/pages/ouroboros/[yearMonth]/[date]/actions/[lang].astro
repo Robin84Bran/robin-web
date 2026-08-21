@@ -1,0 +1,17 @@
+---
+import DailyActionFlow from '../../../../../components/DailyActionFlow.astro';
+import { actionFlows } from '../../../../../lib/actionFlows';
+
+export function getStaticPaths() {
+  return actionFlows.flatMap((flow) => {
+    const date = flow.date.replaceAll('-', '');
+    return (['zh-Hans', 'zh-Hant', 'ja'] as const).map((language) => ({
+      params: { yearMonth: date.slice(0, 6), date, lang: flow.editions[language].languageSlug },
+      props: { flow, edition: flow.editions[language] },
+    }));
+  });
+}
+---
+
+<DailyActionFlow flow={Astro.props.flow} edition={Astro.props.edition} />
+

@@ -98,4 +98,53 @@ const actionItemTranslation = defineCollection({
   }),
 });
 
-export const collections = { dailyBriefing, dailyBriefingTranslation, actionItem, actionItemTranslation };
+const blogFields = {
+  title: z.string(),
+  date: z.coerce.date(),
+  updated: z.coerce.date(),
+  section: z.literal('Ouroboros'),
+  series: z.literal('Blog'),
+  lane: z.enum(['BUILD', 'INVEST', 'JOY']),
+  tags: z.array(z.string()),
+  keywords: z.array(z.string()),
+  categories: z.array(z.string()),
+  excerpt: z.string(),
+  hero: z.string(),
+  ogImage: z.string(),
+  canonical: z.url(),
+  author: z.url(),
+  draft: z.boolean().default(false),
+  mediumUrl: z.url().nullable().optional(),
+  linkedinUrl: z.url().nullable().optional(),
+};
+
+const blog = defineCollection({
+  loader: glob({ pattern: '**/article.md', base: './src/content/blog' }),
+  schema: z.object({
+    ...blogFields,
+    inLanguage: z.literal('en'),
+    sourceDossier: z.string(),
+    voiceCheck: z.literal('PASS'),
+  }),
+});
+
+const blogTranslation = defineCollection({
+  loader: glob({ pattern: '**/{zh-hans,zh-hant,ja}.md', base: './src/content/blog' }),
+  schema: z.object({
+    ...blogFields,
+    inLanguage: z.enum(['zh-Hans', 'zh-Hant', 'ja']),
+    languageSlug: z.enum(['zh-hans', 'zh-hant', 'ja']),
+    translationOf: z.url(),
+    sourceDossier: z.string(),
+    voiceCheck: z.literal('PASS'),
+  }),
+});
+
+export const collections = {
+  dailyBriefing,
+  dailyBriefingTranslation,
+  actionItem,
+  actionItemTranslation,
+  blog,
+  blogTranslation,
+};

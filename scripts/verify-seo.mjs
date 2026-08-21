@@ -45,9 +45,16 @@ if (existsSync(dist)) {
   const briefingTranslationRoutes = [...routes.keys()].filter((route) => /^\/ouroboros\/\d{6}\/\d{8}\/(?:zh-hans|zh-hant|ja)\/$/.test(route));
   const actionRoutes = [...routes.keys()].filter((route) => /^\/ouroboros\/\d{6}\/\d{8}\/action_item\/$/.test(route));
   const actionTranslationRoutes = [...routes.keys()].filter((route) => /^\/ouroboros\/\d{6}\/\d{8}\/action_item\/(?:zh-hans|zh-hant|ja)\/$/.test(route));
+  const actionFlowRoutes = [...routes.keys()].filter((route) => /^\/ouroboros\/\d{6}\/\d{8}\/actions\/$/.test(route));
+  const actionFlowTranslationRoutes = [...routes.keys()].filter((route) => /^\/ouroboros\/\d{6}\/\d{8}\/actions\/(?:zh-hans|zh-hant|ja)\/$/.test(route));
+  const blogRoutes = [...routes.keys()].filter((route) => /^\/ouroboros\/\d{6}\/\d{8}\/blog\/$/.test(route));
+  const blogTranslationRoutes = [...routes.keys()].filter((route) => /^\/ouroboros\/\d{6}\/\d{8}\/blog\/(?:zh-hans|zh-hant|ja)\/$/.test(route));
   const articleRoutes = [...briefingRoutes, ...briefingTranslationRoutes, ...actionRoutes, ...actionTranslationRoutes];
-  for (const route of articleRoutes) indexableRoutes.add(route);
-  check(routes.size === 12 + articleRoutes.length, `expected ${12 + articleRoutes.length} HTML routes, found ${routes.size}.`);
+  const actionFlowPublications = [...actionFlowRoutes, ...actionFlowTranslationRoutes];
+  const blogPublications = [...blogRoutes, ...blogTranslationRoutes];
+  const publicationRoutes = [...articleRoutes, ...actionFlowPublications, ...blogPublications];
+  for (const route of publicationRoutes) indexableRoutes.add(route);
+  check(routes.size === 12 + publicationRoutes.length, `expected ${12 + publicationRoutes.length} HTML routes, found ${routes.size}.`);
 
   for (const [route, file] of routes) {
     const html = readFileSync(file, 'utf8');
@@ -71,7 +78,7 @@ if (existsSync(dist)) {
       check(robots === 'noindex, follow', `${route}: thin/hidden route must be noindex, follow.`);
     }
 
-    if (articleRoutes.includes(route)) {
+    if (publicationRoutes.includes(route)) {
       const slugMatch = route.match(/\/(zh-hans|zh-hant|ja)\/$/);
       const locale = slugMatch ? ({ 'zh-hans': 'zh-Hans', 'zh-hant': 'zh-Hant', ja: 'ja' })[slugMatch[1]] : 'en';
       const family = slugMatch ? route.slice(0, -`${slugMatch[1]}/`.length) : route;
@@ -117,7 +124,8 @@ if (existsSync(dist)) {
   check(ouroboros.includes('"@type":"CollectionPage"'), 'ouroboros: CollectionPage schema missing.');
   check((ouroboros.match(/<details class="ouroboros-shelf"/g) ?? []).length === 3, 'ouroboros: expected three expandable publication shelves.');
   check(ouroboros.includes('August 20, 2026') && ouroboros.includes('August 21, 2026'), 'ouroboros: archive must expose prior and current dates.');
-  for (const route of articleRoutes) {
+  check(ouroboros.includes('/actions/'), 'ouroboros: Daily Action Flow shelf is missing.');
+  for (const route of publicationRoutes) {
     const article = readFileSync(routes.get(route), 'utf8');
     check(article.includes('"@type":"Article"'), `${route}: Article schema missing.`);
     check(article.includes('"@type":"Person"'), `${route}: Person schema missing.`);
@@ -137,15 +145,27 @@ if (existsSync(dist)) {
       ? new Date(`${date}T12:00:00+08:00`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
       : null;
     check(Boolean(displayDate) && article.includes(`🏹 Robin’s Daily Signal Brief, ${displayDate}`), `${route}: canonical Daily Briefing title formula is missing.`);
-    check(article.includes('Eight signals. Four languages. One moving field.'), `${route}: eight-signal four-language field line is missing.`);
+    const countWord = compact === '20260820' ? 'Seven' : 'Eight';
+    check(article.includes(`${countWord} signals. Four languages. One moving field.`), `${route}: source-true signal-count field line is missing.`);
     check(!article.includes('**</u>') && !article.includes('** •'), `${route}: malformed visible Markdown leaked into HTML.`);
     check(/<p>Date:[\s\S]*?<\/p>\s*<p><strong>Fact:<\/strong>/i.test(article), `${route}: Date and Fact must render as separate paragraphs.`);
   }
 
+  check(actionFlowRoutes.length === briefingRoutes.length, 'action flows: every briefing date must have one English Action Flow.');
+  check(actionFlowTranslationRoutes.length === actionFlowRoutes.length * 3, 'action flows: every English Action Flow must have three translations.');
+  for (const route of actionFlowPublications) {
+    const article = readFileSync(routes.get(route), 'utf8');
+    check(article.includes('Daily Action Flow') || /每日(?:行动|行動)流|アクション・フロー/.test(article), `${route}: Daily Action Flow title is missing.`);
+    check(article.includes('CIO') || /中心判断|核心判斷|核心判断/.test(article), `${route}: CIO decision framing is missing.`);
+    check(article.includes('Definition of done') || /完成定義|完成定义|完了条件/.test(article), `${route}: definition-of-done field is missing.`);
+    check(article.includes('/action_item/'), `${route}: signal-five canonical deep dive link is missing.`);
+  }
+
   const publicationComponent = readFileSync(join(root, 'src', 'components', 'OuroborosPublication.astro'), 'utf8');
-  check(publicationComponent.includes('clamp(2.2rem, 8.67vw, 5.2rem)'), 'publication H1: Daily Briefing two-thirds scale missing.');
-  check(publicationComponent.includes('clamp(1.75rem, 4vw, 2.75rem)'), 'publication H1: compact Action Item scale missing.');
-  check(publicationComponent.includes('clamp(1.6rem, 7vw, 2.1rem)'), 'publication H1: compact mobile Action Item scale missing.');
+  check(publicationComponent.includes("kind: 'briefing' | 'action' | 'blog'"), 'publication H1: Blog must inherit the shared component.');
+  check((publicationComponent.match(/clamp\(1\.75rem, 4vw, 2\.75rem\)/g) ?? []).length === 1, 'publication H1: one shared desktop scale is required.');
+  check((publicationComponent.match(/clamp\(1\.6rem, 7vw, 2\.1rem\)/g) ?? []).length === 1, 'publication H1: one shared mobile scale is required.');
+  check(!publicationComponent.includes('clamp(2.2rem, 8.67vw, 5.2rem)'), 'publication H1: legacy oversized Daily Briefing scale must be absent.');
 
   const robots = readFileSync(join(dist, 'robots.txt'), 'utf8');
   check(robots.includes('Sitemap: https://iamrobin.ai/sitemap-index.xml'), 'robots.txt: sitemap declaration missing.');

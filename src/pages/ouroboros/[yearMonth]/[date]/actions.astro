@@ -1,0 +1,17 @@
+---
+import DailyActionFlow from '../../../../components/DailyActionFlow.astro';
+import { actionFlows } from '../../../../lib/actionFlows';
+
+export function getStaticPaths() {
+  return actionFlows.map((flow) => {
+    const date = flow.date.replaceAll('-', '');
+    return {
+      params: { yearMonth: date.slice(0, 6), date },
+      props: { flow, edition: flow.editions.en },
+    };
+  });
+}
+---
+
+<DailyActionFlow flow={Astro.props.flow} edition={Astro.props.edition} />
+

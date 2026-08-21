@@ -15,7 +15,7 @@ keywords:
   - stablecoins
   - physical AI
   - robotics
-excerpt: "フロンティアモデル、資本フロー、決済、公開市場、インフラ、未公開市場、Physical AI、ロボティクスを追う8つのシグナル。"
+excerpt: "フロンティアモデル、資本フロー、決済、公開市場、インフラ、未公開市場を追う7つのシグナル。"
 hero: /daily-briefing/20260820/hero.webp
 ogImage: /daily-briefing/20260820/og.webp
 canonical: "https://iamrobin.ai/ouroboros/202608/20260820/ja/"
