@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import IntelligenceAtlas from '../../components/intelligence/IntelligenceAtlas.astro';
+
+const description = 'Three living studies of how intelligence emerges, flows, and entangles.';
+const path = '/intelligence/';
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': `https://iamrobin.ai${path}#page`,
+  name: 'Intelligence — Robin Xie',
+  description,
+  url: `https://iamrobin.ai${path}`,
+  inLanguage: 'en',
+};
+---
+
+<BaseLayout
+  title="Intelligence — Robin Xie"
+  {description}
+  {path}
+  {schema}
+>
+  <IntelligenceAtlas />
+</BaseLayout>

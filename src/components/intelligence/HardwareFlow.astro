@@ -1,0 +1,313 @@
+---
+const stages = [
+  {
+    id: 'power',
+    index: '01',
+    label: 'Power',
+    title: 'The AI factory wakes.',
+    line: 'Energy enters first. Every token begins as electricity, cooling, and constraint.',
+    image: '/intelligence/hardware/ai-factory.jpg',
+    alt: 'An editorial cutaway of an AI factory with power and cooling flowing through the system',
+  },
+  {
+    id: 'compute',
+    index: '02',
+    label: 'Compute',
+    title: 'Serial thought meets parallel work.',
+    line: 'CPUs coordinate. GPUs repeat. Intelligence appears when orchestration meets throughput.',
+    image: '/intelligence/hardware/cpu-gpu.jpg',
+    alt: 'A processor facing a large field of parallel compute tiles',
+  },
+  {
+    id: 'memory',
+    index: '03',
+    label: 'Memory',
+    title: 'The bottleneck moves inward.',
+    line: 'Accelerators wait when memory cannot feed them. Bandwidth is part of the model.',
+    image: '/intelligence/hardware/scale-up.jpg',
+    alt: 'Accelerators arranged around a shared high-bandwidth center',
+  },
+  {
+    id: 'network',
+    index: '04',
+    label: 'Network',
+    title: 'Distance becomes latency.',
+    line: 'Scale-out turns one machine into many. Copper gives way to light when the room grows.',
+    image: '/intelligence/hardware/optics.jpg',
+    alt: 'Optical links carrying light between compute systems',
+  },
+  {
+    id: 'flow',
+    index: '05',
+    label: 'System',
+    title: 'Intelligence is the whole flow.',
+    line: 'Power → compute → memory → network → useful tokens. The system is only as fast as its narrowest passage.',
+    image: '/intelligence/hardware/flow.jpg',
+    alt: 'An exploded editorial diagram showing the full AI hardware stack as a continuous flow',
+  },
+] as const;
+---
+
+<section class="hardware-flow" data-hardware-flow data-stages={JSON.stringify(stages)} aria-labelledby="hardware-flow-title">
+  <div class="hardware-orbit" aria-label="AI hardware flow stages">
+    {
+      stages.map((stage, index) => (
+        <button
+          type="button"
+          class:list={['hardware-stage-button', { 'is-active': index === 0 }]}
+          data-hardware-stage={index}
+          aria-pressed={index === 0 ? 'true' : 'false'}
+        >
+          <span>{stage.index}</span>
+          <strong>{stage.label}</strong>
+        </button>
+      ))
+    }
+  </div>
+
+  <div class="hardware-view">
+    <figure class="hardware-image-wrap">
+      <span class="hardware-halo" aria-hidden="true"></span>
+      <img
+        src={stages[0].image}
+        alt={stages[0].alt}
+        width="941"
+        height="1672"
+        loading="eager"
+        data-hardware-image
+      />
+      <figcaption>RobinOS2 · AI Hardware 101 · visual study</figcaption>
+    </figure>
+
+    <div class="hardware-reading" aria-live="polite">
+      <p class="eyebrow" data-hardware-label>{stages[0].label} / {stages[0].index}</p>
+      <h2 id="hardware-flow-title" data-hardware-title>{stages[0].title}</h2>
+      <p data-hardware-line>{stages[0].line}</p>
+      <div class="hardware-chain" aria-label="System flow">
+        {stages.map((stage, index) => <span class:list={{ 'is-active': index === 0 }} data-hardware-chain={index}>{stage.label}</span>)}
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const root = document.querySelector<HTMLElement>('[data-hardware-flow]');
+
+  if (root) {
+    const stages = JSON.parse(root.dataset.stages || '[]');
+    const buttons = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-hardware-stage]'));
+    const chain = Array.from(root.querySelectorAll<HTMLElement>('[data-hardware-chain]'));
+    const image = root.querySelector<HTMLImageElement>('[data-hardware-image]');
+    const label = root.querySelector<HTMLElement>('[data-hardware-label]');
+    const title = root.querySelector<HTMLElement>('[data-hardware-title]');
+    const line = root.querySelector<HTMLElement>('[data-hardware-line]');
+
+    const activate = (index: number) => {
+      const stage = stages[index];
+      if (!stage || !image || !label || !title || !line) return;
+      image.classList.add('is-changing');
+      window.setTimeout(() => {
+        image.src = stage.image;
+        image.alt = stage.alt;
+        label.textContent = `${stage.label} / ${stage.index}`;
+        title.textContent = stage.title;
+        line.textContent = stage.line;
+        image.classList.remove('is-changing');
+      }, 150);
+      buttons.forEach((button, buttonIndex) => {
+        button.classList.toggle('is-active', buttonIndex === index);
+        button.setAttribute('aria-pressed', String(buttonIndex === index));
+      });
+      chain.forEach((item, itemIndex) => item.classList.toggle('is-active', itemIndex <= index));
+    };
+
+    buttons.forEach((button, index) => button.addEventListener('click', () => activate(index)));
+  }
+</script>
+
+<style>
+  .hardware-flow {
+    width: var(--shell);
+    margin: 0 auto clamp(5rem, 10vw, 9rem);
+  }
+
+  .hardware-orbit {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-bottom: clamp(1.8rem, 4vw, 3rem);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .hardware-stage-button {
+    position: relative;
+    display: grid;
+    gap: 0.28rem;
+    min-height: 4.8rem;
+    padding: 0.8rem 0.35rem;
+    color: var(--muted);
+    font: inherit;
+    text-align: left;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+
+  .hardware-stage-button:not(:last-child) {
+    border-right: 1px solid var(--line);
+  }
+
+  .hardware-stage-button::after {
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    left: 0;
+    height: 2px;
+    content: '';
+    background: var(--gold);
+    transform: scaleX(0);
+    transition: transform 320ms ease;
+  }
+
+  .hardware-stage-button.is-active::after {
+    transform: scaleX(1);
+  }
+
+  .hardware-stage-button span {
+    color: var(--silver);
+    font-size: 0.58rem;
+    letter-spacing: 0.12em;
+  }
+
+  .hardware-stage-button strong {
+    font-size: clamp(0.64rem, 1.5vw, 0.78rem);
+    font-weight: 650;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .hardware-stage-button.is-active strong {
+    color: var(--ink);
+  }
+
+  .hardware-view {
+    display: grid;
+    gap: 2.4rem;
+    align-items: center;
+  }
+
+  .hardware-image-wrap {
+    position: relative;
+    width: min(68vw, 27rem);
+    margin: 0 auto;
+    isolation: isolate;
+  }
+
+  .hardware-image-wrap::before {
+    position: absolute;
+    z-index: -1;
+    inset: 8% -10% 2%;
+    content: '';
+    background: rgba(255, 255, 255, 0.38);
+    border: 1px solid rgba(180, 145, 93, 0.22);
+    border-radius: 48% 52% 46% 54% / 55% 43% 57% 45%;
+    transform: rotate(-3deg);
+  }
+
+  .hardware-image-wrap img {
+    width: 100%;
+    max-height: 36rem;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    filter: saturate(0.84) contrast(0.96);
+    transition: opacity 160ms ease, transform 500ms cubic-bezier(.2,.8,.2,1);
+  }
+
+  .hardware-image-wrap img.is-changing {
+    opacity: 0;
+    transform: translateY(0.5rem) scale(0.985);
+  }
+
+  .hardware-image-wrap figcaption {
+    margin-top: 1rem;
+    color: var(--muted);
+    font-family: var(--serif);
+    font-size: 0.74rem;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .hardware-halo {
+    position: absolute;
+    z-index: -2;
+    top: 18%;
+    left: 50%;
+    width: 66%;
+    aspect-ratio: 1;
+    background: radial-gradient(circle, rgba(223, 183, 196, 0.27), rgba(201, 211, 218, 0.08) 50%, transparent 72%);
+    border-radius: 50%;
+    transform: translateX(-50%);
+  }
+
+  .hardware-reading h2 {
+    max-width: 10ch;
+    margin-bottom: 1rem;
+    font-family: var(--serif);
+    font-size: clamp(2.7rem, 6vw, 5.8rem);
+    font-weight: 400;
+    letter-spacing: -0.055em;
+    line-height: 0.92;
+  }
+
+  .hardware-reading > p:not(.eyebrow) {
+    max-width: 34rem;
+    color: var(--muted);
+    font-family: var(--serif);
+    font-size: clamp(1rem, 2vw, 1.35rem);
+    line-height: 1.6;
+  }
+
+  .hardware-chain {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem 1rem;
+    margin-top: 2rem;
+    color: var(--silver);
+    font-size: 0.61rem;
+    font-weight: 650;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .hardware-chain span:not(:last-child)::after {
+    margin-left: 1rem;
+    color: var(--line-strong);
+    content: '→';
+  }
+
+  .hardware-chain span.is-active {
+    color: var(--gold-dark);
+  }
+
+  @media (min-width: 52rem) {
+    .hardware-stage-button {
+      padding: 1rem 1.1rem;
+    }
+
+    .hardware-view {
+      grid-template-columns: minmax(18rem, 0.9fr) minmax(24rem, 1.1fr);
+      gap: clamp(3rem, 7vw, 8rem);
+    }
+
+    .hardware-image-wrap {
+      width: min(31vw, 27rem);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hardware-stage-button::after,
+    .hardware-image-wrap img {
+      transition: none;
+    }
+  }
+</style>

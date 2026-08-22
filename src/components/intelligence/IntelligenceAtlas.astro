@@ -1,0 +1,502 @@
+---
+const doors = [
+  {
+    id: 'swarm',
+    label: 'Emergence',
+    title: 'AI Swarm',
+    line: 'No leader. Intelligence emerges.',
+    href: '/intelligence/swarm/',
+    position: 'swarm',
+  },
+  {
+    id: 'hardware',
+    label: 'Flow',
+    title: 'AI Hardware',
+    line: 'Intelligence is a flow problem.',
+    href: '/intelligence/hardware/',
+    position: 'hardware',
+  },
+  {
+    id: 'supply',
+    label: 'Entanglement',
+    title: 'AI Supply Chain',
+    line: 'The fiber still holds. Across border global entanglement.',
+    href: '/intelligence/supply-chain/',
+    position: 'supply',
+  },
+] as const;
+---
+
+<section class="intelligence-atlas" data-intelligence-atlas aria-labelledby="intelligence-title">
+  <div class="atlas-intro shell">
+    <p class="eyebrow">I / Intelligence</p>
+    <h1 id="intelligence-title">Enter the field.</h1>
+    <p>Three living studies. No dashboard. No answer key.</p>
+  </div>
+
+  <div class="atlas-stage shell">
+    <canvas data-atlas-canvas aria-hidden="true"></canvas>
+    <div class="atlas-center" data-atlas-center>
+      <span>I</span>
+      <strong>Intelligence</strong>
+      <small>emerges · flows · entangles</small>
+    </div>
+
+    <nav class="atlas-doors" aria-label="Intelligence studies">
+      {
+        doors.map((door, index) => (
+          <a
+            class={`atlas-door atlas-door--${door.position}`}
+            href={door.href}
+            data-atlas-door
+            data-door-id={door.id}
+            data-door-index={index}
+          >
+            <span class="door-index">0{index + 1}</span>
+            <span class="door-label">{door.label}</span>
+            <strong>{door.title}</strong>
+            <em>{door.line}</em>
+            <span class="door-enter" aria-hidden="true">enter ↗</span>
+          </a>
+        ))
+      }
+    </nav>
+  </div>
+
+  <p class="atlas-whisper shell" aria-hidden="true">Move closer. The field answers with motion.</p>
+</section>
+
+<script>
+  const atlas = document.querySelector<HTMLElement>('[data-intelligence-atlas]');
+
+  if (atlas) {
+    const stage = atlas.querySelector<HTMLElement>('.atlas-stage');
+    const canvas = atlas.querySelector<HTMLCanvasElement>('[data-atlas-canvas]');
+    const center = atlas.querySelector<HTMLElement>('[data-atlas-center]');
+    const doors = Array.from(atlas.querySelectorAll<HTMLAnchorElement>('[data-atlas-door]'));
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let activeIndex = -1;
+    let frame = 0;
+
+    const colors = () => {
+      const style = getComputedStyle(document.documentElement);
+      return {
+        ink: style.getPropertyValue('--ink').trim(),
+        gold: style.getPropertyValue('--gold').trim(),
+        silver: style.getPropertyValue('--silver').trim(),
+        sakura: style.getPropertyValue('--sakura').trim(),
+      };
+    };
+
+    const draw = (time = 0) => {
+      if (!stage || !canvas || !center) return;
+      const context = canvas.getContext('2d');
+      if (!context) return;
+
+      const bounds = stage.getBoundingClientRect();
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      if (canvas.width !== Math.round(bounds.width * dpr) || canvas.height !== Math.round(bounds.height * dpr)) {
+        canvas.width = Math.round(bounds.width * dpr);
+        canvas.height = Math.round(bounds.height * dpr);
+      }
+      context.setTransform(dpr, 0, 0, dpr, 0, 0);
+      context.clearRect(0, 0, bounds.width, bounds.height);
+
+      const stageRect = stage.getBoundingClientRect();
+      const centerRect = center.getBoundingClientRect();
+      const origin = {
+        x: centerRect.left - stageRect.left + centerRect.width / 2,
+        y: centerRect.top - stageRect.top + centerRect.height / 2,
+      };
+      const palette = colors();
+      const doorColors = [palette.sakura, palette.gold, palette.silver];
+
+      doors.forEach((door, index) => {
+        const rect = door.getBoundingClientRect();
+        const target = {
+          x: rect.left - stageRect.left + rect.width / 2,
+          y: rect.top - stageRect.top + rect.height / 2,
+        };
+        const highlighted = index === activeIndex;
+        context.beginPath();
+        context.moveTo(origin.x, origin.y);
+        const bendX = origin.x + (target.x - origin.x) * 0.52 + (index % 2 === 0 ? 18 : -18);
+        const bendY = origin.y + (target.y - origin.y) * 0.48;
+        context.quadraticCurveTo(bendX, bendY, target.x, target.y);
+        context.lineWidth = highlighted ? 1.4 : 0.7;
+        context.strokeStyle = highlighted ? doorColors[index] : 'rgba(83, 74, 65, 0.17)';
+        context.stroke();
+
+        const duration = 5200 + index * 620;
+        const progress = reducedMotion ? 0.7 : ((time + index * 960) % duration) / duration;
+        const oneMinus = 1 - progress;
+        const px = oneMinus * oneMinus * origin.x + 2 * oneMinus * progress * bendX + progress * progress * target.x;
+        const py = oneMinus * oneMinus * origin.y + 2 * oneMinus * progress * bendY + progress * progress * target.y;
+        context.beginPath();
+        context.arc(px, py, highlighted ? 4 : 2.4, 0, Math.PI * 2);
+        context.fillStyle = doorColors[index];
+        context.globalAlpha = highlighted ? 1 : 0.7;
+        context.fill();
+        context.globalAlpha = 1;
+      });
+
+      if (!reducedMotion) frame = requestAnimationFrame(draw);
+    };
+
+    const setActive = (index: number) => {
+      activeIndex = index;
+      atlas.dataset.activeDoor = index >= 0 ? doors[index]?.dataset.doorId ?? '' : '';
+      if (reducedMotion) draw();
+    };
+
+    doors.forEach((door, index) => {
+      door.addEventListener('pointerenter', () => setActive(index));
+      door.addEventListener('focus', () => setActive(index));
+      door.addEventListener('pointerleave', () => setActive(-1));
+      door.addEventListener('blur', () => setActive(-1));
+    });
+
+    const observer = new ResizeObserver(() => draw());
+    if (stage) observer.observe(stage);
+    draw();
+
+    window.addEventListener('pagehide', () => {
+      cancelAnimationFrame(frame);
+      observer.disconnect();
+    }, { once: true });
+  }
+</script>
+
+<style>
+  .intelligence-atlas {
+    min-height: calc(100svh - 4.6rem);
+    padding: clamp(3rem, 7vw, 6.5rem) 0 4rem;
+    overflow: hidden;
+  }
+
+  .atlas-intro {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: end;
+    margin-bottom: 1rem;
+  }
+
+  .atlas-intro h1 {
+    max-width: none;
+    margin-bottom: 0.7rem;
+    font-family: var(--serif);
+    font-size: clamp(2.4rem, 9vw, 4.8rem);
+    font-weight: 400;
+    letter-spacing: -0.045em;
+    line-height: 0.94;
+    white-space: nowrap;
+  }
+
+  .atlas-intro > p:last-child {
+    max-width: 28rem;
+    margin-bottom: 0;
+    color: var(--muted);
+    font-family: var(--serif);
+    font-size: clamp(1rem, 2vw, 1.35rem);
+    font-style: italic;
+  }
+
+  .atlas-stage {
+    position: relative;
+    min-height: clamp(49rem, 80vw, 64rem);
+    isolation: isolate;
+  }
+
+  .atlas-stage::before {
+    position: absolute;
+    z-index: -2;
+    top: 50%;
+    left: 50%;
+    width: min(78vw, 52rem);
+    aspect-ratio: 1;
+    content: '';
+    border: 1px solid rgba(180, 145, 93, 0.15);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .atlas-stage canvas {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  .atlas-center {
+    position: absolute;
+    z-index: 2;
+    top: 48%;
+    left: 50%;
+    display: grid;
+    width: clamp(9rem, 17vw, 12rem);
+    aspect-ratio: 1;
+    place-content: center;
+    padding: 1.2rem;
+    text-align: center;
+    background: rgba(253, 251, 247, 0.82);
+    border: 1px solid rgba(180, 145, 93, 0.52);
+    border-radius: 50%;
+    box-shadow: 0 2rem 6rem rgba(74, 61, 48, 0.11);
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(12px);
+  }
+
+  .atlas-center span {
+    color: var(--sakura);
+    font-family: var(--serif);
+    font-size: 2rem;
+    font-style: italic;
+  }
+
+  .atlas-center strong {
+    font-family: var(--serif);
+    font-size: clamp(1.25rem, 2.4vw, 1.8rem);
+    font-weight: 400;
+  }
+
+  .atlas-center small {
+    margin-top: 0.55rem;
+    color: var(--muted);
+    font-size: 0.58rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .atlas-doors {
+    position: absolute;
+    inset: 0;
+  }
+
+  .atlas-door {
+    position: absolute;
+    z-index: 3;
+    display: grid;
+    width: min(75vw, 18rem);
+    min-height: 9.4rem;
+    padding: 1.2rem 1.3rem;
+    color: var(--ink);
+    text-decoration: none;
+    background: rgba(253, 251, 247, 0.78);
+    border: 1px solid var(--line);
+    box-shadow: 0 1.3rem 4rem rgba(63, 52, 42, 0.06);
+    transition: border-color 260ms ease, box-shadow 260ms ease, transform 460ms cubic-bezier(.2,.8,.2,1);
+    backdrop-filter: blur(12px);
+    overflow: hidden;
+  }
+
+  .atlas-door:hover,
+  .atlas-door:focus-visible {
+    border-color: rgba(180, 145, 93, 0.62);
+    box-shadow: 0 1.8rem 5rem rgba(63, 52, 42, 0.12);
+  }
+
+  .atlas-door--swarm {
+    top: 4%;
+    left: 7%;
+    width: min(42vw, 21rem);
+    transform: rotate(-0.8deg);
+  }
+
+  .atlas-door--swarm:hover,
+  .atlas-door--swarm:focus-visible {
+    transform: translateY(-0.4rem) rotate(0deg);
+  }
+
+  .atlas-door--hardware {
+    top: 4%;
+    right: 7%;
+    width: min(42vw, 21rem);
+    transform: rotate(0.8deg);
+  }
+
+  .atlas-door--hardware:hover,
+  .atlas-door--hardware:focus-visible {
+    transform: translateX(-0.4rem) rotate(0deg);
+  }
+
+  .atlas-door--supply {
+    bottom: 1%;
+    left: 50%;
+    width: min(90vw, 38rem);
+    min-height: 13.5rem;
+    padding: 1.65rem 1.8rem;
+    background:
+      radial-gradient(circle at 78% 28%, rgba(182, 188, 194, 0.16), transparent 30%),
+      radial-gradient(circle at 18% 85%, rgba(180, 145, 93, 0.1), transparent 36%),
+      rgba(253, 251, 247, 0.84);
+    transform: translateX(-50%) rotate(-0.35deg);
+  }
+
+  .atlas-door--supply::before,
+  .atlas-door--supply::after {
+    position: absolute;
+    width: 8rem;
+    aspect-ratio: 1;
+    content: '';
+    border: 1px solid rgba(180, 145, 93, 0.14);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .atlas-door--supply::before {
+    right: 8%;
+    bottom: -4.5rem;
+  }
+
+  .atlas-door--supply::after {
+    right: -2.5rem;
+    bottom: -1.2rem;
+  }
+
+  .atlas-door--supply:hover,
+  .atlas-door--supply:focus-visible {
+    transform: translateX(-50%) translateY(-0.4rem) rotate(0deg);
+  }
+
+  .atlas-door.atlas-door--supply strong {
+    margin-top: 0.8rem;
+    font-size: clamp(2rem, 4.8vw, 3.5rem);
+    letter-spacing: -0.035em;
+  }
+
+  .atlas-door.atlas-door--supply em {
+    font-size: clamp(1rem, 1.8vw, 1.2rem);
+  }
+
+  .atlas-door--supply .door-enter {
+    margin-top: 2rem;
+  }
+
+  .door-index,
+  .door-label,
+  .door-enter {
+    font-size: 0.58rem;
+    font-style: normal;
+    font-weight: 650;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+  }
+
+  .door-index {
+    position: absolute;
+    top: 1.15rem;
+    right: 1.2rem;
+    color: var(--silver);
+  }
+
+  .door-label {
+    color: var(--gold-dark);
+  }
+
+  .atlas-door strong {
+    margin-top: 0.5rem;
+    font-family: var(--serif);
+    font-size: clamp(1.45rem, 3vw, 2rem);
+    font-weight: 400;
+  }
+
+  .atlas-door em {
+    margin-top: 0.3rem;
+    color: var(--muted);
+    font-family: var(--serif);
+    font-size: 0.93rem;
+  }
+
+  .door-enter {
+    justify-self: end;
+    margin-top: 1rem;
+    color: var(--gold-dark);
+  }
+
+  .atlas-whisper {
+    margin-top: 2.5rem;
+    margin-bottom: 0;
+    color: var(--muted);
+    font-family: var(--serif);
+    font-size: 0.86rem;
+    font-style: italic;
+    text-align: center;
+  }
+
+  @media (min-width: 46rem) {
+    .atlas-intro {
+      grid-template-columns: 1.2fr 0.8fr;
+    }
+
+    .atlas-intro .eyebrow {
+      grid-column: 1 / -1;
+    }
+
+    .atlas-intro > p:last-child {
+      justify-self: end;
+      padding-bottom: 0.8rem;
+    }
+
+    .atlas-door--swarm {
+      left: 8%;
+    }
+
+    .atlas-door--hardware {
+      right: 8%;
+    }
+  }
+
+  @media (max-width: 45.99rem) {
+    .atlas-stage {
+      min-height: 66rem;
+    }
+
+    .atlas-stage::before {
+      width: 33rem;
+    }
+
+    .atlas-center {
+      top: 59%;
+    }
+
+    .atlas-door--swarm,
+    .atlas-door--hardware {
+      left: 50%;
+      width: min(calc(100% - 2rem), 21rem);
+      transform: translateX(-50%);
+    }
+
+    .atlas-door--swarm {
+      top: 1%;
+    }
+
+    .atlas-door--hardware {
+      top: 29%;
+      right: auto;
+    }
+
+    .atlas-door--swarm:hover,
+    .atlas-door--swarm:focus-visible,
+    .atlas-door--hardware:hover,
+    .atlas-door--hardware:focus-visible {
+      transform: translateX(-50%) translateY(-0.4rem);
+    }
+
+    .atlas-door--supply {
+      bottom: 0;
+      width: calc(100% - 1rem);
+      min-height: 14rem;
+      padding: 1.5rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .atlas-door {
+      transition: none;
+    }
+  }
+</style>

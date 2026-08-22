@@ -1,0 +1,91 @@
+id,type,date,publisher,title,url
+S_NDX,index,2026-05-01,Nasdaq,Nasdaq-100 Index component and weight snapshot,https://www.nasdaq.com/docs/2026/05/04/NDX.pdf
+S_HK_FACT,index,2026-06-30,Hang Seng Indexes,Hang Seng China (Hong Kong-listed) 100 Index factsheet,https://www.hsi.com.hk/static/uploads/contents/en/dl_centre/factsheets/hschk100e.pdf
+S_HK_METH,index,2026-06,Hang Seng Indexes,Hang Seng China (Hong Kong-listed) 100 Index methodology,https://www.hsi.com.hk/static/uploads/contents/en/dl_centre/methodologies/IM_hschk100e.pdf
+S_HK_LIVE,index,2026-07-25,Hang Seng Indexes,HSCHK100 constituent endpoint,https://www.hsi.com.hk/data/eng/rt/index-series/hschk100/constituents.do?1
+S_NVDA_AUTO_26,company,2026,NVIDIA,"BYD, Geely, Isuzu and Nissan adopt NVIDIA DRIVE Hyperion",https://investor.nvidia.com/news/press-release-details/2026/BYD-Geely-Isuzu-and-Nissan-Adopt-NVIDIA-DRIVE-Hyperion-for-Level-4-Vehicles/default.aspx
+S_NVDA_AUTO_24,company,2024-04-25,NVIDIA,AI drives future of transportation at Auto China,https://blogs.nvidia.com/blog/nvidia-partners-auto-china/
+S_NVDA_LENOVO,company,2024-10-15,NVIDIA,NVIDIA and Lenovo bring hybrid AI to every enterprise,https://blogs.nvidia.com/blog/nvidia-lenovo-tech-world/
+S_NVDA_CLOUD,product,2026,NVIDIA,NVIDIA AI Enterprise cloud deployment guide,https://docs.nvidia.com/ai-enterprise/deployment/cloud/latest/overview.html
+S_NVDA_BAIDU,company,2017-07-05,NVIDIA,NVIDIA and Baidu announce broad AI partnership,https://nvidianews.nvidia.com/news/nvidia-baidu-announce-partnership-to-accelerate-ai
+S_NVDA_NIO,product,2026,NVIDIA,NIO automotive partner profile,https://www.nvidia.com/en-us/solutions/autonomous-vehicles/partners/nio/
+S_NVDA_CMCC,company,2022-07-25,NVIDIA,Accelerating cloud-native applications at China Mobile Bigcloud,https://developer.nvidia.com/blog/accelerating-cloud-native-applications-at-china-mobile-bigcloud/
+S_QCOM_XIAOMI,company,2025-05-20,Qualcomm,Qualcomm and Xiaomi expand collaboration with multi-year agreement,https://www.qualcomm.com/news/releases/2025/05/qualcomm-and-xiaomi-expand-collaboration-with-multi-year-agreeme
+S_QCOM_AUTO,company,2026-01,Qualcomm,Snapdragon Digital Chassis momentum with major automakers,https://www.qualcomm.com/news/releases/2026/01/qualcomm-drives-the-future-of-mobility-with-strong-snapdragon-di
+S_QCOM_LEAP,company,2026-01-05,Qualcomm,Leapmotor and Qualcomm debut dual-Snapdragon automotive central computer,https://www.qualcomm.com/news/releases/2026/01/leapmotor-and-qualcomm-debuts-world-s-first-automotive-central-c
+S_WAYMO_GEELY_21,company,2021-12-28,Waymo,Expanding Waymo One fleet with Geely's Zeekr,https://waymo.com/intl/fil/blog/2021/12/expanding-our-waymo-one-fleet-with/
+S_WAYMO_GEELY_25,company,2025-05-05,Waymo,Scaling the Waymo fleet through U.S. manufacturing,https://waymo.com/blog/2025/05/scaling-our-fleet-through-us-manufacturing/
+S_MSFT_LENOVO,company,2026-05-25,Microsoft,Lenovo and Microsoft build for the AI PC era,https://news.microsoft.com/source/asia/2026/05/25/%E9%87%8D%E5%A1%91%E4%B8%AA%E4%BA%BA%E7%94%B5%E8%84%91%EF%BC%9A%E8%81%94%E6%83%B3%E6%90%BA%E6%89%8B%E5%BE%AE%E8%BD%AF%EF%BC%8C%E4%B8%BA-ai-pc-%E6%97%B6%E4%BB%A3%E6%89%93%E9%80%A0/?lang=zh-hans
+S_AMD_EPYC,company,2024-10-10,AMD,AMD launches 5th Gen EPYC CPUs with Lenovo systems,https://www.amd.com/en/newsroom/press-releases/2024-10-10-amd-launches-5th-gen-amd-epyc-cpus-maintaining-le.html
+S_AMD_Q1_26,filing,2026-05-05,AMD,AMD Q1 2026 earnings slides,https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000072/attachments/AMD%20Q1%2726%20Earnings%20Slides%20Final.pdf
+S_AMD_ALIBABA,company,undated,AMD,Alibaba delivers AI acceleration solutions for e-commerce,https://www.amd.com/en/resources/case-studies/alibaba-cloud.html
+S_INTC_BAIDU,company,2020-12-15,Intel,Baidu intelligent infrastructure transformation with Intel,https://www.intel.com/content/www/us/en/newsroom/news/baidu-intelligent-infrastructure-transformation.html
+S_INTC_ALIBABA,company,2026,Intel,Intel and Alibaba Cloud partner overview,https://www.intel.com/content/www/us/en/partner/showcase/alibaba/overview.html
+S_INTC_LENOVO,company,2024-09-03,Intel,Intel and Lenovo set a new standard for AI-powered PC experiences,https://newsroom.intel.com/client-computing/intel-lenovo-set-new-standard-ai-powered-pc-experiences
+S_INTC_UNICOM,company,2022-10,Intel,China Unicom drives data-center energy savings,https://www.intel.com/content/www/us/en/customer-spotlight/stories/china-unicom-customer-story.html
+S_ARM_F1,filing,2023-08-21,Arm / SEC filing exhibit,Arm Holdings F-1 registration statement,https://investors.arm.com/static-files/7c8dbdc5-414a-4092-8ca3-69858726618e
+S_ARM_LENOVO,company,2026,Arm,Lenovo scales Level 4 autonomous robotaxis on Arm,https://newsroom.arm.com/blog/how-lenovo-scales-level-4-autonomous-robotaxis-on-arm
+S_ARM_GEELY,company,2025-10-23,Arm,Arm brings software-driven intelligence to Geely EX5,https://newsroom.arm.com/news/arm-geely-ex5-software-defined-intelligence
+S_APPLE_SUPPLIERS,company,FY2022,Apple,Apple supplier list,https://www.apple.com.cn/supplier-responsibility/pdf/Apple-Supplier-List.pdf
+S_TESLA_10K,filing,2026-01-29,U.S. SEC,Tesla 2025 Form 10-K,https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm
+S_SNPS_SMIC,product,2026,Synopsys,SMIC foundry-sponsored Synopsys DesignWare IP,https://www.synopsys.com/designware-ip/download-foundry-sponsored-smic.html
+S_SNPS_HUAHONG,company,2011-04-25,Synopsys,Synopsys and HHNEC announce low-power reference flow,https://news.synopsys.com/home?item=123276
+S_CDNS_SMIC,product,2026-06-27,Cadence,SMIC DFM solution,https://www.cadence.com/en_US/home/resources/videos/tools/digital-design-signoff/smic-dfm-solution.html
+S_AMAT_SMIC,company,2004-11-09,Applied Materials,Applied Materials ships 250th copper CMP system to SMIC,https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-ships-milestone-250th-copper-cmp-system-chinas
+S_LRCX_SMIC,company,2002-04-17,Lam Research,Lam Research agreement with SMIC for equipment exceeding $100 million,https://newsroom.lamresearch.com/2002-04-17-Lam-Research-Corporation-Concludes-Agreement-with-SMIC-for-the-Purchase-of-Equipment-Exceeding-100M
+S_ASML_SMIC,company,2021-03-03,ASML,Clarification on SMIC volume purchasing agreement,https://www.asml.com/en/news/press-releases/2021/clarification-on-smic-volume-purchasing-agreement
+S_NXP_GEELY,company,2017-01-06,NXP,NXP and Geely strategic automotive R&D partnership,https://www.nxp.com/company/about-nxp/newsroom/NW-GEELY-AUTOMOTIVE-RESEARCH
+S_NXP_NIO,company,2023-05,NXP,NIO and NXP collaborate on 4D imaging radar,https://www.nxp.com/docs/en/supporting-information/PR_GER_NIO-IR.pdf
+S_NXP_XIAOMI,company,2025-07-16,NXP,NXP enables Xiaomi with ultra-wideband technology,https://www.nxp.com/company/about-nxp/smarter-world-blog/BL-NXP-ENABLES-XIAOMI-WITH-ULTRA-WIDEBAND-TECH
+S_ADI_BYD,company,2019-02-04,Analog Devices,BYD selects Analog Devices audio bus and processor technologies,https://investor.analog.com/node/22136/pdf
+S_ADI_BAIDU,company,2018-07-10,Analog Devices,Analog Devices collaborates with Baidu on Project Apollo,https://investor.analog.com/news-releases/news-release-details/analog-devices-collaborates-baidu-project-apollo-advance/
+S_BIS_ADV,policy,2025-01-15,U.S. Bureau of Industry and Security,U.S. advanced-computing semiconductor controls and foundry due diligence,https://www.bis.gov/press-release/commerce-strengthens-restrictions-advanced-computing-semiconductors-enhance-foundry-due-diligence-prevent
+S_BIS_SEMI,policy,2024-12-02,U.S. Bureau of Industry and Security,"U.S. controls on advanced semiconductors, equipment, HBM and ECAD/TCAD",https://www.bis.gov/press-release/commerce-strengthens-export-controls-restrict-chinas-capability-produce-advanced-semiconductors-military
+S_BIS_CADENCE,policy,2025-07-28,U.S. Bureau of Industry and Security,Cadence export-enforcement settlement,https://media.bis.gov/press-release/cadence-design-systems-pay-95-million-penalty-bis-unauthorized-exports-chinese-entities-tied-development
+S_BIS_CONNECTED,policy,2025-01-14,U.S. Bureau of Industry and Security,Connected vehicle supply-chain final rule,https://www.bis.gov/press-release/commerce-finalizes-rule-secure-connected-vehicle-supply-chains-foreign-adversary-threats
+S_NL_EXPORT,policy,2025-01-15,Government of the Netherlands,Netherlands tightens export controls on advanced semiconductor equipment,https://www.government.nl/latest/news/2025/01/15/klever-export-controls-on-advanced-semiconductor-manufacturing-equipment-to-be-tightened
+S_CN_DATA,policy,2024-03-23,State Council of the PRC,China regulations on cross-border data flows,https://english.www.gov.cn/news/202403/23/content_WS65fe0f84c6d0868f4e8e5612.html
+S_CN_MATERIALS,policy,2023-11-30,Ministry of Commerce of the PRC,"China export controls on graphite, gallium and germanium",https://english.mofcom.gov.cn/News/PressConference/art/2023/art_cd46d6e56bb6486a928ea2f16182ae90.html
+S_CN_COUNTER,policy,2026-04-13,State Council of the PRC,China rules countering unlawful extraterritorial jurisdiction,https://english.www.gov.cn/policies/latestreleases/202604/13/content_WS69dcc947c6d00ca5f9a0a5b9.html
+S_BIS_ADV_GUIDANCE_26,policy,2026-05-31,U.S. Bureau of Industry and Security,BIS guidance on advanced-computing items and D:5 / Macau-headquartered entities,https://www.bis.gov/media/documents/bis-guidance-may-31-2026.pdf
+S_BIS_ADV_H200_26,policy,2026-01-15,U.S. Bureau of Industry and Security / Federal Register,Revised license review policy for H200-equivalent and less-advanced chips,https://www.federalregister.gov/d/2026-00789
+S_BIS_CV_GUIDE_26,policy,2026-05,U.S. Bureau of Industry and Security,Connected vehicles final rule small-entity compliance guide,https://media.bis.gov/media/documents/cv-secg.pdf
+S_CN_MATERIALS_US_24,policy,2024-12-03,Ministry of Commerce of the PRC,China strengthens dual-use export controls for the United States,https://exportcontrol.mofcom.gov.cn/article/zcfg/gnzcfg/zcfggzqd/202412/1072.html
+S_CN_DATA_CERT_26,policy,2025-10-18,State Council of the PRC,China rules for certification of personal-information exports,https://english.www.gov.cn/english.www.gov.cn/news/202510/18/content_WS68f33d41c6d00ca5f9a06e13.html
+S_USGS_MCS_26,government,2026,U.S. Geological Survey,Mineral Commodity Summaries 2026,https://pubs.usgs.gov/periodicals/mcs2026/mcs2026.pdf
+S_DOE_GALLIUM_25,government,2025-09-10,U.S. Department of Energy,U.S. funding intent for domestic gallium recovery,https://www.energy.gov/hgeo/articles/us-department-energy-announces-intent-fund-projects-advance-domestic-gallium
+S_HUAWEI_ASCEND_25,company,2025-09-20,Huawei,Huawei opens Ascend hardware and CANN ecosystem,https://www.huawei.com/en/news/2025/9/hc-shengten-opensource
+S_BAIDU_KUNLUN_26,filing,2026-01-01,Baidu,Baidu proposed spin-off and separate listing of Kunlunxin,https://ir.baidu.com/news-releases/news-release-details/baidu-announces-proposed-spin-and-separate-listing-kunlunxin/
+S_ALIBABA_AIACC_26,product,2026-04-15,Alibaba Cloud,Alibaba Cloud AIACC training and inference acceleration,https://www.alibabacloud.com/help/en/pai/ai-acceleration-1/
+S_HORIZON_J6_26,product,2026,Horizon Robotics,Horizon Journey 6 automotive intelligence platform,https://www.horizon.auto/en/solutions/horizon-journey/horizon-journey6?tp=1
+S_EMPYREAN_FOUNDRY,product,2026,Empyrean Technology,Empyrean foundry EDA tool portfolio,https://www.empyrean-tech.com/products/eda/foundry.html
+S_TSMC_APPLE_26,company,2026-02-24,Apple,Apple accelerates U.S. manufacturing with Mac mini production,https://www.apple.com/newsroom/2026/02/apple-accelerates-us-manufacturing-with-mac-mini-production/
+S_TSMC_NVDA_25,company,2025-10-17,NVIDIA,NVIDIA and TSMC celebrate first U.S.-made Blackwell wafer,https://blogs.nvidia.com/blog/tsmc-blackwell-manufacturing/
+S_AMD_FOUNDRIES_25,filing,2026-02-04,AMD / U.S. SEC,AMD 2025 Form 10-K,https://ir.amd.com/financial-information/sec-filings/content/0001193125-26-129106/0001193125-26-129106.pdf
+S_SAMSUNG_APPLE_25,company,2025-08-06,Apple,Apple expands U.S. manufacturing program with Samsung Austin,https://www.apple.com/newsroom/2025/08/apple-increases-us-commitment-to-600-billion-usd-announces-ambitious-program/
+S_SKHYNIX_NVDA_26,company,2026-06-08,SK hynix,SK hynix and NVIDIA establish multi-year technology partnership,https://news.skhynix.com/multi-year-tech-partnership-with-nvidia/
+S_ASE_NVDA_25,company,2025-01-16,ASE Technology,SPIL hosts NVIDIA at new assembly and test factory site,https://www.aseglobal.com/press-room/spil-hosts-nvidia-founder-and-ceo-at-new-factory-site/
+S_FOXCONN_NVDA_26,company,2026-06-01,Hon Hai Technology Group,Foxconn demonstrates NVIDIA Vera Rubin manufacturing and AI-factory capabilities at COMPUTEX 2026,https://www.honhai.com/en-us/press-center/press-releases/latest-news/2044
+S_TEL_TSMC_24,company,2024-12-23,Tokyo Electron,Tokyo Electron receives TSMC technology collaboration and production support awards,https://www.tel.com/news/topics/2024/20241223_001.html
+S_INFINEON_NVDA_26,company,2026-05-29,Infineon,Infineon joins NVIDIA 800 VDC data-center architecture,https://www.infineon.com/press-release/2026/infxx202605-092
+S_BOSCH_QCOM_26,company,2026-04-10,Qualcomm,Bosch and Qualcomm expand collaboration on ADAS,https://www.qualcomm.com/news/releases/2026/04/bosch-and-qualcomm-expand-collaboration-to-strategic-adas-soluti
+S_APPLE_BOSCH_TSMC_26,company,2026-03-26,Apple,Apple adds Bosch and TSMC to its American Manufacturing Program,https://www.apple.com/newsroom/2026/03/apple-adds-new-partners-to-its-american-manufacturing-program/
+S_SONY_TSMC_26,company,2026-05-08,Sony Semiconductor Solutions,Sony Semiconductor Solutions and TSMC announce next-generation image-sensor MOU,https://www.sony-semicon.com/en/news/2026/2026050801.html
+S_SKHYNIX_TSMC_24,company,2024-04-19,SK hynix,SK hynix and TSMC partner on HBM4 and advanced packaging,https://news.skhynix.com/sk-hynix-partners-with-tsmc-to-strengthen-hbm-technological-leadership/
+S_OPENAI_MSFT_26,company,2026-04-27,OpenAI,The next phase of the Microsoft–OpenAI partnership,https://openai.com/index/next-phase-of-microsoft-partnership/
+S_OPENAI_AMD_25,company,2025-10-06,OpenAI,OpenAI and AMD announce 6-gigawatt strategic compute partnership,https://openai.com/index/openai-amd-strategic-partnership/
+S_OPENAI_AVGO_25,company,2025-10-13,OpenAI,OpenAI and Broadcom announce 10-gigawatt custom accelerator collaboration,https://openai.com/index/openai-and-broadcom-announce-strategic-collaboration/
+S_OPENAI_INFRA_26,company,2026-02-27,OpenAI,Scaling AI infrastructure for everyone,https://openai.com/index/scaling-ai-for-everyone/
+S_ANTHROPIC_AMZN_26,company,2026-04-20,Anthropic,Anthropic and Amazon expand Trainium compute partnership,https://www.anthropic.com/news/anthropic-amazon-compute
+S_ANTHROPIC_GOOG_25,company,2025-10-23,Anthropic,Anthropic expands use of Google Cloud TPUs and services,https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services
+S_XAI_ANTHROPIC_26,company,2026-05-06,xAI,xAI and Anthropic announce compute partnership,https://x.ai/news/anthropic-compute-partnership
+S_DEEPSEEK_MSFT_25,company,2025-01-29,Microsoft Azure,DeepSeek R1 becomes available on Azure AI Foundry and GitHub,https://azure.microsoft.com/en-us/blog/deepseek-r1-is-now-available-on-azure-ai-foundry-and-github/
+S_DEEPSEEK_AWS_25,company,2025-03-10,Amazon Web Services,DeepSeek R1 becomes fully managed in Amazon Bedrock,https://aws.amazon.com/about-aws/whats-new/2025/03/deepseek-r1-fully-managed-amazon-bedrock/
+S_ALIBABA_DEEPSEEK_26,product,2026-07-06,Alibaba Cloud,DeepSeek models in Alibaba Cloud Model Studio,https://www.alibabacloud.com/help/en/model-studio/deepseek-api
+S_ALIBABA_KIMI_26,product,2026-07-06,Alibaba Cloud,Kimi models in Alibaba Cloud Model Studio,https://www.alibabacloud.com/help/en/model-studio/kimi-api
+S_NVDA_FIGURE_25,company,2025-10-28,NVIDIA,NVIDIA and U.S. robotics leaders expand physical AI manufacturing,https://nvidianews.nvidia.com/news/nvidia-us-manufacturing-robotics-physical-ai
+S_GOOG_APPTRONIK_25,company,2025-03-12,Google DeepMind,Gemini Robotics brings AI into the physical world with Apptronik,https://deepmind.google/blog/gemini-robotics-brings-ai-into-the-physical-world/
+S_NVDA_AGILITY_26,company,2026-06-22,NVIDIA,Agility Robotics becomes first NVIDIA Halos integration partner,https://nvidianews.nvidia.com/news/nvidia-announces-halos-for-robotics-the-industrys-first-full-stack-safety-system-for-physical-ai
+S_AMZN_AGILITY,company,2023,Agility Robotics,Agility Robotics broadens relationship with Amazon,https://www.agilityrobotics.com/content/agility-robotics-broadens-relationship-with-amazon
+S_GOOG_BOSTON_26,company,2026-01-05,Boston Dynamics,Boston Dynamics and Google DeepMind form AI partnership,https://bostondynamics.com/blog/boston-dynamics-google-deepmind-form-new-ai-partnership/
+S_NVDA_UNITREE_26,company,2026-05-31,NVIDIA,NVIDIA open humanoid robot reference design includes Unitree H2,https://nvidianews.nvidia.com/news/nvidia-open-humanoid-robot-reference-design

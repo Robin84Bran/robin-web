@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" id="themeColor" content="#f7f2ea">
+  <meta name="description" content="Evidence-backed U.S.–Hong Kong AI and robotics supply-chain dependency map.">
+  <title>AI Supply-Chain Entanglement</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23342d27'/%3E%3Cpath d='M14 22h15l8 10h13M14 42h15l8-10h13' fill='none' stroke='%23bc9d70' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <script src="assets/theme.js"></script>
+  <link rel="stylesheet" href="assets/styles.css?v=20260817-phase2e2">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to map</a>
+  <header class="masthead">
+    <div>
+      <p class="eyebrow">藕断丝连 · Phase 2E policy watch · Reviewed 2026-08-17</p>
+      <h1>AI supply-chain entanglement</h1>
+      <p class="deck">A source-backed map of what still crosses the boundary—and a five-lane watch for the policy that could fracture it next.</p>
+    </div>
+    <div class="masthead-meta">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false">
+        <span class="theme-toggle-icon" aria-hidden="true">
+          <svg class="theme-icon-sun" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="3.5"></circle>
+            <path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M18.7 5.3l-1.4 1.4M6.7 17.3l-1.4 1.4"></path>
+          </svg>
+          <svg class="theme-icon-moon" viewBox="0 0 24 24">
+            <path d="M20 15.2A8.4 8.4 0 0 1 8.8 4a8.4 8.4 0 1 0 11.2 11.2Z"></path>
+          </svg>
+        </span>
+        <span id="themeToggleLabel">Dark</span>
+      </button>
+      <div class="header-note">
+        <span class="pulse"></span>
+        <strong id="headerCompanies">200 listed companies</strong>
+        <span id="headerScope">100 Nasdaq + 100 HKEX · 41 verified public-company fibers</span>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="policy-watch" id="policyWatch" aria-labelledby="policyWatchTitle">
+      <div class="policy-watch-heading">
+        <div>
+          <p class="kicker">Phase 2E · Semantic policy watch</p>
+          <h2 id="policyWatchTitle">Five ways the fiber can tighten</h2>
+          <p>Frozen claim on the left. Current official read on the right. Company-level facts stay UNKNOWN until separately refreshed.</p>
+        </div>
+        <div class="review-stamp" aria-label="Policy review status">
+          <span>Official-source review</span>
+          <strong>5 / 5 lanes</strong>
+          <small>0 reversals identified · 3 scope clarifications</small>
+        </div>
+      </div>
+
+      <div class="epistemic-strip" aria-label="Evidence and decision status">
+        <span><b>Policy evidence</b> CONFIRMED</span>
+        <span><b>Relationship freshness</b> UNKNOWN</span>
+        <span><b>Operational boundary</b> RESEARCH ONLY</span>
+        <span><b>Review window</b> 2026-08-17</span>
+      </div>
+
+      <div class="policy-lane-tabs" id="policyLaneTabs" role="tablist" aria-label="Reviewed policy lanes"></div>
+
+      <div class="policy-review-panel" id="policyReviewPanel" role="tabpanel" tabindex="0" aria-live="polite">
+        <div class="policy-review-copy">
+          <div class="policy-review-meta" id="policyReviewMeta"></div>
+          <h3 id="policyReviewTitle">Loading reviewed policy lane</h3>
+          <p class="policy-review-lede" id="policyReviewLede"></p>
+          <div class="policy-compare">
+            <article>
+              <span>Frozen 2026-07-25 claim</span>
+              <p id="policyFrozenClaim"></p>
+            </article>
+            <article>
+              <span>Official read · 2026-08-17</span>
+              <p id="policyOfficialRead"></p>
+            </article>
+          </div>
+        </div>
+
+        <aside class="policy-review-impact">
+          <p class="kicker">Graph impact if stress is applied</p>
+          <div class="policy-impact-metrics" aria-label="Selected policy shock impact">
+            <article><strong id="policyImmediate">—</strong><span>immediate companies</span></article>
+            <article><strong id="policyDirectEdges">—</strong><span>direct verified fibers</span></article>
+            <article><strong id="policySecondOrder">—</strong><span>second order</span></article>
+          </div>
+          <div class="policy-unknowns">
+            <span>Still UNKNOWN</span>
+            <ul id="policyUnknownList"></ul>
+          </div>
+          <div class="policy-review-actions">
+            <button class="policy-open-shock" id="openSelectedShock" type="button">Open this stress test</button>
+            <div class="policy-source-links" id="policySourceLinks"></div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="review-method" aria-label="Review method">
+        <span>01 · frozen claim</span>
+        <span>02 · official retrieval</span>
+        <span>03 · semantic comparison</span>
+        <span>04 · retained or clarified</span>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="Pilot summary">
+      <article><span id="metricEdges">—</span><small>sourced dependencies</small></article>
+      <article><span id="metricCurrent">—</span><small>current / announced</small></article>
+      <article><span id="metricHighRisk">—</span><small>high-fracture edges</small></article>
+      <article><span id="metricSources">—</span><small>sources in scope</small></article>
+    </section>
+
+    <section class="control-bar" aria-label="Map controls">
+      <div class="segmented scope-segmented" role="group" aria-label="Research scope">
+        <button class="scope-button" data-scope="core" aria-pressed="false">Core 20 × 20</button>
+        <button class="scope-button active" data-scope="phase2a" aria-pressed="true">Phase 2A expanded</button>
+      </div>
+      <div class="segmented" role="group" aria-label="Flow view">
+        <button class="view-button active" data-view="dependency" aria-pressed="true">Physical / service</button>
+        <button class="view-button" data-view="cash" aria-pressed="false">Reverse cash</button>
+        <button class="view-button" data-view="policy" aria-pressed="false">Policy fracture</button>
+      </div>
+      <label>
+        <span>Layer</span>
+        <select id="classFilter">
+          <option value="all">All relationship classes</option>
+        </select>
+      </label>
+      <label>
+        <span>Status</span>
+        <select id="statusFilter">
+          <option value="all">Current + historical</option>
+          <option value="current">Current only</option>
+          <option value="historical">Historical only</option>
+        </select>
+      </label>
+      <label class="search-box">
+        <span>Find company</span>
+        <input id="searchInput" type="search" placeholder="e.g. SMIC or NVDA" autocomplete="off">
+      </label>
+      <button id="resetButton" class="quiet-button">Reset</button>
+    </section>
+
+    <section class="map-shell">
+      <div class="graph-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="kicker" id="viewKicker">Capability flow</p>
+            <h2 id="viewTitle">Supplier or service provider → recipient</h2>
+          </div>
+          <div class="legend" id="legend" aria-label="Map legend"></div>
+        </div>
+        <div class="graph-wrap">
+          <svg id="networkGraph" role="img" aria-labelledby="graphTitle graphDesc" viewBox="0 0 1200 940">
+            <title id="graphTitle">U.S. and Hong Kong AI supply-chain dependency graph</title>
+            <desc id="graphDesc">Selected Nasdaq-100 companies on the left and Hong Kong-listed Core-100 companies on the right, linked only where cited evidence exists.</desc>
+          </svg>
+          <p class="graph-hint">Click a node to isolate its fibers. Click an edge for evidence.</p>
+        </div>
+      </div>
+
+      <aside class="detail-panel" id="detailPanel" aria-live="polite">
+        <div class="detail-empty">
+          <p class="kicker">Evidence detail</p>
+          <h2>Select a fiber</h2>
+          <p>Every drawn edge opens its source, date, uncertainty and policy exposure here.</p>
+          <p class="fine-print">Blank space is allowed. It means the relationship was not established by this pilot—not that it cannot exist.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="insight-strip">
+      <article>
+        <span class="insight-number">01</span>
+        <h3>Autonomy is a layered import</h3>
+        <p>NVIDIA, Qualcomm, Arm, NXP and ADI touch compute, ranging, radar and signal-chain layers across listed Chinese vehicle platforms.</p>
+      </article>
+      <article>
+        <span class="insight-number">02</span>
+        <h3>Foundry edges fracture first</h3>
+        <p>SMIC and Hua Hong retain documented EDA or equipment links, but chronology and licensing matter more than a simplistic “supplier” label.</p>
+      </article>
+      <article>
+        <span class="insight-number">03</span>
+        <h3>Rewiring is not switching off</h3>
+        <p>Phase 2A adds only twelve defensible edges; near-edges without named deployment evidence remain blank.</p>
+      </article>
+    </section>
+
+    <section class="shock-section" id="policySimulator">
+      <div class="section-heading">
+        <div>
+          <p class="kicker">Phase 2C · Policy shock simulator</p>
+          <h2>Where the fracture travels next</h2>
+        </div>
+        <p>Mechanically propagates a discrete policy shock across the 41 verified relationships. It does not forecast revenue, price or policy probability.</p>
+      </div>
+
+      <div class="shock-controls" aria-label="Policy shock controls">
+        <label>
+          <span>Shock</span>
+          <select id="shockSelector"></select>
+        </label>
+        <div>
+          <span>Propagation depth</span>
+          <div class="segmented shock-depth" role="group" aria-label="Propagation depth">
+            <button class="shock-depth-button" data-depth="immediate" aria-pressed="false">Immediate only</button>
+            <button class="shock-depth-button active" data-depth="second" aria-pressed="true">+ second order</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="shock-posture" id="shockPosture"></div>
+
+      <div class="shock-metrics" aria-label="Selected shock summary">
+        <article><span id="shockImmediateCompanies">—</span><small>immediate companies</small></article>
+        <article><span id="shockDirectEdges">—</span><small>direct verified fibers</small></article>
+        <article><span id="shockSecondCompanies">—</span><small>second-order companies</small></article>
+      </div>
+
+      <div class="shock-layout">
+        <div class="shock-map-panel">
+          <div class="shock-panel-heading">
+            <div>
+              <p class="kicker">Network propagation</p>
+              <h3 id="shockGraphTitle">Selected scenario</h3>
+            </div>
+            <div class="shock-legend" aria-label="Shock map legend">
+              <span><i class="direct"></i>Immediate</span>
+              <span><i class="second"></i>Second order</span>
+            </div>
+          </div>
+          <div class="shock-graph-wrap">
+            <svg id="shockGraph" viewBox="0 0 1200 440" role="img" aria-labelledby="shockGraphTitle shockGraphDesc">
+              <desc id="shockGraphDesc">Policy shock propagating to directly affected companies and one-hop downstream dependencies.</desc>
+            </svg>
+          </div>
+          <p class="shock-note">Second order means one verified relationship away from an immediately affected company. It is a dependency path, not proof of economic loss.</p>
+        </div>
+
+        <aside class="shock-side">
+          <section>
+            <p class="kicker">Switching clock</p>
+            <strong id="shockDelay">—</strong>
+            <p id="shockDelayReason"></p>
+          </section>
+          <section>
+            <p class="kicker">Bargaining power may shift to</p>
+            <div id="shockGainers"></div>
+          </section>
+        </aside>
+      </div>
+
+      <div class="shock-substitutes">
+        <div class="shock-substitute-heading">
+          <div>
+            <p class="kicker">Available substitutes</p>
+            <h3>Replacement paths, not magic doors</h3>
+          </div>
+          <p>Readiness and delay are scenario estimates. Source-backed capability does not imply drop-in parity.</p>
+        </div>
+        <div id="shockSubstituteList" class="shock-substitute-list"></div>
+      </div>
+
+      <div class="shock-ledger">
+        <div>
+          <p class="kicker">Affected verified fibers</p>
+          <h3 id="shockLedgerTitle">Immediate + second order</h3>
+        </div>
+        <div id="shockEdgeLedger" class="shock-edge-list"></div>
+      </div>
+
+      <div class="shock-sources">
+        <p class="kicker">Policy and substitute sources</p>
+        <div id="shockSources"></div>
+      </div>
+    </section>
+
+    <section class="bridge-section" id="externalBridge">
+      <div class="section-heading">
+        <div>
+          <p class="kicker">Phase 2D · External bridge layer</p>
+          <h2>The missing middle</h2>
+        </div>
+        <p>TSMC, memory, packaging, equipment and private AI/robotics companies sit outside the frozen universes. This layer adds them without changing the original 41 listed-company edges.</p>
+      </div>
+
+      <div class="bridge-controls" aria-label="External bridge controls">
+        <div class="segmented bridge-view" role="group" aria-label="External bridge flow view">
+          <button class="bridge-view-button active" data-bridge-view="dependency" aria-pressed="true">Physical / service</button>
+          <button class="bridge-view-button" data-bridge-view="cash" aria-pressed="false">Reverse cash</button>
+          <button class="bridge-view-button" data-bridge-view="policy" aria-pressed="false">Policy fracture</button>
+        </div>
+        <label>
+          <span>Research lane</span>
+          <select id="bridgeLaneFilter">
+            <option value="all">All three lanes</option>
+          </select>
+        </label>
+        <div class="bridge-control-note" id="bridgeViewCopy">Capability, component or service → recipient</div>
+      </div>
+
+      <div class="bridge-metrics" aria-label="External bridge summary">
+        <article><span id="bridgeNodeCount">—</span><small>external nodes visible</small></article>
+        <article><span id="bridgeEdgeCount">—</span><small>sourced bridge fibers</small></article>
+        <article><span id="bridgePrivateCount">—</span><small>private AI / robotics nodes</small></article>
+      </div>
+
+      <div class="bridge-layout">
+        <div class="bridge-map-panel">
+          <div class="bridge-panel-heading">
+            <div>
+              <p class="kicker" id="bridgeKicker">External dependency layer</p>
+              <h3 id="bridgeTitle">Capability flow through the missing middle</h3>
+            </div>
+            <div class="bridge-legend" id="bridgeLegend" aria-label="External bridge legend"></div>
+          </div>
+          <div class="bridge-graph-wrap">
+            <svg id="bridgeGraph" viewBox="0 0 1200 600" role="img" aria-labelledby="bridgeTitle bridgeGraphDesc">
+              <desc id="bridgeGraphDesc">External industrial and private AI or robotics companies connected to listed Nasdaq-100 and HKEX Core-100 endpoints where primary-source evidence exists.</desc>
+            </svg>
+          </div>
+          <p class="bridge-note">A dashed line means commercial terms are undisclosed. Reverse cash is drawn only where supplier/customer structure supports a direction; amounts remain UNKNOWN.</p>
+        </div>
+
+        <aside class="bridge-detail" id="bridgeDetail" aria-live="polite">
+          <div class="detail-empty">
+            <p class="kicker">External bridge</p>
+            <h2>Select a bridge</h2>
+            <p>Open a fiber to inspect its evidence, cash-direction rule, uncertainty and policy tags.</p>
+          </div>
+        </aside>
+      </div>
+
+      <div class="bridge-ledger">
+        <div class="bridge-ledger-heading">
+          <div>
+            <p class="kicker">External bridge ledger</p>
+            <h3>Selected lane</h3>
+          </div>
+          <p>Selected, not exhaustive. Missing Huawei and other near-edges remain explicit research gaps until company-level evidence is registered.</p>
+        </div>
+        <div id="bridgeEdgeList" class="bridge-edge-list"></div>
+      </div>
+    </section>
+
+    <section class="matrix-section">
+      <div class="section-heading">
+        <div>
+          <p class="kicker" id="matrixKicker">The selective expansion</p>
+          <h2>Relationship matrix</h2>
+        </div>
+        <p>Only colored cells have verified evidence. Select a cell to open the relationship.</p>
+      </div>
+      <div id="matrix" class="matrix-wrap" tabindex="0" aria-label="Scrollable relationship matrix"></div>
+    </section>
+
+    <section class="ledger-section">
+      <div class="section-heading">
+        <div>
+          <p class="kicker">Audit trail</p>
+          <h2>Relationship ledger</h2>
+        </div>
+        <p>Amounts are unknown unless a primary source disclosed them.</p>
+      </div>
+      <div class="table-wrap">
+        <table id="ledgerTable">
+          <thead>
+            <tr>
+              <th>Provider</th><th>Recipient</th><th>Flow</th><th>Status</th>
+              <th>Evidence</th><th>Risk</th><th>Date</th><th>Amount</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="universe-section">
+      <div class="section-heading">
+        <div>
+          <p class="kicker">Phase 2B · Sparse 100 × 100 navigation</p>
+          <h2>Explore every issuer without inventing edges</h2>
+        </div>
+        <p>All 200 issuers are selectable. A blank pair means <strong>NOT_ESTABLISHED</strong>, never “no relationship.”</p>
+      </div>
+
+      <div class="explorer-controls" aria-label="Frozen-universe explorer filters">
+        <label class="explorer-search">
+          <span>Find company</span>
+          <input id="universeSearch" type="search" placeholder="Name or symbol" autocomplete="off">
+        </label>
+        <label>
+          <span>Provenance</span>
+          <select id="provenanceFilter">
+            <option value="all">Core + Phase 2A + unmapped</option>
+            <option value="core">Core 20 × 20</option>
+            <option value="2A">Phase 2A additions</option>
+            <option value="unmapped">Not yet mapped</option>
+          </select>
+        </label>
+        <label>
+          <span>Sector</span>
+          <select id="sectorFilter">
+            <option value="all">All classified sectors</option>
+          </select>
+        </label>
+        <label>
+          <span>Capability</span>
+          <select id="explorerClassFilter">
+            <option value="all">All relationship classes</option>
+          </select>
+        </label>
+        <label>
+          <span>Evidence</span>
+          <select id="evidenceFilter">
+            <option value="all">Grade A + B</option>
+            <option value="A">Grade A only</option>
+            <option value="B">Grade B only</option>
+          </select>
+        </label>
+        <label>
+          <span>Edge age</span>
+          <select id="explorerStatusFilter">
+            <option value="all">Current + historical</option>
+            <option value="current">Current / announced</option>
+            <option value="historical">Historical only</option>
+          </select>
+        </label>
+        <label class="toggle-control">
+          <input id="linkedOnly" type="checkbox">
+          <span>Only issuers with verified edges</span>
+        </label>
+        <button id="resetExplorer" class="quiet-button">Reset explorer</button>
+      </div>
+
+      <div class="pair-explorer">
+        <div class="pair-heading">
+          <div>
+            <p class="kicker">Direct-pair check</p>
+            <h3>Choose one issuer from each frozen universe</h3>
+          </div>
+          <p>Filters apply to visible routes. Hidden evidence is called out; unsupported pairs remain unknown.</p>
+        </div>
+        <div class="pair-controls">
+          <label>
+            <span>Nasdaq-100 issuer</span>
+            <input id="pairNasdaqInput" list="nasdaqOptions" placeholder="e.g. NVDA · NVIDIA" autocomplete="off">
+            <datalist id="nasdaqOptions"></datalist>
+          </label>
+          <span class="pair-glyph" aria-hidden="true">paired with</span>
+          <label>
+            <span>HKEX Core-100 issuer</span>
+            <input id="pairHkexInput" list="hkexOptions" placeholder="e.g. 9866 · NIO" autocomplete="off">
+            <datalist id="hkexOptions"></datalist>
+          </label>
+        </div>
+        <div id="pairResult" class="pair-result" aria-live="polite"></div>
+      </div>
+
+      <div class="universe-grid">
+        <article>
+          <header><h3>Nasdaq-100 issuers</h3><span><b id="nasdaqUniverseCount">100 of 100</b> · 2026-05-01</span></header>
+          <div class="universe-list" id="nasdaqUniverse"></div>
+        </article>
+        <article>
+          <header><h3>HKEX Core-100 · HSCHK100</h3><span><b id="hkexUniverseCount">100 of 100</b> · 2026-07-25</span></header>
+          <div class="universe-list" id="hkexUniverse"></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Source-backed research artifact · Directional, not exhaustive · No investment recommendation</p>
+    <p><a href="docs/METHODOLOGY.md">Methodology</a> · <a href="docs/RESEARCH_SEQUENCE.md">Research sequence</a> · <a href="docs/PHASE_2A_FINDINGS.md">Phase 2A findings</a> · <a href="docs/PHASE_2B_FINDINGS.md">Phase 2B findings</a> · <a href="docs/PHASE_2C_FINDINGS.md">Phase 2C findings</a> · <a href="docs/PHASE_2D_FINDINGS.md">Phase 2D findings</a> · <a href="phase2e/reports/PHASE_2E_POLICY_SEMANTIC_REVIEW_20260817.md">Phase 2E policy review</a> · <a href="docs/DISCUSSION_EXPORT.md">Discussion export</a> · <a href="data/sources.csv">Frozen source ledger</a></p>
+  </footer>
+
+  <script src="phase2e/reviews/policy-review-data.js?v=20260817-phase2e"></script>
+  <script src="data/map-data.js?v=20260817-phase2e"></script>
+  <script src="assets/app.js?v=20260817-phase2e"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageLead from '../../components/PageLead.astro';
+import SwarmField from '../../components/intelligence/SwarmField.astro';
+
+const description = 'Three living studies of how local rules, shared traces, and decentralized messages become collective intelligence.';
+const path = '/intelligence/swarm/';
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': `https://iamrobin.ai${path}#page`,
+  name: 'AI Swarm — Intelligence — Robin Xie',
+  description,
+  url: `https://iamrobin.ai${path}`,
+  inLanguage: 'en',
+};
+---
+
+<BaseLayout
+  title="AI Swarm — Intelligence — Robin Xie"
+  {description}
+  {path}
+  {schema}
+>
+  <PageLead eyebrow="Intelligence / Emergence" title="AI Swarm." line="No leader. Intelligence emerges." />
+  <SwarmField />
+</BaseLayout>

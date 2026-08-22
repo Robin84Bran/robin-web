@@ -5,7 +5,17 @@ const root = process.cwd();
 const dist = join(root, 'dist');
 const origin = 'https://iamrobin.ai';
 const failures = [];
-const indexableRoutes = new Set(['/', '/portfolio/', '/books/', '/meaning/', '/ouroboros/']);
+const indexableRoutes = new Set([
+  '/',
+  '/portfolio/',
+  '/books/',
+  '/meaning/',
+  '/ouroboros/',
+  '/intelligence/',
+  '/intelligence/swarm/',
+  '/intelligence/hardware/',
+  '/intelligence/supply-chain/',
+]);
 
 function check(condition, message) {
   if (!condition) failures.push(message);
@@ -39,7 +49,8 @@ function one(html, pattern) {
 check(existsSync(dist), 'dist/ is missing; run the production build first.');
 
 if (existsSync(dist)) {
-  const htmlFiles = walk(dist).filter((file) => file.endsWith('.html'));
+  const embeddedMap = join(dist, 'intelligence', 'supply-chain-map', 'index.html');
+  const htmlFiles = walk(dist).filter((file) => file.endsWith('.html') && file !== embeddedMap);
   const routes = new Map(htmlFiles.map((file) => [routeFromHtml(file), file]));
   const briefingRoutes = [...routes.keys()].filter((route) => /^\/ouroboros\/\d{6}\/\d{8}\/$/.test(route));
   const briefingTranslationRoutes = [...routes.keys()].filter((route) => /^\/ouroboros\/\d{6}\/\d{8}\/(?:zh-hans|zh-hant|ja)\/$/.test(route));
@@ -55,7 +66,7 @@ if (existsSync(dist)) {
   const blogPublications = [...blogRoutes, ...blogTranslationRoutes];
   const publicationRoutes = [...articleRoutes, ...actionFlowPublications, ...blogPublications];
   for (const route of [...publicationRoutes, ...diaryRoutes]) indexableRoutes.add(route);
-  check(routes.size === 12 + publicationRoutes.length + diaryRoutes.length, `expected ${12 + publicationRoutes.length + diaryRoutes.length} HTML routes, found ${routes.size}.`);
+  check(routes.size === 15 + publicationRoutes.length + diaryRoutes.length, `expected ${15 + publicationRoutes.length + diaryRoutes.length} HTML routes, found ${routes.size}.`);
 
   for (const [route, file] of routes) {
     const html = readFileSync(file, 'utf8');

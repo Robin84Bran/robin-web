@@ -11,6 +11,15 @@ const securityHeaders = {
   'X-Frame-Options': 'DENY',
 };
 
+const embeddedMapSecurityHeaders = {
+  ...securityHeaders,
+  'Content-Security-Policy': securityHeaders['Content-Security-Policy'].replace(
+    "frame-ancestors 'none'",
+    "frame-ancestors 'self'",
+  ),
+  'X-Frame-Options': 'SAMEORIGIN',
+};
+
 function redirect(url, status) {
   return new Response(null, {
     status,
@@ -44,7 +53,10 @@ export default {
 
     const response = await env.ASSETS.fetch(request);
     const headers = new Headers(response.headers);
-    for (const [name, value] of Object.entries(securityHeaders)) headers.set(name, value);
+    const responseSecurityHeaders = url.pathname === '/intelligence/supply-chain-map/'
+      ? embeddedMapSecurityHeaders
+      : securityHeaders;
+    for (const [name, value] of Object.entries(responseSecurityHeaders)) headers.set(name, value);
 
     return new Response(response.body, {
       status: response.status,

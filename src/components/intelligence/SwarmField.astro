@@ -1,0 +1,905 @@
+---
+const acts = [
+  {
+    id: 'flock',
+    numeral: 'I',
+    title: 'Flock',
+    line: 'Local rules → global form',
+    note: 'Separate. Align. Cohere. No bird sees the whole.',
+  },
+  {
+    id: 'hive',
+    numeral: 'II',
+    title: 'Hive',
+    line: 'Shared traces → collective memory',
+    note: 'Each ant reads the marks left by others. The path remembers.',
+  },
+  {
+    id: 'network',
+    numeral: 'III',
+    title: 'Network',
+    line: 'Agreement ≠ truth',
+    note: 'Observe. Propose. Critique. Vote. Execute. Remember.',
+  },
+] as const;
+---
+
+<section class="swarm-field" data-swarm-field aria-labelledby="swarm-title">
+  <div class="swarm-tabs" role="tablist" aria-label="AI Swarm acts">
+    {
+      acts.map((act, index) => (
+        <button
+          type="button"
+          role="tab"
+          class:list={{ 'is-active': index === 0 }}
+          aria-selected={index === 0 ? 'true' : 'false'}
+          data-swarm-mode={act.id}
+        >
+          <span>{act.numeral}</span>
+          <strong>{act.title}</strong>
+          <em>{act.line}</em>
+        </button>
+      ))
+    }
+  </div>
+
+  <div class="swarm-stage">
+    <div class="swarm-stage-head">
+      <p class="eyebrow" data-swarm-act>Act I / Flock</p>
+      <span data-swarm-state>forming</span>
+    </div>
+
+    <canvas
+      data-swarm-canvas
+      role="img"
+      aria-label="A flock forming global patterns from local separation, alignment, and cohesion rules"
+    ></canvas>
+
+    <div class="swarm-reading" aria-live="polite">
+      <div>
+        <span data-metric-one-label>neighbors</span>
+        <strong data-metric-one>—</strong>
+      </div>
+      <div>
+        <span data-metric-two-label>coherence</span>
+        <strong data-metric-two>—</strong>
+      </div>
+      <p data-swarm-note>{acts[0].note}</p>
+    </div>
+  </div>
+
+  <details class="swarm-tune">
+    <summary>Tune the system <span aria-hidden="true">＋</span></summary>
+    <div class="swarm-controls">
+      <label>
+        <span>Population</span>
+        <input data-swarm-population type="range" min="28" max="110" value="72" />
+      </label>
+      <label>
+        <span>Local influence</span>
+        <input data-swarm-influence type="range" min="25" max="100" value="68" />
+      </label>
+      <label class="partition-control">
+        <input data-swarm-partition type="checkbox" />
+        <span>Partition network</span>
+      </label>
+      <button type="button" data-swarm-reset>Begin again</button>
+    </div>
+  </details>
+
+  <p class="swarm-source">Three emergence studies, translated from RobinOS2 into one living field.</p>
+</section>
+
+<script>
+  const root = document.querySelector<HTMLElement>('[data-swarm-field]');
+
+  if (root) {
+    const canvas = root.querySelector<HTMLCanvasElement>('[data-swarm-canvas]');
+    const modeButtons = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-swarm-mode]'));
+    const actLabel = root.querySelector<HTMLElement>('[data-swarm-act]');
+    const stateLabel = root.querySelector<HTMLElement>('[data-swarm-state]');
+    const metricOneLabel = root.querySelector<HTMLElement>('[data-metric-one-label]');
+    const metricOne = root.querySelector<HTMLElement>('[data-metric-one]');
+    const metricTwoLabel = root.querySelector<HTMLElement>('[data-metric-two-label]');
+    const metricTwo = root.querySelector<HTMLElement>('[data-metric-two]');
+    const note = root.querySelector<HTMLElement>('[data-swarm-note]');
+    const populationControl = root.querySelector<HTMLInputElement>('[data-swarm-population]');
+    const influenceControl = root.querySelector<HTMLInputElement>('[data-swarm-influence]');
+    const partitionControl = root.querySelector<HTMLInputElement>('[data-swarm-partition]');
+    const resetButton = root.querySelector<HTMLButtonElement>('[data-swarm-reset]');
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    type Vector = { x: number; y: number };
+    type Boid = Vector & { vx: number; vy: number };
+    type Ant = Vector & { angle: number; carrying: boolean; target: number; turn: number };
+    type Trail = Vector & { life: number };
+    type NetworkNode = Vector & { group: number; belief: number };
+    type Message = { from: number; to: number; progress: number; value: number };
+
+    let mode = 'flock';
+    let width = 900;
+    let height = 560;
+    let dpr = 1;
+    let frame = 0;
+    let lastTime = 0;
+    let seed = 173;
+    let boids: Boid[] = [];
+    let ants: Ant[] = [];
+    let trails: Trail[] = [];
+    let delivered = 0;
+    let nodes: NetworkNode[] = [];
+    let edges: Array<[number, number]> = [];
+    let messages: Message[] = [];
+    let networkPhase = 0;
+    let networkRound = 1;
+    let phaseClock = 0;
+    let agreement = 58;
+    let accuracy = 74;
+
+    const modeCopy = {
+      flock: {
+        act: 'Act I / Flock',
+        state: 'forming',
+        one: 'neighbors',
+        two: 'coherence',
+        note: 'Separate. Align. Cohere. No bird sees the whole.',
+        aria: 'A flock forming global patterns from local separation, alignment, and cohesion rules',
+      },
+      hive: {
+        act: 'Act II / Hive',
+        state: 'foraging',
+        one: 'food returned',
+        two: 'shared traces',
+        note: 'Each ant reads the marks left by others. The path remembers.',
+        aria: 'An ant colony finding food through shared local traces with no central controller',
+      },
+      network: {
+        act: 'Act III / Network',
+        state: 'observing',
+        one: 'agreement',
+        two: 'truth accuracy',
+        note: 'Observe. Propose. Critique. Vote. Execute. Remember.',
+        aria: 'A decentralized agent network comparing agreement with truth accuracy',
+      },
+    } as const;
+
+    const random = () => {
+      seed = (seed * 1664525 + 1013904223) >>> 0;
+      return seed / 4294967296;
+    };
+
+    const palette = () => {
+      const style = getComputedStyle(document.documentElement);
+      return {
+        moon: style.getPropertyValue('--moon-bright').trim(),
+        ink: style.getPropertyValue('--ink').trim(),
+        muted: style.getPropertyValue('--muted').trim(),
+        gold: style.getPropertyValue('--gold').trim(),
+        silver: style.getPropertyValue('--silver').trim(),
+        sakura: style.getPropertyValue('--sakura').trim(),
+        mist: style.getPropertyValue('--mist').trim(),
+      };
+    };
+
+    const population = () => Number(populationControl?.value || 72);
+    const influence = () => Number(influenceControl?.value || 68) / 100;
+
+    const resize = () => {
+      if (!canvas) return;
+      const rect = canvas.getBoundingClientRect();
+      width = Math.max(320, rect.width);
+      height = Math.max(430, rect.height);
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      canvas.width = Math.round(width * dpr);
+      canvas.height = Math.round(height * dpr);
+      initMode();
+    };
+
+    const initFlock = () => {
+      boids = Array.from({ length: population() }, () => {
+        const angle = random() * Math.PI * 2;
+        const speed = 0.7 + random() * 0.8;
+        return {
+          x: width * (0.15 + random() * 0.7),
+          y: height * (0.16 + random() * 0.68),
+          vx: Math.cos(angle) * speed,
+          vy: Math.sin(angle) * speed,
+        };
+      });
+    };
+
+    const initHive = () => {
+      const nest = { x: width * 0.5, y: height * 0.54 };
+      const food = foods();
+      ants = Array.from({ length: Math.max(26, Math.round(population() * 0.78)) }, (_, index) => {
+        const target = index % 3;
+        const carrying = index % 7 === 0;
+        const progress = carrying ? 0.22 + random() * 0.52 : 0;
+        const source = food[target] ?? nest;
+        const x = carrying ? source.x + (nest.x - source.x) * progress : nest.x + (random() - 0.5) * 26;
+        const y = carrying ? source.y + (nest.y - source.y) * progress : nest.y + (random() - 0.5) * 26;
+        return {
+          x,
+          y,
+          angle: carrying ? Math.atan2(nest.y - y, nest.x - x) : random() * Math.PI * 2,
+          carrying,
+          target,
+          turn: (random() - 0.5) * 0.08,
+        };
+      });
+      trails = [];
+      food.forEach((source, routeIndex) => {
+        for (let step = 1; step < 18; step += 1) {
+          const progress = step / 19;
+          trails.push({
+            x: source.x + (nest.x - source.x) * progress + Math.sin(step + routeIndex) * 3,
+            y: source.y + (nest.y - source.y) * progress + Math.cos(step * 1.4 + routeIndex) * 3,
+            life: 0.16 + progress * 0.28,
+          });
+        }
+      });
+      delivered = 3;
+    };
+
+    const initNetwork = () => {
+      nodes = Array.from({ length: 24 }, (_, index) => {
+        const angle = (index / 24) * Math.PI * 2 + (random() - 0.5) * 0.12;
+        const ring = index % 3 === 0 ? 0.29 : 0.4;
+        return {
+          x: width * 0.5 + Math.cos(angle) * Math.min(width, height) * ring,
+          y: height * 0.5 + Math.sin(angle) * Math.min(width, height) * ring,
+          group: index < 12 ? 0 : 1,
+          belief: index % 5 === 0 ? -1 : 1,
+        };
+      });
+      edges = [];
+      for (let index = 0; index < nodes.length; index += 1) {
+        edges.push([index, (index + 1) % nodes.length]);
+        edges.push([index, (index + 5) % nodes.length]);
+      }
+      messages = [];
+      networkPhase = 0;
+      networkRound = 1;
+      phaseClock = 0;
+      agreement = 58;
+      accuracy = 74;
+    };
+
+    const initMode = () => {
+      seed = mode === 'flock' ? 173 : mode === 'hive' ? 271 : 419;
+      if (mode === 'flock') initFlock();
+      if (mode === 'hive') initHive();
+      if (mode === 'network') initNetwork();
+      updateReading();
+      draw();
+    };
+
+    const wrap = (boid: Boid) => {
+      if (boid.x < -8) boid.x = width + 8;
+      if (boid.x > width + 8) boid.x = -8;
+      if (boid.y < -8) boid.y = height + 8;
+      if (boid.y > height + 8) boid.y = -8;
+    };
+
+    const flockStep = (scale: number) => {
+      const radius = 58 + influence() * 34;
+      const separationRadius = 22;
+      const next = boids.map((boid, index) => {
+        let neighbors = 0;
+        let alignX = 0;
+        let alignY = 0;
+        let centerX = 0;
+        let centerY = 0;
+        let repelX = 0;
+        let repelY = 0;
+
+        boids.forEach((other, otherIndex) => {
+          if (index === otherIndex) return;
+          const dx = other.x - boid.x;
+          const dy = other.y - boid.y;
+          const distance = Math.hypot(dx, dy);
+          if (distance < radius) {
+            neighbors += 1;
+            alignX += other.vx;
+            alignY += other.vy;
+            centerX += other.x;
+            centerY += other.y;
+            if (distance < separationRadius && distance > 0) {
+              repelX -= dx / distance;
+              repelY -= dy / distance;
+            }
+          }
+        });
+
+        let vx = boid.vx;
+        let vy = boid.vy;
+        if (neighbors > 0) {
+          const strength = influence();
+          vx += ((alignX / neighbors) - vx) * 0.018 * strength;
+          vy += ((alignY / neighbors) - vy) * 0.018 * strength;
+          vx += ((centerX / neighbors) - boid.x) * 0.0007 * strength;
+          vy += ((centerY / neighbors) - boid.y) * 0.0007 * strength;
+          vx += repelX * 0.045;
+          vy += repelY * 0.045;
+        }
+        const speed = Math.hypot(vx, vy) || 1;
+        const targetSpeed = 1.15;
+        vx = (vx / speed) * targetSpeed;
+        vy = (vy / speed) * targetSpeed;
+        return { x: boid.x + vx * scale, y: boid.y + vy * scale, vx, vy };
+      });
+      boids = next;
+      boids.forEach(wrap);
+    };
+
+    const foods = () => [
+      { x: width * 0.16, y: height * 0.2 },
+      { x: width * 0.84, y: height * 0.25 },
+      { x: width * 0.78, y: height * 0.82 },
+    ];
+
+    const hiveStep = (scale: number) => {
+      const nest = { x: width * 0.5, y: height * 0.54 };
+      const food = foods();
+      trails.forEach((trail) => { trail.life -= 0.006 * scale; });
+      trails = trails.filter((trail) => trail.life > 0);
+
+      ants.forEach((ant, index) => {
+        const target = ant.carrying ? nest : food[ant.target % food.length];
+        let desired = Math.atan2(target.y - ant.y, target.x - ant.x);
+        if (!ant.carrying) {
+          let nearest: Trail | null = null;
+          let nearestDistance = 54;
+          for (let trailIndex = trails.length - 1; trailIndex >= 0; trailIndex -= 3) {
+            const trail = trails[trailIndex];
+            if (!trail) continue;
+            const distance = Math.hypot(trail.x - ant.x, trail.y - ant.y);
+            if (distance < nearestDistance) {
+              nearest = trail;
+              nearestDistance = distance;
+            }
+          }
+          if (nearest) desired = Math.atan2(nearest.y - ant.y, nearest.x - ant.x);
+          desired += Math.sin(index * 2.1 + lastTime / 520) * 0.55 + ant.turn;
+        }
+        const delta = Math.atan2(Math.sin(desired - ant.angle), Math.cos(desired - ant.angle));
+        ant.angle += Math.max(-0.075, Math.min(0.075, delta)) * influence() * scale;
+        const speed = ant.carrying ? 1.05 : 0.85;
+        ant.x += Math.cos(ant.angle) * speed * scale;
+        ant.y += Math.sin(ant.angle) * speed * scale;
+        ant.x = Math.max(8, Math.min(width - 8, ant.x));
+        ant.y = Math.max(8, Math.min(height - 8, ant.y));
+
+        if (ant.carrying && index % 2 === 0 && random() > 0.46) {
+          trails.push({ x: ant.x, y: ant.y, life: 0.38 + influence() * 0.62 });
+        }
+        if (!ant.carrying && Math.hypot(ant.x - target.x, ant.y - target.y) < 16) {
+          ant.carrying = true;
+          ant.angle += Math.PI;
+        }
+        if (ant.carrying && Math.hypot(ant.x - nest.x, ant.y - nest.y) < 18) {
+          ant.carrying = false;
+          ant.target = (ant.target + 1) % food.length;
+          ant.angle += Math.PI;
+          delivered += 1;
+        }
+      });
+      if (trails.length > 1800) trails.splice(0, trails.length - 1800);
+    };
+
+    const phaseNames = ['observe', 'propose', 'critique', 'vote', 'execute', 'remember'];
+
+    const networkStep = (delta: number) => {
+      phaseClock += delta;
+      if (phaseClock > 1180) {
+        phaseClock = 0;
+        networkPhase = (networkPhase + 1) % phaseNames.length;
+        if (networkPhase === 0) networkRound += 1;
+        const partitioned = Boolean(partitionControl?.checked);
+        messages = edges
+          .filter(([from, to]) => !partitioned || nodes[from]?.group === nodes[to]?.group)
+          .filter(() => random() > 0.38)
+          .slice(0, 32)
+          .map(([from, to]) => ({ from, to, progress: 0, value: random() > 0.22 ? 1 : -1 }));
+
+        if (partitioned) {
+          agreement = 100;
+          accuracy = 0;
+          nodes.forEach((node) => { node.belief = -1; });
+        } else {
+          agreement = Math.round(66 + random() * 29);
+          accuracy = Math.round(68 + random() * 30);
+          nodes.forEach((node, index) => { node.belief = index < Math.round(nodes.length * accuracy / 100) ? 1 : -1; });
+        }
+      }
+      messages.forEach((message) => { message.progress += delta / 1050; });
+      messages = messages.filter((message) => message.progress < 1);
+    };
+
+    const drawFlock = (context: CanvasRenderingContext2D, colors: ReturnType<typeof palette>) => {
+      const tracked = boids[0];
+      if (!tracked) return;
+      const radius = 58 + influence() * 34;
+      context.strokeStyle = 'rgba(180, 145, 93, 0.22)';
+      context.lineWidth = 1;
+      context.beginPath();
+      context.arc(tracked.x, tracked.y, radius, 0, Math.PI * 2);
+      context.stroke();
+      boids.forEach((boid, index) => {
+        if (index > 0 && Math.hypot(boid.x - tracked.x, boid.y - tracked.y) < radius) {
+          context.beginPath();
+          context.moveTo(tracked.x, tracked.y);
+          context.lineTo(boid.x, boid.y);
+          context.strokeStyle = 'rgba(170, 182, 191, 0.16)';
+          context.stroke();
+        }
+      });
+      boids.forEach((boid, index) => {
+        const angle = Math.atan2(boid.vy, boid.vx);
+        context.save();
+        context.translate(boid.x, boid.y);
+        context.rotate(angle);
+        context.beginPath();
+        context.moveTo(index === 0 ? 10 : 6, 0);
+        context.lineTo(index === 0 ? -7 : -4, index === 0 ? 5 : 3);
+        context.lineTo(index === 0 ? -3 : -2, 0);
+        context.lineTo(index === 0 ? -7 : -4, index === 0 ? -5 : -3);
+        context.closePath();
+        context.fillStyle = index === 0 ? colors.gold : index % 5 === 0 ? colors.sakura : colors.ink;
+        context.globalAlpha = index === 0 ? 1 : 0.62;
+        context.fill();
+        context.restore();
+      });
+    };
+
+    const drawHive = (context: CanvasRenderingContext2D, colors: ReturnType<typeof palette>) => {
+      trails.forEach((trail) => {
+        context.beginPath();
+        context.arc(trail.x, trail.y, 1.2 + trail.life * 1.3, 0, Math.PI * 2);
+        context.fillStyle = `rgba(170, 182, 191, ${Math.min(0.34, trail.life * 0.32)})`;
+        context.fill();
+      });
+      const nest = { x: width * 0.5, y: height * 0.54 };
+      context.beginPath();
+      context.arc(nest.x, nest.y, 22, 0, Math.PI * 2);
+      context.fillStyle = 'rgba(180, 145, 93, 0.12)';
+      context.fill();
+      context.strokeStyle = colors.gold;
+      context.stroke();
+      foods().forEach((food, index) => {
+        context.beginPath();
+        context.arc(food.x, food.y, 10 + index * 2, 0, Math.PI * 2);
+        context.fillStyle = index === 1 ? colors.sakura : colors.mist;
+        context.globalAlpha = 0.72;
+        context.fill();
+      });
+      context.globalAlpha = 1;
+      ants.forEach((ant, index) => {
+        context.save();
+        context.translate(ant.x, ant.y);
+        context.rotate(ant.angle);
+        context.beginPath();
+        context.ellipse(0, 0, index === 0 ? 5 : 3.3, index === 0 ? 2.4 : 1.7, 0, 0, Math.PI * 2);
+        context.fillStyle = ant.carrying ? colors.gold : index === 0 ? colors.sakura : colors.ink;
+        context.globalAlpha = index === 0 ? 1 : 0.65;
+        context.fill();
+        context.restore();
+      });
+      context.globalAlpha = 1;
+    };
+
+    const drawNetwork = (context: CanvasRenderingContext2D, colors: ReturnType<typeof palette>) => {
+      const partitioned = Boolean(partitionControl?.checked);
+      if (partitioned) {
+        context.save();
+        context.setLineDash([4, 9]);
+        context.strokeStyle = 'rgba(223, 183, 196, 0.6)';
+        context.beginPath();
+        context.moveTo(width / 2, height * 0.07);
+        context.lineTo(width / 2, height * 0.93);
+        context.stroke();
+        context.restore();
+      }
+      edges.forEach(([from, to]) => {
+        const a = nodes[from];
+        const b = nodes[to];
+        if (!a || !b) return;
+        const cut = partitioned && a.group !== b.group;
+        context.beginPath();
+        context.moveTo(a.x, a.y);
+        context.lineTo(b.x, b.y);
+        context.strokeStyle = cut ? 'rgba(223, 183, 196, 0.12)' : 'rgba(83, 74, 65, 0.18)';
+        context.lineWidth = cut ? 0.6 : 1;
+        context.stroke();
+      });
+      messages.forEach((message) => {
+        const a = nodes[message.from];
+        const b = nodes[message.to];
+        if (!a || !b) return;
+        const x = a.x + (b.x - a.x) * message.progress;
+        const y = a.y + (b.y - a.y) * message.progress;
+        context.beginPath();
+        context.arc(x, y, 3, 0, Math.PI * 2);
+        context.fillStyle = message.value > 0 ? colors.gold : colors.sakura;
+        context.fill();
+      });
+      nodes.forEach((node, index) => {
+        context.beginPath();
+        context.arc(node.x, node.y, index % 7 === 0 ? 8 : 6, 0, Math.PI * 2);
+        context.fillStyle = node.belief > 0 ? colors.moon : colors.sakura;
+        context.fill();
+        context.strokeStyle = index % 7 === 0 ? colors.gold : colors.silver;
+        context.lineWidth = index % 7 === 0 ? 1.7 : 1;
+        context.stroke();
+      });
+      context.fillStyle = colors.muted;
+      context.font = '11px Avenir Next, sans-serif';
+      context.textAlign = 'center';
+      context.fillText(`${phaseNames[networkPhase]} · round ${networkRound}`, width / 2, height - 24);
+    };
+
+    const draw = () => {
+      if (!canvas) return;
+      const context = canvas.getContext('2d');
+      if (!context) return;
+      const colors = palette();
+      context.setTransform(dpr, 0, 0, dpr, 0, 0);
+      context.clearRect(0, 0, width, height);
+      const glow = context.createRadialGradient(width * 0.5, height * 0.48, 0, width * 0.5, height * 0.48, Math.max(width, height) * 0.56);
+      glow.addColorStop(0, 'rgba(255,255,255,0.84)');
+      glow.addColorStop(0.44, 'rgba(223,183,196,0.07)');
+      glow.addColorStop(1, 'rgba(255,255,255,0)');
+      context.fillStyle = glow;
+      context.fillRect(0, 0, width, height);
+      if (mode === 'flock') drawFlock(context, colors);
+      if (mode === 'hive') drawHive(context, colors);
+      if (mode === 'network') drawNetwork(context, colors);
+    };
+
+    const updateReading = () => {
+      const copy = modeCopy[mode as keyof typeof modeCopy];
+      if (!copy) return;
+      if (actLabel) actLabel.textContent = copy.act;
+      if (stateLabel) stateLabel.textContent = copy.state;
+      if (metricOneLabel) metricOneLabel.textContent = copy.one;
+      if (metricTwoLabel) metricTwoLabel.textContent = copy.two;
+      if (note) note.textContent = copy.note;
+      if (canvas) canvas.setAttribute('aria-label', copy.aria);
+      root.dataset.mode = mode;
+    };
+
+    const updateMetrics = () => {
+      if (!metricOne || !metricTwo || !stateLabel) return;
+      if (mode === 'flock') {
+        const tracked = boids[0];
+        const radius = 58 + influence() * 34;
+        const neighbors = tracked ? boids.filter((boid, index) => index > 0 && Math.hypot(boid.x - tracked.x, boid.y - tracked.y) < radius).length : 0;
+        const averageVelocity = boids.reduce((sum, boid) => ({ x: sum.x + boid.vx, y: sum.y + boid.vy }), { x: 0, y: 0 });
+        const coherent = Math.min(1, Math.hypot(averageVelocity.x, averageVelocity.y) / Math.max(1, boids.length));
+        metricOne.textContent = String(neighbors);
+        metricTwo.textContent = `${Math.max(0, Math.round(coherent * 100))}%`;
+        stateLabel.textContent = coherent > 0.7 ? 'cohering' : 'forming';
+      }
+      if (mode === 'hive') {
+        metricOne.textContent = String(delivered);
+        metricTwo.textContent = String(trails.length);
+        stateLabel.textContent = delivered > 5 ? 'path found' : 'foraging';
+      }
+      if (mode === 'network') {
+        metricOne.textContent = `${agreement}%`;
+        metricTwo.textContent = `${accuracy}%`;
+        const partitioned = Boolean(partitionControl?.checked);
+        stateLabel.textContent = partitioned && agreement > 90 && accuracy < 30 ? 'coordinated noise' : agreement > 75 && accuracy > 65 ? 'reliable signal' : 'in debate';
+      }
+    };
+
+    const animate = (time = 0) => {
+      const delta = Math.min(40, time - lastTime || 16);
+      lastTime = time;
+      const scale = delta / 16.67;
+      if (mode === 'flock') flockStep(scale);
+      if (mode === 'hive') hiveStep(scale);
+      if (mode === 'network') networkStep(delta);
+      draw();
+      updateMetrics();
+      if (!reducedMotion) frame = requestAnimationFrame(animate);
+    };
+
+    const setMode = (nextMode: string) => {
+      mode = nextMode;
+      modeButtons.forEach((button) => {
+        const active = button.dataset.swarmMode === mode;
+        button.classList.toggle('is-active', active);
+        button.setAttribute('aria-selected', String(active));
+      });
+      initMode();
+    };
+
+    modeButtons.forEach((button) => button.addEventListener('click', () => setMode(button.dataset.swarmMode || 'flock')));
+    populationControl?.addEventListener('input', initMode);
+    influenceControl?.addEventListener('input', () => reducedMotion ? draw() : undefined);
+    partitionControl?.addEventListener('change', () => {
+      if (mode !== 'network') setMode('network');
+      agreement = partitionControl.checked ? 100 : 72;
+      accuracy = partitionControl.checked ? 0 : 82;
+      updateMetrics();
+      draw();
+    });
+    resetButton?.addEventListener('click', initMode);
+
+    const observer = new ResizeObserver(resize);
+    if (canvas) observer.observe(canvas);
+    resize();
+    if (!reducedMotion) frame = requestAnimationFrame(animate);
+    else updateMetrics();
+
+    window.addEventListener('pagehide', () => {
+      cancelAnimationFrame(frame);
+      observer.disconnect();
+    }, { once: true });
+  }
+</script>
+
+<style>
+  .swarm-field {
+    width: var(--shell);
+    margin: 0 auto clamp(5rem, 10vw, 9rem);
+  }
+
+  .swarm-tabs {
+    display: grid;
+    margin-bottom: 1.4rem;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .swarm-tabs button {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2.5rem 1fr;
+    gap: 0.15rem 0.8rem;
+    min-height: 5.7rem;
+    padding: 1rem;
+    color: var(--muted);
+    font: inherit;
+    text-align: left;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+
+  .swarm-tabs button:not(:last-child) {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .swarm-tabs button::after {
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    left: 0;
+    height: 2px;
+    content: '';
+    background: var(--gold);
+    transform: scaleX(0);
+    transition: transform 280ms ease;
+  }
+
+  .swarm-tabs button.is-active::after {
+    transform: scaleX(1);
+  }
+
+  .swarm-tabs span {
+    grid-row: 1 / 3;
+    color: var(--sakura);
+    font-family: var(--serif);
+    font-size: 1.35rem;
+    font-style: italic;
+  }
+
+  .swarm-tabs strong {
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 1.18rem;
+    font-weight: 400;
+  }
+
+  .swarm-tabs em {
+    font-family: var(--serif);
+    font-size: 0.8rem;
+  }
+
+  .swarm-stage {
+    overflow: hidden;
+    background: rgba(253, 251, 247, 0.56);
+    border: 1px solid var(--line);
+    box-shadow: 0 2rem 6rem rgba(63, 52, 42, 0.07);
+  }
+
+  .swarm-stage-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 3.2rem;
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .swarm-stage-head .eyebrow {
+    margin: 0;
+  }
+
+  .swarm-stage-head > span {
+    color: var(--gold-dark);
+    font-family: var(--serif);
+    font-size: 0.76rem;
+    font-style: italic;
+  }
+
+  .swarm-stage canvas {
+    display: block;
+    width: 100%;
+    height: clamp(28rem, 56vw, 44rem);
+  }
+
+  .swarm-reading {
+    display: grid;
+    border-top: 1px solid var(--line);
+  }
+
+  .swarm-reading > div,
+  .swarm-reading > p {
+    min-height: 5.2rem;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .swarm-reading > div {
+    display: grid;
+    gap: 0.35rem;
+  }
+
+  .swarm-reading > div:not(:last-of-type) {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .swarm-reading span {
+    color: var(--muted);
+    font-size: 0.58rem;
+    font-weight: 650;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .swarm-reading strong {
+    font-family: var(--serif);
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+
+  .swarm-reading > p {
+    display: flex;
+    align-items: center;
+    color: var(--muted);
+    font-family: var(--serif);
+    font-size: clamp(0.92rem, 2vw, 1.15rem);
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .swarm-tune {
+    margin-top: 1.2rem;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .swarm-tune summary {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    color: var(--gold-dark);
+    font-size: 0.64rem;
+    font-weight: 650;
+    letter-spacing: 0.12em;
+    list-style: none;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .swarm-tune summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .swarm-tune[open] summary span {
+    transform: rotate(45deg);
+  }
+
+  .swarm-controls {
+    display: grid;
+    gap: 1rem;
+    padding: 0 0 1.3rem;
+  }
+
+  .swarm-controls label {
+    display: grid;
+    gap: 0.55rem;
+    color: var(--muted);
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .swarm-controls input[type='range'] {
+    width: 100%;
+    accent-color: var(--gold);
+  }
+
+  .swarm-controls .partition-control {
+    display: flex;
+    gap: 0.7rem;
+    align-items: center;
+  }
+
+  .partition-control input {
+    width: 1rem;
+    height: 1rem;
+    accent-color: var(--sakura);
+  }
+
+  .swarm-controls button {
+    min-height: 2.8rem;
+    padding: 0.7rem 1rem;
+    color: var(--moon-bright);
+    font: inherit;
+    font-size: 0.65rem;
+    font-weight: 650;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    background: var(--ink);
+    border: 0;
+    cursor: pointer;
+  }
+
+  .swarm-source {
+    margin: 1.6rem 0 0;
+    color: var(--muted);
+    font-family: var(--serif);
+    font-size: 0.76rem;
+    font-style: italic;
+    text-align: right;
+  }
+
+  @media (min-width: 48rem) {
+    .swarm-tabs {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .swarm-tabs button:not(:last-child) {
+      border-right: 1px solid var(--line);
+      border-bottom: 0;
+    }
+
+    .swarm-reading {
+      grid-template-columns: 0.55fr 0.55fr 1.9fr;
+    }
+
+    .swarm-reading > div:not(:last-of-type) {
+      border-right: 1px solid var(--line);
+      border-bottom: 0;
+    }
+
+    .swarm-controls {
+      grid-template-columns: 1fr 1fr 1fr auto;
+      align-items: end;
+    }
+
+    .swarm-controls button {
+      min-width: 9rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .swarm-tabs button::after {
+      transition: none;
+    }
+  }
+</style>

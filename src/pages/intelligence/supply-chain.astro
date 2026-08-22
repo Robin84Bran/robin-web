@@ -1,0 +1,127 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const description = 'An evidence-first map of the commercial fibers that still bind the AI supply chain.';
+const path = '/intelligence/supply-chain/';
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': `https://iamrobin.ai${path}#page`,
+  name: 'AI Supply Chain — Intelligence — Robin Xie',
+  description,
+  url: `https://iamrobin.ai${path}`,
+  inLanguage: 'en',
+};
+---
+
+<BaseLayout
+  title="AI Supply Chain — Intelligence — Robin Xie"
+  {description}
+  {path}
+  {schema}
+>
+  <section class="supply-shell shell">
+    <div class="supply-intro">
+      <div>
+        <p class="eyebrow">Intelligence / Entanglement</p>
+        <h1>AI Supply Chain.</h1>
+      </div>
+      <div>
+        <p>The fiber still holds. Across border global entanglement.</p>
+        <small>Frozen research map · 2026-08-17 · absence of evidence is not evidence of absence</small>
+      </div>
+    </div>
+
+    <div class="supply-frame">
+      <div class="supply-frame-bar">
+        <span>Evidence-first relationship map</span>
+        <a href="/intelligence/supply-chain-map/" target="_blank">Open the full field ↗</a>
+      </div>
+      <iframe
+        src="/intelligence/supply-chain-map/"
+        title="Interactive AI Supply-Chain Entanglement research map"
+        loading="eager"
+      ></iframe>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .supply-shell {
+    padding: clamp(3rem, 7vw, 6.5rem) 0 clamp(5rem, 10vw, 8rem);
+  }
+
+  .supply-intro {
+    display: grid;
+    gap: 1.5rem;
+    align-items: end;
+    margin-bottom: clamp(2.2rem, 5vw, 4rem);
+  }
+
+  .supply-intro h1 {
+    max-width: 10ch;
+    margin-bottom: 0;
+    font-family: var(--serif);
+    font-size: clamp(3.4rem, 9vw, 7.4rem);
+    font-weight: 400;
+    letter-spacing: -0.06em;
+    line-height: 0.88;
+  }
+
+  .supply-intro > div:last-child p {
+    margin-bottom: 0.7rem;
+    font-family: var(--serif);
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
+    font-style: italic;
+  }
+
+  .supply-intro small {
+    display: block;
+    max-width: 34rem;
+    color: var(--muted);
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    line-height: 1.6;
+    text-transform: uppercase;
+  }
+
+  .supply-frame {
+    overflow: hidden;
+    background: var(--moon-bright);
+    border: 1px solid var(--line);
+    box-shadow: 0 2rem 6rem rgba(63, 52, 42, 0.09);
+  }
+
+  .supply-frame-bar {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 3.3rem;
+    padding: 0.8rem 1rem;
+    color: var(--muted);
+    font-size: 0.59rem;
+    font-weight: 650;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .supply-frame-bar a {
+    color: var(--gold-dark);
+    text-decoration: none;
+  }
+
+  .supply-frame iframe {
+    display: block;
+    width: 100%;
+    height: min(78svh, 60rem);
+    border: 0;
+  }
+
+  @media (min-width: 48rem) {
+    .supply-intro {
+      grid-template-columns: 1.2fr 0.8fr;
+    }
+  }
+</style>
