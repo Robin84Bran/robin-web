@@ -15,6 +15,7 @@ interface Props {
 const { entry, index, previous, next } = Astro.props;
 const isPressDirectory = entry.slug === 'network';
 const isOuroborosDirectory = entry.slug === 'ouroboros';
+const isMeaningDirectory = entry.slug === 'meaning';
 const briefings = isOuroborosDirectory
   ? (await getCollection('dailyBriefing', ({ data }) => !data.draft)).sort(
       (a, b) => b.data.date.getTime() - a.data.date.getTime(),
@@ -27,6 +28,11 @@ const actionItems = isOuroborosDirectory
   : [];
 const blogEntries = isOuroborosDirectory
   ? (await getCollection('blog', ({ data }) => !data.draft)).sort(
+      (a, b) => b.data.date.getTime() - a.data.date.getTime(),
+    )
+  : [];
+const diaryEntries = isMeaningDirectory
+  ? (await getCollection('diary', ({ data }) => !data.draft)).sort(
       (a, b) => b.data.date.getTime() - a.data.date.getTime(),
     )
   : [];
@@ -55,18 +61,39 @@ const ouroborosSchemas = isOuroborosDirectory
       ]),
     ]
   : undefined;
+const meaningSchemas = isMeaningDirectory
+  ? [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        '@id': 'https://iamrobin.ai/meaning/#diary',
+        name: 'Meaning · Diary — Robin Xie',
+        description: 'Dated notes by Robin Xie, preserved in her original words.',
+        url: 'https://iamrobin.ai/meaning/',
+        inLanguage: 'und',
+        author: { '@id': 'https://iamrobin.ai/#person' },
+      },
+      createPersonSchema(),
+      createBreadcrumbSchema([
+        { name: 'Home', path: '/' },
+        { name: 'Meaning', path: '/meaning/' },
+      ]),
+    ]
+  : undefined;
 ---
 
 <BaseLayout
   title={`${entry.word} — I AM ROBIN`}
   description={isOuroborosDirectory
     ? 'Daily Briefings, Daily Action Items, and returning essays by Robin Xie.'
+    : isMeaningDirectory
+      ? 'Dated notes by Robin Xie, preserved in her original words.'
     : `${entry.word}: a living project directory inside the I AM ROBIN identity map.`}
   {path}
-  noindex={!isOuroborosDirectory}
-  schema={ouroborosSchemas}
+  noindex={!isOuroborosDirectory && !isMeaningDirectory}
+  schema={ouroborosSchemas ?? meaningSchemas}
 >
-  <section class:list={['identity-directory', { 'identity-directory--library': isOuroborosDirectory }, 'shell']}>
+  <section class:list={['identity-directory', { 'identity-directory--library': isOuroborosDirectory || isMeaningDirectory }, 'shell']}>
     <a class="directory-back" href="/">← I AM ROBIN</a>
     <div class={`directory-letter directory-letter--${entry.tone}`} aria-hidden="true">{entry.letter}</div>
     <p class="eyebrow">{String(index + 1).padStart(2, '0')} / 08 · project directory</p>
@@ -150,6 +177,30 @@ const ouroborosSchemas = isOuroborosDirectory
               <p class="ouroboros-shelf__empty">The next deserving story will appear here.</p>
             )}
           </details>
+        </section>
+      ) : isMeaningDirectory ? (
+        <section class="diary-library" id="diary" aria-labelledby="diary-library-title">
+          <div class="diary-library__heading">
+            <span>01</span>
+            <h2 id="diary-library-title">Diary</h2>
+            <em>as it was written</em>
+          </div>
+          {diaryEntries.length ? (
+            <nav aria-label="Diary archive">
+              {diaryEntries.map((diary) => {
+                const date = compactDate(diary.data.date);
+                return (
+                  <a href={`/meaning/diary/${date.slice(0, 6)}/${diary.id.split('/')[0]}/`}>
+                    <time datetime={diary.data.date.toISOString().slice(0, 10)}>{displayDate(diary.data.date)}</time>
+                    <strong>{diary.data.title}</strong>
+                    <span aria-hidden="true">→</span>
+                  </a>
+                );
+              })}
+            </nav>
+          ) : (
+            <p class="diary-library__empty">A note will appear when it asks to be kept.</p>
+          )}
         </section>
       ) : isPressDirectory ? (
         <section class="press-directory" aria-labelledby="press-directory-title">

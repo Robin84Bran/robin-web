@@ -14,7 +14,7 @@ interface LanguageLink {
 }
 
 interface Props {
-  kind: 'briefing' | 'action' | 'blog';
+  kind: 'briefing' | 'action' | 'blog' | 'diary';
   title: string;
   description: string;
   path: string;
@@ -123,6 +123,7 @@ const {
   .publication-body { width: min(100%, 47rem); margin: clamp(4rem, 12vw, 9rem) auto 0; font-family: var(--serif); font-size: clamp(1.02rem, 2vw, 1.16rem); line-height: 1.86; }
   .publication-body :global(h1) { margin: 0 0 4rem; font-size: clamp(1.8rem, 5vw, 3rem); line-height: 1.15; }
   .publication-body :global(h2) { margin: 7rem 0 2.4rem; padding-top: 2rem; font-size: clamp(1.5rem, 4vw, 2.3rem); font-weight: 400; line-height: 1.2; border-top: 1px solid var(--line); }
+  .publication-body :global(h2:first-child) { margin-top: 0; padding-top: 0; border-top: 0; }
   .publication-body :global(h3) { margin: 4.8rem 0 2rem; font-size: clamp(1.3rem, 3vw, 1.75rem); font-weight: 400; line-height: 1.35; }
   .publication-body :global(p) { margin-bottom: 1.45rem; }
   .publication-body :global(strong) { font-family: var(--sans); font-size: .92em; }
@@ -143,6 +144,8 @@ const {
     .publication-intro { grid-column: 2; }
   }
   @media (max-width: 30rem) {
+    .publication-hero { min-height: auto; }
+    .publication-body { margin-top: clamp(2rem, 7vw, 3.25rem); }
     .publication h1 { max-width: min(22ch, 100%); font-size: clamp(1.6rem, 7vw, 2.1rem); line-height: 1.1; }
     .publication-languages { gap: .5rem .85rem; }
   }

@@ -11,7 +11,8 @@ export default defineConfig({
     sitemap({
       filter: (page) => {
         const path = new URL(page).pathname;
-        return ['/', '/portfolio/', '/books/', '/ouroboros/'].includes(path)
+        return ['/', '/portfolio/', '/books/', '/meaning/', '/ouroboros/'].includes(path)
+          || /^\/meaning\/diary\/\d{6}\/\d{4}-\d{2}-\d{2}-[a-z0-9-]+\/$/.test(path)
           || /^\/ouroboros\/\d{6}\/\d{8}\/$/.test(path)
           || /^\/ouroboros\/\d{6}\/\d{8}\/(?:zh-hans|zh-hant|ja)\/$/.test(path)
           || /^\/ouroboros\/\d{6}\/\d{8}\/action_item\/$/.test(path)

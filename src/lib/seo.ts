@@ -181,3 +181,41 @@ export function createArticleSchemas(input: {
     ]),
   ];
 }
+
+export function createDiarySchemas(input: {
+  title: string;
+  description: string;
+  path: string;
+  image: string;
+  datePublished: string;
+  dateModified: string;
+  inLanguage: string;
+}): SchemaNode[] {
+  const url = absoluteUrl(input.path);
+  return [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BlogPosting',
+      '@id': `${url}#diary`,
+      headline: input.title,
+      description: input.description,
+      url,
+      mainEntityOfPage: url,
+      image: [absoluteUrl(input.image)],
+      datePublished: input.datePublished,
+      dateModified: input.dateModified,
+      author: { '@id': personId },
+      publisher: { '@id': personId },
+      isPartOf: { '@id': websiteId },
+      articleSection: 'Meaning · Diary',
+      inLanguage: input.inLanguage,
+    },
+    createPersonSchema(),
+    createBreadcrumbSchema([
+      { name: 'Home', path: '/' },
+      { name: 'Meaning', path: '/meaning/' },
+      { name: 'Diary', path: '/meaning/#diary' },
+      { name: input.title, path: input.path },
+    ]),
+  ];
+}

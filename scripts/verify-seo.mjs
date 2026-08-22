@@ -5,7 +5,7 @@ const root = process.cwd();
 const dist = join(root, 'dist');
 const origin = 'https://iamrobin.ai';
 const failures = [];
-const indexableRoutes = new Set(['/', '/portfolio/', '/books/', '/ouroboros/']);
+const indexableRoutes = new Set(['/', '/portfolio/', '/books/', '/meaning/', '/ouroboros/']);
 
 function check(condition, message) {
   if (!condition) failures.push(message);
@@ -49,12 +49,13 @@ if (existsSync(dist)) {
   const actionFlowTranslationRoutes = [...routes.keys()].filter((route) => /^\/ouroboros\/\d{6}\/\d{8}\/actions\/(?:zh-hans|zh-hant|ja)\/$/.test(route));
   const blogRoutes = [...routes.keys()].filter((route) => /^\/ouroboros\/\d{6}\/\d{8}\/blog\/$/.test(route));
   const blogTranslationRoutes = [...routes.keys()].filter((route) => /^\/ouroboros\/\d{6}\/\d{8}\/blog\/(?:zh-hans|zh-hant|ja)\/$/.test(route));
+  const diaryRoutes = [...routes.keys()].filter((route) => /^\/meaning\/diary\/\d{6}\/\d{4}-\d{2}-\d{2}-[a-z0-9-]+\/$/.test(route));
   const articleRoutes = [...briefingRoutes, ...briefingTranslationRoutes, ...actionRoutes, ...actionTranslationRoutes];
   const actionFlowPublications = [...actionFlowRoutes, ...actionFlowTranslationRoutes];
   const blogPublications = [...blogRoutes, ...blogTranslationRoutes];
   const publicationRoutes = [...articleRoutes, ...actionFlowPublications, ...blogPublications];
-  for (const route of publicationRoutes) indexableRoutes.add(route);
-  check(routes.size === 12 + publicationRoutes.length, `expected ${12 + publicationRoutes.length} HTML routes, found ${routes.size}.`);
+  for (const route of [...publicationRoutes, ...diaryRoutes]) indexableRoutes.add(route);
+  check(routes.size === 12 + publicationRoutes.length + diaryRoutes.length, `expected ${12 + publicationRoutes.length + diaryRoutes.length} HTML routes, found ${routes.size}.`);
 
   for (const [route, file] of routes) {
     const html = readFileSync(file, 'utf8');
@@ -116,18 +117,27 @@ if (existsSync(dist)) {
   const books = readFileSync(routes.get('/books/'), 'utf8');
   const portfolio = readFileSync(routes.get('/portfolio/'), 'utf8');
   const ouroboros = readFileSync(routes.get('/ouroboros/'), 'utf8');
+  const meaning = readFileSync(routes.get('/meaning/'), 'utf8');
   check(homepage.includes('"@type":"Person"'), 'homepage: Person schema missing.');
   check(homepage.includes('"@type":"WebSite"'), 'homepage: WebSite schema missing.');
   check(homepage.includes('"@type":"ProfilePage"'), 'homepage: ProfilePage schema missing.');
   check((books.match(/"@type":"Book"/g) ?? []).length === 4, 'books: expected four Book schemas.');
   check(portfolio.includes('"@type":"CollectionPage"'), 'portfolio: CollectionPage schema missing.');
   check(ouroboros.includes('"@type":"CollectionPage"'), 'ouroboros: CollectionPage schema missing.');
+  check(meaning.includes('"@type":"CollectionPage"'), 'meaning: CollectionPage schema missing.');
+  check(meaning.includes('id="diary"'), 'meaning: Diary archive is missing.');
   check((ouroboros.match(/<details class="ouroboros-shelf"/g) ?? []).length === 3, 'ouroboros: expected three expandable publication shelves.');
   check(ouroboros.includes('August 20, 2026') && ouroboros.includes('August 21, 2026'), 'ouroboros: archive must expose prior and current dates.');
   check(ouroboros.includes('/actions/'), 'ouroboros: Daily Action Flow shelf is missing.');
   for (const route of publicationRoutes) {
     const article = readFileSync(routes.get(route), 'utf8');
     check(article.includes('"@type":"Article"'), `${route}: Article schema missing.`);
+    check(article.includes('"@type":"Person"'), `${route}: Person schema missing.`);
+    check(/<meta\s+property="og:type"\s+content="article"/i.test(article), `${route}: og:type must be article.`);
+  }
+  for (const route of diaryRoutes) {
+    const article = readFileSync(routes.get(route), 'utf8');
+    check(article.includes('"@type":"BlogPosting"'), `${route}: BlogPosting schema missing.`);
     check(article.includes('"@type":"Person"'), `${route}: Person schema missing.`);
     check(/<meta\s+property="og:type"\s+content="article"/i.test(article), `${route}: og:type must be article.`);
   }
@@ -162,10 +172,11 @@ if (existsSync(dist)) {
   }
 
   const publicationComponent = readFileSync(join(root, 'src', 'components', 'OuroborosPublication.astro'), 'utf8');
-  check(publicationComponent.includes("kind: 'briefing' | 'action' | 'blog'"), 'publication H1: Blog must inherit the shared component.');
+  check(publicationComponent.includes("kind: 'briefing' | 'action' | 'blog' | 'diary'"), 'publication H1: Blog and Diary must inherit the shared component.');
   check((publicationComponent.match(/clamp\(1\.75rem, 4vw, 2\.75rem\)/g) ?? []).length === 1, 'publication H1: one shared desktop scale is required.');
   check((publicationComponent.match(/clamp\(1\.6rem, 7vw, 2\.1rem\)/g) ?? []).length === 1, 'publication H1: one shared mobile scale is required.');
   check(!publicationComponent.includes('clamp(2.2rem, 8.67vw, 5.2rem)'), 'publication H1: legacy oversized Daily Briefing scale must be absent.');
+  check(publicationComponent.includes('.publication-body :global(h2:first-child) { margin-top: 0; padding-top: 0; border-top: 0; }'), 'publication body: first section must not recreate the removed mobile hero gap.');
 
   const robots = readFileSync(join(dist, 'robots.txt'), 'utf8');
   check(robots.includes('Sitemap: https://iamrobin.ai/sitemap-index.xml'), 'robots.txt: sitemap declaration missing.');

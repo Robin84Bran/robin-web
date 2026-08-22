@@ -140,6 +140,27 @@ const blogTranslation = defineCollection({
   }),
 });
 
+const diary = defineCollection({
+  loader: glob({ pattern: '**/article.md', base: './src/content/diary' }),
+  schema: z.object({
+    title: z.string(),
+    date: z.coerce.date(),
+    updated: z.coerce.date(),
+    section: z.literal('Meaning'),
+    series: z.literal('Diary'),
+    excerpt: z.string(),
+    hero: z.string(),
+    ogImage: z.string(),
+    canonical: z.url(),
+    author: z.url(),
+    inLanguage: z.string(),
+    source: z.literal('telegram'),
+    sourceId: z.string(),
+    bodySha256: z.string().regex(/^[a-f0-9]{64}$/),
+    draft: z.boolean().default(false),
+  }),
+});
+
 export const collections = {
   dailyBriefing,
   dailyBriefingTranslation,
@@ -147,4 +168,5 @@ export const collections = {
   actionItemTranslation,
   blog,
   blogTranslation,
+  diary,
 };
