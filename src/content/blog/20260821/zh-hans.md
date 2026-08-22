@@ -27,8 +27,8 @@ inLanguage: zh-Hans
 draft: false
 sourceDossier: research-dossier.md
 voiceCheck: PASS
-mediumUrl: null
-linkedinUrl: null
+mediumUrl: "https://iamrobin-ai.medium.com/office-politics-among-ai-agents-6e5d29be4e12?postPublishedType=initial"
+linkedinUrl: "https://lnkd.in/p/gDGYVgrf"
 thesis: 共享记忆会把彼此隔离的代理人变成一个组织，因此治理必须先于组织结构出现。
 languageSlug: zh-hans
 translationOf: https://iamrobin.ai/ouroboros/202608/20260821/blog/

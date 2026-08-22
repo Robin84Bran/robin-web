@@ -644,16 +644,31 @@ body[data-path="/portfolio/"] .page-lead h1 {
 }
 
 .space-node { position: relative; }
-.space-node summary { cursor: pointer; list-style: none; }
-.space-node summary::-webkit-details-marker { display: none; }
+.space-node__trigger {
+  display: grid;
+  place-items: center;
+  min-width: 3.25rem;
+  min-height: 3.25rem;
+  padding: 0;
+  cursor: pointer;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  border-radius: 999px;
+  -webkit-tap-highlight-color: transparent;
+}
+.space-node__trigger:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 0.2rem;
+}
 
 .space-node__icons {
   display: flex;
   align-items: center;
   justify-content: center;
   width: max-content;
-  min-width: 2rem;
-  height: 2rem;
+  min-width: 2.25rem;
+  min-height: 2.25rem;
   padding-inline: 0.18rem;
   color: var(--gold-dark);
   background: rgba(253, 251, 247, 0.9);
@@ -677,35 +692,30 @@ body[data-path="/portfolio/"] .page-lead h1 {
 .space-node__icons .portfolio-glyph + .portfolio-glyph { margin-left: -0.2rem; }
 
 .space-node__label {
-  position: absolute;
-  z-index: 30;
-  bottom: calc(100% + 0.65rem);
-  left: 50%;
-  display: none;
+  position: fixed;
+  z-index: 60;
+  top: var(--popover-top, 1rem);
+  left: var(--popover-left, 1rem);
+  display: grid;
   gap: 0.18rem;
   width: max-content;
-  max-width: 12rem;
-  padding: 0.7rem 0.8rem;
-  opacity: 0;
+  max-width: min(18rem, calc(100vw - 1.5rem));
+  padding: 0.82rem 0.92rem;
   color: var(--ink);
   background: rgba(253, 251, 247, 0.95);
   border: 1px solid var(--line);
   border-radius: 0.75rem;
   box-shadow: 0 1rem 2.5rem rgba(74, 61, 48, 0.14);
-  transform: translate(-50%, 0.35rem);
-  transition: opacity 220ms ease, transform 220ms ease;
-  pointer-events: none;
+  animation: portfolio-popover-in 180ms ease both;
   backdrop-filter: blur(0.7rem);
 }
 
-.space-node__label strong { font-family: var(--serif); font-size: 0.83rem; font-weight: 500; white-space: nowrap; }
-.space-node__label small { color: var(--muted); font-size: 0.5rem; letter-spacing: 0.08em; text-transform: uppercase; }
+.space-node__label[hidden] { display: none; }
+.space-node__label strong { font-family: var(--serif); font-size: 0.92rem; font-weight: 500; white-space: nowrap; }
+.space-node__label small { color: var(--muted); font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; }
 .space-node__label nav { display: flex; flex-wrap: wrap; gap: 0.35rem 0.55rem; margin-top: 0.25rem; }
-.space-node__label a { color: var(--gold-dark); font-size: 0.56rem; font-weight: 650; letter-spacing: 0.05em; text-decoration: none; }
-.space-node[open] .space-node__label,
-.space-node:hover .space-node__label,
-.space-node:focus-within .space-node__label { display: grid; opacity: 1; transform: translate(-50%, 0); pointer-events: auto; }
-.space-orbit:has(.space-node[open]) { z-index: 30; }
+.space-node__label a { min-height: 2rem; padding-block: 0.35rem; color: var(--gold-dark); font-size: 0.78rem; font-weight: 650; letter-spacing: 0.04em; text-decoration: none; }
+.space-orbit:has(.space-node__trigger:is(:hover, :focus-visible, [aria-expanded="true"])) { z-index: 30; }
 
 .books-canvas { padding-block: 1.5rem 6rem; }
 
@@ -884,6 +894,15 @@ body[data-path="/portfolio/"] .page-lead h1 {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
+.ouroboros-shelf__rhythm {
+  margin: 0;
+  padding: 0 0 0.7rem 3.1rem;
+  color: var(--gold-dark);
+  font-size: 0.58rem;
+  font-weight: 650;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
 
 .press-directory {
   width: min(100%, 34rem);
@@ -930,6 +949,7 @@ body[data-path="/portfolio/"] .page-lead h1 {
     transform: translate(-50%, -50%) rotateX(64deg) rotateZ(var(--start));
   }
   .space-orbit__counter { transform: translate(50%, -50%) rotateZ(calc(0deg - var(--start))) rotateX(-64deg); }
+  .space-node__trigger { min-width: 2.75rem; min-height: 2.75rem; }
   .space-node__icons { min-width: 2.45rem; height: 2.45rem; }
   .portfolio-glyph { width: 1.75rem; height: 1.75rem; }
 
@@ -957,9 +977,18 @@ body[data-path="/portfolio/"] .page-lead h1 {
   .portfolio-orbit__ring { animation: orbit-ring-spin var(--speed) linear infinite; }
   .space-orbit { animation: space-orbit-turn var(--speed) linear infinite; }
   .space-orbit__counter { animation: space-orbit-counter var(--speed) linear infinite; }
+  .space-orbit:has(.space-node__trigger:is(:hover, :focus-visible, [aria-expanded="true"])),
+  .space-orbit:has(.space-node__trigger:is(:hover, :focus-visible, [aria-expanded="true"])) .space-orbit__counter {
+    animation-play-state: paused;
+  }
   .space-orbit--reverse,
   .space-orbit--reverse .space-orbit__counter { animation-direction: reverse; }
   .portfolio-glyph { animation: glyph-self-turn 9s ease-in-out infinite; }
+}
+
+@keyframes portfolio-popover-in {
+  from { opacity: 0; transform: translateY(0.35rem); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @media (min-width: 46rem) and (prefers-reduced-motion: no-preference) {

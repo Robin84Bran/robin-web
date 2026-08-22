@@ -27,8 +27,8 @@ inLanguage: ja
 draft: false
 sourceDossier: research-dossier.md
 voiceCheck: PASS
-mediumUrl: null
-linkedinUrl: null
+mediumUrl: "https://iamrobin-ai.medium.com/office-politics-among-ai-agents-6e5d29be4e12?postPublishedType=initial"
+linkedinUrl: "https://lnkd.in/p/gDGYVgrf"
 thesis: 共有メモリは孤立したエージェントを組織へ変える。だからガバナンスは、組織図が現れる前に始めなければならない。
 languageSlug: ja
 translationOf: https://iamrobin.ai/ouroboros/202608/20260821/blog/

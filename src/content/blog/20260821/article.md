@@ -27,8 +27,8 @@ inLanguage: en
 draft: false
 sourceDossier: research-dossier.md
 voiceCheck: PASS
-mediumUrl: null
-linkedinUrl: null
+mediumUrl: "https://iamrobin-ai.medium.com/office-politics-among-ai-agents-6e5d29be4e12?postPublishedType=initial"
+linkedinUrl: "https://lnkd.in/p/gDGYVgrf"
 thesis: Shared memory turns isolated agents into an organization, so governance must begin before the org chart appears.
 ---
 

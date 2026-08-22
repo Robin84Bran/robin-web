@@ -24,7 +24,7 @@ import PortfolioGlyph from './PortfolioGlyph.astro';
           // Mobile is intentionally a taller, looser universe: the circular
           // planes are projected vertically in CSS instead of compressed into
           // the shallow desktop ellipse.
-          const diameterMobile = 9 + index * 2.5;
+          const diameterMobile = 10 + index * 2.75;
           const diameterDesktop = 10 + index * 5.4;
           const speed = 24 + index * 4.5;
           const start = (index * 47 + 12) % 360;
@@ -34,26 +34,112 @@ import PortfolioGlyph from './PortfolioGlyph.astro';
             <li class:list={['space-orbit', { 'space-orbit--reverse': index % 2 === 1 }]} style={style}>
               <span class="space-orbit__ring" aria-hidden="true"></span>
               <div class="space-orbit__counter">
-                <details class="space-node">
-                  <summary aria-label={`Show ${node.label}`}>
+                <div class="space-node">
+                  <button
+                    class="space-node__trigger"
+                    type="button"
+                    aria-label={`Show ${node.label}`}
+                    aria-controls={`portfolio-detail-${index}`}
+                    aria-expanded="false"
+                    data-portfolio-trigger={index}
+                  >
                     <span class="space-node__icons">
                       {node.links.map((link) => <PortfolioGlyph icon={link.icon} />)}
                     </span>
-                  </summary>
-                  <div class="space-node__label">
-                    <strong>{node.label}</strong>
-                    <small>{node.note}</small>
-                    <nav aria-label={`${node.label} links`}>
-                      {node.links.map((link) => <a href={link.href} rel="noreferrer" target={link.href.startsWith('http') ? '_blank' : undefined}>{link.label} ↗</a>)}
-                    </nav>
-                  </div>
-                </details>
+                  </button>
+                </div>
               </div>
             </li>
           );
         })
       }
     </ol>
+
+  </div>
+  <div class="space-popovers">
+    {
+      portfolioOrbitNodes.map((node, index) => (
+        <aside
+          class="space-node__label"
+          id={`portfolio-detail-${index}`}
+          aria-label={`${node.label} details`}
+          data-portfolio-panel={index}
+          hidden
+        >
+          <strong>{node.label}</strong>
+          <small>{node.note}</small>
+          <nav aria-label={`${node.label} links`}>
+            {node.links.map((link) => <a href={link.href} rel="noreferrer" target={link.href.startsWith('http') ? '_blank' : undefined}>{link.label} ↗</a>)}
+          </nav>
+        </aside>
+      ))
+    }
   </div>
   <p class="gravity-caption">near → lived daily · far → still shaping the horizon</p>
 </section>
+
+<script>
+  const section = document.querySelector<HTMLElement>('.orbit-section');
+  const field = section?.querySelector<HTMLElement>('.orbitarium--nine');
+
+  if (section && field) {
+    const triggers = [...field.querySelectorAll<HTMLButtonElement>('[data-portfolio-trigger]')];
+    const panels = [...section.querySelectorAll<HTMLElement>('[data-portfolio-panel]')];
+
+    const closeAll = (except?: HTMLButtonElement) => {
+      triggers.forEach((trigger) => {
+        if (trigger !== except) trigger.setAttribute('aria-expanded', 'false');
+      });
+      panels.forEach((panel) => {
+        if (!except || panel.id !== except.getAttribute('aria-controls')) panel.hidden = true;
+      });
+    };
+
+    const positionPanel = (trigger: HTMLButtonElement, panel: HTMLElement) => {
+      const gutter = 12;
+      const gap = 10;
+      const triggerRect = trigger.getBoundingClientRect();
+      const panelRect = panel.getBoundingClientRect();
+      const maxLeft = Math.max(gutter, window.innerWidth - panelRect.width - gutter);
+      const centeredLeft = triggerRect.left + triggerRect.width / 2 - panelRect.width / 2;
+      const left = Math.min(Math.max(centeredLeft, gutter), maxLeft);
+      const above = triggerRect.top - panelRect.height - gap;
+      const below = triggerRect.bottom + gap;
+      const top = above >= gutter
+        ? above
+        : Math.min(below, window.innerHeight - panelRect.height - gutter);
+
+      panel.style.setProperty('--popover-left', `${left}px`);
+      panel.style.setProperty('--popover-top', `${Math.max(gutter, top)}px`);
+    };
+
+    const refreshOpenPanel = () => {
+      const openTrigger = triggers.find((trigger) => trigger.getAttribute('aria-expanded') === 'true');
+      if (!openTrigger) return;
+      const panel = section.querySelector<HTMLElement>(`#${openTrigger.getAttribute('aria-controls')}`);
+      if (panel) positionPanel(openTrigger, panel);
+    };
+
+    triggers.forEach((trigger) => {
+      trigger.addEventListener('click', () => {
+        const panel = section.querySelector<HTMLElement>(`#${trigger.getAttribute('aria-controls')}`);
+        if (!panel) return;
+        const opening = trigger.getAttribute('aria-expanded') !== 'true';
+        closeAll(opening ? trigger : undefined);
+        trigger.setAttribute('aria-expanded', String(opening));
+        panel.hidden = !opening;
+        if (opening) requestAnimationFrame(() => positionPanel(trigger, panel));
+      });
+    });
+
+    document.addEventListener('click', (event) => {
+      const target = event.target as Node;
+      if (!triggers.some((trigger) => trigger.contains(target)) && !panels.some((panel) => panel.contains(target))) closeAll();
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') closeAll();
+    });
+    window.addEventListener('resize', refreshOpenPanel, { passive: true });
+    window.addEventListener('scroll', refreshOpenPanel, { passive: true });
+  }
+</script>
