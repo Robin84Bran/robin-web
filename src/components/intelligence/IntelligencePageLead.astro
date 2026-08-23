@@ -1,0 +1,32 @@
+---
+interface Props {
+  lens: string;
+  title: string;
+  line: string;
+}
+
+const { lens, title, line } = Astro.props;
+---
+
+<header class="page-lead shell">
+  <p class="eyebrow">
+    <a href="/intelligence/" aria-label="Back to Intelligence directory">Intelligence</a> / {lens}
+  </p>
+  <h1>{title}</h1>
+  <p class="page-line">{line}</p>
+</header>
+
+<style>
+  .eyebrow a {
+    color: inherit;
+    text-decoration-color: var(--line);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.28em;
+  }
+
+  .eyebrow a:hover,
+  .eyebrow a:focus-visible {
+    color: var(--ink);
+    text-decoration-color: var(--gold);
+  }
+</style>

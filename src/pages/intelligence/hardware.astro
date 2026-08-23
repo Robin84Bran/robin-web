@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import HardwareFlow from '../../components/intelligence/HardwareFlow.astro';
-import PageLead from '../../components/PageLead.astro';
+import IntelligencePageLead from '../../components/intelligence/IntelligencePageLead.astro';
 
 const description = 'A visual journey through power, compute, memory, network, and the flow that turns them into intelligence.';
 const path = '/intelligence/hardware/';
@@ -22,6 +22,10 @@ const schema = {
   {path}
   {schema}
 >
-  <PageLead eyebrow="Intelligence / Flow" title="AI Hardware." line="Intelligence is a flow problem." />
+  <IntelligencePageLead
+    lens="Flow"
+    title="AI Hardware."
+    line="Intelligence is a flow problem."
+  />
   <HardwareFlow />
 </BaseLayout>

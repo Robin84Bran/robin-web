@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import PageLead from '../../components/PageLead.astro';
+import IntelligencePageLead from '../../components/intelligence/IntelligencePageLead.astro';
 import SwarmField from '../../components/intelligence/SwarmField.astro';
 
 const description = 'Three living studies of how local rules, shared traces, and decentralized messages become collective intelligence.';
@@ -22,6 +22,10 @@ const schema = {
   {path}
   {schema}
 >
-  <PageLead eyebrow="Intelligence / Emergence" title="AI Swarm." line="No leader. Intelligence emerges." />
+  <IntelligencePageLead
+    lens="Emergence"
+    title="AI Swarm."
+    line="No leader. Intelligence emerges."
+  />
   <SwarmField />
 </BaseLayout>

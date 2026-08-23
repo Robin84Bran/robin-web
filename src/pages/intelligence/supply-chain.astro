@@ -23,7 +23,7 @@ const schema = {
   <section class="supply-shell shell">
     <div class="supply-intro">
       <div>
-        <p class="eyebrow">Intelligence / Entanglement</p>
+        <p class="eyebrow"><a href="/intelligence/" aria-label="Back to Intelligence directory">Intelligence</a> / Entanglement</p>
         <h1>AI Supply Chain.</h1>
       </div>
       <div>
@@ -66,6 +66,19 @@ const schema = {
     font-weight: 400;
     letter-spacing: -0.06em;
     line-height: 0.88;
+  }
+
+  .supply-intro .eyebrow a {
+    color: inherit;
+    text-decoration-color: var(--line);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.28em;
+  }
+
+  .supply-intro .eyebrow a:hover,
+  .supply-intro .eyebrow a:focus-visible {
+    color: var(--ink);
+    text-decoration-color: var(--gold);
   }
 
   .supply-intro > div:last-child p {

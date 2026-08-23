@@ -1,9 +1,19 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import IntelligenceAtlas from '../../components/intelligence/IntelligenceAtlas.astro';
+import { identityWords } from '../../data/site';
 
 const description = 'Three living studies of how intelligence emerges, flows, and entangles.';
 const path = '/intelligence/';
+const directoryIndex = identityWords.findIndex((item) => item.slug === 'intelligence');
+const entry = identityWords[directoryIndex];
+const previous = identityWords[(directoryIndex + identityWords.length - 1) % identityWords.length];
+const next = identityWords[(directoryIndex + 1) % identityWords.length];
+
+if (!entry || !previous || !next) {
+  throw new Error('The Intelligence identity-directory entry is missing.');
+}
+
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
@@ -16,10 +26,50 @@ const schema = {
 ---
 
 <BaseLayout
-  title="Intelligence — Robin Xie"
+  title="Intelligence — I AM ROBIN"
   {description}
   {path}
   {schema}
 >
-  <IntelligenceAtlas />
+  <section class="identity-directory identity-directory--intelligence">
+    <div class="intelligence-directory__intro shell">
+      <a class="directory-back" href="/">← I AM ROBIN</a>
+      <div class={`directory-letter directory-letter--${entry.tone}`} aria-hidden="true">{entry.letter}</div>
+      <p class="eyebrow">{String(directoryIndex + 1).padStart(2, '0')} / 08 · project directory</p>
+      <h1>{entry.word}</h1>
+    </div>
+
+    <IntelligenceAtlas />
+
+    <nav class="directory-cycle shell" aria-label="Identity directories">
+      <a href={`/${previous.slug}/`}>← {previous.word}</a>
+      <a href={`/${next.slug}/`}>{next.word} →</a>
+    </nav>
+  </section>
 </BaseLayout>
+
+<style>
+  .identity-directory--intelligence {
+    display: block;
+    min-height: calc(100svh - 4.6rem);
+    padding-block: 0;
+    overflow: clip;
+  }
+
+  .intelligence-directory__intro {
+    position: relative;
+    display: grid;
+    min-height: clamp(16rem, 26vw, 19rem);
+    align-content: center;
+    padding-top: 3rem;
+    isolation: isolate;
+  }
+
+  .intelligence-directory__intro h1 {
+    margin-bottom: 0;
+  }
+
+  .identity-directory--intelligence > .directory-cycle {
+    padding-block: 0 clamp(5rem, 9vw, 7rem);
+  }
+</style>
