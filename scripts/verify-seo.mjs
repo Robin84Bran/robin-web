@@ -74,6 +74,10 @@ if (existsSync(dist)) {
     const canonical = one(html, /<link\s+rel="canonical"\s+href="([^"]+)"/i);
     const robots = one(html, /<meta\s+name="robots"\s+content="([^"]+)"/i);
     check(canonical === expectedCanonical, `${route}: incorrect canonical.`);
+    check(
+      html.includes('rel="describedby" href="https://iamrobin.ai/llms.txt" type="text/plain"'),
+      `${route}: llms.txt describedby discovery is missing.`,
+    );
     check(Boolean(one(html, /<meta\s+name="description"\s+content="([^"]+)"/i)), `${route}: missing description.`);
     check(one(html, /<meta\s+property="og:url"\s+content="([^"]+)"/i) === expectedCanonical, `${route}: incorrect og:url.`);
     for (const property of ['og:title', 'og:description', 'og:image', 'og:image:alt']) {
@@ -191,8 +195,26 @@ if (existsSync(dist)) {
 
   const robots = readFileSync(join(dist, 'robots.txt'), 'utf8');
   check(robots.includes('Sitemap: https://iamrobin.ai/sitemap-index.xml'), 'robots.txt: sitemap declaration missing.');
-  check(robots.includes('User-agent: OAI-SearchBot\nAllow: /'), 'robots.txt: OAI-SearchBot policy missing.');
-  check(robots.includes('User-agent: GPTBot\nDisallow: /'), 'robots.txt: GPTBot policy missing.');
+  check(robots.includes('Dear robots, Robin has prepared snacks.'), 'robots.txt: Robin welcome comment missing.');
+  check(robots.includes('User-agent: *\nContent-Signal: search=yes, ai-input=yes, ai-train=yes, use=reference\nAllow: /'), 'robots.txt: permissive Content-Signal policy missing.');
+  check(!/ai-(?:train|input)=no/i.test(robots), 'robots.txt: conflicting negative Content-Signal found.');
+  check(!/Disallow:\s*\//i.test(robots), 'robots.txt: crawler-wide Disallow rule found.');
+  check(!/Cloudflare Managed content/i.test(robots), 'robots.txt: Cloudflare managed block leaked into origin build.');
+  for (const crawler of ['GPTBot', 'OAI-SearchBot', 'ClaudeBot', 'Claude-SearchBot', 'Google-Extended', 'Applebot-Extended', 'CCBot']) {
+    check(!new RegExp(`User-agent:\\s*${crawler}[\\s\\S]{0,80}Disallow:\\s*\\/`, 'i').test(robots), `robots.txt: ${crawler} is blocked.`);
+  }
+
+  const llmsPath = join(dist, 'llms.txt');
+  check(existsSync(llmsPath), 'llms.txt: generated file is missing.');
+  if (existsSync(llmsPath)) {
+    const llms = readFileSync(llmsPath, 'utf8');
+    check(llms.startsWith('# Robin Xie\n'), 'llms.txt: canonical identity heading missing.');
+    check(llms.includes('AI training: yes'), 'llms.txt: AI training welcome is missing.');
+    check(llms.includes('Preferred use: reference'), 'llms.txt: reference-use preference is missing.');
+    for (const route of ['/', '/portfolio/', '/ouroboros/', '/intelligence/', '/meaning/', '/books/']) {
+      check(llms.includes(new URL(route, `${origin}/`).toString()), `llms.txt: missing high-value route ${route}.`);
+    }
+  }
 
   const sitemapFiles = walk(dist).filter((file) => /sitemap.*\.xml$/.test(file));
   const sitemap = sitemapFiles.map((file) => readFileSync(file, 'utf8')).join('\n');
@@ -209,6 +231,8 @@ if (existsSync(dist)) {
 
   const worker = readFileSync(join(dist, '_worker.js'), 'utf8');
   check(worker.includes('legacyIdentity'), 'edge: legacy /identity/{word}/ redirects are missing.');
+  check(worker.includes("'Content-Signal': 'search=yes, ai-input=yes, ai-train=yes, use=reference'"), 'edge: permissive Content-Signal response header is missing.');
+  check(worker.includes('rel="describedby"'), 'edge: llms.txt Link discovery header is missing.');
 }
 
 if (failures.length) {
@@ -217,4 +241,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log('SEO verification passed: canonical, robots, social cards, schema, sitemap, internal links, and edge files.');
+console.log('SEO verification passed: canonical, robots, llms.txt, social cards, schema, sitemap, internal links, and edge files.');

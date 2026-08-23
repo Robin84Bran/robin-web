@@ -59,6 +59,7 @@ const ogLocale = ogLocales[language] ?? 'en_US';
 
 <title>{title}</title>
 <link rel="canonical" href={canonical} />
+<link rel="describedby" href={absoluteUrl('/llms.txt')} type="text/plain" />
 {alternates.map((alternate) => <link rel="alternate" hreflang={alternate.hreflang} href={absoluteUrl(alternate.path)} />)}
 <link rel="alternate" hreflang="x-default" href={absoluteUrl(alternates.find((alternate) => alternate.hreflang === 'en')?.path ?? path)} />
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />

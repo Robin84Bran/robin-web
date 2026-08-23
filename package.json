@@ -8,12 +8,16 @@
     "node": ">=22.13.0"
   },
   "scripts": {
+    "predev": "pnpm run robots:sync",
     "dev": "astro dev",
+    "prebuild": "pnpm run robots:sync",
     "build": "astro build",
     "build:sites": "SITES_BUILD=1 astro build && node scripts/prepare-sites.mjs",
     "check": "astro check",
+    "robots:sync": "node scripts/generate-robot-welcome.mjs",
+    "robots:check": "node scripts/generate-robot-welcome.mjs --check",
     "verify:seo": "node scripts/verify-seo.mjs",
-    "release:check": "pnpm run check && pnpm run build && pnpm run verify:seo",
+    "release:check": "pnpm run robots:check && pnpm run check && pnpm run build && pnpm run verify:seo",
     "preview": "astro preview"
   },
   "dependencies": {

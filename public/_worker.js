@@ -1,4 +1,8 @@
 const canonicalHost = 'iamrobin.ai';
+const robotWelcomeHeaders = {
+  'Content-Signal': 'search=yes, ai-input=yes, ai-train=yes, use=reference',
+  Link: '<https://iamrobin.ai/llms.txt>; rel="describedby"',
+};
 
 const securityHeaders = {
   'Content-Security-Policy':
@@ -57,6 +61,10 @@ export default {
       ? embeddedMapSecurityHeaders
       : securityHeaders;
     for (const [name, value] of Object.entries(responseSecurityHeaders)) headers.set(name, value);
+    const contentType = headers.get('Content-Type') ?? '';
+    if (/^(?:text\/html|text\/markdown|text\/plain)/i.test(contentType)) {
+      for (const [name, value] of Object.entries(robotWelcomeHeaders)) headers.set(name, value);
+    }
 
     return new Response(response.body, {
       status: response.status,
