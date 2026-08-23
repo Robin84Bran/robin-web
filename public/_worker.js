@@ -1,4 +1,5 @@
 const canonicalHost = 'iamrobin.ai';
+const cloudflareWebAnalyticsToken = 'efadc722a7644992b696edf324783531';
 const robotWelcomeHeaders = {
   'Content-Signal': 'search=yes, ai-input=yes, ai-train=yes, use=reference',
   Link: '<https://iamrobin.ai/llms.txt>; rel="describedby"',
@@ -6,7 +7,7 @@ const robotWelcomeHeaders = {
 
 const securityHeaders = {
   'Content-Security-Policy':
-    "default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests",
+    "default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self' https://cloudflareinsights.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests",
   'Cross-Origin-Opener-Policy': 'same-origin',
   'Permissions-Policy': 'camera=(), geolocation=(), microphone=()',
   'Referrer-Policy': 'strict-origin-when-cross-origin',
@@ -23,6 +24,15 @@ const embeddedMapSecurityHeaders = {
   ),
   'X-Frame-Options': 'SAMEORIGIN',
 };
+
+class CloudflareWebAnalytics {
+  element(element) {
+    element.append(
+      `<script id="cf-web-analytics" type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"${cloudflareWebAnalyticsToken}"}'></script>`,
+      { html: true },
+    );
+  }
+}
 
 function redirect(url, status) {
   return new Response(null, {
@@ -66,10 +76,18 @@ export default {
       for (const [name, value] of Object.entries(robotWelcomeHeaders)) headers.set(name, value);
     }
 
-    return new Response(response.body, {
+    const securedResponse = new Response(response.body, {
       status: response.status,
       statusText: response.statusText,
       headers,
     });
+
+    if (request.method === 'GET' && /^text\/html/i.test(contentType) && response.body) {
+      return new HTMLRewriter()
+        .on('body', new CloudflareWebAnalytics())
+        .transform(securedResponse);
+    }
+
+    return securedResponse;
   },
 };
