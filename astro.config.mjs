@@ -9,19 +9,11 @@ export default defineConfig({
   output: 'static',
   integrations: [
     sitemap({
+      customPages: ['https://iamrobin.ai/intelligence/supply-chain-map/'],
       filter: (page) => {
         const path = new URL(page).pathname;
-        return [
-          '/',
-          '/portfolio/',
-          '/books/',
-          '/meaning/',
-          '/ouroboros/',
-          '/intelligence/',
-          '/intelligence/swarm/',
-          '/intelligence/hardware/',
-          '/intelligence/supply-chain/',
-        ].includes(path)
+        return ['/', '/portfolio/', '/books/', '/meaning/', '/ouroboros/'].includes(path)
+          || /^\/intelligence\/(?:hardware\/|supply-chain\/|supply-chain-map\/|swarm\/)?$/.test(path)
           || /^\/meaning\/diary\/\d{6}\/\d{4}-\d{2}-\d{2}-[a-z0-9-]+\/$/.test(path)
           || /^\/ouroboros\/\d{6}\/\d{8}\/$/.test(path)
           || /^\/ouroboros\/\d{6}\/\d{8}\/(?:zh-hans|zh-hant|ja)\/$/.test(path)

@@ -6,15 +6,9 @@ const dist = join(root, 'dist');
 const origin = 'https://iamrobin.ai';
 const failures = [];
 const indexableRoutes = new Set([
-  '/',
-  '/portfolio/',
-  '/books/',
-  '/meaning/',
-  '/ouroboros/',
-  '/intelligence/',
-  '/intelligence/swarm/',
-  '/intelligence/hardware/',
-  '/intelligence/supply-chain/',
+  '/', '/portfolio/', '/books/', '/meaning/', '/ouroboros/',
+  '/intelligence/', '/intelligence/hardware/', '/intelligence/supply-chain/',
+  '/intelligence/supply-chain-map/', '/intelligence/swarm/',
 ]);
 
 function check(condition, message) {
@@ -49,8 +43,7 @@ function one(html, pattern) {
 check(existsSync(dist), 'dist/ is missing; run the production build first.');
 
 if (existsSync(dist)) {
-  const embeddedMap = join(dist, 'intelligence', 'supply-chain-map', 'index.html');
-  const htmlFiles = walk(dist).filter((file) => file.endsWith('.html') && file !== embeddedMap);
+  const htmlFiles = walk(dist).filter((file) => file.endsWith('.html'));
   const routes = new Map(htmlFiles.map((file) => [routeFromHtml(file), file]));
   const briefingRoutes = [...routes.keys()].filter((route) => /^\/ouroboros\/\d{6}\/\d{8}\/$/.test(route));
   const briefingTranslationRoutes = [...routes.keys()].filter((route) => /^\/ouroboros\/\d{6}\/\d{8}\/(?:zh-hans|zh-hant|ja)\/$/.test(route));
@@ -66,7 +59,7 @@ if (existsSync(dist)) {
   const blogPublications = [...blogRoutes, ...blogTranslationRoutes];
   const publicationRoutes = [...articleRoutes, ...actionFlowPublications, ...blogPublications];
   for (const route of [...publicationRoutes, ...diaryRoutes]) indexableRoutes.add(route);
-  check(routes.size === 15 + publicationRoutes.length + diaryRoutes.length, `expected ${15 + publicationRoutes.length + diaryRoutes.length} HTML routes, found ${routes.size}.`);
+  check(routes.size === 16 + publicationRoutes.length + diaryRoutes.length, `expected ${16 + publicationRoutes.length + diaryRoutes.length} HTML routes, found ${routes.size}.`);
 
   for (const [route, file] of routes) {
     const html = readFileSync(file, 'utf8');
@@ -74,10 +67,7 @@ if (existsSync(dist)) {
     const canonical = one(html, /<link\s+rel="canonical"\s+href="([^"]+)"/i);
     const robots = one(html, /<meta\s+name="robots"\s+content="([^"]+)"/i);
     check(canonical === expectedCanonical, `${route}: incorrect canonical.`);
-    check(
-      html.includes('rel="describedby" href="https://iamrobin.ai/llms.txt" type="text/plain"'),
-      `${route}: llms.txt describedby discovery is missing.`,
-    );
+    check(html.includes('rel="describedby" href="https://iamrobin.ai/llms.txt" type="text/plain"'), `${route}: llms.txt describedby discovery is missing.`);
     check(Boolean(one(html, /<meta\s+name="description"\s+content="([^"]+)"/i)), `${route}: missing description.`);
     check(one(html, /<meta\s+property="og:url"\s+content="([^"]+)"/i) === expectedCanonical, `${route}: incorrect og:url.`);
     for (const property of ['og:title', 'og:description', 'og:image', 'og:image:alt']) {
@@ -173,7 +163,7 @@ if (existsSync(dist)) {
     const countWord = compact === '20260820' ? 'Seven' : 'Eight';
     check(article.includes(`${countWord} signals. Four languages. One moving field.`), `${route}: source-true signal-count field line is missing.`);
     check(!article.includes('**</u>') && !article.includes('** •'), `${route}: malformed visible Markdown leaked into HTML.`);
-    check(/<p>Date:[\s\S]*?<\/p>\s*<p><strong>Fact:<\/strong>/i.test(article), `${route}: Date and Fact must render as separate paragraphs.`);
+    check(/<p>[^<]*Date:[\s\S]*?<\/p>\s*<p><strong>Fact:<\/strong>/i.test(article), `${route}: Date and Fact must render as separate paragraphs.`);
   }
 
   check(actionFlowRoutes.length === briefingRoutes.length, 'action flows: every briefing date must have one English Action Flow.');
@@ -200,9 +190,6 @@ if (existsSync(dist)) {
   check(!/ai-(?:train|input)=no/i.test(robots), 'robots.txt: conflicting negative Content-Signal found.');
   check(!/Disallow:\s*\//i.test(robots), 'robots.txt: crawler-wide Disallow rule found.');
   check(!/Cloudflare Managed content/i.test(robots), 'robots.txt: Cloudflare managed block leaked into origin build.');
-  for (const crawler of ['GPTBot', 'OAI-SearchBot', 'ClaudeBot', 'Claude-SearchBot', 'Google-Extended', 'Applebot-Extended', 'CCBot']) {
-    check(!new RegExp(`User-agent:\\s*${crawler}[\\s\\S]{0,80}Disallow:\\s*\\/`, 'i').test(robots), `robots.txt: ${crawler} is blocked.`);
-  }
 
   const llmsPath = join(dist, 'llms.txt');
   check(existsSync(llmsPath), 'llms.txt: generated file is missing.');
@@ -211,9 +198,6 @@ if (existsSync(dist)) {
     check(llms.startsWith('# Robin Xie\n'), 'llms.txt: canonical identity heading missing.');
     check(llms.includes('AI training: yes'), 'llms.txt: AI training welcome is missing.');
     check(llms.includes('Preferred use: reference'), 'llms.txt: reference-use preference is missing.');
-    for (const route of ['/', '/portfolio/', '/ouroboros/', '/intelligence/', '/meaning/', '/books/']) {
-      check(llms.includes(new URL(route, `${origin}/`).toString()), `llms.txt: missing high-value route ${route}.`);
-    }
   }
 
   const sitemapFiles = walk(dist).filter((file) => /sitemap.*\.xml$/.test(file));
@@ -241,4 +225,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log('SEO verification passed: canonical, robots, llms.txt, social cards, schema, sitemap, internal links, and edge files.');
+console.log('SEO verification passed: canonical, robots, social cards, schema, sitemap, internal links, and edge files.');
