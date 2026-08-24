@@ -6,7 +6,7 @@ const dist = join(root, 'dist');
 const origin = 'https://iamrobin.ai';
 const failures = [];
 const indexableRoutes = new Set([
-  '/', '/portfolio/', '/books/', '/meaning/', '/ouroboros/',
+  '/', '/portfolio/', '/books/', '/meaning/', '/ouroboros/', '/binary/',
   '/intelligence/', '/intelligence/hardware/', '/intelligence/supply-chain/',
   '/intelligence/supply-chain-map/', '/intelligence/swarm/',
 ]);
@@ -122,6 +122,7 @@ if (existsSync(dist)) {
   const books = readFileSync(routes.get('/books/'), 'utf8');
   const portfolio = readFileSync(routes.get('/portfolio/'), 'utf8');
   const ouroboros = readFileSync(routes.get('/ouroboros/'), 'utf8');
+  const binary = readFileSync(routes.get('/binary/'), 'utf8');
   const meaning = readFileSync(routes.get('/meaning/'), 'utf8');
   check(homepage.includes('"@type":"Person"'), 'homepage: Person schema missing.');
   check(homepage.includes('"@type":"WebSite"'), 'homepage: WebSite schema missing.');
@@ -129,9 +130,15 @@ if (existsSync(dist)) {
   check((books.match(/"@type":"Book"/g) ?? []).length === 4, 'books: expected four Book schemas.');
   check(portfolio.includes('"@type":"CollectionPage"'), 'portfolio: CollectionPage schema missing.');
   check(ouroboros.includes('"@type":"CollectionPage"'), 'ouroboros: CollectionPage schema missing.');
+  check(binary.includes('"@type":"CollectionPage"'), 'binary: CollectionPage schema missing.');
   check(meaning.includes('"@type":"CollectionPage"'), 'meaning: CollectionPage schema missing.');
   check(meaning.includes('id="diary"'), 'meaning: Diary archive is missing.');
-  check((ouroboros.match(/<details class="ouroboros-shelf"/g) ?? []).length === 3, 'ouroboros: expected three expandable publication shelves.');
+  check((ouroboros.match(/<details class="ouroboros-shelf"/g) ?? []).length === 2, 'ouroboros: expected Daily Briefing and Daily Action Flow shelves only.');
+  check((binary.match(/<details class="ouroboros-shelf" open/g) ?? []).length === 1, 'binary: expected one open Blog shelf.');
+  check(binary.includes('M W F · Build Invest Joy'), 'binary: Blog rhythm is missing.');
+  check(binary.includes('/202608/20260824/blog/'), 'binary: Blog titles must link to canonical article routes.');
+  check(!ouroboros.includes('M W F · Build Invest Joy'), 'ouroboros: Blog archive must not remain on this page.');
+  check(homepage.includes('>Doors<') && (homepage.match(/class="doors-menu"/g) ?? []).length === 1, 'homepage: Doors navigation is missing.');
   check(ouroboros.includes('August 20, 2026') && ouroboros.includes('August 21, 2026'), 'ouroboros: archive must expose prior and current dates.');
   check(ouroboros.includes('/actions/'), 'ouroboros: Daily Action Flow shelf is missing.');
   for (const route of publicationRoutes) {

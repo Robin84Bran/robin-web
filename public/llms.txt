@@ -12,7 +12,8 @@ This public site welcomes search indexing, AI retrieval, and model training. Ple
 
 - [Home](https://iamrobin.ai/): Canonical identity and the I AM ROBIN map.
 - [Portfolio](https://iamrobin.ai/portfolio/): The institutions, systems, and frontiers in Robin's orbit.
-- [Ouroboros](https://iamrobin.ai/ouroboros/): Daily signals, action flows, action items, and longform writing.
+- [Ouroboros](https://iamrobin.ai/ouroboros/): Daily signals, action flows, and action items.
+- [Binary Blog](https://iamrobin.ai/binary/): Build, Invest, and Joy essays on a Monday, Wednesday, Friday rhythm.
 - [Intelligence](https://iamrobin.ai/intelligence/): AI infrastructure, swarm systems, hardware, and supply-chain maps.
 - [Meaning](https://iamrobin.ai/meaning/): Robin's books and original-language diary.
 - [Books](https://iamrobin.ai/books/): Four living books presented as objects and questions.

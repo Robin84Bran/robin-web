@@ -1,5 +1,5 @@
 ---
-import { navItems, socialLinks } from '../data/site';
+import { identityWords, navItems, socialLinks } from '../data/site';
 
 interface Props {
   currentPath: string;
@@ -25,6 +25,19 @@ const { currentPath } = Astro.props;
             </li>
           ))
         }
+        <li class="doors-nav">
+          <details>
+            <summary aria-label="Open the eight identity doors">Doors</summary>
+            <div class="doors-menu" role="group" aria-label="Identity doors">
+              {identityWords.map((entry) => (
+                <a aria-current={currentPath === `/${entry.slug}/` ? 'page' : undefined} href={`/${entry.slug}/`}>
+                  <span aria-hidden="true">{entry.letter}</span>
+                  <strong>{entry.word}</strong>
+                </a>
+              ))}
+            </div>
+          </details>
+        </li>
       </ul>
     </nav>
     <a class="github-link" href={socialLinks.official} rel="noreferrer" target="_blank">

@@ -10,7 +10,7 @@ export const identityWords = [
   { letter: 'M', word: 'Meaning', slug: 'meaning', tone: 'gold', projects: ['Books', 'Diary'] },
   { letter: 'R', word: 'Resonance', slug: 'resonance', tone: 'silver', projects: ['Writing', 'Conversations'] },
   { letter: 'O', word: 'Ouroboros', slug: 'ouroboros', tone: 'sakura', projects: ['RobinOS journey', 'Time loops'] },
-  { letter: 'B', word: 'Binary', slug: 'binary', tone: 'ink', projects: ['Bran Lab', 'Bitcoin rails'] },
+  { letter: 'B', word: 'Binary', slug: 'binary', tone: 'ink', projects: ['Blog'] },
   { letter: 'I', word: 'Intelligence', slug: 'intelligence', tone: 'sakura', projects: ['AI collaborators', 'Quant research'] },
   { letter: 'N', word: 'Network', slug: 'network', tone: 'silver', projects: ['Press'] },
 ] as const;

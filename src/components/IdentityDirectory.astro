@@ -15,6 +15,7 @@ interface Props {
 const { entry, index, previous, next } = Astro.props;
 const isPressDirectory = entry.slug === 'network';
 const isOuroborosDirectory = entry.slug === 'ouroboros';
+const isBinaryDirectory = entry.slug === 'binary';
 const isMeaningDirectory = entry.slug === 'meaning';
 const briefings = isOuroborosDirectory
   ? (await getCollection('dailyBriefing', ({ data }) => !data.draft)).sort(
@@ -26,7 +27,7 @@ const actionItems = isOuroborosDirectory
       (a, b) => b.data.date.getTime() - a.data.date.getTime(),
     )
   : [];
-const blogEntries = isOuroborosDirectory
+const blogEntries = isBinaryDirectory
   ? (await getCollection('blog', ({ data }) => !data.draft)).sort(
       (a, b) => b.data.date.getTime() - a.data.date.getTime(),
     )
@@ -49,7 +50,7 @@ const ouroborosSchemas = isOuroborosDirectory
         '@type': 'CollectionPage',
         '@id': 'https://iamrobin.ai/ouroboros/#archive',
         name: 'Ouroboros — Robin Xie',
-        description: 'Robin Xie’s Daily Briefings, Daily Action Items, and returning essays.',
+        description: 'Robin Xie’s Daily Briefings, Daily Action Flows, and Daily Action Items.',
         url: 'https://iamrobin.ai/ouroboros/',
         inLanguage: 'en',
         author: { '@id': 'https://iamrobin.ai/#person' },
@@ -58,6 +59,25 @@ const ouroborosSchemas = isOuroborosDirectory
       createBreadcrumbSchema([
         { name: 'Home', path: '/' },
         { name: 'Ouroboros', path: '/ouroboros/' },
+      ]),
+    ]
+  : undefined;
+const binarySchemas = isBinaryDirectory
+  ? [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        '@id': 'https://iamrobin.ai/binary/#blog',
+        name: 'Binary · Blog — Robin Xie',
+        description: 'Robin Xie’s Build, Invest, and Joy essays, published on a Monday, Wednesday, Friday rhythm.',
+        url: 'https://iamrobin.ai/binary/',
+        inLanguage: 'en',
+        author: { '@id': 'https://iamrobin.ai/#person' },
+      },
+      createPersonSchema(),
+      createBreadcrumbSchema([
+        { name: 'Home', path: '/' },
+        { name: 'Binary', path: '/binary/' },
       ]),
     ]
   : undefined;
@@ -85,15 +105,17 @@ const meaningSchemas = isMeaningDirectory
 <BaseLayout
   title={`${entry.word} — I AM ROBIN`}
   description={isOuroborosDirectory
-    ? 'Daily Briefings, Daily Action Items, and returning essays by Robin Xie.'
+    ? 'Daily Briefings, Daily Action Flows, and Daily Action Items by Robin Xie.'
+    : isBinaryDirectory
+      ? 'Build, Invest, and Joy essays by Robin Xie.'
     : isMeaningDirectory
       ? 'Dated notes by Robin Xie, preserved in her original words.'
     : `${entry.word}: a living project directory inside the I AM ROBIN identity map.`}
   {path}
-  noindex={!isOuroborosDirectory && !isMeaningDirectory}
-  schema={ouroborosSchemas ?? meaningSchemas}
+  noindex={!isOuroborosDirectory && !isBinaryDirectory && !isMeaningDirectory}
+  schema={ouroborosSchemas ?? binarySchemas ?? meaningSchemas}
 >
-  <section class:list={['identity-directory', { 'identity-directory--library': isOuroborosDirectory || isMeaningDirectory }, 'shell']}>
+  <section class:list={['identity-directory', { 'identity-directory--library': isOuroborosDirectory || isBinaryDirectory || isMeaningDirectory }, 'shell']}>
     <a class="directory-back" href="/">← I AM ROBIN</a>
     <div class={`directory-letter directory-letter--${entry.tone}`} aria-hidden="true">{entry.letter}</div>
     <p class="eyebrow">{String(index + 1).padStart(2, '0')} / 08 · project directory</p>
@@ -152,9 +174,12 @@ const meaningSchemas = isMeaningDirectory
             </nav>
           </details>
 
-          <details class="ouroboros-shelf">
+        </section>
+      ) : isBinaryDirectory ? (
+        <section class="ouroboros-library binary-library" aria-label="Binary Blog archive">
+          <details class="ouroboros-shelf" open>
             <summary>
-              <span class="ouroboros-shelf__number">03</span>
+              <span class="ouroboros-shelf__number">01</span>
               <span class="ouroboros-shelf__name">Blog</span>
               <em>M W F · Build Invest Joy</em>
               <span class="ouroboros-shelf__toggle" aria-hidden="true">+</span>

@@ -34,14 +34,14 @@ const displayDate = entry.data.date.toLocaleDateString('en-US', { timeZone: 'UTC
 
 <OuroborosPublication
   kind="blog" title={entry.data.title} description={entry.data.excerpt} {path}
-  image={entry.data.ogImage} imageAlt={`Ouroboros ${entry.data.lane} essay for ${displayDate}`}
+  image={entry.data.ogImage} imageAlt={`Binary ${entry.data.lane} essay for ${displayDate}`}
   hero={entry.data.hero} heroAlt={`Editorial image for ${entry.data.title}`}
   {publicationDate} {displayDate} schema={schemas} language="en" alternates={languages}
   languageLinks={languages.filter((item) => item.hreflang !== 'en')}
-  crumbs={[{ label: 'Ouroboros', href: '/ouroboros/' }, { label: 'Blog' }, { label: entry.data.lane }]}
+  crumbs={[{ label: 'Binary', href: '/binary/' }, { label: 'Blog' }, { label: entry.data.lane }]}
   indexLabel={`${entry.data.lane} · M / W / F`} intro="One idea worth returning to."
   footerText="Written at decision altitude. Sources remain attached."
-  footerLink="/ouroboros/" footerLinkLabel="Return to Ouroboros →"
+  footerLink="/binary/" footerLinkLabel="Return to Binary →"
 >
   <Content />
   <aside class="distribution-links" aria-label="Article distribution">
