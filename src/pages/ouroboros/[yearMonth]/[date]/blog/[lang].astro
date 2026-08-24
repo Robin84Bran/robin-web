@@ -2,6 +2,7 @@
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import OuroborosPublication from '../../../../../components/OuroborosPublication.astro';
 import { createArticleSchemas } from '../../../../../lib/seo';
+import { blogTitle, type BlogLanguage } from '../../../../../lib/blogPresentation';
 
 export async function getStaticPaths() {
   const entries = await getCollection('blogTranslation', ({ data }) => !data.draft);
@@ -15,6 +16,7 @@ interface Props { entry: CollectionEntry<'blogTranslation'>; }
 const { entry } = Astro.props as Props;
 const { Content } = await render(entry);
 const publicationDate = entry.data.date.toISOString().slice(0, 10);
+const title = blogTitle(entry.data.date, entry.data.inLanguage as BlogLanguage, entry.data.title);
 const compactDate = publicationDate.replaceAll('-', '');
 const briefingPath = `/ouroboros/${compactDate.slice(0, 6)}/${compactDate}/`;
 const basePath = `${briefingPath}blog/`;
@@ -32,7 +34,7 @@ const localized = entry.data.inLanguage === 'ja'
     ? { intro: '一個值得反覆思考的觀點。', footer: '在決策高度寫作。來源始終相連。', back: '返回 Binary →', distribution: '外部發布' }
     : { intro: '一个值得反复思考的观点。', footer: '在决策高度写作。来源始终相连。', back: '返回 Binary →', distribution: '外部发布' };
 const schemas = createArticleSchemas({
-  title: entry.data.title, description: entry.data.excerpt, path, image: entry.data.ogImage,
+  title, description: entry.data.excerpt, path, image: entry.data.ogImage,
   datePublished: publicationDate, dateModified: entry.data.updated.toISOString().slice(0, 10),
   keywords: entry.data.keywords, inLanguage: entry.data.inLanguage,
 });
@@ -40,9 +42,9 @@ const displayDate = entry.data.date.toLocaleDateString(localeMap[entry.data.inLa
 ---
 
 <OuroborosPublication
-  kind="blog" title={entry.data.title} description={entry.data.excerpt} {path}
+  kind="blog" {title} description={entry.data.excerpt} {path}
   image={entry.data.ogImage} imageAlt={`Binary ${entry.data.lane} essay for ${displayDate}`}
-  hero={entry.data.hero} heroAlt={`Editorial image for ${entry.data.title}`}
+  hero={entry.data.hero} heroAlt={`Editorial image for ${title}`}
   {publicationDate} {displayDate} schema={schemas} language={entry.data.inLanguage} alternates={languages}
   languageLinks={languages.filter((item) => item.hreflang !== entry.data.inLanguage)}
   crumbs={[{ label: 'Binary', href: '/binary/' }, { label: 'Blog' }, { label: entry.data.lane }]}

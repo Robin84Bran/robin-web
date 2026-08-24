@@ -134,11 +134,18 @@ if (existsSync(dist)) {
   check(meaning.includes('"@type":"CollectionPage"'), 'meaning: CollectionPage schema missing.');
   check(meaning.includes('id="diary"'), 'meaning: Diary archive is missing.');
   check((ouroboros.match(/<details class="ouroboros-shelf"/g) ?? []).length === 2, 'ouroboros: expected Daily Briefing and Daily Action Flow shelves only.');
-  check((binary.match(/<details class="ouroboros-shelf" open/g) ?? []).length === 1, 'binary: expected one open Blog shelf.');
-  check(binary.includes('M W F · Build Invest Joy'), 'binary: Blog rhythm is missing.');
+  check((binary.match(/<section class="binary-lane"/g) ?? []).length === 3, 'binary: expected Build, Invest, and Joy lanes.');
+  check((binary.match(/<nav class="ouroboros-shelf__list binary-present"/g) ?? []).length === 3, 'binary: every lane must expose its present titles.');
+  check((binary.match(/<details class="binary-pipeline">/g) ?? []).length === 3, 'binary: every lane must have a closed future Pipeline.');
+  check(!binary.includes('<details class="binary-pipeline" open'), 'binary: future Pipeline must be closed by default.');
+  check(binary.includes('Build') && binary.includes('Invest') && binary.includes('Joy'), 'binary: Blog lane names are missing.');
+  check(binary.includes('The Quant Lab Series * Flash Crash Lab 1') && binary.includes('The Quant Lab Series * Flash Crash Lab 2'), 'binary: corrected Quant Lab titles are missing.');
   check(binary.includes('/202608/20260824/blog/'), 'binary: Blog titles must link to canonical article routes.');
-  check(!ouroboros.includes('M W F · Build Invest Joy'), 'ouroboros: Blog archive must not remain on this page.');
+  check(!ouroboros.includes('binary-lane'), 'ouroboros: Blog archive must not remain on this page.');
   check(homepage.includes('>Doors<') && (homepage.match(/class="doors-menu"/g) ?? []).length === 1, 'homepage: Doors navigation is missing.');
+  const doorsMenu = homepage.match(/<div class="doors-menu"[\s\S]*?<\/div>/)?.[0] ?? '';
+  const doorWords = ['Identity', 'Asymmetry', 'Meaning', 'Resonance', 'Ouroboros', 'Binary', 'Intelligence', 'Network'];
+  check(doorWords.every((word, index) => doorsMenu.indexOf(`>${word}</strong>`) > (index ? doorsMenu.indexOf(`>${doorWords[index - 1]}</strong>`) : -1)), 'homepage: Doors must preserve the vertical IAMROBIN order.');
   check(ouroboros.includes('August 20, 2026') && ouroboros.includes('August 21, 2026'), 'ouroboros: archive must expose prior and current dates.');
   check(ouroboros.includes('/actions/'), 'ouroboros: Daily Action Flow shelf is missing.');
   for (const route of publicationRoutes) {

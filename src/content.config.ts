@@ -105,6 +105,7 @@ const blogFields = {
   section: z.literal('Ouroboros'),
   series: z.literal('Blog'),
   lane: z.enum(['BUILD', 'INVEST', 'JOY']),
+  archiveStatus: z.enum(['PRESENT', 'PIPELINE']).optional(),
   tags: z.array(z.string()),
   keywords: z.array(z.string()),
   categories: z.array(z.string()),

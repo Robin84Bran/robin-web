@@ -4,6 +4,7 @@ import { identityWords, pressLinks } from '../data/site';
 import { getCollection } from 'astro:content';
 import { createBreadcrumbSchema, createPersonSchema } from '../lib/seo';
 import { actionFlows } from '../lib/actionFlows';
+import { blogArchiveStatus, blogTitle } from '../lib/blogPresentation';
 
 interface Props {
   entry: (typeof identityWords)[number];
@@ -32,6 +33,11 @@ const blogEntries = isBinaryDirectory
       (a, b) => b.data.date.getTime() - a.data.date.getTime(),
     )
   : [];
+const blogLanes = [
+  { key: 'BUILD', name: 'Build', cadence: 'Monday · systems into reality' },
+  { key: 'INVEST', name: 'Invest', cadence: 'Wednesday · signals into judgment' },
+  { key: 'JOY', name: 'Joy', cadence: 'Friday · curiosity into meaning' },
+] as const;
 const diaryEntries = isMeaningDirectory
   ? (await getCollection('diary', ({ data }) => !data.draft)).sort(
       (a, b) => b.data.date.getTime() - a.data.date.getTime(),
@@ -177,31 +183,64 @@ const meaningSchemas = isMeaningDirectory
         </section>
       ) : isBinaryDirectory ? (
         <section class="ouroboros-library binary-library" aria-label="Binary Blog archive">
-          <details class="ouroboros-shelf" open>
-            <summary>
-              <span class="ouroboros-shelf__number">01</span>
-              <span class="ouroboros-shelf__name">Blog</span>
-              <em>M W F · Build Invest Joy</em>
-              <span class="ouroboros-shelf__toggle" aria-hidden="true">+</span>
-            </summary>
-            <p class="ouroboros-shelf__rhythm">Blog M W F · Build Invest Joy</p>
-            {blogEntries.length ? (
-              <nav class="ouroboros-shelf__list" aria-label="Blog archive">
-                {blogEntries.map((article) => {
-                  const date = compactDate(article.data.date);
-                  return (
-                    <a href={`/ouroboros/${date.slice(0, 6)}/${date}/blog/`}>
-                      <time datetime={article.data.date.toISOString().slice(0, 10)}>{displayDate(article.data.date)}</time>
-                      <strong>{article.data.lane} · {article.data.title}</strong>
-                      <span aria-hidden="true">→</span>
-                    </a>
-                  );
-                })}
-              </nav>
-            ) : (
-              <p class="ouroboros-shelf__empty">The next deserving story will appear here.</p>
-            )}
-          </details>
+          <header class="binary-library__heading">
+            <span aria-hidden="true">M · W · F</span>
+            <h2>Blog</h2>
+            <em>Build · Invest · Joy</em>
+          </header>
+          <div class="binary-lanes">
+            {blogLanes.map((lane, laneIndex) => {
+              const articles = blogEntries.filter((article) => article.data.lane === lane.key);
+              const present = articles.filter((article) => blogArchiveStatus(article.data.date) === 'PRESENT');
+              const pipeline = articles.filter((article) => blogArchiveStatus(article.data.date) === 'PIPELINE');
+              return (
+                <section class="binary-lane" aria-labelledby={`binary-lane-${lane.key.toLowerCase()}`}>
+                  <header class="binary-lane__heading">
+                    <span>{String(laneIndex + 1).padStart(2, '0')}</span>
+                    <h3 id={`binary-lane-${lane.key.toLowerCase()}`}>{lane.name}</h3>
+                    <em>{lane.cadence}</em>
+                  </header>
+                  {present.length ? (
+                    <nav class="ouroboros-shelf__list binary-present" aria-label={`${lane.name} present articles`}>
+                      {present.map((article) => {
+                        const date = compactDate(article.data.date);
+                        return (
+                          <a href={`/ouroboros/${date.slice(0, 6)}/${date}/blog/`}>
+                            <time datetime={article.data.date.toISOString().slice(0, 10)}>{displayDate(article.data.date)}</time>
+                            <strong>{blogTitle(article.data.date, 'en', article.data.title)}</strong>
+                            <span aria-hidden="true">→</span>
+                          </a>
+                        );
+                      })}
+                    </nav>
+                  ) : (
+                    <p class="ouroboros-shelf__empty">The first present story has not arrived yet.</p>
+                  )}
+                  {pipeline.length > 0 && (
+                    <details class="binary-pipeline">
+                      <summary>
+                        <span>Pipeline</span>
+                        <small>{pipeline.length} future {pipeline.length === 1 ? 'article' : 'articles'}</small>
+                        <span class="binary-pipeline__toggle" aria-hidden="true">+</span>
+                      </summary>
+                      <nav class="ouroboros-shelf__list" aria-label={`${lane.name} pipeline`}>
+                        {pipeline.map((article) => {
+                          const date = compactDate(article.data.date);
+                          return (
+                            <a href={`/ouroboros/${date.slice(0, 6)}/${date}/blog/`}>
+                              <time datetime={article.data.date.toISOString().slice(0, 10)}>{displayDate(article.data.date)}</time>
+                              <strong>{blogTitle(article.data.date, 'en', article.data.title)}</strong>
+                              <span aria-hidden="true">→</span>
+                            </a>
+                          );
+                        })}
+                      </nav>
+                    </details>
+                  )}
+                </section>
+              );
+            })}
+          </div>
         </section>
       ) : isMeaningDirectory ? (
         <section class="diary-library" id="diary" aria-labelledby="diary-library-title">

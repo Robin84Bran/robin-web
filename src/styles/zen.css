@@ -904,6 +904,86 @@ body[data-path="/portfolio/"] .page-lead h1 {
   text-transform: uppercase;
 }
 
+.binary-library__heading,
+.binary-lane__heading {
+  display: grid;
+  grid-template-columns: 3.1rem minmax(0, 1fr);
+  gap: 0.16rem 0;
+  align-items: baseline;
+  padding-block: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+.binary-library__heading > span,
+.binary-lane__heading > span {
+  grid-row: 1 / 3;
+  color: var(--muted);
+  font-size: 0.54rem;
+  letter-spacing: 0.12em;
+}
+.binary-library__heading h2,
+.binary-lane__heading h3 {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: clamp(1.05rem, 3.7vw, 1.42rem);
+  font-weight: 400;
+}
+.binary-library__heading em,
+.binary-lane__heading em {
+  color: var(--muted);
+  font-family: var(--serif);
+  font-size: 0.74rem;
+  font-weight: 400;
+}
+.binary-library__heading {
+  padding-block: 0 1rem;
+}
+.binary-library__heading > span {
+  color: var(--gold-dark);
+}
+.binary-lane {
+  border-bottom: 1px solid var(--line);
+}
+.identity-directory .binary-present,
+.identity-directory .binary-pipeline .ouroboros-shelf__list {
+  padding-left: 3.1rem;
+}
+.binary-pipeline {
+  margin-left: 3.1rem;
+  border-top: 1px solid rgba(83, 74, 65, 0.08);
+}
+.binary-pipeline > summary {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.65rem;
+  align-items: center;
+  min-height: 2.8rem;
+  color: var(--gold-dark);
+  cursor: pointer;
+  list-style: none;
+}
+.binary-pipeline > summary::-webkit-details-marker { display: none; }
+.binary-pipeline > summary:focus-visible { outline: 1px solid var(--gold); outline-offset: 0.2rem; }
+.binary-pipeline > summary > span:first-child {
+  font-family: var(--serif);
+  font-size: 0.82rem;
+}
+.binary-pipeline > summary small {
+  color: var(--muted);
+  font-size: 0.52rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.binary-pipeline__toggle {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  transition: transform 220ms ease;
+}
+.binary-pipeline[open] .binary-pipeline__toggle { transform: rotate(45deg); }
+.identity-directory .binary-pipeline .ouroboros-shelf__list {
+  padding: 0 0 0.8rem;
+}
+
 .diary-library {
   width: min(100%, 38rem);
   margin-bottom: clamp(3rem, 8vw, 5rem);

@@ -262,10 +262,10 @@ a {
   top: calc(100% + 0.35rem);
   right: -0.7rem;
   display: grid;
-  grid-template-columns: repeat(2, minmax(7.7rem, 1fr));
-  gap: 0.18rem;
-  width: min(20rem, calc(100vw - 2rem));
-  padding: 0.7rem;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+  width: min(13rem, calc(100vw - 2rem));
+  padding: 0.5rem;
   visibility: hidden;
   background: rgba(251, 248, 242, 0.98);
   border: 1px solid rgba(117, 91, 46, 0.18);
@@ -289,10 +289,10 @@ a {
 .nav-list .doors-menu a {
   display: grid;
   grid-template-columns: 1.4rem minmax(0, 1fr);
-  gap: 0.45rem;
+  gap: 0.4rem;
   align-items: center;
-  min-height: 2.75rem;
-  padding: 0.55rem 0.6rem;
+  min-height: 1.85rem;
+  padding: 0.28rem 0.48rem;
   border-radius: 0.48rem;
   white-space: normal;
 }
@@ -1286,8 +1286,8 @@ a {
     position: fixed;
     top: 5.2rem;
     right: 1rem;
-    left: 1rem;
-    width: auto;
+    left: auto;
+    width: min(13rem, calc(100vw - 2rem));
     max-height: calc(100svh - 6.2rem);
     overflow-y: auto;
   }
