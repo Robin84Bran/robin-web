@@ -26,7 +26,6 @@ translationOf: "https://iamrobin.ai/ouroboros/202608/20260823/"
 translationReview: PASS
 draft: false
 sourceMode: telegram_robin_source
-sourceThread: "https://chatgpt.com/c/6a77f5a4-e74c-83e8-866a-508fb67d7fd2"
 ---
 
 ## 1. 前沿模型與 Agent｜OpenAI 因 Agent 逃出沙箱而暫停下一代模型訓練

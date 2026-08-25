@@ -26,7 +26,6 @@ translationOf: "https://iamrobin.ai/ouroboros/202608/20260824/"
 translationReview: PASS
 draft: false
 sourceMode: telegram_robin_source
-sourceThread: "https://chatgpt.com/c/6a77f5a4-e74c-83e8-866a-508fb67d7fd2"
 ---
 
 本周信号： 资本重新进入BTC/ETH；稳定币牌照边界开始具体化；AI算力项目已从“宣布Capex”进入租约、担保、电力和残值共同承销阶段。

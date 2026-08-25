@@ -26,7 +26,6 @@ translationOf: "https://iamrobin.ai/ouroboros/202608/20260822/"
 translationReview: PASS
 draft: false
 sourceMode: scheduled_chatgpt
-sourceThread: "https://chatgpt.com/c/6a77f5a4-e74c-83e8-866a-508fb67d7fd2"
 ---
 
 ## 1. 前沿模型｜OpenAI首次下调旗舰 Sol API 价格：前沿智能进入成本竞争

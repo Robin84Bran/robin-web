@@ -23,7 +23,6 @@ author: https://iamrobin.ai/#person
 inLanguage: en
 draft: false
 sourceMode: scheduled_chatgpt
-sourceThread: "https://chatgpt.com/c/6a77f5a4-e74c-83e8-866a-508fb67d7fd2"
 ---
 
 ## 1. Frontier Models | OpenAI and Anthropic are diverging over whether powerful agents can be monitored without retaining customer data

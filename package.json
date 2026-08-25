@@ -16,9 +16,10 @@
     "check": "astro check",
     "robots:sync": "node scripts/generate-robot-welcome.mjs",
     "robots:check": "node scripts/generate-robot-welcome.mjs --check",
+    "privacy:check": "node scripts/verify-public-privacy.mjs",
     "observability:check": "node scripts/verify-observability.mjs",
     "verify:seo": "node scripts/verify-seo.mjs",
-    "release:check": "pnpm run robots:check && pnpm run observability:check && pnpm run check && pnpm run build && pnpm run verify:seo",
+    "release:check": "pnpm run robots:check && pnpm run privacy:check && pnpm run observability:check && pnpm run check && pnpm run build && pnpm run verify:seo",
     "preview": "astro preview"
   },
   "dependencies": {

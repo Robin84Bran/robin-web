@@ -25,7 +25,6 @@ languageSlug: zh-hant
 translationOf: "https://iamrobin.ai/ouroboros/202608/20260821/"
 draft: false
 sourceMode: scheduled_chatgpt
-sourceThread: "https://chatgpt.com/c/6a77f5a4-e74c-83e8-866a-508fb67d7fd2"
 ---
 
 ## 1. 前沿模型｜OpenAI 與 Anthropic 的新戰場：誰能在不儲存客戶資料的情況下監管高能力 Agent？

@@ -23,7 +23,6 @@ author: https://iamrobin.ai/#person
 inLanguage: en
 draft: false
 sourceMode: telegram_robin_source
-sourceThread: "https://chatgpt.com/c/6a77f5a4-e74c-83e8-866a-508fb67d7fd2"
 ---
 
 This week’s signal: Capital returned to BTC and ETH; stablecoin licensing boundaries became concrete; and AI infrastructure moved from capex announcements into structures combining leases, guarantees, power and residual value.

@@ -21,7 +21,6 @@ const dailyBriefing = defineCollection({
     draft: z.boolean().default(false),
     sourceMode: z.enum(['scheduled_chatgpt', 'telegram_robin_source', 'fallback_research']),
     fallbackReason: z.string().optional(),
-    sourceThread: z.url(),
   }),
 });
 
@@ -46,7 +45,6 @@ const dailyBriefingTranslation = defineCollection({
     draft: z.boolean().default(false),
     sourceMode: z.enum(['scheduled_chatgpt', 'telegram_robin_source', 'fallback_research']),
     fallbackReason: z.string().optional(),
-    sourceThread: z.url(),
   }),
 });
 

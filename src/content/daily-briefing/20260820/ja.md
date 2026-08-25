@@ -25,7 +25,6 @@ languageSlug: ja
 translationOf: "https://iamrobin.ai/ouroboros/202608/20260820/"
 draft: false
 sourceMode: scheduled_chatgpt
-sourceThread: "https://chatgpt.com/c/6a77f5a4-e74c-83e8-866a-508fb67d7fd2"
 ---
 
 ## 1. フロンティアモデル｜GLM‑5.3は脆弱性発見の差をほぼ解消したが、実際の攻撃能力にはなお差がある

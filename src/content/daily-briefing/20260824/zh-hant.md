@@ -26,7 +26,6 @@ translationOf: "https://iamrobin.ai/ouroboros/202608/20260824/"
 translationReview: PASS
 draft: false
 sourceMode: telegram_robin_source
-sourceThread: "https://chatgpt.com/c/6a77f5a4-e74c-83e8-866a-508fb67d7fd2"
 ---
 
 本週訊號：資本重新流入 BTC 與 ETH；穩定幣牌照邊界開始落地；AI 算力項目已從資本開支宣言，進入由租約、擔保、電力與殘值共同承銷的階段。

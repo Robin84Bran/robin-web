@@ -26,7 +26,6 @@ translationOf: "https://iamrobin.ai/ouroboros/202608/20260824/"
 translationReview: PASS
 draft: false
 sourceMode: telegram_robin_source
-sourceThread: "https://chatgpt.com/c/6a77f5a4-e74c-83e8-866a-508fb67d7fd2"
 ---
 
 今週のシグナル：資本が BTC と ETH に戻った。ステーブルコインの免許境界が具体化し、AI インフラは設備投資の宣言から、長期リース、保証、電力、残存価値を組み合わせる段階へ進んだ。

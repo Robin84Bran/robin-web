@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-08-25",
+  "updated": "2026-08-25",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20260825/hero.webp",
+  "ogImage": "/daily-briefing/20260825/og.webp",
+  "actionHero": "/action-item/20260825/hero.webp",
+  "briefingPath": "/ouroboros/202608/20260825/",
+  "actionItemPath": "/ouroboros/202608/20260825/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "$7B",
+      "visualLabel": "licence plus investment",
+      "sources": [
+        { "label": "Deal reporting", "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-pays-6-billion-license-115520933.html" },
+        { "label": "Poolside", "url": "https://www.globenewswire.com/news-release/2026/07/21/3330818/0/en/Poolside-releases-Laguna-S-2-1-the-West-s-most-capable-open-weight-model.html" }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "visualValue": ">$900M",
+      "visualLabel": "conditional Dogotix financing",
+      "sources": [
+        { "label": "Reuters", "url": "https://www.reuters.com/business/retail-consumer/xpeng-says-its-robotics-business-raised-over-900-million-first-funding-round-2026-08-24/" },
+        { "label": "Structure", "url": "https://cnevpost.com/2026/08/24/xpeng-carves-out-robotics-business/" }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$145.6M",
+      "visualLabel": "provisional combined ETF flow",
+      "sources": [
+        { "label": "Farside BTC", "url": "https://farside.co.uk/btc/" },
+        { "label": "Farside ETH", "url": "https://farside.co.uk/eth/" }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "$120M",
+      "visualLabel": "reported Uruguay investment",
+      "sources": [
+        { "label": "Reuters", "url": "https://www.reuters.com/world/americas/how-tethers-bitcoin-mining-plans-uruguay-unraveled-2026-08-21/" }
+      ]
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "visualValue": ">$6.3B",
+      "visualLabel": "robotics post-money valuation",
+      "sources": [
+        { "label": "Reuters", "url": "https://www.reuters.com/business/retail-consumer/xpeng-says-its-robotics-business-raised-over-900-million-first-funding-round-2026-08-24/" },
+        { "label": "XPeng", "url": "https://ir.xiaopeng.com/news-releases/news-release-details/xpeng-robotics-business-raises-over-us900-million-post-money" },
+        { "label": "Canonical Action Item", "url": "https://iamrobin.ai/ouroboros/202608/20260825/action_item/" }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "17 GW",
+      "visualLabel": "mobile power and cooling fleet",
+      "sources": [
+        { "label": "Reuters", "url": "https://www.reuters.com/business/energy/power-supply-firm-aggreko-files-us-ipo-2026-08-24/" },
+        { "label": "IPO announcement", "url": "https://finance.yahoo.com/markets/stocks/articles/aggreko-announces-filing-registration-statement-203500422.html" }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": ">$30B+",
+      "visualLabel": "proposed Perplexity valuation",
+      "sources": [
+        { "label": "Reuters", "url": "https://www.reuters.com/technology/nvidia-discusses-perplexity-investment-30-billion-plus-valuation-information-2026-08-24/" }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "−1.91 / −4.83pp",
+      "visualLabel": "NVDA and MU versus QQQ",
+      "sources": [
+        { "label": "NVDA", "url": "https://stockanalysis.com/stocks/nvda/history/" },
+        { "label": "MU", "url": "https://stockanalysis.com/stocks/mu/history/" },
+        { "label": "QQQ", "url": "https://stockanalysis.com/etf/qqq/history/" },
+        { "label": "Reuters", "url": "https://www.reuters.com/business/sp-nasdaq-futures-slip-markets-await-iran-sanctions-nvidia-results-2026-08-24/" }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "inLanguage": "en",
+      "languageSlug": "",
+      "title": "Daily Action Flow, August 25, 2026",
+      "description": "Eight source-backed actions ordered into one inspectable CIO execution field.",
+      "centralJudgment": "Today’s signals separate capital validation from operating validation. Model factories, robot carve-outs, ETF breadth, issuer investments, temporary power, agent valuations and supplier pricing all require the next denominator before an upgrade.",
+      "fieldLine": "Eight signals. Separate verdicts. One next proof each.",
+      "actions": [
+        { "domain": "Frontier Models", "title": "Add the Vendor Stack", "why": "NVIDIA is buying a repeatable model factory rather than a single checkpoint.", "steps": ["Add Poolside and Nemotron to Model Olympics", "Run the identical harness against DeepSeek and Qwen", "Keep the gap rating unchanged until independent reproduction"], "done": "One dated comparison preserves model, harness, evaluator and vendor-support evidence separately." },
+        { "domain": "Physical AI", "title": "Gate Xpeng on Work", "why": "Financing and automotive manufacturing advantages do not establish autonomous labor economics.", "steps": ["Add Xpeng IRON to the tracker", "Keep output, external customers, useful hours and intervention UNKNOWN", "Upgrade only from dated denominator evidence"], "done": "The tracker row exists with four explicit commercial gates and HOLD maturity." },
+        { "domain": "Crypto Capital", "title": "Wait for Settled Breadth", "why": "The visible August 24 ETF row is incomplete and cannot confirm a sixth broad positive session.", "steps": ["Wait for every BTC and ETH product", "Calculate the share outside IBIT and ETHA", "Preserve the provisional figure separately"], "done": "Crypto Pulse changes only after a complete product-level row and breadth calculation." },
+        { "domain": "Stablecoins and Payments", "title": "Map Noncore Exposure", "why": "Issuer confidence depends on how reserve economics are reinvested and bounded.", "steps": ["Add noncore allocation and committed capital", "Record local contract exposure", "Estimate maximum loss to issuer equity or UNKNOWN"], "done": "Each issuer row separates reserves, noncore capital and maximum-loss evidence." },
+        { "domain": "iamrobin.ai", "title": "Publish the Carveout Map", "why": "Dogotix offers a reusable framework for deciding when Physical AI needs its own balance sheet.", "steps": ["Map asset and capital flows", "Separate financing price, capability and commercial maturity", "Publish four complete editions and the LinkedIn derivative"], "done": "The Action Item, four languages, diagram, sources, schema, internal link and public checks all pass.", "deepDiveTitle": "Why Xpeng Gave Robotics Its Own Balance Sheet" },
+        { "domain": "AI Infrastructure Career", "title": "Underwrite Aggreko", "why": "Temporary generation and cooling can monetize the gap between announced and deliverable megawatts.", "steps": ["Record data-center revenue mix and backlog", "Measure fleet utilisation and fuel pass-through", "Add capex and debt needed to maintain 17 GW"], "done": "One five-field IPO card distinguishes strategic bridge power from ordinary rental growth." },
+        { "domain": "Late Stage Markets", "title": "Keep Perplexity on Watch", "why": "A valuation above 40 times reported run-rate revenue needs margin, burn and retention evidence.", "steps": ["Wait for closing terms", "Request revenue composition and gross margin", "Measure Azure commitments and Computer retention"], "done": "INVESTIGATE begins only after the financing and operating denominators are verifiable." },
+        { "domain": "Public Equities", "title": "Hold the Capex Tax", "why": "NVDA and MU both lagged QQQ, so the initial supplier-pricing-power test failed.", "steps": ["Freeze the August 24 relative-return result", "Wait for Nvidia’s August 26 results", "Require guidance, margin, cash conversion and financing evidence together"], "done": "The classification reverses only when all four post-results conditions support supplier pricing power." }
+      ]
+    },
+    "zh-Hans": {
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "title": "每日行动流，2026年8月25日",
+      "description": "八项带来源的行动，被编排成一张可核验的CIO执行图。",
+      "centralJudgment": "今天的信号要求把资本验证与运营验证分开。模型工厂、机器人拆分、ETF广度、发行人投资、临时电力、Agent估值与供应商定价权，都必须等到下一个分母出现后才能升级。",
+      "fieldLine": "八个信号。结论分开。每项只有一个下一证明。",
+      "actions": [
+        { "domain": "前沿模型", "title": "加入供应商模型栈", "why": "NVIDIA买的是可重复制造模型的工厂，而不是单一checkpoint。", "steps": ["把Poolside与Nemotron加入Model Olympics", "用同一harness对比DeepSeek与Qwen", "独立复现前不调整差距评级"], "done": "一项带日期的比较分别保留模型、harness、评估者与供应商支持证据。" },
+        { "domain": "Physical AI", "title": "用工作验证小鹏", "why": "融资和汽车制造优势不能证明自主劳动经济。", "steps": ["把Xpeng IRON加入tracker", "产量、外部客户、有效小时与干预率保持UNKNOWN", "只用带分母的日期证据升级"], "done": "tracker已有四个明确商业闸门，成熟度保持HOLD。" },
+        { "domain": "加密资本", "title": "等待结算后的广度", "why": "8月24日可见ETF数据仍不完整，不能确认第六个全面正流入日。", "steps": ["等待所有BTC与ETH产品", "计算IBIT与ETHA以外占比", "单独保留暂定数字"], "done": "Crypto Pulse只在产品级数据完整且广度算清后变化。" },
+        { "domain": "稳定币与支付", "title": "绘制非核心敞口", "why": "发行人信心取决于储备经济如何被再投资和限制。", "steps": ["加入非核心配置与承诺资本", "记录当地合同敞口", "估算对发行人权益的最大损失或UNKNOWN"], "done": "每个发行人分别记录储备、非核心资本与最大损失证据。" },
+        { "domain": "iamrobin.ai", "title": "发布拆分资本图", "why": "Dogotix提供了一套判断Physical AI何时需要独立资产负债表的框架。", "steps": ["绘制资产与资本流", "分开融资价格、能力与商业成熟度", "发布四语全文与LinkedIn衍生稿"], "done": "Action Item、四语、图、来源、schema、内链与公网检查全部通过。", "deepDiveTitle": "小鹏为什么给机器人一张独立资产负债表" },
+        { "domain": "AI基础设施职业", "title": "承销Aggreko", "why": "临时发电与冷却能把宣布兆瓦和可交付兆瓦之间的时间差变现。", "steps": ["记录数据中心收入占比与backlog", "测量机队利用率与燃料传导", "加入维持17GW所需capex与债务"], "done": "一张五字段IPO卡把战略过桥电力与普通租赁增长分开。" },
+        { "domain": "后期一级市场", "title": "继续观察Perplexity", "why": "超过40倍run-rate收入的估值需要毛利、现金消耗与留存证据。", "steps": ["等待交割条款", "要求收入构成与毛利率", "测量Azure承诺与Computer留存"], "done": "只有融资和运营分母可核实时才进入INVESTIGATE。" },
+        { "domain": "公开市场", "title": "保持客户Capex税", "why": "NVDA与MU都跑输QQQ，首次供应商定价权测试失败。", "steps": ["冻结8月24日相对收益结果", "等待Nvidia 8月26日业绩", "同时要求指引、毛利、现金转化与融资证据"], "done": "只有四项条件共同支持时才改回供应商定价权。" }
+      ]
+    },
+    "zh-Hant": {
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "title": "每日行動流，2026年8月25日",
+      "description": "八項附有來源的行動，被編排成一張可核驗的CIO執行圖。",
+      "centralJudgment": "今天的訊號要求把資本驗證與營運驗證分開。模型工廠、機器人拆分、ETF廣度、發行人投資、臨時電力、Agent估值與供應商定價權，都必須等到下一個分母出現後才能升級。",
+      "fieldLine": "八個訊號。結論分開。每項只有一個下一證明。",
+      "actions": [
+        { "domain": "前沿模型", "title": "加入供應商模型棧", "why": "NVIDIA買的是可重複製造模型的工廠，而不是單一checkpoint。", "steps": ["把Poolside與Nemotron加入Model Olympics", "用同一harness對比DeepSeek與Qwen", "獨立複現前不調整差距評級"], "done": "一項附日期的比較分別保留模型、harness、評估者與供應商支持證據。" },
+        { "domain": "Physical AI", "title": "用工作驗證小鵬", "why": "融資和汽車製造優勢不能證明自主勞動經濟。", "steps": ["把Xpeng IRON加入tracker", "產量、外部客戶、有效小時與介入率保持UNKNOWN", "只用附分母的日期證據升級"], "done": "tracker已有四個明確商業閘門，成熟度保持HOLD。" },
+        { "domain": "加密資本", "title": "等待結算後的廣度", "why": "8月24日可見ETF資料仍不完整，不能確認第六個全面正流入日。", "steps": ["等待所有BTC與ETH產品", "計算IBIT與ETHA以外佔比", "單獨保留暫定數字"], "done": "Crypto Pulse只在產品級資料完整且廣度算清後變化。" },
+        { "domain": "穩定幣與支付", "title": "繪製非核心敞口", "why": "發行人信心取決於儲備經濟如何被再投資和限制。", "steps": ["加入非核心配置與承諾資本", "記錄當地合約敞口", "估算對發行人權益的最大損失或UNKNOWN"], "done": "每個發行人分別記錄儲備、非核心資本與最大損失證據。" },
+        { "domain": "iamrobin.ai", "title": "發布拆分資本圖", "why": "Dogotix提供了一套判斷Physical AI何時需要獨立資產負債表的框架。", "steps": ["繪製資產與資本流", "分開融資價格、能力與商業成熟度", "發布四語全文與LinkedIn衍生稿"], "done": "Action Item、四語、圖、來源、schema、內鏈與公開檢查全部通過。", "deepDiveTitle": "小鵬為甚麼給機器人一張獨立資產負債表" },
+        { "domain": "AI基礎設施職涯", "title": "承銷Aggreko", "why": "臨時發電與冷卻能把宣布兆瓦和可交付兆瓦之間的時間差變現。", "steps": ["記錄資料中心收入佔比與backlog", "量度機隊利用率與燃料傳導", "加入維持17GW所需capex與債務"], "done": "一張五欄IPO卡把策略過橋電力與普通租賃增長分開。" },
+        { "domain": "後期私募市場", "title": "繼續觀察Perplexity", "why": "超過40倍run-rate收入的估值需要毛利、現金消耗與留存證據。", "steps": ["等待交割條款", "要求收入構成與毛利率", "量度Azure承諾與Computer留存"], "done": "只有融資和營運分母可核實時才進入INVESTIGATE。" },
+        { "domain": "公開市場", "title": "保持客戶Capex稅", "why": "NVDA與MU都跑輸QQQ，首次供應商定價權測試失敗。", "steps": ["凍結8月24日相對回報結果", "等待Nvidia 8月26日業績", "同時要求指引、毛利、現金轉化與融資證據"], "done": "只有四項條件共同支持時才改回供應商定價權。" }
+      ]
+    },
+    "ja": {
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "title": "デイリー・アクション・フロー、2026年8月25日",
+      "description": "出典付きの8行動を、検証可能なCIO実行図へ編成する。",
+      "centralJudgment": "今日のシグナルは資本検証と運用検証を分ける。モデル工場、ロボット分離、ETFの広がり、発行者投資、仮設電力、Agent評価、供給者価格力は、次の分母が出るまで格上げしない。",
+      "fieldLine": "8シグナル。判定は分離。各項目に一つの次証拠。",
+      "actions": [
+        { "domain": "フロンティアモデル", "title": "供給者スタックを追加", "why": "NVIDIAは一つのcheckpointではなく、反復可能なモデル工場を買う。", "steps": ["PoolsideとNemotronをModel Olympicsへ加える", "同じharnessでDeepSeekとQwenに比較する", "独立再現まで格差評価を変えない"], "done": "日付付き比較がモデル、harness、評価者、供給者支援を別々に保存する。" },
+        { "domain": "Physical AI", "title": "仕事でXPengを判定", "why": "資金調達と自動車製造力は自律労働経済を証明しない。", "steps": ["Xpeng IRONをtrackerへ加える", "生産、外部顧客、有用時間、介入をUNKNOWNに保つ", "分母付き証拠だけで格上げする"], "done": "四つの商業ゲートを持つ行があり、成熟度はHOLDである。" },
+        { "domain": "暗号資産への資本", "title": "確定した広がりを待つ", "why": "8月24日のETF行は未完で、広い6日目の流入を確認できない。", "steps": ["全BTC・ETH商品を待つ", "IBITとETHA以外の比率を計算する", "暫定値を別に保存する"], "done": "商品別行と広がり計算が完了した時だけCrypto Pulseを変える。" },
+        { "domain": "ステーブルコインと決済", "title": "非中核露出を地図化", "why": "発行者への信頼は準備金利益の再投資と損失境界にも依存する。", "steps": ["非中核配分と約束資本を加える", "現地契約露出を記録する", "発行者資本への最大損失またはUNKNOWNを置く"], "done": "各発行者が準備金、非中核資本、最大損失の証拠を分けて持つ。" },
+        { "domain": "iamrobin.ai", "title": "分離資本図を公開", "why": "DogotixはPhysical AIが独自の貸借対照表を必要とする時を判断する枠になる。", "steps": ["資産と資本の流れを描く", "価格、能力、商業成熟を分ける", "4言語本文とLinkedIn派生文を公開する"], "done": "Action Item、4言語、図、出典、schema、内部リンク、公開検証が通る。", "deepDiveTitle": "XPengがロボティクスに別の貸借対照表を与えた理由" },
+        { "domain": "AIインフラ・キャリア", "title": "Aggrekoを引き受ける", "why": "仮設発電と冷却は発表MWと引渡可能MWの時間差を収益化できる。", "steps": ["データセンター売上比率とbacklogを記録する", "稼働率と燃料転嫁を測る", "17GW維持のcapexと債務を加える"], "done": "五項目IPOカードが戦略的bridge powerと通常レンタル成長を分ける。" },
+        { "domain": "レイトステージ市場", "title": "PerplexityをWATCH", "why": "run-rate売上40倍超には粗利、現金消費、継続率の証拠が必要だ。", "steps": ["完了条件を待つ", "売上構成と粗利率を求める", "Azure約束とComputer継続率を測る"], "done": "資金調達と運用の分母が検証できる時だけINVESTIGATEへ進む。" },
+        { "domain": "公開株式", "title": "顧客Capex税を維持", "why": "NVDAとMUはQQQを下回り、最初の供給者価格力テストは失敗した。", "steps": ["8月24日の相対結果を固定する", "8月26日のNvidia決算を待つ", "ガイダンス、粗利、現金転換、資金支援を同時に求める"], "done": "四条件がそろって供給者価格力を支持する時だけ分類を戻す。" }
+      ]
+    }
+  }
+}

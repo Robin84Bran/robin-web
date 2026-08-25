@@ -25,7 +25,6 @@ languageSlug: zh-hans
 translationOf: "https://iamrobin.ai/ouroboros/202608/20260820/"
 draft: false
 sourceMode: scheduled_chatgpt
-sourceThread: "https://chatgpt.com/c/6a77f5a4-e74c-83e8-866a-508fb67d7fd2"
 ---
 
 ## 1. 前沿模型｜GLM‑5.3：中美差距在漏洞发现上几乎消失，但在真正攻击能力上仍然明显
