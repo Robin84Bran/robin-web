@@ -1,4 +1,5 @@
 ---
+archiveStatus: "PRESENT"
 title: "The Quant Lab Series * Flash Crash Lab 2"
 date: 2026-08-24
 updated: 2026-08-24
@@ -28,8 +29,8 @@ inLanguage: en
 draft: false
 sourceDossier: research-dossier.md
 voiceCheck: PASS
-mediumUrl: null
-linkedinUrl: null
+mediumUrl: "https://medium.com/@iamrobin-ai/the-quant-lab-series-2-the-alligator-meets-production-130600eb0ec3?sharedUserId=iamrobin-ai"
+linkedinUrl: "https://lnkd.in/p/gvS8qF2r"
 thesis: Backtests can teach a strategy when to bite; production teaches the system when to stop eating.
 ---
 

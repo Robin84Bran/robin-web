@@ -1,4 +1,5 @@
 ---
+archiveStatus: "PRESENT"
 title: "Quant Labシリーズ * フラッシュクラッシュ・ラボ 2"
 date: 2026-08-24
 updated: 2026-08-24
@@ -17,8 +18,8 @@ inLanguage: ja
 draft: false
 sourceDossier: "research-dossier.md"
 voiceCheck: PASS
-mediumUrl: null
-linkedinUrl: null
+mediumUrl: "https://medium.com/@iamrobin-ai/the-quant-lab-series-2-the-alligator-meets-production-130600eb0ec3?sharedUserId=iamrobin-ai"
+linkedinUrl: "https://lnkd.in/p/gvS8qF2r"
 thesis: "バックテストは戦略に噛みつく時を教えられる。本番環境はシステムに食べるのをやめる時を教える。"
 languageSlug: ja
 translationOf: "https://iamrobin.ai/ouroboros/202608/20260824/blog/"

@@ -1,4 +1,5 @@
 ---
+archiveStatus: "PRESENT"
 title: "量化实验室系列 * 闪崩实验室 2"
 date: 2026-08-24
 updated: 2026-08-24
@@ -17,8 +18,8 @@ inLanguage: zh-Hans
 draft: false
 sourceDossier: "research-dossier.md"
 voiceCheck: PASS
-mediumUrl: null
-linkedinUrl: null
+mediumUrl: "https://medium.com/@iamrobin-ai/the-quant-lab-series-2-the-alligator-meets-production-130600eb0ec3?sharedUserId=iamrobin-ai"
+linkedinUrl: "https://lnkd.in/p/gvS8qF2r"
 thesis: "回测可以教会策略什么时候咬下去；生产环境教会系统什么时候该停止进食。"
 languageSlug: zh-hans
 translationOf: "https://iamrobin.ai/ouroboros/202608/20260824/blog/"
