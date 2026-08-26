@@ -1,5 +1,5 @@
 ---
-title: "鱷魚，第二階段"
+title: "量化實驗室系列 * 閃崩實驗室 2"
 date: 2026-08-24
 updated: 2026-08-24
 section: Ouroboros

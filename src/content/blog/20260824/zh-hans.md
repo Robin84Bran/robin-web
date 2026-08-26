@@ -1,5 +1,5 @@
 ---
-title: "鳄鱼，第二阶段"
+title: "量化实验室系列 * 闪崩实验室 2"
 date: 2026-08-24
 updated: 2026-08-24
 section: Ouroboros

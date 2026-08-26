@@ -1,5 +1,5 @@
 ---
-title: The Quant Lab Series
+title: "The Quant Lab Series * Flash Crash Lab 1"
 date: 2026-08-17
 updated: 2026-08-21
 section: Ouroboros

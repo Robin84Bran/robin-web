@@ -1,5 +1,5 @@
 ---
-title: "アリゲーター、フェーズ2"
+title: "Quant Labシリーズ * フラッシュクラッシュ・ラボ 2"
 date: 2026-08-24
 updated: 2026-08-24
 section: Ouroboros

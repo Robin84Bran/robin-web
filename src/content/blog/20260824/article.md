@@ -1,5 +1,5 @@
 ---
-title: The Alligator, Phase 2
+title: "The Quant Lab Series * Flash Crash Lab 2"
 date: 2026-08-24
 updated: 2026-08-24
 section: Ouroboros

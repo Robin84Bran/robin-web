@@ -1,5 +1,5 @@
 ---
-title: 量化实验室系列
+title: "量化实验室系列 * 闪崩实验室 1"
 date: 2026-08-17
 updated: 2026-08-22
 section: Ouroboros

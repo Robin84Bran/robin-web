@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-08-26",
+  "updated": "2026-08-26",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20260826/hero.webp",
+  "actionHero": "/action-item/20260826/hero.webp",
+  "ogImage": "/daily-briefing/20260826/og.webp",
+  "briefingPath": "/ouroboros/202608/20260826/",
+  "actionItemPath": "/ouroboros/202608/20260826/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NOW",
+      "status": "READY",
+      "visualValue": "4 gates",
+      "visualLabel": "lineage, permission, approval, rollback",
+      "sources": [
+        {"label": "Google Cloud Financial Services", "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-for-financial-services"},
+        {"label": "Google Cloud Legal", "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-for-legal"}
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "−45%",
+      "visualLabel": "from Unitree post-listing peak",
+      "sources": [
+        {"label": "Reuters", "url": "https://www.reuters.com/business/finance/china-robot-maker-unitrees-post-listing-slump-sparks-bubble-fears-2026-08-25/"}
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$453M",
+      "visualLabel": "August 24 combined ETF inflow",
+      "sources": [
+        {"label": "Farside BTC", "url": "https://farside.co.uk/btc/"},
+        {"label": "Farside ETH", "url": "https://farside.co.uk/eth/"}
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NOW",
+      "status": "READY",
+      "visualValue": ">$1B",
+      "visualLabel": "monthly stablecoin-card spending",
+      "sources": [
+        {"label": "Reuters", "url": "https://www.reuters.com/business/finance/stablecoin-card-spending-forecast-hit-50-billion-year-by-2028-redotpay-2026-08-25/"},
+        {"label": "RedotPay", "url": "https://www.redotpay.com/card"}
+      ]
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "READY",
+      "visualValue": "2,019",
+      "visualLabel": "English article words",
+      "sources": [
+        {"label": "Reuters", "url": "https://www.reuters.com/business/finance/stablecoin-card-spending-forecast-hit-50-billion-year-by-2028-redotpay-2026-08-25/"},
+        {"label": "Visa topology", "url": "https://corporate.visa.com/en/sites/visa-perspectives/innovation/stablecoin-linked-cards.html"},
+        {"label": "Mastercard", "url": "https://www.mastercard.com/news/perspectives/2025/stablecoins-end-to-end-capabilities/"}
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NOW",
+      "status": "READY",
+      "visualValue": "5 stages",
+      "visualLabel": "from announced to operational",
+      "sources": [
+        {"label": "Global Energy Monitor", "url": "https://globalenergymonitor.org/research/us-gas-power-proposals-tied-data-centers-nearly-double-six-months"},
+        {"label": "Global Oil and Gas Plant Tracker", "url": "https://globalenergymonitor.org/projects/global-oil-gas-plant-tracker"}
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "$200M",
+      "visualLabel": "Gatik Series D",
+      "sources": [
+        {"label": "Gatik", "url": "https://archive.gatik.ai/news/coverage/gatik-raises-200-million-series-d-led-by-qia-and-kdt-as-demand-for-driverless-commercial-freight-accelerates/"},
+        {"label": "Reuters", "url": "https://www.reuters.com/world/china/gatik-secures-200-million-funding-autonomous-freight-market-accelerates-2026-08-25/"}
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "5.4%",
+      "visualLabel": "options-implied earnings hurdle",
+      "sources": [
+        {"label": "Reuters setup", "url": "https://www.reuters.com/business/us-stock-futures-rise-tech-rebound-before-nvidia-inflation-tests-2026-08-25/"},
+        {"label": "Reuters options", "url": "https://www.reuters.com/business/nvidia-shares-set-280-billion-price-swing-after-earnings-options-show-2026-08-25/"},
+        {"label": "NVIDIA investor relations", "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Second-Quarter-Financial-Results/default.aspx"}
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "inLanguage": "en",
+      "languageSlug": "",
+      "title": "Daily Action Flow, August 26, 2026",
+      "description": "Eight source-backed actions ordered into one inspectable CIO execution field.",
+      "centralJudgment": "Today’s signals reward topology and evidence discipline. Governed agents, robotics, ETF breadth, payment rails, power capacity, autonomous freight and Nvidia earnings each need a specific next denominator before an upgrade.",
+      "fieldLine": "Eight signals. Separate verdicts. One next proof each.",
+      "actions": [
+        {"signal": 1, "domain": "Frontier Models", "title": "Audit One Governed Agent Path", "why": "The competitive unit is becoming the governed workflow, not the model alone.", "steps": ["Choose one RobinOS financial workflow", "Map skill, permission-bound connector, acting agent and evidence", "Withhold production until lineage, approval and rollback pass"], "done": "One dated audit records all four gates without broadening production authority."},
+        {"signal": 2, "domain": "Physical AI", "title": "Separate Capability from Commerce", "why": "Unitree's price reset does not resolve its commercial evidence gap.", "steps": ["Record technical leadership separately from valuation", "Wait for customer mix and repeat industrial orders", "Require cash flow and useful autonomous work-hours before a capital decision"], "done": "The file preserves a valuation reset and an incomplete commercial case as separate facts."},
+        {"signal": 3, "domain": "Crypto Capital", "title": "Test ETF Flow Breadth", "why": "Headline inflows are healthier only if participation broadens beyond the largest products.", "steps": ["Keep the ETF-led re-entry rating", "Measure non-IBIT and non-ETHA share for the full week", "Cross-check stablecoin supply and DeFi activity"], "done": "Breadth increases only after a one-third weekly share and confirming on-chain activity."},
+        {"signal": 4, "domain": "Stablecoins and Payments", "title": "Map the Payment Topology", "why": "Stablecoin funding can coexist with legacy card acceptance and settlement layers.", "steps": ["Add funding rail, conversion point and card network", "Add settlement asset and issuer economics", "Compare RedotPay, Ramp and Stripe Issuing on identical fields"], "done": "One comparable topology distinguishes the new funding rail from the existing acceptance network."},
+        {"signal": 5, "domain": "iamrobin.ai", "title": "Publish the Stablecoin Card Essay", "why": "The essay turns the payment topology into a durable decision artifact.", "steps": ["Keep source claims and inference labels separate", "Complete four-language editorial review", "Publish only after privacy, build and public-route gates pass"], "done": "The article package is complete locally and becomes complete publicly only after verified deployment."},
+        {"signal": 6, "domain": "AI Infrastructure Career", "title": "Label Paper Megawatts", "why": "Announced power is not operational capacity.", "steps": ["Classify each Power Hunt target across five development stages", "Check for an equipment slot", "Check for a fuel contract before removing the paper-MW label"], "done": "Every target carries an evidence-bounded stage and explicit missing prerequisites."},
+        {"signal": 7, "domain": "Late Stage Markets", "title": "Open the Gatik Diligence File", "why": "Operational routes are promising, but valuation and unit economics remain decision-critical.", "steps": ["Request valuation and investor rights", "Measure recognized revenue and route contribution margin", "Require intervention, incident and per-truck capex evidence"], "done": "Gatik remains INVESTIGATE until the commercial and safety evidence is sufficient."},
+        {"signal": 8, "domain": "Public Equities", "title": "Wait for Nvidia Evidence", "why": "The earnings release and next-session relative move are the relevant tests.", "steps": ["Make no pre-release core-position change", "Update revenue, guidance, margin and cash conversion after results", "Record new financing commitments and compare NVDA with QQQ next session"], "done": "The thesis changes only from released fundamentals and market confirmation."}
+      ]
+    },
+    "zh-Hans": {
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "title": "每日行动流，2026年8月26日",
+      "description": "八项有来源支持的行动，汇入一个可审计的CIO执行场。",
+      "centralJudgment": "今天的信号强调拓扑与证据纪律。受治理智能体、机器人、ETF广度、支付轨道、电力容量、自动货运与Nvidia财报，都需要各自明确的下一个分母才能升级。",
+      "fieldLine": "八个信号。分别裁决。各有一个下一步证据。",
+      "actions": [
+        {"signal": 1, "domain": "前沿模型", "title": "审计一条受治理的智能体路径", "why": "竞争单位正在从单一模型转向受治理的完整工作流。", "steps": ["选择一条RobinOS金融工作流", "映射Skill、权限受限连接器、执行智能体与证据", "在数据沿袭、人工批准和回滚全部通过前不进入生产"], "done": "完成一份带日期的四道门槛审计，不扩大生产权限。"},
+        {"signal": 2, "domain": "Physical AI", "title": "把能力与商业化分开", "why": "Unitree的价格重置并没有填补商业证据缺口。", "steps": ["分别记录技术领先与估值变化", "等待客户结构和工业复购数据", "资本决策前要求经营现金流与有效自主工作时数"], "done": "档案分别保留估值重置和商业证据不完整两项事实。"},
+        {"signal": 3, "domain": "加密资本", "title": "检验ETF资金广度", "why": "只有更多产品共同参与，整体流入才算真正改善。", "steps": ["保留ETF主导的重返评级", "计算整周非IBIT及非ETHA占比", "同步核对稳定币供应与DeFi真实活动"], "done": "只有周占比达到三分之一且链上活动确认后才提高广度评级。"},
+        {"signal": 4, "domain": "稳定币与支付", "title": "画清支付拓扑", "why": "稳定币资金入口可以与传统银行卡受理和结算层并存。", "steps": ["加入资金轨、转换点与卡组织", "加入结算资产与发行方经济性", "用同一字段比较RedotPay、Ramp与Stripe Issuing"], "done": "一张可比拓扑把新资金轨与既有受理网络分开。"},
+        {"signal": 5, "domain": "iamrobin.ai", "title": "发布稳定币卡片文章", "why": "这篇文章把支付拓扑转化为可长期复用的决策材料。", "steps": ["分开来源事实与推论", "完成四语编辑审校", "仅在隐私、构建和公开路由关卡通过后发布"], "done": "文章包已在本地完成，只有部署并公开验证后才算公开完成。"},
+        {"signal": 6, "domain": "AI基础设施职业", "title": "标记纸面兆瓦", "why": "宣布的电力不等于可运营容量。", "steps": ["按五个建设阶段分类Power Hunt目标", "检查设备档期", "检查燃料合同后再移除纸面兆瓦标签"], "done": "每个目标都有证据边界清晰的阶段与缺失条件。"},
+        {"signal": 7, "domain": "后期一级市场", "title": "打开Gatik尽调档案", "why": "实际运营路线值得关注，但估值和单位经济性仍然关键。", "steps": ["索取估值与投资者权利", "衡量已确认收入与路线贡献利润", "要求远程介入、事故率及单车资本开支数据"], "done": "在商业与安全证据充分前维持INVESTIGATE。"},
+        {"signal": 8, "domain": "公开市场", "title": "等待Nvidia证据", "why": "财报与次日相对表现才是相关检验。", "steps": ["发布前不调整核心仓位", "财报后更新收入、指引、毛利率与现金转化", "记录新增融资承诺并比较NVDA与QQQ次日表现"], "done": "只依据已发布基本面和市场确认调整论点。"}
+      ]
+    },
+    "zh-Hant": {
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "title": "每日行動流，2026年8月26日",
+      "description": "八項有來源支持的行動，匯入一個可審計的CIO執行場。",
+      "centralJudgment": "今天的信號強調拓撲與證據紀律。受治理智能體、機器人、ETF廣度、支付軌道、電力容量、自動貨運與Nvidia財報，都需要各自明確的下一個分母才能升級。",
+      "fieldLine": "八個信號。分別裁決。各有一個下一步證據。",
+      "actions": [
+        {"signal": 1, "domain": "前沿模型", "title": "審計一條受治理的智能體路徑", "why": "競爭單位正從單一模型轉向受治理的完整工作流。", "steps": ["選擇一條RobinOS金融工作流", "映射Skill、權限受限連接器、執行智能體與證據", "在資料沿襲、人工批准和回滾全部通過前不進入生產"], "done": "完成一份帶日期的四道門檻審計，不擴大生產權限。"},
+        {"signal": 2, "domain": "Physical AI", "title": "把能力與商業化分開", "why": "Unitree的價格重置並沒有填補商業證據缺口。", "steps": ["分別記錄技術領先與估值變化", "等待客戶結構和工業複購資料", "資本決策前要求營運現金流與有效自主工作時數"], "done": "檔案分別保留估值重置和商業證據不完整兩項事實。"},
+        {"signal": 3, "domain": "加密資本", "title": "檢驗ETF資金廣度", "why": "只有更多產品共同參與，整體流入才算真正改善。", "steps": ["保留ETF主導的重返評級", "計算整週非IBIT及非ETHA佔比", "同步核對穩定幣供應與DeFi真實活動"], "done": "只有週佔比達到三分之一且鏈上活動確認後才提高廣度評級。"},
+        {"signal": 4, "domain": "穩定幣與支付", "title": "畫清支付拓撲", "why": "穩定幣資金入口可以與傳統銀行卡受理和結算層並存。", "steps": ["加入資金軌、轉換點與卡組織", "加入結算資產與發行方經濟性", "用同一欄位比較RedotPay、Ramp與Stripe Issuing"], "done": "一張可比拓撲把新資金軌與既有受理網絡分開。"},
+        {"signal": 5, "domain": "iamrobin.ai", "title": "發布穩定幣卡片文章", "why": "這篇文章把支付拓撲轉化為可長期複用的決策材料。", "steps": ["分開來源事實與推論", "完成四語編輯審校", "僅在隱私、構建和公開路由關卡通過後發布"], "done": "文章包已在本地完成，只有部署並公開驗證後才算公開完成。"},
+        {"signal": 6, "domain": "AI基礎設施職涯", "title": "標記紙面兆瓦", "why": "宣佈的電力不等於可營運容量。", "steps": ["按五個建設階段分類Power Hunt目標", "檢查設備檔期", "檢查燃料合約後再移除紙面兆瓦標籤"], "done": "每個目標都有證據邊界清晰的階段與缺失條件。"},
+        {"signal": 7, "domain": "後期私募市場", "title": "打開Gatik盡調檔案", "why": "實際營運路線值得關注，但估值和單位經濟性仍然關鍵。", "steps": ["索取估值與投資者權利", "衡量已確認收入與路線貢獻利潤", "要求遠端介入、事故率及單車資本開支資料"], "done": "在商業與安全證據充分前維持INVESTIGATE。"},
+        {"signal": 8, "domain": "公開市場", "title": "等待Nvidia證據", "why": "財報與次日相對表現才是相關檢驗。", "steps": ["發布前不調整核心倉位", "財報後更新收入、指引、毛利率與現金轉化", "記錄新增融資承諾並比較NVDA與QQQ次日表現"], "done": "只依據已發布基本面和市場確認調整論點。"}
+      ]
+    },
+    "ja": {
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "title": "デイリー・アクション・フロー 2026年8月26日",
+      "description": "出典に基づく八つの行動を、監査可能なCIO実行フィールドに整理する。",
+      "centralJudgment": "本日のシグナルはトポロジーと証拠規律を重視する。統制エージェント、ロボティクス、ETFの裾野、決済レール、電力容量、自動運送、Nvidia決算はいずれも、評価引き上げ前に固有の次の分母を必要とする。",
+      "fieldLine": "八つのシグナル。別々の判断。各項目に次の証拠を一つ。",
+      "actions": [
+        {"signal": 1, "domain": "フロンティアモデル", "title": "統制されたエージェント経路を監査する", "why": "競争単位は単体モデルから統制された業務フローへ移っている。", "steps": ["RobinOSの金融ワークフローを一つ選ぶ", "Skill、権限制限付きコネクター、実行エージェント、証拠を対応付ける", "来歴、人的承認、ロールバックが通るまで本番投入しない"], "done": "本番権限を広げず、四つの関門を日付付きで記録する。"},
+        {"signal": 2, "domain": "Physical AI", "title": "能力と商業性を分ける", "why": "Unitreeの価格調整は商業証拠の不足を解消していない。", "steps": ["技術的優位と評価額を別々に記録する", "顧客構成と産業向け再注文を待つ", "資本判断前に営業キャッシュフローと有効自律稼働時間を求める"], "done": "評価額調整と商業証拠不足を別の事実として保存する。"},
+        {"signal": 3, "domain": "暗号資産への資本", "title": "ETFフローの裾野を測る", "why": "最大商品以外にも参加が広がって初めて流入改善と言える。", "steps": ["ETF主導の再参入評価を維持する", "一週間の非IBIT・非ETHA比率を測る", "ステーブルコイン供給とDeFi実需を照合する"], "done": "週間比率が3分の1に達しオンチェーン活動が確認された場合だけ評価を上げる。"},
+        {"signal": 4, "domain": "ステーブルコインと決済", "title": "決済トポロジーを描く", "why": "ステーブルコイン資金は既存カード受理・決済層と共存できる。", "steps": ["資金レール、交換点、カードネットワークを追加する", "決済資産と発行者経済性を追加する", "RedotPay、Ramp、Stripe Issuingを同一項目で比較する"], "done": "新しい資金レールと既存受理ネットワークを一枚の比較図で分ける。"},
+        {"signal": 5, "domain": "iamrobin.ai", "title": "ステーブルコインカード論考を公開する", "why": "決済トポロジーを再利用可能な意思決定資料に変える記事である。", "steps": ["出典事実と推論を分ける", "四言語の編集レビューを完了する", "プライバシー、ビルド、公開経路の関門通過後だけ公開する"], "done": "記事一式はローカルで完成し、検証済み公開後にのみ公開完了となる。"},
+        {"signal": 6, "domain": "AIインフラ・キャリア", "title": "紙上メガワットを表示する", "why": "発表済み電力は稼働容量ではない。", "steps": ["Power Hunt候補を五つの開発段階に分類する", "設備枠を確認する", "燃料契約を確認してから紙上MW表示を外す"], "done": "各候補に証拠範囲付き段階と不足条件を記録する。"},
+        {"signal": 7, "domain": "レイトステージ市場", "title": "Gatikの調査ファイルを開く", "why": "実稼働路線は有望だが評価額とユニットエコノミクスが未解決である。", "steps": ["評価額と投資家権利を確認する", "認識収益と路線貢献利益を測る", "遠隔介入、事故率、一台当たり設備投資を求める"], "done": "商業・安全証拠が十分になるまでINVESTIGATEを維持する。"},
+        {"signal": 8, "domain": "公開株式", "title": "Nvidiaの証拠を待つ", "why": "決算と翌日の相対パフォーマンスが有効な検証である。", "steps": ["発表前にコアポジションを変えない", "決算後に売上、見通し、粗利率、現金化を更新する", "新規金融コミットメントを記録し翌日のNVDAとQQQを比較する"], "done": "公表済みファンダメンタルズと市場確認だけで投資仮説を更新する。"}
+      ]
+    }
+  }
+}
