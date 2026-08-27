@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-08-27",
+  "updated": "2026-08-27",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20260827/hero.webp",
+  "actionHero": "/action-item/20260827/hero.webp",
+  "ogImage": "/daily-briefing/20260827/og.webp",
+  "briefingPath": "/ouroboros/202608/20260827/",
+  "actionItemPath": "/ouroboros/202608/20260827/action_item/",
+  "actions": [
+    {"signal": 1, "priority": "NOW", "status": "READY", "visualValue": "700", "visualLabel": "agents reported in the attack", "sources": [{"label": "OpenAI postmortem", "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/"}, {"label": "OpenAI technical report", "url": "https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face%20Incident-Technical-Report.pdf"}, {"label": "METR investigation", "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/"}]},
+    {"signal": 2, "priority": "WATCH", "status": "WATCHING", "visualValue": "8.64s", "visualLabel": "autonomous 100 metres", "sources": [{"label": "Reuters", "url": "https://www.reuters.com/sports/robot-olympics-ends-with-humanoids-864-second-100m-nearly-second-faster-than-2026-08-26/"}, {"label": "RoboCup", "url": "https://www.robocup.org/events/89"}]},
+    {"signal": 3, "priority": "WATCH", "status": "WATCHING", "visualValue": "$3.56B", "visualLabel": "seven settled sessions", "sources": [{"label": "Farside BTC", "url": "https://farside.co.uk/btc/"}, {"label": "Farside ETH", "url": "https://farside.co.uk/eth/"}]},
+    {"signal": 4, "priority": "NEXT", "status": "READY", "visualValue": "$0.04", "visualLabel": "value per x402 payment", "sources": [{"label": "Token Terminal", "url": "https://tokenterminal.com/explorer/metrics"}, {"label": "Data breakdown", "url": "https://www.htx.com/news/ai-agent-payments-hit-2026-high-weekly-transfers-reach-87-mi-rjDIOLm8"}, {"label": "Independent x402 study", "url": "https://arxiv.org/abs/2607.12575"}]},
+    {"signal": 5, "priority": "NOW", "status": "READY", "visualValue": "6 controls", "visualLabel": "bounded autonomous teamwork", "sources": [{"label": "OpenAI postmortem", "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/"}, {"label": "OpenAI technical report", "url": "https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face%20Incident-Technical-Report.pdf"}, {"label": "METR", "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/"}, {"label": "Redwood Research", "url": "https://blog.redwoodresearch.org/p/ai-swarms-are-starting-to-pose-indirect"}]},
+    {"signal": 6, "priority": "NEXT", "status": "READY", "visualValue": "$45B", "visualLabel": "reported six-year commitment", "sources": [{"label": "Reuters", "url": "https://www.reuters.com/technology/anthropic-pay-nscale-45-billion-rent-ai-computing-power-bloomberg-news-reports-2026-08-26/"}, {"label": "Financial Times", "url": "https://www.ft.com/content/0ec76ba3-5f7f-4085-88fb-acf21954bc85"}]},
+    {"signal": 7, "priority": "WATCH", "status": "WATCHING", "visualValue": "$3.5B", "visualLabel": "potential protection payments", "sources": [{"label": "HKEX filing", "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0824/2026082400009.pdf"}, {"label": "Reuters", "url": "https://www.reuters.com/legal/transactional/shein-pay-up-35-billion-select-pre-ipo-investors-around-hong-kong-listing-2026-08-24/"}]},
+    {"signal": 8, "priority": "WATCH", "status": "WATCHING", "visualValue": "$24.1B", "visualLabel": "operating cash flow", "sources": [{"label": "NVIDIA results", "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027"}, {"label": "Reuters", "url": "https://www.reuters.com/business/media-telecom/nvidia-forecasts-quarterly-revenue-above-estimates-2026-08-26/"}, {"label": "NVDA history", "url": "https://finance.yahoo.com/quote/NVDA/history/"}, {"label": "QQQ history", "url": "https://stockanalysis.com/etf/qqq/history/"}]}
+  ],
+  "editions": {
+    "en": {
+      "inLanguage": "en", "languageSlug": "", "title": "Daily Action Flow, August 27, 2026", "description": "Eight source-backed actions ordered into one inspectable CIO execution field.",
+      "centralJudgment": "Capability is advancing faster than the controls and denominators around it. Bound agent collaboration, separate robot speed from useful labour, test capital breadth, measure real payment value, underwrite future compute, and wait for cash evidence before upgrading a thesis.",
+      "fieldLine": "Eight signals. Bounded authority. One next proof each.",
+      "actions": [
+        {"signal": 1, "domain": "Frontier Models", "title": "Bound the Shared Agent Workspace", "why": "Collective capability becomes dangerous when identities, credentials, evidence and writable space lose their boundaries.", "steps": ["Inventory every persistent multi-agent shared path", "Separate identities and task-scoped credentials", "Require egress allowlists, append-only logs and a host kill switch"], "done": "No persistent swarm has an unbounded shared writable namespace or credentials outside its task."},
+        {"signal": 2, "domain": "Physical AI", "title": "Keep Speed in the Capability Column", "why": "An 8.64-second run proves control progress, while safe paid task-hours remain unproved.", "steps": ["Record the timing under locomotion capability", "Add stopping distance, fall rate and intervention fields", "Wait for payload task success and continuous autonomous hours"], "done": "Commercial readiness remains separate until all four labour denominators are reported."},
+        {"signal": 3, "domain": "Crypto Capital", "title": "Measure ETF Breadth", "why": "Seven positive sessions matter, yet one issuer pair supplied 87.2% of the latest day.", "steps": ["Retain ETF-led re-entry and narrow-breadth labels", "Calculate the non-IBIT and non-ETHA share", "Cross-check stablecoin supply and real onchain fees"], "done": "Breadth upgrades only after other products sustain one-third of flows with onchain confirmation."},
+        {"signal": 4, "domain": "Stablecoins and Payments", "title": "Replace Counts with Economic Use", "why": "Millions of four-cent transactions can measure loops rather than adoption.", "steps": ["Count independent payer controllers", "Identify external recipients and dollar value", "Measure 30-day repeat purchases and service output per dollar"], "done": "The x402 scorecard reports all five denominators and never treats raw transaction count as adoption alone."},
+        {"signal": 5, "domain": "iamrobin.ai", "title": "Publish the Swarm Constitution", "why": "The incident can become a reusable operating design for initiative with bounded blast radius.", "steps": ["Separate confirmed facts, independent findings and unknowns", "Explain the four-part incident mechanism", "Publish six controls and four acceptance tests in four languages"], "done": "The article passes evidence, editorial, privacy, build and public-route gates."},
+        {"signal": 6, "domain": "AI Infrastructure Career", "title": "Underwrite the Monarch Commitment", "why": "The reported 460 MW contract converts compute ambition into long-dated credit and delivery risk.", "steps": ["Record minimum payments and COD remedies", "Verify equipment, fuel, permits and financing", "Estimate Rubin re-leasing value after tenant default"], "done": "One card separates reported terms, unconfirmed terms, delivery dependencies and residual-value recovery."},
+        {"signal": 7, "domain": "Late Stage Markets", "title": "Price Shein After Protection", "why": "Selected downside protection may consume nearly twice the fresh IPO capital.", "steps": ["Reconcile final price with protection payments", "Calculate post-payment net cash", "Apply tariff, regulation, margin and governance discounts"], "done": "Participation remains PASS unless the final filing proves adequate net cash and risk compensation."},
+        {"signal": 8, "domain": "Public Equities", "title": "Wait for Nvidia Cash Evidence", "why": "Demand and margins passed while cash conversion lagged materially.", "steps": ["Keep the core position unchanged", "Compare NVDA with QQQ after the next close", "Measure operating cash flow, receivables growth and financing exposure"], "done": "The pricing-power thesis changes only after all four measures are settled and recorded."}
+      ]
+    },
+    "zh-Hans": {
+      "inLanguage": "zh-Hans", "languageSlug": "zh-hans", "title": "每日行动流，2026年8月27日", "description": "八项有来源支持的行动，汇入一个可审计的CIO执行场。",
+      "centralJudgment": "能力进步快过周边控制与分母。今天要为Agent协作划边界，把机器人速度与有效劳动分开，检验资本广度、支付价值和未来算力义务，并在现金证据完成前拒绝升级论点。", "fieldLine": "八个信号。有限权限。各有一个下一步证据。",
+      "actions": [
+        {"signal": 1, "domain": "前沿模型", "title": "限制共享Agent工作区", "why": "当身份、凭证、证据与可写空间失去边界，群体能力会扩大风险。", "steps": ["清点所有长期多Agent共享路径", "拆分身份与按任务凭证", "强制出网白名单、只增不改日志与宿主kill switch"], "done": "没有长期swarm持有无边界共享可写空间或任务外凭证。"},
+        {"signal": 2, "domain": "Physical AI", "title": "把速度留在能力栏", "why": "8.64秒证明控制进步，安全付费任务小时仍未得到证明。", "steps": ["把成绩记入locomotion capability", "加入停止距离、跌倒率和人工介入字段", "等待负载任务成功率与连续自主小时"], "done": "四项劳动分母齐备之前，commercial readiness保持独立。"},
+        {"signal": 3, "domain": "加密资本", "title": "测量ETF广度", "why": "连续七日流入值得重视，但最新一天87.2%仍来自一对发行方产品。", "steps": ["保留ETF-led re-entry与narrow breadth标签", "计算非IBIT与非ETHA占比", "核对稳定币供应与真实链上费用"], "done": "其他产品持续贡献三分之一且链上确认后才升级广度。"},
+        {"signal": 4, "domain": "稳定币与支付", "title": "用经济使用替代笔数", "why": "数百万笔四美分交易可能反映循环，而非采用。", "steps": ["统计独立付款控制者", "识别外部收款人和美元价值", "测量30日复购与每美元服务产出"], "done": "x402看板同时报告五项分母，不把原始笔数单独当作采用。"},
+        {"signal": 5, "domain": "iamrobin.ai", "title": "发布swarm宪法", "why": "这次事故可以变成兼顾主动性与有限爆炸半径的可复用设计。", "steps": ["分开确认事实、独立发现和未知", "解释四项事故机制", "以四语发布六项控制和四项验收测试"], "done": "文章通过证据、编辑、隐私、构建和公开路由关卡。"},
+        {"signal": 6, "domain": "AI基础设施职业", "title": "承销Monarch承诺", "why": "据报460MW合同把算力雄心转成长久信用与交付风险。", "steps": ["记录最低付款和COD赔偿", "验证设备、燃料、许可和融资", "估算租户违约后Rubin转租价值"], "done": "一张卡分开已报道、未确认、交付依赖和残值回收。"},
+        {"signal": 7, "domain": "后期一级市场", "title": "扣除保护后再定价Shein", "why": "部分下行保护可能消耗接近新IPO资本的两倍。", "steps": ["核对最终定价与保护付款", "计算付款后净现金", "加入关税、监管、利润与治理折价"], "done": "除非最终文件证明净现金和风险补偿充分，否则不参与。"},
+        {"signal": 8, "domain": "公开市场", "title": "等待Nvidia现金证据", "why": "需求和毛利率通过，现金转化明显落后。", "steps": ["保持核心仓位不变", "下一次收盘后比较NVDA与QQQ", "测量经营现金流、应收增长与融资风险"], "done": "四项指标完成结算并记录后才改变定价权论点。"}
+      ]
+    },
+    "zh-Hant": {
+      "inLanguage": "zh-Hant", "languageSlug": "zh-hant", "title": "每日行動流，2026年8月27日", "description": "八項有來源支持的行動，匯入一個可審計的CIO執行場。",
+      "centralJudgment": "能力進步快過周邊控制與分母。今天要為Agent協作劃邊界，把機器人速度與有效勞動分開，檢驗資本廣度、支付價值和未來算力義務，並在現金證據完成前拒絕升級論點。", "fieldLine": "八個信號。有限權限。各有一個下一步證據。",
+      "actions": [
+        {"signal": 1, "domain": "前沿模型", "title": "限制共享Agent工作區", "why": "當身份、憑證、證據與可寫空間失去邊界，群體能力會擴大風險。", "steps": ["清點所有長期多Agent共享路徑", "拆分身份與按任務憑證", "強制出網白名單、只增不改日誌與主機kill switch"], "done": "沒有長期swarm持有無邊界共享可寫空間或任務外憑證。"},
+        {"signal": 2, "domain": "Physical AI", "title": "把速度留在能力欄", "why": "8.64秒證明控制進步，安全付費任務小時仍未得到證明。", "steps": ["把成績記入locomotion capability", "加入停止距離、跌倒率和人工介入欄位", "等待負載任務成功率與連續自主小時"], "done": "四項勞動分母齊備之前，commercial readiness保持獨立。"},
+        {"signal": 3, "domain": "加密資本", "title": "測量ETF廣度", "why": "連續七日流入值得重視，但最新一天87.2%仍來自一對發行方產品。", "steps": ["保留ETF-led re-entry與narrow breadth標籤", "計算非IBIT與非ETHA佔比", "核對穩定幣供應與真實鏈上費用"], "done": "其他產品持續貢獻三分之一且鏈上確認後才升級廣度。"},
+        {"signal": 4, "domain": "穩定幣與支付", "title": "用經濟使用替代筆數", "why": "數百萬筆四美分交易可能反映循環，而非採用。", "steps": ["統計獨立付款控制者", "識別外部收款人和美元價值", "測量30日複購與每美元服務產出"], "done": "x402看板同時報告五項分母，不把原始筆數單獨當作採用。"},
+        {"signal": 5, "domain": "iamrobin.ai", "title": "發布swarm憲法", "why": "這次事故可以變成兼顧主動性與有限爆炸半徑的可複用設計。", "steps": ["分開確認事實、獨立發現和未知", "解釋四項事故機制", "以四語發布六項控制和四項驗收測試"], "done": "文章通過證據、編輯、私隱、構建和公開路由關卡。"},
+        {"signal": 6, "domain": "AI基礎設施職涯", "title": "承銷Monarch承諾", "why": "據報460MW合約把算力雄心轉成長久信用與交付風險。", "steps": ["記錄最低付款和COD賠償", "驗證設備、燃料、許可和融資", "估算租戶違約後Rubin轉租價值"], "done": "一張卡分開已報道、未確認、交付依賴和殘值回收。"},
+        {"signal": 7, "domain": "後期私募市場", "title": "扣除保護後再定價Shein", "why": "部分下行保護可能消耗接近新IPO資本的兩倍。", "steps": ["核對最終定價與保護付款", "計算付款後淨現金", "加入關稅、監管、利潤與治理折價"], "done": "除非最終文件證明淨現金和風險補償充分，否則不參與。"},
+        {"signal": 8, "domain": "公開市場", "title": "等待Nvidia現金證據", "why": "需求和毛利率通過，現金轉化明顯落後。", "steps": ["保持核心倉位不變", "下一次收盤後比較NVDA與QQQ", "測量經營現金流、應收增長與融資風險"], "done": "四項指標完成結算並記錄後才改變定價權論點。"}
+      ]
+    },
+    "ja": {
+      "inLanguage": "ja", "languageSlug": "ja", "title": "デイリー・アクション・フロー 2026年8月27日", "description": "出典に基づく八つの行動を、監査可能なCIO実行フィールドに整理する。",
+      "centralJudgment": "能力の進歩が周辺の統制と評価分母を上回っている。エージェント協働を区切り、ロボット速度と有用労働を分け、資本の裾野、決済価値、将来の計算資源義務を測り、現金証拠がそろうまで仮説を引き上げない。", "fieldLine": "八つのシグナル。限定権限。各項目に次の証拠を一つ。",
+      "actions": [
+        {"signal": 1, "domain": "フロンティアモデル", "title": "共有エージェント領域を区切る", "why": "ID、資格情報、証拠、書き込み領域の境界が崩れると集団能力がリスクを拡大する。", "steps": ["継続的な複数エージェント共有経路を棚卸しする", "IDとタスク限定資格情報を分離する", "送信先許可リスト、追記専用ログ、ホストkill switchを必須にする"], "done": "継続swarmが無制限共有領域やタスク外資格情報を持たない。"},
+        {"signal": 2, "domain": "Physical AI", "title": "速度を能力欄に留める", "why": "8.64秒は制御進歩を示すが、安全な有償作業時間は未証明である。", "steps": ["記録をlocomotion capabilityへ入れる", "停止距離、転倒率、介入率を追加する", "積載任務成功率と連続自律時間を待つ"], "done": "四つの労働分母がそろうまでcommercial readinessを分ける。"},
+        {"signal": 3, "domain": "暗号資産への資本", "title": "ETFの裾野を測る", "why": "7日連続流入は重要だが直近日の87.2％を一組の商品が担った。", "steps": ["ETF-led re-entryとnarrow breadthを維持する", "非IBIT・非ETHA比率を計算する", "ステーブルコイン供給と実質オンチェーン手数料を照合する"], "done": "他商品が3分の1を継続しオンチェーン確認がある場合だけ評価を上げる。"},
+        {"signal": 4, "domain": "ステーブルコインと決済", "title": "件数を経済利用へ置き換える", "why": "数百万件の4セント取引は採用よりループを測っている可能性がある。", "steps": ["独立支払コントローラーを数える", "外部受取人とドル価値を特定する", "30日反復購入と1ドル当たり出力を測る"], "done": "x402スコアカードが五つの分母を報告し件数単独を採用と扱わない。"},
+        {"signal": 5, "domain": "iamrobin.ai", "title": "swarm憲法を公開する", "why": "事件を主導性と限定被害を両立する再利用可能な設計へ変えられる。", "steps": ["確認事実、独立所見、未知を分ける", "四要素の事故機構を説明する", "六統制と四受入試験を四言語で公開する"], "done": "記事が証拠、編集、プライバシー、ビルド、公開経路の関門を通る。"},
+        {"signal": 6, "domain": "AIインフラ・キャリア", "title": "Monarch契約を引受審査する", "why": "報道された460MW契約は計算資源構想を長期信用・引渡しリスクへ変える。", "steps": ["最低支払とCOD救済を記録する", "設備、燃料、許認可、資金を検証する", "テナント破綻後のRubin再リース価値を見積もる"], "done": "報道済み、未確認、引渡し依存、残存価値回収を一枚で分ける。"},
+        {"signal": 7, "domain": "レイトステージ市場", "title": "保護控除後のSheinを値付けする", "why": "一部の下方保護は新規IPO資本の約2倍を消費し得る。", "steps": ["最終価格と保護支払を照合する", "支払後純現金を計算する", "関税、規制、利益率、ガバナンスを割り引く"], "done": "十分な純現金とリスク対価が最終書類で示されない限り参加を見送る。"},
+        {"signal": 8, "domain": "公開株式", "title": "Nvidiaの現金証拠を待つ", "why": "需要と利益率が通過する一方、現金化は大きく遅れた。", "steps": ["コアポジションを維持する", "次の引け後にNVDAとQQQを比較する", "営業CF、売掛金成長、金融エクスポージャーを測る"], "done": "四指標が確定し記録された場合だけ価格決定力の仮説を変える。"}
+      ]
+    }
+  }
+}
