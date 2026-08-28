@@ -1,0 +1,31 @@
+---
+interface Props {
+  variant?: 'banner' | 'corner';
+}
+
+const { variant = 'banner' } = Astro.props;
+const bannerPetals = [
+  [4, 18, 1.05], [13, 60, 0.7], [24, 32, 0.9], [37, 70, 0.62], [48, 14, 0.78],
+  [59, 50, 1.02], [71, 24, 0.68], [82, 64, 0.88], [92, 35, 0.58],
+];
+const cornerPetals = [
+  [18, 10, 0.82], [45, 25, 1.08], [72, 8, 0.65], [28, 56, 0.58],
+  [64, 62, 0.9], [86, 43, 0.54], [48, 84, 0.62],
+];
+const petals = variant === 'banner' ? bannerPetals : cornerPetals;
+---
+
+<div class:list={['sakura-drift', `sakura-drift--${variant}`]} aria-hidden="true">
+  {petals.map(([x, y, scale], index) => (
+    <img
+      class="sakura-drift__petal"
+      src="/visuals/sakura-petal.png"
+      alt=""
+      width="512"
+      height="512"
+      loading="lazy"
+      decoding="async"
+      style={`--petal-index:${index};--petal-x:${x}%;--petal-y:${y}%;--petal-scale:${scale};`}
+    />
+  ))}
+</div>

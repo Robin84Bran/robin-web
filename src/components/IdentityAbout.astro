@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import IdentityLanguageNav from './IdentityLanguageNav.astro';
+import SakuraDrift from './SakuraDrift.astro';
 import { identityAboutAlternates, identityProfiles, type IdentityLocale } from '../data/identity';
 import { socialLinks } from '../data/site';
 import { createIdentityPageSchemas } from '../lib/seo';
@@ -21,11 +22,14 @@ const profile = identityProfiles[locale];
   alternates={identityAboutAlternates}
   schema={createIdentityPageSchemas(profile.locale, profile.aboutPath, profile.aboutTitle, profile.aboutDescription)}
 >
-  <article class="identity-about shell">
+  <article class="identity-about shell" data-locale={locale}>
     <IdentityLanguageNav currentLocale={profile.locale} page="about" />
     <header class="identity-about__header">
+      <SakuraDrift variant="corner" />
       <p class="eyebrow">{profile.eyebrow}</p>
-      <h1>{profile.name}</h1>
+      <h1 class:list={['identity-name', { 'identity-name--ja': locale === 'ja' }]}>
+        {locale === 'ja' ? <><span>Robin Xie</span><span>（謝玢）</span></> : profile.name}
+      </h1>
       <p class="identity-about__native">{profile.nativeName}</p>
       <p class="identity-about__subtitle">{profile.subtitle}</p>
       <p class="identity-about__lead">{profile.aboutLead}</p>

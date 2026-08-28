@@ -43,6 +43,50 @@
   max-width: 45rem;
 }
 
+.sakura-drift {
+  position: relative;
+  overflow: hidden;
+  pointer-events: none;
+  isolation: isolate;
+}
+
+.sakura-drift--banner {
+  min-height: clamp(7.5rem, 16vw, 11rem);
+  background: linear-gradient(90deg, transparent, rgba(232, 194, 195, 0.09) 45%, transparent);
+  border-block: 1px solid var(--line);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.sakura-drift--corner {
+  position: absolute;
+  z-index: 0;
+  top: -2.4rem;
+  right: -1.5rem;
+  width: min(46vw, 22rem);
+  min-width: 14rem;
+  height: 15rem;
+  opacity: 0.72;
+  mask-image: linear-gradient(135deg, #000 8%, rgba(0, 0, 0, 0.86) 55%, transparent 94%);
+  -webkit-mask-image: linear-gradient(135deg, #000 8%, rgba(0, 0, 0, 0.86) 55%, transparent 94%);
+}
+
+.sakura-drift__petal {
+  position: absolute;
+  top: var(--petal-y);
+  left: var(--petal-x);
+  width: clamp(1.1rem, 3vw, 2.7rem);
+  height: auto;
+  opacity: 0.34;
+  transform: translate(-50%, -50%) rotate(calc(var(--petal-index) * 19deg)) scale(var(--petal-scale));
+  transform-origin: 50% 68%;
+}
+
+.sakura-drift--corner .sakura-drift__petal {
+  width: clamp(1.2rem, 4vw, 2.5rem);
+  opacity: 0.3;
+}
+
 .identity-bridge h2,
 .identity-home h1,
 .identity-about h1,
@@ -132,6 +176,10 @@
   max-width: 47rem;
 }
 
+.identity-name--ja span {
+  white-space: nowrap;
+}
+
 .identity-home__native,
 .identity-about__native {
   margin: -0.7rem 0 1.2rem;
@@ -193,7 +241,7 @@
 
 .identity-ouroboros {
   position: relative;
-  width: min(100%, 34rem);
+  width: min(100%, 36rem);
   aspect-ratio: 1;
   margin: clamp(3.5rem, 7vw, 6rem) auto 0;
   isolation: isolate;
@@ -203,28 +251,16 @@
   margin-top: 0;
 }
 
-.identity-ouroboros__line {
+.identity-ouroboros__ring {
   position: absolute;
   z-index: -1;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  overflow: visible;
-  fill: none;
-  stroke: var(--gold);
-  stroke-linecap: round;
-  stroke-width: 1.15;
-}
-
-.identity-ouroboros__line circle {
-  opacity: 0.7;
-  stroke-dasharray: 925 24;
-  transform: rotate(-39deg);
+  inset: 2%;
+  width: 96%;
+  height: 96%;
+  object-fit: contain;
+  opacity: 0.34;
+  filter: saturate(0.58) contrast(0.9);
   transform-origin: center;
-}
-
-.identity-ouroboros__line path {
-  opacity: 0.82;
 }
 
 .identity-ouroboros__center {
@@ -235,12 +271,32 @@
   color: var(--gold-dark);
   font-family: var(--serif);
   font-size: clamp(0.72rem, 1.9vw, 1rem);
-  font-style: italic;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.08em;
   line-height: 1.45;
   text-align: center;
-  text-transform: uppercase;
   transform: translate(-50%, -50%);
+}
+
+.identity-ouroboros__center strong,
+.identity-ouroboros__center small {
+  display: block;
+}
+
+.identity-ouroboros__center strong {
+  font-style: italic;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.identity-ouroboros__center small {
+  margin-top: 0.62rem;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: clamp(0.48rem, 1.2vw, 0.62rem);
+  font-style: normal;
+  letter-spacing: 0.07em;
+  line-height: 1.6;
+  text-transform: uppercase;
 }
 
 .identity-ouroboros ol {
@@ -254,12 +310,13 @@
 .identity-ouroboros li {
   position: absolute;
   display: grid;
-  gap: 0.28rem;
-  width: 34%;
+  gap: 0.26rem;
+  width: 36%;
   padding: 0.55rem 0.7rem;
-  background: color-mix(in srgb, var(--paper) 89%, transparent);
+  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  opacity: 0.58;
   text-align: center;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0.97);
 }
 
 .identity-ouroboros li:nth-child(1) { top: 12.25%; left: 50%; }
@@ -267,11 +324,20 @@
 .identity-ouroboros li:nth-child(3) { top: 87.75%; left: 50%; }
 .identity-ouroboros li:nth-child(4) { top: 50%; left: 16%; }
 
+.identity-ouroboros li > img {
+  width: clamp(1.05rem, 2.8vw, 1.45rem);
+  height: auto;
+  margin: 0 auto 0.06rem;
+  opacity: 0.78;
+  filter: sepia(0.68) saturate(0.72) brightness(0.76);
+}
+
 .identity-ouroboros li span {
   color: var(--gold-dark);
   font-family: var(--mono);
-  font-size: 0.58rem;
-  letter-spacing: 0.12em;
+  font-size: 0.54rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
 }
 
 .identity-ouroboros li strong {
@@ -287,7 +353,13 @@
 }
 
 .identity-about__header {
+  position: relative;
   max-width: 54rem;
+}
+
+.identity-about__header > :not(.sakura-drift) {
+  position: relative;
+  z-index: 1;
 }
 
 .identity-about__lead {
@@ -374,6 +446,10 @@
     align-items: center;
   }
 
+  .identity-bridge > .sakura-drift--banner {
+    grid-column: 1 / -1;
+  }
+
   .identity-bridge > .identity-languages {
     grid-column: 1 / -1;
   }
@@ -401,5 +477,76 @@
   .identity-about__questions {
     position: sticky;
     top: 6.5rem;
+  }
+
+  .identity-name--ja {
+    font-size: clamp(2.8rem, 6.7vw, 5.7rem) !important;
+    white-space: nowrap;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .sakura-drift__petal {
+    animation: sakura-drift 22s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+    animation-delay: calc(var(--petal-index) * -2.8s);
+  }
+
+  .sakura-drift--corner .sakura-drift__petal {
+    animation-name: sakura-corner-drift;
+    animation-duration: 19s;
+  }
+
+  .identity-ouroboros__ring {
+    animation: identity-ring-turn 72s linear infinite;
+  }
+
+  .identity-ouroboros li {
+    animation: identity-stage-breathe 16s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+    animation-delay: calc(var(--orbit-stage) * 4s);
+  }
+
+  .identity-ouroboros__center small {
+    animation: identity-thread-breathe 8s ease-in-out infinite;
+  }
+}
+
+@keyframes sakura-drift {
+  0%, 100% { opacity: 0; transform: translate(-180%, -85%) rotate(-18deg) scale(var(--petal-scale)); }
+  12% { opacity: 0.26; }
+  50% { opacity: 0.42; transform: translate(20%, -12%) rotate(88deg) scale(var(--petal-scale)); }
+  86% { opacity: 0.18; }
+  94% { opacity: 0; transform: translate(220%, 145%) rotate(176deg) scale(var(--petal-scale)); }
+}
+
+@keyframes sakura-corner-drift {
+  0%, 100% { opacity: 0; transform: translate(-70%, -80%) rotate(-24deg) scale(var(--petal-scale)); }
+  16% { opacity: 0.24; }
+  54% { opacity: 0.38; transform: translate(18%, 4%) rotate(74deg) scale(var(--petal-scale)); }
+  88% { opacity: 0.12; }
+  95% { opacity: 0; transform: translate(115%, 96%) rotate(154deg) scale(var(--petal-scale)); }
+}
+
+@keyframes identity-ring-turn {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes identity-stage-breathe {
+  0%, 12%, 100% { opacity: 1; transform: translate(-50%, -50%) scale(1.035); }
+  20%, 92% { opacity: 0.58; transform: translate(-50%, -50%) scale(0.97); }
+}
+
+@keyframes identity-thread-breathe {
+  0%, 100% { opacity: 0.42; }
+  50% { opacity: 0.82; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sakura-drift__petal {
+    opacity: 0.24;
+  }
+
+  .identity-ouroboros li {
+    opacity: 0.82;
   }
 }

@@ -21,12 +21,14 @@ const profile = identityProfiles[locale];
   alternates={identityHomeAlternates}
   schema={createIdentityPageSchemas(profile.locale, profile.homePath, profile.title, profile.description)}
 >
-  <article class="identity-home shell">
+  <article class="identity-home shell" data-locale={locale}>
     <IdentityLanguageNav currentLocale={profile.locale} page="home" />
     <div class="identity-home__hero">
       <div class="identity-home__copy">
         <p class="eyebrow">{profile.eyebrow}</p>
-        <h1>{profile.name}</h1>
+        <h1 class:list={['identity-name', { 'identity-name--ja': locale === 'ja' }]}>
+          {locale === 'ja' ? <><span>Robin Xie</span><span>（謝玢）</span></> : profile.name}
+        </h1>
         <p class="identity-home__native">{profile.nativeName}</p>
         <p class="identity-home__subtitle">{profile.subtitle}</p>
         <div class="identity-home__intro">
