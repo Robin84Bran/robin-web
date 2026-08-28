@@ -1,4 +1,5 @@
 ---
+archiveStatus: "PRESENT"
 title: 現実にも一票がある
 date: 2026-08-28
 updated: 2026-08-22

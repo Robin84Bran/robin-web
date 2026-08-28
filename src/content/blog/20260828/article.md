@@ -1,4 +1,5 @@
 ---
+archiveStatus: "PRESENT"
 title: Reality Gets a Vote
 date: 2026-08-28
 updated: 2026-08-21

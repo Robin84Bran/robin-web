@@ -1,4 +1,5 @@
 ---
+archiveStatus: "PRESENT"
 title: 现实也有一票
 date: 2026-08-28
 updated: 2026-08-22
