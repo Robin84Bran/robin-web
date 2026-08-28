@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import IdentityLanguageNav from './IdentityLanguageNav.astro';
+import { identityHomeAlternates, identityProfiles, type IdentityLocale } from '../data/identity';
+import { createIdentityPageSchemas } from '../lib/seo';
+
+interface Props {
+  locale: Exclude<IdentityLocale, 'en'>;
+}
+
+const { locale } = Astro.props;
+const profile = identityProfiles[locale];
+---
+
+<BaseLayout
+  title={profile.title}
+  description={profile.description}
+  path={profile.homePath}
+  language={profile.locale}
+  alternates={identityHomeAlternates}
+  schema={createIdentityPageSchemas(profile.locale, profile.homePath, profile.title, profile.description)}
+>
+  <article class="identity-home shell">
+    <IdentityLanguageNav currentLocale={profile.locale} page="home" />
+    <div class="identity-home__hero">
+      <div class="identity-home__copy">
+        <p class="eyebrow">{profile.eyebrow}</p>
+        <h1>{profile.name}</h1>
+        <p class="identity-home__native">{profile.nativeName}</p>
+        <p class="identity-home__subtitle">{profile.subtitle}</p>
+        <div class="identity-home__intro">
+          {profile.homeIntro.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+        <a class="quiet-link" href={profile.aboutPath}>{profile.aboutLinkLabel}<span aria-hidden="true">↗</span></a>
+      </div>
+      <figure class="identity-home__portrait">
+        <img src="/photos/hero-watch.jpg" alt={`${profile.name} portrait`} width="829" height="1122" />
+        <figcaption>Time is a loop. <small>HK ↔ US</small></figcaption>
+      </figure>
+    </div>
+    <ol class="identity-axis" aria-label={profile.spine}>
+      {profile.axis.map((item, index) => (
+        <li><span>{String(index + 1).padStart(2, '0')}</span><strong>{item}</strong></li>
+      ))}
+    </ol>
+    <blockquote class="identity-spine">{profile.spine}</blockquote>
+  </article>
+</BaseLayout>

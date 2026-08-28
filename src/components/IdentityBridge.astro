@@ -1,0 +1,25 @@
+---
+import IdentityLanguageNav from './IdentityLanguageNav.astro';
+import { identityProfiles } from '../data/identity';
+
+const profile = identityProfiles.en;
+---
+
+<section class="identity-bridge shell" aria-labelledby="identity-bridge-title">
+  <div class="identity-bridge__copy">
+    <p class="eyebrow">Engineering → FinTech → Capital → AI Systems</p>
+    <h2 id="identity-bridge-title">Systems under uncertainty.</h2>
+    <p>{profile.description}</p>
+    <blockquote>{profile.spine}</blockquote>
+    <a class="quiet-link" href={profile.aboutPath}>{profile.aboutLinkLabel}<span aria-hidden="true">↗</span></a>
+  </div>
+  <div class="identity-bridge__map" aria-label="Robin Xie's career path">
+    {profile.axis.map((item, index) => (
+      <div class="identity-bridge__node">
+        <span>{String(index + 1).padStart(2, '0')}</span>
+        <strong>{item}</strong>
+      </div>
+    ))}
+  </div>
+  <IdentityLanguageNav currentLocale="en" page="home" />
+</section>

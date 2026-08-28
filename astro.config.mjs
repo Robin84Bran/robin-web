@@ -12,7 +12,10 @@ export default defineConfig({
       customPages: ['https://iamrobin.ai/intelligence/supply-chain-map/'],
       filter: (page) => {
         const path = new URL(page).pathname;
-        return ['/', '/portfolio/', '/books/', '/meaning/', '/ouroboros/', '/binary/'].includes(path)
+        return [
+          '/', '/about/', '/zh-hans/', '/zh-hans/about/', '/zh-hant/', '/zh-hant/about/', '/ja/', '/ja/about/',
+          '/portfolio/', '/books/', '/meaning/', '/ouroboros/', '/binary/',
+        ].includes(path)
           || /^\/intelligence\/(?:hardware\/|supply-chain\/|supply-chain-map\/|swarm\/)?$/.test(path)
           || /^\/meaning\/diary\/\d{6}\/\d{4}-\d{2}-\d{2}-[a-z0-9-]+\/$/.test(path)
           || /^\/ouroboros\/\d{6}\/\d{8}\/$/.test(path)

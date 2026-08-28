@@ -1,19 +1,24 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import IdentityGarden from '../components/IdentityGarden.astro';
+import IdentityBridge from '../components/IdentityBridge.astro';
+import { identityHomeAlternates, identityProfiles } from '../data/identity';
 import { createHomeSchemas } from '../lib/seo';
+
+const identity = identityProfiles.en;
 ---
 
 <BaseLayout
-  title="Robin Xie — Engineer · Investor · Builder"
-  description="The visual world of Robin Xie: identity, systems, capital, books, and becoming."
+  title={identity.title}
+  description={identity.description}
   path="/"
+  alternates={identityHomeAlternates}
   schema={createHomeSchemas()}
 >
   <section class="zen-home shell" aria-labelledby="zen-home-title">
     <header class="zen-name">
       <p class="eyebrow">Engineer · Investor · Builder</p>
-      <h1 id="zen-home-title"><span>Ms.</span> Robin Xie</h1>
+      <h1 id="zen-home-title"><span>Ms.</span> Robin Xie<small>谢玢 · 謝玢</small></h1>
     </header>
 
     <figure class="time-portrait">
@@ -28,10 +33,13 @@ import { createHomeSchemas } from '../lib/seo';
 
     <p class="zen-mantra">I seek. <span>I become.</span> I AM.</p>
     <nav class="zen-portals" aria-label="Continue exploring">
+      <a href="/about/">About</a>
+      <span aria-hidden="true">·</span>
       <a href="/portfolio/">Portfolio</a>
       <span aria-hidden="true">·</span>
       <a href="/books/">Books</a>
     </nav>
     <p class="zen-side-note" aria-hidden="true">AMERICAN FRONTIER MIND · JAPANESE ZEN SURFACE</p>
   </section>
+  <IdentityBridge />
 </BaseLayout>

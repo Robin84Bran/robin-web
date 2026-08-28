@@ -6,10 +6,28 @@ const dist = join(root, 'dist');
 const origin = 'https://iamrobin.ai';
 const failures = [];
 const indexableRoutes = new Set([
-  '/', '/portfolio/', '/books/', '/meaning/', '/ouroboros/', '/binary/',
+  '/', '/about/', '/zh-hans/', '/zh-hans/about/', '/zh-hant/', '/zh-hant/about/', '/ja/', '/ja/about/',
+  '/portfolio/', '/books/', '/meaning/', '/ouroboros/', '/binary/',
   '/intelligence/', '/intelligence/hardware/', '/intelligence/supply-chain/',
   '/intelligence/supply-chain-map/', '/intelligence/swarm/',
 ]);
+const identityFamilies = [
+  {
+    en: '/',
+    'zh-Hans': '/zh-hans/',
+    'zh-Hant': '/zh-hant/',
+    ja: '/ja/',
+  },
+  {
+    en: '/about/',
+    'zh-Hans': '/zh-hans/about/',
+    'zh-Hant': '/zh-hant/about/',
+    ja: '/ja/about/',
+  },
+];
+const identityFamilyByRoute = new Map(identityFamilies.flatMap((family) =>
+  Object.entries(family).map(([locale, route]) => [route, { family, locale }]),
+));
 
 function check(condition, message) {
   if (!condition) failures.push(message);
@@ -59,7 +77,7 @@ if (existsSync(dist)) {
   const blogPublications = [...blogRoutes, ...blogTranslationRoutes];
   const publicationRoutes = [...articleRoutes, ...actionFlowPublications, ...blogPublications];
   for (const route of [...publicationRoutes, ...diaryRoutes]) indexableRoutes.add(route);
-  check(routes.size === 16 + publicationRoutes.length + diaryRoutes.length, `expected ${16 + publicationRoutes.length + diaryRoutes.length} HTML routes, found ${routes.size}.`);
+  check(routes.size === 24 + publicationRoutes.length + diaryRoutes.length, `expected ${24 + publicationRoutes.length + diaryRoutes.length} HTML routes, found ${routes.size}.`);
 
   for (const [route, file] of routes) {
     const html = readFileSync(file, 'utf8');
@@ -102,6 +120,20 @@ if (existsSync(dist)) {
       check(html.includes(`"inLanguage":"${locale}"`), `${route}: Article schema language must be ${locale}.`);
     }
 
+    const identityFamily = identityFamilyByRoute.get(route);
+    if (identityFamily) {
+      check(html.includes(`<html lang="${identityFamily.locale}">`), `${route}: identity html lang must be ${identityFamily.locale}.`);
+      for (const [hreflang, alternateRoute] of Object.entries(identityFamily.family)) {
+        const href = new URL(alternateRoute, `${origin}/`).toString();
+        check(html.includes(`rel="alternate" hreflang="${hreflang}" href="${href}"`), `${route}: missing reciprocal identity ${hreflang} alternate.`);
+      }
+      const defaultHref = new URL(identityFamily.family.en, `${origin}/`).toString();
+      check(html.includes(`rel="alternate" hreflang="x-default" href="${defaultHref}"`), `${route}: identity x-default must point to English.`);
+      check(html.includes('"@type":"Person"'), `${route}: identity Person schema missing.`);
+      check(html.includes('"@type":"ProfilePage"'), `${route}: identity ProfilePage schema missing.`);
+      check(html.includes(`"inLanguage":"${identityFamily.locale}"`), `${route}: identity ProfilePage language must be ${identityFamily.locale}.`);
+    }
+
     for (const [, json] of html.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/gi)) {
       try {
         JSON.parse(json);
@@ -119,6 +151,10 @@ if (existsSync(dist)) {
   }
 
   const homepage = readFileSync(routes.get('/'), 'utf8');
+  const about = readFileSync(routes.get('/about/'), 'utf8');
+  const simplifiedHome = readFileSync(routes.get('/zh-hans/'), 'utf8');
+  const traditionalHome = readFileSync(routes.get('/zh-hant/'), 'utf8');
+  const japaneseHome = readFileSync(routes.get('/ja/'), 'utf8');
   const books = readFileSync(routes.get('/books/'), 'utf8');
   const portfolio = readFileSync(routes.get('/portfolio/'), 'utf8');
   const ouroboros = readFileSync(routes.get('/ouroboros/'), 'utf8');
@@ -127,6 +163,11 @@ if (existsSync(dist)) {
   check(homepage.includes('"@type":"Person"'), 'homepage: Person schema missing.');
   check(homepage.includes('"@type":"WebSite"'), 'homepage: WebSite schema missing.');
   check(homepage.includes('"@type":"ProfilePage"'), 'homepage: ProfilePage schema missing.');
+  check(homepage.includes('谢玢') && homepage.includes('謝玢'), 'homepage: visible and machine-readable Chinese identity aliases are missing.');
+  check(about.includes('subsea engineering') && about.includes('FinTech') && about.includes('AI systems'), 'about: resume-backed career spine is missing.');
+  check(simplifiedHome.includes('谢玢 Robin Xie') && simplifiedHome.includes('资本配置'), 'zh-Hans home: canonical Chinese identity copy is missing.');
+  check(traditionalHome.includes('謝玢 Robin Xie') && traditionalHome.includes('資本配置'), 'zh-Hant home: canonical Chinese identity copy is missing.');
+  check(japaneseHome.includes('Robin Xie（謝玢）') && japaneseHome.includes('AIシステム'), 'ja home: canonical Japanese identity copy is missing.');
   check((books.match(/"@type":"Book"/g) ?? []).length === 4, 'books: expected four Book schemas.');
   check(portfolio.includes('"@type":"CollectionPage"'), 'portfolio: CollectionPage schema missing.');
   check(ouroboros.includes('"@type":"CollectionPage"'), 'ouroboros: CollectionPage schema missing.');
@@ -219,6 +260,9 @@ if (existsSync(dist)) {
   for (const route of indexableRoutes) {
     check(sitemap.includes(new URL(route, `${origin}/`).toString()), `sitemap: missing ${route}.`);
   }
+  check(!sitemap.includes('/cn/'), 'sitemap: legacy /cn/ must not be canonical.');
+  check(!sitemap.includes('/tw/'), 'sitemap: legacy /tw/ must not be canonical.');
+  check(!sitemap.includes('/jp/'), 'sitemap: legacy /jp/ must not be canonical.');
   check(!sitemap.includes('/identity/'), 'sitemap: identity placeholders must be excluded.');
   check(!sitemap.includes('/projects/'), 'sitemap: hidden projects route must be excluded.');
   check(!sitemap.includes('/ouroborous/'), 'sitemap: misspelled alias must stay excluded.');
@@ -229,6 +273,8 @@ if (existsSync(dist)) {
 
   const worker = readFileSync(join(dist, '_worker.js'), 'utf8');
   check(worker.includes('legacyIdentity'), 'edge: legacy /identity/{word}/ redirects are missing.');
+  check(worker.includes('legacyLocaleRedirects'), 'edge: legacy language redirects are missing.');
+  check(worker.includes("new URL('/404.html'"), 'edge: HTML 404 fallback is missing.');
   check(worker.includes("'Content-Signal': 'search=yes, ai-input=yes, ai-train=yes, use=reference'"), 'edge: permissive Content-Signal response header is missing.');
   check(worker.includes('rel="describedby"'), 'edge: llms.txt Link discovery header is missing.');
 }

@@ -41,6 +41,20 @@ function redirect(url, status) {
   });
 }
 
+const legacyLocaleRedirects = new Map([
+  ['/cn/', '/zh-hans/'],
+  ['/cn/about/', '/zh-hans/about/'],
+  ['/tw/', '/zh-hant/'],
+  ['/tw/about/', '/zh-hant/about/'],
+  ['/jp/', '/ja/'],
+  ['/jp/about/', '/ja/about/'],
+  ['/cn/books/', '/books/'],
+  ['/cn/projects/', '/projects/'],
+  ['/cn/writing/', '/binary/'],
+  ['/cn/now/', '/network/'],
+  ['/cn/contact/', '/network/'],
+]);
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
@@ -59,13 +73,43 @@ export default {
       return redirect(url, 301);
     }
 
+    const normalizedLegacyPath = url.pathname.endsWith('/') ? url.pathname : `${url.pathname}/`;
+    const localizedDestination = legacyLocaleRedirects.get(normalizedLegacyPath);
+    if (localizedDestination) {
+      url.pathname = localizedDestination;
+      return redirect(url, 301);
+    }
+
+    if (/^\/cn\/books\/[^/]+\/?$/.test(url.pathname)) {
+      url.pathname = '/books/';
+      return redirect(url, 301);
+    }
+
+    if (/^\/cn\/projects\/[^/]+\/?$/.test(url.pathname)) {
+      url.pathname = '/projects/';
+      return redirect(url, 301);
+    }
+
     const legacyIdentity = url.pathname.match(/^\/identity\/(identity|asymmetry|meaning|resonance|ouroboros|binary|intelligence|network)\/?$/);
     if (legacyIdentity) {
       url.pathname = `/${legacyIdentity[1]}/`;
       return redirect(url, 301);
     }
 
-    const response = await env.ASSETS.fetch(request);
+    let response = await env.ASSETS.fetch(request);
+    if (response.status === 404 && url.pathname !== '/404.html') {
+      const notFoundUrl = new URL('/404.html', url);
+      const notFound = await env.ASSETS.fetch(new Request(notFoundUrl, {
+        method: request.method === 'HEAD' ? 'HEAD' : 'GET',
+        headers: request.headers,
+      }));
+      if (notFound.ok) {
+        response = new Response(request.method === 'HEAD' ? null : notFound.body, {
+          status: 404,
+          headers: notFound.headers,
+        });
+      }
+    }
     const headers = new Headers(response.headers);
     const responseSecurityHeaders = url.pathname === '/intelligence/supply-chain-map/'
       ? embeddedMapSecurityHeaders

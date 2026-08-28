@@ -1,0 +1,69 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import IdentityLanguageNav from './IdentityLanguageNav.astro';
+import { identityAboutAlternates, identityProfiles, type IdentityLocale } from '../data/identity';
+import { socialLinks } from '../data/site';
+import { createIdentityPageSchemas } from '../lib/seo';
+
+interface Props {
+  locale: IdentityLocale;
+}
+
+const { locale } = Astro.props;
+const profile = identityProfiles[locale];
+---
+
+<BaseLayout
+  title={profile.aboutTitle}
+  description={profile.aboutDescription}
+  path={profile.aboutPath}
+  language={profile.locale}
+  alternates={identityAboutAlternates}
+  schema={createIdentityPageSchemas(profile.locale, profile.aboutPath, profile.aboutTitle, profile.aboutDescription)}
+>
+  <article class="identity-about shell">
+    <IdentityLanguageNav currentLocale={profile.locale} page="about" />
+    <header class="identity-about__header">
+      <p class="eyebrow">{profile.eyebrow}</p>
+      <h1>{profile.name}</h1>
+      <p class="identity-about__native">{profile.nativeName}</p>
+      <p class="identity-about__subtitle">{profile.subtitle}</p>
+      <p class="identity-about__lead">{profile.aboutLead}</p>
+    </header>
+
+    <ol class="identity-axis identity-axis--about" aria-label={profile.spine}>
+      {profile.axis.map((item, index) => (
+        <li><span>{String(index + 1).padStart(2, '0')}</span><strong>{item}</strong></li>
+      ))}
+    </ol>
+
+    <blockquote class="identity-spine identity-spine--about">{profile.spine}</blockquote>
+
+    <div class="identity-about__body">
+      <div class="identity-about__story">
+        {profile.aboutParagraphs.map((paragraph) => <p>{paragraph}</p>)}
+      </div>
+      <aside class="identity-about__questions">
+        <section>
+          <p class="eyebrow">01</p>
+          <h2>{profile.questionsTitle}</h2>
+          <ul>{profile.questions.map((question) => <li>{question}</li>)}</ul>
+        </section>
+        <section>
+          <p class="eyebrow">02</p>
+          <h2>{profile.principlesTitle}</h2>
+          <ul>{profile.principles.map((principle) => <li>{principle}</li>)}</ul>
+        </section>
+      </aside>
+    </div>
+
+    <footer class="identity-about__footer">
+      <a class="quiet-link" href={profile.homePath}>{profile.homeLinkLabel}<span aria-hidden="true">←</span></a>
+      <nav aria-label="Robin Xie public profiles">
+        <a href={socialLinks.linkedin} rel="noreferrer" target="_blank">LinkedIn ↗</a>
+        <a href={socialLinks.medium} rel="noreferrer" target="_blank">Medium ↗</a>
+        <a href={socialLinks.github} rel="noreferrer" target="_blank">GitHub ↗</a>
+      </nav>
+    </footer>
+  </article>
+</BaseLayout>

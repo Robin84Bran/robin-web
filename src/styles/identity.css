@@ -1,0 +1,319 @@
+.zen-name h1 small {
+  display: block;
+  margin-top: 0.72rem;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.16em;
+  font-weight: 550;
+  letter-spacing: 0.14em;
+}
+
+.identity-languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 1rem;
+  align-items: center;
+}
+
+.identity-languages a {
+  padding-block: 0.28rem;
+  color: var(--muted);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+}
+
+.identity-languages a:hover,
+.identity-languages a[aria-current="page"] {
+  color: var(--gold-dark);
+}
+
+.identity-languages a[aria-current="page"] {
+  border-bottom: 1px solid var(--gold);
+}
+
+.identity-bridge {
+  display: grid;
+  gap: 2.5rem;
+  padding-block: clamp(5rem, 9vw, 8rem);
+  border-top: 1px solid var(--line);
+}
+
+.identity-bridge__copy {
+  max-width: 45rem;
+}
+
+.identity-bridge h2,
+.identity-home h1,
+.identity-about h1,
+.not-found h1 {
+  margin-bottom: 1.5rem;
+  font-family: var(--serif);
+  font-size: clamp(2.8rem, 8vw, 6.5rem);
+  font-weight: 400;
+  letter-spacing: -0.055em;
+  line-height: 0.92;
+}
+
+.identity-bridge__copy > p:not(.eyebrow),
+.identity-home__intro,
+.identity-about__lead,
+.not-found > p:not(.eyebrow) {
+  color: var(--muted);
+  font-family: var(--serif);
+  font-size: clamp(1.08rem, 2.2vw, 1.42rem);
+  line-height: 1.65;
+}
+
+.identity-bridge blockquote,
+.identity-spine {
+  margin: 2rem 0;
+  padding-left: 1.35rem;
+  color: var(--gold-dark);
+  font-family: var(--serif);
+  font-size: clamp(1.18rem, 2.4vw, 1.68rem);
+  font-style: italic;
+  line-height: 1.55;
+  border-left: 1px solid var(--gold);
+}
+
+.identity-bridge__map,
+.identity-axis {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  border-block: 1px solid var(--line);
+  list-style: none;
+}
+
+.identity-bridge__node,
+.identity-axis li {
+  display: grid;
+  gap: 0.65rem;
+  min-height: 7.5rem;
+  padding: 1.2rem;
+  align-content: center;
+  border-right: 1px solid var(--line);
+}
+
+.identity-bridge__node:nth-child(2n),
+.identity-axis li:nth-child(2n) {
+  border-right: 0;
+}
+
+.identity-bridge__node span,
+.identity-axis span {
+  color: var(--gold-dark);
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+}
+
+.identity-bridge__node strong,
+.identity-axis strong {
+  font-family: var(--serif);
+  font-size: clamp(1.05rem, 2.4vw, 1.45rem);
+  font-weight: 500;
+}
+
+.identity-home,
+.identity-about {
+  padding-block: clamp(2.2rem, 6vw, 5rem) clamp(5rem, 9vw, 8rem);
+}
+
+.identity-home > .identity-languages,
+.identity-about > .identity-languages {
+  margin-bottom: clamp(3rem, 7vw, 6rem);
+}
+
+.identity-home__hero {
+  display: grid;
+  gap: 3rem;
+  align-items: center;
+}
+
+.identity-home__copy {
+  max-width: 47rem;
+}
+
+.identity-home__native,
+.identity-about__native {
+  margin: -0.7rem 0 1.2rem;
+  color: var(--gold-dark);
+  font-size: 0.78rem;
+  font-weight: 650;
+  letter-spacing: 0.15em;
+}
+
+.identity-home__subtitle,
+.identity-about__subtitle {
+  color: var(--muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.identity-home__intro {
+  max-width: 40rem;
+  margin-block: 2rem;
+}
+
+.identity-home__portrait {
+  position: relative;
+  width: min(100%, 24rem);
+  margin: 0 auto;
+}
+
+.identity-home__portrait img {
+  width: 100%;
+  filter: saturate(0.72) contrast(0.96) sepia(0.035);
+  mask-image: radial-gradient(ellipse 47% 51% at 60.4% 50%, #000 55%, rgba(0, 0, 0, 0.8) 72%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 47% 51% at 60.4% 50%, #000 55%, rgba(0, 0, 0, 0.8) 72%, transparent 100%);
+}
+
+.identity-home__portrait figcaption {
+  color: var(--muted);
+  font-family: var(--serif);
+  font-size: 0.86rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.identity-home__portrait figcaption small {
+  margin-left: 0.55rem;
+  font-family: var(--sans);
+  font-size: 0.6rem;
+  font-style: normal;
+  letter-spacing: 0.12em;
+}
+
+.identity-axis {
+  margin-top: clamp(3.5rem, 7vw, 6rem);
+}
+
+.identity-spine {
+  max-width: 60rem;
+  margin-block: clamp(3rem, 7vw, 6rem) 0;
+}
+
+.identity-about__header {
+  max-width: 54rem;
+}
+
+.identity-about__lead {
+  max-width: 42rem;
+  margin-top: 2.5rem;
+}
+
+.identity-about__body {
+  display: grid;
+  gap: 4rem;
+  margin-top: clamp(4rem, 9vw, 8rem);
+}
+
+.identity-about__story {
+  max-width: 44rem;
+  font-family: var(--serif);
+  font-size: clamp(1.04rem, 1.8vw, 1.23rem);
+  line-height: 1.82;
+}
+
+.identity-about__story p {
+  margin-bottom: 1.55rem;
+}
+
+.identity-about__questions {
+  display: grid;
+  gap: 1rem;
+  align-self: start;
+}
+
+.identity-about__questions section {
+  padding: 1.5rem;
+  background: rgba(253, 251, 247, 0.56);
+  border: 1px solid var(--line);
+}
+
+.identity-about__questions h2 {
+  margin-bottom: 1rem;
+  font-family: var(--serif);
+  font-size: clamp(1.55rem, 3vw, 2.25rem);
+  font-weight: 500;
+}
+
+.identity-about__questions ul {
+  display: grid;
+  gap: 0.7rem;
+  margin: 0;
+  padding: 0;
+  color: var(--muted);
+  list-style: none;
+}
+
+.identity-about__footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 3rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: clamp(4rem, 8vw, 7rem);
+  padding-top: 1.8rem;
+  border-top: 1px solid var(--line);
+}
+
+.identity-about__footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem 1.2rem;
+}
+
+.identity-about__footer nav a {
+  color: var(--muted);
+  font-size: 0.72rem;
+  text-decoration: none;
+}
+
+.not-found {
+  min-height: 65svh;
+  padding-block: clamp(5rem, 12vw, 10rem);
+}
+
+@media (min-width: 46rem) {
+  .identity-bridge {
+    grid-template-columns: minmax(0, 1.1fr) minmax(22rem, 0.9fr);
+    align-items: center;
+  }
+
+  .identity-bridge > .identity-languages {
+    grid-column: 1 / -1;
+  }
+
+  .identity-bridge__map,
+  .identity-axis {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .identity-bridge__node:nth-child(2n),
+  .identity-axis li:nth-child(2n) {
+    border-right: 1px solid var(--line);
+  }
+
+  .identity-bridge__node:last-child,
+  .identity-axis li:last-child {
+    border-right: 0;
+  }
+
+  .identity-home__hero {
+    grid-template-columns: minmax(0, 1.2fr) minmax(18rem, 0.8fr);
+  }
+
+  .identity-about__body {
+    grid-template-columns: minmax(0, 1.2fr) minmax(18rem, 0.8fr);
+  }
+
+  .identity-about__questions {
+    position: sticky;
+    top: 6.5rem;
+  }
+}

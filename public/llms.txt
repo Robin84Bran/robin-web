@@ -1,6 +1,6 @@
 # Robin Xie
 
-> Robin Xie works across intelligent systems, capital, energy, FinTech, and human meaning.
+> Robin Xie, also known as 谢玢 and 謝玢, works across subsea engineering, FinTech, capital allocation, artificial intelligence, energy, robotics, and programmable finance.
 
 ## Welcome
 
@@ -11,6 +11,10 @@ This public site welcomes search indexing, AI retrieval, and model training. Ple
 ## Start Here
 
 - [Home](https://iamrobin.ai/): Canonical identity and the I AM ROBIN map.
+- [About Robin Xie](https://iamrobin.ai/about/): The path from subsea engineering and FinTech to capital allocation and AI systems.
+- [简体中文](https://iamrobin.ai/zh-hans/): 谢玢 Robin Xie 的简体中文身份页。
+- [繁體中文](https://iamrobin.ai/zh-hant/): 謝玢 Robin Xie 的繁體中文身份頁。
+- [日本語](https://iamrobin.ai/ja/): Robin Xie（謝玢）の日本語プロフィール。
 - [Portfolio](https://iamrobin.ai/portfolio/): The institutions, systems, and frontiers in Robin's orbit.
 - [Ouroboros](https://iamrobin.ai/ouroboros/): Daily signals, action flows, and action items.
 - [Binary Blog](https://iamrobin.ai/binary/): Build, Invest, and Joy essays on a Monday, Wednesday, Friday rhythm.
@@ -22,7 +26,7 @@ This public site welcomes search indexing, AI retrieval, and model training. Ple
 
 - Name: Robin Xie
 - Also known as: Bin "Robin" Xie · 谢玢 · 謝玢 · nanobin
-- Roles: Engineer · Investor · Writer · Builder
+- Roles: Engineer · Investor · AI System Builder · Writer
 - Canonical URL: https://iamrobin.ai/
 - [Official biography](https://www.tideisun.com/en/robin)
 - [LinkedIn](https://www.linkedin.com/in/nanobin)

@@ -1,4 +1,5 @@
 import { books, portfolioOrbitNodes, socialLinks } from '../data/site';
+import { identityKnowledge, identityProfiles, type IdentityLocale } from '../data/identity';
 
 export type SchemaNode = Record<string, unknown>;
 
@@ -13,7 +14,8 @@ export function absoluteUrl(path = '/') {
   return new URL(path, `${SITE_URL}/`).toString();
 }
 
-export function createPersonSchema(): SchemaNode {
+export function createPersonSchema(language: IdentityLocale = 'en'): SchemaNode {
+  const identity = identityProfiles[language];
   return {
     '@context': 'https://schema.org',
     '@type': 'Person',
@@ -22,9 +24,9 @@ export function createPersonSchema(): SchemaNode {
     honorificPrefix: 'Ms.',
     alternateName: ['Ms. Robin Xie', 'Bin “Robin” Xie', '谢玢', '謝玢', 'nanobin'],
     pronouns: 'she/her',
-    description:
-      'Robin Xie is an engineer, investor, writer, and builder working across intelligent systems, capital, and human meaning.',
-    jobTitle: ['Engineer', 'Investor', 'Writer', 'Builder'],
+    description: identity.description,
+    jobTitle: ['Engineer', 'Investor', 'AI System Builder', 'Writer'],
+    knowsAbout: identityKnowledge,
     url: absoluteUrl('/'),
     image: absoluteUrl(DEFAULT_IMAGE),
     sameAs: [socialLinks.official, socialLinks.linkedin, socialLinks.github, socialLinks.medium],
@@ -40,25 +42,45 @@ export function createWebsiteSchema(): SchemaNode {
     alternateName: 'I AM ROBIN',
     url: absoluteUrl('/'),
     description: 'The visual world of Robin Xie: identity, systems, capital, books, and becoming.',
-    inLanguage: 'en',
+    inLanguage: ['en', 'zh-Hans', 'zh-Hant', 'ja'],
     publisher: { '@id': personId },
   };
 }
 
 export function createHomeSchemas(): SchemaNode[] {
+  const profile = identityProfiles.en;
+  return createIdentityPageSchemas('en', '/', profile.title, profile.description);
+}
+
+export function createIdentityPageSchemas(
+  language: IdentityLocale,
+  path: string,
+  name: string,
+  description: string,
+): SchemaNode[] {
+  const identity = identityProfiles[language];
+  const url = absoluteUrl(path);
+  const breadcrumbItems = path === identity.homePath
+    ? [{ name: identity.name, path: identity.homePath }]
+    : [
+        { name: language === 'en' ? 'Home' : identity.name, path: identity.homePath },
+        { name: language === 'en' ? 'About Robin Xie' : identity.aboutLinkLabel, path },
+      ];
   return [
-    createPersonSchema(),
+    createPersonSchema(language),
     createWebsiteSchema(),
     {
       '@context': 'https://schema.org',
       '@type': 'ProfilePage',
-      '@id': `${absoluteUrl('/')}#profile`,
-      name: 'Robin Xie — Engineer, Investor & Builder',
-      url: absoluteUrl('/'),
+      '@id': `${url}#profile`,
+      name,
+      description,
+      url,
       mainEntity: { '@id': personId },
       isPartOf: { '@id': websiteId },
-      inLanguage: 'en',
+      inLanguage: language,
     },
+    createBreadcrumbSchema(breadcrumbItems),
   ];
 }
 

@@ -1,0 +1,26 @@
+---
+import { identityProfiles, type IdentityLocale, type IdentityProfile } from '../data/identity';
+
+interface Props {
+  currentLocale: IdentityLocale;
+  page: 'home' | 'about';
+}
+
+const { currentLocale, page } = Astro.props;
+const current = identityProfiles[currentLocale];
+---
+
+<nav class="identity-languages" aria-label={current.languageNavLabel}>
+  {
+    (Object.values(identityProfiles) as IdentityProfile[]).map((profile) => (
+      <a
+        aria-current={profile.locale === currentLocale ? 'page' : undefined}
+        href={page === 'home' ? profile.homePath : profile.aboutPath}
+        hreflang={profile.locale}
+        lang={profile.locale}
+      >
+        {profile.languageLabel}
+      </a>
+    ))
+  }
+</nav>
