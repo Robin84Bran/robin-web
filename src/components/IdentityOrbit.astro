@@ -1,0 +1,25 @@
+---
+interface Props {
+  items: string[];
+  label: string;
+  centerLabel: string;
+}
+
+const { items, label, centerLabel } = Astro.props;
+---
+
+<div class="identity-ouroboros" role="img" aria-label={label}>
+  <svg class="identity-ouroboros__line" viewBox="0 0 400 400" aria-hidden="true">
+    <circle cx="200" cy="200" r="151"></circle>
+    <path d="M 304 91 L 326 94 L 318 115"></path>
+  </svg>
+  <span class="identity-ouroboros__center" aria-hidden="true">{centerLabel}</span>
+  <ol aria-hidden="true">
+    {items.map((item, index) => (
+      <li>
+        <span>{String(index + 1).padStart(2, '0')}</span>
+        <strong>{item}</strong>
+      </li>
+    ))}
+  </ol>
+</div>

@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import IdentityLanguageNav from './IdentityLanguageNav.astro';
+import IdentityOrbit from './IdentityOrbit.astro';
 import { identityHomeAlternates, identityProfiles, type IdentityLocale } from '../data/identity';
 import { createIdentityPageSchemas } from '../lib/seo';
 
@@ -38,11 +39,7 @@ const profile = identityProfiles[locale];
         <figcaption>Time is a loop. <small>HK ↔ US</small></figcaption>
       </figure>
     </div>
-    <ol class="identity-axis" aria-label={profile.spine}>
-      {profile.axis.map((item, index) => (
-        <li><span>{String(index + 1).padStart(2, '0')}</span><strong>{item}</strong></li>
-      ))}
-    </ol>
+    <IdentityOrbit items={profile.axis} label={profile.spine} centerLabel={profile.orbitLabel} />
     <blockquote class="identity-spine">{profile.spine}</blockquote>
   </article>
 </BaseLayout>

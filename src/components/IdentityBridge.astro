@@ -1,5 +1,6 @@
 ---
 import IdentityLanguageNav from './IdentityLanguageNav.astro';
+import IdentityOrbit from './IdentityOrbit.astro';
 import { identityProfiles } from '../data/identity';
 
 const profile = identityProfiles.en;
@@ -13,13 +14,6 @@ const profile = identityProfiles.en;
     <blockquote>{profile.spine}</blockquote>
     <a class="quiet-link" href={profile.aboutPath}>{profile.aboutLinkLabel}<span aria-hidden="true">↗</span></a>
   </div>
-  <div class="identity-bridge__map" aria-label="Robin Xie's career path">
-    {profile.axis.map((item, index) => (
-      <div class="identity-bridge__node">
-        <span>{String(index + 1).padStart(2, '0')}</span>
-        <strong>{item}</strong>
-      </div>
-    ))}
-  </div>
+  <IdentityOrbit items={profile.axis} label={profile.spine} centerLabel={profile.orbitLabel} />
   <IdentityLanguageNav currentLocale="en" page="home" />
 </section>

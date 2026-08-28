@@ -50,6 +50,8 @@ html {
 .time-portrait img {
   width: 100%;
   height: auto;
+  aspect-ratio: 829 / 1122;
+  object-fit: contain;
   filter: saturate(0.72) contrast(0.96) sepia(0.035);
   mask-image: radial-gradient(ellipse 47% 51% at var(--watch-x) var(--watch-y), #000 55%, rgba(0, 0, 0, 0.8) 72%, transparent 100%);
   -webkit-mask-image: radial-gradient(ellipse 47% 51% at var(--watch-x) var(--watch-y), #000 55%, rgba(0, 0, 0, 0.8) 72%, transparent 100%);
