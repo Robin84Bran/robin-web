@@ -160,6 +160,19 @@ const diary = defineCollection({
   }),
 });
 
+const network = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/network' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    heading: z.string(),
+    eyebrow: z.string(),
+    path: z.string(),
+    locale: z.enum(['en', 'zh-Hans', 'zh-Hant', 'ja']),
+    translationReview: z.enum(['PASS']).optional(),
+  }),
+});
+
 export const collections = {
   dailyBriefing,
   dailyBriefingTranslation,
@@ -168,4 +181,5 @@ export const collections = {
   blog,
   blogTranslation,
   diary,
+  network,
 };

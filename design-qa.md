@@ -30,4 +30,16 @@ Date: 2026-08-28 HKT
 - `public/visuals/ouroboros-ring.png`: generated specifically for the identity orbit; transparent 900 × 900 PNG.
 - `public/icons/*.svg`: Phosphor Icons Core 2.1.1 regular icons; MIT license retained in `public/icons/PHOSPHOR-LICENSE`.
 
+## Multilingual Network release
+
+Date: 2026-08-29 HKT
+
+- Compared the existing live Network page and the revised local page at the same desktop viewport.
+- The new long-form page preserves the existing paper, ink, muted-gold, serif, masthead, language-navigation, and footer system.
+- English, Simplified Chinese, Traditional Chinese, and Japanese routes each render one H1, five section H2s, and the same 17 external public-record links.
+- All four routes were checked at 390 × 844 with no horizontal overflow.
+- Japanese copy remains readable and balanced at the mobile breakpoint without widening the shared layout.
+- `pnpm run check` passed with 0 errors, 0 warnings, and 0 hints.
+- `pnpm run release:check` passed privacy, observability, type, build, SEO, canonical, hreflang, robots, schema, sitemap, internal-link, and edge-file checks.
+
 final result: passed

@@ -23,7 +23,7 @@ linkedinUrl: null
 thesis: "A production strategy remains operable only when statistical edge, market structure, execution reality, and the human operator can coexist under one explicit contract."
 ---
 
-# The Alligator Learned to Bite
+## The Alligator Learned to Bite
 
 By late May, the Alligator had quietly transformed into a functioning animal. It had survived the fragile infancy of the local sandbox and cleared the unforgiving machinery of production plumbing. It had lived through stale data feeds, exchange rate limits, real-time position reconciliation, watchdog timers, and the mildly humiliating discovery that my idea of a modest risk budget required the physical body of a small whale just to handle margin requirements. Now, at long last, it was executing the precise directive I had forged it for. It was trading live capital.
 

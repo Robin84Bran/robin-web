@@ -13,7 +13,10 @@ export default defineConfig({
       filter: (page) => {
         const path = new URL(page).pathname;
         return [
-          '/', '/about/', '/zh-hans/', '/zh-hans/about/', '/zh-hant/', '/zh-hant/about/', '/ja/', '/ja/about/',
+          '/', '/about/', '/network/',
+          '/zh-hans/', '/zh-hans/about/', '/zh-hans/network/',
+          '/zh-hant/', '/zh-hant/about/', '/zh-hant/network/',
+          '/ja/', '/ja/about/', '/ja/network/',
           '/portfolio/', '/books/', '/meaning/', '/ouroboros/', '/binary/',
         ].includes(path)
           || /^\/intelligence\/(?:hardware\/|supply-chain\/|supply-chain-map\/|swarm\/)?$/.test(path)

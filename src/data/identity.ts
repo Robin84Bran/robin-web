@@ -5,6 +5,7 @@ export interface IdentityProfile {
   languageLabel: string;
   homePath: string;
   aboutPath: string;
+  networkPath: string;
   name: string;
   nativeName: string;
   title: string;
@@ -34,6 +35,7 @@ export const identityProfiles: Record<IdentityLocale, IdentityProfile> = {
     languageLabel: 'English',
     homePath: '/',
     aboutPath: '/about/',
+    networkPath: '/network/',
     name: 'Robin Xie',
     nativeName: '谢玢 · 謝玢',
     title: 'Robin Xie (谢玢) — Engineer · Investor · AI System Builder',
@@ -72,6 +74,7 @@ export const identityProfiles: Record<IdentityLocale, IdentityProfile> = {
     languageLabel: '简体中文',
     homePath: '/zh-hans/',
     aboutPath: '/zh-hans/about/',
+    networkPath: '/zh-hans/network/',
     name: '谢玢 Robin Xie',
     nativeName: '谢玢',
     title: '谢玢 Robin Xie｜工程、投资、人工智能与资本配置',
@@ -112,6 +115,7 @@ export const identityProfiles: Record<IdentityLocale, IdentityProfile> = {
     languageLabel: '繁體中文',
     homePath: '/zh-hant/',
     aboutPath: '/zh-hant/about/',
+    networkPath: '/zh-hant/network/',
     name: '謝玢 Robin Xie',
     nativeName: '謝玢',
     title: '謝玢 Robin Xie｜工程、投資、人工智能與資本配置',
@@ -149,6 +153,7 @@ export const identityProfiles: Record<IdentityLocale, IdentityProfile> = {
     languageLabel: '日本語',
     homePath: '/ja/',
     aboutPath: '/ja/about/',
+    networkPath: '/ja/network/',
     name: 'Robin Xie（謝玢）',
     nativeName: 'ロビン・シエ',
     title: 'Robin Xie（謝玢）｜エンジニアリング、投資、AIシステム',
@@ -191,6 +196,11 @@ export const identityHomeAlternates = (Object.values(identityProfiles) as Identi
 export const identityAboutAlternates = (Object.values(identityProfiles) as IdentityProfile[]).map((profile) => ({
   hreflang: profile.locale,
   path: profile.aboutPath,
+}));
+
+export const networkAlternates = (Object.values(identityProfiles) as IdentityProfile[]).map((profile) => ({
+  hreflang: profile.locale,
+  path: profile.networkPath,
 }));
 
 export const identityKnowledge = [

@@ -23,7 +23,7 @@ linkedinUrl: null
 thesis: "A quantitative operator becomes an allocator by updating beliefs incrementally, keeping capital conditional, and designing simply while operating for inevitable failure."
 ---
 
-# The Bayesian Alligator
+## The Bayesian Alligator
 
 ## Act I: Three Losses and No Constitutional Crisis
 Three red marks illuminated the terminal back-to-back: LIVE_00003, LIVE_00004, and LIVE_00005. Three consecutive P4 executions had collapsed straight into their stop loss limits. In the standard folklore of retail trading, this moment demands immediate panic. It invites dramatic midnight rewrites, furious adjustments to parameter grids, and a frantic attempt to invent Production V5 before sunrise.

@@ -23,7 +23,7 @@ linkedinUrl: null
 thesis: "A production trading system is robust when exchange truth, telemetry, and accounting reconcile explicitly, and every unknown state fails closed instead of becoming a clean fiction."
 ---
 
-# The JSON That Cost 1.5R
+## The JSON That Cost 1.5R
 
 ## Act I: Production V4 Goes Live
 Production V4 went live with the solemnity of a deep-space launch sequence.

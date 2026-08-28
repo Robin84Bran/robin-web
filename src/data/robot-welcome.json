@@ -17,6 +17,7 @@
     { "label": "繁體中文", "path": "/zh-hant/", "description": "謝玢 Robin Xie 的繁體中文身份頁。" },
     { "label": "日本語", "path": "/ja/", "description": "Robin Xie（謝玢）の日本語プロフィール。" },
     { "label": "Portfolio", "path": "/portfolio/", "description": "The institutions, systems, and frontiers in Robin's orbit." },
+    { "label": "Network", "path": "/network/", "description": "A public record of projects, companies, experiments, and media work." },
     { "label": "Ouroboros", "path": "/ouroboros/", "description": "Daily signals, action flows, and action items." },
     { "label": "Binary Blog", "path": "/binary/", "description": "Build, Invest, and Joy essays on a Monday, Wednesday, Friday rhythm." },
     { "label": "Intelligence", "path": "/intelligence/", "description": "AI infrastructure, swarm systems, hardware, and supply-chain maps." },

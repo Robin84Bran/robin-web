@@ -53,6 +53,10 @@ const legacyLocaleRedirects = new Map([
   ['/cn/writing/', '/binary/'],
   ['/cn/now/', '/network/'],
   ['/cn/contact/', '/network/'],
+  ['/books/agi-awakening/', '/books/'],
+  ['/books/build-1-billion-block/', '/books/'],
+  ['/books/longevity-cheat-code/', '/books/'],
+  ['/books/derivatives/', '/books/'],
 ]);
 
 export default {

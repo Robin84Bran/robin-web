@@ -1,0 +1,66 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import IdentityLanguageNav from './IdentityLanguageNav.astro';
+import { identityProfiles, networkAlternates, type IdentityLocale } from '../data/identity';
+import { createNetworkSchemas } from '../lib/seo';
+
+interface Props {
+  locale: IdentityLocale;
+}
+
+const { locale } = Astro.props;
+const profile = identityProfiles[locale];
+const entry = (await getCollection('network')).find((item) => item.data.locale === locale);
+
+if (!entry) throw new Error(`Missing Network content for ${locale}.`);
+
+const { Content } = await render(entry);
+const directoryLabel = locale === 'en'
+  ? 'project directory'
+  : locale === 'zh-Hans'
+    ? '项目与公开记录'
+    : locale === 'zh-Hant'
+      ? '項目與公開記錄'
+      : 'プロジェクトと公開記録';
+const backLabel = locale === 'en'
+  ? 'I AM ROBIN'
+  : locale === 'ja'
+    ? 'ホームへ'
+    : '返回首页';
+---
+
+<BaseLayout
+  title={entry.data.title}
+  description={entry.data.description}
+  path={entry.data.path}
+  language={entry.data.locale}
+  alternates={networkAlternates}
+  schema={createNetworkSchemas(entry.data.locale, entry.data.path, entry.data.title, entry.data.description)}
+>
+  <article class="network-page shell" data-locale={locale}>
+    <IdentityLanguageNav currentLocale={locale} page="network" />
+    <header class="network-page__header">
+      <a class="directory-back" href={profile.homePath}>← {backLabel}</a>
+      <div class="directory-letter directory-letter--silver" aria-hidden="true">N</div>
+      <p class="eyebrow">08 / 08 · {directoryLabel}</p>
+      <h1>{entry.data.heading}</h1>
+    </header>
+
+    <div class="network-prose">
+      <Content />
+    </div>
+
+    <nav class="network-page__cycle" aria-label={profile.languageNavLabel}>
+      <a href={profile.homePath}>← {profile.homeLinkLabel}</a>
+      <a href={profile.aboutPath}>{profile.aboutLinkLabel} →</a>
+    </nav>
+  </article>
+</BaseLayout>
+
+<script>
+  document.querySelectorAll<HTMLAnchorElement>('.network-prose a[href^="http"]').forEach((link) => {
+    link.target = '_blank';
+    link.rel = 'noreferrer';
+  });
+</script>

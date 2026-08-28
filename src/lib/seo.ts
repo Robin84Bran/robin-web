@@ -165,6 +165,44 @@ export function createBooksSchemas(): SchemaNode[] {
   ];
 }
 
+export function createNetworkSchemas(
+  language: IdentityLocale,
+  path: string,
+  name: string,
+  description: string,
+): SchemaNode[] {
+  const identity = identityProfiles[language];
+  const url = absoluteUrl(path);
+  const networkLabel = language === 'zh-Hans'
+    ? '网络与公开记录'
+    : language === 'zh-Hant'
+      ? '網絡與公開記錄'
+      : language === 'ja'
+        ? 'ネットワークと公開記録'
+        : 'Network';
+
+  return [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      '@id': `${url}#network`,
+      name,
+      description,
+      url,
+      isPartOf: { '@id': websiteId },
+      author: { '@id': personId },
+      about: { '@id': personId },
+      inLanguage: language,
+    },
+    createPersonSchema(language),
+    createWebsiteSchema(),
+    createBreadcrumbSchema([
+      { name: language === 'en' ? 'Home' : identity.name, path: identity.homePath },
+      { name: networkLabel, path },
+    ]),
+  ];
+}
+
 export function createArticleSchemas(input: {
   title: string;
   description: string;

@@ -6,7 +6,10 @@ const dist = join(root, 'dist');
 const origin = 'https://iamrobin.ai';
 const failures = [];
 const indexableRoutes = new Set([
-  '/', '/about/', '/zh-hans/', '/zh-hans/about/', '/zh-hant/', '/zh-hant/about/', '/ja/', '/ja/about/',
+  '/', '/about/', '/network/',
+  '/zh-hans/', '/zh-hans/about/', '/zh-hans/network/',
+  '/zh-hant/', '/zh-hant/about/', '/zh-hant/network/',
+  '/ja/', '/ja/about/', '/ja/network/',
   '/portfolio/', '/books/', '/meaning/', '/ouroboros/', '/binary/',
   '/intelligence/', '/intelligence/hardware/', '/intelligence/supply-chain/',
   '/intelligence/supply-chain-map/', '/intelligence/swarm/',
@@ -23,6 +26,12 @@ const identityFamilies = [
     'zh-Hans': '/zh-hans/about/',
     'zh-Hant': '/zh-hant/about/',
     ja: '/ja/about/',
+  },
+  {
+    en: '/network/',
+    'zh-Hans': '/zh-hans/network/',
+    'zh-Hant': '/zh-hant/network/',
+    ja: '/ja/network/',
   },
 ];
 const identityFamilyByRoute = new Map(identityFamilies.flatMap((family) =>
@@ -77,7 +86,7 @@ if (existsSync(dist)) {
   const blogPublications = [...blogRoutes, ...blogTranslationRoutes];
   const publicationRoutes = [...articleRoutes, ...actionFlowPublications, ...blogPublications];
   for (const route of [...publicationRoutes, ...diaryRoutes]) indexableRoutes.add(route);
-  check(routes.size === 24 + publicationRoutes.length + diaryRoutes.length, `expected ${24 + publicationRoutes.length + diaryRoutes.length} HTML routes, found ${routes.size}.`);
+  check(routes.size === 27 + publicationRoutes.length + diaryRoutes.length, `expected ${27 + publicationRoutes.length + diaryRoutes.length} HTML routes, found ${routes.size}.`);
 
   for (const [route, file] of routes) {
     const html = readFileSync(file, 'utf8');
@@ -88,6 +97,7 @@ if (existsSync(dist)) {
     check(html.includes('rel="describedby" href="https://iamrobin.ai/llms.txt" type="text/plain"'), `${route}: llms.txt describedby discovery is missing.`);
     check(Boolean(one(html, /<meta\s+name="description"\s+content="([^"]+)"/i)), `${route}: missing description.`);
     check(one(html, /<meta\s+property="og:url"\s+content="([^"]+)"/i) === expectedCanonical, `${route}: incorrect og:url.`);
+    check((html.match(/<h1\b/gi) ?? []).length === 1, `${route}: expected exactly one visible H1.`);
     for (const property of ['og:title', 'og:description', 'og:image', 'og:image:alt']) {
       check(html.includes(`property="${property}"`), `${route}: missing ${property}.`);
     }
@@ -130,7 +140,11 @@ if (existsSync(dist)) {
       const defaultHref = new URL(identityFamily.family.en, `${origin}/`).toString();
       check(html.includes(`rel="alternate" hreflang="x-default" href="${defaultHref}"`), `${route}: identity x-default must point to English.`);
       check(html.includes('"@type":"Person"'), `${route}: identity Person schema missing.`);
-      check(html.includes('"@type":"ProfilePage"'), `${route}: identity ProfilePage schema missing.`);
+      if (route.includes('/network/')) {
+        check(html.includes('"@type":"CollectionPage"'), `${route}: Network CollectionPage schema missing.`);
+      } else {
+        check(html.includes('"@type":"ProfilePage"'), `${route}: identity ProfilePage schema missing.`);
+      }
       check(html.includes(`"inLanguage":"${identityFamily.locale}"`), `${route}: identity ProfilePage language must be ${identityFamily.locale}.`);
     }
 
@@ -155,6 +169,10 @@ if (existsSync(dist)) {
   const simplifiedHome = readFileSync(routes.get('/zh-hans/'), 'utf8');
   const traditionalHome = readFileSync(routes.get('/zh-hant/'), 'utf8');
   const japaneseHome = readFileSync(routes.get('/ja/'), 'utf8');
+  const network = readFileSync(routes.get('/network/'), 'utf8');
+  const simplifiedNetwork = readFileSync(routes.get('/zh-hans/network/'), 'utf8');
+  const traditionalNetwork = readFileSync(routes.get('/zh-hant/network/'), 'utf8');
+  const japaneseNetwork = readFileSync(routes.get('/ja/network/'), 'utf8');
   const books = readFileSync(routes.get('/books/'), 'utf8');
   const portfolio = readFileSync(routes.get('/portfolio/'), 'utf8');
   const ouroboros = readFileSync(routes.get('/ouroboros/'), 'utf8');
@@ -168,6 +186,14 @@ if (existsSync(dist)) {
   check(simplifiedHome.includes('谢玢 Robin Xie') && simplifiedHome.includes('资本配置'), 'zh-Hans home: canonical Chinese identity copy is missing.');
   check(traditionalHome.includes('謝玢 Robin Xie') && traditionalHome.includes('資本配置'), 'zh-Hant home: canonical Chinese identity copy is missing.');
   check(japaneseHome.includes('Robin Xie（謝玢）') && japaneseHome.includes('AIシステム'), 'ja home: canonical Japanese identity copy is missing.');
+  check(network.includes('Projects came and went. The questions remained.') && network.includes('Global Token Limited'), 'Network: canonical English public record is missing.');
+  check(simplifiedNetwork.includes('项目有聚散，所问未曾改。') && simplifiedNetwork.includes('香港上市公司'), 'zh-Hans Network: approved Chinese public record is missing.');
+  check(traditionalNetwork.includes('項目有聚散，所問未曾改。') && traditionalNetwork.includes('香港上市公司'), 'zh-Hant Network: approved Traditional Chinese public record is missing.');
+  check(japaneseNetwork.includes('プロジェクトは現れては去り') && japaneseNetwork.includes('香港上場企業'), 'ja Network: approved Japanese public record is missing.');
+  for (const page of [network, simplifiedNetwork, traditionalNetwork, japaneseNetwork]) {
+    check((page.match(/<h2\b/g) ?? []).length === 5, 'Network: every locale must expose the five canonical sections.');
+    check(page.includes('https://www.hkexnews.hk/listedco/listconews/gem/2019/0509/gln20190509062_c.pdf'), 'Network: canonical HKEX source is missing.');
+  }
   check((books.match(/"@type":"Book"/g) ?? []).length === 4, 'books: expected four Book schemas.');
   check(portfolio.includes('"@type":"CollectionPage"'), 'portfolio: CollectionPage schema missing.');
   check(ouroboros.includes('"@type":"CollectionPage"'), 'ouroboros: CollectionPage schema missing.');
@@ -274,6 +300,9 @@ if (existsSync(dist)) {
   const worker = readFileSync(join(dist, '_worker.js'), 'utf8');
   check(worker.includes('legacyIdentity'), 'edge: legacy /identity/{word}/ redirects are missing.');
   check(worker.includes('legacyLocaleRedirects'), 'edge: legacy language redirects are missing.');
+  for (const legacyBook of ['agi-awakening', 'build-1-billion-block', 'longevity-cheat-code', 'derivatives']) {
+    check(worker.includes(`['/books/${legacyBook}/', '/books/']`), `edge: legacy ${legacyBook} book redirect is missing.`);
+  }
   check(worker.includes("new URL('/404.html'"), 'edge: HTML 404 fallback is missing.');
   check(worker.includes("'Content-Signal': 'search=yes, ai-input=yes, ai-train=yes, use=reference'"), 'edge: permissive Content-Signal response header is missing.');
   check(worker.includes('rel="describedby"'), 'edge: llms.txt Link discovery header is missing.');

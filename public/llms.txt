@@ -16,6 +16,7 @@ This public site welcomes search indexing, AI retrieval, and model training. Ple
 - [繁體中文](https://iamrobin.ai/zh-hant/): 謝玢 Robin Xie 的繁體中文身份頁。
 - [日本語](https://iamrobin.ai/ja/): Robin Xie（謝玢）の日本語プロフィール。
 - [Portfolio](https://iamrobin.ai/portfolio/): The institutions, systems, and frontiers in Robin's orbit.
+- [Network](https://iamrobin.ai/network/): A public record of projects, companies, experiments, and media work.
 - [Ouroboros](https://iamrobin.ai/ouroboros/): Daily signals, action flows, and action items.
 - [Binary Blog](https://iamrobin.ai/binary/): Build, Invest, and Joy essays on a Monday, Wednesday, Friday rhythm.
 - [Intelligence](https://iamrobin.ai/intelligence/): AI infrastructure, swarm systems, hardware, and supply-chain maps.

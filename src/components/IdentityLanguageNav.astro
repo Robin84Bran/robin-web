@@ -3,7 +3,7 @@ import { identityProfiles, type IdentityLocale, type IdentityProfile } from '../
 
 interface Props {
   currentLocale: IdentityLocale;
-  page: 'home' | 'about';
+  page: 'home' | 'about' | 'network';
 }
 
 const { currentLocale, page } = Astro.props;
@@ -15,7 +15,7 @@ const current = identityProfiles[currentLocale];
     (Object.values(identityProfiles) as IdentityProfile[]).map((profile) => (
       <a
         aria-current={profile.locale === currentLocale ? 'page' : undefined}
-        href={page === 'home' ? profile.homePath : profile.aboutPath}
+        href={page === 'home' ? profile.homePath : page === 'about' ? profile.aboutPath : profile.networkPath}
         hreflang={profile.locale}
         lang={profile.locale}
       >
