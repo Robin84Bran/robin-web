@@ -340,6 +340,59 @@ body[data-path="/portfolio/"] .page-lead h1 {
 .section-intro h2,
 .identity-copy h2 { font-size: clamp(2.2rem, 8vw, 4.4rem); }
 
+@media (max-width: 45.99rem) {
+  .zen-home {
+    min-height: calc(100svh - 5.35rem);
+  }
+
+  .zen-name .eyebrow {
+    margin-bottom: 1.15rem;
+  }
+
+  .time-portrait,
+  .zen-garden {
+    top: 52%;
+  }
+
+  .time-portrait {
+    left: 50%;
+    width: min(68vw, 18rem);
+    transform: translate(-60.4%, -50%);
+  }
+
+  .zen-garden {
+    width: min(114vw, 30rem);
+  }
+
+  .zen-axis {
+    top: 52%;
+  }
+
+  .identity-garden::before,
+  .identity-garden__core {
+    display: none;
+  }
+
+  .identity-garden__node:nth-child(1) { --tx: -8rem; --ty: -10.5rem; }
+  .identity-garden__node:nth-child(2) { --tx: 7.2rem; --ty: -9.5rem; }
+  .identity-garden__node:nth-child(3) { --tx: 9rem; --ty: -3.5rem; }
+  .identity-garden__node:nth-child(4) { --tx: 8.8rem; --ty: 3.3rem; }
+  .identity-garden__node:nth-child(5) { --tx: 6.8rem; --ty: 9.1rem; }
+  .identity-garden__node:nth-child(6) { --tx: -1.2rem; --ty: 10.8rem; }
+  .identity-garden__node:nth-child(7) { --tx: -8.2rem; --ty: 6.4rem; }
+  .identity-garden__node:nth-child(8) { --tx: -9.5rem; --ty: -1.2rem; }
+
+  .identity-garden__stem {
+    width: 9rem;
+  }
+
+  .zen-mantra,
+  .zen-portals,
+  .zen-side-note {
+    display: none;
+  }
+}
+
 @media (min-width: 46rem) {
   .zen-home { min-height: max(43rem, calc(100svh - 4.9rem)); }
   .zen-name { top: 8%; }
