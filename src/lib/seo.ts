@@ -25,7 +25,7 @@ export function createPersonSchema(language: IdentityLocale = 'en'): SchemaNode 
     alternateName: ['Ms. Robin Xie', 'Bin “Robin” Xie', '谢玢', '謝玢', 'nanobin'],
     pronouns: 'she/her',
     description: identity.description,
-    jobTitle: ['Engineer', 'Investor', 'AI System Builder', 'Writer'],
+    jobTitle: ['Professional Engineer', 'Accredited Investor', 'AI-Native System Builder', 'Writer'],
     knowsAbout: identityKnowledge,
     url: absoluteUrl('/'),
     image: absoluteUrl(DEFAULT_IMAGE),

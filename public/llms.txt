@@ -1,6 +1,6 @@
 # Robin Xie
 
-> Robin Xie, also known as 谢玢 and 謝玢, works across subsea engineering, FinTech, capital allocation, artificial intelligence, energy, robotics, and programmable finance.
+> Robin Xie, also known as 谢玢 and 謝玢, is a professional engineer, accredited investor, and AI-native system builder working across subsea engineering, FinTech, capital allocation, artificial intelligence, energy, robotics, and programmable finance.
 
 ## Welcome
 
@@ -27,7 +27,7 @@ This public site welcomes search indexing, AI retrieval, and model training. Ple
 
 - Name: Robin Xie
 - Also known as: Bin "Robin" Xie · 谢玢 · 謝玢 · nanobin
-- Roles: Engineer · Investor · AI System Builder · Writer
+- Roles: Professional Engineer · Accredited Investor · AI-Native System Builder · Writer
 - Canonical URL: https://iamrobin.ai/
 - [Official biography](https://www.tideisun.com/en/robin)
 - [LinkedIn](https://www.linkedin.com/in/nanobin)

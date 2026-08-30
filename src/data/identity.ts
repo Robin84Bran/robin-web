@@ -39,7 +39,7 @@ export const identityProfiles: Record<IdentityLocale, IdentityProfile> = {
     name: 'Robin Xie',
     nativeName: '谢玢 · 謝玢',
     title: 'Robin Xie (谢玢) — Engineer · Investor · AI System Builder',
-    description: 'Robin Xie, also known as 谢玢 and 謝玢, is an engineer, investor, and AI system builder working across subsea engineering, FinTech, capital allocation, artificial intelligence, energy, robotics, and programmable finance.',
+    description: 'Robin Xie, also known as 谢玢 and 謝玢, is a professional engineer, accredited investor, and AI-native system builder working across subsea engineering, FinTech, capital allocation, artificial intelligence, energy, robotics, and programmable finance.',
     aboutTitle: 'About Robin Xie (谢玢) — Engineering, Investing & AI Systems',
     aboutDescription: 'About Robin Xie (谢玢): an engineer, investor, and system builder whose work connects subsea engineering, FinTech, capital allocation, and AI systems.',
     eyebrow: 'Engineering · Investing · Artificial Intelligence',

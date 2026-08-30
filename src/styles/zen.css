@@ -35,6 +35,10 @@ html {
   letter-spacing: 0;
 }
 
+.zen-name__mobile-discovery {
+  display: none;
+}
+
 .time-portrait {
   --watch-x: 60.4%;
   --watch-y: 50%;
@@ -345,8 +349,57 @@ body[data-path="/portfolio/"] .page-lead h1 {
     min-height: calc(100svh - 5.35rem);
   }
 
-  .zen-name .eyebrow {
-    margin-bottom: 1.15rem;
+  .zen-name {
+    top: 3.3rem;
+  }
+
+  .zen-name > .eyebrow {
+    display: none;
+  }
+
+  .zen-name__mobile-discovery {
+    display: grid;
+    gap: 0.55rem;
+    margin-top: 1.1rem;
+  }
+
+  .zen-name__mobile-discovery > .quiet-link {
+    width: fit-content;
+    font-size: 0.68rem;
+  }
+
+  .zen-name__mobile-discovery .identity-languages {
+    gap: 0.25rem 0.82rem;
+  }
+
+  .zen-name__mobile-discovery .identity-languages a {
+    font-size: 0.62rem;
+  }
+
+  .identity-bridge {
+    gap: 1.6rem;
+    margin-top: -10rem;
+    padding-block: 0.6rem 4rem;
+  }
+
+  .identity-bridge > .sakura-drift--banner,
+  .identity-bridge blockquote,
+  .identity-bridge__copy > .quiet-link,
+  .identity-bridge > .identity-languages {
+    display: none;
+  }
+
+  .identity-bridge__copy > p:not(.eyebrow) {
+    font-size: 1.05rem;
+    line-height: 1.58;
+  }
+
+  .identity-bridge__copy {
+    margin-top: -1.25rem;
+  }
+
+  .identity-bridge .identity-ouroboros {
+    margin-top: -0.4rem;
   }
 
   .time-portrait,
