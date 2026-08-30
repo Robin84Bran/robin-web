@@ -3,19 +3,37 @@ interface Props {
   items: string[];
   label: string;
   centerLabel: string;
+  centerImage?: string;
+  centerImageWidth?: number;
+  centerImageHeight?: number;
 }
 
-const { items, label, centerLabel } = Astro.props;
+const {
+  items,
+  label,
+  centerLabel,
+  centerImage,
+  centerImageWidth = 1245,
+  centerImageHeight = 1280,
+} = Astro.props;
 const icons = ['/icons/subsea.svg', '/icons/fintech.svg', '/icons/capital.svg', '/icons/ai-systems.svg'];
 const phases = ['Origin', 'Diverge', 'Converge', 'Origin'];
 ---
 
 <div class="identity-ouroboros" role="img" aria-label={label}>
   <img class="identity-ouroboros__ring" src="/visuals/ouroboros-ring.png" alt="" width="900" height="900" aria-hidden="true" />
-  <span class="identity-ouroboros__center" aria-hidden="true">
-    <strong>{centerLabel}</strong>
-    <small>Origin → Diverge<br />→ Converge → Origin</small>
-  </span>
+  {
+    centerImage ? (
+      <span class="identity-ouroboros__dial" aria-hidden="true">
+        <img src={centerImage} alt="" width={centerImageWidth} height={centerImageHeight} />
+      </span>
+    ) : (
+      <span class="identity-ouroboros__center" aria-hidden="true">
+        <strong>{centerLabel}</strong>
+        <small>Origin → Diverge<br />→ Converge → Origin</small>
+      </span>
+    )
+  }
   <ol aria-hidden="true">
     {items.map((item, index) => (
       <li style={`--orbit-stage:${index};`}>

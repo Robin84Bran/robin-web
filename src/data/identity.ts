@@ -204,7 +204,7 @@ export const networkAlternates = (Object.values(identityProfiles) as IdentityPro
 }));
 
 export const identityKnowledge = [
-  'Artificial Intelligence', 'AI Infrastructure', 'Physical AI', 'Robotics', 'Energy', 'Power Infrastructure',
+  'Artificial Intelligence', 'AI Systems', 'AI Infrastructure', 'Physical AI', 'Robotics', 'Energy', 'Power Infrastructure',
   'FinTech', 'Stablecoins', 'Digital Assets', 'Capital Allocation', 'Public Markets', 'Private Markets',
-  'Quantitative Research', 'Systems Engineering',
+  'Quantitative Research', 'Systems Engineering', 'Subsea Engineering',
 ];

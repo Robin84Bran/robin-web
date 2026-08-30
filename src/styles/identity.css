@@ -43,6 +43,20 @@
   max-width: 45rem;
 }
 
+.identity-bridge__discovery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--line);
+}
+
+.identity-bridge__discovery > .quiet-link {
+  font-size: 0.7rem;
+}
+
 .sakura-drift {
   position: relative;
   overflow: hidden;
@@ -282,6 +296,34 @@
   display: block;
 }
 
+.identity-ouroboros__dial {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  width: 34%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: var(--paper);
+  border: 1px solid rgba(180, 145, 93, 0.42);
+  border-radius: 50%;
+  box-shadow: 0 1rem 3rem rgba(74, 61, 48, 0.14), inset 0 0 0 0.42rem rgba(253, 251, 247, 0.52);
+  transform: translate(-50%, -50%);
+}
+
+.identity-ouroboros__dial img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 88%;
+  height: auto;
+  max-width: none;
+  object-fit: contain;
+  filter: saturate(0.78) contrast(0.96) sepia(0.035);
+  transform: translate(-50%, -50%);
+}
+
 .identity-ouroboros__center strong {
   font-style: italic;
   font-weight: 500;
@@ -450,7 +492,7 @@
     grid-column: 1 / -1;
   }
 
-  .identity-bridge > .identity-languages {
+  .identity-bridge__discovery {
     grid-column: 1 / -1;
   }
 

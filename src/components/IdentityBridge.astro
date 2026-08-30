@@ -10,11 +10,19 @@ const profile = identityProfiles.en;
 <section class="identity-bridge shell" aria-label="Robin Xie identity journey">
   <SakuraDrift variant="banner" />
   <div class="identity-bridge__copy">
-    <p class="eyebrow">Engineering → FinTech → Capital → AI Systems</p>
     <p>{profile.description}</p>
     <blockquote>{profile.spine}</blockquote>
-    <a class="quiet-link" href={profile.aboutPath}>{profile.aboutLinkLabel}<span aria-hidden="true">↗</span></a>
   </div>
-  <IdentityOrbit items={profile.axis} label={profile.spine} centerLabel={profile.orbitLabel} />
-  <IdentityLanguageNav currentLocale="en" page="home" />
+  <IdentityOrbit
+    items={profile.axis}
+    label={profile.spine}
+    centerLabel={profile.orbitLabel}
+    centerImage="/photos/robin-ouroboros-portrait.jpg"
+    centerImageWidth={961}
+    centerImageHeight={1280}
+  />
+  <div class="identity-bridge__discovery">
+    <a class="quiet-link" href={profile.aboutPath}>{profile.aboutLinkLabel}<span aria-hidden="true">↗</span></a>
+    <IdentityLanguageNav currentLocale="en" page="home" />
+  </div>
 </section>
