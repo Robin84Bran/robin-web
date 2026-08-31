@@ -1,6 +1,7 @@
 ---
+archiveStatus: "PIPELINE"
 title: 蝶と憲法
-date: 2026-09-04
+date: 2026-09-18
 updated: 2026-08-21
 section: Ouroboros
 series: Blog
@@ -19,9 +20,9 @@ categories:
 - Artificial Intelligence
 - Systems
 excerpt: 各庭園が自分の規則を持ち、共有憲法が境界を守れば、小さな蝶は大きなシステムを安全に渡れる。
-hero: /blog/20260904/hero.webp
-ogImage: /blog/20260904/og.webp
-canonical: https://iamrobin.ai/ouroboros/202609/20260904/blog/ja/
+hero: /blog/20260918/hero.webp
+ogImage: /blog/20260918/og.webp
+canonical: https://iamrobin.ai/ouroboros/202609/20260918/blog/ja/
 author: https://iamrobin.ai/#person
 inLanguage: ja
 draft: false
@@ -31,10 +32,10 @@ mediumUrl: null
 linkedinUrl: null
 thesis: 進化するエージェント・システムには、共有憲法という樹冠と、各プロジェクトのローカル法が要る。創造性は移動しても、無制限の権限は移動させない。
 languageSlug: ja
-translationOf: https://iamrobin.ai/ouroboros/202609/20260904/blog/
+translationOf: https://iamrobin.ai/ouroboros/202609/20260918/blog/
 translationReferences:
-- https://iamrobin.ai/ouroboros/202609/20260904/blog/
-- https://iamrobin.ai/ouroboros/202609/20260904/blog/zh-hans/
+- https://iamrobin.ai/ouroboros/202609/20260918/blog/
+- https://iamrobin.ai/ouroboros/202609/20260918/blog/zh-hans/
 translationReview: PASS
 ---
 

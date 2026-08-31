@@ -1,6 +1,7 @@
 ---
+archiveStatus: "PIPELINE"
 title: The Butterfly and the Constitution
-date: 2026-09-04
+date: 2026-09-18
 updated: 2026-08-21
 section: Ouroboros
 series: Blog
@@ -20,9 +21,9 @@ categories:
 - Systems
 excerpt: A small butterfly can cross a large system safely when every garden owns its rules and the shared constitution protects
   the borders.
-hero: /blog/20260904/hero.webp
-ogImage: /blog/20260904/og.webp
-canonical: https://iamrobin.ai/ouroboros/202609/20260904/blog/
+hero: /blog/20260918/hero.webp
+ogImage: /blog/20260918/og.webp
+canonical: https://iamrobin.ai/ouroboros/202609/20260918/blog/
 author: https://iamrobin.ai/#person
 inLanguage: en
 draft: false

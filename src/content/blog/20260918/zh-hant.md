@@ -1,6 +1,7 @@
 ---
+archiveStatus: "PIPELINE"
 title: 蝴蝶與憲法
-date: 2026-09-04
+date: 2026-09-18
 updated: 2026-08-21
 section: Ouroboros
 series: Blog
@@ -19,9 +20,9 @@ categories:
 - Artificial Intelligence
 - Systems
 excerpt: 每座花園擁有自己的規則，共享憲法守住邊界，一隻小蝴蝶就可以安全地穿過一整個大系統。
-hero: /blog/20260904/hero.webp
-ogImage: /blog/20260904/og.webp
-canonical: https://iamrobin.ai/ouroboros/202609/20260904/blog/zh-hant/
+hero: /blog/20260918/hero.webp
+ogImage: /blog/20260918/og.webp
+canonical: https://iamrobin.ai/ouroboros/202609/20260918/blog/zh-hant/
 author: https://iamrobin.ai/#person
 inLanguage: zh-Hant
 draft: false
@@ -31,7 +32,7 @@ mediumUrl: null
 linkedinUrl: null
 thesis: 一個持續進化的代理人系統，需要共享憲法形成樹冠，也需要每個項目保有本地規則，讓創意能夠旅行，而無限權力留在原地。
 languageSlug: zh-hant
-translationOf: https://iamrobin.ai/ouroboros/202609/20260904/blog/
+translationOf: https://iamrobin.ai/ouroboros/202609/20260918/blog/
 translationReview: PASS
 ---
 

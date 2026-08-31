@@ -1,6 +1,7 @@
 ---
+archiveStatus: "PIPELINE"
 title: 蝴蝶与宪法
-date: 2026-09-04
+date: 2026-09-18
 updated: 2026-08-21
 section: Ouroboros
 series: Blog
@@ -19,9 +20,9 @@ categories:
 - Artificial Intelligence
 - Systems
 excerpt: 每座花园拥有自己的规则，共享宪法守住边界，一只小蝴蝶就可以安全地穿过一整个大系统。
-hero: /blog/20260904/hero.webp
-ogImage: /blog/20260904/og.webp
-canonical: https://iamrobin.ai/ouroboros/202609/20260904/blog/zh-hans/
+hero: /blog/20260918/hero.webp
+ogImage: /blog/20260918/og.webp
+canonical: https://iamrobin.ai/ouroboros/202609/20260918/blog/zh-hans/
 author: https://iamrobin.ai/#person
 inLanguage: zh-Hans
 draft: false
@@ -31,7 +32,7 @@ mediumUrl: null
 linkedinUrl: null
 thesis: 一个持续进化的代理人系统，需要共享宪法形成树冠，也需要每个项目保有本地规则，让创意能够旅行，而无限权力留在原地。
 languageSlug: zh-hans
-translationOf: https://iamrobin.ai/ouroboros/202609/20260904/blog/
+translationOf: https://iamrobin.ai/ouroboros/202609/20260918/blog/
 translationReview: PASS
 ---
 

@@ -1,5 +1,5 @@
 ---
-archiveStatus: "PIPELINE"
+archiveStatus: "PRESENT"
 title: "量化实验室系列 * 闪崩实验室 3"
 date: 2026-08-31
 updated: 2026-08-26

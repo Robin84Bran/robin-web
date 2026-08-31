@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-08-31",
+  "updated": "2026-08-31",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20260831/hero.webp",
+  "actionHero": "/action-item/20260831/hero.webp",
+  "ogImage": "/daily-briefing/20260831/og.webp",
+  "briefingPath": "/ouroboros/202608/20260831/",
+  "actionItemPath": "/ouroboros/202608/20260831/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "1.5–1.9×",
+      "visualLabel": "throughput per watt",
+      "sources": [
+        {"label": "OpenAI", "url": "https://openai.com/index/jalapeno-first-results/"},
+        {"label": "SemiAnalysis", "url": "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia"}
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "Late 2027",
+      "visualLabel": "target paid service",
+      "sources": [
+        {"label": "Waymo", "url": "https://waymo.com/blog/2026/08/waymo-in-munich"},
+        {"label": "Reuters", "url": "https://www.reuters.com/technology/waymo-begin-testing-autonomous-vehicles-munich-2026-08-25/"}
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$1.740B",
+      "visualLabel": "weekly ETF inflow",
+      "sources": [
+        {"label": "Farside Bitcoin", "url": "https://farside.co.uk/btc/"},
+        {"label": "Farside Ether", "url": "https://farside.co.uk/eth/"}
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "3 layers",
+      "visualLabel": "digital money model",
+      "sources": [
+        {"label": "BIS", "url": "https://www.bis.org/speeches/sp260828.htm"},
+        {"label": "Reuters", "url": "https://www.reuters.com/business/finance/stablecoins-not-credible-means-payment-scale-bis-chief-says-2026-08-28/"}
+      ]
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "visualValue": "6 stages",
+      "visualLabel": "deliverable-MW funnel",
+      "sources": [
+        {"label": "Reuters", "url": "https://www.reuters.com/technology/anthropic-pay-nscale-45-billion-rent-ai-computing-power-bloomberg-news-reports-2026-08-26/"},
+        {"label": "SK Horizon", "url": "https://www.businesswire.com/news/home/20260827805012/en/SK-Telecom-Launches-AI-Data-Center-Infrastructure-Company-SK-Horizon-and-Secures-Investments-from-KKR-and-IMM"},
+        {"label": "NVIDIA", "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027"},
+        {"label": "OpenAI", "url": "https://openai.com/careers/business-development-lead-compute-strategy-us-remote/"}
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "$45B",
+      "visualLabel": "reported six-year commitment",
+      "sources": [
+        {"label": "Reuters", "url": "https://www.reuters.com/technology/anthropic-pay-nscale-45-billion-rent-ai-computing-power-bloomberg-news-reports-2026-08-26/"},
+        {"label": "Financial Times", "url": "https://www.ft.com/content/0ec76ba3-5f7f-4085-88fb-acf21954bc85"}
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": ">$6.3B",
+      "visualLabel": "post-money valuation",
+      "sources": [
+        {"label": "XPENG", "url": "https://www.xpeng.com/news/01a03797fccda01e0de68a02a256006a"},
+        {"label": "XPENG IR", "url": "https://ir.xiaopeng.com/news-releases/news-release-details/xpeng-reports-second-quarter-2026-unaudited-financial-results/"},
+        {"label": "Reuters", "url": "https://www.reuters.com/business/retail-consumer/xpeng-says-its-robotics-business-raised-over-900-million-first-funding-round-2026-08-24/"}
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "-3.29pp",
+      "visualLabel": "weekly basket versus QQQ",
+      "sources": [
+        {"label": "NVIDIA", "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027"},
+        {"label": "NVDA prices", "url": "https://stockanalysis.com/stocks/nvda/history/"}
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "inLanguage": "en",
+      "languageSlug": "",
+      "title": "Daily Action Flow, August 31, 2026",
+      "description": "Eight source-backed decisions ordered into one inspectable CIO execution field.",
+      "centralJudgment": "Separate AI demand from its delivery chain. Publish the deliverable-MW framework now, route the reported Monarch contract into private intelligence with its uncertainty intact, and keep every market signal on an explicit upgrade test.",
+      "fieldLine": "Eight signals. One publication complete. Seven evidence gates open.",
+      "actions": [
+        {"signal": 1, "domain": "Frontier Models", "title": "Track Jalapeño Deployment", "why": "The benchmark changes the long-term inference profit map while scale, long-context behavior and full TCO remain open.", "steps": ["Record deployed fleet and workload share", "Compare long-context agent performance and system TCO", "Keep NVIDIA training and inference ledgers separate"], "done": "Positioning changes only after production volume, service quality and margin evidence converge."},
+        {"signal": 2, "domain": "Physical AI", "title": "Treat Munich as Replication", "why": "Waymo has a dated paid-service objective, while German licensing and operating economics are not yet established.", "steps": ["Track permits and driverless miles", "Measure rides per vehicle and remote intervention", "Compare city-level operating cost"], "done": "Commercial replication is confirmed only by licensed, paid, driverless operation with disclosed intervention and cost."},
+        {"signal": 3, "domain": "Crypto Capital", "title": "Wait for ETF Breadth", "why": "Weekly inflow remains positive but BlackRock products supply 86.5 percent and the final day broke the streak.", "steps": ["Complete two more settled weekly tables", "Separate IBIT and ETHA concentration", "Require stablecoin supply and real onchain fees"], "done": "Breadth upgrades when non-IBIT and non-ETHA products exceed one-third for two weeks beside rising onchain activity."},
+        {"signal": 4, "domain": "Stablecoins and Payments", "title": "Map Three Money Layers", "why": "The BIS position makes coexistence more plausible than a single-winner architecture.", "steps": ["Assign funding rail, operating money and settlement asset", "Name owners for stored value, FX and refunds", "Test reconciliation and failure recovery"], "done": "A payment design passes only when every liability and fallback owner is explicit."},
+        {"signal": 5, "domain": "iamrobin.ai", "title": "Publish Deliverable Megawatts", "why": "The week's evidence supports a durable underwriting framework that joins engineering, customer credit and capital structure.", "steps": ["Separate the six MW stages", "Apply the eight-row deliverable-MW card", "Publish and verify all four language routes"], "done": "The Action Item passes evidence, language, build, public and notification gates."},
+        {"signal": 6, "domain": "AI Infrastructure Intelligence", "title": "Route Monarch into Research", "why": "The reported commitment is decision-worthy and unconfirmed, making it suitable for the private evidence ledger before public monthly review.", "steps": ["Preserve REPORTED_UNCONFIRMED", "Track minimum payments, COD, equipment and capital stack", "Queue the public candidate for monthly review only"], "done": "The private intelligence candidate is source-backed, deduplicated and explicitly barred from immediate public release."},
+        {"signal": 7, "domain": "Late Stage Markets", "title": "Wait for External Robot Revenue", "why": "Dogotix has capital and manufacturing leverage, while internal deployment does not prove independent demand.", "steps": ["Track external paying customers and repeat orders", "Request unit cost, margin and intervention", "Separate affiliate demand from external revenue"], "done": "The rating changes only after non-affiliate customers confirm useful autonomous work and economics."},
+        {"signal": 8, "domain": "Public Equities", "title": "Keep Four NVIDIA Ledgers", "why": "Training strength and inference-share risk can coexist, while cash conversion and financing exposure require separate evidence.", "steps": ["Track platform moat and inference share separately", "Reconcile cash flow with receivables and inventory", "Map customer-financing and residual-value exposure"], "done": "The next allocation decision follows quarterly deployment, cash and credit evidence rather than weekly returns."}
+      ]
+    },
+    "zh-Hans": {
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "title": "每日行动流，2026年8月31日",
+      "description": "八项有来源支持的决策，汇入一个可审计的CIO执行场。",
+      "centralJudgment": "把AI需求与交付链分开。立即发布可交付兆瓦框架，把Monarch报道在保留不确定性的前提下导入私有研究，其余市场信号维持明确升级门槛。",
+      "fieldLine": "八个信号。一项发布完成。七个证据门槛仍开放。",
+      "actions": [
+        {"signal": 1, "domain": "前沿模型", "title": "追踪Jalapeño部署", "why": "benchmark改变长期推理利润图，但规模、长上下文与完整TCO仍未知。", "steps": ["记录实际部署与负载份额", "比较长上下文Agent和系统TCO", "分开NVIDIA训练与推理账本"], "done": "量产、服务质量与毛利证据汇合后才调整仓位。"},
+        {"signal": 2, "domain": "Physical AI", "title": "把慕尼黑视为复制测试", "why": "Waymo有明确付费目标，但德国许可和运营经济尚未成立。", "steps": ["追踪牌照和无安全员里程", "测量每车行程及远程干预", "比较单城运营成本"], "done": "只有获批的付费无安全员运营披露干预与成本后才确认商业复制。"},
+        {"signal": 3, "domain": "加密资本", "title": "等待ETF资金广度", "why": "周度流入仍为正，但BlackRock产品贡献86.5%，最后一天中断连续流入。", "steps": ["再完成两周结算流量表", "拆分IBIT与ETHA集中度", "要求稳定币供给和真实链上费用"], "done": "非IBIT／ETHA连续两周超过三分之一且链上活动上升后才升级。"},
+        {"signal": 4, "domain": "稳定币与支付", "title": "绘制三层货币架构", "why": "BIS立场使共存比单一赢家更可信。", "steps": ["指定资金轨、运营资金和结算资产", "明确储值、FX与退款负责人", "测试对账和失败恢复"], "done": "每项负债和回退责任都明确后方案才通过。"},
+        {"signal": 5, "domain": "iamrobin.ai", "title": "发布可交付兆瓦", "why": "本周证据支持连接工程、客户信用与资本结构的耐久框架。", "steps": ["拆分六级兆瓦", "使用八行承销卡", "发布并验证四语路由"], "done": "Action Item通过证据、语言、构建、公开与通知门禁。"},
+        {"signal": 6, "domain": "AI基础设施情报", "title": "将Monarch导入研究", "why": "报道值得研究但尚未确认，适合先进入私有证据账本，再接受月度公开审视。", "steps": ["保留REPORTED_UNCONFIRMED", "追踪最低付款、COD、设备和资本栈", "仅排入月度公开候选"], "done": "私有研究候选有来源、已去重，并明确禁止即时公开。"},
+        {"signal": 7, "domain": "后期一级市场", "title": "等待外部机器人收入", "why": "Dogotix拥有资本和制造杠杆，内部部署不能证明独立需求。", "steps": ["追踪外部付费客户和复购", "取得单位成本、毛利与干预率", "分开关联与外部收入"], "done": "非关联客户确认自主工作与经济性后才改变评级。"},
+        {"signal": 8, "domain": "公开市场", "title": "保留NVIDIA四本账", "why": "训练优势与推理份额风险可以共存，现金转化和融资敞口需要独立证据。", "steps": ["分开平台护城河与推理份额", "对账现金流、应收与库存", "映射客户融资与残值风险"], "done": "下一次配置只依据季度部署、现金和信用证据。"}
+      ]
+    },
+    "zh-Hant": {
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "title": "每日行動流，2026年8月31日",
+      "description": "八項有來源支持的決策，匯入一個可審計的CIO執行場。",
+      "centralJudgment": "把AI需求與交付鏈分開。立即發布可交付兆瓦框架，把Monarch報道在保留不確定性的前提下導入私有研究，其餘市場訊號維持明確升級門檻。",
+      "fieldLine": "八個訊號。一項發布完成。七個證據門檻仍開放。",
+      "actions": [
+        {"signal": 1, "domain": "前沿模型", "title": "追蹤Jalapeño部署", "why": "benchmark改變長期推理利潤圖，但規模、長上下文與完整TCO仍未知。", "steps": ["記錄實際部署與負載份額", "比較長上下文Agent和系統TCO", "分開NVIDIA訓練與推理賬本"], "done": "量產、服務品質與毛利證據匯合後才調整倉位。"},
+        {"signal": 2, "domain": "Physical AI", "title": "把慕尼黑視為複製測試", "why": "Waymo有明確付費目標，但德國許可和營運經濟尚未成立。", "steps": ["追蹤牌照和無安全員里程", "測量每車行程及遠程干預", "比較單城營運成本"], "done": "只有獲批的付費無安全員營運披露干預與成本後才確認商業複製。"},
+        {"signal": 3, "domain": "加密資本", "title": "等待ETF資金廣度", "why": "週度流入仍為正，但BlackRock產品貢獻86.5%，最後一天中斷連續流入。", "steps": ["再完成兩週結算流量表", "拆分IBIT與ETHA集中度", "要求穩定幣供給和真實鏈上費用"], "done": "非IBIT／ETHA連續兩週超過三分之一且鏈上活動上升後才升級。"},
+        {"signal": 4, "domain": "穩定幣與支付", "title": "繪製三層貨幣架構", "why": "BIS立場使共存比單一贏家更可信。", "steps": ["指定資金軌、營運資金和結算資產", "明確儲值、FX與退款負責人", "測試對賬和失敗恢復"], "done": "每項負債和回退責任都明確後方案才通過。"},
+        {"signal": 5, "domain": "iamrobin.ai", "title": "發布可交付兆瓦", "why": "本週證據支持連接工程、客戶信用與資本結構的耐久框架。", "steps": ["拆分六級兆瓦", "使用八行承銷卡", "發布並驗證四語路由"], "done": "Action Item通過證據、語言、構建、公開與通知門禁。"},
+        {"signal": 6, "domain": "AI基礎設施情報", "title": "將Monarch導入研究", "why": "報道值得研究但尚未確認，適合先進入私有證據賬本，再接受月度公開審視。", "steps": ["保留REPORTED_UNCONFIRMED", "追蹤最低付款、COD、設備和資本棧", "僅排入月度公開候選"], "done": "私有研究候選有來源、已去重，並明確禁止即時公開。"},
+        {"signal": 7, "domain": "後期一級市場", "title": "等待外部機械人收入", "why": "Dogotix擁有資本和製造槓桿，內部部署不能證明獨立需求。", "steps": ["追蹤外部付費客戶和復購", "取得單位成本、毛利與干預率", "分開關聯與外部收入"], "done": "非關聯客戶確認自主工作與經濟性後才改變評級。"},
+        {"signal": 8, "domain": "公開市場", "title": "保留NVIDIA四本賬", "why": "訓練優勢與推理份額風險可以共存，現金轉化和融資敞口需要獨立證據。", "steps": ["分開平台護城河與推理份額", "對賬現金流、應收與庫存", "映射客戶融資與殘值風險"], "done": "下一次配置只依據季度部署、現金和信用證據。"}
+      ]
+    },
+    "ja": {
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "title": "デイリー・アクション・フロー、2026年8月31日",
+      "description": "出典で裏付けた8つの判断を、一つの検証可能なCIO実行フィールドへ並べる。",
+      "centralJudgment": "AI需要と提供経路を分ける。deliverable MWの枠組みを公開し、Monarchの報道は不確実性を保ったまま非公開研究へ回し、他の市場シグナルは明示した格上げ条件で監視する。",
+      "fieldLine": "8つのシグナル。1件の公開を完了。7つの証拠条件が継続。",
+      "actions": [
+        {"signal": 1, "domain": "フロンティアモデル", "title": "Jalapeñoの配備を追う", "why": "benchmarkは長期推論利益を変えるが、規模、長文脈、総TCOは未確認である。", "steps": ["実配備と負荷比率を記録する", "長文脈AgentとシステムTCOを比較する", "NVIDIAの学習と推論を別台帳にする"], "done": "量産、サービス品質、利益率の証拠が揃った場合だけ配分を変える。"},
+        {"signal": 2, "domain": "Physical AI", "title": "ミュンヘンを複製試験とする", "why": "Waymoには有償目標があるが、ドイツの許可と運営経済は未成立である。", "steps": ["許可と無人距離を追う", "車両当たり乗車と遠隔介入を測る", "都市別運営費を比較する"], "done": "許可済み有償無人運行が介入と費用を開示した場合に商用複製を確認する。"},
+        {"signal": 3, "domain": "暗号資産への資本", "title": "ETFの裾野を待つ", "why": "週間流入は正だがBlackRock商品が86.5％を占め、最終日に連続流入が止まった。", "steps": ["さらに2週の確定フローを作る", "IBITとETHA集中を分ける", "ステーブルコイン供給と実手数料を求める"], "done": "非IBIT・非ETHAが2週連続で3分の1超となり、オンチェーン活動も増えた場合に格上げする。"},
+        {"signal": 4, "domain": "ステーブルコインと決済", "title": "三層の貨幣を描く", "why": "BISの立場では単独勝者より共存構造が妥当である。", "steps": ["資金レール、運用通貨、決済資産を指定する", "価値保管、FX、返金の責任者を置く", "照合と障害復旧を試す"], "done": "各債務と代替責任が明確な場合だけ設計を通す。"},
+        {"signal": 5, "domain": "iamrobin.ai", "title": "Deliverable MWを公開する", "why": "今週の証拠から、工学、顧客信用、資本構成を結ぶ耐久的な枠組みを作れる。", "steps": ["六段階MWを分ける", "八行の引受カードを使う", "四言語経路を公開・検証する"], "done": "Action Itemが証拠、言語、ビルド、公開、通知ゲートを通過する。"},
+        {"signal": 6, "domain": "AIインフラ・インテリジェンス", "title": "Monarchを研究へ回す", "why": "報道は判断価値がある一方で未確認であり、月次公開審査の前に非公開証拠台帳へ置くべきである。", "steps": ["REPORTED_UNCONFIRMEDを保つ", "最低支払い、COD、設備、資本構成を追う", "月次公開候補だけを作る"], "done": "非公開候補が出典付きで重複なく、即時公開禁止を明示する。"},
+        {"signal": 7, "domain": "レイトステージ市場", "title": "外部ロボット収益を待つ", "why": "Dogotixは資本と製造力を持つが、社内配備は独立需要の証拠ではない。", "steps": ["外部有償顧客と再注文を追う", "単価、粗利、介入率を得る", "関連当事者と外部売上を分ける"], "done": "非関連顧客が自律作業と経済性を確認した場合だけ評価を変える。"},
+        {"signal": 8, "domain": "公開株式", "title": "NVIDIAを四台帳で追う", "why": "学習優位と推論シェアリスクは共存し、現金化と金融支援は別証拠を要する。", "steps": ["プラットフォームの堀と推論シェアを分ける", "キャッシュフロー、売掛金、在庫を照合する", "顧客金融と残存価値を図示する"], "done": "次の配分は週間収益ではなく、四半期の配備、現金、信用証拠で決める。"}
+      ]
+    }
+  }
+}
