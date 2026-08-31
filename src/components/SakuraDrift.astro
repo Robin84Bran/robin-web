@@ -1,6 +1,6 @@
 ---
 interface Props {
-  variant?: 'banner' | 'corner';
+  variant?: 'banner' | 'corner' | 'orbit';
 }
 
 const { variant = 'banner' } = Astro.props;
@@ -12,7 +12,11 @@ const cornerPetals = [
   [18, 10, 0.82], [45, 25, 1.08], [72, 8, 0.65], [28, 56, 0.58],
   [64, 62, 0.9], [86, 43, 0.54], [48, 84, 0.62],
 ];
-const petals = variant === 'banner' ? bannerPetals : cornerPetals;
+const orbitPetals = [
+  [18, 8, 0.62], [42, 4, 0.44], [68, 14, 0.74], [84, 34, 0.5],
+  [72, 58, 0.6], [49, 72, 0.46], [26, 61, 0.7], [12, 38, 0.48],
+];
+const petals = variant === 'banner' ? bannerPetals : variant === 'corner' ? cornerPetals : orbitPetals;
 ---
 
 <div class:list={['sakura-drift', `sakura-drift--${variant}`]} aria-hidden="true">

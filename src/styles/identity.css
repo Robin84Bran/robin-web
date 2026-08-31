@@ -85,6 +85,18 @@
   -webkit-mask-image: linear-gradient(135deg, #000 8%, rgba(0, 0, 0, 0.86) 55%, transparent 94%);
 }
 
+.sakura-drift--orbit {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  width: 74%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  opacity: 0.92;
+  transform: translate(-50%, -50%);
+}
+
 .sakura-drift__petal {
   position: absolute;
   top: var(--petal-y);
@@ -99,6 +111,12 @@
 .sakura-drift--corner .sakura-drift__petal {
   width: clamp(1.2rem, 4vw, 2.5rem);
   opacity: 0.3;
+}
+
+.sakura-drift--orbit .sakura-drift__petal {
+  width: clamp(0.9rem, 2.55vw, 1.72rem);
+  opacity: 0.3;
+  filter: saturate(0.92) contrast(0.98);
 }
 
 .identity-bridge h2,
@@ -301,13 +319,9 @@
   z-index: 2;
   top: 50%;
   left: 50%;
-  width: 34%;
+  width: 41%;
   aspect-ratio: 1;
-  overflow: hidden;
-  background: var(--paper);
-  border: 1px solid rgba(180, 145, 93, 0.42);
-  border-radius: 50%;
-  box-shadow: 0 1rem 3rem rgba(74, 61, 48, 0.14), inset 0 0 0 0.42rem rgba(253, 251, 247, 0.52);
+  filter: drop-shadow(0 0 0.7rem rgba(253, 251, 247, 0.92)) drop-shadow(0 1.15rem 2.4rem rgba(74, 61, 48, 0.11));
   transform: translate(-50%, -50%);
 }
 
@@ -316,12 +330,14 @@
   top: 50%;
   left: 50%;
   display: block;
-  width: 88%;
+  width: 118%;
   height: auto;
   max-width: none;
   object-fit: contain;
-  filter: saturate(0.78) contrast(0.96) sepia(0.035);
-  transform: translate(-50%, -50%);
+  filter: saturate(0.96) contrast(0.99) brightness(1.005);
+  mask-image: radial-gradient(ellipse 48% 39% at 50% 47%, #000 47%, rgba(0, 0, 0, 0.92) 61%, rgba(0, 0, 0, 0.46) 77%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 48% 39% at 50% 47%, #000 47%, rgba(0, 0, 0, 0.92) 61%, rgba(0, 0, 0, 0.46) 77%, transparent 100%);
+  transform: translate(-50%, -46%);
 }
 
 .identity-ouroboros__center strong {
@@ -538,6 +554,11 @@
     animation-duration: 19s;
   }
 
+  .sakura-drift--orbit .sakura-drift__petal {
+    animation: sakura-orbit-drift 18s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+    animation-delay: calc(var(--petal-index) * -2.15s);
+  }
+
   .identity-ouroboros__ring {
     animation: identity-ring-turn 72s linear infinite;
   }
@@ -568,6 +589,14 @@
   95% { opacity: 0; transform: translate(115%, 96%) rotate(154deg) scale(var(--petal-scale)); }
 }
 
+@keyframes sakura-orbit-drift {
+  0%, 100% { opacity: 0; transform: translate(-2.4rem, -3.8rem) rotate(-28deg) scale(var(--petal-scale)); }
+  14% { opacity: 0.28; }
+  48% { opacity: 0.52; transform: translate(0.45rem, 0.75rem) rotate(76deg) scale(var(--petal-scale)); }
+  84% { opacity: 0.32; }
+  94% { opacity: 0; transform: translate(2.8rem, 4.6rem) rotate(168deg) scale(var(--petal-scale)); }
+}
+
 @keyframes identity-ring-turn {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
@@ -590,5 +619,9 @@
 
   .identity-ouroboros li {
     opacity: 0.82;
+  }
+
+  .sakura-drift--orbit .sakura-drift__petal:nth-child(even) {
+    display: none;
   }
 }

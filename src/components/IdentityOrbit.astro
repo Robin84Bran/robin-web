@@ -1,4 +1,6 @@
 ---
+import SakuraDrift from './SakuraDrift.astro';
+
 interface Props {
   items: string[];
   label: string;
@@ -24,9 +26,12 @@ const phases = ['Origin', 'Diverge', 'Converge', 'Origin'];
   <img class="identity-ouroboros__ring" src="/visuals/ouroboros-ring.png" alt="" width="900" height="900" aria-hidden="true" />
   {
     centerImage ? (
-      <span class="identity-ouroboros__dial" aria-hidden="true">
-        <img src={centerImage} alt="" width={centerImageWidth} height={centerImageHeight} />
-      </span>
+      <>
+        <span class="identity-ouroboros__dial" aria-hidden="true">
+          <img src={centerImage} alt="" width={centerImageWidth} height={centerImageHeight} />
+        </span>
+        <SakuraDrift variant="orbit" />
+      </>
     ) : (
       <span class="identity-ouroboros__center" aria-hidden="true">
         <strong>{centerLabel}</strong>
