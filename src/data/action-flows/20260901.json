@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-01",
+  "updated": "2026-09-01",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20260901/hero.webp",
+  "actionHero": "/action-item/20260901/hero.webp",
+  "ogImage": "/daily-briefing/20260901/og.webp",
+  "briefingPath": "/ouroboros/202609/20260901/",
+  "actionItemPath": "/ouroboros/202609/20260901/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": ">10%",
+      "visualLabel": "RL environments flagged",
+      "sources": [
+        {"label": "Anthropic", "url": "https://www.anthropic.com/news/improving-alignment-security-efforts"},
+        {"label": "Reuters", "url": "https://www.reuters.com/technology/anthropic-resume-external-testing-ai-models-following-security-incidents-2026-08-31/"}
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "6 metrics",
+      "visualLabel": "useful autonomy card",
+      "sources": [
+        {"label": "WIRED", "url": "https://www.wired.com/story/inside-metas-experiments-with-data-center-robots"}
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$369.7M",
+      "visualLabel": "equity-funded BTC buy",
+      "sources": [
+        {"label": "Strategy 8-K", "url": "https://www.sec.gov/Archives/edgar/data/1050446/000119312526375463/mstr-20260831.htm"},
+        {"label": "Farside Bitcoin", "url": "https://farside.co.uk/btc/"},
+        {"label": "Farside Ether", "url": "https://farside.co.uk/eth/"}
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "Sep 7 + 9",
+      "visualLabel": "Lords debates",
+      "sources": [
+        {"label": "HM Treasury", "url": "https://www.gov.uk/government/news/ministers-to-boost-innovation-in-payments-with-new-objective-for-bank-of-england"},
+        {"label": "Reuters", "url": "https://www.reuters.com/legal/transactional/britain-plans-new-bank-england-objective-support-payments-innovation-2026-08-26/"}
+      ]
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "visualValue": "$3.5B",
+      "visualLabel": "MediaTek convertible",
+      "sources": [
+        {"label": "NVIDIA", "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"},
+        {"label": "MediaTek", "url": "https://www.mediatek.com/press-room/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"},
+        {"label": "Reuters", "url": "https://www.reuters.com/world/asia-pacific/nvidia-invests-35-billion-mediatek-convertible-bonds-2026-08-31/"}
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "$4.1B",
+      "visualLabel": "Kelvion enterprise value",
+      "sources": [
+        {"label": "Kelvion", "url": "https://www.kelvion.com/stories-media/news"},
+        {"label": "Reuters", "url": "https://www.reuters.com/business/energy/slb-acquire-kelvion-34-billion-2026-08-31/"}
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "~8×",
+      "visualLabel": "reported ARR multiple",
+      "sources": [
+        {"label": "Alice", "url": "https://alice.io/blog/alice-raises-140m"},
+        {"label": "Dealroom", "url": "https://dealroom.co/news/146846-alice-raises-140m-series-d-at-800m-valuation-to-secure-ai-models/"}
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "+1.31pp",
+      "visualLabel": "NVDA versus QQQ",
+      "sources": [
+        {"label": "NVIDIA", "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"},
+        {"label": "MediaTek", "url": "https://www.mediatek.com/press-room/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"},
+        {"label": "Reuters", "url": "https://www.reuters.com/world/asia-pacific/nvidia-invests-35-billion-mediatek-convertible-bonds-2026-08-31/"},
+        {"label": "NVDA prices", "url": "https://stockanalysis.com/stocks/nvda/history/"},
+        {"label": "QQQ prices", "url": "https://stockanalysis.com/etf/qqq/history/"}
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "inLanguage": "en",
+      "languageSlug": "",
+      "title": "Daily Action Flow, September 1, 2026",
+      "description": "Eight source-backed decisions ordered into one inspectable CIO execution field.",
+      "centralJudgment": "Control the layer that acts before execution and the layer that surrounds compute. Publish NVIDIA's heterogeneous-system thesis now, route cooling evidence into private intelligence, and keep every market signal on a measurable upgrade test.",
+      "fieldLine": "Eight signals. One publication complete. Seven evidence loops remain open.",
+      "actions": [
+        {"signal": 1, "domain": "Frontier Models", "title": "Install the Pre-Tool Gate", "why": "Anthropic's incident record confirms that autonomy needs an independent control plane before execution.", "steps": ["Inventory network, credential, send and delete tools", "Define scope checks and automatic termination", "Preserve evidence and start bounded repair"], "done": "Every privileged tool call is independently checked before execution and produces inspectable stop evidence when scope is exceeded."},
+        {"signal": 2, "domain": "Physical AI", "title": "Measure Useful Robot Hours", "why": "Meta has real maintenance tasks, while supervision, charging and vision failures still prevent lights-out economics.", "steps": ["Track recovery time and task success", "Record intervention, damage and charging share", "Calculate cost per useful autonomous hour"], "done": "The scorecard distinguishes demonstrated operating value from projected job replacement."},
+        {"signal": 3, "domain": "Crypto Capital", "title": "Separate Treasury-Funded Demand", "why": "Strategy's purchase is confirmed demand financed through shareholder issuance rather than organic crypto activity.", "steps": ["Record net BTC and diluted shares", "Calculate capital cost per acquired BTC", "Track premium to net asset value separately from ETF breadth"], "done": "The ledger shows demand source, dilution and capital cost without mixing corporate, ETF and onchain flows."},
+        {"signal": 4, "domain": "Stablecoins and Payments", "title": "Watch Britain's Adoption Test", "why": "A statutory objective matters only if it produces safe, useful payment infrastructure.", "steps": ["Track the September 7 and 9 debates", "Record the first systemic stablecoin approval", "Measure settlement volume, redemption, disputes and unit cost"], "done": "The mandate is upgraded only after an approved product demonstrates real merchant settlement and reliable redemption."},
+        {"signal": 5, "domain": "iamrobin.ai", "title": "Publish NVIDIA's Control Layer", "why": "MediaTek makes the strategic response to custom silicon visible across interconnect, memory, networking, software and financing.", "steps": ["Map the compute core against the control layer", "Separate technical adoption from balance-sheet support", "Publish and verify all four language routes"], "done": "The Action Item passes evidence, language, build, public and Telegram gates."},
+        {"signal": 6, "domain": "AI Infrastructure Intelligence", "title": "Route Cooling into Intelligence", "why": "SLB and Kelvion connect engineering delivery, thermal control and AI-capital underwriting with quantified deal economics.", "steps": ["Create the private evidence intake", "Track revenue per GW, commissioning and service economics", "Keep career context private and public output on monthly HOLD"], "done": "The evidence record is source-backed, deduplicated and explicitly barred from immediate public release."},
+        {"signal": 7, "domain": "Late Stage Markets", "title": "Hold Alice at Investigate", "why": "Reported ARR makes the company underwritable in principle, while retention, concentration, margins and preferences remain unknown.", "steps": ["Request audited ARR and net retention", "Measure customer concentration and inference cost", "Verify primary-secondary mix and liquidation preferences"], "done": "The rating changes only after the missing operating and security-quality evidence is verified."},
+        {"signal": 8, "domain": "Public Equities", "title": "Track NVIDIA Through Five Ledgers", "why": "GPU share can decline while system value capture rises, but ecosystem financing adds a separate credit exposure.", "steps": ["Track GPU compute share and NVLink-compatible XPUs", "Measure networking and systems revenue", "Reconcile ecosystem investment returns and partner credit"], "done": "The core thesis changes only through quarterly mix, deployed systems and cash-recovery evidence."}
+      ]
+    },
+    "zh-Hans": {
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "title": "每日行动流，2026年9月1日",
+      "description": "八项有来源支持的决策，汇入一个可审计的CIO执行场。",
+      "centralJudgment": "控制动作执行前的门，也控制计算核心周围的层。今天发布NVIDIA异构系统论点，把冷却证据导入私有研究，其余市场信号全部保留可量化升级门槛。",
+      "fieldLine": "八个信号。一项发布完成。七个证据循环继续。",
+      "actions": [
+        {"signal": 1, "domain": "前沿模型", "title": "安装工具调用前门禁", "why": "Anthropic事故记录确认，高自主性需要在执行前工作的独立控制平面。", "steps": ["清点网络、凭证、发送与删除工具", "定义范围检查和自动终止", "保存证据并启动有界修复"], "done": "每项高权限工具调用都在执行前独立检查，越界时留下可审计的停止证据。"},
+        {"signal": 2, "domain": "Physical AI", "title": "测量有效机器人小时", "why": "Meta已有真实维护任务，但监督、充电与视觉故障仍妨碍无人运维经济。", "steps": ["追踪恢复时间与任务成功率", "记录接管、损伤及充电占比", "计算每个有效自主小时成本"], "done": "评分卡能够把已证明的运营价值与岗位替代预测分开。"},
+        {"signal": 3, "domain": "加密资本", "title": "分开增发驱动需求", "why": "Strategy购买是已确认需求，资金来自股东增发而非加密行业自然活动。", "steps": ["记录BTC净增加与完全摊薄股数", "计算每枚BTC资本成本", "分开净资产溢价、ETF与链上广度"], "done": "账本明确需求来源、稀释与资本成本，不混合三种资金流。"},
+        {"signal": 4, "domain": "稳定币与支付", "title": "观察英国采用测试", "why": "法定创新目标只有产生安全且有用的支付基础设施才有价值。", "steps": ["追踪9月7日及9日审议", "记录首个系统重要稳定币批准", "测量结算量、赎回、争议及单位成本"], "done": "获批产品证明真实商户结算与可靠赎回后才升级。"},
+        {"signal": 5, "domain": "iamrobin.ai", "title": "发布NVIDIA控制层", "why": "MediaTek让NVIDIA对定制芯片的战略回应在互连、内存、网络、软件与融资层变得可见。", "steps": ["绘制计算核心与控制层", "分开技术采用与资产负债表支持", "发布并验证四语路由"], "done": "Action Item通过证据、语言、构建、公开与Telegram门禁。"},
+        {"signal": 6, "domain": "AI基础设施情报", "title": "把冷却证据导入研究", "why": "SLB与Kelvion用可量化交易经济连接工程交付、热控制与AI资本承销。", "steps": ["建立私有证据记录", "追踪每GW收入、投产及服务经济", "职业信息保持私有，公开输出等待月度审视"], "done": "记录有来源、已去重，并明确禁止即时公开。"},
+        {"signal": 7, "domain": "后期一级市场", "title": "Alice维持调查评级", "why": "公司口径ARR使其原则上可承销，但留存、集中度、毛利和优先权仍未知。", "steps": ["取得经审计ARR与净收入留存", "测量客户集中及推理成本", "核实一二级比例与清算优先权"], "done": "缺失的运营与安全质量证据得到验证后才改变评级。"},
+        {"signal": 8, "domain": "公开市场", "title": "用五本账追踪NVIDIA", "why": "GPU份额下降时系统价值捕获仍可上升，但生态融资形成独立信用风险。", "steps": ["追踪GPU份额与NVLink兼容XPU", "测量网络及系统收入", "核对生态投资回报与伙伴信用"], "done": "只依据季度结构、实际部署与现金回收改变核心论点。"}
+      ]
+    },
+    "zh-Hant": {
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "title": "每日行動流，2026年9月1日",
+      "description": "八項有來源支持的決策，匯入一個可審計的CIO執行場。",
+      "centralJudgment": "控制動作執行前的門，也控制運算核心周圍的層。今天發布NVIDIA異構系統論點，把冷卻證據導入私有研究，其餘市場訊號全部保留可量化升級門檻。",
+      "fieldLine": "八個訊號。一項發布完成。七個證據循環繼續。",
+      "actions": [
+        {"signal": 1, "domain": "前沿模型", "title": "安裝工具呼叫前門禁", "why": "Anthropic事故記錄確認，高自主性需要在執行前工作的獨立控制平面。", "steps": ["清點網路、憑證、傳送與刪除工具", "定義範圍檢查和自動終止", "保存證據並啟動有界修復"], "done": "每項高權限工具呼叫都在執行前獨立檢查，越界時留下可審計的停止證據。"},
+        {"signal": 2, "domain": "Physical AI", "title": "測量有效機器人小時", "why": "Meta已有真實維護任務，但監督、充電與視覺故障仍妨礙無人運維經濟。", "steps": ["追蹤恢復時間與任務成功率", "記錄接管、損傷及充電占比", "計算每個有效自主小時成本"], "done": "評分卡能把已證明的營運價值與職位替代預測分開。"},
+        {"signal": 3, "domain": "加密資本", "title": "分開增發驅動需求", "why": "Strategy購買是已確認需求，資金來自股東增發而非加密產業自然活動。", "steps": ["記錄BTC淨增加與完全攤薄股數", "計算每枚BTC資本成本", "分開淨資產溢價、ETF與鏈上廣度"], "done": "台帳明確需求來源、稀釋與資本成本，不混合三種資金流。"},
+        {"signal": 4, "domain": "穩定幣與支付", "title": "觀察英國採用測試", "why": "法定創新目標只有產生安全且有用的支付基礎設施才有價值。", "steps": ["追蹤9月7日及9日審議", "記錄首個系統重要穩定幣批准", "測量結算量、贖回、爭議及單位成本"], "done": "獲批產品證明真實商戶結算與可靠贖回後才升級。"},
+        {"signal": 5, "domain": "iamrobin.ai", "title": "發布NVIDIA控制層", "why": "MediaTek讓NVIDIA對客製晶片的戰略回應在互連、記憶體、網路、軟體與融資層變得可見。", "steps": ["繪製運算核心與控制層", "分開技術採用與資產負債表支持", "發布並驗證四語路由"], "done": "Action Item通過證據、語言、構建、公開與Telegram門禁。"},
+        {"signal": 6, "domain": "AI基礎設施情報", "title": "把冷卻證據導入研究", "why": "SLB與Kelvion用可量化交易經濟連接工程交付、熱控制與AI資本承銷。", "steps": ["建立私有證據記錄", "追蹤每GW收入、投產及服務經濟", "職業資訊保持私有，公開輸出等待月度審視"], "done": "記錄有來源、已去重，並明確禁止即時公開。"},
+        {"signal": 7, "domain": "後期私募市場", "title": "Alice維持調查評級", "why": "公司口徑ARR使其原則上可承銷，但留存、集中度、毛利和優先權仍未知。", "steps": ["取得經審計ARR與淨收入留存", "測量客戶集中及推理成本", "核實一二級比例與清算優先權"], "done": "缺失的營運與安全品質證據得到驗證後才改變評級。"},
+        {"signal": 8, "domain": "公開市場", "title": "用五本台帳追蹤NVIDIA", "why": "GPU份額下降時系統價值捕捉仍可上升，但生態融資形成獨立信用風險。", "steps": ["追蹤GPU份額與NVLink相容XPU", "測量網路及系統收入", "核對生態投資回報與夥伴信用"], "done": "只依據季度結構、實際部署與現金回收改變核心論點。"}
+      ]
+    },
+    "ja": {
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "title": "デイリー・アクション・フロー、2026年9月1日",
+      "description": "出典で裏付けた8つの判断を、一つの検証可能なCIO実行フィールドへ並べる。",
+      "centralJudgment": "実行前のゲートと、演算コアを囲む制御層を握る。NVIDIAの異種システム仮説を本日公開し、冷却の証拠は非公開研究へ回す。残る市場シグナルは測定可能な格上げ条件で監視する。",
+      "fieldLine": "8つのシグナル。1件の公開を完了。7つの証拠ループが継続。",
+      "actions": [
+        {"signal": 1, "domain": "フロンティアモデル", "title": "ツール実行前ゲートを置く", "why": "Anthropicの事故記録は、高い自律性に実行前の独立制御面が必要だと示す。", "steps": ["ネットワーク、認証、送信、削除ツールを棚卸しする", "範囲検査と自動停止を定義する", "証拠保存と限定修復を開始する"], "done": "高権限の全ツール呼び出しが実行前に独立検査され、逸脱時に検証可能な停止証拠を残す。"},
+        {"signal": 2, "domain": "Physical AI", "title": "有用なロボット時間を測る", "why": "Metaには実保守作業があるが、監督、充電、視覚障害が無人運用経済を妨げる。", "steps": ["復旧時間と成功率を追う", "介入、損傷、充電比率を記録する", "有用な自律1時間当たり費用を計算する"], "done": "実証済み運用価値と雇用代替予測をスコアカードで分離する。"},
+        {"signal": 3, "domain": "暗号資産への資本", "title": "株式調達需要を分ける", "why": "Strategyの買いは確認済み需要だが、資金源は株主資本であり自然な暗号活動ではない。", "steps": ["BTC純増と完全希薄化株式を記録する", "BTC1枚当たり資本費を算出する", "NAVプレミアムをETF・オンチェーンの裾野と分ける"], "done": "需要源、希薄化、資本費を明示し、三つのフローを混同しない。"},
+        {"signal": 4, "domain": "ステーブルコインと決済", "title": "英国の採用試験を追う", "why": "法定目標は安全で有用な決済インフラを生んだ場合にだけ価値を持つ。", "steps": ["9月7日と9日の審議を追う", "最初のシステム重要ステーブルコイン承認を記録する", "決済量、償還、紛争、単位費用を測る"], "done": "承認商品が実加盟店決済と確実な償還を示した場合に格上げする。"},
+        {"signal": 5, "domain": "iamrobin.ai", "title": "NVIDIAの制御層を公開する", "why": "MediaTekにより、相互接続、メモリー、ネットワーク、ソフトウェア、金融を通じたNVIDIAの回答が見える。", "steps": ["演算コアと制御層を図示する", "技術採用と貸借対照表支援を分ける", "四言語経路を公開・検証する"], "done": "Action Itemが証拠、言語、ビルド、公開、Telegramの各ゲートを通過する。"},
+        {"signal": 6, "domain": "AIインフラ・インテリジェンス", "title": "冷却証拠を研究へ回す", "why": "SLBとKelvionは定量的な案件経済で工学、熱制御、AI資本判断を結ぶ。", "steps": ["非公開証拠記録を作る", "GW当たり売上、立ち上げ、サービス経済を追う", "職務情報を非公開に保ち月次審査まで公開しない"], "done": "記録が出典付きで重複なく、即時公開禁止を明示する。"},
+        {"signal": 7, "domain": "レイトステージ市場", "title": "Aliceを調査段階に保つ", "why": "申告ARRは引受可能性を示すが、維持率、集中、粗利、優先条件が未確認である。", "steps": ["監査済みARRと純収益維持率を得る", "顧客集中と推論費を測る", "一次二次比率と清算優先権を確認する"], "done": "不足する運用・安全品質の証拠を検証した場合だけ評価を変える。"},
+        {"signal": 8, "domain": "公開株式", "title": "NVIDIAを五台帳で追う", "why": "GPUシェア低下とシステム価値獲得は両立するが、生態系金融は別の信用リスクを生む。", "steps": ["GPUシェアとNVLink互換XPUを追う", "ネットワーク・システム売上を測る", "生態系投資リターンと相手先信用を照合する"], "done": "四半期構成、実配備、現金回収だけで中核仮説を変える。"}
+      ]
+    }
+  }
+}
