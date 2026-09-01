@@ -12,6 +12,7 @@ const indexableRoutes = new Set([
   '/ja/', '/ja/about/', '/ja/network/',
   '/portfolio/', '/books/', '/meaning/', '/ouroboros/', '/binary/',
   '/intelligence/', '/intelligence/hardware/', '/intelligence/supply-chain/',
+  '/intelligence/hardware/deliverable-megawatts/',
   '/intelligence/supply-chain-map/', '/intelligence/swarm/',
 ]);
 const identityFamilies = [
@@ -86,7 +87,7 @@ if (existsSync(dist)) {
   const blogPublications = [...blogRoutes, ...blogTranslationRoutes];
   const publicationRoutes = [...articleRoutes, ...actionFlowPublications, ...blogPublications];
   for (const route of [...publicationRoutes, ...diaryRoutes]) indexableRoutes.add(route);
-  check(routes.size === 27 + publicationRoutes.length + diaryRoutes.length, `expected ${27 + publicationRoutes.length + diaryRoutes.length} HTML routes, found ${routes.size}.`);
+  check(routes.size === 28 + publicationRoutes.length + diaryRoutes.length, `expected ${28 + publicationRoutes.length + diaryRoutes.length} HTML routes, found ${routes.size}.`);
 
   for (const [route, file] of routes) {
     const html = readFileSync(file, 'utf8');
@@ -178,6 +179,7 @@ if (existsSync(dist)) {
   const ouroboros = readFileSync(routes.get('/ouroboros/'), 'utf8');
   const binary = readFileSync(routes.get('/binary/'), 'utf8');
   const meaning = readFileSync(routes.get('/meaning/'), 'utf8');
+  const infrastructure = readFileSync(routes.get('/intelligence/hardware/deliverable-megawatts/'), 'utf8');
   check(homepage.includes('"@type":"Person"'), 'homepage: Person schema missing.');
   check(homepage.includes('"@type":"WebSite"'), 'homepage: WebSite schema missing.');
   check(homepage.includes('"@type":"ProfilePage"'), 'homepage: ProfilePage schema missing.');
@@ -211,6 +213,9 @@ if (existsSync(dist)) {
   check(binary.includes('"@type":"CollectionPage"'), 'binary: CollectionPage schema missing.');
   check(meaning.includes('"@type":"CollectionPage"'), 'meaning: CollectionPage schema missing.');
   check(meaning.includes('id="diary"'), 'meaning: Diary archive is missing.');
+  check(infrastructure.includes('From paper gigawatts to operating compute'), 'AI infrastructure field note: canonical thesis is missing.');
+  check(infrastructure.includes('"@type":"Article"') && infrastructure.includes('"@type":"BreadcrumbList"'), 'AI infrastructure field note: Article and BreadcrumbList schema are required.');
+  check(!infrastructure.includes('sourceThread') && !infrastructure.includes('source_thread') && !infrastructure.includes('chatgpt.com/c/'), 'AI infrastructure field note: private provenance pointer detected.');
   check((ouroboros.match(/<details class="ouroboros-shelf"/g) ?? []).length === 2, 'ouroboros: expected Daily Briefing and Daily Action Flow shelves only.');
   check((binary.match(/<section class="binary-lane"/g) ?? []).length === 3, 'binary: expected Build, Invest, and Joy lanes.');
   check((binary.match(/<nav class="ouroboros-shelf__list binary-present"/g) ?? []).length === 3, 'binary: every lane must expose its present titles.');

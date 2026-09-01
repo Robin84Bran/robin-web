@@ -19,7 +19,7 @@ export default defineConfig({
           '/ja/', '/ja/about/', '/ja/network/',
           '/portfolio/', '/books/', '/meaning/', '/ouroboros/', '/binary/',
         ].includes(path)
-          || /^\/intelligence\/(?:hardware\/|supply-chain\/|supply-chain-map\/|swarm\/)?$/.test(path)
+          || /^\/intelligence\/(?:hardware\/(?:deliverable-megawatts\/)?|supply-chain\/|supply-chain-map\/|swarm\/)?$/.test(path)
           || /^\/meaning\/diary\/\d{6}\/\d{4}-\d{2}-\d{2}-[a-z0-9-]+\/$/.test(path)
           || /^\/ouroboros\/\d{6}\/\d{8}\/$/.test(path)
           || /^\/ouroboros\/\d{6}\/\d{8}\/(?:zh-hans|zh-hant|ja)\/$/.test(path)

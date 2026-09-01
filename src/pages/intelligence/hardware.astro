@@ -28,4 +28,51 @@ const schema = {
     line="Intelligence is a flow problem."
   />
   <HardwareFlow />
+  <section class="hardware-field-note shell" aria-labelledby="hardware-field-note-title">
+    <p class="eyebrow">Monthly field note · August 2026</p>
+    <h2 id="hardware-field-note-title">From paper gigawatts to deliverable megawatts.</h2>
+    <p>A proof ladder for separating announced capacity from operating compute.</p>
+    <a href="/intelligence/hardware/deliverable-megawatts/">Read the field note →</a>
+  </section>
 </BaseLayout>
+
+<style>
+  .hardware-field-note {
+    max-width: 58rem;
+    margin-bottom: clamp(5rem, 10vw, 9rem);
+    padding: clamp(1.5rem, 4vw, 2.6rem);
+    background:
+      radial-gradient(circle at 86% 18%, rgba(180, 145, 93, 0.13), transparent 34%),
+      rgba(255, 255, 255, 0.32);
+    border: 1px solid rgba(180, 145, 93, 0.28);
+  }
+
+  .hardware-field-note h2 {
+    max-width: 18ch;
+    margin: 0.8rem 0 0.7rem;
+    font-family: var(--serif);
+    font-size: clamp(1.7rem, 4vw, 2.8rem);
+    font-weight: 400;
+    letter-spacing: -0.025em;
+    line-height: 1.06;
+  }
+
+  .hardware-field-note > p:not(.eyebrow) {
+    max-width: 34rem;
+    color: var(--muted);
+    font-family: var(--serif);
+    font-size: 1.05rem;
+  }
+
+  .hardware-field-note a {
+    display: inline-block;
+    margin-top: 1.4rem;
+    color: var(--ink);
+    font-size: 0.68rem;
+    font-weight: 650;
+    letter-spacing: 0.11em;
+    text-decoration-color: var(--gold);
+    text-underline-offset: 0.3em;
+    text-transform: uppercase;
+  }
+</style>
