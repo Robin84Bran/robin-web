@@ -1,4 +1,5 @@
 ---
+archiveStatus: "PRESENT"
 title: 未來數據是一台時間機器
 date: 2026-09-02
 updated: 2026-08-21

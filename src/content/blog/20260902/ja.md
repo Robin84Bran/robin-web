@@ -1,4 +1,5 @@
 ---
+archiveStatus: "PRESENT"
 title: 未来データはタイムマシンである
 date: 2026-09-02
 updated: 2026-08-21

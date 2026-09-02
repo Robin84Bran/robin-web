@@ -1,4 +1,5 @@
 ---
+archiveStatus: "PRESENT"
 title: Future Data Is a Time Machine
 date: 2026-09-02
 updated: 2026-08-21
