@@ -21,17 +21,23 @@ const displayDate = new Date(`${flow.date}T12:00:00Z`).toLocaleDateString(
   { timeZone: 'UTC', year: 'numeric', month: 'long', day: 'numeric' },
 );
 const localized = edition.inLanguage === 'ja'
-  ? { kicker: 'Ouroboros / デイリー・アクション・フロー', judgment: '中心判断', steps: '実行', done: '完了条件', sources: '出典', deep: '正典の深掘りを読む', ledger: 'CIO ステータス台帳', complete: '完了', ready: '実行可能', watching: '監視中', return: 'デイリー・ブリーフへ戻る' }
+  ? { kicker: 'Ouroboros / デイリー・アクション・フロー', judgment: '中心判断', steps: '実行', done: '完了条件', sources: '出典', deep: '正典の深掘りを読む', ledger: 'CIO ステータス台帳', complete: '完了', watching: '監視中', blocked: '保留', superseded: '統合済み', artifact: '成果物', commit: 'コミット', receipt: '検証記録', audit: '実行記録', fullLedger: '全実行台帳', return: 'デイリー・ブリーフへ戻る' }
   : edition.inLanguage === 'zh-Hant'
-    ? { kicker: 'Ouroboros / 每日行動流', judgment: '核心判斷', steps: '執行', done: '完成定義', sources: '來源', deep: '閱讀權威深度文章', ledger: 'CIO 狀態台帳', complete: '已完成', ready: '可執行', watching: '觀察中', return: '返回每日簡報' }
+    ? { kicker: 'Ouroboros / 每日行動流', judgment: '核心判斷', steps: '執行', done: '完成定義', sources: '來源', deep: '閱讀權威深度文章', ledger: 'CIO 狀態台帳', complete: '已完成', watching: '觀察中', blocked: '受阻', superseded: '已合併', artifact: '成果', commit: '提交', receipt: '驗證回執', audit: '執行記錄', fullLedger: '完整執行台帳', return: '返回每日簡報' }
     : edition.inLanguage === 'zh-Hans'
-      ? { kicker: 'Ouroboros / 每日行动流', judgment: '核心判断', steps: '执行', done: '完成定义', sources: '来源', deep: '阅读权威深度文章', ledger: 'CIO 状态台账', complete: '已完成', ready: '可执行', watching: '观察中', return: '返回每日简报' }
-      : { kicker: 'Ouroboros / Daily Action Flow', judgment: 'Central judgment', steps: 'Execution', done: 'Definition of done', sources: 'Sources', deep: 'Read the canonical deep dive', ledger: 'CIO status ledger', complete: 'Complete', ready: 'Ready', watching: 'Watching', return: 'Return to Daily Briefing' };
+      ? { kicker: 'Ouroboros / 每日行动流', judgment: '核心判断', steps: '执行', done: '完成定义', sources: '来源', deep: '阅读权威深度文章', ledger: 'CIO 状态台账', complete: '已完成', watching: '观察中', blocked: '受阻', superseded: '已合并', artifact: '成果', commit: '提交', receipt: '验证回执', audit: '执行记录', fullLedger: '完整执行台账', return: '返回每日简报' }
+      : { kicker: 'Ouroboros / Daily Action Flow', judgment: 'Central judgment', steps: 'Execution', done: 'Definition of done', sources: 'Sources', deep: 'Read the canonical deep dive', ledger: 'CIO status ledger', complete: 'Complete', watching: 'Watching', blocked: 'Blocked', superseded: 'Superseded', artifact: 'Artifact', commit: 'Commit', receipt: 'Verification receipt', audit: 'Execution receipt', fullLedger: 'Full execution ledger', return: 'Return to Daily Briefing' };
 const counts = flow.actions.reduce((acc, action) => {
   acc[action.priority] += 1;
   return acc;
 }, { NOW: 0, NEXT: 0, WATCH: 0 });
-const statusLabel = (status: string) => status === 'COMPLETE' ? localized.complete : status === 'READY' ? localized.ready : localized.watching;
+const statusLabel = (status: string) => status === 'COMPLETE'
+  ? localized.complete
+  : status === 'BLOCKED'
+    ? localized.blocked
+    : status === 'SUPERSEDED'
+      ? localized.superseded
+      : localized.watching;
 const schemas = createArticleSchemas({
   title: edition.title,
   description: edition.description,
@@ -127,6 +133,16 @@ const schemas = createArticleSchemas({
                   {localized.deep} →
                 </a>
               )}
+              <aside class="action-chapter__receipt" aria-label={localized.audit}>
+                <span>{localized.audit} · {action.execution.id}</span>
+                {edition.inLanguage === 'en' && <p>{action.execution.reason}</p>}
+                <div>
+                  <a href={action.execution.artifact.href}>{localized.artifact} ↗</a>
+                  <a href={action.execution.sourceCommit.href} rel="noreferrer" target="_blank">{localized.commit} · {action.execution.sourceCommit.sha.slice(0, 7)} ↗</a>
+                  <a href={action.execution.verificationReceipt.href} rel="noreferrer" target="_blank">{localized.receipt} ↗</a>
+                  {action.execution.supersededBy && <a href={`/ouroboros/execution-ledger/#action-${action.execution.supersededBy}`}>{localized.superseded} · {action.execution.supersededBy} →</a>}
+                </div>
+              </aside>
             </div>
             <footer class="action-chapter__sources">
               <span>{localized.sources}</span>
@@ -141,9 +157,11 @@ const schemas = createArticleSchemas({
       <p>{localized.ledger}</p>
       <div>
         <span><strong>{flow.actions.filter((item) => item.status === 'COMPLETE').length}</strong>{localized.complete}</span>
-        <span><strong>{flow.actions.filter((item) => item.status === 'READY').length}</strong>{localized.ready}</span>
         <span><strong>{flow.actions.filter((item) => item.status === 'WATCHING').length}</strong>{localized.watching}</span>
+        <span><strong>{flow.actions.filter((item) => item.status === 'BLOCKED').length}</strong>{localized.blocked}</span>
+        <span><strong>{flow.actions.filter((item) => item.status === 'SUPERSEDED').length}</strong>{localized.superseded}</span>
       </div>
+      <a href="/ouroboros/execution-ledger/">{localized.fullLedger} →</a>
       <a href={edition.languageSlug ? `${flow.briefingPath}${edition.languageSlug}/` : flow.briefingPath}>{localized.return} →</a>
     </footer>
   </article>
@@ -180,6 +198,8 @@ const schemas = createArticleSchemas({
   .priority--next { border-color: rgba(180,145,93,.45); color: var(--gold-dark); }
   .priority--watch { border-color: rgba(115,131,142,.36); color: #687784; }
   .status--complete { background: rgba(180,145,93,.08); }
+  .status--blocked { border-color: rgba(160,82,82,.42); color: #875557; background: rgba(160,82,82,.06); }
+  .status--superseded { border-color: rgba(115,131,142,.32); color: #687784; background: rgba(115,131,142,.05); }
   .action-chapter__visual { margin-top: clamp(2rem, 6vw, 4rem); }
   .action-chapter__number { min-height: clamp(13rem, 33vw, 23rem); display: grid; place-content: center; justify-items: center; padding: 2rem; background: rgba(231,225,215,.34); border-block: 1px solid var(--line); text-align: center; }
   .action-chapter__number strong { color: var(--ink); font-family: var(--serif); font-size: clamp(3.2rem, 11vw, 8.5rem); font-weight: 400; letter-spacing: -.055em; line-height: .9; }
@@ -193,11 +213,16 @@ const schemas = createArticleSchemas({
   .action-chapter__execution ol { margin: 0; padding-left: 1.15rem; }
   .action-chapter__execution li, .action-chapter__execution p { margin-bottom: .7rem; color: var(--muted); font-size: .87rem; line-height: 1.65; }
   .action-chapter__deep-link { display: inline-block; margin-top: 1rem; color: var(--gold-dark); font-size: .7rem; letter-spacing: .08em; text-decoration: none; text-transform: uppercase; }
+  .action-chapter__receipt { margin-top: 2rem; padding: 1rem; border: 1px solid var(--line); background: rgba(231,225,215,.16); }
+  .action-chapter__receipt > span { color: var(--gold-dark); font-size: .56rem; font-weight: 650; letter-spacing: .12em; text-transform: uppercase; }
+  .action-chapter__receipt p { margin: .7rem 0 0; color: var(--muted); font-size: .73rem; line-height: 1.55; }
+  .action-chapter__receipt div { display: flex; flex-wrap: wrap; gap: .55rem 1rem; margin-top: .8rem; }
+  .action-chapter__receipt a { color: var(--gold-dark); font-size: .62rem; text-underline-offset: .18em; }
   .action-chapter__sources { display: flex; flex-wrap: wrap; gap: .65rem 1rem; align-items: baseline; margin-top: 2rem; padding-top: 1.1rem; border-top: 1px solid var(--line); }
   .action-chapter__sources span { color: var(--muted); font-size: .56rem; letter-spacing: .13em; text-transform: uppercase; }
   .action-chapter__sources a { color: var(--gold-dark); font-size: .66rem; text-underline-offset: .18em; }
   .action-flow__ledger { width: min(100%, 53rem); margin: 0 auto; padding-top: 3rem; border-top: 1px solid var(--line); text-align: center; }
-  .action-flow__ledger div { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 1.5rem; }
+  .action-flow__ledger div { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 1.5rem; }
   .action-flow__ledger div span { display: grid; gap: .4rem; color: var(--muted); font-size: .62rem; letter-spacing: .08em; text-transform: uppercase; }
   .action-flow__ledger div span + span { border-left: 1px solid var(--line); }
   .action-flow__ledger strong { color: var(--ink); font-family: var(--serif); font-size: 2.3rem; font-weight: 400; }
@@ -219,9 +244,10 @@ const schemas = createArticleSchemas({
     .action-flow__topline { align-items: flex-start; flex-direction: column; }
     .action-chapter { grid-template-columns: 1.8rem minmax(0, 1fr); column-gap: .9rem; }
     .action-chapter__heading h2 { font-size: clamp(1.65rem, 9vw, 2.4rem); }
+    .action-flow__ledger div { grid-template-columns: repeat(2, 1fr); row-gap: 1.2rem; }
+    .action-flow__ledger div span:nth-child(3) { border-left: 0; }
   }
   @media (prefers-reduced-motion: reduce) {
     .action-flow__image img { transition: none; }
   }
 </style>
-

@@ -12,14 +12,43 @@
     {
       "signal": 1,
       "priority": "NOW",
-      "status": "READY",
+      "status": "BLOCKED",
       "visualValue": "Nov 12",
       "visualLabel": "proposed OpenAI shutoff",
       "sources": [
-        {"label": "OpenAI", "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/"},
-        {"label": "Cursor", "url": "https://forum.cursor.com/t/i-heard-openai-is-about-to-cut-off-gpt-access-for-cursor-is-this-true/169876"},
-        {"label": "Reuters", "url": "https://www.reuters.com/business/media-telecom/openai-end-partnership-with-spacexs-cursor-2026-08-29/"}
-      ]
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://forum.cursor.com/t/i-heard-openai-is-about-to-cut-off-gpt-access-for-cursor-is-this-true/169876"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/media-telecom/openai-end-partnership-with-spacexs-cursor-2026-08-29/"
+        }
+      ],
+      "execution": {
+        "id": "20260830-01",
+        "workstream": "FRONTIER_CONTROLS",
+        "evidenceStatus": "UNKNOWN",
+        "reason": "A real primary-to-fallback drill would use external model credentials and potentially paid calls; the common authorized route remains unavailable.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Frontier model authority controls",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "834439da4b39492bbddb691df4e2db4682fef1d9",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/834439da4b39492bbddb691df4e2db4682fef1d9"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 2,
@@ -28,20 +57,72 @@
       "visualValue": "8 hours",
       "visualLabel": "lab integration preview",
       "sources": [
-        {"label": "Anthropic", "url": "https://www.anthropic.com/news/model-hardware-standard-research-preview"},
-        {"label": "Reuters", "url": "https://www.reuters.com/technology/anthropic-unveils-new-framework-allowing-ai-agents-operate-physical-devices-2026-08-27/"}
-      ]
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com/news/model-hardware-standard-research-preview"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/technology/anthropic-unveils-new-framework-allowing-ai-agents-operate-physical-devices-2026-08-27/"
+        }
+      ],
+      "execution": {
+        "id": "20260830-02",
+        "workstream": "PHYSICAL_AI",
+        "evidenceStatus": "UNKNOWN",
+        "reason": "The action is evidence-dependent; no new evidence justified changing the watch state.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Physical AI operating evidence",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "834439da4b39492bbddb691df4e2db4682fef1d9",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/834439da4b39492bbddb691df4e2db4682fef1d9"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 3,
       "priority": "WATCH",
-      "status": "WATCHING",
+      "status": "SUPERSEDED",
       "visualValue": "−$99.8M",
       "visualLabel": "combined daily ETF flow",
       "sources": [
-        {"label": "Farside Bitcoin", "url": "https://farside.co.uk/btc/"},
-        {"label": "Farside Ether", "url": "https://farside.co.uk/eth/"}
-      ]
+        {
+          "label": "Farside Bitcoin",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "Farside Ether",
+          "url": "https://farside.co.uk/eth/"
+        }
+      ],
+      "execution": {
+        "id": "20260830-03",
+        "workstream": "CRYPTO_BREADTH",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "Earlier flow-breadth checkpoint is absorbed by the September 4 canonical breadth watch.",
+        "supersededBy": "20260904-03",
+        "artifact": {
+          "label": "Crypto capital-flow breadth",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "834439da4b39492bbddb691df4e2db4682fef1d9",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/834439da4b39492bbddb691df4e2db4682fef1d9"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 4,
@@ -50,44 +131,154 @@
       "visualValue": "MOU",
       "visualLabel": "no adopted product",
       "sources": [
-        {"label": "Yonhap", "url": "https://www.yna.co.kr/view/AKR20260828044200002"},
-        {"label": "CoinDesk", "url": "https://www.coindesk.com/business/2026/08/28/visa-doubles-down-on-south-korea-with-upbit-operator-dunamu-on-stablecoin-payments"},
-        {"label": "Product status", "url": "https://crypto.news/dunamu-visa-explore-stablecoin-payments-and-ai/"}
-      ]
+        {
+          "label": "Yonhap",
+          "url": "https://www.yna.co.kr/view/AKR20260828044200002"
+        },
+        {
+          "label": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/08/28/visa-doubles-down-on-south-korea-with-upbit-operator-dunamu-on-stablecoin-payments"
+        },
+        {
+          "label": "Product status",
+          "url": "https://crypto.news/dunamu-visa-explore-stablecoin-payments-and-ai/"
+        }
+      ],
+      "execution": {
+        "id": "20260830-04",
+        "workstream": "PAYMENT_CONTROLS",
+        "evidenceStatus": "UNKNOWN",
+        "reason": "The action is evidence-dependent; no new evidence justified changing the watch state.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Payment and agent-commerce control matrix",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "834439da4b39492bbddb691df4e2db4682fef1d9",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/834439da4b39492bbddb691df4e2db4682fef1d9"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 5,
       "priority": "NOW",
-      "status": "READY",
+      "status": "COMPLETE",
       "visualValue": "24 hours",
       "visualLabel": "workflow recovery objective",
       "sources": [
-        {"label": "OpenAI", "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/"},
-        {"label": "Cursor", "url": "https://forum.cursor.com/t/i-heard-openai-is-about-to-cut-off-gpt-access-for-cursor-is-this-true/169876"},
-        {"label": "Reuters", "url": "https://www.reuters.com/business/media-telecom/openai-end-partnership-with-spacexs-cursor-2026-08-29/"},
-        {"label": "Anthropic", "url": "https://www.anthropic.com/news/higher-limits-spacex"}
-      ]
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://forum.cursor.com/t/i-heard-openai-is-about-to-cut-off-gpt-access-for-cursor-is-this-true/169876"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/media-telecom/openai-end-partnership-with-spacexs-cursor-2026-08-29/"
+        },
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com/news/higher-limits-spacex"
+        }
+      ],
+      "execution": {
+        "id": "20260830-05",
+        "workstream": "PUBLICATION",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The canonical Action Item is public and linked to its source commit and verification receipt.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Published canonical Action Item",
+          "href": "/ouroboros/202608/20260830/action_item/"
+        },
+        "sourceCommit": {
+          "sha": "834439da4b39492bbddb691df4e2db4682fef1d9",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/834439da4b39492bbddb691df4e2db4682fef1d9"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 6,
       "priority": "NOW",
-      "status": "READY",
+      "status": "COMPLETE",
       "visualValue": "$333K–370K",
       "visualLabel": "listed base compensation",
       "sources": [
-        {"label": "OpenAI", "url": "https://openai.com/careers/business-development-lead-compute-strategy-us-remote/"}
-      ]
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/careers/business-development-lead-compute-strategy-us-remote/"
+        }
+      ],
+      "execution": {
+        "id": "20260830-06",
+        "workstream": "AI_INFRASTRUCTURE",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The Signal 06 row is present in the 16-entry evidence registry and governed by the monthly review/publication boundary.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "AI infrastructure evidence intake",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "834439da4b39492bbddb691df4e2db4682fef1d9",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/834439da4b39492bbddb691df4e2db4682fef1d9"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 7,
       "priority": "NEXT",
-      "status": "READY",
+      "status": "COMPLETE",
       "visualValue": "23× ARR",
       "visualLabel": "disclosed valuation multiple",
       "sources": [
-        {"label": "Goldman Sachs Alternatives", "url": "https://am.gs.com/en-lu/advisors/news/press-release/2026/owner-raises-240m-gs-alts"},
-        {"label": "Owner financing", "url": "https://www.prnewswire.com/news-releases/owner-raises-240m-led-by-goldman-sachs-alternatives-to-build-the-ai-native-platform-for-every-local-business-302862420.html"}
-      ]
+        {
+          "label": "Goldman Sachs Alternatives",
+          "url": "https://am.gs.com/en-lu/advisors/news/press-release/2026/owner-raises-240m-gs-alts"
+        },
+        {
+          "label": "Owner financing",
+          "url": "https://www.prnewswire.com/news-releases/owner-raises-240m-led-by-goldman-sachs-alternatives-to-build-the-ai-native-platform-for-every-local-business-302862420.html"
+        }
+      ],
+      "execution": {
+        "id": "20260830-07",
+        "workstream": "PRIVATE_MARKETS",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "A bounded diligence row now exists with unknown economics explicit; no investment, outreach or application occurred.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Private-market diligence matrix",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "834439da4b39492bbddb691df4e2db4682fef1d9",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/834439da4b39492bbddb691df4e2db4682fef1d9"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 8,
@@ -96,10 +287,39 @@
       "visualValue": "+3.05pp",
       "visualLabel": "two-session NVDA relative gain",
       "sources": [
-        {"label": "NVDA prices", "url": "https://stockanalysis.com/stocks/nvda/history/"},
-        {"label": "QQQ prices", "url": "https://stockanalysis.com/etf/qqq/history/"},
-        {"label": "Reuters", "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-slip-after-tech-rally-warshs-speech-awaited-2026-08-28/"}
-      ]
+        {
+          "label": "NVDA prices",
+          "url": "https://stockanalysis.com/stocks/nvda/history/"
+        },
+        {
+          "label": "QQQ prices",
+          "url": "https://stockanalysis.com/etf/qqq/history/"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-slip-after-tech-rally-warshs-speech-awaited-2026-08-28/"
+        }
+      ],
+      "execution": {
+        "id": "20260830-08",
+        "workstream": "PUBLIC_EQUITIES",
+        "evidenceStatus": "UNKNOWN",
+        "reason": "The action is evidence-dependent; no new evidence justified changing the watch state.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Public-market causal ledger",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "834439da4b39492bbddb691df4e2db4682fef1d9",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/834439da4b39492bbddb691df4e2db4682fef1d9"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     }
   ],
   "editions": {
@@ -111,14 +331,102 @@
       "centralJudgment": "Treat model access as supply, not interface decoration. Today’s highest-value work is to publish the supplier-risk framework, test one portable workflow, and translate Robin’s infrastructure record into the OpenAI compute-strategy application while the remaining signals stay on explicit evidence gates.",
       "fieldLine": "Eight signals. Three immediate moves. Five open proofs.",
       "actions": [
-        {"signal": 1, "domain": "Frontier Models", "title": "Run the Model Failover Drill", "why": "OpenAI’s proposed cutoff shows that ownership and contract risk can reach an application even when the affected model carries only a small traffic share.", "steps": ["Freeze one representative Codex acceptance set", "Replay it across OpenAI, Claude and one independent provider", "Measure output, tool and schema degradation"], "done": "A provider loss can be absorbed within 24 hours with recorded recovery time, quality loss and migration cost."},
-        {"signal": 2, "domain": "Physical AI", "title": "Keep MHS Pre Commercial", "why": "An eight-hour laboratory integration is a meaningful standards result, while factory runtime and damage economics remain unknown.", "steps": ["Add MHS to the technical tracker", "Record third-party runtime and intervention evidence", "Require equipment-damage and integration-cost data"], "done": "The rating changes only after a third-party industrial deployment reports continuous safe operation and cost."},
-        {"signal": 3, "domain": "Crypto Capital", "title": "Wait for ETF Breadth", "why": "The first combined outflow interrupts the re-entry streak without erasing the ten-session accumulation.", "steps": ["Complete next week’s settled flow table", "Separate IBIT and ETHA concentration", "Keep DeFi and long-tail activity outside the ETF verdict"], "done": "Breadth upgrades only when non-IBIT and non-ETHA products contribute more than one-third of a positive week."},
-        {"signal": 4, "domain": "Stablecoins and Payments", "title": "Hold Visa Dunamu at MOU", "why": "The partnership is real, but launch market, custody, authorization, settlement and dispute economics are still undefined.", "steps": ["Track product and launch-market selection", "Map authorization, limits and custody liability", "Require refund flow and unit economics"], "done": "The project leaves MOU status only when all six commercialization fields are evidenced."},
-        {"signal": 5, "domain": "iamrobin.ai", "title": "Publish the Model Supply Framework", "why": "Cursor turns a provider dispute into a durable procurement and architecture framework for RobinOS and enterprise agents.", "steps": ["Reconstruct confirmed facts and unresolved negotiations", "Separate model menus from workflow portability", "Publish the five-layer access-to-failover control set"], "done": "The four-language Action Item passes evidence, editorial, privacy, build and public-route gates."},
-        {"signal": 6, "domain": "AI Infrastructure Career", "title": "Build the Compute Deal Evidence Map", "why": "The OpenAI role joins power, land, silicon, fiber and capital with Robin’s engineering and transaction record.", "steps": ["Map four quantified infrastructure and FinTech cases", "Translate constraints into negotiated commercial terms", "Show post-close governance and ROI ownership"], "done": "A one-page evidence map is ready for a high-priority application."},
-        {"signal": 7, "domain": "Late Stage Markets", "title": "Underwrite Owner Beyond ARR", "why": "A 23-times disclosed ARR valuation demands retention, margin, acquisition-cost and payment-economics evidence.", "steps": ["Request net retention and merchant churn", "Split subscription from payment revenue", "Obtain primary-secondary and preference terms"], "done": "The Series D becomes investable only after operating quality and security terms support the multiple."},
-        {"signal": 8, "domain": "Public Equities", "title": "Recheck NVIDIA on Day Five", "why": "Friday’s pullback reduced post-earnings enthusiasm while leaving the two-session relative gain intact.", "steps": ["Measure NVDA versus QQQ after five sessions", "Update receivables and financing guarantees", "Keep demand and cash conversion as separate verdicts"], "done": "Position judgment changes only when relative performance and cash-conversion evidence move together."}
+        {
+          "signal": 1,
+          "domain": "Frontier Models",
+          "title": "Run the Model Failover Drill",
+          "why": "OpenAI’s proposed cutoff shows that ownership and contract risk can reach an application even when the affected model carries only a small traffic share.",
+          "steps": [
+            "Freeze one representative Codex acceptance set",
+            "Replay it across OpenAI, Claude and one independent provider",
+            "Measure output, tool and schema degradation"
+          ],
+          "done": "A provider loss can be absorbed within 24 hours with recorded recovery time, quality loss and migration cost."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "Keep MHS Pre Commercial",
+          "why": "An eight-hour laboratory integration is a meaningful standards result, while factory runtime and damage economics remain unknown.",
+          "steps": [
+            "Add MHS to the technical tracker",
+            "Record third-party runtime and intervention evidence",
+            "Require equipment-damage and integration-cost data"
+          ],
+          "done": "The rating changes only after a third-party industrial deployment reports continuous safe operation and cost."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital",
+          "title": "Wait for ETF Breadth",
+          "why": "The first combined outflow interrupts the re-entry streak without erasing the ten-session accumulation.",
+          "steps": [
+            "Complete next week’s settled flow table",
+            "Separate IBIT and ETHA concentration",
+            "Keep DeFi and long-tail activity outside the ETF verdict"
+          ],
+          "done": "Breadth upgrades only when non-IBIT and non-ETHA products contribute more than one-third of a positive week."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins and Payments",
+          "title": "Hold Visa Dunamu at MOU",
+          "why": "The partnership is real, but launch market, custody, authorization, settlement and dispute economics are still undefined.",
+          "steps": [
+            "Track product and launch-market selection",
+            "Map authorization, limits and custody liability",
+            "Require refund flow and unit economics"
+          ],
+          "done": "The project leaves MOU status only when all six commercialization fields are evidenced."
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "Publish the Model Supply Framework",
+          "why": "Cursor turns a provider dispute into a durable procurement and architecture framework for RobinOS and enterprise agents.",
+          "steps": [
+            "Reconstruct confirmed facts and unresolved negotiations",
+            "Separate model menus from workflow portability",
+            "Publish the five-layer access-to-failover control set"
+          ],
+          "done": "The four-language Action Item passes evidence, editorial, privacy, build and public-route gates."
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure Career",
+          "title": "Build the Compute Deal Evidence Map",
+          "why": "The OpenAI role joins power, land, silicon, fiber and capital with Robin’s engineering and transaction record.",
+          "steps": [
+            "Map four quantified infrastructure and FinTech cases",
+            "Translate constraints into negotiated commercial terms",
+            "Show post-close governance and ROI ownership"
+          ],
+          "done": "A one-page evidence map is ready for a high-priority application."
+        },
+        {
+          "signal": 7,
+          "domain": "Late Stage Markets",
+          "title": "Underwrite Owner Beyond ARR",
+          "why": "A 23-times disclosed ARR valuation demands retention, margin, acquisition-cost and payment-economics evidence.",
+          "steps": [
+            "Request net retention and merchant churn",
+            "Split subscription from payment revenue",
+            "Obtain primary-secondary and preference terms"
+          ],
+          "done": "The Series D becomes investable only after operating quality and security terms support the multiple."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities",
+          "title": "Recheck NVIDIA on Day Five",
+          "why": "Friday’s pullback reduced post-earnings enthusiasm while leaving the two-session relative gain intact.",
+          "steps": [
+            "Measure NVDA versus QQQ after five sessions",
+            "Update receivables and financing guarantees",
+            "Keep demand and cash conversion as separate verdicts"
+          ],
+          "done": "Position judgment changes only when relative performance and cash-conversion evidence move together."
+        }
       ]
     },
     "zh-Hans": {
@@ -129,14 +437,102 @@
       "centralJudgment": "把模型访问当作供应，不是界面装饰。今天最有价值的工作，是发布供应商风险框架、实测一条可移植工作流，并把Robin的基础设施履历转译成OpenAI算力战略申请；其余信号留在明确证据门槛上。",
       "fieldLine": "八个信号。三项立即行动。五项开放证据。",
       "actions": [
-        {"signal": 1, "domain": "前沿模型", "title": "执行模型故障切换", "why": "OpenAI拟断供说明，即使模型流量占比较小，所有权与合同风险也能直接传导至应用。", "steps": ["冻结一套代表性Codex验收集", "在OpenAI、Claude及一家独立供应商上重放", "测量输出、工具与schema退化"], "done": "供应商退出后24小时内可恢复，并记录恢复时间、质量损失与迁移成本。"},
-        {"signal": 2, "domain": "Physical AI", "title": "保持MHS预商业评级", "why": "八小时实验室集成是重要标准成果，工厂运行时间与损坏经济仍未知。", "steps": ["把MHS加入技术追踪表", "记录第三方运行与介入证据", "要求设备损坏与集成成本"], "done": "只有第三方工业部署披露连续安全运行与成本后才升级。"},
-        {"signal": 3, "domain": "加密资本", "title": "等待ETF资金广度", "why": "首次合计净流出中断回流，但没有抹掉十个交易日的累计改善。", "steps": ["完成下周结算流量表", "分开IBIT与ETHA集中度", "把DeFi和长尾活动排除在ETF结论之外"], "done": "正流入周内非IBIT／ETHA贡献超过三分之一后才升级广度。"},
-        {"signal": 4, "domain": "稳定币与支付", "title": "Visa与Dunamu维持MOU", "why": "合作真实存在，但首发市场、托管、授权、结算与争议经济仍未定义。", "steps": ["追踪产品及首发市场", "绘制授权、限额与托管责任", "要求退款流程和单位经济"], "done": "六项商业化字段均有证据后才离开MOU状态。"},
-        {"signal": 5, "domain": "iamrobin.ai", "title": "发布模型供应框架", "why": "Cursor把供应商争议转成RobinOS与企业Agent可复用的采购和架构框架。", "steps": ["还原确认事实与未决协商", "区分模型菜单和工作流可移植性", "发布access到failover五层控制"], "done": "四语Action Item通过证据、编辑、隐私、构建和公开路由门禁。"},
-        {"signal": 6, "domain": "AI基础设施职业", "title": "制作算力交易证据图", "why": "OpenAI职位把电力、土地、芯片、光纤与资本连接到Robin的工程和交易履历。", "steps": ["映射四个量化基础设施及FinTech案例", "把技术约束转成谈判后的商业条款", "证明签约后治理与ROI责任"], "done": "一页证据图可直接用于高优先级申请。"},
-        {"signal": 7, "domain": "后期一级市场", "title": "穿透ARR承销Owner", "why": "约23倍披露ARR的估值必须由留存、毛利、获客成本和支付经济支持。", "steps": ["索取净收入留存与商户流失", "拆分订阅与支付收入", "取得一级二级比例及优先权"], "done": "经营质量与证券条款共同支持估值后才具备投资条件。"},
-        {"signal": 8, "domain": "公开市场", "title": "第五日复核NVIDIA", "why": "周五回调降低财报后热情，但两日相对优势仍在。", "steps": ["第五个交易日测量NVDA相对QQQ", "更新应收账款与融资担保", "分开需求和现金转化结论"], "done": "相对表现与现金转化证据同步变化后才调整仓位判断。"}
+        {
+          "signal": 1,
+          "domain": "前沿模型",
+          "title": "执行模型故障切换",
+          "why": "OpenAI拟断供说明，即使模型流量占比较小，所有权与合同风险也能直接传导至应用。",
+          "steps": [
+            "冻结一套代表性Codex验收集",
+            "在OpenAI、Claude及一家独立供应商上重放",
+            "测量输出、工具与schema退化"
+          ],
+          "done": "供应商退出后24小时内可恢复，并记录恢复时间、质量损失与迁移成本。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "保持MHS预商业评级",
+          "why": "八小时实验室集成是重要标准成果，工厂运行时间与损坏经济仍未知。",
+          "steps": [
+            "把MHS加入技术追踪表",
+            "记录第三方运行与介入证据",
+            "要求设备损坏与集成成本"
+          ],
+          "done": "只有第三方工业部署披露连续安全运行与成本后才升级。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本",
+          "title": "等待ETF资金广度",
+          "why": "首次合计净流出中断回流，但没有抹掉十个交易日的累计改善。",
+          "steps": [
+            "完成下周结算流量表",
+            "分开IBIT与ETHA集中度",
+            "把DeFi和长尾活动排除在ETF结论之外"
+          ],
+          "done": "正流入周内非IBIT／ETHA贡献超过三分之一后才升级广度。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币与支付",
+          "title": "Visa与Dunamu维持MOU",
+          "why": "合作真实存在，但首发市场、托管、授权、结算与争议经济仍未定义。",
+          "steps": [
+            "追踪产品及首发市场",
+            "绘制授权、限额与托管责任",
+            "要求退款流程和单位经济"
+          ],
+          "done": "六项商业化字段均有证据后才离开MOU状态。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "发布模型供应框架",
+          "why": "Cursor把供应商争议转成RobinOS与企业Agent可复用的采购和架构框架。",
+          "steps": [
+            "还原确认事实与未决协商",
+            "区分模型菜单和工作流可移植性",
+            "发布access到failover五层控制"
+          ],
+          "done": "四语Action Item通过证据、编辑、隐私、构建和公开路由门禁。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基础设施职业",
+          "title": "制作算力交易证据图",
+          "why": "OpenAI职位把电力、土地、芯片、光纤与资本连接到Robin的工程和交易履历。",
+          "steps": [
+            "映射四个量化基础设施及FinTech案例",
+            "把技术约束转成谈判后的商业条款",
+            "证明签约后治理与ROI责任"
+          ],
+          "done": "一页证据图可直接用于高优先级申请。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期一级市场",
+          "title": "穿透ARR承销Owner",
+          "why": "约23倍披露ARR的估值必须由留存、毛利、获客成本和支付经济支持。",
+          "steps": [
+            "索取净收入留存与商户流失",
+            "拆分订阅与支付收入",
+            "取得一级二级比例及优先权"
+          ],
+          "done": "经营质量与证券条款共同支持估值后才具备投资条件。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场",
+          "title": "第五日复核NVIDIA",
+          "why": "周五回调降低财报后热情，但两日相对优势仍在。",
+          "steps": [
+            "第五个交易日测量NVDA相对QQQ",
+            "更新应收账款与融资担保",
+            "分开需求和现金转化结论"
+          ],
+          "done": "相对表现与现金转化证据同步变化后才调整仓位判断。"
+        }
       ]
     },
     "zh-Hant": {
@@ -147,14 +543,102 @@
       "centralJudgment": "把模型存取視為供應，不是介面裝飾。今天最高價值的工作，是發布供應商風險框架、實測一條可攜工作流，並把Robin的基礎設施履歷轉譯成OpenAI算力戰略申請；其餘訊號留在明確證據門檻上。",
       "fieldLine": "八個訊號。三項立即行動。五項開放證據。",
       "actions": [
-        {"signal": 1, "domain": "前沿模型", "title": "執行模型故障切換", "why": "OpenAI擬斷供說明，即使模型流量佔比較小，所有權與合約風險也可直接傳導至應用。", "steps": ["凍結一套代表性Codex驗收集", "在OpenAI、Claude及一家獨立供應商重放", "測量輸出、工具與schema退化"], "done": "供應商退出後24小時內可恢復，並記錄恢復時間、品質損失與遷移成本。"},
-        {"signal": 2, "domain": "Physical AI", "title": "維持MHS預商業評級", "why": "八小時實驗室整合是重要標準成果，工廠運行時間與損壞經濟仍未知。", "steps": ["把MHS加入技術追蹤表", "記錄第三方運行與介入證據", "要求設備損壞與整合成本"], "done": "只有第三方工業部署披露連續安全運行與成本後才升級。"},
-        {"signal": 3, "domain": "加密資本", "title": "等待ETF資金廣度", "why": "首次合計淨流出中斷回流，但沒有抹掉十個交易日的累計改善。", "steps": ["完成下週結算流量表", "分開IBIT與ETHA集中度", "把DeFi和長尾活動排除在ETF結論之外"], "done": "正流入週內非IBIT／ETHA貢獻超過三分之一後才升級廣度。"},
-        {"signal": 4, "domain": "穩定幣與支付", "title": "Visa與Dunamu維持MOU", "why": "合作真實存在，但首發市場、託管、授權、結算與爭議經濟仍未定義。", "steps": ["追蹤產品及首發市場", "繪製授權、限額與託管責任", "要求退款流程和單位經濟"], "done": "六項商業化欄位均有證據後才離開MOU狀態。"},
-        {"signal": 5, "domain": "iamrobin.ai", "title": "發布模型供應框架", "why": "Cursor把供應商爭議轉成RobinOS與企業Agent可重用的採購及架構框架。", "steps": ["還原確認事實與未決協商", "區分模型選單和工作流可攜性", "發布access到failover五層控制"], "done": "四語Action Item通過證據、編輯、私隱、構建和公開路由門禁。"},
-        {"signal": 6, "domain": "AI基礎設施職涯", "title": "製作算力交易證據圖", "why": "OpenAI職位把電力、土地、晶片、光纖與資本連接到Robin的工程和交易履歷。", "steps": ["映射四個量化基礎設施及FinTech案例", "把技術約束轉成談判後的商業條款", "證明簽約後治理與ROI責任"], "done": "一頁證據圖可直接用於高優先級申請。"},
-        {"signal": 7, "domain": "後期一級市場", "title": "穿透ARR承銷Owner", "why": "約23倍披露ARR的估值必須由留存、毛利、獲客成本與支付經濟支持。", "steps": ["索取淨收入留存與商戶流失", "拆分訂閱與支付收入", "取得一級二級比例及優先權"], "done": "經營品質與證券條款共同支持估值後才具備投資條件。"},
-        {"signal": 8, "domain": "公開市場", "title": "第五日複核NVIDIA", "why": "周五回調降低業績後熱情，但兩日相對優勢仍在。", "steps": ["第五個交易日測量NVDA相對QQQ", "更新應收帳款與融資擔保", "分開需求與現金轉化結論"], "done": "相對表現與現金轉化證據同步變化後才調整倉位判斷。"}
+        {
+          "signal": 1,
+          "domain": "前沿模型",
+          "title": "執行模型故障切換",
+          "why": "OpenAI擬斷供說明，即使模型流量佔比較小，所有權與合約風險也可直接傳導至應用。",
+          "steps": [
+            "凍結一套代表性Codex驗收集",
+            "在OpenAI、Claude及一家獨立供應商重放",
+            "測量輸出、工具與schema退化"
+          ],
+          "done": "供應商退出後24小時內可恢復，並記錄恢復時間、品質損失與遷移成本。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "維持MHS預商業評級",
+          "why": "八小時實驗室整合是重要標準成果，工廠運行時間與損壞經濟仍未知。",
+          "steps": [
+            "把MHS加入技術追蹤表",
+            "記錄第三方運行與介入證據",
+            "要求設備損壞與整合成本"
+          ],
+          "done": "只有第三方工業部署披露連續安全運行與成本後才升級。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本",
+          "title": "等待ETF資金廣度",
+          "why": "首次合計淨流出中斷回流，但沒有抹掉十個交易日的累計改善。",
+          "steps": [
+            "完成下週結算流量表",
+            "分開IBIT與ETHA集中度",
+            "把DeFi和長尾活動排除在ETF結論之外"
+          ],
+          "done": "正流入週內非IBIT／ETHA貢獻超過三分之一後才升級廣度。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣與支付",
+          "title": "Visa與Dunamu維持MOU",
+          "why": "合作真實存在，但首發市場、託管、授權、結算與爭議經濟仍未定義。",
+          "steps": [
+            "追蹤產品及首發市場",
+            "繪製授權、限額與託管責任",
+            "要求退款流程和單位經濟"
+          ],
+          "done": "六項商業化欄位均有證據後才離開MOU狀態。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "發布模型供應框架",
+          "why": "Cursor把供應商爭議轉成RobinOS與企業Agent可重用的採購及架構框架。",
+          "steps": [
+            "還原確認事實與未決協商",
+            "區分模型選單和工作流可攜性",
+            "發布access到failover五層控制"
+          ],
+          "done": "四語Action Item通過證據、編輯、私隱、構建和公開路由門禁。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基礎設施職涯",
+          "title": "製作算力交易證據圖",
+          "why": "OpenAI職位把電力、土地、晶片、光纖與資本連接到Robin的工程和交易履歷。",
+          "steps": [
+            "映射四個量化基礎設施及FinTech案例",
+            "把技術約束轉成談判後的商業條款",
+            "證明簽約後治理與ROI責任"
+          ],
+          "done": "一頁證據圖可直接用於高優先級申請。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期一級市場",
+          "title": "穿透ARR承銷Owner",
+          "why": "約23倍披露ARR的估值必須由留存、毛利、獲客成本與支付經濟支持。",
+          "steps": [
+            "索取淨收入留存與商戶流失",
+            "拆分訂閱與支付收入",
+            "取得一級二級比例及優先權"
+          ],
+          "done": "經營品質與證券條款共同支持估值後才具備投資條件。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場",
+          "title": "第五日複核NVIDIA",
+          "why": "周五回調降低業績後熱情，但兩日相對優勢仍在。",
+          "steps": [
+            "第五個交易日測量NVDA相對QQQ",
+            "更新應收帳款與融資擔保",
+            "分開需求與現金轉化結論"
+          ],
+          "done": "相對表現與現金轉化證據同步變化後才調整倉位判斷。"
+        }
       ]
     },
     "ja": {
@@ -165,14 +649,102 @@
       "centralJudgment": "モデルへのアクセスを画面の機能ではなく供給として扱う。本日の価値が高い仕事は、供給者リスクの枠組みを公開し、一つの可搬ワークフローを実測し、Robinのインフラ実績をOpenAIの計算資源戦略職へ翻訳することである。残りのシグナルは明示した証拠条件で監視する。",
       "fieldLine": "8つのシグナル。3つの即時行動。5つの未確認事項。",
       "actions": [
-        {"signal": 1, "domain": "フロンティアモデル", "title": "モデル切替訓練を行う", "why": "OpenAIの供給終了方針は、利用比率が小さくても所有と契約のリスクがアプリへ届くことを示す。", "steps": ["代表的なCodex受入試験を固定する", "OpenAI、Claude、独立系一社で再実行する", "出力、ツール、schemaの劣化を測る"], "done": "24時間以内に復旧し、復旧時間、品質低下、移行費用を記録できる。"},
-        {"signal": 2, "domain": "Physical AI", "title": "MHSを商用前評価に置く", "why": "8時間の実験室統合は重要だが、工場稼働と損傷経済は不明である。", "steps": ["MHSを技術トラッカーへ加える", "第三者の稼働と介入証拠を追う", "機器損傷と統合費用を求める"], "done": "第三者工場が連続安全稼働と費用を公開した場合だけ評価を上げる。"},
-        {"signal": 3, "domain": "暗号資産への資本", "title": "ETFの裾野を待つ", "why": "初の合計流出は再流入を中断したが、10営業日の蓄積を消していない。", "steps": ["翌週の確定フロー表を完成する", "IBITとETHAの集中を分ける", "DeFiとロングテールをETF判定から外す"], "done": "正味流入週で非IBIT・非ETHAが3分の1超となった場合だけ格上げする。"},
-        {"signal": 4, "domain": "ステーブルコインと決済", "title": "VisaとDunamuをMOUに保つ", "why": "提携は実在するが、市場、カストディ、認可、決済、紛争の経済条件は未定である。", "steps": ["製品と投入市場を追う", "認可、限度額、カストディ責任を描く", "返金工程と単位経済性を求める"], "done": "6項目の商用化条件が確認された場合だけMOUを外す。"},
-        {"signal": 5, "domain": "iamrobin.ai", "title": "モデル供給の枠組みを公開する", "why": "Cursorの事例をRobinOSと企業エージェントに再利用できる調達・設計枠へ変える。", "steps": ["確認事実と未決協議を再構成する", "モデル選択画面と可搬性を分ける", "accessからfailoverまで5層の管理策を公開する"], "done": "四言語Action Itemが証拠、編集、プライバシー、ビルド、公開経路を通過する。"},
-        {"signal": 6, "domain": "AIインフラ・キャリア", "title": "計算資源取引の証拠図を作る", "why": "OpenAIの職務は電力、土地、半導体、光ファイバー、資本をRobinの工学・取引実績へ結ぶ。", "steps": ["定量化したインフラとFinTechの4事例を対応させる", "技術制約を交渉済み商業条件へ翻訳する", "契約後ガバナンスとROI責任を示す"], "done": "高優先度応募に使える一枚の証拠図が完成する。"},
-        {"signal": 7, "domain": "レイトステージ市場", "title": "ARRの先までOwnerを審査する", "why": "開示ARR約23倍の評価には維持率、粗利、獲得費用、決済経済の裏付けが必要である。", "steps": ["純収益維持率と顧客解約を得る", "サブスクリプションと決済売上を分ける", "一次二次比率と優先条件を得る"], "done": "事業品質と証券条件が倍率を支えた場合だけ投資可能とする。"},
-        {"signal": 8, "domain": "公開株式", "title": "5日目にNVIDIAを再確認する", "why": "金曜日の下落は決算後の熱を下げたが、2営業日の相対優位は残る。", "steps": ["5営業日後のNVDA対QQQを測る", "売掛金と融資保証を更新する", "需要と現金化を別判定にする"], "done": "相対成績と現金化の証拠が同時に動いた場合だけポジション判断を変える。"}
+        {
+          "signal": 1,
+          "domain": "フロンティアモデル",
+          "title": "モデル切替訓練を行う",
+          "why": "OpenAIの供給終了方針は、利用比率が小さくても所有と契約のリスクがアプリへ届くことを示す。",
+          "steps": [
+            "代表的なCodex受入試験を固定する",
+            "OpenAI、Claude、独立系一社で再実行する",
+            "出力、ツール、schemaの劣化を測る"
+          ],
+          "done": "24時間以内に復旧し、復旧時間、品質低下、移行費用を記録できる。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "MHSを商用前評価に置く",
+          "why": "8時間の実験室統合は重要だが、工場稼働と損傷経済は不明である。",
+          "steps": [
+            "MHSを技術トラッカーへ加える",
+            "第三者の稼働と介入証拠を追う",
+            "機器損傷と統合費用を求める"
+          ],
+          "done": "第三者工場が連続安全稼働と費用を公開した場合だけ評価を上げる。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産への資本",
+          "title": "ETFの裾野を待つ",
+          "why": "初の合計流出は再流入を中断したが、10営業日の蓄積を消していない。",
+          "steps": [
+            "翌週の確定フロー表を完成する",
+            "IBITとETHAの集中を分ける",
+            "DeFiとロングテールをETF判定から外す"
+          ],
+          "done": "正味流入週で非IBIT・非ETHAが3分の1超となった場合だけ格上げする。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコインと決済",
+          "title": "VisaとDunamuをMOUに保つ",
+          "why": "提携は実在するが、市場、カストディ、認可、決済、紛争の経済条件は未定である。",
+          "steps": [
+            "製品と投入市場を追う",
+            "認可、限度額、カストディ責任を描く",
+            "返金工程と単位経済性を求める"
+          ],
+          "done": "6項目の商用化条件が確認された場合だけMOUを外す。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "モデル供給の枠組みを公開する",
+          "why": "Cursorの事例をRobinOSと企業エージェントに再利用できる調達・設計枠へ変える。",
+          "steps": [
+            "確認事実と未決協議を再構成する",
+            "モデル選択画面と可搬性を分ける",
+            "accessからfailoverまで5層の管理策を公開する"
+          ],
+          "done": "四言語Action Itemが証拠、編集、プライバシー、ビルド、公開経路を通過する。"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラ・キャリア",
+          "title": "計算資源取引の証拠図を作る",
+          "why": "OpenAIの職務は電力、土地、半導体、光ファイバー、資本をRobinの工学・取引実績へ結ぶ。",
+          "steps": [
+            "定量化したインフラとFinTechの4事例を対応させる",
+            "技術制約を交渉済み商業条件へ翻訳する",
+            "契約後ガバナンスとROI責任を示す"
+          ],
+          "done": "高優先度応募に使える一枚の証拠図が完成する。"
+        },
+        {
+          "signal": 7,
+          "domain": "レイトステージ市場",
+          "title": "ARRの先までOwnerを審査する",
+          "why": "開示ARR約23倍の評価には維持率、粗利、獲得費用、決済経済の裏付けが必要である。",
+          "steps": [
+            "純収益維持率と顧客解約を得る",
+            "サブスクリプションと決済売上を分ける",
+            "一次二次比率と優先条件を得る"
+          ],
+          "done": "事業品質と証券条件が倍率を支えた場合だけ投資可能とする。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開株式",
+          "title": "5日目にNVIDIAを再確認する",
+          "why": "金曜日の下落は決算後の熱を下げたが、2営業日の相対優位は残る。",
+          "steps": [
+            "5営業日後のNVDA対QQQを測る",
+            "売掛金と融資保証を更新する",
+            "需要と現金化を別判定にする"
+          ],
+          "done": "相対成績と現金化の証拠が同時に動いた場合だけポジション判断を変える。"
+        }
       ]
     }
   }

@@ -9,66 +9,734 @@
   "briefingPath": "/ouroboros/202609/20260902/",
   "actionItemPath": "/ouroboros/202609/20260902/action_item/",
   "actions": [
-    {"signal": 1, "priority": "NEXT", "status": "READY", "visualValue": "Critical", "visualLabel": "cyber capability tier", "sources": [{"label": "OpenAI", "url": "https://openai.com/index/path-to-astra/"}, {"label": "Reuters", "url": "https://www.reuters.com/business/openai-says-upcoming-model-is-so-capable-it-requires-stronger-guardrails-2026-09-01/"}]},
-    {"signal": 2, "priority": "NEXT", "status": "READY", "visualValue": "14 cities", "visualLabel": "public driverless footprint", "sources": [{"label": "Waymo", "url": "https://waymo.com/blog/2026/09/ride-in-denver-san-diego-tampa"}, {"label": "Reuters", "url": "https://www.reuters.com/business/amazons-zoox-alphabets-waymo-expand-robotaxi-services-more-us-cities-2026-09-01/"}]},
-    {"signal": 3, "priority": "WATCH", "status": "WATCHING", "visualValue": "$304.3M", "visualLabel": "Aug 31 ETF inflow", "sources": [{"label": "Farside Bitcoin", "url": "https://farside.co.uk/btc/"}, {"label": "Farside Ether", "url": "https://farside.co.uk/eth/"}]},
-    {"signal": 4, "priority": "NEXT", "status": "READY", "visualValue": "24.51B", "visualLabel": "August UPI transactions", "sources": [{"label": "Reuters", "url": "https://www.reuters.com/world/india/india-preparing-rollout-agentic-payments-upi-sources-say-2026-09-01/"}, {"label": "NPCI", "url": "https://www.npci.org.in/product/upi-circle"}]},
-    {"signal": 5, "priority": "NOW", "status": "COMPLETE", "visualValue": "90 days", "visualLabel": "visibility learning window", "sources": [{"label": "Google controls", "url": "https://blog.google/products-and-platforms/products/search/new-controls-website-owners/"}, {"label": "Google Search Central", "url": "https://developers.google.com/search/docs/appearance/ai-features"}, {"label": "Reuters", "url": "https://www.reuters.com/legal/litigation/eu-antitrust-regulators-quiz-publishers-googles-ai-search-opt-out-2026-09-01/"}]},
-    {"signal": 6, "priority": "NEXT", "status": "READY", "visualValue": "JPY190B", "visualLabel": "Tokyo DC transaction", "sources": [{"label": "Keppel", "url": "https://www.keppel.com/media/keppel-dc-reit-acquires-two-freehold-hyperscale-colocation-data-centres-in-inzai-city-greater-tokyo/"}, {"label": "Reuters", "url": "https://www.reuters.com/business/retail-consumer/keppel-dc-reit-buy-two-tokyo-data-centres-12-billion-2026-09-01/"}]},
-    {"signal": 7, "priority": "WATCH", "status": "WATCHING", "visualValue": "$439B", "visualLabel": "reported project backlog", "sources": [{"label": "SEC S-1", "url": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026059639/sbenergy-sx1.htm"}, {"label": "SB Energy", "url": "https://www.prnewswire.com/news-releases/sb-energy-announces-public-filing-of-registration-statement-for-proposed-initial-public-offering-302866135.html"}, {"label": "Reuters", "url": "https://www.reuters.com/business/energy/softbank-backed-sb-energy-moves-closer-public-markets-with-us-ipo-filing-2026-09-01/"}]},
-    {"signal": 8, "priority": "WATCH", "status": "WATCHING", "visualValue": "$95B", "visualLabel": "Dell AI backlog", "sources": [{"label": "Dell", "url": "https://investors.delltechnologies.com/financial-information/quarterly-results"}, {"label": "Reuters", "url": "https://www.reuters.com/business/dell-again-lifts-forecasts-ai-demand-powers-record-results-2026-09-01/"}]}
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "COMPLETE",
+      "visualValue": "Critical",
+      "visualLabel": "cyber capability tier",
+      "sources": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/path-to-astra/"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/openai-says-upcoming-model-is-so-capable-it-requires-stronger-guardrails-2026-09-01/"
+        }
+      ],
+      "execution": {
+        "id": "20260902-01",
+        "workstream": "FRONTIER_CONTROLS",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "A repository-backed authority/provider matrix or fail-closed admission control now carries the requested mapping; execution-dependent comparisons remain separately blocked.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Frontier model authority controls",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "967a36637bebccd3772f0d94869950f70aa9dcd3",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/967a36637bebccd3772f0d94869950f70aa9dcd3"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
+    },
+    {
+      "signal": 2,
+      "priority": "NEXT",
+      "status": "COMPLETE",
+      "visualValue": "14 cities",
+      "visualLabel": "public driverless footprint",
+      "sources": [
+        {
+          "label": "Waymo",
+          "url": "https://waymo.com/blog/2026/09/ride-in-denver-san-diego-tampa"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/amazons-zoox-alphabets-waymo-expand-robotaxi-services-more-us-cities-2026-09-01/"
+        }
+      ],
+      "execution": {
+        "id": "20260902-02",
+        "workstream": "PHYSICAL_AI",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The reusable operating matrix records useful hours, interventions, renewal and economics as distinct fields and preserves missing evidence as UNKNOWN.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Physical AI operating evidence",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "967a36637bebccd3772f0d94869950f70aa9dcd3",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/967a36637bebccd3772f0d94869950f70aa9dcd3"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "SUPERSEDED",
+      "visualValue": "$304.3M",
+      "visualLabel": "Aug 31 ETF inflow",
+      "sources": [
+        {
+          "label": "Farside Bitcoin",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "Farside Ether",
+          "url": "https://farside.co.uk/eth/"
+        }
+      ],
+      "execution": {
+        "id": "20260902-03",
+        "workstream": "CRYPTO_BREADTH",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "Earlier flow-breadth checkpoint is absorbed by the September 4 canonical breadth watch.",
+        "supersededBy": "20260904-03",
+        "artifact": {
+          "label": "Crypto capital-flow breadth",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "967a36637bebccd3772f0d94869950f70aa9dcd3",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/967a36637bebccd3772f0d94869950f70aa9dcd3"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "WATCHING",
+      "visualValue": "24.51B",
+      "visualLabel": "August UPI transactions",
+      "sources": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/india/india-preparing-rollout-agentic-payments-upi-sources-say-2026-09-01/"
+        },
+        {
+          "label": "NPCI",
+          "url": "https://www.npci.org.in/product/upi-circle"
+        }
+      ],
+      "execution": {
+        "id": "20260902-04",
+        "workstream": "PAYMENT_CONTROLS",
+        "evidenceStatus": "UNKNOWN",
+        "reason": "The matrix is open, but the stated completion condition depends on external launched terms or controls that remain unverified.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Payment and agent-commerce control matrix",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "967a36637bebccd3772f0d94869950f70aa9dcd3",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/967a36637bebccd3772f0d94869950f70aa9dcd3"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "visualValue": "90 days",
+      "visualLabel": "visibility learning window",
+      "sources": [
+        {
+          "label": "Google controls",
+          "url": "https://blog.google/products-and-platforms/products/search/new-controls-website-owners/"
+        },
+        {
+          "label": "Google Search Central",
+          "url": "https://developers.google.com/search/docs/appearance/ai-features"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/legal/litigation/eu-antitrust-regulators-quiz-publishers-googles-ai-search-opt-out-2026-09-01/"
+        }
+      ],
+      "execution": {
+        "id": "20260902-05",
+        "workstream": "PUBLICATION",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The canonical Action Item is public and linked to its source commit and verification receipt.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Published canonical Action Item",
+          "href": "/ouroboros/202609/20260902/action_item/"
+        },
+        "sourceCommit": {
+          "sha": "967a36637bebccd3772f0d94869950f70aa9dcd3",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/967a36637bebccd3772f0d94869950f70aa9dcd3"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "COMPLETE",
+      "visualValue": "JPY190B",
+      "visualLabel": "Tokyo DC transaction",
+      "sources": [
+        {
+          "label": "Keppel",
+          "url": "https://www.keppel.com/media/keppel-dc-reit-acquires-two-freehold-hyperscale-colocation-data-centres-in-inzai-city-greater-tokyo/"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/retail-consumer/keppel-dc-reit-buy-two-tokyo-data-centres-12-billion-2026-09-01/"
+        }
+      ],
+      "execution": {
+        "id": "20260902-06",
+        "workstream": "AI_INFRASTRUCTURE",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The Signal 06 row is present in the 16-entry evidence registry and governed by the monthly review/publication boundary.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "AI infrastructure evidence intake",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "967a36637bebccd3772f0d94869950f70aa9dcd3",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/967a36637bebccd3772f0d94869950f70aa9dcd3"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$439B",
+      "visualLabel": "reported project backlog",
+      "sources": [
+        {
+          "label": "SEC S-1",
+          "url": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026059639/sbenergy-sx1.htm"
+        },
+        {
+          "label": "SB Energy",
+          "url": "https://www.prnewswire.com/news-releases/sb-energy-announces-public-filing-of-registration-statement-for-proposed-initial-public-offering-302866135.html"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/energy/softbank-backed-sb-energy-moves-closer-public-markets-with-us-ipo-filing-2026-09-01/"
+        }
+      ],
+      "execution": {
+        "id": "20260902-07",
+        "workstream": "PRIVATE_MARKETS",
+        "evidenceStatus": "UNKNOWN",
+        "reason": "The action is evidence-dependent; no new evidence justified changing the watch state.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Private-market diligence matrix",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "967a36637bebccd3772f0d94869950f70aa9dcd3",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/967a36637bebccd3772f0d94869950f70aa9dcd3"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$95B",
+      "visualLabel": "Dell AI backlog",
+      "sources": [
+        {
+          "label": "Dell",
+          "url": "https://investors.delltechnologies.com/financial-information/quarterly-results"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/dell-again-lifts-forecasts-ai-demand-powers-record-results-2026-09-01/"
+        }
+      ],
+      "execution": {
+        "id": "20260902-08",
+        "workstream": "PUBLIC_EQUITIES",
+        "evidenceStatus": "UNKNOWN",
+        "reason": "The action is evidence-dependent; no new evidence justified changing the watch state.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Public-market causal ledger",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "967a36637bebccd3772f0d94869950f70aa9dcd3",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/967a36637bebccd3772f0d94869950f70aa9dcd3"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
+    }
   ],
   "editions": {
     "en": {
-      "inLanguage": "en", "languageSlug": "", "title": "Daily Action Flow, September 2, 2026", "description": "Eight source-backed decisions arranged into one inspectable CIO execution field.", "centralJudgment": "Control dangerous capability before execution, distinguish real operating economics from announced capacity, and keep public knowledge discoverable without surrendering the machinery that creates it.", "fieldLine": "Eight signals. One publication complete. Four operating loops ready. Three market ledgers watching.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "title": "Daily Action Flow, September 2, 2026",
+      "description": "Eight source-backed decisions arranged into one inspectable CIO execution field.",
+      "centralJudgment": "Control dangerous capability before execution, distinguish real operating economics from announced capacity, and keep public knowledge discoverable without surrendering the machinery that creates it.",
+      "fieldLine": "Eight signals. One publication complete. Four operating loops ready. Three market ledgers watching.",
       "actions": [
-        {"signal": 1, "domain": "Frontier Models", "title": "Gate Astra Before Execution", "why": "Critical cyber capability turns identity, tools and runtime isolation into product requirements.", "steps": ["Record system-card capability and refusal evidence", "Separate defender access from general availability", "Require independent pre-action authorization"], "done": "Astra remains unavailable to RobinOS execution until capability, access and control evidence passes the restricted-distribution gate."},
-        {"signal": 2, "domain": "Physical AI", "title": "Measure City Replication", "why": "Waymo has proven multi-city deployment, while utilization, intervention and city economics remain undisclosed.", "steps": ["Track rollout speed and trips per vehicle", "Record interventions, incidents and local operating cost", "Compare repeatability across cities"], "done": "The scorecard separates public driverless reach from profitable autonomous operations."},
-        {"signal": 3, "domain": "Crypto Capital", "title": "Keep Breadth on Watch", "why": "ETF inflows are positive but heavily concentrated in BlackRock Bitcoin and Ether products.", "steps": ["Track non-IBIT and non-ETHA contribution", "Measure stablecoin supply and real onchain fees", "Require two consecutive weeks of broader participation"], "done": "Web3 breadth is upgraded only when manager concentration falls and onchain activity confirms it."},
-        {"signal": 4, "domain": "Agent Payments", "title": "Define the Revocable Mandate", "why": "India's proposal makes delegated authority, identity, audit and refunds more important than the payment token.", "steps": ["Map limits, expiry and revocation", "Verify agent identity and credential isolation", "Record liability, fraud and refund handling"], "done": "The protocol moves beyond READY only after launched controls and liability evidence are public."},
-        {"signal": 5, "domain": "iamrobin.ai", "title": "Publish Selective Visibility", "why": "Independent writers need discovery, source control and owned distribution rather than a binary open-or-block choice.", "steps": ["Publish the four-language canonical argument", "Keep private working models outside the release tree", "Start the 90-day citation and referral baseline"], "done": "The Action Item passes evidence, language, build, public and Telegram gates."},
-        {"signal": 6, "domain": "AI Infrastructure Intelligence", "title": "Add the Revenue-MW Benchmark", "why": "Keppel supplies tenants, leases, financing and rent reversion that can be underwritten against announced gigawatts.", "steps": ["Record acquisition yield and rent reversion", "Track tenant concentration, debt cost and DPU accretion", "Route the evidence into private AI-infrastructure intelligence"], "done": "Tokyo DC4/5 becomes a source-backed benchmark with no automatic public release."},
-        {"signal": 7, "domain": "Late-Stage Markets", "title": "Hold SB Energy at Watch", "why": "A $439 billion backlog and 8.8 GW pipeline are not operating data centers or priced public equity.", "steps": ["Read backlog cancellation and minimum-payment terms", "Map project capital stack and first COD", "Wait for price range and fully diluted valuation"], "done": "The rating changes only when enforceability, financing, delivery and valuation are disclosed."},
-        {"signal": 8, "domain": "Public Equities", "title": "Track Dell's Conversion Ledger", "why": "Dell now connects AI demand to orders, revenue and operating profit, while cash conversion and concentration remain the test.", "steps": ["Measure backlog conversion and ISG margin", "Track cash flow, receivables and inventory", "Record customer concentration and component-cost pass-through"], "done": "The 12–24 month thesis changes through quarterly conversion economics rather than one trading session."}
+        {
+          "signal": 1,
+          "domain": "Frontier Models",
+          "title": "Gate Astra Before Execution",
+          "why": "Critical cyber capability turns identity, tools and runtime isolation into product requirements.",
+          "steps": [
+            "Record system-card capability and refusal evidence",
+            "Separate defender access from general availability",
+            "Require independent pre-action authorization"
+          ],
+          "done": "Astra remains unavailable to RobinOS execution until capability, access and control evidence passes the restricted-distribution gate."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "Measure City Replication",
+          "why": "Waymo has proven multi-city deployment, while utilization, intervention and city economics remain undisclosed.",
+          "steps": [
+            "Track rollout speed and trips per vehicle",
+            "Record interventions, incidents and local operating cost",
+            "Compare repeatability across cities"
+          ],
+          "done": "The scorecard separates public driverless reach from profitable autonomous operations."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital",
+          "title": "Keep Breadth on Watch",
+          "why": "ETF inflows are positive but heavily concentrated in BlackRock Bitcoin and Ether products.",
+          "steps": [
+            "Track non-IBIT and non-ETHA contribution",
+            "Measure stablecoin supply and real onchain fees",
+            "Require two consecutive weeks of broader participation"
+          ],
+          "done": "Web3 breadth is upgraded only when manager concentration falls and onchain activity confirms it."
+        },
+        {
+          "signal": 4,
+          "domain": "Agent Payments",
+          "title": "Define the Revocable Mandate",
+          "why": "India's proposal makes delegated authority, identity, audit and refunds more important than the payment token.",
+          "steps": [
+            "Map limits, expiry and revocation",
+            "Verify agent identity and credential isolation",
+            "Record liability, fraud and refund handling"
+          ],
+          "done": "The protocol moves beyond READY only after launched controls and liability evidence are public."
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "Publish Selective Visibility",
+          "why": "Independent writers need discovery, source control and owned distribution rather than a binary open-or-block choice.",
+          "steps": [
+            "Publish the four-language canonical argument",
+            "Keep private working models outside the release tree",
+            "Start the 90-day citation and referral baseline"
+          ],
+          "done": "The Action Item passes evidence, language, build, public and Telegram gates."
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure Intelligence",
+          "title": "Add the Revenue-MW Benchmark",
+          "why": "Keppel supplies tenants, leases, financing and rent reversion that can be underwritten against announced gigawatts.",
+          "steps": [
+            "Record acquisition yield and rent reversion",
+            "Track tenant concentration, debt cost and DPU accretion",
+            "Route the evidence into private AI-infrastructure intelligence"
+          ],
+          "done": "Tokyo DC4/5 becomes a source-backed benchmark with no automatic public release."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-Stage Markets",
+          "title": "Hold SB Energy at Watch",
+          "why": "A $439 billion backlog and 8.8 GW pipeline are not operating data centers or priced public equity.",
+          "steps": [
+            "Read backlog cancellation and minimum-payment terms",
+            "Map project capital stack and first COD",
+            "Wait for price range and fully diluted valuation"
+          ],
+          "done": "The rating changes only when enforceability, financing, delivery and valuation are disclosed."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities",
+          "title": "Track Dell's Conversion Ledger",
+          "why": "Dell now connects AI demand to orders, revenue and operating profit, while cash conversion and concentration remain the test.",
+          "steps": [
+            "Measure backlog conversion and ISG margin",
+            "Track cash flow, receivables and inventory",
+            "Record customer concentration and component-cost pass-through"
+          ],
+          "done": "The 12–24 month thesis changes through quarterly conversion economics rather than one trading session."
+        }
       ]
     },
     "zh-Hans": {
-      "inLanguage": "zh-Hans", "languageSlug": "zh-hans", "title": "每日行动流，2026年9月2日", "description": "八项有来源支持的决策，汇入一个可审计的CIO执行场。", "centralJudgment": "危险能力必须在执行前受控，运营经济必须与公告容量分开，公开知识要保持可发现，却不交出制造知识的机器。", "fieldLine": "八个信号。一项发布完成。四个运营循环就绪。三个市场账本继续观察。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "title": "每日行动流，2026年9月2日",
+      "description": "八项有来源支持的决策，汇入一个可审计的CIO执行场。",
+      "centralJudgment": "危险能力必须在执行前受控，运营经济必须与公告容量分开，公开知识要保持可发现，却不交出制造知识的机器。",
+      "fieldLine": "八个信号。一项发布完成。四个运营循环就绪。三个市场账本继续观察。",
       "actions": [
-        {"signal": 1, "domain": "前沿模型", "title": "Astra执行前设门", "why": "Critical cyber能力使身份、工具权限与运行隔离成为产品要求。", "steps": ["记录system card能力与拒绝证据", "分开防御者权限和公众可用性", "要求独立的动作前授权"], "done": "能力、访问与控制证据通过受限分发门禁前，Astra不进入RobinOS执行。"},
-        {"signal": 2, "domain": "Physical AI", "title": "测量城市复制", "why": "Waymo证明了多城部署，但利用率、接管和城市经济仍未披露。", "steps": ["追踪开放速度与每车行程", "记录接管、事故和本地运营成本", "比较不同城市的可复制性"], "done": "评分卡把无人驾驶覆盖范围与盈利运营明确分开。"},
-        {"signal": 3, "domain": "加密资本", "title": "广度继续观察", "why": "ETF流入为正，却高度集中于BlackRock的Bitcoin和Ether产品。", "steps": ["追踪非IBIT与非ETHA贡献", "测量稳定币供应和真实链上费用", "要求连续两周出现更广参与"], "done": "只有管理人集中度下降且链上活动确认，才升级Web3广度。"},
-        {"signal": 4, "domain": "Agent支付", "title": "定义可撤销授权", "why": "印度方案把委托权限、身份、审计与退款放在支付token之前。", "steps": ["绘制额度、到期和撤销", "验证agent身份与凭证隔离", "记录责任、欺诈与退款处理"], "done": "协议上线并公开控制与责任证据后，才可越过READY。"},
-        {"signal": 5, "domain": "iamrobin.ai", "title": "发布选择性可见", "why": "独立作者需要发现、来源控制与自有分发，而不是全开或全关。", "steps": ["发布四语canonical论证", "把私有工作模型留在release tree之外", "建立90天引用与referral基线"], "done": "Action Item通过证据、语言、构建、公开与Telegram门禁。"},
-        {"signal": 6, "domain": "AI基础设施情报", "title": "加入Revenue-MW基准", "why": "Keppel提供可承销的租户、租约、融资与租金回归，可用来校准公告GW。", "steps": ["记录收购收益率与租金回归", "追踪租户集中、债务成本与DPU增厚", "把证据导入私有AI基础设施研究"], "done": "Tokyo DC4/5成为有来源的基准，不触发自动公开。"},
-        {"signal": 7, "domain": "后期一级市场", "title": "SB Energy维持观察", "why": "$4390亿backlog和8.8 GW管线不等于已运营数据中心或已定价股票。", "steps": ["阅读backlog取消及最低付款条款", "绘制项目资本栈和首个COD", "等待价格区间与完全摊薄估值"], "done": "执行力、融资、交付与估值披露后才改变评级。"},
-        {"signal": 8, "domain": "公开市场", "title": "追踪Dell转化账本", "why": "Dell已把AI需求连接到订单、收入与营业利润，现金转化和集中度仍是关键。", "steps": ["测量backlog转化与ISG利润率", "追踪现金流、应收和库存", "记录客户集中与部件成本转嫁"], "done": "12至24个月论点依据季度转化经济改变，不依据单日股价。"}
+        {
+          "signal": 1,
+          "domain": "前沿模型",
+          "title": "Astra执行前设门",
+          "why": "Critical cyber能力使身份、工具权限与运行隔离成为产品要求。",
+          "steps": [
+            "记录system card能力与拒绝证据",
+            "分开防御者权限和公众可用性",
+            "要求独立的动作前授权"
+          ],
+          "done": "能力、访问与控制证据通过受限分发门禁前，Astra不进入RobinOS执行。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "测量城市复制",
+          "why": "Waymo证明了多城部署，但利用率、接管和城市经济仍未披露。",
+          "steps": [
+            "追踪开放速度与每车行程",
+            "记录接管、事故和本地运营成本",
+            "比较不同城市的可复制性"
+          ],
+          "done": "评分卡把无人驾驶覆盖范围与盈利运营明确分开。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本",
+          "title": "广度继续观察",
+          "why": "ETF流入为正，却高度集中于BlackRock的Bitcoin和Ether产品。",
+          "steps": [
+            "追踪非IBIT与非ETHA贡献",
+            "测量稳定币供应和真实链上费用",
+            "要求连续两周出现更广参与"
+          ],
+          "done": "只有管理人集中度下降且链上活动确认，才升级Web3广度。"
+        },
+        {
+          "signal": 4,
+          "domain": "Agent支付",
+          "title": "定义可撤销授权",
+          "why": "印度方案把委托权限、身份、审计与退款放在支付token之前。",
+          "steps": [
+            "绘制额度、到期和撤销",
+            "验证agent身份与凭证隔离",
+            "记录责任、欺诈与退款处理"
+          ],
+          "done": "协议上线并公开控制与责任证据后，才可越过READY。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "发布选择性可见",
+          "why": "独立作者需要发现、来源控制与自有分发，而不是全开或全关。",
+          "steps": [
+            "发布四语canonical论证",
+            "把私有工作模型留在release tree之外",
+            "建立90天引用与referral基线"
+          ],
+          "done": "Action Item通过证据、语言、构建、公开与Telegram门禁。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基础设施情报",
+          "title": "加入Revenue-MW基准",
+          "why": "Keppel提供可承销的租户、租约、融资与租金回归，可用来校准公告GW。",
+          "steps": [
+            "记录收购收益率与租金回归",
+            "追踪租户集中、债务成本与DPU增厚",
+            "把证据导入私有AI基础设施研究"
+          ],
+          "done": "Tokyo DC4/5成为有来源的基准，不触发自动公开。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期一级市场",
+          "title": "SB Energy维持观察",
+          "why": "$4390亿backlog和8.8 GW管线不等于已运营数据中心或已定价股票。",
+          "steps": [
+            "阅读backlog取消及最低付款条款",
+            "绘制项目资本栈和首个COD",
+            "等待价格区间与完全摊薄估值"
+          ],
+          "done": "执行力、融资、交付与估值披露后才改变评级。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场",
+          "title": "追踪Dell转化账本",
+          "why": "Dell已把AI需求连接到订单、收入与营业利润，现金转化和集中度仍是关键。",
+          "steps": [
+            "测量backlog转化与ISG利润率",
+            "追踪现金流、应收和库存",
+            "记录客户集中与部件成本转嫁"
+          ],
+          "done": "12至24个月论点依据季度转化经济改变，不依据单日股价。"
+        }
       ]
     },
     "zh-Hant": {
-      "inLanguage": "zh-Hant", "languageSlug": "zh-hant", "title": "每日行動流，2026年9月2日", "description": "八項有來源支持的決策，匯入一個可審計的CIO執行場。", "centralJudgment": "危險能力必須在執行前受控，營運經濟必須與公告容量分開，公開知識要保持可發現，卻不交出製造知識的機器。", "fieldLine": "八個訊號。一項發布完成。四個營運循環就緒。三個市場台帳繼續觀察。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "title": "每日行動流，2026年9月2日",
+      "description": "八項有來源支持的決策，匯入一個可審計的CIO執行場。",
+      "centralJudgment": "危險能力必須在執行前受控，營運經濟必須與公告容量分開，公開知識要保持可發現，卻不交出製造知識的機器。",
+      "fieldLine": "八個訊號。一項發布完成。四個營運循環就緒。三個市場台帳繼續觀察。",
       "actions": [
-        {"signal": 1, "domain": "前沿模型", "title": "Astra執行前設門", "why": "Critical cyber能力使身份、工具權限與執行隔離成為產品要求。", "steps": ["記錄system card能力與拒絕證據", "分開防禦者權限和公眾可用性", "要求獨立的動作前授權"], "done": "能力、存取與控制證據通過受限分發門禁前，Astra不進入RobinOS執行。"},
-        {"signal": 2, "domain": "Physical AI", "title": "測量城市複製", "why": "Waymo證明了多城部署，但利用率、接管和城市經濟仍未披露。", "steps": ["追蹤開放速度與每車行程", "記錄接管、事故和本地營運成本", "比較不同城市的可複製性"], "done": "評分卡把無人駕駛覆蓋與盈利營運明確分開。"},
-        {"signal": 3, "domain": "加密資本", "title": "廣度繼續觀察", "why": "ETF流入為正，卻高度集中於BlackRock的Bitcoin和Ether產品。", "steps": ["追蹤非IBIT與非ETHA貢獻", "測量穩定幣供應和真實鏈上費用", "要求連續兩週出現更廣參與"], "done": "只有管理人集中度下降且鏈上活動確認，才升級Web3廣度。"},
-        {"signal": 4, "domain": "Agent支付", "title": "定義可撤銷授權", "why": "印度方案把委託權限、身份、審計與退款放在支付token之前。", "steps": ["繪製額度、到期和撤銷", "驗證agent身份與憑證隔離", "記錄責任、欺詐與退款處理"], "done": "協議上線並公開控制與責任證據後，才可越過READY。"},
-        {"signal": 5, "domain": "iamrobin.ai", "title": "發布選擇性可見", "why": "獨立作者需要發現、來源控制與自有分發，而不是全開或全關。", "steps": ["發布四語canonical論證", "把私有工作模型留在release tree之外", "建立90天引用與referral基線"], "done": "Action Item通過證據、語言、構建、公開與Telegram門禁。"},
-        {"signal": 6, "domain": "AI基礎設施情報", "title": "加入Revenue-MW基準", "why": "Keppel提供可承銷的租戶、租約、融資與租金回歸，可用來校準公告GW。", "steps": ["記錄收購收益率與租金回歸", "追蹤租戶集中、債務成本與DPU增厚", "把證據導入私有AI基礎設施研究"], "done": "Tokyo DC4/5成為有來源的基準，不觸發自動公開。"},
-        {"signal": 7, "domain": "後期私募市場", "title": "SB Energy維持觀察", "why": "$4390億backlog和8.8 GW管線不等於已營運資料中心或已定價股票。", "steps": ["閱讀backlog取消及最低付款條款", "繪製項目資本棧和首個COD", "等待價格區間與完全攤薄估值"], "done": "執行力、融資、交付與估值披露後才改變評級。"},
-        {"signal": 8, "domain": "公開市場", "title": "追蹤Dell轉化台帳", "why": "Dell已把AI需求連接到訂單、收入與營業利潤，現金轉化和集中度仍是關鍵。", "steps": ["測量backlog轉化與ISG利潤率", "追蹤現金流、應收和庫存", "記錄客戶集中與零件成本轉嫁"], "done": "12至24個月論點依據季度轉化經濟改變，不依據單日股價。"}
+        {
+          "signal": 1,
+          "domain": "前沿模型",
+          "title": "Astra執行前設門",
+          "why": "Critical cyber能力使身份、工具權限與執行隔離成為產品要求。",
+          "steps": [
+            "記錄system card能力與拒絕證據",
+            "分開防禦者權限和公眾可用性",
+            "要求獨立的動作前授權"
+          ],
+          "done": "能力、存取與控制證據通過受限分發門禁前，Astra不進入RobinOS執行。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "測量城市複製",
+          "why": "Waymo證明了多城部署，但利用率、接管和城市經濟仍未披露。",
+          "steps": [
+            "追蹤開放速度與每車行程",
+            "記錄接管、事故和本地營運成本",
+            "比較不同城市的可複製性"
+          ],
+          "done": "評分卡把無人駕駛覆蓋與盈利營運明確分開。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本",
+          "title": "廣度繼續觀察",
+          "why": "ETF流入為正，卻高度集中於BlackRock的Bitcoin和Ether產品。",
+          "steps": [
+            "追蹤非IBIT與非ETHA貢獻",
+            "測量穩定幣供應和真實鏈上費用",
+            "要求連續兩週出現更廣參與"
+          ],
+          "done": "只有管理人集中度下降且鏈上活動確認，才升級Web3廣度。"
+        },
+        {
+          "signal": 4,
+          "domain": "Agent支付",
+          "title": "定義可撤銷授權",
+          "why": "印度方案把委託權限、身份、審計與退款放在支付token之前。",
+          "steps": [
+            "繪製額度、到期和撤銷",
+            "驗證agent身份與憑證隔離",
+            "記錄責任、欺詐與退款處理"
+          ],
+          "done": "協議上線並公開控制與責任證據後，才可越過READY。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "發布選擇性可見",
+          "why": "獨立作者需要發現、來源控制與自有分發，而不是全開或全關。",
+          "steps": [
+            "發布四語canonical論證",
+            "把私有工作模型留在release tree之外",
+            "建立90天引用與referral基線"
+          ],
+          "done": "Action Item通過證據、語言、構建、公開與Telegram門禁。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基礎設施情報",
+          "title": "加入Revenue-MW基準",
+          "why": "Keppel提供可承銷的租戶、租約、融資與租金回歸，可用來校準公告GW。",
+          "steps": [
+            "記錄收購收益率與租金回歸",
+            "追蹤租戶集中、債務成本與DPU增厚",
+            "把證據導入私有AI基礎設施研究"
+          ],
+          "done": "Tokyo DC4/5成為有來源的基準，不觸發自動公開。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私募市場",
+          "title": "SB Energy維持觀察",
+          "why": "$4390億backlog和8.8 GW管線不等於已營運資料中心或已定價股票。",
+          "steps": [
+            "閱讀backlog取消及最低付款條款",
+            "繪製項目資本棧和首個COD",
+            "等待價格區間與完全攤薄估值"
+          ],
+          "done": "執行力、融資、交付與估值披露後才改變評級。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場",
+          "title": "追蹤Dell轉化台帳",
+          "why": "Dell已把AI需求連接到訂單、收入與營業利潤，現金轉化和集中度仍是關鍵。",
+          "steps": [
+            "測量backlog轉化與ISG利潤率",
+            "追蹤現金流、應收和庫存",
+            "記錄客戶集中與零件成本轉嫁"
+          ],
+          "done": "12至24個月論點依據季度轉化經濟改變，不依據單日股價。"
+        }
       ]
     },
     "ja": {
-      "inLanguage": "ja", "languageSlug": "ja", "title": "デイリー・アクション・フロー、2026年9月2日", "description": "出典で裏付けた8つの判断を、一つの検証可能なCIO実行フィールドへ並べる。", "centralJudgment": "危険な能力は実行前に制御し、実運用の経済性を公表容量から分ける。公開知識は見つけられる状態を保ち、その製造装置は渡さない。", "fieldLine": "8つのシグナル。1件の公開を完了。4つの運用ループが準備完了。3つの市場台帳を監視中。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "title": "デイリー・アクション・フロー、2026年9月2日",
+      "description": "出典で裏付けた8つの判断を、一つの検証可能なCIO実行フィールドへ並べる。",
+      "centralJudgment": "危険な能力は実行前に制御し、実運用の経済性を公表容量から分ける。公開知識は見つけられる状態を保ち、その製造装置は渡さない。",
+      "fieldLine": "8つのシグナル。1件の公開を完了。4つの運用ループが準備完了。3つの市場台帳を監視中。",
       "actions": [
-        {"signal": 1, "domain": "フロンティアモデル", "title": "Astraの実行前にゲートを置く", "why": "Critical cyber能力では、アイデンティティ、ツール権限、実行環境の分離が製品要件になる。", "steps": ["system cardの能力と拒否証拠を記録する", "防御者向けアクセスと一般公開を分ける", "独立した事前承認を要求する"], "done": "能力、アクセス、制御の証拠が制限配布ゲートを通るまでRobinOSから実行しない。"},
-        {"signal": 2, "domain": "Physical AI", "title": "都市展開の再現性を測る", "why": "Waymoは複数都市への展開を示したが、稼働率、介入、都市別採算は未開示である。", "steps": ["公開速度と車両当たり運行を追う", "介入、事故、現地運営費を記録する", "都市間の再現性を比較する"], "done": "無人運転の到達範囲と収益性のある自律運営を分けて評価する。"},
-        {"signal": 3, "domain": "暗号資産への資本", "title": "市場の裾野を監視する", "why": "ETF流入はプラスだが、BlackRockのBitcoin・Ether商品への集中が高い。", "steps": ["IBITとETHA以外の寄与を追う", "ステーブルコイン供給と実オンチェーン手数料を測る", "2週連続の裾野拡大を条件にする"], "done": "運用会社集中が低下しオンチェーン活動が確認された場合だけWeb3を格上げする。"},
-        {"signal": 4, "domain": "Agent決済", "title": "取消可能な委任を定義する", "why": "インド案では、支払tokenより委任権限、アイデンティティ、監査、返金の設計が重要になる。", "steps": ["上限、期限、取消を図示する", "agentの本人性と認証情報分離を確認する", "責任、詐欺、返金処理を記録する"], "done": "サービス開始後に制御と責任の証拠が公開されてからREADYを越える。"},
-        {"signal": 5, "domain": "iamrobin.ai", "title": "選択的可視性を公開する", "why": "独立した書き手には、全面公開か全面遮断ではなく、発見、出典管理、自ら所有する配信経路が必要だ。", "steps": ["四言語のcanonical記事を公開する", "非公開作業モデルをrelease treeの外に置く", "90日間の引用・referral基準を作る"], "done": "Action Itemが証拠、言語、ビルド、公開、Telegramの各ゲートを通過する。"},
-        {"signal": 6, "domain": "AIインフラ・インテリジェンス", "title": "Revenue-MW基準を加える", "why": "Keppelは、発表GWと比較できるテナント、契約、資金調達、賃料改定余地を示す。", "steps": ["取得利回りと賃料改定を記録する", "テナント集中、負債費用、DPU増加を追う", "証拠を非公開AIインフラ研究へ回す"], "done": "Tokyo DC4/5を出典付き基準にし、自動公開は行わない。"},
-        {"signal": 7, "domain": "レイトステージ市場", "title": "SB Energyを監視に保つ", "why": "$4390億のbacklogと8.8 GWの計画は、稼働中データセンターや価格の付いた株式ではない。", "steps": ["backlog解約と最低支払条件を読む", "プロジェクト資本構成と最初のCODを整理する", "価格帯と完全希薄化評価を待つ"], "done": "拘束力、資金調達、納入、評価が開示された場合だけ判断を変える。"},
-        {"signal": 8, "domain": "公開株式", "title": "Dellの転換台帳を追う", "why": "DellはAI需要を受注、売上、営業利益へ結んだ。次は現金化と顧客集中を確認する。", "steps": ["backlog転換とISG利益率を測る", "キャッシュフロー、売掛金、在庫を追う", "顧客集中と部品費転嫁を記録する"], "done": "12〜24か月の仮説は四半期の転換経済で変え、一日の株価では変えない。"}
+        {
+          "signal": 1,
+          "domain": "フロンティアモデル",
+          "title": "Astraの実行前にゲートを置く",
+          "why": "Critical cyber能力では、アイデンティティ、ツール権限、実行環境の分離が製品要件になる。",
+          "steps": [
+            "system cardの能力と拒否証拠を記録する",
+            "防御者向けアクセスと一般公開を分ける",
+            "独立した事前承認を要求する"
+          ],
+          "done": "能力、アクセス、制御の証拠が制限配布ゲートを通るまでRobinOSから実行しない。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "都市展開の再現性を測る",
+          "why": "Waymoは複数都市への展開を示したが、稼働率、介入、都市別採算は未開示である。",
+          "steps": [
+            "公開速度と車両当たり運行を追う",
+            "介入、事故、現地運営費を記録する",
+            "都市間の再現性を比較する"
+          ],
+          "done": "無人運転の到達範囲と収益性のある自律運営を分けて評価する。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産への資本",
+          "title": "市場の裾野を監視する",
+          "why": "ETF流入はプラスだが、BlackRockのBitcoin・Ether商品への集中が高い。",
+          "steps": [
+            "IBITとETHA以外の寄与を追う",
+            "ステーブルコイン供給と実オンチェーン手数料を測る",
+            "2週連続の裾野拡大を条件にする"
+          ],
+          "done": "運用会社集中が低下しオンチェーン活動が確認された場合だけWeb3を格上げする。"
+        },
+        {
+          "signal": 4,
+          "domain": "Agent決済",
+          "title": "取消可能な委任を定義する",
+          "why": "インド案では、支払tokenより委任権限、アイデンティティ、監査、返金の設計が重要になる。",
+          "steps": [
+            "上限、期限、取消を図示する",
+            "agentの本人性と認証情報分離を確認する",
+            "責任、詐欺、返金処理を記録する"
+          ],
+          "done": "サービス開始後に制御と責任の証拠が公開されてからREADYを越える。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "選択的可視性を公開する",
+          "why": "独立した書き手には、全面公開か全面遮断ではなく、発見、出典管理、自ら所有する配信経路が必要だ。",
+          "steps": [
+            "四言語のcanonical記事を公開する",
+            "非公開作業モデルをrelease treeの外に置く",
+            "90日間の引用・referral基準を作る"
+          ],
+          "done": "Action Itemが証拠、言語、ビルド、公開、Telegramの各ゲートを通過する。"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラ・インテリジェンス",
+          "title": "Revenue-MW基準を加える",
+          "why": "Keppelは、発表GWと比較できるテナント、契約、資金調達、賃料改定余地を示す。",
+          "steps": [
+            "取得利回りと賃料改定を記録する",
+            "テナント集中、負債費用、DPU増加を追う",
+            "証拠を非公開AIインフラ研究へ回す"
+          ],
+          "done": "Tokyo DC4/5を出典付き基準にし、自動公開は行わない。"
+        },
+        {
+          "signal": 7,
+          "domain": "レイトステージ市場",
+          "title": "SB Energyを監視に保つ",
+          "why": "$4390億のbacklogと8.8 GWの計画は、稼働中データセンターや価格の付いた株式ではない。",
+          "steps": [
+            "backlog解約と最低支払条件を読む",
+            "プロジェクト資本構成と最初のCODを整理する",
+            "価格帯と完全希薄化評価を待つ"
+          ],
+          "done": "拘束力、資金調達、納入、評価が開示された場合だけ判断を変える。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開株式",
+          "title": "Dellの転換台帳を追う",
+          "why": "DellはAI需要を受注、売上、営業利益へ結んだ。次は現金化と顧客集中を確認する。",
+          "steps": [
+            "backlog転換とISG利益率を測る",
+            "キャッシュフロー、売掛金、在庫を追う",
+            "顧客集中と部品費転嫁を記録する"
+          ],
+          "done": "12〜24か月の仮説は四半期の転換経済で変え、一日の株価では変えない。"
+        }
       ]
     }
   }

@@ -1,0 +1,218 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ledger from '../../data/action-execution-ledger.json';
+
+const path = '/ouroboros/execution-ledger/';
+const description = 'Evidence-backed execution receipts for every Ouroboros Daily Action Flow action from August 20 through September 4, 2026.';
+const statusOrder = ['COMPLETE', 'WATCHING', 'BLOCKED', 'SUPERSEDED'] as const;
+const statusCounts = ledger.summary.statuses as Record<string, number>;
+const workItems = ledger.canonicalWorkItems.map((item) => {
+  const counts: Record<string, number> = {};
+  for (const row of item.matrix) counts[row.status] = (counts[row.status] ?? 0) + 1;
+  return { ...item, statusCounts: counts };
+});
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': `https://iamrobin.ai${path}#page`,
+  name: 'Ouroboros Action Execution Ledger',
+  description,
+  url: `https://iamrobin.ai${path}`,
+  inLanguage: 'en',
+  dateModified: ledger.updated,
+};
+---
+
+<BaseLayout
+  title="Ouroboros Action Execution Ledger | Robin Xie"
+  {description}
+  {path}
+  {schema}
+>
+  <article class="execution-ledger shell">
+    <header class="ledger-hero">
+      <p class="eyebrow">Ouroboros · Execution audit · 2026-08-20—2026-09-04</p>
+      <h1>127 actions.<br />Zero READY.</h1>
+      <p class="ledger-hero__lead">Every action is bound to a source artifact, an exact commit, and a fixed verification receipt. Missing evidence remains visible.</p>
+      <div class="ledger-summary" aria-label="Final action status counts">
+        {statusOrder.map((status) => (
+          <a href={`#status-${status.toLowerCase()}`}>
+            <strong>{statusCounts[status]}</strong>
+            <span>{status}</span>
+          </a>
+        ))}
+      </div>
+      <p class="ledger-baseline">Baseline: {ledger.baseline.statuses.COMPLETE} COMPLETE · {ledger.baseline.statuses.READY} READY · {ledger.baseline.statuses.WATCHING} WATCHING.</p>
+    </header>
+
+    <section class="ledger-method" aria-labelledby="method-title">
+      <p class="eyebrow">Decision rule</p>
+      <h2 id="method-title">Status follows evidence.</h2>
+      <ol>{ledger.methodology.map((item) => <li>{item}</li>)}</ol>
+    </section>
+
+    <section class="ledger-workstreams" aria-labelledby="workstreams-title">
+      <div class="section-heading">
+        <p class="eyebrow">Canonical work</p>
+        <h2 id="workstreams-title">Eight reusable ledgers replace repeated one-offs.</h2>
+      </div>
+      <div class="workstream-grid">
+        {workItems.map((item) => (
+            <details class="workstream">
+              <summary>
+                <span>{item.id.replaceAll('_', ' ')}</span>
+                <strong>{item.title}</strong>
+                <i class={`state state--${item.state.toLowerCase()}`}>{item.state}</i>
+              </summary>
+              <div>
+                <p>{item.purpose}</p>
+                <dl>
+                  <div><dt>Actions</dt><dd>{item.actionCount}</dd></div>
+                  {statusOrder.filter((status) => item.statusCounts[status]).map((status) => <div><dt>{status}</dt><dd>{item.statusCounts[status]}</dd></div>)}
+                </dl>
+                <h3>Control fields</h3>
+                <ul>{item.fields.map((field) => <li>{field}</li>)}</ul>
+                {item.artifacts.length > 0 && (
+                  <>
+                    <h3>Repository evidence</h3>
+                    <ul class="artifact-list">{item.artifacts.map((artifact) => <li><span>{artifact.label}</span><code>{artifact.sha256.slice(0, 12)}</code></li>)}</ul>
+                  </>
+                )}
+              </div>
+            </details>
+        ))}
+      </div>
+    </section>
+
+    <section class="ledger-blockers" id="status-blocked" aria-labelledby="blockers-title">
+      <p class="eyebrow">Genuine blockers</p>
+      <h2 id="blockers-title">Four execution claims remain unmade.</h2>
+      <div>
+        {ledger.blockers.map((blocker) => (
+          <article>
+            <span>{blocker.id}</span>
+            <h3>{blocker.title}</h3>
+            <p>{blocker.reason}</p>
+            <a href={blocker.sourceArtifact.href}>Source action →</a>
+            <a href={blocker.sourceCommit.href} rel="noreferrer" target="_blank">Commit {blocker.sourceCommit.sha.slice(0, 7)} ↗</a>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="ledger-receipts" aria-labelledby="receipts-title">
+      <div class="section-heading">
+        <p class="eyebrow">Audit layer</p>
+        <h2 id="receipts-title">All 127 receipts.</h2>
+      </div>
+      <div class="receipt-table" role="table" aria-label="Action execution receipts">
+        <div class="receipt-row receipt-row--head" role="row">
+          <span role="columnheader">Action</span>
+          <span role="columnheader">Canonical work</span>
+          <span role="columnheader">Status</span>
+          <span role="columnheader">Proof</span>
+        </div>
+        {ledger.actions.map((action) => (
+          <div class="receipt-row" id={`action-${action.id}`} role="row">
+            <div role="cell">
+              <small>{action.id} · {action.priority}</small>
+              <strong>{action.title}</strong>
+              <p>{action.statusReason}</p>
+            </div>
+            <div role="cell"><code>{action.workstream}</code></div>
+            <div role="cell">
+              <span class={`state state--${action.status.toLowerCase()}`}>{action.status}</span>
+              <small>{action.evidenceStatus}</small>
+              {action.supersededBy && <a href={`#action-${action.supersededBy}`}>→ {action.supersededBy}</a>}
+            </div>
+            <div role="cell">
+              <a href={action.sourceArtifact.href}>Source</a>
+              <a href={action.artifact.href}>Artifact</a>
+              <a href={action.sourceCommit.href} rel="noreferrer" target="_blank">Commit</a>
+              <a href={action.verificationReceipt?.href} rel="noreferrer" target="_blank">Receipt</a>
+            </div>
+          </div>
+        ))}
+      </div>
+      <i id="status-complete"></i>
+      <i id="status-watching"></i>
+      <i id="status-superseded"></i>
+    </section>
+  </article>
+</BaseLayout>
+
+<style>
+  .execution-ledger { padding-block: clamp(2.5rem, 7vw, 6rem) clamp(6rem, 12vw, 10rem); }
+  .ledger-hero { max-width: 66rem; }
+  .eyebrow { margin: 0; color: var(--gold-dark); font-size: .62rem; font-weight: 650; letter-spacing: .14em; text-transform: uppercase; }
+  .ledger-hero h1 { max-width: 12ch; margin: clamp(2.5rem, 8vw, 5.5rem) 0 0; font-family: var(--serif); font-size: clamp(3.2rem, 11vw, 8.4rem); font-weight: 400; letter-spacing: -.055em; line-height: .88; }
+  .ledger-hero__lead { max-width: 42rem; margin: 2rem 0 0; color: var(--muted); font-family: var(--serif); font-size: clamp(1.15rem, 2.4vw, 1.65rem); line-height: 1.45; }
+  .ledger-summary { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: clamp(2.5rem, 7vw, 5rem); border-block: 1px solid var(--line); }
+  .ledger-summary a { display: grid; gap: .35rem; padding: 1.2rem .5rem; color: var(--muted); text-align: center; text-decoration: none; }
+  .ledger-summary a + a { border-left: 1px solid var(--line); }
+  .ledger-summary strong { color: var(--ink); font-family: var(--serif); font-size: clamp(1.8rem, 5vw, 3.2rem); font-weight: 400; }
+  .ledger-summary span { font-size: .55rem; letter-spacing: .11em; }
+  .ledger-baseline { margin: .8rem 0 0; color: var(--muted); font-size: .66rem; letter-spacing: .06em; }
+  .ledger-method, .ledger-workstreams, .ledger-blockers, .ledger-receipts { margin-top: clamp(6rem, 13vw, 11rem); }
+  .ledger-method { display: grid; grid-template-columns: minmax(8rem, .4fr) minmax(0, 1fr); gap: 1.5rem clamp(2rem, 8vw, 8rem); }
+  .ledger-method h2, .section-heading h2, .ledger-blockers > h2 { margin: 0; font-family: var(--serif); font-size: clamp(2rem, 5vw, 4rem); font-weight: 400; letter-spacing: -.035em; line-height: 1; }
+  .ledger-method ol { grid-column: 2; margin: 0; padding-left: 1.2rem; color: var(--muted); }
+  .ledger-method li { margin-bottom: .75rem; line-height: 1.6; }
+  .section-heading { display: grid; grid-template-columns: minmax(8rem, .4fr) minmax(0, 1fr); gap: 2rem; align-items: start; }
+  .workstream-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; margin-top: 3rem; background: var(--line); border: 1px solid var(--line); }
+  .workstream { background: var(--paper); }
+  .workstream summary { display: grid; gap: .8rem; min-height: 12rem; padding: clamp(1.2rem, 4vw, 2.4rem); cursor: pointer; list-style: none; }
+  .workstream summary::-webkit-details-marker { display: none; }
+  .workstream summary > span { color: var(--gold-dark); font-size: .55rem; letter-spacing: .12em; }
+  .workstream summary strong { max-width: 18ch; font-family: var(--serif); font-size: clamp(1.35rem, 3vw, 2.1rem); font-weight: 400; line-height: 1.12; }
+  .workstream summary i { align-self: end; justify-self: start; }
+  .workstream > div { padding: 0 clamp(1.2rem, 4vw, 2.4rem) 2rem; }
+  .workstream > div > p { color: var(--muted); line-height: 1.6; }
+  .workstream dl { display: flex; flex-wrap: wrap; gap: .8rem 1.5rem; padding-block: 1rem; border-block: 1px solid var(--line); }
+  .workstream dl div { display: grid; gap: .2rem; }
+  .workstream dt, .workstream h3 { color: var(--muted); font-size: .55rem; letter-spacing: .12em; text-transform: uppercase; }
+  .workstream dd { margin: 0; font-family: var(--serif); font-size: 1.4rem; }
+  .workstream h3 { margin: 1.5rem 0 .7rem; }
+  .workstream ul { margin: 0; padding-left: 1rem; color: var(--muted); font-size: .75rem; line-height: 1.65; }
+  .artifact-list { list-style: none; padding: 0 !important; }
+  .artifact-list li { display: flex; justify-content: space-between; gap: 1rem; }
+  .artifact-list code { color: var(--gold-dark); font-size: .62rem; }
+  .state { display: inline-block; padding: .35rem .55rem; border: 1px solid var(--line); color: var(--muted); font-size: .53rem; font-style: normal; letter-spacing: .1em; }
+  .state--complete { color: var(--gold-dark); background: rgba(180,145,93,.08); }
+  .state--watching { color: #687784; border-color: rgba(115,131,142,.36); }
+  .state--blocked { color: #875557; border-color: rgba(160,82,82,.42); background: rgba(160,82,82,.06); }
+  .state--superseded { color: #687784; background: rgba(115,131,142,.05); }
+  .ledger-blockers > p { margin-bottom: .8rem; }
+  .ledger-blockers > div { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; margin-top: 3rem; background: rgba(160,82,82,.18); border: 1px solid rgba(160,82,82,.18); }
+  .ledger-blockers article { padding: clamp(1.2rem, 4vw, 2.4rem); background: var(--paper); }
+  .ledger-blockers article > span { color: #875557; font-size: .58rem; letter-spacing: .12em; }
+  .ledger-blockers h3 { margin: .8rem 0; font-family: var(--serif); font-size: 1.55rem; font-weight: 400; }
+  .ledger-blockers article p { color: var(--muted); font-size: .78rem; line-height: 1.6; }
+  .ledger-blockers a { display: inline-block; margin: .8rem 1rem 0 0; color: var(--gold-dark); font-size: .62rem; }
+  .receipt-table { margin-top: 3rem; border-top: 1px solid var(--line); }
+  .receipt-row { display: grid; grid-template-columns: minmax(15rem, 2fr) minmax(10rem, 1fr) minmax(8rem, .7fr) minmax(9rem, .8fr); gap: 1rem; padding: 1rem .5rem; border-bottom: 1px solid var(--line); scroll-margin-top: 2rem; }
+  .receipt-row--head { color: var(--gold-dark); font-size: .55rem; font-weight: 650; letter-spacing: .12em; text-transform: uppercase; }
+  .receipt-row small, .receipt-row strong, .receipt-row p, .receipt-row code { display: block; }
+  .receipt-row small { color: var(--muted); font-size: .55rem; letter-spacing: .06em; }
+  .receipt-row strong { margin-top: .35rem; font-family: var(--serif); font-size: 1rem; font-weight: 400; }
+  .receipt-row p { margin: .4rem 0 0; color: var(--muted); font-size: .67rem; line-height: 1.5; }
+  .receipt-row code { color: var(--gold-dark); font-size: .58rem; overflow-wrap: anywhere; }
+  .receipt-row [role='cell']:nth-child(3) { display: flex; flex-direction: column; align-items: flex-start; gap: .45rem; }
+  .receipt-row [role='cell']:nth-child(3) a, .receipt-row [role='cell']:nth-child(4) a { color: var(--gold-dark); font-size: .61rem; }
+  .receipt-row [role='cell']:nth-child(4) { display: flex; flex-wrap: wrap; align-content: flex-start; gap: .45rem .8rem; }
+  @media (max-width: 50rem) {
+    .workstream-grid, .ledger-blockers > div { grid-template-columns: 1fr; }
+    .receipt-row--head { display: none; }
+    .receipt-row { grid-template-columns: 1fr 1fr; }
+    .receipt-row [role='cell']:first-child { grid-column: 1 / -1; }
+  }
+  @media (max-width: 34rem) {
+    .ledger-summary { grid-template-columns: repeat(2, 1fr); }
+    .ledger-summary a:nth-child(3) { border-left: 0; border-top: 1px solid var(--line); }
+    .ledger-summary a:nth-child(4) { border-top: 1px solid var(--line); }
+    .ledger-method, .section-heading { grid-template-columns: 1fr; }
+    .ledger-method ol { grid-column: 1; }
+    .receipt-row { grid-template-columns: 1fr; }
+    .receipt-row [role='cell']:first-child { grid-column: 1; }
+  }
+</style>

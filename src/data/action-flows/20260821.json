@@ -12,46 +12,150 @@
     {
       "signal": 1,
       "priority": "NOW",
-      "status": "READY",
+      "status": "COMPLETE",
       "visualValue": "30 days",
       "visualLabel": "covered-model retention",
       "sources": [
-        { "label": "Axios", "url": "https://axios.com/2026/08/19/openai-previews-zero-retention-safety-system-as-anthropic-requires-data-logs" },
-        { "label": "OpenAI API data controls", "url": "https://platform.openai.com/docs/models/default-usage-policies-by-endpoint" },
-        { "label": "Anthropic policy", "url": "https://privacy.claude.com/en/articles/15425996-data-retention-practices-for-covered-models" }
-      ]
+        {
+          "label": "Axios",
+          "url": "https://axios.com/2026/08/19/openai-previews-zero-retention-safety-system-as-anthropic-requires-data-logs"
+        },
+        {
+          "label": "OpenAI API data controls",
+          "url": "https://platform.openai.com/docs/models/default-usage-policies-by-endpoint"
+        },
+        {
+          "label": "Anthropic policy",
+          "url": "https://privacy.claude.com/en/articles/15425996-data-retention-practices-for-covered-models"
+        }
+      ],
+      "execution": {
+        "id": "20260821-01",
+        "workstream": "FRONTIER_CONTROLS",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "A repository-backed authority/provider matrix or fail-closed admission control now carries the requested mapping; execution-dependent comparisons remain separately blocked.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Frontier model authority controls",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "b532d1726326ed768145ba2f99cd7f3d6f837294",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/b532d1726326ed768145ba2f99cd7f3d6f837294"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 2,
       "priority": "NOW",
-      "status": "READY",
+      "status": "SUPERSEDED",
       "visualValue": "97%",
       "visualLabel": "claimed global humanoid shipments",
       "sources": [
-        { "label": "Reuters", "url": "https://reuters.com/world/asia-pacific/robots-poised-chatgpt-moment-unitree-ceo-says-2026-08-20/" }
-      ]
+        {
+          "label": "Reuters",
+          "url": "https://reuters.com/world/asia-pacific/robots-poised-chatgpt-moment-unitree-ceo-says-2026-08-20/"
+        }
+      ],
+      "execution": {
+        "id": "20260821-02",
+        "workstream": "PHYSICAL_AI",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "This repeated action is absorbed by 20260901-02.",
+        "supersededBy": "20260901-02",
+        "artifact": {
+          "label": "Physical AI operating evidence",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "b532d1726326ed768145ba2f99cd7f3d6f837294",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/b532d1726326ed768145ba2f99cd7f3d6f837294"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 3,
       "priority": "NOW",
-      "status": "WATCHING",
+      "status": "SUPERSEDED",
       "visualValue": "$1.004B",
       "visualLabel": "three-session Bitcoin ETF inflow",
       "sources": [
-        { "label": "Farside", "url": "https://farside.co.uk/btc/" },
-        { "label": "Reuters", "url": "https://reuters.com/legal/government/bitcoin-crypto-shares-climb-after-trump-pushes-clarity-act-2026-08-20/" }
-      ]
+        {
+          "label": "Farside",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://reuters.com/legal/government/bitcoin-crypto-shares-climb-after-trump-pushes-clarity-act-2026-08-20/"
+        }
+      ],
+      "execution": {
+        "id": "20260821-03",
+        "workstream": "CRYPTO_BREADTH",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "Earlier flow-breadth checkpoint is absorbed by the September 4 canonical breadth watch.",
+        "supersededBy": "20260904-03",
+        "artifact": {
+          "label": "Crypto capital-flow breadth",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "b532d1726326ed768145ba2f99cd7f3d6f837294",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/b532d1726326ed768145ba2f99cd7f3d6f837294"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 4,
       "priority": "NEXT",
-      "status": "READY",
+      "status": "COMPLETE",
       "visualValue": "10T",
       "visualLabel": "tokens routed per day",
       "sources": [
-        { "label": "Reuters", "url": "https://reuters.com/technology/payments-firm-stripe-buy-ai-developer-platform-openrouter-2026-08-19/" },
-        { "label": "Stripe", "url": "https://stripe.com/newsroom/news/openrouter-and-stripe" }
-      ]
+        {
+          "label": "Reuters",
+          "url": "https://reuters.com/technology/payments-firm-stripe-buy-ai-developer-platform-openrouter-2026-08-19/"
+        },
+        {
+          "label": "Stripe",
+          "url": "https://stripe.com/newsroom/news/openrouter-and-stripe"
+        }
+      ],
+      "execution": {
+        "id": "20260821-04",
+        "workstream": "PAYMENT_CONTROLS",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The reusable control matrix records the requested topology or diligence fields without moving value or claiming an unlaunched control.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Payment and agent-commerce control matrix",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "b532d1726326ed768145ba2f99cd7f3d6f837294",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/b532d1726326ed768145ba2f99cd7f3d6f837294"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 5,
@@ -60,21 +164,76 @@
       "visualValue": "2×",
       "visualLabel": "reported clicks after source selection",
       "sources": [
-        { "label": "The Verge", "url": "https://theverge.com/tech/983088/google-discover-ai-chatbot-feed" },
-        { "label": "Google Preferred Sources", "url": "https://blog.google/products-and-platforms/products/search/original-high-quality-content-search/" },
-        { "label": "Canonical Action Item", "url": "https://iamrobin.ai/ouroboros/202608/20260821/action_item/" }
-      ]
+        {
+          "label": "The Verge",
+          "url": "https://theverge.com/tech/983088/google-discover-ai-chatbot-feed"
+        },
+        {
+          "label": "Google Preferred Sources",
+          "url": "https://blog.google/products-and-platforms/products/search/original-high-quality-content-search/"
+        },
+        {
+          "label": "Canonical Action Item",
+          "url": "https://iamrobin.ai/ouroboros/202608/20260821/action_item/"
+        }
+      ],
+      "execution": {
+        "id": "20260821-05",
+        "workstream": "PUBLICATION",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The canonical Action Item is public and linked to its source commit and verification receipt.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Published canonical Action Item",
+          "href": "/ouroboros/202608/20260821/action_item/"
+        },
+        "sourceCommit": {
+          "sha": "b532d1726326ed768145ba2f99cd7f3d6f837294",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/b532d1726326ed768145ba2f99cd7f3d6f837294"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 6,
       "priority": "NEXT",
-      "status": "READY",
+      "status": "COMPLETE",
       "visualValue": "~$100B",
       "visualLabel": "reported compute financing",
       "sources": [
-        { "label": "Reuters", "url": "https://reuters.com/technology/broadcom-seeks-more-than-60-billion-latest-ai-debt-deal-bloomberg-news-reports-2026-08-20/" },
-        { "label": "Reuters baseline", "url": "https://reuters.com/business/apollo-blackstone-back-anthropics-35-billion-capacity-expansion-new-broadcom-tie-2026-06-09/" }
-      ]
+        {
+          "label": "Reuters",
+          "url": "https://reuters.com/technology/broadcom-seeks-more-than-60-billion-latest-ai-debt-deal-bloomberg-news-reports-2026-08-20/"
+        },
+        {
+          "label": "Reuters baseline",
+          "url": "https://reuters.com/business/apollo-blackstone-back-anthropics-35-billion-capacity-expansion-new-broadcom-tie-2026-06-09/"
+        }
+      ],
+      "execution": {
+        "id": "20260821-06",
+        "workstream": "AI_INFRASTRUCTURE",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The Signal 06 row is present in the 16-entry evidence registry and governed by the monthly review/publication boundary.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "AI infrastructure evidence intake",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "b532d1726326ed768145ba2f99cd7f3d6f837294",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/b532d1726326ed768145ba2f99cd7f3d6f837294"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 7,
@@ -83,9 +242,35 @@
       "visualValue": "$13B",
       "visualLabel": "Castelion post-money valuation",
       "sources": [
-        { "label": "Castelion", "url": "https://prnewswire.com/news-releases/castelion-raises-1-billion-series-c-to-scale-production-of-low-cost-hypersonic-weapons-302855711.html" },
-        { "label": "Axios", "url": "https://axios.com/2026/08/20/hypersonic-missile-castelion" }
-      ]
+        {
+          "label": "Castelion",
+          "url": "https://prnewswire.com/news-releases/castelion-raises-1-billion-series-c-to-scale-production-of-low-cost-hypersonic-weapons-302855711.html"
+        },
+        {
+          "label": "Axios",
+          "url": "https://axios.com/2026/08/20/hypersonic-missile-castelion"
+        }
+      ],
+      "execution": {
+        "id": "20260821-07",
+        "workstream": "PRIVATE_MARKETS",
+        "evidenceStatus": "UNKNOWN",
+        "reason": "The action is evidence-dependent; no new evidence justified changing the watch state.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Private-market diligence matrix",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "b532d1726326ed768145ba2f99cd7f3d6f837294",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/b532d1726326ed768145ba2f99cd7f3d6f837294"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 8,
@@ -94,9 +279,35 @@
       "visualValue": "$10B",
       "visualLabel": "ten-year memory research commitment",
       "sources": [
-        { "label": "Reuters", "url": "https://reuters.com/world/asia-pacific/micron-unveils-10-billion-ai-memory-research-lab-boise-2026-08-20/" },
-        { "label": "Company release transcript", "url": "https://americantechtoday.com/article/935670041-micron-unveils-micron-research-labs-a-u-s-based-long-horizon-innovation-hub-to-shape-the-future-of-memory-and-ai" }
-      ]
+        {
+          "label": "Reuters",
+          "url": "https://reuters.com/world/asia-pacific/micron-unveils-10-billion-ai-memory-research-lab-boise-2026-08-20/"
+        },
+        {
+          "label": "Company release transcript",
+          "url": "https://americantechtoday.com/article/935670041-micron-unveils-micron-research-labs-a-u-s-based-long-horizon-innovation-hub-to-shape-the-future-of-memory-and-ai"
+        }
+      ],
+      "execution": {
+        "id": "20260821-08",
+        "workstream": "PUBLIC_EQUITIES",
+        "evidenceStatus": "UNKNOWN",
+        "reason": "The action is evidence-dependent; no new evidence justified changing the watch state.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Public-market causal ledger",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "b532d1726326ed768145ba2f99cd7f3d6f837294",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/b532d1726326ed768145ba2f99cd7f3d6f837294"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     }
   ],
   "editions": {
@@ -108,14 +319,95 @@
       "centralJudgment": "Today’s strongest edge is translation: turn policy into provider controls, robot shipments into useful hours, token traffic into settlement architecture, and AI demand into a credit map.",
       "fieldLine": "Eight signals. One decision field. Evidence stays attached.",
       "actions": [
-        { "domain": "Frontier Models", "title": "Audit Provider Data Boundaries", "why": "Retention and endpoint behavior can change the practical risk of an otherwise capable agent.", "steps": ["List default retention and ZDR eligibility", "Record excluded endpoints and human access", "Map local transcript storage"], "done": "One provider matrix covers OpenAI, Claude, Gemini, and shortlisted Chinese models with sources and UNKNOWN fields preserved." },
-        { "domain": "Physical AI", "title": "Measure Useful Robot Hours", "why": "Shipment volume describes manufacturing reach; paid operating hours and intervention rates describe commercialization.", "steps": ["Split research, pilot, and paid production", "Add monthly useful operating hours", "Add human-intervention rate and repeat orders"], "done": "The tracker separates shipped hardware from economically useful autonomous labor." },
-        { "domain": "Crypto Capital", "title": "Promote the ETF Signal Provisionally", "why": "Three settled sessions supplied the external-capital confirmation requested yesterday, while the breadth test remains open.", "steps": ["Change Crypto Pulse to provisional re-entry", "Monitor two more settled sessions", "Revoke automatically if combined BTC and ETH flows turn negative"], "done": "The state change and its revocation rule are both dated and machine-readable." },
-        { "domain": "Stablecoins and Payments", "title": "Map the AI Payment Spine", "why": "Stripe now reaches upstream from billing into model choice, metering, and economic control.", "steps": ["Add routing, metering, billing, and settlement", "Map Stripe and OpenRouter", "Compare neutral routing with x402, MPP, and stablecoins"], "done": "One architecture view shows who selects compute, measures consumption, invoices, and settles value." },
-        { "domain": "iamrobin.ai", "title": "Publish the Broadcom Credit Loop", "why": "A canonical source-owned thesis turns AI infrastructure finance into a differentiated, citable Robin asset.", "steps": ["Trace the reported debt and guarantees", "Map actors, cash flow, and break points", "Publish four editions and archive the derivative"], "done": "The public article, images, schema, sitemap, four language URLs, and verification gates are complete.", "deepDiveTitle": "Broadcom’s $100 Billion AI Chip Financing" },
-        { "domain": "AI Infrastructure Career", "title": "Create the Compute Finance Lane", "why": "Compute contracts, guarantees, residual values, and technical risk are converging into one scarce executive skill set.", "steps": ["Add the structured-finance lane", "Use the fixed search string", "Score roles for capacity contracts and credit authority"], "done": "The career system can isolate roles joining compute infrastructure, project finance, and program strategy." },
-        { "domain": "Late-Stage Private Markets", "title": "Watch Castelion Through Production", "why": "Contracts and a factory move the company beyond demonstration; fielding, yield, and unit cost decide the valuation case.", "steps": ["Track 2027 operational fielding", "Track Project Ranger ramp", "Verify unit-cost evidence"], "done": "Upgrade to INVESTIGATE only after all three production gates clear." },
-        { "domain": "Public Equities", "title": "Treat Micron as Thesis Confirmation", "why": "A ten-year research commitment strengthens the memory architecture thesis without creating a near-term earnings signal.", "steps": ["Record confirmation without an entry trigger", "Wait for the next formal filing", "Test HBM yield, roadmap position, and gross margin"], "done": "The next filing either supplies measurable operating evidence or leaves the thesis status unchanged." }
+        {
+          "domain": "Frontier Models",
+          "title": "Audit Provider Data Boundaries",
+          "why": "Retention and endpoint behavior can change the practical risk of an otherwise capable agent.",
+          "steps": [
+            "List default retention and ZDR eligibility",
+            "Record excluded endpoints and human access",
+            "Map local transcript storage"
+          ],
+          "done": "One provider matrix covers OpenAI, Claude, Gemini, and shortlisted Chinese models with sources and UNKNOWN fields preserved."
+        },
+        {
+          "domain": "Physical AI",
+          "title": "Measure Useful Robot Hours",
+          "why": "Shipment volume describes manufacturing reach; paid operating hours and intervention rates describe commercialization.",
+          "steps": [
+            "Split research, pilot, and paid production",
+            "Add monthly useful operating hours",
+            "Add human-intervention rate and repeat orders"
+          ],
+          "done": "The tracker separates shipped hardware from economically useful autonomous labor."
+        },
+        {
+          "domain": "Crypto Capital",
+          "title": "Promote the ETF Signal Provisionally",
+          "why": "Three settled sessions supplied the external-capital confirmation requested yesterday, while the breadth test remains open.",
+          "steps": [
+            "Change Crypto Pulse to provisional re-entry",
+            "Monitor two more settled sessions",
+            "Revoke automatically if combined BTC and ETH flows turn negative"
+          ],
+          "done": "The state change and its revocation rule are both dated and machine-readable."
+        },
+        {
+          "domain": "Stablecoins and Payments",
+          "title": "Map the AI Payment Spine",
+          "why": "Stripe now reaches upstream from billing into model choice, metering, and economic control.",
+          "steps": [
+            "Add routing, metering, billing, and settlement",
+            "Map Stripe and OpenRouter",
+            "Compare neutral routing with x402, MPP, and stablecoins"
+          ],
+          "done": "One architecture view shows who selects compute, measures consumption, invoices, and settles value."
+        },
+        {
+          "domain": "iamrobin.ai",
+          "title": "Publish the Broadcom Credit Loop",
+          "why": "A canonical source-owned thesis turns AI infrastructure finance into a differentiated, citable Robin asset.",
+          "steps": [
+            "Trace the reported debt and guarantees",
+            "Map actors, cash flow, and break points",
+            "Publish four editions and archive the derivative"
+          ],
+          "done": "The public article, images, schema, sitemap, four language URLs, and verification gates are complete.",
+          "deepDiveTitle": "Broadcom’s $100 Billion AI Chip Financing"
+        },
+        {
+          "domain": "AI Infrastructure Career",
+          "title": "Create the Compute Finance Lane",
+          "why": "Compute contracts, guarantees, residual values, and technical risk are converging into one scarce executive skill set.",
+          "steps": [
+            "Add the structured-finance lane",
+            "Use the fixed search string",
+            "Score roles for capacity contracts and credit authority"
+          ],
+          "done": "The career system can isolate roles joining compute infrastructure, project finance, and program strategy."
+        },
+        {
+          "domain": "Late-Stage Private Markets",
+          "title": "Watch Castelion Through Production",
+          "why": "Contracts and a factory move the company beyond demonstration; fielding, yield, and unit cost decide the valuation case.",
+          "steps": [
+            "Track 2027 operational fielding",
+            "Track Project Ranger ramp",
+            "Verify unit-cost evidence"
+          ],
+          "done": "Upgrade to INVESTIGATE only after all three production gates clear."
+        },
+        {
+          "domain": "Public Equities",
+          "title": "Treat Micron as Thesis Confirmation",
+          "why": "A ten-year research commitment strengthens the memory architecture thesis without creating a near-term earnings signal.",
+          "steps": [
+            "Record confirmation without an entry trigger",
+            "Wait for the next formal filing",
+            "Test HBM yield, roadmap position, and gross margin"
+          ],
+          "done": "The next filing either supplies measurable operating evidence or leaves the thesis status unchanged."
+        }
       ]
     },
     "zh-Hans": {
@@ -126,14 +418,95 @@
       "centralJudgment": "今天最强的优势来自翻译能力：把政策翻译成供应商控制，把机器人出货翻译成有效工时，把 token 流量翻译成结算架构，把 AI 需求翻译成信用地图。",
       "fieldLine": "八个信号。一个决策场。证据始终相连。",
       "actions": [
-        { "domain": "前沿模型", "title": "审计供应商数据边界", "why": "留存规则与 endpoint 行为会改变一个高能力 agent 的实际风险。", "steps": ["列出默认留存与 ZDR 资格", "记录排除 endpoint 与人工访问", "画出本地 transcript 存储"], "done": "一张供应商矩阵覆盖 OpenAI、Claude、Gemini 与候选中国模型，附来源并保留 UNKNOWN。" },
-        { "domain": "Physical AI", "title": "测量机器人的有效工时", "why": "出货量说明制造覆盖，付费工时与人工干预率才说明商业化。", "steps": ["拆分研究、试点与付费生产", "加入月度有效工时", "加入人工干预率与复购"], "done": "追踪器能把已出货硬件和有经济价值的自主劳动分开。" },
-        { "domain": "加密资本", "title": "暂时升级 ETF 信号", "why": "三个结算交易日给出了昨天要求的外部资金确认，市场广度仍需继续验证。", "steps": ["把 Crypto Pulse 改为暂时回流", "再观察两个结算交易日", "BTC 与 ETH 合计转负时自动撤销"], "done": "状态变化与撤销规则都带日期并可被机器读取。" },
-        { "domain": "稳定币与支付", "title": "画出 AI 支付主干", "why": "Stripe 已从账单环节上移到模型选择、计量与经济控制。", "steps": ["加入路由、计量、账单与结算", "映射 Stripe 与 OpenRouter", "比较中立路由、x402、MPP 与稳定币"], "done": "一张架构图显示谁选择算力、测量使用、开票并结算价值。" },
-        { "domain": "iamrobin.ai", "title": "发布 Broadcom 信用循环", "why": "由自己拥有来源的权威论点，会把 AI 基础设施金融变成 Robin 独特且可引用的资产。", "steps": ["追踪报道中的债务与担保", "画出演员、资金流与破断点", "发布四语版本并归档衍生稿"], "done": "公开文章、图片、Schema、sitemap、四语 URL 与验证门槛全部完成。", "deepDiveTitle": "Broadcom 的千亿美元 AI 芯片融资" },
-        { "domain": "AI 基础设施职业", "title": "建立算力金融赛道", "why": "算力合同、担保、残值与技术风险正在汇成一种稀缺的高管能力。", "steps": ["加入结构化融资赛道", "采用固定搜索式", "按容量合同与信用权限评分"], "done": "职业系统能识别同时覆盖算力基础设施、项目融资与项目战略的岗位。" },
-        { "domain": "一级市场", "title": "穿越量产观察 Castelion", "why": "合同和工厂让公司越过演示阶段；部署、良率与单位成本决定估值逻辑。", "steps": ["追踪 2027 年实际部署", "追踪 Project Ranger 爬坡", "验证单位成本证据"], "done": "只有三个生产门槛全部通过，才升级为 INVESTIGATE。" },
-        { "domain": "公开市场", "title": "把 Micron 记为论点确认", "why": "十年研究承诺强化存储架构论点，却没有形成短期盈利信号。", "steps": ["记录确认，不触发买入", "等待下一份正式财报", "检验 HBM 良率、路线图与毛利率"], "done": "下一份财报要么给出可测量的经营证据，要么保持原有论点状态。" }
+        {
+          "domain": "前沿模型",
+          "title": "审计供应商数据边界",
+          "why": "留存规则与 endpoint 行为会改变一个高能力 agent 的实际风险。",
+          "steps": [
+            "列出默认留存与 ZDR 资格",
+            "记录排除 endpoint 与人工访问",
+            "画出本地 transcript 存储"
+          ],
+          "done": "一张供应商矩阵覆盖 OpenAI、Claude、Gemini 与候选中国模型，附来源并保留 UNKNOWN。"
+        },
+        {
+          "domain": "Physical AI",
+          "title": "测量机器人的有效工时",
+          "why": "出货量说明制造覆盖，付费工时与人工干预率才说明商业化。",
+          "steps": [
+            "拆分研究、试点与付费生产",
+            "加入月度有效工时",
+            "加入人工干预率与复购"
+          ],
+          "done": "追踪器能把已出货硬件和有经济价值的自主劳动分开。"
+        },
+        {
+          "domain": "加密资本",
+          "title": "暂时升级 ETF 信号",
+          "why": "三个结算交易日给出了昨天要求的外部资金确认，市场广度仍需继续验证。",
+          "steps": [
+            "把 Crypto Pulse 改为暂时回流",
+            "再观察两个结算交易日",
+            "BTC 与 ETH 合计转负时自动撤销"
+          ],
+          "done": "状态变化与撤销规则都带日期并可被机器读取。"
+        },
+        {
+          "domain": "稳定币与支付",
+          "title": "画出 AI 支付主干",
+          "why": "Stripe 已从账单环节上移到模型选择、计量与经济控制。",
+          "steps": [
+            "加入路由、计量、账单与结算",
+            "映射 Stripe 与 OpenRouter",
+            "比较中立路由、x402、MPP 与稳定币"
+          ],
+          "done": "一张架构图显示谁选择算力、测量使用、开票并结算价值。"
+        },
+        {
+          "domain": "iamrobin.ai",
+          "title": "发布 Broadcom 信用循环",
+          "why": "由自己拥有来源的权威论点，会把 AI 基础设施金融变成 Robin 独特且可引用的资产。",
+          "steps": [
+            "追踪报道中的债务与担保",
+            "画出演员、资金流与破断点",
+            "发布四语版本并归档衍生稿"
+          ],
+          "done": "公开文章、图片、Schema、sitemap、四语 URL 与验证门槛全部完成。",
+          "deepDiveTitle": "Broadcom 的千亿美元 AI 芯片融资"
+        },
+        {
+          "domain": "AI 基础设施职业",
+          "title": "建立算力金融赛道",
+          "why": "算力合同、担保、残值与技术风险正在汇成一种稀缺的高管能力。",
+          "steps": [
+            "加入结构化融资赛道",
+            "采用固定搜索式",
+            "按容量合同与信用权限评分"
+          ],
+          "done": "职业系统能识别同时覆盖算力基础设施、项目融资与项目战略的岗位。"
+        },
+        {
+          "domain": "一级市场",
+          "title": "穿越量产观察 Castelion",
+          "why": "合同和工厂让公司越过演示阶段；部署、良率与单位成本决定估值逻辑。",
+          "steps": [
+            "追踪 2027 年实际部署",
+            "追踪 Project Ranger 爬坡",
+            "验证单位成本证据"
+          ],
+          "done": "只有三个生产门槛全部通过，才升级为 INVESTIGATE。"
+        },
+        {
+          "domain": "公开市场",
+          "title": "把 Micron 记为论点确认",
+          "why": "十年研究承诺强化存储架构论点，却没有形成短期盈利信号。",
+          "steps": [
+            "记录确认，不触发买入",
+            "等待下一份正式财报",
+            "检验 HBM 良率、路线图与毛利率"
+          ],
+          "done": "下一份财报要么给出可测量的经营证据，要么保持原有论点状态。"
+        }
       ]
     },
     "zh-Hant": {
@@ -144,14 +517,95 @@
       "centralJudgment": "今天最強的優勢來自翻譯能力：把政策翻譯成供應商控制，把機器人出貨翻譯成有效工時，把 token 流量翻譯成結算架構，把 AI 需求翻譯成信用地圖。",
       "fieldLine": "八個訊號。一個決策場。證據始終相連。",
       "actions": [
-        { "domain": "前沿模型", "title": "審計供應商資料邊界", "why": "留存規則與 endpoint 行為會改變一個高能力 agent 的實際風險。", "steps": ["列出預設留存與 ZDR 資格", "記錄排除 endpoint 與人工存取", "畫出本地 transcript 儲存"], "done": "一張供應商矩陣覆蓋 OpenAI、Claude、Gemini 與候選中國模型，附來源並保留 UNKNOWN。" },
-        { "domain": "Physical AI", "title": "測量機器人的有效工時", "why": "出貨量說明製造覆蓋，付費工時與人工干預率才說明商業化。", "steps": ["拆分研究、試點與付費生產", "加入月度有效工時", "加入人工干預率與復購"], "done": "追蹤器能把已出貨硬體和有經濟價值的自主勞動分開。" },
-        { "domain": "加密資本", "title": "暫時升級 ETF 訊號", "why": "三個結算交易日給出了昨天要求的外部資金確認，市場廣度仍需繼續驗證。", "steps": ["把 Crypto Pulse 改為暫時回流", "再觀察兩個結算交易日", "BTC 與 ETH 合計轉負時自動撤銷"], "done": "狀態變化與撤銷規則都帶日期並可由機器讀取。" },
-        { "domain": "穩定幣與支付", "title": "畫出 AI 支付主幹", "why": "Stripe 已從帳單環節上移到模型選擇、計量與經濟控制。", "steps": ["加入路由、計量、帳單與結算", "映射 Stripe 與 OpenRouter", "比較中立路由、x402、MPP 與穩定幣"], "done": "一張架構圖顯示誰選擇算力、測量使用、開票並結算價值。" },
-        { "domain": "iamrobin.ai", "title": "發布 Broadcom 信用循環", "why": "由自己擁有來源的權威論點，會把 AI 基礎設施金融變成 Robin 獨特且可引用的資產。", "steps": ["追蹤報導中的債務與擔保", "畫出演員、資金流與破斷點", "發布四語版本並歸檔衍生稿"], "done": "公開文章、圖片、Schema、sitemap、四語 URL 與驗證門檻全部完成。", "deepDiveTitle": "Broadcom 的千億美元 AI 晶片融資" },
-        { "domain": "AI 基礎設施職業", "title": "建立算力金融賽道", "why": "算力合約、擔保、殘值與技術風險正在匯成一種稀缺的高管能力。", "steps": ["加入結構化融資賽道", "採用固定搜尋式", "按容量合約與信用權限評分"], "done": "職業系統能識別同時覆蓋算力基礎設施、專案融資與專案策略的職位。" },
-        { "domain": "一級市場", "title": "穿越量產觀察 Castelion", "why": "合約和工廠讓公司越過展示階段；部署、良率與單位成本決定估值邏輯。", "steps": ["追蹤 2027 年實際部署", "追蹤 Project Ranger 爬坡", "驗證單位成本證據"], "done": "只有三個生產門檻全部通過，才升級為 INVESTIGATE。" },
-        { "domain": "公開市場", "title": "把 Micron 記為論點確認", "why": "十年研究承諾強化記憶體架構論點，尚未形成短期獲利訊號。", "steps": ["記錄確認，不觸發買入", "等待下一份正式財報", "檢驗 HBM 良率、路線圖與毛利率"], "done": "下一份財報要麼給出可測量的營運證據，要麼保持原有論點狀態。" }
+        {
+          "domain": "前沿模型",
+          "title": "審計供應商資料邊界",
+          "why": "留存規則與 endpoint 行為會改變一個高能力 agent 的實際風險。",
+          "steps": [
+            "列出預設留存與 ZDR 資格",
+            "記錄排除 endpoint 與人工存取",
+            "畫出本地 transcript 儲存"
+          ],
+          "done": "一張供應商矩陣覆蓋 OpenAI、Claude、Gemini 與候選中國模型，附來源並保留 UNKNOWN。"
+        },
+        {
+          "domain": "Physical AI",
+          "title": "測量機器人的有效工時",
+          "why": "出貨量說明製造覆蓋，付費工時與人工干預率才說明商業化。",
+          "steps": [
+            "拆分研究、試點與付費生產",
+            "加入月度有效工時",
+            "加入人工干預率與復購"
+          ],
+          "done": "追蹤器能把已出貨硬體和有經濟價值的自主勞動分開。"
+        },
+        {
+          "domain": "加密資本",
+          "title": "暫時升級 ETF 訊號",
+          "why": "三個結算交易日給出了昨天要求的外部資金確認，市場廣度仍需繼續驗證。",
+          "steps": [
+            "把 Crypto Pulse 改為暫時回流",
+            "再觀察兩個結算交易日",
+            "BTC 與 ETH 合計轉負時自動撤銷"
+          ],
+          "done": "狀態變化與撤銷規則都帶日期並可由機器讀取。"
+        },
+        {
+          "domain": "穩定幣與支付",
+          "title": "畫出 AI 支付主幹",
+          "why": "Stripe 已從帳單環節上移到模型選擇、計量與經濟控制。",
+          "steps": [
+            "加入路由、計量、帳單與結算",
+            "映射 Stripe 與 OpenRouter",
+            "比較中立路由、x402、MPP 與穩定幣"
+          ],
+          "done": "一張架構圖顯示誰選擇算力、測量使用、開票並結算價值。"
+        },
+        {
+          "domain": "iamrobin.ai",
+          "title": "發布 Broadcom 信用循環",
+          "why": "由自己擁有來源的權威論點，會把 AI 基礎設施金融變成 Robin 獨特且可引用的資產。",
+          "steps": [
+            "追蹤報導中的債務與擔保",
+            "畫出演員、資金流與破斷點",
+            "發布四語版本並歸檔衍生稿"
+          ],
+          "done": "公開文章、圖片、Schema、sitemap、四語 URL 與驗證門檻全部完成。",
+          "deepDiveTitle": "Broadcom 的千億美元 AI 晶片融資"
+        },
+        {
+          "domain": "AI 基礎設施職業",
+          "title": "建立算力金融賽道",
+          "why": "算力合約、擔保、殘值與技術風險正在匯成一種稀缺的高管能力。",
+          "steps": [
+            "加入結構化融資賽道",
+            "採用固定搜尋式",
+            "按容量合約與信用權限評分"
+          ],
+          "done": "職業系統能識別同時覆蓋算力基礎設施、專案融資與專案策略的職位。"
+        },
+        {
+          "domain": "一級市場",
+          "title": "穿越量產觀察 Castelion",
+          "why": "合約和工廠讓公司越過展示階段；部署、良率與單位成本決定估值邏輯。",
+          "steps": [
+            "追蹤 2027 年實際部署",
+            "追蹤 Project Ranger 爬坡",
+            "驗證單位成本證據"
+          ],
+          "done": "只有三個生產門檻全部通過，才升級為 INVESTIGATE。"
+        },
+        {
+          "domain": "公開市場",
+          "title": "把 Micron 記為論點確認",
+          "why": "十年研究承諾強化記憶體架構論點，尚未形成短期獲利訊號。",
+          "steps": [
+            "記錄確認，不觸發買入",
+            "等待下一份正式財報",
+            "檢驗 HBM 良率、路線圖與毛利率"
+          ],
+          "done": "下一份財報要麼給出可測量的營運證據，要麼保持原有論點狀態。"
+        }
       ]
     },
     "ja": {
@@ -162,14 +616,95 @@
       "centralJudgment": "今日の最大の優位は翻訳力だ。方針をプロバイダー統制へ、ロボット出荷を有効稼働時間へ、トークン流量を決済構造へ、AI需要を信用地図へ変換する。",
       "fieldLine": "8つのシグナル。ひとつの意思決定領域。証拠はつながったまま。",
       "actions": [
-        { "domain": "フロンティアモデル", "title": "プロバイダーのデータ境界を監査", "why": "保持方針と endpoint の挙動は、高能力 agent の実務リスクを変える。", "steps": ["標準保持と ZDR 適格性を一覧化する", "対象外 endpoint と人のアクセスを記録する", "ローカル transcript 保存を描く"], "done": "OpenAI、Claude、Gemini、中国候補を含む出典付きマトリクスが完成し、UNKNOWN が維持される。" },
-        { "domain": "Physical AI", "title": "ロボットの有効稼働時間を測る", "why": "出荷量は製造規模を示す。対価を伴う稼働時間と介入率が商用化を示す。", "steps": ["研究、実証、有償生産を分ける", "月間有効稼働時間を加える", "人の介入率と再注文を加える"], "done": "出荷済みハードウェアと経済的に有用な自律労働が分離される。" },
-        { "domain": "暗号資産への資本", "title": "ETF シグナルを暫定昇格", "why": "3決済日が昨日求めた外部資本の確認を与えた。市場の広がりは引き続き検証する。", "steps": ["Crypto Pulse を暫定再流入へ変える", "さらに2決済日を監視する", "BTC と ETH の合計がマイナスなら自動撤回する"], "done": "状態変更と撤回ルールが日付付きで機械可読になる。" },
-        { "domain": "ステーブルコインと決済", "title": "AI 決済の背骨を描く", "why": "Stripe は請求から上流へ進み、モデル選択、計測、経済統制に触れる。", "steps": ["ルーティング、計測、請求、決済を加える", "Stripe と OpenRouter を地図化する", "中立ルーティング、x402、MPP、ステーブルコインを比べる"], "done": "誰が計算資源を選び、使用量を測り、請求し、価値を決済するかが一枚で分かる。" },
-        { "domain": "iamrobin.ai", "title": "Broadcom の信用循環を公開", "why": "出典を自分で持つ正典の論点は、AIインフラ金融をRobin独自の引用可能な資産にする。", "steps": ["報道された債務と保証を追う", "関係者、資金流、破断点を描く", "4言語版を公開し派生稿を保存する"], "done": "公開記事、画像、Schema、sitemap、4言語 URL、検証ゲートが完了する。", "deepDiveTitle": "Broadcomの1,000億ドルAIチップ融資" },
-        { "domain": "AIインフラのキャリア", "title": "計算資源金融レーンを作る", "why": "計算契約、保証、残存価値、技術リスクが一つの希少な経営能力へ収束している。", "steps": ["ストラクチャード・ファイナンス枠を加える", "固定検索式を使う", "容量契約と信用権限で役割を評価する"], "done": "計算インフラ、プロジェクト金融、プログラム戦略を結ぶ役割を抽出できる。" },
-        { "domain": "レイトステージ未公開市場", "title": "量産まで Castelion を観察", "why": "契約と工場は実証段階を超えた。配備、歩留まり、単位コストが評価を決める。", "steps": ["2027年の実配備を追う", "Project Ranger の立ち上がりを追う", "単位コストの証拠を確認する"], "done": "3つの生産ゲートが全て通過した後だけ INVESTIGATE へ上げる。" },
-        { "domain": "公開市場", "title": "Micron を論点確認として扱う", "why": "10年の研究投資はメモリアーキテクチャ論点を強めるが、短期利益のシグナルにはならない。", "steps": ["確認を記録し、エントリーは発動しない", "次の正式開示を待つ", "HBM歩留まり、ロードマップ、粗利益率を検証する"], "done": "次の開示が測定可能な事業証拠を示すか、論点状態を維持する。" }
+        {
+          "domain": "フロンティアモデル",
+          "title": "プロバイダーのデータ境界を監査",
+          "why": "保持方針と endpoint の挙動は、高能力 agent の実務リスクを変える。",
+          "steps": [
+            "標準保持と ZDR 適格性を一覧化する",
+            "対象外 endpoint と人のアクセスを記録する",
+            "ローカル transcript 保存を描く"
+          ],
+          "done": "OpenAI、Claude、Gemini、中国候補を含む出典付きマトリクスが完成し、UNKNOWN が維持される。"
+        },
+        {
+          "domain": "Physical AI",
+          "title": "ロボットの有効稼働時間を測る",
+          "why": "出荷量は製造規模を示す。対価を伴う稼働時間と介入率が商用化を示す。",
+          "steps": [
+            "研究、実証、有償生産を分ける",
+            "月間有効稼働時間を加える",
+            "人の介入率と再注文を加える"
+          ],
+          "done": "出荷済みハードウェアと経済的に有用な自律労働が分離される。"
+        },
+        {
+          "domain": "暗号資産への資本",
+          "title": "ETF シグナルを暫定昇格",
+          "why": "3決済日が昨日求めた外部資本の確認を与えた。市場の広がりは引き続き検証する。",
+          "steps": [
+            "Crypto Pulse を暫定再流入へ変える",
+            "さらに2決済日を監視する",
+            "BTC と ETH の合計がマイナスなら自動撤回する"
+          ],
+          "done": "状態変更と撤回ルールが日付付きで機械可読になる。"
+        },
+        {
+          "domain": "ステーブルコインと決済",
+          "title": "AI 決済の背骨を描く",
+          "why": "Stripe は請求から上流へ進み、モデル選択、計測、経済統制に触れる。",
+          "steps": [
+            "ルーティング、計測、請求、決済を加える",
+            "Stripe と OpenRouter を地図化する",
+            "中立ルーティング、x402、MPP、ステーブルコインを比べる"
+          ],
+          "done": "誰が計算資源を選び、使用量を測り、請求し、価値を決済するかが一枚で分かる。"
+        },
+        {
+          "domain": "iamrobin.ai",
+          "title": "Broadcom の信用循環を公開",
+          "why": "出典を自分で持つ正典の論点は、AIインフラ金融をRobin独自の引用可能な資産にする。",
+          "steps": [
+            "報道された債務と保証を追う",
+            "関係者、資金流、破断点を描く",
+            "4言語版を公開し派生稿を保存する"
+          ],
+          "done": "公開記事、画像、Schema、sitemap、4言語 URL、検証ゲートが完了する。",
+          "deepDiveTitle": "Broadcomの1,000億ドルAIチップ融資"
+        },
+        {
+          "domain": "AIインフラのキャリア",
+          "title": "計算資源金融レーンを作る",
+          "why": "計算契約、保証、残存価値、技術リスクが一つの希少な経営能力へ収束している。",
+          "steps": [
+            "ストラクチャード・ファイナンス枠を加える",
+            "固定検索式を使う",
+            "容量契約と信用権限で役割を評価する"
+          ],
+          "done": "計算インフラ、プロジェクト金融、プログラム戦略を結ぶ役割を抽出できる。"
+        },
+        {
+          "domain": "レイトステージ未公開市場",
+          "title": "量産まで Castelion を観察",
+          "why": "契約と工場は実証段階を超えた。配備、歩留まり、単位コストが評価を決める。",
+          "steps": [
+            "2027年の実配備を追う",
+            "Project Ranger の立ち上がりを追う",
+            "単位コストの証拠を確認する"
+          ],
+          "done": "3つの生産ゲートが全て通過した後だけ INVESTIGATE へ上げる。"
+        },
+        {
+          "domain": "公開市場",
+          "title": "Micron を論点確認として扱う",
+          "why": "10年の研究投資はメモリアーキテクチャ論点を強めるが、短期利益のシグナルにはならない。",
+          "steps": [
+            "確認を記録し、エントリーは発動しない",
+            "次の正式開示を待つ",
+            "HBM歩留まり、ロードマップ、粗利益率を検証する"
+          ],
+          "done": "次の開示が測定可能な事業証拠を示すか、論点状態を維持する。"
+        }
       ]
     }
   }

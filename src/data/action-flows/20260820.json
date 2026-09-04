@@ -16,31 +16,109 @@
       "visualValue": "84.5 / 54.4",
       "visualLabel": "CyberGym / ExploitBench",
       "sources": [
-        { "label": "WIRED", "url": "https://www.wired.com/story/zai-open-weight-ai-models-release-cybersecurity-hacking" },
-        { "label": "Reuters", "url": "https://www.reuters.com/technology/chinas-zai-says-new-model-nears-anthropics-mythos-5-cyber-defence-tests-2026-08-14/" }
-      ]
+        {
+          "label": "WIRED",
+          "url": "https://www.wired.com/story/zai-open-weight-ai-models-release-cybersecurity-hacking"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/technology/chinas-zai-says-new-model-nears-anthropics-mythos-5-cyber-defence-tests-2026-08-14/"
+        }
+      ],
+      "execution": {
+        "id": "20260820-01",
+        "workstream": "FRONTIER_CONTROLS",
+        "evidenceStatus": "UNKNOWN",
+        "reason": "The action is evidence-dependent; no new evidence justified changing the watch state.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Frontier model authority controls",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "b532d1726326ed768145ba2f99cd7f3d6f837294",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/b532d1726326ed768145ba2f99cd7f3d6f837294"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 2,
       "priority": "NOW",
-      "status": "WATCHING",
+      "status": "SUPERSEDED",
       "visualValue": "$390M",
       "visualLabel": "last settled BTC ETF outflow",
       "sources": [
-        { "label": "Reuters", "url": "https://www.reuters.com/legal/government/trump-host-crypto-executives-sec-weighs-regulations-2026-08-19/" },
-        { "label": "MarketWatch", "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-bond-market-selloff-wanes-fed-minutes-target-earnings/card/bitcoin-surges-to-near-3-month-high-as-shorts-get-crushed-c3g8h9ETVKu8786zL5lH" }
-      ]
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/legal/government/trump-host-crypto-executives-sec-weighs-regulations-2026-08-19/"
+        },
+        {
+          "label": "MarketWatch",
+          "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-bond-market-selloff-wanes-fed-minutes-target-earnings/card/bitcoin-surges-to-near-3-month-high-as-shorts-get-crushed-c3g8h9ETVKu8786zL5lH"
+        }
+      ],
+      "execution": {
+        "id": "20260820-02",
+        "workstream": "CRYPTO_BREADTH",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "Earlier flow-breadth checkpoint is absorbed by the September 4 canonical breadth watch.",
+        "supersededBy": "20260904-03",
+        "artifact": {
+          "label": "Crypto capital-flow breadth",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "b532d1726326ed768145ba2f99cd7f3d6f837294",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/b532d1726326ed768145ba2f99cd7f3d6f837294"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 3,
       "priority": "NEXT",
-      "status": "READY",
+      "status": "COMPLETE",
       "visualValue": "6 layers",
       "visualLabel": "issuer to settlement bank",
       "sources": [
-        { "label": "OCC Corporate Decision 1385", "url": "https://www.occ.treas.gov/topics/charters-and-licensing/interpretations-and-decisions/index-interpretations-and-decisions.html" },
-        { "label": "Reuters", "url": "https://www.reuters.com/world/us-regulator-approves-bank-charter-trump-backed-crypto-company-world-liberty-2026-08-14/" }
-      ]
+        {
+          "label": "OCC Corporate Decision 1385",
+          "url": "https://www.occ.treas.gov/topics/charters-and-licensing/interpretations-and-decisions/index-interpretations-and-decisions.html"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/us-regulator-approves-bank-charter-trump-backed-crypto-company-world-liberty-2026-08-14/"
+        }
+      ],
+      "execution": {
+        "id": "20260820-03",
+        "workstream": "PAYMENT_CONTROLS",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The reusable control matrix records the requested topology or diligence fields without moving value or claiming an unlaunched control.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Payment and agent-commerce control matrix",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "b532d1726326ed768145ba2f99cd7f3d6f837294",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/b532d1726326ed768145ba2f99cd7f3d6f837294"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 4,
@@ -49,9 +127,35 @@
       "visualValue": "$12.2B",
       "visualLabel": "maximum warrant value",
       "sources": [
-        { "label": "Reuters", "url": "https://www.reuters.com/technology/marvell-grants-google-122-billion-stock-warrant-custom-chip-deal-2026-08-19/" },
-        { "label": "MarketWatch", "url": "https://www.marketwatch.com/story/marvells-stock-soars-on-news-of-google-chip-deal-and-broadcoms-falls-c2a7f559" }
-      ]
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/technology/marvell-grants-google-122-billion-stock-warrant-custom-chip-deal-2026-08-19/"
+        },
+        {
+          "label": "MarketWatch",
+          "url": "https://www.marketwatch.com/story/marvells-stock-soars-on-news-of-google-chip-deal-and-broadcoms-falls-c2a7f559"
+        }
+      ],
+      "execution": {
+        "id": "20260820-04",
+        "workstream": "PUBLIC_EQUITIES",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The causal ledger separates reported demand, revenue, cash, financing and concentration without creating a trade instruction.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Public-market causal ledger",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "b532d1726326ed768145ba2f99cd7f3d6f837294",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/b532d1726326ed768145ba2f99cd7f3d6f837294"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 5,
@@ -60,19 +164,68 @@
       "visualValue": "1 canon",
       "visualLabel": "source-owned intellectual asset",
       "sources": [
-        { "label": "Google Search Profiles", "url": "https://blog.google/products-and-platforms/products/search/a-new-profile-to-help-publishers-and-creators-highlight-their-work-on-search/" },
-        { "label": "Canonical Action Item", "url": "https://iamrobin.ai/ouroboros/202608/20260820/action_item/" }
-      ]
+        {
+          "label": "Google Search Profiles",
+          "url": "https://blog.google/products-and-platforms/products/search/a-new-profile-to-help-publishers-and-creators-highlight-their-work-on-search/"
+        },
+        {
+          "label": "Canonical Action Item",
+          "url": "https://iamrobin.ai/ouroboros/202608/20260820/action_item/"
+        }
+      ],
+      "execution": {
+        "id": "20260820-05",
+        "workstream": "PUBLICATION",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The canonical Action Item is public and linked to its source commit and verification receipt.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Published canonical Action Item",
+          "href": "/ouroboros/202608/20260820/action_item/"
+        },
+        "sourceCommit": {
+          "sha": "b532d1726326ed768145ba2f99cd7f3d6f837294",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/b532d1726326ed768145ba2f99cd7f3d6f837294"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 6,
       "priority": "NEXT",
-      "status": "READY",
+      "status": "COMPLETE",
       "visualValue": "175 km",
       "visualLabel": "new average distance from major cities",
       "sources": [
-        { "label": "Reuters", "url": "https://www.reuters.com/business/europe-ai-data-centres-seek-cheaper-quicker-energy-land-2026-08-19/" }
-      ]
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/europe-ai-data-centres-seek-cheaper-quicker-energy-land-2026-08-19/"
+        }
+      ],
+      "execution": {
+        "id": "20260820-06",
+        "workstream": "AI_INFRASTRUCTURE",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The Signal 06 row is present in the 16-entry evidence registry and governed by the monthly review/publication boundary.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "AI infrastructure evidence intake",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "b532d1726326ed768145ba2f99cd7f3d6f837294",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/b532d1726326ed768145ba2f99cd7f3d6f837294"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 7,
@@ -81,9 +234,35 @@
       "visualValue": "$21B",
       "visualLabel": "Etched valuation",
       "sources": [
-        { "label": "Reuters", "url": "https://www.reuters.com/technology/ai-chip-startup-etched-valued-21-billion-latest-funding-round-2026-08-18/" },
-        { "label": "Etched Series C", "url": "https://www.globenewswire.com/news-release/2026/07/23/3332366/0/en/Etched-raises-300M-at-a-10-3B-Valuation-to-Scale-Production-of-Frontier-Scale-Inference-Hardware.html" }
-      ]
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/technology/ai-chip-startup-etched-valued-21-billion-latest-funding-round-2026-08-18/"
+        },
+        {
+          "label": "Etched Series C",
+          "url": "https://www.globenewswire.com/news-release/2026/07/23/3332366/0/en/Etched-raises-300M-at-a-10-3B-Valuation-to-Scale-Production-of-Frontier-Scale-Inference-Hardware.html"
+        }
+      ],
+      "execution": {
+        "id": "20260820-07",
+        "workstream": "PRIVATE_MARKETS",
+        "evidenceStatus": "UNKNOWN",
+        "reason": "The action is evidence-dependent; no new evidence justified changing the watch state.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Private-market diligence matrix",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "b532d1726326ed768145ba2f99cd7f3d6f837294",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/b532d1726326ed768145ba2f99cd7f3d6f837294"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     }
   ],
   "editions": {
@@ -95,13 +274,84 @@
       "centralJudgment": "The day rewarded verification over velocity. Capital, compute, payments, and career signals all point toward the same discipline: promote only after the evidence clears a named threshold.",
       "fieldLine": "Seven signals. One decision field. Evidence stays attached.",
       "actions": [
-        { "domain": "Frontier Models", "title": "Benchmark GLM When Access Opens", "why": "Discovery parity arrived before exploitation parity, making deployment control and permission risk part of model quality.", "steps": ["Wait for an official API or weights", "Run the same RobinOS task suite", "Compare cost, completion, and permission risk"], "done": "A signed comparison table covers GLM-5.3, Claude, and Codex on one frozen task set." },
-        { "domain": "Crypto Capital", "title": "Demand Three Sessions of Confirmation", "why": "A short squeeze can move price quickly; settled ETF creations show whether outside capital stayed.", "steps": ["Record BTC and ETH ETF flows", "Check spot-volume and market breadth", "Promote only after three settled sessions"], "done": "The signal is either promoted to capital re-entry or retained as a price event with the evidence attached." },
-        { "domain": "Stablecoins and Payments", "title": "Map the Regulatory Stack", "why": "The controlling moat now spans entity, charter, reserves, custody, redemption, and settlement.", "steps": ["Add the six regulatory fields", "Populate USD1 and current peers", "Record conditional approvals separately"], "done": "Every tracked rail exposes its legal issuer, charter, reserve manager, custodian, redemption route, and settlement bank." },
-        { "domain": "Public Equities", "title": "Log Google and Marvell", "why": "The warrant binds procurement, custom-silicon revenue, and supplier upside in one measurable commercial structure.", "steps": ["Record vesting milestones", "Track actual Google purchases", "Compare Marvell and Broadcom TPU share"], "done": "The AI Circularity Deal Ledger contains a source-linked Google–Marvell record with explicit unknowns." },
-        { "domain": "iamrobin.ai", "title": "Publish the First Canonical Ledger", "why": "A dated, source-owned thesis creates durable intellectual property and a URL that later distribution can compound.", "steps": ["Publish the English canonical article", "Complete three language editions", "Archive the social derivative"], "done": "The article, schema, images, four language URLs, sitemap, and public checks are complete.", "deepDiveTitle": "Google’s $12.2 Billion Option on Marvell" },
-        { "domain": "AI Infrastructure Career", "title": "Make Power the Career Filter", "why": "Deliverable megawatts increasingly determine where compute gets built and who can execute it.", "steps": ["Add power procurement and interconnection", "Add capital-program responsibility", "Lead with the 175-kilometre siting evidence"], "done": "The career filter identifies roles joining infrastructure strategy, power, and capital execution." },
-        { "domain": "Late-Stage Private Markets", "title": "Watch Etched Without Chasing", "why": "Working chips and contracts matter; manufacturing yield, software adoption, and customer concentration decide conversion into profit.", "steps": ["Verify cancellation terms", "Track production yield and unit economics", "Separate Jane Street demand from other customers"], "done": "Upgrade to INVESTIGATE only when all three evidence gates are sourced." }
+        {
+          "domain": "Frontier Models",
+          "title": "Benchmark GLM When Access Opens",
+          "why": "Discovery parity arrived before exploitation parity, making deployment control and permission risk part of model quality.",
+          "steps": [
+            "Wait for an official API or weights",
+            "Run the same RobinOS task suite",
+            "Compare cost, completion, and permission risk"
+          ],
+          "done": "A signed comparison table covers GLM-5.3, Claude, and Codex on one frozen task set."
+        },
+        {
+          "domain": "Crypto Capital",
+          "title": "Demand Three Sessions of Confirmation",
+          "why": "A short squeeze can move price quickly; settled ETF creations show whether outside capital stayed.",
+          "steps": [
+            "Record BTC and ETH ETF flows",
+            "Check spot-volume and market breadth",
+            "Promote only after three settled sessions"
+          ],
+          "done": "The signal is either promoted to capital re-entry or retained as a price event with the evidence attached."
+        },
+        {
+          "domain": "Stablecoins and Payments",
+          "title": "Map the Regulatory Stack",
+          "why": "The controlling moat now spans entity, charter, reserves, custody, redemption, and settlement.",
+          "steps": [
+            "Add the six regulatory fields",
+            "Populate USD1 and current peers",
+            "Record conditional approvals separately"
+          ],
+          "done": "Every tracked rail exposes its legal issuer, charter, reserve manager, custodian, redemption route, and settlement bank."
+        },
+        {
+          "domain": "Public Equities",
+          "title": "Log Google and Marvell",
+          "why": "The warrant binds procurement, custom-silicon revenue, and supplier upside in one measurable commercial structure.",
+          "steps": [
+            "Record vesting milestones",
+            "Track actual Google purchases",
+            "Compare Marvell and Broadcom TPU share"
+          ],
+          "done": "The AI Circularity Deal Ledger contains a source-linked Google–Marvell record with explicit unknowns."
+        },
+        {
+          "domain": "iamrobin.ai",
+          "title": "Publish the First Canonical Ledger",
+          "why": "A dated, source-owned thesis creates durable intellectual property and a URL that later distribution can compound.",
+          "steps": [
+            "Publish the English canonical article",
+            "Complete three language editions",
+            "Archive the social derivative"
+          ],
+          "done": "The article, schema, images, four language URLs, sitemap, and public checks are complete.",
+          "deepDiveTitle": "Google’s $12.2 Billion Option on Marvell"
+        },
+        {
+          "domain": "AI Infrastructure Career",
+          "title": "Make Power the Career Filter",
+          "why": "Deliverable megawatts increasingly determine where compute gets built and who can execute it.",
+          "steps": [
+            "Add power procurement and interconnection",
+            "Add capital-program responsibility",
+            "Lead with the 175-kilometre siting evidence"
+          ],
+          "done": "The career filter identifies roles joining infrastructure strategy, power, and capital execution."
+        },
+        {
+          "domain": "Late-Stage Private Markets",
+          "title": "Watch Etched Without Chasing",
+          "why": "Working chips and contracts matter; manufacturing yield, software adoption, and customer concentration decide conversion into profit.",
+          "steps": [
+            "Verify cancellation terms",
+            "Track production yield and unit economics",
+            "Separate Jane Street demand from other customers"
+          ],
+          "done": "Upgrade to INVESTIGATE only when all three evidence gates are sourced."
+        }
       ]
     },
     "zh-Hans": {
@@ -112,13 +362,84 @@
       "centralJudgment": "今天最值得坚持的不是速度，而是验证。资本、算力、支付与职业信号都指向同一纪律：只有证据跨过明确门槛，才升级判断。",
       "fieldLine": "七个信号。一个决策场。证据始终相连。",
       "actions": [
-        { "domain": "前沿模型", "title": "开放后再测 GLM", "why": "漏洞发现接近平手，真实利用仍有差距；部署控制和权限风险因此属于模型质量。", "steps": ["等待正式 API 或权重", "运行同一组 RobinOS 任务", "比较成本、完成率与权限风险"], "done": "在冻结任务集上形成 GLM-5.3、Claude、Codex 的签名对照表。" },
-        { "domain": "加密资本", "title": "等待三个交易日确认", "why": "空头挤压能快速推动价格，已结算 ETF 申购才能说明外部资本是否留下。", "steps": ["记录 BTC 与 ETH ETF 流量", "检查现货成交与市场广度", "三个结算日后再升级"], "done": "信号要么升级为资本回流，要么保留为附有证据的价格事件。" },
-        { "domain": "稳定币与支付", "title": "画出监管堆栈", "why": "控制性护城河已经覆盖法律实体、牌照、储备、托管、赎回与结算。", "steps": ["加入六个监管字段", "填入 USD1 与主要同业", "单独记录附条件批准"], "done": "每条支付轨道都显示发行实体、牌照、储备管理人、托管人、赎回路径和结算银行。" },
-        { "domain": "公开市场", "title": "登记 Google 与 Marvell", "why": "认股权把采购、定制芯片收入与供应商上行利益装进同一个可测量结构。", "steps": ["记录归属里程碑", "追踪 Google 实际采购", "比较 Marvell 与 Broadcom 的 TPU 份额"], "done": "AI Circularity Deal Ledger 含有带来源的 Google–Marvell 记录，并明确保留未知项。" },
-        { "domain": "iamrobin.ai", "title": "发布首篇权威台账", "why": "带日期、由自己拥有来源的论点，会形成可长期积累的思想资产和分发 URL。", "steps": ["发布英文权威正文", "完成三种语言版本", "归档社交媒体衍生稿"], "done": "文章、Schema、图片、四语 URL、sitemap 与公开检查全部完成。", "deepDiveTitle": "Google 对 Marvell 的 122 亿美元期权" },
-        { "domain": "AI 基础设施职业", "title": "让电力成为职业过滤器", "why": "可按时交付的兆瓦越来越决定算力建在哪里，也决定谁能真正执行。", "steps": ["加入电力采购与并网", "加入资本项目责任", "以 175 公里选址数据开篇"], "done": "职业过滤器能找出同时覆盖基础设施战略、电力与资本执行的岗位。" },
-        { "domain": "一级市场", "title": "观察 Etched 不追价", "why": "芯片与合同真实存在；良率、软件采用和客户集中度决定利润转化。", "steps": ["核实取消条款", "跟踪良率与单位经济", "把 Jane Street 与其他客户需求分开"], "done": "只有三项证据门槛都有来源时，才升级为 INVESTIGATE。" }
+        {
+          "domain": "前沿模型",
+          "title": "开放后再测 GLM",
+          "why": "漏洞发现接近平手，真实利用仍有差距；部署控制和权限风险因此属于模型质量。",
+          "steps": [
+            "等待正式 API 或权重",
+            "运行同一组 RobinOS 任务",
+            "比较成本、完成率与权限风险"
+          ],
+          "done": "在冻结任务集上形成 GLM-5.3、Claude、Codex 的签名对照表。"
+        },
+        {
+          "domain": "加密资本",
+          "title": "等待三个交易日确认",
+          "why": "空头挤压能快速推动价格，已结算 ETF 申购才能说明外部资本是否留下。",
+          "steps": [
+            "记录 BTC 与 ETH ETF 流量",
+            "检查现货成交与市场广度",
+            "三个结算日后再升级"
+          ],
+          "done": "信号要么升级为资本回流，要么保留为附有证据的价格事件。"
+        },
+        {
+          "domain": "稳定币与支付",
+          "title": "画出监管堆栈",
+          "why": "控制性护城河已经覆盖法律实体、牌照、储备、托管、赎回与结算。",
+          "steps": [
+            "加入六个监管字段",
+            "填入 USD1 与主要同业",
+            "单独记录附条件批准"
+          ],
+          "done": "每条支付轨道都显示发行实体、牌照、储备管理人、托管人、赎回路径和结算银行。"
+        },
+        {
+          "domain": "公开市场",
+          "title": "登记 Google 与 Marvell",
+          "why": "认股权把采购、定制芯片收入与供应商上行利益装进同一个可测量结构。",
+          "steps": [
+            "记录归属里程碑",
+            "追踪 Google 实际采购",
+            "比较 Marvell 与 Broadcom 的 TPU 份额"
+          ],
+          "done": "AI Circularity Deal Ledger 含有带来源的 Google–Marvell 记录，并明确保留未知项。"
+        },
+        {
+          "domain": "iamrobin.ai",
+          "title": "发布首篇权威台账",
+          "why": "带日期、由自己拥有来源的论点，会形成可长期积累的思想资产和分发 URL。",
+          "steps": [
+            "发布英文权威正文",
+            "完成三种语言版本",
+            "归档社交媒体衍生稿"
+          ],
+          "done": "文章、Schema、图片、四语 URL、sitemap 与公开检查全部完成。",
+          "deepDiveTitle": "Google 对 Marvell 的 122 亿美元期权"
+        },
+        {
+          "domain": "AI 基础设施职业",
+          "title": "让电力成为职业过滤器",
+          "why": "可按时交付的兆瓦越来越决定算力建在哪里，也决定谁能真正执行。",
+          "steps": [
+            "加入电力采购与并网",
+            "加入资本项目责任",
+            "以 175 公里选址数据开篇"
+          ],
+          "done": "职业过滤器能找出同时覆盖基础设施战略、电力与资本执行的岗位。"
+        },
+        {
+          "domain": "一级市场",
+          "title": "观察 Etched 不追价",
+          "why": "芯片与合同真实存在；良率、软件采用和客户集中度决定利润转化。",
+          "steps": [
+            "核实取消条款",
+            "跟踪良率与单位经济",
+            "把 Jane Street 与其他客户需求分开"
+          ],
+          "done": "只有三项证据门槛都有来源时，才升级为 INVESTIGATE。"
+        }
       ]
     },
     "zh-Hant": {
@@ -129,13 +450,84 @@
       "centralJudgment": "今天最值得堅持的是驗證。資本、算力、支付與職業訊號都指向同一紀律：只有證據跨過明確門檻，才升級判斷。",
       "fieldLine": "七個訊號。一個決策場。證據始終相連。",
       "actions": [
-        { "domain": "前沿模型", "title": "開放後再測 GLM", "why": "漏洞發現接近平手，真實利用仍有差距；部署控制和權限風險因此屬於模型品質。", "steps": ["等待正式 API 或權重", "執行同一組 RobinOS 任務", "比較成本、完成率與權限風險"], "done": "在凍結任務集上形成 GLM-5.3、Claude、Codex 的簽名對照表。" },
-        { "domain": "加密資本", "title": "等待三個交易日確認", "why": "空頭擠壓能快速推動價格，已結算 ETF 申購才能說明外部資本是否留下。", "steps": ["記錄 BTC 與 ETH ETF 流量", "檢查現貨成交與市場廣度", "三個結算日後再升級"], "done": "訊號要麼升級為資本回流，要麼保留為附有證據的價格事件。" },
-        { "domain": "穩定幣與支付", "title": "畫出監管堆疊", "why": "控制性護城河已覆蓋法律實體、牌照、儲備、託管、贖回與結算。", "steps": ["加入六個監管欄位", "填入 USD1 與主要同業", "單獨記錄附條件批准"], "done": "每條支付軌道都顯示發行實體、牌照、儲備管理人、託管人、贖回路徑和結算銀行。" },
-        { "domain": "公開市場", "title": "登記 Google 與 Marvell", "why": "認股權把採購、客製晶片收入與供應商上行利益裝進同一個可測量結構。", "steps": ["記錄歸屬里程碑", "追蹤 Google 實際採購", "比較 Marvell 與 Broadcom 的 TPU 份額"], "done": "AI Circularity Deal Ledger 含有帶來源的 Google–Marvell 記錄，並明確保留未知項。" },
-        { "domain": "iamrobin.ai", "title": "發布首篇權威台帳", "why": "帶日期、由自己擁有來源的論點，會形成可長期累積的思想資產和分發 URL。", "steps": ["發布英文權威正文", "完成三種語言版本", "歸檔社群媒體衍生稿"], "done": "文章、Schema、圖片、四語 URL、sitemap 與公開檢查全部完成。", "deepDiveTitle": "Google 對 Marvell 的 122 億美元期權" },
-        { "domain": "AI 基礎設施職業", "title": "讓電力成為職業過濾器", "why": "可按時交付的兆瓦愈來愈決定算力建在哪裡，也決定誰能真正執行。", "steps": ["加入電力採購與併網", "加入資本專案責任", "以 175 公里選址資料開篇"], "done": "職業過濾器能找出同時覆蓋基礎設施策略、電力與資本執行的職位。" },
-        { "domain": "一級市場", "title": "觀察 Etched 不追價", "why": "晶片與合約真實存在；良率、軟體採用和客戶集中度決定利潤轉化。", "steps": ["核實取消條款", "追蹤良率與單位經濟", "把 Jane Street 與其他客戶需求分開"], "done": "只有三項證據門檻都有來源時，才升級為 INVESTIGATE。" }
+        {
+          "domain": "前沿模型",
+          "title": "開放後再測 GLM",
+          "why": "漏洞發現接近平手，真實利用仍有差距；部署控制和權限風險因此屬於模型品質。",
+          "steps": [
+            "等待正式 API 或權重",
+            "執行同一組 RobinOS 任務",
+            "比較成本、完成率與權限風險"
+          ],
+          "done": "在凍結任務集上形成 GLM-5.3、Claude、Codex 的簽名對照表。"
+        },
+        {
+          "domain": "加密資本",
+          "title": "等待三個交易日確認",
+          "why": "空頭擠壓能快速推動價格，已結算 ETF 申購才能說明外部資本是否留下。",
+          "steps": [
+            "記錄 BTC 與 ETH ETF 流量",
+            "檢查現貨成交與市場廣度",
+            "三個結算日後再升級"
+          ],
+          "done": "訊號要麼升級為資本回流，要麼保留為附有證據的價格事件。"
+        },
+        {
+          "domain": "穩定幣與支付",
+          "title": "畫出監管堆疊",
+          "why": "控制性護城河已覆蓋法律實體、牌照、儲備、託管、贖回與結算。",
+          "steps": [
+            "加入六個監管欄位",
+            "填入 USD1 與主要同業",
+            "單獨記錄附條件批准"
+          ],
+          "done": "每條支付軌道都顯示發行實體、牌照、儲備管理人、託管人、贖回路徑和結算銀行。"
+        },
+        {
+          "domain": "公開市場",
+          "title": "登記 Google 與 Marvell",
+          "why": "認股權把採購、客製晶片收入與供應商上行利益裝進同一個可測量結構。",
+          "steps": [
+            "記錄歸屬里程碑",
+            "追蹤 Google 實際採購",
+            "比較 Marvell 與 Broadcom 的 TPU 份額"
+          ],
+          "done": "AI Circularity Deal Ledger 含有帶來源的 Google–Marvell 記錄，並明確保留未知項。"
+        },
+        {
+          "domain": "iamrobin.ai",
+          "title": "發布首篇權威台帳",
+          "why": "帶日期、由自己擁有來源的論點，會形成可長期累積的思想資產和分發 URL。",
+          "steps": [
+            "發布英文權威正文",
+            "完成三種語言版本",
+            "歸檔社群媒體衍生稿"
+          ],
+          "done": "文章、Schema、圖片、四語 URL、sitemap 與公開檢查全部完成。",
+          "deepDiveTitle": "Google 對 Marvell 的 122 億美元期權"
+        },
+        {
+          "domain": "AI 基礎設施職業",
+          "title": "讓電力成為職業過濾器",
+          "why": "可按時交付的兆瓦愈來愈決定算力建在哪裡，也決定誰能真正執行。",
+          "steps": [
+            "加入電力採購與併網",
+            "加入資本專案責任",
+            "以 175 公里選址資料開篇"
+          ],
+          "done": "職業過濾器能找出同時覆蓋基礎設施策略、電力與資本執行的職位。"
+        },
+        {
+          "domain": "一級市場",
+          "title": "觀察 Etched 不追價",
+          "why": "晶片與合約真實存在；良率、軟體採用和客戶集中度決定利潤轉化。",
+          "steps": [
+            "核實取消條款",
+            "追蹤良率與單位經濟",
+            "把 Jane Street 與其他客戶需求分開"
+          ],
+          "done": "只有三項證據門檻都有來源時，才升級為 INVESTIGATE。"
+        }
       ]
     },
     "ja": {
@@ -146,13 +538,84 @@
       "centralJudgment": "この日は速度より検証が報われた。資本、計算資源、決済、キャリアの全シグナルが同じ規律を示す。証拠が明示した閾値を超えてから判断を引き上げる。",
       "fieldLine": "7つのシグナル。ひとつの意思決定領域。証拠はつながったまま。",
       "actions": [
-        { "domain": "フロンティアモデル", "title": "公開後に GLM を測る", "why": "発見能力は接近し、実利用には差が残る。配備統制と権限リスクもモデル品質の一部になる。", "steps": ["公式 API または重みを待つ", "同じ RobinOS タスク群を実行する", "コスト、完了率、権限リスクを比較する"], "done": "固定タスク上で GLM-5.3、Claude、Codex の署名済み比較表が完成する。" },
-        { "domain": "暗号資産への資本", "title": "3営業日の確認を求める", "why": "ショートスクイーズは価格を動かす。決済済み ETF フローは外部資本が残ったかを示す。", "steps": ["BTC と ETH の ETF フローを記録する", "現物出来高と市場の広がりを確認する", "3決済日後にのみ昇格する"], "done": "資本再流入へ昇格するか、証拠付きの価格イベントとして維持する。" },
-        { "domain": "ステーブルコインと決済", "title": "規制スタックを描く", "why": "支配的な堀は法人、認可、準備資産、カストディ、償還、決済まで広がった。", "steps": ["6つの規制項目を追加する", "USD1 と主要比較対象を埋める", "条件付き承認を分離する"], "done": "各レールに発行法人、認可、準備資産管理者、カストディ、償還経路、決済銀行が表示される。" },
-        { "domain": "公開市場", "title": "Google と Marvell を台帳化", "why": "ワラントは調達、カスタムシリコン収益、供給者の上振れをひとつの測定可能な構造に結ぶ。", "steps": ["権利確定の節目を記録する", "Google の実購入を追う", "Marvell と Broadcom の TPU シェアを比べる"], "done": "AI Circularity Deal Ledger に出典付き記録と明示的な未知項が残る。" },
-        { "domain": "iamrobin.ai", "title": "最初の正典台帳を公開", "why": "日付と出典を自分で持つ論点は、長く蓄積できる知的資産と配信 URL になる。", "steps": ["英語の正典記事を公開する", "3言語版を完成する", "ソーシャル派生稿を保存する"], "done": "記事、Schema、画像、4言語 URL、sitemap、公開確認が完了する。", "deepDiveTitle": "GoogleによるMarvellへの122億ドル・オプション" },
-        { "domain": "AIインフラのキャリア", "title": "電力をキャリア条件にする", "why": "期限内に供給できるメガワットが、計算資源の立地と実行者を決め始めている。", "steps": ["電力調達と系統接続を加える", "資本プログラム責任を加える", "175キロの立地データで始める"], "done": "インフラ戦略、電力、資本実行を結ぶ役割が抽出される。" },
-        { "domain": "レイトステージ未公開市場", "title": "Etched を追わずに観察", "why": "稼働チップと契約はある。歩留まり、ソフトウェア採用、顧客集中が利益への転換を決める。", "steps": ["解約条件を確認する", "歩留まりと単位経済を追う", "Jane Street と他顧客の需要を分ける"], "done": "3つの証拠ゲートが揃ったときだけ INVESTIGATE へ上げる。" }
+        {
+          "domain": "フロンティアモデル",
+          "title": "公開後に GLM を測る",
+          "why": "発見能力は接近し、実利用には差が残る。配備統制と権限リスクもモデル品質の一部になる。",
+          "steps": [
+            "公式 API または重みを待つ",
+            "同じ RobinOS タスク群を実行する",
+            "コスト、完了率、権限リスクを比較する"
+          ],
+          "done": "固定タスク上で GLM-5.3、Claude、Codex の署名済み比較表が完成する。"
+        },
+        {
+          "domain": "暗号資産への資本",
+          "title": "3営業日の確認を求める",
+          "why": "ショートスクイーズは価格を動かす。決済済み ETF フローは外部資本が残ったかを示す。",
+          "steps": [
+            "BTC と ETH の ETF フローを記録する",
+            "現物出来高と市場の広がりを確認する",
+            "3決済日後にのみ昇格する"
+          ],
+          "done": "資本再流入へ昇格するか、証拠付きの価格イベントとして維持する。"
+        },
+        {
+          "domain": "ステーブルコインと決済",
+          "title": "規制スタックを描く",
+          "why": "支配的な堀は法人、認可、準備資産、カストディ、償還、決済まで広がった。",
+          "steps": [
+            "6つの規制項目を追加する",
+            "USD1 と主要比較対象を埋める",
+            "条件付き承認を分離する"
+          ],
+          "done": "各レールに発行法人、認可、準備資産管理者、カストディ、償還経路、決済銀行が表示される。"
+        },
+        {
+          "domain": "公開市場",
+          "title": "Google と Marvell を台帳化",
+          "why": "ワラントは調達、カスタムシリコン収益、供給者の上振れをひとつの測定可能な構造に結ぶ。",
+          "steps": [
+            "権利確定の節目を記録する",
+            "Google の実購入を追う",
+            "Marvell と Broadcom の TPU シェアを比べる"
+          ],
+          "done": "AI Circularity Deal Ledger に出典付き記録と明示的な未知項が残る。"
+        },
+        {
+          "domain": "iamrobin.ai",
+          "title": "最初の正典台帳を公開",
+          "why": "日付と出典を自分で持つ論点は、長く蓄積できる知的資産と配信 URL になる。",
+          "steps": [
+            "英語の正典記事を公開する",
+            "3言語版を完成する",
+            "ソーシャル派生稿を保存する"
+          ],
+          "done": "記事、Schema、画像、4言語 URL、sitemap、公開確認が完了する。",
+          "deepDiveTitle": "GoogleによるMarvellへの122億ドル・オプション"
+        },
+        {
+          "domain": "AIインフラのキャリア",
+          "title": "電力をキャリア条件にする",
+          "why": "期限内に供給できるメガワットが、計算資源の立地と実行者を決め始めている。",
+          "steps": [
+            "電力調達と系統接続を加える",
+            "資本プログラム責任を加える",
+            "175キロの立地データで始める"
+          ],
+          "done": "インフラ戦略、電力、資本実行を結ぶ役割が抽出される。"
+        },
+        {
+          "domain": "レイトステージ未公開市場",
+          "title": "Etched を追わずに観察",
+          "why": "稼働チップと契約はある。歩留まり、ソフトウェア採用、顧客集中が利益への転換を決める。",
+          "steps": [
+            "解約条件を確認する",
+            "歩留まりと単位経済を追う",
+            "Jane Street と他顧客の需要を分ける"
+          ],
+          "done": "3つの証拠ゲートが揃ったときだけ INVESTIGATE へ上げる。"
+        }
       ]
     }
   }

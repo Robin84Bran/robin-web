@@ -12,47 +12,154 @@
     {
       "signal": 1,
       "priority": "NOW",
-      "status": "READY",
+      "status": "BLOCKED",
       "visualValue": "$4 / $20",
       "visualLabel": "Sol input / output per million tokens",
       "sources": [
-        { "label": "Reuters", "url": "https://reuters.com/technology/openai-cuts-developer-pricing-frontier-gpt-56-sol-model-by-more-than-20-2026-08-21/" },
-        { "label": "OpenAI", "url": "https://developers.openai.com/api/docs/models/gpt-5.6-sol" }
-      ]
+        {
+          "label": "Reuters",
+          "url": "https://reuters.com/technology/openai-cuts-developer-pricing-frontier-gpt-56-sol-model-by-more-than-20-2026-08-21/"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://developers.openai.com/api/docs/models/gpt-5.6-sol"
+        }
+      ],
+      "execution": {
+        "id": "20260822-01",
+        "workstream": "FRONTIER_CONTROLS",
+        "evidenceStatus": "UNKNOWN",
+        "reason": "No common authorized provider route, comparable price capture, and identical tool-permission envelope exists for the four-provider completed-task benchmark.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Frontier model authority controls",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "7ae923d16b6ea9c074242db64746fa6ff197f868",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/7ae923d16b6ea9c074242db64746fa6ff197f868"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 2,
       "priority": "NOW",
-      "status": "READY",
+      "status": "SUPERSEDED",
       "visualValue": "100,000h",
       "visualLabel": "estimated industry real-world data",
       "sources": [
-        { "label": "Reuters", "url": "https://reuters.com/technology/ace-robotics-ceo-says-robot-brains-will-have-chatgpt-moment-by-end-2027-2026-08-21/" },
-        { "label": "ACE Kairos", "url": "https://globenewswire.com/news-release/2026/07/22/3331095/0/en/ace-robotics-unveils-kairos-world-model-with-record-performance-on-four-global-benchmarks.html" }
-      ]
+        {
+          "label": "Reuters",
+          "url": "https://reuters.com/technology/ace-robotics-ceo-says-robot-brains-will-have-chatgpt-moment-by-end-2027-2026-08-21/"
+        },
+        {
+          "label": "ACE Kairos",
+          "url": "https://globenewswire.com/news-release/2026/07/22/3331095/0/en/ace-robotics-unveils-kairos-world-model-with-record-performance-on-four-global-benchmarks.html"
+        }
+      ],
+      "execution": {
+        "id": "20260822-02",
+        "workstream": "PHYSICAL_AI",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "This repeated action is absorbed by 20260901-02.",
+        "supersededBy": "20260901-02",
+        "artifact": {
+          "label": "Physical AI operating evidence",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "7ae923d16b6ea9c074242db64746fa6ff197f868",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/7ae923d16b6ea9c074242db64746fa6ff197f868"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 3,
       "priority": "NOW",
-      "status": "WATCHING",
+      "status": "SUPERSEDED",
       "visualValue": "$2.119B",
       "visualLabel": "four-session BTC and ETH ETF inflow",
       "sources": [
-        { "label": "Farside BTC", "url": "https://farside.co.uk/btc/" },
-        { "label": "Farside ETH", "url": "https://farside.co.uk/eth/" },
-        { "label": "Reuters", "url": "https://reuters.com/world/china/global-markets-global-markets-2026-08-21/" }
-      ]
+        {
+          "label": "Farside BTC",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "Farside ETH",
+          "url": "https://farside.co.uk/eth/"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://reuters.com/world/china/global-markets-global-markets-2026-08-21/"
+        }
+      ],
+      "execution": {
+        "id": "20260822-03",
+        "workstream": "CRYPTO_BREADTH",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "Earlier flow-breadth checkpoint is absorbed by the September 4 canonical breadth watch.",
+        "supersededBy": "20260904-03",
+        "artifact": {
+          "label": "Crypto capital-flow breadth",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "7ae923d16b6ea9c074242db64746fa6ff197f868",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/7ae923d16b6ea9c074242db64746fa6ff197f868"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 4,
       "priority": "NEXT",
-      "status": "READY",
+      "status": "COMPLETE",
       "visualValue": "5 nodes",
       "visualLabel": "identity and liability chain",
       "sources": [
-        { "label": "FinCEN", "url": "https://fincen.gov/news/news-releases/fincen-agencies-propose-rule-implement-genius-act-customer-identification" },
-        { "label": "Federal Register", "url": "https://regulations.justia.com/regulations/fedreg/2026/06/22/2026-12460.html" }
-      ]
+        {
+          "label": "FinCEN",
+          "url": "https://fincen.gov/news/news-releases/fincen-agencies-propose-rule-implement-genius-act-customer-identification"
+        },
+        {
+          "label": "Federal Register",
+          "url": "https://regulations.justia.com/regulations/fedreg/2026/06/22/2026-12460.html"
+        }
+      ],
+      "execution": {
+        "id": "20260822-04",
+        "workstream": "PAYMENT_CONTROLS",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The reusable control matrix records the requested topology or diligence fields without moving value or claiming an unlaunched control.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Payment and agent-commerce control matrix",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "7ae923d16b6ea9c074242db64746fa6ff197f868",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/7ae923d16b6ea9c074242db64746fa6ff197f868"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 5,
@@ -61,22 +168,80 @@
       "visualValue": "1 useful hour",
       "visualLabel": "new Physical AI valuation unit",
       "sources": [
-        { "label": "Reuters ACE", "url": "https://reuters.com/technology/ace-robotics-ceo-says-robot-brains-will-have-chatgpt-moment-by-end-2027-2026-08-21/" },
-        { "label": "Reuters Unitree", "url": "https://reuters.com/world/asia-pacific/robots-poised-chatgpt-moment-unitree-ceo-says-2026-08-20/" },
-        { "label": "Canonical Action Item", "url": "https://iamrobin.ai/ouroboros/202608/20260822/action_item/" }
-      ]
+        {
+          "label": "Reuters ACE",
+          "url": "https://reuters.com/technology/ace-robotics-ceo-says-robot-brains-will-have-chatgpt-moment-by-end-2027-2026-08-21/"
+        },
+        {
+          "label": "Reuters Unitree",
+          "url": "https://reuters.com/world/asia-pacific/robots-poised-chatgpt-moment-unitree-ceo-says-2026-08-20/"
+        },
+        {
+          "label": "Canonical Action Item",
+          "url": "https://iamrobin.ai/ouroboros/202608/20260822/action_item/"
+        }
+      ],
+      "execution": {
+        "id": "20260822-05",
+        "workstream": "PUBLICATION",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The canonical Action Item is public and linked to its source commit and verification receipt.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Published canonical Action Item",
+          "href": "/ouroboros/202608/20260822/action_item/"
+        },
+        "sourceCommit": {
+          "sha": "7ae923d16b6ea9c074242db64746fa6ff197f868",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/7ae923d16b6ea9c074242db64746fa6ff197f868"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 6,
       "priority": "NEXT",
-      "status": "READY",
+      "status": "COMPLETE",
       "visualValue": "Powered land",
       "visualLabel": "AI infrastructure career lane",
       "sources": [
-        { "label": "Reuters", "url": "https://reuters.com/technology/nvidia-invests-data-center-developer-cloverleaf-infrastructure-2026-08-21/" },
-        { "label": "Cloverleaf and Nvidia", "url": "https://prnewswire.com/news-releases/cloverleaf-infrastructure-forms-strategic-partnership-with-nvidia-to-accelerate-data-center-infrastructure-development-302857329.html" },
-        { "label": "Cloverleaf Careers", "url": "https://cloverleafinfra.com/careers" }
-      ]
+        {
+          "label": "Reuters",
+          "url": "https://reuters.com/technology/nvidia-invests-data-center-developer-cloverleaf-infrastructure-2026-08-21/"
+        },
+        {
+          "label": "Cloverleaf and Nvidia",
+          "url": "https://prnewswire.com/news-releases/cloverleaf-infrastructure-forms-strategic-partnership-with-nvidia-to-accelerate-data-center-infrastructure-development-302857329.html"
+        },
+        {
+          "label": "Cloverleaf Careers",
+          "url": "https://cloverleafinfra.com/careers"
+        }
+      ],
+      "execution": {
+        "id": "20260822-06",
+        "workstream": "AI_INFRASTRUCTURE",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The Signal 06 row is present in the 16-entry evidence registry and governed by the monthly review/publication boundary.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "AI infrastructure evidence intake",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "7ae923d16b6ea9c074242db64746fa6ff197f868",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/7ae923d16b6ea9c074242db64746fa6ff197f868"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 7,
@@ -85,10 +250,39 @@
       "visualValue": "$2.3B",
       "visualLabel": "Starcloud valuation",
       "sources": [
-        { "label": "Via Satellite", "url": "https://satellitetoday.com/finance/2026/08/21/starcloud-adds-250m-to-series-a-at-a-2-3b-valuation/" },
-        { "label": "Reuters", "url": "https://reuters.com/business/retail-consumer/starcloud-reaches-11-billion-valuation-ai-space-race-heats-up-2026-03-30/" },
-        { "label": "Starcloud", "url": "https://starcloud.com/blog" }
-      ]
+        {
+          "label": "Via Satellite",
+          "url": "https://satellitetoday.com/finance/2026/08/21/starcloud-adds-250m-to-series-a-at-a-2-3b-valuation/"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://reuters.com/business/retail-consumer/starcloud-reaches-11-billion-valuation-ai-space-race-heats-up-2026-03-30/"
+        },
+        {
+          "label": "Starcloud",
+          "url": "https://starcloud.com/blog"
+        }
+      ],
+      "execution": {
+        "id": "20260822-07",
+        "workstream": "PRIVATE_MARKETS",
+        "evidenceStatus": "UNKNOWN",
+        "reason": "The action is evidence-dependent; no new evidence justified changing the watch state.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Private-market diligence matrix",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "7ae923d16b6ea9c074242db64746fa6ff197f868",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/7ae923d16b6ea9c074242db64746fa6ff197f868"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 8,
@@ -97,11 +291,43 @@
       "visualValue": "−1.75pp",
       "visualLabel": "NVDA performance versus QQQ",
       "sources": [
-        { "label": "Reuters earnings preview", "url": "https://reuters.com/business/wall-st-week-ahead-nvidia-earnings-jackson-hole-test-pillars-stock-rally-2026-08-21/" },
-        { "label": "Reuters close", "url": "https://reuters.com/business/us-stock-futures-rise-after-sharp-losses-prior-session-2026-08-21/" },
-        { "label": "NVDA history", "url": "https://ng.investing.com/equities/nvidia-corp-historical-data" },
-        { "label": "QQQ history", "url": "https://za.investing.com/etfs/powershares-qqqq" }
-      ]
+        {
+          "label": "Reuters earnings preview",
+          "url": "https://reuters.com/business/wall-st-week-ahead-nvidia-earnings-jackson-hole-test-pillars-stock-rally-2026-08-21/"
+        },
+        {
+          "label": "Reuters close",
+          "url": "https://reuters.com/business/us-stock-futures-rise-after-sharp-losses-prior-session-2026-08-21/"
+        },
+        {
+          "label": "NVDA history",
+          "url": "https://ng.investing.com/equities/nvidia-corp-historical-data"
+        },
+        {
+          "label": "QQQ history",
+          "url": "https://za.investing.com/etfs/powershares-qqqq"
+        }
+      ],
+      "execution": {
+        "id": "20260822-08",
+        "workstream": "PUBLIC_EQUITIES",
+        "evidenceStatus": "UNKNOWN",
+        "reason": "The action is evidence-dependent; no new evidence justified changing the watch state.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Public-market causal ledger",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "7ae923d16b6ea9c074242db64746fa6ff197f868",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/7ae923d16b6ea9c074242db64746fa6ff197f868"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     }
   ],
   "editions": {
@@ -113,14 +339,95 @@
       "centralJudgment": "The easy numbers are token prices, shipment counts, headline capital, and market value. Today’s edge is to measure verified output, named responsibility, and the conditions that convert scale into durable economics.",
       "fieldLine": "Eight signals. One decision field. Evidence stays attached.",
       "actions": [
-        { "domain": "Frontier Models", "title": "Price the Completed Task", "why": "A cheaper token can still produce an expensive workflow when reasoning and tool use expand.", "steps": ["Freeze one identical RobinOS task suite", "Run Sol, Terra, Claude, and GLM", "Rank total cost per correction-free success"], "done": "One dated scorecard reports success rate, total API cost, and tool-permission risk for every provider." },
-        { "domain": "Physical AI", "title": "Build the Useful Hours Ledger", "why": "Hardware scale is visible; autonomous useful work and intervention remain the scarce commercial evidence.", "steps": ["Separate demos, pilots, and paid production", "Record monthly useful work-hours", "Record intervention and renewal rates"], "done": "Every tracked deployment has a source, denominator, useful-hours figure or UNKNOWN, and an intervention rate or UNKNOWN." },
-        { "domain": "Crypto Capital", "title": "Confirm the ETF Re-entry", "why": "Four settled sessions confirm capital return to BTC and ETH while the broader Web3 recovery test remains open.", "steps": ["Keep the ETF-led re-entry state", "Observe a second positive week", "Test stablecoin supply, DeFi activity, and breadth"], "done": "The state upgrades only when all four confirmation fields improve; incomplete August 21 data stays excluded." },
-        { "domain": "Stablecoins and Payments", "title": "Map Identity and Liability", "why": "Stablecoin competition increasingly depends on who sees data and who bears compliance responsibility.", "steps": ["Map user through settlement bank", "Assign identity and transaction data duties", "Mark unresolved rule boundaries UNKNOWN"], "done": "One responsibility map names the collector, custodian, transmitter, and liable party at each of five nodes." },
-        { "domain": "iamrobin.ai", "title": "Publish the Useful Hours Thesis", "why": "A verified autonomous work-hour joins manufacturing scale, model quality, deployment, and valuation in one investable unit.", "steps": ["Define useful work-hour and intervention rules", "Separate company guidance from achieved deployment", "Publish four editions and archive the LinkedIn derivative"], "done": "The canonical deep dive, four languages, evidence ledger, images, schema, sitemap, and public checks all pass.", "deepDiveTitle": "The Humanoid Robotics Useful Hours Bottleneck" },
-        { "domain": "AI Infrastructure Career", "title": "Open the Powered Land Lane", "why": "Land, grid interconnection, cooling, facilities, and compute design are converging into a high-value executive lane.", "steps": ["Add the permanent career filter", "Map Cloverleaf and comparable developers", "Record openings without inventing vacancies"], "done": "The career system can isolate powered-land and AI-factory roles, with Cloverleaf currently marked no public opening." },
-        { "domain": "Late-Stage Private Markets", "title": "Wait for Orbital Unit Economics", "why": "A $2.3 billion valuation rewards ambition before sustained orbital compute economics are visible.", "steps": ["Track Starcloud-2 operating evidence", "Track thermal and radiation performance", "Require delivered compute-hour economics and unaffiliated demand"], "done": "The company stays WATCH until every operating and customer gate is sourced and measurable." },
-        { "domain": "Public Equities", "title": "Use Earnings as the Checkpoint", "why": "One week of underperformance mixes discount-rate pressure with financing concerns and cannot settle the demand thesis.", "steps": ["Record data-center growth and guidance", "Measure cash conversion and concentration", "Search filings for new guarantees or financing"], "done": "The August 26 review fills exactly four evidence fields and preserves UNKNOWN where disclosure is absent." }
+        {
+          "domain": "Frontier Models",
+          "title": "Price the Completed Task",
+          "why": "A cheaper token can still produce an expensive workflow when reasoning and tool use expand.",
+          "steps": [
+            "Freeze one identical RobinOS task suite",
+            "Run Sol, Terra, Claude, and GLM",
+            "Rank total cost per correction-free success"
+          ],
+          "done": "One dated scorecard reports success rate, total API cost, and tool-permission risk for every provider."
+        },
+        {
+          "domain": "Physical AI",
+          "title": "Build the Useful Hours Ledger",
+          "why": "Hardware scale is visible; autonomous useful work and intervention remain the scarce commercial evidence.",
+          "steps": [
+            "Separate demos, pilots, and paid production",
+            "Record monthly useful work-hours",
+            "Record intervention and renewal rates"
+          ],
+          "done": "Every tracked deployment has a source, denominator, useful-hours figure or UNKNOWN, and an intervention rate or UNKNOWN."
+        },
+        {
+          "domain": "Crypto Capital",
+          "title": "Confirm the ETF Re-entry",
+          "why": "Four settled sessions confirm capital return to BTC and ETH while the broader Web3 recovery test remains open.",
+          "steps": [
+            "Keep the ETF-led re-entry state",
+            "Observe a second positive week",
+            "Test stablecoin supply, DeFi activity, and breadth"
+          ],
+          "done": "The state upgrades only when all four confirmation fields improve; incomplete August 21 data stays excluded."
+        },
+        {
+          "domain": "Stablecoins and Payments",
+          "title": "Map Identity and Liability",
+          "why": "Stablecoin competition increasingly depends on who sees data and who bears compliance responsibility.",
+          "steps": [
+            "Map user through settlement bank",
+            "Assign identity and transaction data duties",
+            "Mark unresolved rule boundaries UNKNOWN"
+          ],
+          "done": "One responsibility map names the collector, custodian, transmitter, and liable party at each of five nodes."
+        },
+        {
+          "domain": "iamrobin.ai",
+          "title": "Publish the Useful Hours Thesis",
+          "why": "A verified autonomous work-hour joins manufacturing scale, model quality, deployment, and valuation in one investable unit.",
+          "steps": [
+            "Define useful work-hour and intervention rules",
+            "Separate company guidance from achieved deployment",
+            "Publish four editions and archive the LinkedIn derivative"
+          ],
+          "done": "The canonical deep dive, four languages, evidence ledger, images, schema, sitemap, and public checks all pass.",
+          "deepDiveTitle": "The Humanoid Robotics Useful Hours Bottleneck"
+        },
+        {
+          "domain": "AI Infrastructure Career",
+          "title": "Open the Powered Land Lane",
+          "why": "Land, grid interconnection, cooling, facilities, and compute design are converging into a high-value executive lane.",
+          "steps": [
+            "Add the permanent career filter",
+            "Map Cloverleaf and comparable developers",
+            "Record openings without inventing vacancies"
+          ],
+          "done": "The career system can isolate powered-land and AI-factory roles, with Cloverleaf currently marked no public opening."
+        },
+        {
+          "domain": "Late-Stage Private Markets",
+          "title": "Wait for Orbital Unit Economics",
+          "why": "A $2.3 billion valuation rewards ambition before sustained orbital compute economics are visible.",
+          "steps": [
+            "Track Starcloud-2 operating evidence",
+            "Track thermal and radiation performance",
+            "Require delivered compute-hour economics and unaffiliated demand"
+          ],
+          "done": "The company stays WATCH until every operating and customer gate is sourced and measurable."
+        },
+        {
+          "domain": "Public Equities",
+          "title": "Use Earnings as the Checkpoint",
+          "why": "One week of underperformance mixes discount-rate pressure with financing concerns and cannot settle the demand thesis.",
+          "steps": [
+            "Record data-center growth and guidance",
+            "Measure cash conversion and concentration",
+            "Search filings for new guarantees or financing"
+          ],
+          "done": "The August 26 review fills exactly four evidence fields and preserves UNKNOWN where disclosure is absent."
+        }
       ]
     },
     "zh-Hans": {
@@ -131,14 +438,95 @@
       "centralJudgment": "token 价格、出货量、融资规模和市值都容易看到。今天真正的优势，是测量经过验证的产出、明确的数据责任，以及规模转化为持久经济价值所需的条件。",
       "fieldLine": "八个信号。一个决策场。证据始终相连。",
       "actions": [
-        { "domain": "前沿模型", "title": "计算完整任务成本", "why": "token 便宜之后，长推理和工具调用仍可能让工作流更贵。", "steps": ["冻结同一套 RobinOS 任务", "运行 Sol、Terra、Claude 和 GLM", "按无需修正的成功任务总成本排序"], "done": "一张带日期的评分表列出每家模型的成功率、API 总成本和工具权限风险。" },
-        { "domain": "Physical AI", "title": "建立有效工时账本", "why": "硬件规模很显眼，自主有效工作和人工干预才是稀缺的商业证据。", "steps": ["区分演示、试点和付费生产", "记录月度有效工时", "记录人工干预和续约率"], "done": "每项部署都有来源、分母、有效工时或 UNKNOWN，以及人工干预率或 UNKNOWN。" },
-        { "domain": "加密资本", "title": "确认 ETF 资金回流", "why": "四个结算交易日确认 BTC 与 ETH 资金回归，Web3 的广度测试仍然开放。", "steps": ["保留 ETF 主导回流状态", "观察第二个正流入周", "检验稳定币、DeFi 和市场广度"], "done": "四项确认指标同时改善才升级，8月21日未完整数据继续排除。" },
-        { "domain": "稳定币与支付", "title": "画清身份与责任", "why": "稳定币竞争越来越取决于谁看见数据，以及合规失败时谁承担责任。", "steps": ["画出用户到结算银行的链条", "分配身份和交易数据义务", "把未决规则标为 UNKNOWN"], "done": "一张责任图明确五个节点的数据收集者、保管者、传输者和责任承担方。" },
-        { "domain": "iamrobin.ai", "title": "发布有效工时论点", "why": "可验证的自主有效工时把制造规模、模型能力、部署与估值连成一个可投资单位。", "steps": ["定义有效工时和人工干预规则", "分开公司指引与已完成部署", "发布四语全文并归档 LinkedIn 衍生稿"], "done": "canonical 深度文章、四语版本、证据账本、图片、Schema、sitemap 与公网检查全部通过。", "deepDiveTitle": "人形机器人十万小时瓶颈" },
-        { "domain": "AI 基础设施职业", "title": "开启 Powered Land 赛道", "why": "土地、电网接入、冷却、设施与算力设计正在汇成高价值管理赛道。", "steps": ["增加永久职业筛选", "映射 Cloverleaf 及同类公司", "只记录真实岗位，不虚构空缺"], "done": "职业系统可以筛选 powered-land 与 AI-factory 岗位，Cloverleaf 当前标记为无公开职位。" },
-        { "domain": "一级市场", "title": "等待轨道算力经济性", "why": "23亿美元估值已奖励宏大愿景，持续轨道算力的经济证据仍未出现。", "steps": ["追踪 Starcloud-2 运行证据", "追踪散热与抗辐射表现", "要求有效算力小时经济性和非关联需求"], "done": "所有运营与客户门槛都有来源和可测数字之前，公司维持 WATCH。" },
-        { "domain": "公开市场", "title": "用财报检验论点", "why": "一周跑输混合了折现率和融资忧虑，无法单独裁决需求论点。", "steps": ["记录数据中心增长和指引", "测量现金转化与客户集中度", "检查新增担保与融资披露"], "done": "8月26日只填写四个证据字段，未披露内容保留 UNKNOWN。" }
+        {
+          "domain": "前沿模型",
+          "title": "计算完整任务成本",
+          "why": "token 便宜之后，长推理和工具调用仍可能让工作流更贵。",
+          "steps": [
+            "冻结同一套 RobinOS 任务",
+            "运行 Sol、Terra、Claude 和 GLM",
+            "按无需修正的成功任务总成本排序"
+          ],
+          "done": "一张带日期的评分表列出每家模型的成功率、API 总成本和工具权限风险。"
+        },
+        {
+          "domain": "Physical AI",
+          "title": "建立有效工时账本",
+          "why": "硬件规模很显眼，自主有效工作和人工干预才是稀缺的商业证据。",
+          "steps": [
+            "区分演示、试点和付费生产",
+            "记录月度有效工时",
+            "记录人工干预和续约率"
+          ],
+          "done": "每项部署都有来源、分母、有效工时或 UNKNOWN，以及人工干预率或 UNKNOWN。"
+        },
+        {
+          "domain": "加密资本",
+          "title": "确认 ETF 资金回流",
+          "why": "四个结算交易日确认 BTC 与 ETH 资金回归，Web3 的广度测试仍然开放。",
+          "steps": [
+            "保留 ETF 主导回流状态",
+            "观察第二个正流入周",
+            "检验稳定币、DeFi 和市场广度"
+          ],
+          "done": "四项确认指标同时改善才升级，8月21日未完整数据继续排除。"
+        },
+        {
+          "domain": "稳定币与支付",
+          "title": "画清身份与责任",
+          "why": "稳定币竞争越来越取决于谁看见数据，以及合规失败时谁承担责任。",
+          "steps": [
+            "画出用户到结算银行的链条",
+            "分配身份和交易数据义务",
+            "把未决规则标为 UNKNOWN"
+          ],
+          "done": "一张责任图明确五个节点的数据收集者、保管者、传输者和责任承担方。"
+        },
+        {
+          "domain": "iamrobin.ai",
+          "title": "发布有效工时论点",
+          "why": "可验证的自主有效工时把制造规模、模型能力、部署与估值连成一个可投资单位。",
+          "steps": [
+            "定义有效工时和人工干预规则",
+            "分开公司指引与已完成部署",
+            "发布四语全文并归档 LinkedIn 衍生稿"
+          ],
+          "done": "canonical 深度文章、四语版本、证据账本、图片、Schema、sitemap 与公网检查全部通过。",
+          "deepDiveTitle": "人形机器人十万小时瓶颈"
+        },
+        {
+          "domain": "AI 基础设施职业",
+          "title": "开启 Powered Land 赛道",
+          "why": "土地、电网接入、冷却、设施与算力设计正在汇成高价值管理赛道。",
+          "steps": [
+            "增加永久职业筛选",
+            "映射 Cloverleaf 及同类公司",
+            "只记录真实岗位，不虚构空缺"
+          ],
+          "done": "职业系统可以筛选 powered-land 与 AI-factory 岗位，Cloverleaf 当前标记为无公开职位。"
+        },
+        {
+          "domain": "一级市场",
+          "title": "等待轨道算力经济性",
+          "why": "23亿美元估值已奖励宏大愿景，持续轨道算力的经济证据仍未出现。",
+          "steps": [
+            "追踪 Starcloud-2 运行证据",
+            "追踪散热与抗辐射表现",
+            "要求有效算力小时经济性和非关联需求"
+          ],
+          "done": "所有运营与客户门槛都有来源和可测数字之前，公司维持 WATCH。"
+        },
+        {
+          "domain": "公开市场",
+          "title": "用财报检验论点",
+          "why": "一周跑输混合了折现率和融资忧虑，无法单独裁决需求论点。",
+          "steps": [
+            "记录数据中心增长和指引",
+            "测量现金转化与客户集中度",
+            "检查新增担保与融资披露"
+          ],
+          "done": "8月26日只填写四个证据字段，未披露内容保留 UNKNOWN。"
+        }
       ]
     },
     "zh-Hant": {
@@ -149,14 +537,95 @@
       "centralJudgment": "token 價格、出貨量、融資規模和市值都容易看見。今天真正的優勢，是測量經驗證的產出、明確的資料責任，以及規模轉化為持久經濟價值所需的條件。",
       "fieldLine": "八個訊號。一個決策場。證據始終相連。",
       "actions": [
-        { "domain": "前沿模型", "title": "計算完整任務成本", "why": "token 便宜之後，長推理和工具調用仍可能令工作流程更昂貴。", "steps": ["凍結同一套 RobinOS 任務", "運行 Sol、Terra、Claude 和 GLM", "按無需修正的成功任務總成本排序"], "done": "一張帶日期的評分表列出每家模型的成功率、API 總成本和工具權限風險。" },
-        { "domain": "Physical AI", "title": "建立有效工時帳本", "why": "硬體規模很顯眼，自主有效工作和人工干預才是稀缺的商業證據。", "steps": ["區分展示、試點和付費生產", "記錄月度有效工時", "記錄人工干預和續約率"], "done": "每項部署都有來源、分母、有效工時或 UNKNOWN，以及人工干預率或 UNKNOWN。" },
-        { "domain": "加密資本", "title": "確認 ETF 資金回流", "why": "四個結算交易日確認 BTC 與 ETH 資金回歸，Web3 的廣度測試仍然開放。", "steps": ["保留 ETF 主導回流狀態", "觀察第二個正流入周", "檢驗穩定幣、DeFi 和市場廣度"], "done": "四項確認指標同時改善才升級，8月21日未完整資料繼續排除。" },
-        { "domain": "穩定幣與支付", "title": "畫清身份與責任", "why": "穩定幣競爭愈來愈取決於誰看見資料，以及合規失敗時誰承擔責任。", "steps": ["畫出用戶到結算銀行的鏈條", "分配身份和交易資料義務", "把未決規則標為 UNKNOWN"], "done": "一張責任圖明確五個節點的資料收集者、保管者、傳輸者和責任承擔方。" },
-        { "domain": "iamrobin.ai", "title": "發布有效工時論點", "why": "可驗證的自主有效工時把製造規模、模型能力、部署與估值連成一個可投資單位。", "steps": ["定義有效工時和人工干預規則", "分開公司指引與已完成部署", "發布四語全文並歸檔 LinkedIn 衍生稿"], "done": "canonical 深度文章、四語版本、證據帳本、圖片、Schema、sitemap 與公開檢查全部通過。", "deepDiveTitle": "人形機器人十萬小時瓶頸" },
-        { "domain": "AI 基礎設施職涯", "title": "開啟 Powered Land 賽道", "why": "土地、電網接入、冷卻、設施與算力設計正在匯成高價值管理賽道。", "steps": ["增加永久職涯篩選", "映射 Cloverleaf 及同類公司", "只記錄真實職位，不虛構空缺"], "done": "職涯系統可以篩選 powered-land 與 AI-factory 職位，Cloverleaf 現時標記為沒有公開職缺。" },
-        { "domain": "後期私募市場", "title": "等待軌道算力經濟性", "why": "23億美元估值已獎勵宏大願景，持續軌道算力的經濟證據仍未出現。", "steps": ["追蹤 Starcloud-2 運行證據", "追蹤散熱與抗輻射表現", "要求有效算力小時經濟性和非關聯需求"], "done": "所有營運與客戶門檻都有來源和可測數字之前，公司維持 WATCH。" },
-        { "domain": "公開市場", "title": "用業績檢驗論點", "why": "一週跑輸混合了折現率和融資憂慮，無法單獨裁決需求論點。", "steps": ["記錄資料中心增長和指引", "測量現金轉換與客戶集中度", "檢查新增擔保與融資披露"], "done": "8月26日只填寫四個證據欄位，未披露內容保留 UNKNOWN。" }
+        {
+          "domain": "前沿模型",
+          "title": "計算完整任務成本",
+          "why": "token 便宜之後，長推理和工具調用仍可能令工作流程更昂貴。",
+          "steps": [
+            "凍結同一套 RobinOS 任務",
+            "運行 Sol、Terra、Claude 和 GLM",
+            "按無需修正的成功任務總成本排序"
+          ],
+          "done": "一張帶日期的評分表列出每家模型的成功率、API 總成本和工具權限風險。"
+        },
+        {
+          "domain": "Physical AI",
+          "title": "建立有效工時帳本",
+          "why": "硬體規模很顯眼，自主有效工作和人工干預才是稀缺的商業證據。",
+          "steps": [
+            "區分展示、試點和付費生產",
+            "記錄月度有效工時",
+            "記錄人工干預和續約率"
+          ],
+          "done": "每項部署都有來源、分母、有效工時或 UNKNOWN，以及人工干預率或 UNKNOWN。"
+        },
+        {
+          "domain": "加密資本",
+          "title": "確認 ETF 資金回流",
+          "why": "四個結算交易日確認 BTC 與 ETH 資金回歸，Web3 的廣度測試仍然開放。",
+          "steps": [
+            "保留 ETF 主導回流狀態",
+            "觀察第二個正流入周",
+            "檢驗穩定幣、DeFi 和市場廣度"
+          ],
+          "done": "四項確認指標同時改善才升級，8月21日未完整資料繼續排除。"
+        },
+        {
+          "domain": "穩定幣與支付",
+          "title": "畫清身份與責任",
+          "why": "穩定幣競爭愈來愈取決於誰看見資料，以及合規失敗時誰承擔責任。",
+          "steps": [
+            "畫出用戶到結算銀行的鏈條",
+            "分配身份和交易資料義務",
+            "把未決規則標為 UNKNOWN"
+          ],
+          "done": "一張責任圖明確五個節點的資料收集者、保管者、傳輸者和責任承擔方。"
+        },
+        {
+          "domain": "iamrobin.ai",
+          "title": "發布有效工時論點",
+          "why": "可驗證的自主有效工時把製造規模、模型能力、部署與估值連成一個可投資單位。",
+          "steps": [
+            "定義有效工時和人工干預規則",
+            "分開公司指引與已完成部署",
+            "發布四語全文並歸檔 LinkedIn 衍生稿"
+          ],
+          "done": "canonical 深度文章、四語版本、證據帳本、圖片、Schema、sitemap 與公開檢查全部通過。",
+          "deepDiveTitle": "人形機器人十萬小時瓶頸"
+        },
+        {
+          "domain": "AI 基礎設施職涯",
+          "title": "開啟 Powered Land 賽道",
+          "why": "土地、電網接入、冷卻、設施與算力設計正在匯成高價值管理賽道。",
+          "steps": [
+            "增加永久職涯篩選",
+            "映射 Cloverleaf 及同類公司",
+            "只記錄真實職位，不虛構空缺"
+          ],
+          "done": "職涯系統可以篩選 powered-land 與 AI-factory 職位，Cloverleaf 現時標記為沒有公開職缺。"
+        },
+        {
+          "domain": "後期私募市場",
+          "title": "等待軌道算力經濟性",
+          "why": "23億美元估值已獎勵宏大願景，持續軌道算力的經濟證據仍未出現。",
+          "steps": [
+            "追蹤 Starcloud-2 運行證據",
+            "追蹤散熱與抗輻射表現",
+            "要求有效算力小時經濟性和非關聯需求"
+          ],
+          "done": "所有營運與客戶門檻都有來源和可測數字之前，公司維持 WATCH。"
+        },
+        {
+          "domain": "公開市場",
+          "title": "用業績檢驗論點",
+          "why": "一週跑輸混合了折現率和融資憂慮，無法單獨裁決需求論點。",
+          "steps": [
+            "記錄資料中心增長和指引",
+            "測量現金轉換與客戶集中度",
+            "檢查新增擔保與融資披露"
+          ],
+          "done": "8月26日只填寫四個證據欄位，未披露內容保留 UNKNOWN。"
+        }
       ]
     },
     "ja": {
@@ -167,14 +636,95 @@
       "centralJudgment": "token価格、出荷台数、資金調達額、時価総額は見えやすい。今日の優位は、検証済みの成果、明確なデータ責任、規模を持続的な経済価値へ変える条件を測ることにある。",
       "fieldLine": "8つのシグナル。ひとつの意思決定領域。証拠はつながったまま。",
       "actions": [
-        { "domain": "フロンティアモデル", "title": "完了タスクの価格を測る", "why": "tokenが安くても、推論とツール利用が増えればワークフローは高くなる。", "steps": ["同一のRobinOSタスク群を固定する", "Sol、Terra、Claude、GLMを走らせる", "無修正の成功一件当たり総額で順位付けする"], "done": "日付付きスコアカードに各社の成功率、API総額、ツール権限リスクが並ぶ。" },
-        { "domain": "Physical AI", "title": "有効稼働時間台帳を作る", "why": "ハードウェア規模は見える。自律的な有効作業と人の介入が希少な商用証拠だ。", "steps": ["デモ、実証、有償生産を分ける", "月間有効稼働時間を記録する", "介入率と更新率を記録する"], "done": "全導入に出典、分母、有効稼働時間またはUNKNOWN、介入率またはUNKNOWNが付く。" },
-        { "domain": "暗号資産への資本", "title": "ETF再流入を確認する", "why": "4決済日でBTCとETHへの資金回帰は確認できた。Web3全体の広がりは未確認だ。", "steps": ["ETF主導再流入の状態を維持する", "2週目の純流入を観察する", "ステーブルコイン、DeFi、市場の広がりを検証する"], "done": "4指標が同時に改善した時だけ昇格し、未確定の8月21日データは除外される。" },
-        { "domain": "ステーブルコインと決済", "title": "本人確認と責任を描く", "why": "競争力は、誰がデータを見て、違反時に誰が責任を負うかで決まり始めている。", "steps": ["利用者から決済銀行までを描く", "本人・取引データの義務を割り当てる", "未確定の境界をUNKNOWNにする"], "done": "5つのノードで収集者、保管者、送信者、責任主体が明示される。" },
-        { "domain": "iamrobin.ai", "title": "有効稼働時間の論点を公開", "why": "検証済みの自律的有効稼働時間は、製造、モデル、導入、評価を一つの投資単位へ結ぶ。", "steps": ["有効稼働時間と介入ルールを定義する", "会社ガイダンスと実績を分離する", "4言語版を公開しLinkedIn派生稿を保存する"], "done": "正典記事、4言語、証拠台帳、画像、Schema、sitemap、公開検証が全て通る。", "deepDiveTitle": "ヒューマノイドの10万時間ボトルネック" },
-        { "domain": "AIインフラのキャリア", "title": "Powered Landレーンを開く", "why": "用地、系統接続、冷却、施設、計算設計が高価値の経営領域へ収束している。", "steps": ["恒久キャリアフィルターを加える", "Cloverleafと同業を地図化する", "実在求人だけを記録する"], "done": "powered-landとAI-factory職を抽出でき、Cloverleafは公開求人なしと表示される。" },
-        { "domain": "レイトステージ未公開市場", "title": "軌道計算の経済性を待つ", "why": "23億ドルの評価は構想を先に織り込んだ。継続的な軌道計算の経済証拠はまだない。", "steps": ["Starcloud-2の運用証拠を追う", "熱と放射線の性能を追う", "有効compute-hour経済性と非関連需要を求める"], "done": "全ての運用・顧客ゲートが出典付きで測定可能になるまでWATCHを維持する。" },
-        { "domain": "公開株式", "title": "決算を検証点にする", "why": "1週間の劣後には割引率と金融懸念が混在し、需要仮説を単独で裁けない。", "steps": ["データセンター成長とガイダンスを記録する", "キャッシュ変換と集中度を測る", "新規保証・融資開示を探す"], "done": "8月26日の確認は4つの証拠欄だけを埋め、未開示はUNKNOWNのまま残す。" }
+        {
+          "domain": "フロンティアモデル",
+          "title": "完了タスクの価格を測る",
+          "why": "tokenが安くても、推論とツール利用が増えればワークフローは高くなる。",
+          "steps": [
+            "同一のRobinOSタスク群を固定する",
+            "Sol、Terra、Claude、GLMを走らせる",
+            "無修正の成功一件当たり総額で順位付けする"
+          ],
+          "done": "日付付きスコアカードに各社の成功率、API総額、ツール権限リスクが並ぶ。"
+        },
+        {
+          "domain": "Physical AI",
+          "title": "有効稼働時間台帳を作る",
+          "why": "ハードウェア規模は見える。自律的な有効作業と人の介入が希少な商用証拠だ。",
+          "steps": [
+            "デモ、実証、有償生産を分ける",
+            "月間有効稼働時間を記録する",
+            "介入率と更新率を記録する"
+          ],
+          "done": "全導入に出典、分母、有効稼働時間またはUNKNOWN、介入率またはUNKNOWNが付く。"
+        },
+        {
+          "domain": "暗号資産への資本",
+          "title": "ETF再流入を確認する",
+          "why": "4決済日でBTCとETHへの資金回帰は確認できた。Web3全体の広がりは未確認だ。",
+          "steps": [
+            "ETF主導再流入の状態を維持する",
+            "2週目の純流入を観察する",
+            "ステーブルコイン、DeFi、市場の広がりを検証する"
+          ],
+          "done": "4指標が同時に改善した時だけ昇格し、未確定の8月21日データは除外される。"
+        },
+        {
+          "domain": "ステーブルコインと決済",
+          "title": "本人確認と責任を描く",
+          "why": "競争力は、誰がデータを見て、違反時に誰が責任を負うかで決まり始めている。",
+          "steps": [
+            "利用者から決済銀行までを描く",
+            "本人・取引データの義務を割り当てる",
+            "未確定の境界をUNKNOWNにする"
+          ],
+          "done": "5つのノードで収集者、保管者、送信者、責任主体が明示される。"
+        },
+        {
+          "domain": "iamrobin.ai",
+          "title": "有効稼働時間の論点を公開",
+          "why": "検証済みの自律的有効稼働時間は、製造、モデル、導入、評価を一つの投資単位へ結ぶ。",
+          "steps": [
+            "有効稼働時間と介入ルールを定義する",
+            "会社ガイダンスと実績を分離する",
+            "4言語版を公開しLinkedIn派生稿を保存する"
+          ],
+          "done": "正典記事、4言語、証拠台帳、画像、Schema、sitemap、公開検証が全て通る。",
+          "deepDiveTitle": "ヒューマノイドの10万時間ボトルネック"
+        },
+        {
+          "domain": "AIインフラのキャリア",
+          "title": "Powered Landレーンを開く",
+          "why": "用地、系統接続、冷却、施設、計算設計が高価値の経営領域へ収束している。",
+          "steps": [
+            "恒久キャリアフィルターを加える",
+            "Cloverleafと同業を地図化する",
+            "実在求人だけを記録する"
+          ],
+          "done": "powered-landとAI-factory職を抽出でき、Cloverleafは公開求人なしと表示される。"
+        },
+        {
+          "domain": "レイトステージ未公開市場",
+          "title": "軌道計算の経済性を待つ",
+          "why": "23億ドルの評価は構想を先に織り込んだ。継続的な軌道計算の経済証拠はまだない。",
+          "steps": [
+            "Starcloud-2の運用証拠を追う",
+            "熱と放射線の性能を追う",
+            "有効compute-hour経済性と非関連需要を求める"
+          ],
+          "done": "全ての運用・顧客ゲートが出典付きで測定可能になるまでWATCHを維持する。"
+        },
+        {
+          "domain": "公開株式",
+          "title": "決算を検証点にする",
+          "why": "1週間の劣後には割引率と金融懸念が混在し、需要仮説を単独で裁けない。",
+          "steps": [
+            "データセンター成長とガイダンスを記録する",
+            "キャッシュ変換と集中度を測る",
+            "新規保証・融資開示を探す"
+          ],
+          "done": "8月26日の確認は4つの証拠欄だけを埋め、未開示はUNKNOWNのまま残す。"
+        }
       ]
     }
   }

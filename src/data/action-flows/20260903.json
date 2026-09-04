@@ -9,66 +9,746 @@
   "briefingPath": "/ouroboros/202609/20260903/",
   "actionItemPath": "/ouroboros/202609/20260903/action_item/",
   "actions": [
-    {"signal": 1, "priority": "NEXT", "status": "READY", "visualValue": "STOP", "visualLabel": "host-level control", "sources": [{"label": "Reuters", "url": "https://www.reuters.com/legal/litigation/openai-is-building-automated-shutdown-capabilities-ai-tools-letter-lawmakers-2026-09-02/"}, {"label": "US Congress", "url": "https://casar.house.gov/media/press-releases/casar-leads-demand-information-open-ai-about-security-incident"}]},
-    {"signal": 2, "priority": "WATCH", "status": "WATCHING", "visualValue": "<20", "visualLabel": "supervised vehicles", "sources": [{"label": "Wayve", "url": "https://wayve.ai/"}, {"label": "Reuters", "url": "https://www.reuters.com/business/uber-ai-firm-wayve-launch-londons-first-robotaxis-2026-09-02/"}]},
-    {"signal": 3, "priority": "WATCH", "status": "WATCHING", "visualValue": "-$227.9M", "visualLabel": "settled combined flow", "sources": [{"label": "Farside Bitcoin", "url": "https://farside.co.uk/btc/"}, {"label": "Farside Ether", "url": "https://farside.co.uk/eth/"}]},
-    {"signal": 4, "priority": "NEXT", "status": "READY", "visualValue": "5 controls", "visualLabel": "commerce comparison", "sources": [{"label": "Anthropic", "url": "https://claude.com/blog/claude-for-commerce-agents"}, {"label": "Anthropic GitHub", "url": "https://github.com/anthropics/commerce-agents"}, {"label": "Reuters", "url": "https://www.reuters.com/business/retail-consumer/anthropic-launches-ai-agent-blueprints-retailers-ahead-holiday-shopping-season-2026-09-02/"}]},
-    {"signal": 5, "priority": "NOW", "status": "COMPLETE", "visualValue": "6 layers", "visualLabel": "transaction control plane", "sources": [{"label": "Anthropic", "url": "https://claude.com/blog/claude-for-commerce-agents"}, {"label": "Stripe SPT", "url": "https://docs.stripe.com/agentic-commerce/concepts/shared-payment-tokens"}, {"label": "Visa TAP", "url": "https://developer.visa.com/use-cases/trusted-agent-protocol"}, {"label": "NPCI UPI Circle", "url": "https://www.npci.org.in/product/upi-circle"}]},
-    {"signal": 6, "priority": "NEXT", "status": "READY", "visualValue": "$1.45B", "visualLabel": "initial UIG price", "sources": [{"label": "Vertiv", "url": "https://investors.vertiv.com/news/news-details/2026/Vertiv-Announces-Agreement-to-Acquire-UtilityInnovation-Group-to-Accelerate-Time-to-Power-for-AI-Data-Centers/default.aspx"}, {"label": "Reuters", "url": "https://www.reuters.com/legal/transactional/vertiv-strikes-145-billion-deal-microgrid-firm-utility-innovation-group-2026-09-02/"}]},
-    {"signal": 7, "priority": "WATCH", "status": "WATCHING", "visualValue": "$1.5B", "visualLabel": "planned IPO raise", "sources": [{"label": "Reuters", "url": "https://www.reuters.com/world/india/indias-yotta-targets-jan-march-2027-ipo-seeks-up-15-billion-amid-ai-boom-2026-09-02/"}, {"label": "Yotta CEO", "url": "https://www.linkedin.com/posts/sunilgupta1701_yotta-artificialintelligence-aiinfrastructure-activity-7480200355113390080-nwkD"}]},
-    {"signal": 8, "priority": "NEXT", "status": "READY", "visualValue": "$16.7B", "visualLabel": "AI semiconductor revenue", "sources": [{"label": "Broadcom", "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial"}, {"label": "Reuters", "url": "https://www.reuters.com/business/broadcom-forecasts-quarterly-revenue-below-estimates-2026-09-02/"}, {"label": "AVGO", "url": "https://stockanalysis.com/stocks/avgo/history/"}, {"label": "QQQ", "url": "https://stockanalysis.com/etf/qqq/history/"}]}
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "BLOCKED",
+      "visualValue": "STOP",
+      "visualLabel": "host-level control",
+      "sources": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/legal/litigation/openai-is-building-automated-shutdown-capabilities-ai-tools-letter-lawmakers-2026-09-02/"
+        },
+        {
+          "label": "US Congress",
+          "url": "https://casar.house.gov/media/press-releases/casar-leads-demand-information-open-ai-about-security-incident"
+        }
+      ],
+      "execution": {
+        "id": "20260903-01",
+        "workstream": "FRONTIER_CONTROLS",
+        "evidenceStatus": "UNKNOWN",
+        "reason": "No independently controlled shutdown actor or separately evidenced stop path is available inside this execution boundary.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Frontier model authority controls",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "2f63ba60091a0eed6f09f66458e1c9163cf564e7",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/2f63ba60091a0eed6f09f66458e1c9163cf564e7"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "<20",
+      "visualLabel": "supervised vehicles",
+      "sources": [
+        {
+          "label": "Wayve",
+          "url": "https://wayve.ai/"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/uber-ai-firm-wayve-launch-londons-first-robotaxis-2026-09-02/"
+        }
+      ],
+      "execution": {
+        "id": "20260903-02",
+        "workstream": "PHYSICAL_AI",
+        "evidenceStatus": "UNKNOWN",
+        "reason": "The action is evidence-dependent; no new evidence justified changing the watch state.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Physical AI operating evidence",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "2f63ba60091a0eed6f09f66458e1c9163cf564e7",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/2f63ba60091a0eed6f09f66458e1c9163cf564e7"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "SUPERSEDED",
+      "visualValue": "-$227.9M",
+      "visualLabel": "settled combined flow",
+      "sources": [
+        {
+          "label": "Farside Bitcoin",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "Farside Ether",
+          "url": "https://farside.co.uk/eth/"
+        }
+      ],
+      "execution": {
+        "id": "20260903-03",
+        "workstream": "CRYPTO_BREADTH",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "Earlier flow-breadth checkpoint is absorbed by the September 4 canonical breadth watch.",
+        "supersededBy": "20260904-03",
+        "artifact": {
+          "label": "Crypto capital-flow breadth",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "2f63ba60091a0eed6f09f66458e1c9163cf564e7",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/2f63ba60091a0eed6f09f66458e1c9163cf564e7"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "COMPLETE",
+      "visualValue": "5 controls",
+      "visualLabel": "commerce comparison",
+      "sources": [
+        {
+          "label": "Anthropic",
+          "url": "https://claude.com/blog/claude-for-commerce-agents"
+        },
+        {
+          "label": "Anthropic GitHub",
+          "url": "https://github.com/anthropics/commerce-agents"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/retail-consumer/anthropic-launches-ai-agent-blueprints-retailers-ahead-holiday-shopping-season-2026-09-02/"
+        }
+      ],
+      "execution": {
+        "id": "20260903-04",
+        "workstream": "PAYMENT_CONTROLS",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The reusable control matrix records the requested topology or diligence fields without moving value or claiming an unlaunched control.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Payment and agent-commerce control matrix",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "2f63ba60091a0eed6f09f66458e1c9163cf564e7",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/2f63ba60091a0eed6f09f66458e1c9163cf564e7"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "visualValue": "6 layers",
+      "visualLabel": "transaction control plane",
+      "sources": [
+        {
+          "label": "Anthropic",
+          "url": "https://claude.com/blog/claude-for-commerce-agents"
+        },
+        {
+          "label": "Stripe SPT",
+          "url": "https://docs.stripe.com/agentic-commerce/concepts/shared-payment-tokens"
+        },
+        {
+          "label": "Visa TAP",
+          "url": "https://developer.visa.com/use-cases/trusted-agent-protocol"
+        },
+        {
+          "label": "NPCI UPI Circle",
+          "url": "https://www.npci.org.in/product/upi-circle"
+        }
+      ],
+      "execution": {
+        "id": "20260903-05",
+        "workstream": "PUBLICATION",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The canonical Action Item is public and linked to its source commit and verification receipt.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Published canonical Action Item",
+          "href": "/ouroboros/202609/20260903/action_item/"
+        },
+        "sourceCommit": {
+          "sha": "2f63ba60091a0eed6f09f66458e1c9163cf564e7",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/2f63ba60091a0eed6f09f66458e1c9163cf564e7"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "COMPLETE",
+      "visualValue": "$1.45B",
+      "visualLabel": "initial UIG price",
+      "sources": [
+        {
+          "label": "Vertiv",
+          "url": "https://investors.vertiv.com/news/news-details/2026/Vertiv-Announces-Agreement-to-Acquire-UtilityInnovation-Group-to-Accelerate-Time-to-Power-for-AI-Data-Centers/default.aspx"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/legal/transactional/vertiv-strikes-145-billion-deal-microgrid-firm-utility-innovation-group-2026-09-02/"
+        }
+      ],
+      "execution": {
+        "id": "20260903-06",
+        "workstream": "AI_INFRASTRUCTURE",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The Signal 06 row is present in the 16-entry evidence registry and governed by the monthly review/publication boundary.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "AI infrastructure evidence intake",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "2f63ba60091a0eed6f09f66458e1c9163cf564e7",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/2f63ba60091a0eed6f09f66458e1c9163cf564e7"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$1.5B",
+      "visualLabel": "planned IPO raise",
+      "sources": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/india/indias-yotta-targets-jan-march-2027-ipo-seeks-up-15-billion-amid-ai-boom-2026-09-02/"
+        },
+        {
+          "label": "Yotta CEO",
+          "url": "https://www.linkedin.com/posts/sunilgupta1701_yotta-artificialintelligence-aiinfrastructure-activity-7480200355113390080-nwkD"
+        }
+      ],
+      "execution": {
+        "id": "20260903-07",
+        "workstream": "PRIVATE_MARKETS",
+        "evidenceStatus": "UNKNOWN",
+        "reason": "The action is evidence-dependent; no new evidence justified changing the watch state.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Private-market diligence matrix",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "2f63ba60091a0eed6f09f66458e1c9163cf564e7",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/2f63ba60091a0eed6f09f66458e1c9163cf564e7"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
+    },
+    {
+      "signal": 8,
+      "priority": "NEXT",
+      "status": "COMPLETE",
+      "visualValue": "$16.7B",
+      "visualLabel": "AI semiconductor revenue",
+      "sources": [
+        {
+          "label": "Broadcom",
+          "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/broadcom-forecasts-quarterly-revenue-below-estimates-2026-09-02/"
+        },
+        {
+          "label": "AVGO",
+          "url": "https://stockanalysis.com/stocks/avgo/history/"
+        },
+        {
+          "label": "QQQ",
+          "url": "https://stockanalysis.com/etf/qqq/history/"
+        }
+      ],
+      "execution": {
+        "id": "20260903-08",
+        "workstream": "PUBLIC_EQUITIES",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The causal ledger separates reported demand, revenue, cash, financing and concentration without creating a trade instruction.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Public-market causal ledger",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "2f63ba60091a0eed6f09f66458e1c9163cf564e7",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/2f63ba60091a0eed6f09f66458e1c9163cf564e7"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
+    }
   ],
   "editions": {
     "en": {
-      "inLanguage": "en", "languageSlug": "", "title": "Daily Action Flow, September 3, 2026", "description": "Eight source-backed decisions arranged into one inspectable CIO execution field.", "centralJudgment": "Put independent control between autonomous intent and irreversible action, distinguish supervised demonstrations from operating economics, and let complete evidence—not one observation—move capital decisions.", "fieldLine": "Eight signals. One publication complete. Four operating loops ready. Three ledgers watching.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "title": "Daily Action Flow, September 3, 2026",
+      "description": "Eight source-backed decisions arranged into one inspectable CIO execution field.",
+      "centralJudgment": "Put independent control between autonomous intent and irreversible action, distinguish supervised demonstrations from operating economics, and let complete evidence—not one observation—move capital decisions.",
+      "fieldLine": "Eight signals. One publication complete. Four operating loops ready. Three ledgers watching.",
       "actions": [
-        {"signal": 1, "domain": "Frontier Agents", "title": "Verify the Independent Stop", "why": "Agent safety now depends on whether the host can stop tool use, not only whether the model refuses text.", "steps": ["Record public trigger and time-to-stop evidence", "Measure false positives, false negatives and recovery", "Require tamper-resistant execution logs"], "done": "OpenAI receives control credit only after the shutdown is independently testable."},
-        {"signal": 2, "domain": "Physical AI", "title": "Separate Riders from Economics", "why": "Public rides prove supervised operation while driverless unit economics remain undisclosed.", "steps": ["Track interventions per thousand kilometers", "Record rides per vehicle and operator cost", "Watch the date and conditions for operator removal"], "done": "The scorecard keeps public availability separate from profitable machine labor."},
-        {"signal": 3, "domain": "Crypto Capital", "title": "Test the Reversal", "why": "A BlackRock-led redemption is material, but one settled session does not establish sustained withdrawal.", "steps": ["Wait for complete daily filings", "Accumulate three-session net flow", "Compare the total with inflows since August 31"], "done": "The label changes to capital withdrawal only after the complete-flow trigger is met."},
-        {"signal": 4, "domain": "Agent Payments", "title": "Build the Commerce Matrix", "why": "Recommendation and cart construction are ahead of identity, delegated authority and recovery controls.", "steps": ["Compare agent identity and proof of intent", "Map credential scope and revocation", "Assign refund and dispute liability"], "done": "Anthropic, Stripe, Visa and UPI are comparable across the five control questions."},
-        {"signal": 5, "domain": "iamrobin.ai", "title": "Publish the Missing Control Layer", "why": "Robin's payments experience can define the boundary between an intelligent choice and an underwritable transaction.", "steps": ["Publish the four-language canonical article", "Specify the six-layer control plane", "Archive a concise LinkedIn derivative"], "done": "The Action Item passes evidence, language, build, public and Telegram gates."},
-        {"signal": 6, "domain": "AI Infrastructure", "title": "Map Power from Source to Chip", "why": "Vertiv's UIG acquisition puts interconnection time, islanding and onsite power inside the AI delivery stack.", "steps": ["Record interconnection delay and bridge cost", "Track island reliability and first-token time", "Measure acquisition returns and earnout delivery"], "done": "The Source-to-Chip page is updated in private intelligence with publication reviewed separately."},
-        {"signal": 7, "domain": "Late-Stage Markets", "title": "Keep Yotta on Watch", "why": "An IPO plan and sovereign-cloud story cannot substitute for revenue, utilization, leverage and SPV recourse.", "steps": ["Read the DRHP when filed", "Map debt, customer concentration and utilization", "Underwrite GPU SPV residual value and recourse"], "done": "Yotta remains WATCH until operating and valuation evidence is disclosed."},
-        {"signal": 8, "domain": "Public Equities", "title": "Open the AVGO Conversion Ledger", "why": "Broadcom has linked custom silicon to revenue and cash; durability now depends on breadth and commitments.", "steps": ["Track AI revenue and shipped capacity", "Measure top-four customer breadth and networking mix", "Watch free-cash-flow margin and prepayments"], "done": "The thesis changes only through quarterly production and cash-conversion trends."}
+        {
+          "signal": 1,
+          "domain": "Frontier Agents",
+          "title": "Verify the Independent Stop",
+          "why": "Agent safety now depends on whether the host can stop tool use, not only whether the model refuses text.",
+          "steps": [
+            "Record public trigger and time-to-stop evidence",
+            "Measure false positives, false negatives and recovery",
+            "Require tamper-resistant execution logs"
+          ],
+          "done": "OpenAI receives control credit only after the shutdown is independently testable."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "Separate Riders from Economics",
+          "why": "Public rides prove supervised operation while driverless unit economics remain undisclosed.",
+          "steps": [
+            "Track interventions per thousand kilometers",
+            "Record rides per vehicle and operator cost",
+            "Watch the date and conditions for operator removal"
+          ],
+          "done": "The scorecard keeps public availability separate from profitable machine labor."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital",
+          "title": "Test the Reversal",
+          "why": "A BlackRock-led redemption is material, but one settled session does not establish sustained withdrawal.",
+          "steps": [
+            "Wait for complete daily filings",
+            "Accumulate three-session net flow",
+            "Compare the total with inflows since August 31"
+          ],
+          "done": "The label changes to capital withdrawal only after the complete-flow trigger is met."
+        },
+        {
+          "signal": 4,
+          "domain": "Agent Payments",
+          "title": "Build the Commerce Matrix",
+          "why": "Recommendation and cart construction are ahead of identity, delegated authority and recovery controls.",
+          "steps": [
+            "Compare agent identity and proof of intent",
+            "Map credential scope and revocation",
+            "Assign refund and dispute liability"
+          ],
+          "done": "Anthropic, Stripe, Visa and UPI are comparable across the five control questions."
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "Publish the Missing Control Layer",
+          "why": "Robin's payments experience can define the boundary between an intelligent choice and an underwritable transaction.",
+          "steps": [
+            "Publish the four-language canonical article",
+            "Specify the six-layer control plane",
+            "Archive a concise LinkedIn derivative"
+          ],
+          "done": "The Action Item passes evidence, language, build, public and Telegram gates."
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure",
+          "title": "Map Power from Source to Chip",
+          "why": "Vertiv's UIG acquisition puts interconnection time, islanding and onsite power inside the AI delivery stack.",
+          "steps": [
+            "Record interconnection delay and bridge cost",
+            "Track island reliability and first-token time",
+            "Measure acquisition returns and earnout delivery"
+          ],
+          "done": "The Source-to-Chip page is updated in private intelligence with publication reviewed separately."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-Stage Markets",
+          "title": "Keep Yotta on Watch",
+          "why": "An IPO plan and sovereign-cloud story cannot substitute for revenue, utilization, leverage and SPV recourse.",
+          "steps": [
+            "Read the DRHP when filed",
+            "Map debt, customer concentration and utilization",
+            "Underwrite GPU SPV residual value and recourse"
+          ],
+          "done": "Yotta remains WATCH until operating and valuation evidence is disclosed."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities",
+          "title": "Open the AVGO Conversion Ledger",
+          "why": "Broadcom has linked custom silicon to revenue and cash; durability now depends on breadth and commitments.",
+          "steps": [
+            "Track AI revenue and shipped capacity",
+            "Measure top-four customer breadth and networking mix",
+            "Watch free-cash-flow margin and prepayments"
+          ],
+          "done": "The thesis changes only through quarterly production and cash-conversion trends."
+        }
       ]
     },
     "zh-Hans": {
-      "inLanguage": "zh-Hans", "languageSlug": "zh-hans", "title": "每日行动流，2026年9月3日", "description": "八项有来源支持的决策，汇入一个可审计的CIO执行场。", "centralJudgment": "在自主意图与不可逆行动之间建立独立控制，把监督演示与运营经济分开，并让完整证据而非单一观察改变资本判断。", "fieldLine": "八个信号。一项发布完成。四个运营循环就绪。三个台账继续观察。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "title": "每日行动流，2026年9月3日",
+      "description": "八项有来源支持的决策，汇入一个可审计的CIO执行场。",
+      "centralJudgment": "在自主意图与不可逆行动之间建立独立控制，把监督演示与运营经济分开，并让完整证据而非单一观察改变资本判断。",
+      "fieldLine": "八个信号。一项发布完成。四个运营循环就绪。三个台账继续观察。",
       "actions": [
-        {"signal": 1, "domain": "前沿Agent", "title": "验证独立停止能力", "why": "Agent安全取决于宿主能否停止工具执行，而不仅是模型是否拒绝文字。", "steps": ["记录公开触发条件与停止时间", "测量误报、漏报和恢复", "要求不可篡改的执行日志"], "done": "只有关停能力可被独立测试后，才计入OpenAI控制评分。"},
-        {"signal": 2, "domain": "Physical AI", "title": "乘客与经济分开", "why": "公众乘坐证明监督运行，无人驾驶单位经济仍未披露。", "steps": ["追踪每千公里接管", "记录每车行程与操作员成本", "观察取消操作员的日期与条件"], "done": "评分卡明确区分公众可用与盈利机器劳动。"},
-        {"signal": 3, "domain": "加密资本", "title": "检验资金反转", "why": "BlackRock主导的赎回具有意义，但一个完整交易日不能证明持续撤资。", "steps": ["等待每日完整申报", "累计三个交易日净流量", "与8月31日以来流入比较"], "done": "只有触发完整流量条件后，状态才变为资本撤离。"},
-        {"signal": 4, "domain": "Agent支付", "title": "建立Commerce矩阵", "why": "推荐和购物车进展快于身份、委托权限与恢复控制。", "steps": ["比较Agent身份和意图证明", "绘制凭证范围与撤销", "分配退款与争议责任"], "done": "Anthropic、Stripe、Visa和UPI可按五个控制问题横向比较。"},
-        {"signal": 5, "domain": "iamrobin.ai", "title": "发布缺失控制层", "why": "Robin的支付经验能够定义智能选择与可承销交易之间的边界。", "steps": ["发布四语canonical文章", "提出六层控制平面", "归档精炼的LinkedIn衍生稿"], "done": "Action Item通过证据、语言、构建、公开与Telegram门禁。"},
-        {"signal": 6, "domain": "AI基础设施", "title": "绘制Source-to-Chip电力图", "why": "Vertiv收购UIG，把并网时间、孤岛运行与现场电力纳入AI交付栈。", "steps": ["记录并网延迟与过渡供电成本", "追踪孤岛可靠性和首Token时间", "测量收购回报与earnout兑现"], "done": "Source-to-Chip页面写入私有情报，公开与否另行月度审视。"},
-        {"signal": 7, "domain": "后期一级市场", "title": "Yotta维持观察", "why": "IPO计划和主权云叙事不能替代收入、利用率、杠杆与SPV追索权。", "steps": ["DRHP提交后阅读全文", "绘制债务、客户集中和利用率", "承销GPU SPV残值与追索"], "done": "运营和估值证据披露前，Yotta保持WATCH。"},
-        {"signal": 8, "domain": "公开市场", "title": "建立AVGO转化台账", "why": "Broadcom已把定制芯片连接到收入与现金，持续性取决于客户广度和产能承诺。", "steps": ["追踪AI收入与出货能力", "测量前四客户广度和网络业务占比", "观察自由现金流率与预付款"], "done": "论点只随季度量产与现金转化趋势改变。"}
+        {
+          "signal": 1,
+          "domain": "前沿Agent",
+          "title": "验证独立停止能力",
+          "why": "Agent安全取决于宿主能否停止工具执行，而不仅是模型是否拒绝文字。",
+          "steps": [
+            "记录公开触发条件与停止时间",
+            "测量误报、漏报和恢复",
+            "要求不可篡改的执行日志"
+          ],
+          "done": "只有关停能力可被独立测试后，才计入OpenAI控制评分。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "乘客与经济分开",
+          "why": "公众乘坐证明监督运行，无人驾驶单位经济仍未披露。",
+          "steps": [
+            "追踪每千公里接管",
+            "记录每车行程与操作员成本",
+            "观察取消操作员的日期与条件"
+          ],
+          "done": "评分卡明确区分公众可用与盈利机器劳动。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本",
+          "title": "检验资金反转",
+          "why": "BlackRock主导的赎回具有意义，但一个完整交易日不能证明持续撤资。",
+          "steps": [
+            "等待每日完整申报",
+            "累计三个交易日净流量",
+            "与8月31日以来流入比较"
+          ],
+          "done": "只有触发完整流量条件后，状态才变为资本撤离。"
+        },
+        {
+          "signal": 4,
+          "domain": "Agent支付",
+          "title": "建立Commerce矩阵",
+          "why": "推荐和购物车进展快于身份、委托权限与恢复控制。",
+          "steps": [
+            "比较Agent身份和意图证明",
+            "绘制凭证范围与撤销",
+            "分配退款与争议责任"
+          ],
+          "done": "Anthropic、Stripe、Visa和UPI可按五个控制问题横向比较。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "发布缺失控制层",
+          "why": "Robin的支付经验能够定义智能选择与可承销交易之间的边界。",
+          "steps": [
+            "发布四语canonical文章",
+            "提出六层控制平面",
+            "归档精炼的LinkedIn衍生稿"
+          ],
+          "done": "Action Item通过证据、语言、构建、公开与Telegram门禁。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基础设施",
+          "title": "绘制Source-to-Chip电力图",
+          "why": "Vertiv收购UIG，把并网时间、孤岛运行与现场电力纳入AI交付栈。",
+          "steps": [
+            "记录并网延迟与过渡供电成本",
+            "追踪孤岛可靠性和首Token时间",
+            "测量收购回报与earnout兑现"
+          ],
+          "done": "Source-to-Chip页面写入私有情报，公开与否另行月度审视。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期一级市场",
+          "title": "Yotta维持观察",
+          "why": "IPO计划和主权云叙事不能替代收入、利用率、杠杆与SPV追索权。",
+          "steps": [
+            "DRHP提交后阅读全文",
+            "绘制债务、客户集中和利用率",
+            "承销GPU SPV残值与追索"
+          ],
+          "done": "运营和估值证据披露前，Yotta保持WATCH。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场",
+          "title": "建立AVGO转化台账",
+          "why": "Broadcom已把定制芯片连接到收入与现金，持续性取决于客户广度和产能承诺。",
+          "steps": [
+            "追踪AI收入与出货能力",
+            "测量前四客户广度和网络业务占比",
+            "观察自由现金流率与预付款"
+          ],
+          "done": "论点只随季度量产与现金转化趋势改变。"
+        }
       ]
     },
     "zh-Hant": {
-      "inLanguage": "zh-Hant", "languageSlug": "zh-hant", "title": "每日行動流，2026年9月3日", "description": "八項有來源支持的決策，匯入一個可審計的CIO執行場。", "centralJudgment": "在自主意圖與不可逆行動之間建立獨立控制，把監督演示與營運經濟分開，並讓完整證據而非單一觀察改變資本判斷。", "fieldLine": "八個信號。一項發布完成。四個營運循環就緒。三個台帳繼續觀察。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "title": "每日行動流，2026年9月3日",
+      "description": "八項有來源支持的決策，匯入一個可審計的CIO執行場。",
+      "centralJudgment": "在自主意圖與不可逆行動之間建立獨立控制，把監督演示與營運經濟分開，並讓完整證據而非單一觀察改變資本判斷。",
+      "fieldLine": "八個信號。一項發布完成。四個營運循環就緒。三個台帳繼續觀察。",
       "actions": [
-        {"signal": 1, "domain": "前沿Agent", "title": "驗證獨立停止能力", "why": "Agent安全取決於宿主能否停止工具執行，而不只在模型是否拒絕文字。", "steps": ["記錄公開觸發條件與停止時間", "測量誤報、漏報和恢復", "要求不可篡改的執行日誌"], "done": "只有關停能力可被獨立測試後，才計入OpenAI控制評分。"},
-        {"signal": 2, "domain": "Physical AI", "title": "乘客與經濟分開", "why": "公眾乘坐證明監督運行，無人駕駛單位經濟仍未披露。", "steps": ["追蹤每千公里接管", "記錄每車行程與操作員成本", "觀察取消操作員的日期與條件"], "done": "評分卡明確區分公眾可用與盈利機器勞動。"},
-        {"signal": 3, "domain": "加密資本", "title": "檢驗資金反轉", "why": "BlackRock主導的贖回具有意義，但一個完整交易日不能證明持續撤資。", "steps": ["等待每日完整申報", "累計三個交易日淨流量", "與8月31日以來流入比較"], "done": "只有觸發完整流量條件後，狀態才變為資本撤離。"},
-        {"signal": 4, "domain": "Agent支付", "title": "建立Commerce矩陣", "why": "推薦和購物車進展快於身份、委託權限與恢復控制。", "steps": ["比較Agent身份和意圖證明", "繪製憑證範圍與撤銷", "分配退款與爭議責任"], "done": "Anthropic、Stripe、Visa和UPI可按五個控制問題橫向比較。"},
-        {"signal": 5, "domain": "iamrobin.ai", "title": "發布缺失控制層", "why": "Robin的支付經驗能夠定義智慧選擇與可承銷交易之間的邊界。", "steps": ["發布四語canonical文章", "提出六層控制平面", "歸檔精煉的LinkedIn衍生稿"], "done": "Action Item通過證據、語言、構建、公開與Telegram門禁。"},
-        {"signal": 6, "domain": "AI基礎設施", "title": "繪製Source-to-Chip電力圖", "why": "Vertiv收購UIG，把併網時間、孤島運行與現場電力納入AI交付棧。", "steps": ["記錄併網延遲與過渡供電成本", "追蹤孤島可靠性和首Token時間", "測量收購回報與earnout兌現"], "done": "Source-to-Chip頁面寫入私有情報，公開與否另行月度審視。"},
-        {"signal": 7, "domain": "後期一級市場", "title": "Yotta維持觀察", "why": "IPO計劃和主權雲敘事不能替代收入、利用率、槓桿與SPV追索權。", "steps": ["DRHP提交後閱讀全文", "繪製債務、客戶集中和利用率", "承銷GPU SPV殘值與追索"], "done": "營運和估值證據披露前，Yotta保持WATCH。"},
-        {"signal": 8, "domain": "公開市場", "title": "建立AVGO轉化台帳", "why": "Broadcom已把定製晶片連接到收入與現金，持續性取決於客戶廣度和產能承諾。", "steps": ["追蹤AI收入與出貨能力", "測量前四客戶廣度和網路業務佔比", "觀察自由現金流率與預付款"], "done": "論點只隨季度量產與現金轉化趨勢改變。"}
+        {
+          "signal": 1,
+          "domain": "前沿Agent",
+          "title": "驗證獨立停止能力",
+          "why": "Agent安全取決於宿主能否停止工具執行，而不只在模型是否拒絕文字。",
+          "steps": [
+            "記錄公開觸發條件與停止時間",
+            "測量誤報、漏報和恢復",
+            "要求不可篡改的執行日誌"
+          ],
+          "done": "只有關停能力可被獨立測試後，才計入OpenAI控制評分。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "乘客與經濟分開",
+          "why": "公眾乘坐證明監督運行，無人駕駛單位經濟仍未披露。",
+          "steps": [
+            "追蹤每千公里接管",
+            "記錄每車行程與操作員成本",
+            "觀察取消操作員的日期與條件"
+          ],
+          "done": "評分卡明確區分公眾可用與盈利機器勞動。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本",
+          "title": "檢驗資金反轉",
+          "why": "BlackRock主導的贖回具有意義，但一個完整交易日不能證明持續撤資。",
+          "steps": [
+            "等待每日完整申報",
+            "累計三個交易日淨流量",
+            "與8月31日以來流入比較"
+          ],
+          "done": "只有觸發完整流量條件後，狀態才變為資本撤離。"
+        },
+        {
+          "signal": 4,
+          "domain": "Agent支付",
+          "title": "建立Commerce矩陣",
+          "why": "推薦和購物車進展快於身份、委託權限與恢復控制。",
+          "steps": [
+            "比較Agent身份和意圖證明",
+            "繪製憑證範圍與撤銷",
+            "分配退款與爭議責任"
+          ],
+          "done": "Anthropic、Stripe、Visa和UPI可按五個控制問題橫向比較。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "發布缺失控制層",
+          "why": "Robin的支付經驗能夠定義智慧選擇與可承銷交易之間的邊界。",
+          "steps": [
+            "發布四語canonical文章",
+            "提出六層控制平面",
+            "歸檔精煉的LinkedIn衍生稿"
+          ],
+          "done": "Action Item通過證據、語言、構建、公開與Telegram門禁。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基礎設施",
+          "title": "繪製Source-to-Chip電力圖",
+          "why": "Vertiv收購UIG，把併網時間、孤島運行與現場電力納入AI交付棧。",
+          "steps": [
+            "記錄併網延遲與過渡供電成本",
+            "追蹤孤島可靠性和首Token時間",
+            "測量收購回報與earnout兌現"
+          ],
+          "done": "Source-to-Chip頁面寫入私有情報，公開與否另行月度審視。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期一級市場",
+          "title": "Yotta維持觀察",
+          "why": "IPO計劃和主權雲敘事不能替代收入、利用率、槓桿與SPV追索權。",
+          "steps": [
+            "DRHP提交後閱讀全文",
+            "繪製債務、客戶集中和利用率",
+            "承銷GPU SPV殘值與追索"
+          ],
+          "done": "營運和估值證據披露前，Yotta保持WATCH。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場",
+          "title": "建立AVGO轉化台帳",
+          "why": "Broadcom已把定製晶片連接到收入與現金，持續性取決於客戶廣度和產能承諾。",
+          "steps": [
+            "追蹤AI收入與出貨能力",
+            "測量前四客戶廣度和網路業務佔比",
+            "觀察自由現金流率與預付款"
+          ],
+          "done": "論點只隨季度量產與現金轉化趨勢改變。"
+        }
       ]
     },
     "ja": {
-      "inLanguage": "ja", "languageSlug": "ja", "title": "デイリー・アクション・フロー、2026年9月3日", "description": "出典で裏付けた8つの判断を、一つの検証可能なCIO実行フィールドへ並べる。", "centralJudgment": "自律的な意思と不可逆な行動の間に独立制御を置き、監督付き実証と事業採算を分け、一つの観測ではなく完全な証拠で資本判断を動かす。", "fieldLine": "8つのシグナル。1件の公開を完了。4つの運用ループが準備完了。3つの台帳を監視中。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "title": "デイリー・アクション・フロー、2026年9月3日",
+      "description": "出典で裏付けた8つの判断を、一つの検証可能なCIO実行フィールドへ並べる。",
+      "centralJudgment": "自律的な意思と不可逆な行動の間に独立制御を置き、監督付き実証と事業採算を分け、一つの観測ではなく完全な証拠で資本判断を動かす。",
+      "fieldLine": "8つのシグナル。1件の公開を完了。4つの運用ループが準備完了。3つの台帳を監視中。",
       "actions": [
-        {"signal": 1, "domain": "フロンティアAgent", "title": "独立停止を検証する", "why": "Agentの安全は、文章を拒否するかだけでなく、ホストがツール実行を止められるかで決まる。", "steps": ["公開された発動条件と停止時間を記録する", "誤検知、見逃し、復旧を測る", "改ざん耐性のある実行ログを求める"], "done": "停止機能を独立試験できた場合だけOpenAIの制御評価へ加点する。"},
-        {"signal": 2, "domain": "Physical AI", "title": "乗客と採算を分ける", "why": "一般乗車は監督付き運行を証明するが、無人運転の単位採算は未開示である。", "steps": ["千キロ当たり介入を追う", "車両当たり乗車とオペレーター費を記録する", "オペレーター撤去の条件と日程を見る"], "done": "一般利用と利益を生む機械労働を別々に評価する。"},
-        {"signal": 3, "domain": "暗号資産への資本", "title": "反転を検証する", "why": "BlackRock主導の償還は重要だが、一つの確定日だけで持続的流出とはいえない。", "steps": ["完全な日次報告を待つ", "3営業日の純流量を合計する", "8月31日以降の流入と比べる"], "done": "完全流量の条件を満たした場合だけcapital withdrawalへ変更する。"},
-        {"signal": 4, "domain": "Agent決済", "title": "Commerce比較表を作る", "why": "推薦とカート作成は、本人性、委任権限、復旧制御より先に進んでいる。", "steps": ["Agent IDと意思証明を比べる", "認証情報の範囲と取消を整理する", "返金と紛争責任を割り当てる"], "done": "Anthropic、Stripe、Visa、UPIを5つの制御項目で比較できる。"},
-        {"signal": 5, "domain": "iamrobin.ai", "title": "欠けた制御層を公開する", "why": "Robinの決済経験は、知的な選択と引受可能な取引の境界を定義できる。", "steps": ["四言語のcanonical記事を公開する", "6層の制御面を示す", "簡潔なLinkedIn派生稿を保管する"], "done": "Action Itemが証拠、言語、ビルド、公開、Telegramの各ゲートを通る。"},
-        {"signal": 6, "domain": "AIインフラ", "title": "Source-to-Chip電力図を作る", "why": "VertivによるUIG買収で、連系時間、単独運転、構内電力がAI供給スタックへ入る。", "steps": ["連系遅延と暫定電源費を記録する", "単独運転信頼性とfirst-token時間を追う", "買収収益とearnout達成を測る"], "done": "Source-to-Chipページを非公開インテリジェンスへ加え、公開は月次で別判断する。"},
-        {"signal": 7, "domain": "レイトステージ市場", "title": "Yottaを監視に保つ", "why": "IPO計画とソブリンクラウドの物語は、売上、稼働率、負債、SPV償還請求を代替できない。", "steps": ["DRHP提出後に全文を読む", "債務、顧客集中、稼働率を整理する", "GPU SPVの残存価値と請求権を評価する"], "done": "運用と評価の証拠が出るまでYottaはWATCHを維持する。"},
-        {"signal": 8, "domain": "公開株式", "title": "AVGO転換台帳を開く", "why": "Broadcomはカスタムシリコンを売上と現金へ結んだ。持続性は顧客の広がりと生産契約で決まる。", "steps": ["AI売上と出荷能力を追う", "上位4顧客の広がりとネットワーク構成比を測る", "FCFマージンと前払いを見る"], "done": "仮説は四半期の量産と現金転換の傾向によってのみ変える。"}
+        {
+          "signal": 1,
+          "domain": "フロンティアAgent",
+          "title": "独立停止を検証する",
+          "why": "Agentの安全は、文章を拒否するかだけでなく、ホストがツール実行を止められるかで決まる。",
+          "steps": [
+            "公開された発動条件と停止時間を記録する",
+            "誤検知、見逃し、復旧を測る",
+            "改ざん耐性のある実行ログを求める"
+          ],
+          "done": "停止機能を独立試験できた場合だけOpenAIの制御評価へ加点する。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "乗客と採算を分ける",
+          "why": "一般乗車は監督付き運行を証明するが、無人運転の単位採算は未開示である。",
+          "steps": [
+            "千キロ当たり介入を追う",
+            "車両当たり乗車とオペレーター費を記録する",
+            "オペレーター撤去の条件と日程を見る"
+          ],
+          "done": "一般利用と利益を生む機械労働を別々に評価する。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産への資本",
+          "title": "反転を検証する",
+          "why": "BlackRock主導の償還は重要だが、一つの確定日だけで持続的流出とはいえない。",
+          "steps": [
+            "完全な日次報告を待つ",
+            "3営業日の純流量を合計する",
+            "8月31日以降の流入と比べる"
+          ],
+          "done": "完全流量の条件を満たした場合だけcapital withdrawalへ変更する。"
+        },
+        {
+          "signal": 4,
+          "domain": "Agent決済",
+          "title": "Commerce比較表を作る",
+          "why": "推薦とカート作成は、本人性、委任権限、復旧制御より先に進んでいる。",
+          "steps": [
+            "Agent IDと意思証明を比べる",
+            "認証情報の範囲と取消を整理する",
+            "返金と紛争責任を割り当てる"
+          ],
+          "done": "Anthropic、Stripe、Visa、UPIを5つの制御項目で比較できる。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "欠けた制御層を公開する",
+          "why": "Robinの決済経験は、知的な選択と引受可能な取引の境界を定義できる。",
+          "steps": [
+            "四言語のcanonical記事を公開する",
+            "6層の制御面を示す",
+            "簡潔なLinkedIn派生稿を保管する"
+          ],
+          "done": "Action Itemが証拠、言語、ビルド、公開、Telegramの各ゲートを通る。"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラ",
+          "title": "Source-to-Chip電力図を作る",
+          "why": "VertivによるUIG買収で、連系時間、単独運転、構内電力がAI供給スタックへ入る。",
+          "steps": [
+            "連系遅延と暫定電源費を記録する",
+            "単独運転信頼性とfirst-token時間を追う",
+            "買収収益とearnout達成を測る"
+          ],
+          "done": "Source-to-Chipページを非公開インテリジェンスへ加え、公開は月次で別判断する。"
+        },
+        {
+          "signal": 7,
+          "domain": "レイトステージ市場",
+          "title": "Yottaを監視に保つ",
+          "why": "IPO計画とソブリンクラウドの物語は、売上、稼働率、負債、SPV償還請求を代替できない。",
+          "steps": [
+            "DRHP提出後に全文を読む",
+            "債務、顧客集中、稼働率を整理する",
+            "GPU SPVの残存価値と請求権を評価する"
+          ],
+          "done": "運用と評価の証拠が出るまでYottaはWATCHを維持する。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開株式",
+          "title": "AVGO転換台帳を開く",
+          "why": "Broadcomはカスタムシリコンを売上と現金へ結んだ。持続性は顧客の広がりと生産契約で決まる。",
+          "steps": [
+            "AI売上と出荷能力を追う",
+            "上位4顧客の広がりとネットワーク構成比を測る",
+            "FCFマージンと前払いを見る"
+          ],
+          "done": "仮説は四半期の量産と現金転換の傾向によってのみ変える。"
+        }
       ]
     }
   }

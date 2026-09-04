@@ -12,45 +12,146 @@
     {
       "signal": 1,
       "priority": "NOW",
-      "status": "READY",
+      "status": "COMPLETE",
       "visualValue": "6 controls",
       "visualLabel": "provider plus local containment",
       "sources": [
-        { "label": "GuideLight", "url": "https://guidelight.ai/blog/control-assessment-august-2026" },
-        { "label": "Reuters", "url": "https://www.reuters.com/technology/artificial-intelligence/ai-firms-cant-yet-contain-what-theyve-built-study-finds-2026-08-19/" }
-      ]
+        {
+          "label": "GuideLight",
+          "url": "https://guidelight.ai/blog/control-assessment-august-2026"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/technology/artificial-intelligence/ai-firms-cant-yet-contain-what-theyve-built-study-finds-2026-08-19/"
+        }
+      ],
+      "execution": {
+        "id": "20260824-01",
+        "workstream": "FRONTIER_CONTROLS",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "A repository-backed authority/provider matrix or fail-closed admission control now carries the requested mapping; execution-dependent comparisons remain separately blocked.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Frontier model authority controls",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "9d3206705ed6cf5a76ef2e122f64ee8ce1c4cb4f",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/9d3206705ed6cf5a76ef2e122f64ee8ce1c4cb4f"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 2,
       "priority": "NEXT",
-      "status": "READY",
+      "status": "COMPLETE",
       "visualValue": "21 / 51",
       "visualLabel": "real-world task events",
       "sources": [
-        { "label": "Reuters", "url": "https://www.reuters.com/world/asia-pacific/robots-can-outrun-humans-can-they-plug-cable-2026-08-23/" }
-      ]
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/asia-pacific/robots-can-outrun-humans-can-they-plug-cable-2026-08-23/"
+        }
+      ],
+      "execution": {
+        "id": "20260824-02",
+        "workstream": "PHYSICAL_AI",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The reusable operating matrix records useful hours, interventions, renewal and economics as distinct fields and preserves missing evidence as UNKNOWN.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Physical AI operating evidence",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "9d3206705ed6cf5a76ef2e122f64ee8ce1c4cb4f",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/9d3206705ed6cf5a76ef2e122f64ee8ce1c4cb4f"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 3,
       "priority": "WATCH",
-      "status": "WATCHING",
+      "status": "SUPERSEDED",
       "visualValue": "$2.61B",
       "visualLabel": "five-session ETF inflow",
       "sources": [
-        { "label": "Farside BTC", "url": "https://farside.co.uk/btc/" },
-        { "label": "Farside ETH", "url": "https://farside.co.uk/eth/" },
-        { "label": "The Block", "url": "https://www.theblock.co/news/markets/2026-08-22-bitcoin-and-ether-etfs-draw-2-6-billion-in-strongest-inflow-week-since-october-tripling-volume-412531" }
-      ]
+        {
+          "label": "Farside BTC",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "Farside ETH",
+          "url": "https://farside.co.uk/eth/"
+        },
+        {
+          "label": "The Block",
+          "url": "https://www.theblock.co/news/markets/2026-08-22-bitcoin-and-ether-etfs-draw-2-6-billion-in-strongest-inflow-week-since-october-tripling-volume-412531"
+        }
+      ],
+      "execution": {
+        "id": "20260824-03",
+        "workstream": "CRYPTO_BREADTH",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "Earlier flow-breadth checkpoint is absorbed by the September 4 canonical breadth watch.",
+        "supersededBy": "20260904-03",
+        "artifact": {
+          "label": "Crypto capital-flow breadth",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "9d3206705ed6cf5a76ef2e122f64ee8ce1c4cb4f",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/9d3206705ed6cf5a76ef2e122f64ee8ce1c4cb4f"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 4,
       "priority": "NEXT",
-      "status": "READY",
+      "status": "WATCHING",
       "visualValue": "2027 / 2028",
       "visualLabel": "GENIUS licensing deadlines",
       "sources": [
-        { "label": "US Treasury NPRM", "url": "https://home.treasury.gov/news/press-releases/sb0605" }
-      ]
+        {
+          "label": "US Treasury NPRM",
+          "url": "https://home.treasury.gov/news/press-releases/sb0605"
+        }
+      ],
+      "execution": {
+        "id": "20260824-04",
+        "workstream": "PAYMENT_CONTROLS",
+        "evidenceStatus": "UNKNOWN",
+        "reason": "The matrix is open, but the stated completion condition depends on external launched terms or controls that remain unverified.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Payment and agent-commerce control matrix",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "9d3206705ed6cf5a76ef2e122f64ee8ce1c4cb4f",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/9d3206705ed6cf5a76ef2e122f64ee8ce1c4cb4f"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 5,
@@ -59,23 +160,84 @@
       "visualValue": "8 IT-GW",
       "visualLabel": "industrial asset reclassification",
       "sources": [
-        { "label": "OpenAI", "url": "https://openai.com/index/openai-joins-ports-pike-project/" },
-        { "label": "NVIDIA", "url": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute" },
-        { "label": "NextEra", "url": "https://newsroom.nexteraenergy.com/2026-07-29-DOE-Site-in-Western-Kentucky-Revitalized-with-Data-Center-Campus-and-Dedicated-Energy-Project%2C-Creating-Jobs-and-Protecting-Residents-and-Businesses-from-Costs" },
-        { "label": "Canonical Action Item", "url": "https://iamrobin.ai/ouroboros/202608/20260824/action_item/" }
-      ]
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/openai-joins-ports-pike-project/"
+        },
+        {
+          "label": "NVIDIA",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute"
+        },
+        {
+          "label": "NextEra",
+          "url": "https://newsroom.nexteraenergy.com/2026-07-29-DOE-Site-in-Western-Kentucky-Revitalized-with-Data-Center-Campus-and-Dedicated-Energy-Project%2C-Creating-Jobs-and-Protecting-Residents-and-Businesses-from-Costs"
+        },
+        {
+          "label": "Canonical Action Item",
+          "url": "https://iamrobin.ai/ouroboros/202608/20260824/action_item/"
+        }
+      ],
+      "execution": {
+        "id": "20260824-05",
+        "workstream": "PUBLICATION",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The canonical Action Item is public and linked to its source commit and verification receipt.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Published canonical Action Item",
+          "href": "/ouroboros/202608/20260824/action_item/"
+        },
+        "sourceCommit": {
+          "sha": "9d3206705ed6cf5a76ef2e122f64ee8ce1c4cb4f",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/9d3206705ed6cf5a76ef2e122f64ee8ce1c4cb4f"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 6,
       "priority": "NOW",
-      "status": "READY",
+      "status": "COMPLETE",
       "visualValue": "$105B",
       "visualLabel": "reported guarantee ceiling",
       "sources": [
-        { "label": "OpenAI", "url": "https://openai.com/index/openai-joins-ports-pike-project/" },
-        { "label": "NVIDIA", "url": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute" },
-        { "label": "Reuters", "url": "https://www.reuters.com/business/media-telecom/nvidia-invest-15-billion-sb-energy-under-openai-data-center-deal-2026-08-17/" }
-      ]
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/openai-joins-ports-pike-project/"
+        },
+        {
+          "label": "NVIDIA",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/media-telecom/nvidia-invest-15-billion-sb-energy-under-openai-data-center-deal-2026-08-17/"
+        }
+      ],
+      "execution": {
+        "id": "20260824-06",
+        "workstream": "AI_INFRASTRUCTURE",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The Signal 06 row is present in the 16-entry evidence registry and governed by the monthly review/publication boundary.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "AI infrastructure evidence intake",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "9d3206705ed6cf5a76ef2e122f64ee8ce1c4cb4f",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/9d3206705ed6cf5a76ef2e122f64ee8ce1c4cb4f"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 7,
@@ -84,9 +246,35 @@
       "visualValue": "11 → 500",
       "visualLabel": "deployed satellites to capacity claim",
       "sources": [
-        { "label": "Muon announcement", "url": "https://finance.yahoo.com/technology/articles/muon-space-closes-250-million-110000717.html" },
-        { "label": "Valuation context", "url": "https://satnews.com/2026/08/20/muon-space-reaches-1-5-billion-valuation-following-250-million-series-c-round/" }
-      ]
+        {
+          "label": "Muon announcement",
+          "url": "https://finance.yahoo.com/technology/articles/muon-space-closes-250-million-110000717.html"
+        },
+        {
+          "label": "Valuation context",
+          "url": "https://satnews.com/2026/08/20/muon-space-reaches-1-5-billion-valuation-following-250-million-series-c-round/"
+        }
+      ],
+      "execution": {
+        "id": "20260824-07",
+        "workstream": "PRIVATE_MARKETS",
+        "evidenceStatus": "UNKNOWN",
+        "reason": "The action is evidence-dependent; no new evidence justified changing the watch state.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Private-market diligence matrix",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "9d3206705ed6cf5a76ef2e122f64ee8ce1c4cb4f",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/9d3206705ed6cf5a76ef2e122f64ee8ce1c4cb4f"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 8,
@@ -95,13 +283,51 @@
       "visualValue": "−1.10pp",
       "visualLabel": "equal-weight basket versus QQQ",
       "sources": [
-        { "label": "QQQ", "url": "https://stockanalysis.com/etf/qqq/" },
-        { "label": "NVDA", "url": "https://stockanalysis.com/stocks/nvda/history/" },
-        { "label": "MU", "url": "https://stockanalysis.com/stocks/mu/history/" },
-        { "label": "AVGO", "url": "https://stockanalysis.com/stocks/avgo/history/" },
-        { "label": "PLTR", "url": "https://stockanalysis.com/stocks/pltr/history/" },
-        { "label": "RKLB", "url": "https://stockanalysis.com/stocks/rklb/history/" }
-      ]
+        {
+          "label": "QQQ",
+          "url": "https://stockanalysis.com/etf/qqq/"
+        },
+        {
+          "label": "NVDA",
+          "url": "https://stockanalysis.com/stocks/nvda/history/"
+        },
+        {
+          "label": "MU",
+          "url": "https://stockanalysis.com/stocks/mu/history/"
+        },
+        {
+          "label": "AVGO",
+          "url": "https://stockanalysis.com/stocks/avgo/history/"
+        },
+        {
+          "label": "PLTR",
+          "url": "https://stockanalysis.com/stocks/pltr/history/"
+        },
+        {
+          "label": "RKLB",
+          "url": "https://stockanalysis.com/stocks/rklb/history/"
+        }
+      ],
+      "execution": {
+        "id": "20260824-08",
+        "workstream": "PUBLIC_EQUITIES",
+        "evidenceStatus": "UNKNOWN",
+        "reason": "The action is evidence-dependent; no new evidence justified changing the watch state.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Public-market causal ledger",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "9d3206705ed6cf5a76ef2e122f64ee8ce1c4cb4f",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/9d3206705ed6cf5a76ef2e122f64ee8ce1c4cb4f"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     }
   ],
   "editions": {
@@ -113,14 +339,95 @@
       "centralJudgment": "Today’s eight signals converge on one scarce resource: control. Agent authority, robot recovery, token distribution, grid access, credit support and portfolio exposure become investable only when the next proof is explicit.",
       "fieldLine": "Eight signals. One decision field. Evidence stays attached.",
       "actions": [
-        { "domain": "Frontier Agents", "title": "Score Joint Containment", "why": "Provider safety and application authority fail independently, so RobinOS must underwrite both layers.", "steps": ["Add the six GuideLight controls", "Map each provider score to local gates", "Hold high-risk agents when either layer is unknown"], "done": "Every high-risk provider route has dated provider and local containment evidence or an explicit HOLD." },
-        { "domain": "Physical AI", "title": "Measure Mundane Recovery", "why": "Commercial robots earn value by recovering from ordinary misalignment without a human reset.", "steps": ["Record misaligned-object and cable tasks", "Count resets and interventions", "Separate spectacle from paid autonomous work"], "done": "Each tracked robot has a mundane-task reliability row with autonomy mode, intervention count and UNKNOWN where missing." },
-        { "domain": "Crypto Capital", "title": "Wait for Breadth", "why": "$2.61 billion confirms re-entry while 71.5% concentration leaves the broader Web3 recovery open.", "steps": ["Track non-BlackRock ETF flow", "Measure stablecoin supply and DeFi activity", "Require a second positive week"], "done": "Web3 cycle reversal is declared only when capital breadth, stablecoin supply and DeFi activity improve together." },
-        { "domain": "Stablecoins and Payments", "title": "Map Distribution Rights", "why": "GENIUS turns every token into a legal issuer and distribution-rights question before it becomes a technology choice.", "steps": ["Record issuer jurisdiction and licence", "Record lawful-order capability", "Add the US availability deadline"], "done": "Every relevant token has a sourced issuer, licence, lawful-order and US distribution row or UNKNOWN." },
-        { "domain": "iamrobin.ai", "title": "Publish the Reclassification Map", "why": "The durable thesis is which obsolete industrial assets already control deliverable megawatts.", "steps": ["Map surviving infrastructure", "Underwrite conversion and residual value", "Publish four complete editions with evidence diagrams"], "done": "The Action Item, four languages, images, schema, internal links and public checks all pass.", "deepDiveTitle": "The Junk Asset With Grid Access" },
-        { "domain": "AI Infrastructure Career", "title": "Underwrite PORTS Pike", "why": "The project joins land, a 20-year lease, grid timing, chip supply and a reported $105 billion guarantee ceiling.", "steps": ["Record site provenance and COD", "Map lease and guarantee triggers", "Test reletting and residual value"], "done": "One sourced underwriting card covers site, MW, COD, lease, credit support, grid responsibility and downside reuse." },
-        { "domain": "Late Stage Markets", "title": "Bridge Eleven to Five Hundred", "why": "Muon has operating evidence, while the leap from 11 deployed satellites to 500 annual capacity remains an execution claim.", "steps": ["Reconcile deployed hardware and backlog", "Request yield and working-capital evidence", "Compare unit economics with Starcloud"], "done": "The thesis remains WATCH until factory yield, customer concentration and contracted backlog support the scale claim." },
-        { "domain": "Public Equities", "title": "Rerun After Nvidia", "why": "The basket lagged QQQ while software, memory, chips and space moved differently.", "steps": ["Freeze the August 21 baseline", "Rerun after Nvidia’s August 26 results", "Separate discount-rate pressure from cash-conversion evidence"], "done": "One dated relative-return check records the post-results outcome without rewriting the original baseline." }
+        {
+          "domain": "Frontier Agents",
+          "title": "Score Joint Containment",
+          "why": "Provider safety and application authority fail independently, so RobinOS must underwrite both layers.",
+          "steps": [
+            "Add the six GuideLight controls",
+            "Map each provider score to local gates",
+            "Hold high-risk agents when either layer is unknown"
+          ],
+          "done": "Every high-risk provider route has dated provider and local containment evidence or an explicit HOLD."
+        },
+        {
+          "domain": "Physical AI",
+          "title": "Measure Mundane Recovery",
+          "why": "Commercial robots earn value by recovering from ordinary misalignment without a human reset.",
+          "steps": [
+            "Record misaligned-object and cable tasks",
+            "Count resets and interventions",
+            "Separate spectacle from paid autonomous work"
+          ],
+          "done": "Each tracked robot has a mundane-task reliability row with autonomy mode, intervention count and UNKNOWN where missing."
+        },
+        {
+          "domain": "Crypto Capital",
+          "title": "Wait for Breadth",
+          "why": "$2.61 billion confirms re-entry while 71.5% concentration leaves the broader Web3 recovery open.",
+          "steps": [
+            "Track non-BlackRock ETF flow",
+            "Measure stablecoin supply and DeFi activity",
+            "Require a second positive week"
+          ],
+          "done": "Web3 cycle reversal is declared only when capital breadth, stablecoin supply and DeFi activity improve together."
+        },
+        {
+          "domain": "Stablecoins and Payments",
+          "title": "Map Distribution Rights",
+          "why": "GENIUS turns every token into a legal issuer and distribution-rights question before it becomes a technology choice.",
+          "steps": [
+            "Record issuer jurisdiction and licence",
+            "Record lawful-order capability",
+            "Add the US availability deadline"
+          ],
+          "done": "Every relevant token has a sourced issuer, licence, lawful-order and US distribution row or UNKNOWN."
+        },
+        {
+          "domain": "iamrobin.ai",
+          "title": "Publish the Reclassification Map",
+          "why": "The durable thesis is which obsolete industrial assets already control deliverable megawatts.",
+          "steps": [
+            "Map surviving infrastructure",
+            "Underwrite conversion and residual value",
+            "Publish four complete editions with evidence diagrams"
+          ],
+          "done": "The Action Item, four languages, images, schema, internal links and public checks all pass.",
+          "deepDiveTitle": "The Junk Asset With Grid Access"
+        },
+        {
+          "domain": "AI Infrastructure Career",
+          "title": "Underwrite PORTS Pike",
+          "why": "The project joins land, a 20-year lease, grid timing, chip supply and a reported $105 billion guarantee ceiling.",
+          "steps": [
+            "Record site provenance and COD",
+            "Map lease and guarantee triggers",
+            "Test reletting and residual value"
+          ],
+          "done": "One sourced underwriting card covers site, MW, COD, lease, credit support, grid responsibility and downside reuse."
+        },
+        {
+          "domain": "Late Stage Markets",
+          "title": "Bridge Eleven to Five Hundred",
+          "why": "Muon has operating evidence, while the leap from 11 deployed satellites to 500 annual capacity remains an execution claim.",
+          "steps": [
+            "Reconcile deployed hardware and backlog",
+            "Request yield and working-capital evidence",
+            "Compare unit economics with Starcloud"
+          ],
+          "done": "The thesis remains WATCH until factory yield, customer concentration and contracted backlog support the scale claim."
+        },
+        {
+          "domain": "Public Equities",
+          "title": "Rerun After Nvidia",
+          "why": "The basket lagged QQQ while software, memory, chips and space moved differently.",
+          "steps": [
+            "Freeze the August 21 baseline",
+            "Rerun after Nvidia’s August 26 results",
+            "Separate discount-rate pressure from cash-conversion evidence"
+          ],
+          "done": "One dated relative-return check records the post-results outcome without rewriting the original baseline."
+        }
       ]
     },
     "zh-Hans": {
@@ -131,14 +438,95 @@
       "centralJudgment": "今天八个信号汇聚到同一种稀缺资源：控制权。Agent 权限、机器人恢复、Token 分销、并网、电力信用支持与投资组合敞口，只有下一项证据明确时才真正可投资。",
       "fieldLine": "八个信号。一个决策场。证据始终相连。",
       "actions": [
-        { "domain": "前沿 Agent", "title": "评估双层围堵", "why": "供应商安全与应用权限会分别失效，RobinOS 必须同时承销两层。", "steps": ["加入 GuideLight 六项控制", "把供应商评分映射到本地闸门", "任一层未知时 HOLD 高风险 Agent"], "done": "每条高风险模型路径都有供应商与本地围堵证据，或明确 HOLD。" },
-        { "domain": "Physical AI", "title": "测量日常恢复能力", "why": "商业机器人靠处理平凡错位创造价值，而不是靠人类重置场景。", "steps": ["记录错位物体和电缆任务", "统计重置与人工介入", "把表演和付费自主工作分开"], "done": "每个机器人都有自主模式、介入次数和缺失即 UNKNOWN 的日常可靠性记录。" },
-        { "domain": "加密资本", "title": "等待资金广度", "why": "26.1亿美元确认回流，71.5%的集中度仍让 Web3 全面复苏保持开放。", "steps": ["追踪非 BlackRock ETF 流量", "测量稳定币供给和 DeFi 活动", "要求第二个正流入周"], "done": "只有资金广度、稳定币供给和 DeFi 活动共同改善，才确认 Web3 周期反转。" },
-        { "domain": "稳定币与支付", "title": "绘制分销权矩阵", "why": "GENIUS 让每个 Token 先成为法律发行人和分销权问题，然后才是技术选择。", "steps": ["记录发行法域与牌照", "记录合法命令能力", "加入美国可用期限"], "done": "每个相关 Token 都有带来源的发行人、牌照、合法命令和美国分销记录或 UNKNOWN。" },
-        { "domain": "iamrobin.ai", "title": "发布资产重分类图", "why": "可长期引用的论点是哪些过时工业资产已经控制可交付兆瓦。", "steps": ["绘制存活基础设施", "承销改造与残值", "发布四语正文和证据图"], "done": "Action Item、四语、图片、Schema、内链与公网检查全部通过。", "deepDiveTitle": "拥有并网权的破烂资产" },
-        { "domain": "AI 基础设施职业", "title": "承销 PORTS Pike", "why": "项目把土地、20年租约、电网时间、芯片与1,050亿美元担保上限装进同一结构。", "steps": ["记录场地来源与 COD", "绘制租约和担保触发条件", "检验再出租和残值"], "done": "一页承销卡覆盖场地、MW、COD、租约、信用支持、电网责任和下行情境用途。" },
-        { "domain": "后期一级市场", "title": "连接十一颗与五百颗", "why": "Muon 有运营证据，从11颗已部署卫星到年产500颗仍是执行主张。", "steps": ["核对已交付硬件和订单", "要求良率与营运资金证据", "与 Starcloud 比较单位经济"], "done": "在工厂良率、客户集中度和合同订单支持规模前，论点保持 WATCH。" },
-        { "domain": "公开市场", "title": "Nvidia 财报后复检", "why": "组合跑输 QQQ，软件、内存、芯片与太空资产的路径却各不相同。", "steps": ["冻结8月21日基线", "8月26日 Nvidia 财报后复检", "区分折现率压力与现金转化证据"], "done": "一项带日期的相对收益复检记录结果，不改写原始基线。" }
+        {
+          "domain": "前沿 Agent",
+          "title": "评估双层围堵",
+          "why": "供应商安全与应用权限会分别失效，RobinOS 必须同时承销两层。",
+          "steps": [
+            "加入 GuideLight 六项控制",
+            "把供应商评分映射到本地闸门",
+            "任一层未知时 HOLD 高风险 Agent"
+          ],
+          "done": "每条高风险模型路径都有供应商与本地围堵证据，或明确 HOLD。"
+        },
+        {
+          "domain": "Physical AI",
+          "title": "测量日常恢复能力",
+          "why": "商业机器人靠处理平凡错位创造价值，而不是靠人类重置场景。",
+          "steps": [
+            "记录错位物体和电缆任务",
+            "统计重置与人工介入",
+            "把表演和付费自主工作分开"
+          ],
+          "done": "每个机器人都有自主模式、介入次数和缺失即 UNKNOWN 的日常可靠性记录。"
+        },
+        {
+          "domain": "加密资本",
+          "title": "等待资金广度",
+          "why": "26.1亿美元确认回流，71.5%的集中度仍让 Web3 全面复苏保持开放。",
+          "steps": [
+            "追踪非 BlackRock ETF 流量",
+            "测量稳定币供给和 DeFi 活动",
+            "要求第二个正流入周"
+          ],
+          "done": "只有资金广度、稳定币供给和 DeFi 活动共同改善，才确认 Web3 周期反转。"
+        },
+        {
+          "domain": "稳定币与支付",
+          "title": "绘制分销权矩阵",
+          "why": "GENIUS 让每个 Token 先成为法律发行人和分销权问题，然后才是技术选择。",
+          "steps": [
+            "记录发行法域与牌照",
+            "记录合法命令能力",
+            "加入美国可用期限"
+          ],
+          "done": "每个相关 Token 都有带来源的发行人、牌照、合法命令和美国分销记录或 UNKNOWN。"
+        },
+        {
+          "domain": "iamrobin.ai",
+          "title": "发布资产重分类图",
+          "why": "可长期引用的论点是哪些过时工业资产已经控制可交付兆瓦。",
+          "steps": [
+            "绘制存活基础设施",
+            "承销改造与残值",
+            "发布四语正文和证据图"
+          ],
+          "done": "Action Item、四语、图片、Schema、内链与公网检查全部通过。",
+          "deepDiveTitle": "拥有并网权的破烂资产"
+        },
+        {
+          "domain": "AI 基础设施职业",
+          "title": "承销 PORTS Pike",
+          "why": "项目把土地、20年租约、电网时间、芯片与1,050亿美元担保上限装进同一结构。",
+          "steps": [
+            "记录场地来源与 COD",
+            "绘制租约和担保触发条件",
+            "检验再出租和残值"
+          ],
+          "done": "一页承销卡覆盖场地、MW、COD、租约、信用支持、电网责任和下行情境用途。"
+        },
+        {
+          "domain": "后期一级市场",
+          "title": "连接十一颗与五百颗",
+          "why": "Muon 有运营证据，从11颗已部署卫星到年产500颗仍是执行主张。",
+          "steps": [
+            "核对已交付硬件和订单",
+            "要求良率与营运资金证据",
+            "与 Starcloud 比较单位经济"
+          ],
+          "done": "在工厂良率、客户集中度和合同订单支持规模前，论点保持 WATCH。"
+        },
+        {
+          "domain": "公开市场",
+          "title": "Nvidia 财报后复检",
+          "why": "组合跑输 QQQ，软件、内存、芯片与太空资产的路径却各不相同。",
+          "steps": [
+            "冻结8月21日基线",
+            "8月26日 Nvidia 财报后复检",
+            "区分折现率压力与现金转化证据"
+          ],
+          "done": "一项带日期的相对收益复检记录结果，不改写原始基线。"
+        }
       ]
     },
     "zh-Hant": {
@@ -149,14 +537,95 @@
       "centralJudgment": "今天八個訊號匯聚到同一種稀缺資源：控制權。Agent 權限、機器人恢復、Token 分銷、併網、信用支持與投資組合敞口，只有下一項證據明確時才真正可投資。",
       "fieldLine": "八個訊號。一個決策場。證據始終相連。",
       "actions": [
-        { "domain": "前沿 Agent", "title": "評估雙層圍堵", "why": "供應商安全與應用權限會分別失效，RobinOS 必須同時承銷兩層。", "steps": ["加入 GuideLight 六項控制", "把供應商評分映射至本地閘門", "任一層未知時 HOLD 高風險 Agent"], "done": "每條高風險模型路徑都有供應商與本地圍堵證據，或明確 HOLD。" },
-        { "domain": "Physical AI", "title": "量度日常恢復能力", "why": "商業機器人靠處理平凡錯位創造價值，而不是靠人類重設場景。", "steps": ["記錄錯位物體和電纜任務", "統計重設與人工介入", "把表演和付費自主工作分開"], "done": "每個機器人都有自主模式、介入次數和缺失即 UNKNOWN 的日常可靠性記錄。" },
-        { "domain": "加密資本", "title": "等待資金廣度", "why": "26.1億美元確認回流，71.5%的集中度仍讓 Web3 全面復甦保持開放。", "steps": ["追蹤非 BlackRock ETF 流量", "量度穩定幣供給和 DeFi 活動", "要求第二個正流入週"], "done": "只有資金廣度、穩定幣供給和 DeFi 活動共同改善，才確認 Web3 週期反轉。" },
-        { "domain": "穩定幣與支付", "title": "繪製分銷權矩陣", "why": "GENIUS 讓每個 Token 先成為法律發行人和分銷權問題，然後才是技術選擇。", "steps": ["記錄發行法域與牌照", "記錄合法命令能力", "加入美國可用期限"], "done": "每個相關 Token 都有附來源的發行人、牌照、合法命令和美國分銷記錄或 UNKNOWN。" },
-        { "domain": "iamrobin.ai", "title": "發布資產重分類圖", "why": "可長期引用的論點是哪些過時工業資產已控制可交付兆瓦。", "steps": ["繪製存活基礎設施", "承銷改造與殘值", "發布四語正文和證據圖"], "done": "Action Item、四語、圖片、Schema、內鏈與公開檢查全部通過。", "deepDiveTitle": "擁有併網權的破爛資產" },
-        { "domain": "AI 基礎設施職涯", "title": "承銷 PORTS Pike", "why": "項目把土地、20年租約、電網時間、芯片與1,050億美元擔保上限放進同一結構。", "steps": ["記錄場地來源與 COD", "繪製租約與擔保觸發條件", "檢驗再出租和殘值"], "done": "一頁承銷卡覆蓋場地、MW、COD、租約、信用支持、電網責任和下行情境用途。" },
-        { "domain": "後期私募市場", "title": "連接十一顆與五百顆", "why": "Muon 有營運證據，從11顆已部署衛星到年產500顆仍是執行主張。", "steps": ["核對已交付硬件和訂單", "要求良率與營運資金證據", "與 Starcloud 比較單位經濟"], "done": "在工廠良率、客戶集中度和合同訂單支持規模前，論點保持 WATCH。" },
-        { "domain": "公開市場", "title": "Nvidia 業績後複檢", "why": "組合跑輸 QQQ，軟件、記憶體、芯片與太空資產的路徑各不相同。", "steps": ["凍結8月21日基線", "8月26日 Nvidia 業績後複檢", "區分折現率壓力與現金轉化證據"], "done": "一項帶日期的相對回報複檢記錄結果，不改寫原始基線。" }
+        {
+          "domain": "前沿 Agent",
+          "title": "評估雙層圍堵",
+          "why": "供應商安全與應用權限會分別失效，RobinOS 必須同時承銷兩層。",
+          "steps": [
+            "加入 GuideLight 六項控制",
+            "把供應商評分映射至本地閘門",
+            "任一層未知時 HOLD 高風險 Agent"
+          ],
+          "done": "每條高風險模型路徑都有供應商與本地圍堵證據，或明確 HOLD。"
+        },
+        {
+          "domain": "Physical AI",
+          "title": "量度日常恢復能力",
+          "why": "商業機器人靠處理平凡錯位創造價值，而不是靠人類重設場景。",
+          "steps": [
+            "記錄錯位物體和電纜任務",
+            "統計重設與人工介入",
+            "把表演和付費自主工作分開"
+          ],
+          "done": "每個機器人都有自主模式、介入次數和缺失即 UNKNOWN 的日常可靠性記錄。"
+        },
+        {
+          "domain": "加密資本",
+          "title": "等待資金廣度",
+          "why": "26.1億美元確認回流，71.5%的集中度仍讓 Web3 全面復甦保持開放。",
+          "steps": [
+            "追蹤非 BlackRock ETF 流量",
+            "量度穩定幣供給和 DeFi 活動",
+            "要求第二個正流入週"
+          ],
+          "done": "只有資金廣度、穩定幣供給和 DeFi 活動共同改善，才確認 Web3 週期反轉。"
+        },
+        {
+          "domain": "穩定幣與支付",
+          "title": "繪製分銷權矩陣",
+          "why": "GENIUS 讓每個 Token 先成為法律發行人和分銷權問題，然後才是技術選擇。",
+          "steps": [
+            "記錄發行法域與牌照",
+            "記錄合法命令能力",
+            "加入美國可用期限"
+          ],
+          "done": "每個相關 Token 都有附來源的發行人、牌照、合法命令和美國分銷記錄或 UNKNOWN。"
+        },
+        {
+          "domain": "iamrobin.ai",
+          "title": "發布資產重分類圖",
+          "why": "可長期引用的論點是哪些過時工業資產已控制可交付兆瓦。",
+          "steps": [
+            "繪製存活基礎設施",
+            "承銷改造與殘值",
+            "發布四語正文和證據圖"
+          ],
+          "done": "Action Item、四語、圖片、Schema、內鏈與公開檢查全部通過。",
+          "deepDiveTitle": "擁有併網權的破爛資產"
+        },
+        {
+          "domain": "AI 基礎設施職涯",
+          "title": "承銷 PORTS Pike",
+          "why": "項目把土地、20年租約、電網時間、芯片與1,050億美元擔保上限放進同一結構。",
+          "steps": [
+            "記錄場地來源與 COD",
+            "繪製租約與擔保觸發條件",
+            "檢驗再出租和殘值"
+          ],
+          "done": "一頁承銷卡覆蓋場地、MW、COD、租約、信用支持、電網責任和下行情境用途。"
+        },
+        {
+          "domain": "後期私募市場",
+          "title": "連接十一顆與五百顆",
+          "why": "Muon 有營運證據，從11顆已部署衛星到年產500顆仍是執行主張。",
+          "steps": [
+            "核對已交付硬件和訂單",
+            "要求良率與營運資金證據",
+            "與 Starcloud 比較單位經濟"
+          ],
+          "done": "在工廠良率、客戶集中度和合同訂單支持規模前，論點保持 WATCH。"
+        },
+        {
+          "domain": "公開市場",
+          "title": "Nvidia 業績後複檢",
+          "why": "組合跑輸 QQQ，軟件、記憶體、芯片與太空資產的路徑各不相同。",
+          "steps": [
+            "凍結8月21日基線",
+            "8月26日 Nvidia 業績後複檢",
+            "區分折現率壓力與現金轉化證據"
+          ],
+          "done": "一項帶日期的相對回報複檢記錄結果，不改寫原始基線。"
+        }
       ]
     },
     "ja": {
@@ -167,14 +636,95 @@
       "centralJudgment": "今日の8シグナルは、統制という希少資源に集約する。エージェント権限、ロボット回復、トークン配布、系統接続、信用支援、ポートフォリオ露出は、次の証拠が明確になって初めて投資対象になる。",
       "fieldLine": "8つのシグナル。ひとつの意思決定領域。証拠はつながったまま。",
       "actions": [
-        { "domain": "フロンティアエージェント", "title": "二層の封じ込めを採点", "why": "供給者の安全とアプリ権限は別々に壊れるため、RobinOS は双方を評価する。", "steps": ["GuideLight の6統制を加える", "供給者評価をローカルゲートへ対応させる", "片方が未知なら高リスク Agent を HOLD にする"], "done": "高リスク経路ごとに供給者とローカルの証拠、または明示的 HOLD がある。" },
-        { "domain": "Physical AI", "title": "平凡な回復力を測る", "why": "商用ロボットは、人が場面を直さず通常のずれを処理することで価値を作る。", "steps": ["ずれた物体とケーブル作業を記録する", "リセットと介入を数える", "見世物と有償自律作業を分ける"], "done": "各ロボットに自律モード、介入回数、欠測を UNKNOWN とする信頼性行がある。" },
-        { "domain": "暗号資産への資本", "title": "資金の広がりを待つ", "why": "26.1億ドルは回帰を確認したが、71.5%の集中で Web3 全体の回復は未確定だ。", "steps": ["BlackRock 以外の ETF 流量を追う", "stablecoin 供給と DeFi 活動を測る", "二週目の流入を要求する"], "done": "資金の広がり、stablecoin 供給、DeFi 活動が同時に改善した時だけ反転とする。" },
-        { "domain": "ステーブルコインと決済", "title": "配布権を地図化", "why": "GENIUS は各トークンを、技術選択より先に法的発行者と配布権の問題へ変える。", "steps": ["発行法域と免許を記録する", "適法命令への対応能力を記録する", "米国提供期限を加える"], "done": "関連トークンごとに出典付き4項目、または UNKNOWN がある。" },
-        { "domain": "iamrobin.ai", "title": "資産再分類図を公開", "why": "長く使える仮説は、どの旧産業資産が引き渡し可能な MW を持つかである。", "steps": ["残存インフラを図示する", "転換費用と残価を評価する", "4言語と証拠図を公開する"], "done": "Action Item、4言語、画像、schema、内部リンク、公開検証がすべて通る。", "deepDiveTitle": "系統接続を持つ旧産業資産" },
-        { "domain": "AIインフラ・キャリア", "title": "PORTS Pike を引き受ける", "why": "土地、20年リース、系統時期、半導体、最大1,050億ドルの保証報道が一つに束ねられる。", "steps": ["用地履歴と COD を記録する", "リースと保証条件を図示する", "再賃貸と残価を試す"], "done": "用地、MW、COD、リース、信用支援、系統責任、下方再利用を1ページで確認できる。" },
-        { "domain": "レイトステージ市場", "title": "11機から500機をつなぐ", "why": "Muon は実績を持つが、11機配備から年500機能力への移行はまだ実行主張だ。", "steps": ["配備済み機体と受注を照合する", "歩留まりと運転資本を求める", "Starcloud と単位経済を比べる"], "done": "工場歩留まり、顧客集中、契約受注が規模を支えるまで WATCH を維持する。" },
-        { "domain": "公開株式", "title": "Nvidia 決算後に再計算", "why": "バスケットは QQQ を下回ったが、ソフトウェア、メモリ、半導体、宇宙は別々に動いた。", "steps": ["8月21日基準を固定する", "8月26日決算後に再計算する", "割引率と現金転換を分ける"], "done": "日付付き相対リターン検証が結果を記録し、元の基準を書き換えない。" }
+        {
+          "domain": "フロンティアエージェント",
+          "title": "二層の封じ込めを採点",
+          "why": "供給者の安全とアプリ権限は別々に壊れるため、RobinOS は双方を評価する。",
+          "steps": [
+            "GuideLight の6統制を加える",
+            "供給者評価をローカルゲートへ対応させる",
+            "片方が未知なら高リスク Agent を HOLD にする"
+          ],
+          "done": "高リスク経路ごとに供給者とローカルの証拠、または明示的 HOLD がある。"
+        },
+        {
+          "domain": "Physical AI",
+          "title": "平凡な回復力を測る",
+          "why": "商用ロボットは、人が場面を直さず通常のずれを処理することで価値を作る。",
+          "steps": [
+            "ずれた物体とケーブル作業を記録する",
+            "リセットと介入を数える",
+            "見世物と有償自律作業を分ける"
+          ],
+          "done": "各ロボットに自律モード、介入回数、欠測を UNKNOWN とする信頼性行がある。"
+        },
+        {
+          "domain": "暗号資産への資本",
+          "title": "資金の広がりを待つ",
+          "why": "26.1億ドルは回帰を確認したが、71.5%の集中で Web3 全体の回復は未確定だ。",
+          "steps": [
+            "BlackRock 以外の ETF 流量を追う",
+            "stablecoin 供給と DeFi 活動を測る",
+            "二週目の流入を要求する"
+          ],
+          "done": "資金の広がり、stablecoin 供給、DeFi 活動が同時に改善した時だけ反転とする。"
+        },
+        {
+          "domain": "ステーブルコインと決済",
+          "title": "配布権を地図化",
+          "why": "GENIUS は各トークンを、技術選択より先に法的発行者と配布権の問題へ変える。",
+          "steps": [
+            "発行法域と免許を記録する",
+            "適法命令への対応能力を記録する",
+            "米国提供期限を加える"
+          ],
+          "done": "関連トークンごとに出典付き4項目、または UNKNOWN がある。"
+        },
+        {
+          "domain": "iamrobin.ai",
+          "title": "資産再分類図を公開",
+          "why": "長く使える仮説は、どの旧産業資産が引き渡し可能な MW を持つかである。",
+          "steps": [
+            "残存インフラを図示する",
+            "転換費用と残価を評価する",
+            "4言語と証拠図を公開する"
+          ],
+          "done": "Action Item、4言語、画像、schema、内部リンク、公開検証がすべて通る。",
+          "deepDiveTitle": "系統接続を持つ旧産業資産"
+        },
+        {
+          "domain": "AIインフラ・キャリア",
+          "title": "PORTS Pike を引き受ける",
+          "why": "土地、20年リース、系統時期、半導体、最大1,050億ドルの保証報道が一つに束ねられる。",
+          "steps": [
+            "用地履歴と COD を記録する",
+            "リースと保証条件を図示する",
+            "再賃貸と残価を試す"
+          ],
+          "done": "用地、MW、COD、リース、信用支援、系統責任、下方再利用を1ページで確認できる。"
+        },
+        {
+          "domain": "レイトステージ市場",
+          "title": "11機から500機をつなぐ",
+          "why": "Muon は実績を持つが、11機配備から年500機能力への移行はまだ実行主張だ。",
+          "steps": [
+            "配備済み機体と受注を照合する",
+            "歩留まりと運転資本を求める",
+            "Starcloud と単位経済を比べる"
+          ],
+          "done": "工場歩留まり、顧客集中、契約受注が規模を支えるまで WATCH を維持する。"
+        },
+        {
+          "domain": "公開株式",
+          "title": "Nvidia 決算後に再計算",
+          "why": "バスケットは QQQ を下回ったが、ソフトウェア、メモリ、半導体、宇宙は別々に動いた。",
+          "steps": [
+            "8月21日基準を固定する",
+            "8月26日決算後に再計算する",
+            "割引率と現金転換を分ける"
+          ],
+          "done": "日付付き相対リターン検証が結果を記録し、元の基準を書き換えない。"
+        }
       ]
     }
   }

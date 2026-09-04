@@ -6,10 +6,20 @@ export interface ActionSource {
 export interface ActionFlowSignal {
   signal: number;
   priority: 'NOW' | 'NEXT' | 'WATCH';
-  status: 'COMPLETE' | 'READY' | 'WATCHING' | 'UNKNOWN';
+  status: 'COMPLETE' | 'WATCHING' | 'BLOCKED' | 'SUPERSEDED';
   visualValue: string;
   visualLabel: string;
   sources: ActionSource[];
+  execution: {
+    id: string;
+    workstream: string;
+    evidenceStatus: 'CONFIRMED' | 'UNKNOWN';
+    reason: string;
+    supersededBy: string | null;
+    artifact: { label: string; href: string };
+    sourceCommit: { sha: string; href: string };
+    verificationReceipt: { label: string; href: string; commit: string };
+  };
 }
 
 export interface ActionFlowChapter {
@@ -73,4 +83,3 @@ export function actionFlowLanguages(flow: ActionFlow) {
     path: actionFlowPath(flow, flow.editions[key]),
   }));
 }
-

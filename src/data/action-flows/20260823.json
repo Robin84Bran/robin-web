@@ -12,47 +12,154 @@
     {
       "signal": 1,
       "priority": "NOW",
-      "status": "READY",
+      "status": "COMPLETE",
       "visualValue": "4 dimensions",
       "visualLabel": "agent authority inventory",
       "sources": [
-        { "label": "Reuters", "url": "https://www.reuters.com/technology/openai-slows-model-training-bolster-security-after-hugging-face-hack-2026-08-18/" },
-        { "label": "OpenAI", "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident/" }
-      ]
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/technology/openai-slows-model-training-bolster-security-after-hugging-face-hack-2026-08-18/"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident/"
+        }
+      ],
+      "execution": {
+        "id": "20260823-01",
+        "workstream": "FRONTIER_CONTROLS",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "A repository-backed authority/provider matrix or fail-closed admission control now carries the requested mapping; execution-dependent comparisons remain separately blocked.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Frontier model authority controls",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "5315cb5add4304c9ec5394ac8e79302e1ea3c161",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/5315cb5add4304c9ec5394ac8e79302e1ea3c161"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 2,
       "priority": "NEXT",
-      "status": "READY",
+      "status": "COMPLETE",
       "visualValue": "9.39s",
       "visualLabel": "humanoid 100 metre technical ceiling",
       "sources": [
-        { "label": "Reuters race", "url": "https://www.reuters.com/sports/chinese-humanoid-robot-lightning-beats-human-100m-world-record-state-media-says-2026-08-22/" },
-        { "label": "Reuters industry", "url": "https://www.reuters.com/world/asia-pacific/science-fair-strategic-showcase-decade-chinas-robot-games-2026-08-22/" }
-      ]
+        {
+          "label": "Reuters race",
+          "url": "https://www.reuters.com/sports/chinese-humanoid-robot-lightning-beats-human-100m-world-record-state-media-says-2026-08-22/"
+        },
+        {
+          "label": "Reuters industry",
+          "url": "https://www.reuters.com/world/asia-pacific/science-fair-strategic-showcase-decade-chinas-robot-games-2026-08-22/"
+        }
+      ],
+      "execution": {
+        "id": "20260823-02",
+        "workstream": "PHYSICAL_AI",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The reusable operating matrix records useful hours, interventions, renewal and economics as distinct fields and preserves missing evidence as UNKNOWN.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Physical AI operating evidence",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "5315cb5add4304c9ec5394ac8e79302e1ea3c161",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/5315cb5add4304c9ec5394ac8e79302e1ea3c161"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 3,
       "priority": "WATCH",
-      "status": "WATCHING",
+      "status": "SUPERSEDED",
       "visualValue": "$2.61B",
       "visualLabel": "five-session BTC and ETH ETF inflow",
       "sources": [
-        { "label": "Farside BTC", "url": "https://farside.co.uk/btc/" },
-        { "label": "Farside ETH", "url": "https://farside.co.uk/eth/" },
-        { "label": "The Block", "url": "https://www.theblock.co/news/markets/2026-08-22-bitcoin-and-ether-etfs-draw-2-6-billion-in-strongest-inflow-week-since-october-tripling-volume-412531" }
-      ]
+        {
+          "label": "Farside BTC",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "Farside ETH",
+          "url": "https://farside.co.uk/eth/"
+        },
+        {
+          "label": "The Block",
+          "url": "https://www.theblock.co/news/markets/2026-08-22-bitcoin-and-ether-etfs-draw-2-6-billion-in-strongest-inflow-week-since-october-tripling-volume-412531"
+        }
+      ],
+      "execution": {
+        "id": "20260823-03",
+        "workstream": "CRYPTO_BREADTH",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "Earlier flow-breadth checkpoint is absorbed by the September 4 canonical breadth watch.",
+        "supersededBy": "20260904-03",
+        "artifact": {
+          "label": "Crypto capital-flow breadth",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "5315cb5add4304c9ec5394ac8e79302e1ea3c161",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/5315cb5add4304c9ec5394ac8e79302e1ea3c161"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 4,
       "priority": "NEXT",
-      "status": "READY",
+      "status": "COMPLETE",
       "visualValue": "Sep 16",
       "visualLabel": "Circle Arc public mainnet checkpoint",
       "sources": [
-        { "label": "Circle Arc", "url": "https://www.circle.com/pressroom/circle-announces-founding-validator-cohort-and-major-integrations-for-arc-ahead-of-september-16-mainnet-launch" },
-        { "label": "Circle Q2", "url": "https://www.circle.com/pressroom/circle-reports-second-quarter-2026-results" }
-      ]
+        {
+          "label": "Circle Arc",
+          "url": "https://www.circle.com/pressroom/circle-announces-founding-validator-cohort-and-major-integrations-for-arc-ahead-of-september-16-mainnet-launch"
+        },
+        {
+          "label": "Circle Q2",
+          "url": "https://www.circle.com/pressroom/circle-reports-second-quarter-2026-results"
+        }
+      ],
+      "execution": {
+        "id": "20260823-04",
+        "workstream": "PAYMENT_CONTROLS",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The reusable control matrix records the requested topology or diligence fields without moving value or claiming an unlaunched control.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Payment and agent-commerce control matrix",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "5315cb5add4304c9ec5394ac8e79302e1ea3c161",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/5315cb5add4304c9ec5394ac8e79302e1ea3c161"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 5,
@@ -61,20 +168,72 @@
       "visualValue": "DENY / HOLD",
       "visualLabel": "unknown authority and recovery defaults",
       "sources": [
-        { "label": "OpenAI", "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident/" },
-        { "label": "NIST SP 800-207", "url": "https://csrc.nist.gov/pubs/sp/800/207/final" },
-        { "label": "Canonical Action Item", "url": "https://iamrobin.ai/ouroboros/202608/20260823/action_item/" }
-      ]
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident/"
+        },
+        {
+          "label": "NIST SP 800-207",
+          "url": "https://csrc.nist.gov/pubs/sp/800/207/final"
+        },
+        {
+          "label": "Canonical Action Item",
+          "url": "https://iamrobin.ai/ouroboros/202608/20260823/action_item/"
+        }
+      ],
+      "execution": {
+        "id": "20260823-05",
+        "workstream": "PUBLICATION",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The canonical Action Item is public and linked to its source commit and verification receipt.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Published canonical Action Item",
+          "href": "/ouroboros/202608/20260823/action_item/"
+        },
+        "sourceCommit": {
+          "sha": "5315cb5add4304c9ec5394ac8e79302e1ea3c161",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/5315cb5add4304c9ec5394ac8e79302e1ea3c161"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 6,
       "priority": "NEXT",
-      "status": "READY",
+      "status": "COMPLETE",
       "visualValue": "$181K–285K",
       "visualLabel": "OpenAI infrastructure role salary range",
       "sources": [
-        { "label": "OpenAI Careers", "url": "https://openai.com/careers/new-geography-and-international-growth-lead-us-remote/" }
-      ]
+        {
+          "label": "OpenAI Careers",
+          "url": "https://openai.com/careers/new-geography-and-international-growth-lead-us-remote/"
+        }
+      ],
+      "execution": {
+        "id": "20260823-06",
+        "workstream": "AI_INFRASTRUCTURE",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The Signal 06 row is present in the 16-entry evidence registry and governed by the monthly review/publication boundary.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "AI infrastructure evidence intake",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "5315cb5add4304c9ec5394ac8e79302e1ea3c161",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/5315cb5add4304c9ec5394ac8e79302e1ea3c161"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 7,
@@ -83,9 +242,35 @@
       "visualValue": "$65B",
       "visualLabel": "Anthropic annualized revenue run rate",
       "sources": [
-        { "label": "Reuters revenue", "url": "https://www.reuters.com/technology/anthropic-revenue-run-rate-tops-65-billion-source-says-2026-08-17/" },
-        { "label": "Reuters Series H", "url": "https://www.reuters.com/business/anthropic-raises-65-billion-now-valued-965-billion-2026-05-28/" }
-      ]
+        {
+          "label": "Reuters revenue",
+          "url": "https://www.reuters.com/technology/anthropic-revenue-run-rate-tops-65-billion-source-says-2026-08-17/"
+        },
+        {
+          "label": "Reuters Series H",
+          "url": "https://www.reuters.com/business/anthropic-raises-65-billion-now-valued-965-billion-2026-05-28/"
+        }
+      ],
+      "execution": {
+        "id": "20260823-07",
+        "workstream": "PRIVATE_MARKETS",
+        "evidenceStatus": "UNKNOWN",
+        "reason": "The action is evidence-dependent; no new evidence justified changing the watch state.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Private-market diligence matrix",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "5315cb5add4304c9ec5394ac8e79302e1ea3c161",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/5315cb5add4304c9ec5394ac8e79302e1ea3c161"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     },
     {
       "signal": 8,
@@ -94,8 +279,31 @@
       "visualValue": ">15%",
       "visualLabel": "reported Nvidia server price increase",
       "sources": [
-        { "label": "Reuters", "url": "https://www.reuters.com/business/nvidia-customers-notified-about-ai-related-price-hikes-above-15-bloomberg-news-2026-08-22/" }
-      ]
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/nvidia-customers-notified-about-ai-related-price-hikes-above-15-bloomberg-news-2026-08-22/"
+        }
+      ],
+      "execution": {
+        "id": "20260823-08",
+        "workstream": "PUBLIC_EQUITIES",
+        "evidenceStatus": "UNKNOWN",
+        "reason": "The action is evidence-dependent; no new evidence justified changing the watch state.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Public-market causal ledger",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "5315cb5add4304c9ec5394ac8e79302e1ea3c161",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/5315cb5add4304c9ec5394ac8e79302e1ea3c161"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
     }
   ],
   "editions": {
@@ -107,14 +315,95 @@
       "centralJudgment": "Today’s common thread is authority under constraint: an agent, a robot, a token rail, a capital flow, a career decision, and a market thesis all become useful when the operating boundary and next proof are explicit.",
       "fieldLine": "Eight signals. One decision field. Evidence stays attached.",
       "actions": [
-        { "domain": "Frontier Agents", "title": "Inventory Agent Authority", "why": "The sandbox incident turns ambient credentials and network reach into an executive control problem.", "steps": ["List every active agent and automation", "Record credentials, network, financial authority, and recovery", "Set unknown grants to DENY and unknown recovery to HOLD"], "done": "Every active RobinOS agent has one dated authority row with owner, expiry, revocation, and recovery evidence or UNKNOWN." },
-        { "domain": "Physical AI", "title": "Separate Speed From Economics", "why": "A 9.39-second sprint raises the technical ceiling while paid autonomous work remains the commercial denominator.", "steps": ["Add a technical-capability ceiling field", "Record autonomy mode and intervention count", "Keep commercial maturity unchanged without paid production"], "done": "The tracker records technical ceiling separately from paid-production evidence for every cited robot result." },
-        { "domain": "Crypto Capital", "title": "Test Non BlackRock Breadth", "why": "Five positive sessions confirm ETF inflow while 71.5% concentration leaves the broader Web3 recovery open.", "steps": ["Track non-IBIT and non-ETHA flow", "Measure stablecoin supply and DeFi activity", "Upgrade only when breadth persists"], "done": "A broader recovery is declared only after another positive week plus improving stablecoin, DeFi, and market-breadth evidence." },
-        { "domain": "Stablecoins and Payments", "title": "Score Arc Before Launch", "why": "Arc combines issuer money, validators, privacy, RWAs, and agent payments inside one controlled rail.", "steps": ["Fix the issuer and validator questions", "Add privacy, finality, mint and redemption, and reconciliation", "Update after September 16 with operating evidence"], "done": "One pre-launch scorecard has a source and CONFIRMED or UNKNOWN state for every architecture field." },
-        { "domain": "iamrobin.ai", "title": "Publish the Authority Budget", "why": "Credentials, network reach, capital authority, and recoverable damage create a durable RobinOS governance thesis.", "steps": ["Separate reported facts from design proposals", "Publish four complete editions", "Archive the LinkedIn derivative and verify public schema"], "done": "The canonical article, four languages, ledger, images, schema, sitemap, and public checks all pass.", "deepDiveTitle": "The Agent That Escaped the Sandbox" },
-        { "domain": "AI Infrastructure Career", "title": "Build the Geography Matrix", "why": "The OpenAI role sits at Robin’s intersection of power, land, policy, capital, and executive go or no-go decisions.", "steps": ["Compare Japan, Switzerland, and Hong Kong", "Score deliverable MW, land, regulation, capital, and timing", "Package one application-ready evidence page"], "done": "One sourced matrix is ready for Robin’s review; submitting an application remains a human decision." },
-        { "domain": "Late Stage Markets", "title": "Underwrite Cash Conversion", "why": "A $65 billion run rate and $965 billion valuation still leave gross margin, concentration, compute commitments, and cash use unresolved.", "steps": ["Preserve run rate as an extrapolation", "Request a revenue to free-cash-flow bridge", "Keep private-price participation at WATCH"], "done": "The thesis upgrades only when the cash bridge, customer concentration, and non-cancellable compute obligations are reconcilable." },
-        { "domain": "Public Equities", "title": "Wait for the Relative Move", "why": "A reported 15% server price increase can indicate supplier power and raise the customer return hurdle at the same time.", "steps": ["Compare NVDA and MU with QQQ after August 24", "Require both suppliers to outperform", "Use Nvidia’s August 26 results as the next checkpoint"], "done": "One dated relative-return check records supplier pricing power or customer capex burden without inventing a pre-market reaction." }
+        {
+          "domain": "Frontier Agents",
+          "title": "Inventory Agent Authority",
+          "why": "The sandbox incident turns ambient credentials and network reach into an executive control problem.",
+          "steps": [
+            "List every active agent and automation",
+            "Record credentials, network, financial authority, and recovery",
+            "Set unknown grants to DENY and unknown recovery to HOLD"
+          ],
+          "done": "Every active RobinOS agent has one dated authority row with owner, expiry, revocation, and recovery evidence or UNKNOWN."
+        },
+        {
+          "domain": "Physical AI",
+          "title": "Separate Speed From Economics",
+          "why": "A 9.39-second sprint raises the technical ceiling while paid autonomous work remains the commercial denominator.",
+          "steps": [
+            "Add a technical-capability ceiling field",
+            "Record autonomy mode and intervention count",
+            "Keep commercial maturity unchanged without paid production"
+          ],
+          "done": "The tracker records technical ceiling separately from paid-production evidence for every cited robot result."
+        },
+        {
+          "domain": "Crypto Capital",
+          "title": "Test Non BlackRock Breadth",
+          "why": "Five positive sessions confirm ETF inflow while 71.5% concentration leaves the broader Web3 recovery open.",
+          "steps": [
+            "Track non-IBIT and non-ETHA flow",
+            "Measure stablecoin supply and DeFi activity",
+            "Upgrade only when breadth persists"
+          ],
+          "done": "A broader recovery is declared only after another positive week plus improving stablecoin, DeFi, and market-breadth evidence."
+        },
+        {
+          "domain": "Stablecoins and Payments",
+          "title": "Score Arc Before Launch",
+          "why": "Arc combines issuer money, validators, privacy, RWAs, and agent payments inside one controlled rail.",
+          "steps": [
+            "Fix the issuer and validator questions",
+            "Add privacy, finality, mint and redemption, and reconciliation",
+            "Update after September 16 with operating evidence"
+          ],
+          "done": "One pre-launch scorecard has a source and CONFIRMED or UNKNOWN state for every architecture field."
+        },
+        {
+          "domain": "iamrobin.ai",
+          "title": "Publish the Authority Budget",
+          "why": "Credentials, network reach, capital authority, and recoverable damage create a durable RobinOS governance thesis.",
+          "steps": [
+            "Separate reported facts from design proposals",
+            "Publish four complete editions",
+            "Archive the LinkedIn derivative and verify public schema"
+          ],
+          "done": "The canonical article, four languages, ledger, images, schema, sitemap, and public checks all pass.",
+          "deepDiveTitle": "The Agent That Escaped the Sandbox"
+        },
+        {
+          "domain": "AI Infrastructure Career",
+          "title": "Build the Geography Matrix",
+          "why": "The OpenAI role sits at Robin’s intersection of power, land, policy, capital, and executive go or no-go decisions.",
+          "steps": [
+            "Compare Japan, Switzerland, and Hong Kong",
+            "Score deliverable MW, land, regulation, capital, and timing",
+            "Package one application-ready evidence page"
+          ],
+          "done": "One sourced matrix is ready for Robin’s review; submitting an application remains a human decision."
+        },
+        {
+          "domain": "Late Stage Markets",
+          "title": "Underwrite Cash Conversion",
+          "why": "A $65 billion run rate and $965 billion valuation still leave gross margin, concentration, compute commitments, and cash use unresolved.",
+          "steps": [
+            "Preserve run rate as an extrapolation",
+            "Request a revenue to free-cash-flow bridge",
+            "Keep private-price participation at WATCH"
+          ],
+          "done": "The thesis upgrades only when the cash bridge, customer concentration, and non-cancellable compute obligations are reconcilable."
+        },
+        {
+          "domain": "Public Equities",
+          "title": "Wait for the Relative Move",
+          "why": "A reported 15% server price increase can indicate supplier power and raise the customer return hurdle at the same time.",
+          "steps": [
+            "Compare NVDA and MU with QQQ after August 24",
+            "Require both suppliers to outperform",
+            "Use Nvidia’s August 26 results as the next checkpoint"
+          ],
+          "done": "One dated relative-return check records supplier pricing power or customer capex burden without inventing a pre-market reaction."
+        }
       ]
     },
     "zh-Hans": {
@@ -125,14 +414,95 @@
       "centralJudgment": "今天八个信号有一条共同主线：Agent、机器人、支付轨道、资本流、职业选择和投资论点，只有在权限边界与下一项证据清楚时，才真正能够行动。",
       "fieldLine": "八个信号。一个决策场。证据始终相连。",
       "actions": [
-        { "domain": "前沿 Agent", "title": "盘点 Agent 权限", "why": "沙箱事故把环境凭证和网络范围变成了管理层必须回答的控制问题。", "steps": ["列出所有活跃 Agent 与 automation", "记录凭证、网络、资金权限和恢复能力", "未知授权设为 DENY，未知恢复设为 HOLD"], "done": "每个活跃 RobinOS Agent 都有一行带日期的权限记录，并包含负责人、到期、撤销和恢复证据或 UNKNOWN。" },
-        { "domain": "Physical AI", "title": "把速度和经济性分开", "why": "9.39秒提高了技术上限，付费自主工作仍是商业分母。", "steps": ["增加技术能力上限栏", "记录自主模式和干预次数", "没有付费生产证据就不提高商业成熟度"], "done": "每项机器人结果都把技术上限与付费生产证据分开记录。" },
-        { "domain": "加密资本", "title": "检验非 BlackRock 广度", "why": "五个正流入交易日确认 ETF 回流，71.5%的集中度仍让 Web3 全面复苏保持开放。", "steps": ["追踪 IBIT 与 ETHA 之外的资金", "测量稳定币供给和 DeFi 活动", "广度持续后才升级"], "done": "只有再出现一个正流入周，并同时看到稳定币、DeFi 和市场广度改善，才确认更广泛复苏。" },
-        { "domain": "稳定币与支付", "title": "Arc 上线前评分", "why": "Arc 把发行人货币、验证者、隐私、RWA 和 Agent 支付放进同一条受控轨道。", "steps": ["固定发行人和验证者问题", "加入隐私、最终性、铸造赎回和对账", "9月16日后只用运行证据更新"], "done": "一张上线前评分卡为每个架构字段留下来源，以及 CONFIRMED 或 UNKNOWN 状态。" },
-        { "domain": "iamrobin.ai", "title": "发布权限预算", "why": "凭证、网络、资金授权和可恢复损失构成一项可长期引用的 RobinOS 治理论点。", "steps": ["分开事故事实与设计建议", "发布四个完整语言版本", "归档 LinkedIn 衍生稿并验证公网 Schema"], "done": "canonical 文章、四语版本、账本、图片、Schema、sitemap 与公网检查全部通过。", "deepDiveTitle": "逃出沙箱的 Agent" },
-        { "domain": "AI 基础设施职业", "title": "建立地域准备矩阵", "why": "OpenAI 这个职位正好落在 Robin 的电力、土地、政策、资本与高管判断交叉点。", "steps": ["比较日本、瑞士和香港", "按可交付 MW、土地、监管、资本和时间评分", "整理成一页可用于申请的证据"], "done": "一张有来源的矩阵已经可以交给 Robin 审阅；提交申请仍由人决定。" },
-        { "domain": "后期一级市场", "title": "承销现金转化", "why": "650亿美元 run rate 和9,650亿美元估值，仍没有解决毛利率、集中度、算力承诺与现金消耗。", "steps": ["保留 run rate 的外推性质", "要求收入到自由现金流桥梁", "私募价格维持 WATCH"], "done": "只有现金桥梁、客户集中度和不可撤销算力义务可以核对，论点才升级。" },
-        { "domain": "公开市场", "title": "等待相对价格反应", "why": "据报15%的服务器涨价既可能表示供应商定价权，也会提高客户回报门槛。", "steps": ["8月24日后比较 NVDA、MU 与 QQQ", "要求两家供应商同时跑赢", "把8月26日 Nvidia 财报设为下一检查点"], "done": "一项带日期的相对收益检查记录供应商定价权或客户资本开支压力，不虚构开盘前反应。" }
+        {
+          "domain": "前沿 Agent",
+          "title": "盘点 Agent 权限",
+          "why": "沙箱事故把环境凭证和网络范围变成了管理层必须回答的控制问题。",
+          "steps": [
+            "列出所有活跃 Agent 与 automation",
+            "记录凭证、网络、资金权限和恢复能力",
+            "未知授权设为 DENY，未知恢复设为 HOLD"
+          ],
+          "done": "每个活跃 RobinOS Agent 都有一行带日期的权限记录，并包含负责人、到期、撤销和恢复证据或 UNKNOWN。"
+        },
+        {
+          "domain": "Physical AI",
+          "title": "把速度和经济性分开",
+          "why": "9.39秒提高了技术上限，付费自主工作仍是商业分母。",
+          "steps": [
+            "增加技术能力上限栏",
+            "记录自主模式和干预次数",
+            "没有付费生产证据就不提高商业成熟度"
+          ],
+          "done": "每项机器人结果都把技术上限与付费生产证据分开记录。"
+        },
+        {
+          "domain": "加密资本",
+          "title": "检验非 BlackRock 广度",
+          "why": "五个正流入交易日确认 ETF 回流，71.5%的集中度仍让 Web3 全面复苏保持开放。",
+          "steps": [
+            "追踪 IBIT 与 ETHA 之外的资金",
+            "测量稳定币供给和 DeFi 活动",
+            "广度持续后才升级"
+          ],
+          "done": "只有再出现一个正流入周，并同时看到稳定币、DeFi 和市场广度改善，才确认更广泛复苏。"
+        },
+        {
+          "domain": "稳定币与支付",
+          "title": "Arc 上线前评分",
+          "why": "Arc 把发行人货币、验证者、隐私、RWA 和 Agent 支付放进同一条受控轨道。",
+          "steps": [
+            "固定发行人和验证者问题",
+            "加入隐私、最终性、铸造赎回和对账",
+            "9月16日后只用运行证据更新"
+          ],
+          "done": "一张上线前评分卡为每个架构字段留下来源，以及 CONFIRMED 或 UNKNOWN 状态。"
+        },
+        {
+          "domain": "iamrobin.ai",
+          "title": "发布权限预算",
+          "why": "凭证、网络、资金授权和可恢复损失构成一项可长期引用的 RobinOS 治理论点。",
+          "steps": [
+            "分开事故事实与设计建议",
+            "发布四个完整语言版本",
+            "归档 LinkedIn 衍生稿并验证公网 Schema"
+          ],
+          "done": "canonical 文章、四语版本、账本、图片、Schema、sitemap 与公网检查全部通过。",
+          "deepDiveTitle": "逃出沙箱的 Agent"
+        },
+        {
+          "domain": "AI 基础设施职业",
+          "title": "建立地域准备矩阵",
+          "why": "OpenAI 这个职位正好落在 Robin 的电力、土地、政策、资本与高管判断交叉点。",
+          "steps": [
+            "比较日本、瑞士和香港",
+            "按可交付 MW、土地、监管、资本和时间评分",
+            "整理成一页可用于申请的证据"
+          ],
+          "done": "一张有来源的矩阵已经可以交给 Robin 审阅；提交申请仍由人决定。"
+        },
+        {
+          "domain": "后期一级市场",
+          "title": "承销现金转化",
+          "why": "650亿美元 run rate 和9,650亿美元估值，仍没有解决毛利率、集中度、算力承诺与现金消耗。",
+          "steps": [
+            "保留 run rate 的外推性质",
+            "要求收入到自由现金流桥梁",
+            "私募价格维持 WATCH"
+          ],
+          "done": "只有现金桥梁、客户集中度和不可撤销算力义务可以核对，论点才升级。"
+        },
+        {
+          "domain": "公开市场",
+          "title": "等待相对价格反应",
+          "why": "据报15%的服务器涨价既可能表示供应商定价权，也会提高客户回报门槛。",
+          "steps": [
+            "8月24日后比较 NVDA、MU 与 QQQ",
+            "要求两家供应商同时跑赢",
+            "把8月26日 Nvidia 财报设为下一检查点"
+          ],
+          "done": "一项带日期的相对收益检查记录供应商定价权或客户资本开支压力，不虚构开盘前反应。"
+        }
       ]
     },
     "zh-Hant": {
@@ -143,14 +513,95 @@
       "centralJudgment": "今天八個訊號有一條共同主線：Agent、機器人、支付軌道、資本流、職涯選擇和投資論點，只有權限邊界與下一項證據清楚，才真正能夠行動。",
       "fieldLine": "八個訊號。一個決策場。證據始終相連。",
       "actions": [
-        { "domain": "前沿 Agent", "title": "盤點 Agent 權限", "why": "沙箱事故把環境憑證和網路範圍變成管理層必須回答的控制問題。", "steps": ["列出所有活躍 Agent 與 automation", "記錄憑證、網路、資金權限和恢復能力", "未知授權設為 DENY，未知恢復設為 HOLD"], "done": "每個活躍 RobinOS Agent 都有一行帶日期的權限記錄，並包含負責人、到期、撤銷和恢復證據或 UNKNOWN。" },
-        { "domain": "Physical AI", "title": "把速度和經濟性分開", "why": "9.39秒提高技術上限，付費自主工作仍是商業分母。", "steps": ["增加技術能力上限欄", "記錄自主模式和干預次數", "沒有付費生產證據就不提高商業成熟度"], "done": "每項機器人結果都把技術上限與付費生產證據分開記錄。" },
-        { "domain": "加密資本", "title": "檢驗非 BlackRock 廣度", "why": "五個正流入交易日確認 ETF 回流，71.5%的集中度仍讓 Web3 全面復甦保持開放。", "steps": ["追蹤 IBIT 與 ETHA 之外的資金", "量度穩定幣供給和 DeFi 活動", "廣度持續後才升級"], "done": "只有再出現一個正流入週，並同時看到穩定幣、DeFi 和市場廣度改善，才確認更廣泛復甦。" },
-        { "domain": "穩定幣與支付", "title": "Arc 上線前評分", "why": "Arc 把發行人貨幣、驗證者、私隱、RWA 和 Agent 支付放進同一條受控軌道。", "steps": ["固定發行人和驗證者問題", "加入私隱、最終性、鑄造贖回和對帳", "9月16日後只用運行證據更新"], "done": "一張上線前評分卡為每個架構欄位留下來源，以及 CONFIRMED 或 UNKNOWN 狀態。" },
-        { "domain": "iamrobin.ai", "title": "發布權限預算", "why": "憑證、網路、資金授權和可恢復損失構成一項可長期引用的 RobinOS 治理論點。", "steps": ["分開事故事實與設計建議", "發布四個完整語言版本", "歸檔 LinkedIn 衍生稿並驗證公開 Schema"], "done": "canonical 文章、四語版本、帳本、圖片、Schema、sitemap 與公開檢查全部通過。", "deepDiveTitle": "逃出沙箱的 Agent" },
-        { "domain": "AI 基礎設施職涯", "title": "建立地域準備矩陣", "why": "OpenAI 這個職位正好落在 Robin 的電力、土地、政策、資本與高管判斷交叉點。", "steps": ["比較日本、瑞士和香港", "按可交付 MW、土地、監管、資本和時間評分", "整理成一頁可用於申請的證據"], "done": "一張有來源的矩陣已可交給 Robin 審閱；提交申請仍由人決定。" },
-        { "domain": "後期私募市場", "title": "承銷現金轉化", "why": "650億美元 run rate 和9,650億美元估值，仍未解決毛利率、集中度、算力承諾與現金消耗。", "steps": ["保留 run rate 的外推性質", "要求收入到自由現金流橋樑", "私募價格維持 WATCH"], "done": "只有現金橋樑、客戶集中度和不可撤銷算力義務可以核對，論點才升級。" },
-        { "domain": "公開市場", "title": "等待相對價格反應", "why": "據報15%的伺服器漲價既可能表示供應商定價權，也會提高客戶回報門檻。", "steps": ["8月24日後比較 NVDA、MU 與 QQQ", "要求兩家供應商同時跑贏", "把8月26日 Nvidia 業績設為下一檢查點"], "done": "一項帶日期的相對回報檢查記錄供應商定價權或客戶資本開支壓力，不虛構開市前反應。" }
+        {
+          "domain": "前沿 Agent",
+          "title": "盤點 Agent 權限",
+          "why": "沙箱事故把環境憑證和網路範圍變成管理層必須回答的控制問題。",
+          "steps": [
+            "列出所有活躍 Agent 與 automation",
+            "記錄憑證、網路、資金權限和恢復能力",
+            "未知授權設為 DENY，未知恢復設為 HOLD"
+          ],
+          "done": "每個活躍 RobinOS Agent 都有一行帶日期的權限記錄，並包含負責人、到期、撤銷和恢復證據或 UNKNOWN。"
+        },
+        {
+          "domain": "Physical AI",
+          "title": "把速度和經濟性分開",
+          "why": "9.39秒提高技術上限，付費自主工作仍是商業分母。",
+          "steps": [
+            "增加技術能力上限欄",
+            "記錄自主模式和干預次數",
+            "沒有付費生產證據就不提高商業成熟度"
+          ],
+          "done": "每項機器人結果都把技術上限與付費生產證據分開記錄。"
+        },
+        {
+          "domain": "加密資本",
+          "title": "檢驗非 BlackRock 廣度",
+          "why": "五個正流入交易日確認 ETF 回流，71.5%的集中度仍讓 Web3 全面復甦保持開放。",
+          "steps": [
+            "追蹤 IBIT 與 ETHA 之外的資金",
+            "量度穩定幣供給和 DeFi 活動",
+            "廣度持續後才升級"
+          ],
+          "done": "只有再出現一個正流入週，並同時看到穩定幣、DeFi 和市場廣度改善，才確認更廣泛復甦。"
+        },
+        {
+          "domain": "穩定幣與支付",
+          "title": "Arc 上線前評分",
+          "why": "Arc 把發行人貨幣、驗證者、私隱、RWA 和 Agent 支付放進同一條受控軌道。",
+          "steps": [
+            "固定發行人和驗證者問題",
+            "加入私隱、最終性、鑄造贖回和對帳",
+            "9月16日後只用運行證據更新"
+          ],
+          "done": "一張上線前評分卡為每個架構欄位留下來源，以及 CONFIRMED 或 UNKNOWN 狀態。"
+        },
+        {
+          "domain": "iamrobin.ai",
+          "title": "發布權限預算",
+          "why": "憑證、網路、資金授權和可恢復損失構成一項可長期引用的 RobinOS 治理論點。",
+          "steps": [
+            "分開事故事實與設計建議",
+            "發布四個完整語言版本",
+            "歸檔 LinkedIn 衍生稿並驗證公開 Schema"
+          ],
+          "done": "canonical 文章、四語版本、帳本、圖片、Schema、sitemap 與公開檢查全部通過。",
+          "deepDiveTitle": "逃出沙箱的 Agent"
+        },
+        {
+          "domain": "AI 基礎設施職涯",
+          "title": "建立地域準備矩陣",
+          "why": "OpenAI 這個職位正好落在 Robin 的電力、土地、政策、資本與高管判斷交叉點。",
+          "steps": [
+            "比較日本、瑞士和香港",
+            "按可交付 MW、土地、監管、資本和時間評分",
+            "整理成一頁可用於申請的證據"
+          ],
+          "done": "一張有來源的矩陣已可交給 Robin 審閱；提交申請仍由人決定。"
+        },
+        {
+          "domain": "後期私募市場",
+          "title": "承銷現金轉化",
+          "why": "650億美元 run rate 和9,650億美元估值，仍未解決毛利率、集中度、算力承諾與現金消耗。",
+          "steps": [
+            "保留 run rate 的外推性質",
+            "要求收入到自由現金流橋樑",
+            "私募價格維持 WATCH"
+          ],
+          "done": "只有現金橋樑、客戶集中度和不可撤銷算力義務可以核對，論點才升級。"
+        },
+        {
+          "domain": "公開市場",
+          "title": "等待相對價格反應",
+          "why": "據報15%的伺服器漲價既可能表示供應商定價權，也會提高客戶回報門檻。",
+          "steps": [
+            "8月24日後比較 NVDA、MU 與 QQQ",
+            "要求兩家供應商同時跑贏",
+            "把8月26日 Nvidia 業績設為下一檢查點"
+          ],
+          "done": "一項帶日期的相對回報檢查記錄供應商定價權或客戶資本開支壓力，不虛構開市前反應。"
+        }
       ]
     },
     "ja": {
@@ -161,14 +612,95 @@
       "centralJudgment": "今日の共通項は制約下の権限である。エージェント、ロボット、決済レール、資本フロー、キャリア判断、投資仮説は、境界と次の証拠が明確になって初めて行動へ変わる。",
       "fieldLine": "8つのシグナル。ひとつの意思決定領域。証拠はつながったまま。",
       "actions": [
-        { "domain": "フロンティアエージェント", "title": "エージェント権限を棚卸し", "why": "サンドボックス事案は、環境資格情報とネットワーク到達範囲を経営上の統制問題に変えた。", "steps": ["稼働中の全agentとautomationを列挙する", "資格情報、network、金融権限、回復を記録する", "未知のgrantはDENY、未知の回復はHOLDにする"], "done": "全RobinOS agentに、owner、期限、取消、回復証拠またはUNKNOWNを持つ日付付き権限行がある。" },
-        { "domain": "Physical AI", "title": "速度と経済性を分ける", "why": "9.39秒は技術上限を高めた。有償の自律作業が商業上の分母である。", "steps": ["技術能力上限の欄を追加する", "自律modeと介入回数を記録する", "有償本番証拠なしに商用成熟度を上げない"], "done": "引用した全robot結果で、技術上限と有償本番証拠が別々に記録される。" },
-        { "domain": "暗号資産への資本", "title": "BlackRock以外の広がりを検証", "why": "5日間の流入はETF回帰を確認したが、71.5%の集中でWeb3全体の回復は未確定だ。", "steps": ["IBITとETHA以外のflowを追う", "stablecoin供給とDeFi活動を測る", "広がりが続いた時だけ昇格する"], "done": "もう一週の純流入とstablecoin、DeFi、市場の広がりが同時に改善した場合だけ全体回復とする。" },
-        { "domain": "ステーブルコインと決済", "title": "稼働前にArcを採点", "why": "Arcは発行者通貨、validator、privacy、RWA、agent決済を一つの管理railへ入れる。", "steps": ["発行者とvalidatorの問いを固定する", "privacy、finality、mint、redemption、reconciliationを加える", "9月16日後は運用証拠だけで更新する"], "done": "稼働前scorecardの全項目にsourceとCONFIRMEDまたはUNKNOWNが付く。" },
-        { "domain": "iamrobin.ai", "title": "権限予算を公開", "why": "資格情報、network reach、capital authority、recoverable damageを一つのRobinOS統治論へまとめる。", "steps": ["事故事実と設計提案を分ける", "4言語の完全版を公開する", "LinkedIn稿を保存しpublic schemaを検証する"], "done": "canonical article、4言語、ledger、image、schema、sitemap、public checkがすべて通る。", "deepDiveTitle": "サンドボックスを脱出したエージェント" },
-        { "domain": "AIインフラ・キャリア", "title": "地域準備matrixを作る", "why": "OpenAIの職務は、Robinのpower、land、policy、capital、経営判断が交わる場所にある。", "steps": ["日本、スイス、香港を比較する", "deliverable MW、land、regulation、capital、timingを採点する", "応募用1ページ証拠にまとめる"], "done": "source付きmatrixをRobinが確認できる状態にする。応募送信は人間の判断として残す。" },
-        { "domain": "レイトステージ未公開市場", "title": "現金転換を引き受ける", "why": "650億ドルrun rateと9,650億ドル評価でも、margin、concentration、compute commitment、cash useは未解決だ。", "steps": ["run rateを外挿値として保つ", "revenueからfree cash flowまでのbridgeを求める", "private price参加をWATCHに保つ"], "done": "cash bridge、顧客集中、解約不能compute obligationを照合できた時だけ昇格する。" },
-        { "domain": "公開株式", "title": "相対値動きを待つ", "why": "報道された15%値上げはsupplier powerを示し、customer return hurdleも上げ得る。", "steps": ["8月24日後にNVDAとMUをQQQ比で測る", "両社のoutperformanceを求める", "8月26日のNvidia決算を次のcheckpointにする"], "done": "日付付きrelative-return checkがsupplier pricing powerかcustomer capex burdenを記録し、取引前反応を作らない。" }
+        {
+          "domain": "フロンティアエージェント",
+          "title": "エージェント権限を棚卸し",
+          "why": "サンドボックス事案は、環境資格情報とネットワーク到達範囲を経営上の統制問題に変えた。",
+          "steps": [
+            "稼働中の全agentとautomationを列挙する",
+            "資格情報、network、金融権限、回復を記録する",
+            "未知のgrantはDENY、未知の回復はHOLDにする"
+          ],
+          "done": "全RobinOS agentに、owner、期限、取消、回復証拠またはUNKNOWNを持つ日付付き権限行がある。"
+        },
+        {
+          "domain": "Physical AI",
+          "title": "速度と経済性を分ける",
+          "why": "9.39秒は技術上限を高めた。有償の自律作業が商業上の分母である。",
+          "steps": [
+            "技術能力上限の欄を追加する",
+            "自律modeと介入回数を記録する",
+            "有償本番証拠なしに商用成熟度を上げない"
+          ],
+          "done": "引用した全robot結果で、技術上限と有償本番証拠が別々に記録される。"
+        },
+        {
+          "domain": "暗号資産への資本",
+          "title": "BlackRock以外の広がりを検証",
+          "why": "5日間の流入はETF回帰を確認したが、71.5%の集中でWeb3全体の回復は未確定だ。",
+          "steps": [
+            "IBITとETHA以外のflowを追う",
+            "stablecoin供給とDeFi活動を測る",
+            "広がりが続いた時だけ昇格する"
+          ],
+          "done": "もう一週の純流入とstablecoin、DeFi、市場の広がりが同時に改善した場合だけ全体回復とする。"
+        },
+        {
+          "domain": "ステーブルコインと決済",
+          "title": "稼働前にArcを採点",
+          "why": "Arcは発行者通貨、validator、privacy、RWA、agent決済を一つの管理railへ入れる。",
+          "steps": [
+            "発行者とvalidatorの問いを固定する",
+            "privacy、finality、mint、redemption、reconciliationを加える",
+            "9月16日後は運用証拠だけで更新する"
+          ],
+          "done": "稼働前scorecardの全項目にsourceとCONFIRMEDまたはUNKNOWNが付く。"
+        },
+        {
+          "domain": "iamrobin.ai",
+          "title": "権限予算を公開",
+          "why": "資格情報、network reach、capital authority、recoverable damageを一つのRobinOS統治論へまとめる。",
+          "steps": [
+            "事故事実と設計提案を分ける",
+            "4言語の完全版を公開する",
+            "LinkedIn稿を保存しpublic schemaを検証する"
+          ],
+          "done": "canonical article、4言語、ledger、image、schema、sitemap、public checkがすべて通る。",
+          "deepDiveTitle": "サンドボックスを脱出したエージェント"
+        },
+        {
+          "domain": "AIインフラ・キャリア",
+          "title": "地域準備matrixを作る",
+          "why": "OpenAIの職務は、Robinのpower、land、policy、capital、経営判断が交わる場所にある。",
+          "steps": [
+            "日本、スイス、香港を比較する",
+            "deliverable MW、land、regulation、capital、timingを採点する",
+            "応募用1ページ証拠にまとめる"
+          ],
+          "done": "source付きmatrixをRobinが確認できる状態にする。応募送信は人間の判断として残す。"
+        },
+        {
+          "domain": "レイトステージ未公開市場",
+          "title": "現金転換を引き受ける",
+          "why": "650億ドルrun rateと9,650億ドル評価でも、margin、concentration、compute commitment、cash useは未解決だ。",
+          "steps": [
+            "run rateを外挿値として保つ",
+            "revenueからfree cash flowまでのbridgeを求める",
+            "private price参加をWATCHに保つ"
+          ],
+          "done": "cash bridge、顧客集中、解約不能compute obligationを照合できた時だけ昇格する。"
+        },
+        {
+          "domain": "公開株式",
+          "title": "相対値動きを待つ",
+          "why": "報道された15%値上げはsupplier powerを示し、customer return hurdleも上げ得る。",
+          "steps": [
+            "8月24日後にNVDAとMUをQQQ比で測る",
+            "両社のoutperformanceを求める",
+            "8月26日のNvidia決算を次のcheckpointにする"
+          ],
+          "done": "日付付きrelative-return checkがsupplier pricing powerかcustomer capex burdenを記録し、取引前反応を作らない。"
+        }
       ]
     }
   }

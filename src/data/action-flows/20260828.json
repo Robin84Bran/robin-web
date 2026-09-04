@@ -9,71 +9,730 @@
   "briefingPath": "/ouroboros/202608/20260828/",
   "actionItemPath": "/ouroboros/202608/20260828/action_item/",
   "actions": [
-    {"signal": 1, "priority": "WATCH", "status": "WATCHING", "visualValue": "$12.9B", "visualLabel": "reported acquisition value", "sources": [{"label": "Reuters", "url": "https://www.reuters.com/technology/nvidia-talks-acquire-hugging-face-13-billion-deal-business-insider-reports-2026-08-27/"}, {"label": "NVIDIA partnership", "url": "https://nvidianews.nvidia.com/news/nvidia-dgx-cloud-lepton-connects-europes-developers-to-global-nvidia-compute-ecosystem"}]},
-    {"signal": 2, "priority": "WATCH", "status": "WATCHING", "visualValue": "95%", "visualLabel": "China share of humanoid shipments", "sources": [{"label": "Reuters", "url": "https://www.reuters.com/investigations/chinas-humanoid-robots-arent-smart-enough-take-your-job-yet-2026-08-27/"}]},
-    {"signal": 3, "priority": "WATCH", "status": "WATCHING", "visualValue": "$3.982B", "visualLabel": "eight settled sessions", "sources": [{"label": "Farside BTC", "url": "https://farside.co.uk/btc/"}, {"label": "Farside ETH", "url": "https://farside.co.uk/eth/"}]},
-    {"signal": 4, "priority": "NOW", "status": "READY", "visualValue": "Oct 31", "visualLabel": "CCTP V1 retirement begins", "sources": [{"label": "Circle", "url": "https://www.circle.com/blog/migrate-to-cctp-v2-ahead-of-cctp-v1-legacy-deprecation"}]},
-    {"signal": 5, "priority": "NOW", "status": "READY", "visualValue": "95% ≠ labour", "visualLabel": "shipment versus useful work", "sources": [{"label": "Reuters", "url": "https://www.reuters.com/investigations/chinas-humanoid-robots-arent-smart-enough-take-your-job-yet-2026-08-27/"}, {"label": "Financial Times", "url": "https://www.ft.com/content/52e03e5d-12f7-41e2-a62e-3822200ea7b7"}]},
-    {"signal": 6, "priority": "NEXT", "status": "READY", "visualValue": "$2.2B", "visualLabel": "external equity for SK Horizon", "sources": [{"label": "SK Telecom, KKR and IMM", "url": "https://www.businesswire.com/news/home/20260827805012/en/SK-Telecom-Launches-AI-Data-Center-Infrastructure-Company-SK-Horizon-and-Secures-Investments-from-KKR-and-IMM"}, {"label": "KKR", "url": "https://media.kkr.com/news-details?news_id=d43fd044-c7f3-427b-a41e-e2a4e43e9f33"}]},
-    {"signal": 7, "priority": "WATCH", "status": "WATCHING", "visualValue": "14.3×", "visualLabel": "valuation to reported ARR", "sources": [{"label": "Socure", "url": "https://www.socure.com/news-and-press/strategic-growth-investment-fravity-acquisition"}, {"label": "Summit Partners", "url": "https://www.summitpartners.com/news/socure-announces-strategic-growth-investment-from-summit-partners"}, {"label": "Reuters", "url": "https://www.reuters.com/legal/transactional/socure-secures-investment-52-billion-valuation-buys-fravity-2026-08-27/"}]},
-    {"signal": 8, "priority": "NEXT", "status": "READY", "visualValue": "+7.37pp", "visualLabel": "NVDA relative outperformance", "sources": [{"label": "Reuters market close", "url": "https://www.reuters.com/business/nasdaq-futures-take-lead-after-nvidia-forecast-refuels-ai-trade-2026-08-27/"}, {"label": "Reuters analysis", "url": "https://www.reuters.com/business/nvidia-rises-after-signaling-longer-ai-spending-runway-2026-08-27/"}, {"label": "NVDA history", "url": "https://stockanalysis.com/stocks/nvda/history/"}, {"label": "QQQ history", "url": "https://stockanalysis.com/etf/qqq/history/"}]}
+    {
+      "signal": 1,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$12.9B",
+      "visualLabel": "reported acquisition value",
+      "sources": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/technology/nvidia-talks-acquire-hugging-face-13-billion-deal-business-insider-reports-2026-08-27/"
+        },
+        {
+          "label": "NVIDIA partnership",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-dgx-cloud-lepton-connects-europes-developers-to-global-nvidia-compute-ecosystem"
+        }
+      ],
+      "execution": {
+        "id": "20260828-01",
+        "workstream": "FRONTIER_CONTROLS",
+        "evidenceStatus": "UNKNOWN",
+        "reason": "The action is evidence-dependent; no new evidence justified changing the watch state.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Frontier model authority controls",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "c53b7a43e50126f229ffc71c0cb9ee626fe26a59",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/c53b7a43e50126f229ffc71c0cb9ee626fe26a59"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "95%",
+      "visualLabel": "China share of humanoid shipments",
+      "sources": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/investigations/chinas-humanoid-robots-arent-smart-enough-take-your-job-yet-2026-08-27/"
+        }
+      ],
+      "execution": {
+        "id": "20260828-02",
+        "workstream": "PHYSICAL_AI",
+        "evidenceStatus": "UNKNOWN",
+        "reason": "The action is evidence-dependent; no new evidence justified changing the watch state.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Physical AI operating evidence",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "c53b7a43e50126f229ffc71c0cb9ee626fe26a59",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/c53b7a43e50126f229ffc71c0cb9ee626fe26a59"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "SUPERSEDED",
+      "visualValue": "$3.982B",
+      "visualLabel": "eight settled sessions",
+      "sources": [
+        {
+          "label": "Farside BTC",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "Farside ETH",
+          "url": "https://farside.co.uk/eth/"
+        }
+      ],
+      "execution": {
+        "id": "20260828-03",
+        "workstream": "CRYPTO_BREADTH",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "Earlier flow-breadth checkpoint is absorbed by the September 4 canonical breadth watch.",
+        "supersededBy": "20260904-03",
+        "artifact": {
+          "label": "Crypto capital-flow breadth",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "c53b7a43e50126f229ffc71c0cb9ee626fe26a59",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/c53b7a43e50126f229ffc71c0cb9ee626fe26a59"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
+    },
+    {
+      "signal": 4,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "visualValue": "Oct 31",
+      "visualLabel": "CCTP V1 retirement begins",
+      "sources": [
+        {
+          "label": "Circle",
+          "url": "https://www.circle.com/blog/migrate-to-cctp-v2-ahead-of-cctp-v1-legacy-deprecation"
+        }
+      ],
+      "execution": {
+        "id": "20260828-04",
+        "workstream": "PAYMENT_CONTROLS",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The reusable control matrix records the requested topology or diligence fields without moving value or claiming an unlaunched control.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Payment and agent-commerce control matrix",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "c53b7a43e50126f229ffc71c0cb9ee626fe26a59",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/c53b7a43e50126f229ffc71c0cb9ee626fe26a59"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "visualValue": "95% ≠ labour",
+      "visualLabel": "shipment versus useful work",
+      "sources": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/investigations/chinas-humanoid-robots-arent-smart-enough-take-your-job-yet-2026-08-27/"
+        },
+        {
+          "label": "Financial Times",
+          "url": "https://www.ft.com/content/52e03e5d-12f7-41e2-a62e-3822200ea7b7"
+        }
+      ],
+      "execution": {
+        "id": "20260828-05",
+        "workstream": "PUBLICATION",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The canonical Action Item is public and linked to its source commit and verification receipt.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Published canonical Action Item",
+          "href": "/ouroboros/202608/20260828/action_item/"
+        },
+        "sourceCommit": {
+          "sha": "c53b7a43e50126f229ffc71c0cb9ee626fe26a59",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/c53b7a43e50126f229ffc71c0cb9ee626fe26a59"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "COMPLETE",
+      "visualValue": "$2.2B",
+      "visualLabel": "external equity for SK Horizon",
+      "sources": [
+        {
+          "label": "SK Telecom, KKR and IMM",
+          "url": "https://www.businesswire.com/news/home/20260827805012/en/SK-Telecom-Launches-AI-Data-Center-Infrastructure-Company-SK-Horizon-and-Secures-Investments-from-KKR-and-IMM"
+        },
+        {
+          "label": "KKR",
+          "url": "https://media.kkr.com/news-details?news_id=d43fd044-c7f3-427b-a41e-e2a4e43e9f33"
+        }
+      ],
+      "execution": {
+        "id": "20260828-06",
+        "workstream": "AI_INFRASTRUCTURE",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The Signal 06 row is present in the 16-entry evidence registry and governed by the monthly review/publication boundary.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "AI infrastructure evidence intake",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "c53b7a43e50126f229ffc71c0cb9ee626fe26a59",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/c53b7a43e50126f229ffc71c0cb9ee626fe26a59"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "14.3×",
+      "visualLabel": "valuation to reported ARR",
+      "sources": [
+        {
+          "label": "Socure",
+          "url": "https://www.socure.com/news-and-press/strategic-growth-investment-fravity-acquisition"
+        },
+        {
+          "label": "Summit Partners",
+          "url": "https://www.summitpartners.com/news/socure-announces-strategic-growth-investment-from-summit-partners"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/legal/transactional/socure-secures-investment-52-billion-valuation-buys-fravity-2026-08-27/"
+        }
+      ],
+      "execution": {
+        "id": "20260828-07",
+        "workstream": "PRIVATE_MARKETS",
+        "evidenceStatus": "UNKNOWN",
+        "reason": "The action is evidence-dependent; no new evidence justified changing the watch state.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Private-market diligence matrix",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "c53b7a43e50126f229ffc71c0cb9ee626fe26a59",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/c53b7a43e50126f229ffc71c0cb9ee626fe26a59"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
+    },
+    {
+      "signal": 8,
+      "priority": "NEXT",
+      "status": "COMPLETE",
+      "visualValue": "+7.37pp",
+      "visualLabel": "NVDA relative outperformance",
+      "sources": [
+        {
+          "label": "Reuters market close",
+          "url": "https://www.reuters.com/business/nasdaq-futures-take-lead-after-nvidia-forecast-refuels-ai-trade-2026-08-27/"
+        },
+        {
+          "label": "Reuters analysis",
+          "url": "https://www.reuters.com/business/nvidia-rises-after-signaling-longer-ai-spending-runway-2026-08-27/"
+        },
+        {
+          "label": "NVDA history",
+          "url": "https://stockanalysis.com/stocks/nvda/history/"
+        },
+        {
+          "label": "QQQ history",
+          "url": "https://stockanalysis.com/etf/qqq/history/"
+        }
+      ],
+      "execution": {
+        "id": "20260828-08",
+        "workstream": "PUBLIC_EQUITIES",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The causal ledger separates reported demand, revenue, cash, financing and concentration without creating a trade instruction.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Public-market causal ledger",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "c53b7a43e50126f229ffc71c0cb9ee626fe26a59",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/c53b7a43e50126f229ffc71c0cb9ee626fe26a59"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
+    }
   ],
   "editions": {
     "en": {
-      "inLanguage": "en", "languageSlug": "", "title": "Daily Action Flow, August 28, 2026", "description": "Eight source-backed actions ordered into one inspectable CIO execution field.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "title": "Daily Action Flow, August 28, 2026",
+      "description": "Eight source-backed actions ordered into one inspectable CIO execution field.",
       "centralJudgment": "Separate ownership from neutrality, bodies from labour, inflow from breadth, protocol choice from migration duty, megawatts from financeable assets, and demand from cash conversion. Each signal needs one next proof before its thesis earns more capital or authority.",
       "fieldLine": "Eight signals. Clean denominators. One next proof each.",
       "actions": [
-        {"signal": 1, "domain": "Frontier Models", "title": "Test Hugging Face Neutrality", "why": "A reported $12.9 billion acquisition could join compute and distribution while weakening the platform's neutral position.", "steps": ["Keep the transaction reported and unclosed", "Track ranking independence and non-CUDA access", "Test API exportability and Chinese-model visibility"], "done": "The neutrality scorecard changes only after definitive terms or observable platform restrictions appear."},
-        {"signal": 2, "domain": "Physical AI", "title": "Measure Useful Robot Labour", "why": "China's 95% shipment share proves manufacturing scale and does not prove paid autonomous output.", "steps": ["Separate shipment, delivery, deployment and repeat purchase", "Record task success and human intervention", "Calculate paid autonomous useful-work hours"], "done": "Commercial maturity rises only when useful hours, repeat orders and safety improve together."},
-        {"signal": 3, "domain": "Crypto Capital", "title": "Wait for ETF Breadth", "why": "Eight positive sessions matter, while IBIT and ETHA still supplied 74.5% of the latest flow.", "steps": ["Keep ETF-led re-entry and narrow-breadth labels", "Complete the August 27 settlement", "Calculate the weekly non-IBIT and non-ETHA share"], "done": "Breadth upgrades only when other products provide at least one-third of weekly flows."},
-        {"signal": 4, "domain": "Stablecoins and Payments", "title": "Inventory CCTP V1", "why": "The October 31 retirement turns a protocol version into a settlement and reconciliation deadline.", "steps": ["Find every V1 call site", "Assign a V2 owner and migration date", "Document chain and banking fallbacks"], "done": "Every production dependency has a tested V2 path and accounting-continuity fallback before October 31."},
-        {"signal": 5, "domain": "iamrobin.ai", "title": "Publish the Labour Denominator", "why": "Shipment volume becomes investment evidence only after it is connected to paid autonomous useful work.", "steps": ["Verify the 20,000 and 95% estimates", "Compare China and US advantages", "Publish the labour equation across four languages"], "done": "The article passes evidence, editorial, privacy, build and public-route gates."},
-        {"signal": 6, "domain": "AI Infrastructure Career", "title": "Split OpCo from DevCo", "why": "SK Horizon's 318 MW operating platform is more financeable than 5 GW and 15 GW long-range targets.", "steps": ["Classify operating and construction-stage capacity", "Separate uncommitted development", "Exclude paper gigawatts from current value"], "done": "The Power Hunt template presents OpCo, construction and DevCo as separate underwriting objects."},
-        {"signal": 7, "domain": "Late Stage Markets", "title": "Keep Socure in Investigation", "why": "Strong company-reported growth cannot resolve primary-secondary opacity, preferences or acquisition economics.", "steps": ["Obtain the primary-secondary split", "Verify audited ARR, margins and profitability", "Request Fravity terms and loss metrics"], "done": "Socure remains market intelligence until every required term and operating denominator is evidenced."},
-        {"signal": 8, "domain": "Public Equities", "title": "Separate Demand from Cash", "why": "NVIDIA's market response confirmed demand and pricing power while cash conversion remains unresolved.", "steps": ["Upgrade the demand rating", "Avoid chasing the 8.74% move", "Track cash conversion, receivables and financing guarantees"], "done": "Position discipline records demand as confirmed and balance-sheet red flags as independently open."}
+        {
+          "signal": 1,
+          "domain": "Frontier Models",
+          "title": "Test Hugging Face Neutrality",
+          "why": "A reported $12.9 billion acquisition could join compute and distribution while weakening the platform's neutral position.",
+          "steps": [
+            "Keep the transaction reported and unclosed",
+            "Track ranking independence and non-CUDA access",
+            "Test API exportability and Chinese-model visibility"
+          ],
+          "done": "The neutrality scorecard changes only after definitive terms or observable platform restrictions appear."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "Measure Useful Robot Labour",
+          "why": "China's 95% shipment share proves manufacturing scale and does not prove paid autonomous output.",
+          "steps": [
+            "Separate shipment, delivery, deployment and repeat purchase",
+            "Record task success and human intervention",
+            "Calculate paid autonomous useful-work hours"
+          ],
+          "done": "Commercial maturity rises only when useful hours, repeat orders and safety improve together."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital",
+          "title": "Wait for ETF Breadth",
+          "why": "Eight positive sessions matter, while IBIT and ETHA still supplied 74.5% of the latest flow.",
+          "steps": [
+            "Keep ETF-led re-entry and narrow-breadth labels",
+            "Complete the August 27 settlement",
+            "Calculate the weekly non-IBIT and non-ETHA share"
+          ],
+          "done": "Breadth upgrades only when other products provide at least one-third of weekly flows."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins and Payments",
+          "title": "Inventory CCTP V1",
+          "why": "The October 31 retirement turns a protocol version into a settlement and reconciliation deadline.",
+          "steps": [
+            "Find every V1 call site",
+            "Assign a V2 owner and migration date",
+            "Document chain and banking fallbacks"
+          ],
+          "done": "Every production dependency has a tested V2 path and accounting-continuity fallback before October 31."
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "Publish the Labour Denominator",
+          "why": "Shipment volume becomes investment evidence only after it is connected to paid autonomous useful work.",
+          "steps": [
+            "Verify the 20,000 and 95% estimates",
+            "Compare China and US advantages",
+            "Publish the labour equation across four languages"
+          ],
+          "done": "The article passes evidence, editorial, privacy, build and public-route gates."
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure Career",
+          "title": "Split OpCo from DevCo",
+          "why": "SK Horizon's 318 MW operating platform is more financeable than 5 GW and 15 GW long-range targets.",
+          "steps": [
+            "Classify operating and construction-stage capacity",
+            "Separate uncommitted development",
+            "Exclude paper gigawatts from current value"
+          ],
+          "done": "The Power Hunt template presents OpCo, construction and DevCo as separate underwriting objects."
+        },
+        {
+          "signal": 7,
+          "domain": "Late Stage Markets",
+          "title": "Keep Socure in Investigation",
+          "why": "Strong company-reported growth cannot resolve primary-secondary opacity, preferences or acquisition economics.",
+          "steps": [
+            "Obtain the primary-secondary split",
+            "Verify audited ARR, margins and profitability",
+            "Request Fravity terms and loss metrics"
+          ],
+          "done": "Socure remains market intelligence until every required term and operating denominator is evidenced."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities",
+          "title": "Separate Demand from Cash",
+          "why": "NVIDIA's market response confirmed demand and pricing power while cash conversion remains unresolved.",
+          "steps": [
+            "Upgrade the demand rating",
+            "Avoid chasing the 8.74% move",
+            "Track cash conversion, receivables and financing guarantees"
+          ],
+          "done": "Position discipline records demand as confirmed and balance-sheet red flags as independently open."
+        }
       ]
     },
     "zh-Hans": {
-      "inLanguage": "zh-Hans", "languageSlug": "zh-hans", "title": "每日行动流，2026年8月28日", "description": "八项有来源支持的行动，汇入一个可审计的CIO执行场。",
-      "centralJudgment": "把所有权与中立性、机体与劳动、流入与广度、协议选择与迁移责任、兆瓦与可融资资产、需求与现金转化分别看待。每个信号都要用一个下一步证据，才能获得更多资本或权限。", "fieldLine": "八个信号。干净分母。各有一个下一步证据。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "title": "每日行动流，2026年8月28日",
+      "description": "八项有来源支持的行动，汇入一个可审计的CIO执行场。",
+      "centralJudgment": "把所有权与中立性、机体与劳动、流入与广度、协议选择与迁移责任、兆瓦与可融资资产、需求与现金转化分别看待。每个信号都要用一个下一步证据，才能获得更多资本或权限。",
+      "fieldLine": "八个信号。干净分母。各有一个下一步证据。",
       "actions": [
-        {"signal": 1, "domain": "前沿模型", "title": "检验Hugging Face中立性", "why": "据报129亿美元收购可整合算力与分发，也可能削弱平台中立地位。", "steps": ["保持reported / not closed", "跟踪排名独立与非CUDA接入", "测试API可导出及中国模型可见度"], "done": "只有最终条款或可观察限制出现后才改变中立性评级。"},
-        {"signal": 2, "domain": "Physical AI", "title": "测量有效机器人劳动", "why": "中国95%出货份额证明制造规模，不证明付费自主产出。", "steps": ["分开出货、交付、部署与复购", "记录任务成功与人工干预", "计算付费有效自主工作小时"], "done": "有效小时、复购与安全共同改善后才提高商业成熟度。"},
-        {"signal": 3, "domain": "加密资本", "title": "等待ETF广度", "why": "连续八日流入重要，但最新一天74.5%仍来自IBIT与ETHA。", "steps": ["保留ETF-led re-entry与narrow breadth", "完成8月27日结算", "计算全周非IBIT与非ETHA占比"], "done": "其他产品达到全周三分之一后才升级广度。"},
-        {"signal": 4, "domain": "稳定币与支付", "title": "清点CCTP V1", "why": "10月31日退役把协议版本变成结算与对账期限。", "steps": ["找到每个V1调用点", "指定V2负责人和日期", "记录链与银行回退"], "done": "10月31日前每项生产依赖都有测试过的V2路径和账务连续性回退。"},
-        {"signal": 5, "domain": "iamrobin.ai", "title": "发布劳动分母", "why": "出货量必须连接到付费有效自主工作，才能成为投资证据。", "steps": ["核验2万台与95%", "比较中美优势", "四语发布劳动公式"], "done": "文章通过证据、编辑、隐私、构建和公开路由关卡。"},
-        {"signal": 6, "domain": "AI基础设施职业", "title": "分开OpCo与DevCo", "why": "SK Horizon的318MW运营平台比5GW和15GW远期目标更可融资。", "steps": ["分类运营与在建容量", "分开未承诺开发", "把纸上GW排除出当前价值"], "done": "Power Hunt把OpCo、在建和DevCo作为三个承销对象。"},
-        {"signal": 7, "domain": "后期一级市场", "title": "保持Socure调查状态", "why": "公司披露的高增长不能解决一二级、优先权和并购经济不透明。", "steps": ["取得一二级拆分", "核验ARR、利润率与盈利", "索取Fravity条款及损失指标"], "done": "所有条款与经营分母得到证据前，Socure只保留为市场情报。"},
-        {"signal": 8, "domain": "公开市场", "title": "分开需求与现金", "why": "市场确认NVIDIA需求与定价权，现金转化仍未解决。", "steps": ["升级需求评级", "不追8.74%单日涨幅", "跟踪现金转化、应收与融资担保"], "done": "仓位纪律分别记录已确认需求与仍开放的资产负债表红旗。"}
+        {
+          "signal": 1,
+          "domain": "前沿模型",
+          "title": "检验Hugging Face中立性",
+          "why": "据报129亿美元收购可整合算力与分发，也可能削弱平台中立地位。",
+          "steps": [
+            "保持reported / not closed",
+            "跟踪排名独立与非CUDA接入",
+            "测试API可导出及中国模型可见度"
+          ],
+          "done": "只有最终条款或可观察限制出现后才改变中立性评级。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "测量有效机器人劳动",
+          "why": "中国95%出货份额证明制造规模，不证明付费自主产出。",
+          "steps": [
+            "分开出货、交付、部署与复购",
+            "记录任务成功与人工干预",
+            "计算付费有效自主工作小时"
+          ],
+          "done": "有效小时、复购与安全共同改善后才提高商业成熟度。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本",
+          "title": "等待ETF广度",
+          "why": "连续八日流入重要，但最新一天74.5%仍来自IBIT与ETHA。",
+          "steps": [
+            "保留ETF-led re-entry与narrow breadth",
+            "完成8月27日结算",
+            "计算全周非IBIT与非ETHA占比"
+          ],
+          "done": "其他产品达到全周三分之一后才升级广度。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币与支付",
+          "title": "清点CCTP V1",
+          "why": "10月31日退役把协议版本变成结算与对账期限。",
+          "steps": [
+            "找到每个V1调用点",
+            "指定V2负责人和日期",
+            "记录链与银行回退"
+          ],
+          "done": "10月31日前每项生产依赖都有测试过的V2路径和账务连续性回退。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "发布劳动分母",
+          "why": "出货量必须连接到付费有效自主工作，才能成为投资证据。",
+          "steps": [
+            "核验2万台与95%",
+            "比较中美优势",
+            "四语发布劳动公式"
+          ],
+          "done": "文章通过证据、编辑、隐私、构建和公开路由关卡。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基础设施职业",
+          "title": "分开OpCo与DevCo",
+          "why": "SK Horizon的318MW运营平台比5GW和15GW远期目标更可融资。",
+          "steps": [
+            "分类运营与在建容量",
+            "分开未承诺开发",
+            "把纸上GW排除出当前价值"
+          ],
+          "done": "Power Hunt把OpCo、在建和DevCo作为三个承销对象。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期一级市场",
+          "title": "保持Socure调查状态",
+          "why": "公司披露的高增长不能解决一二级、优先权和并购经济不透明。",
+          "steps": [
+            "取得一二级拆分",
+            "核验ARR、利润率与盈利",
+            "索取Fravity条款及损失指标"
+          ],
+          "done": "所有条款与经营分母得到证据前，Socure只保留为市场情报。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场",
+          "title": "分开需求与现金",
+          "why": "市场确认NVIDIA需求与定价权，现金转化仍未解决。",
+          "steps": [
+            "升级需求评级",
+            "不追8.74%单日涨幅",
+            "跟踪现金转化、应收与融资担保"
+          ],
+          "done": "仓位纪律分别记录已确认需求与仍开放的资产负债表红旗。"
+        }
       ]
     },
     "zh-Hant": {
-      "inLanguage": "zh-Hant", "languageSlug": "zh-hant", "title": "每日行動流，2026年8月28日", "description": "八項有來源支持的行動，匯入一個可審計的CIO執行場。",
-      "centralJudgment": "把所有權與中立性、機體與勞動、流入與廣度、協議選擇與遷移責任、兆瓦與可融資資產、需求與現金轉化分別看待。每個信號都要用一個下一步證據，才可獲得更多資本或權限。", "fieldLine": "八個信號。乾淨分母。各有一個下一步證據。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "title": "每日行動流，2026年8月28日",
+      "description": "八項有來源支持的行動，匯入一個可審計的CIO執行場。",
+      "centralJudgment": "把所有權與中立性、機體與勞動、流入與廣度、協議選擇與遷移責任、兆瓦與可融資資產、需求與現金轉化分別看待。每個信號都要用一個下一步證據，才可獲得更多資本或權限。",
+      "fieldLine": "八個信號。乾淨分母。各有一個下一步證據。",
       "actions": [
-        {"signal": 1, "domain": "前沿模型", "title": "檢驗Hugging Face中立性", "why": "據報129億美元收購可整合算力與分發，也可能削弱平台中立地位。", "steps": ["維持reported / not closed", "追蹤排名獨立與非CUDA接入", "測試API可匯出及中國模型可見度"], "done": "只有最終條款或可觀察限制出現後才改變中立性評級。"},
-        {"signal": 2, "domain": "Physical AI", "title": "測量有效機器人勞動", "why": "中國95%出貨份額證明製造規模，不證明付費自主產出。", "steps": ["分開出貨、交付、部署與複購", "記錄任務成功與人工干預", "計算付費有效自主工作小時"], "done": "有效小時、複購與安全共同改善後才提高商業成熟度。"},
-        {"signal": 3, "domain": "加密資本", "title": "等待ETF廣度", "why": "連續八日流入重要，但最新一天74.5%仍來自IBIT與ETHA。", "steps": ["保留ETF-led re-entry與narrow breadth", "完成8月27日結算", "計算全周非IBIT與非ETHA佔比"], "done": "其他產品達到全周三分之一後才升級廣度。"},
-        {"signal": 4, "domain": "穩定幣與支付", "title": "清點CCTP V1", "why": "10月31日退役把協議版本變成結算與對帳期限。", "steps": ["找到每個V1調用點", "指定V2負責人和日期", "記錄鏈與銀行回退"], "done": "10月31日前每項生產依賴都有測試過的V2路徑和帳務連續性回退。"},
-        {"signal": 5, "domain": "iamrobin.ai", "title": "發布勞動分母", "why": "出貨量必須連接付費有效自主工作，才能成為投資證據。", "steps": ["核驗2萬台與95%", "比較中美優勢", "四語發布勞動公式"], "done": "文章通過證據、編輯、私隱、構建和公開路由關卡。"},
-        {"signal": 6, "domain": "AI基礎設施職涯", "title": "分開OpCo與DevCo", "why": "SK Horizon的318MW營運平台比5GW和15GW遠期目標更可融資。", "steps": ["分類營運與在建容量", "分開未承諾開發", "把紙上GW排除出當前價值"], "done": "Power Hunt把OpCo、在建和DevCo作為三個承銷對象。"},
-        {"signal": 7, "domain": "後期私募市場", "title": "保持Socure調查狀態", "why": "公司披露的高增長不能解決一二級、優先權和收購經濟不透明。", "steps": ["取得一二級拆分", "核驗ARR、利潤率與盈利", "索取Fravity條款及損失指標"], "done": "所有條款與營運分母有證據前，Socure只保留為市場情報。"},
-        {"signal": 8, "domain": "公開市場", "title": "分開需求與現金", "why": "市場確認NVIDIA需求與定價權，現金轉化仍未解決。", "steps": ["升級需求評級", "不追8.74%單日升幅", "追蹤現金轉化、應收與融資擔保"], "done": "倉位紀律分別記錄已確認需求與仍開放的資產負債表紅旗。"}
+        {
+          "signal": 1,
+          "domain": "前沿模型",
+          "title": "檢驗Hugging Face中立性",
+          "why": "據報129億美元收購可整合算力與分發，也可能削弱平台中立地位。",
+          "steps": [
+            "維持reported / not closed",
+            "追蹤排名獨立與非CUDA接入",
+            "測試API可匯出及中國模型可見度"
+          ],
+          "done": "只有最終條款或可觀察限制出現後才改變中立性評級。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "測量有效機器人勞動",
+          "why": "中國95%出貨份額證明製造規模，不證明付費自主產出。",
+          "steps": [
+            "分開出貨、交付、部署與複購",
+            "記錄任務成功與人工干預",
+            "計算付費有效自主工作小時"
+          ],
+          "done": "有效小時、複購與安全共同改善後才提高商業成熟度。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本",
+          "title": "等待ETF廣度",
+          "why": "連續八日流入重要，但最新一天74.5%仍來自IBIT與ETHA。",
+          "steps": [
+            "保留ETF-led re-entry與narrow breadth",
+            "完成8月27日結算",
+            "計算全周非IBIT與非ETHA佔比"
+          ],
+          "done": "其他產品達到全周三分之一後才升級廣度。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣與支付",
+          "title": "清點CCTP V1",
+          "why": "10月31日退役把協議版本變成結算與對帳期限。",
+          "steps": [
+            "找到每個V1調用點",
+            "指定V2負責人和日期",
+            "記錄鏈與銀行回退"
+          ],
+          "done": "10月31日前每項生產依賴都有測試過的V2路徑和帳務連續性回退。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "發布勞動分母",
+          "why": "出貨量必須連接付費有效自主工作，才能成為投資證據。",
+          "steps": [
+            "核驗2萬台與95%",
+            "比較中美優勢",
+            "四語發布勞動公式"
+          ],
+          "done": "文章通過證據、編輯、私隱、構建和公開路由關卡。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基礎設施職涯",
+          "title": "分開OpCo與DevCo",
+          "why": "SK Horizon的318MW營運平台比5GW和15GW遠期目標更可融資。",
+          "steps": [
+            "分類營運與在建容量",
+            "分開未承諾開發",
+            "把紙上GW排除出當前價值"
+          ],
+          "done": "Power Hunt把OpCo、在建和DevCo作為三個承銷對象。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私募市場",
+          "title": "保持Socure調查狀態",
+          "why": "公司披露的高增長不能解決一二級、優先權和收購經濟不透明。",
+          "steps": [
+            "取得一二級拆分",
+            "核驗ARR、利潤率與盈利",
+            "索取Fravity條款及損失指標"
+          ],
+          "done": "所有條款與營運分母有證據前，Socure只保留為市場情報。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場",
+          "title": "分開需求與現金",
+          "why": "市場確認NVIDIA需求與定價權，現金轉化仍未解決。",
+          "steps": [
+            "升級需求評級",
+            "不追8.74%單日升幅",
+            "追蹤現金轉化、應收與融資擔保"
+          ],
+          "done": "倉位紀律分別記錄已確認需求與仍開放的資產負債表紅旗。"
+        }
       ]
     },
     "ja": {
-      "inLanguage": "ja", "languageSlug": "ja", "title": "デイリー・アクション・フロー 2026年8月28日", "description": "出典に基づく八つの行動を監査可能なCIO実行フィールドへ整理する。",
-      "centralJudgment": "所有と中立、本体と労働、流入と裾野、プロトコル選択と移行責任、MWと融資可能資産、需要と現金化を分ける。各シグナルは追加資本や権限を得る前に次の証拠を一つ必要とする。", "fieldLine": "八つのシグナル。明確な分母。各項目に次の証拠を一つ。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "title": "デイリー・アクション・フロー 2026年8月28日",
+      "description": "出典に基づく八つの行動を監査可能なCIO実行フィールドへ整理する。",
+      "centralJudgment": "所有と中立、本体と労働、流入と裾野、プロトコル選択と移行責任、MWと融資可能資産、需要と現金化を分ける。各シグナルは追加資本や権限を得る前に次の証拠を一つ必要とする。",
+      "fieldLine": "八つのシグナル。明確な分母。各項目に次の証拠を一つ。",
       "actions": [
-        {"signal": 1, "domain": "フロンティアモデル", "title": "Hugging Faceの中立性を測る", "why": "報道された129億ドル買収は計算資源と流通を結ぶ一方、中立性を損ない得る。", "steps": ["reported / not closedを維持する", "順位独立と非CUDA接続を追う", "API持ち出しと中国モデル可視性を試す"], "done": "最終条件か観測可能な制限が出た場合だけ中立評価を変える。"},
-        {"signal": 2, "domain": "Physical AI", "title": "有用ロボット労働を測る", "why": "中国の出荷95％は製造規模を示し、有償自律出力を証明しない。", "steps": ["出荷、納入、導入、再購入を分ける", "作業成功と人間介入を記録する", "有償有用自律作業時間を計算する"], "done": "有用時間、再注文、安全が同時改善した場合だけ商業成熟度を上げる。"},
-        {"signal": 3, "domain": "暗号資産への資本", "title": "ETFの裾野を待つ", "why": "八日連続流入は重要だが直近日の74.5％をIBITとETHAが占めた。", "steps": ["ETF-led re-entryとnarrow breadthを維持する", "8月27日を確定する", "週次の非IBIT・非ETHA比率を計算する"], "done": "他商品が週次3分の1以上になった場合だけ裾野評価を上げる。"},
-        {"signal": 4, "domain": "ステーブルコインと決済", "title": "CCTP V1を棚卸しする", "why": "10月31日の廃止開始が版を決済・照合期限へ変える。", "steps": ["全V1呼出箇所を探す", "V2責任者と日付を決める", "チェーンと銀行代替を記録する"], "done": "10月31日までに全本番依存が試験済みV2経路と会計継続代替を持つ。"},
-        {"signal": 5, "domain": "iamrobin.ai", "title": "労働の分母を公開する", "why": "出荷量は有償有用自律作業へ接続して初めて投資証拠になる。", "steps": ["2万台と95％を検証する", "中米の強みを比較する", "労働式を四言語で公開する"], "done": "記事が証拠、編集、プライバシー、ビルド、公開経路の関門を通る。"},
-        {"signal": 6, "domain": "AIインフラ・キャリア", "title": "OpCoとDevCoを分ける", "why": "SK Horizonの318MW稼働基盤は5GW・15GW長期目標より融資可能性が高い。", "steps": ["稼働と建設中を分類する", "未契約開発を分離する", "紙上GWを現在価値から外す"], "done": "Power HuntがOpCo、建設中、DevCoを別々の引受対象として示す。"},
-        {"signal": 7, "domain": "レイトステージ市場", "title": "Socureを調査段階に置く", "why": "会社公表の高成長では一次・二次、優先条件、買収条件の不透明さを解けない。", "steps": ["一次・二次内訳を得る", "監査済ARR、利益率、収益性を検証する", "Fravity条件と損失指標を求める"], "done": "必要条件と運用分母が証明されるまで市場情報に留める。"},
-        {"signal": 8, "domain": "公開株式", "title": "需要と現金を分ける", "why": "市場はNVIDIAの需要と価格決定力を確認したが現金化は未解決である。", "steps": ["需要評価を上げる", "8.74％上昇を追わない", "現金化、売掛金、金融保証を追う"], "done": "需要確認と未解決の貸借対照表警戒を別々に記録する。"}
+        {
+          "signal": 1,
+          "domain": "フロンティアモデル",
+          "title": "Hugging Faceの中立性を測る",
+          "why": "報道された129億ドル買収は計算資源と流通を結ぶ一方、中立性を損ない得る。",
+          "steps": [
+            "reported / not closedを維持する",
+            "順位独立と非CUDA接続を追う",
+            "API持ち出しと中国モデル可視性を試す"
+          ],
+          "done": "最終条件か観測可能な制限が出た場合だけ中立評価を変える。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "有用ロボット労働を測る",
+          "why": "中国の出荷95％は製造規模を示し、有償自律出力を証明しない。",
+          "steps": [
+            "出荷、納入、導入、再購入を分ける",
+            "作業成功と人間介入を記録する",
+            "有償有用自律作業時間を計算する"
+          ],
+          "done": "有用時間、再注文、安全が同時改善した場合だけ商業成熟度を上げる。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産への資本",
+          "title": "ETFの裾野を待つ",
+          "why": "八日連続流入は重要だが直近日の74.5％をIBITとETHAが占めた。",
+          "steps": [
+            "ETF-led re-entryとnarrow breadthを維持する",
+            "8月27日を確定する",
+            "週次の非IBIT・非ETHA比率を計算する"
+          ],
+          "done": "他商品が週次3分の1以上になった場合だけ裾野評価を上げる。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコインと決済",
+          "title": "CCTP V1を棚卸しする",
+          "why": "10月31日の廃止開始が版を決済・照合期限へ変える。",
+          "steps": [
+            "全V1呼出箇所を探す",
+            "V2責任者と日付を決める",
+            "チェーンと銀行代替を記録する"
+          ],
+          "done": "10月31日までに全本番依存が試験済みV2経路と会計継続代替を持つ。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "労働の分母を公開する",
+          "why": "出荷量は有償有用自律作業へ接続して初めて投資証拠になる。",
+          "steps": [
+            "2万台と95％を検証する",
+            "中米の強みを比較する",
+            "労働式を四言語で公開する"
+          ],
+          "done": "記事が証拠、編集、プライバシー、ビルド、公開経路の関門を通る。"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラ・キャリア",
+          "title": "OpCoとDevCoを分ける",
+          "why": "SK Horizonの318MW稼働基盤は5GW・15GW長期目標より融資可能性が高い。",
+          "steps": [
+            "稼働と建設中を分類する",
+            "未契約開発を分離する",
+            "紙上GWを現在価値から外す"
+          ],
+          "done": "Power HuntがOpCo、建設中、DevCoを別々の引受対象として示す。"
+        },
+        {
+          "signal": 7,
+          "domain": "レイトステージ市場",
+          "title": "Socureを調査段階に置く",
+          "why": "会社公表の高成長では一次・二次、優先条件、買収条件の不透明さを解けない。",
+          "steps": [
+            "一次・二次内訳を得る",
+            "監査済ARR、利益率、収益性を検証する",
+            "Fravity条件と損失指標を求める"
+          ],
+          "done": "必要条件と運用分母が証明されるまで市場情報に留める。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開株式",
+          "title": "需要と現金を分ける",
+          "why": "市場はNVIDIAの需要と価格決定力を確認したが現金化は未解決である。",
+          "steps": [
+            "需要評価を上げる",
+            "8.74％上昇を追わない",
+            "現金化、売掛金、金融保証を追う"
+          ],
+          "done": "需要確認と未解決の貸借対照表警戒を別々に記録する。"
+        }
       ]
     }
   }

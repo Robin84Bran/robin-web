@@ -18,8 +18,9 @@
     "robots:check": "node scripts/generate-robot-welcome.mjs --check",
     "privacy:check": "node scripts/verify-public-privacy.mjs",
     "observability:check": "node scripts/verify-observability.mjs",
+    "actions:check": "node scripts/verify-action-backlog.mjs",
     "verify:seo": "node scripts/verify-seo.mjs",
-    "release:check": "pnpm run robots:check && pnpm run privacy:check && pnpm run observability:check && pnpm run check && pnpm run build && pnpm run verify:seo",
+    "release:check": "pnpm run robots:check && pnpm run privacy:check && pnpm run observability:check && pnpm run actions:check && pnpm run check && pnpm run build && pnpm run verify:seo",
     "preview": "astro preview"
   },
   "dependencies": {

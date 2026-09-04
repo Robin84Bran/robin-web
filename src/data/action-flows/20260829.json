@@ -9,70 +9,746 @@
   "briefingPath": "/ouroboros/202608/20260829/",
   "actionItemPath": "/ouroboros/202608/20260829/action_item/",
   "actions": [
-    {"signal": 1, "priority": "WATCH", "status": "WATCHING", "visualValue": "1.5–1.9×", "visualLabel": "AI work per watt", "sources": [{"label": "OpenAI", "url": "https://openai.com/index/jalapeno-first-results/"}, {"label": "SemiAnalysis", "url": "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia"}, {"label": "Tom's Hardware", "url": "https://www.tomshardware.com/tech-industry/semiconductors/openai-says-its-jalapeno-chip-beats-nvidias-gb300-in-first-published-benchmarks"}]},
-    {"signal": 2, "priority": "NEXT", "status": "READY", "visualValue": "95%", "visualLabel": "China share of 2025 humanoid shipments", "sources": [{"label": "Reuters policy", "url": "https://www.reuters.com/world/asia-pacific/china-says-robot-industry-development-must-be-tailored-local-conditions-2026-08-28/"}, {"label": "Reuters investigation", "url": "https://www.reuters.com/investigations/chinas-humanoid-robots-arent-smart-enough-take-your-job-yet-2026-08-27/"}]},
-    {"signal": 3, "priority": "WATCH", "status": "WATCHING", "visualValue": "$4.450B", "visualLabel": "nine settled positive sessions", "sources": [{"label": "Farside BTC", "url": "https://farside.co.uk/btc/"}, {"label": "Farside ETH", "url": "https://farside.co.uk/eth/"}]},
-    {"signal": 4, "priority": "NEXT", "status": "READY", "visualValue": "3 layers", "visualLabel": "future programmable money", "sources": [{"label": "BIS", "url": "https://www.bis.org/speeches/sp260828.htm"}, {"label": "Reuters", "url": "https://www.reuters.com/business/finance/stablecoins-not-credible-means-payment-scale-bis-chief-says-2026-08-28/"}]},
-    {"signal": 5, "priority": "NOW", "status": "READY", "visualValue": "700W", "visualLabel": "Jalapeño rated package power", "sources": [{"label": "OpenAI", "url": "https://openai.com/index/jalapeno-first-results/"}, {"label": "SemiAnalysis", "url": "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia"}, {"label": "Tom's Hardware", "url": "https://www.tomshardware.com/tech-industry/semiconductors/openai-says-its-jalapeno-chip-beats-nvidias-gb300-in-first-published-benchmarks"}]},
-    {"signal": 6, "priority": "NOW", "status": "READY", "visualValue": "$365K–435K", "visualLabel": "listed annual compensation", "sources": [{"label": "Anthropic", "url": "https://www.anthropic.com/careers/jobs/5013743008"}]},
-    {"signal": 7, "priority": "WATCH", "status": "WATCHING", "visualValue": "€197.8M", "visualLabel": "ESA milestone contract", "sources": [{"label": "ESA", "url": "https://www.esa.int/Enabling_Support/Space_Transportation/First_contracts_kick_off_European_Launcher_Challenge"}, {"label": "Isar Aerospace contract", "url": "https://www.isaraerospace.com/press/isar-aerospace-signs-contract-with-esa-under-the-european-launcher-challenge"}, {"label": "Isar Aerospace Series D", "url": "https://www.isaraerospace.com/press/isar-aerospace-secures-eur-270m-to-provide-sovereign-space-capabilities-globally"}, {"label": "Reuters", "url": "https://www.reuters.com/business/media-telecom/isar-aerospace-secures-200-million-euros-european-space-agency-2026-08-27/"}]},
-    {"signal": 8, "priority": "WATCH", "status": "WATCHING", "visualValue": "−10.28%", "visualLabel": "MRVL one-day move", "sources": [{"label": "MRVL prices", "url": "https://stockanalysis.com/stocks/mrvl/history/"}, {"label": "QQQ prices", "url": "https://stockanalysis.com/etf/qqq/history/"}, {"label": "Reuters company analysis", "url": "https://www.reuters.com/business/marvell-shares-slide-concerns-over-timing-google-ai-deal-revenue-eclipse-strong-2026-08-28/"}, {"label": "Reuters market close", "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-slip-after-tech-rally-warshs-speech-awaited-2026-08-28/"}]}
+    {
+      "signal": 1,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "1.5–1.9×",
+      "visualLabel": "AI work per watt",
+      "sources": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/jalapeno-first-results/"
+        },
+        {
+          "label": "SemiAnalysis",
+          "url": "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia"
+        },
+        {
+          "label": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/tech-industry/semiconductors/openai-says-its-jalapeno-chip-beats-nvidias-gb300-in-first-published-benchmarks"
+        }
+      ],
+      "execution": {
+        "id": "20260829-01",
+        "workstream": "FRONTIER_CONTROLS",
+        "evidenceStatus": "UNKNOWN",
+        "reason": "The action is evidence-dependent; no new evidence justified changing the watch state.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Frontier model authority controls",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "eb53ff705e0d1e96df93ce277ab9778664521c58",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/eb53ff705e0d1e96df93ce277ab9778664521c58"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
+    },
+    {
+      "signal": 2,
+      "priority": "NEXT",
+      "status": "COMPLETE",
+      "visualValue": "95%",
+      "visualLabel": "China share of 2025 humanoid shipments",
+      "sources": [
+        {
+          "label": "Reuters policy",
+          "url": "https://www.reuters.com/world/asia-pacific/china-says-robot-industry-development-must-be-tailored-local-conditions-2026-08-28/"
+        },
+        {
+          "label": "Reuters investigation",
+          "url": "https://www.reuters.com/investigations/chinas-humanoid-robots-arent-smart-enough-take-your-job-yet-2026-08-27/"
+        }
+      ],
+      "execution": {
+        "id": "20260829-02",
+        "workstream": "PHYSICAL_AI",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The reusable operating matrix records useful hours, interventions, renewal and economics as distinct fields and preserves missing evidence as UNKNOWN.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Physical AI operating evidence",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "eb53ff705e0d1e96df93ce277ab9778664521c58",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/eb53ff705e0d1e96df93ce277ab9778664521c58"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "SUPERSEDED",
+      "visualValue": "$4.450B",
+      "visualLabel": "nine settled positive sessions",
+      "sources": [
+        {
+          "label": "Farside BTC",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "Farside ETH",
+          "url": "https://farside.co.uk/eth/"
+        }
+      ],
+      "execution": {
+        "id": "20260829-03",
+        "workstream": "CRYPTO_BREADTH",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "Earlier flow-breadth checkpoint is absorbed by the September 4 canonical breadth watch.",
+        "supersededBy": "20260904-03",
+        "artifact": {
+          "label": "Crypto capital-flow breadth",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "eb53ff705e0d1e96df93ce277ab9778664521c58",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/eb53ff705e0d1e96df93ce277ab9778664521c58"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "SUPERSEDED",
+      "visualValue": "3 layers",
+      "visualLabel": "future programmable money",
+      "sources": [
+        {
+          "label": "BIS",
+          "url": "https://www.bis.org/speeches/sp260828.htm"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/finance/stablecoins-not-credible-means-payment-scale-bis-chief-says-2026-08-28/"
+        }
+      ],
+      "execution": {
+        "id": "20260829-04",
+        "workstream": "PAYMENT_CONTROLS",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "This repeated action is absorbed by 20260831-04.",
+        "supersededBy": "20260831-04",
+        "artifact": {
+          "label": "Payment and agent-commerce control matrix",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "eb53ff705e0d1e96df93ce277ab9778664521c58",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/eb53ff705e0d1e96df93ce277ab9778664521c58"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "visualValue": "700W",
+      "visualLabel": "Jalapeño rated package power",
+      "sources": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/jalapeno-first-results/"
+        },
+        {
+          "label": "SemiAnalysis",
+          "url": "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia"
+        },
+        {
+          "label": "Tom's Hardware",
+          "url": "https://www.tomshardware.com/tech-industry/semiconductors/openai-says-its-jalapeno-chip-beats-nvidias-gb300-in-first-published-benchmarks"
+        }
+      ],
+      "execution": {
+        "id": "20260829-05",
+        "workstream": "PUBLICATION",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The canonical Action Item is public and linked to its source commit and verification receipt.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Published canonical Action Item",
+          "href": "/ouroboros/202608/20260829/action_item/"
+        },
+        "sourceCommit": {
+          "sha": "eb53ff705e0d1e96df93ce277ab9778664521c58",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/eb53ff705e0d1e96df93ce277ab9778664521c58"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
+    },
+    {
+      "signal": 6,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "visualValue": "$365K–435K",
+      "visualLabel": "listed annual compensation",
+      "sources": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com/careers/jobs/5013743008"
+        }
+      ],
+      "execution": {
+        "id": "20260829-06",
+        "workstream": "AI_INFRASTRUCTURE",
+        "evidenceStatus": "CONFIRMED",
+        "reason": "The Signal 06 row is present in the 16-entry evidence registry and governed by the monthly review/publication boundary.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "AI infrastructure evidence intake",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "eb53ff705e0d1e96df93ce277ab9778664521c58",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/eb53ff705e0d1e96df93ce277ab9778664521c58"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "€197.8M",
+      "visualLabel": "ESA milestone contract",
+      "sources": [
+        {
+          "label": "ESA",
+          "url": "https://www.esa.int/Enabling_Support/Space_Transportation/First_contracts_kick_off_European_Launcher_Challenge"
+        },
+        {
+          "label": "Isar Aerospace contract",
+          "url": "https://www.isaraerospace.com/press/isar-aerospace-signs-contract-with-esa-under-the-european-launcher-challenge"
+        },
+        {
+          "label": "Isar Aerospace Series D",
+          "url": "https://www.isaraerospace.com/press/isar-aerospace-secures-eur-270m-to-provide-sovereign-space-capabilities-globally"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/media-telecom/isar-aerospace-secures-200-million-euros-european-space-agency-2026-08-27/"
+        }
+      ],
+      "execution": {
+        "id": "20260829-07",
+        "workstream": "PRIVATE_MARKETS",
+        "evidenceStatus": "UNKNOWN",
+        "reason": "The action is evidence-dependent; no new evidence justified changing the watch state.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Private-market diligence matrix",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "eb53ff705e0d1e96df93ce277ab9778664521c58",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/eb53ff705e0d1e96df93ce277ab9778664521c58"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "−10.28%",
+      "visualLabel": "MRVL one-day move",
+      "sources": [
+        {
+          "label": "MRVL prices",
+          "url": "https://stockanalysis.com/stocks/mrvl/history/"
+        },
+        {
+          "label": "QQQ prices",
+          "url": "https://stockanalysis.com/etf/qqq/history/"
+        },
+        {
+          "label": "Reuters company analysis",
+          "url": "https://www.reuters.com/business/marvell-shares-slide-concerns-over-timing-google-ai-deal-revenue-eclipse-strong-2026-08-28/"
+        },
+        {
+          "label": "Reuters market close",
+          "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-slip-after-tech-rally-warshs-speech-awaited-2026-08-28/"
+        }
+      ],
+      "execution": {
+        "id": "20260829-08",
+        "workstream": "PUBLIC_EQUITIES",
+        "evidenceStatus": "UNKNOWN",
+        "reason": "The action is evidence-dependent; no new evidence justified changing the watch state.",
+        "supersededBy": null,
+        "artifact": {
+          "label": "Public-market causal ledger",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/canonical-work-items.json"
+        },
+        "sourceCommit": {
+          "sha": "eb53ff705e0d1e96df93ce277ab9778664521c58",
+          "href": "https://github.com/Robin84Bran/robin-web/commit/eb53ff705e0d1e96df93ce277ab9778664521c58"
+        },
+        "verificationReceipt": {
+          "label": "Fixed evidence receipt",
+          "href": "https://github.com/Robin84Bran/RobinOS2-Quant/blob/f6693a726340cf21924341fbb0a8eea4aff633f4/06_intelligence/AI_research/action_execution/action-execution-receipts.json",
+          "commit": "f6693a726340cf21924341fbb0a8eea4aff633f4"
+        }
+      }
+    }
   ],
   "editions": {
     "en": {
-      "inLanguage": "en", "languageSlug": "", "title": "Daily Action Flow, August 29, 2026", "description": "Eight source-backed decisions ordered into one inspectable CIO execution field.",
-      "centralJudgment": "Separate benchmark leadership from scaled economics, policy support from external demand, capital direction from product breadth, and nominal contract value from discounted cash flow. The next proof matters more than the loudest headline.", "fieldLine": "Eight signals. Four open proofs. One capital discipline.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "title": "Daily Action Flow, August 29, 2026",
+      "description": "Eight source-backed decisions ordered into one inspectable CIO execution field.",
+      "centralJudgment": "Separate benchmark leadership from scaled economics, policy support from external demand, capital direction from product breadth, and nominal contract value from discounted cash flow. The next proof matters more than the loudest headline.",
+      "fieldLine": "Eight signals. Four open proofs. One capital discipline.",
       "actions": [
-        {"signal": 1, "domain": "Frontier Models", "title": "Track Jalapeño at Scale", "why": "The benchmark validates an inference challenger while deployment volume, reliability and total system cost remain open.", "steps": ["Keep validated inference challenger / not yet scaled", "Record deployed chip count and workload share", "Compare system TCO and second-generation progress"], "done": "NVIDIA's inference-moat score changes only after production evidence replaces benchmark promise."},
-        {"signal": 2, "domain": "Physical AI", "title": "Label Policy Supported Demand", "why": "Manufacturing scale can coexist with weak external commercial demand and duplicated local capacity.", "steps": ["Add subsidy dependence and external revenue", "Track non-affiliate repeat orders", "Measure autonomous useful hours"], "done": "Every China robotics company has a sourced demand-quality classification."},
-        {"signal": 3, "domain": "Crypto Capital", "title": "Wait for ETF Breadth", "why": "Nine positive sessions show direction while BlackRock supplied 87.1% of the latest settled day.", "steps": ["Complete August 28 settlement", "Calculate weekly non-IBIT and non-ETHA share", "Keep long-tail Web3 separate"], "done": "Breadth upgrades only when other products supply at least one-third of weekly flows."},
-        {"signal": 4, "domain": "Stablecoins and Payments", "title": "Map the Three Money Layers", "why": "Stablecoins, tokenized deposits and central-bank assets solve different funding and settlement jobs.", "steps": ["Assign stored value and payment to a layer", "Assign final settlement and fallback", "Document reconciliation across layers"], "done": "Every MerchantOS use case names its operating asset, settlement asset and failure path."},
-        {"signal": 5, "domain": "iamrobin.ai", "title": "Publish the Customer Chip Test", "why": "Jalapeño turns customer silicon into a durable NVIDIA margin and bargaining-power question.", "steps": ["Reconstruct comparable benchmark evidence", "Separate training moat from inference exposure", "Publish the four-language validation framework"], "done": "The action article passes evidence, editorial, privacy, build and public-route gates."},
-        {"signal": 6, "domain": "AI Infrastructure Career", "title": "Build the Anthropic Evidence Map", "why": "The role connects critical infrastructure, project diligence and deliverable megawatts, with one visible hyperscale-experience gap.", "steps": ["Map subsea work to site diligence", "Map Power Hunt to long-lead equipment", "Map capital work to executive risk reporting"], "done": "A one-page evidence map is ready for a high-value stretch application."},
-        {"signal": 7, "domain": "Late Stage Markets", "title": "Keep Isar on Orbital Watch", "why": "Milestone-backed government demand improves financing visibility but cannot replace a successful orbital flight.", "steps": ["Track Spectrum qualification and orbit", "Separate contract award from recognized revenue", "Estimate failure-reflight and production-ramp cash"], "done": "Isar moves to INVESTIGATE only after orbit, cost and cash-coverage evidence exist."},
-        {"signal": 8, "domain": "Public Equities", "title": "Discount Marvell's Revenue Timing", "why": "The market repriced when a large nominal Google contract did not translate into near-term incremental earnings.", "steps": ["Do not average down automatically", "Build the FY2027–FY2030 revenue bridge", "Track conversion, capex and free cash flow"], "done": "The selloff is classified only after timing and cash contribution are evidenced."}
+        {
+          "signal": 1,
+          "domain": "Frontier Models",
+          "title": "Track Jalapeño at Scale",
+          "why": "The benchmark validates an inference challenger while deployment volume, reliability and total system cost remain open.",
+          "steps": [
+            "Keep validated inference challenger / not yet scaled",
+            "Record deployed chip count and workload share",
+            "Compare system TCO and second-generation progress"
+          ],
+          "done": "NVIDIA's inference-moat score changes only after production evidence replaces benchmark promise."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "Label Policy Supported Demand",
+          "why": "Manufacturing scale can coexist with weak external commercial demand and duplicated local capacity.",
+          "steps": [
+            "Add subsidy dependence and external revenue",
+            "Track non-affiliate repeat orders",
+            "Measure autonomous useful hours"
+          ],
+          "done": "Every China robotics company has a sourced demand-quality classification."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital",
+          "title": "Wait for ETF Breadth",
+          "why": "Nine positive sessions show direction while BlackRock supplied 87.1% of the latest settled day.",
+          "steps": [
+            "Complete August 28 settlement",
+            "Calculate weekly non-IBIT and non-ETHA share",
+            "Keep long-tail Web3 separate"
+          ],
+          "done": "Breadth upgrades only when other products supply at least one-third of weekly flows."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins and Payments",
+          "title": "Map the Three Money Layers",
+          "why": "Stablecoins, tokenized deposits and central-bank assets solve different funding and settlement jobs.",
+          "steps": [
+            "Assign stored value and payment to a layer",
+            "Assign final settlement and fallback",
+            "Document reconciliation across layers"
+          ],
+          "done": "Every MerchantOS use case names its operating asset, settlement asset and failure path."
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "Publish the Customer Chip Test",
+          "why": "Jalapeño turns customer silicon into a durable NVIDIA margin and bargaining-power question.",
+          "steps": [
+            "Reconstruct comparable benchmark evidence",
+            "Separate training moat from inference exposure",
+            "Publish the four-language validation framework"
+          ],
+          "done": "The action article passes evidence, editorial, privacy, build and public-route gates."
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure Career",
+          "title": "Build the Anthropic Evidence Map",
+          "why": "The role connects critical infrastructure, project diligence and deliverable megawatts, with one visible hyperscale-experience gap.",
+          "steps": [
+            "Map subsea work to site diligence",
+            "Map Power Hunt to long-lead equipment",
+            "Map capital work to executive risk reporting"
+          ],
+          "done": "A one-page evidence map is ready for a high-value stretch application."
+        },
+        {
+          "signal": 7,
+          "domain": "Late Stage Markets",
+          "title": "Keep Isar on Orbital Watch",
+          "why": "Milestone-backed government demand improves financing visibility but cannot replace a successful orbital flight.",
+          "steps": [
+            "Track Spectrum qualification and orbit",
+            "Separate contract award from recognized revenue",
+            "Estimate failure-reflight and production-ramp cash"
+          ],
+          "done": "Isar moves to INVESTIGATE only after orbit, cost and cash-coverage evidence exist."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities",
+          "title": "Discount Marvell's Revenue Timing",
+          "why": "The market repriced when a large nominal Google contract did not translate into near-term incremental earnings.",
+          "steps": [
+            "Do not average down automatically",
+            "Build the FY2027–FY2030 revenue bridge",
+            "Track conversion, capex and free cash flow"
+          ],
+          "done": "The selloff is classified only after timing and cash contribution are evidenced."
+        }
       ]
     },
     "zh-Hans": {
-      "inLanguage": "zh-Hans", "languageSlug": "zh-hans", "title": "每日行动流，2026年8月29日", "description": "八项有来源支持的决策，汇入一个可审计的CIO执行场。",
-      "centralJudgment": "把benchmark领先与规模经济、政策支持与外部需求、资本方向与产品广度、合同名义价值与折现现金流分别看待。下一项证据比最响亮的标题更重要。", "fieldLine": "八个信号。四项开放证据。一套资本纪律。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "title": "每日行动流，2026年8月29日",
+      "description": "八项有来源支持的决策，汇入一个可审计的CIO执行场。",
+      "centralJudgment": "把benchmark领先与规模经济、政策支持与外部需求、资本方向与产品广度、合同名义价值与折现现金流分别看待。下一项证据比最响亮的标题更重要。",
+      "fieldLine": "八个信号。四项开放证据。一套资本纪律。",
       "actions": [
-        {"signal": 1, "domain": "前沿模型", "title": "跟踪Jalapeño规模化", "why": "benchmark确认了推理挑战者，部署量、可靠性和整机成本仍未解决。", "steps": ["保持validated inference challenger / not yet scaled", "记录部署芯片数与负载占比", "比较整机TCO及第二代进度"], "done": "只有量产证据替代benchmark承诺后才改变NVIDIA推理护城河评分。"},
-        {"signal": 2, "domain": "Physical AI", "title": "标记政策支持型需求", "why": "制造规模可以与外部商业需求薄弱、地方重复产能同时存在。", "steps": ["加入补贴依赖和外部收入", "跟踪非关联复购", "测量有效自主小时"], "done": "每家中国机器人企业都有可追溯的需求质量分类。"},
-        {"signal": 3, "domain": "加密资本", "title": "等待ETF广度", "why": "连续九个正流入交易日确认方向，但最新完整日87.1%来自BlackRock。", "steps": ["完成8月28日结算", "计算全周非IBIT和非ETHA占比", "分开长尾Web3"], "done": "其他产品达到全周三分之一后才升级广度。"},
-        {"signal": 4, "domain": "稳定币与支付", "title": "绘制货币三层架构", "why": "稳定币、Tokenized Deposits与央行资产承担不同的资金和结算工作。", "steps": ["指定储值与付款层", "指定最终结算与回退层", "记录跨层对账"], "done": "每个MerchantOS用例都说明运营资产、结算资产和失败路径。"},
-        {"signal": 5, "domain": "iamrobin.ai", "title": "发布客户芯片考题", "why": "Jalapeño把客户自研芯片变成NVIDIA长期毛利率和议价权问题。", "steps": ["还原可比benchmark证据", "拆分训练护城河与推理暴露", "四语发布验证框架"], "done": "文章通过证据、编辑、隐私、构建和公开路由门禁。"},
-        {"signal": 6, "domain": "AI基础设施职业", "title": "制作Anthropic证据图", "why": "岗位连接关键基础设施、项目尽调与deliverable MW，同时暴露一项hyperscale经验差距。", "steps": ["把海工映射至site diligence", "把Power Hunt映射至long-lead equipment", "把资本工作映射至executive risk reporting"], "done": "一页证据映射可用于高价值stretch申请。"},
-        {"signal": 7, "domain": "后期一级市场", "title": "保持Isar入轨观察", "why": "里程碑政府需求改善融资可见性，但不能替代成功入轨。", "steps": ["跟踪Spectrum资格飞行与入轨", "分开合同授予和确认收入", "估算失败重飞及量产现金"], "done": "只有入轨、成本和现金覆盖有证据后才转INVESTIGATE。"},
-        {"signal": 8, "domain": "公开市场", "title": "折现Marvell收入时点", "why": "名义巨大的Google合同没有变成近期新增盈利，市场因此重估。", "steps": ["不自动补仓", "建立FY2027–FY2030收入桥", "跟踪转量产、资本开支和自由现金流"], "done": "只有时点和现金贡献得到证据后才分类此次下跌。"}
+        {
+          "signal": 1,
+          "domain": "前沿模型",
+          "title": "跟踪Jalapeño规模化",
+          "why": "benchmark确认了推理挑战者，部署量、可靠性和整机成本仍未解决。",
+          "steps": [
+            "保持validated inference challenger / not yet scaled",
+            "记录部署芯片数与负载占比",
+            "比较整机TCO及第二代进度"
+          ],
+          "done": "只有量产证据替代benchmark承诺后才改变NVIDIA推理护城河评分。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "标记政策支持型需求",
+          "why": "制造规模可以与外部商业需求薄弱、地方重复产能同时存在。",
+          "steps": [
+            "加入补贴依赖和外部收入",
+            "跟踪非关联复购",
+            "测量有效自主小时"
+          ],
+          "done": "每家中国机器人企业都有可追溯的需求质量分类。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本",
+          "title": "等待ETF广度",
+          "why": "连续九个正流入交易日确认方向，但最新完整日87.1%来自BlackRock。",
+          "steps": [
+            "完成8月28日结算",
+            "计算全周非IBIT和非ETHA占比",
+            "分开长尾Web3"
+          ],
+          "done": "其他产品达到全周三分之一后才升级广度。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币与支付",
+          "title": "绘制货币三层架构",
+          "why": "稳定币、Tokenized Deposits与央行资产承担不同的资金和结算工作。",
+          "steps": [
+            "指定储值与付款层",
+            "指定最终结算与回退层",
+            "记录跨层对账"
+          ],
+          "done": "每个MerchantOS用例都说明运营资产、结算资产和失败路径。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "发布客户芯片考题",
+          "why": "Jalapeño把客户自研芯片变成NVIDIA长期毛利率和议价权问题。",
+          "steps": [
+            "还原可比benchmark证据",
+            "拆分训练护城河与推理暴露",
+            "四语发布验证框架"
+          ],
+          "done": "文章通过证据、编辑、隐私、构建和公开路由门禁。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基础设施职业",
+          "title": "制作Anthropic证据图",
+          "why": "岗位连接关键基础设施、项目尽调与deliverable MW，同时暴露一项hyperscale经验差距。",
+          "steps": [
+            "把海工映射至site diligence",
+            "把Power Hunt映射至long-lead equipment",
+            "把资本工作映射至executive risk reporting"
+          ],
+          "done": "一页证据映射可用于高价值stretch申请。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期一级市场",
+          "title": "保持Isar入轨观察",
+          "why": "里程碑政府需求改善融资可见性，但不能替代成功入轨。",
+          "steps": [
+            "跟踪Spectrum资格飞行与入轨",
+            "分开合同授予和确认收入",
+            "估算失败重飞及量产现金"
+          ],
+          "done": "只有入轨、成本和现金覆盖有证据后才转INVESTIGATE。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场",
+          "title": "折现Marvell收入时点",
+          "why": "名义巨大的Google合同没有变成近期新增盈利，市场因此重估。",
+          "steps": [
+            "不自动补仓",
+            "建立FY2027–FY2030收入桥",
+            "跟踪转量产、资本开支和自由现金流"
+          ],
+          "done": "只有时点和现金贡献得到证据后才分类此次下跌。"
+        }
       ]
     },
     "zh-Hant": {
-      "inLanguage": "zh-Hant", "languageSlug": "zh-hant", "title": "每日行動流，2026年8月29日", "description": "八項有來源支持的決策，匯入一個可審計的CIO執行場。",
-      "centralJudgment": "把benchmark領先與規模經濟、政策支持與外部需求、資本方向與產品廣度、合約名義價值與折現現金流分別看待。下一項證據比最響亮的標題更重要。", "fieldLine": "八個信號。四項開放證據。一套資本紀律。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "title": "每日行動流，2026年8月29日",
+      "description": "八項有來源支持的決策，匯入一個可審計的CIO執行場。",
+      "centralJudgment": "把benchmark領先與規模經濟、政策支持與外部需求、資本方向與產品廣度、合約名義價值與折現現金流分別看待。下一項證據比最響亮的標題更重要。",
+      "fieldLine": "八個信號。四項開放證據。一套資本紀律。",
       "actions": [
-        {"signal": 1, "domain": "前沿模型", "title": "追蹤Jalapeño規模化", "why": "benchmark確認了推理挑戰者，部署量、可靠性和整機成本仍未解決。", "steps": ["維持validated inference challenger / not yet scaled", "記錄部署晶片數與負載佔比", "比較整機TCO及第二代進度"], "done": "只有量產證據取代benchmark承諾後才改變NVIDIA推理護城河評分。"},
-        {"signal": 2, "domain": "Physical AI", "title": "標記政策支持型需求", "why": "製造規模可以與外部商業需求薄弱、地方重複產能同時存在。", "steps": ["加入補貼依賴和外部收入", "追蹤非關聯複購", "測量有效自主小時"], "done": "每家中國機器人企業都有可追溯的需求質量分類。"},
-        {"signal": 3, "domain": "加密資本", "title": "等待ETF廣度", "why": "連續九個正流入交易日確認方向，但最新完整日87.1%來自BlackRock。", "steps": ["完成8月28日結算", "計算全週非IBIT和非ETHA佔比", "分開長尾Web3"], "done": "其他產品達到全週三分之一後才升級廣度。"},
-        {"signal": 4, "domain": "穩定幣與支付", "title": "繪製貨幣三層架構", "why": "穩定幣、Tokenized Deposits與央行資產承擔不同的資金和結算工作。", "steps": ["指定儲值與付款層", "指定最終結算與回退層", "記錄跨層對帳"], "done": "每個MerchantOS用例都說明營運資產、結算資產和失敗路徑。"},
-        {"signal": 5, "domain": "iamrobin.ai", "title": "發佈客戶晶片考題", "why": "Jalapeño把客戶自研晶片變成NVIDIA長期毛利率和議價權問題。", "steps": ["還原可比benchmark證據", "拆分訓練護城河與推理暴露", "四語發佈驗證框架"], "done": "文章通過證據、編輯、私隱、構建和公開路由門禁。"},
-        {"signal": 6, "domain": "AI基礎設施職涯", "title": "製作Anthropic證據圖", "why": "職位連接關鍵基礎設施、項目盡調與deliverable MW，同時暴露一項hyperscale經驗差距。", "steps": ["把海工映射至site diligence", "把Power Hunt映射至long-lead equipment", "把資本工作映射至executive risk reporting"], "done": "一頁證據映射可用於高價值stretch申請。"},
-        {"signal": 7, "domain": "後期私募市場", "title": "維持Isar入軌觀察", "why": "里程碑政府需求改善融資可見性，但不能取代成功入軌。", "steps": ["追蹤Spectrum資格飛行與入軌", "分開合約授予和確認收入", "估算失敗重飛及量產現金"], "done": "只有入軌、成本和現金覆蓋有證據後才轉INVESTIGATE。"},
-        {"signal": 8, "domain": "公開市場", "title": "折現Marvell收入時點", "why": "名義巨大的Google合約沒有變成近期新增盈利，市場因此重估。", "steps": ["不自動補倉", "建立FY2027–FY2030收入橋", "追蹤轉量產、資本開支和自由現金流"], "done": "只有時點和現金貢獻得到證據後才分類此次下跌。"}
+        {
+          "signal": 1,
+          "domain": "前沿模型",
+          "title": "追蹤Jalapeño規模化",
+          "why": "benchmark確認了推理挑戰者，部署量、可靠性和整機成本仍未解決。",
+          "steps": [
+            "維持validated inference challenger / not yet scaled",
+            "記錄部署晶片數與負載佔比",
+            "比較整機TCO及第二代進度"
+          ],
+          "done": "只有量產證據取代benchmark承諾後才改變NVIDIA推理護城河評分。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "標記政策支持型需求",
+          "why": "製造規模可以與外部商業需求薄弱、地方重複產能同時存在。",
+          "steps": [
+            "加入補貼依賴和外部收入",
+            "追蹤非關聯複購",
+            "測量有效自主小時"
+          ],
+          "done": "每家中國機器人企業都有可追溯的需求質量分類。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本",
+          "title": "等待ETF廣度",
+          "why": "連續九個正流入交易日確認方向，但最新完整日87.1%來自BlackRock。",
+          "steps": [
+            "完成8月28日結算",
+            "計算全週非IBIT和非ETHA佔比",
+            "分開長尾Web3"
+          ],
+          "done": "其他產品達到全週三分之一後才升級廣度。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣與支付",
+          "title": "繪製貨幣三層架構",
+          "why": "穩定幣、Tokenized Deposits與央行資產承擔不同的資金和結算工作。",
+          "steps": [
+            "指定儲值與付款層",
+            "指定最終結算與回退層",
+            "記錄跨層對帳"
+          ],
+          "done": "每個MerchantOS用例都說明營運資產、結算資產和失敗路徑。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "發佈客戶晶片考題",
+          "why": "Jalapeño把客戶自研晶片變成NVIDIA長期毛利率和議價權問題。",
+          "steps": [
+            "還原可比benchmark證據",
+            "拆分訓練護城河與推理暴露",
+            "四語發佈驗證框架"
+          ],
+          "done": "文章通過證據、編輯、私隱、構建和公開路由門禁。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基礎設施職涯",
+          "title": "製作Anthropic證據圖",
+          "why": "職位連接關鍵基礎設施、項目盡調與deliverable MW，同時暴露一項hyperscale經驗差距。",
+          "steps": [
+            "把海工映射至site diligence",
+            "把Power Hunt映射至long-lead equipment",
+            "把資本工作映射至executive risk reporting"
+          ],
+          "done": "一頁證據映射可用於高價值stretch申請。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私募市場",
+          "title": "維持Isar入軌觀察",
+          "why": "里程碑政府需求改善融資可見性，但不能取代成功入軌。",
+          "steps": [
+            "追蹤Spectrum資格飛行與入軌",
+            "分開合約授予和確認收入",
+            "估算失敗重飛及量產現金"
+          ],
+          "done": "只有入軌、成本和現金覆蓋有證據後才轉INVESTIGATE。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場",
+          "title": "折現Marvell收入時點",
+          "why": "名義巨大的Google合約沒有變成近期新增盈利，市場因此重估。",
+          "steps": [
+            "不自動補倉",
+            "建立FY2027–FY2030收入橋",
+            "追蹤轉量產、資本開支和自由現金流"
+          ],
+          "done": "只有時點和現金貢獻得到證據後才分類此次下跌。"
+        }
       ]
     },
     "ja": {
-      "inLanguage": "ja", "languageSlug": "ja", "title": "デイリー・アクション・フロー 2026年8月29日", "description": "出典に基づく八つの判断を監査可能なCIO実行フィールドへ整理する。",
-      "centralJudgment": "ベンチマーク首位と量産経済、政策支援と外部需要、資本方向と商品の裾野、契約名目額と割引後キャッシュフローを分ける。大きな見出しより次の証拠を重視する。", "fieldLine": "八つのシグナル。四つの未確認事項。一つの資本規律。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "title": "デイリー・アクション・フロー 2026年8月29日",
+      "description": "出典に基づく八つの判断を監査可能なCIO実行フィールドへ整理する。",
+      "centralJudgment": "ベンチマーク首位と量産経済、政策支援と外部需要、資本方向と商品の裾野、契約名目額と割引後キャッシュフローを分ける。大きな見出しより次の証拠を重視する。",
+      "fieldLine": "八つのシグナル。四つの未確認事項。一つの資本規律。",
       "actions": [
-        {"signal": 1, "domain": "フロンティアモデル", "title": "Jalapeñoの量産を追う", "why": "ベンチマークは推論の挑戦者を確認したが、配備量、信頼性、システムTCOは未確認である。", "steps": ["validated inference challenger / not yet scaledを維持する", "配備数と負荷構成比を記録する", "TCOと第2世代進捗を比較する"], "done": "量産証拠が約束を置き換えた場合だけNVIDIAの推論モート評価を変える。"},
-        {"signal": 2, "domain": "Physical AI", "title": "政策支援需要を表示する", "why": "製造規模は外部需要の弱さや地方の重複投資と共存し得る。", "steps": ["補助金依存と外部収入を加える", "非関連先の再購入を追う", "有用自律時間を測る"], "done": "全中国ロボット企業に出典付き需要品質分類がある。"},
-        {"signal": 3, "domain": "暗号資産への資本", "title": "ETFの裾野を待つ", "why": "九日連続流入は方向を示す一方、直近日の87.1％をBlackRockが占めた。", "steps": ["8月28日を確定する", "週次の非IBIT・非ETHA比率を計算する", "ロングテールWeb3を分ける"], "done": "他商品が週次3分の1以上になった場合だけ裾野を上げる。"},
-        {"signal": 4, "domain": "ステーブルコインと決済", "title": "三つの通貨層を描く", "why": "ステーブルコイン、トークン化預金、中央銀行資産は異なる資金・決済機能を持つ。", "steps": ["価値保存と支払いの層を決める", "最終決済と代替の層を決める", "層間照合を記録する"], "done": "全MerchantOS用途が運用資産、決済資産、障害経路を示す。"},
-        {"signal": 5, "domain": "iamrobin.ai", "title": "顧客製チップの論点を公開する", "why": "Jalapeñoは顧客製半導体をNVIDIAの長期マージンと交渉力の問いへ変えた。", "steps": ["比較可能な証拠を再構成する", "学習モートと推論エクスポージャーを分ける", "検証枠を四言語で公開する"], "done": "記事が証拠、編集、プライバシー、ビルド、公開経路の関門を通る。"},
-        {"signal": 6, "domain": "AIインフラ・キャリア", "title": "Anthropic証拠マップを作る", "why": "重要インフラ、案件精査、deliverable MWを結び、ハイパースケール経験の差も明示する。", "steps": ["海洋案件をsite diligenceへ対応させる", "Power Huntをlong-lead equipmentへ対応させる", "資本業務をexecutive risk reportingへ対応させる"], "done": "高価値ストレッチ応募用の一枚資料が完成する。"},
-        {"signal": 7, "domain": "レイトステージ市場", "title": "Isarを軌道投入監視に置く", "why": "政府のマイルストーン需要は資金可視性を改善するが、軌道到達の代わりにならない。", "steps": ["Spectrumの資格飛行と軌道を追う", "契約額と認識収入を分ける", "再飛行と量産資金を見積もる"], "done": "軌道、費用、資金証拠が揃った場合だけINVESTIGATEへ上げる。"},
-        {"signal": 8, "domain": "公開株式", "title": "Marvellの収益時期を割り引く", "why": "巨額のGoogle契約が短期追加利益にならないと市場が理解して再評価した。", "steps": ["自動的に買い増さない", "FY2027～FY2030売上ブリッジを作る", "量産転換、設備投資、FCFを追う"], "done": "時期と現金寄与が確認された後にだけ下落を分類する。"}
+        {
+          "signal": 1,
+          "domain": "フロンティアモデル",
+          "title": "Jalapeñoの量産を追う",
+          "why": "ベンチマークは推論の挑戦者を確認したが、配備量、信頼性、システムTCOは未確認である。",
+          "steps": [
+            "validated inference challenger / not yet scaledを維持する",
+            "配備数と負荷構成比を記録する",
+            "TCOと第2世代進捗を比較する"
+          ],
+          "done": "量産証拠が約束を置き換えた場合だけNVIDIAの推論モート評価を変える。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "政策支援需要を表示する",
+          "why": "製造規模は外部需要の弱さや地方の重複投資と共存し得る。",
+          "steps": [
+            "補助金依存と外部収入を加える",
+            "非関連先の再購入を追う",
+            "有用自律時間を測る"
+          ],
+          "done": "全中国ロボット企業に出典付き需要品質分類がある。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産への資本",
+          "title": "ETFの裾野を待つ",
+          "why": "九日連続流入は方向を示す一方、直近日の87.1％をBlackRockが占めた。",
+          "steps": [
+            "8月28日を確定する",
+            "週次の非IBIT・非ETHA比率を計算する",
+            "ロングテールWeb3を分ける"
+          ],
+          "done": "他商品が週次3分の1以上になった場合だけ裾野を上げる。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコインと決済",
+          "title": "三つの通貨層を描く",
+          "why": "ステーブルコイン、トークン化預金、中央銀行資産は異なる資金・決済機能を持つ。",
+          "steps": [
+            "価値保存と支払いの層を決める",
+            "最終決済と代替の層を決める",
+            "層間照合を記録する"
+          ],
+          "done": "全MerchantOS用途が運用資産、決済資産、障害経路を示す。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "顧客製チップの論点を公開する",
+          "why": "Jalapeñoは顧客製半導体をNVIDIAの長期マージンと交渉力の問いへ変えた。",
+          "steps": [
+            "比較可能な証拠を再構成する",
+            "学習モートと推論エクスポージャーを分ける",
+            "検証枠を四言語で公開する"
+          ],
+          "done": "記事が証拠、編集、プライバシー、ビルド、公開経路の関門を通る。"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラ・キャリア",
+          "title": "Anthropic証拠マップを作る",
+          "why": "重要インフラ、案件精査、deliverable MWを結び、ハイパースケール経験の差も明示する。",
+          "steps": [
+            "海洋案件をsite diligenceへ対応させる",
+            "Power Huntをlong-lead equipmentへ対応させる",
+            "資本業務をexecutive risk reportingへ対応させる"
+          ],
+          "done": "高価値ストレッチ応募用の一枚資料が完成する。"
+        },
+        {
+          "signal": 7,
+          "domain": "レイトステージ市場",
+          "title": "Isarを軌道投入監視に置く",
+          "why": "政府のマイルストーン需要は資金可視性を改善するが、軌道到達の代わりにならない。",
+          "steps": [
+            "Spectrumの資格飛行と軌道を追う",
+            "契約額と認識収入を分ける",
+            "再飛行と量産資金を見積もる"
+          ],
+          "done": "軌道、費用、資金証拠が揃った場合だけINVESTIGATEへ上げる。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開株式",
+          "title": "Marvellの収益時期を割り引く",
+          "why": "巨額のGoogle契約が短期追加利益にならないと市場が理解して再評価した。",
+          "steps": [
+            "自動的に買い増さない",
+            "FY2027～FY2030売上ブリッジを作る",
+            "量産転換、設備投資、FCFを追う"
+          ],
+          "done": "時期と現金寄与が確認された後にだけ下落を分類する。"
+        }
       ]
     }
   }
