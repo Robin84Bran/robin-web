@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-04",
+  "updated": "2026-09-04",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20260904/hero.webp",
+  "actionHero": "/action-item/20260904/hero.webp",
+  "ogImage": "/daily-briefing/20260904/og.webp",
+  "briefingPath": "/ouroboros/202609/20260904/",
+  "actionItemPath": "/ouroboros/202609/20260904/action_item/",
+  "actions": [
+    {"signal": 1, "priority": "NEXT", "status": "READY", "visualValue": "2.5x", "visualLabel": "standard token price", "sources": [{"label": "OpenAI Safety", "url": "https://openai.com/index/safety-overview-gpt-6-astra/"}, {"label": "System Card", "url": "https://deploymentsafety.openai.com/gpt-6-astra"}, {"label": "Pricing", "url": "https://developers.openai.com/api/docs/pricing"}]},
+    {"signal": 2, "priority": "WATCH", "status": "WATCHING", "visualValue": "$800M", "visualLabel": "pre-money value", "sources": [{"label": "PlusAI", "url": "https://www.plus.ai/news-and-insights/2026-09-03-texas-ventures-business-combination"}, {"label": "SEC", "url": "https://www.sec.gov/Archives/edgar/data/2033991/000110465926104858/tm2619716d3_8k.htm"}]},
+    {"signal": 3, "priority": "WATCH", "status": "WATCHING", "visualValue": "$52.9M", "visualLabel": "settled combined flow", "sources": [{"label": "Farside Bitcoin", "url": "https://farside.co.uk/btc/"}, {"label": "Farside Ether", "url": "https://farside.co.uk/eth/"}]},
+    {"signal": 4, "priority": "NEXT", "status": "READY", "visualValue": "2028", "visualLabel": "potential pilot", "sources": [{"label": "Reuters", "url": "https://www.reuters.com/world/americas/brazil-ecb-studying-instant-payments-link-potential-first-cross-border-move-pix-2026-09-03/"}, {"label": "ECB", "url": "https://www.ecb.europa.eu/paym/target/tips/crossborder/html/index.en.html"}]},
+    {"signal": 5, "priority": "NOW", "status": "COMPLETE", "visualValue": "CAP != AUTH", "visualLabel": "external control plane", "sources": [{"label": "OpenAI Safety", "url": "https://openai.com/index/safety-overview-gpt-6-astra/"}, {"label": "System Card", "url": "https://deploymentsafety.openai.com/gpt-6-astra"}, {"label": "Pricing", "url": "https://developers.openai.com/api/docs/pricing"}]},
+    {"signal": 6, "priority": "NEXT", "status": "READY", "visualValue": "$3.5B", "visualLabel": "initial compute commitment", "sources": [{"label": "Nscale", "url": "https://www.nscale.com/press-releases/nscale-and-figure"}, {"label": "Figure", "url": "https://www.figure.ai/news/figure-and-nscale-sign-strategic-partnership"}]},
+    {"signal": 7, "priority": "WATCH", "status": "WATCHING", "visualValue": "~71x", "visualLabel": "reported revenue run-rate", "sources": [{"label": "Wonderful", "url": "https://www.wonderful.ai/blog-articles/wonderful-raises-550m-series-c"}, {"label": "Insight Partners", "url": "https://www.insightpartners.com/ideas/tripling-down-on-wonderful-building-the-ai-operating-system-for-the-enterprise"}]},
+    {"signal": 8, "priority": "NEXT", "status": "READY", "visualValue": "$12.9B", "visualLabel": "maximum committed capital", "sources": [{"label": "NVIDIA SEC", "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000078/nvda-20260902.htm"}, {"label": "Reuters", "url": "https://www.reuters.com/business/nvidia-buy-hugging-face-nearly-13-billion-big-bet-open-ai-models-2026-09-03/"}]}
+  ],
+  "editions": {
+    "en": {
+      "inLanguage": "en", "languageSlug": "", "title": "Daily Action Flow, September 4, 2026", "description": "Eight source-backed decisions arranged into one inspectable CIO execution field.", "centralJudgment": "Separate capability, authority and verified outcome; treat financing as a claim on future execution; let independent evidence move permissions and capital.", "fieldLine": "Eight signals. One publication complete. Four operating loops ready. Three ledgers watching.",
+      "actions": [
+        {"signal": 1, "domain": "Frontier Models", "title": "Run the Astra Shadow Trial", "why": "Higher capability, price and lower chain-of-thought monitorability require a complete-value comparison under unchanged permissions.", "steps": ["Compare Astra and Sol on thirty representative tasks", "Record cost, interventions, boundary attempts and evidence quality", "Keep the default route and production authority unchanged"], "done": "Routing changes only after repeated verified outcomes clear the full cost."},
+        {"signal": 2, "domain": "Physical AI", "title": "Underwrite the Closing", "why": "A SPAC headline is a financing path while net cash and driverless economics remain unproven.", "steps": ["Track redemption and committed financing", "Wait for the first paid driverless load", "Measure remote assistance and fully loaded cost per mile"], "done": "PlusAI remains financed commercialization with driverless economics unproven."},
+        {"signal": 3, "domain": "Crypto Capital", "title": "Measure Flow Breadth", "why": "Positive combined flow depends almost entirely on BlackRock products and does not prove broad recovery.", "steps": ["Wait for complete September 3 settlement", "Separate IBIT and ETHA from all other funds", "Require wider participation plus fees and stablecoin growth"], "done": "The pulse stays capital entering narrowly until breadth persists."},
+        {"signal": 4, "domain": "Payment Rails", "title": "Open the Pix TIPS Matrix", "why": "Connected public instant-payment systems shift the competitive question from token choice to FX, identity and recourse.", "steps": ["Track bilateral FX and settlement design", "Map KYC data exchange and privacy", "Require refund, dispute and liability paths"], "done": "The corridor advances only through approved design and observable unit cost."},
+        {"signal": 5, "domain": "iamrobin.ai", "title": "Publish Capability Is Not Authority", "why": "A reusable governance method is more durable than another frontier-model benchmark recap.", "steps": ["Publish the four-language canonical article", "Archive the LinkedIn derivative and ledger entry", "Verify evidence, build, public and receipt gates"], "done": "The Action Item is complete only when every external receipt closes."},
+        {"signal": 6, "domain": "AI Infrastructure", "title": "Build the Figure Nscale Ledger", "why": "Cross-ownership and a large compute commitment may reinforce supply and capital before robot-customer demand is proven.", "steps": ["Map funding responsibility and minimum payments", "Track delivered GPUs, MW and incremental capability", "Measure useful autonomous hours and external revenue"], "done": "The intelligence ledger keeps compute inputs separate from robot economics."},
+        {"signal": 7, "domain": "Private Markets", "title": "Keep Wonderful on Watch", "why": "A high valuation and forward-deployed workforce need retention, margin and concentration evidence.", "steps": ["Wait for audited ARR and net retention", "Separate software from services and inference cost", "Inspect primary, secondary and preference terms"], "done": "Wonderful remains WATCH until mature software economics are evidenced."},
+        {"signal": 8, "domain": "Public Equities", "title": "Extend the NVIDIA Moat Ledger", "why": "Hugging Face expands distribution control while neutrality and acquisition return remain uncertain.", "steps": ["Track competing silicon and Chinese-model accessibility", "Measure developer retention and paid conversion", "Record cash contribution and acquisition ROIC"], "done": "The NVDA thesis changes only through observed platform behavior and cash."}
+      ]
+    },
+    "zh-Hans": {
+      "inLanguage": "zh-Hans", "languageSlug": "zh-hans", "title": "每日行动流，2026年9月4日", "description": "八项有来源支持的决策，汇入一个可审计的CIO执行场。", "centralJudgment": "把能力、权限与验证结果分开；把融资视为对未来执行的索取权；只让独立证据改变权限与资本判断。", "fieldLine": "八个信号。一项发布完成。四个运营循环就绪。三个台账继续观察。",
+      "actions": [
+        {"signal": 1, "domain": "前沿模型", "title": "运行Astra影子试验", "why": "更高能力、价格与更低思维链可观察性，需要在权限不变时比较完整价值。", "steps": ["用三十项代表任务比较Astra与Sol", "记录成本、干预、越权尝试与证据质量", "保持默认路由和生产权限不变"], "done": "只有重复验证结果覆盖全部成本后，路由才改变。"},
+        {"signal": 2, "domain": "Physical AI", "title": "承销交易交割", "why": "SPAC标题只是融资路径，净现金和无人驾驶经济仍未证明。", "steps": ["追踪赎回与承诺融资", "等待首笔付费无人驾驶货运", "测量远程协助与完全成本每英里"], "done": "PlusAI保持商业化已融资、无人驾驶经济未证明。"},
+        {"signal": 3, "domain": "加密资本", "title": "测量资金广度", "why": "正向合计流量几乎完全依赖BlackRock产品，不能证明广泛复苏。", "steps": ["等待9月3日完整结算", "把IBIT与ETHA和其他基金分开", "要求更广参与、费用与稳定币供应同步增长"], "done": "在广度持续前，状态保持资本窄幅流入。"},
+        {"signal": 4, "domain": "支付轨道", "title": "建立Pix TIPS矩阵", "why": "公共即时支付系统互联后，竞争问题从代币转向FX、身份与追索。", "steps": ["追踪双边FX与结算设计", "绘制KYC数据交换与隐私", "要求退款、争议与责任路径"], "done": "走廊只有通过正式设计与可观察单位成本才升级。"},
+        {"signal": 5, "domain": "iamrobin.ai", "title": "发布能力不是权限", "why": "可复用的治理方法比另一篇前沿模型基准复述更耐久。", "steps": ["发布四语canonical文章", "归档LinkedIn衍生稿和台账", "验证证据、构建、公开与回执门禁"], "done": "只有全部外部回执闭环，Action Item才完成。"},
+        {"signal": 6, "domain": "AI基础设施", "title": "建立Figure Nscale台账", "why": "交叉持股和大型算力承诺可能在机器人客户需求获证前强化供给与资本循环。", "steps": ["绘制出资责任和最低付款", "追踪交付GPU、MW与能力增量", "测量有效自主小时与外部收入"], "done": "情报台账把算力投入与机器人经济分开。"},
+        {"signal": 7, "domain": "私募市场", "title": "Wonderful维持观察", "why": "高估值与大量forward-deployed人员需要留存、利润率和集中度证据。", "steps": ["等待经审计ARR与净留存", "拆分软件、服务与推理成本", "检查primary、secondary与优先权条款"], "done": "成熟软件经济获证前，Wonderful保持WATCH。"},
+        {"signal": 8, "domain": "公开市场", "title": "扩展NVIDIA护城河台账", "why": "Hugging Face扩大分发控制，但中立性与收购回报仍不确定。", "steps": ["追踪竞争芯片与中国模型可访问性", "测量开发者留存与付费转化", "记录现金贡献与收购ROIC"], "done": "NVDA论点只随真实平台行为和现金改变。"}
+      ]
+    },
+    "zh-Hant": {
+      "inLanguage": "zh-Hant", "languageSlug": "zh-hant", "title": "每日行動流，2026年9月4日", "description": "八項有來源支持的決策，匯入一個可審計的CIO執行場。", "centralJudgment": "把能力、權限與驗證結果分開；把融資視為對未來執行的索取權；只讓獨立證據改變權限與資本判斷。", "fieldLine": "八個信號。一項發布完成。四個營運循環就緒。三個台帳繼續觀察。",
+      "actions": [
+        {"signal": 1, "domain": "前沿模型", "title": "執行Astra影子試驗", "why": "更高能力、價格與較低思維鏈可觀察性，需要在權限不變時比較完整價值。", "steps": ["用三十項代表任務比較Astra與Sol", "記錄成本、干預、越權嘗試與證據品質", "保持預設路由和production權限不變"], "done": "只有反覆驗證結果覆蓋全部成本後，路由才改變。"},
+        {"signal": 2, "domain": "Physical AI", "title": "承銷交易交割", "why": "SPAC標題只是融資路徑，淨現金和無人駕駛經濟仍未證明。", "steps": ["追蹤贖回與承諾融資", "等待首筆付費無人駕駛貨運", "測量遠端協助與完全成本每英里"], "done": "PlusAI保持商業化已融資、無人駕駛經濟未證明。"},
+        {"signal": 3, "domain": "加密資本", "title": "測量資金廣度", "why": "正向合計流量幾乎完全依賴BlackRock產品，不能證明廣泛復甦。", "steps": ["等待9月3日完整結算", "把IBIT與ETHA和其他基金分開", "要求更廣參與、費用與穩定幣供應同步增長"], "done": "在廣度持續前，狀態保持資本窄幅流入。"},
+        {"signal": 4, "domain": "支付軌道", "title": "建立Pix TIPS矩陣", "why": "公共即時支付系統互聯後，競爭問題從代幣轉向FX、身份與追索。", "steps": ["追蹤雙邊FX與結算設計", "繪製KYC資料交換與私隱", "要求退款、爭議與責任路徑"], "done": "走廊只有通過正式設計與可觀察單位成本才升級。"},
+        {"signal": 5, "domain": "iamrobin.ai", "title": "發布能力不等於權限", "why": "可重用的治理方法比另一篇前沿模型基準複述更耐久。", "steps": ["發布四語canonical文章", "歸檔LinkedIn衍生稿和台帳", "驗證證據、構建、公開與回執門禁"], "done": "只有全部外部回執閉環，Action Item才完成。"},
+        {"signal": 6, "domain": "AI基礎設施", "title": "建立Figure Nscale台帳", "why": "交叉持股和大型算力承諾可能在機器人客戶需求獲證前強化供給與資本循環。", "steps": ["繪製出資責任和最低付款", "追蹤交付GPU、MW與能力增量", "測量有效自主小時與外部收入"], "done": "情報台帳把算力投入與機器人經濟分開。"},
+        {"signal": 7, "domain": "私募市場", "title": "Wonderful維持觀察", "why": "高估值與大量forward-deployed人員需要留存、利潤率和集中度證據。", "steps": ["等待經審計ARR與淨留存", "拆分軟體、服務與推理成本", "檢查primary、secondary與優先權條款"], "done": "成熟軟體經濟獲證前，Wonderful保持WATCH。"},
+        {"signal": 8, "domain": "公開市場", "title": "擴展NVIDIA護城河台帳", "why": "Hugging Face擴大分發控制，但中立性與收購回報仍不確定。", "steps": ["追蹤競爭晶片與中國模型可訪問性", "測量開發者留存與付費轉化", "記錄現金貢獻與收購ROIC"], "done": "NVDA論點只隨真實平台行為和現金改變。"}
+      ]
+    },
+    "ja": {
+      "inLanguage": "ja", "languageSlug": "ja", "title": "デイリー・アクション・フロー、2026年9月4日", "description": "出典で裏付けた8つの判断を、一つの検証可能なCIO実行フィールドへ並べる。", "centralJudgment": "能力、権限、検証済み成果を分ける。資金調達を将来の実行に対する請求権として扱い、独立した証拠だけで権限と資本判断を動かす。", "fieldLine": "8つのシグナル。1件の公開を完了。4つの運用ループが準備完了。3つの台帳を監視中。",
+      "actions": [
+        {"signal": 1, "domain": "フロンティアモデル", "title": "Astra影子試験を行う", "why": "能力と価格の上昇、思考連鎖の観察性低下には、同一権限で完全価値を比べる必要がある。", "steps": ["代表30タスクでAstraとSolを比較する", "費用、介入、越権試行、証拠品質を記録する", "default routeとproduction権限を維持する"], "done": "反復した検証済み成果が総費用を超えた時だけroutingを変える。"},
+        {"signal": 2, "domain": "Physical AI", "title": "closeを引き受け評価する", "why": "SPACのheadlineは資金調達経路であり、net cashと無人運転採算は未証明である。", "steps": ["償還とcommitted financingを追う", "最初の有料無人貨物を待つ", "remote assistanceと完全原価を測る"], "done": "PlusAIは商用化資金あり、無人運転採算未証明を維持する。"},
+        {"signal": 3, "domain": "暗号資産への資本", "title": "flowの広がりを測る", "why": "正の合計flowはほぼBlackRock商品だけで、広い回復を証明しない。", "steps": ["9月3日の完全settlementを待つ", "IBITとETHAを他fundから分離する", "参加拡大、fee、stablecoin増加を求める"], "done": "広がりが続くまでcapital entering narrowlyを保つ。"},
+        {"signal": 4, "domain": "決済rail", "title": "Pix TIPS表を作る", "why": "公共instant paymentの接続は競争軸をtokenからFX、identity、recourseへ移す。", "steps": ["二国間FXとsettlement設計を追う", "KYC data交換とprivacyを整理する", "refund、dispute、liability pathを求める"], "done": "承認済み設計と観測可能な単価が出た時だけ進める。"},
+        {"signal": 5, "domain": "iamrobin.ai", "title": "能力は権限ではないを公開", "why": "再利用できるgovernance methodは別のbenchmark要約より長く残る。", "steps": ["四言語canonical記事を公開する", "LinkedIn派生稿とledgerを保管する", "証拠、build、public、receipt gateを確認する"], "done": "外部receiptがすべて閉じた時だけAction Itemは完了する。"},
+        {"signal": 6, "domain": "AIインフラ", "title": "Figure Nscale台帳を作る", "why": "cross ownershipと大型compute commitmentは顧客需要の証明前に供給と資本を補強し得る。", "steps": ["資金責任とminimum paymentを整理する", "delivery済みGPU、MW、能力増分を追う", "有用な自律時間と外部売上を測る"], "done": "compute inputとrobot economicsを別々に記録する。"},
+        {"signal": 7, "domain": "プライベート市場", "title": "WonderfulをWATCHに保つ", "why": "高評価額とforward-deployed人員にはretention、margin、concentrationの証拠が要る。", "steps": ["audited ARRとnet retentionを待つ", "software、service、inference costを分ける", "primary、secondary、preference termsを読む"], "done": "成熟software economicsが出るまでWATCHを維持する。"},
+        {"signal": 8, "domain": "公開株式", "title": "NVIDIA moat台帳を拡張", "why": "Hugging Faceはdistribution controlを広げる一方、中立性と買収returnは不確実である。", "steps": ["競合siliconと中国model accessibilityを追う", "developer retentionとpaid conversionを測る", "cash contributionとacquisition ROICを記録する"], "done": "実際のplatform behaviorとcashだけでNVDA thesisを変える。"}
+      ]
+    }
+  }
+}
