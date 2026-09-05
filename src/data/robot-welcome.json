@@ -21,6 +21,7 @@
     { "label": "Ouroboros", "path": "/ouroboros/", "description": "Daily signals, action flows, and action items." },
     { "label": "Binary Blog", "path": "/binary/", "description": "Build, Invest, and Joy essays on a Monday, Wednesday, Friday rhythm." },
     { "label": "Intelligence", "path": "/intelligence/", "description": "AI infrastructure, swarm systems, hardware, and supply-chain maps." },
+    { "label": "BTC Probability Atlas", "path": "/resonance/btc_probability_atlas/", "description": "Dated public crypto probability research: statistical P, options-implied Q, uncertainty and historical scoring. Not a live feed or investment advice." },
     { "label": "Meaning", "path": "/meaning/", "description": "Robin's books and original-language diary." },
     { "label": "Books", "path": "/books/", "description": "Four living books presented as objects and questions." }
   ],

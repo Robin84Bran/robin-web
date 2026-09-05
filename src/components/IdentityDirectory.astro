@@ -281,6 +281,7 @@ const meaningSchemas = isMeaningDirectory
         </section>
       ) : (
         <ul>
+          {entry.slug === 'resonance' && <li><span></span><a href="/resonance/btc_probability_atlas/">BTC Probability Atlas · 概率图谱 →</a></li>}
           {entry.projects.map((project) => <li><span></span>{project}</li>)}
           <li class="directory-future"><span></span>more, as it becomes</li>
         </ul>

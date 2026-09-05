@@ -1,0 +1,28 @@
+---
+import SeoHead from '../../components/SeoHead.astro';
+import atlasBody from '../../components/probability-atlas/atlas-body.html?raw';
+const path = '/resonance/btc_probability_atlas/';
+const title = 'BTC Probability Atlas — Resonance — Robin Xie';
+const description = 'Explore dated BTC, ETH, SOL, XRP, BNB and TRX probability curves. Statistical P and options-implied Q remain separate; estimates are research, not promises.';
+const schema = {
+  '@type': 'WebPage',
+  '@id': `https://iamrobin.ai${path}#page`,
+  url: `https://iamrobin.ai${path}`,
+  name: title,
+  description,
+  inLanguage: ['en', 'zh-Hans'],
+  author: { '@id': 'https://iamrobin.ai/#person' },
+  isPartOf: { '@id': 'https://iamrobin.ai/#website' },
+};
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <SeoHead {title} {description} {path} {schema} />
+    <link rel="stylesheet" href={`${path}atlas.css`} />
+  </head>
+  <body>
+    <Fragment set:html={atlasBody} />
+    <script is:inline type="module" src={`${path}atlas.js`}></script>
+  </body>
+</html>

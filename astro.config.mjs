@@ -13,7 +13,7 @@ export default defineConfig({
       filter: (page) => {
         const path = new URL(page).pathname;
         return [
-          '/', '/about/', '/network/',
+          '/', '/about/', '/network/', '/resonance/btc_probability_atlas/',
           '/zh-hans/', '/zh-hans/about/', '/zh-hans/network/',
           '/zh-hant/', '/zh-hant/about/', '/zh-hant/network/',
           '/ja/', '/ja/about/', '/ja/network/',
