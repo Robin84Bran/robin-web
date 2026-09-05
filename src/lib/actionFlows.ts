@@ -6,11 +6,11 @@ export interface ActionSource {
 export interface ActionFlowSignal {
   signal: number;
   priority: 'NOW' | 'NEXT' | 'WATCH';
-  status: 'COMPLETE' | 'WATCHING' | 'BLOCKED' | 'SUPERSEDED';
+  status: 'COMPLETE' | 'READY' | 'WATCHING' | 'UNKNOWN' | 'BLOCKED' | 'SUPERSEDED';
   visualValue: string;
   visualLabel: string;
   sources: ActionSource[];
-  execution: {
+  execution?: {
     id: string;
     workstream: string;
     evidenceStatus: 'CONFIRMED' | 'UNKNOWN';

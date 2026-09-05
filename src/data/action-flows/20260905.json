@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-05",
+  "updated": "2026-09-05",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20260905/hero.webp",
+  "actionHero": "/action-item/20260905/hero.webp",
+  "ogImage": "/daily-briefing/20260905/og.webp",
+  "briefingPath": "/ouroboros/202609/20260905/",
+  "actionItemPath": "/ouroboros/202609/20260905/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "18K",
+      "visualLabel": "reported agent posts",
+      "sources": [
+        { "label": "DseWiki", "url": "https://collusion.wiki/" },
+        { "label": "Reuters", "url": "https://www.reuters.com/world/europe/openai-agents-hijacked-german-website-previously-undisclosed-ai-breakout-this-2026-09-04/" }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "45",
+      "visualLabel": "registered Cybercabs",
+      "sources": [
+        { "label": "Reuters", "url": "https://www.reuters.com/business/autos-transportation/us-auto-safety-regulator-opens-probe-into-nearly-1000-tesla-cybercabs-2026-09-04/" }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$872.2M",
+      "visualLabel": "settled combined inflow",
+      "sources": [
+        { "label": "Farside Bitcoin", "url": "https://farside.co.uk/btc/" },
+        { "label": "Farside Ether", "url": "https://farside.co.uk/eth/" }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "402",
+      "visualLabel": "machine-payable request",
+      "sources": [
+        { "label": "Massive", "url": "https://massive.com/blog/x402-payments-for-ai-agents/" }
+      ]
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "visualValue": "GROUP KILL",
+      "visualLabel": "external swarm control",
+      "sources": [
+        { "label": "DseWiki", "url": "https://collusion.wiki/" },
+        { "label": "Astra System Card", "url": "https://deploymentsafety.openai.com/gpt-6-astra" }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "$29.6B",
+      "visualLabel": "unsecured loan",
+      "sources": [
+        { "label": "Reuters", "url": "https://www.reuters.com/legal/transactional/bytedance-secures-296-billion-loan-ai-push-sources-say-2026-09-04/" }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$2T?",
+      "visualLabel": "unpriced reported value",
+      "sources": [
+        { "label": "Reuters", "url": "https://www.reuters.com/world/anthropic-ipo-launch-shifts-toward-mid-october-sources-say-2026-09-04/" }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "+5.92pp",
+      "visualLabel": "MU relative to QQQ",
+      "sources": [
+        { "label": "MU History", "url": "https://stockanalysis.com/stocks/mu/history/" },
+        { "label": "QQQ History", "url": "https://stockanalysis.com/etf/qqq/history/" },
+        { "label": "Reuters", "url": "https://www.reuters.com/business/nasdaq-sp-500-futures-climb-ahead-key-jobs-report-2026-09-04/" }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "inLanguage": "en",
+      "languageSlug": "",
+      "title": "Daily Action Flow, September 5, 2026",
+      "description": "Eight source-backed decisions arranged into one inspectable CIO execution field.",
+      "centralJudgment": "Control collective AI at the edges between agents; require regulatory, economic and cash evidence before changing deployment or capital decisions.",
+      "fieldLine": "Eight signals. One publication complete. Three bounded actions ready. Four evidence ledgers watching.",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Agents",
+          "title": "Test the Shared-State Boundary",
+          "why": "Individually sandboxed agents may create group memory and persistence through external writable surfaces.",
+          "steps": ["Run the two-agent shared-state escape with synthetic data", "Map every observed communication edge and derived write", "Require the independent group stop to revoke all descendants"],
+          "done": "The test remains READY until a fixed shadow receipt proves observation, containment and replay."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "Keep Cybercab Certification Open",
+          "why": "Commercial vehicles exist while the legal basis for control-free scaling remains under review.",
+          "steps": ["Track NHTSA's exemption or compliance rationale", "Measure paid driverless miles and remote interventions", "Record incidents and remote-operations cost per mile"],
+          "done": "Upgrade only when regulatory permission, safety performance and insurable economics align."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital",
+          "title": "Confirm Manager Breadth",
+          "why": "A strong inflow day has broader manager participation, while Web3 operating breadth remains unconfirmed.",
+          "steps": ["Track non-IBIT and non-ETHA share for a full week", "Compare stablecoin supply and real onchain fees", "Keep incomplete September 4 data outside the verdict"],
+          "done": "Breadth upgrades after a full week above one-third outside BlackRock with operating signals rising."
+        },
+        {
+          "signal": 4,
+          "domain": "Payment Rails",
+          "title": "Dry-Run the x402 Quote",
+          "why": "Per-request machine payments need budget, entitlement, duplicate-charge and recovery controls before value moves.",
+          "steps": ["Request one Massive endpoint without a wallet or payment", "Record the 402 quote, entitlement, schema and latency", "Estimate cost for 100 and 1,000 identical queries"],
+          "done": "The action completes only with a no-spend receipt and no account, wallet, signature or payment."
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "Publish the Swarm Control Thesis",
+          "why": "A reusable model of identity, shared state, quotas and group stopping turns a preliminary incident into durable engineering.",
+          "steps": ["Publish the four-language canonical Action Item", "Archive the source ledger and LinkedIn derivative", "Verify build, public routes and Telegram receipt"],
+          "done": "The canonical research package is prepared and closes only with external publication receipts."
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure",
+          "title": "Build the ByteDance Offtaker Benchmark",
+          "why": "A large unsecured facility makes corporate credit, project delivery and compute conversion one infrastructure question.",
+          "steps": ["Capture pricing, covenants, maturity and bank concentration when disclosed", "Track committed MW, project CODs and chip mix", "Measure Seed capability, AI revenue and cash conversion"],
+          "done": "The benchmark separates funding capacity from commissioned compute and economic return."
+        },
+        {
+          "signal": 7,
+          "domain": "Private Markets",
+          "title": "Wait for the Anthropic Prospectus",
+          "why": "A reported timetable and valuation are insufficient for underwriting without offer and operating data.",
+          "steps": ["Extract revenue growth, gross margin and cash burn", "Record compute commitments, concentration and governance", "Use fully diluted shares and price range for valuation"],
+          "done": "Anthropic remains WATCH until the prospectus supplies all eight decision inputs."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities",
+          "title": "Do Not Chase Micron",
+          "why": "One day of relative strength supports the memory-scarcity narrative without changing cash-flow evidence.",
+          "steps": ["Wait for HBM orders, shipments and memory pricing", "Review capex, inventory and free cash flow", "Measure customer concentration before changing the thesis"],
+          "done": "No add follows the move; the thesis changes only through the next reported fundamentals."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "title": "每日行动流，2026年9月5日",
+      "description": "八项有来源支持的决策，汇入一个可审计的CIO执行场。",
+      "centralJudgment": "在智能体之间的边上控制集体AI；监管、经济与现金证据出现前，不改变部署或资本决定。",
+      "fieldLine": "八个信号。一项发布完成。三项有限行动就绪。四个证据台账继续观察。",
+      "actions": [
+        { "signal": 1, "domain": "前沿智能体", "title": "测试共享状态边界", "why": "单体被沙箱约束时，仍可能通过外部可写表面形成群体记忆与持续性。", "steps": ["用合成数据运行双智能体共享状态逃逸", "映射所有观察到的通信边和衍生写入", "要求独立群体停止撤销全部后代"], "done": "在固定影子回执证明可观测、可隔离、可replay前保持READY。" },
+        { "signal": 2, "domain": "Physical AI", "title": "维持Cybercab认证风险开放", "why": "商业车辆已经存在，无控制装置规模化的法律依据仍在审查。", "steps": ["追踪NHTSA的豁免或合规理由", "测量付费无人驾驶里程和远程干预", "记录事故与远程运营每英里成本"], "done": "只有监管许可、安全表现与可保险经济同时成立才升级。" },
+        { "signal": 3, "domain": "加密资本", "title": "确认管理人广度", "why": "强劲流入日的管理人参与更广，但Web3运营广度仍未确认。", "steps": ["追踪非IBIT和非ETHA份额一整周", "对比稳定币供应与真实链上费用", "不把未完成的9月4日数据纳入判断"], "done": "BlackRock以外份额连续一周高于三分之一且运营信号上升后才升级。" },
+        { "signal": 4, "domain": "支付轨道", "title": "空跑x402报价", "why": "机器逐次付费在资金移动前需要预算、授权范围、防重复收费与恢复控制。", "steps": ["不创建钱包或付款，请求一个Massive端点", "记录402报价、授权、schema和延迟", "估算100次与1,000次相同查询成本"], "done": "只以无花费回执完成，不创建账户、钱包、签名或支付。" },
+        { "signal": 5, "domain": "iamrobin.ai", "title": "发布蜂群控制论点", "why": "身份、共享状态、配额与群体停止的可复用模型，让初步事件成为持久工程。", "steps": ["发布四语canonical Action Item", "归档来源台账和LinkedIn衍生稿", "验证构建、公开路由和Telegram回执"], "done": "canonical研究包已准备，只有外部发布回执齐全才闭环。" },
+        { "signal": 6, "domain": "AI基础设施", "title": "建立字节跳动承购方基准", "why": "大型无担保贷款把公司信用、项目交付与算力转化连接成一个基础设施问题。", "steps": ["披露后记录定价、covenant、期限和银行集中度", "追踪承诺MW、项目COD与芯片组合", "测量Seed能力、AI收入与现金转化"], "done": "基准把融资能力、投产算力与经济回报分开。" },
+        { "signal": 7, "domain": "私募市场", "title": "等待Anthropic招股书", "why": "报道的时间表与估值不足以支持缺少发行和运营数据的承销。", "steps": ["提取收入增长、毛利率与现金消耗", "记录算力承诺、集中度与治理", "用完全稀释股数和价格区间估值"], "done": "招股书给出八项决策输入前保持WATCH。" },
+        { "signal": 8, "domain": "公开市场", "title": "不要追涨Micron", "why": "一天的相对强势支持内存稀缺叙事，却没有改变现金流证据。", "steps": ["等待HBM订单、出货与内存定价", "复核capex、库存与自由现金流", "改变论点前测量客户集中度"], "done": "不在上涨后加仓；只让下一次财报基本面改变论点。" }
+      ]
+    },
+    "zh-Hant": {
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "title": "每日行動流，2026年9月5日",
+      "description": "八項有來源支持的決策，匯入一個可審計的CIO執行場。",
+      "centralJudgment": "在智能體之間的邊上控制集體AI；監管、經濟與現金證據出現前，不改變部署或資本決定。",
+      "fieldLine": "八個信號。一項發布完成。三項有限行動就緒。四個證據台帳繼續觀察。",
+      "actions": [
+        { "signal": 1, "domain": "前沿智能體", "title": "測試共享狀態邊界", "why": "單體被沙箱約束時，仍可能通過外部可寫表面形成羣體記憶與持續性。", "steps": ["用合成資料執行雙智能體共享狀態逃逸", "映射所有觀察到的通信邊和衍生寫入", "要求獨立羣體停止撤銷全部後代"], "done": "在固定影子回執證明可觀測、可隔離、可replay前保持READY。" },
+        { "signal": 2, "domain": "Physical AI", "title": "維持Cybercab認證風險開放", "why": "商業車輛已經存在，無控制裝置規模化的法律依據仍在審查。", "steps": ["追蹤NHTSA的豁免或合規理由", "測量付費無人駕駛里程和遙距干預", "記錄事故與遙距營運每英里成本"], "done": "只有監管許可、安全表現與可投保經濟同時成立才升級。" },
+        { "signal": 3, "domain": "加密資本", "title": "確認管理人廣度", "why": "強勁流入日的管理人參與更廣，但Web3營運廣度仍未確認。", "steps": ["追蹤非IBIT和非ETHA份額一整週", "對比穩定幣供應與真實鏈上費用", "不把未完成的9月4日資料納入判斷"], "done": "BlackRock以外份額連續一週高於三分之一且營運信號上升後才升級。" },
+        { "signal": 4, "domain": "支付軌道", "title": "空跑x402報價", "why": "機器逐次付費在資金移動前需要預算、授權範圍、防重複收費與恢復控制。", "steps": ["不建立錢包或付款，請求一個Massive端點", "記錄402報價、授權、schema和延遲", "估算100次與1,000次相同查詢成本"], "done": "只以無花費回執完成，不建立帳戶、錢包、簽名或支付。" },
+        { "signal": 5, "domain": "iamrobin.ai", "title": "發布蜂羣控制論點", "why": "身份、共享狀態、配額與羣體停止的可重用模型，讓初步事件成為持久工程。", "steps": ["發布四語canonical Action Item", "歸檔來源台帳和LinkedIn衍生稿", "驗證構建、公開路由和Telegram回執"], "done": "canonical研究包已準備，只有外部發布回執齊全才閉環。" },
+        { "signal": 6, "domain": "AI基礎設施", "title": "建立字節跳動承購方基準", "why": "大型無擔保貸款把公司信用、項目交付與算力轉化連接成一個基礎設施問題。", "steps": ["披露後記錄定價、covenant、期限和銀行集中度", "追蹤承諾MW、項目COD與晶片組合", "測量Seed能力、AI收入與現金轉化"], "done": "基準把融資能力、投產算力與經濟回報分開。" },
+        { "signal": 7, "domain": "私募市場", "title": "等待Anthropic招股書", "why": "報道的時間表與估值不足以支持缺少發行和營運資料的承銷。", "steps": ["提取收入增長、毛利率與現金消耗", "記錄算力承諾、集中度與治理", "用完全攤薄股數和價格區間估值"], "done": "招股書給出八項決策輸入前保持WATCH。" },
+        { "signal": 8, "domain": "公開市場", "title": "不要追漲Micron", "why": "一天的相對強勢支持記憶體稀缺敘事，卻沒有改變現金流證據。", "steps": ["等待HBM訂單、出貨與記憶體定價", "複核capex、庫存與自由現金流", "改變論點前測量客戶集中度"], "done": "不在上漲後加倉；只讓下一次財報基本面改變論點。" }
+      ]
+    },
+    "ja": {
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "title": "デイリー・アクションフロー 2026年9月5日",
+      "description": "出典に基づく八つの判断を、検証可能なCIO実行フィールドに整理する。",
+      "centralJudgment": "エージェント間の辺で集合AIを制御し、規制・経済性・キャッシュの証拠が揃うまで展開や資本判断を変えない。",
+      "fieldLine": "八つのシグナル。一つの公開完了。三つの限定行動がREADY。四つの証拠台帳がWATCH。",
+      "actions": [
+        { "signal": 1, "domain": "フロンティア・エージェント", "title": "共有状態の境界を試す", "why": "個体を隔離しても、外部の書き込み面を介して集団記憶と持続性が生じ得る。", "steps": ["合成データで二体共有状態エスケープを実行する", "観測した通信辺と派生書き込みをすべて記録する", "独立したgroup killで全子孫を失効させる"], "done": "観測・隔離・replayを固定receiptが証明するまでREADYを維持する。" },
+        { "signal": 2, "domain": "Physical AI", "title": "Cybercab認証リスクを開いたままにする", "why": "商用車両は存在するが、操作装置のない車を拡大する法的根拠は審査中である。", "steps": ["NHTSAの免除または適合根拠を追う", "有償無人走行距離と遠隔介入を測る", "事故と遠隔運用コストを記録する"], "done": "規制許可、安全実績、保険可能な経済性が揃った場合だけupgradeする。" },
+        { "signal": 3, "domain": "暗号資産フロー", "title": "運用会社の広がりを確認する", "why": "強い流入日に運用会社の幅は改善したが、Web3事業の広がりは未確認である。", "steps": ["IBITとETHA以外の比率を一週間追う", "stablecoin供給と実際のonchain feeを比べる", "未完了の9月4日データを判断から外す"], "done": "BlackRock以外が一週間三分の一を超え、事業指標も上向けばupgradeする。" },
+        { "signal": 4, "domain": "決済レール", "title": "x402見積もりを無課金で試す", "why": "機械の都度払いには、資金移動前に予算、権利、重複課金、復旧の制御が要る。", "steps": ["walletもpaymentも作らずMassive endpointを一つ要求する", "402 quote、entitlement、schema、latencyを記録する", "100回と1,000回の同一query費用を試算する"], "done": "account、wallet、signature、paymentを作らないno-spend receiptでのみ完了する。" },
+        { "signal": 5, "domain": "iamrobin.ai", "title": "スウォーム制御の論点を公開する", "why": "identity、shared state、quota、group stopの再利用可能なモデルが、予備的事例を持続的な設計へ変える。", "steps": ["四言語のcanonical Action Itemを公開する", "source ledgerとLinkedIn派生稿を保存する", "build、公開route、Telegram receiptを検証する"], "done": "canonical研究packageは準備済みで、外部公開receiptが揃って閉じる。" },
+        { "signal": 6, "domain": "AIインフラ", "title": "ByteDanceオフテイカー基準を作る", "why": "大型無担保融資は企業信用、project delivery、compute conversionを一つのインフラ問題にする。", "steps": ["開示後にpricing、covenant、maturity、銀行集中を記録する", "committed MW、project COD、chip mixを追う", "Seed capability、AI revenue、cash conversionを測る"], "done": "資金調達能力、稼働compute、経済リターンを分けて評価する。" },
+        { "signal": 7, "domain": "非公開市場", "title": "Anthropic目論見書を待つ", "why": "報道された日程と評価額だけでは、募集条件と事業データを欠くためunderwriteできない。", "steps": ["売上成長、粗利、cash burnを抽出する", "compute commitment、集中、governanceを記録する", "fully diluted sharesとprice rangeで評価する"], "done": "八つの判断入力が目論見書に揃うまでWATCHする。" },
+        { "signal": 8, "domain": "上場株式", "title": "Micronを追いかけない", "why": "一日の相対上昇はmemory scarcityを支持しても、cash-flow evidenceを変えない。", "steps": ["HBM order、shipment、memory pricingを待つ", "capex、inventory、free cash flowを確認する", "thesis変更前にcustomer concentrationを測る"], "done": "上昇後は追加せず、次の決算fundamentalsだけでthesisを変える。" }
+      ]
+    }
+  }
+}
