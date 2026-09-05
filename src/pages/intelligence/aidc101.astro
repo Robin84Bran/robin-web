@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Aidc101 from '../../components/intelligence/Aidc101.astro';
+const description = 'Explore how parallel power, construction, cooling and compute workstreams determine an AI data center opening date. An interactive 3D teaching model in four languages.';
+const path = '/intelligence/aidc101/';
+const schema = {'@context':'https://schema.org','@type':'LearningResource',name:'AIDC 101 — Many workstreams. One opening day.',description,url:`https://iamrobin.ai${path}`,inLanguage:['en','zh-Hans','zh-Hant','ja'],learningResourceType:'Interactive simulation'};
+---
+<BaseLayout title="AIDC 101 — Intelligence — Robin Xie" {description} {path} {schema}>
+  <link rel="stylesheet" href="/intelligence/aidc101/styles.css" />
+  <Aidc101 />
+</BaseLayout>

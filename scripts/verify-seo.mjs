@@ -17,6 +17,7 @@ const indexableRoutes = new Set([
   '/portfolio/', '/books/', '/meaning/', '/ouroboros/', '/ouroboros/execution-ledger/', '/binary/',
   '/intelligence/', '/intelligence/hardware/', '/intelligence/supply-chain/',
   '/intelligence/hardware/deliverable-megawatts/',
+  '/intelligence/aidc101/',
   '/intelligence/supply-chain-map/', '/intelligence/swarm/',
 ]);
 const identityFamilies = [
@@ -109,7 +110,7 @@ if (existsSync(dist)) {
   const blogPublications = [...blogRoutes, ...blogTranslationRoutes];
   const publicationRoutes = [...articleRoutes, ...actionFlowPublications, ...blogPublications];
   for (const route of [...publicationRoutes, ...diaryRoutes]) indexableRoutes.add(route);
-  check(routes.size === 29 + publicationRoutes.length + diaryRoutes.length, `expected ${29 + publicationRoutes.length + diaryRoutes.length} HTML routes, found ${routes.size}.`);
+  check(routes.size === 30 + publicationRoutes.length + diaryRoutes.length, `expected ${30 + publicationRoutes.length + diaryRoutes.length} HTML routes, found ${routes.size}.`);
 
   for (const [route, file] of routes) {
     const html = readFileSync(file, 'utf8');

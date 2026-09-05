@@ -41,6 +41,13 @@ const schema = {
 
     <IntelligenceAtlas />
 
+    <section class="aidc-entry shell" aria-labelledby="aidc-entry-title">
+      <p class="eyebrow">Interactive lesson · 01</p>
+      <h2 id="aidc-entry-title">Many workstreams. One opening day.</h2>
+      <p>Build an AI data center in 3D. Move a delivery date. Discover what actually changes.</p>
+      <a class="quiet-link" href="/intelligence/aidc101/">Explore AIDC 101 ↗</a>
+    </section>
+
     <nav class="directory-cycle shell" aria-label="Identity directories">
       <a href={`/${previous.slug}/`}>← {previous.word}</a>
       <a href={`/${next.slug}/`}>{next.word} →</a>
@@ -49,6 +56,9 @@ const schema = {
 </BaseLayout>
 
 <style>
+  .aidc-entry { margin-block: 1rem 4rem; padding-block: 2rem; border-block: 1px solid var(--line); }
+  .aidc-entry h2 { font-family: var(--serif); font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 400; letter-spacing: -0.03em; }
+  .aidc-entry > p:not(.eyebrow) { color: var(--muted); line-height: 1.6; }
   .identity-directory--intelligence {
     display: block;
     min-height: calc(100svh - 4.6rem);

@@ -1,0 +1,20 @@
+<section id="aidc-build" class="shell" lang="en">
+  
+  <header class="aidc-lead"><p class="eyebrow"><a href="/intelligence/">Intelligence</a> / Learn</p><div class="aidc-heading"><h1 data-copy="title">AIDC 101.</h1><label class="language-label">Language <select id="ab-language" aria-label="Language"><option value="en">English</option><option value="zh-Hans">简体中文</option><option value="zh-Hant">繁體中文</option><option value="ja">日本語</option></select></label></div><p class="aidc-subtitle" data-copy="subtitle">Many workstreams. One opening day.</p></header>
+  <div class="text-small"><span data-copy="note">Illustrative schedule · One campus phase · Months since project start</span></div>
+  <div class="toolbar"><button id="ab-play" type="button">▶ Play construction</button><label class="time"><span data-copy="progress">Progress</span> <input id="ab-time" type="range" min="0" max="16" step="0.05" value="5" aria-label="Construction month"></label><span id="ab-clock">Month 5.0</span></div>
+  <canvas id="ab-scene" role="img" aria-label="Rotatable three-dimensional data center construction model. The schedule below provides the same readiness information.">Rotatable three-dimensional data center construction model. The schedule below provides the same readiness information.</canvas>
+  <div class="toolbar text-small"><span><span data-copy="drag">Drag to rotate · Watch the campus rise</span></span><button id="ab-left" type="button" aria-label="Rotate left">↶</button><button id="ab-right" type="button" aria-label="Rotate right">↷</button><label><span data-copy="view">Explore</span> <select id="ab-select"><option value="0">Grid connection</option><option value="1">Transformer</option><option value="2">Power distribution</option><option value="3">Permits & building</option><option value="4">Cooling</option><option value="5">Compute & network</option><option value="6">Integrated testing</option></select></label></div>
+  <div id="ab-detail" class="detail text-small" aria-live="polite"></div>
+  <div class="controls">
+    <label><span data-copy="grid">Grid energization</span> <output id="ab-grid-val">Month 9</output><input id="ab-grid" type="range" min="6" max="14" value="9" step="1"></label>
+    <label><span data-copy="tx">Transformer arrival</span> <output id="ab-tx-val">Month 9</output><input id="ab-tx" type="range" min="4" max="13" value="9" step="1"></label>
+    <label><span data-copy="cool">Cooling ready</span> <output id="ab-cool-val">Month 9</output><input id="ab-cool" type="range" min="8" max="14" value="9" step="1"></label>
+  </div>
+  <div class="toolbar"><button id="ab-early" type="button">Transformer 3 months earlier</button><button id="ab-base" type="button">Restore baseline</button></div>
+  <div id="ab-result" class="result" aria-live="polite"></div>
+  <div class="legend text-small"><span><i class="key"></i><span data-copy="parallel">Parallel work</span></span><span><i class="key crit"></i><span data-copy="critical">Opening-date constraints (including ties)</span></span><span><span data-copy="cursor">Vertical line = playback month</span></span></div>
+  <div id="ab-lanes"></div><div class="axis text-small"><span>0</span><span>8</span><span>16</span></div>
+<footer class="aidc-note"><p class="eyebrow" data-copy="learn">Learning experiment</p><h2 data-copy="question">If the transformer arrives three months earlier, how much earlier can the campus open?</h2><p data-copy="boundary">This is a teaching model, not a construction forecast. Fixed assumptions: site access in month 6; building and distribution ready in month 8; compute and network ready in month 9; one month for transformer installation and one month for integrated testing. Capacity ramp, procurement eligibility, demand and revenue are outside this model.</p><a href="/intelligence/hardware/deliverable-megawatts/" data-copy="related">From paper gigawatts to deliverable megawatts →</a></footer></section>
+
+<script is:inline type="module" src="/intelligence/aidc101/app.js"></script>
