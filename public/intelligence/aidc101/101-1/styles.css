@@ -1,0 +1,49 @@
+
+#ai-factory-cinema{width:100%;font-family:Arial,Helvetica,sans-serif}
+#ai-factory-cinema .af-stage{position:relative;aspect-ratio:16/10;overflow:hidden;background:#030811;color:#e8f3ff}
+#ai-factory-cinema canvas{display:block;width:100%;height:100%}
+#ai-factory-cinema .af-top{position:absolute;top:5%;left:5%;right:5%;display:flex;justify-content:space-between;letter-spacing:.15em;font-size:11px;color:#b1c4d6;pointer-events:none}
+#ai-factory-cinema .af-caption{position:absolute;left:5%;right:5%;bottom:6%;pointer-events:none;text-shadow:0 2px 14px #000}
+#ai-factory-cinema .af-kicker{font-size:11px;letter-spacing:.17em;color:#8bd5ff;margin-bottom:9px}
+#ai-factory-cinema .af-title{font-size:clamp(20px,3.5vw,32px);font-weight:500;letter-spacing:-.025em}
+#ai-factory-cinema .af-sub{font-size:clamp(12px,1.8vw,15px);color:#b6c7d7;margin-top:9px;max-width:530px;line-height:1.45}
+#ai-factory-cinema .af-end{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:25px;padding:6%;text-align:center;background:linear-gradient(transparent,rgba(3,8,17,.94) 45%,rgba(3,8,17,.98));pointer-events:none}
+#ai-factory-cinema .af-end[hidden],#ai-factory-cinema .af-caption[hidden],#ai-factory-cinema .af-error[hidden]{display:none}
+#ai-factory-cinema .af-end-title{font-size:clamp(23px,4vw,38px);font-weight:500;letter-spacing:-.03em;max-width:580px}
+#ai-factory-cinema .af-chain{display:flex;align-items:center;justify-content:center;gap:10px;font-size:clamp(11px,1.6vw,15px);line-height:1.5}
+#ai-factory-cinema .af-chain span{max-width:110px;color:#bfe6fa}
+#ai-factory-cinema .af-chain span:last-child{color:#dab879}
+#ai-factory-cinema .af-chain b{color:#597588;font-weight:400}
+#ai-factory-cinema .af-end-note{font-size:13px;color:#b6c7d7;line-height:1.5}
+#ai-factory-cinema .af-controls{display:flex;gap:10px;align-items:center;padding:12px 0;flex-wrap:wrap}
+#ai-factory-cinema .af-scrub-label{flex:1;min-width:85px;display:flex;align-items:center}
+#ai-factory-cinema .af-scrub{width:100%;accent-color:#5bc9f1}
+#ai-factory-cinema .af-time{font-size:12px;font-variant-numeric:tabular-nums;white-space:nowrap}
+#ai-factory-cinema .af-error{position:absolute;inset:25% 10%;color:#d5e8f5;text-align:center}
+@media(max-width:480px){#ai-factory-cinema .af-stage{aspect-ratio:4/5}#ai-factory-cinema .af-top{letter-spacing:.08em;font-size:10px}#ai-factory-cinema .af-chain{flex-direction:column;gap:3px}#ai-factory-cinema .af-chain span{max-width:none}#ai-factory-cinema .af-chain b{transform:rotate(90deg)}#ai-factory-cinema .af-end{gap:15px}#ai-factory-cinema .af-end-title{font-size:25px}#ai-factory-cinema .af-end-note{font-size:12px}}
+
+#aidc-factory-lesson{max-width:76rem;padding-bottom:5rem;color:var(--ink);font-family:var(--sans)}
+#aidc-factory-lesson .af-lead{padding:2.5rem 0 1.5rem}
+#aidc-factory-lesson .af-heading{display:flex;align-items:center;justify-content:space-between;gap:1.25rem;flex-wrap:wrap}
+#aidc-factory-lesson h1{font-family:var(--serif);font-size:clamp(3rem,7vw,5rem);font-weight:400;letter-spacing:-.05em;margin:0}
+#aidc-factory-lesson .af-subtitle{font-family:var(--serif);font-size:clamp(1.3rem,3vw,1.9rem);color:var(--muted);margin:.8rem 0 0}
+#aidc-factory-lesson .af-language-label{display:grid;gap:.4rem;font-size:.875rem;color:var(--muted)}
+#aidc-factory-lesson button,#aidc-factory-lesson select{min-height:44px;padding:.55rem .85rem;font:inherit;font-size:1rem;border:1px solid var(--line);border-radius:0;background:var(--moon-bright);color:var(--ink);cursor:pointer}
+#aidc-factory-lesson .af-back{color:var(--gold-dark);text-underline-offset:.25em;font-size:.875rem}
+#ai-factory-cinema{font-family:var(--sans)}
+#ai-factory-cinema .af-stage{aspect-ratio:16/9;border:1px solid var(--line-strong)}
+#ai-factory-cinema .af-top{color:#cabfae;font-size:12px}
+#ai-factory-cinema .af-kicker{color:#d1b68e;font-size:12px}
+#ai-factory-cinema .af-title,#ai-factory-cinema .af-end-title{font-family:var(--serif);font-weight:400}
+#ai-factory-cinema .af-title{font-size:clamp(22px,3vw,34px)}
+#ai-factory-cinema .af-chain span{color:#d5dce0}
+#ai-factory-cinema .af-chain{font-size:clamp(12px,1.5vw,16px)}
+#ai-factory-cinema .af-chain span:last-child{color:#d1b68e}
+#ai-factory-cinema .af-scrub{accent-color:var(--gold-dark);min-height:36px}
+#ai-factory-cinema .af-time{font-family:var(--mono);font-size:12px;color:var(--muted)}
+#ai-factory-cinema .af-controls{padding:1rem 0}
+#aidc-factory-lesson .af-summary{max-width:52rem;border-top:1px solid var(--line);padding-top:1.5rem;margin-top:1rem}
+#aidc-factory-lesson .af-summary h2{font:400 clamp(1.5rem,3vw,2rem)/1.2 var(--serif)}
+#aidc-factory-lesson .af-summary p{font-size:1rem;line-height:1.7;color:var(--muted)}
+#aidc-factory-lesson .af-summary .af-boundary{font-size:.8125rem}
+@media(max-width:600px){#aidc-factory-lesson .af-lead{padding-top:1.75rem}#ai-factory-cinema .af-stage{aspect-ratio:4/5}#ai-factory-cinema .af-chain{flex-direction:column;gap:3px}#ai-factory-cinema .af-chain span{max-width:none}#ai-factory-cinema .af-chain b{transform:rotate(90deg)}#ai-factory-cinema .af-top{font-size:12px;letter-spacing:.06em}#ai-factory-cinema .af-sub{font-size:14px}#ai-factory-cinema .af-end{gap:16px}#ai-factory-cinema .af-caption{bottom:5%}}

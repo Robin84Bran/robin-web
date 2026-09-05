@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AidcFactory from '../../../components/intelligence/AidcFactory.astro';
+const description = 'AIDC 101-1: a 3D journey from electricity and deliverable power to GPU compute, useful AI outputs and revenue. In English, simplified Chinese, traditional Chinese and Japanese.';
+const path = '/intelligence/aidc101/101-1/';
+const schema = {'@context':'https://schema.org','@type':'LearningResource',name:'AIDC 101-1 — Electricity to Intelligence',description,url:`https://iamrobin.ai${path}`,inLanguage:['en','zh-Hans','zh-Hant','ja'],learningResourceType:'3D animated lesson',isPartOf:{'@type':'Course',name:'AIDC 101',url:'https://iamrobin.ai/intelligence/aidc101/'}};
+---
+<BaseLayout title="AIDC 101-1 — Electricity to Intelligence — Robin Xie" {description} {path} {schema}>
+<link rel="stylesheet" href="/intelligence/aidc101/101-1/styles.css" />
+<AidcFactory />
+</BaseLayout>
