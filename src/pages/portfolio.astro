@@ -3,16 +3,23 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import PageLead from '../components/PageLead.astro';
 import GravityField from '../components/GravityField.astro';
 import { createPortfolioSchemas } from '../lib/seo';
+import { portfolioDescription } from '../data/identityConnections';
 ---
 
 <BaseLayout
   title="Portfolio — Robin Xie"
-  description="A visual field of the institutions, frontiers, capital, and systems that shape Robin Xie's attention."
+  description={portfolioDescription}
   path="/portfolio/"
   schema={createPortfolioSchemas()}
 >
-  <PageLead eyebrow="Portfolio / attention field" title="Capital follows attention." line="biography → topology" />
+  <PageLead eyebrow="Portfolio / attention field" title="Capital follows attention." line={portfolioDescription} />
   <div class="shell portfolio-canvas">
     <GravityField />
   </div>
 </BaseLayout>
+
+<style>
+  :global(body[data-path="/portfolio/"] .page-lead h1),
+  :global(body[data-path="/portfolio/"] .page-line) { grid-column: 1 / -1; }
+  :global(body[data-path="/portfolio/"] .page-line) { max-width: 50rem; margin-top: 1.3rem; line-height: 1.6; }
+</style>

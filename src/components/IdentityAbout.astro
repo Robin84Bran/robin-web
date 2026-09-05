@@ -5,6 +5,7 @@ import SakuraDrift from './SakuraDrift.astro';
 import { identityAboutAlternates, identityProfiles, type IdentityLocale } from '../data/identity';
 import { socialLinks } from '../data/site';
 import { createIdentityPageSchemas } from '../lib/seo';
+import { identityConnections } from '../data/identityConnections';
 
 interface Props {
   locale: IdentityLocale;
@@ -12,6 +13,7 @@ interface Props {
 
 const { locale } = Astro.props;
 const profile = identityProfiles[locale];
+const connections = identityConnections(locale);
 ---
 
 <BaseLayout
@@ -32,6 +34,7 @@ const profile = identityProfiles[locale];
       </h1>
       <p class="identity-about__native">{profile.nativeName}</p>
       <p class="identity-about__subtitle">{profile.subtitle}</p>
+      <p class="identity-introduction">{connections.introduction}</p>
       <p class="identity-about__lead">{profile.aboutLead}</p>
     </header>
 
@@ -45,7 +48,12 @@ const profile = identityProfiles[locale];
 
     <div class="identity-about__body">
       <div class="identity-about__story">
-        {profile.aboutParagraphs.map((paragraph) => <p>{paragraph}</p>)}
+        {profile.aboutParagraphs.map((paragraph, index) => <>
+          <p>{paragraph}</p>
+          {connections.proofLinks[index] && <nav class="identity-proof" aria-label={connections.evidence}>
+            {connections.proofLinks[index].map((link) => <a href={link.href}>{link.label}<span aria-hidden="true"> ↗</span></a>)}
+          </nav>}
+        </>)}
       </div>
       <aside class="identity-about__questions">
         <section>
@@ -61,6 +69,13 @@ const profile = identityProfiles[locale];
       </aside>
     </div>
 
+    <section class="identity-invitation" id="work-with-robin" aria-labelledby="work-with-robin-title">
+      <p class="eyebrow">{connections.areas}</p>
+      <h2 id="work-with-robin-title">{connections.invitation}</h2>
+      <p>{connections.context}</p>
+      <a class="quiet-link" href={socialLinks.linkedin} rel="noreferrer" target="_blank">{connections.contact}<span aria-hidden="true">↗</span></a>
+    </section>
+
     <footer class="identity-about__footer">
       <a class="quiet-link" href={profile.homePath}>{profile.homeLinkLabel}<span aria-hidden="true">←</span></a>
       <nav aria-label="Robin Xie public profiles">
@@ -71,3 +86,13 @@ const profile = identityProfiles[locale];
     </footer>
   </article>
 </BaseLayout>
+
+<style>
+  .identity-introduction { max-width: 43rem; margin-top: 1.4rem; color: var(--muted); font-size: .95rem; line-height: 1.8; }
+  .identity-proof { display: flex; flex-wrap: wrap; gap: .5rem 1.4rem; margin: -.65rem 0 2rem; font-family: var(--sans); font-size: .82rem; line-height: 1.7; }
+  .identity-proof a { color: var(--gold-dark); text-decoration-thickness: 1px; text-underline-offset: .25em; }
+  .identity-invitation { margin-top: clamp(3rem, 6vw, 5rem); padding-top: 2rem; border-top: 1px solid var(--line); scroll-margin-top: 6rem; }
+  .identity-invitation h2 { margin: .7rem 0; font-family: var(--serif); font-size: clamp(1.6rem, 3vw, 2.3rem); font-weight: 400; }
+  .identity-invitation > p:not(.eyebrow) { color: var(--muted); line-height: 1.7; }
+  .identity-invitation .quiet-link { margin-top: 1rem; }
+</style>

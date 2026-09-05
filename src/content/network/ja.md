@@ -16,6 +16,8 @@ translationReview: "PASS"
 
 **インターネットが保存してくれた、かつての自分。**
 
+<span id="engineering-record"></span>
+
 ### BCF · 理事
 
 **2018**
@@ -77,6 +79,8 @@ translationReview: "PASS"
 `メディア記録 · 2018`
 
 → [メディア記録を見る](https://www.sohu.com/a/239113254_323087)
+
+<span id="payments-record"></span>
 
 ## 03 · 決済とデジタル金融
 
@@ -151,6 +155,8 @@ Media OutReach · *iSunOne Teams Up with Digital Bank to Benefit 2 Billion Under
 `メディア · 2019`
 
 → [金融包摂の記録を見る](https://www.media-outreach.com/news/hong-kong/2019/07/17/9617/isunone-teams-up-with-digital-bank-to-benefit-2-billion-underprivileged-population/)
+
+<span id="tidebit-record"></span>
 
 ## 04 · 暗号資産取引所
 

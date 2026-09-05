@@ -5,6 +5,10 @@ const root = process.cwd();
 const dist = join(root, 'dist');
 const origin = 'https://iamrobin.ai';
 const failures = [];
+const personId = `${origin}/#person`;
+const identityAliases = ['Bin Xie', 'Bin “Robin” Xie', 'Bin Robin Xie', 'Xie Bin', '谢玢', '謝玢', 'nanobin'];
+const proofAnchors = ['engineering-record', 'payments-record', 'tidebit-record'];
+const portfolioDisclaimer = 'An attention field — subjects I study, not a record of affiliations or holdings.';
 const indexableRoutes = new Set([
   '/', '/about/', '/network/',
   '/zh-hans/', '/zh-hans/about/', '/zh-hans/network/',
@@ -66,6 +70,24 @@ function fileForPath(pathname) {
 
 function one(html, pattern) {
   return html.match(pattern)?.[1];
+}
+
+function inspectIdentity(node, route) {
+  if (!node || typeof node !== 'object') return;
+  if (Array.isArray(node)) return node.forEach((item) => inspectIdentity(item, route));
+  if (node['@type'] === 'Person' && node['@id'] === personId) {
+    check(node.name === 'Robin Xie', `${route}: primary Person name must remain Robin Xie.`);
+    check(node.url === `${origin}/about/`, `${route}: Person must link to the canonical About profile.`);
+    check(!('additionalName' in node), `${route}: professional nickname must not become a middle name.`);
+    for (const alias of identityAliases) check(node.alternateName?.includes(alias), `${route}: missing Person alias ${alias}.`);
+  }
+  if (node.author) {
+    for (const author of [node.author].flat()) {
+      check(author?.['@id'] === personId, `${route}: author must reference the existing shared Person entity.`);
+    }
+  }
+  check(node['@id'] !== `${origin}/#robin-xie`, `${route}: shared Person identifier must not be replaced.`);
+  Object.values(node).forEach((value) => inspectIdentity(value, route));
 }
 
 check(existsSync(dist), 'dist/ is missing; run the production build first.');
@@ -143,15 +165,26 @@ if (existsSync(dist)) {
       check(html.includes('"@type":"Person"'), `${route}: identity Person schema missing.`);
       if (route.includes('/network/')) {
         check(html.includes('"@type":"CollectionPage"'), `${route}: Network CollectionPage schema missing.`);
+        for (const anchor of proofAnchors) check(html.includes(`id="${anchor}"`), `${route}: missing public-record anchor ${anchor}.`);
       } else {
         check(html.includes('"@type":"ProfilePage"'), `${route}: identity ProfilePage schema missing.`);
+      }
+      if (route.endsWith('/about/')) {
+        const body = html.split(/<body\b[^>]*>/i)[1]?.split('</body>')[0] ?? '';
+        check(body.includes('Bin “Robin” Xie') && body.includes('Bin Xie'), `${route}: visible formal introduction missing.`);
+        check(body.includes('id="work-with-robin"'), `${route}: quiet contact invitation missing.`);
+        const networkPath = identityFamilies[2][identityFamily.locale];
+        for (const anchor of proofAnchors) check(body.includes(`href="${networkPath}#${anchor}"`), `${route}: localized public-record link ${anchor} missing.`);
+        for (const path of ['/projects/', '/intelligence/', '/binary/#binary-lane-invest', '/ouroboros/']) {
+          check(body.includes(`href="${path}"`), `${route}: research/capability link ${path} missing.`);
+        }
       }
       check(html.includes(`"inLanguage":"${identityFamily.locale}"`), `${route}: identity ProfilePage language must be ${identityFamily.locale}.`);
     }
 
     for (const [, json] of html.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/gi)) {
       try {
-        JSON.parse(json);
+        inspectIdentity(JSON.parse(json), route);
       } catch (error) {
         failures.push(`${route}: invalid JSON-LD (${error.message}).`);
       }
@@ -162,6 +195,10 @@ if (existsSync(dist)) {
       const target = new URL(rawHref.replaceAll('&amp;', '&'), expectedCanonical);
       if (target.origin !== origin) continue;
       check(Boolean(fileForPath(target.pathname)), `${route}: broken internal link to ${target.pathname}`);
+      if ([...proofAnchors, 'work-with-robin', 'binary-lane-invest'].includes(target.hash.slice(1))) {
+        const targetFile = fileForPath(target.pathname);
+        check(targetFile && readFileSync(targetFile, 'utf8').includes(`id="${target.hash.slice(1)}"`), `${route}: broken evidence/contact fragment ${target.pathname}${target.hash}`);
+      }
     }
   }
 
@@ -209,6 +246,9 @@ if (existsSync(dist)) {
   }
   check((books.match(/"@type":"Book"/g) ?? []).length === 4, 'books: expected four Book schemas.');
   check(portfolio.includes('"@type":"CollectionPage"'), 'portfolio: CollectionPage schema missing.');
+  check(portfolio.split(/<body\b[^>]*>/i)[1]?.includes(portfolioDisclaimer), 'portfolio: visible non-affiliation/holdings disclaimer missing.');
+  check(one(portfolio, /<meta\s+name="description"\s+content="([^"]+)"/i) === portfolioDisclaimer, 'portfolio: metadata must match the visible disclaimer.');
+  check(portfolio.includes(`"description":"${portfolioDisclaimer}"`), 'portfolio: schema must match the visible disclaimer.');
   check(ouroboros.includes('"@type":"CollectionPage"'), 'ouroboros: CollectionPage schema missing.');
   check(binary.includes('"@type":"CollectionPage"'), 'binary: CollectionPage schema missing.');
   check(meaning.includes('"@type":"CollectionPage"'), 'meaning: CollectionPage schema missing.');

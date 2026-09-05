@@ -16,6 +16,8 @@ translationReview: "PASS"
 
 **互联网替人保存了一些自己早已忘记的版本。**
 
+<span id="engineering-record"></span>
+
 ### BCF · 理事
 
 **2018**
@@ -79,6 +81,8 @@ translationReview: "PASS"
 `媒体报道 · 2018`
 
 → [查看媒体记录](https://www.sohu.com/a/239113254_323087)
+
+<span id="payments-record"></span>
 
 ## 03 · 支付与数字金融
 
@@ -153,6 +157,8 @@ Media OutReach · *iSunOne Teams Up with Digital Bank to Benefit 2 Billion Under
 `公开记录 · 2019`
 
 → [查看普惠金融记录](https://www.media-outreach.com/news/hong-kong/2019/07/17/9617/isunone-teams-up-with-digital-bank-to-benefit-2-billion-underprivileged-population/)
+
+<span id="tidebit-record"></span>
 
 ## 04 · 加密资产交易平台
 

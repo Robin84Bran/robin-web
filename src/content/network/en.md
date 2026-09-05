@@ -15,6 +15,8 @@ Not every project survived. The record did.
 
 **Earlier lives, preserved by the internet.**
 
+<span id="engineering-record"></span>
+
 ### BCF · Board Member
 
 **2018**
@@ -76,6 +78,8 @@ Sohu<br>
 `Media coverage · 2018`
 
 → [View the media record](https://www.sohu.com/a/239113254_323087)
+
+<span id="payments-record"></span>
 
 ## 03 · Payments & Digital Finance
 
@@ -150,6 +154,8 @@ Media OutReach · *iSunOne Teams Up with Digital Bank to Benefit 2 Billion Under
 `Media · 2019`
 
 → [View the financial-inclusion record](https://www.media-outreach.com/news/hong-kong/2019/07/17/9617/isunone-teams-up-with-digital-bank-to-benefit-2-billion-underprivileged-population/)
+
+<span id="tidebit-record"></span>
 
 ## 04 · Crypto Exchange
 

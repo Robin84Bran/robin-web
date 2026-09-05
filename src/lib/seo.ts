@@ -1,5 +1,6 @@
 import { books, portfolioOrbitNodes, socialLinks } from '../data/site';
 import { identityKnowledge, identityProfiles, type IdentityLocale } from '../data/identity';
+import { portfolioDescription } from '../data/identityConnections';
 
 export type SchemaNode = Record<string, unknown>;
 
@@ -22,12 +23,12 @@ export function createPersonSchema(language: IdentityLocale = 'en'): SchemaNode 
     '@id': personId,
     name: SITE_NAME,
     honorificPrefix: 'Ms.',
-    alternateName: ['Ms. Robin Xie', 'Bin “Robin” Xie', '谢玢', '謝玢', 'nanobin'],
+    alternateName: ['Ms. Robin Xie', 'Bin Xie', 'Bin “Robin” Xie', 'Bin Robin Xie', 'Xie Bin', '谢玢', '謝玢', 'nanobin'],
     pronouns: 'she/her',
     description: identity.description,
     jobTitle: ['Professional Engineer', 'Accredited Investor', 'AI-Native System Builder', 'Writer'],
     knowsAbout: identityKnowledge,
-    url: absoluteUrl('/'),
+    url: absoluteUrl('/about/'),
     image: absoluteUrl(DEFAULT_IMAGE),
     sameAs: [socialLinks.official, socialLinks.linkedin, socialLinks.github, socialLinks.medium],
   };
@@ -112,7 +113,7 @@ export function createPortfolioSchemas(): SchemaNode[] {
       '@type': 'CollectionPage',
       '@id': `${absoluteUrl('/portfolio/')}#page`,
       name: 'Portfolio — Robin Xie',
-      description: "A visual field of the institutions, frontiers, capital, and systems that shape Robin Xie's attention.",
+      description: portfolioDescription,
       url: absoluteUrl('/portfolio/'),
       isPartOf: { '@id': websiteId },
       about,

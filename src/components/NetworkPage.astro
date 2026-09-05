@@ -4,6 +4,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import IdentityLanguageNav from './IdentityLanguageNav.astro';
 import { identityProfiles, networkAlternates, type IdentityLocale } from '../data/identity';
 import { createNetworkSchemas } from '../lib/seo';
+import { identityConnections } from '../data/identityConnections';
 
 interface Props {
   locale: IdentityLocale;
@@ -54,9 +55,14 @@ const backLabel = locale === 'en'
     <nav class="network-page__cycle" aria-label={profile.languageNavLabel}>
       <a href={profile.homePath}>← {profile.homeLinkLabel}</a>
       <a href={profile.aboutPath}>{profile.aboutLinkLabel} →</a>
+      <a href={`${profile.aboutPath}#work-with-robin`}>{identityConnections(locale).invitation} ↗</a>
     </nav>
   </article>
 </BaseLayout>
+
+<style>
+  .network-page__cycle { flex-wrap: wrap; }
+</style>
 
 <script>
   document.querySelectorAll<HTMLAnchorElement>('.network-prose a[href^="http"]').forEach((link) => {
