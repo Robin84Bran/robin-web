@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AiBerkshireEvaluation from '../../../components/resonance/AiBerkshireEvaluation.astro';
+
+const path = '/resonance/eval/ai_berkshire/';
+const title = 'AI Berkshire Field Test — Resonance — Robin Xie';
+const description = 'A source-first, four-language RobinOS field test of AI Berkshire across NVDA, META, MU, GOOGL, AMZN, QCOM, MSFT, PLTR, TSLA, and AMD.';
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Report',
+  '@id': `https://iamrobin.ai${path}#report`,
+  url: `https://iamrobin.ai${path}`,
+  name: title,
+  description,
+  datePublished: '2026-09-06',
+  dateModified: '2026-09-06',
+  inLanguage: ['en', 'zh-Hans', 'zh-Hant', 'ja'],
+  author: { '@id': 'https://iamrobin.ai/#person' },
+  isPartOf: { '@id': 'https://iamrobin.ai/#website' },
+  about: ['public-equity research', 'AI evaluation', 'capital allocation'],
+};
+---
+
+<BaseLayout {title} {description} {path} {schema} language="en">
+  <link rel="stylesheet" href="/resonance/eval/ai_berkshire/styles.css" />
+  <AiBerkshireEvaluation />
+</BaseLayout>

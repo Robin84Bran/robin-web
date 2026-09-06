@@ -1,0 +1,120 @@
+---
+import { evaluationCopy } from '../../data/aiBerkshireEvaluation';
+
+const localeEntries = Object.entries(evaluationCopy);
+---
+
+<section id="ai-berkshire" class="shell" lang="en">
+  <header class="eval-hero">
+    <div>
+      <p class="eyebrow">RobinOS · Research Observatory</p>
+      <h1>AI Berkshire field test.</h1>
+      <p class="eval-deck">Ten companies. Four useful lenses. No simulated masters.</p>
+      <p class="freeze-line">
+        <span>Research cut-off: 6 September 2026 · market snapshot: 4 September 2026, 12:40 ET · not a live feed</span>
+        <span class="research-only">Research only</span>
+      </p>
+    </div>
+    <label class="language-label">
+      <span id="ai-berkshire-language-label">Language</span>
+      <select id="ai-berkshire-language" aria-labelledby="ai-berkshire-language-label">
+        <option value="en">English</option>
+        <option value="zh-Hans">简体中文</option>
+        <option value="zh-Hant">繁體中文</option>
+        <option value="ja">日本語</option>
+      </select>
+    </label>
+  </header>
+
+  {localeEntries.map(([locale, copy]) => (
+    <div data-lang-panel={locale} lang={copy.lang} hidden={locale !== 'en'}>
+      <section class="owner-view" aria-labelledby={`owner-${locale}`}>
+        <div class="owner-copy">
+          <p class="eyebrow" id={`owner-${locale}`}>{copy.eyebrow}</p>
+          {copy.ownerSentences.map((sentence) => <p>{sentence}</p>)}
+        </div>
+        <aside class="judgment">
+          <span class="eyebrow">{copy.judgmentTitle}</span>
+          <strong>{copy.judgment}</strong>
+          <p>{copy.nextAction}</p>
+        </aside>
+      </section>
+
+      <section aria-labelledby={`method-${locale}`}>
+        <header class="section-head">
+          <h2 id={`method-${locale}`}>{copy.methodTitle}</h2>
+          <p>{copy.methodDeck}</p>
+        </header>
+        <div class="verdict-grid">
+          {copy.verdicts.map((verdict) => (
+            <article class="verdict-card" data-tone={verdict.tone}>
+              <span class="status-chip">{verdict.tag}</span>
+              <h3>{verdict.title}</h3>
+              <p>{verdict.body}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section aria-labelledby={`sequence-${locale}`}>
+        <header class="section-head">
+          <h2 id={`sequence-${locale}`}>{copy.sequenceTitle}</h2>
+          <p>{copy.sequenceDeck}</p>
+        </header>
+        <p class="sequence-note">{copy.expand}</p>
+        <div class="company-list">
+          {[...copy.companies].sort((a, b) => a.priority.localeCompare(b.priority)).map((company, index) => (
+            <details class="company-card" open={index === 0}>
+              <summary>
+                <span class="ticker">{company.ticker}</span>
+                <span class="company-title">
+                  <h3>{company.name}</h3>
+                  <span class="priority-chip">{company.priority}</span>
+                </span>
+                <span class="company-summary">{company.summary}</span>
+              </summary>
+              <div class="company-detail">
+                <div class="detail-block">
+                  <h4>{copy.labels.case}</h4>
+                  <p>{company.case}</p>
+                </div>
+                <div class="detail-block">
+                  <h4>{copy.labels.normalization}</h4>
+                  <p>{company.normalization}</p>
+                </div>
+                <div class="detail-block">
+                  <h4>{copy.labels.gate}</h4>
+                  <p><strong>{company.status}.</strong> {company.gate}</p>
+                </div>
+                <div class="detail-block">
+                  <h4>{copy.labels.sources}</h4>
+                  <ul class="source-links">
+                    {company.sources.map(([label, href]) => (
+                      <li><a href={href} target="_blank" rel="noreferrer">{label} ↗</a></li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      <section aria-labelledby={`audit-${locale}`}>
+        <header class="section-head">
+          <h2 id={`audit-${locale}`}>{copy.auditTitle}</h2>
+          <p>{copy.auditBody}</p>
+        </header>
+        <div class="audit-note">
+          <p>{copy.auditBody}</p>
+          <ul>
+            {copy.auditPoints.map((point) => <li>{point}</li>)}
+          </ul>
+        </div>
+        <p class="disclaimer">{copy.disclaimer}</p>
+      </section>
+    </div>
+  ))}
+</section>
+
+<script is:inline type="module" src="/resonance/eval/ai_berkshire/app.js"></script>

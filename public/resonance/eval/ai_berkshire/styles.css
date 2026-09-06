@@ -1,0 +1,433 @@
+#ai-berkshire {
+  --eval-green: #42665d;
+  --eval-rust: #945f45;
+  max-width: 76rem;
+  padding-block: 3.4rem 7rem;
+  color: var(--ink);
+}
+
+#ai-berkshire * {
+  box-sizing: border-box;
+}
+
+#ai-berkshire a {
+  text-underline-offset: 0.25em;
+}
+
+#ai-berkshire .eval-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1.5rem 3rem;
+  align-items: end;
+  padding-bottom: 2.2rem;
+  border-bottom: 1px solid var(--line);
+}
+
+#ai-berkshire h1,
+#ai-berkshire h2,
+#ai-berkshire h3 {
+  font-family: var(--serif);
+  font-weight: 400;
+}
+
+#ai-berkshire h1 {
+  max-width: 13ch;
+  margin: 0;
+  font-size: clamp(3rem, 7.5vw, 6.8rem);
+  letter-spacing: -0.055em;
+  line-height: 0.88;
+}
+
+#ai-berkshire .eval-deck {
+  max-width: 48rem;
+  margin: 1.2rem 0 0;
+  color: var(--muted);
+  font-family: var(--serif);
+  font-size: clamp(1.25rem, 2.5vw, 1.9rem);
+  line-height: 1.28;
+}
+
+#ai-berkshire .language-label {
+  display: grid;
+  gap: 0.45rem;
+  min-width: 10rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+#ai-berkshire .language-label select {
+  min-height: 44px;
+  padding: 0.65rem 2.2rem 0.65rem 0.8rem;
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.9rem;
+  background: var(--moon-bright);
+  border: 1px solid var(--line-strong);
+  border-radius: 0;
+}
+
+#ai-berkshire .freeze-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1rem;
+  align-items: center;
+  margin: 1.25rem 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+#ai-berkshire .research-only,
+#ai-berkshire .status-chip,
+#ai-berkshire .priority-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.75rem;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.68rem;
+  font-weight: 650;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid color-mix(in srgb, var(--gold) 70%, transparent);
+  border-radius: 999px;
+}
+
+#ai-berkshire [data-lang-panel][hidden] {
+  display: none;
+}
+
+#ai-berkshire .owner-view {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(16rem, 0.55fr);
+  gap: 2.5rem;
+  padding: 3.5rem 0;
+}
+
+#ai-berkshire .owner-copy {
+  font-size: clamp(1.15rem, 2vw, 1.55rem);
+  line-height: 1.62;
+}
+
+#ai-berkshire .owner-copy p:last-child {
+  margin-bottom: 0;
+}
+
+#ai-berkshire .judgment {
+  align-self: start;
+  padding: 1.5rem;
+  background: color-mix(in srgb, var(--gold) 9%, var(--moon-bright));
+  border-left: 2px solid var(--gold);
+}
+
+#ai-berkshire .judgment strong {
+  display: block;
+  margin-bottom: 0.7rem;
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#ai-berkshire .judgment p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+#ai-berkshire .section-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(14rem, 28rem);
+  gap: 1.5rem 3rem;
+  align-items: end;
+  margin: 0 0 1.5rem;
+  padding-top: 2.8rem;
+  border-top: 1px solid var(--line);
+}
+
+#ai-berkshire .section-head h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.7rem);
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+#ai-berkshire .section-head p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+#ai-berkshire .verdict-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  margin-bottom: 4rem;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+#ai-berkshire .verdict-card {
+  min-height: 13rem;
+  padding: 1.35rem;
+  background: var(--moon-bright);
+}
+
+#ai-berkshire .verdict-card h3 {
+  margin: 0.8rem 0 0.7rem;
+  font-size: 1.35rem;
+}
+
+#ai-berkshire .verdict-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.65;
+}
+
+#ai-berkshire .verdict-card[data-tone="adopt"] .status-chip {
+  color: var(--eval-green);
+  border-color: color-mix(in srgb, var(--eval-green) 55%, transparent);
+}
+
+#ai-berkshire .verdict-card[data-tone="reject"] .status-chip {
+  color: var(--eval-rust);
+  border-color: color-mix(in srgb, var(--eval-rust) 55%, transparent);
+}
+
+#ai-berkshire .sequence-note {
+  margin: 0 0 1.4rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+#ai-berkshire .company-list {
+  display: grid;
+  gap: 0;
+  margin-bottom: 4rem;
+  border-top: 1px solid var(--line-strong);
+}
+
+#ai-berkshire .company-card {
+  border-bottom: 1px solid var(--line-strong);
+}
+
+#ai-berkshire .company-card summary {
+  display: grid;
+  grid-template-columns: 5.2rem minmax(0, 1fr) minmax(13rem, 0.7fr) auto;
+  gap: 1rem 1.5rem;
+  align-items: center;
+  min-height: 7.5rem;
+  padding: 1.2rem 0;
+  cursor: pointer;
+  list-style: none;
+}
+
+#ai-berkshire .company-card summary::-webkit-details-marker {
+  display: none;
+}
+
+#ai-berkshire .ticker {
+  font-family: var(--serif);
+  font-size: 1.45rem;
+}
+
+#ai-berkshire .company-title h3 {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.35rem, 2.1vw, 1.9rem);
+}
+
+#ai-berkshire .company-title p,
+#ai-berkshire .company-summary {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.55;
+}
+
+#ai-berkshire .company-card summary::after {
+  content: "+";
+  color: var(--gold-dark);
+  font-family: var(--serif);
+  font-size: 1.7rem;
+}
+
+#ai-berkshire .company-card[open] summary::after {
+  content: "−";
+}
+
+#ai-berkshire .company-detail {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin: 0 0 1.5rem 6.7rem;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+#ai-berkshire .detail-block {
+  min-height: 9rem;
+  padding: 1.25rem;
+  background: color-mix(in srgb, var(--moon-bright) 83%, var(--moon));
+}
+
+#ai-berkshire .detail-block h4 {
+  margin: 0 0 0.6rem;
+  color: var(--gold-dark);
+  font-size: 0.7rem;
+  font-weight: 650;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+#ai-berkshire .detail-block p {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+#ai-berkshire .source-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem 1rem;
+  margin: 1rem 0 0;
+  padding: 0 0 0 1.25rem;
+  list-style: none;
+}
+
+#ai-berkshire .source-links a {
+  color: var(--gold-dark);
+  font-size: 0.78rem;
+}
+
+#ai-berkshire .method-table {
+  width: 100%;
+  margin-bottom: 3rem;
+  border-collapse: collapse;
+  font-size: 0.86rem;
+}
+
+#ai-berkshire .method-table th,
+#ai-berkshire .method-table td {
+  padding: 0.9rem 0.75rem;
+  vertical-align: top;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+
+#ai-berkshire .method-table th {
+  color: var(--gold-dark);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+#ai-berkshire .audit-note {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(15rem, 0.7fr);
+  gap: 2rem;
+  padding: 2rem;
+  background: var(--moon-bright);
+  border: 1px solid var(--line);
+}
+
+#ai-berkshire .audit-note p,
+#ai-berkshire .audit-note li {
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.7;
+}
+
+#ai-berkshire .audit-note ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+#ai-berkshire .disclaimer {
+  margin: 2rem 0 0;
+  color: var(--muted);
+  font-size: 0.75rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 880px) {
+  #ai-berkshire .verdict-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #ai-berkshire .company-card summary {
+    grid-template-columns: 4.5rem minmax(0, 1fr) auto;
+  }
+
+  #ai-berkshire .company-summary {
+    grid-column: 2 / 3;
+  }
+
+  #ai-berkshire .company-detail {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  #ai-berkshire {
+    padding-top: 2rem;
+  }
+
+  #ai-berkshire .eval-hero,
+  #ai-berkshire .owner-view,
+  #ai-berkshire .section-head,
+  #ai-berkshire .audit-note {
+    grid-template-columns: 1fr;
+  }
+
+  #ai-berkshire .language-label {
+    width: 100%;
+  }
+
+  #ai-berkshire .language-label select {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  #ai-berkshire .owner-view {
+    padding: 2.4rem 0;
+  }
+
+  #ai-berkshire .verdict-grid,
+  #ai-berkshire .company-detail {
+    grid-template-columns: 1fr;
+  }
+
+  #ai-berkshire .company-card summary {
+    grid-template-columns: 1fr auto;
+    min-height: 0;
+    padding: 1.4rem 0;
+  }
+
+  #ai-berkshire .ticker,
+  #ai-berkshire .company-title,
+  #ai-berkshire .company-summary {
+    grid-column: 1 / 2;
+  }
+
+  #ai-berkshire .company-card summary::after {
+    grid-column: 2;
+    grid-row: 1 / 4;
+  }
+
+  #ai-berkshire .detail-block {
+    min-height: 0;
+  }
+
+  #ai-berkshire .method-table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #ai-berkshire *,
+  #ai-berkshire *::before,
+  #ai-berkshire *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
