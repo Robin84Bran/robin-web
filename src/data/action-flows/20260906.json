@@ -1,0 +1,555 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-06",
+  "updated": "2026-09-06",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20260906/hero.webp",
+  "actionHero": "/action-item/20260906/hero.webp",
+  "ogImage": "/daily-briefing/20260906/og.webp",
+  "briefingPath": "/ouroboros/202609/20260906/",
+  "actionItemPath": "/ouroboros/202609/20260906/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "12 TASKS",
+      "visualLabel": "proposed comparison",
+      "sources": [
+        {
+          "label": "Google launch",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/"
+        },
+        {
+          "label": "Gemini API model documentation",
+          "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash"
+        },
+        {
+          "label": "OpenAI Astra pricing",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6-astra"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "PAID HOURS",
+      "visualLabel": "customer proof required",
+      "sources": [
+        {
+          "label": "original ten-agency plan",
+          "url": "https://gxt.hunan.gov.cn/gxt/xxgk_71033/ghjh/202609/t20260903_34056580.html"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/asia-pacific/china-vows-support-small-midsize-firms-employment-innovation-2026-09-03/"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$1.202B",
+      "visualLabel": "settled weekly inflow",
+      "sources": [
+        {
+          "label": "Farside Bitcoin",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "Farside Ether",
+          "url": "https://farside.co.uk/eth/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "EURC",
+      "visualLabel": "paper settlement only",
+      "sources": [
+        {
+          "label": "Circle",
+          "url": "https://www.circle.com/blog/cctp-extends-circles-crosschain-trust-layer-to-eurc"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "visualValue": "4 LOOPS",
+      "visualLabel": "verified outcome test",
+      "sources": [
+        {
+          "label": "Gemini 3.8 Flash",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/"
+        },
+        {
+          "label": "OpenAI’s agent-improvement loop",
+          "url": "https://developers.openai.com/cookbook/examples/agents_sdk/agent_improvement_loop"
+        },
+        {
+          "label": "memory and compaction",
+          "url": "https://developers.openai.com/cookbook/examples/agents_sdk/building_reliable_agents_memory_compaction"
+        },
+        {
+          "label": "Codex repair loops",
+          "url": "https://developers.openai.com/cookbook/examples/codex/build_iterative_repair_loops_with_codex"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "264 ACRES",
+      "visualLabel": "land secured",
+      "sources": [
+        {
+          "label": "TCS",
+          "url": "https://www.tcs.com/who-we-are/newsroom/press-release/tcs-hypervault-establish-large-scale-ai-data-center-campus-telangana"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/india/indias-tcs-unit-invest-up-74-billion-ai-data-center-campus-2026-09-05/"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$3.5B",
+      "visualLabel": "reported financing sought",
+      "sources": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/legal/transactional/nscale-seeks-about-35-billion-pre-ipo-funding-source-says-2026-09-04/"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "51.98%",
+      "visualLabel": "August revenue growth",
+      "sources": [
+        {
+          "label": "Foxconn investor calendar and filing entry",
+          "url": "https://www.foxconn.com/en-us/investor-relations/investor-relations-activities/event-calendar"
+        },
+        {
+          "label": "Foxconn Q2 results",
+          "url": "https://www.foxconn.com/en-us/press-center/press-releases/latest-news/2095"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/asia-pacific/foxconn-says-third-quarter-outperform-market-expectations-ai-strength-2026-09-05/"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "inLanguage": "en",
+      "languageSlug": "",
+      "title": "Daily Action Flow, September 6, 2026",
+      "description": "Eight source-ordered actions separate publication, proposed experiments and evidence-dependent watches.",
+      "centralJudgment": "Publish the four-loop framework; keep experiments, capital and operating-asset claims behind their own evidence and authority.",
+      "fieldLine": "Eight actions. One published framework. No implied execution.",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier models",
+          "title": "Prepare the twelve-task routing comparison",
+          "why": "Cheap long-horizon work does not establish safe recovery or retained learning.",
+          "steps": [
+            "Freeze twelve representative non-production tasks and acceptance checks; confirm data, account access, spending ceiling and execution authority before a model run.",
+            "Compare the current baseline with Flash-first and Astra escalation; measure completion, owner minutes, recovery, bad memory, spend and cost per verified outcome."
+          ],
+          "done": "Complete only with reproducible run receipts and an end-to-end comparison. No trial has run and no default route changes."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "Wait for paid autonomous labor evidence",
+          "why": "China's financing plan supports supply capacity; customers must establish labor economics.",
+          "steps": [
+            "Track unaffiliated customer shipments, task success and human intervention.",
+            "Require ASP, gross margin and cost per useful autonomous hour before upgrading a beneficiary."
+          ],
+          "done": "Remain WATCHING until disclosed customer and operating evidence supports an upgrade; policy funding alone is insufficient."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto capital flows",
+          "title": "Confirm breadth after the next full week",
+          "why": "The settled week brought $1.202B; non-BlackRock products supplied 31.1%, still below one-third.",
+          "steps": [
+            "Use completed weekly BTC and ETH ETF data; separate IBIT and ETHA from the rest.",
+            "Require non-IBIT/ETHA share above one-third plus rising stablecoin supply and real onchain fees."
+          ],
+          "done": "Capital entering and manager breadth improving; Web3 breadth remains unconfirmed until all conditions hold."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins and payments",
+          "title": "Prepare the EURC paper settlement model",
+          "why": "A common burn-mint layer leaves FX, reconciliation and irreversible errors to be priced.",
+          "steps": [
+            "Model EURC receipt, CCTP Ethereum/Base transfer, USDC FX and merchant settlement without wallets or funds.",
+            "Separate burn-mint, FX, gas, reconciliation and irreversible-error costs; preserve unavailable inputs as UNKNOWN."
+          ],
+          "done": "A reproducible no-funds cost model is the deliverable. Real volume and recovery evidence are still required before any capital decision."
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "Publish the four-loop agent framework",
+          "deepDiveTitle": "The Four Loop Test for Autonomous Agents",
+          "why": "An inspectable scorecard turns model capabilities into an operating question about outcomes and owner time.",
+          "steps": [
+            "Publish the four-language Action Item with six original sources, one scorecard and six proposed failure scenarios.",
+            "Archive the bilingual LinkedIn derivative; verify build, public routes and the three publication receipts."
+          ],
+          "done": "The linked article is the publication artifact; completion does not claim a model experiment, permission change or external social post."
+        },
+        {
+          "signal": 6,
+          "domain": "AI infrastructure",
+          "title": "Record Hyderabad at the land-secured stage",
+          "why": "264 acres are secured; up to 1GW and INR700B remain phased plans rather than operating assets.",
+          "steps": [
+            "Route the TCS and Reuters evidence into the private AI Infrastructure intake.",
+            "Track permits, interconnected power, water, funding responsibility, minimum customer payments, equipment orders and phased COD through energized and revenue MW."
+          ],
+          "done": "Keep each missing gate UNKNOWN and assign no asset value to the 1GW. Private intake is separate from verified operating-MW completion."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-stage private markets",
+          "title": "Wait for Nscale financing documents",
+          "why": "A reported $3.5B raise and $30B conversion cap leave material debt and execution terms unresolved.",
+          "steps": [
+            "Wait for a data room or prospectus with coupon, maturity, liquidation ranking, discount and valuation floor.",
+            "Check customer minimum payments, project-debt recourse, COD and use of proceeds; confirm no allocation from a headline."
+          ],
+          "done": "Remain WATCHING; advance to INVESTIGATE only when the decision terms are disclosed. No investment or outreach is executed."
+        },
+        {
+          "signal": 8,
+          "domain": "Public equities",
+          "title": "Use Foxconn as a manufacturing validator",
+          "why": "August revenue reached NT$921.8B, up 51.98%; margins and cash conversion still need evidence.",
+          "steps": [
+            "Track AI-server mix, gross margin, top-five customers, inventory, receivables, capex and order-to-cash quarterly.",
+            "Separate the September 4 price rise from the September 5 disclosure; wait for a complete post-disclosure session."
+          ],
+          "done": "Remain WATCHING for operating-quality evidence. No immediate buy signal or invalid cross-market reaction comparison."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "title": "每日行动流，2026年9月6日",
+      "description": "按原稿顺序呈现八项行动，分清出版、拟议实验与等待证据的观察。",
+      "centralJudgment": "发布四闭环框架；实验、资金和稼动资产判断，各自等待真实证据与适用授权。",
+      "fieldLine": "八项行动，一份已发布框架，不暗示其他行动已执行。",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型",
+          "title": "准备十二任务路由比较",
+          "why": "长任务便宜，不等于能够安全恢复或保留可靠经验。",
+          "steps": [
+            "先锁定12个代表性非生产任务及验收标准；实际调用模型前确认数据、账户、花费上限和执行权限。",
+            "把现有基线与Flash先执行、Astra按需升级比较，记录完成、负责人分钟、恢复、错误记忆、总费用及单成果成本。"
+          ],
+          "done": "只有可复现的运行回执与完整比较才算完成。尚未运行试验，也不改变默认路由。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "等待客户付费的自主劳动证据",
+          "why": "中国产业资金支持供给能力，劳动经济性仍由客户验证。",
+          "steps": [
+            "跟踪非关联客户出货、任务成功率和人工干预。",
+            "只有ASP、毛利率及每个有效自主小时成本披露后，才考虑提升受益企业评级。"
+          ],
+          "done": "在客户与经营证据支持升级前维持WATCHING；政策资金本身不足以过关。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流",
+          "title": "下一完整周再确认广度",
+          "why": "已结算周流入12.02亿美元，非BlackRock贡献31.1%，仍低于三分之一。",
+          "steps": [
+            "使用完整周BTC与ETH ETF数据，将IBIT、ETHA与其他产品分开。",
+            "要求非IBIT/ETHA占比超过三分之一，并伴随稳定币供给与真实链上费用增长。"
+          ],
+          "done": "资本进入、管理人广度改善；全部条件满足前，Web3广度仍未确认。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币与支付",
+          "title": "准备EURC纸面结算模型",
+          "why": "共用铸销层之后，换汇、对账与不可逆错误仍有成本。",
+          "steps": [
+            "模拟EURC收入、CCTP在Ethereum与Base间转移、USDC换汇及商户结算，不创建钱包、不投入资金。",
+            "拆分铸销、FX、Gas、对账与不可逆错误成本；缺少输入时保留UNKNOWN。"
+          ],
+          "done": "交付可复现的无资金成本模型。任何资金判断之前，仍需真实流量与恢复证据。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "发布Agent四闭环框架",
+          "deepDiveTitle": "自主Agent的四闭环测试",
+          "why": "可检查的评分表，把模型能力转成成果与负责人时间的经营问题。",
+          "steps": [
+            "发布四语Action Item，保留六份原始来源、一张评分表和六种拟议故障场景。",
+            "保存双语LinkedIn衍生稿，验证构建、公开链接和三份发布回执。"
+          ],
+          "done": "链接文章是出版产物；完成不代表模型试验已执行、权限已改变或社交平台已发帖。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基础设施",
+          "title": "将海得拉巴记为土地已取得",
+          "why": "264英亩已取得；最多1GW、7,000亿卢比仍是分期计划，不是稼动资产。",
+          "steps": [
+            "将TCS与Reuters证据送入私人AI基础设施收件台账。",
+            "按阶段跟踪许可、并网电力、水、融资责任、客户最低付款、设备订单和COD，直到通电与收入MW。"
+          ],
+          "done": "缺失门槛保留UNKNOWN，不给1GW赋资产价值。私人收件完成与经营MW核验完成是两件事。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期一级市场",
+          "title": "等待Nscale融资文件",
+          "why": "据报35亿美元融资、300亿美元转换上限，仍缺关键债务和执行条款。",
+          "steps": [
+            "等待数据室或招股书披露票息、期限、清算顺序、折扣与估值底线。",
+            "核对客户最低付款、项目债追索权、COD与资金用途；不从新闻标题推定配额。"
+          ],
+          "done": "维持WATCHING，条款披露后才进入INVESTIGATE。不执行投资或外联。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场",
+          "title": "以Foxconn验证制造兑现",
+          "why": "8月收入9,218亿新台币，同比增长51.98%；利润率与现金转换仍待证据。",
+          "steps": [
+            "按季度跟踪AI服务器占比、毛利率、前五客户、库存、应收、资本开支及订单到现金。",
+            "区分9月4日涨幅与9月5日公告，等待首个完整披露后交易日。"
+          ],
+          "done": "维持WATCHING，等待经营质量证据。不生成即时买入信号，也不做时段错位的跨市场反应比较。"
+        }
+      ]
+    },
+    "ja": {
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "title": "デイリー・アクションフロー 2026年9月6日",
+      "description": "原稿順の八つの行動から、出版、提案段階の実験、証拠待ちの観測を分ける。",
+      "centralJudgment": "四循環の枠組みを公開する。実験、資本、稼働資産の判断はそれぞれ証拠と権限で決める。",
+      "fieldLine": "八つの行動と公開した一つの枠組み。未実行を完了にしない。",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "フロンティアモデル",
+          "title": "十二タスクの比較を準備する",
+          "why": "長時間処理が安くなっても、安全な復旧と正しい学習保持は別に検証する。",
+          "steps": [
+            "非本番の代表タスク12件と受け入れ条件を固定する。モデル実行前にデータ、アカウント利用、支出上限、実行権限を確認する。",
+            "現行構成とFlash優先・Astra引き継ぎを比較し、完了、責任者の時間、復旧、誤記憶、総費用、成果当たり費用を測る。"
+          ],
+          "done": "再現可能な実行記録と全工程の比較が必要。試験は未実施で、既定の振り分けは変えない。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "有償の自律労働を待つ",
+          "why": "中国の産業資金は供給を支える。労働の採算を示すのは顧客である。",
+          "steps": [
+            "非関連顧客への出荷、タスク成功率、人の介入を追う。",
+            "平均販売単価、粗利率、有用な自律稼働1時間当たり費用の開示後に評価引き上げを検討する。"
+          ],
+          "done": "顧客と事業の証拠が揃うまでWATCHING。政策資金だけでは条件を満たさない。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資本フロー",
+          "title": "次の完了一週間で広がりを確認する",
+          "why": "確定した週は12.02億ドル流入。BlackRock以外は31.1%で、3分の1に届かない。",
+          "steps": [
+            "完了した週のBTC・ETH ETFデータを使い、IBIT・ETHAとその他を分ける。",
+            "その他の寄与が3分の1を超え、ステーブルコイン供給と実際のオンチェーン手数料も増えることを条件にする。"
+          ],
+          "done": "資本流入と運用会社の広がりは改善。すべての条件が揃うまでWeb3全体への拡大は未確認。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコインと決済",
+          "title": "EURCの紙上精算モデルを準備する",
+          "why": "焼却・発行を共通化しても、為替、照合、不可逆な誤処理の費用は残る。",
+          "steps": [
+            "EURC入金、EthereumとBase間のCCTP転送、USDC交換、加盟店精算をモデル化する。ウォレットも資金投入も不要。",
+            "焼却・発行、為替、ガス、照合、不可逆エラーの費用を分け、不足入力はUNKNOWNとする。"
+          ],
+          "done": "再現可能で資金を動かさない費用モデルが成果物。資本判断には実際の取扱量と回復の証拠がなお必要。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "四循環の評価枠組みを公開する",
+          "deepDiveTitle": "自律エージェントを測る四つの循環",
+          "why": "検査できる評価表が、モデル能力を成果と責任者の時間という経営の問いに変える。",
+          "steps": [
+            "六つの一次資料、一枚の評価表、六種類の提案段階の故障例を含む四言語Action Itemを公開する。",
+            "二言語のLinkedIn派生稿を保存し、ビルド、公開経路、三つの出版通知を検証する。"
+          ],
+          "done": "リンク先の記事が出版成果物。完了はモデル試験の実施、権限変更、SNS投稿を意味しない。"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラ",
+          "title": "ハイデラバードを土地確保段階で記録する",
+          "why": "264エーカーを確保。最大1GW、7,000億ルピーは段階的計画であり稼働資産ではない。",
+          "steps": [
+            "TCSとReutersの証拠を非公開AIインフラ台帳へ取り込む。",
+            "許認可、系統接続電力、水、資金負担、最低顧客支払い、設備発注、CODを追い、通電と収益MWまで段階を分ける。"
+          ],
+          "done": "不足条件はUNKNOWNとし、1GWに資産価値を付けない。非公開取り込みと稼働MWの検証完了は別である。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期非公開市場",
+          "title": "Nscaleの資金調達文書を待つ",
+          "why": "報道の35億ドル調達、300億ドル転換上限だけでは債務と実行条件が分からない。",
+          "steps": [
+            "データルームか目論見書で利率、満期、清算順位、割引率、評価下限を待つ。",
+            "顧客最低支払い、プロジェクト債務の遡及範囲、COD、資金用途を確認する。見出しから割当を推定しない。"
+          ],
+          "done": "WATCHINGを維持し、条件開示後のみINVESTIGATEへ進む。投資も外部連絡も実行しない。"
+        },
+        {
+          "signal": 8,
+          "domain": "上場株式",
+          "title": "Foxconnで製造への転換を確かめる",
+          "why": "8月売上は9,218億台湾ドル、51.98%増。利益率と現金化は引き続き検証が必要。",
+          "steps": [
+            "AIサーバー比率、粗利率、上位5顧客、在庫、売掛金、設備投資、受注から現金化までを四半期ごとに追う。",
+            "9月4日の上昇と9月5日の発表を分け、発表後最初の完了した取引日を待つ。"
+          ],
+          "done": "事業品質の証拠を待つWATCHING。即時買い判断や時間のずれた市場間の反応比較は行わない。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "title": "每日行動流，2026年9月6日",
+      "description": "按原稿順序呈現八項行動，分清出版、擬議實驗與等待證據的觀察。",
+      "centralJudgment": "發佈四閉環框架；實驗、資金和稼動資產判斷，各自等待真實證據與適用授權。",
+      "fieldLine": "八項行動，一份已發佈框架，不暗示其他行動已執行。",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型",
+          "title": "準備十二任務路由比較",
+          "why": "長任務便宜，不等於能夠安全恢復或保留可靠經驗。",
+          "steps": [
+            "先鎖定12個代表性非生產任務及驗收標準；實際調用模型前確認數據、帳戶、花費上限和執行權限。",
+            "把現有基線與Flash先執行、Astra按需升級比較，記錄完成、負責人分鐘、恢復、錯誤記憶、總費用及單成果成本。"
+          ],
+          "done": "只有可重現的執行回執與完整比較才算完成。尚未執行試驗，也不改變預設路由。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "等待客戶付費的自主勞動證據",
+          "why": "中國產業資金支持供給能力，勞動經濟性仍由客戶驗證。",
+          "steps": [
+            "跟蹤非關聯客戶出貨、任務成功率和人工干預。",
+            "只有ASP、毛利率及每個有效自主小時成本披露後，才考慮提升受益企業評級。"
+          ],
+          "done": "在客戶與經營證據支持升級前維持WATCHING；政策資金本身不足以過關。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本流",
+          "title": "下一完整週再確認廣度",
+          "why": "已結算週流入12.02億美元，非BlackRock貢獻31.1%，仍低於三分之一。",
+          "steps": [
+            "使用完整週BTC與ETH ETF數據，將IBIT、ETHA與其他產品分開。",
+            "要求非IBIT/ETHA佔比超過三分之一，並伴隨穩定幣供給與真實鏈上費用增長。"
+          ],
+          "done": "資本進入、管理人廣度改善；全部條件滿足前，Web3廣度仍未確認。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣與支付",
+          "title": "準備EURC紙面結算模型",
+          "why": "共用鑄銷層之後，換匯、對賬與不可逆錯誤仍有成本。",
+          "steps": [
+            "模擬EURC收入、CCTP在Ethereum與Base間轉移、USDC換匯及商戶結算，不創建錢包、不投入資金。",
+            "拆分鑄銷、FX、Gas、對賬與不可逆錯誤成本；缺少輸入時保留UNKNOWN。"
+          ],
+          "done": "交付可重現的無資金成本模型。任何資金判斷之前，仍需真實流量與恢復證據。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "發佈Agent四閉環框架",
+          "deepDiveTitle": "自主Agent的四閉環測試",
+          "why": "可檢查的評分表，把模型能力轉成成果與負責人時間的經營問題。",
+          "steps": [
+            "發佈四語Action Item，保留六份原始來源、一張評分表和六種擬議故障場景。",
+            "保存雙語LinkedIn衍生稿，驗證構建、公開鏈接和三份發佈回執。"
+          ],
+          "done": "鏈接文章是出版產物；完成不代表模型試驗已執行、權限已改變或社交平臺已發帖。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基礎設施",
+          "title": "將海得拉巴記為土地已取得",
+          "why": "264英畝已取得；最多1GW、7,000億盧比仍是分期計劃，不是稼動資產。",
+          "steps": [
+            "將TCS與Reuters證據送入私人AI基礎設施收件台帳。",
+            "按階段跟蹤許可、併網電力、水、融資責任、客戶最低付款、設備訂單和COD，直到通電與收入MW。"
+          ],
+          "done": "缺失門檻保留UNKNOWN，不給1GW賦資產價值。私人收件完成與經營MW核驗完成是兩件事。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期一級市場",
+          "title": "等待Nscale融資文件",
+          "why": "據報35億美元融資、300億美元轉換上限，仍缺關鍵債務和執行條款。",
+          "steps": [
+            "等待數據室或招股書披露票息、期限、清算順序、折扣與估值底線。",
+            "核對客戶最低付款、項目債追索權、COD與資金用途；不從新聞標題推定配額。"
+          ],
+          "done": "維持WATCHING，條款披露後才進入INVESTIGATE。不執行投資或外聯。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場",
+          "title": "以Foxconn驗證製造兌現",
+          "why": "8月收入9,218億新臺幣，同比增長51.98%；利潤率與現金轉換仍待證據。",
+          "steps": [
+            "按季度跟蹤AI伺服器佔比、毛利率、前五客戶、庫存、應收、資本開支及訂單到現金。",
+            "區分9月4日漲幅與9月5日公告，等待首個完整披露後交易日。"
+          ],
+          "done": "維持WATCHING，等待經營品質證據。不生成即時買入信號，也不做時段錯位的跨市場反應比較。"
+        }
+      ]
+    }
+  }
+}
