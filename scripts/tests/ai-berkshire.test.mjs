@@ -13,12 +13,19 @@ test('the field test contains the ten-company cohort including NVDA', () => {
 });
 
 test('English is the safe default and all requested languages are available', () => {
-  assert.match(component, /option value="en">English/);
-  assert.match(component, /option value="zh-Hans">简体中文/);
-  assert.match(component, /option value="zh-Hant">繁體中文/);
-  assert.match(component, /option value="ja">日本語/);
+  assert.match(data, /\n  en: \{/);
+  assert.match(data, /\n  'zh-Hans': \{/);
+  assert.match(data, /\n  'zh-Hant': \{/);
+  assert.match(data, /\n  ja: \{/);
+  assert.match(component, /value=\{locale\}/);
+  assert.match(component, /locale === 'en' \? 'English'/);
+  assert.match(component, /'zh-Hans' \? '简体中文'/);
+  assert.match(component, /'zh-Hant' \? '繁體中文'/);
+  assert.match(component, /: '日本語'/);
   assert.match(app, /let initial = 'en'/);
   assert.match(app, /requested\) \? requested : 'en'/);
+  assert.match(app, /option\.dataset\[key\]/);
+  assert.match(component, /data-language-label=\{copy\.languageLabel\}/);
 });
 
 test('research and capital boundaries remain explicit', () => {

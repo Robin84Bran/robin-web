@@ -7,21 +7,30 @@ const localeEntries = Object.entries(evaluationCopy);
 <section id="ai-berkshire" class="shell" lang="en">
   <header class="eval-hero">
     <div>
-      <p class="eyebrow">RobinOS · Research Observatory</p>
-      <h1>AI Berkshire field test.</h1>
-      <p class="eval-deck">Ten companies. Four useful lenses. No simulated masters.</p>
+      <p class="eyebrow" id="ai-berkshire-eyebrow">RobinOS · Research Observatory</p>
+      <h1 id="ai-berkshire-title">AI Berkshire field test.</h1>
+      <p class="eval-deck" id="ai-berkshire-deck">Ten companies. Four useful lenses. No simulated masters.</p>
       <p class="freeze-line">
-        <span>Research cut-off: 6 September 2026 · market snapshot: 4 September 2026, 12:40 ET · not a live feed</span>
-        <span class="research-only">Research only</span>
+        <span id="ai-berkshire-frozen">Research cut-off: 6 September 2026 · market snapshot: 4 September 2026, 12:40 ET · not a live feed</span>
+        <span class="research-only" id="ai-berkshire-research-only">Research only</span>
       </p>
     </div>
     <label class="language-label">
       <span id="ai-berkshire-language-label">Language</span>
       <select id="ai-berkshire-language" aria-labelledby="ai-berkshire-language-label">
-        <option value="en">English</option>
-        <option value="zh-Hans">简体中文</option>
-        <option value="zh-Hant">繁體中文</option>
-        <option value="ja">日本語</option>
+        {localeEntries.map(([locale, copy]) => (
+          <option
+            value={locale}
+            data-eyebrow={copy.eyebrow}
+            data-title={copy.title}
+            data-deck={copy.deck}
+            data-frozen={copy.frozen}
+            data-research-only={copy.researchOnly}
+            data-language-label={copy.languageLabel}
+          >
+            {locale === 'en' ? 'English' : locale === 'zh-Hans' ? '简体中文' : locale === 'zh-Hant' ? '繁體中文' : '日本語'}
+          </option>
+        ))}
       </select>
     </label>
   </header>
@@ -103,7 +112,6 @@ const localeEntries = Object.entries(evaluationCopy);
       <section aria-labelledby={`audit-${locale}`}>
         <header class="section-head">
           <h2 id={`audit-${locale}`}>{copy.auditTitle}</h2>
-          <p>{copy.auditBody}</p>
         </header>
         <div class="audit-note">
           <p>{copy.auditBody}</p>
