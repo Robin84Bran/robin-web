@@ -1,0 +1,315 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-07",
+  "updated": "2026-09-07",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20260907/hero.webp",
+  "actionHero": "/action-item/20260907/hero.webp",
+  "ogImage": "/daily-briefing/20260907/og.webp",
+  "briefingPath": "/ouroboros/202609/20260907/",
+  "actionItemPath": "/ouroboros/202609/20260907/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "10 TASKS",
+      "visualLabel": "closed-loop experiment",
+      "sources": [
+        { "label": "OpenAI research evidence", "url": "https://openai.com/index/research-acceleration-view-inside-openai/" },
+        { "label": "Astra evaluations", "url": "https://openai.com/index/gpt-6-astra/" },
+        { "label": "OpenAI API pricing", "url": "https://developers.openai.com/api/docs/pricing" }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$1.7B",
+      "visualLabel": "deployment unproven",
+      "sources": [
+        { "label": "Financial Times", "url": "https://www.ft.com/content/8a708224-3a37-4d23-9f5c-158a73216018" },
+        { "label": "Atoms", "url": "https://atoms.co/vision" },
+        { "label": "a16z", "url": "https://www.a16z.news/p/unfinished-business" }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$1.202B",
+      "visualLabel": "weekly core inflow",
+      "sources": [
+        { "label": "Farside Bitcoin", "url": "https://farside.co.uk/btc/" },
+        { "label": "Farside Ether", "url": "https://farside.co.uk/eth/" }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "3 DEADLINES",
+      "visualLabel": "authorize then capture",
+      "sources": [
+        { "label": "Agentic Settlement Protocol", "url": "https://arxiv.org/abs/2609.02208" }
+      ]
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "visualValue": "3.1×",
+      "visualLabel": "agent labor measured",
+      "sources": [
+        { "label": "OpenAI research evidence", "url": "https://openai.com/index/research-acceleration-view-inside-openai/" },
+        { "label": "Astra evaluations", "url": "https://openai.com/index/gpt-6-astra/" },
+        { "label": "OpenAI API pricing", "url": "https://developers.openai.com/api/docs/pricing" }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "$257K–327K",
+      "visualLabel": "application package",
+      "sources": [
+        { "label": "OpenAI role", "url": "https://openai.com/careers/data-center-infrastructure-electrical-engineer-san-francisco/" }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$100M",
+      "visualLabel": "terms undisclosed",
+      "sources": [
+        { "label": "Reuters", "url": "https://www.reuters.com/science/google-backed-indian-space-startup-raises-100-million-latest-funding-round-2026-09-07/" },
+        { "label": "Pixxel NRO contract", "url": "https://www.pixxel.space/news/pixxel-awarded-nro-strategic-commercial-enhancements-contract-for-hyperspectral-remote-sensing-capabilities" }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "−3.30 PTS",
+      "visualLabel": "AVGO versus QQQ",
+      "sources": [
+        { "label": "Broadcom results", "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial" },
+        { "label": "AVGO prices", "url": "https://stockanalysis.com/stocks/avgo/history/" },
+        { "label": "QQQ prices", "url": "https://stockanalysis.com/etf/qqq/history/" }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "inLanguage": "en",
+      "languageSlug": "",
+      "title": "Daily Action Flow, September 7, 2026",
+      "description": "Eight source-ordered actions separate one completed publication, three ready preparations and four evidence-dependent watches.",
+      "centralJudgment": "Publish the closed-loop agent framework; prepare bounded experiments, payment mapping and career evidence without implying execution or authority.",
+      "fieldLine": "Eight actions. One publication. Evidence controls every next step.",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier models",
+          "title": "Prepare the ten-task closed-loop experiment",
+          "why": "Three agent-workdays create value only when accepted outcomes rise and founder interruption falls.",
+          "steps": [
+            "Freeze ten current RobinOS tasks, acceptance checks, route options and authority boundaries before any paid run.",
+            "Record verified completion, recovery, founder minutes and events, memory contamination, elapsed time and full cost per outcome."
+          ],
+          "done": "Complete only with linked task receipts and a reproducible comparison; the empty ledger is preparation, not a result."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "Keep Atoms deployment unproven",
+          "why": "Capital, talent and a possible Uber channel do not establish safe autonomous mileage or unit economics.",
+          "steps": [
+            "Track an unaffiliated paying customer, live autonomous operation and remote-assistance rates.",
+            "Require safety evidence and fully loaded cost per mile before upgrading the commercial judgment."
+          ],
+          "done": "Remain WATCHING until operating evidence clears every stated condition."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto capital flows",
+          "title": "Test ETF breadth after another full week",
+          "why": "$1.202B entered core assets while non-BlackRock products remained below one-third.",
+          "steps": [
+            "Recalculate the non-IBIT and non-ETHA share from completed weekly sessions.",
+            "Check stablecoin supply and real onchain fees before calling the move an industry-wide cycle."
+          ],
+          "done": "Remain WATCHING until the breadth threshold holds for two weeks with onchain confirmation."
+        },
+        {
+          "signal": 4,
+          "domain": "Payments and token rails",
+          "title": "Map one MerchantOS booking onto ASP",
+          "why": "Delayed fulfilment moves control toward evidence, capture authority and refund funding.",
+          "steps": [
+            "Define authorization value, issuance, escrow and inventory deadlines, and acceptable fulfilment evidence.",
+            "Specify capture authority, partial refunds, duplicate-charge handling and seller exposure on paper only."
+          ],
+          "done": "A reviewed paper map is the deliverable; no wallet, credential or capital connection is authorized."
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "Publish the missing-loop framework",
+          "deepDiveTitle": "Three Agent Workdays Still Need a Founder",
+          "why": "The article turns agent labor into an inspectable question about accepted outcomes and founder attention.",
+          "steps": [
+            "Publish the four-language Action Item with six primary OpenAI sources and the empty ten-task ledger.",
+            "Verify build, public routes, schema, reciprocal hreflang and the three Telegram publication receipts."
+          ],
+          "done": "The linked article and empty scorecard are complete publication artifacts; no experiment result or route change is claimed."
+        },
+        {
+          "signal": 6,
+          "domain": "AI infrastructure and career",
+          "title": "Prepare the electrical-infrastructure application package",
+          "why": "The role directly matches PE, critical-power, commissioning and failure-analysis experience; GPU-density evidence needs careful framing.",
+          "steps": [
+            "Lead the résumé with 15+ years, PE, critical power, commissioning and root-cause work without overstating GPU experience.",
+            "Draft the one-page sample From Grid to GPU with five evidence-bounded failure modes."
+          ],
+          "done": "The package is ready for Robin review; external submission remains outside this publisher's authority."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-stage private markets",
+          "title": "Wait for Pixxel economics and financing terms",
+          "why": "The Series C supports expansion while valuation, preferences, revenue and utilization remain undisclosed.",
+          "steps": [
+            "Request ARR, software-versus-imagery mix, retention and government concentration.",
+            "Require satellite utilization, launch and insurance costs, fully diluted valuation and liquidation preferences."
+          ],
+          "done": "Remain WATCHING; upgrade to INVESTIGATE only when the full evidence set is available."
+        },
+        {
+          "signal": 8,
+          "domain": "Public equities",
+          "title": "Separate Broadcom fundamentals from expectations",
+          "why": "AI revenue accelerated while AVGO underperformed QQQ, pointing to concentration and valuation rather than a broad rate shock.",
+          "steps": [
+            "Track new production customers, top-four concentration, networking mix and capacity commitments.",
+            "Use free-cash-flow margin and customer breadth to update the 12–24 month thesis."
+          ],
+          "done": "Remain WATCHING; one week of price weakness is not an add signal or thesis break."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "title": "每日行动流，2026年9月7日",
+      "description": "按原稿顺序呈现八项行动：一项发布完成、三项准备就绪、四项等待证据。",
+      "centralJudgment": "发布Agent闭环框架；在不暗示执行或扩权的前提下，准备有边界的实验、支付映射与职业证据。",
+      "fieldLine": "八项行动，一项发布；每一步都由证据控制。",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型",
+          "title": "准备十任务闭环实验",
+          "why": "只有验证成果上升、创始人打扰下降，三个Agent工作日才创造价值。",
+          "steps": ["在任何付费运行前冻结十项RobinOS任务、验收检查、路由选项与权限边界。", "记录验证完成、恢复、Robin介入分钟与次数、记忆污染、总耗时和完整单成果成本。"],
+          "done": "只有链接真实凭证并形成可复现比较才算完成；空白账本只是准备，不是结果。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "维持Atoms部署未证实",
+          "why": "资金、人才与潜在Uber渠道，仍不能证明安全无人里程和单位经济。",
+          "steps": ["跟踪非关联付费客户、实际无人运行与远程协助率。", "安全证据和完全每英里成本齐全后，才升级商业判断。"],
+          "done": "所有条件均有运营证据前保持WATCHING。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流",
+          "title": "再用完整周验证ETF广度",
+          "why": "12.02亿美元进入核心资产，非BlackRock占比仍低于三分之一。",
+          "steps": ["用已完成交易周重算非IBIT与非ETHA占比。", "在升级行业周期前，同时检查稳定币供给与真实链上费用。"],
+          "done": "广度连续两周过线并获链上确认前保持WATCHING。"
+        },
+        {
+          "signal": 4,
+          "domain": "支付与Token轨道",
+          "title": "把一个MerchantOS预约映射到ASP",
+          "why": "延迟履约把控制点推向履约证据、收款权限与退款资金。",
+          "steps": ["定义授权额、签发／托管／库存期限及合格履约证据。", "仅在纸面定义收款权限、部分退款、重复扣款与卖方风险敞口。"],
+          "done": "交付物是一份审校后的纸面映射；不授权钱包、凭证或资金连接。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "发布缺失闭环框架",
+          "deepDiveTitle": "三个Agent工作日，仍然需要创始人",
+          "why": "文章把Agent劳动变成对验证成果与创始人注意力的可审计问题。",
+          "steps": ["发布四语Action Item、六份OpenAI原始来源和空白十任务账本。", "验证构建、公开路由、Schema、互惠hreflang与三项Telegram回执。"],
+          "done": "文章与空白记分表是已完成的发布产物；不声称实验成绩或路由改变。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基础设施与职业",
+          "title": "准备电力基础设施申请包",
+          "why": "职位直接匹配PE、关键电源、commissioning与故障分析；GPU密度经验需要诚实表述。",
+          "steps": ["简历首屏突出15+ years、PE、critical power、commissioning与root-cause，不夸大GPU经验。", "起草一页From Grid to GPU，提出五个有证据边界的失效模式。"],
+          "done": "申请包准备好供Robin复核；外部提交不在发布器权限内。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期一级市场",
+          "title": "等待Pixxel经济与融资条款",
+          "why": "Series C支持扩张，估值、优先权、收入与利用率仍未披露。",
+          "steps": ["索取ARR、软件／影像收入占比、续约率与政府客户集中。", "要求卫星利用率、发射与保险成本、完全摊薄估值和清算优先权。"],
+          "done": "保持WATCHING；完整证据齐备后才升级至INVESTIGATE。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场",
+          "title": "分开看Broadcom基本面与预期",
+          "why": "AI收入加速、AVGO却跑输QQQ，更像集中与估值，而不是普遍利率冲击。",
+          "steps": ["跟踪新增量产客户、前四客户集中、网络收入与产能承诺。", "用自由现金流率与客户广度更新12–24个月论点。"],
+          "done": "保持WATCHING；一周价格走弱既不是加仓信号，也不是论点破裂。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "title": "每日行動流，2026年9月7日",
+      "description": "按原稿順序呈現八項行動：一項發佈完成、三項準備就緒、四項等待證據。",
+      "centralJudgment": "發佈Agent閉環框架；在不暗示執行或擴權的前提下，準備有邊界的實驗、支付映射與職業證據。",
+      "fieldLine": "八項行動，一項發佈；每一步都由證據控制。",
+      "actions": [
+        {"signal":1,"domain":"前沿模型","title":"準備十任務閉環實驗","why":"只有驗證成果上升、創始人打擾下降，三個Agent工作日才創造價值。","steps":["在任何付費運行前凍結十項RobinOS任務、驗收檢查、路由選項與權限邊界。","記錄驗證完成、恢復、Robin介入分鐘與次數、記憶污染、總耗時和完整單成果成本。"],"done":"只有連結真實憑證並形成可複現比較才算完成；空白帳本只是準備，不是結果。"},
+        {"signal":2,"domain":"Physical AI","title":"維持Atoms部署未證實","why":"資金、人才與潛在Uber渠道，仍不能證明安全無人里程和單位經濟。","steps":["跟蹤非關聯付費客戶、實際無人運行與遙距協助率。","安全證據和完整每英里成本齊全後，才升級商業判斷。"],"done":"所有條件均有營運證據前保持WATCHING。"},
+        {"signal":3,"domain":"加密資本流","title":"再用完整週驗證ETF廣度","why":"12.02億美元進入核心資產，非BlackRock佔比仍低於三分之一。","steps":["用已完成交易週重算非IBIT與非ETHA佔比。","在升級行業週期前，同時檢查穩定幣供給與真實鏈上費用。"],"done":"廣度連續兩週過線並獲鏈上確認前保持WATCHING。"},
+        {"signal":4,"domain":"支付與Token軌道","title":"把一個MerchantOS預約映射到ASP","why":"延遲履約把控制點推向履約證據、收款權限與退款資金。","steps":["定義授權額、簽發／託管／庫存期限及合格履約證據。","僅在紙面定義收款權限、部分退款、重複扣款與賣方風險敞口。"],"done":"交付物是一份審校後的紙面映射；不授權錢包、憑證或資金連接。"},
+        {"signal":5,"domain":"iamrobin.ai","title":"發佈缺失閉環框架","deepDiveTitle":"三個Agent工作日，仍然需要創始人","why":"文章把Agent勞動變成對驗證成果與創始人注意力的可審計問題。","steps":["發佈四語Action Item、六份OpenAI原始來源和空白十任務帳本。","驗證構建、公開路由、Schema、互惠hreflang與三項Telegram回執。"],"done":"文章與空白記分表是已完成的發佈產物；不聲稱實驗成績或路由改變。"},
+        {"signal":6,"domain":"AI基礎設施與職業","title":"準備電力基礎設施申請包","why":"職位直接匹配PE、關鍵電源、commissioning與故障分析；GPU密度經驗需要誠實表述。","steps":["履歷首屏突出15+ years、PE、critical power、commissioning與root-cause，不誇大GPU經驗。","起草一頁From Grid to GPU，提出五個有證據邊界的失效模式。"],"done":"申請包準備好供Robin複核；外部提交不在發佈器權限內。"},
+        {"signal":7,"domain":"後期一級市場","title":"等待Pixxel經濟與融資條款","why":"Series C支持擴張，估值、優先權、收入與利用率仍未披露。","steps":["索取ARR、軟件／影像收入佔比、續約率與政府客戶集中。","要求衛星利用率、發射與保險成本、完全攤薄估值和清算優先權。"],"done":"保持WATCHING；完整證據齊備後才升級至INVESTIGATE。"},
+        {"signal":8,"domain":"公開市場","title":"分開看Broadcom基本面與預期","why":"AI收入加速、AVGO卻跑輸QQQ，更像集中與估值，而不是普遍利率衝擊。","steps":["跟蹤新增量產客戶、前四客戶集中、網絡收入與產能承諾。","用自由現金流率與客戶廣度更新12–24個月論點。"],"done":"保持WATCHING；一週價格走弱既不是加倉信號，也不是論點破裂。"}
+      ]
+    },
+    "ja": {
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "title": "デイリー・アクションフロー 2026年9月7日",
+      "description": "原稿順の八つの行動を、公開完了一件、準備三件、証拠待ち四件に分ける。",
+      "centralJudgment": "閉ループ型エージェント運営を公開する。実行や権限を示唆せず、限定実験、決済設計、キャリア資料を準備する。",
+      "fieldLine": "八つの行動と一つの公開。次の一歩は証拠が決める。",
+      "actions": [
+        {"signal":1,"domain":"フロンティアモデル","title":"10課題の閉ループ実験を準備する","why":"検証済み成果が増え、創業者への割り込みが減るときだけ、三つのエージェント労働日に価値が生まれる。","steps":["有料実行前にRobinOSの10課題、受入検査、振り分け、権限境界を固定する。","完了、復旧、Robinの介入時間と回数、記憶汚染、経過時間、成果当たり総費用を記録する。"],"done":"課題ごとの受領証と再現可能な比較で完了とする。空欄の台帳は準備であり、結果ではない。"},
+        {"signal":2,"domain":"Physical AI","title":"Atomsの配備実績を未証明のまま保つ","why":"資本、人材、Uberの販路候補だけでは、安全な無人走行と採算を証明できない。","steps":["資本関係のない有償顧客、実運行、遠隔支援率を追う。","安全証拠と総費用が出た場合だけ商用判断を引き上げる。"],"done":"すべての運用証拠がそろうまでWATCHINGを維持する。"},
+        {"signal":3,"domain":"暗号資産フロー","title":"次の完了週でETFの広がりを確かめる","why":"12.02億ドルが中核資産へ入った一方、BlackRock以外は3分の1未満だった。","steps":["完了した週次データからIBIT・ETHA以外の比率を再計算する。","業界全体の循環と判断する前に、ステーブルコイン供給と実際のオンチェーン手数料を確認する。"],"done":"2週連続の基準突破とオンチェーン確認までWATCHINGとする。"},
+        {"signal":4,"domain":"決済とトークンレール","title":"MerchantOSの予約をASPへ対応付ける","why":"履行の遅い取引では、証拠、売上確定権限、返金原資が統制点になる。","steps":["与信額、発行・エスクロー・在庫期限、履行証拠を定義する。","売上確定、部分返金、二重請求、売り手リスクを紙上で定める。"],"done":"査読済みの紙上設計が成果物。ウォレット、認証情報、資金は接続しない。"},
+        {"signal":5,"domain":"iamrobin.ai","title":"欠けていた循環を公開する","deepDiveTitle":"三つのエージェント労働日にも創業者は要る","why":"エージェント労働を、検証済み成果と創業者の注意という監査可能な問いへ変える。","steps":["4言語のAction Item、OpenAI一次資料6件、空欄の10課題台帳を公開する。","構築、公開URL、スキーマ、相互hreflang、三つのTelegram受領証を確認する。"],"done":"記事と空欄の採点表が公開成果物。実験結果や経路変更は主張しない。"},
+        {"signal":6,"domain":"AIインフラとキャリア","title":"電気インフラ職の応募資料を準備する","why":"PE、重要電源、コミッショニング、障害分析は直接合う。GPU密度の経験は誇張せず示す必要がある。","steps":["履歴書冒頭に15年以上、PE、重要電源、コミッショニング、根本原因分析を置く。","From Grid to GPUの1ページ資料に五つの証拠限定型の失敗要因を書く。"],"done":"Robinが確認できる資料準備まで。外部応募は本パブリッシャーの権限外。"},
+        {"signal":7,"domain":"レイトステージ未公開市場","title":"Pixxelの採算と調達条件を待つ","why":"シリーズCは拡張を支えるが、評価額、優先条件、収益、稼働率は不明である。","steps":["ARR、ソフトウェアと画像の構成、継続率、政府顧客集中を求める。","衛星稼働率、打ち上げ・保険費、完全希薄化評価、残余財産優先権を確認する。"],"done":"WATCHINGを維持し、全証拠がそろった場合だけINVESTIGATEへ進む。"},
+        {"signal":8,"domain":"公開株式","title":"Broadcomの業績と期待を分ける","why":"AI売上が加速してもAVGOはQQQに劣後し、全体的な金利要因より集中と評価が焦点になった。","steps":["新規量産顧客、上位4社集中、ネットワーク構成、設備能力への約束を追う。","フリーキャッシュフロー率と顧客の広がりで12〜24カ月の見方を更新する。"],"done":"WATCHINGを維持する。1週間の下落だけでは買い増しも論点変更もしない。"}
+      ]
+    }
+  }
+}
