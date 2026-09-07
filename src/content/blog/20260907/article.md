@@ -23,8 +23,6 @@ linkedinUrl: null
 thesis: "Set-and-forget becomes possible when the operator can classify expected pain, size it honestly, and refuse to rewrite a strategy inside its accepted loss distribution."
 ---
 
-## The Alligator Was Not the Problem; I Was
-
 ## The Constitutional Convention
 
 **Act I: The Crocodile Bites Twice, and Robin Immediately Calls a Constitutional Convention**  
