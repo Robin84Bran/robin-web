@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-08",
+  "updated": "2026-09-08",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20260908/hero.webp",
+  "actionHero": "/action-item/20260908/hero.webp",
+  "ogImage": "/daily-briefing/20260908/og.webp",
+  "briefingPath": "/ouroboros/202609/20260908/",
+  "actionItemPath": "/ouroboros/202609/20260908/action_item/",
+  "actions": [
+    {"signal":1,"priority":"NEXT","status":"READY","visualValue":"20 TASKS","visualLabel":"routing scorecard","sources":[{"label":"OpenAI Astra","url":"https://openai.com/index/gpt-6-astra/"},{"label":"Codex changelog","url":"https://learn.chatgpt.com/docs/changelog"}]},
+    {"signal":2,"priority":"WATCH","status":"WATCHING","visualValue":"95%","visualLabel":"shipments, not autonomy","sources":[{"label":"Reuters","url":"https://www.reuters.com/world/china/dance-floor-war-china-readies-humanoid-robots-combat-2026-09-07/"}]},
+    {"signal":3,"priority":"WATCH","status":"WATCHING","visualValue":"4,000 BTC","visualLabel":"reserve unavailable","sources":[{"label":"Reuters","url":"https://www.reuters.com/technology/bitcoin-based-liquid-network-says-320-million-withdrawn-hack-2026-09-07/"}]},
+    {"signal":4,"priority":"NEXT","status":"READY","visualValue":"30–60 DAYS","visualLabel":"auditable clock","sources":[{"label":"MIIT and SAMR","url":"https://app.xinhuanet.com/news/article.html?articleId=202609079778d500a3b7410ca875293f2fd9e1ae"},{"label":"Reuters","url":"https://www.reuters.com/world/asia-pacific/china-issues-stricter-supplier-payment-rules-automakers-2026-09-07/"}]},
+    {"signal":5,"priority":"NOW","status":"COMPLETE","visualValue":"2.5×","visualLabel":"premium needs proof","sources":[{"label":"Astra evaluations","url":"https://openai.com/index/gpt-6-astra/"},{"label":"Astra model","url":"https://developers.openai.com/api/docs/models/gpt-6-astra"},{"label":"Sol model","url":"https://developers.openai.com/api/docs/models/gpt-5.6-sol"}]},
+    {"signal":6,"priority":"NEXT","status":"READY","visualValue":"$1.47B","visualLabel":"working capital","sources":[{"label":"Reuters","url":"https://www.reuters.com/world/asia-pacific/taiwans-wistron-launches-up-15-billion-gds-sale-term-sheet-shows-2026-09-07/"},{"label":"Wistron","url":"https://www.wistron.com/en/Newsroom/2026-08-04"}]},
+    {"signal":7,"priority":"WATCH","status":"WATCHING","visualValue":"$30B","visualLabel":"terms undisclosed","sources":[{"label":"Reuters","url":"https://www.reuters.com/technology/crusoe-signs-13-billion-ai-cloud-deal-with-jane-street-bloomberg-news-reports-2026-09-03/"}]},
+    {"signal":8,"priority":"WATCH","status":"WATCHING","visualValue":"55%","visualLabel":"China estimate","sources":[{"label":"Reuters Breakingviews","url":"https://www.reuters.com/commentary/breakingviews/chinas-ai-dragons-breathe-fire-nvidias-moat-2026-09-07/"},{"label":"Reuters Enflame","url":"https://www.reuters.com/world/china/tencent-backed-enflame-ipo-draws-6109-times-online-demand-2026-09-02/"}]}
+  ],
+  "editions": {
+    "en": {
+      "inLanguage":"en","languageSlug":"","title":"Daily Action Flow, September 8, 2026","description":"Eight source-ordered actions: one publication complete, three preparations ready and four evidence-dependent watches.","centralJudgment":"Publish the Astra escalation ladder, prepare three bounded evidence systems and leave four market-dependent questions watching.","fieldLine":"Eight signals. One completed publication. Evidence controls the rest.",
+      "actions":[
+        {"signal":1,"domain":"Frontier models","title":"Prepare the twenty-task routing scorecard","why":"A product default cannot establish the lowest cost per verified RobinOS outcome.","steps":["Freeze five routine, architecture, recovery and evidence tasks in each class.","Record completion, founder interruption, full cost, recovery and duplicate consequences."],"done":"Complete only after twenty linked task receipts support a reproducible comparison."},
+        {"signal":2,"domain":"Physical AI","title":"Keep military humanoid autonomy unproven","why":"Procurement and shipment share do not prove autonomous field performance.","steps":["Track delivered contracts, useful field hours, success, intervention and endurance.","Require human authorization and damage evidence before changing the judgment."],"done":"Remain WATCHING until operational evidence clears every gate."},
+        {"signal":3,"domain":"Crypto market structure","title":"Hold Liquid reserves outside available capital","why":"The BTC is not confirmed sold, while redemption and settlement remain impaired.","steps":["Track return of funds, reserve re-audit and the Elements post-mortem.","Require independent review and reopened peg-outs before restoring availability."],"done":"Remain WATCHING until the reserve and redemption chain is verified."},
+        {"signal":4,"domain":"Payments","title":"Build the automotive payment truth table","why":"Acceptance, clock start, payment medium and financing cost determine supplier economics.","steps":["Record acceptance time, cash versus paper, disputes and discount-cost allocation.","Observe actual DSO across two reporting periods."],"done":"A reusable evidence table is ready; structural improvement awaits two periods."},
+        {"signal":5,"domain":"iamrobin.ai","title":"Publish the Astra escalation ladder","deepDiveTitle":"The Astra Escalation Ladder","why":"The framework routes premium reasoning to bounded rescue and keeps verification outside the model.","steps":["Publish the four-language Action Item with primary OpenAI evidence and the empty scorecard design.","Verify build, public routes, schema, hreflang and Telegram receipts."],"done":"The publication is complete; no production model switch or experiment result is claimed."},
+        {"signal":6,"domain":"AI infrastructure","title":"Open the AI server working-capital ledger","why":"Materials, inventory and receivables now constrain server conversion alongside land and power.","steps":["Track proceeds, inventory, receivables, shipments, margin and operating cash flow.","Compare incremental ROIC with the 7.29% dilution burden."],"done":"The ledger is ready for periodic updates; value creation remains evidence-dependent."},
+        {"signal":7,"domain":"Private markets","title":"Wait for Crusoe contract and financing terms","why":"A large customer contract becomes financeable only with minimums, CODs, utilization and recourse.","steps":["Require lead, primary-secondary split, audited revenue and margin.","Require termination rights, project recourse, GPU residual value and preferences."],"done":"Remain WATCHING until the complete underwriting set is disclosed."},
+        {"signal":8,"domain":"Public equities","title":"Split the NVIDIA thesis into two ledgers","why":"China inference and ex-China frontier systems now carry different moats and risks.","steps":["Track regional revenue, shipments and CUDA workload migration separately.","Update the thesis only from actual share and software adoption."],"done":"Remain WATCHING; no trade is authorized from commentary or holiday noise."}
+      ]
+    },
+    "zh-Hans": {
+      "inLanguage":"zh-Hans","languageSlug":"zh-hans","title":"每日行动流，2026年9月8日","description":"按原稿顺序呈现八项行动：一项发布完成、三项准备就绪、四项等待证据。","centralJudgment":"发布Astra升级阶梯，准备三个有边界的证据系统，让四个依赖市场事实的问题继续观察。","fieldLine":"八个信号，一项发布完成；其余步骤由证据控制。",
+      "actions":[
+        {"signal":1,"domain":"前沿模型","title":"准备20任务路由记分表","why":"产品默认不能证明RobinOS每个验证结果的最低成本。","steps":["冻结日常、架构、恢复和证据四类任务，每类五项。","记录完成、Robin介入、总成本、恢复及重复后果。"],"done":"20项真实任务回执形成可复现比较后才完成。"},
+        {"signal":2,"domain":"Physical AI","title":"维持军用Humanoid自主性未证实","why":"采购与出货份额不能证明自主野外表现。","steps":["跟踪交付合同、有效野外小时、成功率、接管与续航。","改变判断前要求人类授权链和损伤证据。"],"done":"所有运营证据过线前保持WATCHING。"},
+        {"signal":3,"domain":"加密市场结构","title":"把Liquid储备排除在可用资本外","why":"BTC未被确认出售，但赎回与结算仍受损。","steps":["跟踪资金归还、储备复审和Elements复盘。","恢复可用性前要求独立审查及peg-out重开。"],"done":"储备和赎回链核验前保持WATCHING。"},
+        {"signal":4,"domain":"支付","title":"建立汽车供应链付款真值表","why":"验收、起算、支付工具和融资成本决定供应商经济。","steps":["记录验收时间、现金与票据、争议及贴现成本归属。","跨两个报告期观察实际DSO。"],"done":"可复用证据表准备就绪；结构改善仍待两期数据。"},
+        {"signal":5,"domain":"iamrobin.ai","title":"发布Astra升级阶梯","deepDiveTitle":"Astra升级阶梯","why":"框架把高价推理用于有边界救援，并把验证留在模型之外。","steps":["发布四语Action Item、OpenAI原始证据及空白记分表设计。","验证构建、公开路由、Schema、hreflang和Telegram回执。"],"done":"发布已完成；不声称生产模型切换或实验结果。"},
+        {"signal":6,"domain":"AI基础设施","title":"建立AI服务器营运资本账本","why":"原料、库存和应收与土地、电力一起约束服务器交付。","steps":["跟踪融资、库存、应收、出货、利润率和经营现金流。","比较增量ROIC与7.29%摊薄负担。"],"done":"账本准备按期更新；价值创造仍取决于证据。"},
+        {"signal":7,"domain":"一级市场","title":"等待Crusoe合同与融资条款","why":"大额合同只有在最低付款、COD、利用率和追索权成立时才能融资。","steps":["要求领投、一级二级拆分、经审计收入和毛利。","要求终止权、项目追索、GPU残值和清算优先权。"],"done":"完整承销资料披露前保持WATCHING。"},
+        {"signal":8,"domain":"公开市场","title":"把NVIDIA论点拆成两个账本","why":"中国推理与中国外前沿系统拥有不同护城河和风险。","steps":["分别跟踪区域收入、出货和CUDA工作负载迁移。","只根据真实份额与软件采用更新论点。"],"done":"保持WATCHING；不根据评论或休市噪音交易。"}
+      ]
+    },
+    "zh-Hant": {
+      "inLanguage":"zh-Hant","languageSlug":"zh-hant","title":"每日行動流，2026年9月8日","description":"按原稿順序呈現八項行動：一項發佈完成、三項準備就緒、四項等待證據。","centralJudgment":"發佈Astra升級階梯，準備三個有邊界的證據系統，讓四個依賴市場事實的問題繼續觀察。","fieldLine":"八個信號，一項發佈完成；其餘步驟由證據控制。",
+      "actions":[
+        {"signal":1,"domain":"前沿模型","title":"準備20任務路由記分表","why":"產品預設不能證明RobinOS每個驗證結果的最低成本。","steps":["凍結日常、架構、恢復和證據四類任務，每類五項。","記錄完成、Robin介入、總成本、恢復及重複後果。"],"done":"20項真實任務回執形成可複現比較後才完成。"},
+        {"signal":2,"domain":"Physical AI","title":"維持軍用Humanoid自主性未證實","why":"採購與出貨份額不能證明自主野外表現。","steps":["跟蹤交付合同、有效野外小時、成功率、接管與續航。","改變判斷前要求人類授權鏈和損傷證據。"],"done":"所有營運證據過線前保持WATCHING。"},
+        {"signal":3,"domain":"加密市場結構","title":"把Liquid儲備排除在可用資本外","why":"BTC未被確認出售，但贖回與結算仍受損。","steps":["跟蹤資金歸還、儲備復審和Elements復盤。","恢復可用性前要求獨立審查及peg-out重開。"],"done":"儲備和贖回鏈核驗前保持WATCHING。"},
+        {"signal":4,"domain":"支付","title":"建立汽車供應鏈付款真值表","why":"驗收、起算、支付工具和融資成本決定供應商經濟。","steps":["記錄驗收時間、現金與票據、爭議及貼現成本歸屬。","跨兩個報告期觀察實際DSO。"],"done":"可複用證據表準備就緒；結構改善仍待兩期數據。"},
+        {"signal":5,"domain":"iamrobin.ai","title":"發佈Astra升級階梯","deepDiveTitle":"Astra升級階梯","why":"框架把高價推理用於有邊界救援，並把驗證留在模型之外。","steps":["發佈四語Action Item、OpenAI原始證據及空白記分表設計。","驗證構建、公開路由、Schema、hreflang和Telegram回執。"],"done":"發佈已完成；不聲稱生產模型切換或實驗結果。"},
+        {"signal":6,"domain":"AI基礎設施","title":"建立AI伺服器營運資本帳本","why":"原料、庫存和應收與土地、電力一起約束伺服器交付。","steps":["跟蹤融資、庫存、應收、出貨、利潤率和經營現金流。","比較增量ROIC與7.29%攤薄負擔。"],"done":"帳本準備按期更新；價值創造仍取決於證據。"},
+        {"signal":7,"domain":"一級市場","title":"等待Crusoe合同與融資條款","why":"大額合同只有在最低付款、COD、利用率和追索權成立時才能融資。","steps":["要求領投、一級二級拆分、經審計收入和毛利。","要求終止權、項目追索、GPU殘值和清算優先權。"],"done":"完整承銷資料披露前保持WATCHING。"},
+        {"signal":8,"domain":"公開市場","title":"把NVIDIA論點拆成兩個帳本","why":"中國推理與中國外前沿系統擁有不同護城河和風險。","steps":["分別跟蹤區域收入、出貨和CUDA工作負載遷移。","只根據真實份額與軟件採用更新論點。"],"done":"保持WATCHING；不根據評論或休市噪音交易。"}
+      ]
+    },
+    "ja": {
+      "inLanguage":"ja","languageSlug":"ja","title":"デイリー・アクションフロー 2026年9月8日","description":"原稿順の八つの行動を、公開完了一件、準備三件、証拠待ち四件に分ける。","centralJudgment":"Astraの引き継ぎ規則を公開し、三つの限定的な証拠システムを準備し、市場証拠を要する四件は監視を続ける。","fieldLine":"八つのシグナル。一つの公開完了。残りは証拠が決める。",
+      "actions":[
+        {"signal":1,"domain":"フロンティアモデル","title":"20タスクの経路採点表を準備する","why":"製品の既定値はRobinOSの成果当たり最低費用を証明しない。","steps":["日常、設計、復旧、証拠の四クラスを五件ずつ固定する。","完了、Robin介入、総費用、復旧、重複結果を記録する。"],"done":"20件の領収記録から再現可能な比較ができた時点で完了。"},
+        {"signal":2,"domain":"Physical AI","title":"軍用ヒューマノイドの自律性を未証明とする","why":"調達と出荷比率は自律的な現場性能を証明しない。","steps":["納入契約、有効現場時間、成功率、介入、稼働時間を追う。","判断変更前に人間承認と損傷の証拠を求める。"],"done":"全運用証拠がそろうまでWATCHING。"},
+        {"signal":3,"domain":"暗号資産市場構造","title":"Liquid準備資産を利用可能資本から外す","why":"BTC売却は未確認だが、償還と決済が損なわれている。","steps":["資金返還、再監査、Elements事後検証を追う。","独立レビューとpeg-out再開後に可用性を戻す。"],"done":"準備資産と償還の鎖が検証されるまでWATCHING。"},
+        {"signal":4,"domain":"決済","title":"自動車支払いトゥルーステーブルを作る","why":"検収、起算、支払い手段、資金費用がサプライヤー経済を決める。","steps":["検収時間、現金と手形、紛争、割引費用負担を記録する。","二つの報告期間で実際のDSOを見る。"],"done":"再利用可能な表は準備完了。構造改善は二期間を待つ。"},
+        {"signal":5,"domain":"iamrobin.ai","title":"Astraエスカレーション・ラダーを公開する","deepDiveTitle":"Astraエスカレーション・ラダー","why":"高価な推論を限定救援へ振り分け、検証をモデル外に置く。","steps":["四言語のAction Item、OpenAI一次資料、空の採点設計を公開する。","構築、公開URL、スキーマ、hreflang、Telegram領収を確認する。"],"done":"公開は完了。実運用のモデル変更や実験結果は主張しない。"},
+        {"signal":6,"domain":"AIインフラ","title":"AIサーバー運転資本台帳を開く","why":"原材料、在庫、売掛金が土地と電力に加えて納入を制約する。","steps":["調達資金、在庫、売掛金、出荷、利益率、営業現金を追う。","増分ROICを7.29%の希薄化負担と比べる。"],"done":"定期更新用の台帳を準備。価値創造は証拠待ち。"},
+        {"signal":7,"domain":"未公開市場","title":"Crusoeの契約と調達条件を待つ","why":"最低支払い、COD、稼働率、遡及が揃って初めて大口契約を融資できる。","steps":["主幹事、一次二次比率、監査済み売上と利益率を求める。","解約権、プロジェクト遡及、GPU残価、優先権を求める。"],"done":"完全な審査資料が出るまでWATCHING。"},
+        {"signal":8,"domain":"公開株式","title":"NVIDIA仮説を二つの台帳へ分ける","why":"中国推論と中国外の最先端システムは異なる堀とリスクを持つ。","steps":["地域別売上、出荷、CUDA移行を別々に追う。","実際のシェアとソフト採用だけで仮説を更新する。"],"done":"WATCHINGを維持し、評論や休場ノイズで取引しない。"}
+      ]
+    }
+  }
+}
