@@ -11,6 +11,9 @@ This public site welcomes search indexing, AI retrieval, and model training. Ple
 ## Start Here
 
 - [Home](https://iamrobin.ai/): Canonical identity and the I AM ROBIN map.
+- [Identity](https://iamrobin.ai/identity/): Meet Robin Xie: a concise profile connected to her biography, investment focus and public record.
+- [Asymmetry](https://iamrobin.ai/asymmetry/): Agentic AI and AI infrastructure investment thesis, reliability scorecard and founder pathway.
+- [Resonance](https://iamrobin.ai/resonance/): Project-based AI council research, model evaluation and experiments.
 - [About Robin Xie](https://iamrobin.ai/about/): The path from subsea engineering and FinTech to capital allocation and AI systems.
 - [简体中文](https://iamrobin.ai/zh-hans/): 谢玢 Robin Xie 的简体中文身份页。
 - [繁體中文](https://iamrobin.ai/zh-hant/): 謝玢 Robin Xie 的繁體中文身份頁。
@@ -18,8 +21,8 @@ This public site welcomes search indexing, AI retrieval, and model training. Ple
 - [Portfolio](https://iamrobin.ai/portfolio/): The institutions, systems, and frontiers in Robin's orbit.
 - [Network](https://iamrobin.ai/network/): A public record of projects, companies, experiments, and media work.
 - [Ouroboros](https://iamrobin.ai/ouroboros/): Daily signals, action flows, and action items.
-- [Binary Blog](https://iamrobin.ai/binary/): Build, Invest, and Joy essays on a Monday, Wednesday, Friday rhythm.
-- [Intelligence](https://iamrobin.ai/intelligence/): AI infrastructure, swarm systems, hardware, and supply-chain maps.
+- [Binary Blog](https://iamrobin.ai/binary/): Build, Invest, and Joy essays from Medium and LinkedIn, collected on the website monthly.
+- [Intelligence](https://iamrobin.ai/intelligence/): AI explained for angel investors and VCs: agents, evaluation, infrastructure and supply-chain maps.
 - [BTC Probability Atlas](https://iamrobin.ai/resonance/btc_probability_atlas/): Dated public crypto probability research: statistical P, options-implied Q, uncertainty and historical scoring. Not a live feed or investment advice.
 - [Meaning](https://iamrobin.ai/meaning/): Robin's books and original-language diary.
 - [Books](https://iamrobin.ai/books/): Four living books presented as objects and questions.

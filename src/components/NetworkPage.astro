@@ -5,6 +5,8 @@ import IdentityLanguageNav from './IdentityLanguageNav.astro';
 import { identityProfiles, networkAlternates, type IdentityLocale } from '../data/identity';
 import { createNetworkSchemas } from '../lib/seo';
 import { identityConnections } from '../data/identityConnections';
+import DoorNotes from './DoorNotes.astro';
+import { socialLinks } from '../data/site';
 
 interface Props {
   locale: IdentityLocale;
@@ -52,10 +54,24 @@ const backLabel = locale === 'en'
       <Content />
     </div>
 
+    {locale === 'en' && <DoorNotes label="Connect with Robin">
+      <section id="contact" aria-labelledby="network-contact-title">
+        <p class="eyebrow">Founders · Investors · Collaborators</p>
+        <h2 id="network-contact-title">Start a conversation.</h2>
+        <p>The public record above documents roles, projects and appearances in their historical context. It is not a list of current holdings or a claim of affiliation with every organization mentioned.</p>
+        <p>Building in agentic AI or AI infrastructure? Begin with the problem, your team, the evidence so far, and what you would like to discuss.</p>
+        <nav class="door-links" aria-label="Founder contact and investment fit">
+          <a href={socialLinks.linkedin} target="_blank" rel="noreferrer" data-contact-source="network">Connect on LinkedIn ↗</a>
+          <a href="/asymmetry/#founders">Read the founder pathway →</a>
+          <a href="/identity/">Meet Robin →</a>
+        </nav>
+      </section>
+    </DoorNotes>}
+
     <nav class="network-page__cycle" aria-label={profile.languageNavLabel}>
       <a href={profile.homePath}>← {profile.homeLinkLabel}</a>
       <a href={profile.aboutPath}>{profile.aboutLinkLabel} →</a>
-      <a href={`${profile.aboutPath}#work-with-robin`}>{identityConnections(locale).invitation} ↗</a>
+      <a href={locale === 'en' ? '#contact' : `${profile.aboutPath}#work-with-robin`}>{identityConnections(locale).invitation} ↗</a>
     </nav>
   </article>
 </BaseLayout>

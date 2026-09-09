@@ -36,6 +36,10 @@ const connections = identityConnections(locale);
       <p class="identity-about__subtitle">{profile.subtitle}</p>
       <p class="identity-introduction">{connections.introduction}</p>
       <p class="identity-about__lead">{profile.aboutLead}</p>
+      {locale === 'en' && <nav class="identity-proof" aria-label="Robin’s identity and investment focus">
+        <a href="/identity/">Identity · Meet Robin →</a>
+        <a href="/asymmetry/">Asymmetry · Investment thesis →</a>
+      </nav>}
     </header>
 
     <ol class="identity-axis identity-axis--about" aria-label={profile.spine}>

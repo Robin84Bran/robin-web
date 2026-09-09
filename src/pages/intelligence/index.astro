@@ -1,9 +1,10 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import IntelligenceAtlas from '../../components/intelligence/IntelligenceAtlas.astro';
+import InvestorGuide from '../../components/intelligence/InvestorGuide.astro';
 import { identityWords } from '../../data/site';
 
-const description = 'Three living studies of how intelligence emerges, flows, and entangles.';
+const description = 'AI explained for angel investors and VCs: agents, evaluation, inference economics, hardware, power and supply chains, with interactive studies by Robin Xie.';
 const path = '/intelligence/';
 const directoryIndex = identityWords.findIndex((item) => item.slug === 'intelligence');
 const entry = identityWords[directoryIndex];
@@ -18,7 +19,7 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   '@id': `https://iamrobin.ai${path}#page`,
-  name: 'Intelligence — Robin Xie',
+  name: 'Intelligence — AI Explained for Angel Investors & VCs | Robin Xie',
   description,
   url: `https://iamrobin.ai${path}`,
   inLanguage: 'en',
@@ -26,7 +27,7 @@ const schema = {
 ---
 
 <BaseLayout
-  title="Intelligence — I AM ROBIN"
+  title="Intelligence — AI Explained for Angel Investors & VCs | Robin Xie"
   {description}
   {path}
   {schema}
@@ -35,7 +36,7 @@ const schema = {
     <div class="intelligence-directory__intro shell">
       <a class="directory-back" href="/">← I AM ROBIN</a>
       <div class={`directory-letter directory-letter--${entry.tone}`} aria-hidden="true">{entry.letter}</div>
-      <p class="eyebrow">{String(directoryIndex + 1).padStart(2, '0')} / 08 · project directory</p>
+      <p class="eyebrow">{String(directoryIndex + 1).padStart(2, '0')} / 08 · AI explained for investors</p>
       <h1>{entry.word}</h1>
     </div>
 
@@ -47,6 +48,8 @@ const schema = {
       <p>Build an AI data center in 3D. Move a delivery date. Discover what actually changes.</p>
       <a class="quiet-link" href="/intelligence/aidc101/">Explore AIDC 101 ↗</a>
     </section>
+
+    <InvestorGuide />
 
     <nav class="directory-cycle shell" aria-label="Identity directories">
       <a href={`/${previous.slug}/`}>← {previous.word}</a>

@@ -1,0 +1,59 @@
+---
+import DoorNotes from '../DoorNotes.astro';
+const constraints = [
+  ['Power', 'Deliverable power at the required date', 'What capacity is actually available, and which dependencies could move the opening date?'],
+  ['Cooling', 'Heat removal at the planned rack density', 'Can the facility sustain the intended workload rather than only its nominal capacity?'],
+  ['Compute & networking', 'Useful throughput across the full system', 'Where do memory, networking or workload shape leave expensive compute waiting?'],
+  ['Utilization', 'Paid useful work relative to installed capacity', 'Which assumptions depend on demand that has not yet been contracted or delivered?'],
+  ['Deployment', 'A coordinated path to operation', 'Which delivery, commissioning or interconnection dependency sets the critical path?'],
+];
+---
+<div class="shell">
+  <DoorNotes label="AI explained for angel investors and VCs">
+    <section id="agentic-ai" aria-labelledby="agentic-ai-title">
+      <p class="eyebrow">01 · Agentic AI</p>
+      <h2 id="agentic-ai-title">From a capable model to useful work.</h2>
+      <p>For fellow angel investors and VCs: a starting point for understanding the mechanism, the constraint, and the evidence behind an AI company.</p>
+      <dl>
+        <dt>What changes when AI becomes agentic?</dt>
+        <dd>A model produces an output. An agent system can use tools, act on that output and continue toward a goal. Its permissions, feedback and stopping conditions become part of the product.</dd>
+        <dt>How should an investor read an evaluation?</dt>
+        <dd>Begin with the task and completion criteria, then inspect model versions, tools, repeat runs and human assistance. A benchmark result is evidence about a test setting; customer workflow evidence answers a different question.</dd>
+        <dt>What is the unit of economic value?</dt>
+        <dd>Cost per verified outcome combines model and tool costs, failed attempts, recovery and human review. Compare it with the value of the completed work. Token price alone does not describe the operating economics.</dd>
+      </dl>
+      <nav class="door-links" aria-label="Agent learning path">
+        <a href="/intelligence/swarm/">Explore swarm behavior →</a>
+        <a href="/resonance/">Inspect evaluation projects →</a>
+        <a href="/asymmetry/#scorecard">Use the reliability scorecard →</a>
+      </nav>
+      <p>Applied research: <a href="/ouroboros/202609/20260908/action_item/">The Astra Escalation Ladder</a> examines when escalation earns its additional cost.</p>
+    </section>
+    <section id="ai-infrastructure" aria-labelledby="ai-infrastructure-title">
+      <p class="eyebrow">02 · AI infrastructure</p>
+      <h2 id="ai-infrastructure-title">Find the bottleneck before pricing the capacity.</h2>
+      <p>Compute depends on physical delivery and coordinated systems. This qualitative bottleneck map is a guide to questions, not a forecast of a particular facility’s economics.</p>
+      <div class="door-table-scroll" role="region" aria-label="AI infrastructure bottleneck map" tabindex="0">
+        <table><caption>From installed capacity to useful, deliverable computation</caption>
+          <thead><tr><th scope="col">Layer</th><th scope="col">What matters</th><th scope="col">Investor question</th></tr></thead>
+          <tbody>{constraints.map(([layer, evidence, question]) => <tr><th scope="row">{layer}</th><td>{evidence}</td><td>{question}</td></tr>)}</tbody>
+        </table>
+      </div>
+      <p>Start with the assumptions shown in each explainer. A change in workload, power availability or delivery date can change which constraint dominates.</p>
+      <nav class="door-links" aria-label="Infrastructure learning path">
+        <a href="/intelligence/hardware/">Hardware & flow →</a>
+        <a href="/intelligence/hardware/deliverable-megawatts/">Deliverable megawatts →</a>
+        <a href="/intelligence/supply-chain/">Supply-chain relationships →</a>
+        <a href="/intelligence/aidc101/">Explore delivery dependencies in AIDC 101 →</a>
+      </nav>
+    </section>
+    <section aria-labelledby="investor-next">
+      <h2 id="investor-next">Carry the question into the next room.</h2>
+      <nav class="door-links" aria-label="Continue exploring Robin’s work">
+        <a href="/asymmetry/">Robin’s investment thesis →</a>
+        <a href="/binary/">Essays on building and investing →</a>
+        <a href="/network/#contact">Find Robin →</a>
+      </nav>
+    </section>
+  </DoorNotes>
+</div>

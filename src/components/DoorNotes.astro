@@ -1,0 +1,29 @@
+---
+interface Props { label: string; }
+const { label } = Astro.props;
+---
+<div class="door-notes" role="region" aria-label={label}>
+  <slot />
+</div>
+
+<style>
+  .door-notes { position: relative; max-width: 58rem; margin-block: 1rem 3rem; }
+  .door-notes :global(section) { padding-block: 1.6rem; border-top: 1px solid var(--line); scroll-margin-top: 6rem; }
+  .door-notes :global(h2) { margin: .4rem 0 1rem; font-family: var(--serif); font-size: clamp(1.7rem, 4vw, 2.6rem); font-weight: 400; letter-spacing: -.025em; line-height: 1.2; }
+  .door-notes :global(h3) { margin: 1.5rem 0 .5rem; font-family: var(--serif); font-size: 1.3rem; font-weight: 400; }
+  .door-notes :global(p), .door-notes :global(dd) { max-width: 46rem; color: var(--muted); line-height: 1.8; }
+  .door-notes :global(.door-lead) { font-family: var(--serif); font-size: clamp(1.25rem, 3vw, 1.65rem); color: var(--ink); }
+  .door-notes :global(a) { color: var(--gold-dark); text-decoration-thickness: 1px; text-underline-offset: .25em; }
+  .door-notes :global(.door-links) { display: flex; flex-wrap: wrap; justify-content: flex-start; gap: .8rem 1.8rem; margin-block: 1.2rem; text-transform: none; letter-spacing: normal; font-size: .9rem; line-height: 1.7; }
+  .door-notes :global(dl) { margin: 1rem 0; }
+  .door-notes :global(dt) { margin-top: 1.2rem; font-weight: 550; }
+  .door-notes :global(dd) { margin: .4rem 0 1.2rem; }
+  .door-notes :global(.door-table-scroll) { overflow-x: auto; margin-block: 1.5rem; }
+  .door-notes :global(table) { width: 100%; border-collapse: collapse; font-size: .9rem; line-height: 1.65; }
+  .door-notes :global(caption) { text-align: left; padding-bottom: .8rem; color: var(--muted); }
+  .door-notes :global(th), .door-notes :global(td) { padding: 1rem .8rem; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+  .door-notes :global(th) { font-weight: 550; }
+  .door-notes :global(td) { color: var(--muted); }
+  .door-notes :global(.door-grid) { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem 2.5rem; }
+  @media (max-width: 640px) { .door-notes :global(.door-grid) { grid-template-columns: 1fr; } }
+</style>

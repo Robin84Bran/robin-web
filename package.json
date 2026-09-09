@@ -21,7 +21,8 @@
     "actions:check": "node scripts/verify-action-backlog.mjs",
     "verify:seo": "node scripts/verify-seo.mjs",
     "test:ai-berkshire": "node --test scripts/tests/ai-berkshire.test.mjs",
-    "release:check": "pnpm run robots:check && pnpm run privacy:check && pnpm run observability:check && pnpm run actions:check && pnpm run check && pnpm run build && pnpm run verify:seo && pnpm run test:ai-berkshire",
+    "test:eight-doors": "node --test scripts/tests/eight-doors.test.mjs",
+    "release:check": "pnpm run robots:check && pnpm run privacy:check && pnpm run observability:check && pnpm run actions:check && pnpm run check && pnpm run build && pnpm run verify:seo && pnpm run test:ai-berkshire && pnpm run test:eight-doors",
     "preview": "astro preview"
   },
   "dependencies": {

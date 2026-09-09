@@ -1,6 +1,7 @@
 ---
 import IdentityDirectory from '../components/IdentityDirectory.astro';
 import NetworkPage from '../components/NetworkPage.astro';
+import GrowthDoor from '../components/GrowthDoor.astro';
 import { identityWords } from '../data/site';
 
 export function getStaticPaths() {
@@ -20,4 +21,6 @@ const { entry, index, previous, next } = Astro.props;
 
 {entry.slug === 'network'
   ? <NetworkPage locale="en" />
+  : entry.slug === 'identity' || entry.slug === 'asymmetry' || entry.slug === 'resonance'
+  ? <GrowthDoor slug={entry.slug} />
   : <IdentityDirectory {entry} {index} {previous} {next} />}
