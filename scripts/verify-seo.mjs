@@ -10,7 +10,7 @@ const identityAliases = ['Bin Xie', 'Bin “Robin” Xie', 'Bin Robin Xie', 'Xie
 const proofAnchors = ['engineering-record', 'payments-record', 'tidebit-record'];
 const portfolioDisclaimer = 'An attention field — subjects I study, not a record of affiliations or holdings.';
 const indexableRoutes = new Set([
-  '/', '/about/', '/network/', '/resonance/btc_probability_atlas/', '/resonance/eval/ai_berkshire/',
+  '/', '/identity/', '/asymmetry/', '/resonance/', '/about/', '/network/', '/resonance/btc_probability_atlas/', '/resonance/eval/ai_berkshire/',
   '/zh-hans/', '/zh-hans/about/', '/zh-hans/network/',
   '/zh-hant/', '/zh-hant/about/', '/zh-hant/network/',
   '/ja/', '/ja/about/', '/ja/network/',
@@ -242,7 +242,8 @@ if (existsSync(dist)) {
   check(traditionalNetwork.includes('項目有聚散，所問未曾改。') && traditionalNetwork.includes('香港上市公司'), 'zh-Hant Network: approved Traditional Chinese public record is missing.');
   check(japaneseNetwork.includes('プロジェクトは現れては去り') && japaneseNetwork.includes('香港上場企業'), 'ja Network: approved Japanese public record is missing.');
   for (const page of [network, simplifiedNetwork, traditionalNetwork, japaneseNetwork]) {
-    check((page.match(/<h2\b/g) ?? []).length === 5, 'Network: every locale must expose the five canonical sections.');
+    const publicRecord = page.match(/<div class="network-prose"[^>]*>([\s\S]*?)<\/div>/)?.[1] ?? '';
+    check((publicRecord.match(/<h2\b/g) ?? []).length === 5, 'Network: every locale must expose the five canonical public-record sections.');
     check(page.includes('https://www.hkexnews.hk/listedco/listconews/gem/2019/0509/gln20190509062_c.pdf'), 'Network: canonical HKEX source is missing.');
   }
   check((books.match(/"@type":"Book"/g) ?? []).length === 4, 'books: expected four Book schemas.');
@@ -295,7 +296,7 @@ if (existsSync(dist)) {
     const compact = route.match(/\/(\d{8})\/$/)?.[1];
     const date = compact ? `${compact.slice(0, 4)}-${compact.slice(4, 6)}-${compact.slice(6, 8)}` : null;
     const displayDate = date
-      ? new Date(`${date}T12:00:00+08:00`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
+      ? new Date(`${date}T12:00:00+08:00`).toLocaleDateString('en-US', { timeZone: 'UTC', month: 'long', day: 'numeric', year: 'numeric' })
       : null;
     check(Boolean(displayDate) && article.includes(`🏹 Robin’s Daily Signal Brief, ${displayDate}`), `${route}: canonical Daily Briefing title formula is missing.`);
     const countWord = compact === '20260820' ? 'Seven' : 'Eight';
@@ -346,7 +347,7 @@ if (existsSync(dist)) {
   check(!sitemap.includes('/cn/'), 'sitemap: legacy /cn/ must not be canonical.');
   check(!sitemap.includes('/tw/'), 'sitemap: legacy /tw/ must not be canonical.');
   check(!sitemap.includes('/jp/'), 'sitemap: legacy /jp/ must not be canonical.');
-  check(!sitemap.includes('/identity/'), 'sitemap: identity placeholders must be excluded.');
+  check(sitemap.includes('https://iamrobin.ai/identity/'), 'sitemap: completed Identity profile must be included.');
   check(!sitemap.includes('/projects/'), 'sitemap: hidden projects route must be excluded.');
   check(!sitemap.includes('/ouroborous/'), 'sitemap: misspelled alias must stay excluded.');
 
