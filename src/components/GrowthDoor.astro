@@ -1,0 +1,160 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import DoorNotes from './DoorNotes.astro';
+import { identityWords } from '../data/site';
+import { identityProfiles } from '../data/identity';
+import { absoluteUrl, createBreadcrumbSchema, createIdentityPageSchemas, createPersonSchema } from '../lib/seo';
+
+interface Props { slug: 'identity' | 'asymmetry' | 'resonance'; }
+const { slug } = Astro.props;
+const index = identityWords.findIndex((door) => door.slug === slug);
+const entry = identityWords[index];
+const previous = identityWords[(index + 7) % 8];
+const next = identityWords[(index + 1) % 8];
+const path = `/${slug}/`;
+const copy = {
+  identity: {
+    subtitle: 'Robin Xie · Engineering, capital, AI',
+    title: 'Robin Xie (谢玢 / 謝玢) — Identity, Engineering & AI Investing',
+    description: 'Meet Robin Xie, also known as Bin Xie, 谢玢 and 謝玢: engineer, investor and AI system builder. Explore her biography, investment focus and public record.',
+  },
+  asymmetry: {
+    subtitle: 'Investment thesis · Founder pathway',
+    title: 'Asymmetry — Agentic AI & AI Infrastructure Investment Thesis | Robin Xie',
+    description: 'Robin Xie’s investment focus on agentic AI and AI infrastructure: reliability, operating economics, physical constraints and a pathway for founders.',
+  },
+  resonance: {
+    subtitle: 'AI council · Model Olympics · Experiments',
+    title: 'Resonance — AI Council, Model Evaluation & Experiments | Robin Xie',
+    description: 'Explore Robin Xie’s project-based AI experiments, the AI Berkshire field test and BTC Probability Atlas, with dated evidence and explicit limitations.',
+  },
+}[slug];
+const breadcrumb = createBreadcrumbSchema([{ name: 'Home', path: '/' }, { name: entry.word, path }]);
+const schema = slug === 'identity'
+  ? [...createIdentityPageSchemas('en', path, copy.title, copy.description).slice(0, -1), breadcrumb]
+  : [
+      { '@context': 'https://schema.org', '@type': 'CollectionPage', '@id': `${absoluteUrl(path)}#page`, name: copy.title, description: copy.description, url: absoluteUrl(path), inLanguage: 'en', author: { '@id': 'https://iamrobin.ai/#person' } },
+      createPersonSchema(), breadcrumb,
+    ];
+const scorecard = [
+  ['Useful work', 'A defined task, a real user and a verifiable completion condition.', 'Does the result survive inspection outside the demo?'],
+  ['Reliability', 'Representative tasks, repeat runs, failure cases and intervention logs.', 'How often does a person have to rescue the work?'],
+  ['Authority & recovery', 'Scoped permissions, approval boundaries, audit trails and a recovery demonstration.', 'Can the system fail within a recoverable boundary?'],
+  ['Operating economics', 'Cost per verified outcome, including retries, tools and human review.', 'Does useful output grow faster than the cost of supervision?'],
+  ['Durability', 'Customer evidence, workflow integration and a reason to remain useful as models improve.', 'What does the company own beyond access to a model?'],
+];
+---
+
+<BaseLayout title={copy.title} description={copy.description} {path} {schema}>
+  <article class="identity-directory growth-door shell">
+    <header class="growth-door__header">
+      <a class="directory-back" href="/">← I AM ROBIN</a>
+      <div class={`directory-letter directory-letter--${entry.tone}`} aria-hidden="true">{entry.letter}</div>
+      <p class="eyebrow">{String(index + 1).padStart(2, '0')} / 08 · {copy.subtitle}</p>
+      <h1>{entry.word}</h1>
+    </header>
+
+    <DoorNotes label={`${entry.word} guide`}>
+      {slug === 'identity' && <>
+        <section aria-labelledby="robin-profile">
+          <p class="eyebrow">Ms. Robin Xie · 谢玢 · 謝玢</p>
+          <h2 id="robin-profile">Engineering, capital, and AI systems.</h2>
+          <p class="door-lead">{identityProfiles.en.aboutLead}</p>
+          <p>Robin Xie is a professional engineer, investor, and AI-native system builder. Her legal name is Bin Xie; she works and publishes as Robin Xie, also known as 谢玢 and 謝玢.</p>
+          <p>Her path runs from subsea engineering through fintech entrepreneurship and capital allocation to AI systems. Her investment focus here is agentic AI and AI infrastructure, informed by a wider practice across public and private markets.</p>
+          <nav class="door-links" aria-label="Robin’s biography and public record">
+            <a href="/about/">Read the full biography →</a><a href="/network/">Explore the public record →</a>
+          </nav>
+        </section>
+        <section aria-labelledby="identity-practice">
+          <p class="eyebrow">A continuing practice</p>
+          <h2 id="identity-practice">See the system. Find the constraint.</h2>
+          <p>Engineering asks how a system fails. Investing asks where capital belongs. Building AI systems brings both questions into the same room: what can be delegated, what must be verified, and where human judgment remains essential?</p>
+          <p>RobinOS and AI-assisted research are part of that ongoing practice. The daily research lives in Ouroboros; project experiments live in Resonance; explanations for fellow investors live in Intelligence.</p>
+          <nav class="door-links" aria-label="Explore Robin’s work">
+            <a href="/asymmetry/">Investment thesis & founder pathway →</a>
+            <a href="/resonance/">Experiments →</a><a href="/intelligence/">AI explained for investors →</a>
+          </nav>
+        </section>
+      </>}
+
+      {slug === 'asymmetry' && <>
+        <section aria-labelledby="investment-thesis">
+          <h2 id="investment-thesis">Where capability meets constraint.</h2>
+          <p class="door-lead">An investment lens on the distance between an impressive AI demonstration and dependable, economically useful work.</p>
+          <p>Robin’s focus is agentic AI and AI infrastructure. The questions connect software behavior with operating reality: reliability, authority, cost, and the physical systems that make computation possible.</p>
+          <div class="door-grid">
+            <div><h3>Agentic AI</h3><p>Agents that complete useful work, and the evaluation, orchestration, observability and permission systems that make delegation dependable.</p><a href="/intelligence/#agentic-ai">Understand the agent stack →</a></div>
+            <div><h3>AI infrastructure</h3><p>Compute and inference economics, deployment bottlenecks, power, cooling and supply chains. Large infrastructure projects inform the thesis; studying an asset is not a statement of investment participation.</p><a href="/intelligence/#ai-infrastructure">Explore infrastructure constraints →</a></div>
+          </div>
+        </section>
+        <section id="scorecard" aria-labelledby="scorecard-title">
+          <p class="eyebrow">A framework for the conversation</p>
+          <h2 id="scorecard-title">Agent reliability investment scorecard</h2>
+          <p>Use these questions to make the evidence inspectable. This is a qualitative discussion framework, with no numerical cutoff or implied investment commitment.</p>
+          <div class="door-table-scroll" role="region" aria-label="Agent reliability scorecard" tabindex="0">
+            <table><caption>Five dimensions of dependable agentic work</caption>
+              <thead><tr><th scope="col">Dimension</th><th scope="col">Evidence to bring</th><th scope="col">Question</th></tr></thead>
+              <tbody>{scorecard.map(([dimension, evidence, question]) => <tr><th scope="row">{dimension}</th><td>{evidence}</td><td>{question}</td></tr>)}</tbody>
+            </table>
+          </div>
+          <nav class="door-links" aria-label="Research behind the scorecard">
+            <a href="/ouroboros/202609/20260908/action_item/">Research: The Astra Escalation Ladder →</a>
+            <a href="/resonance/">Evaluation projects →</a>
+          </nav>
+        </section>
+        <section id="founders" aria-labelledby="founder-pathway">
+          <p class="eyebrow">For founders</p>
+          <h2 id="founder-pathway">Start with the problem and the proof.</h2>
+          <dl>
+            <dt>Is there an overlap?</dt><dd>Show how your work addresses agentic AI or an AI infrastructure constraint, who needs it, and why the problem matters now.</dd>
+            <dt>What should an introduction include?</dt><dd>Send a concise account of the problem, team, product or demo, evidence so far, and the conversation you want to have. Include your company’s stage and location as context.</dd>
+            <dt>What perspective does Robin bring?</dt><dd>Her background connects engineering constraints, fintech operating experience and capital allocation. Explain where that perspective would be useful to your company.</dd>
+          </dl>
+          <nav class="door-links" aria-label="Founder next steps">
+            <a href="/network/#contact">Find Robin & start a conversation →</a>
+            <a href="/network/">Review the public record →</a>
+          </nav>
+        </section>
+      </>}
+
+      {slug === 'resonance' && <>
+        <section aria-labelledby="resonance-purpose">
+          <h2 id="resonance-purpose">Let the experiment answer.</h2>
+          <p class="door-lead">AI council, model Olympics, and systems tested against an explicit question.</p>
+          <p>Resonance holds project-based experiments. Each report belongs to its own test conditions and date; a result in one setting is not a universal model ranking.</p>
+        </section>
+        <section aria-labelledby="published-experiments">
+          <p class="eyebrow">Published projects</p>
+          <h2 id="published-experiments">Evidence in context</h2>
+          <h3><a href="/resonance/eval/ai_berkshire/">AI Berkshire field test →</a></h3>
+          <p>Research cut-off: <time datetime="2026-09-06">6 September 2026</time>. A source-first test of structured research lenses across ten technology companies. The report describes improved questions without claiming a trustworthy buy signal. Read its evidence and limitations in the full project.</p>
+          <h3><a href="/resonance/btc_probability_atlas/">BTC Probability Atlas →</a></h3>
+          <p>A dated research snapshot comparing statistical and options-implied probability, with uncertainty and historical scoring. The public project is a reviewed snapshot, not a live forecast feed; use the dates and assumptions shown in the Atlas.</p>
+        </section>
+        <section aria-labelledby="model-olympics">
+          <p class="eyebrow">Next project direction</p>
+          <h2 id="model-olympics">AI council & model Olympics</h2>
+          <p>A place to compare how models and councils handle the same work. No model Olympics results are published here yet.</p>
+          <p>A useful comparison records exact model versions, test dates, task sets, tool access, evaluation criteria, repeat runs, costs and human interventions. Missing measurements remain unknown rather than becoming a league-table score.</p>
+          <nav class="door-links" aria-label="Understand and apply model evaluation">
+            <a href="/intelligence/#agentic-ai">Evaluation explained for investors →</a>
+            <a href="/asymmetry/#scorecard">Apply the investment scorecard →</a>
+          </nav>
+        </section>
+      </>}
+    </DoorNotes>
+    <nav class="directory-cycle" aria-label="Identity directories">
+      <a href={`/${previous.slug}/`}>← {previous.word}</a><a href={`/${next.slug}/`}>{next.word} →</a>
+    </nav>
+  </article>
+</BaseLayout>
+
+<style>
+  .growth-door { display: block; }
+  .growth-door__header { position: relative; padding-block: 2rem 1rem; isolation: isolate; }
+  .growth-door__header .directory-back { top: -2rem; }
+  .growth-door__header .directory-letter { top: 45%; }
+  .growth-door__header h1 { margin-top: 1.4rem; }
+  .growth-door > .directory-cycle { flex-wrap: wrap; }
+</style>
