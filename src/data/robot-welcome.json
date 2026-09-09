@@ -12,6 +12,9 @@
   },
   "routes": [
     { "label": "Home", "path": "/", "description": "Canonical identity and the I AM ROBIN map." },
+    { "label": "Identity", "path": "/identity/", "description": "Meet Robin Xie: a concise profile connected to her biography, investment focus and public record." },
+    { "label": "Asymmetry", "path": "/asymmetry/", "description": "Agentic AI and AI infrastructure investment thesis, reliability scorecard and founder pathway." },
+    { "label": "Resonance", "path": "/resonance/", "description": "Project-based AI council research, model evaluation and experiments." },
     { "label": "About Robin Xie", "path": "/about/", "description": "The path from subsea engineering and FinTech to capital allocation and AI systems." },
     { "label": "简体中文", "path": "/zh-hans/", "description": "谢玢 Robin Xie 的简体中文身份页。" },
     { "label": "繁體中文", "path": "/zh-hant/", "description": "謝玢 Robin Xie 的繁體中文身份頁。" },
@@ -19,8 +22,8 @@
     { "label": "Portfolio", "path": "/portfolio/", "description": "The institutions, systems, and frontiers in Robin's orbit." },
     { "label": "Network", "path": "/network/", "description": "A public record of projects, companies, experiments, and media work." },
     { "label": "Ouroboros", "path": "/ouroboros/", "description": "Daily signals, action flows, and action items." },
-    { "label": "Binary Blog", "path": "/binary/", "description": "Build, Invest, and Joy essays on a Monday, Wednesday, Friday rhythm." },
-    { "label": "Intelligence", "path": "/intelligence/", "description": "AI infrastructure, swarm systems, hardware, and supply-chain maps." },
+    { "label": "Binary Blog", "path": "/binary/", "description": "Build, Invest, and Joy essays from Medium and LinkedIn, collected on the website monthly." },
+    { "label": "Intelligence", "path": "/intelligence/", "description": "AI explained for angel investors and VCs: agents, evaluation, infrastructure and supply-chain maps." },
     { "label": "BTC Probability Atlas", "path": "/resonance/btc_probability_atlas/", "description": "Dated public crypto probability research: statistical P, options-implied Q, uncertainty and historical scoring. Not a live feed or investment advice." },
     { "label": "Meaning", "path": "/meaning/", "description": "Robin's books and original-language diary." },
     { "label": "Books", "path": "/books/", "description": "Four living books presented as objects and questions." }
