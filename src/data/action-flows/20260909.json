@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-09",
+  "updated": "2026-09-09",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20260909/hero.webp",
+  "actionHero": "/action-item/20260909/hero.webp",
+  "ogImage": "/daily-briefing/20260909/og.webp",
+  "briefingPath": "/ouroboros/202609/20260909/",
+  "actionItemPath": "/ouroboros/202609/20260909/action_item/",
+  "actions": [
+    {"signal":1,"priority":"NEXT","status":"READY","visualValue":"4 TASKS","visualLabel":"paired routing test","sources":[{"label":"OpenAI API changelog","url":"https://developers.openai.com/api/docs/changelog"},{"label":"Prompt Cache Diagnostics","url":"https://developers.openai.com/api/docs/guides/prompt-caching/diagnostics"}]},
+    {"signal":2,"priority":"NEXT","status":"READY","visualValue":"24 GB","visualLabel":"offline minimum","sources":[{"label":"Qwen Drive repository","url":"https://github.com/QwenLM/Qwen-Drive-1.0"},{"label":"Technical report","url":"https://arxiv.org/abs/2609.00111"}]},
+    {"signal":3,"priority":"WATCH","status":"WATCHING","visualValue":"598 BTC","visualLabel":"still outstanding","sources":[{"label":"CoinDesk","url":"https://www.coindesk.com/markets/2026/09/08/white-hat-hackers-return-most-of-usd320m-bitcoin-taken-from-liquid-network"},{"label":"Reuters","url":"https://www.reuters.com/technology/bitcoin-based-liquid-network-says-320-million-withdrawn-hack-2026-09-07/"}]},
+    {"signal":4,"priority":"WATCH","status":"WATCHING","visualValue":"6 GATES","visualLabel":"payment authority","sources":[{"label":"Reuters","url":"https://www.reuters.com/business/meta-launches-ai-agent-that-can-access-other-apps-send-emails-make-payments-2026-09-08/"},{"label":"AP","url":"https://apnews.com/article/3a4572eb4cf4e95d8a0dfdad6e6ca065"}]},
+    {"signal":5,"priority":"NOW","status":"COMPLETE","visualValue":"2 CLOCKS","visualLabel":"equity versus warrants","sources":[{"label":"Google SpaceX analysis","url":"https://iamrobin.ai/ouroboros/202608/20260826/blog/"},{"label":"Qualcomm 8-K","url":"https://www.sec.gov/Archives/edgar/data/804328/000110465926105718/tm2623289d1_8k.htm"},{"label":"Google Marvell analysis","url":"https://iamrobin.ai/ouroboros/202608/20260820/action_item/"}]},
+    {"signal":6,"priority":"NOW","status":"COMPLETE","visualValue":"615 MW","visualLabel":"zero operating today","sources":[{"label":"NextEra announcement","url":"https://www.investor.nexteraenergy.com/news-and-events/news-releases/2026/09-08-2026-123110497"},{"label":"Google NextEra agreement","url":"https://www.investor.nexteraenergy.com/news-and-events/news-releases/2025/10-27-2025-203948689"}]},
+    {"signal":7,"priority":"WATCH","status":"WATCHING","visualValue":"€3B","visualLabel":"terms still missing","sources":[{"label":"Mistral announcement","url":"https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/"},{"label":"Reuters","url":"https://www.reuters.com/world/europe/french-ai-company-mistral-hits-24-billion-valuation-funding-round-2026-09-08/"}]},
+    {"signal":8,"priority":"NOW","status":"COMPLETE","visualValue":"25M","visualLabel":"warrant shares","sources":[{"label":"Qualcomm 8-K","url":"https://www.sec.gov/Archives/edgar/data/804328/000110465926105718/tm2623289d1_8k.htm"},{"label":"Reuters","url":"https://www.reuters.com/technology/qualcomm-amazon-develop-custom-chips-ai-data-centers-2026-09-08/"}]}
+  ],
+  "editions": {
+    "en": {
+      "inLanguage": "en", "languageSlug": "", "title": "Daily Action Flow, September 9, 2026", "description": "Eight source-ordered actions: three completed evidence assets, two ready experiments and three evidence-dependent watches.", "centralJudgment": "Separate early equity from procurement warrants, preserve unavailable capital and unproven autonomy, and keep project megawatts behind operating gates.", "fieldLine": "Eight signals. Three completed records. Evidence controls every upgrade.",
+      "actions": [
+        {"signal":1,"domain":"Frontier models","title":"Prepare the paired Astra routing test","why":"Dynamic reasoning effort inside one preserved context could reduce restart cost, while RobinOS outcomes remain unmeasured.","steps":["Freeze four representative repository tasks and identical finish lines.","Record cache diagnostics, tests, recovery, elapsed time, full cost and Robin intervention."],"done":"READY until the bounded non-production comparison produces linked receipts."},
+        {"signal":2,"domain":"Physical AI","title":"Reproduce two Qwen Drive scenes offline","why":"Open-loop evaluation cannot establish closed-loop safety or deployability.","steps":["Run the night-intersection and parked-truck scenes with SFT and RL planners.","Compare trajectory error, consistency, latency, memory and unsafe explanations."],"done":"READY for an offline test; deployment stays unproven."},
+        {"signal":3,"domain":"Crypto capital","title":"Keep Liquid capital unavailable","why":"Collateral recovery does not restore redemption while 598 BTC and the chain state remain unresolved.","steps":["Track remaining BTC, reserve re-attestation and the independent post-mortem.","Require repaired chain state and reopened peg-in and peg-out."],"done":"WATCHING until settlement and backing are independently verified."},
+        {"signal":4,"domain":"Payments","title":"Keep Muse outside real payments","why":"Application access does not establish bounded authority, intent evidence, liability or recovery.","steps":["Track limits, payee allowlists, intent records and immediate revocation.","Require receipts, refunds, dispute evidence and assigned fraud liability."],"done":"WATCHING; connect no real payment account."},
+        {"signal":5,"domain":"iamrobin.ai","title":"Publish the two-clock strategic investment framework","deepDiveTitle":"Equity Before Orders","why":"Early equity and procurement warrants transfer cash, power and dilution at different stages.","steps":["Publish the four-language Action Item and update the Google SpaceX canonical.","Link primary filings, the AI circularity ledger, build receipt and public verification."],"done":"COMPLETE after the evidence package and canonical update entered the release."},
+        {"signal":6,"domain":"AI infrastructure","title":"Route Duane Arnold into the evidence ledger","why":"A PPA and federal financing improve bankability while producing zero operating megawatts today.","steps":["Record contracted, financed, relicensed, refurbished, synchronized and revenue stages.","Preserve source links and HOLD_RESEARCH_REQUIRED for monthly public review."],"done":"COMPLETE as private evidence intake; operating capacity remains zero until synchronization."},
+        {"signal":7,"domain":"Private markets","title":"Wait for Mistral underwriting terms","why":"Forecast ARR and a headline valuation omit margin, retention, concentration, compute liabilities and preferences.","steps":["Require audited ARR, gross margin, NRR and customer concentration.","Require primary-secondary mix, compute commitments and liquidation preferences."],"done":"WATCHING until an accessible allocation and complete terms exist."},
+        {"signal":8,"domain":"Public equities","title":"Add Qualcomm to the warrant ledger","why":"The sixty-billion-dollar ceiling is conditional vesting rather than backlog.","steps":["Record purchases, payments, vested shares, exercise status and dilution.","Track data-center revenue, margin, concentration and cash conversion quarterly."],"done":"COMPLETE as a monitoring record; no trade was placed."}
+      ]
+    },
+    "zh-Hans": {
+      "inLanguage": "zh-Hans", "languageSlug": "zh-hans", "title": "每日行动流，2026年9月9日", "description": "八项按来源排序的行动：三项证据资产完成、两项实验待执行、三项依赖外部证据。", "centralJudgment": "把早期股权与采购认股权证分开，继续隔离不可用资本与未证实自主性，并让项目MW留在运营门禁之后。", "fieldLine": "八个信号。三项记录完成。所有升级由证据决定。",
+      "actions": [
+        {"signal":1,"domain":"前沿模型","title":"准备Astra配对路由实验","why":"同一上下文内调整推理强度可能降低重启成本，但RobinOS结果尚未测量。","steps":["冻结四项代表性仓库任务与相同终点。","记录缓存诊断、测试、恢复、耗时、总成本和Robin介入。"],"done":"READY，等待有边界的非生产实验产生可链接回执。"},
+        {"signal":2,"domain":"Physical AI","title":"离线复现两个Qwen Drive场景","why":"开环评估不能证明闭环安全或可部署性。","steps":["使用SFT与RL规划器运行夜间路口和停靠卡车场景。","比较轨迹误差、一致性、延迟、显存与危险解释。"],"done":"离线实验READY；部署能力仍未证明。"},
+        {"signal":3,"domain":"加密资本","title":"继续隔离Liquid资本","why":"598 BTC与链状态未解决时，抵押物回收不等于赎回恢复。","steps":["追踪剩余BTC、储备重证与独立复盘。","要求链状态修复并重开peg-in与peg-out。"],"done":"WATCHING，直到结算与支持得到独立验证。"},
+        {"signal":4,"domain":"支付","title":"不让Muse接入真实付款","why":"访问应用不等于有边界授权、意图证据、责任和恢复。","steps":["追踪限额、收款人白名单、意图记录与即时撤权。","要求收据、退款、争议证据与欺诈责任。"],"done":"WATCHING；不连接真实付款账户。"},
+        {"signal":5,"domain":"iamrobin.ai","title":"发布双时钟战略投资框架","deepDiveTitle":"订单之前的股权","why":"早期股权与采购认股权证在不同阶段转移现金、权力与摊薄。","steps":["发布四语Action Item并更新Google SpaceX canonical。","连接一级来源、AI循环账本、构建回执与公开验证。"],"done":"证据包和canonical更新进入发布树后COMPLETE。"},
+        {"signal":6,"domain":"AI基础设施","title":"把Duane Arnold路由进证据账本","why":"PPA与联邦融资提高可融资性，却尚未产生运营MW。","steps":["记录contracted、financed、relicensed、refurbished、synchronized与revenue阶段。","保留来源，并让每月公开复核维持HOLD_RESEARCH_REQUIRED。"],"done":"私有证据采集COMPLETE；并网前运营容量仍为零。"},
+        {"signal":7,"domain":"后期一级市场","title":"等待Mistral完整承销条款","why":"预测ARR与headline估值缺少毛利、留存、集中、算力负债与优先权。","steps":["要求审计ARR、毛利、NRR与客户集中。","要求一级二级比例、算力承诺与清算优先权。"],"done":"WATCHING，直到有可参与份额和完整条款。"},
+        {"signal":8,"domain":"公开市场","title":"把Qualcomm加入认股权证账本","why":"600亿美元是条件归属上限，不是Backlog。","steps":["记录购买、付款、归属股数、行权状态与摊薄。","按季度追踪数据中心收入、毛利、集中与现金转化。"],"done":"监测记录COMPLETE；没有交易。"}
+      ]
+    },
+    "zh-Hant": {
+      "inLanguage": "zh-Hant", "languageSlug": "zh-hant", "title": "每日日行動流，2026年9月9日", "description": "八項按來源排序的行動：三項證據資產完成、兩項實驗待執行、三項依賴外部證據。", "centralJudgment": "把早期股權與採購認股權證分開，繼續隔離不可用資本與未證實自主性，並讓項目MW留在運營門禁之後。", "fieldLine": "八個訊號。三項記錄完成。所有升級由證據決定。",
+      "actions": [
+        {"signal":1,"domain":"前沿模型","title":"準備Astra配對路由實驗","why":"同一上下文內調整推理強度可能降低重啟成本，但RobinOS結果尚未測量。","steps":["凍結四項代表性倉庫任務與相同終點。","記錄快取診斷、測試、恢復、耗時、總成本和Robin介入。"],"done":"READY，等待有邊界的非生產實驗產生可連結回執。"},
+        {"signal":2,"domain":"Physical AI","title":"離線復現兩個Qwen Drive場景","why":"開環評估不能證明閉環安全或可部署性。","steps":["使用SFT與RL規劃器運行夜間路口和停靠卡車場景。","比較軌跡誤差、一致性、延遲、顯存與危險解釋。"],"done":"離線實驗READY；部署能力仍未證明。"},
+        {"signal":3,"domain":"加密資本","title":"繼續隔離Liquid資本","why":"598 BTC與鏈狀態未解決時，抵押物回收不等於贖回恢復。","steps":["追蹤剩餘BTC、儲備重證與獨立覆盤。","要求鏈狀態修復並重開peg-in與peg-out。"],"done":"WATCHING，直到結算與支持得到獨立驗證。"},
+        {"signal":4,"domain":"支付","title":"不讓Muse接入真實付款","why":"訪問應用不等於有邊界授權、意圖證據、責任和恢復。","steps":["追蹤限額、收款人白名單、意圖記錄與即時撤權。","要求收據、退款、爭議證據與欺詐責任。"],"done":"WATCHING；不連接真實付款賬戶。"},
+        {"signal":5,"domain":"iamrobin.ai","title":"釋出雙時鐘戰略投資框架","deepDiveTitle":"訂單之前的股權","why":"早期股權與採購認股權證在不同階段轉移現金、權力與攤薄。","steps":["釋出四語Action Item並更新Google SpaceX canonical。","連線一級來源、AI迴圈賬本、構建回執與公開驗證。"],"done":"證據包和canonical更新進入釋出樹後COMPLETE。"},
+        {"signal":6,"domain":"AI基礎設施","title":"把Duane Arnold路由進證據賬本","why":"PPA與聯邦融資提高可融資性，卻尚未產生運營MW。","steps":["記錄contracted、financed、relicensed、refurbished、synchronized與revenue階段。","保留來源，並讓每月公開覆核維持HOLD_RESEARCH_REQUIRED。"],"done":"私有證據採集COMPLETE；併網前運營容量仍為零。"},
+        {"signal":7,"domain":"後期一級市場","title":"等待Mistral完整承銷條款","why":"預測ARR與headline估值缺少毛利、留存、集中、算力負債與優先權。","steps":["要求審計ARR、毛利、NRR與客戶集中。","要求一級二級比例、算力承諾與清算優先權。"],"done":"WATCHING，直到有可參與份額和完整條款。"},
+        {"signal":8,"domain":"公開市場","title":"把Qualcomm加入認股權證賬本","why":"600億美元是條件歸屬上限，不是Backlog。","steps":["記錄購買、付款、歸屬股數、行權狀態與攤薄。","按季度追蹤資料中心收入、毛利、集中與現金轉化。"],"done":"監測記錄COMPLETE；沒有交易。"}
+      ]
+    },
+    "ja": {
+      "inLanguage": "ja", "languageSlug": "ja", "title": "デイリー・アクション・フロー、2026年9月9日", "description": "情報順の8行動。証拠資産3件完了、実験2件準備済み、外部証拠待ち3件。", "centralJudgment": "初期株式と調達ワラントを分け、利用不能資本と未証明の自律性を隔離し、project MWを運転ゲートの後ろに置く。", "fieldLine": "8シグナル。3記録完了。全てのupgradeは証拠で決める。",
+      "actions": [
+        {"signal":1,"domain":"フロンティアモデル","title":"Astra配対routing試験を準備する","why":"同一文脈での推論強度変更は再起動費用を下げ得るが、RobinOS成果は未計測。","steps":["四つの代表的repository taskと同じfinish lineを凍結する。","cache診断、test、recovery、時間、総費用、Robin介入を記録する。"],"done":"限定non-production比較のreceiptが出るまでREADY。"},
+        {"signal":2,"domain":"Physical AI","title":"Qwen Drive二場面をoffline再現する","why":"open-loop評価はclosed-loop安全や配備性を証明しない。","steps":["夜間交差点と駐車truckをSFTとRL plannerで実行する。","軌道誤差、整合性、遅延、memory、危険説明を比較する。"],"done":"offline試験はREADY、配備性は未証明。"},
+        {"signal":3,"domain":"暗号資本","title":"Liquid資本を利用不能のまま保つ","why":"598 BTCとchain状態が未解決なら、担保回収は償還回復ではない。","steps":["残存BTC、準備再証明、独立post-mortemを追う。","chain修復とpeg-in、peg-out再開を要求する。"],"done":"settlementとbackingが独立検証されるまでWATCHING。"},
+        {"signal":4,"domain":"決済","title":"Museを実支払いへ接続しない","why":"app accessは限定authority、intent証拠、liability、recoveryを確立しない。","steps":["上限、payee allowlist、intent記録、即時revocationを追う。","receipt、refund、dispute証拠、fraud liabilityを要求する。"],"done":"WATCHING、実口座へ接続しない。"},
+        {"signal":5,"domain":"iamrobin.ai","title":"二時計の戦略投資frameworkを公開する","deepDiveTitle":"注文前の株式","why":"初期株式と調達ワラントは別の段階でcash、power、dilutionを移す。","steps":["四言語Action Itemを公開しGoogle SpaceX canonicalを更新する。","一次資料、AI circular ledger、build receipt、公開検証を接続する。"],"done":"証拠packageとcanonical更新がrelease treeへ入った後COMPLETE。"},
+        {"signal":6,"domain":"AIインフラ","title":"Duane Arnoldを証拠ledgerへrouteする","why":"PPAと連邦融資は融資可能性を上げるが、現在のoperating MWはゼロ。","steps":["contracted、financed、relicensed、refurbished、synchronized、revenueを記録する。","sourceを保ち月次公開reviewをHOLD_RESEARCH_REQUIREDにする。"],"done":"private evidence intakeはCOMPLETE、同期前容量はゼロ。"},
+        {"signal":7,"domain":"未公開市場","title":"Mistralの完全なunderwriting条件を待つ","why":"forecast ARRと評価額にmargin、retention、concentration、compute liability、preferenceがない。","steps":["監査ARR、gross margin、NRR、顧客集中を求める。","primary-secondary mix、compute commitment、liquidation preferenceを求める。"],"done":"参加可能配分と全条件までWATCHING。"},
+        {"signal":8,"domain":"公開株式","title":"Qualcommをwarrant ledgerへ加える","why":"600億ドルは条件付きvest上限でbacklogではない。","steps":["購入、支払い、vest株数、exercise、dilutionを記録する。","data-center売上、margin、concentration、cash conversionを四半期追跡する。"],"done":"monitoring recordはCOMPLETE、取引はしていない。"}
+      ]
+    }
+  }
+}

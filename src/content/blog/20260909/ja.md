@@ -1,5 +1,5 @@
 ---
-archiveStatus: "PIPELINE"
+archiveStatus: "PRESENT"
 title: AI信用が自分の尾を食べるとき
 date: 2026-09-09
 updated: 2026-08-22

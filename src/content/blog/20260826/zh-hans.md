@@ -1,8 +1,8 @@
 ---
 archiveStatus: "PRESENT"
-title: "Google × SpaceX 0.9B → 90B"
+title: "可能性复利：Google的9亿美元SpaceX投资给AI认股权证时代的启示"
 date: 2026-08-26
-updated: 2026-08-22
+updated: 2026-09-09
 section: Ouroboros
 series: Blog
 lane: INVEST
@@ -171,6 +171,17 @@ SpaceX 满足前两项，Alphabet 的资产负债表提供第三项。
 这些证据已经足以把该投资称为非凡。对剩余未知保持精确，会让这堂课更耐用。
 
 ## 让未来自己完成构图
+
+在未来继续构图之前，投资者必须先分清两只时钟。
+
+Alphabet的SpaceX持股，是在市场和未来用途尚未完全清晰时取得的股权。Google先转移现金，接受长期不确定性，并获得基础平台的所有权。Amazon–Qualcomm与Google–Marvell则开始于超大规模客户已经拥有采购权力之后。认股权证随承诺、订单、付款或合格收入归属；客户在购买产品时取得或有股权，供应商在获得需求和验证时接受摊薄。
+
+Qualcomm提交的认股权证给予Amazon最多2,500万股、行权价161.26美元的权利。375万股因初始采购承诺归属，其余取决于商业活动和最高600亿美元的付款上限。这个上限是归属门槛，不是已签Backlog。[Qualcomm 8-K](https://www.sec.gov/Archives/edgar/data/804328/000110465926105718/tm2623289d1_8k.htm)。
+
+Marvell的申报结构给予Google最多58,970,907股、行权价206.58美元的权利。绩效股通过240个、每个5亿美元的合格Custom Products收入档位归属，完整归属门槛相当于1,200亿美元。详细的[Google–Marvell分析](https://iamrobin.ai/ouroboros/202608/20260820/action_item/)把合同、收入、摊薄、毛利和现金转化分开记录。[Marvell 8-K](https://investor.marvell.com/sec-filings/all-sec-filings/content/0001193125-26-356217/d412696d8k.htm)。
+
+共同框架只有五列：时间、议价权、现金、摊薄、已实现经营协同。基础能力打开新的付费表面且所有者仍保持有意义敞口时，早期股权获得信用；采购转化为有利润收入，且增量企业价值超过摊薄与执行成本时，采购认股权证获得信用。两者都能创造战略上行，但证据绝不能共用一只时钟。
+
 
 Google 的 9 亿美元支票并没有只做一件事：等待。
 

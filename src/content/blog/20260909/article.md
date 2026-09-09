@@ -1,5 +1,5 @@
 ---
-archiveStatus: "PIPELINE"
+archiveStatus: "PRESENT"
 title: When AI Credit Eats Its Tail
 date: 2026-09-09
 updated: 2026-08-21

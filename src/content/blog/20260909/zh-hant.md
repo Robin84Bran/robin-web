@@ -1,5 +1,5 @@
 ---
-archiveStatus: "PIPELINE"
+archiveStatus: "PRESENT"
 title: 當 AI 信貸開始吞自己的尾巴
 date: 2026-09-09
 updated: 2026-08-22

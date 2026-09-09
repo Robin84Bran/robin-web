@@ -1,8 +1,8 @@
 ---
 archiveStatus: "PRESENT"
-title: "Google × SpaceX 0.9B → 90B"
+title: "Possibility Compounding: What Google’s $900 Million SpaceX Bet Teaches the AI Warrant Era"
 date: 2026-08-26
-updated: 2026-08-22
+updated: 2026-09-09
 section: Ouroboros
 series: Blog
 lane: INVEST
@@ -168,6 +168,17 @@ Applied to Google × SpaceX, the first four fields look exceptionally strong. Th
 That is already enough to call the investment extraordinary. Precision about the remaining unknowns makes the lesson more durable.
 
 ## Let the Future Compose Itself
+
+Before the future composes itself, the investor must distinguish two clocks.
+
+Alphabet’s SpaceX stake was equity acquired before the market and its future uses were fully legible. Google transferred cash, accepted long-duration uncertainty, and received ownership in a foundational platform. The Amazon–Qualcomm and Google–Marvell arrangements begin after hyperscale customers already possess purchasing power. Their warrants vest through commitments, orders, payments, or qualifying revenue. The customer gains contingent equity while buying products; the supplier gains demand and validation while accepting dilution.
+
+Qualcomm’s filed warrant gives Amazon rights to as many as 25 million shares at $161.26. Some 3.75 million shares vested through initial purchase commitments, while the rest depend on commercial activity and payments that can reach a $60 billion ceiling. That ceiling is a vesting threshold, rather than contracted backlog. [Qualcomm 8-K](https://www.sec.gov/Archives/edgar/data/804328/000110465926105718/tm2623289d1_8k.htm).
+
+Marvell’s filed structure gives Google rights to as many as 58,970,907 shares at $206.58. Its performance shares vest through 240 tranches of $500 million in qualifying Custom Products revenue, implying a $120 billion full-vesting threshold. The detailed [Google–Marvell analysis](https://iamrobin.ai/ouroboros/202608/20260820/action_item/) keeps the contract, revenue, dilution, margin and cash-conversion fields separate. [Marvell 8-K](https://investor.marvell.com/sec-filings/all-sec-filings/content/0001193125-26-356217/d412696d8k.htm).
+
+The common framework uses five columns: time, bargaining power, cash, dilution, and realized operating synergy. Early equity earns credit when a primitive opens another paid surface and the owner retains meaningful exposure. A procurement warrant earns credit when purchases become profitable revenue and incremental enterprise value exceeds dilution and execution cost. Both can create strategic upside. Their evidence should never share a clock.
+
 
 Google’s $900 million check did more than wait.
 

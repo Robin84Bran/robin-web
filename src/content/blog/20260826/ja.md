@@ -1,8 +1,8 @@
 ---
 archiveStatus: "PRESENT"
-title: "Google × SpaceX 0.9B → 90B"
+title: "可能性の複利：Googleの9億ドルSpaceX投資がAIワラント時代に教えること"
 date: 2026-08-26
-updated: 2026-08-22
+updated: 2026-09-09
 section: Ouroboros
 series: Blog
 lane: INVEST
@@ -174,6 +174,17 @@ Google × SpaceX では最初の四項目が極めて強い。Starlink–Cloud �
 十分に並外れた投資と呼べる。残る未知を正確に扱うほど、教訓は長持ちする。
 
 ## 未来に構図を作らせる
+
+未来が構図を続ける前に、投資家は二つの時計を分けなければならない。
+
+AlphabetのSpaceX持分は、市場と将来用途が十分に読めない時点で取得した株式だった。Googleは先に現金を移し、長期不確実性を受け入れ、基礎プラットフォームの所有権を得た。Amazon–QualcommとGoogle–Marvellは、hyperscale顧客が既に調達力を持った後から始まる。ワラントはcommitment、order、payment、qualifying revenueに応じてvestする。顧客は製品を買いながら条件付き株式を得て、供給者は需要と検証を得ながら希薄化を受け入れる。
+
+Qualcommの提出書類はAmazonへ最大2,500万株、行使価格161.26ドルの権利を与える。375万株は初期購入commitmentでvestし、残りは商業活動と最大600億ドルの支払い上限に依存する。この上限はvest条件であり、契約済みbacklogではない。[Qualcomm 8-K](https://www.sec.gov/Archives/edgar/data/804328/000110465926105718/tm2623289d1_8k.htm)。
+
+Marvellの提出構造はGoogleへ最大58,970,907株、行使価格206.58ドルの権利を与える。performance株は5億ドルのCustom Products適格売上を一単位とする240 trancheでvestし、完全vestには1,200億ドルの適格売上が必要になる。詳細な[Google–Marvell分析](https://iamrobin.ai/ouroboros/202608/20260820/action_item/)は契約、売上、希薄化、margin、cash conversionを分離している。[Marvell 8-K](https://investor.marvell.com/sec-filings/all-sec-filings/content/0001193125-26-356217/d412696d8k.htm)。
+
+共通frameworkは時間、交渉力、現金、希薄化、実現済みoperating synergyの五列を使う。基礎能力が新たな有料面を開き、有意味な所有権が残る時、初期株式は信用を得る。購入が利益ある売上へ変わり、増分enterprise valueが希薄化と実行費用を超える時、調達ワラントは信用を得る。双方とも戦略的上昇余地を作り得るが、証拠を同じ時計で読んではいけない。
+
 
 Google の 9 億ドルは、ただ待ったのではない。
 

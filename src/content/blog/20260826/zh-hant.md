@@ -1,8 +1,8 @@
 ---
 archiveStatus: "PRESENT"
-title: "Google × SpaceX 0.9B → 90B"
+title: "可能性複利：Google的9億美元SpaceX投資給AI認股權證時代的啟示"
 date: 2026-08-26
-updated: 2026-08-22
+updated: 2026-09-09
 section: Ouroboros
 series: Blog
 lane: INVEST
@@ -172,6 +172,17 @@ SpaceX 滿足前兩項，Alphabet 的資產負債表提供第三項。
 
 ## 讓未來自己完成構圖
 
+在未來繼續構圖之前，投資者必須先分清兩隻時鐘。
+
+Alphabet的SpaceX持股，是在市場和未來用途尚未完全清晰時取得的股權。Google先轉移現金，接受長期不確定性，並獲得基礎平臺的所有權。Amazon–Qualcomm與Google–Marvell則開始於超大規模客戶已經擁有采購權力之後。認股權證隨承諾、訂單、付款或合格收入歸屬；客戶在購買產品時取得或有股權，供應商在獲得需求和驗證時接受攤薄。
+
+Qualcomm提交的認股權證給予Amazon最多2,500萬股、行權價161.26美元的權利。375萬股因初始采購承諾歸屬，其餘取決於商業活動和最高600億美元的付款上限。這個上限是歸屬門檻，不是已簽Backlog。[Qualcomm 8-K](https://www.sec.gov/Archives/edgar/data/804328/000110465926105718/tm2623289d1_8k.htm)。
+
+Marvell的申報結構給予Google最多58,970,907股、行權價206.58美元的權利。績效股通過240個、每個5億美元的合格Custom Products收入檔位歸屬，完整歸屬門檻相當於1,200億美元。詳細的[Google–Marvell分析](https://iamrobin.ai/ouroboros/202608/20260820/action_item/)把合同、收入、攤薄、毛利和現金轉化分開記錄。[Marvell 8-K](https://investor.marvell.com/sec-filings/all-sec-filings/content/0001193125-26-356217/d412696d8k.htm)。
+
+共同框架只有五列：時間、議價權、現金、攤薄、已實現經營協同。基礎能力打開新的付費表面且所有者仍保持有意義敞口時，早期股權獲得信用；采購轉化為有利潤收入，且增量企業價值超過攤薄與執行成本時，采購認股權證獲得信用。兩者都能創造戰略上行，但證據絕不能共用一隻時鐘。
+
+
 Google 的 9 億美元支票並沒有只做一件事：等待。
 
 它支持一個正在降低基礎能力成本的團隊，穿越了這項能力變得可靠所需的年月；可重複使用發射創造衛星，衛星創造連接，連接再與雲基礎設施相遇，持倉也隨之增值。如今 AI 又圍繞電力與軌道計算打開一片新的可能空間。
@@ -195,4 +206,3 @@ Google 的 9 億美元支票並沒有只做一件事：等待。
 **關鍵詞：** Google · Alphabet · SpaceX · possibility compounding · strategic investment · Starlink · Google Cloud · Project Suncatcher · permanent capital · orbital compute
 
 **標籤：** #Alphabet #Google #SpaceX #CapitalAllocation #AIInfrastructure #Starlink #ProjectSuncatcher #LongTermInvesting #Technology
-

@@ -216,13 +216,17 @@ const meaningSchemas = isMeaningDirectory
                   ) : (
                     <p class="ouroboros-shelf__empty">The first present story has not arrived yet.</p>
                   )}
-                  {pipeline.length > 0 && (
-                    <details class="binary-pipeline">
-                      <summary>
-                        <span>Pipeline</span>
-                        <small>{pipeline.length} future {pipeline.length === 1 ? 'article' : 'articles'}</small>
-                        <span class="binary-pipeline__toggle" aria-hidden="true">+</span>
-                      </summary>
+                  <details class="binary-pipeline">
+                    <summary>
+                      <span>Pipeline</span>
+                      <small>
+                        {pipeline.length > 0
+                          ? `${pipeline.length} future ${pipeline.length === 1 ? 'article' : 'articles'}`
+                          : 'next selection pending'}
+                      </small>
+                      <span class="binary-pipeline__toggle" aria-hidden="true">+</span>
+                    </summary>
+                    {pipeline.length > 0 ? (
                       <nav class="ouroboros-shelf__list" aria-label={`${lane.name} pipeline`}>
                         {pipeline.map((article) => {
                           const date = compactDate(article.data.date);
@@ -235,8 +239,10 @@ const meaningSchemas = isMeaningDirectory
                           );
                         })}
                       </nav>
-                    </details>
-                  )}
+                    ) : (
+                      <p class="ouroboros-shelf__empty">The next selection has not been made yet.</p>
+                    )}
+                  </details>
                 </section>
               );
             })}
