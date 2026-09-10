@@ -1,0 +1,452 @@
+:root {
+  --sky-top: #f7fbff;
+  --sky-bottom: #d9efff;
+  --surface: rgba(255, 255, 255, 0.9);
+  --surface-strong: rgba(255, 255, 255, 0.97);
+  --border: rgba(42, 87, 138, 0.12);
+  --text-main: #16415f;
+  --text-soft: #4d6e87;
+  --accent: #24a8ff;
+  --accent-deep: #12639c;
+  --accent-warm: #ff9f43;
+  --accent-mint: #2fc992;
+  --danger: #ff5d73;
+  --shadow: 0 20px 60px rgba(51, 99, 138, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background:
+    radial-gradient(circle at top left, rgba(255, 213, 148, 0.5), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(59, 201, 160, 0.22), transparent 32%),
+    linear-gradient(180deg, var(--sky-top), var(--sky-bottom));
+  color: var(--text-main);
+  font-family: "Avenir Next", "Trebuchet MS", "Segoe UI", sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.app-shell {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#gameCanvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.panel {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(1.02);
+  transition: opacity 220ms ease, transform 280ms ease;
+}
+
+.panel.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+}
+
+.card {
+  width: min(920px, 100%);
+  background: linear-gradient(180deg, var(--surface-strong), rgba(255, 255, 255, 0.84));
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
+}
+
+.hero-card {
+  padding: 36px 38px 32px;
+  background:
+    radial-gradient(circle at top right, rgba(36, 168, 255, 0.16), transparent 30%),
+    radial-gradient(circle at bottom left, rgba(255, 159, 67, 0.16), transparent 28%),
+    linear-gradient(180deg, var(--surface-strong), rgba(255, 255, 255, 0.88));
+}
+
+.wide-card {
+  padding: 28px;
+}
+
+.modal-card {
+  max-width: 640px;
+  padding: 30px 32px;
+  text-align: center;
+}
+
+.challenge-card {
+  max-width: 720px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(36, 168, 255, 0.14);
+  color: var(--accent-deep);
+  font-size: 0.84rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+h1,
+h2 {
+  margin: 14px 0 10px;
+  font-family: "Arial Rounded MT Bold", "Trebuchet MS", sans-serif;
+  line-height: 0.95;
+}
+
+h1 {
+  font-size: clamp(3.1rem, 9vw, 5rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.lead,
+.card p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 1.06rem;
+  line-height: 1.55;
+}
+
+.controls-card {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 22px;
+  padding: 16px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(22, 65, 95, 0.08);
+}
+
+.controls-card div {
+  padding: 10px 12px;
+  border-radius: 18px;
+  background: rgba(240, 248, 255, 0.95);
+}
+
+.controls-card span {
+  font-weight: 800;
+  color: var(--accent-deep);
+}
+
+.toggle-row,
+.hero-actions,
+.modal-actions,
+.panel-header,
+.hud,
+.hud-actions {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-row {
+  gap: 14px;
+  margin-top: 22px;
+  flex-wrap: wrap;
+}
+
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(22, 65, 95, 0.08);
+  font-weight: 800;
+}
+
+.toggle input {
+  width: 18px;
+  height: 18px;
+}
+
+.hero-actions,
+.modal-actions {
+  gap: 14px;
+  margin-top: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.panel-header {
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.primary-btn,
+.secondary-btn,
+.small-btn,
+.choice-btn {
+  border: 0;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: transform 140ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover,
+.small-btn:hover,
+.choice-btn:hover {
+  transform: translateY(-2px);
+}
+
+.primary-btn {
+  padding: 14px 22px;
+  background: linear-gradient(180deg, var(--accent), #1f86d3);
+  color: white;
+  box-shadow: 0 14px 28px rgba(36, 168, 255, 0.28);
+  font-weight: 800;
+}
+
+.secondary-btn {
+  padding: 14px 22px;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--accent-deep);
+  border: 1px solid rgba(18, 99, 156, 0.12);
+  font-weight: 800;
+}
+
+.secondary-btn.compact {
+  padding: 12px 16px;
+}
+
+.small-btn {
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--accent-deep);
+  font-weight: 800;
+}
+
+.small-btn.alt {
+  background: rgba(255, 244, 228, 0.96);
+  color: #9f5a18;
+}
+
+.level-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.level-card {
+  padding: 18px;
+  border-radius: 24px;
+  border: 1px solid rgba(22, 65, 95, 0.08);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(245, 251, 255, 0.92));
+  text-align: left;
+}
+
+.level-card.locked {
+  opacity: 0.56;
+}
+
+.level-card h3 {
+  margin: 10px 0 8px;
+  font-family: "Arial Rounded MT Bold", "Trebuchet MS", sans-serif;
+  font-size: 1.6rem;
+}
+
+.level-meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.chip {
+  display: inline-flex;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(36, 168, 255, 0.12);
+  color: var(--accent-deep);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.level-card p {
+  min-height: 66px;
+  margin-bottom: 14px;
+}
+
+.hud {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  right: 18px;
+  justify-content: space-between;
+  gap: 12px;
+  z-index: 3;
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.hud.hidden,
+.toast.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-8px);
+}
+
+.hud-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(22, 65, 95, 0.08);
+  box-shadow: 0 10px 20px rgba(23, 70, 106, 0.1);
+  font-weight: 800;
+}
+
+.hud-actions {
+  gap: 10px;
+}
+
+.toast {
+  position: absolute;
+  left: 50%;
+  bottom: 28px;
+  transform: translate(-50%, 0);
+  padding: 14px 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--accent-deep);
+  box-shadow: 0 18px 34px rgba(23, 70, 106, 0.12);
+  border: 1px solid rgba(22, 65, 95, 0.08);
+  font-weight: 800;
+  z-index: 4;
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.choice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.choice-btn {
+  padding: 14px 16px;
+  background: rgba(244, 251, 255, 0.96);
+  color: var(--text-main);
+  border: 1px solid rgba(22, 65, 95, 0.1);
+  text-align: left;
+  font-weight: 800;
+}
+
+.choice-btn:hover {
+  background: rgba(36, 168, 255, 0.1);
+}
+
+.challenge-note {
+  margin-top: 18px;
+  font-size: 0.96rem;
+}
+
+.result-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.stat-box {
+  padding: 16px 12px;
+  border-radius: 20px;
+  background: rgba(243, 251, 255, 0.96);
+  border: 1px solid rgba(22, 65, 95, 0.08);
+}
+
+.stat-box span {
+  display: block;
+  font-size: 0.86rem;
+  text-transform: uppercase;
+  color: var(--text-soft);
+  letter-spacing: 0.04em;
+}
+
+.stat-box strong {
+  display: block;
+  margin-top: 6px;
+  font-size: 1.5rem;
+  font-family: "Arial Rounded MT Bold", "Trebuchet MS", sans-serif;
+}
+
+@media (max-width: 960px) {
+  .controls-card,
+  .choice-grid,
+  .result-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .hud {
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 720px) {
+  .panel {
+    padding: 14px;
+  }
+
+  .hero-card,
+  .wide-card,
+  .modal-card {
+    padding: 22px;
+  }
+
+  h1 {
+    font-size: 2.9rem;
+  }
+
+  .panel-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hud-pill {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hud-actions {
+    width: 100%;
+    justify-content: center;
+  }
+}

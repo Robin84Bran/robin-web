@@ -93,8 +93,8 @@ const meaningSchemas = isMeaningDirectory
         '@context': 'https://schema.org',
         '@type': 'CollectionPage',
         '@id': 'https://iamrobin.ai/meaning/#diary',
-        name: 'Meaning · Diary — Robin Xie',
-        description: 'Dated notes by Robin Xie, preserved in her original words.',
+        name: 'Meaning · Diary & Bran Lab — Robin Xie',
+        description: 'Dated notes by Robin Xie and Bran Lab, a curiosity arcade with nine playful 3D mini-games.',
         url: 'https://iamrobin.ai/meaning/',
         inLanguage: 'und',
         author: { '@id': 'https://iamrobin.ai/#person' },
@@ -115,7 +115,7 @@ const meaningSchemas = isMeaningDirectory
     : isBinaryDirectory
       ? 'Build, Invest, and Joy essays by Robin Xie.'
     : isMeaningDirectory
-      ? 'Dated notes by Robin Xie, preserved in her original words.'
+      ? 'Dated notes by Robin Xie and Bran Lab, a curiosity arcade with nine playful 3D mini-games.'
     : `${entry.word}: a living project directory inside the I AM ROBIN identity map.`}
   {path}
   noindex={!isOuroborosDirectory && !isBinaryDirectory && !isMeaningDirectory}
@@ -249,6 +249,7 @@ const meaningSchemas = isMeaningDirectory
           </div>
         </section>
       ) : isMeaningDirectory ? (
+        <>
         <section class="diary-library" id="diary" aria-labelledby="diary-library-title">
           <div class="diary-library__heading">
             <span>01</span>
@@ -272,6 +273,21 @@ const meaningSchemas = isMeaningDirectory
             <p class="diary-library__empty">A note will appear when it asks to be kept.</p>
           )}
         </section>
+        <section class="diary-library" id="bran-lab" aria-labelledby="bran-lab-title">
+          <div class="diary-library__heading">
+            <span>02</span>
+            <h2 id="bran-lab-title">Bran_lab</h2>
+            <em>for the joy of “what if?”</em>
+          </div>
+          <nav aria-label="Bran Lab arcade">
+            <a href="/meaning/Bran_lab/">
+              <small>9 mini-games</small>
+              <strong>Build, explore, race, and discover math in 3D</strong>
+              <span aria-hidden="true">→</span>
+            </a>
+          </nav>
+        </section>
+        </>
       ) : isPressDirectory ? (
         <section class="press-directory" aria-labelledby="press-directory-title">
           <h2 id="press-directory-title">Press</h2>

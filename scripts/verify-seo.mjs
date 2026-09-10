@@ -20,6 +20,8 @@ const indexableRoutes = new Set([
   '/intelligence/aidc101/', '/intelligence/aidc101/101-1/',
   '/intelligence/supply-chain-map/', '/intelligence/swarm/',
 ]);
+const arcadeRoutes = ["/meaning/Bran_lab/", "/meaning/Bran_lab/SuperRun/", "/meaning/Bran_lab/GeoDash/", "/meaning/Bran_lab/PacMan/", "/meaning/Bran_lab/BlockLab/", "/meaning/Bran_lab/WonderTrail/", "/meaning/Bran_lab/KartLab/", "/meaning/Bran_lab/CloudMunch/", "/meaning/Bran_lab/BounceTrials/", "/meaning/Bran_lab/StarboundMath/"];
+for (const route of arcadeRoutes) indexableRoutes.add(route);
 const identityFamilies = [
   {
     en: '/',
@@ -110,7 +112,9 @@ if (existsSync(dist)) {
   const blogPublications = [...blogRoutes, ...blogTranslationRoutes];
   const publicationRoutes = [...articleRoutes, ...actionFlowPublications, ...blogPublications];
   for (const route of [...publicationRoutes, ...diaryRoutes]) indexableRoutes.add(route);
-  check(routes.size === 33 + publicationRoutes.length + diaryRoutes.length, `expected ${33 + publicationRoutes.length + diaryRoutes.length} HTML routes, found ${routes.size}.`);
+  check(routes.size === 33 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length, `expected ${33 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length} HTML routes, found ${routes.size}.`);
+
+  for (const route of arcadeRoutes) check(routes.has(route), `missing arcade route: ${route}`);
 
   for (const [route, file] of routes) {
     const html = readFileSync(file, 'utf8');

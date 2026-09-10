@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BranLab Learning Pac-Man</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="../shared/arcade.css">
+
+<link rel="canonical" href="https://iamrobin.ai/meaning/Bran_lab/PacMan/">
+<link rel="describedby" href="https://iamrobin.ai/llms.txt" type="text/plain">
+<meta name="description" content="Play BranLab Learning Pac-Man in Bran Lab: a friendly 3D mini-game for curious minds, with keyboard and touch controls.">
+<meta name="robots" content="index, follow">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BranLab Learning Pac-Man">
+<meta name="twitter:description" content="Play BranLab Learning Pac-Man in Bran Lab: a friendly 3D mini-game for curious minds, with keyboard and touch controls.">
+<meta name="twitter:image" content="https://iamrobin.ai/meaning/Bran_lab/shared/previews/StarboundMath.png">
+<meta property="og:url" content="https://iamrobin.ai/meaning/Bran_lab/PacMan/">
+<meta property="og:title" content="BranLab Learning Pac-Man">
+<meta property="og:description" content="Play BranLab Learning Pac-Man in Bran Lab: a friendly 3D mini-game for curious minds, with keyboard and touch controls.">
+<meta property="og:image" content="https://iamrobin.ai/meaning/Bran_lab/shared/previews/StarboundMath.png">
+<meta property="og:image:alt" content="PacMan — a colorful 3D curiosity arcade">
+<meta property="og:type" content="website">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoGame","name":"BranLab Learning Pac-Man","url":"https://iamrobin.ai/meaning/Bran_lab/PacMan/","description":"Play BranLab Learning Pac-Man in Bran Lab: a friendly 3D mini-game for curious minds, with keyboard and touch controls.","inLanguage":"en","gamePlatform":"Web browser","playMode":"SinglePlayer","isAccessibleForFree":true}</script>
+</head>
+<body data-game="maze">
+  <div class="page-shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">03 / Pac-Man · Maze Explorers</p>
+        <h1>A-maze yourself.</h1>
+        <p class="hero-copy">Follow the golden trail. Grab a brain boost. Turn the tables on the ghosts. Nine 3D mazes, one curious explorer.</p>
+      </div>
+      <div class="hero-card">
+        <div class="hero-chip">9 worlds</div>
+        <div class="hero-chip">15 hearts · room to learn</div>
+        <div class="hero-chip">9 brain boosts per maze</div>
+      </div>
+    </header>
+
+    <section class="toolbar">
+      <label class="toggle-card" for="parentModeToggle">
+        <span class="toggle-copy">
+          <strong>Parent Mode</strong>
+          <small>Show answer keys, jump to any level, and skip quiz gates.</small>
+        </span>
+        <span class="toggle">
+          <input id="parentModeToggle" type="checkbox" aria-label="Toggle parent mode">
+          <span class="slider"></span>
+        </span>
+      </label>
+
+      <div class="toolbar-actions">
+        <label class="speed-card" for="themeToggle">
+          <span>Light Theme</span>
+          <span class="toggle">
+            <input id="themeToggle" type="checkbox" aria-label="Toggle light theme">
+            <span class="slider"></span>
+          </span>
+        </label>
+        <label class="speed-card" for="speedSelect">
+          <span>Speed</span>
+          <select id="speedSelect" aria-label="Choose speed level">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+        </label>
+        <button id="startButton" class="primary-button">Start Current Level</button>
+        <button id="pauseButton" class="secondary-button">Pause</button>
+        <button id="restartButton" class="secondary-button">Restart Level</button>
+      </div>
+    </section>
+
+    <main class="layout">
+      <section class="panel level-panel">
+        <div class="panel-header">
+          <h2>Level Road</h2>
+          <p>Each maze gets a little trickier.</p>
+        </div>
+        <div id="levelRoad" class="level-road"></div>
+        <div id="difficultyCard" class="difficulty-card"></div>
+      </section>
+
+      <section class="panel board-panel">
+        <div class="board-wrap">
+          <canvas id="gameCanvas" width="525" height="525" aria-label="Pac-Man game board"></canvas>
+          <div id="banner" class="banner" aria-live="polite"></div>
+        </div>
+
+        <div class="control-pad" aria-label="Touch controls">
+          <button data-direction="up" class="control-button">Up</button>
+          <div class="control-row">
+            <button data-direction="left" class="control-button">Left</button>
+            <button data-direction="down" class="control-button">Down</button>
+            <button data-direction="right" class="control-button">Right</button>
+          </div>
+        </div>
+      </section>
+
+      <aside class="panel learn-panel">
+        <div class="panel-header">
+          <h2>Mission Board</h2>
+          <p>Collect pellets, watch your hearts, and solve the quiz gates.</p>
+        </div>
+
+        <div class="score-strip">
+          <div class="score-box">
+            <span class="score-label">Level</span>
+            <strong id="levelLabel">1</strong>
+          </div>
+          <div class="score-box">
+            <span class="score-label">Score</span>
+            <strong id="scoreLabel">0</strong>
+          </div>
+          <div class="score-box">
+            <span class="score-label">Pellets</span>
+            <strong id="pelletLabel">0/0</strong>
+          </div>
+        </div>
+
+        <section class="status-card">
+          <div class="status-header">
+            <h3>Fifteen Hearts</h3>
+            <span id="powerLabel" class="power-label">Power-Up Ready</span>
+          </div>
+          <div id="hearts" class="hearts" aria-label="Hearts"></div>
+        </section>
+
+        <section class="status-card">
+          <div class="status-header">
+            <h3>Question Trail</h3>
+            <span id="questionSummary">0 / 9 solved</span>
+          </div>
+          <div id="questionTracker" class="question-tracker"></div>
+        </section>
+
+        <section id="parentPanel" class="status-card parent-panel" hidden>
+          <div class="status-header">
+            <h3>Parent Panel</h3>
+            <span class="parent-badge">Answers Visible</span>
+          </div>
+          <div id="answerKey" class="answer-key"></div>
+        </section>
+
+        <section class="tip-card">
+          <h3>How To Play</h3>
+          <p>Use arrow keys, WASD, or the touch pad. Press P or Escape to pause.</p>
+          <p>Green crystals pause the maze for a quick question. A wrong answer gets a helpful retry.</p>
+          <p>Answer correctly to turn that big dot into a power-up and chomp ghosts.</p>
+        </section>
+      </aside>
+    </main>
+  </div>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <div class="modal-topper" id="modalTag">Ready</div>
+      <h2 id="modalTitle">Welcome</h2>
+      <p id="modalBody"></p>
+      <div id="modalChoices" class="modal-choices"></div>
+      <div class="modal-actions">
+        <button id="modalPrimary" class="primary-button">Start</button>
+        <button id="modalSecondary" class="secondary-button hidden">Maybe Later</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../shared/vendor/three.min.js"></script>
+  <script src="../shared/arcade-3d.js"></script>
+  <script src="./script.js"></script>
+  <script src="../shared/arcade-ui.js"></script>
+</body>
+</html>

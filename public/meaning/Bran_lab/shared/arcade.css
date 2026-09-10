@@ -1,0 +1,207 @@
+/* Shared arcade shell; each game keeps its own level and gameplay styles. */
+:root { --ink:#173b45; --muted:#526e75; --accent:#eaf788; --line:rgba(33,72,75,.15); }
+body { font-family: 'Avenir Next', 'Trebuchet MS', system-ui, sans-serif; }
+button, a, select, input { -webkit-tap-highlight-color:transparent; }
+button { cursor:pointer; }
+button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible { outline:3px solid #df9140; outline-offset:4px; }
+.arcade-nav { height:76px; padding:0 4%; display:flex; justify-content:space-between; align-items:center; position:relative; z-index:10; color:var(--ink); background:#f8fbf2; border-bottom:1px solid var(--line); }
+.brand { display:flex; gap:5px; align-items:center; color:inherit; font-size:18px; font-weight:900; letter-spacing:1.5px; text-decoration:none; }
+.brand>span:last-child { font-weight:400; }
+.brand-mark { display:grid; place-items:center; height:31px; width:31px; background:#224c4f; color:#eafa98; border-radius:9px; margin-right:8px; transform:rotate(-7deg); }
+.nav-games { display:flex; gap:8px; }
+.nav-games a { padding:10px 18px; text-decoration:none; border-radius:30px; color:inherit; font-size:13px; font-weight:700; }
+.nav-games a:hover,.nav-games a[aria-current] { background:#e7eddf; }
+.lab-tag { font-size:10px; font-weight:800; letter-spacing:1.8px; }
+body[data-game="dash"] { --ink:#e5ecfa; --muted:#bbc7dc; --line:#3b4d67; }
+body[data-game="dash"] .arcade-nav { background:#111a2c; }
+body[data-game="dash"] .nav-games a[aria-current],body[data-game="dash"] .nav-games a:hover { background:#293747; }
+.app-shell { height:calc(100dvh - 76px); }
+.scene-3d { position:absolute; inset:0; width:100%; height:100%; display:block; }
+.panel { z-index:3; padding:32px 5%; transform:none; transition:opacity 160ms; }
+.panel:not(.active) { visibility:hidden; }
+.panel.active { visibility:visible; }
+#startScreen { justify-content:flex-start; align-items:center; }
+.card { border-radius:22px; color:var(--ink); }
+#startScreen .hero-card { width:min(530px,45%); padding:0; background:none; box-shadow:none; border:0; backdrop-filter:none; }
+.eyebrow { background:transparent; color:var(--ink); padding:0; font-size:11px; letter-spacing:2px; margin-bottom:18px; }
+h1 { font-size:clamp(40px,5.8vw,82px); line-height:.99; letter-spacing:-3px; margin:0 0 24px; font-weight:900; }
+.title-accent { color:#368679; }
+body[data-game="dash"] .title-accent { color:#86e7db; }
+.lead { color:var(--muted); font-size:16px; line-height:1.7; max-width:420px; margin:0 0 22px; }
+.controls-card { display:flex; flex-wrap:wrap; padding:0; gap:12px; background:transparent; box-shadow:none; border:0; font-size:12px; }
+.controls-card>div { padding:9px 13px; background:#eff8ef; border:1px solid #c7dbd2; border-radius:9px; color:#234b4d; }
+body[data-game="dash"] .controls-card>div { background:#23334f; border-color:#394865; color:#d5e7ee; }
+.toggle-row { margin:18px 0; gap:20px; font-size:12px; color:var(--muted); }
+.toggle { color:inherit; }
+.hero-actions { display:flex; gap:12px; margin-top:22px; }
+.primary-btn,.primary-button { background:#e4f18b; color:#203c3b; border:1px solid #bbc95e; border-bottom:4px solid #b7c561; box-shadow:none; border-radius:12px; font-weight:800; padding:16px 24px; }
+.primary-btn:hover,.primary-button:hover { background:#f0faa7; transform:translateY(-2px); }
+.secondary-btn,.secondary-button { background:#f0f6ec; color:#2b5153; border:1px solid #bdd3c9; box-shadow:none; border-radius:12px; padding:16px 22px; }
+.small-btn { color:#203e43; background:#f0f8ee; border-radius:9px; }
+.arcade-options { display:flex; flex-wrap:wrap; align-items:center; gap:16px; margin-top:22px; color:var(--ink); }
+.mode-field { display:flex; flex-direction:column; gap:7px; font-size:9px; letter-spacing:1.4px; font-weight:800; }
+.mode-field select { color:var(--ink); border:1px solid var(--line); background:transparent; border-radius:8px; padding:10px; font-size:12px; letter-spacing:0; max-width:240px; }
+.mode-field option { color:#173b45; background:#fff; }
+.color-field { display:flex; margin:0; padding:0; border:0; gap:7px; }
+.color-field legend { font-size:9px; letter-spacing:1.4px; font-weight:800; margin-bottom:8px; }
+.color-field label { display:grid; width:28px; height:28px; place-items:center; border-radius:50%; background:var(--swatch); cursor:pointer; }
+.color-field input { appearance:none; width:20px; height:20px; border:2px solid transparent; border-radius:50%; margin:0; cursor:pointer; }
+.color-field input:checked { border-color:#173b45; box-shadow:0 0 0 2px white; }
+.motion-field { font-size:11px; display:flex; align-items:center; gap:5px; }
+.hud { z-index:2; top:18px; left:3%; right:3%; gap:10px; }
+.hud-pill { background:#f3f9efed; color:#244c4f; border:1px solid #c6dace; box-shadow:0 5px 18px #102c4212; border-radius:12px; padding:12px 18px; font-size:12px; }
+.hud-pill span:first-child { font-weight:900; }
+.hud.hidden { display:none; }
+.play-controls { display:none; position:absolute; bottom:22px; left:3%; right:3%; justify-content:space-between; align-items:end; z-index:2; pointer-events:none; }
+.in-game .play-controls { display:flex; }
+.move-buttons,.action-buttons { display:flex; gap:9px; pointer-events:auto; }
+.play-controls button { border-radius:18px; width:64px; height:64px; border:1px solid #fff8; border-bottom:4px solid #13293c40; background:#f5fbf0e6; color:#23464a; font-size:28px; touch-action:none; user-select:none; }
+.play-controls .jump-control { background:#e7f393; width:80px; }
+.play-controls .blast-control { background:#a4e5e3; width:80px; }
+.play-controls button.pressed { transform:translateY(3px); border-bottom-width:1px; }
+.play-controls small { display:block; font-size:9px; letter-spacing:1px; }
+.key-hint { color:var(--ink); font-size:10px; letter-spacing:.4px; background:#f4faeedb; padding:10px 15px; border-radius:20px; }
+body[data-game="dash"] .key-hint { background:#1f304ddd; }
+.key-hint i { padding:0 6px; font-style:normal; opacity:.4; }
+.run-mission { position:absolute; bottom:104px; left:3%; display:none; gap:12px; align-items:center; color:var(--ink); background:#f5faeeed; border:1px solid #ffffff88; border-radius:14px; padding:12px 17px; z-index:1; max-width:330px; }
+body[data-game="dash"] .run-mission { background:#203451ed; }
+.in-game .run-mission { display:flex; }
+.mission-icon { font-size:27px; color:#b19c2d; }
+.run-mission small { display:block; font-size:8px; letter-spacing:1.8px; margin-bottom:4px; }
+.run-mission strong { font-size:11px; font-weight:600; }
+.mission-track { height:3px; background:#284b5120; margin-top:9px; border-radius:3px; overflow:hidden; }
+.mission-track i { display:block; height:100%; width:0; background:#438c79; transition:width .2s; }
+.run-mission { top:88px; bottom:auto; }
+#startScreen { background:linear-gradient(90deg,#d9eee6ed 0%,#d9eee6b5 30%,transparent 58%); }
+body[data-game="dash"] #startScreen { background:linear-gradient(90deg,#111a39f0 0%,#111a39b5 30%,transparent 60%); }
+.toast { top:102px; bottom:auto; z-index:5; background:#214649; color:#fff; font-size:13px; max-width:min(85%,520px); }
+.wide-card,.modal-card { max-height:calc(100dvh - 130px); overflow:auto; background:#f5faef; color:#264c4f; }
+.wide-card .eyebrow,.modal-card .eyebrow { color:#46796f; }
+.modal-card h2 { font-size:32px; letter-spacing:-1px; }
+.choice-btn { background:#fff; color:#244a4b; min-height:60px; border:1px solid #adc8be; border-bottom:3px solid #adc8be; border-radius:12px; }
+.choice-btn:hover { background:#eaf4d4; }
+.choice-btn:disabled { opacity:.45; }
+.level-grid { grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); }
+.level-card { box-shadow:none; background:#fff; color:#244b4c; border:1px solid #c9dacf; border-radius:14px; }
+.calm *, .calm *::before, .calm *::after { animation:none !important; transition:none !important; }
+body[data-game="maze"] { background:#f1f5eb; --text-main:#24464b; --text-soft:#557173; --panel:#ffffffb8; --panel-border:#ccddd4; --shadow:none; --accent-yellow:#6e692a; --accent-sky:#267c8f; }
+body[data-game="maze"] h1,body[data-game="maze"] h2,body[data-game="maze"] h3 { font-family:inherit; }
+body[data-game="maze"] .page-shell { width:min(1500px,94%); margin:28px auto; }
+body[data-game="maze"] .hero { align-items:center; margin-bottom:22px; }
+body[data-game="maze"] h1 { font-size:44px; letter-spacing:-2px; line-height:1.1; margin:0; }
+body[data-game="maze"] .hero-copy { max-width:590px; font-size:13px; margin-top:9px; }
+body[data-game="maze"] .hero-card { display:flex; min-width:0; gap:8px; }
+body[data-game="maze"] .hero-chip { padding:10px 12px; background:#e2eadc; font-size:11px; border-radius:9px; }
+body[data-game="maze"] .toolbar { padding:12px 18px; margin-bottom:20px; border-radius:16px; gap:12px; }
+body[data-game="maze"] .toggle-copy small { display:none; }
+body[data-game="maze"] .toolbar-actions { gap:8px; flex-wrap:wrap; }
+body[data-game="maze"] .toolbar button { padding:10px 14px; font-size:12px; }
+body[data-game="maze"] .arcade-options { margin:0; }
+body[data-game="maze"] .speed-card { font-size:12px; padding:8px; background:#f0f5ec; }
+body[data-game="maze"] .layout { grid-template-columns:190px minmax(360px,1fr) 250px; align-items:start; gap:18px; }
+body[data-game="maze"] .panel { position:static; padding:18px; visibility:visible; border-radius:16px; }
+body[data-game="maze"] .board-panel { padding:0; overflow:hidden; }
+body[data-game="maze"] .board-wrap { position:relative; width:100%; border:0; border-radius:16px 16px 0 0; overflow:hidden; background:#131f39; }
+body[data-game="maze"] canvas { width:100%; height:auto; display:block; max-width:none; }
+body[data-game="maze"] .scene-3d { width:100%; height:100%; }
+body[data-game="maze"] .control-pad { margin:0; padding:13px; display:flex; justify-content:center; align-items:center; gap:8px; }
+body[data-game="maze"] .control-row { gap:8px; }
+body[data-game="maze"] .control-button { width:58px; height:44px; border-radius:10px; background:#dfe9d7; color:#325859; touch-action:manipulation; font-size:12px; }
+body[data-game="maze"] .level-road { gap:8px; }
+body[data-game="maze"] .level-button { padding:10px; border-radius:10px; }
+body[data-game="maze"] .score-strip { gap:5px; grid-template-columns:repeat(3,1fr); }
+body[data-game="maze"] .score-box { padding:10px 3px; background:#e8efdf; border-radius:10px; }
+body[data-game="maze"] .score-box strong { font-size:22px; }
+body[data-game="maze"] .status-card,body[data-game="maze"] .tip-card { padding:12px; border:1px solid #d9e4d4; border-radius:12px; background:#f7faf2; }
+body[data-game="maze"] .panel-header h2 { font-size:16px; }
+body[data-game="maze"] .panel-header p,body[data-game="maze"] .tip-card p { font-size:12px; line-height:1.6; }
+body[data-game="maze"] .status-header h3 { font-size:13px; }
+body[data-game="maze"] .modal { z-index:30; background:#142d45aa; backdrop-filter:blur(6px); }
+body[data-game="maze"] .modal-card { border:1px solid #d7e9ce; border-radius:22px; }
+body[data-game="maze"] .modal-topper { color:#3e7465; background:#dfedca; }
+body[data-game="maze"] .modal-card p { color:#496b6c; }
+body[data-game="maze"] .choice-button { background:#fff; color:#264b4d; border:1px solid #b8cec5; }
+body[data-game="maze"] .layout>* { min-width:0; }
+body[data-game="maze"] .board-wrap { padding:0; }
+body[data-game="maze"] .level-button { font-size:11px; gap:5px; }
+body[data-game="maze"] .level-button small,body[data-game="maze"] .difficulty-card { display:none; }
+body[data-game="maze"] .question-tracker { max-height:290px; overflow:auto; }
+body[data-game="maze"] .question-card { padding:9px; font-size:11px; }
+body[data-game="maze"] .banner { color:#f1fff6; font-size:12px; }
+body[data-game="maze"] select { color:#234949; background:#f6faee; }
+body[data-game="maze"] .toggle-card { flex:0 1 auto; }
+body[data-game="maze"] .slider { background:#a9bbb0; }
+body[data-game="maze"] input:checked + .slider { background:#4a9c8a; }
+body[data-game="maze"] .heart { font-size:22px; color:#c27666; filter:none; }
+body[data-game="maze"] .toggle-card { width:auto; gap:18px; }
+body[data-game="maze"] .toolbar-actions { flex:1; }
+body[data-game="maze"] .speed-card { min-width:0; }
+body[data-game="maze"] .hero { margin-bottom:16px; }
+body[data-game="maze"] .board-wrap { width:min(100%,max(340px,calc(100dvh - 450px))); }
+body[data-game="maze"] .board-panel { background:#131f39; }
+body[data-game="maze"] .control-pad { width:100%; background:#f8fbf2; }
+body[data-game="maze"] .learn-panel { max-height:max(500px,calc(100dvh - 370px)); overflow:auto; }
+body[data-game="maze"] .level-road { gap:5px; }
+body[data-game="maze"] .level-button { padding:8px; }
+body[data-game="maze"] .toggle input:focus-visible + .slider { outline:3px solid #df9140; outline-offset:3px; }
+@media(max-width:1100px) {
+  .lab-tag { display:none; } #startScreen .hero-card { width:47%; } h1 { font-size:56px; }
+  .key-hint { display:none; }
+  body[data-game="maze"] .layout { grid-template-columns:minmax(320px,1fr) 230px; }
+  body[data-game="maze"] .level-panel { grid-column:1/-1; }
+  body[data-game="maze"] .level-road { display:grid; grid-template-columns:repeat(3,1fr); }
+  body[data-game="maze"] .difficulty-card { display:none; }
+}
+@media(max-width:700px) {
+  .arcade-nav { height:60px; padding:0 15px; } .brand { font-size:13px; } .brand-mark { width:25px; height:25px; margin-right:3px; }
+  .nav-games { gap:0; } .nav-games a { font-size:10px; padding:9px; }
+  .app-shell { height:calc(100dvh - 60px); }
+  #startScreen { padding:22px; overflow:auto; background:#eff8eedb; align-items:flex-start; }
+  body[data-game="dash"] #startScreen { background:#111a39de; }
+  #startScreen .hero-card { width:100%; margin:auto; max-width:440px; }
+  h1 { font-size:48px; letter-spacing:-2px; margin-bottom:18px; }
+  .lead { font-size:14px; margin-bottom:16px; }
+  .hero-actions { gap:8px; } .primary-btn,.secondary-btn { padding:14px 16px; font-size:13px; }
+  .eyebrow { margin-bottom:14px; font-size:9px; } .arcade-options { margin-top:15px; gap:12px; }
+  .hud { top:10px; left:10px; right:10px; gap:5px; display:flex; flex-wrap:wrap; }
+  .hud-pill,.hud-actions { width:auto; flex:1 1 auto; }
+  .hud-pill:first-child { flex-basis:100%; }
+  .hud-actions { justify-content:flex-end; }
+  .hud-pill { padding:8px 10px; font-size:10px; gap:5px; } .hud-actions { gap:4px; } .small-btn { padding:8px; font-size:10px; }
+  .hud.hidden { display:none; } .run-mission { bottom:96px; left:12px; max-width:260px; padding:9px 12px; }
+  .run-mission { top:125px; bottom:auto; }
+  .play-controls { bottom:18px; left:12px; right:12px; } .play-controls button { width:52px; height:58px; }
+  .play-controls .jump-control,.play-controls .blast-control { width:62px; }
+  .wide-card,.modal-card { max-height:calc(100dvh - 100px); padding:22px; } .modal-card h2 { font-size:24px; }
+  .choice-grid { grid-template-columns:1fr; } .panel { padding:16px; } .toast { top:115px; }
+  body[data-game="maze"] .hero-card { display:none; } body[data-game="maze"] h1 { font-size:35px; }
+  body[data-game="maze"] .layout { grid-template-columns:minmax(0,1fr); } body[data-game="maze"] .board-panel { grid-row:1; }
+  body[data-game="maze"] .board-wrap { width:100%; }
+  body[data-game="maze"] .learn-panel { max-height:none; }
+  body[data-game="maze"] .toolbar-actions { justify-content:flex-start; }
+  body[data-game="maze"] .toggle-card { font-size:12px; }
+  .toast { top:205px; padding:10px 16px; }
+  body[data-game="maze"] .learn-panel { grid-row:2; } body[data-game="maze"] .level-panel { grid-row:3; }
+  body[data-game="maze"] .toolbar { align-items:start; } body[data-game="maze"] .toggle-card { padding:0; }
+}
+@media(max-height:620px) and (min-width:701px) {
+  #startScreen { overflow:auto; align-items:flex-start; } #startScreen .hero-card { margin:auto 0; }
+  h1 { font-size:43px; margin-bottom:14px; } .lead { font-size:13px; line-height:1.5; margin-bottom:12px; }
+  .eyebrow { margin-bottom:12px; } .toggle-row { margin:12px 0; } .arcade-options { margin-top:12px; } .hero-actions { margin-top:14px; }
+}
+
+/* Keep the mission clear of the HUD on short landscape touch screens. */
+@media (orientation:landscape) and (max-height:500px) {
+  body:not([data-game="maze"]) .arcade-nav { height:52px; }
+  .app-shell { height:calc(100dvh - 52px); }
+  .hud { display:flex; flex-wrap:nowrap; top:8px; gap:6px; }
+  .hud-pill { padding:8px 10px; font-size:10px; flex:0 1 auto; }
+  .hud-pill:first-child { flex-basis:auto; }
+  .hud-actions { margin-left:auto; flex:0 0 auto; gap:5px; }
+  .hud-actions .small-btn { padding:8px 10px; font-size:10px; }
+  .run-mission { top:60px; padding:7px 10px; }
+  .mission-icon { font-size:20px; }
+  .mission-track { margin-top:5px; }
+  .play-controls { bottom:10px; }
+  .play-controls button { height:48px; }
+}

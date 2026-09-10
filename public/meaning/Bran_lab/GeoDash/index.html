@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>GeoDash · Blaster Academy</title>
+  <link rel="stylesheet" href="styles.css?v=20260322-fix3">
+  <link rel="stylesheet" href="../shared/arcade.css">
+
+<link rel="canonical" href="https://iamrobin.ai/meaning/Bran_lab/GeoDash/">
+<link rel="describedby" href="https://iamrobin.ai/llms.txt" type="text/plain">
+<meta name="description" content="Play GeoDash in Bran Lab: a friendly 3D mini-game for curious minds, with keyboard and touch controls.">
+<meta name="robots" content="index, follow">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GeoDash · Blaster Academy">
+<meta name="twitter:description" content="Play GeoDash in Bran Lab: a friendly 3D mini-game for curious minds, with keyboard and touch controls.">
+<meta name="twitter:image" content="https://iamrobin.ai/meaning/Bran_lab/shared/previews/StarboundMath.png">
+<meta property="og:url" content="https://iamrobin.ai/meaning/Bran_lab/GeoDash/">
+<meta property="og:title" content="GeoDash · Blaster Academy">
+<meta property="og:description" content="Play GeoDash in Bran Lab: a friendly 3D mini-game for curious minds, with keyboard and touch controls.">
+<meta property="og:image" content="https://iamrobin.ai/meaning/Bran_lab/shared/previews/StarboundMath.png">
+<meta property="og:image:alt" content="GeoDash — a colorful 3D curiosity arcade">
+<meta property="og:type" content="website">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoGame","name":"GeoDash \u00b7 Blaster Academy","url":"https://iamrobin.ai/meaning/Bran_lab/GeoDash/","description":"Play GeoDash in Bran Lab: a friendly 3D mini-game for curious minds, with keyboard and touch controls.","inLanguage":"en","gamePlatform":"Web browser","playMode":"SinglePlayer","isAccessibleForFree":true}</script>
+</head>
+<body data-game="dash">
+  <div class="app-shell">
+    <canvas id="gameCanvas" width="1280" height="720" aria-label="Bran Blaster Academy game canvas"></canvas>
+
+    <div id="hud" class="hud hidden">
+      <div class="hud-pill">
+        <span id="hudLevel">Level 1</span>
+        <span id="hudTheme">Launch Yard</span>
+      </div>
+      <div class="hud-pill">
+        <span id="hudHealth">Lives 3</span>
+        <span id="hudAmmo">Ammo 6/6</span>
+      </div>
+      <div class="hud-pill">
+        <span id="hudProgress">Progress 0%</span>
+        <span id="hudScore">Score 0</span>
+      </div>
+      <div class="hud-actions">
+        <button id="pauseBtn" class="small-btn" type="button">Pause</button>
+        <button id="restartBtn" class="small-btn alt" type="button">Restart</button>
+      </div>
+    </div>
+
+    <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+
+    <section id="startScreen" class="panel active">
+      <div class="card hero-card">
+        <div class="eyebrow">02 / GeoDash · Blaster Academy</div>
+        <h1>Ready, set.<br><span class="title-accent">Outsmart the bots.</span></h1>
+        <p class="lead">Welcome to the academy. Leap across neon platforms, blast training bots, and power up your next move with a brain boost.</p>
+        <div class="controls-card"><div><strong>Move</strong> A / D or ← →</div><div><strong>Jump</strong> Space / ↑</div><div><strong>Blast</strong> X / ↓</div></div>
+        
+        <div class="toggle-row">
+          <label class="toggle">
+            <input id="autoForwardToggle" type="checkbox">
+            <span>Auto-run</span>
+          </label>
+          <label class="toggle">
+            <input id="soundToggle" type="checkbox" checked>
+            <span>Sound</span>
+          </label>
+        </div>
+        <div class="hero-actions">
+          <button id="playBtn" class="primary-btn" type="button">Let’s play →</button>
+          <button id="openLevelsBtn" class="secondary-btn" type="button">Level Select</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="levelSelect" class="panel">
+      <div class="card wide-card">
+        <div class="panel-header">
+          <div>
+            <div class="eyebrow">Choose Your Course</div>
+            <h2>Level Select</h2>
+          </div>
+          <button id="backToStartBtn" class="secondary-btn compact" type="button">Back</button>
+        </div>
+        <div class="toggle-row" style="margin-top: 0; margin-bottom: 20px;">
+          <label class="toggle">
+            <input id="selectAutoForwardToggle" type="checkbox">
+            <span>Auto-run</span>
+          </label>
+        </div>
+        <div id="levelGrid" class="level-grid"></div>
+      </div>
+    </section>
+
+    <section id="pauseMenu" class="panel">
+      <div class="card modal-card">
+        <div class="eyebrow">Paused</div>
+        <h2>Training Break</h2>
+        <p>Pick up right where you left off, or restart the level for a cleaner run.</p>
+        <div class="toggle-row" style="justify-content: center; margin-top: 18px;">
+          <label class="toggle">
+            <input id="pauseAutoForwardToggle" type="checkbox">
+            <span>Auto-run</span>
+          </label>
+        </div>
+        <div class="modal-actions">
+          <button id="resumeBtn" class="primary-btn" type="button">Resume</button>
+          <button id="pauseRestartBtn" class="secondary-btn" type="button">Restart Level</button>
+          <button id="pauseLevelsBtn" class="secondary-btn" type="button">Level Select</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="challengeModal" class="panel">
+      <div class="card modal-card challenge-card">
+        <div class="eyebrow" id="challengeCategory">Math Recharge</div>
+        <h2 id="challengePrompt">Question</h2>
+        <div id="challengeChoices" class="choice-grid"></div>
+        <p class="challenge-note">Correct answer: full ammo + a bonus boost. Wrong answer: partial reload, still keep moving.</p>
+      </div>
+    </section>
+
+    <section id="resultScreen" class="panel">
+      <div class="card modal-card">
+        <div class="eyebrow" id="resultEyebrow">Level Clear</div>
+        <h2 id="resultTitle">Nice run!</h2>
+        <p id="resultBody">You made it through the course.</p>
+        <div class="toggle-row" style="justify-content: center; margin-top: 18px;">
+          <label class="toggle">
+            <input id="resultAutoForwardToggle" type="checkbox">
+            <span>Auto-run</span>
+          </label>
+        </div>
+        <div class="result-stats">
+          <div class="stat-box"><span>Stars</span><strong id="resultStars">0</strong></div>
+          <div class="stat-box"><span>Score</span><strong id="resultScore">0</strong></div>
+          <div class="stat-box"><span>Best</span><strong id="resultBest">0</strong></div>
+        </div>
+        <div class="modal-actions">
+          <button id="nextLevelBtn" class="primary-btn" type="button">Next Level</button>
+          <button id="resultRestartBtn" class="secondary-btn" type="button">Replay</button>
+          <button id="resultLevelsBtn" class="secondary-btn" type="button">Level Select</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="questions.js?v=20260322-fix3"></script>
+  <script src="../shared/vendor/three.min.js"></script>
+  <script src="../shared/arcade-3d.js"></script>
+  <script src="data.js?v=20260322-fix3"></script>
+  <script src="main.js?v=20260322-fix3"></script>
+  <script src="../shared/arcade-ui.js"></script>
+</body>
+</html>
