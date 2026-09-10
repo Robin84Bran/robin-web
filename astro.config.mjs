@@ -17,7 +17,7 @@ export default defineConfig({
           '/zh-hans/', '/zh-hans/about/', '/zh-hans/network/',
           '/zh-hant/', '/zh-hant/about/', '/zh-hant/network/',
           '/ja/', '/ja/about/', '/ja/network/',
-          '/intelligence/aidc101/', '/intelligence/aidc101/101-1/', '/portfolio/', '/books/', '/meaning/', '/ouroboros/', '/ouroboros/execution-ledger/', '/binary/',
+          '/intelligence/attention_all_you_need/', '/intelligence/aidc101/', '/intelligence/aidc101/101-1/', '/portfolio/', '/books/', '/meaning/', '/ouroboros/', '/ouroboros/execution-ledger/', '/binary/',
         ].includes(path)
           || /^\/meaning\/Bran_lab\/(?:SuperRun|GeoDash|PacMan|BlockLab|WonderTrail|KartLab|CloudMunch|BounceTrials|StarboundMath)?\/?$/.test(path)
           || /^\/intelligence\/(?:hardware\/(?:deliverable-megawatts\/)?|supply-chain\/|supply-chain-map\/|swarm\/)?$/.test(path)

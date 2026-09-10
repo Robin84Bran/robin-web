@@ -1,0 +1,107 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import chapters from '../../data/attention-history.json';
+import { createPersonSchema, createBreadcrumbSchema } from '../../lib/seo';
+const path = '/intelligence/attention_all_you_need/';
+const title = 'Attention Is All You Need — A Brief History of AI';
+const description = 'An illustrated journey through dreams, errors, learning, patience, sight, attention, and scale. A brief history of AI and neural networks by Robin Xie.';
+const image = '/images/attention-all-you-need/slide-08.webp';
+const pdf = '/downloads/attention-is-all-you-need.pdf';
+const articleSchema = {
+  '@context': 'https://schema.org', '@type': 'Article',
+  '@id': `https://iamrobin.ai${path}#article`, url: `https://iamrobin.ai${path}`,
+  headline: title, description, inLanguage: 'en',
+  author: { '@id': createPersonSchema()['@id'] },
+  datePublished: '2026-09-10', dateModified: '2026-09-10',
+  image: `https://iamrobin.ai${image}`, articleSection: 'Intelligence',
+  mainEntityOfPage: `https://iamrobin.ai${path}`,
+};
+const schema = [createPersonSchema(), articleSchema, createBreadcrumbSchema([{ name: 'Home', path: '/' }, { name: 'Intelligence', path: '/intelligence/' }, { name: 'Attention Is All You Need', path }])];
+const slideTitles = ['Attention Is All You Need', 'A brief history of AI and neural networks', ...chapters.map(c => c.title), 'The ultimate twist'];
+---
+<BaseLayout {title} {description} {path} {image} imageAlt="The original illustrated 2017 Transformer chapter" imageWidth={1122} imageHeight={1402} type="article" {schema}>
+  <article class="attention-essay">
+    <header class="essay-hero shell">
+      <a class="back-link" href="/intelligence/">← Intelligence</a>
+      <p class="eyebrow">AI learn &amp; Earn Series · Robin Xie</p>
+      <h1>Attention is<br/><em>all you need.</em></h1>
+      <p class="hero-deck">A brief history of AI &amp; neural networks.<br/>The biography of an idea that refused to die.</p>
+      <div class="hero-actions"><a class="quiet-link" href="#dreams">Read the seven acts ↓</a><a href={pdf} download>Download the carousel ↗</a></div>
+      <p class="edition">September 10, 2026 · Illustrated essay</p>
+      <div class="hero-orbit" aria-hidden="true"><span>1943</span><i></i><span>2017</span><i></i><span>∞</span></div>
+    </header>
+    <section class="opening shell" aria-label="Introduction">
+      <p class="opening-question">But what if it could dream?</p>
+      <div><p>Once upon a time, humans looked at computers—giant, glorified calculators that filled entire rooms—and asked a much bigger question.</p><p>Modern AI did not arrive fully formed. Its story stretches across more than eighty years of mathematical ideas, inflated expectations, patient research, and machines finally powerful enough to put old ideas to work.</p></div>
+    </section>
+    <nav class="chapter-nav shell" aria-label="Essay chapters">
+      {chapters.map(c => <a href={`#${c.id}`}><span>{c.act}</span>{c.word}</a>)}
+    </nav>
+    <div class="chapters shell">
+      {chapters.map(c => <section class="chapter" id={c.id} aria-labelledby={`${c.id}-title`}>
+        <div class="chapter-copy"><p class="eyebrow">Act {c.act} / {c.era}</p><h2 id={`${c.id}-title`}>{c.title}</h2><p class="chapter-line">{c.line}</p>{c.paragraphs.map(p => <p>{p}</p>)}</div>
+        <figure><a href={`/images/attention-all-you-need/slide-${String(c.slide).padStart(2,'0')}.webp`} aria-label={`Open full-size illustration: ${c.title}`}><img src={`/images/attention-all-you-need/slide-${String(c.slide).padStart(2,'0')}.webp`} alt={`${c.era}: ${c.line} Original gold-on-navy illustrated carousel page.`} width="1122" height="1402" loading="lazy" decoding="async" /></a><figcaption><span>{String(c.slide).padStart(2,'0')} / 10 · Original carousel</span><span>Open to enlarge ↗</span></figcaption></figure>
+      </section>)}
+    </div>
+    <section class="epilogue shell" aria-labelledby="epilogue-title"><p class="eyebrow">The ultimate twist</p><h2 id="epilogue-title">Every era asked:<br/><em>What can the machine do?</em></h2><p>We took our memory, our vision, our language, and our imagination, turned parts of them into mathematics, and built tools outside our bodies.</p><p>Now the question turns back toward us.</p><blockquote>What is this new mirror<br/>going to awaken in us?</blockquote></section>
+    <section class="carousel-archive shell" aria-labelledby="carousel-title"><div class="archive-heading"><div><p class="eyebrow">The visual edition</p><h2 id="carousel-title">Ten pages. One journey.</h2></div><a class="quiet-link" href={pdf} download>Download PDF ↗</a></div><p class="archive-hint">Scroll through the complete carousel. Select a page to view it at full size.</p><div class="carousel-strip" tabindex="0" role="region" aria-label="Complete ten-page carousel; scroll horizontally">
+      {slideTitles.map((name,i) => <a href={`/images/attention-all-you-need/slide-${String(i+1).padStart(2,'0')}.webp`}><img src={`/images/attention-all-you-need/slide-${String(i+1).padStart(2,'0')}.webp`} width="1122" height="1402" loading="lazy" decoding="async" alt={`Slide ${i+1}: ${name}`} /><span>{String(i+1).padStart(2,'0')} / {name}</span></a>)}
+    </div></section>
+    <footer class="essay-notes shell"><details><summary>Sources &amp; notes</summary><p>This web edition adapts the illustrated carousel for reading on screen. It preserves the corrected chronology on slides 3–5; the downloadable PDF is the complete corrected visual edition. Dreams, sight, and the mirror are narrative metaphors.</p><ol>
+      <li><a href="https://doi.org/10.1007/BF02478259">McCulloch &amp; Pitts (1943), A Logical Calculus of the Ideas Immanent in Nervous Activity.</a></li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/13602029/">Rosenblatt (1958), The Perceptron.</a></li>
+      <li><a href="https://mitpress.mit.edu/9780262130431/perceptrons/">Minsky &amp; Papert (1969), Perceptrons.</a></li>
+      <li><a href="https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm">Lighthill (1973), Artificial Intelligence: A General Survey.</a></li>
+      <li><a href="https://www.nature.com/articles/323533a0">Rumelhart, Hinton &amp; Williams (1986), Learning Representations by Back-propagating Errors.</a> Earlier foundations: Linnainmaa (1970) and Werbos (1974).</li>
+      <li><a href="https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks">Krizhevsky, Sutskever &amp; Hinton (2012), ImageNet Classification with Deep Convolutional Neural Networks.</a></li>
+      <li><a href="https://arxiv.org/abs/1706.03762">Vaswani et al. (2017), Attention Is All You Need.</a></li>
+    </ol></details><a class="back-link" href="/intelligence/">← Return to Intelligence</a></footer>
+  </article>
+</BaseLayout>
+<style>
+  .essay-hero { position:relative; padding-block:clamp(3rem,7vw,6rem) 4rem; overflow:hidden; }
+  .back-link { display:inline-block; color:var(--muted); text-decoration:none; font-size:.78rem; margin-bottom:2.8rem; }
+  .essay-hero h1 { position:relative; z-index:1; font-family:var(--serif); font-size:clamp(3.3rem,8.5vw,7.8rem); font-weight:400; letter-spacing:-.055em; line-height:1.02; margin:1.4rem 0 1.8rem; }
+  h1 em,h2 em { font-weight:400; color:var(--gold-dark); }
+  .hero-deck { color:var(--muted); font-size:clamp(1rem,2vw,1.3rem); line-height:1.7; }
+  .hero-actions { display:flex; flex-wrap:wrap; gap:1.5rem 2rem; align-items:center; margin-block:2rem; }
+  .hero-actions a { font-size:.8rem; text-underline-offset:.4em; text-decoration-color:var(--line-strong); }
+  .edition { font-size:.68rem; letter-spacing:.07em; color:var(--muted); }
+  .hero-orbit { position:absolute; right:2rem; top:7rem; width:23rem; height:23rem; border:1px solid var(--line); border-radius:50%; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1.4rem; color:var(--gold-dark); font-family:var(--mono); font-size:.7rem; transform:rotate(-15deg); }
+  .hero-orbit::after { content:''; position:absolute; inset:2rem -1rem; border:1px solid rgba(180,145,93,.22); border-radius:50%; transform:rotate(65deg); }
+  .hero-orbit i { height:2.5rem; width:1px; background:var(--line-strong); }
+  .opening { padding-block:3rem; border-block:1px solid var(--line); display:grid; grid-template-columns:1fr 1fr; gap:4rem; }
+  .opening-question { font-family:var(--serif); font-size:clamp(2rem,4vw,3.5rem); line-height:1.15; letter-spacing:-.025em; max-width:12ch; }
+  .opening div { max-width:37rem; color:var(--muted); line-height:1.8; }
+  .chapter-nav { display:flex; flex-wrap:wrap; gap:1rem 2rem; padding-block:2rem; border-bottom:1px solid var(--line); }
+  .chapter-nav a { display:flex; gap:.5rem; font-size:.78rem; text-decoration:none; padding:.4rem 0; }
+  .chapter-nav span { color:var(--gold-dark); font-family:var(--serif); }
+  .chapter { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,.88fr); align-items:center; gap:clamp(2rem,6vw,7rem); padding-block:clamp(4rem,8vw,7rem); border-bottom:1px solid var(--line); scroll-margin-top:6rem; }
+  .chapter:nth-child(even) .chapter-copy { order:2; }
+  .chapter h2 { font-family:var(--serif); font-weight:400; font-size:clamp(2.2rem,4.3vw,4rem); letter-spacing:-.04em; line-height:1.08; margin:1rem 0; }
+  .chapter-line { font-family:var(--serif); font-style:italic; color:var(--gold-dark); font-size:1.3rem; margin-bottom:2rem; }
+  .chapter-copy > p:not(.eyebrow):not(.chapter-line) { font-size:1rem; line-height:1.85; color:var(--muted); max-width:57ch; }
+  figure { margin:0; }
+  figure img { width:100%; height:auto; box-shadow:0 1rem 3rem rgba(46,42,38,.1); }
+  figcaption { display:flex; justify-content:space-between; flex-wrap:wrap; gap:.5rem; color:var(--muted); font-size:.62rem; letter-spacing:.025em; margin-top:.9rem; }
+  .epilogue { padding-block:clamp(5rem,10vw,9rem); text-align:center; }
+  .epilogue h2 { font-family:var(--serif); font-weight:400; font-size:clamp(2.4rem,5vw,4.5rem); letter-spacing:-.04em; line-height:1.15; }
+  .epilogue > p:not(.eyebrow) { max-width:40rem; margin:1.5rem auto; color:var(--muted); line-height:1.8; }
+  .epilogue blockquote { margin:3rem 0 0; font-family:var(--serif); font-size:clamp(2rem,4.5vw,3.6rem); line-height:1.2; color:var(--gold-dark); }
+  .carousel-archive { padding-block:2.5rem 4rem; border-top:1px solid var(--line); }
+  .archive-heading { display:flex; justify-content:space-between; gap:1rem; align-items:center; flex-wrap:wrap; }
+  .archive-heading h2 { font-family:var(--serif); font-size:2.3rem; font-weight:400; letter-spacing:-.03em; }
+  .archive-hint { color:var(--muted); font-size:.85rem; }
+  .carousel-strip { display:flex; overflow-x:auto; gap:1rem; scroll-snap-type:x mandatory; padding:1rem .2rem 1.8rem; scrollbar-color:var(--gold) var(--stone); }
+  .carousel-strip a { flex:0 0 15rem; scroll-snap-align:start; font-size:.7rem; text-decoration:none; line-height:1.6; }
+  .carousel-strip img { width:100%; height:auto; margin-bottom:.8rem; }
+  .essay-notes { padding-bottom:4rem; }
+  details { border-block:1px solid var(--line); padding:1.5rem 0; color:var(--muted); margin-bottom:2rem; font-size:.85rem; line-height:1.7; }
+  summary { cursor:pointer; color:var(--ink); font-size:.85rem; }
+  details p { margin:1.5rem 0; max-width:65ch; }
+  details li { margin-bottom:.7rem; }
+  details a { text-underline-offset:.25em; text-decoration-color:var(--line-strong); }
+  @media (max-width:63rem) { .hero-orbit { right:-7rem; top:8rem; opacity:.3; z-index:0; } .essay-hero > :not(.hero-orbit) { position:relative; z-index:1; } }
+  @media (max-width:47.99rem) { .opening,.chapter { grid-template-columns:1fr; gap:2rem; } .opening-question { max-width:100%; } .chapter:nth-child(even) .chapter-copy { order:0; } .chapter figure { width:min(100%,30rem); margin-inline:auto; } .essay-hero { padding-bottom:2.5rem; } .chapter-nav { gap:.65rem 1.2rem; } .chapter-nav a { font-size:.76rem; } .carousel-strip a { flex-basis:75%; max-width:20rem; } }
+  @media (prefers-reduced-motion:reduce) { .attention-essay :global(*) { scroll-behavior:auto; } }
+</style>

@@ -1,0 +1,100 @@
+[
+  {
+    "id": "dreams",
+    "act": "I",
+    "era": "1940s–1950s",
+    "word": "Dreams",
+    "title": "The dreamer in the room",
+    "slide": 3,
+    "line": "First, a question. Then, a mathematical neuron.",
+    "paragraphs": [
+      "Our story begins with a deceptively human question: could a machine think? Alan Turing’s imitation game shifted the conversation from what intelligence is to what a machine could do in conversation.",
+      "In 1943, Warren McCulloch and Walter Pitts published a mathematical model of a neuron. About fifteen years later, Frank Rosenblatt developed the Perceptron, a system that learned to recognize simple patterns by adjusting its internal weights. These were separate milestones: a model of neural logic, then a learning machine.",
+      "The dream was beautiful, but the machinery was tiny. The AI was essentially a toddler trying to solve calculus."
+    ]
+  },
+  {
+    "id": "errors",
+    "act": "II",
+    "era": "1960s–1970s",
+    "word": "Errors",
+    "title": "The great math roast",
+    "slide": 4,
+    "line": "Early promise meets its limits.",
+    "paragraphs": [
+      "The honeymoon didn’t last. In 1969, Marvin Minsky and Seymour Papert published Perceptrons, examining the limitations of these early models. A single-layer perceptron cannot solve XOR: a simple logic task in which one input, but not both, must be true.",
+      "Funding did not evaporate overnight. AI’s first winter unfolded over years as expectations cooled and support contracted. Britain’s 1973 Lighthill report helped drive UK research cuts within that broader retreat.",
+      "Symbolic AI and expert systems pursued intelligence through explicit rules. But the real world is a messy library. A rulebook struggles with every nuance of a face, a sentence, or an unfamiliar situation."
+    ]
+  },
+  {
+    "id": "learning",
+    "act": "III",
+    "era": "1980s",
+    "word": "Learning",
+    "title": "Learning to take a roast",
+    "slide": 5,
+    "line": "An error becomes a signal.",
+    "paragraphs": [
+      "If a neural network makes a mistake, how can it use that mistake to improve? Backpropagation calculates how each weight contributes to the error, letting a learning algorithm adjust the network.",
+      "In 1986, David Rumelhart, Geoffrey Hinton, and Ronald Williams popularized backpropagation for neural networks. Earlier foundations included Seppo Linnainmaa’s work in 1970 and Paul Werbos’s work in 1974. The breakthrough had a longer history than one paper or one research group.",
+      "Imagine a network calling a cat a toaster. The error travels backward through its layers, helping identify which internal settings should change. Error stopped being only a failure and became data."
+    ]
+  },
+  {
+    "id": "patience",
+    "act": "IV",
+    "era": "1990s–2000s",
+    "word": "Patience",
+    "title": "The underground simmer",
+    "slide": 6,
+    "line": "The ideas work. The world has to catch up.",
+    "paragraphs": [
+      "You might expect backpropagation to have triggered an immediate boom. Instead, the credits rolled on a long, quiet intermission. Data was scarce or messy, and computation was expensive.",
+      "Researchers including Yann LeCun and Yoshua Bengio kept working. Neural networks found practical niches, including handwritten character recognition, while the larger promise remained unfinished.",
+      "An unlikely ally was gathering strength: video games. Demand for increasingly realistic graphics helped build a market for powerful GPUs. Their parallel processing would become a crucial tool for training larger neural networks."
+    ]
+  },
+  {
+    "id": "sight",
+    "act": "V",
+    "era": "2012",
+    "word": "Sight",
+    "title": "The day AI opened its eyes",
+    "slide": 7,
+    "line": "Data, compute, and learning meet.",
+    "paragraphs": [
+      "By 2012, large datasets and powerful GPUs were changing what researchers could attempt. The ImageNet project, led by Fei-Fei Li and collaborators, supplied a large, labeled collection of images.",
+      "Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton brought AlexNet to the ImageNet competition. Its decisive result demonstrated the power of a deep convolutional network trained with large amounts of data and GPU compute.",
+      "The emotional temperature of the field changed. Useful visual representations could be learned from examples, instead of requiring a programmer to handcraft every feature."
+    ]
+  },
+  {
+    "id": "attention",
+    "act": "VI",
+    "era": "2017",
+    "word": "Attention",
+    "title": "The art of the group chat",
+    "slide": 8,
+    "line": "Meaning lives in the relationships.",
+    "paragraphs": [
+      "Language is more than a chain of isolated words. In 2017, Vaswani and seven coauthors published Attention Is All You Need and introduced the Transformer architecture.",
+      "Self-attention lets a token draw on other relevant tokens in its context. Think of the word “bank”: “river” and “muddy” suggest one meaning; “money” and “loan” suggest another. Context changes the representation.",
+      "The Transformer replaced recurrence with attention in its sequence-transduction design, making training more parallelizable. That does not mean a chatbot generates a whole answer at once: autoregressive language models still produce new tokens sequentially."
+    ]
+  },
+  {
+    "id": "scale",
+    "act": "VII",
+    "era": "2020s",
+    "word": "Scale",
+    "title": "The big mirror",
+    "slide": 9,
+    "line": "From specialized models to reusable platforms.",
+    "paragraphs": [
+      "Scale helped turn learned representations into foundation models: systems trained broadly enough to be adapted to many tasks. Language, code, images, and other modalities became parts of a much larger landscape.",
+      "The mirror is the essay’s metaphor. Models can reflect patterns in human language and culture with startling fluency. They can also misunderstand, invent details, and reflect biases. Fluency is neither perfect understanding nor evidence of a mind behind the mirror.",
+      "The human question remains compelling: when a machine can respond in the language of our own thoughts, what does that help us notice about ourselves?"
+    ]
+  }
+]
