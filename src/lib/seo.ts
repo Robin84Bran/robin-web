@@ -8,7 +8,7 @@ export const SITE_URL = 'https://iamrobin.ai';
 export const SITE_NAME = 'Robin Xie';
 export const DEFAULT_IMAGE = '/photos/hero-watch.jpg';
 
-const personId = `${SITE_URL}/#person`;
+const personId = 'https://www.tideisun.com/robin#robin-xie';
 const websiteId = `${SITE_URL}/#website`;
 
 export function absoluteUrl(path = '/') {
