@@ -130,7 +130,9 @@ export default {
       headers,
     });
 
-    if (request.method === 'GET' && /^text\/html/i.test(contentType) && response.body) {
+    // The children's arcade runs without the external analytics beacon.
+    const isBranArcade = url.pathname.startsWith('/meaning/Bran_lab/');
+    if (request.method === 'GET' && /^text\/html/i.test(contentType) && response.body && !isBranArcade) {
       return new HTMLRewriter()
         .on('body', new CloudflareWebAnalytics())
         .transform(securedResponse);
