@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Proposed founder interruption measurement framework">
+<rect width="1600" height="900" fill="#f4f1ec"/>
+<g fill="#292723" font-family="Arial,sans-serif">
+<text x="90" y="95" font-size="24" letter-spacing="4">OUROBOROS / PROPOSED MEASUREMENT FRAMEWORK</text>
+<text x="90" y="205" font-size="62">Measure the work that survives.</text>
+<g fill="none" stroke="#756858" stroke-width="3"><rect x="90" y="310" width="360" height="210" rx="5"/><rect x="620" y="310" width="360" height="210" rx="5"/><rect x="1150" y="310" width="360" height="210" rx="5"/><path d="M450 415H600m-20-15 20 15-20 15M980 415h150m-20-15 20 15-20 15"/></g>
+<text x="120" y="370" font-size="30">01 / TASK</text><text x="120" y="425" font-size="23">Freeze scope and acceptance.</text><text x="120" y="466" font-size="23">Use the same starting point.</text>
+<text x="650" y="370" font-size="30">02 / ATTENTION</text><text x="650" y="425" font-size="23">Questions, rescue, review.</text><text x="650" y="466" font-size="23">Count minutes and incidents.</text>
+<text x="1180" y="370" font-size="30">03 / VERIFIED WORK</text><text x="1180" y="425" font-size="23">Test the original finish line.</text><text x="1180" y="466" font-size="23">Include rework before close.</text>
+<path d="M90 600H1510" stroke="#b9b0a4"/>
+<text x="90" y="675" font-size="35">Verified outcomes / founder-intervention minutes</text>
+<text x="90" y="740" font-size="26">Report cash cost, defects and elapsed time alongside the ratio.</text>
+<text x="90" y="825" font-size="23" fill="#655d52">ZERO OBSERVED MINUTES → REPORT THE PAIR, NOT INFINITY. MISSING TELEMETRY → UNKNOWN.</text>
+</g></svg>

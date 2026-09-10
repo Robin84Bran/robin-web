@@ -1,0 +1,559 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-10",
+  "updated": "2026-09-10",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20260910/hero.webp",
+  "actionHero": "/action-item/20260910/hero.webp",
+  "ogImage": "/daily-briefing/20260910/og.webp",
+  "briefingPath": "/ouroboros/202609/20260910/",
+  "actionItemPath": "/ouroboros/202609/20260910/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "2 ROUTES",
+      "visualLabel": "proposed paired test",
+      "sources": [
+        {
+          "label": "Codex changelog",
+          "url": "https://learn.chatgpt.com/docs/changelog"
+        },
+        {
+          "label": "Astra model page",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6-astra"
+        },
+        {
+          "label": "Sol model page",
+          "url": "https://developers.openai.com/api/docs/models/gpt-5.6-sol"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "6 GATES",
+      "visualLabel": "IPO quality",
+      "sources": [
+        {
+          "label": "Reuters citing The Information",
+          "url": "https://www.reuters.com/world/asia-pacific/china-curbs-humanoid-ipos-after-unitrees-volatile-debut-information-reports-2026-09-09/"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$1.1311B",
+      "visualLabel": "six settled sessions",
+      "sources": [
+        {
+          "label": "Farside Bitcoin",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "Farside Ether",
+          "url": "https://farside.co.uk/eth/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "6 CONTROLS",
+      "visualLabel": "payment authority",
+      "sources": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/india/dutch-fintech-adyen-sees-long-term-india-opportunity-plans-local-expansion-2026-09-09/"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "visualValue": "TIME",
+      "visualLabel": "verified outcome / minute",
+      "sources": [
+        {
+          "label": "Codex 0.154.0 changelog",
+          "url": "https://learn.chatgpt.com/docs/changelog"
+        },
+        {
+          "label": "Astra model page",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6-astra"
+        },
+        {
+          "label": "Sol model page",
+          "url": "https://developers.openai.com/api/docs/models/gpt-5.6-sol"
+        },
+        {
+          "label": "OpenAI Agent Evals",
+          "url": "https://developers.openai.com/api/docs/guides/agent-evals"
+        },
+        {
+          "label": "Astra cross-tool case study",
+          "url": "https://developers.openai.com/blog/architectural-visualization-with-astra"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "€13B",
+      "visualLabel": "planned investment",
+      "sources": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/media-telecom/google-invest-15-billion-ai-infrastructure-finland-2026-09-09/"
+        },
+        {
+          "label": "Finnish public broadcaster Yle",
+          "url": "https://yle.fi/a/74-20245301"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$15.5B",
+      "visualLabel": "reported valuation",
+      "sources": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/legal/government/legal-ai-startup-harvey-reaches-155-billion-valuation-new-funding-round-2026-09-09/"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2 QUARTERS",
+      "visualLabel": "operating watch",
+      "sources": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/retail-consumer/apple-expected-unveil-first-folding-phone-with-new-ceo-ternus-command-2026-09-09/"
+        },
+        {
+          "label": "AAPL adjusted prices",
+          "url": "https://stockanalysis.com/stocks/aapl/history/"
+        },
+        {
+          "label": "QQQ adjusted prices",
+          "url": "https://stockanalysis.com/etf/qqq/history/"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, September 10, 2026",
+      "description": "Eight source-ordered actions with explicit finish lines. The editorial framework is complete; experiments and external evidence remain open.",
+      "centralJudgment": "Measure founder attention, keep reported guidance provisional, and require operating evidence before upgrading capital claims.",
+      "fieldLine": "Eight signals. One completed editorial framework. Evidence sets the next move.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models, Agents and OPC Autonomy",
+          "title": "Prepare a fair Sol and Astra comparison",
+          "why": "The scarce OPC resource is not the number of branches—it is Robin’s attention. Model competition should happen in the background, with only verified winners reaching the founder.",
+          "steps": [
+            "Run one real cross-file task in two isolated worktrees—Sol medium and Astra medium—using identical instructions, permissions and tests. Select the merge solely through test results, diff scope, autonomous recovery, Robin-interruption minutes, elapsed time and total cost, then write the reason for the winner into the routing eval.",
+            "Record identical task, permissions and tests, both diffs, recovery, founder minutes and full costs."
+          ],
+          "done": "READY until a paired task has verified outcome and cost receipts."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "Define the humanoid IPO quality gate",
+          "why": "This is material new evidence after Unitree’s IPO: the exit market may begin demanding paid robot labor rather than supply-chain excitement.",
+          "steps": [
+            "Apply an IPO quality gate to Chinese humanoid companies covering unaffiliated recurring revenue, gross margin, cash burn, delivered units, task success and human intervention; label the policy reported informal guidance until confirmed through formal rules or multiple filings.",
+            "Require formal rules or multiple filings; retain reported informal guidance until corroborated."
+          ],
+          "done": "READY as a quality-gate assignment; policy confirmation remains external."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital and Web3 Health",
+          "title": "Watch the six-session ETF capital pulse",
+          "why": "Direction remains positive, but asset-allocation capital entering ETFs is not the same as growth capital reaching Web3 businesses.",
+          "steps": [
+            "Reclassify the pulse six-session capital still entering / first complete reversal / Web3 breadth unconfirmed; call it capital withdrawal only if three fully settled negative sessions erase the remaining $1.1311 billion inflow.",
+            "Use fully settled sessions; partial September 9 data cannot decide the classification."
+          ],
+          "done": "WATCHING until three complete negative sessions erase the remaining $1.1311 billion."
+        },
+        {
+          "signal": 4,
+          "domain": "Payments and Token Rails",
+          "title": "Map Adyen India payment authority",
+          "why": "The durable payments moat may be converting model intent into a locally compliant, reconcilable and reversible transaction.",
+          "steps": [
+            "Add Adyen India to the Agent Payment control-plane matrix across PA and cross-border licenses / data localization / UPI recurring authority / agent limits and payee scope / revocation and refunds / fraud liability; maintain licensed foundation / agent adoption unproven until NPCI rules and transaction evidence appear.",
+            "Separate licenses and existing operations from unproven agent-payment adoption."
+          ],
+          "done": "READY as a control-matrix assignment; adoption remains unproven."
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "Complete the founder interruption framework",
+          "why": "A one-person company cannot scale by replacing execution labor with permanent agent management.",
+          "steps": [
+            "Produce the original founder interruption article and one archived LinkedIn derivative.",
+            "Archive five sources, complete four-language editorial review, preserve hypothetical calculations and link the canonical."
+          ],
+          "done": "COMPLETE for the authored evidence framework and experiment specification. The model contest is unrun.",
+          "deepDiveTitle": "The Founder Interruption Tax"
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure and Capital Projects",
+          "title": "Prepare the Google Finland BYOP ledger",
+          "why": "This sits directly at the intersection of engineering and PE. The valuable career capability is converting sites, power contracts, grids, cooling, capital and customer load into revenue-generating MW.",
+          "steps": [
+            "Create a Google Finland BYOP ledger tracking land and permits, grid upgrades, PPA price and ramp, storage COD, data-center COD, actual MW, utilization and capital cost per MW; recognize none of the €13 billion as an operating asset before energization and validated customer load.",
+            "Keep PPA price, actual MW, COD, utilization and capital cost per MW UNKNOWN where undisclosed."
+          ],
+          "done": "READY for private evidence routing; no operating capacity is inferred from planned spending."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-Stage Private Markets",
+          "title": "Wait for Harvey underwriting evidence",
+          "why": "Harvey tests whether a vertical-agent platform can own the professional workflow or eventually lose economics to model providers, legal databases and firms’ internal systems.",
+          "steps": [
+            "WATCH—upgrade to INVESTIGATE only if accessible shares come with ARR, NRR, customer and seat concentration, gross margin, model cost, agent task success, acquisition contribution, primary-secondary mix and liquidation preferences.",
+            "Require an accessible allocation plus the complete operating metrics and share terms."
+          ],
+          "done": "WATCHING until participation and ARR, NRR, margins, costs and preferences are evidenced."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities",
+          "title": "Watch Apple operating evidence",
+          "why": "Apple retains extraordinary consumer distribution, but AI value must appear through upgrades, service usage and completed personal-agent work—not “AI hub” language.",
+          "steps": [
+            "Do not change the position from the keynote; over the first two selling quarters track Duo units and ASP, C2 performance and yield, A20 on-device latency, high-performance memory content, Siri task completion, services attach and China sales mix.",
+            "Keep the two-quarter watch read-only; a keynote does not authorize a position change."
+          ],
+          "done": "WATCHING across the first two selling quarters; no trade or allocation is made."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年9月10日",
+      "description": "八项行动按来源排序，逐项明确验收终点。编辑框架已完成，实验与外部证据仍待落实。",
+      "centralJudgment": "测量创始人注意力，保持非正式监管消息的暂定性质，并在升级资本判断前要求运营证据。",
+      "fieldLine": "八个信号。一项编辑框架完成。下一步由证据决定。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型、Agent与OPC自主性",
+          "title": "准备公平的Sol与Astra比较",
+          "why": "OPC的稀缺资源不是分支数量，而是Robin的注意力。模型竞争应在后台发生，只有胜出的验证结果才需要来到Robin面前。",
+          "steps": [
+            "选择一个真实的跨文件任务，在两个隔离worktree中分别运行Sol medium和Astra medium，使用完全相同的任务说明、权限和测试；仅以测试通过、diff范围、自动恢复、Robin介入分钟、耗时及总成本选择合并结果，并将胜负原因写入后续路由eval。",
+            "记录相同任务、权限与测试，以及双方diff、恢复、创始人分钟和完整成本。"
+          ],
+          "done": "READY，等待配对任务产生已验证结果与成本回执。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "定义人形机器人IPO质量门槛",
+          "why": "这是Unitree IPO之后真正改变投资论点的新证据：机器人资本的退出通道可能开始要求“付费劳动”，而非仅接受供应链故事。",
+          "steps": [
+            "对中国人形机器人建立IPO quality gate，统一跟踪非关联经常性收入、毛利率、现金消耗、实际交付、任务成功率和人工干预；在正式监管文件或多个申报案例确认前，将政策标记为reported informal guidance。",
+            "要求正式规则或多个申报案例；交叉确认前保留reported informal guidance。"
+          ],
+          "done": "质量门槛任务READY；政策确认仍依赖外部证据。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本与Web3健康",
+          "title": "观察六日ETF资本脉冲",
+          "why": "方向仍偏正，但每日波动和管理人结构提醒我们：进入ETF的资产配置资本，不等于进入Web3经营层的增长资本。",
+          "steps": [
+            "将状态调整为六日资本仍净进入 / 首个完整回撤 / Web3广度未确认；只有三个完整负流量交易日累计抹去现存11.311亿美元净流入时，才升级为资本撤离。",
+            "只用完整结算交易日；9月9日部分数据不用于定论。"
+          ],
+          "done": "WATCHING，直到三个完整负流量交易日抹去剩余11.311亿美元流入。"
+        },
+        {
+          "signal": 4,
+          "domain": "支付与Token轨道",
+          "title": "梳理Adyen India付款权限",
+          "why": "Robin的支付经验可以看出，真正的Agent支付护城河可能是把模型意图转换成符合本地规则、可对账和可撤销的付款。",
+          "steps": [
+            "将Adyen India加入Agent Payment控制面矩阵，记录PA与跨境许可 / 数据本地化 / UPI循环授权 / Agent额度与收款人范围 / 撤权退款 / 欺诈责任；在NPCI正式规则及真实交易数据出现前，评级为licensed foundation / agent adoption unproven。",
+            "把许可和已有业务与尚未证明的Agent付款采用分开。"
+          ],
+          "done": "控制面矩阵任务READY；Agent采用仍未证明。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "完成创始人中断税框架",
+          "why": "一人公司不能通过把执行工作换成全天候Agent管理来实现规模化。",
+          "steps": [
+            "完成创始人中断税原创长文，并归档一篇LinkedIn衍生稿。",
+            "归档五个来源，完成四语编辑复核，标明示例计算并链接canonical。"
+          ],
+          "done": "编辑证据框架与实验规格COMPLETE；模型竞赛尚未执行。",
+          "deepDiveTitle": "创始人的中断税"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基础设施与资本项目",
+          "title": "准备Google Finland BYOP账本",
+          "why": "这是Robin工程与PE能力最自然的交汇：真正稀缺的职业能力，是把选址、电力合同、电网、冷却、资本和客户负荷转换成收入MW。",
+          "steps": [
+            "建立Google Finland BYOP ledger，逐项目跟踪土地与许可、电网升级、PPA价格和爬坡、储能COD、数据中心COD、实际MW、利用率及每MW资本成本；在设施通电和客户负荷验证前，不把130亿欧元视为运营资产。",
+            "未披露的PPA价格、实际MW、COD、利用率与每MW资本成本均保留UNKNOWN。"
+          ],
+          "done": "私有证据路由READY；计划支出不代表运营容量。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期一级市场",
+          "title": "等待Harvey承销证据",
+          "why": "Harvey正在测试垂直Agent平台能否拥有客户工作流，还是最终被模型供应商、法律数据库或律所自建系统压缩价值。",
+          "steps": [
+            "WATCH——只有可参与份额同时披露ARR、NRR、客户与席位集中、毛利率、模型成本、Agent任务成功率、收购贡献、一级与二级比例及清算优先权时，才升级为INVESTIGATE。",
+            "要求可参与份额，以及完整运营指标和股份条款。"
+          ],
+          "done": "WATCHING，直到可参与性、ARR、NRR、毛利、成本和优先权均有证据。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场",
+          "title": "观察Apple运营证据",
+          "why": "Apple仍拥有最强消费硬件分发之一，但AI价值必须体现为设备升级、服务使用和可完成的个人Agent工作，而不是“AI hub”措辞。",
+          "steps": [
+            "不根据发布会调整仓位；在首两个销售季度只跟踪Duo销量与ASP、C2性能和良率、A20端侧模型延迟、Micron等高性能内存含量、Siri任务完成率、服务附加率及中国销售组合。",
+            "两季度观察保持只读；发布会不授权调整仓位。"
+          ],
+          "done": "首两个销售季度WATCHING；未进行交易或资本配置。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年9月10日",
+      "description": "八項行動按來源排序，逐項明確驗收終點。編輯框架已完成，實驗與外部證據仍待落實。",
+      "centralJudgment": "測量創始人注意力，保持非正式監管消息的暫定性質，並在升級資本判斷前要求運營證據。",
+      "fieldLine": "八個信號。一項編輯框架完成。下一步由證據決定。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型、Agent與OPC自主性",
+          "title": "準備公平的Sol與Astra比較",
+          "why": "OPC的稀缺資源不是分支數量，而是Robin的注意力。模型競爭應在後臺發生，只有勝出的驗證結果才需要來到Robin面前。",
+          "steps": [
+            "選擇一個真實的跨文件任務，在兩個隔離worktree中分別運行Sol medium和Astra medium，使用完全相同的任務說明、權限和測試；僅以測試通過、diff範圍、自動恢復、Robin介入分鐘、耗時及總成本選擇合併結果，並將勝負原因寫入後續路由eval。",
+            "記錄相同任務、權限與測試，以及雙方diff、恢復、創始人分鐘和完整成本。"
+          ],
+          "done": "READY，等待配對任務產生已驗證結果與成本回執。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "定義人形機器人IPO質量門檻",
+          "why": "這是Unitree IPO之後真正改變投資論點的新證據：機器人資本的退出通道可能開始要求“付費勞動”，而非僅接受供應鏈故事。",
+          "steps": [
+            "對中國人形機器人建立IPO quality gate，統一跟蹤非關聯經常性收入、毛利率、現金消耗、實際交付、任務成功率和人工干預；在正式監管文件或多個申報案例確認前，將政策標記爲reported informal guidance。",
+            "要求正式規則或多個申報案例；交叉確認前保留reported informal guidance。"
+          ],
+          "done": "質量門檻任務READY；政策確認仍依賴外部證據。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本與Web3健康",
+          "title": "觀察六日ETF資本脈衝",
+          "why": "方向仍偏正，但每日波動和管理人結構提醒我們：進入ETF的資產配置資本，不等於進入Web3經營層的增長資本。",
+          "steps": [
+            "將狀態調整爲六日資本仍淨進入 / 首個完整回撤 / Web3廣度未確認；只有三個完整負流量交易日累計抹去現存11.311億美元淨流入時，才升級爲資本撤離。",
+            "只用完整結算交易日；9月9日部分數據不用於定論。"
+          ],
+          "done": "WATCHING，直到三個完整負流量交易日抹去剩餘11.311億美元流入。"
+        },
+        {
+          "signal": 4,
+          "domain": "支付與Token軌道",
+          "title": "梳理Adyen India付款權限",
+          "why": "Robin的支付經驗可以看出，真正的Agent支付護城河可能是把模型意圖轉換成符合本地規則、可對賬和可撤銷的付款。",
+          "steps": [
+            "將Adyen India加入Agent Payment控制面矩陣，記錄PA與跨境許可 / 數據本地化 / UPI循環授權 / Agent額度與收款人範圍 / 撤權退款 / 欺詐責任；在NPCI正式規則及真實交易數據出現前，評級爲licensed foundation / agent adoption unproven。",
+            "把許可和已有業務與尚未證明的Agent付款採用分開。"
+          ],
+          "done": "控制面矩陣任務READY；Agent採用仍未證明。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "完成創始人中斷稅框架",
+          "why": "一人公司不能通過把執行工作換成全天候Agent管理來實現規模化。",
+          "steps": [
+            "完成創始人中斷稅原創長文，並歸檔一篇LinkedIn衍生稿。",
+            "歸檔五個來源，完成四語編輯複覈，標明示例計算並鏈接canonical。"
+          ],
+          "done": "編輯證據框架與實驗規格COMPLETE；模型競賽尚未執行。",
+          "deepDiveTitle": "創始人的中斷稅"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基礎設施與資本項目",
+          "title": "準備Google Finland BYOP賬本",
+          "why": "這是Robin工程與PE能力最自然的交匯：真正稀缺的職業能力，是把選址、電力合同、電網、冷卻、資本和客戶負荷轉換成收入MW。",
+          "steps": [
+            "建立Google Finland BYOP ledger，逐項目跟蹤土地與許可、電網升級、PPA價格和爬坡、儲能COD、數據中心COD、實際MW、利用率及每MW資本成本；在設施通電和客戶負荷驗證前，不把130億歐元視爲運營資產。",
+            "未披露的PPA價格、實際MW、COD、利用率與每MW資本成本均保留UNKNOWN。"
+          ],
+          "done": "私有證據路由READY；計劃支出不代表運營容量。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期一級市場",
+          "title": "等待Harvey承銷證據",
+          "why": "Harvey正在測試垂直Agent平臺能否擁有客戶工作流，還是最終被模型供應商、法律數據庫或律所自建系統壓縮價值。",
+          "steps": [
+            "WATCH——只有可參與份額同時披露ARR、NRR、客戶與席位集中、毛利率、模型成本、Agent任務成功率、收購貢獻、一級與二級比例及清算優先權時，才升級爲INVESTIGATE。",
+            "要求可參與份額，以及完整運營指標和股份條款。"
+          ],
+          "done": "WATCHING，直到可參與性、ARR、NRR、毛利、成本和優先權均有證據。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場",
+          "title": "觀察Apple運營證據",
+          "why": "Apple仍擁有最強消費硬件分發之一，但AI價值必須體現爲設備升級、服務使用和可完成的個人Agent工作，而不是“AI hub”措辭。",
+          "steps": [
+            "不根據發佈會調整倉位；在首兩個銷售季度只跟蹤Duo銷量與ASP、C2性能和良率、A20端側模型延遲、Micron等高性能內存含量、Siri任務完成率、服務附加率及中國銷售組合。",
+            "兩季度觀察保持只讀；發佈會不授權調整倉位。"
+          ],
+          "done": "首兩個銷售季度WATCHING；未進行交易或資本配置。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年9月10日",
+      "description": "八つの行動を出典順に並べ、完了条件を明示。編集枠組みは完成し、実験と外部証拠は未完了。",
+      "centralJudgment": "創業者の注意を測り、非公式指導は暫定扱いとし、資本評価の引上げには稼働証拠を求める。",
+      "fieldLine": "八つのシグナル。一つの編集枠組みが完成。次の行動は証拠で決める。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "先端モデル、エージェントと一人企業の自律性",
+          "title": "SolとAstraの公平な比較を準備する",
+          "why": "一人企業の希少資源は分岐数ではなくRobinの注意だ。モデル間の競争は裏側で進め、創業者には検証を通過した結果を届けたい。",
+          "steps": [
+            "実際の複数ファイル課題を一つ選び、Sol mediumとAstra mediumを二つの隔離worktreeで動かす。説明、権限、テストを同一にし、テスト結果、diff範囲、自力復旧、Robin介入分数、経過時間、総費用だけで採用を決める。勝因を次回の経路評価へ記録する。",
+            "同じ課題、権限、テストと、双方のdiff、復旧、創業者分数、総費用を記録する。"
+          ],
+          "done": "READY。比較課題の検証結果と費用記録を待つ。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "ヒューマノイドIPOの品質基準を定める",
+          "why": "Unitree IPO後の投資仮説に影響する新たな証拠である。出口市場が、供給網への期待より、有償で働くロボットを求め始める可能性がある。",
+          "steps": [
+            "中国のヒューマノイド企業にIPO品質基準を設け、非関連顧客の継続収入、粗利率、資金消費、納入台数、作業成功率、人間介入を追う。正式規則または複数の申請事例で確認するまでは、政策をreported informal guidanceと記録する。",
+            "正式規則か複数申請を求め、確認まではreported informal guidanceを維持する。"
+          ],
+          "done": "品質基準の課題はREADY。政策確認には外部証拠が必要。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資本とWeb3の健全性",
+          "title": "六取引日のETF資本を観察する",
+          "why": "方向はなおプラスだが、ETFへ入る資産配分資本と、Web3企業へ届く成長資本は別である。",
+          "steps": [
+            "状態をsix-session capital still entering / first complete reversal / Web3 breadth unconfirmedへ変更する。確定した三つの純流出取引日が残る11億3,110万ドルの流入を消した場合に限り、資本撤退へ引き上げる。",
+            "確定した取引日だけを使い、9月9日の部分値で結論を出さない。"
+          ],
+          "done": "WATCHING。確定した三純流出取引日が残る11億3,110万ドルを消すまで待つ。"
+        },
+        {
+          "signal": 4,
+          "domain": "決済とトークン基盤",
+          "title": "Adyen Indiaの決済権限を整理する",
+          "why": "長持ちする決済の強みは、モデルの意図を現地規則に適合し、照合でき、取り消せる取引へ変える能力かもしれない。",
+          "steps": [
+            "Adyen IndiaをAgent Payment管理表へ追加し、PA・越境免許、データ国内保存、UPI継続権限、エージェント限度額と受取人範囲、権限取消・返金、不正責任を記録する。NPCI規則と取引証拠が出るまではlicensed foundation / agent adoption unprovenを維持する。",
+            "免許と既存事業を、未証明のエージェント決済普及と分ける。"
+          ],
+          "done": "管理表の課題はREADY。エージェント普及は未証明。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "創業者の中断税の枠組みを完成する",
+          "why": "一人企業は、実作業を常時エージェント管理へ置き換えるだけでは拡張できない。",
+          "steps": [
+            "創業者の中断税の原稿とLinkedIn派生記事を作成・保存する。",
+            "五出典、四言語レビュー、仮定計算の明示、canonicalへのリンクを保存する。"
+          ],
+          "done": "編集枠組みと実験仕様はCOMPLETE。モデル比較は未実施。",
+          "deepDiveTitle": "創業者の中断税"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基盤と資本プロジェクト",
+          "title": "Google Finland BYOP台帳を準備する",
+          "why": "工学とPEが交わる領域だ。用地、電力契約、送電網、冷却、資本、顧客負荷を、売上を生むMWへ変える能力に価値がある。",
+          "steps": [
+            "Google Finland BYOP台帳を作り、土地・許認可、送電改修、PPA価格と立上げ、蓄電COD、データセンターCOD、実際のMW、稼働率、MW当たり資本費用を追う。通電と顧客負荷の検証前に、130億ユーロを稼働資産と認めない。",
+            "未開示のPPA価格、実MW、COD、稼働率、MW当たり資本費用はUNKNOWNに保つ。"
+          ],
+          "done": "私的証拠への振分けはREADY。計画支出から稼働容量を推定しない。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期未公開市場",
+          "title": "Harveyの投資判断資料を待つ",
+          "why": "垂直エージェントが専門業務を所有できるか、モデル企業、法律データベース、法律事務所の内製に経済価値を削られるかを試す企業である。",
+          "steps": [
+            "WATCHを維持する。参加可能持分にARR、NRR、顧客・席数集中、粗利率、モデル費用、エージェント成功率、買収寄与、一次・二次比率、清算優先権がそろった場合にのみINVESTIGATEへ進む。",
+            "参加可能持分と、完全な運営指標・株式条件を求める。"
+          ],
+          "done": "WATCHING。参加可能性、ARR、NRR、利益率、費用、優先権の証拠を待つ。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開株式",
+          "title": "Appleの運営証拠を観察する",
+          "why": "Appleは強い消費者接点を保つ。AI価値はAI hubという言葉より、買替え、サービス利用、完了できる個人エージェント業務に表れる必要がある。",
+          "steps": [
+            "発表会を理由に保有を変更しない。最初の二販売四半期でDuo台数とASP、C2性能と歩留まり、A20端末内遅延、高性能メモリー搭載、Siri完了率、サービス付帯率、中国の販売構成を追う。",
+            "二四半期の監視は読み取り専用。発表会は保有変更の権限を与えない。"
+          ],
+          "done": "最初の二販売四半期はWATCHING。売買や資本配分は行っていない。"
+        }
+      ]
+    }
+  }
+}
