@@ -1,5 +1,5 @@
 ---
-archiveStatus: "PIPELINE"
+archiveStatus: "PRESENT"
 title: Reality Gets a Vote
 date: 2026-09-11
 updated: 2026-08-21

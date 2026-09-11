@@ -1,5 +1,5 @@
 ---
-archiveStatus: "PIPELINE"
+archiveStatus: "PRESENT"
 title: 現実にも一票がある
 date: 2026-09-11
 updated: 2026-08-22

@@ -1,0 +1,571 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-11",
+  "updated": "2026-09-11",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20260911/hero.webp",
+  "actionHero": "/action-item/20260911/hero.webp",
+  "ogImage": "/daily-briefing/20260911/og.webp",
+  "briefingPath": "/ouroboros/202609/20260911/",
+  "actionItemPath": "/ouroboros/202609/20260911/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "RECOVER",
+      "visualLabel": "proposed controlled trial",
+      "sources": [
+        {
+          "label": "OpenAI API changelog",
+          "url": "https://developers.openai.com/api/docs/changelog"
+        },
+        {
+          "label": "Agents API overview",
+          "url": "https://developers.openai.com/api/docs/guides/agents-api/overview"
+        },
+        {
+          "label": "quickstart",
+          "url": "https://developers.openai.com/api/docs/guides/agents-api/quickstart"
+        },
+        {
+          "label": "Astra",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6-astra"
+        },
+        {
+          "label": "Sol",
+          "url": "https://developers.openai.com/api/docs/models/gpt-5.6-sol"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "100 CYCLES",
+      "visualLabel": "robot labor gate",
+      "sources": [
+        {
+          "label": "Reuters’ visit to X‑Humanoid",
+          "url": "https://www.reuters.com/world/asia-pacific/after-outrunning-bolt-chinas-robot-champion-races-towards-real-world-work-2026-09-10/"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$1.0456B",
+      "visualLabel": "seven settled sessions",
+      "sources": [
+        {
+          "label": "Nasdaq–Payward transaction",
+          "url": "https://www.reuters.com/legal/government/nasdaq-invest-100-million-kraken-parent-deepen-tokenization-push-2026-09-10/"
+        },
+        {
+          "label": "Farside Bitcoin",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "Farside Ether",
+          "url": "https://farside.co.uk/eth/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "AUTHORITY",
+      "visualLabel": "payment acceptance",
+      "sources": [
+        {
+          "label": "Reuters on the registry plan",
+          "url": "https://www.reuters.com/world/india/india-plans-ai-registry-it-looks-roll-out-agentic-payments-sources-say-2026-09-10/"
+        },
+        {
+          "label": "NPCI chairman’s public remarks",
+          "url": "https://m.economictimes.com/ai/ai-insights/gff-2026-npci-working-on-protocols-to-authorise-ai-agents-on-upi-says-chairman-ajay-kumar-choudhary/articleshow/133998036.cms"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "visualValue": "VERIFY",
+      "visualLabel": "completed editorial framework",
+      "sources": [
+        {
+          "label": "OpenAI changelog",
+          "url": "https://developers.openai.com/api/docs/changelog"
+        },
+        {
+          "label": "Agents API overview",
+          "url": "https://developers.openai.com/api/docs/guides/agents-api/overview"
+        },
+        {
+          "label": "Agents API quickstart",
+          "url": "https://developers.openai.com/api/docs/guides/agents-api/quickstart"
+        },
+        {
+          "label": "Astra",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6-astra"
+        },
+        {
+          "label": "Sol",
+          "url": "https://developers.openai.com/api/docs/models/gpt-5.6-sol"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "2GW",
+      "visualLabel": "announced pipeline",
+      "sources": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/asia-pacific/nvidia-teams-up-with-australian-partners-build-ai-factory-capacity-2026-09-10/"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$5B",
+      "visualLabel": "reported valuation",
+      "sources": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/ai-chip-startup-positrons-valuation-skyrockets-latest-funding-round-2026-09-10/"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "-$5.4B",
+      "visualLabel": "quarterly free cash flow",
+      "sources": [
+        {
+          "label": "Reuters earnings report",
+          "url": "https://www.reuters.com/technology/oracles-quarterly-revenue-beats-estimates-ai-boom-drives-cloud-demand-2026-09-10/"
+        },
+        {
+          "label": "ORCL adjusted prices",
+          "url": "https://stockanalysis.com/stocks/orcl/history/"
+        },
+        {
+          "label": "QQQ adjusted prices",
+          "url": "https://stockanalysis.com/etf/qqq/history/"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, September 11, 2026",
+      "description": "Eight source-ordered actions connect recoverable work, physical autonomy, payment authority and operating capital evidence.",
+      "centralJudgment": "Require verified recovery and real operating conversion before upgrading a technology or capital claim.",
+      "fieldLine": "Eight signals. One completed editorial framework. Execution remains evidence-bound.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models, Agents and OPC Autonomy",
+          "title": "Prepare a bounded agent recovery trial",
+          "why": "Preserving a session prevents total context loss.\n\nAn OPC must prove that the agent resumes the intended business task from the right checkpoint without silently repeating actions, exceeding authority or declaring success after tool failure.",
+          "steps": [
+            "Run a non-production workflow of Sol routine execution → inject a dependency failure, stream disconnect and compaction → use Astra Agents API only if Sol cannot recover → verify with deterministic tests and checkpoint diffs → write the recovery result into routing evals; measure recovery, duplicate or unauthorized actions, post-compaction instruction retention, Robin-intervention minutes, elapsed time, tool and token cost, expanding Astra rescue only if it lowers cost per verified outcome.",
+            "Freeze the task, permissions, checkpoint and tests; include all failed attempts and full costs."
+          ],
+          "done": "READY until an authorized controlled trial produces checkpoint, effect and cost receipts."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "Set the 100-cycle robot labor gate",
+          "why": "Physical AI’s economic unit is not the fastest single action. It is useful hours that can stop safely, recover and continue without a human repair crew.",
+          "steps": [
+            "Rate X‑Humanoid mobility breakthrough / labor economics unproven and require a 100-cycle test covering acceleration, payload, emergency braking, fall recovery and battery replacement, with task success, intervention, MTBF, MTTR, energy and cost per useful autonomous hour disclosed before upgrading.",
+            "Include safe stopping and recovery; speed records alone do not clear labor economics."
+          ],
+          "done": "READY until 100 consecutive tasks disclose success, interventions, MTBF, MTTR, energy and cost."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital and Web3 Health",
+          "title": "Track ETF capital and tokenized rights",
+          "why": "The answer to “where is capital going?” is splitting: ETF allocations are cooling in the short term, while long-duration operating capital is underwriting always-open securities infrastructure.",
+          "steps": [
+            "Update the status to seven-session core capital still entering / two-day reversal / strategic capital entering tokenized market structure; recognize the $100 million as Web3 operating-growth evidence only after NETs launches and validates legal ownership, corporate actions, custody, surveillance, settlement finality, liquidity and fee revenue.",
+            "Keep incomplete September 10 ETF data outside the conclusion; verify NETs operating milestones."
+          ],
+          "done": "WATCHING until settled capital data and actual 2027 NETs rights, liquidity and fee evidence warrant reclassification."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins, Fintech and Payment Rails",
+          "title": "Specify Know Your Agent authority",
+          "why": "Eight years in payments become an advantage here. The Agent-Commerce moat is converting machine intent into a provable, bounded, revocable and disputable transaction—not launching another chat interface.",
+          "steps": [
+            "Define a Know Your Agent acceptance contract for RobinOS/MerchantOS that permits real-money access only when each transaction carries signed agent identity, user principal and mandate, payee and amount/time limits, consume-once or idempotent execution evidence, immediate revocation, and a receipt/refund/liability path.",
+            "Keep the control contract READY; publication does not grant access to real money."
+          ],
+          "done": "READY until an authorized acceptance contract is implemented and tested; no payment executed."
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "Complete the agent recovery framework",
+          "why": "This turns RobinOS self-healing from anthropomorphic language into an implementable and economically measurable OPC capability.",
+          "steps": [
+            "Publish the original agent recovery framework and archive a LinkedIn derivative. The source assignment remains linked in the Daily Briefing.",
+            "Complete five-source research, four authored editions, evidence visual, ledger and archived LinkedIn derivative."
+          ],
+          "done": "COMPLETE for the published evidence framework and experiment specification. Comparative recovery metrics remain UNKNOWN.",
+          "deepDiveTitle": "Proving Agent Recovery"
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure and Capital Projects",
+          "title": "Prepare the Australia capacity conversion ledger",
+          "why": "Robin’s engineering, PE and AI experience fits the scarce role of translating model demand into sites, grids, cooling, financing, customer credit and revenue-generating megawatts.",
+          "steps": [
+            "Create an Australia 2GW conversion ledger by partner and site covering permits, grid and water, PPA, DSX/GPU orders, debt and equity, customer minimum payments, COD, utilization and revenue MW; classify all 2GW as pipeline rather than operating assets until energization and paid load are verified.",
+            "Preserve site MW, permits, PPAs, financing, COD and paid load as UNKNOWN until evidenced."
+          ],
+          "done": "READY for private evidence routing; the 2GW roadmap is pipeline, not energized or revenue-generating capacity."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-Stage Private Markets",
+          "title": "Watch Positron underwriting evidence",
+          "why": "The next inference-chip value layer may come from memory-first systems rather than replicating training GPUs, but valuation must ultimately be supported by cost per token, power and paid deployment.",
+          "steps": [
+            "WATCH—upgrade to INVESTIGATE only if accessible shares come with independent Atlas performance and paid revenue, Asimov tape-out and yield, power and cost per token, Oracle contract terms, runway, primary-secondary split and liquidation preferences.",
+            "Require accessible shares, independent performance, paid revenues and complete share terms."
+          ],
+          "done": "WATCHING; INVESTIGATE requires access and disclosed performance, contracts, runway and preferences."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities",
+          "title": "Track Oracle customer-funded capacity",
+          "why": "Oracle has provided measurable evidence about who funds AI infrastructure. The 12–24-month thesis now depends on whether customer capital produces utilized capacity, revenue and free cash flow.",
+          "steps": [
+            "Do not chase the extended-hours reaction; divide Oracle contracts into customer prepay / bring-your-own-hardware / Oracle-funded and track RPO conversion, prepayment coverage, concentration, utilization, margin, capex, free cash flow and incremental ROIC, upgrading the thesis only when customer funding lowers financing risk and cash generation improves consistently.",
+            "Separate prepay, customer hardware and Oracle-funded contracts; compare official closes on equal timing."
+          ],
+          "done": "WATCHING over 12–24 months; upgrade only with reduced financing risk and sustained cash improvement."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年9月11日",
+      "description": "八项行动按来源顺序串联任务恢复、机器人自主性、支付授权与资本运营证据。",
+      "centralJudgment": "技术或资本判断升级前，先要求已验证的恢复能力和真实运营转化。",
+      "fieldLine": "八个信号。一项编辑框架完成。执行状态由证据决定。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型、Agent与OPC自主性",
+          "title": "准备有边界的Agent恢复测试",
+          "why": "平台保存会话只能避免上下文完全消失；OPC需要证明Agent能从正确检查点恢复业务意图，而不是在后台悄悄重做、重复付款或宣布一个工具失败的任务已经完成。",
+          "steps": [
+            "在一个无生产权限的真实长任务中保留Sol日常执行 → 注入依赖失败、stream断连和一次compaction → Astra Agents API仅在Sol恢复失败时救援 → 确定性测试与checkpoint diff验证 → 恢复结果写入路由eval；记录恢复率、重复或越权动作、压缩后指令保持、Robin介入分钟、耗时、工具与Token成本，未降低每个验证结果成本前不扩大Astra救援范围。",
+            "冻结任务、权限、检查点和测试；失败尝试及完整成本均计入。"
+          ],
+          "done": "READY，等待获准的受控试验产生检查点、外部动作和成本回执。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "设定机器人百次劳动验收门槛",
+          "why": "Physical AI的经济单位不是最快一次动作，而是每个无需人工抢修、可以安全停止并继续工作的有效小时。",
+          "steps": [
+            "将X‑Humanoid评级为mobility breakthrough / labor economics unproven，要求其通过包含加速、负载、紧急制动、跌倒恢复及电池更换的100次连续任务，披露成功率、人工接管、MTBF、MTTR、能耗及每个有效自主小时成本后再升级。",
+            "纳入安全停止和恢复；速度纪录不能单独证明劳动经济性。"
+          ],
+          "done": "READY，直到连续100次任务披露成功率、介入、MTBF、MTTR、能耗与成本。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本与Web3健康",
+          "title": "跟踪ETF资本与Token化股东权利",
+          "why": "这同时回答“钱往哪里走”：短期ETF资金降温，但长期建设资本正在押注全天候证券市场结构。",
+          "steps": [
+            "将状态更新为七日核心资本仍净进入 / 两日回撤 / 战略资本进入Token化市场结构，只有NETs在2027年真实上线并验证法律所有权、公司行动、托管、监察、结算最终性、流动性和收费收入后，才把1亿美元投资视为Web3经营层增长证据。",
+            "不以9月10日未完整ETF数据定论；核验NETs实际运营里程碑。"
+          ],
+          "done": "WATCHING，等待完整资本数据及2027年NETs实际权利、流动性和收费证据。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币、Fintech与支付轨道",
+          "title": "定义Know Your Agent权限",
+          "why": "八年支付经验将在这里形成优势：Agent Commerce最重要的不是新的聊天入口，而是将机器意图转化为可证明、可限制、可撤销和可争议的交易。",
+          "steps": [
+            "为RobinOS/MerchantOS建立一个Know Your Agent acceptance contract，只有每笔交易同时携带已签名Agent身份、用户主体与mandate、收款人与金额/时间限制、一次性或幂等执行凭证、即时撤权以及收据/退款/责任路径时才允许接入真实资金。",
+            "控制合同保持READY；本次出版不授予真实资金权限。"
+          ],
+          "done": "READY，等待获准合同实现与测试；未执行付款。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "完成Agent恢复证据框架",
+          "why": "这把RobinOS的自我治愈从拟人化口号变成可实施、可计价的OPC操作系统能力。",
+          "steps": [
+            "发布Agent恢复原创框架，并归档LinkedIn衍生稿；完整来源任务保留在Daily Briefing。",
+            "完成五来源研究、四语原创版本、证据图解、台账和LinkedIn归档稿。"
+          ],
+          "done": "出版证据框架及实验规格COMPLETE；比较恢复指标仍为UNKNOWN。",
+          "deepDiveTitle": "证明Agent真正恢复"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基础设施与资本项目",
+          "title": "准备澳洲容量转化台账",
+          "why": "Robin的工程、PE和AI背景正适合承担这一稀缺角色：把模型需求翻译成选址、电网、冷却、融资、客户信用和收入MW。",
+          "steps": [
+            "建立Australia 2GW conversion ledger，逐一记录合作方、站点、许可、电网与水资源、PPA、DSX/GPU订单、股债资本、客户最低付款、COD、利用率及收入MW；在通电和付费负荷获得验证前，将2GW全部按项目管线而非运营资产处理。",
+            "各站点MW、许可、PPA、融资、COD与有偿负载在有证据前保留UNKNOWN。"
+          ],
+          "done": "私有证据路由READY；2GW路线图属于pipeline，不代表已通电或创收容量。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期一级市场",
+          "title": "观察Positron承销证据",
+          "why": "推理芯片的下一轮价值可能来自“内存优先”系统，而非复制训练GPU，但估值必须由每Token成本、功耗和付费部署验证。",
+          "steps": [
+            "WATCH——只有出现可参与份额，并披露Atlas付费收入与独立性能、Asimov tape-out和良率、功耗及每Token成本、Oracle合同条件、现金跑道、一级/二级比例与清算优先权后，才升级为INVESTIGATE。",
+            "要求可参与股份、独立性能、实收收入及完整股份条款。"
+          ],
+          "done": "WATCHING；可参与性、性能、合同、资金余力和优先权齐备才进入INVESTIGATE。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场",
+          "title": "跟踪Oracle客户出资容量",
+          "why": "Oracle首次给出可量化证据，说明谁在承担AI基础设施资本；真正的12—24个月判断取决于客户预付款能否持续转化为高利用率、收入和自由现金流。",
+          "steps": [
+            "不追逐盘后反应；将Oracle合同拆为customer prepay / bring-your-own-hardware / Oracle-funded三类，逐季跟踪RPO转化、113.6亿美元预付款覆盖率、客户集中、利用率、毛利、资本开支、自由现金流和增量ROIC，只有客户资本降低融资风险且自由现金流持续改善时才升级投资论点。",
+            "区分预付、客户硬件与Oracle出资；正式收盘比较保持时点一致。"
+          ],
+          "done": "未来12–24个月WATCHING；融资风险下降且现金持续改善才升级。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年9月11日",
+      "description": "八項行動按來源順序串聯任務恢復、機器人自主性、支付授權與資本運營證據。",
+      "centralJudgment": "技術或資本判斷升級前，先要求已驗證的恢復能力和真實運營轉化。",
+      "fieldLine": "八個信號。一項編輯框架完成。執行狀態由證據決定。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型、Agent與OPC自主性",
+          "title": "準備有邊界的Agent恢復測試",
+          "why": "平臺保存會話只能避免上下文完全消失；OPC需要證明Agent能從正確檢查點恢復業務意圖，而不是在後臺悄悄重做、重複付款或宣佈一個工具失敗的任務已經完成。",
+          "steps": [
+            "在一個無生產權限的真實長任務中保留Sol日常執行 → 注入依賴失敗、stream斷連和一次compaction → Astra Agents API僅在Sol恢復失敗時救援 → 確定性測試與checkpoint diff驗證 → 恢復結果寫入路由eval；記錄恢復率、重複或越權動作、壓縮後指令保持、Robin介入分鐘、耗時、工具與Token成本，未降低每個驗證結果成本前不擴大Astra救援範圍。",
+            "凍結任務、權限、檢查點和測試；失敗嘗試及完整成本均計入。"
+          ],
+          "done": "READY，等待獲准的受控試驗產生檢查點、外部動作和成本回執。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "設定機器人百次勞動驗收門檻",
+          "why": "Physical AI的經濟單位不是最快一次動作，而是每個無需人工搶修、可以安全停止並繼續工作的有效小時。",
+          "steps": [
+            "將X‑Humanoid評級爲mobility breakthrough / labor economics unproven，要求其通過包含加速、負載、緊急制動、跌倒恢復及電池更換的100次連續任務，披露成功率、人工接管、MTBF、MTTR、能耗及每個有效自主小時成本後再升級。",
+            "納入安全停止和恢復；速度紀錄不能單獨證明勞動經濟性。"
+          ],
+          "done": "READY，直到連續100次任務披露成功率、介入、MTBF、MTTR、能耗與成本。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本與Web3健康",
+          "title": "跟蹤ETF資本與Token化股東權利",
+          "why": "這同時回答“錢往哪裏走”：短期ETF資金降溫，但長期建設資本正在押注全天候證券市場結構。",
+          "steps": [
+            "將狀態更新爲七日核心資本仍淨進入 / 兩日回撤 / 戰略資本進入Token化市場結構，只有NETs在2027年真實上線並驗證法律所有權、公司行動、託管、監察、結算最終性、流動性和收費收入後，才把1億美元投資視爲Web3經營層增長證據。",
+            "不以9月10日未完整ETF數據定論；覈驗NETs實際運營里程碑。"
+          ],
+          "done": "WATCHING，等待完整資本數據及2027年NETs實際權利、流動性和收費證據。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣、Fintech與支付軌道",
+          "title": "定義Know Your Agent權限",
+          "why": "八年支付經驗將在這裏形成優勢：Agent Commerce最重要的不是新的聊天入口，而是將機器意圖轉化爲可證明、可限制、可撤銷和可爭議的交易。",
+          "steps": [
+            "爲RobinOS/MerchantOS建立一個Know Your Agent acceptance contract，只有每筆交易同時攜帶已簽名Agent身份、用戶主體與mandate、收款人與金額/時間限制、一次性或冪等執行憑證、即時撤權以及收據/退款/責任路徑時才允許接入真實資金。",
+            "控制合同保持READY；本次出版不授予真實資金權限。"
+          ],
+          "done": "READY，等待獲准合同實現與測試；未執行付款。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "完成Agent恢復證據框架",
+          "why": "這把RobinOS的自我治癒從擬人化口號變成可實施、可計價的OPC操作系統能力。",
+          "steps": [
+            "發布Agent恢復原創框架，並歸檔LinkedIn衍生稿；完整來源任務保留在Daily Briefing。",
+            "完成五來源研究、四語原創版本、證據圖解、臺賬和LinkedIn歸檔稿。"
+          ],
+          "done": "出版證據框架及實驗規格COMPLETE；比較恢復指標仍爲UNKNOWN。",
+          "deepDiveTitle": "證明Agent真正恢復"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基礎設施與資本項目",
+          "title": "準備澳洲容量轉化臺賬",
+          "why": "Robin的工程、PE和AI背景正適合承擔這一稀缺角色：把模型需求翻譯成選址、電網、冷卻、融資、客戶信用和收入MW。",
+          "steps": [
+            "建立Australia 2GW conversion ledger，逐一記錄合作方、站點、許可、電網與水資源、PPA、DSX/GPU訂單、股債資本、客戶最低付款、COD、利用率及收入MW；在通電和付費負荷獲得驗證前，將2GW全部按項目管線而非運營資產處理。",
+            "各站點MW、許可、PPA、融資、COD與有償負載在有證據前保留UNKNOWN。"
+          ],
+          "done": "私有證據路由READY；2GW路線圖屬於pipeline，不代表已通電或創收容量。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期一級市場",
+          "title": "觀察Positron承銷證據",
+          "why": "推理芯片的下一輪價值可能來自“內存優先”系統，而非複製訓練GPU，但估值必須由每Token成本、功耗和付費部署驗證。",
+          "steps": [
+            "WATCH——只有出現可參與份額，並披露Atlas付費收入與獨立性能、Asimov tape-out和良率、功耗及每Token成本、Oracle合同條件、現金跑道、一級/二級比例與清算優先權後，才升級爲INVESTIGATE。",
+            "要求可參與股份、獨立性能、實收收入及完整股份條款。"
+          ],
+          "done": "WATCHING；可參與性、性能、合同、資金餘力和優先權齊備才進入INVESTIGATE。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場",
+          "title": "跟蹤Oracle客戶出資容量",
+          "why": "Oracle首次給出可量化證據，說明誰在承擔AI基礎設施資本；真正的12—24個月判斷取決於客戶預付款能否持續轉化爲高利用率、收入和自由現金流。",
+          "steps": [
+            "不追逐盤後反應；將Oracle合同拆爲customer prepay / bring-your-own-hardware / Oracle-funded三類，逐季跟蹤RPO轉化、113.6億美元預付款覆蓋率、客戶集中、利用率、毛利、資本開支、自由現金流和增量ROIC，只有客戶資本降低融資風險且自由現金流持續改善時才升級投資論點。",
+            "區分預付、客戶硬件與Oracle出資；正式收盤比較保持時點一致。"
+          ],
+          "done": "未來12–24個月WATCHING；融資風險下降且現金持續改善才升級。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年9月11日",
+      "description": "八つの行動を出典順に並べ、仕事の復旧、ロボット、決済権限、資本の稼働証拠をつなぐ。",
+      "centralJudgment": "技術や資本の評価を上げる前に、検証済み復旧と実際の事業転換を求める。",
+      "fieldLine": "八つのシグナル。一つの編集枠組みが完成。実行状態は証拠で示す。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "先端モデル、エージェントとOPCの自律性",
+          "title": "限定したエージェント復旧試験を準備する",
+          "why": "セッション保存は文脈の全損を防ぐ。OPCに必要なのは、正しいチェックポイントから業務意図を回復し、黙ってやり直したり、二重払いしたり、ツールが失敗した仕事を完了扱いにしない証明だ。",
+          "steps": [
+            "本番権限のない実際の長期タスクで、Solの日常実行→依存関係の障害、stream切断、compactionを各一回注入→Solが復旧できない場合だけAstra Agents APIが救援→決定論的テストとcheckpoint diffで検証→復旧記録をルーティングevalへ保存、という試験を用意する。復旧率、重複・越権動作、圧縮後の指示保持、Robinの介入分数、所要時間、ツール・トークン費用を記録し、検証済み成果当たり費用が下がるまで救援範囲を広げない。",
+            "タスク、権限、チェックポイント、検査を固定し、失敗と全費用を含める。"
+          ],
+          "done": "READY。許可された統制試験の状態・操作・費用記録を待つ。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "ロボット百回連続作業の基準を置く",
+          "why": "Physical AIの経済単位は最速の一動作ではない。人の緊急修理なしに、安全に停止して作業を続けられる有効な一時間だ。",
+          "steps": [
+            "X-Humanoidをmobility breakthrough / labor economics unprovenと評価する。加速、負荷、緊急制動、転倒復旧、電池交換を含む100回連続タスクを求め、成功率、人の介入、MTBF、MTTR、消費エネルギー、有効自律時間当たり費用が開示されてから評価を上げる。",
+            "安全停止と復旧を含める。速度記録だけでは労働採算を証明できない。"
+          ],
+          "done": "READY。百回連続タスクの成功、介入、MTBF、MTTR、エネルギー、費用を待つ。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資本とWeb3の健全性",
+          "title": "ETF資本とトークン化株主権を追う",
+          "why": "短期のETF資金は冷えた一方、長期の建設資本は常時取引できる証券市場構造に賭けている。二つの時間軸で資金の行き先を見る必要がある。",
+          "steps": [
+            "状態を「七日では中核資本の純流入／二日間の反転／戦略資本はトークン化市場構造へ」とする。NETsが2027年に実際に稼働し、法的所有権、コーポレートアクション、保管、監視、決済の確定性、流動性、手数料収入を検証するまで、1億ドルの投資をWeb3の事業成長実績とは扱わない。",
+            "9月10日の未確定ETF値で結論を出さず、NETsの実稼働を確認する。"
+          ],
+          "done": "WATCHING。確定資本値と2027年NETsの実際の権利、流動性、料金収入を待つ。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコイン、Fintech、決済基盤",
+          "title": "Know Your Agentの権限を定義する",
+          "why": "決済での八年の経験が強みになる。Agent-Commerceの競争力は、機械の意図を立証可能で範囲が限定され、撤回や異議申立てができる取引に変えることだ。",
+          "steps": [
+            "RobinOS/MerchantOS向けのKnow Your Agent受入基準を定義する。署名付きエージェントID、利用者本人と委任、受取人、金額・時間上限、一回限りまたは冪等な実行証拠、即時取消し、領収・返金・責任の経路が各取引にそろうまで、実資金へのアクセスを認めない。",
+            "権限仕様はREADY。本出版は実資金の使用を許可しない。"
+          ],
+          "done": "READY。許可された仕様実装と試験を待つ。支払いは未実行。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "エージェント復旧の証拠枠組みを完成する",
+          "why": "RobinOSの自己復旧を擬人化された表現から、実装可能で経済的に測れるOPC能力へ変えられる。",
+          "steps": [
+            "復旧の独自枠組みを公開し、LinkedIn派生原稿を保存する。元の課題全文はDaily Briefingに残す。",
+            "五出典、四言語原稿、証拠図、台帳、LinkedIn派生原稿を保存する。"
+          ],
+          "done": "出版枠組みと実験仕様はCOMPLETE。復旧の比較指標はUNKNOWN。",
+          "deepDiveTitle": "エージェントの復旧を証明する"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラと資本プロジェクト",
+          "title": "豪州容量の実現台帳を準備する",
+          "why": "工学、PE、AIの経験は、モデル需要を用地、系統、冷却、資金、顧客信用、収益を生むMWへ変換する役割に合う。",
+          "steps": [
+            "豪州2GWの実現台帳を相手先・拠点別に用意し、許認可、系統・水、PPA、DSX/GPU発注、負債・株式資金、顧客最低支払、COD、稼働率、収益MWを追う。通電と有料負荷を検証するまで、全2GWを稼働資産ではなく計画として扱う。",
+            "拠点MW、許可、PPA、資金、COD、有料負荷は証拠までUNKNOWNに保つ。"
+          ],
+          "done": "私的証拠への振分けはREADY。2GWは計画であり、通電・収益容量ではない。"
+        },
+        {
+          "signal": 7,
+          "domain": "レイトステージ未公開市場",
+          "title": "Positronの投資判断資料を待つ",
+          "why": "推論チップの次の価値は学習GPUの模倣よりメモリー重視のシステムから生まれ得る。ただし評価額を支えるのはトークン単価、電力、有料導入だ。",
+          "steps": [
+            "WATCH。参加可能な持分に加え、独立したAtlas性能・有料売上、Asimovのテープアウト・歩留まり、電力・トークン単価、Oracle契約、資金余力、新株・既存株内訳、清算優先権が確認できた場合だけINVESTIGATEへ上げる。",
+            "参加可能株式、独立性能、有料売上、完全な株式条件を求める。"
+          ],
+          "done": "WATCHING。参加可能性、性能、契約、資金余力、優先権がそろえばINVESTIGATE。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開株式",
+          "title": "Oracleの顧客資金による容量を追う",
+          "why": "AIインフラを誰が資金面で支えるかについて、Oracleは測定可能な証拠を出した。今後12～24カ月の投資仮説は、顧客資金が利用される容量、売上、フリーキャッシュフローへ転換するかで決まる。",
+          "steps": [
+            "時間外反応を追いかけない。契約を顧客前払い／ハードウェア持込み／Oracle負担に分け、RPO転換、前払い充当率、集中、稼働率、利益率、設備投資、フリーキャッシュフロー、増分ROICを追う。顧客資金が調達リスクを下げ、現金創出が継続的に改善したときだけ仮説を上げる。",
+            "前払い、顧客機器、Oracle負担を分け、正式終値の時点をそろえる。"
+          ],
+          "done": "12～24カ月はWATCHING。調達リスク低下と持続的現金改善が評価変更の条件。"
+        }
+      ]
+    }
+  }
+}
