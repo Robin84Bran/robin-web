@@ -1,0 +1,543 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-12",
+  "updated": "2026-09-12",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20260912/hero.webp",
+  "actionHero": "/action-item/20260912/hero.webp",
+  "ogImage": "/daily-briefing/20260912/og.webp",
+  "briefingPath": "/ouroboros/202609/20260912/",
+  "actionItemPath": "/ouroboros/202609/20260912/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "ROLES",
+      "visualLabel": "bounded trial",
+      "sources": [
+        {
+          "label": "OpenAI on rethinking Astra skills and prompts",
+          "url": "https://learn.chatgpt.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra"
+        },
+        {
+          "label": "Codex subagents",
+          "url": "https://learn.chatgpt.com/docs/agent-configuration/subagents"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "MISSIONS",
+      "visualLabel": "substitution evidence",
+      "sources": [
+        {
+          "label": "Reuters frontline investigation",
+          "url": "https://www.reuters.com/business/aerospace-defense/behind-killer-robots-ukraines-new-warfare-revolution-2026-09-11/"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$733M",
+      "visualLabel": "eight-session net entry",
+      "sources": [
+        {
+          "label": "Farside Bitcoin",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "Farside Ether",
+          "url": "https://farside.co.uk/eth/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "20 CALLS",
+      "visualLabel": "proposed gate",
+      "sources": [
+        {
+          "label": "Circle’s Discovery API announcement",
+          "url": "https://www.circle.com/blog/discover-the-whole-agent-marketplace-in-one-call"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "visualValue": "MEMORY",
+      "visualLabel": "published protocol",
+      "sources": [
+        {
+          "label": "OpenAI Codex Memories",
+          "url": "https://learn.chatgpt.com/docs/customization/memories"
+        },
+        {
+          "label": "OpenAI’s Astra skills and prompts guidance",
+          "url": "https://learn.chatgpt.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra"
+        },
+        {
+          "label": "Codex subagents",
+          "url": "https://learn.chatgpt.com/docs/agent-configuration/subagents"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "5GW",
+      "visualLabel": "planned capacity",
+      "sources": [
+        {
+          "label": "Reuters exclusive",
+          "url": "https://www.reuters.com/world/middle-east/uae-revises-ai-data-center-plan-after-iranian-attacks-sources-say-2026-09-11/"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$2T",
+      "visualLabel": "reported proposal",
+      "sources": [
+        {
+          "label": "Reuters exclusive",
+          "url": "https://www.reuters.com/legal/transactional/nvidia-talks-invest-anthropics-mega-ipo-sources-say-2026-09-11/"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "ADS",
+      "visualLabel": "filing pending",
+      "sources": [
+        {
+          "label": "Reuters on Kioxia’s proposed US ADS listing",
+          "url": "https://www.reuters.com/world/asia-pacific/us-listing-could-put-japans-kioxia-global-ai-spotlight-voyas-thomas-says-2026-09-11/"
+        },
+        {
+          "label": "MU adjusted prices",
+          "url": "https://stockanalysis.com/stocks/mu/history/"
+        },
+        {
+          "label": "QQQ adjusted prices",
+          "url": "https://stockanalysis.com/etf/qqq/history/"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, September 12, 2026",
+      "description": "Eight source-ordered actions connect agent roles, organizational memory, resilient capacity and capital evidence.",
+      "centralJudgment": "Scale requires clear ownership, bounded failure and verified completion at every node.",
+      "fieldLine": "Eight signals. One completed editorial protocol. Other execution remains evidence-bound.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models, Agents and OPC Autonomy",
+          "title": "Prepare a bounded agent swarm trial",
+          "why": "An agent swarm should transfer coordination work away from Robin—not place five agents in the same repository and make Robin manage their collisions.",
+          "steps": [
+            "Run one real website task as a minimal swarm: Astra conductor owns intent and completion → one read-only explorer maps the relevant repository area → two Sol workers operate on non-overlapping files or worktrees → one read-only verifier runs builds, links and visual checks → Astra merges only verified output; retain only five non-negotiable root rules and record completion, conflicts, rework, recovery and Robin-intervention minutes.",
+            "Keep the original task and acceptance criteria fixed; this publication does not change root rules or run the experiment."
+          ],
+          "done": "READY until an authorized trial records completion, conflicts, rework, recovery and owner minutes."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "Define mission substitution evidence",
+          "why": "The investable unit is completed hazardous work and avoided human exposure—not human-like appearance or smooth motion.",
+          "steps": [
+            "Apply a mission substitution scorecard based only on success per 100 missions, recovery from communications loss, operator minutes, repair time, cost per mission and human-risk hours displaced; do not upgrade demonstrations without sustained mission evidence.",
+            "Separate reported mission counts from independently measured success, cost and avoided human exposure."
+          ],
+          "done": "READY until sustained mission data supports every scorecard field."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital and Web3 Health",
+          "title": "Separate ETF reversal from industry withdrawal",
+          "why": "The tokenized-exchange thesis remains intact, but industry health requires capital inflow, real activity and sustainable fee revenue together.",
+          "steps": [
+            "Reclassify the pulse three-day $469M reversal / eight-session $733M net entry / operating breadth unconfirmed; call it industry withdrawal only when the complete rolling window turns negative alongside contraction in stablecoin supply, onchain settlement or operating revenue.",
+            "Exclude incomplete September 11 data and preserve the distinct three-session and eight-session windows."
+          ],
+          "done": "WATCHING; reclassify only with a complete negative window and contracting operating breadth."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins, Fintech and Payment Rails",
+          "title": "Specify a controlled Discovery API trial",
+          "why": "Agent-commerce control may accrue to the platform owning searchable supply and payment schemas, just as ecommerce emerged from search, catalogs and checkout together—not from payment rails alone.",
+          "steps": [
+            "Connect one Discovery API service inside a test-funded RobinOS sandbox with a service allowlist, schema hash, per-call and daily limits, idempotency evidence, output verification and receipt logging; permit a real-value micropayment experiment only after 20 consecutive verified calls without duplicate payment.",
+            "Keep the test specification READY; real-value payment still needs separate capital authority even after 20 clean calls."
+          ],
+          "done": "READY; no API integration, funded call or real payment executed by this publication."
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "Publish the organizational memory protocol",
+          "why": "If three computers remember three different Robins, adding agents amplifies identity fragmentation. Unified identity and verified memory are the basis of compounding RobinOS intelligence.",
+          "steps": [
+            "Publish the original organizational memory protocol and archive a LinkedIn derivative. The full source assignment remains in the Daily Briefing.",
+            "Complete primary-source research, four authored editions, evidence diagram, ledger and archived LinkedIn derivative."
+          ],
+          "done": "COMPLETE for the published protocol and pilot specification. Cross-host implementation and comparative benefits remain UNKNOWN.",
+          "deepDiveTitle": "Building Organizational Memory for AI Agents"
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure and Capital Projects",
+          "title": "Prepare a resilience-adjusted UAE ledger",
+          "why": "Robin’s engineering and PE background is well suited to judging when scale economies are overwhelmed by common-mode failure, conflict and business-continuity risk.",
+          "steps": [
+            "Convert the UAE 5GW model from one campus ledger into a resilience-adjusted portfolio, recording independent power, water, fiber, cooling, geographic separation, customer load, insurance, hardening capital and failover tests by site; count only megawatts that pass real cross-site recovery as available capacity.",
+            "Record announced, energized, revenue-generating and tested failover MW separately; unknown site evidence stays UNKNOWN."
+          ],
+          "done": "READY for private evidence routing; counted available capacity requires observed cross-site recovery."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-Stage Private Markets",
+          "title": "Keep the proposed Anthropic IPO on WATCH",
+          "why": "This is the most extreme model-revenue → compute-purchase → supplier-investment loop yet, extending Robin’s Google–Marvell and Amazon–Qualcomm framework.",
+          "steps": [
+            "WATCH—do not upgrade the proposed $2 trillion valuation to INVESTIGATE until a prospectus discloses audited revenue and gross margin, compute commitments, Nvidia’s allocation and lockup, primary-secondary mix, concentration, governance rights and related-party relationships.",
+            "Reopen the prospectus when available; reported proposals and annualized revenue are not audited completed issuance."
+          ],
+          "done": "WATCHING until audited economics, obligations, allocation, access and governance terms support INVESTIGATE."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities",
+          "title": "Compare memory exposures after ADS filings",
+          "why": "US investors may soon receive more liquid Asian memory alternatives, potentially reducing MU’s premium as the main liquid US AI-memory exposure while allowing NAND, DRAM and HBM economics to be priced separately.",
+          "steps": [
+            "Do not chase Kioxia’s 456% advance; once its ADS filing appears, build a US-listed memory comparison across Kioxia, MU, SK Hynix and SanDisk covering NAND/DRAM/HBM mix, capex, free cash flow, concentration, valuation, ADR float and dilution before changing MU’s portfolio weight.",
+            "Use comparable dates and instruments; no portfolio change follows automatically from an ADS plan."
+          ],
+          "done": "WATCHING until ADS evidence supports a comparable exposure and valuation assessment."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年9月12日",
+      "description": "八项行动按来源顺序串联Agent分工、组织记忆、容量韧性与资本证据。",
+      "centralJudgment": "扩张要求每个节点都有明确责任、隔离故障和可验证的完成条件。",
+      "fieldLine": "八个信号。一项编辑协议完成。其他执行状态由证据决定。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型、Agent与OPC自主性",
+          "title": "准备有边界的Agent蜂群试验",
+          "why": "Agent swarm不是让五个模型一起碰代码，而是把Robin原本承担的分工、追踪和整合工作移交给一个有清晰完成责任的指挥Agent。",
+          "steps": [
+            "在一个真实网站任务上运行最小蜂群实验：Astra指挥官保有完整意图与完成标准 → 一个只读Explorer调查仓库 → 两个Sol Worker在不重叠的文件或worktree执行 → 一个只读Verifier运行构建、链接和视觉检查 → Astra只合并通过验证的结果；根目录只保留五条不可违反的规则，记录任务完成、冲突、返工、失败恢复和Robin介入分钟。",
+            "固定原任务及验收条件；本次出版不修改根规则，也不执行蜂群试验。"
+          ],
+          "done": "READY，等待获准试验记录完成、冲突、返工、恢复和本人介入分钟。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "定义危险任务替代证据",
+          "why": "可投资的机器人经济单位应是完成的危险任务与被节省的人类暴露时间，而非动作流畅度或外形是否像人。",
+          "steps": [
+            "建立mission substitution scorecard，只以每百次任务成功率、通信中断恢复、人工操作分钟、维修时间、单位任务成本和被替代的人类风险小时评价Physical AI；没有连续任务数据的演示不升级评级。",
+            "区分报道中的任务数量与独立测得的成功率、成本及避免的人类风险。"
+          ],
+          "done": "READY，直到连续任务数据支持每项评分。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本与Web3健康",
+          "title": "区分ETF回撤与行业撤资",
+          "why": "昨日的Token化交易所论点仍成立，但行业健康需要同时看到资产流入、真实交易活动和可持续费用收入。",
+          "steps": [
+            "将状态更新为三日回撤4.69亿美元 / 八日仍净进入7.33亿美元 / 经营广度未确认；只有完整滚动窗口转为净流出，并伴随稳定币供给、链上结算或交易收入同步收缩时，才升级为行业资本撤离。",
+            "排除未完整的9月11日数据，保留三日与八日窗口的区别。"
+          ],
+          "done": "WATCHING；完整窗口为负且运营广度收缩才重新分类。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币、Fintech与支付轨道",
+          "title": "拟定Discovery API受控试验",
+          "why": "Agent Commerce的入口可能由掌握可搜索目录与付款Schema的平台控制，就像早期电商由搜索、商品目录和Checkout共同形成，而不是仅由支付轨道决定。",
+          "steps": [
+            "在只使用测试资金的RobinOS沙箱中接入一个Discovery API服务，强制设置服务白名单、Schema哈希、单次及每日额度、幂等凭证、结果验证和收据日志；只有连续20次调用无重复付款且结果可验证时，才允许进入真实微额支付实验。",
+            "试验规格保持READY；即使完成20次干净调用，真实支付仍需独立资金授权。"
+          ],
+          "done": "READY；本次出版未接入API、执行有资金调用或真实付款。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "发布组织记忆协议",
+          "why": "如果三台电脑记住三个不同版本的Robin，更多Agent只会放大身份分裂；统一身份和可验证记忆才是RobinOS形成长期复利的基础。",
+          "steps": [
+            "发布组织记忆原创协议并归档LinkedIn衍生稿，完整来源任务保留于Daily Briefing。",
+            "完成一手来源研究、四语全文、证据图、台账与LinkedIn归档稿。"
+          ],
+          "done": "已发布协议与试验规格COMPLETE；跨主机实现与比较收益仍为UNKNOWN。",
+          "deepDiveTitle": "为AI Agent建立组织记忆"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基础设施与资本项目",
+          "title": "准备UAE韧性调整台账",
+          "why": "Robin的工程与PE能力可在这里形成稀缺判断：什么时候规模经济已被故障相关性、战争风险和业务连续性吞噬。",
+          "steps": [
+            "将UAE 5GW模型从单一园区账本改为resilience-adjusted portfolio，按站点记录独立电力、水、光纤、冷却、地理距离、客户负荷、保险、防护资本和故障转移测试；只有通过真实跨站点切换的MW才计入可用容量。",
+            "分开记录宣布、通电、创收及通过切换试验的MW；缺失站点证据保持UNKNOWN。"
+          ],
+          "done": "私有证据路由READY；可用容量须有实际跨站恢复证明。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期一级市场",
+          "title": "Anthropic拟议IPO继续WATCH",
+          "why": "这是目前最大规模的“模型收入—算力采购—供应商投资”闭环，能够成为Google–Marvell与Amazon–Qualcomm之外更极端的AI资本结构样本。",
+          "steps": [
+            "WATCH——在正式招股书披露经审计收入与毛利、计算采购义务、NVIDIA锚定额度与锁定期、一级/二级比例、客户集中、治理权和关联交易前，不把2万亿美元讨论估值升级为INVESTIGATE。",
+            "招股书出现后重新核实；报道中的方案与年化收入不等于审计后的已完成发行。"
+          ],
+          "done": "WATCHING；审计经济性、义务、配额、可参与性及治理条款齐备才进入INVESTIGATE。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场",
+          "title": "ADS披露后比较内存暴露",
+          "why": "美国投资者即将获得更多亚洲内存选择，可能压缩MU的“唯一高流动性美国AI内存标的”溢价，同时让NAND、DRAM与HBM暴露更容易被分别定价。",
+          "steps": [
+            "不追逐Kioxia的456%涨幅；建立US-listed memory comparison，在ADS文件出现后比较Kioxia、MU、SK Hynix和SanDisk的NAND/DRAM/HBM组合、资本开支、自由现金流、客户集中、估值、ADR流通量及稀释，再决定是否改变MU权重。",
+            "使用可比时点和工具；ADS计划不会自动触发组合调整。"
+          ],
+          "done": "WATCHING；等待ADS证据支持可比的业务暴露和估值判断。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年9月12日",
+      "description": "八項行動按來源順序串聯Agent分工、組織記憶、容量韌性與資本證據。",
+      "centralJudgment": "擴張要求每個節點都有明確責任、隔離故障和可驗證的完成條件。",
+      "fieldLine": "八個信號。一項編輯協議完成。其他執行狀態由證據決定。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型、Agent與OPC自主性",
+          "title": "準備有邊界的Agent蜂羣試驗",
+          "why": "Agent swarm不是讓五個模型一起碰代碼，而是把Robin原本承擔的分工、追蹤和整合工作移交給一個有清晰完成責任的指揮Agent。",
+          "steps": [
+            "在一個真實網站任務上運行最小蜂羣實驗：Astra指揮官保有完整意圖與完成標準 → 一個只讀Explorer調查倉庫 → 兩個Sol Worker在不重疊的文件或worktree執行 → 一個只讀Verifier運行構建、鏈接和視覺檢查 → Astra只合並通過驗證的結果；根目錄只保留五條不可違反的規則，記錄任務完成、衝突、返工、失敗恢復和Robin介入分鐘。",
+            "固定原任務及驗收條件；本次出版不修改根規則，也不執行蜂羣試驗。"
+          ],
+          "done": "READY，等待獲准試驗記錄完成、衝突、返工、恢復和本人介入分鐘。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "定義危險任務替代證據",
+          "why": "可投資的機器人經濟單位應是完成的危險任務與被節省的人類暴露時間，而非動作流暢度或外形是否像人。",
+          "steps": [
+            "建立mission substitution scorecard，只以每百次任務成功率、通信中斷恢復、人工操作分鐘、維修時間、單位任務成本和被替代的人類風險小時評價Physical AI；沒有連續任務數據的演示不升級評級。",
+            "區分報道中的任務數量與獨立測得的成功率、成本及避免的人類風險。"
+          ],
+          "done": "READY，直到連續任務數據支持每項評分。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本與Web3健康",
+          "title": "區分ETF回撤與行業撤資",
+          "why": "昨日的Token化交易所論點仍成立，但行業健康需要同時看到資產流入、真實交易活動和可持續費用收入。",
+          "steps": [
+            "將狀態更新爲三日回撤4.69億美元 / 八日仍淨進入7.33億美元 / 經營廣度未確認；只有完整滾動窗口轉爲淨流出，並伴隨穩定幣供給、鏈上結算或交易收入同步收縮時，才升級爲行業資本撤離。",
+            "排除未完整的9月11日數據，保留三日與八日窗口的區別。"
+          ],
+          "done": "WATCHING；完整窗口爲負且運營廣度收縮才重新分類。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣、Fintech與支付軌道",
+          "title": "擬定Discovery API受控試驗",
+          "why": "Agent Commerce的入口可能由掌握可搜索目錄與付款Schema的平臺控制，就像早期電商由搜索、商品目錄和Checkout共同形成，而不是僅由支付軌道決定。",
+          "steps": [
+            "在只使用測試資金的RobinOS沙箱中接入一個Discovery API服務，強制設置服務白名單、Schema哈希、單次及每日額度、冪等憑證、結果驗證和收據日誌；只有連續20次調用無重複付款且結果可驗證時，才允許進入真實微額支付實驗。",
+            "試驗規格保持READY；即使完成20次乾淨調用，真實支付仍需獨立資金授權。"
+          ],
+          "done": "READY；本次出版未接入API、執行有資金調用或真實付款。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "發佈組織記憶協議",
+          "why": "如果三臺電腦記住三個不同版本的Robin，更多Agent只會放大身份分裂；統一身份和可驗證記憶纔是RobinOS形成長期複利的基礎。",
+          "steps": [
+            "發布組織記憶原創協議並歸檔LinkedIn衍生稿，完整來源任務保留於Daily Briefing。",
+            "完成一手來源研究、四語全文、證據圖、臺賬與LinkedIn歸檔稿。"
+          ],
+          "done": "已發佈協議與試驗規格COMPLETE；跨主機實現與比較收益仍爲UNKNOWN。",
+          "deepDiveTitle": "為AI Agent建立組織記憶"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基礎設施與資本項目",
+          "title": "準備UAE韌性調整臺賬",
+          "why": "Robin的工程與PE能力可在這裏形成稀缺判斷：什麼時候規模經濟已被故障相關性、戰爭風險和業務連續性吞噬。",
+          "steps": [
+            "將UAE 5GW模型從單一園區賬本改爲resilience-adjusted portfolio，按站點記錄獨立電力、水、光纖、冷卻、地理距離、客戶負荷、保險、防護資本和故障轉移測試；只有通過真實跨站點切換的MW才計入可用容量。",
+            "分開記錄宣佈、通電、創收及通過切換試驗的MW；缺失站點證據保持UNKNOWN。"
+          ],
+          "done": "私有證據路由READY；可用容量須有實際跨站恢復證明。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期一級市場",
+          "title": "Anthropic擬議IPO繼續WATCH",
+          "why": "這是目前最大規模的“模型收入—算力採購—供應商投資”閉環，能夠成爲Google–Marvell與Amazon–Qualcomm之外更極端的AI資本結構樣本。",
+          "steps": [
+            "WATCH——在正式招股書披露經審計收入與毛利、計算採購義務、NVIDIA錨定額度與鎖定期、一級/二級比例、客戶集中、治理權和關聯交易前，不把2萬億美元討論估值升級爲INVESTIGATE。",
+            "招股書出現後重新覈實；報道中的方案與年化收入不等於審計後的已完成發行。"
+          ],
+          "done": "WATCHING；審計經濟性、義務、配額、可參與性及治理條款齊備才進入INVESTIGATE。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場",
+          "title": "ADS披露後比較內存暴露",
+          "why": "美國投資者即將獲得更多亞洲內存選擇，可能壓縮MU的“唯一高流動性美國AI內存標的”溢價，同時讓NAND、DRAM與HBM暴露更容易被分別定價。",
+          "steps": [
+            "不追逐Kioxia的456%漲幅；建立US-listed memory comparison，在ADS文件出現後比較Kioxia、MU、SK Hynix和SanDisk的NAND/DRAM/HBM組合、資本開支、自由現金流、客戶集中、估值、ADR流通量及稀釋，再決定是否改變MU權重。",
+            "使用可比時點和工具；ADS計劃不會自動觸發組合調整。"
+          ],
+          "done": "WATCHING；等待ADS證據支持可比的業務暴露和估值判斷。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年9月12日",
+      "description": "八つの行動を出典順に並べ、Agentの役割、組織記憶、容量の耐障害性、資本の証拠をつなぐ。",
+      "centralJudgment": "拡張には各拠点の責任、故障の分離、検証可能な完了条件が必要だ。",
+      "fieldLine": "八つのシグナル。一つの編集プロトコルが完成。その他の実行は証拠で示す。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "最先端モデル、Agentと一人企業の自律性",
+          "title": "範囲を定めたAgent群の試験を準備する",
+          "why": "Agent群は調整作業をRobinから引き受けるべきだ。同じリポジトリに五つのAgentを置き、その衝突管理をRobinに任せる設計では目的を果たせない。",
+          "steps": [
+            "実際のウェブサイト作業を一つ、最小構成の群で試す。Astra指揮役が意図と完了基準を持ち、読み取り専用Explorerが該当範囲を調べ、二つのSol Workerが重ならないファイルかworktreeで作業し、読み取り専用Verifierがビルド、リンク、表示を確認する。Astraは検証済みの成果だけを統合する。ルートには五つの譲れない規則だけを残し、完了、衝突、手戻り、復旧、Robinの介入分数を記録する。",
+            "元の課題と受け入れ条件を固定する。本出版でルート規則を変更せず、群の実験も実行しない。"
+          ],
+          "done": "READY。許可された試験で完了、衝突、手戻り、復旧、本人介入を記録する。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "危険任務の代替証拠を定義する",
+          "why": "投資判断の単位は、完了した危険作業と減らせた人的曝露であり、人間に似た外見や滑らかな動作ではない。",
+          "steps": [
+            "任務100件当たりの成功、通信断からの復帰、操縦者の作業分数、修理時間、任務単価、代替した人的危険時間だけで任務代替スコアカードを作る。継続的な任務証拠がないデモは評価を引き上げない。",
+            "報道上の任務数と、独立測定した成功、費用、回避した人的危険を分ける。"
+          ],
+          "done": "READY。継続任務データがすべての評価欄を支えるまで待つ。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資本とWeb3の健全性",
+          "title": "ETF反転と業界撤退を分ける",
+          "why": "トークン化取引所の投資仮説は維持される。ただし業界の健全性には、資本流入、実利用、持続可能な手数料収入がそろう必要がある。",
+          "steps": [
+            "資金状態を「3日間で4.69億ドル反転／8営業日では7.33億ドル純流入／事業面の広がりは未確認」に改める。完全な移動期間が純流出となり、同時にステーブルコイン供給、オンチェーン決済、事業収入も縮小した場合に限り、業界からの資本撤退と判断する。",
+            "未完了の9月11日を除外し、3営業日と8営業日の期間を分ける。"
+          ],
+          "done": "WATCHING。完全な期間が流出となり事業面も縮小したら分類を見直す。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコイン、Fintechと決済基盤",
+          "title": "Discovery APIの統制試験を定める",
+          "why": "電子商取引が検索、商品一覧、購入手続きの組み合わせから育ったように、Agent商取引の主導権は、検索可能な供給と決済スキーマを持つ基盤に集まる可能性がある。決済経路だけでは十分でない。",
+          "steps": [
+            "テスト資金を使うRobinOSの隔離環境で、Discovery APIのサービスを一つ接続する。サービス許可リスト、スキーマハッシュ、呼び出しごと・日次の上限、冪等性の証拠、出力検証、受領記録を備える。重複支払いなしに20回連続で検証済み呼び出しを完了してから、実価値の少額決済実験を許可する。",
+            "試験仕様はREADY。20回の検証後でも実価値の支払いには別途資金の権限が必要だ。"
+          ],
+          "done": "READY。本出版でAPI接続、資金付き呼び出し、実支払いはしていない。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "組織記憶のプロトコルを公開する",
+          "why": "三台のコンピューターが三通りのRobinを覚えていれば、Agentを増やすほど分断が拡大する。本人情報の統一と検証済みの記憶が、RobinOSの知性を積み上げる基盤になる。",
+          "steps": [
+            "組織記憶の独自プロトコルを公開しLinkedIn派生稿を保存する。元の課題全文はDaily Briefingに残す。",
+            "一次資料、四言語全文、証拠図、台帳、LinkedIn派生稿を保存する。"
+          ],
+          "done": "公開したプロトコルと試験仕様はCOMPLETE。ホスト間実装と比較便益はUNKNOWN。",
+          "deepDiveTitle": "AIエージェントの組織記憶をつくる"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラと資本プロジェクト",
+          "title": "UAEの耐障害性調整台帳を準備する",
+          "why": "工学とPEの経験は、共通原因故障、紛争、事業継続リスクが規模の経済を上回る地点の判断に生きる。",
+          "steps": [
+            "UAEの5GWモデルを単一キャンパスの台帳から、耐障害性を調整したポートフォリオへ変える。拠点別に独立した電力、水、光回線、冷却、地理的分離、顧客負荷、保険、防護投資、切り替え試験を記録する。実際の拠点間復旧に合格したMWだけを利用可能容量として数える。",
+            "発表、通電、収益、切替試験済みのMWを分け、拠点の不足証拠はUNKNOWNとする。"
+          ],
+          "done": "私的証拠への振分けはREADY。利用可能容量には実際の拠点間復旧証拠が必要だ。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期非公開市場",
+          "title": "AnthropicのIPO案をWATCHに保つ",
+          "why": "モデル収入→計算資源購入→供給者出資の循環として最も極端な事例で、Google–MarvellやAmazon–Qualcommの枠組みを拡張する。",
+          "steps": [
+            "WATCHを維持する。目論見書で監査済み売上と粗利、計算資源の契約義務、Nvidiaの配分とロックアップ、新株・既存株比率、集中度、統治権、関連当事者関係が明らかになるまで、提案中の2兆ドル評価をINVESTIGATEへ引き上げない。",
+            "目論見書が出たら再確認する。報道の提案と年換算売上を監査済み発行実績と混同しない。"
+          ],
+          "done": "WATCHING。監査済み採算、義務、配分、参加可能性、統治条件がそろえばINVESTIGATE。"
+        },
+        {
+          "signal": 8,
+          "domain": "上場市場",
+          "title": "ADS開示後にメモリ事業を比較する",
+          "why": "米国投資家がアジアのメモリ企業へ流動性の高い形で投資できる選択肢が増えれば、米国の主要な高流動性AIメモリ銘柄であるMUのプレミアムは縮小し得る。同時にNAND、DRAM、HBMの採算を別々に評価しやすくなる。",
+          "steps": [
+            "Kioxiaの456%上昇を追わない。ADS書類が出た段階で、Kioxia、MU、SK Hynix、SanDiskの米国上場メモリ比較を作る。NAND・DRAM・HBM構成、設備投資、フリーキャッシュフロー、集中度、評価額、ADR流通量、希薄化を比較してから、MUの配分変更を検討する。",
+            "時点と投資手段をそろえる。ADS計画から自動的に配分を変えない。"
+          ],
+          "done": "WATCHING。比較可能な事業構成と評価をADS証拠で確認する。"
+        }
+      ]
+    }
+  }
+}
