@@ -1,0 +1,567 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-13",
+  "updated": "2026-09-13",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20260913/hero.webp",
+  "actionHero": "/action-item/20260913/hero.webp",
+  "ogImage": "/daily-briefing/20260913/og.webp",
+  "briefingPath": "/ouroboros/202609/20260913/",
+  "actionItemPath": "/ouroboros/202609/20260913/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "10 TASKS",
+      "visualLabel": "proposed comparison",
+      "sources": [
+        {
+          "label": "OpenAI’s Astra prompting guidance",
+          "url": "https://learn.chatgpt.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra"
+        },
+        {
+          "label": "Codex subagents",
+          "url": "https://learn.chatgpt.com/docs/agent-configuration/subagents"
+        },
+        {
+          "label": "Dario Amodei’s proposal",
+          "url": "https://darioamodei.com/post/we-must-pace-the-frontier"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "MISSION",
+      "visualLabel": "accepted output",
+      "sources": [
+        {
+          "label": "Reuters on the recovery",
+          "url": "https://www.reuters.com/world/middle-east/iran-says-it-captured-us-submarine-drone-strait-hormuz-2026-09-08/"
+        },
+        {
+          "label": "Reuters on reverse-engineering risk",
+          "url": "https://www.reuters.com/world/middle-east/iran-likely-reverse-engineer-captured-us-underwater-drone-2026-09-09/"
+        },
+        {
+          "label": "Anduril Dive-LD",
+          "url": "https://www.anduril.com/dive-ld"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "FEES",
+      "visualLabel": "net of incentives",
+      "sources": [
+        {
+          "label": "Farside BTC",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "Farside ETH",
+          "url": "https://farside.co.uk/eth/"
+        },
+        {
+          "label": "Reuters on Bitcoin Suisse",
+          "url": "https://www.reuters.com/business/world-at-work/crypto-firm-bitcoin-suisse-cut-up-half-jobs-switzerland-2026-09-11/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "NFC",
+      "visualLabel": "architecture review",
+      "sources": [
+        {
+          "label": "Reuters on UPI tap-and-pay",
+          "url": "https://www.reuters.com/world/india/india-launches-tap-and-pay-option-real-time-payments-ahead-full-apple-pay-2026-09-10/"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "visualValue": "RECOVERY",
+      "visualLabel": "published framework",
+      "sources": [
+        {
+          "label": "Reuters event report",
+          "url": "https://www.reuters.com/world/middle-east/iran-says-it-captured-us-submarine-drone-strait-hormuz-2026-09-08/"
+        },
+        {
+          "label": "Reuters analysis",
+          "url": "https://www.reuters.com/world/middle-east/iran-likely-reverse-engineer-captured-us-underwater-drone-2026-09-09/"
+        },
+        {
+          "label": "Anduril documentation",
+          "url": "https://www.anduril.com/dive-ld"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "2027 Q4",
+      "visualLabel": "target availability",
+      "sources": [
+        {
+          "label": "NVIDIA announcement",
+          "url": "https://blogs.nvidia.com/blog/d-matrix-nvlink-fusion/"
+        },
+        {
+          "label": "d-Matrix announcement",
+          "url": "https://www.prnewswire.com/news-releases/d-matrix-adopts-nvidia-nvlink-fusion-rackscale-infrastructure-for-ultra-low-latency-ai-inference-302875104.html"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/media-telecom/chip-startup-d-matrix-use-nvidia-chip-linking-tech-ai-servers-2026-09-10/"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "NO 2026",
+      "visualLabel": "IPO statement",
+      "sources": [
+        {
+          "label": "Reuters on Altman’s IPO comments",
+          "url": "https://www.reuters.com/legal/litigation/openai-ipo-will-not-happen-2026-amid-ai-safety-fears-altman-says-2026-09-12/"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "CASH FLOW",
+      "visualLabel": "thesis evidence",
+      "sources": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/larry-ellison-cancels-plan-sell-oracle-stock-2026-09-12/"
+        },
+        {
+          "label": "ORCL adjusted history",
+          "url": "https://stockanalysis.com/stocks/orcl/history/"
+        },
+        {
+          "label": "QQQ adjusted history",
+          "url": "https://stockanalysis.com/etf/qqq/history/"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, September 13, 2026",
+      "description": "Eight source-ordered actions turn autonomy, recovery, payment design and capital evidence into bounded next steps.",
+      "centralJudgment": "Value comes from accepted work, recoverable failure and evidence that can improve the next decision.",
+      "fieldLine": "Eight signals. One published mission-economics framework. Other execution stays evidence-bound.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models, Agents and OPC Autonomy",
+          "title": "Compare two agent routing paths",
+          "why": "A swarm should reduce your coordination burden. Remove repetitive procedures while retaining clear authority, independent verification and recovery evidence.",
+          "steps": [
+            "Compare two routes across the same ten real website tasks: Sol executes → Astra resolves stalls or ambiguity → tests verify versus Astra owns end-to-end delivery. Hold repository, permissions and acceptance criteria constant; record correct completion, recovery, instruction retention, unnecessary approvals, conflicts, rework, Robin-intervention minutes, elapsed time and total expenditure, then update routing evaluations.",
+            "Fix ten tasks, repository, authority and acceptance criteria before any separately authorized trial."
+          ],
+          "done": "READY; no routing trial or model-performance result claimed."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "Define loss-adjusted mission evidence",
+          "why": "Your ROV/AUV experience brings the analysis back to underwritable mission economics: machines, maintenance and human recovery required per successful task.",
+          "steps": [
+            "Create a loss-adjusted mission-economics scorecard covering success rate, communications-loss recovery, maintenance hours, sensitive-data protection, replacement time and total cost per successful mission.",
+            "Define comparable mission attempts and record unknown success rates, recovery hours and replacement times."
+          ],
+          "done": "READY; the published template is complete, observed fleet economics remain UNKNOWN."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital and Web3 Health",
+          "title": "Score sustainable exchange economics",
+          "why": "Finding the next Hyperliquid requires identifying retained users and sustainable fees—not merely a token attracting temporary capital.",
+          "steps": [
+            "Score exchange candidates consistently on fees net of incentives, retained traders, executable liquidity, net deposits and token value capture; do not upgrade a candidate on volume or airdrop excitement alone.",
+            "Request comparable observation windows and evidence for every scorecard field."
+          ],
+          "done": "READY until fee, retention, liquidity, deposits and value-capture evidence is recorded."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins, Fintech and Payment Rails",
+          "title": "Compare NFC payment architectures",
+          "why": "Payment advantage can come from moving an existing account network into a better device interface—not necessarily changing the underlying currency or blockchain.",
+          "steps": [
+            "Compare UPI NFC with card wallets across device credentials, offline liability, replay prevention, settlement finality, refunds and merchant reconciliation, identifying which differences actually change acquiring economics.",
+            "Separate offline interaction from authorization, settlement finality and merchant liability."
+          ],
+          "done": "READY; no payment integration or transaction executed."
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "Publish the mission-economics framework",
+          "why": "This unifies your engineering experience, capital-allocation judgment and autonomy research in one original framework.",
+          "steps": [
+            "Publish the original Physical AI mission-economics article and archive a LinkedIn derivative. Full source assignment remains in the Daily Briefing.",
+            "Complete the original framework, disclosed hypothetical calculations, four editions, evidence visual and archived derivative."
+          ],
+          "done": "COMPLETE for the published framework and diligence template; vendor results and proposed software exercise remain UNKNOWN.",
+          "deepDiveTitle": "Attritable Is Not Recoverable"
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure and Capital Projects",
+          "title": "Specify heterogeneous inference evidence",
+          "why": "This directly informs Token Factory architecture and your career advantage in translating chips, networks, racks and customer service requirements into investment returns.",
+          "steps": [
+            "Add a “GPU prefill + XPU decode” scenario to the Token Factory model, gated by tape-out, measured interoperability, system power, throughput at target latency and a first paying deployment; count no proposed systems as available capacity.",
+            "Separate tape-out plans from interoperability, power and paid deployment measurements."
+          ],
+          "done": "READY for private evidence routing; no Token Factory implementation or available capacity added."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-Stage Private Markets",
+          "title": "Reprice uncertain OpenAI liquidity",
+          "why": "This warrants a daily alert without duplicating the monthly OpenAI–Anthropic underwriting. “An IPO may be close” should not become the purchase thesis.",
+          "steps": [
+            "WATCH—recalculate any OpenAI secondary proposal assuming no 2026 IPO and no guaranteed 2027 exit, requiring clear transfer approval, security class, fees, preferences and dilution assumptions.",
+            "Verify transfer permissions and economic terms before evaluating any actual secondary proposal."
+          ],
+          "done": "WATCHING; no allocation, accessible security or guaranteed exit asserted."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities",
+          "title": "Watch Oracle cash conversion",
+          "why": "Infrastructure investing requires separating insider behavior and sentiment from the balance sheet funding the buildout.",
+          "steps": [
+            "Make no position change solely because the sale was canceled; base the next Oracle thesis update on customer prepayments, capex coverage, financing dilution and free-cash-flow conversion.",
+            "Keep the Saturday announcement separate from Friday returns and reopen cash-flow evidence."
+          ],
+          "done": "WATCHING; no position change."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年9月13日",
+      "description": "八项来源行动按顺序，把自主性、恢复、支付设计和资本证据转为有边界的下一步。",
+      "centralJudgment": "价值来自验收成果、故障后的恢复，以及能改善下一次判断的证据。",
+      "fieldLine": "八个信号。一项任务经济性框架已发布。其他执行状态仍由证据决定。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型、Agent与OPC自主性",
+          "title": "比较两条Agent执行路线",
+          "why": "蜂群应该减少你的协调工作，而不是要求你成为多个Agent的项目经理。少一些重复流程，保留明确授权、独立验证和恢复证据。",
+          "steps": [
+            "用同一组十个真实网站任务比较两条路线：Sol执行 → Astra处理停滞或歧义 → 测试验收与Astra端到端负责；固定仓库、权限和完成条件，记录正确完成、失败恢复、指令保持、无必要审批、冲突返工、Robin介入分钟、耗时与总支出，把结果写入路由评估，而不是凭设备印象决定分工。",
+            "独立获准试验前，固定十项任务、仓库、权限和验收条件。"
+          ],
+          "done": "READY；未执行路由试验，也未声称模型表现结果。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "定义损失调整后的任务证据",
+          "why": "你的ROV/AUV工程经历，能把讨论从“无人化是否先进”拉回可承销的任务经济性：完成一次工作需要多少设备、维护和人工恢复。",
+          "steps": [
+            "为自主设备投资建立一张“损失调整后的任务经济性”评分表，统一记录任务成功率、失联恢复、维护工时、敏感数据保护、替换周期及每个成功任务的总成本。",
+            "定义可比任务尝试，缺失成功率、恢复工时和替换周期保留UNKNOWN。"
+          ],
+          "done": "READY；已发布模板完成，机队实测经济性仍为UNKNOWN。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本与Web3健康",
+          "title": "比较可持续交易平台经济性",
+          "why": "寻找“下一个Hyperliquid”，需要找到留住真实用户、产生持续费用收入的业务，而不是只找到资金短暂流入的Token。",
+          "steps": [
+            "对交易平台候选者建立同一张经营评分表，比较剔除补贴后的费用收入、留存交易者、可执行流动性、净存款和Token价值捕获；不以交易量或空投热度单独升级评级。",
+            "为每项评分索取可比观察窗口及证据。"
+          ],
+          "done": "READY；等待费用、留存、流动性、净存款和价值捕获证据。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币、Fintech与支付轨道",
+          "title": "对照NFC支付架构",
+          "why": "支付竞争优势可能来自把既有账户网络带到更便捷的设备入口，而不一定来自更换底层货币或链。",
+          "steps": [
+            "做一次UPI NFC与卡钱包的架构对照，集中核实设备凭证、离线风险承担、防重放、结算最终性、退款和商户对账，识别真正改变收单经济性的环节。",
+            "分开核实离线交互、授权、最终结算与商户责任。"
+          ],
+          "done": "READY；未接入支付系统或执行交易。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "发布任务经济性框架",
+          "why": "这把你的工程经验、资本配置能力和AI自主性研究放进同一个原创框架。",
+          "steps": [
+            "发布Physical AI任务经济性原创文章并归档LinkedIn衍生稿。完整来源任务保留于Daily Briefing。",
+            "完成原创框架、明确假设计算、四语全文、证据图与归档衍生稿。"
+          ],
+          "done": "已发布框架和尽调模板COMPLETE；厂家结果和拟议软件试验结果仍为UNKNOWN。",
+          "deepDiveTitle": "可损耗不等于可恢复"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基础设施与资本项目",
+          "title": "列明异构推理验证节点",
+          "why": "这直接进入Token Factory架构，也契合你的职业优势：把芯片、互联、机架和客户服务指标转化为资本回报模型。",
+          "steps": [
+            "在Token Factory模型中增加一个“GPU prefill＋XPU decode”情景，以流片、互联实测、整机能耗、目标延迟下吞吐和首个付费部署为验证节点；在证据出现前，不把规划系统计入可用产能。",
+            "分开记录流片计划、互联实测、功耗和付费部署。"
+          ],
+          "done": "私有证据路由READY；未实现Token Factory改动，也未增加可用容量。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期一级市场",
+          "title": "重算OpenAI流动性期限",
+          "why": "这值得在日简报提示，但不必重复月度OpenAI–Anthropic深度承销；关键是防止把“可能快上市”当成当前买入理由。",
+          "steps": [
+            "WATCH——任何OpenAI二级报价都按“2026年无IPO、2027年不保证”重算持有期回报，并要求明确转让许可、证券类别、费用、优先权及后续稀释假设。",
+            "评估实际二级提案前，核实转让许可和经济条款。"
+          ],
+          "done": "WATCHING；未声称配额、可参与证券或保证退出。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场",
+          "title": "观察Oracle现金流转化",
+          "why": "AI基础设施投资需要区分内部人行为、市场情绪与真正承担资本成本的资产负债表。",
+          "steps": [
+            "不因取消减持单独调整仓位；下一次Oracle论点更新只以客户预付款、资本开支覆盖、融资稀释和自由现金流转化是否改善为依据。",
+            "周六公告与周五回报分开，重新核实现金流证据。"
+          ],
+          "done": "WATCHING；没有仓位调整。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年9月13日",
+      "description": "八項來源行動按順序，把自主性、恢復、支付設計和資本證據轉爲有邊界的下一步。",
+      "centralJudgment": "價值來自驗收成果、故障後的恢復，以及能改善下一次判斷的證據。",
+      "fieldLine": "八個信號。一項任務經濟性框架已發佈。其他執行狀態仍由證據決定。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型、Agent與OPC自主性",
+          "title": "比較兩條Agent執行路線",
+          "why": "蜂羣應該減少你的協調工作，而不是要求你成爲多個Agent的項目經理。少一些重複流程，保留明確授權、獨立驗證和恢復證據。",
+          "steps": [
+            "用同一組十個真實網站任務比較兩條路線：Sol執行 → Astra處理停滯或歧義 → 測試驗收與Astra端到端負責；固定倉庫、權限和完成條件，記錄正確完成、失敗恢復、指令保持、無必要審批、衝突返工、Robin介入分鐘、耗時與總支出，把結果寫入路由評估，而不是憑設備印象決定分工。",
+            "獨立獲准試驗前，固定十項任務、倉庫、權限和驗收條件。"
+          ],
+          "done": "READY；未執行路由試驗，也未聲稱模型表現結果。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "定義損失調整後的任務證據",
+          "why": "你的ROV/AUV工程經歷，能把討論從“無人化是否先進”拉回可承銷的任務經濟性：完成一次工作需要多少設備、維護和人工恢復。",
+          "steps": [
+            "爲自主設備投資建立一張“損失調整後的任務經濟性”評分表，統一記錄任務成功率、失聯恢復、維護工時、敏感數據保護、替換週期及每個成功任務的總成本。",
+            "定義可比任務嘗試，缺失成功率、恢復工時和替換週期保留UNKNOWN。"
+          ],
+          "done": "READY；已發佈模板完成，機隊實測經濟性仍爲UNKNOWN。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本與Web3健康",
+          "title": "比較可持續交易平臺經濟性",
+          "why": "尋找“下一個Hyperliquid”，需要找到留住真實用戶、產生持續費用收入的業務，而不是只找到資金短暫流入的Token。",
+          "steps": [
+            "對交易平臺候選者建立同一張經營評分表，比較剔除補貼後的費用收入、留存交易者、可執行流動性、淨存款和Token價值捕獲；不以交易量或空投熱度單獨升級評級。",
+            "爲每項評分索取可比觀察窗口及證據。"
+          ],
+          "done": "READY；等待費用、留存、流動性、淨存款和價值捕獲證據。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣、Fintech與支付軌道",
+          "title": "對照NFC支付架構",
+          "why": "支付競爭優勢可能來自把既有賬戶網絡帶到更便捷的設備入口，而不一定來自更換底層貨幣或鏈。",
+          "steps": [
+            "做一次UPI NFC與卡錢包的架構對照，集中核實設備憑證、離線風險承擔、防重放、結算最終性、退款和商戶對賬，識別真正改變收單經濟性的環節。",
+            "分開覈實離線交互、授權、最終結算與商戶責任。"
+          ],
+          "done": "READY；未接入支付系統或執行交易。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "發佈任務經濟性框架",
+          "why": "這把你的工程經驗、資本配置能力和AI自主性研究放進同一個原創框架。",
+          "steps": [
+            "發布Physical AI任務經濟性原創文章並歸檔LinkedIn衍生稿。完整來源任務保留於Daily Briefing。",
+            "完成原創框架、明確假設計算、四語全文、證據圖與歸檔衍生稿。"
+          ],
+          "done": "已發佈框架和盡調模板COMPLETE；廠家結果和擬議軟件試驗結果仍爲UNKNOWN。",
+          "deepDiveTitle": "可損耗不等於可恢復"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基礎設施與資本項目",
+          "title": "列明異構推理驗證節點",
+          "why": "這直接進入Token Factory架構，也契合你的職業優勢：把芯片、互聯、機架和客戶服務指標轉化爲資本回報模型。",
+          "steps": [
+            "在Token Factory模型中增加一個“GPU prefill＋XPU decode”情景，以流片、互聯實測、整機能耗、目標延遲下吞吐和首個付費部署爲驗證節點；在證據出現前，不把規劃系統計入可用產能。",
+            "分開記錄流片計劃、互聯實測、功耗和付費部署。"
+          ],
+          "done": "私有證據路由READY；未實現Token Factory改動，也未增加可用容量。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期一級市場",
+          "title": "重算OpenAI流動性期限",
+          "why": "這值得在日簡報提示，但不必重複月度OpenAI–Anthropic深度承銷；關鍵是防止把“可能快上市”當成當前買入理由。",
+          "steps": [
+            "WATCH——任何OpenAI二級報價都按“2026年無IPO、2027年不保證”重算持有期回報，並要求明確轉讓許可、證券類別、費用、優先權及後續稀釋假設。",
+            "評估實際二級提案前，覈實轉讓許可和經濟條款。"
+          ],
+          "done": "WATCHING；未聲稱配額、可參與證券或保證退出。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場",
+          "title": "觀察Oracle現金流轉化",
+          "why": "AI基礎設施投資需要區分內部人行爲、市場情緒與真正承擔資本成本的資產負債表。",
+          "steps": [
+            "不因取消減持單獨調整倉位；下一次Oracle論點更新只以客戶預付款、資本開支覆蓋、融資稀釋和自由現金流轉化是否改善爲依據。",
+            "週六公告與週五回報分開，重新覈實現金流證據。"
+          ],
+          "done": "WATCHING；沒有倉位調整。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年9月13日",
+      "description": "八つの出典順の行動から、自律性、復旧、決済設計、資本の証拠を限定的な次の仕事にする。",
+      "centralJudgment": "価値は検収された成果、故障からの復旧、次の判断を改善する証拠から生まれる。",
+      "fieldLine": "八つのシグナル。一つの任務採算枠組みを公開。その他の実行は証拠に基づく。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "フロンティアモデル、AgentとOPCの自律性",
+          "title": "Agentの二つの実行経路を比べる",
+          "why": "Agent群は本人の調整負担を減らすべきだ。明確な権限、独立検証、復旧証拠を残し、重複手順を減らす。",
+          "steps": [
+            "同じ10件の実際のウェブサイト課題で、Solが実行しAstraが停滞・曖昧さを解決してテストで検収する経路と、Astraが一貫して完了を担う経路を比べる。リポジトリ、権限、完了条件を固定し、正しい完了、復旧、指示保持、不要な承認、衝突、手戻り、Robinの介入分数、所要時間、総支出を記録して役割分担の評価に反映する。",
+            "別途許可された試験の前に十課題、リポジトリ、権限、検収条件を固定する。"
+          ],
+          "done": "READY。経路試験やモデル実績は主張しない。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "損失調整後の任務証拠を定義する",
+          "why": "ROV/AUVの経験を使い、検収できる任務1件に必要な機械、整備、人の復旧作業へ議論を戻せる。",
+          "steps": [
+            "任務成功率、通信喪失からの復旧、整備工数、機微データの保護、代替時間、成功任務当たり総費用を記録する、損失調整後の任務採算評価表を作る。",
+            "比較可能な試行を定義し、成功率、復旧工数、代替時間の不足はUNKNOWNとする。"
+          ],
+          "done": "READY。公開テンプレートは完成し、機体群の実測採算はUNKNOWN。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資本とWeb3の健全性",
+          "title": "取引所の持続可能な採算を評価する",
+          "why": "次のHyperliquidを探すには、一時的な資金流入より、継続する利用者と持続可能な手数料収入を見る必要がある。",
+          "steps": [
+            "取引所候補を、補助金控除後の手数料、継続トレーダー、執行可能な流動性、純入金、トークンへの価値還元で比較する。出来高やエアドロップ人気だけで評価を上げない。",
+            "各評価欄に比較可能な観測期間と証拠を求める。"
+          ],
+          "done": "READY。手数料、継続利用、流動性、純入金、価値還元の証拠を待つ。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコイン、Fintechと決済",
+          "title": "NFC決済の構成を比較する",
+          "why": "通貨やブロックチェーンを変えず、既存口座網を使いやすい端末の入口へ広げることでも優位性は生まれ得る。",
+          "steps": [
+            "UPI NFCとカードウォレットを、端末の認証情報、オフライン時の責任、リプレイ防止、決済の最終性、返金、加盟店照合で比較し、加盟店決済の採算を変える差を特定する。",
+            "オフライン操作、承認、決済確定、加盟店責任を分けて確認する。"
+          ],
+          "done": "READY。決済統合や取引は実行していない。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "任務採算の枠組みを公開する",
+          "why": "工学経験、資本配分の判断、自律性研究を一つの独自枠組みにまとめられる。",
+          "steps": [
+            "Physical AIの任務採算を論じる独自記事を公開しLinkedIn派生稿を保存する。元の課題全文はDaily Briefingに残す。",
+            "独自枠組み、明示した仮想計算、四言語全文、証拠図、派生稿を完成する。"
+          ],
+          "done": "公開した枠組みと調査テンプレートはCOMPLETE。メーカー実績と提案したソフトウェア試験結果はUNKNOWN。",
+          "deepDiveTitle": "損耗を許せても復旧できるとは限らない"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラと資本プロジェクト",
+          "title": "異種推論の検証条件を定める",
+          "why": "Token Factoryの構成に直結する。チップ、ネットワーク、ラック、顧客サービス要件を投資収益へ翻訳する職業上の強みにも合う。",
+          "steps": [
+            "Token Factoryに「GPU prefill + XPU decode」シナリオを追加する。テープアウト、実測した相互接続、システム電力、目標遅延での処理量、最初の有料導入を確認条件とし、計画設備を利用可能容量に計上しない。",
+            "テープアウト計画と接続実測、電力、有料導入を分ける。"
+          ],
+          "done": "私的証拠への振分けはREADY。Token Factory実装や利用可能容量を追加していない。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期未公開市場",
+          "title": "OpenAIの流動性期間を再評価する",
+          "why": "月次のOpenAI–Anthropic深掘りを繰り返すより、日次の注意点として扱う。「上場が近いかもしれない」を購入理由にしない。",
+          "steps": [
+            "WATCH。OpenAIの二次提案は2026年IPOなし、2027年出口も保証なしとして保有期間収益を再計算し、譲渡承認、証券種類、手数料、優先権、希薄化の仮定を明確にする。",
+            "実際の二次提案の評価前に譲渡許可と経済条件を確かめる。"
+          ],
+          "done": "WATCHING。配分、取得可能な証券、確実な出口は主張しない。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開株式",
+          "title": "Oracleの現金化を監視する",
+          "why": "インフラ投資では、内部者行動や心理と、建設の資本費を負担する貸借対照表を分ける必要がある。",
+          "steps": [
+            "売却中止だけでポジションを変えない。次のOracle投資仮説の更新は、顧客前払い、設備投資の資金充足、調達による希薄化、フリーキャッシュフローへの転換の改善に基づける。",
+            "土曜の発表と金曜のリターンを分け、現金収支の証拠を再確認する。"
+          ],
+          "done": "WATCHING。保有変更なし。"
+        }
+      ]
+    }
+  }
+}
