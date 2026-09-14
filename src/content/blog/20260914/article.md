@@ -1,5 +1,5 @@
 ---
-archiveStatus: "PIPELINE"
+archiveStatus: "PRESENT"
 title: "The Quant Lab Series * Flash Crash Lab 5"
 date: 2026-09-14
 updated: 2026-08-26
