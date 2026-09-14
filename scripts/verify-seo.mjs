@@ -5,6 +5,8 @@ const root = process.cwd();
 const dist = join(root, 'dist');
 const origin = 'https://iamrobin.ai';
 const failures = [];
+const modelOlympics = JSON.parse(readFileSync(join(root, 'src', 'data', 'model-olympics.json'), 'utf8'));
+const modelOlympicsPublic = ['PUBLIC_RELEASE_READY', 'PUBLISHED'].includes(modelOlympics.publication_status);
 const personId = "https://www.tideisun.com/robin#robin-xie";
 const identityAliases = ['Bin Xie', 'Bin “Robin” Xie', 'Bin Robin Xie', 'Xie Bin', '谢玢', '謝玢', 'nanobin'];
 const proofAnchors = ['engineering-record', 'payments-record', 'tidebit-record'];
@@ -22,6 +24,7 @@ const indexableRoutes = new Set([
 ]);
 const arcadeRoutes = ["/meaning/Bran_lab/", "/meaning/Bran_lab/SuperRun/", "/meaning/Bran_lab/GeoDash/", "/meaning/Bran_lab/PacMan/", "/meaning/Bran_lab/BlockLab/", "/meaning/Bran_lab/WonderTrail/", "/meaning/Bran_lab/KartLab/", "/meaning/Bran_lab/CloudMunch/", "/meaning/Bran_lab/BounceTrials/", "/meaning/Bran_lab/StarboundMath/"];
 for (const route of arcadeRoutes) indexableRoutes.add(route);
+if (modelOlympicsPublic) indexableRoutes.add('/asymmetry/model-olympics/');
 const identityFamilies = [
   {
     en: '/',
@@ -112,7 +115,7 @@ if (existsSync(dist)) {
   const blogPublications = [...blogRoutes, ...blogTranslationRoutes];
   const publicationRoutes = [...articleRoutes, ...actionFlowPublications, ...blogPublications];
   for (const route of [...publicationRoutes, ...diaryRoutes]) indexableRoutes.add(route);
-  check(routes.size === 34 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length, `expected ${34 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length} HTML routes, found ${routes.size}.`);
+  check(routes.size === 35 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length, `expected ${35 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length} HTML routes, found ${routes.size}.`);
 
   for (const route of arcadeRoutes) check(routes.has(route), `missing arcade route: ${route}`);
 

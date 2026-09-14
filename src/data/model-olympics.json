@@ -1,0 +1,340 @@
+{
+  "baselines": [
+    {
+      "evidence_status": "CONFIRMED",
+      "label": "BTC buy-and-hold",
+      "nav_usdc": 298812.59506960714,
+      "return_pct": -0.3958016434642886
+    },
+    {
+      "evidence_status": "CONFIRMED",
+      "label": "Cash",
+      "nav_usdc": 300000.0,
+      "return_pct": 0.0
+    },
+    {
+      "evidence_status": "CONFIRMED",
+      "label": "Static diversified 50/20/10/10/10",
+      "nav_usdc": 297871.1630497437,
+      "return_pct": -0.7096123167521062
+    },
+    {
+      "evidence_status": "CONFIRMED",
+      "label": "Top-10 equal weight",
+      "nav_usdc": 293528.72633595485,
+      "return_pct": -2.157091221348384
+    }
+  ],
+  "consecutive_clean_scored_weeks": 2,
+  "event_id": "crypto_ceo_bench_s01",
+  "last_verified_at": "2026-09-14T15:03:56.746963+00:00",
+  "leaderboard": [
+    {
+      "display_name": "Grok",
+      "evidence_status": "CONFIRMED",
+      "median_max_drawdown_pct": -0.29514160074056717,
+      "median_nav_usdc": 299114.5751977783,
+      "median_return_pct": -0.29514160074056717,
+      "rank": 1,
+      "seat": "grok"
+    },
+    {
+      "display_name": "Gemini",
+      "evidence_status": "CONFIRMED",
+      "median_max_drawdown_pct": -0.433324103759547,
+      "median_nav_usdc": 298700.02768872137,
+      "median_return_pct": -0.433324103759547,
+      "rank": 2,
+      "seat": "gemini"
+    },
+    {
+      "display_name": "DeepSeek",
+      "evidence_status": "CONFIRMED",
+      "median_max_drawdown_pct": -0.506468110421221,
+      "median_nav_usdc": 298480.5956687363,
+      "median_return_pct": -0.506468110421221,
+      "rank": 3,
+      "seat": "deepseek"
+    },
+    {
+      "display_name": "Qwen",
+      "evidence_status": "CONFIRMED",
+      "median_max_drawdown_pct": -0.6148935959569113,
+      "median_nav_usdc": 298155.3192121293,
+      "median_return_pct": -0.6148935959569113,
+      "rank": 4,
+      "seat": "qwen"
+    },
+    {
+      "display_name": "Claude",
+      "evidence_status": "CONFIRMED",
+      "median_max_drawdown_pct": -0.6777951470592902,
+      "median_nav_usdc": 297966.6145588221,
+      "median_return_pct": -0.6777951470592902,
+      "rank": 5,
+      "seat": "claude"
+    },
+    {
+      "display_name": "ChatGPT",
+      "evidence_status": "CONFIRMED",
+      "median_max_drawdown_pct": -1.143932470276754,
+      "median_nav_usdc": 296568.2025891697,
+      "median_return_pct": -1.143932470276754,
+      "rank": 6,
+      "seat": "chatgpt"
+    },
+    {
+      "display_name": "Codex",
+      "evidence_status": "CONFIRMED",
+      "median_max_drawdown_pct": -1.2822385695183791,
+      "median_nav_usdc": 296153.28429144487,
+      "median_return_pct": -1.2822385695183791,
+      "rank": 7,
+      "seat": "gpt"
+    }
+  ],
+  "mode": "PAPER_ONLY_FORWARD_TOURNAMENT",
+  "participants": [
+    {
+      "display_name": "Codex",
+      "lineup": null,
+      "replicas": 3,
+      "seat": "gpt"
+    },
+    {
+      "display_name": "ChatGPT",
+      "lineup": [
+        "Medium",
+        "High",
+        "Pro"
+      ],
+      "replicas": 3,
+      "seat": "chatgpt"
+    },
+    {
+      "display_name": "Claude",
+      "lineup": null,
+      "replicas": 3,
+      "seat": "claude"
+    },
+    {
+      "display_name": "Grok",
+      "lineup": null,
+      "replicas": 3,
+      "seat": "grok"
+    },
+    {
+      "display_name": "Gemini",
+      "lineup": null,
+      "replicas": 3,
+      "seat": "gemini"
+    },
+    {
+      "display_name": "DeepSeek",
+      "lineup": null,
+      "replicas": 3,
+      "seat": "deepseek"
+    },
+    {
+      "display_name": "Qwen",
+      "lineup": null,
+      "replicas": 3,
+      "seat": "qwen"
+    }
+  ],
+  "publication_status": "PUBLIC_RELEASE_READY",
+  "schema_version": 2,
+  "season": {
+    "end": "2028-12-10T15:59:59Z",
+    "start": "2026-08-30T15:40:44.941800+00:00"
+  },
+  "team_nav_series": [
+    {
+      "display_name": "Codex",
+      "points": [
+        {
+          "evidence_status": "CONFIRMED",
+          "marked_at": "2026-08-30T15:40:44.941800+00:00",
+          "median_nav_usdc": 300000.0,
+          "week_id": "GENESIS"
+        },
+        {
+          "evidence_status": "CONFIRMED",
+          "marked_at": "2026-09-08T15:00:00+00:00",
+          "median_nav_usdc": 299320.9023243449,
+          "week_id": "W001"
+        },
+        {
+          "evidence_status": "CONFIRMED",
+          "marked_at": "2026-09-14T15:00:00+00:00",
+          "median_nav_usdc": 296153.28429144487,
+          "week_id": "W002"
+        }
+      ],
+      "seat": "gpt"
+    },
+    {
+      "display_name": "ChatGPT",
+      "points": [
+        {
+          "evidence_status": "CONFIRMED",
+          "marked_at": "2026-08-30T15:40:44.941800+00:00",
+          "median_nav_usdc": 300000.0,
+          "week_id": "GENESIS"
+        },
+        {
+          "evidence_status": "CONFIRMED",
+          "marked_at": "2026-09-08T15:00:00+00:00",
+          "median_nav_usdc": 299584.8215515891,
+          "week_id": "W001"
+        },
+        {
+          "evidence_status": "CONFIRMED",
+          "marked_at": "2026-09-14T15:00:00+00:00",
+          "median_nav_usdc": 296568.2025891697,
+          "week_id": "W002"
+        }
+      ],
+      "seat": "chatgpt"
+    },
+    {
+      "display_name": "Claude",
+      "points": [
+        {
+          "evidence_status": "CONFIRMED",
+          "marked_at": "2026-08-30T15:40:44.941800+00:00",
+          "median_nav_usdc": 300000.0,
+          "week_id": "GENESIS"
+        },
+        {
+          "evidence_status": "CONFIRMED",
+          "marked_at": "2026-09-08T15:00:00+00:00",
+          "median_nav_usdc": 299637.702447231,
+          "week_id": "W001"
+        },
+        {
+          "evidence_status": "CONFIRMED",
+          "marked_at": "2026-09-14T15:00:00+00:00",
+          "median_nav_usdc": 297966.6145588221,
+          "week_id": "W002"
+        }
+      ],
+      "seat": "claude"
+    },
+    {
+      "display_name": "Grok",
+      "points": [
+        {
+          "evidence_status": "CONFIRMED",
+          "marked_at": "2026-08-30T15:40:44.941800+00:00",
+          "median_nav_usdc": 300000.0,
+          "week_id": "GENESIS"
+        },
+        {
+          "evidence_status": "CONFIRMED",
+          "marked_at": "2026-09-08T15:00:00+00:00",
+          "median_nav_usdc": 299660.8047188774,
+          "week_id": "W001"
+        },
+        {
+          "evidence_status": "CONFIRMED",
+          "marked_at": "2026-09-14T15:00:00+00:00",
+          "median_nav_usdc": 299114.5751977783,
+          "week_id": "W002"
+        }
+      ],
+      "seat": "grok"
+    },
+    {
+      "display_name": "Gemini",
+      "points": [
+        {
+          "evidence_status": "CONFIRMED",
+          "marked_at": "2026-08-30T15:40:44.941800+00:00",
+          "median_nav_usdc": 300000.0,
+          "week_id": "GENESIS"
+        },
+        {
+          "evidence_status": "CONFIRMED",
+          "marked_at": "2026-09-08T15:00:00+00:00",
+          "median_nav_usdc": 299636.8155773992,
+          "week_id": "W001"
+        },
+        {
+          "evidence_status": "CONFIRMED",
+          "marked_at": "2026-09-14T15:00:00+00:00",
+          "median_nav_usdc": 298700.02768872137,
+          "week_id": "W002"
+        }
+      ],
+      "seat": "gemini"
+    },
+    {
+      "display_name": "DeepSeek",
+      "points": [
+        {
+          "evidence_status": "CONFIRMED",
+          "marked_at": "2026-08-30T15:40:44.941800+00:00",
+          "median_nav_usdc": 300000.0,
+          "week_id": "GENESIS"
+        },
+        {
+          "evidence_status": "CONFIRMED",
+          "marked_at": "2026-09-08T15:00:00+00:00",
+          "median_nav_usdc": 299630.0862671457,
+          "week_id": "W001"
+        },
+        {
+          "evidence_status": "CONFIRMED",
+          "marked_at": "2026-09-14T15:00:00+00:00",
+          "median_nav_usdc": 298480.5956687363,
+          "week_id": "W002"
+        }
+      ],
+      "seat": "deepseek"
+    },
+    {
+      "display_name": "Qwen",
+      "points": [
+        {
+          "evidence_status": "CONFIRMED",
+          "marked_at": "2026-08-30T15:40:44.941800+00:00",
+          "median_nav_usdc": 300000.0,
+          "week_id": "GENESIS"
+        },
+        {
+          "evidence_status": "CONFIRMED",
+          "marked_at": "2026-09-08T15:00:00+00:00",
+          "median_nav_usdc": 299675.685267136,
+          "week_id": "W001"
+        },
+        {
+          "evidence_status": "CONFIRMED",
+          "marked_at": "2026-09-14T15:00:00+00:00",
+          "median_nav_usdc": 298155.3192121293,
+          "week_id": "W002"
+        }
+      ],
+      "seat": "qwen"
+    }
+  ],
+  "title": "Model Olympics S01 - Crypto CEO-Bench",
+  "weekly_recaps": [
+    {
+      "headline": "Twenty-one paper portfolios open at $300,000; the market has not separated the seven teams yet.",
+      "marked_at": "2026-08-30T15:40:44.941800+00:00",
+      "week_id": "GENESIS"
+    },
+    {
+      "headline": "Qwen leads at $299,676; $355 separates first from seventh.",
+      "marked_at": "2026-09-08T15:00:00+00:00",
+      "week_id": "W001"
+    },
+    {
+      "headline": "Grok leads at $299,115; Gemini makes the biggest climb (+2), with a $2,961 field spread.",
+      "marked_at": "2026-09-14T15:00:00+00:00",
+      "week_id": "W002"
+    }
+  ],
+  "weeks_completed": 2
+}
