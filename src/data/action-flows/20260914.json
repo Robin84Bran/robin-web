@@ -1,0 +1,543 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-14",
+  "updated": "2026-09-14",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20260914/hero.webp",
+  "actionHero": "/action-item/20260914/hero.webp",
+  "ogImage": "/daily-briefing/20260914/og.webp",
+  "briefingPath": "/ouroboros/202609/20260914/",
+  "actionItemPath": "/ouroboros/202609/20260914/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "Claude release notes",
+          "url": "https://platform.claude.com/docs/en/release-notes/overview"
+        },
+        {
+          "label": "permission-policy documentation",
+          "url": "https://platform.claude.com/docs/en/managed-agents/permission-policies"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "FT interview",
+          "url": "https://www.ft.com/content/7752631b-6064-4f90-b292-5425064dbaa8"
+        },
+        {
+          "label": "ARX announcements",
+          "url": "https://www.arx-robotics.com/news"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "Farside BTC",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "Farside ETH",
+          "url": "https://farside.co.uk/eth/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "DBS’s original announcement",
+          "url": "https://www.dbs.com/newsroom/DBS_OCBC_and_UOB_complete_first_live_blockchain_enabled_SGD_transactions_on_Swifts_ledger"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "sources": [
+        {
+          "label": "iamrobin.ai",
+          "url": "https://iamrobin.ai"
+        },
+        {
+          "label": "Google’s AI-search guidance",
+          "url": "https://developers.google.com/search/docs/appearance/ai-features"
+        },
+        {
+          "label": "existing September 7 OPC thesis",
+          "url": "https://iamrobin.ai/ouroboros/202609/20260907/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "FT investigation",
+          "url": "https://www.ft.com/content/2f3d996e-b320-48c5-b4a7-967ddffeb360"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Savvy founder’s announcement",
+          "url": "https://www.savvywealth.com/community-as-infrastructure"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Qualcomm SEC filing",
+          "url": "https://www.sec.gov/Archives/edgar/data/804328/000110465926105718/tm2623289d1_8k.htm"
+        },
+        {
+          "label": "QCOM",
+          "url": "https://stockanalysis.com/stocks/qcom/history/"
+        },
+        {
+          "label": "NVDA",
+          "url": "https://stockanalysis.com/stocks/nvda/history/"
+        },
+        {
+          "label": "MU",
+          "url": "https://stockanalysis.com/stocks/mu/history/"
+        },
+        {
+          "label": "QQQ",
+          "url": "https://stockanalysis.com/etf/qqq/history/"
+        },
+        {
+          "label": "September 7’s published briefing",
+          "url": "https://iamrobin.ai/ouroboros/202609/20260907/"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, September 14, 2026",
+      "description": "Eight source-ordered actions connect agent authority, industrial capacity, payment rails and capital assumptions to delivery evidence.",
+      "centralJudgment": "The last step converts capability into accepted output; verify that step before treating plans as cash flow.",
+      "fieldLine": "Eight signals. One outcome-receipt framework. Execution states remain evidence-bound.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models, Agents and OPC Autonomy",
+          "title": "Compare permission policies",
+          "why": "RobinOS need not choose between asking you at every step and granting blanket authority. Routine work can proceed while genuine boundary problems receive precise attribution.",
+          "steps": [
+            "Compare fixed permissions with `auto` on one website-repair task without production credentials. Record completion, unnecessary questions, false denials, permitted recovery and Robin-intervention minutes; produce a permission-decision table RobinOS can adopt.",
+            "Freeze a credential-free website task and measure completion, false denials, permitted recovery and intervention minutes."
+          ],
+          "done": "READY; no permission-policy trial or benefit measured."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "Compare ARX production paths",
+          "why": "Opportunities may lie beyond robot brands, among suppliers capable of converting designs into reliable deliveries.",
+          "steps": [
+            "Build a one-page ARX comparison of greenfield manufacturing versus existing capacity, quantifying conversion investment, ramp time, accepted output, maintenance support and working capital to identify the first binding delivery constraint.",
+            "Record conversion investment, ramp time, accepted output, support and working capital; unavailable figures stay UNKNOWN."
+          ],
+          "done": "READY; no factory conversion cost or vendor delivery result invented."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital and Web3 Health",
+          "title": "Verify exchange operating quality",
+          "why": "The next Hyperliquid must be found through durable trading demand and revenue; ETF recovery cannot substitute for business quality.",
+          "steps": [
+            "Complete a 30-day evidence sheet for one exchange candidate covering net deposits, retained traders, fees net of incentives and executable depth; use it to test growth rather than broadening the industry thesis because Ether attracted money.",
+            "Use the same 30-day window for deposits, retained traders, fees net of incentives and executable depth."
+          ],
+          "done": "READY until the four comparable evidence fields are complete."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins, Fintech and Payment Rails",
+          "title": "Compare Singapore payment routes",
+          "why": "A future payment advantage may belong to services routing intelligently among deposit tokens, stablecoins and conventional accounts.",
+          "steps": [
+            "Compare a weekend Singapore corporate payment across tokenized deposits, USDC and traditional transfers, verifying eligibility, actual arrival time, liquidity requirements, total fees and reconciliation to identify the difference customers would pay for.",
+            "Verify eligibility, actual arrival, liquidity, all-in fees and reconciliation; do not execute a payment."
+          ],
+          "done": "READY; no integration, transfer or payment executed."
+        },
+        {
+          "signal": 5,
+          "domain": "[iamrobin.ai](https://iamrobin.ai)",
+          "title": "Publish the outcome-receipt framework",
+          "why": "This is original operating evidence relevant to every AI-native business, not another generic GEO checklist.",
+          "steps": [
+            "Publish the original recipient-side acceptance article and archive a LinkedIn derivative; the full assignment remains in the Daily Briefing.",
+            "Verify four editions, the evidence visual, primary sources, public payload and notification receipts; archive the derivative."
+          ],
+          "done": "COMPLETE for the authored four-language framework and archived derivative. The proposed measurement experiment is READY; recipient reading remains UNKNOWN.",
+          "deepDiveTitle": "Delivery Is Part of the Product"
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure and Career",
+          "title": "Build a Cape Town screening memo",
+          "why": "This is an engineering–capital-allocation role: integrating cooling, grids, permits and customer load into a deliverable project rather than simply buying servers.",
+          "steps": [
+            "Turn the case into a one-page career-portfolio memo covering land rights, permissions, power/water access, cooling choices and delay costs, separating confirmed evidence from reporting to create a reusable project-screening template.",
+            "Separate land rights, permissions, water/power, cooling and delay costs; reporting is not confirmed project ownership."
+          ],
+          "done": "READY for private evidence routing; no job application or project change."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-Stage Private Markets",
+          "title": "Underwrite Savvy after adviser payouts",
+          "why": "It tests whether one professional, supported by unified data and AI, can deliver work previously requiring a team.",
+          "steps": [
+            "INVESTIGATE—research, not purchase. Prepare an underwriting card prioritizing revenue after adviser payouts, organic versus recruited growth, client retention, service margin and output per adviser before seeking an accessible allocation.",
+            "Verify net revenue, organic versus recruitment growth, retention, service margin and output per adviser."
+          ],
+          "done": "WATCHING; investigation only, no accessible allocation or purchase confirmed."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities",
+          "title": "Separate QCOM profit from price",
+          "why": "“AI is strong” is not a position-level thesis. Different chips, customer relationships and financing structures are being repriced differently.",
+          "steps": [
+            "Decompose QCOM’s incremental valuation assumptions into realized purchases, margins and dilution; consider weight changes only when attributable profit supports expectations, rather than treating price appreciation as a second piece of fundamental evidence.",
+            "Separate purchase conversion, margin and dilution; keep the 60 billion dollar ceiling distinct from confirmed orders."
+          ],
+          "done": "WATCHING; no portfolio or trading action."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年9月14日",
+      "description": "八项行动按源顺序，把Agent权限、工业产能、支付轨道和资本假设连接到交付证据。",
+      "centralJudgment": "最后一步把能力转成验收成果；在把计划当作现金流前，先核实这一步。",
+      "fieldLine": "八个信号。一份结果回执框架。执行状态继续由证据决定。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型、Agent与OPC自主性",
+          "title": "比较权限策略",
+          "why": "RobinOS不必在“每步问你”和“全部放权”之间二选一。关键是让常规工作自主推进，同时把真正的边界问题准确归因。",
+          "steps": [
+            "用一个无生产凭证的网站修复任务，比较固定权限与`auto`两种配置；记录成功完成、无必要询问、误拒绝、拒绝后的合法恢复及Robin介入分钟，输出一张可供RobinOS采用的权限决策表。",
+            "固定无生产凭证的网站任务，测量完成、误拒绝、合法恢复和介入分钟。"
+          ],
+          "done": "READY；未执行权限试验或测得收益。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "比较ARX生产路径",
+          "why": "机会可能不只在机器人品牌，也在能把设计快速变成稳定交付的供应商和改造能力。",
+          "steps": [
+            "为ARX做一页“自建工厂／借用既有产能”对照，量化设备改造投入、爬坡时间、验收产量、维修支持和营运资金，找出最先限制交付的供应环节。",
+            "记录改造投资、爬坡时间、验收产量、支持和营运资金；缺失数字保留UNKNOWN。"
+          ],
+          "done": "READY；未编造工厂改造成本或厂家交付结果。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本与Web3健康",
+          "title": "核实交易平台经营质量",
+          "why": "“下一个Hyperliquid”应从可持续交易需求与收入中找；ETF反弹不是Web3经营质量的替代指标。",
+          "steps": [
+            "为一个交易平台候选者补齐最近30天“净存款／留存交易者／剔除补贴后的费用／可执行深度”四项数据，用它验证增长，而不是因本周ETH流入就扩大行业判断。",
+            "净存款、留存交易者、剔除激励后费用和可执行深度采用同一30天窗口。"
+          ],
+          "done": "READY；等待四项可比证据补齐。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币、Fintech与支付轨道",
+          "title": "对照新加坡支付路径",
+          "why": "未来的支付优势可能属于能在银行存款Token、稳定币与传统账户之间智能选路的服务，而不是押注唯一轨道。",
+          "steps": [
+            "以一笔周末新加坡企业付款为例，制作“Token化存款／USDC／传统转账”三路报价与流程对照，核实准入、实际到账时间、流动性占用、总费用和对账方式，找出客户真正愿意付费的差异。",
+            "核实准入、实际到账、流动性、总费率和对账，不执行付款。"
+          ],
+          "done": "READY；未接入、转账或付款。"
+        },
+        {
+          "signal": 5,
+          "domain": "[iamrobin.ai](https://iamrobin.ai)",
+          "title": "发布结果回执框架",
+          "why": "这是你的真实经营经验，也是任何AI原生公司都会遇到的产品问题；比又一篇泛泛的GEO技巧更有辨识度。",
+          "steps": [
+            "发布接收端验收原创文章并归档LinkedIn衍生稿；完整任务保留于Daily Briefing。",
+            "核验四语全文、证据图、一手来源、公开载荷和通知回执，归档衍生稿。"
+          ],
+          "done": "四语原创框架与归档衍生稿COMPLETE。拟议测量实验仍为READY；接收者是否阅读为UNKNOWN。",
+          "deepDiveTitle": "交付本身就是产品"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基础设施与职业",
+          "title": "制作开普敦初筛备忘录",
+          "why": "这正是工程与资本配置的交叉岗位：把冷却、电网、许可和客户负荷统一成可交付项目，而不只是采购服务器。",
+          "steps": [
+            "将这个案例做成一页职业作品集备忘录，列出土地权利、许可状态、电水接入、冷却选择和延期成本五项证据；标明哪些已确认、哪些仅由媒体报道，形成可复用的项目初筛模板。",
+            "分开土地权利、许可、电水、冷却与延期成本；报道不等于已确认项目归属。"
+          ],
+          "done": "私有证据路由READY；未求职申请或修改项目。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期一级市场",
+          "title": "按顾问分成后收入审查Savvy",
+          "why": "它检验的恰好是你的核心问题：一个专业人士能否借助统一数据和AI完成过去需要一整个团队的工作。",
+          "steps": [
+            "INVESTIGATE（研究，不代表买入）——做一页承销卡，优先求证顾问分成后的净收入、自然增长与招募增长拆分、客户留存、服务毛利和每位顾问产出，再判断是否值得寻找可参与份额。",
+            "核实净收入、自然与招募增长、客户留存、服务毛利和顾问人均产出。"
+          ],
+          "done": "WATCHING；仅调研，未确认可参与份额或买入。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场",
+          "title": "分开QCOM利润与股价",
+          "why": "“AI很强”不是持仓判断。价值正在不同芯片、客户关系和资本结构之间重新定价。",
+          "steps": [
+            "将QCOM新增估值假设拆成采购兑现、毛利与股权稀释三项，只有可归属的利润增量支持当前预期时才考虑改变权重，不把周涨幅当作第二份基本面证据。",
+            "分开采购兑现、毛利和稀释；600亿美元上限不等于确认订单。"
+          ],
+          "done": "WATCHING；没有持仓或交易动作。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年9月14日",
+      "description": "八項行動按源順序，把Agent權限、工業產能、支付軌道和資本假設連接到交付證據。",
+      "centralJudgment": "最後一步把能力轉成驗收成果；在把計劃當作現金流前，先覈實這一步。",
+      "fieldLine": "八個信號。一份結果回執框架。執行狀態繼續由證據決定。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型、Agent與OPC自主性",
+          "title": "比較權限策略",
+          "why": "RobinOS不必在“每步問你”和“全部放權”之間二選一。關鍵是讓常規工作自主推進，同時把真正的邊界問題準確歸因。",
+          "steps": [
+            "用一個無生產憑證的網站修復任務，比較固定權限與`auto`兩種配置；記錄成功完成、無必要詢問、誤拒絕、拒絕後的合法恢復及Robin介入分鐘，輸出一張可供RobinOS採用的權限決策表。",
+            "固定無生產憑證的網站任務，測量完成、誤拒絕、合法恢復和介入分鐘。"
+          ],
+          "done": "READY；未執行權限試驗或測得收益。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "比較ARX生產路徑",
+          "why": "機會可能不只在機器人品牌，也在能把設計快速變成穩定交付的供應商和改造能力。",
+          "steps": [
+            "爲ARX做一頁“自建工廠／借用既有產能”對照，量化設備改造投入、爬坡時間、驗收產量、維修支持和營運資金，找出最先限制交付的供應環節。",
+            "記錄改造投資、爬坡時間、驗收產量、支持和營運資金；缺失數字保留UNKNOWN。"
+          ],
+          "done": "READY；未編造工廠改造成本或廠家交付結果。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本與Web3健康",
+          "title": "覈實交易平臺經營質量",
+          "why": "“下一個Hyperliquid”應從可持續交易需求與收入中找；ETF反彈不是Web3經營質量的替代指標。",
+          "steps": [
+            "爲一個交易平臺候選者補齊最近30天“淨存款／留存交易者／剔除補貼後的費用／可執行深度”四項數據，用它驗證增長，而不是因本週ETH流入就擴大行業判斷。",
+            "淨存款、留存交易者、剔除激勵後費用和可執行深度採用同一30天窗口。"
+          ],
+          "done": "READY；等待四項可比證據補齊。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣、Fintech與支付軌道",
+          "title": "對照新加坡支付路徑",
+          "why": "未來的支付優勢可能屬於能在銀行存款Token、穩定幣與傳統賬戶之間智能選路的服務，而不是押注唯一軌道。",
+          "steps": [
+            "以一筆週末新加坡企業付款爲例，製作“Token化存款／USDC／傳統轉賬”三路報價與流程對照，覈實准入、實際到賬時間、流動性佔用、總費用和對賬方式，找出客戶真正願意付費的差異。",
+            "覈實准入、實際到賬、流動性、總費率和對賬，不執行付款。"
+          ],
+          "done": "READY；未接入、轉賬或付款。"
+        },
+        {
+          "signal": 5,
+          "domain": "[iamrobin.ai](https://iamrobin.ai)",
+          "title": "發佈結果回執框架",
+          "why": "這是你的真實經營經驗，也是任何AI原生公司都會遇到的產品問題；比又一篇泛泛的GEO技巧更有辨識度。",
+          "steps": [
+            "發布接收端驗收原創文章並歸檔LinkedIn衍生稿；完整任務保留於Daily Briefing。",
+            "覈驗四語全文、證據圖、一手來源、公開載荷和通知回執，歸檔衍生稿。"
+          ],
+          "done": "四語原創框架與歸檔衍生稿COMPLETE。擬議測量實驗仍為READY；接收者是否閱讀為UNKNOWN。",
+          "deepDiveTitle": "交付本身就是產品"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基礎設施與職業",
+          "title": "製作開普敦初篩備忘錄",
+          "why": "這正是工程與資本配置的交叉崗位：把冷卻、電網、許可和客戶負荷統一成可交付項目，而不只是採購服務器。",
+          "steps": [
+            "將這個案例做成一頁職業作品集備忘錄，列出土地權利、許可狀態、電水接入、冷卻選擇和延期成本五項證據；標明哪些已確認、哪些僅由媒體報道，形成可複用的項目初篩模板。",
+            "分開土地權利、許可、電水、冷卻與延期成本；報道不等於已確認項目歸屬。"
+          ],
+          "done": "私有證據路由READY；未求職申請或修改項目。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期一級市場",
+          "title": "按顧問分成後收入審查Savvy",
+          "why": "它檢驗的恰好是你的核心問題：一個專業人士能否藉助統一數據和AI完成過去需要一整個團隊的工作。",
+          "steps": [
+            "INVESTIGATE（研究，不代表買入）——做一頁承銷卡，優先求證顧問分成後的淨收入、自然增長與招募增長拆分、客戶留存、服務毛利和每位顧問產出，再判斷是否值得尋找可參與份額。",
+            "覈實淨收入、自然與招募增長、客戶留存、服務毛利和顧問人均產出。"
+          ],
+          "done": "WATCHING；僅調研，未確認可參與份額或買入。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場",
+          "title": "分開QCOM利潤與股價",
+          "why": "“AI很強”不是持倉判斷。價值正在不同芯片、客戶關係和資本結構之間重新定價。",
+          "steps": [
+            "將QCOM新增估值假設拆成採購兌現、毛利與股權稀釋三項，只有可歸屬的利潤增量支持當前預期時才考慮改變權重，不把周漲幅當作第二份基本面證據。\n\n本週收束\n\n- 最大風險： 將規劃產能、目標ARR和潛在採購，過早資本化爲已經能交付的現金流。\n- 最強機會／未解問題： 誰能控制“最後一公里”——跨行到賬、顧問執行、項目通電或用戶收到結果——並因此獲得持續收入？\n- 相比上週一： ETF合計從淨流入12.020億美元轉爲淨流出2.658億美元；Agent關注點從新增勞動力轉向逐次授權與交付證據；支付從協議設計進一步走到真實銀行間Token交易。上週基線見[9](https://iamrobin.ai/ouroboros/202609/20260907/)[月](https://iamrobin.ai/ouroboros/202609/20260907/)[7](https://iamrobin.ai/ouroboros/202609/20260907/)[日已發佈簡報](https://iamrobin.ai/ouroboros/202609/20260907/)⁠。",
+            "分開採購兌現、毛利和稀釋；600億美元上限不等於確認訂單。"
+          ],
+          "done": "WATCHING；沒有持倉或交易動作。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年9月14日",
+      "description": "元資料順の八行動で、Agent権限、産業能力、決済網、資本仮定を到達証拠につなぐ。",
+      "centralJudgment": "最後の工程が能力を検収済み成果に変える。計画を現金収支と見なす前に、その工程を検証する。",
+      "fieldLine": "八つのシグナル。一つの結果レシート枠組み。実行状態は証拠で決める。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "フロンティアモデル、Agent、OPCの自律性",
+          "title": "権限方針を比較する",
+          "why": "RobinOSは、毎回確認する運用と全面委任の二択に縛られない。通常業務を進めながら、本当の権限境界を正確に特定できるかが問われる。",
+          "steps": [
+            "本番認証情報を持たないウェブサイト修正課題を一つ選び、固定権限と`auto`を比較する。完了、不要な質問、誤拒否、許された復旧、Robinの介入分数を記録し、RobinOSで使える権限判断表にする。",
+            "本番認証情報なしのウェブ課題を固定し、完了、誤拒否、許された復旧、介入分数を測る。"
+          ],
+          "done": "READY。権限試験や改善実績なし。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "ARXの生産経路を比較する",
+          "why": "機会はロボットブランドの外にもある。設計を安定した納入に変える供給企業や設備改修能力に注目したい。",
+          "steps": [
+            "ARXの新工場建設と既存設備活用を一枚で比較する。改修投資、立ち上がり時間、検収済み生産量、保守支援、運転資金を数量化し、最初に納入を制約する供給工程を探す。",
+            "転換投資、立上時間、検収量、支援、運転資金を記録し、不足数値はUNKNOWNとする。"
+          ],
+          "done": "READY。設備転換費用や納入実績を推測で埋めない。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資本フローとWeb3の健全性",
+          "title": "取引所の事業品質を確認する",
+          "why": "次のHyperliquidは、継続する取引需要と収益から探すべきだ。ETFの回復は事業品質の代替指標にならない。",
+          "steps": [
+            "取引プラットフォーム候補を一社選び、直近30日の純入金、継続利用者、補助金控除後の手数料、実行可能な板の厚みを埋める。ETHへの流入だけで業界全体の見方を広げず、この証拠で成長を検証する。",
+            "純入金、継続利用者、補助控除後手数料、実行可能な板を同じ30日間で比べる。"
+          ],
+          "done": "READY。四項目の比較可能な証拠を待つ。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコイン、Fintech、決済網",
+          "title": "シンガポールの決済経路を比較する",
+          "why": "決済の優位性は、預金トークン、ステーブルコイン、従来口座を適切に選び分けるサービスに生まれる可能性がある。",
+          "steps": [
+            "週末のシンガポール企業間送金を例に、トークン化預金、USDC、従来送金の三経路を比較する。利用資格、実着金時間、必要流動性、総費用、照合方法を確かめ、顧客が対価を払う差を特定する。",
+            "利用資格、実着金、流動性、総費用、照合を確かめ、支払は実行しない。"
+          ],
+          "done": "READY。統合、送金、支払なし。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "結果レシートの枠組みを公開する",
+          "why": "自身の運営経験から出発する、AIネイティブ企業に共通の製品課題である。一般的なGEO施策一覧より独自性がある。",
+          "steps": [
+            "受け手側の検収を扱う独自記事を公開しLinkedIn派生稿を保存する。課題全文はDaily Briefingに残す。",
+            "四言語全文、証拠図、原資料、公開実体、通知レシートを検証し派生稿を保存する。"
+          ],
+          "done": "四言語の独自枠組みと保存済み派生稿はCOMPLETE。測定実験はREADY、受け手の読了はUNKNOWN。",
+          "deepDiveTitle": "到達までが製品である"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラとキャリア",
+          "title": "ケープタウンの初期審査メモを作る",
+          "why": "冷却、電力網、許認可、顧客負荷を統合し、納入可能な事業にする。サーバー調達を超えた、工学と資本配分が交わる仕事である。",
+          "steps": [
+            "土地権利、許認可、電力・水接続、冷却方式、遅延費用の五項目を一枚の職務ポートフォリオ用メモにする。確認済み証拠と報道を区別し、再利用可能な事業初期審査テンプレートを作る。",
+            "土地権利、許認可、電水、冷却、遅延費用を分け、報道と確認済み帰属を区別する。"
+          ],
+          "done": "私的証拠の振分けはREADY。応募やプロジェクト変更なし。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期未公開市場",
+          "title": "助言者分配後のSavvyを評価する",
+          "why": "統一データとAIによって、一人の専門家が従来のチーム業務を担えるかを試す事例である。",
+          "steps": [
+            "INVESTIGATE、調査であり購入ではない。助言者分配後の収入、自然成長と採用による成長、顧客定着、サービス利益率、一人当たり生産性を優先確認する審査カードを作り、その後に参加可能な持分を探す価値を判断する。",
+            "純収入、自然・採用成長、顧客定着、サービス利益、一人当たり生産性を確認する。"
+          ],
+          "done": "WATCHING。調査のみで参加可能持分や購入は未確認。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場",
+          "title": "QCOMの利益と株価を分ける",
+          "why": "「AIが強い」だけでは個別保有の投資判断にならない。半導体、顧客関係、資本構造ごとに評価が変わっている。",
+          "steps": [
+            "QCOMの評価上乗せを、調達実現、利益率、希薄化の三つに分解する。帰属可能な利益増が期待を支える場合にのみ配分変更を検討し、週間上昇を別の基礎証拠として二重計上しない。",
+            "調達実現、利益率、希薄化を分け、600億ドルの上限を確定受注と区別する。"
+          ],
+          "done": "WATCHING。保有変更や取引なし。"
+        }
+      ]
+    }
+  }
+}
