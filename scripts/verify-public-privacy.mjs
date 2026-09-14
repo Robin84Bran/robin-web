@@ -19,6 +19,13 @@ function filesBelow(directory) {
 }
 
 const violations = [];
+const olympicsPath = join(root, 'src', 'data', 'model-olympics.json');
+if (existsSync(olympicsPath)) {
+  const payload = readFileSync(olympicsPath, 'utf8').toLowerCase();
+  for (const token of ['chat_url', 'codex_thread_id', 'spot_target_nav_pct', 'perpetual_target_notional_pct', 'holdings', 'orders', 'rationale', 'robin']) {
+    if (payload.includes(token)) violations.push(`src/data/model-olympics.json: forbidden ${token}`);
+  }
+}
 for (const publicRoot of publicRoots) {
   for (const file of filesBelow(join(root, publicRoot))) {
     if (!textExtensions.has(extname(file).toLowerCase())) continue;

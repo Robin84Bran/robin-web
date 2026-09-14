@@ -6,7 +6,7 @@ export const navItems = [
 
 export const identityWords = [
   { letter: 'I', word: 'Identity', slug: 'identity', tone: 'sakura', projects: ['iamrobin.ai', 'RobinOS identity layer'] },
-  { letter: 'A', word: 'Asymmetry', slug: 'asymmetry', tone: 'sakura', projects: ['Quant Lab', 'Capital systems'] },
+  { letter: 'A', word: 'Asymmetry', slug: 'asymmetry', tone: 'sakura', projects: ['Quant Lab', 'Capital systems', 'Model Olympics'] },
   { letter: 'M', word: 'Meaning', slug: 'meaning', tone: 'gold', projects: ['Diary', 'Bran_lab'] },
   { letter: 'R', word: 'Resonance', slug: 'resonance', tone: 'silver', projects: ['Writing', 'Conversations'] },
   { letter: 'O', word: 'Ouroboros', slug: 'ouroboros', tone: 'sakura', projects: ['RobinOS journey', 'Time loops'] },

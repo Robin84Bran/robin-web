@@ -1,8 +1,11 @@
 import { defineConfig } from 'astro/config';
+import { readFileSync } from 'node:fs';
 import sitemap from '@astrojs/sitemap';
 import { sites } from '@openai/sites-vite-plugin';
 
 const isSitesBuild = process.env.SITES_BUILD === '1';
+const modelOlympics = JSON.parse(readFileSync(new URL('./src/data/model-olympics.json', import.meta.url), 'utf8'));
+const modelOlympicsPublic = ['PUBLIC_RELEASE_READY', 'PUBLISHED'].includes(modelOlympics.publication_status);
 
 export default defineConfig({
   site: 'https://iamrobin.ai',
@@ -19,6 +22,7 @@ export default defineConfig({
           '/ja/', '/ja/about/', '/ja/network/',
           '/intelligence/attention_all_you_need/', '/intelligence/aidc101/', '/intelligence/aidc101/101-1/', '/portfolio/', '/books/', '/meaning/', '/ouroboros/', '/ouroboros/execution-ledger/', '/binary/',
         ].includes(path)
+          || (modelOlympicsPublic && path === '/asymmetry/model-olympics/')
           || /^\/meaning\/Bran_lab\/(?:SuperRun|GeoDash|PacMan|BlockLab|WonderTrail|KartLab|CloudMunch|BounceTrials|StarboundMath)?\/?$/.test(path)
           || /^\/intelligence\/(?:hardware\/(?:deliverable-megawatts\/)?|supply-chain\/|supply-chain-map\/|swarm\/)?$/.test(path)
           || /^\/meaning\/diary\/\d{6}\/\d{4}-\d{2}-\d{2}-[a-z0-9-]+\/$/.test(path)

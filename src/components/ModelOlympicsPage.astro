@@ -1,0 +1,415 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import modelOlympics from '../data/model-olympics.json';
+import { createBreadcrumbSchema } from '../lib/seo';
+
+type Participant = { seat: string; display_name: string; replicas: number; lineup?: string[] | null };
+type LeaderboardRow = {
+  seat: string;
+  display_name?: string;
+  rank: number | null;
+  median_nav_usdc: number | null;
+  median_return_pct?: number | null;
+};
+type NavPoint = {
+  week_id: string;
+  marked_at: string;
+  median_nav_usdc: number | null;
+  evidence_status: string;
+};
+type NavSeries = { seat: string; display_name: string; points: NavPoint[] };
+type WeeklyRecap = { week_id: string; marked_at: string; headline: string };
+type PublicData = {
+  publication_status: string;
+  last_verified_at: string;
+  title: string;
+  season: { start: string; end: string };
+  weeks_completed: number;
+  participants: Participant[];
+  leaderboard: LeaderboardRow[];
+  team_nav_series?: NavSeries[];
+  weekly_recaps?: WeeklyRecap[];
+};
+
+const data = modelOlympics as PublicData;
+const publicReady = ['PUBLIC_RELEASE_READY', 'PUBLISHED'].includes(data.publication_status);
+const path = '/asymmetry/model-olympics/';
+const date = new Date(data.last_verified_at).toLocaleString('en-GB', {
+  timeZone: 'Asia/Hong_Kong',
+  year: 'numeric',
+  month: 'short',
+  day: '2-digit',
+  hour: '2-digit',
+  minute: '2-digit',
+});
+const markLabels: Record<string, string> = {
+  gpt: 'CDX',
+  chatgpt: 'GPT',
+  claude: 'CLD',
+  grok: 'GRK',
+  gemini: 'GEM',
+  deepseek: 'DS',
+  qwen: 'QW',
+};
+const seriesColors: Record<string, string> = {
+  gpt: '#3778c2',
+  chatgpt: '#151515',
+  claude: '#c26938',
+  grok: '#7562a8',
+  gemini: '#16849b',
+  deepseek: '#b44747',
+  qwen: '#438269',
+};
+const familyNotes: Record<string, string> = {
+  gpt: 'Three persistent Codex tasks',
+  chatgpt: 'Medium · High · Pro',
+  claude: 'Three persistent Claude portfolios',
+  grok: 'Three persistent Grok portfolios',
+  gemini: 'Three persistent Gemini portfolios',
+  deepseek: 'Three persistent DeepSeek portfolios',
+  qwen: 'Three persistent Qwen portfolios',
+};
+const leaderboardBySeat = new Map(data.leaderboard.map((row) => [row.seat, row]));
+const series = data.team_nav_series ?? data.participants.map((participant) => ({
+  seat: participant.seat,
+  display_name: participant.display_name,
+  points: [{
+    week_id: 'GENESIS',
+    marked_at: data.season.start,
+    median_nav_usdc: 300000,
+    evidence_status: 'CONFIRMED',
+  }],
+}));
+const recaps = data.weekly_recaps ?? [{
+  week_id: 'GENESIS',
+  marked_at: data.season.start,
+  headline: 'Twenty-one paper portfolios open at $300,000; the market has not separated the seven teams yet.',
+}];
+const weeks = Array.from(new Set(series.flatMap((row) => row.points.map((point) => point.week_id))));
+const chartWidth = 1000;
+const chartHeight = 430;
+const chartLeft = 78;
+const chartRight = 22;
+const chartTop = 28;
+const chartBottom = 58;
+const plotWidth = chartWidth - chartLeft - chartRight;
+const plotHeight = chartHeight - chartTop - chartBottom;
+const values = series.flatMap((row) => row.points)
+  .filter((point) => point.evidence_status === 'CONFIRMED' && point.median_nav_usdc != null)
+  .map((point) => Number(point.median_nav_usdc));
+const observedMin = Math.min(...values, 300000);
+const observedMax = Math.max(...values, 300000);
+const observedSpread = observedMax - observedMin;
+const yPadding = Math.max(observedSpread * .14, 12000);
+const yMin = Math.max(0, observedMin - yPadding);
+const yMax = observedMax + yPadding;
+const xFor = (weekId: string) => chartLeft + (weeks.length <= 1 ? plotWidth / 2 : (weeks.indexOf(weekId) / (weeks.length - 1)) * plotWidth);
+const yFor = (nav: number) => chartTop + ((yMax - nav) / (yMax - yMin)) * plotHeight;
+const pathFor = (points: NavPoint[]) => {
+  let drawing = false;
+  return points.map((point) => {
+    if (point.evidence_status !== 'CONFIRMED' || point.median_nav_usdc == null) {
+      drawing = false;
+      return '';
+    }
+    const command = drawing ? 'L' : 'M';
+    drawing = true;
+    return `${command}${xFor(point.week_id).toFixed(1)},${yFor(Number(point.median_nav_usdc)).toFixed(1)}`;
+  }).filter(Boolean).join(' ');
+};
+const yTicks = [yMax, (yMin + yMax) / 2, yMin];
+const latestConfirmed = (row: NavSeries) => [...row.points].reverse().find((point) => point.evidence_status === 'CONFIRMED' && point.median_nav_usdc != null);
+const money = (value: number | null | undefined) => value == null ? 'UNKNOWN' : `$${Math.round(value).toLocaleString('en-US')}`;
+const hasScoredHistory = data.weeks_completed > 0 && series.some((row) => row.points.length > 1);
+const schema = publicReady
+  ? [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Dataset',
+        name: data.title,
+        description: 'A forward, paper-only portfolio tournament for seven AI product teams and mechanical baselines.',
+        url: `https://iamrobin.ai${path}`,
+        temporalCoverage: `${data.season.start}/${data.season.end}`,
+        measurementTechnique: 'Median paper portfolio NAV across three persistent replicas per model product.',
+      },
+      createBreadcrumbSchema([
+        { name: 'Home', path: '/' },
+        { name: 'Asymmetry', path: '/asymmetry/' },
+        { name: 'Model Olympics', path },
+      ]),
+    ]
+  : undefined;
+---
+
+<BaseLayout
+  title="Model Olympics — I AM ROBIN"
+  description="Seven AI product teams manage 21 identical paper portfolios through 2028. Same clock, same evidence, no hidden execution advantage."
+  {path}
+  noindex={!publicReady}
+  {schema}
+>
+  <article class="olympics shell">
+    <a class="olympics__back" href="/asymmetry/">← Asymmetry</a>
+    <header class="olympics__hero">
+      <div class="olympics__mark" aria-hidden="true">
+        <b>₿<small>21M</small></b>
+        {data.participants.map((participant, index) => (
+          <span class:list={{ 'is-chatgpt': participant.seat === 'chatgpt' }} style={`--angle: ${(index * 360) / data.participants.length}deg`}>{markLabels[participant.seat] ?? participant.display_name.slice(0, 3)}</span>
+        ))}
+      </div>
+      <p class="eyebrow">MODEL OLYMPICS · SEASON 01</p>
+      <h1>Crypto CEO-Bench</h1>
+      <p class="olympics__dek">Seven AI product teams. Three persistent portfolios each. One frozen evidence packet and one paper-execution clock.</p>
+      <div class="olympics__facts" aria-label="Tournament facts">
+        <div><strong>21</strong><span>paper portfolios</span></div>
+        <div><strong>300k</strong><span>USDC each</span></div>
+        <div><strong>2028·12·10</strong><span>terminal mark</span></div>
+      </div>
+    </header>
+
+    <section class="olympics__race" aria-labelledby="race-title" data-nav-chart>
+      <div class="olympics__section-heading">
+        <div>
+          <p class="eyebrow">THE RACE</p>
+          <h2 id="race-title">The market draws the lines.</h2>
+        </div>
+        <p>Twenty-one sealed portfolios become seven public family medians. Individual replica NAVs stay private.</p>
+      </div>
+
+      <div class="olympics__legend" aria-label="Highlight a model family">
+        <button class="is-active" type="button" data-series="all">All teams</button>
+        {series.map((row) => (
+          <button type="button" data-series={row.seat} style={`--series:${seriesColors[row.seat]}`}>
+            <span></span>{row.display_name}
+          </button>
+        ))}
+      </div>
+
+      <div class="olympics__chart-shell">
+        <svg class="olympics__chart" viewBox={`0 0 ${chartWidth} ${chartHeight}`} role="img" aria-labelledby="nav-chart-title nav-chart-desc">
+          <title id="nav-chart-title">Model family median NAV over time</title>
+          <desc id="nav-chart-desc">Seven public score lines, each representing the median of three private paper portfolios.</desc>
+          {yTicks.map((tick) => (
+            <g class="olympics__grid">
+              <line x1={chartLeft} x2={chartWidth - chartRight} y1={yFor(tick)} y2={yFor(tick)} />
+              <text x={chartLeft - 12} y={yFor(tick) + 4} text-anchor="end">${Math.round(tick / 1000)}k</text>
+            </g>
+          ))}
+          <line class="olympics__start-line" x1={chartLeft} x2={chartWidth - chartRight} y1={yFor(300000)} y2={yFor(300000)} />
+          {weeks.map((weekId) => (
+            <text class="olympics__x-label" x={xFor(weekId)} y={chartHeight - 20} text-anchor="middle">{weekId}</text>
+          ))}
+          {series.map((row) => (
+            <g class="olympics__series" data-chart-series={row.seat} style={`--series:${seriesColors[row.seat]}`}>
+              <path d={pathFor(row.points)} />
+              {row.points.filter((point) => point.evidence_status === 'CONFIRMED' && point.median_nav_usdc != null).map((point) => (
+                <circle cx={xFor(point.week_id)} cy={yFor(Number(point.median_nav_usdc))} r="4.5">
+                  <title>{row.display_name} · {point.week_id} · {money(point.median_nav_usdc)}</title>
+                </circle>
+              ))}
+            </g>
+          ))}
+        </svg>
+        {!hasScoredHistory && (
+          <div class="olympics__chart-wait">
+            <strong>All 21 begin here.</strong>
+            <span>The first scored lines appear after W001 closes cleanly.</span>
+          </div>
+        )}
+      </div>
+      <p class="olympics__chart-note">Public score = median NAV of three replicas · starting NAV $300,000 · fees and modeled slippage included</p>
+    </section>
+
+    <section class="olympics__stories" aria-labelledby="stories-title">
+      <div class="olympics__section-heading">
+        <div>
+          <p class="eyebrow">THE STORY SO FAR</p>
+          <h2 id="stories-title">One week. One sentence.</h2>
+        </div>
+        <p>Generated deterministically from settled public scores—never from private positions or model rationale.</p>
+      </div>
+      <ol>
+        {[...recaps].reverse().slice(0, 8).map((recap, index) => (
+          <li class:list={{ 'is-latest': index === 0 }}>
+            <span>{recap.week_id}</span>
+            <p>{recap.headline}</p>
+          </li>
+        ))}
+      </ol>
+    </section>
+
+    <section class="olympics__field" aria-labelledby="field-title">
+      <div class="olympics__section-heading">
+        <div>
+          <p class="eyebrow">THE FAMILIES</p>
+          <h2 id="field-title">Seven houses. Twenty-one minds.</h2>
+        </div>
+        <p>Each family score is the median of three independent, persistent portfolios.</p>
+      </div>
+      <div class="olympics__families">
+        {data.participants.map((participant, index) => {
+          const row = leaderboardBySeat.get(participant.seat);
+          const nav = latestConfirmed(series.find((item) => item.seat === participant.seat) ?? { seat: participant.seat, display_name: participant.display_name, points: [] });
+          return (
+            <article style={`--series:${seriesColors[participant.seat]}`}>
+              <div class="olympics__family-top">
+                <i>{String(index + 1).padStart(2, '0')}</i>
+                <b>{markLabels[participant.seat]}</b>
+              </div>
+              <div>
+                <h3>{participant.display_name}</h3>
+                <p>{participant.lineup?.length ? participant.lineup.join(' · ') : familyNotes[participant.seat]}</p>
+              </div>
+              <dl>
+                <div><dt>Books</dt><dd>{participant.replicas}</dd></div>
+                <div><dt>{row?.rank ? 'Rank' : 'Status'}</dt><dd>{row?.rank ? `#${row.rank}` : 'Awaiting mark'}</dd></div>
+                <div><dt>Median NAV</dt><dd>{hasScoredHistory ? money(nav?.median_nav_usdc) : '—'}</dd></div>
+              </dl>
+            </article>
+          );
+        })}
+      </div>
+    </section>
+
+    <section class="olympics__rules" aria-labelledby="rules-title">
+      <div>
+        <p class="eyebrow">THE CONTRACT</p>
+        <h2 id="rules-title">Same world. Separate minds.</h2>
+      </div>
+      <ul>
+        <li>Forward and paper-only. No exchange accounts, credentials, wallets, or live orders.</li>
+        <li>Each manager sees the same public packet plus only its own portfolio history.</li>
+        <li>The score is median portfolio NAV across three replicas; friction is charged.</li>
+        <li>Deribit options provide a risk-neutral market baseline, not a literal price prophecy.</li>
+        <li>Public results contain scores only—never holdings, orders, rationales, or raw chats.</li>
+      </ul>
+    </section>
+
+    <section class="olympics__score" aria-labelledby="score-title">
+      <div class="olympics__score-heading">
+        <div>
+          <p class="eyebrow">SCOREBOARD</p>
+          <h2 id="score-title">Only what can be settled.</h2>
+        </div>
+        <span>{data.weeks_completed} weeks complete</span>
+      </div>
+      {data.leaderboard.length ? (
+        <ol>
+          {data.leaderboard.map((row) => (
+            <li>
+              <span>{row.rank ?? '—'}</span>
+              <strong>{row.display_name ?? row.seat}</strong>
+              <em>{money(row.median_nav_usdc)}</em>
+            </li>
+          ))}
+        </ol>
+      ) : (
+        <div class="olympics__quiet">
+          <span aria-hidden="true">∿</span>
+          <p>The clock is running. The public table opens only after clean scored rounds exist.</p>
+        </div>
+      )}
+    </section>
+
+    <footer class="olympics__receipt">
+      <span>Paper-only · score-only</span>
+      <span>Last verified {date} HKT</span>
+    </footer>
+  </article>
+</BaseLayout>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-nav-chart]').forEach((chart) => {
+    const controls = Array.from(chart.querySelectorAll<HTMLButtonElement>('[data-series]'));
+    const plotted = Array.from(chart.querySelectorAll<SVGGElement>('[data-chart-series]'));
+    controls.forEach((control) => control.addEventListener('click', () => {
+      const selected = control.dataset.series ?? 'all';
+      controls.forEach((item) => item.classList.toggle('is-active', item === control));
+      plotted.forEach((item) => item.classList.toggle('is-dimmed', selected !== 'all' && item.dataset.chartSeries !== selected));
+    }));
+  });
+</script>
+
+<style>
+  .olympics { padding-block: clamp(7rem, 14vw, 11rem) 5rem; }
+  .olympics__back { color: var(--muted); font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; }
+  .olympics__hero { max-width: 58rem; margin-top: clamp(3rem, 8vw, 7rem); }
+  .olympics__mark { position: relative; display: grid; width: clamp(12rem, 26vw, 17rem); aspect-ratio: 1; margin-bottom: 3rem; place-items: center; border: 1px solid color-mix(in srgb, var(--ink) 16%, transparent); border-radius: 50%; }
+  .olympics__mark::after { position: absolute; inset: 18%; border: 1px solid color-mix(in srgb, var(--ink) 8%, transparent); border-radius: 50%; content: ''; }
+  .olympics__mark b { position: absolute; inset: 50% auto auto 50%; z-index: 1; display: grid; place-items: center; font: 500 2.3rem/1 var(--serif); transform: translate(-50%, -50%); }
+  .olympics__mark b small { margin-top: .3rem; color: var(--muted); font: 600 .55rem/1 var(--sans); letter-spacing: .12em; }
+  .olympics__mark span { position: absolute; inset: 50% auto auto 50%; z-index: 2; display: grid; min-width: 2.35rem; height: 2.35rem; padding-inline: .35rem; place-items: center; border: 1px solid color-mix(in srgb, var(--ink) 14%, transparent); border-radius: 50%; background: var(--moon); color: var(--ink); font: 600 .58rem/1 var(--sans); transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-7rem) rotate(calc(-1 * var(--angle))); }
+  .olympics__mark span.is-chatgpt { background: var(--ink); color: var(--moon); }
+  h1 { margin: .7rem 0 1.2rem; font: 500 clamp(3.2rem, 9vw, 7.5rem)/.92 var(--serif); letter-spacing: -.055em; }
+  h2 { margin: .6rem 0 0; font: 500 clamp(2rem, 4vw, 3.6rem)/1.05 var(--serif); letter-spacing: -.035em; }
+  .olympics__dek { max-width: 48rem; color: var(--muted); font-size: clamp(1.15rem, 2.5vw, 1.7rem); line-height: 1.5; }
+  .olympics__facts { display: grid; grid-template-columns: .9fr .9fr 1.2fr; gap: 1px; margin-top: 4rem; background: color-mix(in srgb, var(--ink) 12%, transparent); border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent); }
+  .olympics__facts div { display: grid; min-width: 0; gap: .35rem; padding: 1.4rem; background: var(--moon); }
+  .olympics__facts strong { font: 500 clamp(1.35rem, 2.7vw, 2rem)/1 var(--serif); white-space: nowrap; }
+  .olympics__facts span { color: var(--muted); font-size: .78rem; text-transform: uppercase; letter-spacing: .1em; }
+  .olympics__race, .olympics__stories, .olympics__rules, .olympics__field, .olympics__score { margin-top: clamp(5rem, 10vw, 9rem); padding-top: 2rem; border-top: 1px solid color-mix(in srgb, var(--ink) 14%, transparent); }
+  .olympics__section-heading { display: grid; grid-template-columns: 1.1fr .9fr; align-items: end; gap: clamp(2rem, 7vw, 7rem); }
+  .olympics__section-heading > p { max-width: 34rem; margin: 0; color: var(--muted); line-height: 1.55; }
+  .olympics__legend { display: flex; flex-wrap: wrap; gap: .55rem; margin-top: 2.2rem; }
+  .olympics__legend button { display: inline-flex; align-items: center; gap: .45rem; min-height: 2.25rem; padding: .55rem .8rem; border: 1px solid color-mix(in srgb, var(--ink) 14%, transparent); border-radius: 99rem; background: transparent; color: var(--muted); font: 600 .68rem/1 var(--sans); letter-spacing: .04em; cursor: pointer; transition: background .2s ease, color .2s ease, border-color .2s ease; }
+  .olympics__legend button:hover, .olympics__legend button.is-active { border-color: color-mix(in srgb, var(--ink) 36%, transparent); background: color-mix(in srgb, var(--ink) 6%, transparent); color: var(--ink); }
+  .olympics__legend button span { width: .6rem; height: .6rem; border-radius: 50%; background: var(--series, var(--ink)); }
+  .olympics__chart-shell { position: relative; margin-top: 1rem; border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent); background: linear-gradient(180deg, color-mix(in srgb, var(--ink) 2.5%, transparent), transparent 55%); overflow: hidden; }
+  .olympics__chart { display: block; width: 100%; min-width: 44rem; }
+  .olympics__grid line { stroke: color-mix(in srgb, var(--ink) 10%, transparent); stroke-width: 1; vector-effect: non-scaling-stroke; }
+  .olympics__grid text, .olympics__x-label { fill: var(--muted); font: 600 12px/1 var(--sans); letter-spacing: .04em; }
+  .olympics__start-line { stroke: color-mix(in srgb, var(--ink) 28%, transparent); stroke-width: 1; stroke-dasharray: 5 7; vector-effect: non-scaling-stroke; }
+  .olympics__series { color: var(--series); opacity: 1; transition: opacity .2s ease; }
+  .olympics__series.is-dimmed { opacity: .11; }
+  .olympics__series path { fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+  .olympics__series circle { fill: var(--moon); stroke: currentColor; stroke-width: 2.2; vector-effect: non-scaling-stroke; }
+  .olympics__chart-wait { position: absolute; inset: 50% auto auto 50%; display: grid; gap: .3rem; width: min(80%, 28rem); padding: 1rem 1.25rem; border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent); background: color-mix(in srgb, var(--moon) 90%, transparent); text-align: center; transform: translate(-50%, -50%); backdrop-filter: blur(8px); }
+  .olympics__chart-wait strong { font-family: var(--serif); font-size: 1.15rem; }
+  .olympics__chart-wait span, .olympics__chart-note { color: var(--muted); font-size: .72rem; letter-spacing: .05em; }
+  .olympics__chart-note { margin: .9rem 0 0; text-transform: uppercase; }
+  .olympics__stories ol { margin: 2rem 0 0; padding: 0; list-style: none; border-top: 1px solid color-mix(in srgb, var(--ink) 10%, transparent); }
+  .olympics__stories li { display: grid; grid-template-columns: 7rem 1fr; gap: 1.5rem; padding: 1.25rem 0; border-bottom: 1px solid color-mix(in srgb, var(--ink) 10%, transparent); }
+  .olympics__stories li > span { color: var(--muted); font: 600 .7rem/1.7 var(--sans); letter-spacing: .12em; }
+  .olympics__stories li p { max-width: 50rem; margin: 0; line-height: 1.6; }
+  .olympics__stories li.is-latest p { font-family: var(--serif); font-size: clamp(1.08rem, 2vw, 1.35rem); line-height: 1.45; }
+  .olympics__families { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 1px; margin-top: 2rem; background: color-mix(in srgb, var(--ink) 12%, transparent); }
+  .olympics__families > article { position: relative; display: grid; grid-column: span 3; min-height: 15rem; gap: 2.4rem; padding: 1.3rem; align-content: space-between; background: var(--moon); box-shadow: inset 0 3px 0 var(--series); }
+  .olympics__families > article:nth-child(n + 5) { grid-column: span 4; }
+  .olympics__family-top { display: flex; align-items: start; justify-content: space-between; }
+  .olympics__family-top i { color: var(--muted); font: 600 .64rem/1 var(--sans); letter-spacing: .12em; }
+  .olympics__family-top b { display: grid; width: 2.4rem; height: 2.4rem; place-items: center; border: 1px solid color-mix(in srgb, var(--series) 42%, transparent); border-radius: 50%; color: var(--series); font: 700 .62rem/1 var(--sans); }
+  .olympics__families h3 { margin: 0; font: 500 1.55rem/1 var(--serif); }
+  .olympics__families article > div > p { min-height: 2.4em; margin: .55rem 0 0; color: var(--muted); font-size: .78rem; line-height: 1.5; }
+  .olympics__families dl { display: grid; grid-template-columns: repeat(3, 1fr); gap: .8rem; margin: 0; }
+  .olympics__families dl div { min-width: 0; }
+  .olympics__families dt { color: var(--muted); font-size: .6rem; letter-spacing: .08em; text-transform: uppercase; }
+  .olympics__families dd { margin: .3rem 0 0; font-size: .75rem; line-height: 1.25; overflow-wrap: anywhere; }
+  .olympics__rules { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(2rem, 8vw, 8rem); }
+  .olympics__rules ul { margin: 0; padding: 0; list-style: none; }
+  .olympics__rules li { padding: 1rem 0; border-bottom: 1px solid color-mix(in srgb, var(--ink) 10%, transparent); line-height: 1.55; }
+  .olympics__score-heading { display: flex; align-items: end; justify-content: space-between; gap: 2rem; }
+  .olympics__score-heading > span { color: var(--muted); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; }
+  .olympics__score ol { margin: 2rem 0 0; padding: 0; list-style: none; }
+  .olympics__score li { display: grid; grid-template-columns: 3rem 1fr auto; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid color-mix(in srgb, var(--ink) 10%, transparent); }
+  .olympics__score li span, .olympics__score li em { color: var(--muted); font-style: normal; }
+  .olympics__quiet { display: flex; align-items: center; gap: 1rem; margin-top: 2rem; padding: 2rem; background: color-mix(in srgb, var(--ink) 3%, transparent); }
+  .olympics__quiet > span { font-size: 2rem; }
+  .olympics__quiet p { max-width: 38rem; margin: 0; color: var(--muted); line-height: 1.5; }
+  .olympics__receipt { display: flex; justify-content: space-between; gap: 1rem; margin-top: 5rem; padding-top: 1rem; border-top: 1px solid color-mix(in srgb, var(--ink) 14%, transparent); color: var(--muted); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; }
+  @media (max-width: 900px) {
+    .olympics__families > article, .olympics__families > article:nth-child(n + 5) { grid-column: span 6; }
+    .olympics__families > article:last-child:nth-child(odd) { grid-column: 4 / span 6; }
+    .olympics__chart-shell { overflow-x: auto; }
+  }
+  @media (max-width: 700px) {
+    .olympics__mark span { transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-5rem) rotate(calc(-1 * var(--angle))); }
+    .olympics__facts { grid-template-columns: 1fr 1fr; }
+    .olympics__facts div:last-child { grid-column: 1 / -1; }
+    .olympics__section-heading, .olympics__rules { grid-template-columns: 1fr; }
+    .olympics__families > article, .olympics__families > article:nth-child(n + 5), .olympics__families > article:last-child:nth-child(odd) { grid-column: 1 / -1; }
+    .olympics__stories li { grid-template-columns: 4.8rem 1fr; gap: .8rem; }
+    .olympics__score-heading, .olympics__receipt { align-items: start; flex-direction: column; }
+    .olympics__chart-note { line-height: 1.5; }
+  }
+  @media (prefers-reduced-motion: reduce) { .olympics__series, .olympics__legend button { transition: none; } }
+</style>
