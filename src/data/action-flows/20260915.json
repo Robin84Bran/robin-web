@@ -1,0 +1,535 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-15",
+  "updated": "2026-09-15",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20260915/hero.webp",
+  "actionHero": "/action-item/20260915/hero.webp",
+  "ogImage": "/daily-briefing/20260915/og.webp",
+  "briefingPath": "/ouroboros/202609/20260915/",
+  "actionItemPath": "/ouroboros/202609/20260915/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "Anthropic",
+          "url": "https://claude.com/blog/claude-for-financial-advisors"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/anthropic-targets-financial-advisers-with-new-claude-tool-2026-09-14/"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Pony.ai",
+          "url": "https://ir.pony.ai/news-releases/news-release-details/pony-ai-inc-unveils-new-gen-4-robotruck-collaboration-gac"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/autos-transportation/chinas-ponyai-unveils-latest-robotruck-model-it-targets-european-sales-2026-09-14/"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "Kaiko",
+          "url": "https://www.kaiko.com/news/sp-global-leads-strategic-investment-in-kaiko-extending-series-b-to-110-million"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/legal/government/crypto-data-firm-kaiko-secures-110-million-funding-round-led-by-sp-global-2026-09-14/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/india/india-bars-bank-charges-upi-payments-up-2000-rupees-2026-09-14/"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "sources": [
+        {
+          "label": "Kaiko",
+          "url": "https://www.kaiko.com/news/sp-global-leads-strategic-investment-in-kaiko-extending-series-b-to-110-million"
+        },
+        {
+          "label": "Payward–Nasdaq",
+          "url": "https://www.payward.com/press-release/payward-nasdaq-tokenized-equities"
+        },
+        {
+          "label": "Hyperliquid documentation",
+          "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "Business Wire",
+          "url": "https://www.businesswire.com/newsroom/subject/funding"
+        },
+        {
+          "label": "HPCwire",
+          "url": "https://www.hpcwire.com/2026/09/14/cornelis-to-build-scale-up-interconnect-with-ualink/"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Temporal",
+          "url": "https://temporal.io/blog/temporal-raises-usd550m-series-e-at-usd12-55b-valuation-ai"
+        },
+        {
+          "label": "Reuters report",
+          "url": "https://whtc.com/2026/09/14/temporals-valuation-spikes-to-12-6-billion-in-lightspeed-led-funding-round/"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Reuters market close",
+          "url": "https://www.reuters.com/business/ai-warnings-knock-nasdaq-futures-pressure-tech-stocks-2026-09-14/"
+        },
+        {
+          "label": "Reuters global report",
+          "url": "https://www.reuters.com/world/china/ai-linked-asian-stocks-slump-after-top-lab-ceos-call-slowing-down-technologys-2026-09-14/"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, September 15, 2026",
+      "description": "Eight source-ordered actions test whether connected systems produce recoverable work and durable economics.",
+      "centralJudgment": "Treat announcements as research inputs; verify rights, delivered performance and recurring revenue at each operating boundary.",
+      "fieldLine": "Eight signals. One institutional data scorecard. Execution follows evidence.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models, Agents and OPC Autonomy",
+          "title": "Test a bounded wealth workflow",
+          "why": "RobinOS’s advantage will come from giving models correct, bounded and traceable business context while retaining approval boundaries around money and client commitments.",
+          "steps": [
+            "Run a shadow test using anonymous or synthetic data: have an agent prepare a portfolio meeting brief and follow-up list from three sources, measuring traceability, calculation errors, omissions, correction minutes and failure recovery. Grant no communication or trading authority until every check passes.",
+            "Record traceable sources, calculation errors, omissions, correction minutes and recovery on synthetic data; retain all authority boundaries."
+          ],
+          "done": "READY; no synthetic workflow trial performed."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "Verify European robotruck economics",
+          "why": "Fixed-route freight may produce dependable Physical-AI economics earlier than general-purpose humanoids. The decisive measures are actual cost per ton-kilometer and intervention frequency.",
+          "steps": [
+            "Classify [Pony.ai](http://pony.ai/) as Chinese commercial operation evidenced / European commercialization unproven; upgrade the European thesis only after paying customers, permits, driverless mileage, intervention rates, utilization and realized costs are disclosed.",
+            "Require paying customers, road permits, driverless mileage, interventions per 1,000 km, utilization and realized cost per ton-km."
+          ],
+          "done": "WATCHING; European commercialization remains unproven."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital, Onchain Structure and Web3 Health",
+          "title": "Compare institutional data layers",
+          "why": "The next Hyperliquid may control pricing, data rights, benchmarks, surveillance or reconciliation across tokenized venues rather than being another exchange.",
+          "steps": [
+            "Add an institutional data layer to the Next Hyperliquid scorecard, comparing institutional customers, recurring revenue, coverage and latency, benchmark authorization, onchain/offchain conversion, regulatory adoption and revenue excluding incentives.",
+            "Compare retained customers, recurring revenue, coverage, latency, benchmark rights, interoperability and fees excluding incentives."
+          ],
+          "done": "READY; the scorecard template exists, comparable candidate economics remain UNKNOWN."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins, Fintech and Payment Rails",
+          "title": "Model UPI fee scenarios",
+          "why": "Transaction-value segmentation may reconcile adoption, merchant acceptance and sustainable PSP economics more effectively than one universal fee.",
+          "steps": [
+            "Model UPI economics at ₹2,000, ₹5,000 and ₹20,000 under 0%, 0.3% and 0.5% merchant-fee scenarios, comparing outcomes against cards and stablecoin settlement; enter no fee revenue into forecasts before final rules exist.",
+            "Use all nine combinations of three amounts and three hypothetical rates; separate bank, PSP and merchant economics, with no assumed enacted fee."
+          ],
+          "done": "READY; hypothetical fee scenarios are not revenue forecasts or executed payments."
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "Publish the onchain data framework",
+          "why": "This is where Robin’s payments, exchange and Token Factory research can become a distinctive investment framework—and a genuine Daily Special.",
+          "steps": [
+            "Publish the original onchain market data article, market diagram and LinkedIn derivative; preserve the full assignment in the Daily Briefing.",
+            "Confirm four complete editions, primary evidence, the market map, scorecard and archived derivative; the separate paper exercise remains READY."
+          ],
+          "done": "COMPLETE for the authored framework, four editions and archived derivative. Product adoption and investment returns remain UNKNOWN.",
+          "deepDiveTitle": "Who Owns the Data Layer of Onchain Markets"
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure and Capital Projects",
+          "title": "Qualify AI interconnect claims",
+          "why": "Token Factory economics should be measured through effective cluster throughput. Networks that leave GPUs waiting can destroy returns despite cheap power or financing.",
+          "steps": [
+            "Create an AI interconnect qualification ledger comparing delivery dates, effective bandwidth, latency, collective offload, recovery, compatibility, watts per GPU and system cost; retain architecture announced / economics unverified until CN6000 deliveries and independent benchmarks appear.",
+            "Record dated delivery, effective bandwidth, latency, collective offload, recovery, compatibility, watts per GPU and total system cost."
+          ],
+          "done": "READY for the authorized private evidence route; no procurement, application or network experiment."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-Stage Private Markets",
+          "title": "Investigate Temporal durability",
+          "why": "Temporal validates a central RobinOS thesis: long-running agent value depends on resuming correctly after outages, tool failures and human waiting—not model intelligence alone.",
+          "steps": [
+            "INVESTIGATE—research, not purchase.\n\nIf accessible shares appear, require audited ARR, gross margin, customer concentration, NDR definitions, cloud costs, primary-secondary composition and liquidation preferences; also test whether durable execution reduces Robin rescue minutes in one real RobinOS workflow.",
+            "Require audited ARR, margin, concentration, NDR definitions, cloud cost, share composition and liquidation terms before any allocation judgment."
+          ],
+          "done": "WATCHING; no purchase or accessible allocation confirmed; durability trial remains READY."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities",
+          "title": "Separate NVDA demand from discount rates",
+          "why": "Narrative risk and rate pressure arriving together invite false attribution. Position value depends on whether compute commitments are cancelled, delayed or redirected toward inference.",
+          "steps": [
+            "Do not change the position solely on the one-day decline. Separate announced order/capex changes from ten-year yield/valuation compression, downgrading the fundamental thesis only if the first shows sustained reductions.",
+            "Keep order and capex evidence separate from yield and valuation effects; no trade follows the daily price move."
+          ],
+          "done": "WATCHING; no portfolio change or trading action."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年9月15日",
+      "description": "八项行动按源顺序，检查连接后的系统能否带来可恢复工作与持续经济回报。",
+      "centralJudgment": "公告是研究输入；每个运营边界都要分别核验权利、交付表现和经常性收入。",
+      "fieldLine": "八个信号。一份机构数据评分卡。执行状态由证据决定。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型、Agent与OPC自主性",
+          "title": "测试受限财富管理流程",
+          "why": "RobinOS未来的优势不会只是选择最聪明的模型，而是让模型获得正确、受限、可追溯的业务上下文，同时保留资金和客户承诺的批准边界。",
+          "steps": [
+            "用匿名或合成数据运行一次影子测试：让Agent从三个来源制作投资组合会前简报和会后任务清单，记录来源可追溯率、计算错误、遗漏、人工修正分钟及失败恢复；全部通过前不给予客户沟通或交易权限。",
+            "用合成数据记录来源追溯、计算错误、遗漏、修正分钟和恢复，保留全部权限边界。"
+          ],
+          "done": "READY；未执行合成数据流程试验。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "核实欧洲自动卡车经济性",
+          "why": "Physical AI最先产生可靠经济回报的形态，可能是固定路线货运，而不是通用人形机器人；关键指标是真实每吨公里成本与人类接管频率。",
+          "steps": [
+            "[将](http://pony.ai/)[Pony.ai](http://pony.ai/)[标记为](http://pony.ai/)中国商业运行已有证据／欧洲商业化未验证；仅在出现欧洲付费客户、道路许可、无人驾驶里程、每千公里接管次数、利用率及实际每吨公里成本后升级欧洲论点。",
+            "要求付费客户、道路许可、无人里程、每千公里接管、利用率和实际吨公里成本。"
+          ],
+          "done": "WATCHING；欧洲商业化仍未验证。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本、链上结构与Web3健康",
+          "title": "比较机构数据层",
+          "why": "“下一个Hyperliquid”不一定是另一家交易所；它也可能控制定价、数据权利、基准、监控或跨市场对账，使所有Token化场所都必须向它付费。",
+          "steps": [
+            "在“Next Hyperliquid”评分卡新增institutional data layer，比较候选者的付费机构客户、经常性收入、数据覆盖与延迟、基准牌照、链上链下转换、监管采用和非补贴收入；不再只按交易量、TVL或Token涨幅排序。",
+            "比较留存客户、经常性收入、覆盖、延迟、基准权利、互操作和扣除激励的费用。"
+          ],
+          "done": "READY；评分卡模板已完成，可比候选经济数据仍为UNKNOWN。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币、Fintech与支付轨道",
+          "title": "建立UPI费率情景",
+          "why": "Robin八年的支付经验在这里非常直接：用户增长、商户接受度和支付机构可持续收入之间的矛盾，终于可能通过金额分层而非统一收费解决。",
+          "steps": [
+            "建立2,000、5,000和20,000卢比三档UPI单位经济模型，测试0%、0.3%和0.5%商户费下的银行、PSP及商户收益，并与卡支付和稳定币结算比较；正式规则公布前不把任何费率写入收入预测。",
+            "三档金额与三种假设费率组成九种情景，分开银行、PSP与商户，不假设收费已经实施。"
+          ],
+          "done": "READY；假设费率不等于收入预测或已执行付款。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "发布链上数据框架",
+          "why": "这是Robin的支付、交易所和Token Factory研究能够交汇成原创投资框架的地方，也最适合升级为Daily Special。",
+          "steps": [
+            "发布链上市场数据原创文章、市场图和LinkedIn衍生稿；完整任务保留于Daily Briefing。",
+            "核验四语全文、一手证据、市场图、评分卡和归档衍生稿；独立纸面练习仍为READY。"
+          ],
+          "done": "原创框架、四语稿和归档衍生稿COMPLETE；产品采用与投资回报仍为UNKNOWN。",
+          "deepDiveTitle": "谁拥有链上市场的数据层"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基础设施与资本项目",
+          "title": "核验AI互连主张",
+          "why": "Token Factory的资本效率应以整套集群的有效吞吐衡量；如果网络让GPU等待，再便宜的电力和融资也无法挽救回报率。这也是Robin连接工程、供应链和基础设施投资的优质职业研究样本。",
+          "steps": [
+            "建立AI interconnect qualification ledger，以实际交付日期、有效带宽、延迟、集合运算卸载、故障恢复、软件兼容、每GPU功耗及整机成本比较Cornelis、NVLink/InfiniBand与其他开放方案；在CN6000客户交付和独立基准出现前维持架构已发布／经济性未验证。",
+            "记录交付日期、有效带宽、延迟、集体运算卸载、恢复、兼容、每GPU功耗和整机成本。"
+          ],
+          "done": "已授权私有证据路由READY；未采购、申请或开展网络实验。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期一级市场",
+          "title": "研究Temporal恢复能力",
+          "why": "Temporal验证了RobinOS的核心判断：长期Agent的价值不仅来自模型推理，也来自断线、工具失败和人工等待之后仍能准确恢复。",
+          "steps": [
+            "INVESTIGATE（研究，不代表买入）——若出现可参与份额，只在取得经审计ARR、毛利、客户集中、净留存定义、云成本、一级／二级比例及清算优先权后承销；同时用一个RobinOS长任务测试Temporal式持久工作流能否减少重复执行和Robin救援分钟。",
+            "配置判断前须有审计ARR、毛利、集中度、NDR定义、云成本、股份组成和清算条款。"
+          ],
+          "done": "WATCHING；没有买入或确认可参与份额，恢复能力试验仍为READY。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场",
+          "title": "分开NVDA需求与贴现率",
+          "why": "同一天同时出现叙事风险和利率冲击，最容易制造错误归因。真正决定仓位的是算力承诺是否取消、延迟或转向推理，而非一句警告或一个交易日。",
+          "steps": [
+            "暂不因单日跌幅加仓或减仓；将NVDA观察拆成已宣布订单及资本开支变化和十年期收益率／估值压缩两条记录，只有前者出现持续削减时才下调基本面判断。\n\n⸻",
+            "把订单及资本开支证据与利率和估值分开；不因单日价格波动交易。"
+          ],
+          "done": "WATCHING；没有持仓变更或交易。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年9月15日",
+      "description": "八項行動按源順序，檢查連接後的系統能否帶來可恢復工作與持續經濟回報。",
+      "centralJudgment": "公告是研究輸入；每個運營邊界都要分別覈驗權利、交付表現和經常性收入。",
+      "fieldLine": "八個信號。一份機構數據評分卡。執行狀態由證據決定。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型、Agent與OPC自主性",
+          "title": "測試受限財富管理流程",
+          "why": "RobinOS未來的優勢不會只是選擇最聰明的模型，而是讓模型獲得正確、受限、可追溯的業務上下文，同時保留資金和客戶承諾的批准邊界。",
+          "steps": [
+            "用匿名或合成數據運行一次影子測試：讓Agent從三個來源製作投資組合會前簡報和會後任務清單，記錄來源可追溯率、計算錯誤、遺漏、人工修正分鐘及失敗恢復；全部通過前不給予客戶溝通或交易權限。",
+            "用合成數據記錄來源追溯、計算錯誤、遺漏、修正分鐘和恢復，保留全部權限邊界。"
+          ],
+          "done": "READY；未執行合成數據流程試驗。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "覈實歐洲自動卡車經濟性",
+          "why": "Physical AI最先產生可靠經濟回報的形態，可能是固定路線貨運，而不是通用人形機器人；關鍵指標是真實每噸公里成本與人類接管頻率。",
+          "steps": [
+            "[將](http://pony.ai/)[Pony.ai](http://pony.ai/)[標記爲](http://pony.ai/)中國商業運行已有證據／歐洲商業化未驗證；僅在出現歐洲付費客戶、道路許可、無人駕駛里程、每千公里接管次數、利用率及實際每噸公里成本後升級歐洲論點。",
+            "要求付費客戶、道路許可、無人里程、每千公里接管、利用率和實際噸公里成本。"
+          ],
+          "done": "WATCHING；歐洲商業化仍未驗證。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本、鏈上結構與Web3健康",
+          "title": "比較機構數據層",
+          "why": "“下一個Hyperliquid”不一定是另一家交易所；它也可能控制定價、數據權利、基準、監控或跨市場對賬，使所有Token化場所都必須向它付費。",
+          "steps": [
+            "在“Next Hyperliquid”評分卡新增institutional data layer，比較候選者的付費機構客戶、經常性收入、數據覆蓋與延遲、基準牌照、鏈上鍊下轉換、監管採用和非補貼收入；不再只按交易量、TVL或Token漲幅排序。",
+            "比較留存客戶、經常性收入、覆蓋、延遲、基準權利、互操作和扣除激勵的費用。"
+          ],
+          "done": "READY；評分卡模板已完成，可比候選經濟數據仍爲UNKNOWN。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣、Fintech與支付軌道",
+          "title": "建立UPI費率情景",
+          "why": "Robin八年的支付經驗在這裏非常直接：用戶增長、商戶接受度和支付機構可持續收入之間的矛盾，終於可能通過金額分層而非統一收費解決。",
+          "steps": [
+            "建立2,000、5,000和20,000盧比三檔UPI單位經濟模型，測試0%、0.3%和0.5%商戶費下的銀行、PSP及商戶收益，並與卡支付和穩定幣結算比較；正式規則公佈前不把任何費率寫入收入預測。",
+            "三檔金額與三種假設費率組成九種情景，分開銀行、PSP與商戶，不假設收費已經實施。"
+          ],
+          "done": "READY；假設費率不等於收入預測或已執行付款。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "發佈鏈上數據框架",
+          "why": "這是Robin的支付、交易所和Token Factory研究能夠交匯成原創投資框架的地方，也最適合升級爲Daily Special。",
+          "steps": [
+            "發布鏈上市場數據原創文章、市場圖和LinkedIn衍生稿；完整任務保留於Daily Briefing。",
+            "覈驗四語全文、一手證據、市場圖、評分卡和歸檔衍生稿；獨立紙面練習仍爲READY。"
+          ],
+          "done": "原創框架、四語稿和歸檔衍生稿COMPLETE；產品採用與投資回報仍爲UNKNOWN。",
+          "deepDiveTitle": "誰擁有鏈上市場的數據層"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基礎設施與資本項目",
+          "title": "覈驗AI互連主張",
+          "why": "Token Factory的資本效率應以整套集羣的有效吞吐衡量；如果網絡讓GPU等待，再便宜的電力和融資也無法挽救回報率。這也是Robin連接工程、供應鏈和基礎設施投資的優質職業研究樣本。",
+          "steps": [
+            "建立AI interconnect qualification ledger，以實際交付日期、有效帶寬、延遲、集合運算卸載、故障恢復、軟件兼容、每GPU功耗及整機成本比較Cornelis、NVLink/InfiniBand與其他開放方案；在CN6000客戶交付和獨立基準出現前維持架構已發佈／經濟性未驗證。",
+            "記錄交付日期、有效帶寬、延遲、集體運算卸載、恢復、兼容、每GPU功耗和整機成本。"
+          ],
+          "done": "已授權私有證據路由READY；未採購、申請或開展網絡實驗。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期一級市場",
+          "title": "研究Temporal恢復能力",
+          "why": "Temporal驗證了RobinOS的核心判斷：長期Agent的價值不僅來自模型推理，也來自斷線、工具失敗和人工等待之後仍能準確恢復。",
+          "steps": [
+            "INVESTIGATE（研究，不代表買入）——若出現可參與份額，只在取得經審計ARR、毛利、客戶集中、淨留存定義、雲成本、一級／二級比例及清算優先權後承銷；同時用一個RobinOS長任務測試Temporal式持久工作流能否減少重複執行和Robin救援分鐘。",
+            "配置判斷前須有審計ARR、毛利、集中度、NDR定義、雲成本、股份組成和清算條款。"
+          ],
+          "done": "WATCHING；沒有買入或確認可參與份額，恢復能力試驗仍爲READY。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場",
+          "title": "分開NVDA需求與貼現率",
+          "why": "同一天同時出現敘事風險和利率衝擊，最容易製造錯誤歸因。真正決定倉位的是算力承諾是否取消、延遲或轉向推理，而非一句警告或一個交易日。",
+          "steps": [
+            "暫不因單日跌幅加倉或減倉；將NVDA觀察拆成已宣佈訂單及資本開支變化和十年期收益率／估值壓縮兩條記錄，只有前者出現持續削減時才下調基本面判斷。\n\n⸻",
+            "把訂單及資本開支證據與利率和估值分開；不因單日價格波動交易。"
+          ],
+          "done": "WATCHING；沒有持倉變更或交易。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年9月15日",
+      "description": "元資料順の八行動で、接続されたシステムの復旧可能性と持続的な経済性を確認する。",
+      "centralJudgment": "発表を調査入力とし、権利、納入性能、継続収入を各業務境界で個別に確かめる。",
+      "fieldLine": "八つのシグナル。一つの機関データ評価表。実行状態は証拠に従う。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "最先端モデルとAgentとOPCの自律性",
+          "title": "権限を限定した資産管理を試す",
+          "why": "RobinOSの優位性は、正しく、範囲を限定し、追跡できる業務文脈をモデルへ渡すことから生まれる。資金と顧客への約束の承認境界は維持する。",
+          "steps": [
+            "匿名化または合成データによる影の試験を行う。三つの資料から面談資料と事後タスクを作り、追跡可能性、計算誤り、漏れ、修正分数、障害復旧を測る。全項目が通るまで顧客連絡や取引の権限は与えない。",
+            "合成データで出典、計算誤り、漏れ、修正分数、復旧を記録し、権限境界を維持する。"
+          ],
+          "done": "READY。合成データ試験は未実施。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "欧州の自動トラック経済性を調べる",
+          "why": "汎用ヒューマノイドより、固定路線輸送が先に安定したPhysical AIの経済性を生む可能性がある。実際のトンキロ費用と人の介入頻度が決め手となる。",
+          "steps": [
+            "中国の商業運行には証拠あり、欧州の商業化は未立証と分類する。欧州の有料顧客、許可、無人走行距離、1,000キロ当たり介入、稼働率、実費用が開示されてから欧州仮説を引き上げる。",
+            "有料顧客、道路許可、無人走行距離、1,000キロ当たり介入、稼働率、実際のトンキロ費用を求める。"
+          ],
+          "done": "WATCHING。欧州商業化は未立証。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資本とオンチェーン構造とWeb3の健全性",
+          "title": "機関向けデータ層を比べる",
+          "why": "次のHyperliquidは、価格、データ権利、ベンチマーク、監視、市場間照合を担う企業かもしれない。",
+          "steps": [
+            "Next Hyperliquid評価表に機関向けデータ層を加え、有料機関顧客、継続収入、対象範囲と遅延、ベンチマーク認可、オン・オフチェーン変換、規制上の採用、補助を除く収入を比較する。出来高、TVL、トークン上昇率だけで順位を付けない。",
+            "継続顧客、継続収入、範囲、遅延、指数の権利、相互運用、報酬控除後手数料を比較する。"
+          ],
+          "done": "READY。評価表は用意済み、比較可能な候補の経済性はUNKNOWN。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコインとFintechと決済網",
+          "title": "UPI料金シナリオを作る",
+          "why": "8年間の決済経験に直結する論点だ。金額別の設計は、一律料金より利用拡大、加盟店の受容、PSPの継続収入を両立しやすい可能性がある。",
+          "steps": [
+            "2,000、5,000、20,000ルピーについて加盟店料率0%、0.3%、0.5%を仮定し、銀行・PSP・加盟店の経済性をカードやステーブルコイン決済と比較する。正式規則が出るまで予測収入に織り込まない。",
+            "三金額と三つの仮定料率の九通りで銀行・PSP・加盟店を分け、料金実施済みとしない。"
+          ],
+          "done": "READY。仮定料率は売上予測でも支払実績でもない。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "オンチェーンデータ枠組みを公開する",
+          "why": "決済、取引所、Token Factoryの研究を独自の投資枠組みにまとめ、Daily Specialへ育てられる題材だ。",
+          "steps": [
+            "オンチェーン市場データの独自記事、市場図、LinkedIn派生稿を作り、課題全文はDaily Briefingに残す。",
+            "四言語全文、一次証拠、市場図、評価表、保存済み派生稿を確認し、別の机上演習はREADYに置く。"
+          ],
+          "done": "独自枠組み、四言語稿、保存済み派生稿はCOMPLETE。採用と投資収益はUNKNOWN。",
+          "deepDiveTitle": "オンチェーン市場のデータ層を誰が握るか"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基盤と資本プロジェクト",
+          "title": "AI相互接続の主張を検証する",
+          "why": "Token Factoryの経済性はクラスタ全体の有効処理量で測る。通信待ちが多ければ、安い電力や資金でも回収できない。技術、供給網、基盤投資をつなぐ職業研究にも適する。",
+          "steps": [
+            "納入日、有効帯域、遅延、集団通信オフロード、復旧、互換性、GPU当たり電力、全体費用でCornelis、NVLink/InfiniBand、他の公開方式を比較する記録を作る。CN6000納入と独立測定までは、構成発表済み・経済性未検証を維持する。",
+            "納入日、有効帯域、遅延、集団通信、復旧、互換性、GPU当たり電力、総費用を記録する。"
+          ],
+          "done": "許可済みの私的証拠への振分けはREADY。調達、応募、ネットワーク実験なし。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期非公開市場",
+          "title": "Temporalの復旧力を調べる",
+          "why": "長期Agentの価値はモデルの賢さだけでなく、停止、ツール障害、人の応答待ちの後に正しく再開する能力にあるというRobinOSの仮説に沿う。",
+          "steps": [
+            "INVESTIGATE、調査のみで購入しない。取得可能な株式が出たら、監査済みARR、粗利益率、集中度、NDR定義、クラウド費用、新株と既存株の比率、清算優先権を求める。RobinOSの実務一件でも、永続実行がRobinの救援時間を減らすか試す。",
+            "資金配分判断には監査済みARR、利益率、集中、NDR定義、クラウド費用、株式構成、清算条項を求める。"
+          ],
+          "done": "WATCHING。購入や取得可能な枠は未確認。復旧試験はREADY。"
+        },
+        {
+          "signal": 8,
+          "domain": "上場株式",
+          "title": "NVDAの需要と割引率を分ける",
+          "why": "物語のリスクと金利圧力が重なると、原因を誤認しやすい。計算資源への約束が取消、延期、推論への転換のどれになるかを区別する。",
+          "steps": [
+            "一日の下落だけで保有を変えない。受注・設備投資の発表変更と、10年金利・評価倍率の圧縮を別々に記録する。前者に継続的な削減が現れてから、事業仮説を引き下げる。",
+            "受注と設備投資を金利・倍率と区別し、一日の価格変動から取引しない。"
+          ],
+          "done": "WATCHING。保有変更や取引なし。"
+        }
+      ]
+    }
+  }
+}
