@@ -1,0 +1,551 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-16",
+  "updated": "2026-09-16",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20260916/hero.webp",
+  "actionHero": "/action-item/20260916/hero.webp",
+  "ogImage": "/daily-briefing/20260916/og.webp",
+  "briefingPath": "/ouroboros/202609/20260916/",
+  "actionItemPath": "/ouroboros/202609/20260916/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/technology/openai-is-working-with-anthropic-google-ai-safety-bloomberg-news-reports-2026-09-15/"
+        },
+        {
+          "label": "Dario Amodei",
+          "url": "https://darioamodei.com/"
+        },
+        {
+          "label": "FT on Jensen Huang",
+          "url": "https://www.ft.com/content/2e20c674-3386-46ad-b07f-5cd8a013f67e"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Lidl",
+          "url": "https://unternehmen.lidl.de/pressemitteilungen/2026/260915_autonomer_lkw"
+        },
+        {
+          "label": "Einride",
+          "url": "https://www.einride.tech/press/einride-and-lidl-launch-first-autonomous-cab-less-truck-on-german-public-road"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/retail-consumer/einride-lidl-deploy-first-cab-less-autonomous-truck-germany-2026-09-15/"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "official Senate vote",
+          "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00234.htm"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/legal/government/us-senate-vote-advancing-landmark-crypto-bill-2026-09-15/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "Mastercard",
+          "url": "https://www.mastercard.com/news/eemea/en/newsroom/press-releases/en/2026/september/mastercard-collaborates-with-hyperpay-to-launch-hyperspend-enhancing-the-future-of-sme-spend-management-in-saudi-arabia/"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "sources": [
+        {
+          "label": "lab coordination",
+          "url": "https://www.reuters.com/technology/openai-is-working-with-anthropic-google-ai-safety-bloomberg-news-reports-2026-09-15/"
+        },
+        {
+          "label": "Trump–Huang position",
+          "url": "https://www.reuters.com/world/trump-says-there-is-sick-conspiracy-against-ai-data-centers-2026-09-14/"
+        },
+        {
+          "label": "Dario Amodei",
+          "url": "https://darioamodei.com/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "Axelera",
+          "url": "https://axelera.ai/"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/european-chip-startup-axelera-wins-ai-factory-supply-deals-launches-second-chip-2026-09-15/"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Factory announcement",
+          "url": "https://www.businesswire.com/news/home/20260915284689/en/Factory-Raises-%24200-Million-at-a-%245-Billion-Valuation-to-Scale-Self-Improving-Software-Development-in-the-Enterprise"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/ai-coding-agent-startup-factory-triples-valuation-5-billion-latest-funding-round-2026-09-15/"
+        },
+        {
+          "label": "April Series C baseline",
+          "url": "https://factory.com/news/series-c"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "GEV adjusted prices",
+          "url": "https://stockanalysis.com/stocks/gev/history/"
+        },
+        {
+          "label": "QQQ adjusted prices",
+          "url": "https://stockanalysis.com/etf/qqq/history/"
+        },
+        {
+          "label": "Reuters on capex concerns",
+          "url": "https://www.reuters.com/legal/transactional/investors-nervous-about-ai-spending-slowdown-after-industry-warnings-2026-09-15/"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, September 16, 2026",
+      "description": "Eight source-ordered actions separate authority, verified work and investable economics.",
+      "centralJudgment": "Verify who can act, who can stop the action and which evidence proves the result; training pace and total spending need separate records.",
+      "fieldLine": "Eight signals. One control-rights framework. No financial execution.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models, Agents and OPC Autonomy",
+          "title": "Design one independent agent evaluation",
+          "why": "Model Olympics can become an external evaluation asset connecting RobinOS, frontier labs and capital rather than remaining a private model-selection exercise.",
+          "steps": [
+            "Compress Model Olympics into a two-page Independent Agent Eval Dossier containing one reproducible comparison across intervention-free completion, recovery, authority escalation, verification quality, Robin-intervention minutes and cost per verified outcome.",
+            "Fix the task, inputs, permissions and acceptance criteria; measure six outcomes, include failure evidence and keep unit cost undefined if no outcome passes."
+          ],
+          "done": "READY; experiment design archived, no benchmark run or outreach performed."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "Keep Einride at licensed pilot",
+          "why": "The Physical-AI unit of value is not robot count. It is licensed, repeatable work that actually removes labor cost and human exposure.",
+          "steps": [
+            "Keep Einride classified as a licensed pilot; upgrade it to repeatable deployment only when the multi-stop phase discloses operation without a following vehicle, remote-intervention frequency, on-time performance and cost per pallet.",
+            "Require escort-free operation, remote-intervention frequency, on-time performance and cost per pallet before upgrade."
+          ],
+          "done": "WATCHING; repeatable deployment economics UNKNOWN."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital and Web3 Health",
+          "title": "Reprice congressional certainty",
+          "why": "Web3’s long-duration rails thesis remains intact, but the US compliance premium needs repricing.",
+          "steps": [
+            "Reclassify the US market as rails still building / congressional certainty delayed / regulatory beta repriced; add no COIN or CRCL policy exposure until viable Senate votes emerge or the SEC and CFTC publish executable replacement rules.",
+            "Track viable reconsideration votes or executable agency rules; market moves alone do not authorize exposure."
+          ],
+          "done": "WATCHING; no capital allocation or trade."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins, Fintech and Payment Rails",
+          "title": "Specify eight payment-provider gates",
+          "why": "MerchantOS should not rebuild a corporate-card dashboard. It should sit above the provider at the merchant-relationship, rules and cross-rail reconciliation layer.",
+          "steps": [
+            "Fix eight non-negotiable PEX-replacement gates: instant virtual cards, multi-currency, real-time funding, rule limits, layered approval, automated KYB, complete APIs and exportable reconciliation; exclude Stripe or Ramp if either misses a critical gate.",
+            "Verify all eight capabilities against actual provider documentation before selecting a replacement; no account or payment change."
+          ],
+          "done": "READY; requirements recorded, no provider selected or integration changed."
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "Publish the AI control-rights framework",
+          "why": "The article positions Robin as an interpreter of AI political economy while making Model Olympics visible as safe-acceleration infrastructure.",
+          "steps": [
+            "Publish the original AI control-rights analysis, four-role diagram and archived LinkedIn derivative; retain the complete assignment in the Briefing.",
+            "Confirm four complete editions, primary correction, the control map and archived derivative; the proposed Model Olympics run remains unexecuted."
+          ],
+          "done": "COMPLETE for the authored article, four editions, diagram and derivative; no evaluator credential or investment return claimed.",
+          "deepDiveTitle": "Who Owns the AI Brake"
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure and Capital",
+          "title": "Separate Axelera orders from pipeline",
+          "why": "Robin’s role is not chip engineering. It is using technical diligence and cross-US–Europe–Asia capital judgment to separate commercial sovereign-AI assets from policy-supported valuations.",
+          "steps": [
+            "Produce a one-page Axelera Order-Quality Memo separating signed contracts, 600 users, Dell/Supermicro distribution and the $1.5 billion pipeline; do not treat policy validation as investment validation without conversion, renewal, margin and software-usage evidence.",
+            "Record signed contracts, users, OEM channels and potential sales separately; require conversion, renewal, margin and software usage."
+          ],
+          "done": "READY for private evidence routing; revenue conversion and investment qualification UNKNOWN."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-Stage Private Markets",
+          "title": "Watch Factory revenue quality",
+          "why": "Factory fits the agent-labor thesis but remains far from an underwritable opportunity, with no confirmed transparent allocation available to Robin.",
+          "steps": [
+            "WATCH; do not chase allocation. Upgrade to INVESTIGATE only after obtaining ARR, net retention, Droid usage, gross margin after model costs, model-supplier concentration, preference stack and secondary proportion.",
+            "Require ARR, retention, usage, margin after model costs, supplier concentration, preference rights and secondary share."
+          ],
+          "done": "WATCHING; no allocation chased or application submitted."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities",
+          "title": "Split grid demand from AI demand",
+          "why": "The opportunity is not betting blindly on permanent AI acceleration. It is identifying electrical equipment and service revenue that remain scarce under multiple AI-capex scenarios.",
+          "steps": [
+            "Do not buy the GEV rebound yet; split backlog into utility baseline and AI increment, then verify deposits, cancellation rights, lead times, service revenue and terminal margin before increasing grid exposure.",
+            "Require utility baseline, AI increment, deposits, cancellation rights, lead times, service revenue and eventual margin."
+          ],
+          "done": "WATCHING; no position increased."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年9月16日",
+      "description": "八项行动按源顺序，分开权限、已验证工作与可投资经济性。",
+      "centralJudgment": "核实谁能行动、谁能叫停、什么证据证明结果；训练节奏与总支出须分别取证。",
+      "fieldLine": "八个信号。一份控制权框架。无金融执行。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型、Agent与OPC自主性",
+          "title": "设计一项独立代理评估",
+          "why": "Model Olympics不应只是RobinOS内部选模型，而应成为你进入OpenAI、Anthropic与资本圈之间的外部评估资产——你的工程能力负责看穿结果，总裁身份负责解释其资源配置意义。",
+          "steps": [
+            "将Model Olympics压缩成一份两页Independent Agent Eval Dossier：只展示一个可复现实验，比较无人干预完成率、失败恢复、权限升级、验证质量、Robin介入分钟与每个验证结果成本，作为未来与前沿实验室Eval团队对话的样本。",
+            "固定任务、输入、权限和验收条件；测量六项结果，保留失败证据，无通过结果时单位成本未定义。"
+          ],
+          "done": "READY；实验设计已归档，未跑评估或对外联系。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "Einride维持许可试点",
+          "why": "Physical AI的套利单位不是“机器人数量”，而是许可、标准路线和客户工作流结合后，能否真正取消一段人工成本与风险暴露。",
+          "steps": [
+            "暂不升级Einride商业评级；只有第二阶段多站点Milk Run披露无跟随保障车运行、远程介入率、每托盘成本和准点率后，才把它从licensed pilot升级为repeatable deployment。",
+            "升级前要求无保障车运行、远程介入频率、准点率和每托盘成本。"
+          ],
+          "done": "WATCHING；可重复部署经济性UNKNOWN。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本与Web3健康",
+          "title": "重估国会确定性",
+          "why": "Web3长期机会没有消失，但美国合规溢价必须重新定价；政策预期本身已成为COIN、CRCL及一级市场估值的重要因子。",
+          "steps": [
+            "将美国Web3状态改为轨道继续建设／国会确定性延后／监管Beta重新定价；在参议院出现可行复议票数或SEC/CFTC发布可执行替代规则前，不因COIN或CRCL单日下跌而增加政策风险仓位。",
+            "跟踪可行复议票数或可执行行政规则；市场波动本身不授权增仓。"
+          ],
+          "done": "WATCHING；未配置资本或交易。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币、FinTech与支付轨道",
+          "title": "固定八项支付商门槛",
+          "why": "MerchantOS不应重造企业卡控制台；你应选择能够承担全球合规和资金轨道的平台，把RobinOS放在商户关系、规则编排和跨轨道对账层。",
+          "steps": [
+            "把PEX替代方案的准入门槛固定为八项：即时虚拟卡、多币种、实时入金、规则限额、分级审批、自动KYB、完整API与可导出对账；Stripe或Ramp任一无法覆盖关键项，就不进入最终选择。",
+            "依据实际服务商文档验证八项能力后再选择替代；不改账户或付款。"
+          ],
+          "done": "READY；已记录要求，未选服务商或修改集成。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "发布AI控制权框架",
+          "why": "这篇文章既建立你作为AI政治经济解释者的辨识度，也把Model Olympics从个人实验转化为“安全加速基础设施”的公开证明。",
+          "steps": [
+            "发布AI控制权原创分析、四角色图与归档LinkedIn衍生稿；完整任务保留在简报中。",
+            "核实四语全文、一手更正、控制权图与归档衍生稿；Model Olympics提议实验尚未执行。"
+          ],
+          "done": "原创文章、四语稿、图与衍生稿COMPLETE；未声称评估资质或投资回报。",
+          "deepDiveTitle": "谁拥有AI的刹车"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基础设施与资本",
+          "title": "分开Axelera订单与商谈",
+          "why": "你的机会不是替Axelera设计芯片，而是利用工程判断与中美欧资本视角，识别哪些“主权AI”资产拥有真实客户、哪些仍靠政策资本维持估值。",
+          "steps": [
+            "建立一页Axelera Order-Quality Memo，严格分开已签数千万美元合同、600个使用客户、Dell/Supermicro渠道和15亿美元销售管线；未看到收入转化、复购、毛利与软件使用率前，不把政策验证升级为投资验证。",
+            "把合同、用户、OEM渠道与潜在销售分开，要求转化、续购、毛利和软件使用证据。"
+          ],
+          "done": "私有证据路由READY；收入转化与投资验证UNKNOWN。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期一级市场",
+          "title": "观察Factory收入质量",
+          "why": "Factory正好检验“一人公司／Agent劳动力”的投资主线，但故事与可承销收入之间仍有巨大距离；目前没有证据显示Robin可取得透明、直接的份额。",
+          "steps": [
+            "WATCH，不追份额——只有取得ARR、净留存、每客户Droid使用量、扣除模型成本后的毛利、模型供应商集中、优先权及二级比例后，才考虑将其升级为INVESTIGATE。",
+            "要求ARR、留存、使用量、模型成本后毛利、供应商集中、优先权与二级比例。"
+          ],
+          "done": "WATCHING；未追份额或提交申请。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场",
+          "title": "分开电网与AI需求",
+          "why": "真正的资本套利不是押注“AI永远加速”，而是找到即使AI训练节奏改变仍然稀缺、且订单质量足够高的电力设备和服务收入。",
+          "steps": [
+            "暂不抄底GEV；先把积压订单拆成公用事业基线与AI增量，并核实预付款、取消权、交期、服务收入和最终毛利，只有非AI需求能独立支撑估值时才考虑增加电网暴露。",
+            "要求公益基线、AI增量、预付款、取消权、交期、服务收入与最终毛利。"
+          ],
+          "done": "WATCHING；未增加持仓。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年9月16日",
+      "description": "八項行動按源順序，分開權限、已驗證工作與可投資經濟性。",
+      "centralJudgment": "覈實誰能行動、誰能叫停、什麼證據證明結果；訓練節奏與總支出須分別取證。",
+      "fieldLine": "八個信號。一份控制權框架。無金融執行。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型、Agent與OPC自主性",
+          "title": "設計一項獨立代理評估",
+          "why": "Model Olympics不應只是RobinOS內部選模型，而應成爲你進入OpenAI、Anthropic與資本圈之間的外部評估資產——你的工程能力負責看穿結果，總裁身份負責解釋其資源配置意義。",
+          "steps": [
+            "將Model Olympics壓縮成一份兩頁Independent Agent Eval Dossier：只展示一個可復現實驗，比較無人干預完成率、失敗恢復、權限升級、驗證質量、Robin介入分鐘與每個驗證結果成本，作爲未來與前沿實驗室Eval團隊對話的樣本。",
+            "固定任務、輸入、權限和驗收條件；測量六項結果，保留失敗證據，無通過結果時單位成本未定義。"
+          ],
+          "done": "READY；實驗設計已歸檔，未跑評估或對外聯繫。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "Einride維持許可試點",
+          "why": "Physical AI的套利單位不是“機器人數量”，而是許可、標準路線和客戶工作流結合後，能否真正取消一段人工成本與風險暴露。",
+          "steps": [
+            "暫不升級Einride商業評級；只有第二階段多站點Milk Run披露無跟隨保障車運行、遠程介入率、每托盤成本和準點率後，才把它從licensed pilot升級爲repeatable deployment。",
+            "升級前要求無保障車運行、遠程介入頻率、準點率和每托盤成本。"
+          ],
+          "done": "WATCHING；可重複部署經濟性UNKNOWN。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本與Web3健康",
+          "title": "重估國會確定性",
+          "why": "Web3長期機會沒有消失，但美國合規溢價必須重新定價；政策預期本身已成爲COIN、CRCL及一級市場估值的重要因子。",
+          "steps": [
+            "將美國Web3狀態改爲軌道繼續建設／國會確定性延後／監管Beta重新定價；在參議院出現可行復議票數或SEC/CFTC發佈可執行替代規則前，不因COIN或CRCL單日下跌而增加政策風險倉位。",
+            "跟蹤可行復議票數或可執行行政規則；市場波動本身不授權增倉。"
+          ],
+          "done": "WATCHING；未配置資本或交易。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣、FinTech與支付軌道",
+          "title": "固定八項支付商門檻",
+          "why": "MerchantOS不應重造企業卡控制檯；你應選擇能夠承擔全球合規和資金軌道的平臺，把RobinOS放在商戶關係、規則編排和跨軌道對賬層。",
+          "steps": [
+            "把PEX替代方案的准入門檻固定爲八項：即時虛擬卡、多幣種、實時入金、規則限額、分級審批、自動KYB、完整API與可導出對賬；Stripe或Ramp任一無法覆蓋關鍵項，就不進入最終選擇。",
+            "依據實際服務商文檔驗證八項能力後再選擇替代；不改賬戶或付款。"
+          ],
+          "done": "READY；已記錄要求，未選服務商或修改集成。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "發佈AI控制權框架",
+          "why": "這篇文章既建立你作爲AI政治經濟解釋者的辨識度，也把Model Olympics從個人實驗轉化爲“安全加速基礎設施”的公開證明。",
+          "steps": [
+            "發布AI控制權原創分析、四角色圖與歸檔LinkedIn衍生稿；完整任務保留在簡報中。",
+            "覈實四語全文、一手更正、控制權圖與歸檔衍生稿；Model Olympics提議實驗尚未執行。"
+          ],
+          "done": "原創文章、四語稿、圖與衍生稿COMPLETE；未聲稱評估資質或投資回報。",
+          "deepDiveTitle": "誰擁有AI的煞車"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基礎設施與資本",
+          "title": "分開Axelera訂單與商談",
+          "why": "你的機會不是替Axelera設計芯片，而是利用工程判斷與中美歐資本視角，識別哪些“主權AI”資產擁有真實客戶、哪些仍靠政策資本維持估值。",
+          "steps": [
+            "建立一頁Axelera Order-Quality Memo，嚴格分開已籤數千萬美元合同、600個使用客戶、Dell/Supermicro渠道和15億美元銷售管線；未看到收入轉化、復購、毛利與軟件使用率前，不把政策驗證升級爲投資驗證。",
+            "把合同、用戶、OEM渠道與潛在銷售分開，要求轉化、續購、毛利和軟件使用證據。"
+          ],
+          "done": "私有證據路由READY；收入轉化與投資驗證UNKNOWN。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期一級市場",
+          "title": "觀察Factory收入質量",
+          "why": "Factory正好檢驗“一人公司／Agent勞動力”的投資主線，但故事與可承銷收入之間仍有巨大距離；目前沒有證據顯示Robin可取得透明、直接的份額。",
+          "steps": [
+            "WATCH，不追份額——只有取得ARR、淨留存、每客戶Droid使用量、扣除模型成本後的毛利、模型供應商集中、優先權及二級比例後，才考慮將其升級爲INVESTIGATE。",
+            "要求ARR、留存、使用量、模型成本後毛利、供應商集中、優先權與二級比例。"
+          ],
+          "done": "WATCHING；未追份額或提交申請。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場",
+          "title": "分開電網與AI需求",
+          "why": "真正的資本套利不是押注“AI永遠加速”，而是找到即使AI訓練節奏改變仍然稀缺、且訂單質量足夠高的電力設備和服務收入。",
+          "steps": [
+            "暫不抄底GEV；先把積壓訂單拆成公用事業基線與AI增量，並覈實預付款、取消權、交期、服務收入和最終毛利，只有非AI需求能獨立支撐估值時才考慮增加電網暴露。",
+            "要求公益基線、AI增量、預付款、取消權、交期、服務收入與最終毛利。"
+          ],
+          "done": "WATCHING；未增加持倉。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年9月16日",
+      "description": "元資料順の八行動で、権限、検証済み仕事、投資可能な経済性を分ける。",
+      "centralJudgment": "誰が行動し、誰が停止でき、何が成果の証拠かを確認する。訓練速度と総支出は別に調べる。",
+      "fieldLine": "八つのシグナル。一つの制御権限の枠組み。金融執行なし。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "先端モデル・エージェント・OPCの自律性",
+          "title": "独立エージェント評価を設計する",
+          "why": "Model Olympicsを個人用のモデル選定から、RobinOS、先端研究所、資本をつなぐ外部評価資産へ育てる機会になる。",
+          "steps": [
+            "再現可能な比較実験を一つ選び、二ページのIndependent Agent Eval Dossierにまとめる。無介入での完了率、復旧、権限拡大、検証品質、Robinの介入時間、検証済み成果一件当たりの費用を比較する。",
+            "課題、入力、権限、合格条件を固定し、六指標と失敗を残す。合格ゼロなら単価は未定義。"
+          ],
+          "done": "READY。設計を保存済み。評価実行や連絡は未実施。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "Einrideを許可済み実証に据え置く",
+          "why": "Physical AIの価値単位は台数ではない。許可された反復業務が、人件費と人の危険への曝露を実際に減らせるかが重要になる。",
+          "steps": [
+            "Einrideは許可済み実証の区分に据え置く。複数拠点を回る次段階で、後続車なしの運行、遠隔介入頻度、定時率、パレット当たり費用が示されて初めて反復可能な商用導入へ格上げする。",
+            "格上げには後続車なし運行、遠隔介入頻度、定時率、パレット費用を求める。"
+          ],
+          "done": "WATCHING。反復可能な導入採算はUNKNOWN。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資本とWeb3",
+          "title": "議会の確実性を再評価する",
+          "why": "Web3の長期的な決済基盤の機会は残る一方、米国の規制適合プレミアムには再評価が必要になる。",
+          "steps": [
+            "米国市場を「基盤整備は継続／議会の確実性は延期／規制感応度を再評価」と分類する。上院で再議に必要な票が見えるか、SEC・CFTCから実行可能な代替規則が出るまで、COIN・CRCLの政策リスクを増やさない。",
+            "再議に必要な票や実行可能な行政規則を追う。相場だけで投資権限は生じない。"
+          ],
+          "done": "WATCHING。資本配分や取引なし。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコイン・FinTech・決済基盤",
+          "title": "決済事業者の八条件を固定する",
+          "why": "MerchantOSは企業カードの管理画面を作り直す必要はない。事業者の上に、加盟店関係、ルール運用、決済経路をまたぐ照合の層を置くべきだ。",
+          "steps": [
+            "PEX代替の必須条件を八つに固定する。即時仮想カード、複数通貨、即時入金、ルール式限度額、階層承認、自動KYB、完全なAPI、出力可能な照合。StripeでもRampでも重要条件を欠けば最終候補から外す。",
+            "実際の事業者資料で八能力を確認してから代替を選ぶ。口座や支払は変更しない。"
+          ],
+          "done": "READY。条件を記録し、選定や統合変更はしていない。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "AI制御権限の枠組みを公開する",
+          "why": "AIの政治経済を説明する立場を築き、Model Olympicsを安全な加速を支える基盤として示す機会になる。",
+          "steps": [
+            "AI制御権限の独自分析、四役の図、保存用LinkedIn派生稿を作る。課題全文はブリーフに残す。",
+            "四言語全文、一次資料の訂正、制御図、保存した派生稿を確認。提案した実験は未実施。"
+          ],
+          "done": "記事、四言語、図、派生稿はCOMPLETE。評価資格や投資収益は主張しない。",
+          "deepDiveTitle": "AIのブレーキを握るのは誰か"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラと資本",
+          "title": "Axeleraの受注と商談を分ける",
+          "why": "役割はチップ設計ではない。技術評価と米欧アジアの資本視点で、商業的資産と政策で支えられた評価額を分けることにある。",
+          "steps": [
+            "一ページのAxelera Order-Quality Memoを作り、契約額、600の利用顧客、Dell・Supermicro販路、15億ドルの商談を分離する。売上転換、更新、利益率、ソフト使用の証拠なしに政策的評価を投資評価へ昇格させない。",
+            "契約、利用者、OEM販路、潜在売上を分け、転換、更新、利益率、ソフト利用を求める。"
+          ],
+          "done": "私的証拠への振分けはREADY。売上転換と投資適格性はUNKNOWN。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期未公開市場",
+          "title": "Factoryの収益品質を監視する",
+          "why": "エージェント労働という主題には合うが、投資判断に足る証拠は不足し、透明な持分取得機会も確認できていない。",
+          "steps": [
+            "WATCH。持分を追わない。ARR、純継続率、Droid使用量、モデル費控除後粗利、供給者集中、優先権、既存株比率を確認してからINVESTIGATEを検討する。",
+            "ARR、継続率、使用、モデル費控除後利益、供給者集中、優先権、既存株比率を求める。"
+          ],
+          "done": "WATCHING。持分を追わず、応募もしていない。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場",
+          "title": "電力網とAIの需要を分ける",
+          "why": "AIが永遠に加速すると賭けるより、複数の設備投資シナリオでも不足が続く電力設備とサービス収入を見極める。",
+          "steps": [
+            "GEVの反発を買わない。受注残を公益需要の基礎部分とAI増分に分け、前受金、取消権、納期、サービス収入、最終利益率を確認してから電力網への投資拡大を判断する。",
+            "公益基礎需要、AI増分、前受金、取消権、納期、サービス収入、最終利益率を求める。"
+          ],
+          "done": "WATCHING。保有増加なし。"
+        }
+      ]
+    }
+  }
+}
