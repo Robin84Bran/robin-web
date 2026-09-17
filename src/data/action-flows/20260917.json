@@ -1,0 +1,531 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-17",
+  "updated": "2026-09-17",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20260917/hero.webp",
+  "actionHero": "/action-item/20260917/hero.webp",
+  "ogImage": "/daily-briefing/20260917/og.webp",
+  "briefingPath": "/ouroboros/202609/20260917/",
+  "actionItemPath": "/ouroboros/202609/20260917/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/technology/openai-releases-framework-track-model-misalignment-2026-09-16/"
+        },
+        {
+          "label": "OpenAI’s Hugging Face report",
+          "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/"
+        },
+        {
+          "label": "METR investigation",
+          "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Planted",
+          "url": "https://www.plantedsolar.com/blog/planted-series-b-funding-autonomous-power-deployment"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Farside BTC",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "Farside ETH",
+          "url": "https://farside.co.uk/eth/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "Circle",
+          "url": "https://www.circle.com/pressroom/circle-launches-arc-mainnet-an-economic-operating-system-for-the-internet"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "sources": [
+        {
+          "label": "Reuters on Crux’s $22 billion loan",
+          "url": "https://www.reuters.com/world/asia-pacific/banks-provide-22-billion-chip-loan-blackstone-alphabet-cloud-venture-bloomberg-2026-09-16/"
+        },
+        {
+          "label": "existing AI Circularity baseline",
+          "url": "https://iamrobin.ai/ouroboros/202608/20260820/action_item/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "sources": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/asia-pacific/banks-provide-22-billion-chip-loan-blackstone-alphabet-cloud-venture-bloomberg-2026-09-16/"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Impulse Space",
+          "url": "https://www.impulsespace.com/updates/impulse-space-announces-308-million-series-d-extension-to-meet-increasing-demand-for-in-space-mobility"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/legal/transactional/impulse-spaces-series-d-round-grows-808-million-backlog-expands-2026-09-16/"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Circle’s Arc announcement",
+          "url": "https://www.circle.com/pressroom/circle-launches-arc-mainnet-an-economic-operating-system-for-the-internet"
+        },
+        {
+          "label": "CRCL corrected price history",
+          "url": "https://stockanalysis.com/stocks/crcl/history/"
+        },
+        {
+          "label": "QQQ corrected price history",
+          "url": "https://stockanalysis.com/etf/qqq/history/"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, September 17, 2026",
+      "description": "Eight source-ordered actions separate evidence, compute credit and execution authority.",
+      "centralJudgment": "Financeability depends on contracts, residual value and repayment. Publication completes a research framework; it does not execute the source’s financial proposals.",
+      "fieldLine": "Eight signals. One compute-credit framework. Evidence before execution.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and OPC Autonomy",
+          "title": "Specify an agent incident ledger",
+          "why": "Model Olympics can evaluate which models conceal failure, recover lawfully, consume Robin’s time and retain lessons—not merely which model scores highest.",
+          "steps": [
+            "Create Agent Incident Ledger v0 with trigger, unauthorized behavior, blast radius, detection, recovery, Robin-intervention minutes and recurrence fields; backfill one existing Model Olympics failure.",
+            "Record trigger, unauthorized behavior, blast radius, detection, recovery, Robin minutes and recurrence; use one verified historical case only under separate project authority."
+          ],
+          "done": "READY; specification recorded, no Model Olympics ledger or backfill changed."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "Watch Planted deployment economics",
+          "why": "“Bring your own power plus automated deployment” could become a new packaged asset for securing sites, permits and compute customers.",
+          "steps": [
+            "Classify Planted as INVESTIGATE—deployment economics; track all-in cost per MW, field hours, robot utilization, downtime, project margin and realized 28 MW output rather than underwriting its 20 GW pipeline.",
+            "Require all-in cost per MW, field hours, utilization, downtime, margin and actual output. A 20 GW pipeline is not revenue."
+          ],
+          "done": "WATCHING; realized deployment economics UNKNOWN."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital and Web3 Health",
+          "title": "Monitor five complete ETF sessions",
+          "why": "This should regulate the speed of BTC/ETH accumulation, not overturn the long-duration token-rails thesis.",
+          "steps": [
+            "Keep DCA at the normal 1.0× rate rather than moving immediately to the cold-market 1.5×; accelerate only after five complete sessions of stabilizing combined flows and no further structural BTC break.",
+            "Preserve the source’s 1.0× and 1.5× proposal as a watch rule; require five complete flow sessions and an explicit structural-price criterion before any independently authorized execution."
+          ],
+          "done": "WATCHING; no DCA or portfolio setting changed and no trade executed."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins and Payment Rails",
+          "title": "Prepare the Arc and Base comparison",
+          "why": "MerchantOS can treat Arc as another route without surrendering its customer relationship, business rules or reconciliation layer to Circle.",
+          "steps": [
+            "Execute the same 20 USDC test payments on Arc and Base, comparing realized fees, finality, wallet compatibility, failure recovery, exports and reconciliation before admitting Arc to MerchantOS routing.",
+            "Design 20 matched payments per network with fees, finality, compatibility, recovery, exports and reconciliation. No wallet use or live payment is authorized by this publication."
+          ],
+          "done": "READY; comparison requirements archived, no payments or integration changes made."
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "Publish compute-credit underwriting",
+          "why": "Robin’s rare position is interpreting both technical residual value and capital structure—not operating the data center.",
+          "steps": [
+            "Publish When AI Chips Become Collateral with its complete four-language argument, compute-credit map and archived LinkedIn derivative; the full source assignment remains in the Briefing.",
+            "Confirm the five-word title, 2,000–3,500 English words, four full editions, evidence diagram, ledger and archived derivative; distinguish commitments, reporting and scenarios."
+          ],
+          "done": "COMPLETE for the article, four editions, original diagram and archived derivative; public release is verified by the publication receipt.",
+          "deepDiveTitle": "When AI Chips Become Collateral"
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure and Capital",
+          "title": "Prepare the one-page Crux memo",
+          "why": "Robin’s career lane is AI Infrastructure Capital / Compute Credit / Strategic Underwriting: technical diligence combined with executive and buy-side capital judgment—not a return to data-center engineering.",
+          "steps": [
+            "Produce a one-page Crux Compute-Credit Memo covering capital stack, collateral, counterparties, utilization, chip depreciation, refinancing and stress cases as an investment/advisory credential.",
+            "Record capital, collateral, counterparties, utilization, depreciation, refinancing and stress fields with explicit unknowns; application or outreach requires separate authority."
+          ],
+          "done": "COMPLETE for the local one-page memo; credit judgment HOLD, missing terms UNKNOWN, no delivery or application claimed."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-Stage Private Markets",
+          "title": "Watch Impulse contract conversion",
+          "why": "This merits relationship-building and contract-to-revenue monitoring, not chasing secondary shares on SpaceX enthusiasm.",
+          "steps": [
+            "WATCH; do not chase secondaries. Upgrade to INVESTIGATE only with contract prepayments, mission margins, launch dependencies, manufacturing cadence, insurance, preference stack and an accessible price.",
+            "Require prepayments, mission margin, launch dependencies, manufacturing cadence, insurance, preference rights and an accessible price."
+          ],
+          "done": "WATCHING; no secondary purchase, contact or allocation sought."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities",
+          "title": "Separate Arc adoption from CRCL returns",
+          "why": "Circle’s strategy can be right while CRCL’s price is wrong. Technology adoption, corporate earnings and shareholder returns require separate ledgers.",
+          "steps": [
+            "Do not buy the CRCL dip until Circle discloses Arc mainnet payment volume, incremental USDC demand, network fees, validator compensation and ARC-token economics.",
+            "Use corrected -6.78% CRCL and +0.03% QQQ returns; require payment volume, USDC increment, fees, validator compensation and token economics before reconsidering the source thesis."
+          ],
+          "done": "WATCHING; no position change."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年9月17日",
+      "description": "八项行动依来源排序，分开证据、算力信用与执行权限。",
+      "centralJudgment": "能否融资取决于合同、残值和偿债能力。发布完成一项研究框架，不执行源稿里的金融建议。",
+      "fieldLine": "八个信号。一份算力信用框架。先取证，再执行。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与OPC自主性",
+          "title": "明确代理事故台账字段",
+          "why": "这正是Model Olympics可以拥有的独立价值：不只比较模型谁更聪明，而是比较谁会隐瞒、谁能合法恢复、谁需要Robin介入，以及错误有没有进入组织记忆。",
+          "steps": [
+            "在Model Olympics建立Agent Incident Ledger v0，每次记录触发条件、越权行为、影响范围、检测方式、恢复路径、Robin介入分钟及是否在下一轮复现；先回填一个已有失败案例。",
+            "记录触发、越权、影响范围、检测、恢复、Robin分钟数与复现；回填历史案例须另有项目权限及证据。"
+          ],
+          "done": "READY；已记录字段，未修改Model Olympics台账或回填。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "观察Planted部署经济性",
+          "why": "数据中心缺电不一定先等电网扩建；“自带电力＋自动部署”可能成为获得土地、许可与客户合同的新型组合资产。",
+          "steps": [
+            "将Planted列为INVESTIGATE—deployment economics，只追踪每MW总成本、现场工时、机器人利用率、故障停工、项目毛利及28MW项目的实际发电表现，暂不因20GW管线或融资背书升级投资判断。",
+            "要求每MW总成本、现场工时、利用率、停机、毛利和实发电；20GW管线不等于收入。"
+          ],
+          "done": "WATCHING；实际部署经济性UNKNOWN。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本与Web3健康",
+          "title": "监测五个完整ETF交易日",
+          "why": "对你的BTC/ETH长期仓位，这是调整买入节奏的温度信号，不是推翻长期Token轨道判断的证据。",
+          "steps": [
+            "DCA维持1.0×正常档而非立即升至冷市1.5×；只有五个完整交易日ETF合计流量稳定、且BTC未出现进一步结构性破位后才提高部署速度。",
+            "将1.0×与1.5×保留为源稿观察规则；先看五个完整交易日和明确价格结构条件，金融执行另须授权。"
+          ],
+          "done": "WATCHING；未改DCA或持仓设置，未交易。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币与支付轨道",
+          "title": "准备Arc与Base比较",
+          "why": "MerchantOS未来可以把Arc视为一条可选轨道，但不能因为Circle拥有完整叙事就把业务逻辑、客户关系和对账控制权交给它。",
+          "steps": [
+            "用同一个测试钱包在Arc与Base各完成20笔USDC付款，比较真实Gas、最终确认、钱包兼容、失败恢复、交易导出和对账难度，再决定Arc是否进入MerchantOS路由候选。",
+            "设计每条网络20笔同条件付款，比较费用、确认、兼容、恢复、导出与对账；本次发布不授权使用钱包或付款。"
+          ],
+          "done": "READY；比较要求已归档，未付款或改集成。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "发布算力信用承销框架",
+          "why": "这是你最稀缺的交叉位置——懂技术残值，又懂项目融资、资本循环与投资者叙事；不是去运营机房，而是解释这类新信用资产应该如何承销。",
+          "steps": [
+            "发布《当AI芯片成为抵押品》四语全文、算力信用图和归档LinkedIn稿；完整任务保留于简报。",
+            "核实五词标题、2,000–3,500英文词、四语全文、证据图、台账与归档衍生稿；分开承诺、报道和场景。"
+          ],
+          "done": "文章、四语稿、原创图与归档衍生稿COMPLETE；公开发布由发布回执验证。",
+          "deepDiveTitle": "当AI芯片成为抵押品"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基础设施与资本",
+          "title": "完成一页Crux备忘录",
+          "why": "你的职业机会在AI Infrastructure Capital / Compute Credit / Strategic Underwriting：用工程背景检查资产真实性，用总裁和买方视角配置资本与关系，而不是重新成为数据中心工程师。",
+          "steps": [
+            "制作一页Crux Compute-Credit Memo，列明资本栈、抵押品、合同对手方、利用率、芯片折旧、再融资路径和压力情景，把它作为面向基础设施基金、银行或前沿实验室的投资／顾问作品。",
+            "列出资本、抵押、对手方、利用率、折旧、再融资和压力字段，未知项明确保留；投递或联系另需权限。"
+          ],
+          "done": "本地一页备忘录COMPLETE；信用判断HOLD，未披露条款UNKNOWN，未投递或申请。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期一级市场",
+          "title": "观察Impulse订单转化",
+          "why": "这是值得建立关系和跟踪订单转收入的公司，但不是因SpaceX IPO外溢热情就追高二级份额的机会。",
+          "steps": [
+            "WATCH，不追二级——只有取得合同对应预付款、任务毛利、发射依赖、制造节拍、保险安排、优先权与可参与价格后，才升级为INVESTIGATE。",
+            "要求预付款、任务毛利、发射依赖、制造节奏、保险、优先权和可参与价格。"
+          ],
+          "done": "WATCHING；未购买二级份额、联系或寻求配额。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场",
+          "title": "分开Arc采用与CRCL回报",
+          "why": "你可以认可Circle的战略，同时拒绝为尚未披露的经济模型买单。技术采用、公司收入和股票回报是三套不同账本。",
+          "steps": [
+            "暂不抄底CRCL；在Circle披露Arc主网支付量、USDC增量、网络费用、验证者补偿及ARC Token经济之前，不因“主网已上线”改变仓位。",
+            "采用更正后CRCL跌6.78%、QQQ涨0.03%的数据；判断前要求支付量、USDC增量、费用、验证者报酬及Token经济。"
+          ],
+          "done": "WATCHING；未调整仓位。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年9月17日",
+      "description": "八項行動依來源排序，分開證據、算力信用與執行權限。",
+      "centralJudgment": "能否融資取決於合同、殘值和償債能力。發佈完成一項研究框架，不執行源稿裏的金融建議。",
+      "fieldLine": "八個信號。一份算力信用框架。先取證，再執行。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與OPC自主性",
+          "title": "明確代理事故臺賬字段",
+          "why": "這正是Model Olympics可以擁有的獨立價值：不只比較模型誰更聰明，而是比較誰會隱瞞、誰能合法恢復、誰需要Robin介入，以及錯誤有沒有進入組織記憶。",
+          "steps": [
+            "在Model Olympics建立Agent Incident Ledger v0，每次記錄觸發條件、越權行爲、影響範圍、檢測方式、恢復路徑、Robin介入分鐘及是否在下一輪復現；先回填一個已有失敗案例。",
+            "記錄觸發、越權、影響範圍、檢測、恢復、Robin分鐘數與復現；回填歷史案例須另有項目權限及證據。"
+          ],
+          "done": "READY；已記錄字段，未修改Model Olympics臺賬或回填。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "觀察Planted部署經濟性",
+          "why": "數據中心缺電不一定先等電網擴建；“自帶電力＋自動部署”可能成爲獲得土地、許可與客戶合同的新型組合資產。",
+          "steps": [
+            "將Planted列爲INVESTIGATE—deployment economics，只追蹤每MW總成本、現場工時、機器人利用率、故障停工、項目毛利及28MW項目的實際發電表現，暫不因20GW管線或融資背書升級投資判斷。",
+            "要求每MW總成本、現場工時、利用率、停機、毛利和實發電；20GW管線不等於收入。"
+          ],
+          "done": "WATCHING；實際部署經濟性UNKNOWN。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本與Web3健康",
+          "title": "監測五個完整ETF交易日",
+          "why": "對你的BTC/ETH長期倉位，這是調整買入節奏的溫度信號，不是推翻長期Token軌道判斷的證據。",
+          "steps": [
+            "DCA維持1.0×正常檔而非立即升至冷市1.5×；只有五個完整交易日ETF合計流量穩定、且BTC未出現進一步結構性破位後才提高部署速度。",
+            "將1.0×與1.5×保留爲源稿觀察規則；先看五個完整交易日和明確價格結構條件，金融執行另須授權。"
+          ],
+          "done": "WATCHING；未改DCA或持倉設置，未交易。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣與支付軌道",
+          "title": "準備Arc與Base比較",
+          "why": "MerchantOS未來可以把Arc視爲一條可選軌道，但不能因爲Circle擁有完整敘事就把業務邏輯、客戶關係和對賬控制權交給它。",
+          "steps": [
+            "用同一個測試錢包在Arc與Base各完成20筆USDC付款，比較真實Gas、最終確認、錢包兼容、失敗恢復、交易導出和對賬難度，再決定Arc是否進入MerchantOS路由候選。",
+            "設計每條網絡20筆同條件付款，比較費用、確認、兼容、恢復、導出與對賬；本次發佈不授權使用錢包或付款。"
+          ],
+          "done": "READY；比較要求已歸檔，未付款或改集成。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "發佈算力信用承銷框架",
+          "why": "這是你最稀缺的交叉位置——懂技術殘值，又懂項目融資、資本循環與投資者敘事；不是去運營機房，而是解釋這類新信用資產應該如何承銷。",
+          "steps": [
+            "發布《當AI晶片成為抵押品》四語全文、算力信用圖和歸檔LinkedIn稿；完整任務保留於簡報。",
+            "覈實五詞標題、2,000–3,500英文詞、四語全文、證據圖、臺賬與歸檔衍生稿；分開承諾、報道和場景。"
+          ],
+          "done": "文章、四語稿、原創圖與歸檔衍生稿COMPLETE；公開發布由發佈回執驗證。",
+          "deepDiveTitle": "當AI晶片成為抵押品"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基礎設施與資本",
+          "title": "完成一頁Crux備忘錄",
+          "why": "你的職業機會在AI Infrastructure Capital / Compute Credit / Strategic Underwriting：用工程背景檢查資產真實性，用總裁和買方視角配置資本與關係，而不是重新成爲數據中心工程師。",
+          "steps": [
+            "製作一頁Crux Compute-Credit Memo，列明資本棧、抵押品、合同對手方、利用率、芯片折舊、再融資路徑和壓力情景，把它作爲面向基礎設施基金、銀行或前沿實驗室的投資／顧問作品。",
+            "列出資本、抵押、對手方、利用率、折舊、再融資和壓力字段，未知項明確保留；投遞或聯繫另需權限。"
+          ],
+          "done": "本地一頁備忘錄COMPLETE；信用判斷HOLD，未披露條款UNKNOWN，未投遞或申請。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期一級市場",
+          "title": "觀察Impulse訂單轉化",
+          "why": "這是值得建立關係和跟蹤訂單轉收入的公司，但不是因SpaceX IPO外溢熱情就追高二級份額的機會。",
+          "steps": [
+            "WATCH，不追二級——只有取得合同對應預付款、任務毛利、發射依賴、製造節拍、保險安排、優先權與可參與價格後，才升級爲INVESTIGATE。",
+            "要求預付款、任務毛利、發射依賴、製造節奏、保險、優先權和可參與價格。"
+          ],
+          "done": "WATCHING；未購買二級份額、聯繫或尋求配額。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場",
+          "title": "分開Arc採用與CRCL回報",
+          "why": "你可以認可Circle的戰略，同時拒絕爲尚未披露的經濟模型買單。技術採用、公司收入和股票回報是三套不同賬本。",
+          "steps": [
+            "暫不抄底CRCL；在Circle披露Arc主網支付量、USDC增量、網絡費用、驗證者補償及ARC Token經濟之前，不因“主網已上線”改變倉位。",
+            "採用更正後CRCL跌6.78%、QQQ漲0.03%的數據；判斷前要求支付量、USDC增量、費用、驗證者報酬及Token經濟。"
+          ],
+          "done": "WATCHING；未調整倉位。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年9月17日",
+      "description": "八つの行動を資料順に並べ、証拠、算力信用、実行権限を分ける。",
+      "centralJudgment": "融資可能性は契約、残価、返済力で決まる。研究枠組みの公開によって原稿の金融提案が実行されるわけではない。",
+      "fieldLine": "八つのシグナル。一つの算力信用の枠組み。実行前に証拠を。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "最先端モデルとOPCの自律性",
+          "title": "事故台帳の項目を定める",
+          "why": "Model Olympicsは賢さの点数に加え、失敗を隠すか、権限内で復旧するか、Robinの時間を使うか、教訓を記憶するかを比較できる。",
+          "steps": [
+            "Agent Incident Ledger v0を設計し、発火条件、越権行為、影響範囲、検出、復旧、Robin介入時間、再発を記録する。既存の失敗一件から埋める。",
+            "発火、越権、影響、検出、復旧、Robin時間、再発を記録。過去一件の登録には別途プロジェクト権限と証拠が必要。"
+          ],
+          "done": "READY。項目を記録。Model Olympicsの台帳編集や登録は未実施。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "Plantedの導入採算を監視",
+          "why": "自前の電源と自動施工を組み合わせれば、土地、許認可、算力顧客を確保する新しい資産パッケージになる可能性がある。",
+          "steps": [
+            "INVESTIGATE—deployment economicsとする。MW当たり総費用、現場工数、ロボット稼働率、停止、案件利益率、28MWの実発電を追い、20GWの案件候補や著名出資者だけで投資判断を上げない。",
+            "MW当たり費用、工数、稼働率、停止、利益率、実発電を求める。20GWの案件候補は売上ではない。"
+          ],
+          "done": "WATCHING。実際の導入採算はUNKNOWN。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資本とWeb3の健全性",
+          "title": "ETFの完全な五営業日を観察",
+          "why": "BTC・ETHの長期的な積立速度を検討する温度計であり、トークン決済網の長期仮説を覆す材料とは分ける。",
+          "steps": [
+            "原稿の提案はDCAを通常の1.0×に保ち、直ちに冷却相場の1.5×へ上げないこと。合算フローの安定が五営業日確認され、BTCに追加の構造的下抜けがない場合に速度を再検討する。",
+            "1.0×と1.5×は原稿の観察ルールとして保持。完全な五日と明確な価格条件を先に確認し、金融実行権限は別に扱う。"
+          ],
+          "done": "WATCHING。積立・保有設定の変更や取引なし。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコインと決済網",
+          "title": "ArcとBaseの比較を準備",
+          "why": "MerchantOSはArcを選択可能な経路として検討しつつ、顧客関係、業務ルール、照合管理を自ら持てる。",
+          "steps": [
+            "原稿は同じテスト用ウォレットでArcとBaseにそれぞれ20件のUSDC支払を行い、実費、確定、互換性、失敗復旧、取引出力、照合を比較するよう提案している。実行権限とは別の評価課題として保存する。",
+            "各ネットワーク20件の同条件支払の費用、確定、互換性、復旧、出力、照合を設計。公開作業はウォレットや支払を許可しない。"
+          ],
+          "done": "READY。比較条件を保存。支払や統合変更なし。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "算力信用の審査枠組みを公開",
+          "why": "技術の残価と資本構成をともに理解する立場が生きる。機房運営より、新しい信用資産をどう審査するかを説明する仕事だ。",
+          "steps": [
+            "「AIチップが担保になるとき」の四言語全文、算力信用図、保存用LinkedIn稿を公開する。課題全文はブリーフに残す。",
+            "五語タイトル、英語2,000～3,500語、四言語全文、図、台帳、保存原稿を確認。約束、報道、仮想例を分ける。"
+          ],
+          "done": "記事、四言語、独自図、保存原稿はCOMPLETE。公開完了は配信記録で検証する。",
+          "deepDiveTitle": "AIチップが担保になるとき"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラと資本",
+          "title": "一ページのCruxメモを完成",
+          "why": "AI Infrastructure Capital、Compute Credit、Strategic Underwritingが接点となる。技術検証と経営・買い手側の資本判断を組み合わせる。",
+          "steps": [
+            "資本構成、担保、契約相手、稼働率、減価、借換え、ストレスをまとめた一ページのCrux Compute-Credit Memoを作る。投資・助言能力を示す作品として用意し、送付や応募とは分ける。",
+            "資本、担保、顧客、稼働、減価、借換え、ストレスを並べ未知を明記。連絡や応募には別の権限が必要。"
+          ],
+          "done": "ローカルの一ページメモはCOMPLETE。信用判断HOLD、未開示条件UNKNOWN。送付や応募なし。"
+        },
+        {
+          "signal": 7,
+          "domain": "レイトステージ市場",
+          "title": "Impulseの受注転換を監視",
+          "why": "関係構築と受注から売上への転換を追う企業であり、SpaceXへの熱気で既存株を追う機会とは分ける。",
+          "steps": [
+            "WATCHを維持。前受金、任務利益率、打上げ依存、製造進度、保険、優先権、参加可能価格を取得してからINVESTIGATEへ上げる。",
+            "前受金、任務利益、打上げ依存、製造進度、保険、優先権、参加価格を求める。"
+          ],
+          "done": "WATCHING。既存株取得、連絡、割当要請なし。"
+        },
+        {
+          "signal": 8,
+          "domain": "上場株",
+          "title": "Arc普及とCRCL収益を分ける",
+          "why": "Circleの戦略、企業収益、株主リターンは別々の台帳で評価できる。",
+          "steps": [
+            "Arc本番決済量、USDC増分、ネットワーク手数料、バリデータ報酬、ARC経済の開示までは、メインネット開始だけを理由にCRCLの保有判断を変えない。",
+            "訂正後のCRCL6.78%安、QQQ0.03%高を使用。決済量、USDC増分、手数料、検証者報酬、トークン経済の開示を求める。"
+          ],
+          "done": "WATCHING。保有変更なし。"
+        }
+      ]
+    }
+  }
+}
