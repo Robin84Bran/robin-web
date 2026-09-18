@@ -1,0 +1,535 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-18",
+  "updated": "2026-09-18",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20260918/hero.webp",
+  "actionHero": "/action-item/20260918/hero.webp",
+  "ogImage": "/daily-briefing/20260918/og.webp",
+  "briefingPath": "/ouroboros/202609/20260918/",
+  "actionItemPath": "/ouroboros/202609/20260918/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com/institute/measuring-pace-of-ai-development"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/anthropic-says-claude-now-leads-quarter-work-building-its-next-ai-models-2026-09-17/"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Lucid",
+          "url": "https://media.lucidmotors.com/"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/technology/lucid-bolt-team-up-deploy-25000-robotaxis-across-europe-2026-09-17/"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/us-securities-regulator-rolls-out-five-year-exemption-tokenized-stock-trading-2026-09-17/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "WSJ",
+          "url": "https://www.wsj.com/tech/ai/mastercard-inks-deal-as-payment-giants-brace-for-new-era-of-ai-shopping-eb22da8b"
+        },
+        {
+          "label": "Barron’s",
+          "url": "https://www.barrons.com/articles/mastercard-ai-agentic-payment-bot-future-86f7ddb6"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "sources": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com/institute/measuring-pace-of-ai-development"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/anthropic-says-claude-now-leads-quarter-work-building-its-next-ai-models-2026-09-17/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/legal/transactional/coreweave-launches-3-billion-convertible-debt-sale-2026-09-17/"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Crusoe",
+          "url": "https://www.crusoe.ai/"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/ai-infrastructure-provider-crusoe-valued-309-billion-latest-funding-round-2026-09-17/"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/globalfoundries-marvell-expand-chip-capacity-deal-ai-data-center-connectivity-2026-09-17/"
+        },
+        {
+          "label": "MRVL",
+          "url": "https://stockanalysis.com/stocks/mrvl/history/"
+        },
+        {
+          "label": "GFS",
+          "url": "https://stockanalysis.com/stocks/gfs/history/"
+        },
+        {
+          "label": "QQQ",
+          "url": "https://stockanalysis.com/etf/qqq/history/"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, September 18, 2026",
+      "description": "Eight source-ordered actions connect autonomy, ownership and compute financing to evidence.",
+      "centralJudgment": "An accepted outcome is the unit of autonomy. Build the evidence contract before enlarging delegation or underwriting a financial claim.",
+      "fieldLine": "Eight signals. One recursive company. Verify the receiving end.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models, Agents and OPC Autonomy",
+          "title": "Specify the autonomy ledger",
+          "why": "RobinOS’s advantage will come from knowing which workflows genuinely assist, collaborate, lead or operate autonomously—and whether oversight cost falls as scale rises.",
+          "steps": [
+            "Create an AL0–AL5 autonomy ledger for RobinOS, beginning with the briefing publication pipeline and measuring Robin-intervention minutes, autonomous recovery, monitoring coverage, escalation and recipient acceptance; no workflow below verified AL4 should be described as autonomously completed.",
+            "Record AL0–AL5, owner-intervention minutes, recovery, monitoring denominator, escalation and recipient acceptance. Missing observations stay UNKNOWN; no project-wide autonomy grade is assigned."
+          ],
+          "done": "READY; local specification recorded, no RobinOS-wide policy or benchmark changed."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "Watch driverless fleet acceptance",
+          "why": "Physical-AI value is moving from robot manufacturing toward permits, customer flow, remote operations and asset financing.",
+          "steps": [
+            "Retain a strategic fleet target classification; upgrade to commercial deployment only after the first city discloses driverless authorization, paid rides, remote-intervention frequency, utilization and contribution margin per mile.",
+            "Require a named first city, driverless authorization, paid rides, remote-intervention rate, utilization and contribution margin. A fleet target does not establish deployment."
+          ],
+          "done": "WATCHING; permits and operating economics UNKNOWN."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital and Web3 Health",
+          "title": "Require evidence of actual ownership",
+          "why": "Web3’s next durable layer may be the operating system that correctly handles ownership, dividends, voting, splits, halts and reconciliation—not another speculative token.",
+          "steps": [
+            "Apply a real-ownership gate to every RWA candidate: if legal title, voting/dividends, corporate actions, issuer notice and redemption cannot be proven, classify it as synthetic exposure rather than tokenized-security infrastructure.",
+            "Separate genuine shareholder rights from synthetic contracts; missing rights evidence is UNKNOWN, not proof that a product is synthetic. Apply the actual conditional SEC terms."
+          ],
+          "done": "READY; screening requirements recorded; no token purchased or legal rights assumed."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins, Fintech and Payment Rails",
+          "title": "Design the AgentCard shadow test",
+          "why": "MerchantOS can occupy the policy and reconciliation layer between agents and payment rails instead of rebuilding issuance.",
+          "steps": [
+            "Design a 20-transaction AgentCard shadow test covering flights, subscriptions and supplier purchases; grant RobinOS real spending authority only if intent evidence, limits, duplicate protection, refund ownership and transaction-level reconciliation all pass.",
+            "Prepare 20 synthetic transactions across travel, subscriptions and suppliers; test intent, limits, duplicate prevention, refund ownership and reconciliation. No live charge or spending authority."
+          ],
+          "done": "READY; test specification archived; no test transactions or payments executed."
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "Publish the recursive company framework",
+          "why": "This unifies RobinOS, Model Olympics, the one-person-company thesis and AI governance into one distinctive public framework.",
+          "steps": [
+            "Publish the complete recursive-company argument in four languages with the Execute → Verify → Remember → Route Better diagram and archived LinkedIn derivative. The full original assignment remains in the Briefing.",
+            "Verify five-word title, complete four-language article, 2,000–3,500 English words, loop diagram, ledger and archived LinkedIn derivative."
+          ],
+          "done": "COMPLETE for authored article, diagram, ledger and derivative; public release is evidenced by the publication receipt.",
+          "deepDiveTitle": "The Recursive Company Has Begun"
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure, Career and Capital Projects",
+          "title": "Map the compute financing ladder",
+          "why": "Robin’s career advantage is underwriting and structuring the relationship among contracts, assets, capital and cash flow—not operating the machines.",
+          "steps": [
+            "Build a one-page AI Compute Financing Ladder comparing Crux’s project loan with CoreWeave’s convertible and ATM, assigning collateral, payment priority, dilution, refinancing and GPU-residual risk to the party that actually bears each one.",
+            "Compare Crux project debt, CoreWeave convertibles and ATM on collateral, customer commitment, priority, dilution, refinancing and residual value. Terms without primary evidence remain UNKNOWN."
+          ],
+          "done": "READY; comparison fields specified; no completed underwriting, application or outreach claimed."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-Stage Private Markets",
+          "title": "Watch Crusoe contract economics",
+          "why": "Crusoe validates the energy-first AI-factory thesis, but does not yet prove adequate common-equity returns after debt, project SPVs and customer priority claims. No transparent Robin-accessible allocation is confirmed.",
+          "steps": [
+            "WATCH; do not chase this round. Upgrade to INVESTIGATE only after obtaining contract duration and cancellation rights, customer concentration, utilization of the operational gigawatt, project debt, inference margin and preference terms.",
+            "Distinguish initial closing from the entire anticipated $3.9bn round; require term, cancellation, concentration, utilization, debt, margin and preferences."
+          ],
+          "done": "WATCHING; no allocation sought or private shares acquired."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities",
+          "title": "Verify optical capacity economics",
+          "why": "This adds real supply-chain evidence to the existing Marvell thesis, but returns still depend on customer commitments and utilization.",
+          "steps": [
+            "Do not chase MRVL or GFS; require quantified evidence on added capacity, customer take-or-pay commitments, production timing, utilization and incremental margin—at least three of the five—before reconsidering portfolio weight.",
+            "Use corrected +4.81% MRVL, +6.53% GFS, +1.73% QQQ. Require three of five quantified checks before any separately authorized reconsideration."
+          ],
+          "done": "WATCHING; no portfolio weights changed."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年9月18日",
+      "description": "八项行动依来源排序，用证据连接自主性、所有权与算力融资。",
+      "centralJudgment": "自主性的计量单位是已验收成果。先确定证据约定，再扩大委托或评估融资主张。",
+      "fieldLine": "八个信号。一家递归公司。到接收端验收。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型、Agent与OPC自主性",
+          "title": "明确自主等级台账",
+          "why": "RobinOS的核心竞争力将不是拥有最多Agent，而是知道哪些流程处于辅助、协作、主导或完全自主状态，以及监督成本是否随规模下降。",
+          "steps": [
+            "给RobinOS建立AL0–AL5自主等级账本，先用简报发布链路做首个样本：记录Robin介入分钟、Agent自行恢复次数、监控覆盖率、升级率和最终接收端验收；未达到可验证AL4的流程不允许宣称“自主完成”。",
+            "记录AL0–AL5、所有者介入分钟、恢复、监控分母、升级和接收验收。缺失观察保留UNKNOWN，不授予全项目自主等级。"
+          ],
+          "done": "READY；本地规格已记录，未修改RobinOS全局政策或基准。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "观察无人车队验收",
+          "why": "Physical AI的价值控制点正在从“谁造机器人”转向“谁拥有许可、客户流量、远程运营和资产融资”。",
+          "steps": [
+            "将该项目维持在strategic fleet target而非commercial deployment；只有首个城市披露无安全员许可、付费乘次、远程介入率、车辆利用率及每英里贡献利润后才升级评级。",
+            "要求首个城市、无安全员许可、有偿乘次、远程介入率、利用率和贡献利润。车队目标不等于部署。"
+          ],
+          "done": "WATCHING；许可及运营经济性UNKNOWN。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本与Web3健康",
+          "title": "要求真实所有权证据",
+          "why": "“下一层Web3”可能不是新Token，而是把股息、投票、停牌、拆股与所有权证明正确映射到链上的证券运营系统。",
+          "steps": [
+            "对所有RWA候选项目实施真实所有权门槛：无法证明法律持有人、分红投票、公司行动同步、发行人通知和赎回路径的，直接归类为合成敞口而非Token化证券投资。",
+            "分开真实股东权利与合成合同；权利证据缺失应为UNKNOWN，不能证明产品是合成品。按实际SEC条件筛选。"
+          ],
+          "done": "READY；筛选条件已记录，未购买Token或假定法律权利。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币、FinTech与支付轨道",
+          "title": "设计AgentCard影子测试",
+          "why": "MerchantOS最有价值的位置，是成为Agent与支付轨道之间的政策控制和对账层，而不是再造发卡基础设施。",
+          "steps": [
+            "设计一个20笔不动用真实生产资金的AgentCard影子测试，覆盖机票、订阅和供应商采购；只有意图证明、限额、重复扣款防护、退款归属和逐笔对账全部通过，才考虑让RobinOS获得真实消费权限。",
+            "准备旅行、订阅和采购共20笔合成交易的测试要求，覆盖意图、限额、防重、退款责任和对账。不发生扣款，不授予支出权。"
+          ],
+          "done": "READY；测试规格已归档，未执行交易或付款。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "发布递归公司框架",
+          "why": "该论点把RobinOS、Model Olympics、一人公司和AI治理放进同一框架，也能成为你进入实验室Eval与资本圈的原创资产。",
+          "steps": [
+            "发布递归公司四语完整论证，配执行→验证→记忆→改善路由图与归档LinkedIn稿。完整原任务保留于简报。",
+            "核实五词标题、完整四语、2,000–3,500英文词、循环图、台账和归档LinkedIn稿。"
+          ],
+          "done": "文章、图、台账与衍生稿COMPLETE；公开发布由发布回执证明。",
+          "deepDiveTitle": "递归公司已经开始"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基础设施、职业与资本项目",
+          "title": "梳理算力融资阶梯",
+          "why": "你的职业与资本优势在于设计和承销这类风险分配，而不是运营机房——看清合同、资产、资本结构与最终现金流之间的断层。",
+          "steps": [
+            "制作一页AI Compute Financing Ladder，并列Crux项目贷款与CoreWeave可转债／ATM，逐层标出抵押物、客户承诺、现金流优先级、稀释、再融资及GPU残值由谁承担。",
+            "按抵押、客户承诺、偿付顺序、稀释、再融资和残值比较Crux项目债、CoreWeave可转债与ATM。缺乏原始证据的条款保留UNKNOWN。"
+          ],
+          "done": "READY；比较字段已明确，未宣称完成承销、申请或对外联系。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期一级市场",
+          "title": "观察Crusoe合同经济性",
+          "why": "Crusoe验证“能源优先AI工厂”方向，却尚未证明普通股能在债务、项目SPV及客户优先权之后获得足够回报；目前也没有确认Robin可获得透明份额。",
+          "steps": [
+            "WATCH，不追本轮——只有取得合同期限与取消权、客户集中度、1GW利用率、项目债务、推理毛利和优先权结构后，才升级为INVESTIGATE。",
+            "分清首轮交割与全部预计39亿美元融资；要求期限、取消权、集中度、利用率、债务、毛利和优先权。"
+          ],
+          "done": "WATCHING；未寻求配额或购买私募股份。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场",
+          "title": "核实光互连产能经济性",
+          "why": "这为已发布的Marvell循环资本论题增加了真实供应链证据，但投资回报仍取决于客户承诺和产能利用，而不是新闻标题。",
+          "steps": [
+            "暂不追涨MRVL或GFS；把新增产能、客户take-or-pay、投产时间、利用率及增量毛利设为五个验证门槛，至少三个出现可量化证据后才重新评估权重。",
+            "采用更正后MRVL涨4.81%、GFS涨6.53%、QQQ涨1.73%。五项中至少三项有定量证据后，才在另有授权下重新评估。"
+          ],
+          "done": "WATCHING；未修改持仓权重。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年9月18日",
+      "description": "八項行動依來源排序，用證據連接自主性、所有權與算力融資。",
+      "centralJudgment": "自主性的計量單位是已驗收成果。先確定證據約定，再擴大委託或評估融資主張。",
+      "fieldLine": "八個信號。一家遞歸公司。到接收端驗收。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型、Agent與OPC自主性",
+          "title": "明確自主等級臺賬",
+          "why": "RobinOS的核心競爭力將不是擁有最多Agent，而是知道哪些流程處於輔助、協作、主導或完全自主狀態，以及監督成本是否隨規模下降。",
+          "steps": [
+            "給RobinOS建立AL0–AL5自主等級賬本，先用簡報發佈鏈路做首個樣本：記錄Robin介入分鐘、Agent自行恢復次數、監控覆蓋率、升級率和最終接收端驗收；未達到可驗證AL4的流程不允許宣稱“自主完成”。",
+            "記錄AL0–AL5、所有者介入分鐘、恢復、監控分母、升級和接收驗收。缺失觀察保留UNKNOWN，不授予全項目自主等級。"
+          ],
+          "done": "READY；本地規格已記錄，未修改RobinOS全局政策或基準。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "觀察無人車隊驗收",
+          "why": "Physical AI的價值控制點正在從“誰造機器人”轉向“誰擁有許可、客戶流量、遠程運營和資產融資”。",
+          "steps": [
+            "將該項目維持在strategic fleet target而非commercial deployment；只有首個城市披露無安全員許可、付費乘次、遠程介入率、車輛利用率及每英里貢獻利潤後才升級評級。",
+            "要求首個城市、無安全員許可、有償乘次、遠程介入率、利用率和貢獻利潤。車隊目標不等於部署。"
+          ],
+          "done": "WATCHING；許可及運營經濟性UNKNOWN。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本與Web3健康",
+          "title": "要求真實所有權證據",
+          "why": "“下一層Web3”可能不是新Token，而是把股息、投票、停牌、拆股與所有權證明正確映射到鏈上的證券運營系統。",
+          "steps": [
+            "對所有RWA候選項目實施真實所有權門檻：無法證明法律持有人、分紅投票、公司行動同步、發行人通知和贖回路徑的，直接歸類爲合成敞口而非Token化證券投資。",
+            "分開真實股東權利與合成合同；權利證據缺失應爲UNKNOWN，不能證明產品是合成品。按實際SEC條件篩選。"
+          ],
+          "done": "READY；篩選條件已記錄，未購買Token或假定法律權利。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣、FinTech與支付軌道",
+          "title": "設計AgentCard影子測試",
+          "why": "MerchantOS最有價值的位置，是成爲Agent與支付軌道之間的政策控制和對賬層，而不是再造髮卡基礎設施。",
+          "steps": [
+            "設計一個20筆不動用真實生產資金的AgentCard影子測試，覆蓋機票、訂閱和供應商採購；只有意圖證明、限額、重複扣款防護、退款歸屬和逐筆對賬全部通過，才考慮讓RobinOS獲得真實消費權限。",
+            "準備旅行、訂閱和採購共20筆合成交易的測試要求，覆蓋意圖、限額、防重、退款責任和對賬。不發生扣款，不授予支出權。"
+          ],
+          "done": "READY；測試規格已歸檔，未執行交易或付款。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "發佈遞歸公司框架",
+          "why": "該論點把RobinOS、Model Olympics、一人公司和AI治理放進同一框架，也能成爲你進入實驗室Eval與資本圈的原創資產。",
+          "steps": [
+            "發布遞歸公司四語完整論證，配執行→驗證→記憶→改善路由圖與歸檔LinkedIn稿。完整原任務保留於簡報。",
+            "覈實五詞標題、完整四語、2,000–3,500英文詞、循環圖、臺賬和歸檔LinkedIn稿。"
+          ],
+          "done": "文章、圖、臺賬與衍生稿COMPLETE；公開發布由發佈回執證明。",
+          "deepDiveTitle": "遞歸公司已經開始"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基礎設施、職業與資本項目",
+          "title": "梳理算力融資階梯",
+          "why": "你的職業與資本優勢在於設計和承銷這類風險分配，而不是運營機房——看清合同、資產、資本結構與最終現金流之間的斷層。",
+          "steps": [
+            "製作一頁AI Compute Financing Ladder，並列Crux項目貸款與CoreWeave可轉債／ATM，逐層標出抵押物、客戶承諾、現金流優先級、稀釋、再融資及GPU殘值由誰承擔。",
+            "按抵押、客戶承諾、償付順序、稀釋、再融資和殘值比較Crux項目債、CoreWeave可轉債與ATM。缺乏原始證據的條款保留UNKNOWN。"
+          ],
+          "done": "READY；比較字段已明確，未宣稱完成承銷、申請或對外聯繫。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期一級市場",
+          "title": "觀察Crusoe合同經濟性",
+          "why": "Crusoe驗證“能源優先AI工廠”方向，卻尚未證明普通股能在債務、項目SPV及客戶優先權之後獲得足夠回報；目前也沒有確認Robin可獲得透明份額。",
+          "steps": [
+            "WATCH，不追本輪——只有取得合同期限與取消權、客戶集中度、1GW利用率、項目債務、推理毛利和優先權結構後，才升級爲INVESTIGATE。",
+            "分清首輪交割與全部預計39億美元融資；要求期限、取消權、集中度、利用率、債務、毛利和優先權。"
+          ],
+          "done": "WATCHING；未尋求配額或購買私募股份。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場",
+          "title": "覈實光互連產能經濟性",
+          "why": "這爲已發佈的Marvell循環資本論題增加了真實供應鏈證據，但投資回報仍取決於客戶承諾和產能利用，而不是新聞標題。",
+          "steps": [
+            "暫不追漲MRVL或GFS；把新增產能、客戶take-or-pay、投產時間、利用率及增量毛利設爲五個驗證門檻，至少三個出現可量化證據後才重新評估權重。",
+            "採用更正後MRVL漲4.81%、GFS漲6.53%、QQQ漲1.73%。五項中至少三項有定量證據後，纔在另有授權下重新評估。"
+          ],
+          "done": "WATCHING；未修改持倉權重。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年9月18日",
+      "description": "八つの行動を資料順に整理し、自律性、所有権、計算基盤金融を証拠につなぐ。",
+      "centralJudgment": "自律性の単位は受入済み成果。委任を広げたり融資を評価したりする前に、必要な証拠を定義する。",
+      "fieldLine": "八つのシグナル。一つの再帰的な会社。受取側で確かめる。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "先端モデル、エージェントと一人企業の自律性",
+          "title": "自律性台帳を定義",
+          "why": "RobinOSの強みはエージェント数ではなく、各工程が補助、協働、主導、自律のどこにあり、規模が増えると監督費用が下がるかを把握することにある。",
+          "steps": [
+            "RobinOSのAL0–AL5台帳を設計する。最初の対象をブリーフの公開工程とし、Robinの介入時間、自力復旧回数、監視範囲、エスカレーション、受信側の受入確認を記録する。検証済みAL4に満たない工程を「自律的に完了」と呼ばない。",
+            "AL0–AL5、所有者介入、復旧、監視の分母、エスカレーション、受取確認を記録。欠測はUNKNOWN。全体の自律等級を付与しない。"
+          ],
+          "done": "READY。ローカル仕様を記録。RobinOS全体の規則や評価は変更していない。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "無人車両の受入を監視",
+          "why": "Physical AIの価値を握る場所が、ロボット製造から許認可、利用者流入、遠隔運営、資産金融へ広がっている。",
+          "steps": [
+            "分類はstrategic fleet targetに据え置く。最初の都市で安全員なしの許可、有料乗車、遠隔介入頻度、稼働率、一マイル当たり貢献利益が開示されてからcommercial deploymentへの格上げを検討する。",
+            "最初の都市、無人許可、有料乗車、遠隔介入、稼働率、貢献利益を求める。台数目標は導入実績ではない。"
+          ],
+          "done": "WATCHING。許認可と運営採算はUNKNOWN。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資本とWeb3の健全性",
+          "title": "実際の所有権を確認",
+          "why": "Web3の次の基盤は、新しい投機トークンよりも、所有、配当、議決、売買停止、株式分割を正しく扱う証券業務システムかもしれない。",
+          "steps": [
+            "RWA候補に実際の所有権の検証条件を設ける。法的保有者、配当・議決権、企業行動の反映、発行体通知、償還経路を証明できなければ、原稿の選別基準ではトークン化証券への投資として扱わず、合成エクスポージャーに分類する。",
+            "株主権と合成契約を区別する。権利の証拠不足はUNKNOWNであり、合成商品との断定材料にはならない。SECの実際の条件を確認する。"
+          ],
+          "done": "READY。選別条件を保存。購入や法的権利の仮定はない。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコイン、FinTechと決済経路",
+          "title": "AgentCardの模擬試験を設計",
+          "why": "MerchantOSはカード発行を作り直すより、エージェントと決済網の間で規則と照合を担える。",
+          "steps": [
+            "航空券、サブスクリプション、仕入を対象とする20件のAgentCardシャドーテストを設計する。意思の証跡、上限、二重実行防止、返金責任、取引単位の照合を検証する。実際の支出権限は別途Robinが判断する。",
+            "旅行、定期購読、仕入の20件の架空取引を設計。意思、上限、重複防止、返金責任、照合を検証。課金も支出権限の付与もしない。"
+          ],
+          "done": "READY。試験条件を保存。取引や支払は実行していない。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "再帰的な会社の枠組みを公開",
+          "why": "RobinOS、Model Olympics、一人企業の構想、AI統治を、独自の公開フレームワークへまとめられる。",
+          "steps": [
+            "再帰的な会社の四言語全文を公開し、実行→検証→記憶→割当改善の図と保存用LinkedIn稿を添える。元の課題全文はブリーフに残す。",
+            "五語の題名、四言語全文、英語2,000～3,500語、循環図、台帳、保存用LinkedIn稿を確認する。"
+          ],
+          "done": "記事、図、台帳、派生稿はCOMPLETE。公開は配信記録で立証する。",
+          "deepDiveTitle": "再帰的な会社は始まっている"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基盤、キャリアと資本案件",
+          "title": "計算基盤の資金調達を整理",
+          "why": "強みを生かせるのは機械の運営より、契約、資産、資本構成、最終的なキャッシュフローをつなぐ審査と設計だ。",
+          "steps": [
+            "一ページのAI Compute Financing Ladderを作る。Cruxのプロジェクト融資とCoreWeaveの転換社債・ATMを並べ、担保、顧客約束、支払順位、希薄化、借換え、GPU残価を誰が負担するか明記する。",
+            "Cruxの事業融資、CoreWeave転換社債、ATMの担保、顧客約束、支払順位、希薄化、借換え、残価を比較。一次証拠のない条件はUNKNOWN。"
+          ],
+          "done": "READY。比較項目を定義。審査完了、応募、対外連絡は主張しない。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期プライベート市場",
+          "title": "Crusoeの契約採算を監視",
+          "why": "エネルギー優先のAI工場という方向は支持される。ただし債務、事業SPV、顧客の優先権の後で普通株に十分な利益が残るかは未証明だ。Robinが透明な条件で参加できる持分も確認していない。",
+          "steps": [
+            "WATCHを維持し、このラウンドを追わない。契約期間と解約権、顧客集中、稼働1GWの利用率、プロジェクト債務、推論利益率、優先権を取得してからINVESTIGATEへ進める。",
+            "初回クロージングと予定39億ドル全額を区別。期間、解約、集中、利用率、債務、利益率、優先権を求める。"
+          ],
+          "done": "WATCHING。割当要請や非公開株購入なし。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開株式",
+          "title": "光接続能力の採算を検証",
+          "why": "既存のMarvell循環資本論に供給網の証拠が加わる。ただし投資成果を決めるのは契約と稼働の実態だ。",
+          "steps": [
+            "MRVLとGFSを追い買いしない。能力増加、顧客のtake-or-pay、稼働開始時期、利用率、増分粗利益を五つの条件とし、少なくとも三つに定量的な証拠が出てから配分を再検討する。",
+            "訂正後のMRVL4.81%高、GFS6.53%高、QQQ1.73%高を使用。五条件中三つの定量証拠を得てから、別途許可された再評価を行う。"
+          ],
+          "done": "WATCHING。保有比率の変更なし。"
+        }
+      ]
+    }
+  }
+}
