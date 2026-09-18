@@ -84,75 +84,75 @@ function q(subject, prompt, choices, answer, explanation) {
 
 const QUESTION_SETS = [
   [
-    q("Math", "What is 18 + 27?", ["35", "45", "55", "65"], 1, "18 + 27 = 45."),
+    { ...window.BranGrade4.math[0], subject: "Math" },
     q("English", "Which word is the adjective in this sentence? The brave dog barked loudly.", ["dog", "brave", "barked", "loudly"], 1, "\"Brave\" describes the dog."),
-    q("Chinese", "Which character means mountain?", ["水", "火", "山", "木"], 2, "\"山\" means mountain."),
+    { ...window.BranGrade4.chinese[0], subject: "Chinese" },
     q("Science", "Which planet do we live on?", ["Mars", "Earth", "Venus", "Jupiter"], 1, "We live on Earth."),
-    q("Math", "What is 9 x 6?", ["42", "48", "54", "63"], 2, "9 groups of 6 make 54."),
+    { ...window.BranGrade4.math[1], subject: "Math" },
     q("Science", "Plants use sunlight, water, and air to make their own ____.", ["sound", "food", "shadow", "roots"], 1, "Plants make their own food.")
   ],
   [
-    q("Math", "What is 84 - 29?", ["45", "55", "65", "75"], 1, "84 - 29 = 55."),
+    { ...window.BranGrade4.math[2], subject: "Math" },
     q("English", "Which option is a complete sentence?", ["Under the bright moon", "My brother built a kite.", "Running to school", "The red backpack"], 1, "A complete sentence has a subject and a verb."),
-    q("Chinese", "Which pinyin matches 学生?", ["xue sheng", "shui guo", "hao chi", "ri yue"], 0, "学生 is read xue sheng."),
+    { ...window.BranGrade4.chinese[1], subject: "Chinese" },
     q("Science", "What happens when ice melts?", ["It becomes gas", "It becomes liquid water", "It disappears", "It becomes a rock"], 1, "Melting changes solid ice into liquid water."),
-    q("Math", "What is 56 divided by 8?", ["6", "7", "8", "9"], 1, "56 / 8 = 7."),
+    { ...window.BranGrade4.math[3], subject: "Math" },
     q("Science", "Why does the Moon look bright at night?", ["It makes its own light", "It reflects sunlight", "It is made of fire", "It glows from water"], 1, "The Moon reflects sunlight.")
   ],
   [
-    q("Math", "What is the area of a rectangle that is 7 by 6?", ["13", "24", "36", "42"], 3, "Area = length x width, so 7 x 6 = 42."),
+    { ...window.BranGrade4.math[4], subject: "Math" },
     q("English", "Which word is closest in meaning to rapid?", ["slow", "quick", "tiny", "smooth"], 1, "\"Quick\" is a synonym for rapid."),
-    q("Chinese", "Which character means fire?", ["火", "土", "日", "口"], 0, "\"火\" means fire."),
+    { ...window.BranGrade4.chinese[2], subject: "Chinese" },
     q("Science", "Which animal is a mammal?", ["Dolphin", "Shark", "Frog", "Lizard"], 0, "A dolphin is a mammal because it breathes air and nurses its young."),
-    q("Math", "What is 3/4 of 20?", ["10", "12", "15", "18"], 2, "One fourth of 20 is 5, so three fourths is 15."),
+    { ...window.BranGrade4.math[5], subject: "Math" },
     q("Science", "Which plant part carries water from the roots to the leaves?", ["Flower", "Stem", "Seed", "Fruit"], 1, "The stem helps move water through the plant.")
   ],
   [
-    q("Math", "What is 125 + 278?", ["393", "403", "413", "423"], 1, "125 + 278 = 403."),
+    { ...window.BranGrade4.math[6], subject: "Math" },
     q("English", "Which word is the conjunction? I was tired, so I slept early.", ["tired", "so", "slept", "early"], 1, "\"So\" connects the two ideas."),
-    q("Chinese", "Which measure word fits this phrase? 一___书", ["只", "条", "本", "朵"], 2, "We say 一本书."),
+    { ...window.BranGrade4.chinese[3], subject: "Chinese" },
     q("Science", "What force pulls us toward Earth?", ["Magnetism", "Gravity", "Electricity", "Sound"], 1, "Gravity pulls objects toward Earth."),
-    q("Math", "What is 144 divided by 12?", ["10", "11", "12", "13"], 2, "144 / 12 = 12."),
+    { ...window.BranGrade4.math[7], subject: "Math" },
     q("Science", "Which energy source is renewable?", ["Coal", "Oil", "Wind", "Natural gas"], 2, "Wind is a renewable energy source.")
   ],
   [
-    q("Math", "What is the perimeter of a rectangle with sides 8 and 5?", ["13", "20", "26", "40"], 2, "8 + 5 + 8 + 5 = 26."),
+    { ...window.BranGrade4.math[8], subject: "Math" },
     q("English", "Which word is an antonym of ancient?", ["dusty", "modern", "quiet", "rough"], 1, "\"Modern\" means the opposite of ancient."),
-    q("Chinese", "What does 朋友 mean?", ["teacher", "friend", "family", "school"], 1, "朋友 means friend."),
+    { ...window.BranGrade4.chinese[4], subject: "Chinese" },
     q("Science", "What is evaporation?", ["A gas turning to liquid", "A solid turning to liquid", "A liquid turning to gas", "A gas turning to solid"], 2, "Evaporation is when a liquid changes into a gas."),
-    q("Math", "What is 2.5 + 1.7?", ["3.2", "4.0", "4.2", "4.7"], 2, "2.5 + 1.7 = 4.2."),
+    { ...window.BranGrade4.math[9], subject: "Math" },
     q("Science", "In a food chain, what does a consumer do?", ["Makes sunlight", "Eats plants or animals", "Turns into soil", "Creates water"], 1, "A consumer gets energy by eating other living things.")
   ],
   [
-    q("Math", "What is 3/5 + 1/5?", ["4/10", "2/5", "4/5", "1"], 2, "Add the numerators because the denominators match."),
+    { ...window.BranGrade4.math[10], subject: "Math" },
     q("English", "Which word is a possessive pronoun?", ["hers", "her", "she", "herself"], 0, "\"Hers\" shows ownership by itself."),
-    q("Chinese", "Which pinyin matches 中国?", ["zhong guo", "xiao niao", "sheng ri", "mei guo"], 0, "中国 is read zhong guo."),
+    { ...window.BranGrade4.chinese[5], subject: "Chinese" },
     q("Science", "When salt disappears in water, the mixture is called a ____.", ["magnet", "solution", "shadow", "crystal"], 1, "Salt water is a solution."),
-    q("Math", "What is 96 divided by 6, then plus 8?", ["20", "22", "24", "26"], 2, "96 / 6 = 16, and 16 + 8 = 24."),
+    { ...window.BranGrade4.math[11], subject: "Math" },
     q("Science", "Which organ pumps blood through the body?", ["Lungs", "Stomach", "Heart", "Brain"], 2, "The heart pumps blood.")
   ],
   [
-    q("Math", "What is the average of 6, 8, and 10?", ["7", "8", "9", "10"], 1, "6 + 8 + 10 = 24, and 24 / 3 = 8."),
+    { ...window.BranGrade4.math[12], subject: "Math" },
     q("English", "Which sentence is a simile?", ["The stars twinkled.", "The baby slept.", "She was as quiet as a mouse.", "The car moved."], 2, "\"As quiet as a mouse\" compares using as."),
-    q("Chinese", "Which sentence means \"I like reading books\"?", ["我喜欢看书。", "我今天九岁。", "他在跑步。", "我们去学校。"], 0, "我喜欢看书 means I like reading books."),
+    { ...window.BranGrade4.chinese[6], subject: "Chinese" },
     q("Science", "Which simple machine is a ramp?", ["Lever", "Pulley", "Inclined plane", "Wheel and axle"], 2, "A ramp is an inclined plane."),
-    q("Math", "Which fraction is equal to 0.75?", ["1/2", "2/3", "3/4", "4/5"], 2, "0.75 is the same as 3/4."),
+    { ...window.BranGrade4.math[13], subject: "Math" },
     q("Science", "During photosynthesis, plants use sunlight to make ____.", ["sugar", "rocks", "sound", "metal"], 0, "Plants make sugar during photosynthesis.")
   ],
   [
-    q("Math", "What is 432 - 178?", ["244", "254", "264", "274"], 1, "432 - 178 = 254."),
+    { ...window.BranGrade4.math[14], subject: "Math" },
     q("English", "What does the prefix un- usually mean?", ["again", "not", "before", "small"], 1, "The prefix un- often means not."),
-    q("Chinese", "Which character is a verb?", ["跑", "书", "山", "水"], 0, "\"跑\" means to run, so it is a verb."),
+    { ...window.BranGrade4.chinese[7], subject: "Chinese" },
     q("Science", "What is condensation?", ["Liquid to gas", "Solid to gas", "Gas to liquid", "Liquid to solid"], 2, "Condensation happens when gas cools into liquid."),
-    q("Math", "What is 15 x 9?", ["115", "125", "135", "145"], 2, "15 x 9 = 135."),
+    { ...window.BranGrade4.math[15], subject: "Math" },
     q("Science", "Which animal is an omnivore?", ["Cow", "Lion", "Bear", "Deer"], 2, "A bear can eat plants and animals.")
   ],
   [
-    q("Math", "What is 18 x 7 - 24?", ["92", "102", "112", "122"], 1, "18 x 7 = 126, and 126 - 24 = 102."),
+    { ...window.BranGrade4.math[16], subject: "Math" },
     q("English", "Which sentence uses commas correctly?", ["After dinner we played cards and laughed.", "After dinner, we played cards and laughed.", "After dinner we, played cards and laughed.", "After, dinner we played cards and laughed."], 1, "A comma belongs after the opening phrase."),
-    q("Chinese", "Which radical often appears in words about water?", ["口", "木", "氵", "火"], 2, "The water radical is 氵."),
+    { ...window.BranGrade4.chinese[8], subject: "Chinese" },
     q("Science", "In the food chain Sun -> plant -> rabbit -> fox, the rabbit gets energy from the ____.", ["Sun", "plant", "fox", "soil"], 1, "The rabbit eats the plant."),
-    q("Math", "What is 4/8 + 3/8?", ["7/16", "6/8", "7/8", "1"], 2, "Add the numerators: 4/8 + 3/8 = 7/8."),
+    { ...window.BranGrade4.math[17], subject: "Math" },
     q("Science", "Which change is a chemical change?", ["Ice melting", "Paper tearing", "Rust forming", "Water boiling"], 2, "Rust forming makes a new substance, so it is a chemical change.")
   ]
 ];
@@ -160,47 +160,47 @@ const QUESTION_SETS = [
 const BONUS_QUESTION_SETS = [
   [
     q("English", "What is the plural of mouse?", ["mouses", "mices", "mice", "mouse"], 2, "The plural of mouse is mice."),
-    q("Chinese", "Which character means big?", ["大", "小", "人", "月"], 0, "\"大\" means big."),
+    { ...window.BranGrade4.chinese[9], subject: "Chinese" },
     q("Science", "Which body part helps you breathe?", ["Lungs", "Teeth", "Bones", "Hair"], 0, "Your lungs help you breathe.")
   ],
   [
-    q("Math", "What is 7 x 8?", ["48", "54", "56", "64"], 2, "7 x 8 = 56."),
-    q("Chinese", "What does 星期一 mean?", ["Friday", "Monday", "Sunday", "Tuesday"], 1, "星期一 means Monday."),
+    { ...window.BranGrade4.math[18], subject: "Math" },
+    { ...window.BranGrade4.chinese[10], subject: "Chinese" },
     q("Science", "What do bees collect from flowers?", ["Rocks", "Nectar", "Sand", "Snow"], 1, "Bees collect nectar from flowers.")
   ],
   [
     q("English", "Which word is the verb? Birds glide above the lake.", ["Birds", "glide", "above", "lake"], 1, "\"Glide\" is the action word."),
-    q("Chinese", "Which word means school?", ["学校", "苹果", "老师", "蓝色"], 0, "学校 means school."),
+    { ...window.BranGrade4.chinese[11], subject: "Chinese" },
     q("Science", "What stage comes after a caterpillar in a butterfly life cycle?", ["Egg", "Pupa", "Leaf", "Wing"], 1, "A caterpillar becomes a pupa before turning into a butterfly.")
   ],
   [
-    q("Math", "What is 3/4 + 1/4?", ["1/2", "1", "5/4", "2"], 1, "3/4 + 1/4 = 1 whole."),
-    q("Chinese", "Which word means sun?", ["月亮", "星星", "太阳", "天空"], 2, "太阳 means sun."),
+    { ...window.BranGrade4.math[19], subject: "Math" },
+    { ...window.BranGrade4.chinese[12], subject: "Chinese" },
     q("Science", "Which planet is famous for its rings?", ["Saturn", "Mercury", "Earth", "Mars"], 0, "Saturn is known for its rings.")
   ],
   [
     q("English", "Which word is spelled correctly?", ["temprature", "temperature", "tempereture", "temperture"], 1, "\"Temperature\" is the correct spelling."),
-    q("Chinese", "Which measure word fits this phrase? 一___鱼", ["本", "条", "朵", "双"], 1, "We say 一条鱼."),
+    { ...window.BranGrade4.chinese[13], subject: "Chinese" },
     q("Science", "What is the name of the process plants use to make food?", ["Condensation", "Photosynthesis", "Evaporation", "Digestion"], 1, "Plants make food through photosynthesis.")
   ],
   [
-    q("Math", "What is 1.2 + 0.9?", ["1.9", "2.0", "2.1", "2.2"], 2, "1.2 + 0.9 = 2.1."),
-    q("Chinese", "Which sentence means \"The cat is sleeping\"?", ["猫在睡觉。", "狗在跑步。", "我喜欢米饭。", "今天下雨了。"], 0, "猫在睡觉 means The cat is sleeping."),
+    { ...window.BranGrade4.math[20], subject: "Math" },
+    { ...window.BranGrade4.chinese[14], subject: "Chinese" },
     q("Science", "Which material is the best conductor of electricity?", ["Rubber", "Metal", "Plastic", "Wood"], 1, "Metal is a good conductor.")
   ],
   [
     q("English", "What does the prefix re- usually mean?", ["under", "again", "small", "not"], 1, "The prefix re- often means again."),
-    q("Chinese", "What does 快乐 mean?", ["angry", "happy", "hungry", "cold"], 1, "快乐 means happy."),
+    { ...window.BranGrade4.chinese[15], subject: "Chinese" },
     q("Science", "Which organs help clean the blood?", ["Kidneys", "Eyes", "Ears", "Skin"], 0, "The kidneys help clean the blood.")
   ],
   [
-    q("Math", "What is 64 divided by 8, then plus 17?", ["23", "24", "25", "26"], 2, "64 / 8 = 8, and 8 + 17 = 25."),
-    q("Chinese", "Which radical often appears in words about trees or wood?", ["氵", "口", "木", "火"], 2, "The wood radical is 木."),
+    { ...window.BranGrade4.math[21], subject: "Math" },
+    { ...window.BranGrade4.chinese[16], subject: "Chinese" },
     q("Science", "Which trait is inherited from parents?", ["Favorite song", "Eye color", "Best friend", "Homework"], 1, "Eye color can be inherited.")
   ],
   [
     q("English", "Which word is an adverb?", ["careful", "carefully", "care", "careless"], 1, "\"Carefully\" tells how something is done."),
-    q("Chinese", "Which word means experiment?", ["实验", "操场", "图书馆", "铅笔"], 0, "实验 means experiment."),
+    { ...window.BranGrade4.chinese[17], subject: "Chinese" },
     q("Science", "Which gas do plants release during photosynthesis?", ["Oxygen", "Helium", "Nitrogen", "Steam"], 0, "Plants release oxygen during photosynthesis.")
   ]
 ];

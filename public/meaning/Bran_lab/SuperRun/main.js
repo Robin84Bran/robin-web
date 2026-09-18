@@ -199,6 +199,9 @@
     if (event.repeat) {
       return;
     }
+    if (["ArrowLeft", "ArrowRight", "ArrowUp", " ", "a", "d", "w", ",", ".", "<", ">"].includes(event.key) || ["a", "d", "w"].includes(event.key.toLowerCase())) {
+      if (state.world) state.world.player.awaitingMove = false;
+    }
 
     if ((event.key.toLowerCase() === "a") || event.key === "ArrowLeft" || event.key === "," || event.key === "<") {
       state.keys.left = true;
@@ -328,6 +331,7 @@
 
   function createWorld(levelIndex) {
     const level = LEVELS[levelIndex];
+    const initialRespawn = BranPlatform.safeSpawn(level, level.start.x, level.start.y, PLAYER_SIZE.w, PLAYER_SIZE.h);
     return {
       levelIndex,
       level,
@@ -343,11 +347,11 @@
       particles: [],
       bullets: [],
       enemyBullets: [],
-      respawn: { x: level.start.x, y: level.start.y },
+      respawn: initialRespawn,
       checkpointsReached: 0,
       player: {
-        x: level.start.x,
-        y: level.start.y,
+        x: initialRespawn.x,
+        y: initialRespawn.y,
         w: PLAYER_SIZE.w,
         h: PLAYER_SIZE.h,
         vx: 0,
@@ -426,6 +430,7 @@
   function updateWorld(dt) {
     const world = state.world;
     const player = world.player;
+    if (player.awaitingMove) { updateHUD(); return; }
     const hazardScale = player.effects.slow_time > 0 ? 0.6 : 1;
 
     world.time += dt;
@@ -479,6 +484,7 @@
 
   function updatePlayer(world, dt) {
     const player = world.player;
+    if (player.awaitingMove) return;
     const autoRun = state.save.settings.autoRun;
     const speedBonus = player.effects.speed_boots > 0 ? 70 : 0;
     const moveSpeed = 320 + speedBonus;
@@ -883,6 +889,7 @@
       return;
     }
     const player = world.player;
+    if (player.awaitingMove) return;
 
     if (player.effects.star_invincible > 0 || player.invuln > 0) {
       return;
@@ -926,16 +933,26 @@
     player.invuln = 1.4;
     player.vx = 0;
     player.vy = 0;
-    player.x = world.respawn.x;
-    player.y = world.respawn.y;
+    const safe = BranPlatform.safeSpawn(world, world.respawn.x, world.respawn.y, player.w, player.h);
+    world.respawn = safe;
+    player.x = safe.x;
+    player.y = safe.y;
+    player.grounded = true;
+    player.coyote = 0;
+    player.jumpBuffer = 0;
+    player.awaitingMove = true;
+    world.enemyBullets.length = 0;
+    resetInputState();
+    window.dispatchEvent(new Event('bran-respawn'));
     Object.keys(player.effects).forEach((key) => {
       player.effects[key] = 0;
     });
     world.score = Math.max(0, world.score - 60);
-    showToast(`Respawned. ${player.lives} lives left.`);
+    showToast("Safe at checkpoint. Move or jump when you’re ready.");
   }
 
   function updateStations(world) {
+    if (world.player.awaitingMove) return;
     if (state.screen !== "playing") {
       return;
     }
@@ -993,7 +1010,7 @@
     }
     const { item, question } = state.activePrompt;
     if (!correct) {
-      refs.challengePrompt.textContent = `Try this: ${question.choices[question.answer]}. Select it to recharge and keep going.`;
+      refs.challengePrompt.textContent = `${question.explanation || "Try this: " + question.choices[question.answer] + "."} Select the answer to recharge and keep going.`;
       [...refs.challengeChoices.children].forEach((button, index) => {
         button.disabled = index !== question.answer;
         if (index === question.answer) button.focus();
@@ -1065,7 +1082,7 @@
       const zone = { x: item.x - 6, y: item.y - 88, w: 30, h: 100 };
       if (!item.active && rectsOverlap(world.player, zone)) {
         item.active = true;
-        world.respawn = { x: item.x, y: item.y };
+        world.respawn = BranPlatform.safeSpawn(world, item.x, item.y, world.player.w, world.player.h);
         world.checkpointsReached = Math.max(world.checkpointsReached, index + 1);
         world.score += 50;
         showToast("Checkpoint saved.");
@@ -1075,6 +1092,7 @@
   }
 
   function updateFinish(world) {
+    if (world.player.awaitingMove) return;
     const gate = world.level.finish;
     const locked = gate.lockedByBoss && !world.bossCleared;
     if (locked && rectsOverlap(world.player, gate)) {
@@ -1174,7 +1192,7 @@
     const missionFill = document.getElementById('missionFill');
     if (missionFill) missionFill.style.width = `${clamp(state.world.player.x / state.world.level.finish.x * 100, 0, 100)}%`;
     const missionText = document.getElementById('missionText');
-    if (missionText) missionText.textContent = `Brain boosts ${state.world.correctAnswers}/${state.world.totalStations} · ${state.world.checkpointsReached} checkpoints`;
+    if (missionText) missionText.textContent = `Brain boosts ${state.world.correctAnswers}/${state.world.totalStations} · ${state.world.checkpointsReached} checkpoints${state.world.player.awaitingMove ? " · Move or jump to continue" : ""}`;
   }
 
   function render(time) {

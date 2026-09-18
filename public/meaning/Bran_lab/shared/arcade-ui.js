@@ -4,7 +4,7 @@
   const { settings, storage } = Bran3D;
   const nav = document.createElement('nav');
   nav.className = 'arcade-nav'; nav.setAttribute('aria-label', 'Bran Lab games');
-  nav.innerHTML = '<a class="brand" href="../index.html"><span class="brand-mark">B</span> BRAN<span>LAB</span></a><div class="nav-games"><a href="../SuperRun/index.html">SuperRun</a><a href="../GeoDash/index.html">GeoDash</a><a href="../PacMan/index.html">Pac-Man</a></div><span class="lab-tag">THE PLAY LAB · 01</span>';
+  nav.innerHTML = '<a class="brand" href="../index.html"><span class="brand-mark">B</span> BRAN<span>LAB</span></a><div class="nav-games"><a href="../SuperRun/index.html">SuperRun</a><a href="../GeoDash/index.html">GeoDash</a><a href="../PacMan/index.html">Pac-Man</a></div><span class="lab-tag">GRADE 4 · MATH + CHINESE</span>';
   document.body.prepend(nav);
   nav.querySelectorAll('.nav-games a').forEach(a => { if (a.href === location.href.split('?')[0]) a.setAttribute('aria-current', 'page'); });
   const options = document.createElement('div'); options.className = 'arcade-options';
@@ -41,6 +41,7 @@
       button.addEventListener('click', e => { if (e.detail === 0) { send(button.dataset.key, true); send(button.dataset.key, false); } });
     });
     window.addEventListener('blur', () => { held.forEach(key => send(key, false)); held.clear(); pad.querySelectorAll('.pressed').forEach(b => b.classList.remove('pressed')); });
+    window.addEventListener('bran-respawn', () => { held.forEach(key => send(key, false)); held.clear(); pad.querySelectorAll('.pressed').forEach(b => b.classList.remove('pressed')); });
     const sync = () => { document.body.classList.toggle('in-game', !hud.classList.contains('hidden')); };
     new MutationObserver(sync).observe(hud, { attributes: true, attributeFilter: ['class'] }); sync();
     document.querySelectorAll('.panel').forEach(panel => { panel.inert = !panel.classList.contains('active'); });

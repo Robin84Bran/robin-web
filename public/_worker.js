@@ -72,6 +72,17 @@ export default {
       return redirect(url, 301);
     }
 
+    // Keep shared/bookmarked arcade links on one canonical, case-sensitive path.
+    const arcadePrefix = url.pathname.match(/^\/meaning\/bran_lab(?=\/|$)/i);
+    if (arcadePrefix) {
+      const canonicalPath = '/meaning/Bran_lab' + url.pathname.slice(arcadePrefix[0].length);
+      const destination = canonicalPath === '/meaning/Bran_lab' ? canonicalPath + '/' : canonicalPath;
+      if (url.pathname !== destination) {
+        url.pathname = destination;
+        return redirect(url, 301);
+      }
+    }
+
     if (/^\/ouroborous\//.test(url.pathname)) {
       url.pathname = url.pathname.replace(/^\/ouroborous\//, '/ouroboros/');
       return redirect(url, 301);
