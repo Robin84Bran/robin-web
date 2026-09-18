@@ -10,7 +10,7 @@ function runtime(game) {
   c.window=c;vm.createContext(c);
   for(const file of ['shared/platform-safety.js','shared/grade4-questions.js',...(game==='SuperRun'?['SuperRun/enemies.js','SuperRun/powerups.js','SuperRun/questions.js','SuperRun/levels.js']:['GeoDash/questions.js','GeoDash/data.js'])])vm.runInContext(readFileSync(new URL(file,root),'utf8'),c);
   // Expose closure state only in this test VM; no debug mutation API is shipped.
-  const code=readFileSync(new URL(`${game}/main.js`,root),'utf8').replace(/\}\)\(\);\s*$/, 'window.qa={state,startLevel,updateWorld,updateCheckpoints,loseLife,takePlayerHit,onKeyDown};})();');
+  const code=readFileSync(new URL(`${game}/main.js`,root),'utf8').replace(/\}\)\(\);\s*$/, 'window.qa={state,startLevel,updateWorld,updateCheckpoints,loseLife,takePlayerHit,onKeyDown,updatePlayer,updateFinish,rectsOverlap};})();');
   vm.runInContext(code,c);c.qa.state.save.settings.sound=false;return c;
 }
 for(const game of ['SuperRun','GeoDash'])test(`${game}: every checkpoint survives repeated falls, held keys, and auto movement`,()=>{
@@ -55,5 +55,49 @@ test('platform top caps do not share an exposed face with the base',()=>{
    const body=meshes.get('base'),top=meshes.get('basetop');
    assert(body.h>0);assert(body.y+body.h/2<top.y+top.h/2-0.1,'top face must sit above the base, not fight it for depth');
   }
+ }
+});
+
+// Diagnose geometry with enemies cleared and no power-ups. These tests execute
+// the real movement/collision code; only the VM can access closure state.
+for (const game of ['SuperRun', 'GeoDash']) test(`${game}: every finish is reachable with ordinary jumps at 30 and 60 Hz`, () => {
+ const c=runtime(game),q=c.qa,levels=vm.runInContext('LEVELS',c);
+ for(const dt of [1/30,1/60]) for(let li=0;li<levels.length;li++){
+  q.startLevel(li);const w=q.state.world, original={...w.player},plats=w.platforms,gate=w.level.finish;
+  w.hazards=[];w.enemies=[];w.bossCleared=true;
+  const edges=plats.map(()=>new Set()),gateFrom=new Map();
+  for(let i=0;i<plats.length;i++){
+   const plat=plats[i];const positions=[];for(let x=plat.x-original.w+2;x<=plat.x+plat.w-2;x+=12)positions.push(x);
+   positions.push(plat.x+plat.w-original.w,plat.x,plat.x+plat.w-2);
+   for(const x of positions)for(const dir of [-1,0,1])for(const jumping of [false,true]){
+    const p=w.player={...original,effects:original.effects?{...original.effects}:undefined,x,y:plat.y-original.h,vx:dir*(dir<0?272:320),vy:0,grounded:true,coyote:.15,awaitingMove:false};
+    if(plats.some(t=>q.rectsOverlap(p,t)))continue;
+    q.state.keys={left:dir<0,right:dir>0};q.state.jumpQueued=jumping;w.particles=[];
+    let minY=p.y;
+    for(let tick=0;tick<150;tick++){
+     if(game==='SuperRun'){p.coyote=Math.max(0,p.coyote-dt);p.jumpBuffer=Math.max(0,p.jumpBuffer-dt);}
+     q.updatePlayer(w,dt);minY=Math.min(minY,p.y);
+     if(q.rectsOverlap(p,gate)){gateFrom.set(i,{platform:i,x,dir,jumping,tick,player:{x:p.x,y:p.y},minY});break;}
+     if(p.grounded && tick>0){const j=plats.findIndex(t=>Math.abs(p.y+p.h-t.y)<.01&&p.x+p.w>t.x&&p.x<t.x+t.w);if(j>=0&&j!==i){edges[i].add(j);}if(j!==i||jumping)break;}
+     if(p.y>w.level.height+200)break;
+    }
+   }
+  }
+  const initial=plats.findIndex(t=>Math.abs(original.y+original.h-t.y)<.01&&original.x+original.w>t.x&&original.x<t.x+t.w);
+  const seen=new Set([initial]),queue=[initial],parent={};while(queue.length){const i=queue.shift();for(const j of edges[i])if(!seen.has(j)){seen.add(j);parent[j]=i;queue.push(j);}}
+  const fin=[...gateFrom.keys()].find(i=>seen.has(i));const route=[];if(fin!==undefined){let j=fin;while(j!==undefined){route.unshift(j);j=parent[j];}}
+
+  assert.notEqual(fin,undefined,`${game} level ${li+1}: no ordinary-jump finish route at ${Math.round(1/dt)} Hz`);
+  // Replay the final approach through the real completion trigger.
+  q.startLevel(li);const finalWorld=q.state.world, p=finalWorld.player, step=gateFrom.get(fin), platform=finalWorld.platforms[fin];
+  finalWorld.hazards=[];finalWorld.enemies=[];finalWorld.bossCleared=true;
+  Object.assign(p,{x:step.x,y:platform.y-p.h,vx:step.dir*(step.dir<0?272:320),vy:0,grounded:true,coyote:.15,awaitingMove:false});
+  q.state.keys={left:step.dir<0,right:step.dir>0};q.state.jumpQueued=step.jumping;
+  for(let tick=0;tick<=step.tick;tick++){
+   if(game==='SuperRun'){p.coyote=Math.max(0,p.coyote-dt);p.jumpBuffer=Math.max(0,p.jumpBuffer-dt);}
+   q.updatePlayer(finalWorld,dt);q.updateFinish(finalWorld);
+   if(q.state.screen==='result')break;
+  }
+  assert.equal(q.state.screen,'result',`${game} level ${li+1}: touching the gate must complete the level`);
  }
 });

@@ -300,7 +300,7 @@ const LEVELS = [
     rescueName: "Luma",
     palette: { skyTop: "#fbfffe", skyBottom: "#dcfbf1", hillA: "#bfecc0", hillB: "#9de3da", accent: "#33d28e", terrainTop: "#66ce83", terrainSide: "#3ea35f" },
     start: { x: 120, y: 820 },
-    finish: { x: 4770, y: 560, w: 90, h: 120, lockedByBoss: true },
+    finish: { x: 4770, y: 800, w: 90, h: 120, lockedByBoss: true },
     platforms: [
       p(0, 940, 740, 140),
       p(820, 860, 220, 28),
@@ -509,7 +509,9 @@ const LEVELS = [
       p(5300, 960, 220, 28),
       p(5590, 820, 200, 28),
       p(5810, 670, 200, 28),
-      p(5740, 460, 460, 28),
+      // Offset steps leave headroom for the final climb.
+      p(5700, 560, 170, 28),
+      p(5960, 460, 240, 28),
       p(5600, 1100, 600, 160)
     ],
     hazards: [
