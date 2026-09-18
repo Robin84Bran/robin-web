@@ -1,5 +1,5 @@
 ---
-archiveStatus: "PIPELINE"
+archiveStatus: "PRESENT"
 title: 蝶と憲法
 date: 2026-09-18
 updated: 2026-08-21
