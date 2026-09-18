@@ -20,3 +20,19 @@ test('arcade pages avoid the external beacon; other site pages retain it', async
   await worker.fetch(new Request('https://iamrobin.ai/meaning/'), env);
   assert.equal(rewrites, 1);
 });
+
+test('arcade casing aliases preserve game paths and query parameters', async () => {
+  for (const spelling of ['bran_lab','Bran_lab','Bran_Lab']) {
+    for (const tail of ['', '/', '/StarboundMath/?grade=4', '/shared/arcade.css?v=2']) {
+      const url = new URL('https://iamrobin.ai/meaning/' + spelling + tail);
+      const expected = new URL(url);
+      expected.pathname = expected.pathname.replace('/'+spelling, '/Bran_lab');
+      if (tail === '') expected.pathname += '/';
+      const response = await worker.fetch(new Request(url), env);
+      if (url.href === expected.href) assert.equal(response.status, 200);
+      else { assert.equal(response.status, 301); assert.equal(response.headers.get('Location'),expected.href); }
+    }
+  }
+  const unrelated = await worker.fetch(new Request('https://iamrobin.ai/meaning/bran_laboratory/'), env);
+  assert.equal(unrelated.status, 200);
+});

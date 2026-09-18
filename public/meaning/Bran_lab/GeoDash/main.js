@@ -147,6 +147,9 @@
     if (event.repeat) {
       return;
     }
+    if (["ArrowLeft", "ArrowRight", "ArrowUp", " ", "a", "d", "w", ",", ".", "<", ">"].includes(event.key) || ["a", "d", "w"].includes(event.key.toLowerCase())) {
+      if (state.world) state.world.player.awaitingMove = false;
+    }
 
     if ((event.key.toLowerCase() === "a") || event.key === "ArrowLeft" || event.key === "," || event.key === "<") {
       state.keys.left = true;
@@ -338,7 +341,7 @@
   function createWorld(levelIndex) {
     const source = LEVELS[levelIndex];
     const platforms = source.platforms.map((platform) => ({ ...platform, baseX: platform.x, baseY: platform.y, t: Math.random() * Math.PI * 2 }));
-    const initialRespawn = getSafeRespawnPoint(platforms, source.start.x, source.start.y, 42, 60);
+    const initialRespawn = BranPlatform.safeSpawn({ ...source, platforms }, source.start.x, source.start.y, 42, 60);
     const hasBoss = source.enemies.some((enemy) => enemy.type === "boss");
     const world = {
       levelIndex,
@@ -391,44 +394,6 @@
     return world.enemies.some((enemy) => enemy.type === "boss" && enemy.alive);
   }
 
-  function getSafeRespawnPoint(platforms, x, y, playerWidth, playerHeight) {
-    const targetCenterX = x + playerWidth * 0.5;
-    const targetFeetY = y + playerHeight;
-    let best = null;
-
-    platforms.forEach((platform) => {
-      const safeMinX = platform.x + 8;
-      const safeMaxX = platform.x + platform.w - playerWidth - 8;
-      if (safeMaxX < safeMinX) {
-        return;
-      }
-
-      const candidateX = clamp(x, safeMinX, safeMaxX);
-      const candidateCenterX = candidateX + playerWidth * 0.5;
-      const horizontalOffset = Math.abs(candidateCenterX - targetCenterX);
-      const verticalOffset = platform.y - targetFeetY;
-
-      if (verticalOffset < -28 || verticalOffset > 360) {
-        return;
-      }
-
-      const score = horizontalOffset + Math.abs(verticalOffset) * 3;
-      if (!best || score < best.score) {
-        best = {
-          score,
-          x: candidateX,
-          y: platform.y - playerHeight
-        };
-      }
-    });
-
-    if (best) {
-      return { x: best.x, y: best.y };
-    }
-
-    return { x, y };
-  }
-
   function createEnemy(enemy, index) {
     const base = {
       ...enemy,
@@ -464,6 +429,7 @@
   function updateWorld(dt) {
     const world = state.world;
     const player = world.player;
+    if (player.awaitingMove) { updateHUD(); return; }
     const level = world.level;
 
     world.time += dt;
@@ -505,6 +471,7 @@
 
   function updatePlayer(world, dt) {
     const player = world.player;
+    if (player.awaitingMove) return;
     const autoForward = state.save.settings.autoForward;
     const moveSpeed = 320;
     const autoSpeed = 150;
@@ -792,7 +759,7 @@
       const zone = { x: checkpoint.x - 6, y: checkpoint.y - 78, w: 30, h: 90 };
       if (!checkpoint.active && rectsOverlap(world.player, zone)) {
         checkpoint.active = true;
-        world.respawn = getSafeRespawnPoint(world.platforms, checkpoint.x, checkpoint.y, world.player.w, world.player.h);
+        world.respawn = BranPlatform.safeSpawn(world, checkpoint.x, checkpoint.y, world.player.w, world.player.h);
         world.checkpointsReached = Math.max(world.checkpointsReached, index + 1);
         world.score += 50;
         showToast("Checkpoint saved.");
@@ -802,6 +769,7 @@
   }
 
   function updateFinish(world) {
+    if (world.player.awaitingMove) return;
     const finish = world.level.finish;
     const gate = { x: finish.x, y: finish.y, w: finish.w, h: finish.h };
     world.bossCleared = !hasLivingBoss(world);
@@ -838,6 +806,7 @@
     }
 
     const player = world.player;
+    if (player.awaitingMove) return;
     if (player.invuln > 0) {
       return;
     }
@@ -880,11 +849,20 @@
     player.shield = 0;
     player.vx = 0;
     player.vy = 0;
-    player.x = world.respawn.x;
-    player.y = world.respawn.y;
+    const safe = BranPlatform.safeSpawn(world, world.respawn.x, world.respawn.y, player.w, player.h);
+    world.respawn = safe;
+    player.x = safe.x;
+    player.y = safe.y;
+    player.grounded = true;
+    player.coyote = 0;
+    player.jumpBuffer = 0;
+    player.awaitingMove = true;
+    world.enemyBullets.length = 0;
+    resetInputState();
+    window.dispatchEvent(new Event('bran-respawn'));
     player.invuln = 1.4;
     world.score = Math.max(0, world.score - 60);
-    showToast(`Respawned. ${player.lives} life${player.lives === 1 ? "" : "s"} left.`);
+    showToast("Safe at checkpoint. Move or jump when you’re ready.");
     spawnImpactParticles(world, player.x + player.w * 0.5, player.y + player.h * 0.5, "#ffffff", 12, 220);
   }
 
@@ -920,7 +898,7 @@
 
     const { station, question } = state.activePrompt;
     if (!correct) {
-      challengePrompt.textContent = `Try this: ${question.choices[question.answer]}. Select it to recharge and keep going.`;
+      challengePrompt.textContent = `${question.explanation || "Try this: " + question.choices[question.answer] + "."} Select the answer to recharge and keep going.`;
       [...challengeChoices.children].forEach((button, index) => {
         button.disabled = index !== question.answer;
         if (index === question.answer) button.focus();
@@ -1036,7 +1014,7 @@
     const missionFill = document.getElementById('missionFill');
     if (missionFill) missionFill.style.width = `${clamp(state.world.player.x / state.world.level.finish.x * 100, 0, 100)}%`;
     const missionText = document.getElementById('missionText');
-    if (missionText) missionText.textContent = `Brain boosts ${state.world.correctAnswers}/${state.world.totalStations} · ${state.world.checkpointsReached} checkpoints`;
+    if (missionText) missionText.textContent = `Brain boosts ${state.world.correctAnswers}/${state.world.totalStations} · ${state.world.checkpointsReached} checkpoints${state.world.player.awaitingMove ? " · Move or jump to continue" : ""}`;
   }
 
   function renderScene(time) {

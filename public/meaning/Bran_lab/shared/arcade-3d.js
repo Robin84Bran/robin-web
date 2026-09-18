@@ -114,7 +114,7 @@
     }
     function platform(id, p, world, demo = false) {
       const dark = kind === 'dash', x = p.x / S, y = -p.y / S, w = p.w / S, h = Math.min(p.h / S, 3.4);
-      mesh(id, 'box', dark ? '#2b3f62' : (world?.level.palette.terrainSide || '#519e91'), x + w / 2, y - h / 2, -1, w, h, 3);
+      mesh(id, 'box', dark ? '#2b3f62' : (world?.level.palette.terrainSide || '#519e91'), x + w / 2, y - 0.12 - (h - 0.12) / 2, -1, w, h - 0.12, 3);
       mesh(id + 'top', 'box', dark ? '#7585d7' : (world?.level.palette.terrainTop || '#83d6a0'), x + w / 2, y - 0.06, -1, w, 0.12, 3.05);
       mesh(id + 'stripe', 'box', dark ? '#45e8e0' : '#b7edd3', x + w / 2, y - 0.25, 0.52, Math.max(0.1, w - 0.12), 0.09, 0.04, dark);
       for (let i = 0; i < Math.min(12, Math.floor(w / 1.4)); i++) {
