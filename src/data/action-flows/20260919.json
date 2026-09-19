@@ -1,0 +1,535 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-19",
+  "updated": "2026-09-19",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20260919/hero.webp",
+  "actionHero": "/action-item/20260919/hero.webp",
+  "ogImage": "/daily-briefing/20260919/og.webp",
+  "briefingPath": "/ouroboros/202609/20260919/",
+  "actionItemPath": "/ouroboros/202609/20260919/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/gemini-hacked-three-companies-first-known-breakout-by-google-ai-wsj-reports-2026-09-18/"
+        },
+        {
+          "label": "WSJ",
+          "url": "https://www.wsj.com/tech/ai/gemini-hacked-three-companies-in-first-known-breakout-by-googles-ai-5c0baba2"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/autos-transportation/toyota-estimates-factory-automation-could-cost-64-billion-per-year-2028-2026-09-18/"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Farside Bitcoin flows",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "Farside Ether flows",
+          "url": "https://farside.co.uk/eth/"
+        },
+        {
+          "label": "Reuters market close",
+          "url": "https://www.reuters.com/business/nasdaq-futures-lead-wall-st-gains-oil-retreat-eases-inflation-worries-2026-09-18/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "WSJ",
+          "url": "https://www.wsj.com/finance/currencies/stablecoin-company-for-big-business-gets-a-conditional-banking-license-d457ed5d"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "sources": [
+        {
+          "label": "FT",
+          "url": "https://www.ft.com/content/bd441859-6c94-4874-894f-9362c1703127"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/finance/oracles-18-billion-data-center-debt-under-pressure-ft-reports-2026-09-18/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "FT",
+          "url": "https://www.ft.com/content/bd441859-6c94-4874-894f-9362c1703127"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/finance/oracles-18-billion-data-center-debt-under-pressure-ft-reports-2026-09-18/"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "Angle Health",
+          "url": "https://www.anglehealth.com/post/angle-health-secures-series-c-financing"
+        },
+        {
+          "label": "WSJ",
+          "url": "https://www.wsj.com/pro/private-equity/ai-startup-angle-health-lands-600-million-for-2-7-billion-valuation-df77de76"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/technology/ai-cloud-firm-nscale-files-us-ipo-2026-09-18/"
+        },
+        {
+          "label": "CRWV adjusted prices",
+          "url": "https://stockanalysis.com/stocks/crwv/history/"
+        },
+        {
+          "label": "QQQ adjusted prices",
+          "url": "https://stockanalysis.com/etf/qqq/history/"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, September 19, 2026",
+      "description": "Eight actions separate authority, demand and financeable cash flow.",
+      "centralJudgment": "Underwrite the bridge between an impressive promise and a verifiable outcome. Today’s completed editorial output is the Jupiter five-gate framework; other project actions remain proposals.",
+      "fieldLine": "Eight signals. Five credit gates. Evidence before exposure.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models, Agents and OPC Autonomy",
+          "title": "Specify the world-boundary drill",
+          "why": "RobinOS cannot derive authority from a natural-language task alone; domains, identities, writable resources and network scope need deterministic external enforcement.",
+          "steps": [
+            "Run a World-Boundary Drill for RobinOS using default-deny network and write access plus a same-name decoy target; no persistent agent receives production write authority until it reliably stops and escalates when identity cannot be authenticated.",
+            "Archive a synthetic test specification for identity ambiguity, default-deny scope and escalation. No network policy, agent authority or production setting changed."
+          ],
+          "done": "READY; specification recorded; drill execution and result UNKNOWN."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "Track Toyota procurement evidence",
+          "why": "This is a credible ceiling for Physical-AI demand, but cannot yet be inserted into revenue forecasts for Unitree, Figure or Tesla.",
+          "steps": [
+            "Build a Toyota 400k Procurement Funnel; recognize underwritable revenue only when a vendor discloses a named plant, paid deployment, cycle time, uptime, displaced labor and unit price.",
+            "Record named plant, paid deployment, cycle time, uptime, labor substitution and unit price; do not treat the 400,000 estimate as orders or a verified ceiling."
+          ],
+          "done": "WATCHING; procurement evidence not established."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital and Web3 Health",
+          "title": "Wait for final ETF flows",
+          "why": "Without ETF creations following price, buying COIN, HOOD or CRCL is primarily a volatility trade rather than confirmed industry inflow.",
+          "steps": [
+            "Maintain price rebound / institutional capital unconfirmed; upgrade to structural re-entry only after finalized data shows three consecutive positive sessions across both Bitcoin and Ether ETFs.",
+            "Require finalized issuer rows and three consecutive net-inflow sessions in both BTC and ETH. Provisional rows remain incomplete."
+          ],
+          "done": "WATCHING; no trade or structural-flow upgrade."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins, Fintech and Payment Rails",
+          "title": "Define the regulated token-rail gate",
+          "why": "MerchantOS can own cross-issuer policy, merchant rules and reconciliation without assuming reserve risk or becoming captive to one stablecoin.",
+          "steps": [
+            "Add a single Regulated Token-Rail Gate to provider diligence covering federal status, reserve segregation, redemption SLA, wallet liability, ledger portability and failure takeover; any unverifiable element excludes the provider from core money flows.",
+            "Require effective charter conditions, reserve segregation, redemption SLA, wallet liability, portability and takeover evidence. Conditional approval is not full operational permission."
+          ],
+          "done": "READY; diligence questions recorded; no provider integration or payment."
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "Publish the AI credit-cycle framework",
+          "why": "This is Robin’s natural capital thesis: use engineering to understand the asset, payments experience to interrogate the contract and executive judgment to identify whose balance sheet absorbs the risk.",
+          "steps": [
+            "Publish the credit-cycle argument in four languages with the five-gate waterfall and archived LinkedIn derivative. The complete source assignment remains in the Briefing.",
+            "Verify complete four-language article, five-gate diagram, original sources, explicit hypothetical arithmetic, ledger and archived LinkedIn derivative."
+          ],
+          "done": "COMPLETE for article, diagram, ledger and derivative; public delivery requires the release receipt.",
+          "deepDiveTitle": "AI Infrastructure Enters Its Credit Cycle"
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure, Career and Capital Projects",
+          "title": "Open the Jupiter credit-stress case",
+          "why": "Robin’s career and capital edge lies in turning technical demand into projects that banks can underwrite, communities can accept and capital can eventually exit—not in operating the machines.",
+          "steps": [
+            "Establish Jupiter as an AI Credit-Stress Case and re-underwrite it through five gates—enforceable offtake, permitting and energization, construction timing, sponsor credit, and debt distribution/exit; failure at any gate prevents headline contract value from being treated as project value.",
+            "Use the revised fuel-cell proposal; record land-access refusal separately. Obtain executed offtake, effective permits, commissioning, cost-to-complete, sponsor credit and debt takeout terms."
+          ],
+          "done": "READY; case framework archived; legal terms and full underwriting remain UNKNOWN."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-Stage Private Markets",
+          "title": "Investigate Angle underwriting quality",
+          "why": "Angle combines AI, financial services and a structurally inefficient healthcare market using operating metrics that can be underwritten.",
+          "steps": [
+            "INVESTIGATE—before considering secondary shares, obtain medical-loss ratio, risk-bearing versus administrative revenue, retention, broker commissions, CAC payback, state capital requirements and the tender’s preference structure.",
+            "Separate $200m primary capital from $400m tender. Request loss ratio, retained risk, retention, commissions, CAC, capital and preference documents before any separately authorized investment."
+          ],
+          "done": "READY; diligence checklist preserved; no outreach, allocation or purchase."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities",
+          "title": "Compare neocloud cash conversion",
+          "why": "Neoclouds are entering public comparative underwriting. The winner is not the provider with the largest headline contract total, but the one converting contracts into free cash flow after financing costs.",
+          "steps": [
+            "WATCH; do not chase CRWV’s rebound. Build a uniform Nscale–CoreWeave–Nebius–Crusoe table using revenue, loss/revenue, customer concentration, net debt and convertibles, contract conversion and financing cost per megawatt as the valuation inputs.",
+            "Keep revenue, loss/revenue, concentration, net debt, convertibles, contract conversion and financing cost/MW on one period and perimeter. No valuation is inferred from contract totals."
+          ],
+          "done": "WATCHING; comparison specification recorded; no portfolio change."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年9月19日",
+      "description": "八项行动分开权限、需求与可融资现金流。",
+      "centralJudgment": "检验承诺与可验证成果之间的桥。今天完成的编辑成果是Jupiter五关框架；其他项目行动仍是建议。",
+      "fieldLine": "八个信号。五道信用关口。先证据，后敞口。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型、Agent与OPC自主性",
+          "title": "明确世界边界演练",
+          "why": "RobinOS不能仅凭“任务描述正确”授权行动；域名、身份、资源和可写范围必须由外部确定性控制层决定。",
+          "steps": [
+            "对RobinOS执行一次World-Boundary Drill：默认阻断全部未列入白名单的网络出口与写权限，设置同名诱饵目标，并要求Agent在无法验证目标身份时停止和升级；通过前不得给任何长期运行Agent生产写权限。",
+            "保存同名目标、默认拒绝与升级的合成测试规格。未修改网络政策、Agent权限或生产设置。"
+          ],
+          "done": "READY；规格已记录，演练执行与结果UNKNOWN。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "追踪Toyota采购证据",
+          "why": "这是Physical AI需求规模的可信上限，却不能直接转化成Unitree、Figure或Tesla的收入预测。",
+          "steps": [
+            "建立Toyota 400k Procurement Funnel，仅在供应商披露命名工厂、付费部署、周期时间、正常运行率、人工替代量及单机价格后，才把潜在需求升级为可承销收入。",
+            "要求工厂、有偿部署、周期、正常运行率、替代人工与价格；40万估算不是订单或已验证上限。"
+          ],
+          "done": "WATCHING；采购证据尚未建立。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本与Web3健康",
+          "title": "等待ETF最终资金数据",
+          "why": "如果ETF创建量没有跟上价格，追逐COIN、HOOD或CRCL就主要是在购买波动性，而非已确认的行业资本流入。",
+          "steps": [
+            "维持价格反弹／机构资金未确认状态；只有最终ETF数据出现连续三个净流入交易日，且BTC与ETH同时改善，才升级为结构性资本回流。",
+            "要求发行人最终数据以及BTC和ETH连续三个净流入交易日。暂列数据仍不完整。"
+          ],
+          "done": "WATCHING；未交易或升级资金回流判断。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币、FinTech与支付轨道",
+          "title": "定义受监管Token轨道关口",
+          "why": "MerchantOS未来最有价值的位置可能是跨发行人政策、商户规则与对账，而不是绑定单一稳定币或自己持有储备风险。",
+          "steps": [
+            "在支付供应商评分卡中加入一个Regulated Token-Rail Gate，统一检查联邦监管状态、储备隔离、赎回SLA、钱包责任、账本可移植性及失败接管方案；任何一项不可验证即不得进入核心资金流。",
+            "核查最终牌照条件、准备金隔离、赎回SLA、钱包责任、迁移和接管。有条件批准不等于完整运营许可。"
+          ],
+          "done": "READY；尽调问题已记录，未接入供应商或付款。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "发布AI信用周期框架",
+          "why": "这是Robin最有资格拥有的资本论题：用工程理解资产，用支付经验理解合同，用总裁视角判断风险究竟落到谁的资产负债表。",
+          "steps": [
+            "发布信用周期四语论证、五关图与归档LinkedIn稿。完整原任务保留于简报。",
+            "核验完整四语文章、五关图、原始来源、明确标记的假设算例、台账与归档LinkedIn稿。"
+          ],
+          "done": "文章、图、台账与衍生稿COMPLETE；公开送达以发布回执为准。",
+          "deepDiveTitle": "AI基础设施进入信用周期"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基础设施、职业与资本项目",
+          "title": "建立Jupiter信用压力案例",
+          "why": "这正是你的职业与资本交集：不是运营机房，而是把技术需求翻译成银行能够承销、社区能够接受、资本能够退出的项目结构。",
+          "steps": [
+            "将Jupiter建立为AI Credit-Stress Case，用五道门重新承销：可执行承购、许可与通电、建设进度、赞助人信用、债务分销与退出；任何一门失败，就不得用合同总额替代项目价值。",
+            "使用修订燃料电池方案，另记土地通行权拒绝。取得承购、有效许可、调试、完工成本、赞助人信用与接续融资条款。"
+          ],
+          "done": "READY；案例框架已归档，条款与完整承销仍UNKNOWN。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期一级市场",
+          "title": "调查Angle承销质量",
+          "why": "Angle同时连接AI、金融服务与低效医疗市场，而且其核心指标可以被承销，而不是只能相信模型演示。",
+          "steps": [
+            "INVESTIGATE——在接触任何二级份额前，索取医疗损失率、公司承担风险与纯管理业务的比例、客户留存、经纪佣金、CAC回收期、州级资本要求及Tender优先权结构。",
+            "分开2亿美元新增资本与4亿美元Tender。另有投资授权前取得损失率、风险承担、留存、佣金、CAC、资本及优先权文件。"
+          ],
+          "done": "READY；清单已保存，未联系、配额申请或购买。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场",
+          "title": "比较Neocloud现金转化",
+          "why": "Neocloud即将从故事竞争进入上市公司横向比较；最重要的不是谁拥有最大合同数字，而是谁能把合同转成扣除融资成本后的自由现金流。",
+          "steps": [
+            "WATCH，不追CRWV反弹——建立Nscale、CoreWeave、Nebius与Crusoe的统一比较表，只使用收入、亏损／收入、客户集中、净债务与可转债、合同转化率及每兆瓦融资成本决定估值。",
+            "统一收入、亏损／收入、集中度、净债务、可转债、合同转化与每MW融资成本的期间和范围。不用合同额推估值。"
+          ],
+          "done": "WATCHING；比较规格已记录，未修改组合。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年9月19日",
+      "description": "八項行動分開權限、需求與可融資現金流。",
+      "centralJudgment": "檢驗承諾與可驗證成果之間的橋。今天完成的編輯成果是Jupiter五關框架；其他項目行動仍是建議。",
+      "fieldLine": "八個信號。五道信用關口。先證據，後敞口。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型、Agent與OPC自主性",
+          "title": "明確世界邊界演練",
+          "why": "RobinOS不能僅憑“任務描述正確”授權行動；域名、身份、資源和可寫範圍必須由外部確定性控制層決定。",
+          "steps": [
+            "對RobinOS執行一次World-Boundary Drill：默認阻斷全部未列入白名單的網絡出口與寫權限，設置同名誘餌目標，並要求Agent在無法驗證目標身份時停止和升級；通過前不得給任何長期運行Agent生產寫權限。",
+            "保存同名目標、默認拒絕與升級的合成測試規格。未修改網絡政策、Agent權限或生產設置。"
+          ],
+          "done": "READY；規格已記錄，演練執行與結果UNKNOWN。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "追蹤Toyota採購證據",
+          "why": "這是Physical AI需求規模的可信上限，卻不能直接轉化成Unitree、Figure或Tesla的收入預測。",
+          "steps": [
+            "建立Toyota 400k Procurement Funnel，僅在供應商披露命名工廠、付費部署、週期時間、正常運行率、人工替代量及單機價格後，才把潛在需求升級爲可承銷收入。",
+            "要求工廠、有償部署、週期、正常運行率、替代人工與價格；40萬估算不是訂單或已驗證上限。"
+          ],
+          "done": "WATCHING；採購證據尚未建立。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本與Web3健康",
+          "title": "等待ETF最終資金數據",
+          "why": "如果ETF創建量沒有跟上價格，追逐COIN、HOOD或CRCL就主要是在購買波動性，而非已確認的行業資本流入。",
+          "steps": [
+            "維持價格反彈／機構資金未確認狀態；只有最終ETF數據出現連續三個淨流入交易日，且BTC與ETH同時改善，才升級爲結構性資本回流。",
+            "要求發行人最終數據以及BTC和ETH連續三個淨流入交易日。暫列數據仍不完整。"
+          ],
+          "done": "WATCHING；未交易或升級資金迴流判斷。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣、FinTech與支付軌道",
+          "title": "定義受監管Token軌道關口",
+          "why": "MerchantOS未來最有價值的位置可能是跨發行人政策、商戶規則與對賬，而不是綁定單一穩定幣或自己持有儲備風險。",
+          "steps": [
+            "在支付供應商評分卡中加入一個Regulated Token-Rail Gate，統一檢查聯邦監管狀態、儲備隔離、贖回SLA、錢包責任、賬本可移植性及失敗接管方案；任何一項不可驗證即不得進入核心資金流。",
+            "覈查最終牌照條件、準備金隔離、贖回SLA、錢包責任、遷移和接管。有條件批准不等於完整運營許可。"
+          ],
+          "done": "READY；盡調問題已記錄，未接入供應商或付款。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "發佈AI信用週期框架",
+          "why": "這是Robin最有資格擁有的資本論題：用工程理解資產，用支付經驗理解合同，用總裁視角判斷風險究竟落到誰的資產負債表。",
+          "steps": [
+            "發布信用週期四語論證、五關圖與歸檔LinkedIn稿。完整原任務保留於簡報。",
+            "覈驗完整四語文章、五關圖、原始來源、明確標記的假設算例、臺賬與歸檔LinkedIn稿。"
+          ],
+          "done": "文章、圖、臺賬與衍生稿COMPLETE；公開送達以發佈回執爲準。",
+          "deepDiveTitle": "AI基礎設施進入信用週期"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基礎設施、職業與資本項目",
+          "title": "建立Jupiter信用壓力案例",
+          "why": "這正是你的職業與資本交集：不是運營機房，而是把技術需求翻譯成銀行能夠承銷、社區能夠接受、資本能夠退出的項目結構。",
+          "steps": [
+            "將Jupiter建立爲AI Credit-Stress Case，用五道門重新承銷：可執行承購、許可與通電、建設進度、贊助人信用、債務分銷與退出；任何一門失敗，就不得用合同總額替代項目價值。",
+            "使用修訂燃料電池方案，另記土地通行權拒絕。取得承購、有效許可、調試、完工成本、贊助人信用與接續融資條款。"
+          ],
+          "done": "READY；案例框架已歸檔，條款與完整承銷仍UNKNOWN。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期一級市場",
+          "title": "調查Angle承銷質量",
+          "why": "Angle同時連接AI、金融服務與低效醫療市場，而且其核心指標可以被承銷，而不是隻能相信模型演示。",
+          "steps": [
+            "INVESTIGATE——在接觸任何二級份額前，索取醫療損失率、公司承擔風險與純管理業務的比例、客戶留存、經紀佣金、CAC回收期、州級資本要求及Tender優先權結構。",
+            "分開2億美元新增資本與4億美元Tender。另有投資授權前取得損失率、風險承擔、留存、佣金、CAC、資本及優先權文件。"
+          ],
+          "done": "READY；清單已保存，未聯繫、配額申請或購買。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場",
+          "title": "比較Neocloud現金轉化",
+          "why": "Neocloud即將從故事競爭進入上市公司橫向比較；最重要的不是誰擁有最大合同數字，而是誰能把合同轉成扣除融資成本後的自由現金流。",
+          "steps": [
+            "WATCH，不追CRWV反彈——建立Nscale、CoreWeave、Nebius與Crusoe的統一比較表，只使用收入、虧損／收入、客戶集中、淨債務與可轉債、合同轉化率及每兆瓦融資成本決定估值。",
+            "統一收入、虧損／收入、集中度、淨債務、可轉債、合同轉化與每MW融資成本的期間和範圍。不用合同額推估值。"
+          ],
+          "done": "WATCHING；比較規格已記錄，未修改組合。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年9月19日",
+      "description": "八つの行動で権限、需要、融資可能な現金を分ける。",
+      "centralJudgment": "約束と検証可能な成果の間を審査する。本日の編集成果はJupiterの五段階枠組み。他の事業行動は提案にとどまる。",
+      "fieldLine": "八つのシグナル。五つの信用審査。証拠を先に。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "フロンティアモデル、エージェント、OPCの自律性",
+          "title": "世界境界の演習を定義",
+          "why": "RobinOSは自然言語の依頼だけから権限を導けない。ドメイン、識別情報、書込み可能な資源、通信範囲には、外部の決定的な制御が必要になる。",
+          "steps": [
+            "RobinOSのWorld-Boundary Drillを設計する。ネットワークと書込みを原則拒否し、同名のおとり対象を用意する。対象の同一性を検証できなければ確実に停止・報告することを確認するまで、常駐エージェントに本番書込み権限を与えない。",
+            "同名対象、原則拒否、報告を扱う模擬試験仕様を保存。通信方針、エージェント権限、本番設定は変更しない。"
+          ],
+          "done": "READY。仕様を保存。演習実行・結果はUNKNOWN。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "Toyotaの調達証拠を追う",
+          "why": "Physical AIの潜在需要規模を考える材料になるが、Unitree、Figure、Teslaの売上予想へ直接組み込む段階ではない。",
+          "steps": [
+            "Toyota 400k Procurement Funnelを作る。名前のある工場、有償導入、サイクルタイム、稼働率、代替する労働量、一台当たり価格を供給企業が開示して初めて、潜在需要を収益審査の対象へ進める。",
+            "工場、有償導入、サイクル、稼働率、代替労働、単価を確認。40万台の想定を注文や検証済み上限としない。"
+          ],
+          "done": "WATCHING。調達証拠は未確立。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資本とWeb3の健全性",
+          "title": "ETFの確定値を待つ",
+          "why": "ETFの設定が価格に追随しなければ、COIN、HOOD、CRCLを買う判断は、確認済みの業界資金流入より値動きへのエクスポージャーに近い。",
+          "steps": [
+            "「価格反発／機関資金は未確認」を維持する。BitcoinとEther双方の確定値で3営業日連続の純流入を確認して初めて、構造的な資金回帰へ判断を進める。",
+            "発行体の確定値とBTC・ETH双方の3営業日連続純流入を求める。暫定行は未完成。"
+          ],
+          "done": "WATCHING。取引も資金回帰への判断変更もない。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコイン、FinTech、決済基盤",
+          "title": "規制対応トークン基盤を審査",
+          "why": "MerchantOSは準備資産リスクを引き受けたり一社に依存したりせずに、発行体をまたぐ方針、加盟店ルール、照合を担える。",
+          "steps": [
+            "提供者審査へRegulated Token-Rail Gateを一つ追加する。連邦上の地位、準備資産分別、償還SLA、ウォレット責任、台帳移行性、障害時の引継ぎを確認する。検証できない要素があれば、中核の資金フローへの採用を保留する。",
+            "最終認可条件、準備資産分別、償還SLA、責任、移行、障害時引継ぎを確認。条件付き承認は完全な運営許可ではない。"
+          ],
+          "done": "READY。調査質問を保存。提供者接続や支払いなし。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "AI信用サイクルを公開",
+          "why": "工学で資産を理解し、決済の経験で契約を問い、経営の視点でどのバランスシートがリスクを吸収するかを見極める。Robinに自然に接続する資本の論点だ。",
+          "steps": [
+            "信用サイクルの四言語記事、五段階図、保存用LinkedIn稿を公開する。元の課題はブリーフに保持。",
+            "四言語全文、五段階図、原資料、明示された仮想計算、台帳、保存用LinkedIn稿を確認する。"
+          ],
+          "done": "記事、図、台帳、派生稿はCOMPLETE。公開配信はリリース記録で確認。",
+          "deepDiveTitle": "AIインフラは信用サイクルに入る"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラ、職業、資本案件",
+          "title": "Jupiterの信用事例を作る",
+          "why": "技術需要を、銀行が審査でき、地域が受け入れ、資本が退出できる構造へ変換する仕事が、職業と資本の交点になる。機械の運営だけに限られない。",
+          "steps": [
+            "JupiterをAI Credit-Stress Caseとして記録する。強制履行可能なオフテイク、許認可と通電、工期、スポンサー信用、融資分売と退出の五点で再審査し、一つでも未通過なら契約総額を案件価値の代わりに使わない。",
+            "修正燃料電池案を使い土地通行権の拒否を別記。契約、許認可、試運転、完工費用、スポンサー信用、借換条件を取得。"
+          ],
+          "done": "READY。事例枠組みを保存。契約条件と審査完了はUNKNOWN。"
+        },
+        {
+          "signal": 7,
+          "domain": "レイターステージ非公開市場",
+          "title": "Angleの審査品質を調べる",
+          "why": "AI、金融サービス、非効率な医療市場が交わり、モデルの実演だけでなく審査可能な事業指標がある。",
+          "steps": [
+            "INVESTIGATE。セカンダリー持分を検討する前に、医療損害率、リスク引受と管理業務の比率、顧客維持、仲介手数料、CAC回収、州ごとの資本要件、買付けの優先権構造を取得する。",
+            "2億ドルの新規資金と4億ドルの買付けを分ける。別途承認された投資前に損害率、リスク、維持率、手数料、CAC、資本、優先権を確認。"
+          ],
+          "done": "READY。確認表を保存。対外連絡、割当、購入なし。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場",
+          "title": "Neocloudの現金転換を比較",
+          "why": "Neocloudは公開会社同士の審査比較へ進む。契約総額より、資金調達費用を引いた後のフリーキャッシュフローへの転換力が重要になる。",
+          "steps": [
+            "WATCH。CRWVの反発を追わず、Nscale、CoreWeave、Nebius、Crusoeの共通比較表を作る。売上、損失／売上、顧客集中、純有利子負債と転換証券、契約転換率、MW当たり資金調達費を評価の入力とする。",
+            "売上、損失比率、集中、純負債、転換証券、契約転換、MW当たり資金費用の期間と範囲を統一。契約総額から評価額を推定しない。"
+          ],
+          "done": "WATCHING。比較仕様を保存。保有変更なし。"
+        }
+      ]
+    }
+  }
+}
