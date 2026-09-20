@@ -250,7 +250,8 @@ if (existsSync(dist)) {
   check(japaneseNetwork.includes('プロジェクトは現れては去り') && japaneseNetwork.includes('香港上場企業'), 'ja Network: approved Japanese public record is missing.');
   for (const page of [network, simplifiedNetwork, traditionalNetwork, japaneseNetwork]) {
     check((page.match(/<h2\b/g) ?? []).length === 5, 'Network: every locale must expose the five canonical sections.');
-    check(page.includes('https://www.hkexnews.hk/listedco/listconews/gem/2019/0509/gln20190509062_c.pdf'), 'Network: canonical HKEX source is missing.');
+    check(page.includes('https://www1.hkexnews.hk/listedco/listconews/gem/2020/0529/2020052900007.pdf#page=107'), 'Network: 2019 annual-report evidence is missing.');
+    check(page.includes('https://www1.hkexnews.hk/listedco/listconews/gem/2020/0316/2020031600960.pdf'), 'Network: resignation evidence is missing.');
   }
   check((books.match(/"@type":"Book"/g) ?? []).length === 4, 'books: expected four Book schemas.');
   check(portfolio.includes('"@type":"CollectionPage"'), 'portfolio: CollectionPage schema missing.');

@@ -37,19 +37,23 @@ The article records my engineering background, USTC Class of Gifted Young and Ri
 
 ### Global Token Limited · Executive Director
 
-**2018–2019**
+**18 April 2019 – 16 March 2020**
 
 I served as an executive director of the Hong Kong-listed company then known as Global Token Limited, stock code 8192.
+
+My earlier management role as co-CEO began in August 2018, as recorded in the [2018 annual report, p. 17](https://www.hkexnews.hk/listedco/listconews/gem/2019/0430/gln20190430193.pdf#page=18).
 
 During that period, the company moved from the name **Global Energy Resources International Group Limited** toward **Global Token Limited**, reflecting its expansion into blockchain and digital-asset related activities. I proposed this name change, and it was approved by the board. As early as 2018, I foresaw that tokens would become the smallest unit of measurement in both language and finance, an unstoppable trend.
 
 The formal HKEX record lists **Ms. Xie Bin / 谢玢** among the company’s executive directors.
 
-**Primary source**<br>
+**Primary sources**<br>
 HKEX · Global Token Limited<br>
-`Regulatory filing · 9 May 2019`
+`2019 annual report · published 29 May 2020`
 
-→ [View the HKEX filing](https://www.hkexnews.hk/listedco/listconews/gem/2019/0509/gln20190509062_c.pdf)
+→ [2019 annual report, pp. 4 and 106 — executive-director appointment and resignation](https://www1.hkexnews.hk/listedco/listconews/gem/2020/0529/2020052900007.pdf#page=107)
+
+→ [Resignation announcement — 16 March 2020](https://www1.hkexnews.hk/listedco/listconews/gem/2020/0316/2020031600960.pdf)
 
 ### Global Token · Company Record
 

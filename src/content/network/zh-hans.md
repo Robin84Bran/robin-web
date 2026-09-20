@@ -38,9 +38,11 @@ translationReview: "PASS"
 
 ### Global Token Limited · 执行董事
 
-**2018–2019**
+**2019年4月18日 – 2020年3月16日**
 
 我曾担任香港上市公司 Global Token Limited 的执行董事，公司股份代号 8192。
+
+此前，我于 2018 年 8 月开始担任联席行政总裁，见 [2018 年年报第 17 页](https://www.hkexnews.hk/listedco/listconews/gem/2019/0430/gln20190430193.pdf#page=18)。
 
 这一时期，公司由 **Global Energy Resources International Group Limited** 向 **Global Token Limited** 转型，并逐渐涉足区块链及数字资产相关业务。此次命名由我提出并得到董事会批准。早在 2018 年，我便预见 Token 会成为语言和金融的最小计量单位，势不可挡。
 
@@ -48,9 +50,11 @@ translationReview: "PASS"
 
 **一级来源**<br>
 香港交易所 · Global Token Limited<br>
-`监管公告 · 2019年5月9日`
+`2019年年报 · 2020年5月29日发布`
 
-→ [查看香港交易所公告](https://www.hkexnews.hk/listedco/listconews/gem/2019/0509/gln20190509062_c.pdf)
+→ [2019年年报第4、106页 — 执行董事任免日期](https://www1.hkexnews.hk/listedco/listconews/gem/2020/0529/2020052900007.pdf#page=107)
+
+→ [辞任公告 — 2020年3月16日](https://www1.hkexnews.hk/listedco/listconews/gem/2020/0316/2020031600960.pdf)
 
 ### Global Token · 上市公司记录
 
