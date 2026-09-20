@@ -1,0 +1,531 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-20",
+  "updated": "2026-09-20",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20260920/hero.webp",
+  "actionHero": "/action-item/20260920/hero.webp",
+  "ogImage": "/daily-briefing/20260920/og.webp",
+  "briefingPath": "/ouroboros/202609/20260920/",
+  "actionItemPath": "/ouroboros/202609/20260920/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/anthropic-considers-releasing-new-ai-model-ahead-ipo-sources-say-2026-09-19/"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/asia-pacific/founder-chinese-startup-spirit-ai-says-robot-brains-set-2027-breakthrough-2026-09-18/"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Farside BTC",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "Farside ETH",
+          "url": "https://farside.co.uk/eth/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Bastion",
+          "url": "https://www.globenewswire.com/news-release/2026/09/18/3364956/0/en/bastion-receives-conditional-occ-approval-for-a-national-trust-bank-charter.html"
+        },
+        {
+          "label": "WSJ",
+          "url": "https://www.wsj.com/finance/currencies/stablecoin-company-for-big-business-gets-a-conditional-banking-license-d457ed5d"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "sources": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com/news/accenture-embedded-evaluation"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/anthropic-accenture-invest-2-billion-ai-model-evaluation-safety-concerns-rise-2026-09-18/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/asia-pacific/japans-nippon-life-plans-13-billion-data-center-financing-us-nikkei-asia-reports-2026-09-19/"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/legal/transactional/bytedance-completes-290-million-fundraising-ai-drug-unit-after-its-spin-off-2026-09-16/"
+        },
+        {
+          "label": "Anew Labs",
+          "url": "https://anewbt.com/"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com/news/accenture-embedded-evaluation"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/anthropic-accenture-invest-2-billion-ai-model-evaluation-safety-concerns-rise-2026-09-18/"
+        },
+        {
+          "label": "ACN prices",
+          "url": "https://stockanalysis.com/stocks/acn/history/"
+        },
+        {
+          "label": "QQQ prices",
+          "url": "https://stockanalysis.com/etf/qqq/history/"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, September 20, 2026",
+      "description": "Eight actions distinguish access, evidence, commitments and verified outcomes.",
+      "centralJudgment": "Independence needs inspectable rights. Today’s completed editorial output is the four-right evaluation framework; operational proposals and investment watchpoints retain their own evidence gates.",
+      "fieldLine": "Eight signals. Four rights. Honest execution states.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models, Agents and OPC Autonomy",
+          "title": "Wait for a released model before comparison",
+          "why": "An AI-native one-person company does not need to predict the permanent winner. It needs to convert model competition into lower human coordination cost.",
+          "steps": [
+            "Make no production-routing change before the new Claude is actually released; then run the identical Astra shadow suite across intervention-free completion, recovery, instruction retention, Robin-intervention minutes and cost per verified outcome before deciding whether to promote it.",
+            "Freeze the identical task, budget and acceptance rules before a separately authorized shadow run. No production routing changed."
+          ],
+          "done": "READY; comparison specification preserved; new-model availability and trial results UNKNOWN."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "Require robot operating economics",
+          "why": "The scarce Physical-AI asset is increasingly the reusable data and customer feedback loop, not the robot body alone.",
+          "steps": [
+            "Classify Spirit AI as real deployment / unproven economics; require productive hours per robot, human intervention, task-transfer performance, customer renewal and labor-replacement cost before upgrading it to scalable deployment.",
+            "Record effective hours, intervention, task transfer, renewal and labor cost; management forecasts remain forecasts."
+          ],
+          "done": "WATCHING; scalable economics not established."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital and Web3 Health",
+          "title": "Watch three consecutive ETF creation days",
+          "why": "The current structure is BTC capital recovered / ETH institutional demand remains weak / RWA infrastructure continues.",
+          "steps": [
+            "Update the regime to BTC weekly neutral / ETH net outflow; do not declare broad crypto capital re-entry until both assets produce three consecutive creation days.",
+            "Check final fund rows for both assets over three consecutive sessions. No trade follows automatically."
+          ],
+          "done": "WATCHING; no broad-flow upgrade or trade."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins, Fintech and Payment Rails",
+          "title": "Keep conditional banking approval separate",
+          "why": "MerchantOS needs a provider that accepts compliance responsibility and delivers reliable money-state and reconciliation—not merely a licensing headline.",
+          "steps": [
+            "Keep Bastion out of the MerchantOS production shortlist until it has final approval and discloses reserve structure, customer-fund segregation, APIs and SLAs, cross-rail reconciliation and real settlement volume.",
+            "Require final approval, reserves, segregation, API/SLA, reconciliation and volume. No provider integration or payment."
+          ],
+          "done": "WATCHING; final operating evidence not established."
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "Publish the independent evaluation framework",
+          "why": "This is the opening to reposition Model Olympics from private model selection into a credible external evaluation asset combining engineering evidence, governance and capital judgment.",
+          "steps": [
+            "Publish the evaluation-governance argument in four languages with the four-right diagram and archived LinkedIn derivative. The full assignment remains in the Briefing.",
+            "Verify four complete editions, four-right diagram, five inspected sources, research ledger and archived LinkedIn derivative."
+          ],
+          "done": "COMPLETE for article, diagram, ledger and derivative; public delivery is established by the release receipt.",
+          "deepDiveTitle": "Publish the independent evaluation framework"
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure, Career and Capital Projects",
+          "title": "Record insurance capital without assuming deployment",
+          "why": "This validates both Robin’s capital thesis and career position: the scarce skill is connecting MW, power contracts, leases, SPVs, debt duration and terminal cash flow.",
+          "steps": [
+            "Add Nippon Life to the AI Infrastructure Lender Map, but count capital as deployed only when a transaction discloses the borrower, MW, tenor, collateral, customer contract and debt-service coverage.",
+            "Keep the reported ¥2tn allocation and data-center subset separate. Borrowers, terms and signed projects remain UNKNOWN; no application or financing action."
+          ],
+          "done": "READY; evidence-map assignment recorded; deployed capital UNKNOWN."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-Stage Private Markets",
+          "title": "Wait for Anew validation and terms",
+          "why": "Anew tests whether Chinese models, agents and experimental infrastructure can shorten actual drug discovery rather than merely generate more candidates.",
+          "steps": [
+            "WATCH; do not chase the valuation. Upgrade to INVESTIGATE only after at least one program receives IND clearance or reproducible experimental validation and the company discloses cash burn, partnership economics, preference terms and an accessible allocation.",
+            "Require at least one IND clearance or reproducible experiment plus cash burn, partnership economics, preferences and accessible allocation."
+          ],
+          "done": "WATCHING; validation and investable terms not established."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities",
+          "title": "Wait for ACN revenue and liability evidence",
+          "why": "Public markets are beginning to price the frontier-model referee layer, but currently as optionality rather than verified revenue and profit.",
+          "steps": [
+            "Do not chase ACN at Monday’s open; wait for a regular-session close and company disclosure on revenue recognition, cost sharing, indemnification and the non-exclusive customer pipeline before deciding whether evaluation is a profit pool or a cost center.",
+            "Separate regular close from after-hours prices, capacity spending from revenue, and disclosed liabilities from assumptions."
+          ],
+          "done": "WATCHING; normal-session and contract evidence pending."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年9月20日",
+      "description": "八项行动分开访问、证据、承诺与已验证成果。",
+      "centralJudgment": "独立性需要可检查的权利。今天完成四权评估框架的编辑成果；运营建议与投资观察仍各自保留证据关口。",
+      "fieldLine": "八个信号。四项权利。真实执行状态。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型、Agent与OPC自主性",
+          "title": "模型正式发布后再比较",
+          "why": "这正是OPC架构的优势——不押注永久赢家，而是让模型竞争转化为更低的人类协调成本。",
+          "steps": [
+            "在新Claude正式开放前不改变RobinOS生产路由；发布当天只运行同一套Astra对照影子评估，比较无人干预完成率、失败恢复、指令保持、Robin介入分钟及每个验证结果成本，全部记录后再决定是否升级。",
+            "在另行授权的影子试验前冻结相同任务、预算和验收规则。未修改生产路由。"
+          ],
+          "done": "READY；已保存比较规格，新模型可用性与试验结果UNKNOWN。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "要求机器人运营经济数据",
+          "why": "Physical AI的核心稀缺性正从机器人本体转向可合法复用的数据、客户工作流和持续反馈。",
+          "steps": [
+            "将Spirit AI评为real deployment / unproven economics；只有披露每台有效工作小时、人工介入、任务迁移成功率、客户续约及单位劳动替代成本后，才升级为可规模化商业部署。",
+            "记录有效工时、介入、任务迁移、续约及替代人工成本；管理层预测仍是预测。"
+          ],
+          "done": "WATCHING；规模化经济性尚未建立。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本与Web3健康",
+          "title": "观察连续三日ETF净申购",
+          "why": "当前结构不是“crypto risk-on”，而是BTC资金恢复／ETH机构需求仍弱／RWA基础设施继续建设。",
+          "steps": [
+            "将资本状态更新为BTC周度中性、ETH持续净流出；在BTC与ETH同时出现连续三个交易日净申购前，不把周五反弹升级为行业全面资金回流。",
+            "检查两类资产连续三个交易日的基金终值。不会自动触发交易。"
+          ],
+          "done": "WATCHING；未升级全面回流判断或交易。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币、FinTech与支付轨道",
+          "title": "分清有条件银行批准",
+          "why": "MerchantOS需要的是能够承接合规责任、资金状态和逐笔对账的可靠底层，而不是“获得牌照”这一单一标签。",
+          "steps": [
+            "暂不把Bastion列入MerchantOS生产候选；只有获得最终批准并披露储备结构、客户资金隔离、API/SLA、跨轨道对账及真实结算量后才重新评估。",
+            "要求最终批准、储备、分隔、API/SLA、对账和交易量。未接入供应商或付款。"
+          ],
+          "done": "WATCHING；最终运营证据尚未建立。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "发布独立评估框架",
+          "why": "这是Model Olympics从内部选型工具升级为外部评估资产的窗口，也是Robin将工程证据、治理和资本判断结合起来的最佳公共命题。",
+          "steps": [
+            "发布评估治理四语文章、四权图与归档LinkedIn稿。完整任务保留于简报。",
+            "核验四语全文、四权图、五个已查阅来源、研究台账与归档LinkedIn衍生稿。"
+          ],
+          "done": "文章、图、台账与衍生稿COMPLETE；公开交付由发布回执确认。",
+          "deepDiveTitle": "发布独立评估框架"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基础设施、职业与资本项目",
+          "title": "记录保险资金而不假定已投放",
+          "why": "这同时验证你的资本论题与职业方向：真正稀缺的人才是能把MW、电力合同、租约、SPV、债务期限和最终现金流放进同一承销框架的人。",
+          "steps": [
+            "把日本生命加入AI Infrastructure Lender Map，但只把披露借款人、MW、期限、抵押品、客户合同和偿债覆盖率的交易计入已部署资本。",
+            "分开报道中的2万亿日元总配置与数据中心子集。借款人、条款及已签项目仍UNKNOWN；未申请或融资。"
+          ],
+          "done": "READY；证据地图任务已记录，已投放资本UNKNOWN。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期一级市场",
+          "title": "等待Anew验证及条款",
+          "why": "Anew同时检验中国模型能力、Agent闭环和实验基础设施能否真正缩短药物发现周期，而不是只生成更多候选分子。",
+          "steps": [
+            "WATCH，不追估值——只有至少一个项目取得IND许可或可复现实验验证，并披露现金消耗、药企合作经济、优先权及可访问份额后，才升级为INVESTIGATE。",
+            "要求至少一个IND许可或可复现实验，并取得现金消耗、合作经济、优先权和可访问份额。"
+          ],
+          "done": "WATCHING；验证与可投资条款尚未建立。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场",
+          "title": "等待ACN收入与责任证据",
+          "why": "这是公开市场首次尝试给“前沿模型裁判层”定价，但当前反应仍是选择权，而非经过收入、利润和责任结构验证的基本面变化。",
+          "steps": [
+            "周一不开盘追ACN；等待首个正常交易日收盘及公司说明收入确认、投资分担、责任赔偿和非独家客户管线后，再判断这是新利润池还是成本中心。",
+            "分开正常收盘与盘后报价、能力投入与收入、已披露责任与假设。"
+          ],
+          "done": "WATCHING；等待正常交易时段及合同证据。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年9月20日",
+      "description": "八項行動分開訪問、證據、承諾與已驗證成果。",
+      "centralJudgment": "獨立性需要可檢查的權利。今天完成四權評估框架的編輯成果；運營建議與投資觀察仍各自保留證據關口。",
+      "fieldLine": "八個信號。四項權利。真實執行狀態。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型、Agent與OPC自主性",
+          "title": "模型正式發佈後再比較",
+          "why": "這正是OPC架構的優勢——不押注永久贏家，而是讓模型競爭轉化爲更低的人類協調成本。",
+          "steps": [
+            "在新Claude正式開放前不改變RobinOS生產路由；發佈當天只運行同一套Astra對照影子評估，比較無人干預完成率、失敗恢復、指令保持、Robin介入分鐘及每個驗證結果成本，全部記錄後再決定是否升級。",
+            "在另行授權的影子試驗前凍結相同任務、預算和驗收規則。未修改生產路由。"
+          ],
+          "done": "READY；已保存比較規格，新模型可用性與試驗結果UNKNOWN。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "要求機器人運營經濟數據",
+          "why": "Physical AI的核心稀缺性正從機器人本體轉向可合法複用的數據、客戶工作流和持續反饋。",
+          "steps": [
+            "將Spirit AI評爲real deployment / unproven economics；只有披露每臺有效工作小時、人工介入、任務遷移成功率、客戶續約及單位勞動替代成本後，才升級爲可規模化商業部署。",
+            "記錄有效工時、介入、任務遷移、續約及替代人工成本；管理層預測仍是預測。"
+          ],
+          "done": "WATCHING；規模化經濟性尚未建立。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本與Web3健康",
+          "title": "觀察連續三日ETF淨申購",
+          "why": "當前結構不是“crypto risk-on”，而是BTC資金恢復／ETH機構需求仍弱／RWA基礎設施繼續建設。",
+          "steps": [
+            "將資本狀態更新爲BTC周度中性、ETH持續淨流出；在BTC與ETH同時出現連續三個交易日淨申購前，不把週五反彈升級爲行業全面資金迴流。",
+            "檢查兩類資產連續三個交易日的基金終值。不會自動觸發交易。"
+          ],
+          "done": "WATCHING；未升級全面迴流判斷或交易。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣、FinTech與支付軌道",
+          "title": "分清有條件銀行批准",
+          "why": "MerchantOS需要的是能夠承接合規責任、資金狀態和逐筆對賬的可靠底層，而不是“獲得牌照”這一單一標籤。",
+          "steps": [
+            "暫不把Bastion列入MerchantOS生產候選；只有獲得最終批准並披露儲備結構、客戶資金隔離、API/SLA、跨軌道對賬及真實結算量後才重新評估。",
+            "要求最終批准、儲備、分隔、API/SLA、對賬和交易量。未接入供應商或付款。"
+          ],
+          "done": "WATCHING；最終運營證據尚未建立。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "發佈獨立評估框架",
+          "why": "這是Model Olympics從內部選型工具升級爲外部評估資產的窗口，也是Robin將工程證據、治理和資本判斷結合起來的最佳公共命題。",
+          "steps": [
+            "發布評估治理四語文章、四權圖與歸檔LinkedIn稿。完整任務保留於簡報。",
+            "覈驗四語全文、四權圖、五個已查閱來源、研究臺賬與歸檔LinkedIn衍生稿。"
+          ],
+          "done": "文章、圖、臺賬與衍生稿COMPLETE；公開交付由發佈回執確認。",
+          "deepDiveTitle": "發佈獨立評估框架"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基礎設施、職業與資本項目",
+          "title": "記錄保險資金而不假定已投放",
+          "why": "這同時驗證你的資本論題與職業方向：真正稀缺的人才是能把MW、電力合同、租約、SPV、債務期限和最終現金流放進同一承銷框架的人。",
+          "steps": [
+            "把日本生命加入AI Infrastructure Lender Map，但只把披露借款人、MW、期限、抵押品、客戶合同和償債覆蓋率的交易計入已部署資本。",
+            "分開報道中的2萬億日元總配置與數據中心子集。借款人、條款及已籤項目仍UNKNOWN；未申請或融資。"
+          ],
+          "done": "READY；證據地圖任務已記錄，已投放資本UNKNOWN。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期一級市場",
+          "title": "等待Anew驗證及條款",
+          "why": "Anew同時檢驗中國模型能力、Agent閉環和實驗基礎設施能否真正縮短藥物發現週期，而不是隻生成更多候選分子。",
+          "steps": [
+            "WATCH，不追估值——只有至少一個項目取得IND許可或可復現實驗驗證，並披露現金消耗、藥企合作經濟、優先權及可訪問份額後，才升級爲INVESTIGATE。",
+            "要求至少一個IND許可或可復現實驗，並取得現金消耗、合作經濟、優先權和可訪問份額。"
+          ],
+          "done": "WATCHING；驗證與可投資條款尚未建立。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場",
+          "title": "等待ACN收入與責任證據",
+          "why": "這是公開市場首次嘗試給“前沿模型裁判層”定價，但當前反應仍是選擇權，而非經過收入、利潤和責任結構驗證的基本面變化。",
+          "steps": [
+            "週一不開盤追ACN；等待首個正常交易日收盤及公司說明收入確認、投資分擔、責任賠償和非獨家客戶管線後，再判斷這是新利潤池還是成本中心。",
+            "分開正常收盤與盤後報價、能力投入與收入、已披露責任與假設。"
+          ],
+          "done": "WATCHING；等待正常交易時段及合同證據。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年9月20日",
+      "description": "八つの行動でアクセス、証拠、表明、検証済み成果を分ける。",
+      "centralJudgment": "独立性には確認できる権利が必要だ。本日の編集成果は四つの権利の評価枠組み。運用提案と投資の観察項目は、それぞれの証拠条件を維持する。",
+      "fieldLine": "八つのシグナル。四つの権利。正直な実行状態。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "先端モデル、エージェント、OPCの自律性",
+          "title": "公開済みモデルを同条件で比較",
+          "why": "AIを使う一人企業は永続的な勝者を当てる必要がない。モデル競争を人間の調整負担の低下につなげればよい。",
+          "steps": [
+            "新Claudeが実際に公開されるまで本番の振り分けは変えない。公開後、Astraと同一のシャドー評価で無介入完了、失敗回復、指示保持、Robinの介入時間、検証済み成果あたりの費用を比較し、記録してから採用を判断する。",
+            "別途承認するシャドー試験前に課題、予算、受け入れ基準を固定。本番振り分けは変更しない。"
+          ],
+          "done": "READY。比較仕様を保存。新モデル利用可否と試験結果はUNKNOWN。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "ロボットの採算証拠を求める",
+          "why": "希少な資産は、ロボット本体より、再利用可能なデータと顧客からの学習循環になりつつある。",
+          "steps": [
+            "実導入あり、採算未証明と分類する。台あたりの有効稼働時間、人的介入、課題移転、顧客更新、人件費代替コストが開示されるまで、拡張可能な商用導入へ格上げしない。",
+            "有効時間、介入、課題移転、更新、代替労働費を記録。経営側予測は予測のまま扱う。"
+          ],
+          "done": "WATCHING。拡大可能な採算は未確立。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産資金とWeb3",
+          "title": "ETFの3日連続純設定を観察",
+          "why": "現状はBTC資金の回復、ETH機関需要の弱さ、RWA基盤整備の継続という組み合わせだ。",
+          "steps": [
+            "BTC週間中立、ETH純流出と整理する。両資産がともに3営業日連続の純設定となるまで、業界全体への資金回帰とは判定しない。",
+            "両資産の3営業日連続の確定ファンド記録を確認。取引は自動発動しない。"
+          ],
+          "done": "WATCHING。全面資金回帰への格上げや取引なし。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコインと決済",
+          "title": "条件付き銀行承認を区別",
+          "why": "MerchantOSに必要なのは、コンプライアンス責任を担い、資金状態と照合を確実に扱える事業者だ。",
+          "steps": [
+            "最終承認、準備資産、顧客資金分別、APIとSLA、異なる決済基盤間の照合、実決済量が確認されるまで、本番候補には加えない。",
+            "最終承認、準備資産、分別、API/SLA、照合、数量を要求。提供者接続や支払いは行わない。"
+          ],
+          "done": "WATCHING。最終的な運営証拠は未確立。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "独立評価の枠組みを公開",
+          "why": "Model Olympicsを内部のモデル選択から、工学的証拠、ガバナンス、資本判断を組み合わせる外部評価資産へ発展させる機会だ。",
+          "steps": [
+            "評価ガバナンスの四言語記事、四権図、保存用LinkedIn稿を公開。元の課題はブリーフに保持。",
+            "四言語全文、四権図、確認済み5資料、研究台帳、保存用LinkedIn稿を検証。"
+          ],
+          "done": "記事、図、台帳、派生稿はCOMPLETE。公開配信はリリース記録で確認。",
+          "deepDiveTitle": "独立評価の枠組みを公開"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラ、キャリア、資本案件",
+          "title": "保険資金と実行済み融資を分ける",
+          "why": "MW、電力契約、賃貸契約、SPV、債務期間、最終キャッシュフローを同じ審査に結び付ける力が、資本仮説とキャリアの双方で重要になる。",
+          "steps": [
+            "日本生命をAI Infrastructure Lender Mapの対象に加える。実行済み資本に算入するのは、借り手、MW、期間、担保、顧客契約、債務返済余力を開示した取引だけにする。",
+            "報道の2兆円全体とデータセンター分を分ける。借り手、条件、契約済み案件はUNKNOWN。応募や融資は行わない。"
+          ],
+          "done": "READY。証拠地図への課題を保存。実行済み資本はUNKNOWN。"
+        },
+        {
+          "signal": 7,
+          "domain": "未公開市場後期投資",
+          "title": "Anewの検証と条件を待つ",
+          "why": "中国のモデル、エージェント、実験基盤が候補分子を増やすだけでなく、実際の創薬期間を短縮できるかを問う案件だ。",
+          "steps": [
+            "WATCHを維持し評価額を追わない。少なくとも1案件のIND許可または再現可能な実験検証に加え、資金消費、提携採算、優先条件、取得可能な持分が示されてからINVESTIGATEへ進める。",
+            "少なくとも1件のIND許可か再現可能な実験に加え、資金消費、提携採算、優先条件、取得可能な持分を要求。"
+          ],
+          "done": "WATCHING。検証と投資条件は未確立。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開株式",
+          "title": "ACNの収入と責任を確認",
+          "why": "市場は先端モデルの審判層に価格を付け始めたが、現状は検証済みの利益より将来の選択肢を評価している。",
+          "steps": [
+            "月曜寄り付きでACNを追わない。最初の通常取引終値と、売上認識、費用分担、補償、非独占の顧客候補に関する説明を待ち、利益源か費用中心かを判断する。",
+            "通常終値と時間外価格、能力整備支出と売上、開示済み責任と仮定を分ける。"
+          ],
+          "done": "WATCHING。通常取引と契約の証拠待ち。"
+        }
+      ]
+    }
+  }
+}
