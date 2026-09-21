@@ -1,5 +1,5 @@
 ---
-archiveStatus: "PIPELINE"
+archiveStatus: "PRESENT"
 title: "Quant Labシリーズ * フラッシュクラッシュ・ラボ 6"
 date: 2026-09-21
 updated: 2026-08-26

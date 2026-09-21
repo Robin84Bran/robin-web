@@ -1,0 +1,535 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-21",
+  "updated": "2026-09-21",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20260921/hero.webp",
+  "actionHero": "/action-item/20260921/hero.webp",
+  "ogImage": "/daily-briefing/20260921/og.webp",
+  "briefingPath": "/ouroboros/202609/20260921/",
+  "actionItemPath": "/ouroboros/202609/20260921/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "Official announcement",
+          "url": "https://x.ai/news/grok-build-memory"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Agility announcement",
+          "url": "https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "BTC data",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "ETH data",
+          "url": "https://farside.co.uk/eth/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Bastion announcement",
+          "url": "https://bastion.com/article/bastion-receives-conditional-occ-approval"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "sources": [
+        {
+          "label": "iamrobin.ai",
+          "url": "https://iamrobin.ai"
+        },
+        {
+          "label": "Anthropic announcement",
+          "url": "https://www.anthropic.com/news/accenture-embedded-evaluation"
+        },
+        {
+          "label": "original MT-Bench paper, June 9, 2023",
+          "url": "https://arxiv.org/abs/2306.05685"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "Original FT report",
+          "url": "https://www.ft.com/content/bd441859-6c94-4874-894f-9362c1703127"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/finance/oracles-18-billion-data-center-debt-under-pressure-ft-reports-2026-09-18/"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Original announcement",
+          "url": "https://www.missionbio.com/press/triomics-announcement"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "Sector reporting",
+          "url": "https://www.investors.com/news/technology/chip-stocks-hit-ceiling-macom-technology-solutions-mtsi/"
+        },
+        {
+          "label": "AMD",
+          "url": "https://stockanalysis.com/stocks/amd/history/"
+        },
+        {
+          "label": "NVDA",
+          "url": "https://stockanalysis.com/stocks/nvda/history/"
+        },
+        {
+          "label": "GOOGL",
+          "url": "https://stockanalysis.com/stocks/googl/history/"
+        },
+        {
+          "label": "QQQ",
+          "url": "https://stockanalysis.com/etf/qqq/history/"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, September 21, 2026",
+      "description": "Eight ordered actions test whether capabilities become verifiable outcomes.",
+      "centralJudgment": "Evidence must survive a change of judge. Today’s completed editorial package proposes an open Model Olympics; experiments, counterparty checks and investment judgments retain their own evidence boundaries.",
+      "fieldLine": "Eight signals. Replaceable judges. Inspectable outcomes.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and OPC Autonomy",
+          "title": "Design the memory comparison",
+          "why": "RobinOS should accumulate verified, reversible operating lessons—not merely longer conversation histories. The practical measure is how often you must correct the same mistake.",
+          "steps": [
+            "Run one memory-on/off experiment in an isolated repository: teach a nonstandard test command, restart the session, assign related work, then change the rule. Compare repeated mistakes, stale-memory overrides, Robin-intervention minutes and cost per verified result.",
+            "Freeze the task, budget and acceptance rules before a separately authorized isolated trial. Record new-rule overrides and intervention minutes."
+          ],
+          "done": "READY; trial specification preserved, results UNKNOWN."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "Compare complete robot task costs",
+          "why": "Following your interest in Spirit AI, CATL and [JD.com](http://jd.com/), the useful comparison is who integrates robots into profitable workflows—not who produces the most humanlike demonstration.",
+          "steps": [
+            "Apply one common acceptance measure to Digit and Chinese industrial candidates: fully loaded cost per successful handling task, including integration, safety modifications, remote intervention and downtime. Do not upgrade commercial confidence on order value alone.",
+            "Require comparable handling tasks and every integration, intervention and downtime cost; orders remain conditional commitments."
+          ],
+          "done": "WATCHING; comparable fully loaded economics required."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital and Web3 Health",
+          "title": "Watch both five-day ETF flows",
+          "why": "Allocation should distinguish a trading rebound from sustained new capital. Durable growth still needs actual settlement, collateral and asset usage.",
+          "steps": [
+            "Tie the next “broad inflow” designation to one signal: both BTC and ETH rolling five-day ETF flows turning positive, rather than a single large day.",
+            "Use final daily rows for each asset; a positive combined total cannot replace two separately positive rolling sums."
+          ],
+          "done": "WATCHING; two positive rolling five-day totals required; no trade."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins and Payment Rails",
+          "title": "Map stablecoin responsibilities",
+          "why": "Your payments experience is valuable for separating the technology provider, legal issuer, reserve custodian and party responsible for redemption.",
+          "steps": [
+            "Keep Bastion in the verification queue, using one legal-entity/licensing/reserve-control/redemption-responsibility map as the admission requirement. Do not value or select it as fully approved before final approval and accountability are clear.",
+            "Require final licensing evidence and named reserve and redemption obligations before selection. No payment integration."
+          ],
+          "done": "WATCHING; final authorization and responsibility chain unverified."
+        },
+        {
+          "signal": 5,
+          "domain": "[iamrobin.ai](https://iamrobin.ai)",
+          "title": "Publish the open-arena design",
+          "why": "It turns personal model preferences into a public research asset, centered on your distinctive questions about competition, cooperation, limited information and incentives.",
+          "steps": [
+            "Publish one four-language design essay on reproducible, contestable and replaceable evaluation, with Dark Forest information boundaries and an archived LinkedIn derivative. Full source assignment remains in the Briefing.",
+            "Verify the four-language essay, five-source record, original diagram, research ledger and archived LinkedIn derivative. Proposed trials remain unperformed."
+          ],
+          "done": "COMPLETE for the editorial package; public delivery is confirmed separately by the release receipt.",
+          "deepDiveTitle": "Publish the open-arena design"
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure and Capital",
+          "title": "Specify the delivery-delay stress test",
+          "why": "Token Factory underwriting must connect power delivery, rent commencement and debt service. That also differentiates you for infrastructure investing, capital-project strategy and financing-coordination roles.",
+          "steps": [
+            "Produce one delayed-delivery stress test linking commissioning delays, deferred rent, additional interest, depleted reserves and responsibility for fresh equity. Clearly label assumptions and mark unavailable loan or lease provisions unknown.",
+            "Keep power, rent, interest, reserves and fresh-equity responsibility connected. Missing executed loan and lease terms remain UNKNOWN."
+          ],
+          "done": "READY; stress-test assignment preserved, actual contract terms UNKNOWN."
+        },
+        {
+          "signal": 7,
+          "domain": "Private Platforms × 🧬 Cancer Research",
+          "title": "Check the ASHG research evidence",
+          "why": "Cancer resistance, clonal evolution and cell-therapy quality control deserve investigation through measurement quality, mechanism and clinical validation—not predictions alone.",
+          "steps": [
+            "Use the October 20–24 ASHG presentation as one evidence checkpoint: verify patient numbers, cross-laboratory reproducibility and incremental information versus existing methods before escalating diligence.",
+            "At October 20–24, check patient count, independent repeatability and incremental information. Research-use-only is not clinical benefit."
+          ],
+          "done": "WATCHING; scheduled evidence checkpoint, no investment action."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities",
+          "title": "Explain AMD price outperformance",
+          "why": "Strength in one industry layer should not become a blanket conclusion that every upstream and downstream asset is attractive.",
+          "steps": [
+            "Perform one price-versus-fundamentals check on AMD’s outperformance: look for corresponding changes in customer commitments, revenue expectations and margins. Without supporting evidence, classify the unexplained advance as valuation/sentiment rather than increasing long-term cash-flow assumptions.",
+            "Compare customer commitments, revenue expectations and margins with the price move; retain an unexplained component when evidence is absent."
+          ],
+          "done": "READY; attribution assignment preserved, no cash-flow forecast upgrade."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年9月21日",
+      "description": "八项有序行动检验能力能否成为可验证成果。",
+      "centralJudgment": "证据应经得起更换裁判。今天完成开放Model Olympics的编辑方案；实验、交易对手核查与投资判断各自保留证据边界。",
+      "fieldLine": "八个信号。可替换裁判。可检查成果。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与OPC自主性",
+          "title": "设计记忆对照实验",
+          "why": "RobinOS真正应该积累的是经过验证、可以撤销的操作经验，而不只是更长的聊天记录。这直接影响你每周需要重复纠正Agent多少次。",
+          "steps": [
+            "在隔离测试仓库完成一次“记忆开／关”对照实验：让Agent学会一个非默认测试命令，重开会话后处理同类任务，再更改规则；比较重复犯错、旧记忆覆盖新指令、Robin介入分钟和验证结果成本。",
+            "在另行授权的隔离试验前冻结任务、预算和验收规则，记录新规则被覆盖及人工介入分钟。"
+          ],
+          "done": "READY；已保存试验规格，结果UNKNOWN。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "比较机器人完整任务成本",
+          "why": "延续你对Spirit AI、CATL和[京东](http://jd.com/)场景的兴趣，真正值得比较的是“谁把机器人嵌入了可盈利工作流”，不是谁的演示更像人。",
+          "steps": [
+            "为Digit与中国工业部署候选建立一个统一验收门槛：只接受包含机器人、集成、安全改造、远程介入和停机的每个合格搬运任务总成本，不凭订单金额升级商业评级。",
+            "要求同类搬运任务及完整集成、介入、停机成本；订单仍是附条件承诺。"
+          ],
+          "done": "WATCHING；等待可比的全成本经济证据。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本与Web3健康",
+          "title": "观察两类ETF五日净流量",
+          "why": "资本配置应区分交易性反弹与持续新增资金；下一层耐久增长仍需由真实结算、抵押和资产使用来证明。",
+          "steps": [
+            "把下一次“广泛回流”判断绑定到一个信号：BTC与ETH各自的滚动五日ETF净流量同时转正，而非只看某一天的大额流入。",
+            "使用两类资产各自的日终值；合计转正不能替代两个五日滚动和分别转正。"
+          ],
+          "done": "WATCHING；要求两类五日滚动和均转正，未交易。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币与支付轨道",
+          "title": "梳理稳定币责任链",
+          "why": "你的支付经验可以用于识别责任分配：技术提供商、法律发行人、储备托管人和赎回义务人，未必是同一个实体。",
+          "steps": [
+            "将Bastion保留为待核实候选，以一张“法律实体—许可状态—储备控制—赎回责任”表作为准入证据；在最终批准和责任链清楚前，不按已全面获批供应商估值或选型。",
+            "选型前要求最终许可及具名储备、赎回责任证据；未接入支付。"
+          ],
+          "done": "WATCHING；最终授权及责任链待核实。"
+        },
+        {
+          "signal": 5,
+          "domain": "[iamrobin.ai](https://iamrobin.ai)",
+          "title": "发布开放竞技场设计",
+          "why": "这能把个人模型偏好变成公共研究资产，同时保留你的独特问题：Agent如何在竞争、合作、有限信息和不同激励下行动。",
+          "steps": [
+            "发布一篇关于可复现、可争议、可替换评估的四语设计文章，说明Dark Forest信息边界并归档LinkedIn稿。完整来源任务保留于简报。",
+            "核验四语文章、五个来源、原创图、研究台账及归档LinkedIn稿。提议实验尚未执行。"
+          ],
+          "done": "编辑包COMPLETE；公开交付另由发布回执确认。",
+          "deepDiveTitle": "发布开放竞技场设计"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基础设施与资本",
+          "title": "定义延迟交付压力测试",
+          "why": "Token Factory承销必须把电力交付、租金起算与债务偿付联起来；这也是你进入基础设施投资、资本项目战略和融资协调岗位的差异化能力。",
+          "steps": [
+            "做一页“延迟交付压力测试”：用明确标注的假设串起投运推迟、租金延后、利息增加、准备金耗尽和追加资本责任；原始贷款与租约未取得的条款一律标为未知。",
+            "串起电力、租金、利息、准备金和追加权益责任；缺少的已签贷款与租约条款保留UNKNOWN。"
+          ],
+          "done": "READY；已保存压力测试任务，实际合同条款UNKNOWN。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私营平台 × 🧬癌症研究",
+          "title": "核查ASHG研究证据",
+          "why": "癌症耐药、克隆演化与细胞治疗质量控制，都值得沿着“测量质量→机制理解→临床验证”研究，而不只追逐模型预测。",
+          "steps": [
+            "将10月20—24日ASHG展示设为一个证据检查点：核对患者数、跨实验室重复性和相对现有方法的增量信息，再决定是否升级为深入研究。",
+            "10月20—24日核对患者数、独立重复性和增量信息；研究专用不等于临床获益。"
+          ],
+          "done": "WATCHING；已设证据检查点，无投资操作。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场",
+          "title": "解释AMD超额涨幅",
+          "why": "你需要避免把一个产业层的强势，外推成上下游所有资产都便宜。",
+          "steps": [
+            "对AMD本周超额收益做一次“价格—基本面”核对：只检查新增客户承诺、收入预期和毛利证据是否同步改善；若没有对应证据，把这部分上涨留在估值与情绪解释栏，不据此上调长期现金流。",
+            "将客户承诺、收入预期和毛利与涨幅对应；证据不足的部分保留为未解释。"
+          ],
+          "done": "READY；已保存归因任务，未上调现金流预测。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年9月21日",
+      "description": "八項有序行動檢驗能力能否成為可驗證成果。",
+      "centralJudgment": "證據應經得起更換裁判。今天完成開放Model Olympics的編輯方案；實驗、交易對手核查與投資判斷各自保留證據邊界。",
+      "fieldLine": "八個信號。可替換裁判。可檢查成果。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與OPC自主性",
+          "title": "設計記憶對照實驗",
+          "why": "RobinOS真正應該積累的是經過驗證、可以撤銷的操作經驗，而不只是更長的聊天記錄。這直接影響你每週需要重複糾正Agent多少次。",
+          "steps": [
+            "在隔離測試倉庫完成一次“記憶開／關”對照實驗：讓Agent學會一個非默認測試命令，重開會話後處理同類任務，再更改規則；比較重複犯錯、舊記憶覆蓋新指令、Robin介入分鐘和驗證結果成本。",
+            "在另行授權的隔離試驗前凍結任務、預算和驗收規則，記錄新規則被覆蓋及人工介入分鐘。"
+          ],
+          "done": "READY；已保存試驗規格，結果UNKNOWN。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "比較機器人完整任務成本",
+          "why": "延續你對Spirit AI、CATL和[京東](http://jd.com/)場景的興趣，真正值得比較的是“誰把機器人嵌入了可盈利工作流”，不是誰的演示更像人。",
+          "steps": [
+            "為Digit與中國工業部署候選建立一個統一驗收門檻：只接受包含機器人、集成、安全改造、遠程介入和停機的每個合格搬運任務總成本，不憑訂單金額升級商業評級。",
+            "要求同類搬運任務及完整集成、介入、停機成本；訂單仍是附條件承諾。"
+          ],
+          "done": "WATCHING；等待可比的全成本經濟證據。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本與Web3健康",
+          "title": "觀察兩類ETF五日淨流量",
+          "why": "資本配置應區分交易性反彈與持續新增資金；下一層耐久增長仍需由真實結算、抵押和資產使用來證明。",
+          "steps": [
+            "把下一次“廣泛迴流”判斷綁定到一個信號：BTC與ETH各自的滾動五日ETF淨流量同時轉正，而非只看某一天的大額流入。",
+            "使用兩類資產各自的日終值；合計轉正不能替代兩個五日滾動和分別轉正。"
+          ],
+          "done": "WATCHING；要求兩類五日滾動和均轉正，未交易。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣與支付軌道",
+          "title": "梳理穩定幣責任鏈",
+          "why": "你的支付經驗可以用於識別責任分配：技術提供商、法律發行人、儲備託管人和贖回義務人，未必是同一個實體。",
+          "steps": [
+            "將Bastion保留為待核實候選，以一張“法律實體—許可狀態—儲備控制—贖回責任”表作為準入證據；在最終批准和責任鏈清楚前，不按已全面獲批供應商估值或選型。",
+            "選型前要求最終許可及具名儲備、贖回責任證據；未接入支付。"
+          ],
+          "done": "WATCHING；最終授權及責任鏈待核實。"
+        },
+        {
+          "signal": 5,
+          "domain": "[iamrobin.ai](https://iamrobin.ai)",
+          "title": "發佈開放競技場設計",
+          "why": "這能把個人模型偏好變成公共研究資產，同時保留你的獨特問題：Agent如何在競爭、合作、有限信息和不同激勵下行動。",
+          "steps": [
+            "發布一篇關於可複現、可爭議、可替換評估的四語設計文章，說明Dark Forest資訊邊界並歸檔LinkedIn稿。完整來源任務保留於簡報。",
+            "核驗四語文章、五個來源、原創圖、研究臺賬及歸檔LinkedIn稿。提議實驗尚未執行。"
+          ],
+          "done": "編輯包COMPLETE；公開交付另由發佈回執確認。",
+          "deepDiveTitle": "發佈開放競技場設計"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基礎設施與資本",
+          "title": "定義延遲交付壓力測試",
+          "why": "Token Factory承銷必須把電力交付、租金起算與債務償付聯起來；這也是你進入基礎設施投資、資本項目戰略和融資協調崗位的差異化能力。",
+          "steps": [
+            "做一頁“延遲交付壓力測試”：用明確標註的假設串起投運推遲、租金延後、利息增加、準備金耗盡和追加資本責任；原始貸款與租約未取得的條款一律標為未知。",
+            "串起電力、租金、利息、準備金和追加權益責任；缺少的已籤貸款與租約條款保留UNKNOWN。"
+          ],
+          "done": "READY；已保存壓力測試任務，實際合同條款UNKNOWN。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私營平臺 × 🧬癌症研究",
+          "title": "核查ASHG研究證據",
+          "why": "癌症耐藥、克隆演化與細胞治療質量控制，都值得沿着“測量質量→機制理解→臨牀驗證”研究，而不只追逐模型預測。",
+          "steps": [
+            "將10月20—24日ASHG展示設為一個證據檢查點：核對患者數、跨實驗室重複性和相對現有方法的增量信息，再決定是否升級為深入研究。",
+            "10月20—24日核對患者數、獨立重複性和增量信息；研究專用不等於臨牀獲益。"
+          ],
+          "done": "WATCHING；已設證據檢查點，無投資操作。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場",
+          "title": "解釋AMD超額漲幅",
+          "why": "你需要避免把一個產業層的強勢，外推成上下游所有資產都便宜。",
+          "steps": [
+            "對AMD本週超額收益做一次“價格—基本面”核對：只檢查新增客戶承諾、收入預期和毛利證據是否同步改善；若沒有對應證據，把這部分上漲留在估值與情緒解釋欄，不據此上調長期現金流。",
+            "將客戶承諾、收入預期和毛利與漲幅對應；證據不足的部分保留為未解釋。"
+          ],
+          "done": "READY；已保存歸因任務，未上調現金流預測。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年9月21日",
+      "description": "八つの行動で能力が検証可能な成果になるかを確かめる。",
+      "centralJudgment": "証拠は審判の変更にも耐える必要がある。本日の編集成果は開かれたModel Olympicsの設計。実験、相手先確認、投資判断にはそれぞれの証拠条件を保つ。",
+      "fieldLine": "八つのシグナル。交換できる審判。点検できる成果。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "最先端モデルとOPCの自律性",
+          "title": "記憶の比較実験を設計",
+          "why": "RobinOSが蓄積すべきなのは、検証でき、取り消せる運用上の学びだ。同じ誤りを何度修正する必要があるかが実用的な指標になる。",
+          "steps": [
+            "隔離したリポジトリで記憶の有無を比較する。非標準のテストコマンドを覚えさせ、セッションを再開して類似課題を与えた後、ルールを変更する。反復ミス、古い記憶による新指示の上書き、Robinの介入時間、検証済み成果当たり費用を比較する。",
+            "別途承認する隔離試験前に課題、予算、基準を固定。新指示の上書きと介入時間を記録する。"
+          ],
+          "done": "READY。試験仕様を保存、結果はUNKNOWN。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "ロボットの総作業費用を比較",
+          "why": "Spirit AI、CATL、京東への関心を踏まえると、見るべき点は利益の出る作業工程への組み込みだ。人間らしいデモの競争だけでは判断できない。",
+          "steps": [
+            "Digitと中国の産業導入候補に共通する基準として、成功した搬送作業1件当たりの総費用を要求する。統合、安全改造、遠隔介入、停止時間を含め、受注額だけで事業への確信を引き上げない。",
+            "同種の搬送と統合、介入、停止の全費用を要求。受注は条件付き確約のまま扱う。"
+          ],
+          "done": "WATCHING。同条件の総費用証拠が必要。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資本とWeb3の健全性",
+          "title": "両ETFの5日純流量を観察",
+          "why": "一時的な反発と持続的な新規資金を分ける。耐久性のある成長には実際の決済、担保、資産利用が必要だ。",
+          "steps": [
+            "次に「幅広い資金回帰」と判断する条件を、BTCとETHそれぞれの直近5営業日ETF純流量が同時にプラスになることに置く。単日の大口流入だけでは判断しない。",
+            "両資産の確定日次値を使う。合計のプラスではなく、各5日合計が別々にプラスであることを求める。"
+          ],
+          "done": "WATCHING。両5日合計のプラスが条件。取引なし。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコインと決済基盤",
+          "title": "ステーブルコインの責任を整理",
+          "why": "技術提供者、法的発行者、準備資産の保管者、償還義務者を分けて見る場面で、決済分野の経験が役立つ。",
+          "steps": [
+            "Bastionを確認待ち候補に置く。法人、免許状態、準備資産の管理、償還責任を一枚の表で確認し、最終承認と責任関係が明確になるまで全面承認済みの提供者として評価・選定しない。",
+            "選定前に最終許可と準備資産・償還の責任者を確認。決済接続は行わない。"
+          ],
+          "done": "WATCHING。最終許可と責任関係は未確認。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "公開競技場の設計を出版",
+          "why": "競争、協力、不完全情報、異なる誘因のもとでエージェントがどう動くかという独自の問いを、個人的なモデルの好みから公共の研究資産へ変えられる。",
+          "steps": [
+            "再現、異議申立て、審判交換を可能にする四言語設計論を公開。Dark Forestの情報境界を説明し、LinkedIn稿を保存。元の課題はブリーフに保持。",
+            "四言語記事、5資料、独自図、研究台帳、保存用LinkedIn稿を確認。提案実験は未実施。"
+          ],
+          "done": "編集パッケージはCOMPLETE。公開配信は別途リリース記録で確認。",
+          "deepDiveTitle": "公開競技場の設計を出版"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラと資本",
+          "title": "稼働遅延ストレステストを定義",
+          "why": "Token Factoryの審査は電力供給、賃料発生、元利払いを結び付ける必要がある。インフラ投資、資本案件戦略、資金調達調整の職務にも通じる強みだ。",
+          "steps": [
+            "稼働遅延、賃料後ずれ、利息増加、準備金枯渇、追加出資責任をつなぐ一枚の遅延ストレステストを作る。仮定を明記し、未入手の融資・賃貸条項は不明とする。",
+            "電力、賃料、利息、準備金、追加出資責任を結ぶ。未入手の契約条項はUNKNOWN。"
+          ],
+          "done": "READY。課題を保存。実際の契約条件はUNKNOWN。"
+        },
+        {
+          "signal": 7,
+          "domain": "非上場プラットフォームとがん研究",
+          "title": "ASHGの研究証拠を確認",
+          "why": "がんの治療抵抗性、クローン進化、細胞治療の品質管理を、測定の質、機序理解、臨床検証という順序で研究したい。",
+          "steps": [
+            "10月20〜24日のASHG発表を確認点とし、患者数、施設間再現性、従来法に対する追加情報を確かめてから調査を深める。",
+            "10月20〜24日に患者数、独立再現性、追加情報を確認。研究専用を臨床便益と混同しない。"
+          ],
+          "done": "WATCHING。確認時点を設定。投資実行なし。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場",
+          "title": "AMDの超過上昇を説明",
+          "why": "産業の一層が強いからといって、上流・下流の全資産が魅力的とは限らない。",
+          "steps": [
+            "AMDの超過上昇について、顧客の新規確約、売上予想、粗利の改善が対応しているか確認する。裏付けがなければ説明できない上昇分を評価倍率・心理の欄に残し、長期キャッシュフロー予想を引き上げない。",
+            "顧客確約、売上予想、粗利を株価変動と照合。根拠がない部分は未説明として残す。"
+          ],
+          "done": "READY。要因分析の課題を保存。キャッシュフロー予想の引き上げなし。"
+        }
+      ]
+    }
+  }
+}
