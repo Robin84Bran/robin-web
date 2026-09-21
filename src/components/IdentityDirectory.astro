@@ -200,6 +200,15 @@ const meaningSchemas = isMeaningDirectory
                     <h3 id={`binary-lane-${lane.key.toLowerCase()}`}>{lane.name}</h3>
                     <em>{lane.cadence}</em>
                   </header>
+                  {lane.key === 'JOY' && (
+                    <nav class="ouroboros-shelf__list binary-experiment" aria-label="Joy ongoing experiments">
+                      <a href="/binary/joy/hkipoblindbox/">
+                        <span>Ongoing experiment</span>
+                        <strong>The HK IPO Blind Box</strong>
+                        <span aria-hidden="true">→</span>
+                      </a>
+                    </nav>
+                  )}
                   {present.length ? (
                     <nav class="ouroboros-shelf__list binary-present" aria-label={`${lane.name} present articles`}>
                       {present.map((article) => {

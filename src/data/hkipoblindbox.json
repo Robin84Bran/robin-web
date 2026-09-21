@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-21T14:52:59.793483+00:00",
+  "money_mode": "SIMULATED",
+  "forecasts": [
+    {
+      "case_id": "HKEX-20260929-03228",
+      "stock_code": "03228",
+      "issuer_name": "Shenzhen Kinwong Electronic Co., Ltd.",
+      "listing_date": "2026-09-29",
+      "mode": "FORWARD",
+      "frozen_at": "2026-09-21T14:27:07.671730+00:00",
+      "model_version": "six_lens_prior_v0.1",
+      "commitment": "10cb9c21206818bd88557d28218577b7e6664a45030b874b0f15c2f72dd6ee79",
+      "probabilities": [
+        0.226128430883289,
+        0.34123635239891126,
+        0.26272375425462097,
+        0.1699114624631788
+      ],
+      "target_return": 0.1,
+      "score": null
+    },
+    {
+      "case_id": "HKEX-20260929-09607",
+      "stock_code": "09607",
+      "issuer_name": "Red Avenue New Materials Group Co., Ltd.",
+      "listing_date": "2026-09-29",
+      "mode": "FORWARD",
+      "frozen_at": "2026-09-21T14:27:08.174420+00:00",
+      "model_version": "six_lens_prior_v0.1",
+      "commitment": "8bf127275d7bb4cdf5b53c0f799aa54325a5dbb9e014bb4e27185d6f25443887",
+      "probabilities": [
+        0.2108179947013926,
+        0.33444331840434677,
+        0.2706956634917297,
+        0.184043023402531
+      ],
+      "target_return": 0.1,
+      "score": null
+    },
+    {
+      "case_id": "HKEX-20260929-06731",
+      "stock_code": "06731",
+      "issuer_name": "Direct Drive Tech Limited",
+      "listing_date": "2026-09-29",
+      "mode": "FORWARD",
+      "frozen_at": "2026-09-21T14:27:08.468863+00:00",
+      "model_version": "six_lens_prior_v0.1",
+      "commitment": "14525fa43d8956ac94bf743f0173f6bd3c6e5a756dbfccf6c828ba5ea18f918b",
+      "probabilities": [
+        0.2664546825551511,
+        0.35484334807943957,
+        0.24109816698679418,
+        0.13760380237861514
+      ],
+      "target_return": 0.1,
+      "score": null
+    },
+    {
+      "case_id": "HKEX-20260929-03757",
+      "stock_code": "03757",
+      "issuer_name": "RoboTechnik Intelligent Technology Co., Ltd.",
+      "listing_date": "2026-09-29",
+      "mode": "FORWARD",
+      "frozen_at": "2026-09-21T14:27:08.835053+00:00",
+      "model_version": "six_lens_prior_v0.1",
+      "commitment": "cf50fabce8f277fd1b0da5e76c5df66760a0cd39e988c24a7dd2a2d8066e5ec2",
+      "probabilities": [
+        0.29182850870518134,
+        0.36055285702548573,
+        0.2272762711021555,
+        0.1203423631671774
+      ],
+      "target_return": 0.1,
+      "score": null
+    }
+  ],
+  "historical": {
+    "window": [
+      "2024-09-21",
+      "2026-09-20"
+    ],
+    "eligible": 247,
+    "scored": 244,
+    "missing": 3,
+    "mode": "RECONSTRUCTION",
+    "assessment": {
+      "n": 77,
+      "accuracy": 0.5714285714285714,
+      "wilson95": [
+        0.46010331091803647,
+        0.6759652478437891
+      ],
+      "brier": 0.6152598277984674
+    },
+    "selection": "Base rate retained under the predeclared validation gate",
+    "data_note": "Vendor highs restored for reported splits, supplemented by exchange-derived daily quotations. Missing cases remain explicit. Newly recovered labels score existing frozen forecasts; no retroactive retraining."
+  },
+  "editorial": {
+    "title": "The HK IPO Blind Box",
+    "subtitle": "I researched the company. The allocation algorithm researched my patience.",
+    "money_mode": "SIMULATION ONLY",
+    "forecast_status": "Initial forward probabilities are uncalibrated priors. No matured forward win rate yet."
+  }
+}
