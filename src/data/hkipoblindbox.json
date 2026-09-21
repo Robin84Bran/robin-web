@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-21T14:52:59.793483+00:00",
+  "generated_at": "2026-09-21T15:05:08.913050+00:00",
   "money_mode": "SIMULATED",
   "forecasts": [
     {
@@ -82,20 +82,20 @@
       "2026-09-20"
     ],
     "eligible": 247,
-    "scored": 244,
-    "missing": 3,
+    "scored": 247,
+    "missing": 0,
     "mode": "RECONSTRUCTION",
     "assessment": {
-      "n": 77,
-      "accuracy": 0.5714285714285714,
+      "n": 79,
+      "accuracy": 0.5569620253164557,
       "wilson95": [
-        0.46010331091803647,
-        0.6759652478437891
+        0.4473171607311567,
+        0.661323908490104
       ],
-      "brier": 0.6152598277984674
+      "brier": 0.6212075344010897
     },
     "selection": "Base rate retained under the predeclared validation gate",
-    "data_note": "Vendor highs restored for reported splits, supplemented by exchange-derived daily quotations. Missing cases remain explicit. Newly recovered labels score existing frozen forecasts; no retroactive retraining."
+    "data_note": "238 vendor series, six exchange-derived additions, and three independently corroborated public high observations. Source limitations remain in the private audit. Recovered labels score existing frozen forecasts; no retroactive retraining or model reselection."
   },
   "editorial": {
     "title": "The HK IPO Blind Box",
