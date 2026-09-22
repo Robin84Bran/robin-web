@@ -1,0 +1,551 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-22",
+  "updated": "2026-09-22",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20260922/hero.webp",
+  "actionHero": "/action-item/20260922/hero.webp",
+  "ogImage": "/daily-briefing/20260922/og.webp",
+  "briefingPath": "/ouroboros/202609/20260922/",
+  "actionItemPath": "/ouroboros/202609/20260922/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "AP",
+          "url": "https://apnews.com/article/aefb021bede3b02c83890f65cd540fd0"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "Reuters on Spirit AI",
+          "url": "https://www.reuters.com/world/asia-pacific/founder-chinese-startup-spirit-ai-says-robot-brains-set-2027-breakthrough-2026-09-18/"
+        },
+        {
+          "label": "Reuters on the global sales denominator",
+          "url": "https://www.reuters.com/technology/humanoid-robot-sales-tally-hit-7000-globally-last-year-2026-09-21/"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "WSJ",
+          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-09-21-2026/card/bitcoin-climbs-above-85-000-after-etf-inflows-strategy-purchases-qgos9wls2EyYjd7Wbcs4"
+        },
+        {
+          "label": "Barron’s",
+          "url": "https://www.barrons.com/articles/bitcoin-prices-coinbase-strategy-robinhood-stocks-81bef9f7"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "RWA.xyz",
+          "url": "https://app.rwa.xyz/stocks"
+        },
+        {
+          "label": "September 19 ChainCatcher case study",
+          "url": "https://www.chaincatcher.com/article/2290897"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "sources": [
+        {
+          "label": "HELM",
+          "url": "https://crfm.stanford.edu/helm/"
+        },
+        {
+          "label": "lm-eval",
+          "url": "https://github.com/EleutherAI/lm-evaluation-harness"
+        },
+        {
+          "label": "Inspect",
+          "url": "https://inspect.aisi.org.uk/"
+        },
+        {
+          "label": "METR",
+          "url": "https://metr.org/about"
+        },
+        {
+          "label": "FrontierMath",
+          "url": "https://epoch.ai/frontiermath/open-problems"
+        },
+        {
+          "label": "SWE-bench Verified",
+          "url": "https://openai.com/index/introducing-swe-bench-verified/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/legal/litigation/southern-co-unit-signs-deal-with-google-add-nuclear-capacity-2026-09-21/"
+        },
+        {
+          "label": "Southern Nuclear",
+          "url": "https://www.southernnuclear.com/our-plants/plant-vogtle.html"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Anew Labs",
+          "url": "https://anewbt.com/"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/legal/transactional/bytedance-completes-290-million-fundraising-ai-drug-unit-after-its-spin-off-2026-09-16/"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/amd-becomes-latest-chipmaker-reach-1-trillion-valuation-ai-demand-2026-09-21/"
+        },
+        {
+          "label": "AMD adjusted close",
+          "url": "https://stockanalysis.com/stocks/amd/history/"
+        },
+        {
+          "label": "QQQ adjusted close",
+          "url": "https://stockanalysis.com/etf/qqq/history/"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, September 22, 2026",
+      "description": "Eight source-ordered actions connect data, evaluation, deployment and capital evidence.",
+      "centralJudgment": "A complete loop needs evidence at every handoff. Today’s completed editorial package maps open evaluation and proposes a bounded Dark Forest experiment; project work and financial choices retain their own authority and evidence requirements.",
+      "fieldLine": "Eight signals. Explicit conditions. One evaluation constitution.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models, Agents and OPC Autonomy",
+          "title": "Specify the HK language pack",
+          "why": "Hong Kong payments, Cantonese–English switching and cross-border merchant operations form a defensible local intelligence asset.",
+          "steps": [
+            "Build a 20-task HK OPC Language Pack and test all eight model families under identical authority, recording completion, clarification, cultural errors, cost and Robin-intervention minutes; open-source schemas and scoring, not private merchant data.",
+            "Freeze 20 tasks, eight model families, equal permissions and scoring; publish no private merchant data. Actual model testing remains a separate project action."
+          ],
+          "done": "READY; 20-task specification preserved, test outcomes UNKNOWN."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "Build the Spirit AI comparison",
+          "why": "CATL and JD matter only if their deployments continually generate diverse tasks, failures and recovery data.",
+          "steps": [
+            "Build the Spirit AI peers matrix around independent paying customers, production robot count, task success/intervention, useful-data cost and unit economics after data-labor costs; retain credible learning deployment / unproven scale.",
+            "Record the five requested denominators with source dates and independent customer evidence. Missing production or intervention data remains UNKNOWN."
+          ],
+          "done": "READY; comparison assignment preserved, scale unproven."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows",
+          "title": "Watch the breadth of Bitcoin inflows",
+          "why": "Capital is following attention again, but attention currently concentrates on the crypto asset most easily purchased through conventional accounts.",
+          "steps": [
+            "Classify the regime as BTC-led re-entry; upgrade to industry-wide inflow only if at least two of five-day ETF inflows, stablecoin net issuance and non-BTC breadth expand together.",
+            "Collect five-day ETF, stablecoin issuance and non-BTC breadth evidence; upgrade only when at least two improve together. No trade is executed."
+          ],
+          "done": "WATCHING; joint expansion threshold preserved, no regime upgrade claimed."
+        },
+        {
+          "signal": 4,
+          "domain": "Financial Innovation and RWA",
+          "title": "Trace tokenized-asset transmission",
+          "why": "Official products reveal what is permitted; communities, pool depth, fees and holder behavior reveal what people have begun to play.",
+          "steps": [
+            "Create a Meme → Tokenized Asset Transmission Watch, beginning with [Long.xyz](http://long.xyz/) $AI/$NVDA and tracking contracts, real depth, top-ten concentration, net flows, fee recipients, bots/incentives and the precise conversion into the stock representation.",
+            "Record contracts, actual pool depth, concentration, net flows, fee recipients and conversion rights. Read-only research does not authorize a transaction."
+          ],
+          "done": "READY; watch specification preserved, contract verification pending."
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "Publish the evaluation constitution",
+          "why": "Robin can define an evaluation constitution that laboratories, researchers and OPCs can reproduce and challenge—not merely publish another ranking.",
+          "steps": [
+            "Publish the open AI evaluation map and a Model Olympics/Dark Forest design proposal. Preserve the full structured assignment in the Daily Briefing.",
+            "Check the four-language article, nine primary references, original four-layer diagram, research entry and archived LinkedIn derivative. Experiments and public code releases remain separate."
+          ],
+          "done": "COMPLETE for the editorial package; public delivery is separately verified in the release receipt.",
+          "deepDiveTitle": "Publish the evaluation constitution"
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure and Capital",
+          "title": "Specify the nuclear uprate comparison",
+          "why": "The career-value layer is moving upward from facility construction into power subscriptions, cost isolation, project finance and matching contracts with long-duration capital.",
+          "steps": [
+            "Add a nuclear uprate subscription template to the AI Power Portfolio Simulator, comparing capital per MW, offtake duration, regulatory/construction risk and pension-compatible cash-flow layers against gas, SMRs and data-center SPVs; treat the 96 MW as unfinanced until approval.",
+            "Compare MW capital, offtake term, regulatory and construction risk, and capital layers. PSC approval and financing evidence remain separate; no simulator modification is claimed."
+          ],
+          "done": "READY; comparison specification preserved, contract and financing details UNKNOWN."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-Stage Private Markets × AI Life Sciences",
+          "title": "Wait for Anew’s biological evidence",
+          "why": "The investable asset is an auditable loop from computation through wet-lab replication, IND, human safety and patient benefit—not an attractive molecular rendering.",
+          "steps": [
+            "WATCH; do not chase the round. Upgrade to INVESTIGATE only after disclosure of diseases and targets, wet-lab hit rates, an IND or human trial, time/cost advantage, related-party governance and preference terms; plausible exits are IPO, pharmaceutical licensing or strategic acquisition.",
+            "Require diseases/targets, wet-lab hit rates, IND or human study, comparative cost/time and governance/preference terms before INVESTIGATE. No allocation request."
+          ],
+          "done": "WATCHING; evidence threshold preserved, no investment action."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities",
+          "title": "Watch AMD’s systems disclosures",
+          "why": "AMD may become the most important AI systems alternative to Nvidia, yet attention and scarcity can reach the valuation destination before cash flow does.",
+          "steps": [
+            "Do not chase the breakout; retain existing exposure and require AMD to quantify rack-scale AI revenue, post-integration gross margin, production ROCm usage and top-three customer concentration before adding.",
+            "Require rack AI revenue, integration-adjusted margin, production ROCm use and top-three concentration before reconsidering additions. Preserve the source’s no-chase instruction; no trade."
+          ],
+          "done": "WATCHING; disclosure threshold preserved, no position change."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年9月22日",
+      "description": "八项来源有序行动，连接数据、评测、部署与资本证据。",
+      "centralJudgment": "完整闭环的每次交接都要有证据。今天完成开放评测版图及有边界的Dark Forest实验方案；项目工作与金融判断保留各自授权和证据条件。",
+      "fieldLine": "八个信号。明确条件。一部评测宪法。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型、Agent与OPC自主性",
+          "title": "定义香港语言题包",
+          "why": "香港支付、粤语—英语切换和跨境商户语境，是大模型通用Benchmark难以覆盖、但Robin可以合法积累的“社区智能资产”。",
+          "steps": [
+            "建立一个20题的HK OPC Language Pack，用相同工具权限测试上述八个模型家族，记录完成率、错误澄清、文化误判、成本及Robin介入分钟；开源题型与评分规则，不公开私人商户数据。",
+            "冻结20题、八个模型家族、相同权限与评分；不公开私人商户数据。实际模型测试仍属独立项目行动。"
+          ],
+          "done": "READY；已保存20题规格，结果UNKNOWN。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "建立Spirit AI比较表",
+          "why": "CATL与京东最重要的价值不是品牌背书，而是能否持续产生不同任务、异常和失败恢复数据；这才可能形成Physical-AI的数据飞轮。",
+          "steps": [
+            "建立Spirit AI peers matrix，只按五项重排：独立付费客户、生产环境机器人数量、单任务成功率与干预率、每小时有效数据成本、扣除数据采集人员后的单位经济；暂将Spirit评为credible learning deployment / unproven scale。",
+            "记录五项分母、来源日期及独立客户证据；缺失的生产数量和介入数据保留UNKNOWN。"
+          ],
+          "done": "READY；已保存比较任务，规模未证实。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流向",
+          "title": "观察Bitcoin流入广度",
+          "why": "“Capital follows attention”重新启动了，但注意力现在集中在最容易被传统账户购买的BTC，而不是均匀流入整个Token经济。",
+          "steps": [
+            "将市场状态标为BTC-led re-entry；只有连续五个交易日ETF净流入、稳定币净发行与非BTC市场宽度三者至少两项同步改善，才升级为industry-wide inflow。",
+            "收集五日ETF、稳定币发行及非BTC广度证据；至少两项同步改善才升级，未执行交易。"
+          ],
+          "done": "WATCHING；已保存同步改善门槛，未升级市场状态。"
+        },
+        {
+          "signal": 4,
+          "domain": "金融创新与RWA",
+          "title": "追踪Token化资产传导",
+          "why": "机构产品只告诉我们什么被允许交易；社区、池深、费用和持有人变化才告诉我们人群正在玩什么。等待券商研究报告出现，第一轮往往已经结束。",
+          "steps": [
+            "建立一个Meme → Tokenized Asset Transmission Watch，[首先跟踪Long.xyz](http://long.xyz/) $AI/$NVDA：合约、真实池深、前十持有人集中度、净流入而非成交量、费用去向、激励与机器人比例，以及Token转成股票映射的精确路径。",
+            "记录合约、真实池深、集中度、净流入、费用接收方及转换权利；只读研究不授权交易。"
+          ],
+          "done": "READY；已保存监测规格，合约待核查。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "发布开放评测宪法",
+          "why": "这比公布一张“谁最聪明”的榜单更有原创性：Robin可以定义一套让模型公司、独立研究者和OPC共同挑战、复现并改进裁判的制度。",
+          "steps": [
+            "发布开放AI评测版图及Model Olympics／Dark Forest设计方案；完整结构化任务保留于每日简报。",
+            "检查四语文章、九个一手来源、原创四层图、研究记录及归档LinkedIn稿。实验与代码发布另行计证。"
+          ],
+          "done": "编辑包COMPLETE；公开交付另由发布回执核实。",
+          "deepDiveTitle": "发布开放评测宪法"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基础设施与资本",
+          "title": "定义核电扩容比较",
+          "why": "职业机会正从“建设数据中心”上移到设计电力订阅、监管成本隔离、项目融资和长期资本匹配——非常接近Robin的资本配置优势。",
+          "steps": [
+            "在AI Power Portfolio Simulator加入nuclear uprate subscription模板，与新建燃气、SMR和数据中心SPV比较每MW资本、承购期限、监管风险、建设风险及养老金可接受的现金流层级；在PSC批准前不把96MW计入已融资容量。",
+            "比较每MW资本、承购期限、监管和建设风险、资本层级。PSC批准与融资证据分别记录；未声称修改模拟器。"
+          ],
+          "done": "READY；已保存比较规格，合同与融资细节UNKNOWN。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期一级市场 × AI生命科学",
+          "title": "等待Anew生物学证据",
+          "why": "真正可投资的AI生物学资产不是漂亮的分子图，而是计算预测 → 湿实验复现 → IND → 人体安全性 → 患者获益之间不断缩短且可审计的闭环。",
+          "steps": [
+            "WATCH，不追本轮。 只有Anew披露具体疾病/靶点、湿实验命中率、至少一项IND或人体试验、相对传统发现流程的时间成本优势，以及ByteDance关联交易与优先权结构后，才升级为INVESTIGATE；可行退出为IPO、药企授权或战略收购。",
+            "要求疾病/靶点、湿实验命中率、IND或人体试验、相对时间成本及治理优先权条款，再转INVESTIGATE；未申请份额。"
+          ],
+          "done": "WATCHING；已保存证据门槛，无投资操作。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场",
+          "title": "观察AMD系统业务披露",
+          "why": "AMD既可能成为NVIDIA之外最重要的AI系统平台，也可能因注意力和稀缺性先达到估值终点；需要区分生态选择权与已经兑现的现金流。",
+          "steps": [
+            "不追当日突破；维持现有暴露，并把下一次增持门槛固定为AMD同时量化机架级AI收入、扣除系统整合后的毛利、ROCm生产使用量及前三大客户集中度。",
+            "要求机架AI收入、整合后毛利、ROCm生产使用和前三客户集中度，再考虑增持。保留来源不追涨方针，未交易。"
+          ],
+          "done": "WATCHING；已保存披露门槛，未改变仓位。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年9月22日",
+      "description": "八項來源有序行動，連接數據、評測、部署與資本證據。",
+      "centralJudgment": "完整閉環的每次交接都要有證據。今天完成開放評測版圖及有邊界的Dark Forest實驗方案；項目工作與金融判斷保留各自授權和證據條件。",
+      "fieldLine": "八個信號。明確條件。一部評測憲法。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型、Agent與OPC自主性",
+          "title": "定義香港語言題包",
+          "why": "香港支付、粵語—英語切換和跨境商戶語境，是大模型通用Benchmark難以覆蓋、但Robin可以合法積累的“社區智能資產”。",
+          "steps": [
+            "建立一個20題的HK OPC Language Pack，用相同工具權限測試上述八個模型家族，記錄完成率、錯誤澄清、文化誤判、成本及Robin介入分鐘；開源題型與評分規則，不公開私人商戶數據。",
+            "凍結20題、八個模型家族、相同權限與評分；不公開私人商戶數據。實際模型測試仍屬獨立項目行動。"
+          ],
+          "done": "READY；已保存20題規格，結果UNKNOWN。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "建立Spirit AI比較表",
+          "why": "CATL與京東最重要的價值不是品牌背書，而是能否持續產生不同任務、異常和失敗恢復數據；這纔可能形成Physical-AI的數據飛輪。",
+          "steps": [
+            "建立Spirit AI peers matrix，只按五項重排：獨立付費客戶、生產環境機器人數量、單任務成功率與干預率、每小時有效數據成本、扣除數據採集人員後的單位經濟；暫將Spirit評為credible learning deployment / unproven scale。",
+            "記錄五項分母、來源日期及獨立客戶證據；缺失的生產數量和介入數據保留UNKNOWN。"
+          ],
+          "done": "READY；已保存比較任務，規模未證實。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本流向",
+          "title": "觀察Bitcoin流入廣度",
+          "why": "“Capital follows attention”重新啓動了，但注意力現在集中在最容易被傳統賬戶購買的BTC，而不是均勻流入整個Token經濟。",
+          "steps": [
+            "將市場狀態標為BTC-led re-entry；只有連續五個交易日ETF淨流入、穩定幣淨髮行與非BTC市場寬度三者至少兩項同步改善，才升級為industry-wide inflow。",
+            "收集五日ETF、穩定幣發行及非BTC廣度證據；至少兩項同步改善才升級，未執行交易。"
+          ],
+          "done": "WATCHING；已保存同步改善門檻，未升級市場狀態。"
+        },
+        {
+          "signal": 4,
+          "domain": "金融創新與RWA",
+          "title": "追蹤Token化資產傳導",
+          "why": "機構產品只告訴我們什麼被允許交易；社區、池深、費用和持有人變化才告訴我們人羣正在玩什麼。等待券商研究報告出現，第一輪往往已經結束。",
+          "steps": [
+            "建立一個Meme → Tokenized Asset Transmission Watch，[首先跟蹤Long.xyz](http://long.xyz/) $AI/$NVDA：合約、真實池深、前十持有人集中度、淨流入而非成交量、費用去向、激勵與機器人比例，以及Token轉成股票映射的精確路徑。",
+            "記錄合約、真實池深、集中度、淨流入、費用接收方及轉換權利；只讀研究不授權交易。"
+          ],
+          "done": "READY；已保存監測規格，合約待核查。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "發佈開放評測憲法",
+          "why": "這比公佈一張“誰最聰明”的榜單更有原創性：Robin可以定義一套讓模型公司、獨立研究者和OPC共同挑戰、復現並改進裁判的制度。",
+          "steps": [
+            "發布開放AI評測版圖及Model Olympics／Dark Forest設計方案；完整結構化任務保留於每日簡報。",
+            "檢查四語文章、九個一手來源、原創四層圖、研究記錄及歸檔LinkedIn稿。實驗與代碼發佈另行計證。"
+          ],
+          "done": "編輯包COMPLETE；公開交付另由發佈回執核實。",
+          "deepDiveTitle": "發佈開放評測憲法"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基礎設施與資本",
+          "title": "定義核電擴容比較",
+          "why": "職業機會正從“建設數據中心”上移到設計電力訂閱、監管成本隔離、項目融資和長期資本匹配——非常接近Robin的資本配置優勢。",
+          "steps": [
+            "在AI Power Portfolio Simulator加入nuclear uprate subscription模板，與新建燃氣、SMR和數據中心SPV比較每MW資本、承購期限、監管風險、建設風險及養老金可接受的現金流層級；在PSC批准前不把96MW計入已融資容量。",
+            "比較每MW資本、承購期限、監管和建設風險、資本層級。PSC批准與融資證據分別記錄；未聲稱修改模擬器。"
+          ],
+          "done": "READY；已保存比較規格，合同與融資細節UNKNOWN。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期一級市場 × AI生命科學",
+          "title": "等待Anew生物學證據",
+          "why": "真正可投資的AI生物學資產不是漂亮的分子圖，而是計算預測 → 溼實驗復現 → IND → 人體安全性 → 患者獲益之間不斷縮短且可審計的閉環。",
+          "steps": [
+            "WATCH，不追本輪。 只有Anew披露具體疾病/靶點、溼實驗命中率、至少一項IND或人體試驗、相對傳統發現流程的時間成本優勢，以及ByteDance關聯交易與優先權結構後，才升級為INVESTIGATE；可行退出為IPO、藥企授權或戰略收購。",
+            "要求疾病/靶點、溼實驗命中率、IND或人體試驗、相對時間成本及治理優先權條款，再轉INVESTIGATE；未申請份額。"
+          ],
+          "done": "WATCHING；已保存證據門檻，無投資操作。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場",
+          "title": "觀察AMD系統業務披露",
+          "why": "AMD既可能成為NVIDIA之外最重要的AI系統平臺，也可能因注意力和稀缺性先達到估值終點；需要區分生態選擇權與已經兌現的現金流。",
+          "steps": [
+            "不追當日突破；維持現有暴露，並把下一次增持門檻固定為AMD同時量化機架級AI收入、扣除系統整合後的毛利、ROCm生產使用量及前三大客戶集中度。",
+            "要求機架AI收入、整合後毛利、ROCm生產使用和前三客戶集中度，再考慮增持。保留來源不追漲方針，未交易。"
+          ],
+          "done": "WATCHING；已保存披露門檻，未改變倉位。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年9月22日",
+      "description": "八つの課題でデータ、評価、導入、資本の証拠をつなぐ。",
+      "centralJudgment": "循環の各引き継ぎには証拠が要る。本日の編集成果は公開評価の地図と限定したDark Forest実験案。プロジェクト作業と金融判断には個別の権限と証拠条件を保つ。",
+      "fieldLine": "八つのシグナル。明確な条件。評価の憲法。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "最先端モデル、エージェント、OPCの自律性",
+          "title": "香港言語パックを定義",
+          "why": "香港の決済、広東語と英語の切り替え、越境加盟店の実務は、独自性を持つ地域の知的資産になる。",
+          "steps": [
+            "20課題のHK OPC Language Packを作成する。同じ権限で8モデル群を比較し、完了、確認質問、文化的誤解、費用、Robinの介入時間を記録する。題型と採点は公開対象とし、私的加盟店データは公開しない。",
+            "20課題、8モデル群、同一権限と採点を固定。私的加盟店データは公開しない。モデル実測は別のプロジェクト課題。"
+          ],
+          "done": "READY。20課題仕様を保存。実測結果UNKNOWN。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "Spirit AIの比較を設計",
+          "why": "CATLやJDの名前より、現場が多様な課題、失敗、復旧データを継続的に生むかが重要だ。",
+          "steps": [
+            "独立した有料顧客、生産現場の機体数、作業成功と介入、有効データの費用、収集人員を含む単位採算でSpirit AIの競合表を作る。評価はcredible learning deployment / unproven scaleを保つ。",
+            "五つの分母、出典日、独立顧客の根拠を記録。本番機体数や介入データがなければUNKNOWN。"
+          ],
+          "done": "READY。比較課題を保存。規模は未証明。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資金フロー",
+          "title": "Bitcoin流入の広がりを観察",
+          "why": "注目を追う資金が再び動いている。ただし通常の投資口座から買いやすいBTCに集中している。",
+          "steps": [
+            "状態をBTC-led re-entryとする。5営業日のETF流入、ステーブルコイン純発行、非BTC市場の広がりのうち、少なくとも二つが同時に改善して初めてindustry-wide inflowへ引き上げる。",
+            "5日ETF流入、ステーブルコイン発行、非BTCの広がりを収集。二つ以上の同時改善が条件。取引なし。"
+          ],
+          "done": "WATCHING。同時改善の条件を保存。市場区分の格上げなし。"
+        },
+        {
+          "signal": 4,
+          "domain": "金融革新とRWA",
+          "title": "トークン化資産への伝達を追跡",
+          "why": "制度上の商品は何を取引できるかを示す。コミュニティ、板の厚み、手数料、保有者の行動は、人々が何を始めたかを示す。",
+          "steps": [
+            "Meme → Tokenized Asset Transmission Watchを設け、Long.xyzの$AI/$NVDAから調べる。契約、実際の流動性、上位10保有者の集中、売買高ではなく純流入、手数料受取先、ボットと報奨、株式表象へ変換する正確な経路を記録する。",
+            "契約、実流動性、集中、純流入、手数料受取先、変換権利を記録。閲覧調査は取引を許可しない。"
+          ],
+          "done": "READY。監視仕様を保存。契約確認は未完。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "公開評価の憲法を出版",
+          "why": "研究所、独立研究者、一人企業が再現し、異議を出せる評価憲法を定義できる。",
+          "steps": [
+            "公開AI評価の地図とModel Olympics／Dark Forest設計案を出版。完全な元課題はブリーフに保存。",
+            "四言語記事、9一次資料、独自の四層図、研究記録、保存LinkedIn稿を確認。実験とコード公開は別途証明する。"
+          ],
+          "done": "編集成果はCOMPLETE。公開配信はリリース記録で別途確認。",
+          "deepDiveTitle": "公開評価の憲法を出版"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラと資本",
+          "title": "原発増強の比較を定義",
+          "why": "職業上の価値は施設建設から、電力契約、費用の分離、プロジェクト金融、長期資本との接続へ移る。",
+          "steps": [
+            "AI Power Portfolio Simulatorにnuclear uprate subscriptionの型を追加する。MW当たり資本、購入契約期間、規制・工事リスク、年金に適する資金回収層を、ガス、SMR、データセンターSPVと比較する。承認までは96 MWを資金調達済み容量に計上しない。",
+            "MW資本、購入期間、規制・工事リスク、資本層を比較。PSC承認と調達証拠を分ける。シミュレーターの変更は主張しない。"
+          ],
+          "done": "READY。比較仕様を保存。契約と調達の詳細はUNKNOWN。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期未公開市場とAI生命科学",
+          "title": "Anewの生物学的証拠を待つ",
+          "why": "投資対象になるのは美しい分子図より、計算、実験再現、IND、ヒト安全性、患者便益を結ぶ監査可能な循環だ。",
+          "steps": [
+            "WATCHとし、このラウンドを追わない。疾病と標的、実験ヒット率、INDまたはヒト試験、時間と費用の優位、関連当事者統治、優先権条件の開示後にINVESTIGATEへ進める。想定出口はIPO、製薬企業へのライセンス、戦略的買収だ。",
+            "疾病・標的、実験ヒット率、INDかヒト試験、比較時間費用、統治と優先条件を要求しINVESTIGATEへ。割当て申請なし。"
+          ],
+          "done": "WATCHING。証拠条件を保存。投資実行なし。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開株式",
+          "title": "AMDのシステム開示を観察",
+          "why": "AMDはNvidia以外で最重要のAIシステム基盤になる可能性がある。同時に、注目と希少性がキャッシュフローより先に評価の終着点へ到達する可能性もある。",
+          "steps": [
+            "当日の上放れを追わず、既存エクスポージャーを維持するという原稿の方針を記録する。追加の判断には、ラック単位のAI売上、統合後粗利、本番ROCm利用、上位3顧客の集中度の定量開示を求める。ここで取引は実行しない。",
+            "ラックAI売上、統合後粗利、本番ROCm、上位3顧客集中の開示が追加検討の条件。原稿の追随買い回避を保持。取引なし。"
+          ],
+          "done": "WATCHING。開示条件を保存。保有の変更なし。"
+        }
+      ]
+    }
+  }
+}
