@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+<title id="title">The open evaluation map</title><desc id="desc">Tasks lead to harness, referee and governance. A separate proposed Dark Forest experiment changes rewards and measures behavior. This is a conceptual design, not measured performance.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#8b7660"/></marker></defs>
+<rect width="1200" height="760" fill="#f5f2ec"/>
+<g font-family="Arial,sans-serif" fill="#302e2a">
+<text x="64" y="65" font-size="15" letter-spacing="3">MODEL OLYMPICS / RESEARCH PROPOSAL</text>
+<text x="64" y="129" font-family="Georgia,serif" font-size="43">Who judges the judges?</text>
+<text x="64" y="169" font-size="19" fill="#69645d">One score carries four sets of decisions.</text>
+<rect x="64" y="220" width="245" height="168" rx="8" fill="#fffdfa" stroke="#c8bbaa"/><text x="84" y="258" font-size="17" letter-spacing="2">TASKS</text><text x="84" y="305" font-size="18">What is tested?</text><text x="84" y="347" font-size="15" fill="#69645d">Coverage / provenance</text><path d="M314 301H334" stroke="#8b7660" stroke-width="2" marker-end="url(#arrow)"/><rect x="340" y="220" width="245" height="168" rx="8" fill="#fffdfa" stroke="#c8bbaa"/><text x="360" y="258" font-size="17" letter-spacing="2">HARNESS</text><text x="360" y="305" font-size="18">What is permitted?</text><text x="360" y="347" font-size="15" fill="#69645d">Tools / budget / version</text><path d="M590 301H610" stroke="#8b7660" stroke-width="2" marker-end="url(#arrow)"/><rect x="616" y="220" width="245" height="168" rx="8" fill="#fffdfa" stroke="#c8bbaa"/><text x="636" y="258" font-size="17" letter-spacing="2">REFEREE</text><text x="636" y="305" font-size="18">What counts?</text><text x="636" y="347" font-size="15" fill="#69645d">Checks / judgments</text><path d="M866 301H886" stroke="#8b7660" stroke-width="2" marker-end="url(#arrow)"/><rect x="892" y="220" width="245" height="168" rx="8" fill="#fffdfa" stroke="#c8bbaa"/><text x="912" y="258" font-size="17" letter-spacing="2">GOVERNANCE</text><text x="912" y="305" font-size="18">Who may challenge?</text><text x="912" y="347" font-size="15" fill="#69645d">Relationships / appeals</text><path d="M1090 400V431H182V400" fill="none" stroke="#b99975" stroke-width="2"/>
+<text x="600" y="464" text-anchor="middle" font-size="18">A receipt preserves conditions, evidence and the right to rescore.</text>
+<rect x="64" y="506" width="1073" height="167" rx="8" fill="#e7e9e6"/>
+<text x="90" y="544" font-size="18" letter-spacing="2">DARK FOREST / SEPARATE EXPERIMENT</text>
+<text x="90" y="588" font-size="20">Hold the environment → Change one incentive → Observe behavior</text>
+<text x="90" y="629" font-size="17" fill="#565c56">Identity, memory and communication are declared conditions. Results remain UNKNOWN.</text>
+<text x="64" y="715" font-size="14" fill="#69645d">Conceptual synthesis • 2026-09-22 • No performance ranking or institutional endorsement</text>
+</g></svg>
