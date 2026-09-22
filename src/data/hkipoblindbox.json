@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-21T15:05:08.913050+00:00",
+  "generated_at": "2026-09-22T01:08:38.613087+00:00",
   "money_mode": "SIMULATED",
   "forecasts": [
     {
@@ -71,6 +71,24 @@
         0.36055285702548573,
         0.2272762711021555,
         0.1203423631671774
+      ],
+      "target_return": 0.1,
+      "score": null
+    },
+    {
+      "case_id": "HKEX-PENDING-06802-cb95eeb5",
+      "stock_code": "06802",
+      "issuer_name": "Shenzhen Camsense Technologies Co., Ltd.",
+      "listing_date": "2026-09-30",
+      "mode": "FORWARD",
+      "frozen_at": "2026-09-22T01:08:19.406175+00:00",
+      "model_version": "six_lens_prior_v0.1",
+      "commitment": "27f5a2cd5071d8ede806f84e7a4fa9b4f01c1b6fec43a866e9a731646ea826f5",
+      "probabilities": [
+        0.27482655370562425,
+        0.35695596309872396,
+        0.23654540690784034,
+        0.13167207628781158
       ],
       "target_return": 0.1,
       "score": null
