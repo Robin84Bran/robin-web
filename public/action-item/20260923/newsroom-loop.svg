@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+<title id="title">A newsroom that learns from distribution</title><desc id="desc">Proposed workflow. A fixed fact and rights packet supports twenty frames. Two reviewed variants enter authorized distribution. Observations pass review before a conditional lesson returns to editorial memory. No performance data is shown.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#8b7660"/></marker></defs>
+<rect width="1200" height="760" fill="#f5f2ec"/>
+<g font-family="Arial,sans-serif" fill="#302e2a">
+<text x="58" y="62" font-size="15" letter-spacing="3">SUNTV / PROPOSED EDITORIAL EXPERIMENT</text>
+<text x="58" y="124" font-family="Georgia,serif" font-size="42">Twenty hypotheses. A memory that improves.</text>
+<text x="58" y="166" font-size="19" fill="#69645d">Keep the evidence stable. Test the promise. Retain the conditions.</text>
+<rect x="58" y="208" width="1084" height="65" rx="8" fill="#e2e6df"/>
+<text x="84" y="249" font-size="20">FIXED THROUGH THE TEST: FACTS / SOURCES / UNCERTAINTY / RIGHTS</text>
+<rect x="58" y="315" width="253" height="151" rx="8" fill="#fffdfa" stroke="#c8bbaa"/><text x="75" y="350" font-size="17" letter-spacing="1">STORY</text><text x="75" y="397" font-size="18">One event packet</text><text x="75" y="435" font-size="16" fill="#69645d">One editorial judgment</text><path d="M312 390H330" stroke="#8b7660" stroke-width="2" marker-end="url(#arrow)"/><rect x="335" y="315" width="253" height="151" rx="8" fill="#fffdfa" stroke="#c8bbaa"/><text x="352" y="350" font-size="17" letter-spacing="1">FRAMES</text><text x="352" y="397" font-size="18">20 distinct candidates</text><text x="352" y="435" font-size="16" fill="#69645d">2 reviewed variants</text><path d="M589 390H607" stroke="#8b7660" stroke-width="2" marker-end="url(#arrow)"/><rect x="612" y="315" width="253" height="151" rx="8" fill="#fffdfa" stroke="#c8bbaa"/><text x="629" y="350" font-size="17" letter-spacing="1">DISTRIBUTION</text><text x="629" y="397" font-size="18">Authorized channels</text><text x="629" y="435" font-size="16" fill="#69645d">Comparable conditions</text><path d="M866 390H884" stroke="#8b7660" stroke-width="2" marker-end="url(#arrow)"/><rect x="889" y="315" width="253" height="151" rx="8" fill="#fffdfa" stroke="#c8bbaa"/><text x="906" y="350" font-size="17" letter-spacing="1">FEEDBACK</text><text x="906" y="397" font-size="18">Observed response</text><text x="906" y="435" font-size="16" fill="#69645d">Declared limitations</text><path d="M1014 482V512H183V482" fill="none" stroke="#b99975" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="600" y="550" text-anchor="middle" font-size="20">REVIEW → CONDITIONAL LESSON → EDITORIAL MEMORY</text>
+<rect x="58" y="580" width="1084" height="91" rx="8" fill="#ece4d8"/>
+<text x="82" y="616" font-size="17">Exposure → Click → Reading → Return → Voluntary relationship → Participation</text>
+<text x="82" y="649" font-size="16" fill="#69645d">Proposed measurement ladder. Missing observations remain UNKNOWN.</text>
+<text x="58" y="719" font-size="14" fill="#69645d">Conceptual synthesis • 2026-09-23 • No audience lift, winning variant or archive-wide rights claimed</text>
+</g></svg>
