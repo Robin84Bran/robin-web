@@ -173,7 +173,23 @@ const network = defineCollection({
   }),
 });
 
+const dailySpecial = defineCollection({
+  loader: glob({ pattern: '**/{article,zh-hans,zh-hant,ja}.md', base: './src/content/daily-special' }),
+  schema: z.object({
+    ...blogFields,
+    series: z.literal('Daily Special'),
+    lane: z.literal('RESEARCH'),
+    inLanguage: z.enum(['en', 'zh-Hans', 'zh-Hant', 'ja']),
+    translationReview: z.literal('PASS'),
+    sourceSignal: z.union([z.literal(1), z.literal(2), z.literal(3), z.literal(4), z.literal(6), z.literal(7), z.literal(8)]),
+    researchScope: z.string().min(20),
+    artifactSha256: z.string().regex(/^[a-f0-9]{64}$/),
+    evidenceSources: z.array(z.url()).min(1),
+  }),
+});
+
 export const collections = {
+  dailySpecial,
   dailyBriefing,
   dailyBriefingTranslation,
   actionItem,

@@ -3,6 +3,7 @@ import { getCollection, render, type CollectionEntry } from 'astro:content';
 import OuroborosPublication from '../../../components/OuroborosPublication.astro';
 import { createArticleSchemas } from '../../../lib/seo';
 import { actionFlows } from '../../../lib/actionFlows';
+import PreviousActionProgress from '../../../components/PreviousActionProgress.astro';
 
 export async function getStaticPaths() {
   const entries = await getCollection('dailyBriefing', ({ data }) => !data.draft);
@@ -49,4 +50,5 @@ const displayDate = entry.data.date.toLocaleDateString('en-US', { timeZone: 'UTC
   footerLinkLabel={hasActionFlow ? 'Enter today’s action flow →' : undefined}
 >
   <Content />
+  <PreviousActionProgress date={publicationDate} language="en" />
 </OuroborosPublication>

@@ -113,7 +113,8 @@ if (existsSync(dist)) {
   const articleRoutes = [...briefingRoutes, ...briefingTranslationRoutes, ...actionRoutes, ...actionTranslationRoutes];
   const actionFlowPublications = [...actionFlowRoutes, ...actionFlowTranslationRoutes];
   const blogPublications = [...blogRoutes, ...blogTranslationRoutes];
-  const publicationRoutes = [...articleRoutes, ...actionFlowPublications, ...blogPublications];
+  const specialRoutes = [...routes.keys()].filter((route) => /^\/ouroboros\/\d{6}\/\d{8}\/special\/(?:zh-hans\/|zh-hant\/|ja\/)?$/.test(route));
+  const publicationRoutes = [...articleRoutes, ...actionFlowPublications, ...blogPublications, ...specialRoutes];
   for (const route of [...publicationRoutes, ...diaryRoutes]) indexableRoutes.add(route);
   check(routes.size === 36 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length, `expected ${36 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length} HTML routes, found ${routes.size}.`);
 
@@ -265,7 +266,8 @@ if (existsSync(dist)) {
   check(infrastructure.includes('From paper gigawatts to operating compute'), 'AI infrastructure field note: canonical thesis is missing.');
   check(infrastructure.includes('"@type":"Article"') && infrastructure.includes('"@type":"BreadcrumbList"'), 'AI infrastructure field note: Article and BreadcrumbList schema are required.');
   check(!infrastructure.includes('sourceThread') && !infrastructure.includes('source_thread') && !infrastructure.includes('chatgpt.com/c/'), 'AI infrastructure field note: private provenance pointer detected.');
-  check((ouroboros.match(/<details class="ouroboros-shelf"/g) ?? []).length === 2, 'ouroboros: expected Daily Briefing and Daily Action Flow shelves only.');
+  check((ouroboros.match(/<details class="ouroboros-shelf"/g) ?? []).length === 3, 'ouroboros: expected Briefing, Action Flow and Daily Special shelves.');
+  check(ouroboros.includes('id="daily-special"') && ouroboros.includes('Daily Special'), 'ouroboros: Daily Special shelf missing.');
   check((binary.match(/<section class="binary-lane"/g) ?? []).length === 3, 'binary: expected Build, Invest, and Joy lanes.');
   check((binary.match(/<nav class="ouroboros-shelf__list binary-present"/g) ?? []).length === 3, 'binary: every lane must expose its present titles.');
   check((binary.match(/<details class="binary-pipeline">/g) ?? []).length === 3, 'binary: every lane must have a closed future Pipeline.');
