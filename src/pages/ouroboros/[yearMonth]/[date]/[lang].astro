@@ -1,6 +1,7 @@
 ---
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import OuroborosPublication from '../../../../components/OuroborosPublication.astro';
+import PreviousActionProgress from '../../../../components/PreviousActionProgress.astro';
 import { createArticleSchemas } from '../../../../lib/seo';
 import { actionFlows } from '../../../../lib/actionFlows';
 
@@ -55,4 +56,5 @@ const localized = entry.data.inLanguage === 'ja'
   footerLinkLabel={hasActionFlow ? localized.action : undefined}
 >
   <Content />
+  <PreviousActionProgress date={publicationDate} language={entry.data.inLanguage} />
 </OuroborosPublication>

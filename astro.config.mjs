@@ -33,6 +33,7 @@ export default defineConfig({
           || /^\/ouroboros\/\d{6}\/\d{8}\/actions\/$/.test(path)
           || /^\/ouroboros\/\d{6}\/\d{8}\/actions\/(?:zh-hans|zh-hant|ja)\/$/.test(path)
           || /^\/ouroboros\/\d{6}\/\d{8}\/blog\/$/.test(path)
+          || /^\/ouroboros\/\d{6}\/\d{8}\/special\/(?:zh-hans\/|zh-hant\/|ja\/)?$/.test(path)
           || /^\/ouroboros\/\d{6}\/\d{8}\/blog\/(?:zh-hans|zh-hant|ja)\/$/.test(path);
       },
     }),

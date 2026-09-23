@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { createArticleSchemas } from '../lib/seo';
+import { actionOutcome } from '../lib/actionOutcome';
 import {
   actionFlowLanguages,
   actionFlowPath,
@@ -31,6 +32,7 @@ const counts = flow.actions.reduce((acc, action) => {
   acc[action.priority] += 1;
   return acc;
 }, { NOW: 0, NEXT: 0, WATCH: 0 });
+const outcomeNames = edition.inLanguage === 'en' ? ['completed', 'queued', 'watch only'] : edition.inLanguage === 'ja' ? ['完了', '実行待ち', '経過観察のみ'] : edition.inLanguage === 'zh-Hant' ? ['已完成', '待處理', '僅觀察'] : ['已完成', '待处理', '仅观察'];
 const statusLabel = (status: string) => status === 'COMPLETE'
   ? localized.complete
   : status === 'READY'
@@ -98,6 +100,7 @@ const schemas = createArticleSchemas({
       {flow.actions.map((action, index) => {
         const chapter = edition.actions[index];
         const isDeepDive = action.signal === 5;
+        const outcome = flow.date >= '2026-09-23' ? actionOutcome(flow, action) : undefined;
         return (
           <section class:list={['action-chapter', { 'action-chapter--deep': isDeepDive }]} id={action.priority.toLowerCase()}>
             <div class="action-chapter__rail" aria-hidden="true">
@@ -109,7 +112,7 @@ const schemas = createArticleSchemas({
               <h2>{chapter.title}</h2>
               <div class="action-chapter__state">
                 <span class={`priority priority--${action.priority.toLowerCase()}`}>{action.priority}</span>
-                <span class={`status status--${action.status.toLowerCase()}`}>{statusLabel(action.status)}</span>
+                <span class={`status status--${action.status.toLowerCase()}`}>{outcome ? outcomeNames[outcome.status === 'completed' ? 0 : outcome.status === 'queued' ? 1 : 2] : statusLabel(action.status)}</span>
               </div>
             </div>
             <div class="action-chapter__visual">
@@ -132,6 +135,7 @@ const schemas = createArticleSchemas({
               <ol>{chapter.steps.map((step) => <li>{step}</li>)}</ol>
               <h3>{localized.done}</h3>
               <p>{chapter.done}</p>
+              {outcome?.artifact && <p><a href={outcome.artifact}>{outcome.researchOnly ? 'Daily Special · research artifact only' : localized.artifact} ↗</a></p>}
               {isDeepDive && (
                 <a class="action-chapter__deep-link" href={edition.languageSlug ? `${flow.actionItemPath}${edition.languageSlug}/` : flow.actionItemPath}>
                   {localized.deep} →
@@ -161,12 +165,14 @@ const schemas = createArticleSchemas({
 
     <footer class="action-flow__ledger">
       <p>{localized.ledger}</p>
-      <div>
+      {flow.date >= '2026-09-23' ? <div>
+        {['completed', 'queued', 'watch only'].map((status, index) => <span><strong>{flow.actions.filter((item) => actionOutcome(flow, item).status === status).length}</strong>{outcomeNames[index]}</span>)}
+      </div> : <div>
         <span><strong>{flow.actions.filter((item) => item.status === 'COMPLETE').length}</strong>{localized.complete}</span>
         <span><strong>{flow.actions.filter((item) => item.status === 'WATCHING').length}</strong>{localized.watching}</span>
         <span><strong>{flow.actions.filter((item) => item.status === 'BLOCKED').length}</strong>{localized.blocked}</span>
         <span><strong>{flow.actions.filter((item) => item.status === 'SUPERSEDED').length}</strong>{localized.superseded}</span>
-      </div>
+      </div>}
       <a href="/ouroboros/execution-ledger/">{localized.fullLedger} →</a>
       <a href={edition.languageSlug ? `${flow.briefingPath}${edition.languageSlug}/` : flow.briefingPath}>{localized.return} →</a>
     </footer>

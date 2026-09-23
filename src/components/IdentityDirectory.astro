@@ -33,6 +33,10 @@ const blogEntries = isBinaryDirectory
       (a, b) => b.data.date.getTime() - a.data.date.getTime(),
     )
   : [];
+const specialEntries = isOuroborosDirectory
+  ? (await getCollection('dailySpecial', ({ data }) => !data.draft && data.inLanguage === 'en'))
+      .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  : [];
 const blogLanes = [
   { key: 'BUILD', name: 'Build', cadence: 'Monday · systems into reality' },
   { key: 'INVEST', name: 'Invest', cadence: 'Wednesday · signals into judgment' },
@@ -56,7 +60,7 @@ const ouroborosSchemas = isOuroborosDirectory
         '@type': 'CollectionPage',
         '@id': 'https://iamrobin.ai/ouroboros/#archive',
         name: 'Ouroboros — Robin Xie',
-        description: 'Robin Xie’s Daily Briefings, Daily Action Flows, and Daily Action Items.',
+        description: 'Robin Xie’s Daily Briefings, Daily Action Flows, Signal 5 deep dives, and selected Daily Special research.',
         url: 'https://iamrobin.ai/ouroboros/',
         inLanguage: 'en',
         author: { '@id': 'https://www.tideisun.com/robin#robin-xie' },
@@ -111,7 +115,7 @@ const meaningSchemas = isMeaningDirectory
 <BaseLayout
   title={`${entry.word} — I AM ROBIN`}
   description={isOuroborosDirectory
-    ? 'Daily Briefings, Daily Action Flows, and Daily Action Items by Robin Xie.'
+    ? 'Daily Briefings, Daily Action Flows, Signal 5 deep dives, and selected Daily Special research by Robin Xie.'
     : isBinaryDirectory
       ? 'Build, Invest, and Joy essays by Robin Xie.'
     : isMeaningDirectory
@@ -180,6 +184,24 @@ const meaningSchemas = isMeaningDirectory
             </nav>
           </details>
 
+          <details class="ouroboros-shelf" open id="daily-special">
+            <summary>
+              <span class="ouroboros-shelf__number">03</span>
+              <span class="ouroboros-shelf__name">Daily Special</span>
+              <em>Only when it deserves a closer look.</em>
+              <span class="ouroboros-shelf__toggle" aria-hidden="true">+</span>
+            </summary>
+            {specialEntries.length ? (
+              <nav class="ouroboros-shelf__list" aria-label="Daily Special archive">
+                {specialEntries.map((item) => (
+                  <a href={new URL(item.data.canonical).pathname}>
+                    <time datetime={item.data.date.toISOString().slice(0, 10)}>{displayDate(item.data.date)}</time>
+                    <strong>{item.data.title}</strong><span aria-hidden="true">→</span>
+                  </a>
+                ))}
+              </nav>
+            ) : <p class="special-empty">An occasional research map, comparison or evidence note, selected by Robin after the daily publications. No selection means no Special. The first verified artifact will appear here.</p>}
+          </details>
         </section>
       ) : isBinaryDirectory ? (
         <section class="ouroboros-library binary-library" aria-label="Binary Blog archive">
@@ -324,3 +346,6 @@ const meaningSchemas = isMeaningDirectory
     </nav>
   </section>
 </BaseLayout>
+<style is:global>
+  .special-empty { max-width: 44rem; margin: 0; padding: 1.2rem 0 1.8rem; color: var(--muted); font-size: .88rem; line-height: 1.7; }
+</style>

@@ -1,0 +1,25 @@
+---
+import { actionFlows } from '../lib/actionFlows';
+import { actionOutcome } from '../lib/actionOutcome';
+interface Props { date: string; language: 'en' | 'zh-Hans' | 'zh-Hant' | 'ja'; }
+const { date, language } = Astro.props;
+const previous = date >= '2026-09-24' ? actionFlows.find((flow) => flow.date < date) : undefined;
+const labels = {
+  en: { heading: 'Previous brief · action follow-through', completed: 'completed', queued: 'queued', watch: 'watch only', note: 'Queued means proposed or pending, not executed. Completed links show the artifact; research completion does not imply an investment or outside action.', research: 'research artifact only' },
+  'zh-Hans': { heading: '上一期 · 行动进展', completed: '已完成', queued: '待处理', watch: '仅观察', note: '待处理表示建议或等待执行，并非已完成。完成项附成果链接；研究完成不代表作出投资决策或执行对外行动。', research: '仅研究成果' },
+  'zh-Hant': { heading: '上一期 · 行動進展', completed: '已完成', queued: '待處理', watch: '僅觀察', note: '待處理表示建議或等待執行，並非已完成。完成項附成果連結；研究完成不代表作出投資決策或執行對外行動。', research: '僅研究成果' },
+  ja: { heading: '前号のアクション進捗', completed: '完了', queued: '実行待ち', watch: '経過観察のみ', note: '実行待ちは提案または保留中であり、実施済みではありません。完了には成果物を付記します。調査の完了は投資判断や外部への行動を意味しません。', research: '調査成果物のみ' },
+}[language];
+---
+{previous && <aside class="action-follow-through" aria-label={labels.heading}>
+  <h2>{labels.heading} · {previous.date}</h2>
+  <p>{labels.note}</p>
+  <ul>{previous.actions.map((action, index) => {
+    const outcome = actionOutcome(previous, action);
+    const label = outcome.status === 'completed' ? labels.completed : outcome.status === 'queued' ? labels.queued : labels.watch;
+    return <li><strong>{String(action.signal).padStart(2, '0')} · {label}</strong> — {previous.editions[language].actions[index].title}
+      {outcome.artifact && <> · <a href={outcome.artifact}>{outcome.researchOnly ? labels.research : label} ↗</a></>}
+    </li>;
+  })}</ul>
+</aside>}
+<style>.action-follow-through { border-top: 1px solid var(--line, #d8d1c6); margin-top: 2rem; padding-top: 1rem; } li { margin-block: .6rem; }</style>
