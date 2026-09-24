@@ -147,7 +147,10 @@ class SpecialTest(unittest.TestCase):
             def __enter__(self): return self
             def __exit__(self, *args): pass
             def read(self): return self.data
-        def fetch(link, **kwargs):
+        def fetch(request, **kwargs):
+            self.assertEqual(request.get_header("User-agent"), "iamrobin-daily-special-verifier/1.0 (+https://iamrobin.ai)")
+            self.assertEqual(kwargs.get("timeout"), 30)
+            link = request.full_url
             if link.endswith("artifact.md"): return Response(artifact.read_bytes())
             if link.endswith("receipts.json"): return Response(json.dumps([receipt]).encode())
             locale = "zh-Hans" if "zh-hans" in link else "zh-Hant" if "zh-hant" in link else "ja" if link.endswith("ja/") else "en"

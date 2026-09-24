@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "url": "https://iamrobin.ai/ouroboros/202609/20260924/special/",
+    "commit": "448920c35dc07d8de1709a1d74131583a7414c7c",
+    "artifactSha256": "3acfcd9599d59d7acee1f301a9ce705f2e82bac0263249701ee44eabad33cbf8",
+    "date": "2026-09-24",
+    "signal": 1,
+    "source": "https://raw.githubusercontent.com/Robin84Bran/robin-web/448920c35dc07d8de1709a1d74131583a7414c7c/public/daily-special/20260924/artifact.md",
+    "verifiedAt": "2026-09-24T09:23:32.032988+08:00",
+    "scope": "RESEARCH_ARTIFACT_ONLY"
+  }
+]
