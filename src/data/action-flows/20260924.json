@@ -1,0 +1,527 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-24",
+  "updated": "2026-09-24",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20260924/hero.webp",
+  "actionHero": "/action-item/20260924/hero.webp",
+  "ogImage": "/daily-briefing/20260924/og.webp",
+  "briefingPath": "/ouroboros/202609/20260924/",
+  "actionItemPath": "/ouroboros/202609/20260924/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "OpenAI’s Ringg case study",
+          "url": "https://openai.com/index/ringg/"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Reuters’ reporting on IFR data",
+          "url": "https://www.reuters.com/technology/humanoid-robot-sales-tally-hit-7000-globally-last-year-2026-09-21/"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "DefiLlama",
+          "url": "https://defillama.com/stablecoins"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "ECB launch announcement",
+          "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260921~e754847a7b.en.html"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "sources": [
+        {
+          "label": "IFR figures reported September 21",
+          "url": "https://www.reuters.com/technology/humanoid-robot-sales-tally-hit-7000-globally-last-year-2026-09-21/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "California governor’s announcement",
+          "url": "https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Snorkel’s announcement",
+          "url": "https://www.prnewswire.com/news-releases/snorkel-ai-raises-350m-to-scale-the-data-factory-for-frontier-ai-302886796.html"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/legal/transactional/snorkel-ai-valued-35-billion-amid-surging-demand-complex-ai-training-data-2026-09-22/"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "FDA meeting",
+          "url": "https://www.fda.gov/advisory-committees/advisory-committee-calendar/september-23-2026-molecular-and-clinical-genetics-panel-medical-devices-advisory-committee-meeting"
+        },
+        {
+          "label": "GRAIL",
+          "url": "https://grail.com/press-releases/fda-advisory-committee-votes-in-favor-of-approval-of-grails-galleri-multi-cancer-early-detection-test/"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/fda-advisers-back-safety-grails-cancer-test-narrowly-endorses-efficacy-2026-09-23/"
+        },
+        {
+          "label": "Trial context",
+          "url": "https://www.reuters.com/legal/litigation/grail-shares-plunge-after-major-cancer-screening-trial-misses-main-goal-2026-02-20/"
+        },
+        {
+          "label": "split-adjusted gain was ",
+          "url": "https://stockanalysis.com/stocks/gral/history/"
+        },
+        {
+          "label": "QQQ’s ",
+          "url": "https://stockanalysis.com/etf/qqq/history/"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, September 24, 2026",
+      "description": "Eight source actions connect accepted outcomes, capital and evidence.",
+      "centralJudgment": "Attention can attract orders and capital; accepted outcomes give them staying power. Today’s completed editorial framework separates humanoid sales, acceptance, work and economics. Project experiments remain proposed; watchpoints require fresh evidence.",
+      "fieldLine": "Eight signals. Accepted outcomes. Honest progress.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier models and the one-person company",
+          "title": "Specify twenty historical requests",
+          "why": "RobinOS can learn from the routing architecture, but must define its own acceptance test.",
+          "steps": [
+            "Shadow-test 20 authorized historical service requests, recording independent completion, Robin-intervention minutes, recovery and cost per accepted outcome; send no live customer replies.",
+            "Freeze the authorized sample and acceptance criteria; record completion, human minutes, recovery and cost. Shadow execution remains READY; send no customer replies."
+          ],
+          "done": "READY; test specification saved, results UNKNOWN."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "Separate sales from productive labor",
+          "why": "Equipment sold, R&D purchases and labor displaced are different investment curves.",
+          "steps": [
+            "Require paid-site productive hours, interventions per hour, task acceptance and all-in cost before labeling a project commercially deployed; treat shipments as an upstream indicator.",
+            "Record customer, site, task, productive hours, intervention rate, acceptance and total cost. Shipment evidence alone cannot mark commercial productivity complete."
+          ],
+          "done": "WATCHING; commercial evidence threshold retained."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto capital flows",
+          "title": "Confirm both supply and destination",
+          "why": "“Capital follows attention” calls for tracking both available capital and its destination.",
+          "steps": [
+            "Confirm the next risk-on call only when seven-day stablecoin supply and net inflows into major-chain trading pools both strengthen.",
+            "Retain the panel timestamp and separately verify trading-pool net flows. This is a watch condition, not an instruction to trade."
+          ],
+          "done": "WATCHING; dual-confirmation condition retained."
+        },
+        {
+          "signal": 4,
+          "domain": "Financial innovation and RWA",
+          "title": "Compare tokenized settlement paths",
+          "why": "It offers a different value-capture model from Robinhood, Base and open stablecoin rails.",
+          "steps": [
+            "Map one tokenized-security trade from ownership through payment, delivery and corporate actions, comparing Pontes with an open stablecoin route on eligibility, timing and control; leave unknown costs blank.",
+            "Prepare a one-page comparison with eligibility, timing, ownership and control. Contractual costs stay UNKNOWN; no settlement or wallet action."
+          ],
+          "done": "READY; comparison scope saved, execution pending."
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "Publish the humanoid evidence ledger",
+          "why": "This makes Robin’s engineering judgment reusable in capital allocation and is distinct from this morning’s “One-Computer Company” assignment.",
+          "steps": [
+            "Publish the evidence ledger separating humanoid sales, acceptance, productive work and unit economics. The complete source assignment is retained in the Daily Briefing.",
+            "Complete seven-source research, four authored editions, the evidence-ladder visual, ledger entry and archived LinkedIn derivative. No operator logs, private diligence or vendor cost estimate is claimed."
+          ],
+          "done": "COMPLETE for the editorial artifact; public delivery verified separately.",
+          "deepDiveTitle": "Publish the humanoid evidence ledger"
+        },
+        {
+          "signal": 6,
+          "domain": "AI infrastructure, career and capital",
+          "title": "Specify California cost allocation",
+          "why": "Connecting utility obligations, community permissions and customer leases is both a career advantage and a sharper infrastructure-capital thesis.",
+          "steps": [
+            "Add one California scenario to the existing AIDC underwriting sheet, assigning grid upgrades, water upgrades and permit delays to the party contractually bearing them; flag unsupported pass-through assumptions.",
+            "Assign each upgrade and delay to the contractually responsible party in a proposed scenario. No underwriting sheet was changed by this publishing run."
+          ],
+          "done": "READY; scenario specification saved, contractual allocation UNKNOWN."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-stage private markets",
+          "title": "Wait for Snorkel unit economics",
+          "why": "Open Model Olympics could establish reproducible trust while customized evaluation becomes a separate commercial layer; an investable theme is not a confirmed Robin-accessible allocation. An IPO or strategic sale is plausible, not arranged.",
+          "steps": [
+            "WATCH until retention by customer cohort, margin after expert costs, top-five-customer concentration and preference terms support an INVESTIGATE rating.",
+            "Require cohort retention, expert-adjusted margin, top-five concentration and preferences. No investment allocation or application is implied."
+          ],
+          "done": "WATCHING; evidence threshold saved, INVESTIGATE gate unpassed."
+        },
+        {
+          "signal": 8,
+          "domain": "Public equities × AI cancer detection",
+          "title": "Separate the vote from patient benefit",
+          "why": "AI genomics deserves attention, but detection, staging and patient benefit each need separate evidence.",
+          "steps": [
+            "Do not chase GRAL on the advisory vote; require the FDA’s final label and subsequent randomized evidence on late-stage disease or mortality, including the costs of follow-up after false alarms.",
+            "Wait for the final FDA label and randomized outcome evidence; record false-positive follow-up costs. No purchase, clinical recommendation or portfolio change."
+          ],
+          "done": "WATCHING; regulatory and clinical gates kept separate."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年9月24日",
+      "description": "八项来源行动，连接合格成果、资本与证据。",
+      "centralJudgment": "注意力能吸引订单和资本，合格成果才让它们留下。今天完成的编辑框架区分人形机器人销售、验收、工作与经济性；项目实验仍是建议，观察项需要新增证据。",
+      "fieldLine": "八个信号。合格成果。真实进展。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与一人公司",
+          "title": "定义二十个历史请求测试",
+          "why": "RobinOS 可以借鉴其路由与恢复结构，但必须自己定义验收，而不能借用 Ringg 的解决率。",
+          "steps": [
+            "用 20 个获授权的历史服务请求做 RobinOS 影子测试，逐件记录独立验收结果、人工介入分钟、失败恢复和每件完成成本；测试不触发真实客服回复。",
+            "冻结获授权样本与验收标准，记录完成、人工分钟、恢复和成本；影子执行仍为READY，不发真实客户回复。"
+          ],
+          "done": "READY；测试规格已保存，结果UNKNOWN。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "区分销量与有效劳动",
+          "why": "机器人投资最容易把设备销售、研发采购和替代劳动混成一条曲线。",
+          "steps": [
+            "将 Physical-AI 项目的商业门槛固定为“付费客户场地的有效工作小时、每小时人工接管、任务合格率及全成本”，销量只作前置指标。",
+            "记录客户、场地、任务、有效小时、介入率、验收及总成本；出货证据不能直接标为商业生产力完成。"
+          ],
+          "done": "WATCHING；保留商业证据门槛。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流向",
+          "title": "同时确认供给与去向",
+          "why": "“资本跟随注意力”需要同时观察可用弹药与它最终进入的市场。",
+          "steps": [
+            "在下一次风险偏好判断中，把稳定币七日净供给与主要链的交易池净流入并排核验；两者没有同时转强，就不标记为广谱入场。",
+            "保留面板时间，另行核实交易池净流入；这是观察条件，不是交易指令。"
+          ],
+          "done": "WATCHING；保留双重确认条件。"
+        },
+        {
+          "signal": 4,
+          "domain": "金融创新与 RWA",
+          "title": "比较代币化结算路径",
+          "why": "对照 Robinhood、Base 与稳定币轨道，Pontes 展示了另一种价值分配：结算安全更强，开放参与未必更强。",
+          "steps": [
+            "为一个代币化证券交易绘制 资产权利 → 付款资产 → 交割 → 公司行动 单页流程，逐栏对照 Pontes 与开放稳定币轨道的参与资格、结算时间和控制权；未知成本留空，不臆测赢家。",
+            "准备资格、时间、权利和控制权的单页比较；合同成本保留UNKNOWN，不执行结算或钱包操作。"
+          ],
+          "done": "READY；比较范围已保存，尚待执行。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "发布人形机器人证据账本",
+          "why": "这能把你对 Physical AI 的工程判断转成可复用、可引用的资本判断；与稍早“一人电脑公司”的文章是不同命题。",
+          "steps": [
+            "发布区分人形机器人销量、验收、有效工作与单位经济的证据账本；完整来源任务保留在每日简报。",
+            "完成七来源研究、四语文章、证据阶梯图、台账及归档LinkedIn稿；未取得操作员日志、私下尽调或厂商成本估计。"
+          ],
+          "done": "编辑成果COMPLETE；公开交付单独核实。",
+          "deepDiveTitle": "发布人形机器人证据账本"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基础设施与资本项目",
+          "title": "定义加州成本分配情景",
+          "why": "这是职业与资本共同的切口：能把电网合同、社区约束与客户租约放进同一承销模型的人，比只会报装机规模的人更有价值。",
+          "steps": [
+            "在现有 AIDC 项目承销表增加一个加州情景，把电网升级、水务升级和许可延迟分别分配给开发商、租户或公用事业；未有合同依据的转嫁假设标为未证实。",
+            "在拟议情景中按合同分配升级与延迟责任；本次发布未修改承销表。"
+          ],
+          "done": "READY；情景规格已保存，合同分配UNKNOWN。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期一级市场",
+          "title": "等待Snorkel单位经济证据",
+          "why": "它与开放 Model Olympics 的机会相邻：公开可复现规则形成信任，定制高质量评估与数据则可能成为商业层；融资消息本身不等于 Robin 能取得份额。IPO 或战略收购是可能退出路径，不是既定安排。",
+          "steps": [
+            "WATCH；只有拿到按客户群划分的留存、专家成本后的毛利、前五大客户占比和本轮优先权，才升级为 INVESTIGATE。",
+            "要求客户群留存、专家费用后毛利、前五客户集中度与优先权；不代表取得投资份额或已申请。"
+          ],
+          "done": "WATCHING；保留门槛，尚未通过INVESTIGATE条件。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场 × AI 癌症检测",
+          "title": "区分投票与患者获益",
+          "why": "AI × 基因组学可以创造重要筛查工具，但敏感度、分期和真正的患者获益必须分别承销。",
+          "steps": [
+            "暂不因投票追买 GRAL；下一道门槛只看 FDA 最终标签及后续随机数据能否证明晚期病例或死亡率获益，同时确认误诊后检查的代价。",
+            "等待FDA最终标签及随机结局证据，并记录假阳性后检查成本；不买入、不提供临床建议、不改组合。"
+          ],
+          "done": "WATCHING；监管与临床门槛分别保留。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年9月24日",
+      "description": "八項來源行動，連接合格成果、資本與證據。",
+      "centralJudgment": "注意力能吸引訂單和資本，合格成果才讓它們留下。今天完成的編輯框架區分人形機器人銷售、驗收、工作與經濟性；項目實驗仍是建議，觀察項需要新增證據。",
+      "fieldLine": "八個信號。合格成果。真實進展。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與一人公司",
+          "title": "定義二十個歷史請求測試",
+          "why": "RobinOS 可以借鑑其路由與恢復結構，但必須自己定義驗收，而不能借用 Ringg 的解決率。",
+          "steps": [
+            "用 20 個獲授權的歷史服務請求做 RobinOS 影子測試，逐件記錄獨立驗收結果、人工介入分鐘、失敗恢復和每件完成成本；測試不觸發真實客服回覆。",
+            "凍結獲授權樣本與驗收標準，記錄完成、人工分鐘、恢復和成本；影子執行仍為READY，不發真實客戶回覆。"
+          ],
+          "done": "READY；測試規格已保存，結果UNKNOWN。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "區分銷量與有效勞動",
+          "why": "機器人投資最容易把設備銷售、研發採購和替代勞動混成一條曲線。",
+          "steps": [
+            "將 Physical-AI 項目的商業門檻固定為“付費客戶場地的有效工作小時、每小時人工接管、任務合格率及全成本”，銷量只作前置指標。",
+            "記錄客戶、場地、任務、有效小時、介入率、驗收及總成本；出貨證據不能直接標為商業生產力完成。"
+          ],
+          "done": "WATCHING；保留商業證據門檻。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本流向",
+          "title": "同時確認供給與去向",
+          "why": "“資本跟隨注意力”需要同時觀察可用彈藥與它最終進入的市場。",
+          "steps": [
+            "在下一次風險偏好判斷中，把穩定幣七日淨供給與主要鏈的交易池淨流入並排核驗；兩者沒有同時轉強，就不標記為廣譜入場。",
+            "保留面板時間，另行核實交易池淨流入；這是觀察條件，不是交易指令。"
+          ],
+          "done": "WATCHING；保留雙重確認條件。"
+        },
+        {
+          "signal": 4,
+          "domain": "金融創新與 RWA",
+          "title": "比較代幣化結算路徑",
+          "why": "對照 Robinhood、Base 與穩定幣軌道，Pontes 展示了另一種價值分配：結算安全更強，開放參與未必更強。",
+          "steps": [
+            "為一個代幣化證券交易繪製 資產權利 → 付款資產 → 交割 → 公司行動 單頁流程，逐欄對照 Pontes 與開放穩定幣軌道的參與資格、結算時間和控制權；未知成本留空，不臆測贏家。",
+            "準備資格、時間、權利和控制權的單頁比較；合同成本保留UNKNOWN，不執行結算或錢包操作。"
+          ],
+          "done": "READY；比較範圍已保存，尚待執行。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "發佈人形機器人證據賬本",
+          "why": "這能把你對 Physical AI 的工程判斷轉成可複用、可引用的資本判斷；與稍早“一人電腦公司”的文章是不同命題。",
+          "steps": [
+            "發布區分人形機器人銷量、驗收、有效工作與單位經濟的證據帳本；完整來源任務保留在每日簡報。",
+            "完成七來源研究、四語文章、證據階梯圖、臺賬及歸檔LinkedIn稿；未取得操作員日誌、私下盡調或廠商成本估計。"
+          ],
+          "done": "編輯成果COMPLETE；公開交付單獨核實。",
+          "deepDiveTitle": "發佈人形機器人證據賬本"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基礎設施與資本項目",
+          "title": "定義加州成本分配情景",
+          "why": "這是職業與資本共同的切口：能把電網合同、社區約束與客戶租約放進同一承銷模型的人，比只會報裝機規模的人更有價值。",
+          "steps": [
+            "在現有 AIDC 項目承銷表增加一個加州情景，把電網升級、水務升級和許可延遲分別分配給開發商、租戶或公用事業；未有合同依據的轉嫁假設標為未證實。",
+            "在擬議情景中按合同分配升級與延遲責任；本次發佈未修改承銷表。"
+          ],
+          "done": "READY；情景規格已保存，合同分配UNKNOWN。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期一級市場",
+          "title": "等待Snorkel單位經濟證據",
+          "why": "它與開放 Model Olympics 的機會相鄰：公開可復現規則形成信任，定製高質量評估與數據則可能成為商業層；融資消息本身不等於 Robin 能取得份額。IPO 或戰略收購是可能退出路徑，不是既定安排。",
+          "steps": [
+            "WATCH；只有拿到按客戶羣劃分的留存、專家成本後的毛利、前五大客戶佔比和本輪優先權，才升級為 INVESTIGATE。",
+            "要求客戶羣留存、專家費用後毛利、前五客戶集中度與優先權；不代表取得投資份額或已申請。"
+          ],
+          "done": "WATCHING；保留門檻，尚未通過INVESTIGATE條件。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場 × AI 癌症檢測",
+          "title": "區分投票與患者獲益",
+          "why": "AI × 基因組學可以創造重要篩查工具，但敏感度、分期和真正的患者獲益必須分別承銷。",
+          "steps": [
+            "暫不因投票追買 GRAL；下一道門檻只看 FDA 最終標籤及後續隨機數據能否證明晚期病例或死亡率獲益，同時確認誤診後檢查的代價。",
+            "等待FDA最終標籤及隨機結局證據，並記錄假陽性後檢查成本；不買入、不提供臨牀建議、不改組合。"
+          ],
+          "done": "WATCHING；監管與臨牀門檻分別保留。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年9月24日",
+      "description": "八つの元課題で検収成果、資本、証拠をつなぐ。",
+      "centralJudgment": "注目は注文と資本を集め、検収された成果が持続性を生む。今日は人型ロボットの販売、検収、仕事、経済性を分ける編集成果を完成。プロジェクト実験は提案段階で、観察項目には新しい証拠が要る。",
+      "fieldLine": "八つのシグナル。検収成果。正確な進捗。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "フロンティアモデルと一人会社",
+          "title": "過去20依頼のテストを定義",
+          "why": "RobinOSは振り分けと復旧の設計を参考にできる。ただし受け入れ基準は自ら定義し、Ringgの解決率を自分の実績として扱わない。",
+          "steps": [
+            "利用を許可された過去のサービス依頼20件をシャドーテストする。独立した完了判定、人の介入時間、復旧、受け入れ成果あたり費用を記録し、実際の顧客への返信は送らない。",
+            "許可された標本と検収条件を固定し、完了、人の分数、復旧、費用を記録。実験はREADY。実顧客へ返信しない。"
+          ],
+          "done": "READY。テスト仕様保存。結果UNKNOWN。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI",
+          "title": "販売と有効労働を分ける",
+          "why": "機器販売、研究目的の購入、労働の代替は、それぞれ異なる投資曲線だ。",
+          "steps": [
+            "商用導入の判定には、有償顧客の現場での有効作業時間、時間あたり介入、タスク合格率、総費用を要求する。出荷は先行指標として扱う。",
+            "顧客、拠点、仕事、有効時間、介入率、検収、総費用を記録。出荷だけで商用生産性の完了とはしない。"
+          ],
+          "done": "WATCHING。商用証拠条件を保持。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資金フロー",
+          "title": "供給と行き先を同時確認",
+          "why": "「資本は注目に従う」を検証するには、利用可能な資金と実際の行き先を併せて見る必要がある。",
+          "steps": [
+            "次のリスク選好判断では、7日間のステーブルコイン純供給と主要チェーンの取引プールへの純流入を照合する。両方が強まるまで、広範な資金流入とは判定しない。",
+            "パネルの時刻を保ち、取引プール純流入を別途確認。観察条件であり取引指示ではない。"
+          ],
+          "done": "WATCHING。二重確認条件を保持。"
+        },
+        {
+          "signal": 4,
+          "domain": "金融革新とRWA",
+          "title": "トークン化決済経路を比較",
+          "why": "Robinhood、Base、オープンなステーブルコイン経路と異なる価値配分が見える。決済の安全性が高くても、参加の開放性まで高いとは限らない。",
+          "steps": [
+            "一つのトークン化証券取引を、所有権、支払資産、受渡し、コーポレートアクションの順で図示する。Pontesとオープンなステーブルコイン経路について参加資格、時間、支配権を比較し、未知の費用は空欄にする。",
+            "資格、時間、権利、支配の一枚比較を用意。契約費用はUNKNOWN。決済やウォレット操作はしない。"
+          ],
+          "done": "READY。比較範囲保存。実行待ち。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai",
+          "title": "人型ロボット証拠台帳を出版",
+          "why": "Physical AIの工学的判断を、再利用できる資本評価に変えられる。今朝の「一台のコンピューターで作る会社」とは別の課題だ。",
+          "steps": [
+            "人型ロボット販売、検収、有効作業、単位経済性を分ける証拠台帳を出版。元課題全文はブリーフに保存。",
+            "七資料、四言語、証拠階段図、台帳、保存LinkedIn稿を完成。操作ログ、私的調査、メーカー費用推計は取得していない。"
+          ],
+          "done": "編集成果はCOMPLETE。公開配信は別途検証。",
+          "deepDiveTitle": "人型ロボット証拠台帳を出版"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラと資本プロジェクト",
+          "title": "州の費用配分シナリオを定義",
+          "why": "電力契約、地域の条件、顧客リースを一つの審査モデルにつなぐ力は、キャリアにもインフラ資本の判断にも役立つ。",
+          "steps": [
+            "既存AIDC審査表にカリフォルニアの一シナリオを用意する。送電網増強、水道増強、許可遅延を開発者、借り手、公益事業者の契約上の負担へ割り当て、根拠のない転嫁仮定には未立証と記す。",
+            "提案シナリオで増強と遅延の責任を契約に沿って配分。本出版作業では審査表を変更していない。"
+          ],
+          "done": "READY。シナリオ仕様保存。契約配分UNKNOWN。"
+        },
+        {
+          "signal": 7,
+          "domain": "レイターステージ未公開市場",
+          "title": "Snorkelの単位経済性を待つ",
+          "why": "公開Model Olympicsの再現可能な規則で信頼を築き、個別評価やデータを商業層にする可能性がある。投資テーマであってもRobinが配分を取得できる証拠にはならない。IPOや戦略的売却は可能性であり、決定事項ではない。",
+          "steps": [
+            "WATCHを維持する。顧客コホート別継続率、専門家費用控除後の利益率、上位5社集中度、優先権条件が揃って初めてINVESTIGATEへ進める。",
+            "コホート継続率、専門家費用後利益率、上位5社集中、優先権を要求。配分取得や申請を意味しない。"
+          ],
+          "done": "WATCHING。INVESTIGATE条件は未達。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開株式とAIがん検出",
+          "title": "採決と患者利益を分ける",
+          "why": "AIとゲノミクスの可能性を、検出、病期、患者利益に分けて検証する。",
+          "steps": [
+            "諮問委員会の採決だけでGRALを追わない。FDAの最終ラベルと、その後の無作為化データによる進行がんまたは死亡率への効果を待つ。偽陽性後の精密検査の費用も確認する。",
+            "FDA最終ラベルと無作為化転帰証拠を待ち、偽陽性後の検査費用を記録。購入、臨床推奨、保有変更はない。"
+          ],
+          "done": "WATCHING。規制と臨床の条件を分けて保持。"
+        }
+      ]
+    }
+  }
+}
