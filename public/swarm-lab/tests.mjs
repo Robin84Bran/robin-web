@@ -5,9 +5,13 @@ import {run as city} from './01_cell_city/model.mjs';
 import {run as assembly} from './02_self_assembly/model.mjs';
 import {run as mars} from './03_mars_jar/model.mjs';
 import {run as islands} from './04_memory_islands/model.mjs';
+import {run as known} from './05_known_trap/model.mjs';
+import {run as windows} from './06_attention_windows/model.mjs';
+import {run as taste} from './07_taste_drift/model.mjs';
+import {run as channel} from './08_shared_channel/model.mjs';
 for(const e of experiments)test(`${e.id}: deterministic, finite, complete`,()=>{
  const a=compare(e.id,{seed:8});assert.deepEqual(a,compare(e.id,{seed:8}));
- for(const arm of a){assert.ok(arm.history.length>50);for(const f of arm.history)assert.ok(Number.isFinite(f.value));}
+ for(const arm of a){assert.ok(arm.history.length>=11);for(const f of arm.history)assert.ok(Number.isFinite(f.value));}
  assert.notDeepEqual(a,compare(e.id,{seed:9}));
 });
 test('Cell city: zero treatment difference gives identical paths; conserved population',()=>{
@@ -35,6 +39,29 @@ test('Islands: equal test budgets, no fake LLM, no same-island repeated mistakes
  assert.equal(islands({strategy:'skills',change:0}).summary.successes,120);
 });
 test('Input boundaries reject NaN, overflow and unknown options',()=>{
- for(const fn of [city,assembly,mars,islands])assert.throws(()=>fn({seed:NaN}));
+ for(const fn of [city,assembly,mars,islands,known,windows,taste,channel])assert.throws(()=>fn({seed:NaN}));
  assert.throws(()=>city({mixing:2}));assert.throws(()=>assembly({boundary:'space'}));assert.throws(()=>mars({leak:-1}));assert.throws(()=>islands({change:1.5}));assert.throws(()=>compare('nope'));
+});
+test('Known labels: zero discount and complete scan controls; no truth-dependent inspection',()=>{
+ const [a,b]=compare('known-trap',{bias:0});assert.deepEqual(a.history,b.history);assert.deepEqual(a.summary,b.summary);
+ const [c,d]=compare('known-trap',{budget:120});assert.equal(c.summary.hits,d.summary.hits);assert.equal(c.summary.falseFlags,d.summary.falseFlags);
+ for(const arm of compare('known-trap')){assert.equal(arm.summary.inspected,60);assert.equal(arm.history.at(-1).cells.filter(c=>c.truth).length,24);assert.equal(arm.history.at(-1).cells.filter(c=>c.status>0).length,60);}
+ assert.throws(()=>known({budget:30.5}));assert.throws(()=>known({bias:2}));
+});
+test('Attention: identical record-read budgets, short-window abstention, pooling and null trend',()=>{
+ const a=compare('attention-windows');for(const r of a)assert.equal(r.summary.recordReads,12000);
+ assert.equal(a[0].summary.globalAlarm,true);assert.equal(a[1].summary.globalAlarm,null);assert.equal(a[2].summary.globalAlarm,null);
+ for(const r of compare('attention-windows',{pool:true}))assert.equal(r.summary.globalAlarm,true);
+ for(const r of compare('attention-windows',{pool:true,drift:0,noise:0}))assert.equal(r.summary.globalAlarm,false);
+ assert.throws(()=>windows({agents:999}));
+});
+test('Taste: fixed proposal and selection budgets; zero protected share gives identical paths',()=>{
+ const [a,b]=compare('taste-drift',{heretics:0});assert.deepEqual(a.history,b.history);
+ for(const r of compare('taste-drift'))for(const f of r.history.slice(1)){assert.equal(f.proposals.length,120);assert.equal(f.proposals.filter(c=>c.selected).length,24);assert.ok(f.weirdTrueKept<=f.weirdTrueProposed);assert.ok(f.taste>=0&&f.taste<=1);}
+ assert.throws(()=>taste({blindSlots:2}));
+});
+test('Shared board: zero volume or trust gives identical paths; effort and population conserved',()=>{
+ for(const params of [{volume:0},{trust:0}]){const[a,b]=compare('shared-channel',params);assert.deepEqual(a.history,b.history);assert.deepEqual(a.summary,b.summary);}
+ for(const leadTrue of [true,false])for(const r of compare('shared-channel',{leadTrue})){assert.equal(r.summary.attempts,30000);for(const f of r.history.slice(1)){assert.equal(f.counts.reduce((a,b)=>a+b,0),1000);assert.equal(f.truth.filter(Boolean).length,16);assert.ok(f.value>0&&f.value<=1);assert.ok(f.trueFlags<=16);}}
+ assert.throws(()=>channel({volume:-1}));
 });

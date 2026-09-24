@@ -1,0 +1,1610 @@
+{
+  "version": "1.1.0",
+  "protocol": "Matched seeds 1–32. Defaults frozen before batch. All runs retained. Simulation only; no real-world calibration.",
+  "id": "shared-channel",
+  "title": "Shared Channel",
+  "metric": "diversity",
+  "arms": [
+    {
+      "label": "Isolated search",
+      "metric": "diversity",
+      "n": 32,
+      "mean": 0.9379370695128313,
+      "min": 0.9219034900332542,
+      "p10": 0.9266094056871397,
+      "median": 0.9380587446125241,
+      "p90": 0.9458421357858326,
+      "max": 0.9540274842916425
+    },
+    {
+      "label": "Shared board",
+      "metric": "diversity",
+      "n": 32,
+      "mean": 0.0162791649395358,
+      "min": 0.01484400929403562,
+      "p10": 0.015147239692198005,
+      "median": 0.016309532878549853,
+      "p90": 0.017126353587339112,
+      "max": 0.01754069743845935
+    }
+  ],
+  "pairedDifference": {
+    "n": 32,
+    "mean": -0.9216579045732954,
+    "min": -0.9389851837030054,
+    "p10": -0.929734980759903,
+    "median": -0.9222485747202911,
+    "p90": -0.9107644156788175,
+    "max": -0.9067562503410562
+  },
+  "runs": [
+    {
+      "seed": 1,
+      "arms": [
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": false,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0
+          },
+          "summary": {
+            "diversity": 0.9222831848734427,
+            "effectiveDirections": 118.05224766380067,
+            "uniqueDirections": 127,
+            "trueFlags": 16,
+            "falseFlags": 0,
+            "collapseStep": null,
+            "attempts": 30000
+          }
+        },
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": true,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0.8998870849609375
+          },
+          "summary": {
+            "diversity": 0.01484400929403562,
+            "effectiveDirections": 1.9000331896365594,
+            "uniqueDirections": 65,
+            "trueFlags": 1,
+            "falseFlags": 0,
+            "collapseStep": 1,
+            "attempts": 30000
+          }
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "arms": [
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": false,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0
+          },
+          "summary": {
+            "diversity": 0.9360245883241219,
+            "effectiveDirections": 119.81114730548761,
+            "uniqueDirections": 128,
+            "trueFlags": 16,
+            "falseFlags": 0,
+            "collapseStep": null,
+            "attempts": 30000
+          }
+        },
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": true,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0.8998870849609375
+          },
+          "summary": {
+            "diversity": 0.016646638901606413,
+            "effectiveDirections": 2.130769779405621,
+            "uniqueDirections": 67,
+            "trueFlags": 1,
+            "falseFlags": 0,
+            "collapseStep": 1,
+            "attempts": 30000
+          }
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "arms": [
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": false,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0
+          },
+          "summary": {
+            "diversity": 0.9380587446125241,
+            "effectiveDirections": 120.07151931040309,
+            "uniqueDirections": 128,
+            "trueFlags": 16,
+            "falseFlags": 0,
+            "collapseStep": null,
+            "attempts": 30000
+          }
+        },
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": true,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0.8998870849609375
+          },
+          "summary": {
+            "diversity": 0.015797205465372208,
+            "effectiveDirections": 2.0220422995676426,
+            "uniqueDirections": 64,
+            "trueFlags": 1,
+            "falseFlags": 0,
+            "collapseStep": 1,
+            "attempts": 30000
+          }
+        }
+      ]
+    },
+    {
+      "seed": 4,
+      "arms": [
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": false,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0
+          },
+          "summary": {
+            "diversity": 0.9493656575608037,
+            "effectiveDirections": 121.51880416778287,
+            "uniqueDirections": 128,
+            "trueFlags": 16,
+            "falseFlags": 0,
+            "collapseStep": null,
+            "attempts": 30000
+          }
+        },
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": true,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0.8998870849609375
+          },
+          "summary": {
+            "diversity": 0.015412649600239428,
+            "effectiveDirections": 1.9728191488306468,
+            "uniqueDirections": 66,
+            "trueFlags": 1,
+            "falseFlags": 0,
+            "collapseStep": 1,
+            "attempts": 30000
+          }
+        }
+      ]
+    },
+    {
+      "seed": 5,
+      "arms": [
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": false,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0
+          },
+          "summary": {
+            "diversity": 0.934734792165847,
+            "effectiveDirections": 119.64605339722841,
+            "uniqueDirections": 128,
+            "trueFlags": 16,
+            "falseFlags": 0,
+            "collapseStep": null,
+            "attempts": 30000
+          }
+        },
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": true,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0.8998870849609375
+          },
+          "summary": {
+            "diversity": 0.01551357075594009,
+            "effectiveDirections": 1.9857370567603314,
+            "uniqueDirections": 62,
+            "trueFlags": 1,
+            "falseFlags": 0,
+            "collapseStep": 1,
+            "attempts": 30000
+          }
+        }
+      ]
+    },
+    {
+      "seed": 6,
+      "arms": [
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": false,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0
+          },
+          "summary": {
+            "diversity": 0.9540274842916425,
+            "effectiveDirections": 122.11551798933024,
+            "uniqueDirections": 128,
+            "trueFlags": 16,
+            "falseFlags": 0,
+            "collapseStep": null,
+            "attempts": 30000
+          }
+        },
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": true,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0.8998870849609375
+          },
+          "summary": {
+            "diversity": 0.015042300588637092,
+            "effectiveDirections": 1.9254144753455478,
+            "uniqueDirections": 65,
+            "trueFlags": 1,
+            "falseFlags": 0,
+            "collapseStep": 1,
+            "attempts": 30000
+          }
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "arms": [
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": false,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0
+          },
+          "summary": {
+            "diversity": 0.9458421357858326,
+            "effectiveDirections": 121.06779338058658,
+            "uniqueDirections": 128,
+            "trueFlags": 16,
+            "falseFlags": 0,
+            "collapseStep": null,
+            "attempts": 30000
+          }
+        },
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": true,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0.8998870849609375
+          },
+          "summary": {
+            "diversity": 0.0161071550259296,
+            "effectiveDirections": 2.061715843318989,
+            "uniqueDirections": 67,
+            "trueFlags": 1,
+            "falseFlags": 0,
+            "collapseStep": 1,
+            "attempts": 30000
+          }
+        }
+      ]
+    },
+    {
+      "seed": 8,
+      "arms": [
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": false,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0
+          },
+          "summary": {
+            "diversity": 0.9331882514968542,
+            "effectiveDirections": 119.44809619159734,
+            "uniqueDirections": 127,
+            "trueFlags": 16,
+            "falseFlags": 0,
+            "collapseStep": null,
+            "attempts": 30000
+          }
+        },
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": true,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0.8998870849609375
+          },
+          "summary": {
+            "diversity": 0.016617863905473346,
+            "effectiveDirections": 2.1270865799005882,
+            "uniqueDirections": 68,
+            "trueFlags": 1,
+            "falseFlags": 0,
+            "collapseStep": 1,
+            "attempts": 30000
+          }
+        }
+      ]
+    },
+    {
+      "seed": 9,
+      "arms": [
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": false,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0
+          },
+          "summary": {
+            "diversity": 0.935965313970218,
+            "effectiveDirections": 119.8035601881879,
+            "uniqueDirections": 128,
+            "trueFlags": 16,
+            "falseFlags": 0,
+            "collapseStep": null,
+            "attempts": 30000
+          }
+        },
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": true,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0.8998870849609375
+          },
+          "summary": {
+            "diversity": 0.017409217502415312,
+            "effectiveDirections": 2.22837984030916,
+            "uniqueDirections": 74,
+            "trueFlags": 1,
+            "falseFlags": 0,
+            "collapseStep": 1,
+            "attempts": 30000
+          }
+        }
+      ]
+    },
+    {
+      "seed": 10,
+      "arms": [
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": false,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0
+          },
+          "summary": {
+            "diversity": 0.9391686378005467,
+            "effectiveDirections": 120.21358563846998,
+            "uniqueDirections": 127,
+            "trueFlags": 16,
+            "falseFlags": 0,
+            "collapseStep": null,
+            "attempts": 30000
+          }
+        },
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": true,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0.8998870849609375
+          },
+          "summary": {
+            "diversity": 0.01692006308025566,
+            "effectiveDirections": 2.1657680742727243,
+            "uniqueDirections": 81,
+            "trueFlags": 1,
+            "falseFlags": 0,
+            "collapseStep": 1,
+            "attempts": 30000
+          }
+        }
+      ]
+    },
+    {
+      "seed": 11,
+      "arms": [
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": false,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0
+          },
+          "summary": {
+            "diversity": 0.9505167815781385,
+            "effectiveDirections": 121.66614804200172,
+            "uniqueDirections": 128,
+            "trueFlags": 16,
+            "falseFlags": 0,
+            "collapseStep": null,
+            "attempts": 30000
+          }
+        },
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": true,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0.8998870849609375
+          },
+          "summary": {
+            "diversity": 0.01543659582269228,
+            "effectiveDirections": 1.9758842653046118,
+            "uniqueDirections": 69,
+            "trueFlags": 1,
+            "falseFlags": 0,
+            "collapseStep": 1,
+            "attempts": 30000
+          }
+        }
+      ]
+    },
+    {
+      "seed": 12,
+      "arms": [
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": false,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0
+          },
+          "summary": {
+            "diversity": 0.9423299759226322,
+            "effectiveDirections": 120.61823691809693,
+            "uniqueDirections": 128,
+            "trueFlags": 16,
+            "falseFlags": 0,
+            "collapseStep": null,
+            "attempts": 30000
+          }
+        },
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": true,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0.8998870849609375
+          },
+          "summary": {
+            "diversity": 0.017449628683205123,
+            "effectiveDirections": 2.2335524714502557,
+            "uniqueDirections": 76,
+            "trueFlags": 1,
+            "falseFlags": 0,
+            "collapseStep": 1,
+            "attempts": 30000
+          }
+        }
+      ]
+    },
+    {
+      "seed": 13,
+      "arms": [
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": false,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0
+          },
+          "summary": {
+            "diversity": 0.9273820917423808,
+            "effectiveDirections": 118.70490774302475,
+            "uniqueDirections": 128,
+            "trueFlags": 16,
+            "falseFlags": 0,
+            "collapseStep": null,
+            "attempts": 30000
+          }
+        },
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": true,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0.8998870849609375
+          },
+          "summary": {
+            "diversity": 0.016617676063563385,
+            "effectiveDirections": 2.1270625361361133,
+            "uniqueDirections": 76,
+            "trueFlags": 1,
+            "falseFlags": 0,
+            "collapseStep": 1,
+            "attempts": 30000
+          }
+        }
+      ]
+    },
+    {
+      "seed": 14,
+      "arms": [
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": false,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0
+          },
+          "summary": {
+            "diversity": 0.936857241762352,
+            "effectiveDirections": 119.91772694558105,
+            "uniqueDirections": 128,
+            "trueFlags": 16,
+            "falseFlags": 0,
+            "collapseStep": null,
+            "attempts": 30000
+          }
+        },
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": true,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0.8998870849609375
+          },
+          "summary": {
+            "diversity": 0.01697287445378544,
+            "effectiveDirections": 2.172527930084536,
+            "uniqueDirections": 78,
+            "trueFlags": 1,
+            "falseFlags": 0,
+            "collapseStep": 1,
+            "attempts": 30000
+          }
+        }
+      ]
+    },
+    {
+      "seed": 15,
+      "arms": [
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": false,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0
+          },
+          "summary": {
+            "diversity": 0.9266094056871397,
+            "effectiveDirections": 118.60600392795388,
+            "uniqueDirections": 128,
+            "trueFlags": 16,
+            "falseFlags": 0,
+            "collapseStep": null,
+            "attempts": 30000
+          }
+        },
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": true,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0.8998870849609375
+          },
+          "summary": {
+            "diversity": 0.016814677856039704,
+            "effectiveDirections": 2.152278765573082,
+            "uniqueDirections": 72,
+            "trueFlags": 1,
+            "falseFlags": 0,
+            "collapseStep": 1,
+            "attempts": 30000
+          }
+        }
+      ]
+    },
+    {
+      "seed": 16,
+      "arms": [
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": false,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0
+          },
+          "summary": {
+            "diversity": 0.9439676601911436,
+            "effectiveDirections": 120.82786050446639,
+            "uniqueDirections": 128,
+            "trueFlags": 16,
+            "falseFlags": 0,
+            "collapseStep": null,
+            "attempts": 30000
+          }
+        },
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": true,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0.8998870849609375
+          },
+          "summary": {
+            "diversity": 0.017126353587339112,
+            "effectiveDirections": 2.1921732591794063,
+            "uniqueDirections": 76,
+            "trueFlags": 1,
+            "falseFlags": 0,
+            "collapseStep": 1,
+            "attempts": 30000
+          }
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "arms": [
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": false,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0
+          },
+          "summary": {
+            "diversity": 0.9385276207137195,
+            "effectiveDirections": 120.1315354513561,
+            "uniqueDirections": 128,
+            "trueFlags": 16,
+            "falseFlags": 0,
+            "collapseStep": null,
+            "attempts": 30000
+          }
+        },
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": true,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0.8998870849609375
+          },
+          "summary": {
+            "diversity": 0.016233347998341977,
+            "effectiveDirections": 2.077868543787773,
+            "uniqueDirections": 68,
+            "trueFlags": 1,
+            "falseFlags": 0,
+            "collapseStep": 1,
+            "attempts": 30000
+          }
+        }
+      ]
+    },
+    {
+      "seed": 18,
+      "arms": [
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": false,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0
+          },
+          "summary": {
+            "diversity": 0.9406944695716686,
+            "effectiveDirections": 120.40889210517358,
+            "uniqueDirections": 128,
+            "trueFlags": 16,
+            "falseFlags": 0,
+            "collapseStep": null,
+            "attempts": 30000
+          }
+        },
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": true,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0.8998870849609375
+          },
+          "summary": {
+            "diversity": 0.01591540924874052,
+            "effectiveDirections": 2.0371723838387865,
+            "uniqueDirections": 68,
+            "trueFlags": 1,
+            "falseFlags": 0,
+            "collapseStep": 1,
+            "attempts": 30000
+          }
+        }
+      ]
+    },
+    {
+      "seed": 19,
+      "arms": [
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": false,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0
+          },
+          "summary": {
+            "diversity": 0.9377265508227097,
+            "effectiveDirections": 120.02899850530684,
+            "uniqueDirections": 128,
+            "trueFlags": 16,
+            "falseFlags": 0,
+            "collapseStep": null,
+            "attempts": 30000
+          }
+        },
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": true,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0.8998870849609375
+          },
+          "summary": {
+            "diversity": 0.015693422099562003,
+            "effectiveDirections": 2.0087580287439364,
+            "uniqueDirections": 68,
+            "trueFlags": 1,
+            "falseFlags": 0,
+            "collapseStep": 1,
+            "attempts": 30000
+          }
+        }
+      ]
+    },
+    {
+      "seed": 20,
+      "arms": [
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": false,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0
+          },
+          "summary": {
+            "diversity": 0.9364613405468594,
+            "effectiveDirections": 119.867051589998,
+            "uniqueDirections": 128,
+            "trueFlags": 16,
+            "falseFlags": 0,
+            "collapseStep": null,
+            "attempts": 30000
+          }
+        },
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": true,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0.8998870849609375
+          },
+          "summary": {
+            "diversity": 0.017410375018769082,
+            "effectiveDirections": 2.2285280024024425,
+            "uniqueDirections": 70,
+            "trueFlags": 1,
+            "falseFlags": 0,
+            "collapseStep": 1,
+            "attempts": 30000
+          }
+        }
+      ]
+    },
+    {
+      "seed": 21,
+      "arms": [
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": false,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0
+          },
+          "summary": {
+            "diversity": 0.9459816538426274,
+            "effectiveDirections": 121.08565169185631,
+            "uniqueDirections": 128,
+            "trueFlags": 16,
+            "falseFlags": 0,
+            "collapseStep": null,
+            "attempts": 30000
+          }
+        },
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": true,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0.8998870849609375
+          },
+          "summary": {
+            "diversity": 0.016414642186664663,
+            "effectiveDirections": 2.101074199893077,
+            "uniqueDirections": 69,
+            "trueFlags": 1,
+            "falseFlags": 0,
+            "collapseStep": 1,
+            "attempts": 30000
+          }
+        }
+      ]
+    },
+    {
+      "seed": 22,
+      "arms": [
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": false,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0
+          },
+          "summary": {
+            "diversity": 0.9323516352778206,
+            "effectiveDirections": 119.34100931556104,
+            "uniqueDirections": 128,
+            "trueFlags": 16,
+            "falseFlags": 0,
+            "collapseStep": null,
+            "attempts": 30000
+          }
+        },
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": true,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0.8998870849609375
+          },
+          "summary": {
+            "diversity": 0.016309532878549853,
+            "effectiveDirections": 2.087620208454381,
+            "uniqueDirections": 71,
+            "trueFlags": 1,
+            "falseFlags": 0,
+            "collapseStep": 1,
+            "attempts": 30000
+          }
+        }
+      ]
+    },
+    {
+      "seed": 23,
+      "arms": [
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": false,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0
+          },
+          "summary": {
+            "diversity": 0.9324261416649098,
+            "effectiveDirections": 119.35054613310845,
+            "uniqueDirections": 128,
+            "trueFlags": 16,
+            "falseFlags": 0,
+            "collapseStep": null,
+            "attempts": 30000
+          }
+        },
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": true,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0.8998870849609375
+          },
+          "summary": {
+            "diversity": 0.01754069743845935,
+            "effectiveDirections": 2.2452092721227968,
+            "uniqueDirections": 79,
+            "trueFlags": 1,
+            "falseFlags": 0,
+            "collapseStep": 1,
+            "attempts": 30000
+          }
+        }
+      ]
+    },
+    {
+      "seed": 24,
+      "arms": [
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": false,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0
+          },
+          "summary": {
+            "diversity": 0.9238721480301781,
+            "effectiveDirections": 118.2556349478628,
+            "uniqueDirections": 128,
+            "trueFlags": 16,
+            "falseFlags": 0,
+            "collapseStep": null,
+            "attempts": 30000
+          }
+        },
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": true,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0.8998870849609375
+          },
+          "summary": {
+            "diversity": 0.015936384812969724,
+            "effectiveDirections": 2.0398572560601247,
+            "uniqueDirections": 71,
+            "trueFlags": 1,
+            "falseFlags": 0,
+            "collapseStep": 1,
+            "attempts": 30000
+          }
+        }
+      ]
+    },
+    {
+      "seed": 25,
+      "arms": [
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": false,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0
+          },
+          "summary": {
+            "diversity": 0.9456222894401891,
+            "effectiveDirections": 121.0396530483442,
+            "uniqueDirections": 128,
+            "trueFlags": 16,
+            "falseFlags": 0,
+            "collapseStep": null,
+            "attempts": 30000
+          }
+        },
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": true,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0.8998870849609375
+          },
+          "summary": {
+            "diversity": 0.01684102629922226,
+            "effectiveDirections": 2.1556513663004493,
+            "uniqueDirections": 76,
+            "trueFlags": 1,
+            "falseFlags": 0,
+            "collapseStep": 1,
+            "attempts": 30000
+          }
+        }
+      ]
+    },
+    {
+      "seed": 26,
+      "arms": [
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": false,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0
+          },
+          "summary": {
+            "diversity": 0.9433148571740165,
+            "effectiveDirections": 120.74430171827412,
+            "uniqueDirections": 128,
+            "trueFlags": 16,
+            "falseFlags": 0,
+            "collapseStep": null,
+            "attempts": 30000
+          }
+        },
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": true,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0.8998870849609375
+          },
+          "summary": {
+            "diversity": 0.015655289691922366,
+            "effectiveDirections": 2.003877080566063,
+            "uniqueDirections": 66,
+            "trueFlags": 1,
+            "falseFlags": 0,
+            "collapseStep": 1,
+            "attempts": 30000
+          }
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "arms": [
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": false,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0
+          },
+          "summary": {
+            "diversity": 0.9219034900332542,
+            "effectiveDirections": 118.00364672425654,
+            "uniqueDirections": 128,
+            "trueFlags": 16,
+            "falseFlags": 0,
+            "collapseStep": null,
+            "attempts": 30000
+          }
+        },
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": true,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0.8998870849609375
+          },
+          "summary": {
+            "diversity": 0.015147239692198005,
+            "effectiveDirections": 1.9388466806013447,
+            "uniqueDirections": 65,
+            "trueFlags": 1,
+            "falseFlags": 0,
+            "collapseStep": 1,
+            "attempts": 30000
+          }
+        }
+      ]
+    },
+    {
+      "seed": 28,
+      "arms": [
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": false,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0
+          },
+          "summary": {
+            "diversity": 0.932215111487964,
+            "effectiveDirections": 119.32353427045939,
+            "uniqueDirections": 128,
+            "trueFlags": 16,
+            "falseFlags": 0,
+            "collapseStep": null,
+            "attempts": 30000
+          }
+        },
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": true,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0.8998870849609375
+          },
+          "summary": {
+            "diversity": 0.016494256542845892,
+            "effectiveDirections": 2.111264837484274,
+            "uniqueDirections": 72,
+            "trueFlags": 1,
+            "falseFlags": 0,
+            "collapseStep": 1,
+            "attempts": 30000
+          }
+        }
+      ]
+    },
+    {
+      "seed": 29,
+      "arms": [
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": false,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0
+          },
+          "summary": {
+            "diversity": 0.938393153896477,
+            "effectiveDirections": 120.11432369874906,
+            "uniqueDirections": 128,
+            "trueFlags": 16,
+            "falseFlags": 0,
+            "collapseStep": null,
+            "attempts": 30000
+          }
+        },
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": true,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0.8998870849609375
+          },
+          "summary": {
+            "diversity": 0.016219189148983786,
+            "effectiveDirections": 2.0760562110699246,
+            "uniqueDirections": 72,
+            "trueFlags": 1,
+            "falseFlags": 0,
+            "collapseStep": 1,
+            "attempts": 30000
+          }
+        }
+      ]
+    },
+    {
+      "seed": 30,
+      "arms": [
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": false,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0
+          },
+          "summary": {
+            "diversity": 0.9439701481014321,
+            "effectiveDirections": 120.82817895698331,
+            "uniqueDirections": 128,
+            "trueFlags": 16,
+            "falseFlags": 0,
+            "collapseStep": null,
+            "attempts": 30000
+          }
+        },
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": true,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0.8998870849609375
+          },
+          "summary": {
+            "diversity": 0.01650288939032846,
+            "effectiveDirections": 2.112369841962043,
+            "uniqueDirections": 71,
+            "trueFlags": 1,
+            "falseFlags": 0,
+            "collapseStep": 1,
+            "attempts": 30000
+          }
+        }
+      ]
+    },
+    {
+      "seed": 31,
+      "arms": [
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": false,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0
+          },
+          "summary": {
+            "diversity": 0.9435023507665373,
+            "effectiveDirections": 120.76830089811678,
+            "uniqueDirections": 128,
+            "trueFlags": 16,
+            "falseFlags": 0,
+            "collapseStep": null,
+            "attempts": 30000
+          }
+        },
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": true,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0.8998870849609375
+          },
+          "summary": {
+            "diversity": 0.015076484100972721,
+            "effectiveDirections": 1.9297899649245083,
+            "uniqueDirections": 62,
+            "trueFlags": 1,
+            "falseFlags": 0,
+            "collapseStep": 1,
+            "attempts": 30000
+          }
+        }
+      ]
+    },
+    {
+      "seed": 32,
+      "arms": [
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": false,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0
+          },
+          "summary": {
+            "diversity": 0.9407013152746225,
+            "effectiveDirections": 120.40976835515168,
+            "uniqueDirections": 128,
+            "trueFlags": 16,
+            "falseFlags": 0,
+            "collapseStep": null,
+            "attempts": 30000
+          }
+        },
+        {
+          "params": {
+            "volume": 8,
+            "trust": 0.25,
+            "threshold": 40,
+            "leadTrue": true,
+            "shared": true,
+            "agents": 1000,
+            "directions": 128,
+            "rounds": 30,
+            "adoptionProbability": 0.8998870849609375
+          },
+          "summary": {
+            "diversity": 0.016814610930085263,
+            "effectiveDirections": 2.1522701990509137,
+            "uniqueDirections": 76,
+            "trueFlags": 1,
+            "falseFlags": 0,
+            "collapseStep": 1,
+            "attempts": 30000
+          }
+        }
+      ]
+    }
+  ]
+}

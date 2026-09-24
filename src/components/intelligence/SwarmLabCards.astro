@@ -3,9 +3,9 @@ import {experiments} from '../../../public/swarm-lab/lab.mjs';
 ---
 <div class="worlds">
   {experiments.map((e,i)=><a class="world" href={`/intelligence/swarm-lab/${e.id}/`}>
-    <div class={`world-art art-${i}`} aria-hidden="true">
+    <div class={`world-art art-${i%4}`} aria-hidden="true">
       {Array.from({length:24},(_,j)=><i style={`--j:${j};--x:${18+(j*37)%68}%;--y:${16+(j*23)%69}%;`} />)}
-      <span>{['◌','◉','⌁','⋮'][i]}</span>
+      <span>{['◌','◉','⌁','⋮','⊙','▦','◇','◎'][i]}</span>
     </div>
     <p class="eyebrow">Experiment {e.number} · {e.chinese}</p>
     <h3>{e.title}</h3><p>{e.question}</p><span class="enter">Enter this world ↗</span>
