@@ -1,0 +1,97 @@
+seed,arm,metric,value
+1,Fresh learner,rate,0.6916666666666667
+1,Skills,rate,0.825
+1,Skills + failure memory,rate,0.925
+2,Fresh learner,rate,0.5916666666666667
+2,Skills,rate,0.8833333333333333
+2,Skills + failure memory,rate,0.95
+3,Fresh learner,rate,0.675
+3,Skills,rate,0.875
+3,Skills + failure memory,rate,0.9166666666666666
+4,Fresh learner,rate,0.7416666666666667
+4,Skills,rate,0.95
+4,Skills + failure memory,rate,0.925
+5,Fresh learner,rate,0.6833333333333333
+5,Skills,rate,0.8583333333333333
+5,Skills + failure memory,rate,0.9333333333333333
+6,Fresh learner,rate,0.85
+6,Skills,rate,0.8083333333333333
+6,Skills + failure memory,rate,0.925
+7,Fresh learner,rate,0.7083333333333334
+7,Skills,rate,0.8333333333333334
+7,Skills + failure memory,rate,0.925
+8,Fresh learner,rate,0.7916666666666666
+8,Skills,rate,0.9333333333333333
+8,Skills + failure memory,rate,0.925
+9,Fresh learner,rate,0.7166666666666667
+9,Skills,rate,0.8833333333333333
+9,Skills + failure memory,rate,0.9333333333333333
+10,Fresh learner,rate,0.6333333333333333
+10,Skills,rate,0.9166666666666666
+10,Skills + failure memory,rate,0.9416666666666667
+11,Fresh learner,rate,0.7416666666666667
+11,Skills,rate,0.9166666666666666
+11,Skills + failure memory,rate,0.9333333333333333
+12,Fresh learner,rate,0.7916666666666666
+12,Skills,rate,0.9
+12,Skills + failure memory,rate,0.95
+13,Fresh learner,rate,0.7666666666666667
+13,Skills,rate,0.9166666666666666
+13,Skills + failure memory,rate,0.9333333333333333
+14,Fresh learner,rate,0.625
+14,Skills,rate,0.7416666666666667
+14,Skills + failure memory,rate,0.9083333333333333
+15,Fresh learner,rate,0.7833333333333333
+15,Skills,rate,0.8833333333333333
+15,Skills + failure memory,rate,0.9583333333333334
+16,Fresh learner,rate,0.8
+16,Skills,rate,0.8666666666666667
+16,Skills + failure memory,rate,0.9166666666666666
+17,Fresh learner,rate,0.7916666666666666
+17,Skills,rate,0.9416666666666667
+17,Skills + failure memory,rate,0.9333333333333333
+18,Fresh learner,rate,0.8333333333333334
+18,Skills,rate,0.925
+18,Skills + failure memory,rate,0.95
+19,Fresh learner,rate,0.7
+19,Skills,rate,0.8833333333333333
+19,Skills + failure memory,rate,0.95
+20,Fresh learner,rate,0.7166666666666667
+20,Skills,rate,0.9416666666666667
+20,Skills + failure memory,rate,0.9416666666666667
+21,Fresh learner,rate,0.7
+21,Skills,rate,0.8666666666666667
+21,Skills + failure memory,rate,0.95
+22,Fresh learner,rate,0.7416666666666667
+22,Skills,rate,0.8
+22,Skills + failure memory,rate,0.9083333333333333
+23,Fresh learner,rate,0.725
+23,Skills,rate,0.8083333333333333
+23,Skills + failure memory,rate,0.9416666666666667
+24,Fresh learner,rate,0.575
+24,Skills,rate,0.8416666666666667
+24,Skills + failure memory,rate,0.9416666666666667
+25,Fresh learner,rate,0.5083333333333333
+25,Skills,rate,0.9083333333333333
+25,Skills + failure memory,rate,0.925
+26,Fresh learner,rate,0.8416666666666667
+26,Skills,rate,0.8833333333333333
+26,Skills + failure memory,rate,0.95
+27,Fresh learner,rate,0.6583333333333333
+27,Skills,rate,0.825
+27,Skills + failure memory,rate,0.9333333333333333
+28,Fresh learner,rate,0.8083333333333333
+28,Skills,rate,0.95
+28,Skills + failure memory,rate,0.95
+29,Fresh learner,rate,0.625
+29,Skills,rate,0.8583333333333333
+29,Skills + failure memory,rate,0.9333333333333333
+30,Fresh learner,rate,0.725
+30,Skills,rate,0.875
+30,Skills + failure memory,rate,0.9416666666666667
+31,Fresh learner,rate,0.7666666666666667
+31,Skills,rate,0.8916666666666667
+31,Skills + failure memory,rate,0.9416666666666667
+32,Fresh learner,rate,0.7833333333333333
+32,Skills,rate,0.8833333333333333
+32,Skills + failure memory,rate,0.9333333333333333

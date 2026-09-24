@@ -1,0 +1,18 @@
+---
+import {experiments} from '../../../public/swarm-lab/lab.mjs';
+---
+<div class="worlds">
+  {experiments.map((e,i)=><a class="world" href={`/intelligence/swarm-lab/${e.id}/`}>
+    <div class={`world-art art-${i}`} aria-hidden="true">
+      {Array.from({length:24},(_,j)=><i style={`--j:${j};--x:${18+(j*37)%68}%;--y:${16+(j*23)%69}%;`} />)}
+      <span>{['◌','◉','⌁','⋮'][i]}</span>
+    </div>
+    <p class="eyebrow">Experiment {e.number} · {e.chinese}</p>
+    <h3>{e.title}</h3><p>{e.question}</p><span class="enter">Enter this world ↗</span>
+  </a>)}
+</div>
+<style>
+ .worlds{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.2rem;margin-block:2rem}.world{color:inherit;text-decoration:none;border-top:1px solid var(--line);padding-top:1rem;display:flex;flex-direction:column;transition:transform .2s}.world:hover{transform:translateY(-3px)}.world:focus-visible{outline:2px solid #59736a;outline-offset:5px}.world h3{font-family:var(--serif);font-size:1.7rem;line-height:1.15;font-weight:400;margin:.2rem 0 .7rem}.world p:not(.eyebrow){font-size:.96rem;line-height:1.6;color:var(--muted);margin:0 0 1.5rem}.world .eyebrow{font-size:.65rem;line-height:1.5;margin:1.2rem 0 .7rem}.enter{margin-top:auto;font-size:.8rem;color:#59736a}.world-art{height:125px;position:relative;overflow:hidden;background:#e6e8df}.world-art i{position:absolute;width:6px;height:6px;border-radius:50%;left:var(--x);top:var(--y);background:#668375}.world-art i:nth-child(3n){background:#be785e}.world-art span{position:absolute;inset:0;display:grid;place-items:center;font-size:5rem;color:#59736a88}.art-0 i{border-radius:0}.art-1{border-radius:50% 50% 45% 45%;background:#e8e4d9}.art-1 i{transform:translate(calc((var(--j) - 12)*-1px),5px)}.art-2{background:#eadbd0}.art-2 i{width:3px;height:22px;background:#a58352}.art-3{background:#e6e2d9}.art-3 i{left:calc(12% + mod(var(--j),8)*10%);border-radius:1px}.art-3 span{font-size:4rem}
+ @media(max-width:950px){.worlds{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:500px){.worlds{gap:1.5rem 1rem}.world h3{font-size:1.35rem}.world-art{height:90px}.world p:not(.eyebrow){font-size:.85rem}.world .eyebrow{font-size:.6rem}}
+ @media(prefers-reduced-motion:reduce){.world{transition:none}.world:hover{transform:none}}
+</style>
