@@ -1,28 +1,50 @@
 ---
 import IdentityLanguageNav from './IdentityLanguageNav.astro';
-import IdentityOrbit from './IdentityOrbit.astro';
-import SakuraDrift from './SakuraDrift.astro';
+import TransformationEnso from './TransformationEnso.astro';
 import { identityProfiles } from '../data/identity';
-
 const profile = identityProfiles.en;
 ---
 
-<section class="identity-bridge shell" aria-label="Robin Xie identity journey">
-  <SakuraDrift variant="banner" />
+<section class="identity-bridge identity-bridge--transformation shell" aria-labelledby="robin-introduction">
   <div class="identity-bridge__copy">
-    <p>{profile.description}</p>
-    <blockquote>{profile.spine}</blockquote>
+    <p class="eyebrow">Robin Xie · 谢玢 · 謝玢</p>
+    <h2 id="robin-introduction">Entrepreneur and investor<br /><span>with an engineering background.</span></h2>
+    <p>I began in subsea engineering, moved into FinTech and entrepreneurship, and now build AI-native businesses and systems while allocating attention and capital.</p>
   </div>
-  <IdentityOrbit
-    items={profile.axis}
-    label={profile.spine}
-    centerLabel={profile.orbitLabel}
-    centerImage="/photos/robin-ouroboros-portrait.jpg"
-    centerImageWidth={961}
-    centerImageHeight={1280}
-  />
+  <TransformationEnso />
+  <section class="identity-now" aria-labelledby="robin-now">
+    <h3 id="robin-now" class="eyebrow">Now</h3>
+    <p>Most of my time today is focused on transforming iSunTV (<a href="https://isuntv.com/" hreflang="zh-Hant">繁體中文</a> / <a href="https://isun1.com/" hreflang="zh-Hans">简体中文</a>), a legacy licensed satellite TV media company, into a live <a href="https://isun1.news/">AI-native news lab</a>, <a href="https://isuntvmall.com/">streaming commerce</a>, and one-person-company labs with agents and swarms.</p>
+    <p>In practice, that means moving between strategy, product, capital, and code. At iSunTV and iSunTVMall, for example, <strong>I am also the technical team.</strong></p>
+  </section>
+  <p class="identity-practice">Find the bottleneck.<br /><span>Build or back the way through it.</span></p>
   <div class="identity-bridge__discovery">
     <a class="quiet-link" href={profile.aboutPath}>{profile.aboutLinkLabel}<span aria-hidden="true">↗</span></a>
     <IdentityLanguageNav currentLocale="en" page="home" />
   </div>
 </section>
+
+<style>
+  .identity-bridge--transformation { gap: 2.5rem 3rem; }
+  .identity-bridge__copy h2 { margin: 1.2rem 0 1.5rem; font-size: clamp(2rem, 3.8vw, 3.15rem); line-height: 1.14; letter-spacing: -.035em; }
+  .identity-bridge__copy h2 span { color: var(--muted); font-size: .76em; }
+  .identity-bridge__copy > p:not(.eyebrow) { font-size: clamp(1.1rem, 1.6vw, 1.25rem); line-height: 1.75; margin-bottom: 0; }
+  .identity-now { max-width: 43rem; border-top: 1px solid var(--line); padding-top: 1.5rem; }
+  .identity-now h3 { margin: 0 0 1rem; color: var(--gold-dark); }
+  .identity-now p { color: var(--muted); font-size: .96rem; line-height: 1.85; }
+  .identity-now p:last-child { margin-bottom: 0; }
+  .identity-now a { color: var(--ink); text-decoration-color: var(--gold); text-underline-offset: .22em; }
+  .identity-now strong { color: var(--ink); font-weight: 550; }
+  .identity-practice { margin: .5rem 0; color: var(--ink); font-family: var(--serif); font-size: clamp(1.65rem, 3vw, 2.35rem); line-height: 1.4; letter-spacing: -.02em; }
+  .identity-practice span { color: var(--gold-dark); }
+  @media (min-width: 60rem) {
+    .identity-bridge--transformation { grid-template-columns: minmax(0, 1.3fr) minmax(22rem, 1fr); align-items: start; }
+    .identity-bridge__copy { grid-column: 1; grid-row: 1; }
+    .identity-bridge--transformation :global(.transformation-enso) { grid-column: 2; grid-row: 1 / 3; align-self: center; }
+    .identity-now { grid-column: 1; grid-row: 2; }
+    .identity-practice { grid-column: 1 / -1; }
+  }
+  @media (max-width: 59.99rem) {
+    .identity-bridge--transformation { grid-template-columns: minmax(0, 1fr); }
+  }
+</style>

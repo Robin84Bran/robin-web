@@ -40,8 +40,14 @@ const { currentPath } = Astro.props;
         </li>
       </ul>
     </nav>
-    <a class="github-link" href={socialLinks.official} rel="noreferrer" target="_blank">
-      Official <span aria-hidden="true">↗</span>
-    </a>
+    <div class="github-link official-links" role="group" aria-label="Official profiles">
+      <a href={socialLinks.official} rel="noreferrer" target="_blank">TideiSun <span aria-hidden="true">↗</span></a>
+      <a href={socialLinks.officialIsun} rel="noreferrer" target="_blank">iSunTV <span aria-hidden="true">↗</span></a>
+    </div>
   </div>
 </header>
+
+<style>
+  .official-links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: .4rem .85rem; }
+  .official-links a { text-decoration: none; }
+</style>
