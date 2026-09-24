@@ -54,3 +54,21 @@ completed (with evidence link), queued, or watch only. Immutable source text
 is not rewritten. See [the operating contract](scripts/daily-special/README.md).
 Only code and sanitized publication receipts belong here; private selections,
 runtime state, logs, prompts and Telegram identifiers never enter this repo.
+
+New authored essays follow [Public Editorial Voice](docs/PUBLIC_EDITORIAL_VOICE.md):
+explain the mechanism to a curious reader, retain meaningful uncertainty in
+ordinary language, and keep operational status tokens in their evidence records.
+An owner-authorized editorial companion lives under `YYYYMMDD/<editionSlug>/`,
+links its original article, and has its own download and hash. It does not create
+a second action-completion receipt or overwrite the original.
+
+## Owner-document diary editions
+
+The September 24 diary was explicitly supplied and authorized as a Word document,
+including English, Traditional Chinese and Japanese translations. Its original
+Chinese text, paragraph boundaries, emphasis, colors, links and tables are kept.
+This is a specific owner-approved exception to the usual original-only diary
+workflow, not automatic translation of all diaries. Each edition has its own
+canonical, reciprocal language links and body hash; translated editions require
+native editorial review. The archive lists the source once. Private source
+documents and import receipts stay outside the public repository.

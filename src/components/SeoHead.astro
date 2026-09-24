@@ -60,14 +60,14 @@ const ogLocale = ogLocales[language] ?? 'en_US';
 <title>{title}</title>
 <link rel="canonical" href={canonical} />
 <link rel="describedby" href={absoluteUrl('/llms.txt')} type="text/plain" />
-{alternates.map((alternate) => <link rel="alternate" hreflang={alternate.hreflang} href={absoluteUrl(alternate.path)} />)}
-<link rel="alternate" hreflang="x-default" href={absoluteUrl(alternates.find((alternate) => alternate.hreflang === 'en')?.path ?? path)} />
+{alternates.filter((alternate) => alternate.hreflang !== 'x-default').map((alternate) => <link rel="alternate" hreflang={alternate.hreflang} href={absoluteUrl(alternate.path)} />)}
+<link rel="alternate" hreflang="x-default" href={absoluteUrl(alternates.find((alternate) => alternate.hreflang === 'x-default')?.path ?? alternates.find((alternate) => alternate.hreflang === 'en')?.path ?? path)} />
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 
 <meta property="og:site_name" content={SITE_NAME} />
 <meta property="og:type" content={type} />
 <meta property="og:locale" content={ogLocale} />
-{alternates.filter((alternate) => alternate.hreflang !== language).map((alternate) => (
+{alternates.filter((alternate) => alternate.hreflang !== language && alternate.hreflang !== 'x-default').map((alternate) => (
   <meta property="og:locale:alternate" content={ogLocales[alternate.hreflang] ?? alternate.hreflang} />
 ))}
 <meta property="og:title" content={title} />

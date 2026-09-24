@@ -140,7 +140,7 @@ const blogTranslation = defineCollection({
 });
 
 const diary = defineCollection({
-  loader: glob({ pattern: '**/article.md', base: './src/content/diary' }),
+  loader: glob({ pattern: '**/{article,en,zh-hant,ja}.md', base: './src/content/diary' }),
   schema: z.object({
     title: z.string(),
     date: z.coerce.date(),
@@ -153,10 +153,15 @@ const diary = defineCollection({
     canonical: z.url(),
     author: z.url(),
     inLanguage: z.string(),
-    source: z.literal('telegram'),
+    source: z.enum(['telegram', 'owner-document']),
+    originalLanguage: z.enum(['en', 'zh-Hans', 'zh-Hant', 'ja']).optional(),
+    translationReview: z.literal('PASS').optional(),
     sourceId: z.string(),
     bodySha256: z.string().regex(/^[a-f0-9]{64}$/),
     draft: z.boolean().default(false),
+  }).refine((data) => !data.originalLanguage || data.inLanguage === data.originalLanguage || data.translationReview === 'PASS', {
+    message: 'A translated diary edition requires completed native editorial review.',
+    path: ['translationReview'],
   }),
 });
 
@@ -185,6 +190,8 @@ const dailySpecial = defineCollection({
     researchScope: z.string().min(20),
     artifactSha256: z.string().regex(/^[a-f0-9]{64}$/),
     evidenceSources: z.array(z.url()).min(1),
+    editionSlug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/).optional(),
+    originalArticle: z.url().optional(),
   }),
 });
 

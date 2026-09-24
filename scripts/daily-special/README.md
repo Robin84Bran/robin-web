@@ -23,7 +23,12 @@ is an example, not a preselected or already-completed task.
 
 One selected signal becomes one useful map, comparison, evidence table or note.
 Use public primary sources, reopen load-bearing evidence, date every observation,
-and distinguish confirmed facts, calculations, interpretations and UNKNOWNs.
+and distinguish confirmed facts, calculations, interpretations and missing
+evidence. Read `docs/PUBLIC_EDITORIAL_VOICE.md` in the release repository:
+new public essays explain material uncertainty naturally; private evidence
+records retain UNKNOWN/null. The article should invite a curious reader in,
+not read like a compliance checklist. Use the claim-preserving Stop Slop and
+Humanizer pass, without rewriting immutable sources or past publications.
 Prefer 3–6 useful sources and a bounded question; do not expand into a new
 project. Pause with a specific reason if no useful safe research scope exists.
 Investment decisions, trades, spending, applications and external messages stay
@@ -91,6 +96,14 @@ python3 daily_special/special.py finish --date YYYY-MM-DD --commit FULL_SOURCE_C
 `finish` rechecks bytes, four live routes and the public follow-through receipt
 before COMPLETE. The bot, not the worker, sends the completion link once.
 If retried, reuse existing artifacts/PRs and receipt rather than duplicate them.
+
+### Owner-authorized editorial companions
+
+An explicit request to rewrite without overwriting the original creates a
+separate `YYYYMMDD/<editionSlug>/` family, with four reviewed editions, an
+`originalArticle` link and its own download/hash. The selected signal and
+original completion receipt remain unchanged; this is an additional explanation,
+not a second selected action or an executed production test.
 
 ## Next-brief continuity
 
