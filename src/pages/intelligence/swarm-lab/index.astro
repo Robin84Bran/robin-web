@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import SwarmLabCards from '../../../components/intelligence/SwarmLabCards.astro';
+const path='/intelligence/swarm-lab/';
+const description='Four interactive, reproducible toy experiments: cooperation, self-assembly, a closed-loop habitat, and learners carrying memory between worlds.';
+const schema={'@context':'https://schema.org','@type':'CollectionPage',name:'Swarm Lab — Four small worlds',url:`https://iamrobin.ai${path}`,description,inLanguage:'en'};
+---
+<BaseLayout title="Swarm Lab — Four Small Worlds — Robin Xie" {path} {description} {schema}>
+ <div class="shell lab-hub">
+  <a class="quiet-link" href="/intelligence/">← Intelligence</a>
+  <p class="eyebrow">Robin’s field notes · playable edition · 24 September 2026</p>
+  <h1>Four small worlds.<br/><em>One very large question.</em></h1>
+  <p class="lead">What keeps something together when nobody is in charge?</p>
+  <p class="intro">A city full of freeloaders. A body with no architect. A jar that thinks it is Mars. A traveler whose best skill is remembering what went wrong.</p>
+  <p class="intro">These began as questions in <a href="/meaning/diary/202609/2026-09-24-from-art-to-immortal-cells/">a diary conversation</a>. Now you can change the rules and watch the consequences. Make a prediction before you press Play.</p>
+  <SwarmLabCards />
+  <section class="field-note" aria-labelledby="surprise"><p class="eyebrow">The result that stayed with me</p><h2 id="surprise">A full tank can look a lot like independence.</h2><p>In our Mars model, maintenance gets every default run through 240 days. Yet the system keeps losing material. The chart looks reassuring. The accounting is less easily impressed.</p><a class="quiet-link" href="/intelligence/swarm-lab/mars-jar/">Cut the supply line →</a></section>
+  <section class="how"><div><h2>Small enough to inspect.</h2><p>No black-box agent, paid API or real-world experiment runs here. The rules fit in a few short files. Same seed and settings, same world.</p></div><div><h2>Honest enough to disagree with.</h2><p>Each experiment includes a control, 32-seed results, assumptions and a way to break the story. A tidy animation is not scientific evidence.</p></div></section>
+  <p class="lab-links"><a href="/swarm-lab/README.md">Methods &amp; reproduction</a> · <a href="/swarm-lab/results.json">All batch results</a> · <a href="/intelligence/swarm/">Earlier swarm sketches</a></p>
+ </div>
+</BaseLayout>
+<style>
+ .lab-hub{padding-block:3rem 5rem}.lab-hub>.eyebrow{margin-top:3.5rem;font-size:.7rem}.lab-hub h1{font-family:var(--serif);font-size:clamp(2.8rem,6vw,5.8rem);line-height:1.06;letter-spacing:-.045em;font-weight:400;margin:1.5rem 0}.lab-hub h1 em{color:#59736a;font-weight:400}.lead{font-family:var(--serif);font-size:clamp(1.35rem,2.8vw,2rem)}.intro{max-width:48rem;line-height:1.8;color:var(--muted)}.field-note{margin-block:4rem;padding:2rem clamp(1.3rem,4vw,3rem);background:#e7e9df;border-left:2px solid #75836b}.field-note h2,.how h2{font-family:var(--serif);font-weight:400;font-size:clamp(1.6rem,3vw,2.5rem);line-height:1.2}.field-note p{max-width:46rem;line-height:1.8}.how{display:grid;grid-template-columns:1fr 1fr;gap:3rem}.how p{line-height:1.8;color:var(--muted)}.lab-links{font-size:.8rem;line-height:2;margin-top:3rem}@media(max-width:600px){.how{grid-template-columns:1fr;gap:1rem}.lab-hub>.eyebrow{margin-top:2rem}}
+</style>

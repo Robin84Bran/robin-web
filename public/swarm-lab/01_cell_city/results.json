@@ -1,0 +1,1162 @@
+{
+  "version": "1.0.0",
+  "protocol": "Matched seeds 1–32. Defaults frozen before batch. All runs retained. Simulation only; no real-world calibration.",
+  "id": "cell-city",
+  "title": "The city of freeloaders",
+  "metric": "cooperation",
+  "arms": [
+    {
+      "label": "Shared founders",
+      "metric": "cooperation",
+      "n": 32,
+      "mean": 0.9423828124999999,
+      "min": 0.8177083333333334,
+      "p10": 0.828125,
+      "median": 0.9791666666666666,
+      "p90": 0.984375,
+      "max": 0.9895833333333334
+    },
+    {
+      "label": "Mixed founders",
+      "metric": "cooperation",
+      "n": 32,
+      "mean": 0.03401692708333333,
+      "min": 0.005208333333333333,
+      "p10": 0.015625,
+      "median": 0.03125,
+      "p90": 0.052083333333333336,
+      "max": 0.0625
+    }
+  ],
+  "pairedDifference": {
+    "n": 32,
+    "mean": -0.9083658854166666,
+    "min": -0.9739583333333334,
+    "p10": -0.9635416666666667,
+    "median": -0.9322916666666666,
+    "p90": -0.8385416666666666,
+    "max": -0.796875
+  },
+  "runs": [
+    {
+      "seed": 1,
+      "arms": [
+        {
+          "params": {
+            "mixing": 0,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.90625,
+            "infrastructure": 0.9609381452384513,
+            "output": 1.4500000000000002
+          }
+        },
+        {
+          "params": {
+            "mixing": 0.9,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.036458333333333336,
+            "infrastructure": 0.022043933933022005,
+            "output": 0.05833333333333334
+          }
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "arms": [
+        {
+          "params": {
+            "mixing": 0,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.9895833333333334,
+            "infrastructure": 0.9743126838558946,
+            "output": 1.5833333333333335
+          }
+        },
+        {
+          "params": {
+            "mixing": 0.9,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.015625,
+            "infrastructure": 0.02484896761748403,
+            "output": 0.025
+          }
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "arms": [
+        {
+          "params": {
+            "mixing": 0,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.984375,
+            "infrastructure": 0.9390572704464856,
+            "output": 1.5750000000000002
+          }
+        },
+        {
+          "params": {
+            "mixing": 0.9,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.03125,
+            "infrastructure": 0.029684430458269524,
+            "output": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "seed": 4,
+      "arms": [
+        {
+          "params": {
+            "mixing": 0,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.9895833333333334,
+            "infrastructure": 0.9092691652021856,
+            "output": 1.5833333333333335
+          }
+        },
+        {
+          "params": {
+            "mixing": 0.9,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.026041666666666668,
+            "infrastructure": 0.03929993661587101,
+            "output": 0.04166666666666667
+          }
+        }
+      ]
+    },
+    {
+      "seed": 5,
+      "arms": [
+        {
+          "params": {
+            "mixing": 0,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.9739583333333334,
+            "infrastructure": 0.9437210696621557,
+            "output": 1.5583333333333336
+          }
+        },
+        {
+          "params": {
+            "mixing": 0.9,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.026041666666666668,
+            "infrastructure": 0.03138114751019815,
+            "output": 0.04166666666666667
+          }
+        }
+      ]
+    },
+    {
+      "seed": 6,
+      "arms": [
+        {
+          "params": {
+            "mixing": 0,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.8177083333333334,
+            "infrastructure": 0.9275046588114373,
+            "output": 1.3083333333333336
+          }
+        },
+        {
+          "params": {
+            "mixing": 0.9,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.015625,
+            "infrastructure": 0.023734103876291785,
+            "output": 0.025
+          }
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "arms": [
+        {
+          "params": {
+            "mixing": 0,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.8177083333333334,
+            "infrastructure": 0.9255163424557605,
+            "output": 1.3083333333333336
+          }
+        },
+        {
+          "params": {
+            "mixing": 0.9,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.020833333333333332,
+            "infrastructure": 0.030300977999285585,
+            "output": 0.03333333333333333
+          }
+        }
+      ]
+    },
+    {
+      "seed": 8,
+      "arms": [
+        {
+          "params": {
+            "mixing": 0,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.984375,
+            "infrastructure": 0.9329382757829725,
+            "output": 1.5750000000000002
+          }
+        },
+        {
+          "params": {
+            "mixing": 0.9,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.03125,
+            "infrastructure": 0.03299360707206444,
+            "output": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "seed": 9,
+      "arms": [
+        {
+          "params": {
+            "mixing": 0,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.9791666666666666,
+            "infrastructure": 0.9524587653805557,
+            "output": 1.5666666666666667
+          }
+        },
+        {
+          "params": {
+            "mixing": 0.9,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.0625,
+            "infrastructure": 0.03987007123940198,
+            "output": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "seed": 10,
+      "arms": [
+        {
+          "params": {
+            "mixing": 0,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.984375,
+            "infrastructure": 0.9425905081426994,
+            "output": 1.5750000000000002
+          }
+        },
+        {
+          "params": {
+            "mixing": 0.9,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.015625,
+            "infrastructure": 0.02504019040696375,
+            "output": 0.025
+          }
+        }
+      ]
+    },
+    {
+      "seed": 11,
+      "arms": [
+        {
+          "params": {
+            "mixing": 0,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.9739583333333334,
+            "infrastructure": 0.953164811618429,
+            "output": 1.5583333333333336
+          }
+        },
+        {
+          "params": {
+            "mixing": 0.9,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.052083333333333336,
+            "infrastructure": 0.032456283004211745,
+            "output": 0.08333333333333334
+          }
+        }
+      ]
+    },
+    {
+      "seed": 12,
+      "arms": [
+        {
+          "params": {
+            "mixing": 0,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.984375,
+            "infrastructure": 0.9505603240822575,
+            "output": 1.5750000000000002
+          }
+        },
+        {
+          "params": {
+            "mixing": 0.9,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.026041666666666668,
+            "infrastructure": 0.027683455111424726,
+            "output": 0.04166666666666667
+          }
+        }
+      ]
+    },
+    {
+      "seed": 13,
+      "arms": [
+        {
+          "params": {
+            "mixing": 0,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.9895833333333334,
+            "infrastructure": 0.9495233077110319,
+            "output": 1.5833333333333335
+          }
+        },
+        {
+          "params": {
+            "mixing": 0.9,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.057291666666666664,
+            "infrastructure": 0.03524595940797817,
+            "output": 0.09166666666666667
+          }
+        }
+      ]
+    },
+    {
+      "seed": 14,
+      "arms": [
+        {
+          "params": {
+            "mixing": 0,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.984375,
+            "infrastructure": 0.9712305522663524,
+            "output": 1.5750000000000002
+          }
+        },
+        {
+          "params": {
+            "mixing": 0.9,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.020833333333333332,
+            "infrastructure": 0.03119671099391402,
+            "output": 0.03333333333333333
+          }
+        }
+      ]
+    },
+    {
+      "seed": 15,
+      "arms": [
+        {
+          "params": {
+            "mixing": 0,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.9791666666666666,
+            "infrastructure": 0.9577451414658983,
+            "output": 1.5666666666666667
+          }
+        },
+        {
+          "params": {
+            "mixing": 0.9,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.03125,
+            "infrastructure": 0.02986446441682578,
+            "output": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "seed": 16,
+      "arms": [
+        {
+          "params": {
+            "mixing": 0,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.890625,
+            "infrastructure": 0.9188657869516578,
+            "output": 1.425
+          }
+        },
+        {
+          "params": {
+            "mixing": 0.9,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.041666666666666664,
+            "infrastructure": 0.038305395050855645,
+            "output": 0.06666666666666667
+          }
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "arms": [
+        {
+          "params": {
+            "mixing": 0,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.984375,
+            "infrastructure": 0.9447565833594499,
+            "output": 1.5750000000000002
+          }
+        },
+        {
+          "params": {
+            "mixing": 0.9,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.057291666666666664,
+            "infrastructure": 0.036010424919118184,
+            "output": 0.09166666666666667
+          }
+        }
+      ]
+    },
+    {
+      "seed": 18,
+      "arms": [
+        {
+          "params": {
+            "mixing": 0,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.8958333333333334,
+            "infrastructure": 0.9307356176243294,
+            "output": 1.4333333333333336
+          }
+        },
+        {
+          "params": {
+            "mixing": 0.9,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.020833333333333332,
+            "infrastructure": 0.028535170214272508,
+            "output": 0.03333333333333333
+          }
+        }
+      ]
+    },
+    {
+      "seed": 19,
+      "arms": [
+        {
+          "params": {
+            "mixing": 0,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.984375,
+            "infrastructure": 0.9676038141132332,
+            "output": 1.5750000000000002
+          }
+        },
+        {
+          "params": {
+            "mixing": 0.9,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.026041666666666668,
+            "infrastructure": 0.029038034408187384,
+            "output": 0.04166666666666667
+          }
+        }
+      ]
+    },
+    {
+      "seed": 20,
+      "arms": [
+        {
+          "params": {
+            "mixing": 0,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.890625,
+            "infrastructure": 0.8980320024859868,
+            "output": 1.425
+          }
+        },
+        {
+          "params": {
+            "mixing": 0.9,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.052083333333333336,
+            "infrastructure": 0.02945176328176311,
+            "output": 0.08333333333333334
+          }
+        }
+      ]
+    },
+    {
+      "seed": 21,
+      "arms": [
+        {
+          "params": {
+            "mixing": 0,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.9895833333333334,
+            "infrastructure": 0.928483564651592,
+            "output": 1.5833333333333335
+          }
+        },
+        {
+          "params": {
+            "mixing": 0.9,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.03125,
+            "infrastructure": 0.02828612438172061,
+            "output": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "seed": 22,
+      "arms": [
+        {
+          "params": {
+            "mixing": 0,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.9166666666666666,
+            "infrastructure": 0.9350906846931575,
+            "output": 1.4666666666666668
+          }
+        },
+        {
+          "params": {
+            "mixing": 0.9,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.046875,
+            "infrastructure": 0.03635817159203267,
+            "output": 0.07500000000000001
+          }
+        }
+      ]
+    },
+    {
+      "seed": 23,
+      "arms": [
+        {
+          "params": {
+            "mixing": 0,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.9791666666666666,
+            "infrastructure": 0.9741822316658998,
+            "output": 1.5666666666666667
+          }
+        },
+        {
+          "params": {
+            "mixing": 0.9,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.046875,
+            "infrastructure": 0.03143061492692302,
+            "output": 0.07500000000000001
+          }
+        }
+      ]
+    },
+    {
+      "seed": 24,
+      "arms": [
+        {
+          "params": {
+            "mixing": 0,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.984375,
+            "infrastructure": 0.967392793975101,
+            "output": 1.5750000000000002
+          }
+        },
+        {
+          "params": {
+            "mixing": 0.9,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.046875,
+            "infrastructure": 0.03491000226532727,
+            "output": 0.07500000000000001
+          }
+        }
+      ]
+    },
+    {
+      "seed": 25,
+      "arms": [
+        {
+          "params": {
+            "mixing": 0,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.828125,
+            "infrastructure": 0.95515089710605,
+            "output": 1.3250000000000002
+          }
+        },
+        {
+          "params": {
+            "mixing": 0.9,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.03125,
+            "infrastructure": 0.03105591102293431,
+            "output": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "seed": 26,
+      "arms": [
+        {
+          "params": {
+            "mixing": 0,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.828125,
+            "infrastructure": 0.9533716090946366,
+            "output": 1.3250000000000002
+          }
+        },
+        {
+          "params": {
+            "mixing": 0.9,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.005208333333333333,
+            "infrastructure": 0.02089757523567687,
+            "output": 0.008333333333333333
+          }
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "arms": [
+        {
+          "params": {
+            "mixing": 0,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.984375,
+            "infrastructure": 0.962191441316794,
+            "output": 1.5750000000000002
+          }
+        },
+        {
+          "params": {
+            "mixing": 0.9,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.015625,
+            "infrastructure": 0.02757684938662701,
+            "output": 0.025
+          }
+        }
+      ]
+    },
+    {
+      "seed": 28,
+      "arms": [
+        {
+          "params": {
+            "mixing": 0,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.9010416666666666,
+            "infrastructure": 0.9788737054342715,
+            "output": 1.4416666666666667
+          }
+        },
+        {
+          "params": {
+            "mixing": 0.9,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.03125,
+            "infrastructure": 0.02020868477877484,
+            "output": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "seed": 29,
+      "arms": [
+        {
+          "params": {
+            "mixing": 0,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.984375,
+            "infrastructure": 0.9486695023289458,
+            "output": 1.5750000000000002
+          }
+        },
+        {
+          "params": {
+            "mixing": 0.9,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.057291666666666664,
+            "infrastructure": 0.028311024485348606,
+            "output": 0.09166666666666667
+          }
+        }
+      ]
+    },
+    {
+      "seed": 30,
+      "arms": [
+        {
+          "params": {
+            "mixing": 0,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.9114583333333334,
+            "infrastructure": 0.9659277219021802,
+            "output": 1.4583333333333335
+          }
+        },
+        {
+          "params": {
+            "mixing": 0.9,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.036458333333333336,
+            "infrastructure": 0.02773027588437057,
+            "output": 0.05833333333333334
+          }
+        }
+      ]
+    },
+    {
+      "seed": 31,
+      "arms": [
+        {
+          "params": {
+            "mixing": 0,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.8958333333333334,
+            "infrastructure": 0.9519486468885153,
+            "output": 1.4333333333333336
+          }
+        },
+        {
+          "params": {
+            "mixing": 0.9,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.036458333333333336,
+            "infrastructure": 0.03765846395263731,
+            "output": 0.05833333333333334
+          }
+        }
+      ]
+    },
+    {
+      "seed": 32,
+      "arms": [
+        {
+          "params": {
+            "mixing": 0,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.96875,
+            "infrastructure": 0.9653222485057695,
+            "output": 1.55
+          }
+        },
+        {
+          "params": {
+            "mixing": 0.9,
+            "benefit": 1.6,
+            "cost": 0.6,
+            "mutation": 0.015,
+            "groups": 12,
+            "size": 16
+          },
+          "summary": {
+            "cooperation": 0.036458333333333336,
+            "infrastructure": 0.022284844482485053,
+            "output": 0.05833333333333334
+          }
+        }
+      ]
+    }
+  ]
+}

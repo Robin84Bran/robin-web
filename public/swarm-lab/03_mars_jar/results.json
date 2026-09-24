@@ -1,0 +1,2378 @@
+{
+  "version": "1.0.0",
+  "protocol": "Matched seeds 1–32. Defaults frozen before batch. All runs retained. Simulation only; no real-world calibration.",
+  "id": "mars-jar",
+  "title": "Mars in a jar",
+  "metric": "survivedDays",
+  "arms": [
+    {
+      "label": "No maintenance",
+      "metric": "survivedDays",
+      "n": 32,
+      "mean": 108,
+      "min": 108,
+      "p10": 108,
+      "median": 108,
+      "p90": 108,
+      "max": 108
+    },
+    {
+      "label": "Maintain the loop",
+      "metric": "survivedDays",
+      "n": 32,
+      "mean": 240,
+      "min": 240,
+      "p10": 240,
+      "median": 240,
+      "p90": 240,
+      "max": 240
+    }
+  ],
+  "pairedDifference": {
+    "n": 32,
+    "mean": 132,
+    "min": 132,
+    "p10": 132,
+    "median": 132,
+    "p90": 132,
+    "max": 132
+  },
+  "runs": [
+    {
+      "seed": 1,
+      "arms": [
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": false,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 108,
+            "failedAt": 109,
+            "daysReserve": 0.6842949999999967,
+            "integrity": 0.5639999999999996,
+            "energyUsed": 557.8410000000001,
+            "energyIn": 870.8291339613501,
+            "repairDays": 0
+          }
+        },
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": true,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 240,
+            "failedAt": null,
+            "daysReserve": 10.330000000000041,
+            "integrity": 0.94,
+            "energyUsed": 1477.200000000001,
+            "energyIn": 1911.0060712780808,
+            "repairDays": 36
+          }
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "arms": [
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": false,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 108,
+            "failedAt": 109,
+            "daysReserve": 0.6842949999999967,
+            "integrity": 0.5639999999999996,
+            "energyUsed": 557.8410000000001,
+            "energyIn": 874.9905419033022,
+            "repairDays": 0
+          }
+        },
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": true,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 240,
+            "failedAt": null,
+            "daysReserve": 10.330000000000041,
+            "integrity": 0.94,
+            "energyUsed": 1477.200000000001,
+            "energyIn": 1919.8716768510649,
+            "repairDays": 36
+          }
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "arms": [
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": false,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 108,
+            "failedAt": 109,
+            "daysReserve": 0.6842949999999967,
+            "integrity": 0.5639999999999996,
+            "energyUsed": 557.8410000000001,
+            "energyIn": 879.8894878521558,
+            "repairDays": 0
+          }
+        },
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": true,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 240,
+            "failedAt": null,
+            "daysReserve": 10.330000000000041,
+            "integrity": 0.94,
+            "energyUsed": 1477.200000000001,
+            "energyIn": 1926.3943213906148,
+            "repairDays": 36
+          }
+        }
+      ]
+    },
+    {
+      "seed": 4,
+      "arms": [
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": false,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 108,
+            "failedAt": 109,
+            "daysReserve": 0.6842949999999967,
+            "integrity": 0.5639999999999996,
+            "energyUsed": 557.8410000000001,
+            "energyIn": 879.8795215725902,
+            "repairDays": 0
+          }
+        },
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": true,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 240,
+            "failedAt": null,
+            "daysReserve": 10.330000000000041,
+            "integrity": 0.94,
+            "energyUsed": 1477.200000000001,
+            "energyIn": 1939.4086433041853,
+            "repairDays": 36
+          }
+        }
+      ]
+    },
+    {
+      "seed": 5,
+      "arms": [
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": false,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 108,
+            "failedAt": 109,
+            "daysReserve": 0.6842949999999967,
+            "integrity": 0.5639999999999996,
+            "energyUsed": 557.8410000000001,
+            "energyIn": 871.8498926628379,
+            "repairDays": 0
+          }
+        },
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": true,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 240,
+            "failedAt": null,
+            "daysReserve": 10.330000000000041,
+            "integrity": 0.94,
+            "energyUsed": 1477.200000000001,
+            "energyIn": 1912.9233244951813,
+            "repairDays": 36
+          }
+        }
+      ]
+    },
+    {
+      "seed": 6,
+      "arms": [
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": false,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 108,
+            "failedAt": 109,
+            "daysReserve": 0.6842949999999967,
+            "integrity": 0.5639999999999996,
+            "energyUsed": 557.8410000000001,
+            "energyIn": 867.6635468672962,
+            "repairDays": 0
+          }
+        },
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": true,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 240,
+            "failedAt": null,
+            "daysReserve": 10.330000000000041,
+            "integrity": 0.94,
+            "energyUsed": 1477.200000000001,
+            "energyIn": 1919.432874178887,
+            "repairDays": 36
+          }
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "arms": [
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": false,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 108,
+            "failedAt": 109,
+            "daysReserve": 0.6842949999999967,
+            "integrity": 0.5639999999999996,
+            "energyUsed": 557.8410000000001,
+            "energyIn": 876.9205387383699,
+            "repairDays": 0
+          }
+        },
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": true,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 240,
+            "failedAt": null,
+            "daysReserve": 10.330000000000041,
+            "integrity": 0.94,
+            "energyUsed": 1477.200000000001,
+            "energyIn": 1935.0720750775185,
+            "repairDays": 36
+          }
+        }
+      ]
+    },
+    {
+      "seed": 8,
+      "arms": [
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": false,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 108,
+            "failedAt": 109,
+            "daysReserve": 0.6842949999999967,
+            "integrity": 0.5639999999999996,
+            "energyUsed": 557.8410000000001,
+            "energyIn": 868.593650333211,
+            "repairDays": 0
+          }
+        },
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": true,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 240,
+            "failedAt": null,
+            "daysReserve": 10.330000000000041,
+            "integrity": 0.94,
+            "energyUsed": 1477.200000000001,
+            "energyIn": 1912.3850798305116,
+            "repairDays": 36
+          }
+        }
+      ]
+    },
+    {
+      "seed": 9,
+      "arms": [
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": false,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 108,
+            "failedAt": 109,
+            "daysReserve": 0.6842949999999967,
+            "integrity": 0.5639999999999996,
+            "energyUsed": 557.8410000000001,
+            "energyIn": 877.1302868630734,
+            "repairDays": 0
+          }
+        },
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": true,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 240,
+            "failedAt": null,
+            "daysReserve": 10.330000000000041,
+            "integrity": 0.94,
+            "energyUsed": 1477.200000000001,
+            "energyIn": 1933.3816986370837,
+            "repairDays": 36
+          }
+        }
+      ]
+    },
+    {
+      "seed": 10,
+      "arms": [
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": false,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 108,
+            "failedAt": 109,
+            "daysReserve": 0.6842949999999967,
+            "integrity": 0.5639999999999996,
+            "energyUsed": 557.8410000000001,
+            "energyIn": 871.8931986086072,
+            "repairDays": 0
+          }
+        },
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": true,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 240,
+            "failedAt": null,
+            "daysReserve": 10.330000000000041,
+            "integrity": 0.94,
+            "energyUsed": 1477.200000000001,
+            "energyIn": 1920.0474929321563,
+            "repairDays": 36
+          }
+        }
+      ]
+    },
+    {
+      "seed": 11,
+      "arms": [
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": false,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 108,
+            "failedAt": 109,
+            "daysReserve": 0.6842949999999967,
+            "integrity": 0.5639999999999996,
+            "energyUsed": 557.8410000000001,
+            "energyIn": 872.5530880261217,
+            "repairDays": 0
+          }
+        },
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": true,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 240,
+            "failedAt": null,
+            "daysReserve": 10.330000000000041,
+            "integrity": 0.94,
+            "energyUsed": 1477.200000000001,
+            "energyIn": 1916.3674509186305,
+            "repairDays": 36
+          }
+        }
+      ]
+    },
+    {
+      "seed": 12,
+      "arms": [
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": false,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 108,
+            "failedAt": 109,
+            "daysReserve": 0.6842949999999967,
+            "integrity": 0.5639999999999996,
+            "energyUsed": 557.8410000000001,
+            "energyIn": 862.859832067415,
+            "repairDays": 0
+          }
+        },
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": true,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 240,
+            "failedAt": null,
+            "daysReserve": 10.330000000000041,
+            "integrity": 0.94,
+            "energyUsed": 1477.200000000001,
+            "energyIn": 1901.797091832756,
+            "repairDays": 36
+          }
+        }
+      ]
+    },
+    {
+      "seed": 13,
+      "arms": [
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": false,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 108,
+            "failedAt": 109,
+            "daysReserve": 0.6842949999999967,
+            "integrity": 0.5639999999999996,
+            "energyUsed": 557.8410000000001,
+            "energyIn": 862.0861741200094,
+            "repairDays": 0
+          }
+        },
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": true,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 240,
+            "failedAt": null,
+            "daysReserve": 10.330000000000041,
+            "integrity": 0.94,
+            "energyUsed": 1477.200000000001,
+            "energyIn": 1912.7150108475248,
+            "repairDays": 36
+          }
+        }
+      ]
+    },
+    {
+      "seed": 14,
+      "arms": [
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": false,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 108,
+            "failedAt": 109,
+            "daysReserve": 0.6842949999999967,
+            "integrity": 0.5639999999999996,
+            "energyUsed": 557.8410000000001,
+            "energyIn": 870.0203827988357,
+            "repairDays": 0
+          }
+        },
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": true,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 240,
+            "failedAt": null,
+            "daysReserve": 10.330000000000041,
+            "integrity": 0.94,
+            "energyUsed": 1477.200000000001,
+            "energyIn": 1919.9751985095447,
+            "repairDays": 36
+          }
+        }
+      ]
+    },
+    {
+      "seed": 15,
+      "arms": [
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": false,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 108,
+            "failedAt": 109,
+            "daysReserve": 0.6842949999999967,
+            "integrity": 0.5639999999999996,
+            "energyUsed": 557.8410000000001,
+            "energyIn": 866.4290801405912,
+            "repairDays": 0
+          }
+        },
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": true,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 240,
+            "failedAt": null,
+            "daysReserve": 10.330000000000041,
+            "integrity": 0.94,
+            "energyUsed": 1477.200000000001,
+            "energyIn": 1913.4542396198965,
+            "repairDays": 36
+          }
+        }
+      ]
+    },
+    {
+      "seed": 16,
+      "arms": [
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": false,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 108,
+            "failedAt": 109,
+            "daysReserve": 0.6842949999999967,
+            "integrity": 0.5639999999999996,
+            "energyUsed": 557.8410000000001,
+            "energyIn": 873.0562987722457,
+            "repairDays": 0
+          }
+        },
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": true,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 240,
+            "failedAt": null,
+            "daysReserve": 10.330000000000041,
+            "integrity": 0.94,
+            "energyUsed": 1477.200000000001,
+            "energyIn": 1925.7828250546013,
+            "repairDays": 36
+          }
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "arms": [
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": false,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 108,
+            "failedAt": 109,
+            "daysReserve": 0.6842949999999967,
+            "integrity": 0.5639999999999996,
+            "energyUsed": 557.8410000000001,
+            "energyIn": 869.7380846519023,
+            "repairDays": 0
+          }
+        },
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": true,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 240,
+            "failedAt": null,
+            "daysReserve": 10.330000000000041,
+            "integrity": 0.94,
+            "energyUsed": 1477.200000000001,
+            "energyIn": 1906.5608305890107,
+            "repairDays": 36
+          }
+        }
+      ]
+    },
+    {
+      "seed": 18,
+      "arms": [
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": false,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 108,
+            "failedAt": 109,
+            "daysReserve": 0.6842949999999967,
+            "integrity": 0.5639999999999996,
+            "energyUsed": 557.8410000000001,
+            "energyIn": 873.391632602736,
+            "repairDays": 0
+          }
+        },
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": true,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 240,
+            "failedAt": null,
+            "daysReserve": 10.330000000000041,
+            "integrity": 0.94,
+            "energyUsed": 1477.200000000001,
+            "energyIn": 1926.9629245292394,
+            "repairDays": 36
+          }
+        }
+      ]
+    },
+    {
+      "seed": 19,
+      "arms": [
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": false,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 108,
+            "failedAt": 109,
+            "daysReserve": 0.6842949999999967,
+            "integrity": 0.5639999999999996,
+            "energyUsed": 557.8410000000001,
+            "energyIn": 869.0783087980005,
+            "repairDays": 0
+          }
+        },
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": true,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 240,
+            "failedAt": null,
+            "daysReserve": 10.330000000000041,
+            "integrity": 0.94,
+            "energyUsed": 1477.200000000001,
+            "energyIn": 1919.1701347012074,
+            "repairDays": 36
+          }
+        }
+      ]
+    },
+    {
+      "seed": 20,
+      "arms": [
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": false,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 108,
+            "failedAt": 109,
+            "daysReserve": 0.6842949999999967,
+            "integrity": 0.5639999999999996,
+            "energyUsed": 557.8410000000001,
+            "energyIn": 871.3925672411918,
+            "repairDays": 0
+          }
+        },
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": true,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 240,
+            "failedAt": null,
+            "daysReserve": 10.330000000000041,
+            "integrity": 0.94,
+            "energyUsed": 1477.200000000001,
+            "energyIn": 1923.761447320878,
+            "repairDays": 36
+          }
+        }
+      ]
+    },
+    {
+      "seed": 21,
+      "arms": [
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": false,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 108,
+            "failedAt": 109,
+            "daysReserve": 0.6842949999999967,
+            "integrity": 0.5639999999999996,
+            "energyUsed": 557.8410000000001,
+            "energyIn": 868.4341543238606,
+            "repairDays": 0
+          }
+        },
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": true,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 240,
+            "failedAt": null,
+            "daysReserve": 10.330000000000041,
+            "integrity": 0.94,
+            "energyUsed": 1477.200000000001,
+            "energyIn": 1920.8547913800917,
+            "repairDays": 36
+          }
+        }
+      ]
+    },
+    {
+      "seed": 22,
+      "arms": [
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": false,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 108,
+            "failedAt": 109,
+            "daysReserve": 0.6842949999999967,
+            "integrity": 0.5639999999999996,
+            "energyUsed": 557.8410000000001,
+            "energyIn": 858.6585346292707,
+            "repairDays": 0
+          }
+        },
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": true,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 240,
+            "failedAt": null,
+            "daysReserve": 10.330000000000041,
+            "integrity": 0.94,
+            "energyUsed": 1477.200000000001,
+            "energyIn": 1905.9632461473348,
+            "repairDays": 36
+          }
+        }
+      ]
+    },
+    {
+      "seed": 23,
+      "arms": [
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": false,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 108,
+            "failedAt": 109,
+            "daysReserve": 0.6842949999999967,
+            "integrity": 0.5639999999999996,
+            "energyUsed": 557.8410000000001,
+            "energyIn": 875.1944374669343,
+            "repairDays": 0
+          }
+        },
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": true,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 240,
+            "failedAt": null,
+            "daysReserve": 10.330000000000041,
+            "integrity": 0.94,
+            "energyUsed": 1477.200000000001,
+            "energyIn": 1918.5115846380588,
+            "repairDays": 36
+          }
+        }
+      ]
+    },
+    {
+      "seed": 24,
+      "arms": [
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": false,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 108,
+            "failedAt": 109,
+            "daysReserve": 0.6842949999999967,
+            "integrity": 0.5639999999999996,
+            "energyUsed": 557.8410000000001,
+            "energyIn": 875.6071748662738,
+            "repairDays": 0
+          }
+        },
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": true,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 240,
+            "failedAt": null,
+            "daysReserve": 10.330000000000041,
+            "integrity": 0.94,
+            "energyUsed": 1477.200000000001,
+            "energyIn": 1923.7358279272917,
+            "repairDays": 36
+          }
+        }
+      ]
+    },
+    {
+      "seed": 25,
+      "arms": [
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": false,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 108,
+            "failedAt": 109,
+            "daysReserve": 0.6842949999999967,
+            "integrity": 0.5639999999999996,
+            "energyUsed": 557.8410000000001,
+            "energyIn": 863.5950581554323,
+            "repairDays": 0
+          }
+        },
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": true,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 240,
+            "failedAt": null,
+            "daysReserve": 10.330000000000041,
+            "integrity": 0.94,
+            "energyUsed": 1477.200000000001,
+            "energyIn": 1909.4653195060791,
+            "repairDays": 36
+          }
+        }
+      ]
+    },
+    {
+      "seed": 26,
+      "arms": [
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": false,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 108,
+            "failedAt": 109,
+            "daysReserve": 0.6842949999999967,
+            "integrity": 0.5639999999999996,
+            "energyUsed": 557.8410000000001,
+            "energyIn": 878.0615151662377,
+            "repairDays": 0
+          }
+        },
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": true,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 240,
+            "failedAt": null,
+            "daysReserve": 10.330000000000041,
+            "integrity": 0.94,
+            "energyUsed": 1477.200000000001,
+            "energyIn": 1933.204038565978,
+            "repairDays": 36
+          }
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "arms": [
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": false,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 108,
+            "failedAt": 109,
+            "daysReserve": 0.6842949999999967,
+            "integrity": 0.5639999999999996,
+            "energyUsed": 557.8410000000001,
+            "energyIn": 858.9580582655973,
+            "repairDays": 0
+          }
+        },
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": true,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 240,
+            "failedAt": null,
+            "daysReserve": 10.330000000000041,
+            "integrity": 0.94,
+            "energyUsed": 1477.200000000001,
+            "energyIn": 1899.7136882591997,
+            "repairDays": 36
+          }
+        }
+      ]
+    },
+    {
+      "seed": 28,
+      "arms": [
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": false,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 108,
+            "failedAt": 109,
+            "daysReserve": 0.6842949999999967,
+            "integrity": 0.5639999999999996,
+            "energyUsed": 557.8410000000001,
+            "energyIn": 878.6300666667522,
+            "repairDays": 0
+          }
+        },
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": true,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 240,
+            "failedAt": null,
+            "daysReserve": 10.330000000000041,
+            "integrity": 0.94,
+            "energyUsed": 1477.200000000001,
+            "energyIn": 1922.2568838525565,
+            "repairDays": 36
+          }
+        }
+      ]
+    },
+    {
+      "seed": 29,
+      "arms": [
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": false,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 108,
+            "failedAt": 109,
+            "daysReserve": 0.6842949999999967,
+            "integrity": 0.5639999999999996,
+            "energyUsed": 557.8410000000001,
+            "energyIn": 867.3209535554054,
+            "repairDays": 0
+          }
+        },
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": true,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 240,
+            "failedAt": null,
+            "daysReserve": 10.330000000000041,
+            "integrity": 0.94,
+            "energyUsed": 1477.200000000001,
+            "energyIn": 1920.6166695304225,
+            "repairDays": 36
+          }
+        }
+      ]
+    },
+    {
+      "seed": 30,
+      "arms": [
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": false,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 108,
+            "failedAt": 109,
+            "daysReserve": 0.6842949999999967,
+            "integrity": 0.5639999999999996,
+            "energyUsed": 557.8410000000001,
+            "energyIn": 877.0181390147654,
+            "repairDays": 0
+          }
+        },
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": true,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 240,
+            "failedAt": null,
+            "daysReserve": 10.330000000000041,
+            "integrity": 0.94,
+            "energyUsed": 1477.200000000001,
+            "energyIn": 1924.467374164239,
+            "repairDays": 36
+          }
+        }
+      ]
+    },
+    {
+      "seed": 31,
+      "arms": [
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": false,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 108,
+            "failedAt": 109,
+            "daysReserve": 0.6842949999999967,
+            "integrity": 0.5639999999999996,
+            "energyUsed": 557.8410000000001,
+            "energyIn": 878.7801093567163,
+            "repairDays": 0
+          }
+        },
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": true,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 240,
+            "failedAt": null,
+            "daysReserve": 10.330000000000041,
+            "integrity": 0.94,
+            "energyUsed": 1477.200000000001,
+            "energyIn": 1918.1698041059085,
+            "repairDays": 36
+          }
+        }
+      ]
+    },
+    {
+      "seed": 32,
+      "arms": [
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": false,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 108,
+            "failedAt": 109,
+            "daysReserve": 0.6842949999999967,
+            "integrity": 0.5639999999999996,
+            "energyUsed": 557.8410000000001,
+            "energyIn": 870.9252761799845,
+            "repairDays": 0
+          }
+        },
+        {
+          "params": {
+            "leak": 0.001,
+            "maintenance": true,
+            "stockScale": 1,
+            "solar": 1,
+            "initial": [
+              140,
+              110,
+              90
+            ],
+            "need": [
+              8,
+              8,
+              8
+            ],
+            "yieldRate": [
+              0.985,
+              0.98,
+              0.97
+            ],
+            "horizon": 240,
+            "supportCutDay": 30
+          },
+          "summary": {
+            "survivedDays": 240,
+            "failedAt": null,
+            "daysReserve": 10.330000000000041,
+            "integrity": 0.94,
+            "energyUsed": 1477.200000000001,
+            "energyIn": 1915.6148881729698,
+            "repairDays": 36
+          }
+        }
+      ]
+    }
+  ]
+}

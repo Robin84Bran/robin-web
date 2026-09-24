@@ -1,0 +1,1034 @@
+{
+  "version": "1.0.0",
+  "protocol": "Matched seeds 1–32. Defaults frozen before batch. All runs retained. Simulation only; no real-world calibration.",
+  "id": "self-assembly",
+  "title": "A body without a blueprint",
+  "metric": "connected",
+  "arms": [
+    {
+      "label": "No adhesion",
+      "metric": "connected",
+      "n": 32,
+      "mean": 0.5070043103448276,
+      "min": 0.22413793103448276,
+      "p10": 0.3275862068965517,
+      "median": 0.46551724137931033,
+      "p90": 0.7413793103448276,
+      "max": 0.8620689655172413
+    },
+    {
+      "label": "Local adhesion",
+      "metric": "connected",
+      "n": 32,
+      "mean": 0.9692887931034483,
+      "min": 0.5172413793103449,
+      "p10": 0.9655172413793104,
+      "median": 1,
+      "p90": 1,
+      "max": 1
+    }
+  ],
+  "pairedDifference": {
+    "n": 32,
+    "mean": 0.4622844827586208,
+    "min": -0.08620689655172409,
+    "p10": 0.18965517241379315,
+    "median": 0.5172413793103448,
+    "p90": 0.6724137931034483,
+    "max": 0.7758620689655172
+  },
+  "runs": [
+    {
+      "seed": 1,
+      "arms": [
+        {
+          "params": {
+            "adhesion": 0,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.39655172413793105,
+            "survivors": 58,
+            "removed": 14
+          }
+        },
+        {
+          "params": {
+            "adhesion": 0.8,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 1,
+            "survivors": 58,
+            "removed": 14
+          }
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "arms": [
+        {
+          "params": {
+            "adhesion": 0,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.22413793103448276,
+            "survivors": 58,
+            "removed": 14
+          }
+        },
+        {
+          "params": {
+            "adhesion": 0.8,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 1,
+            "survivors": 58,
+            "removed": 14
+          }
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "arms": [
+        {
+          "params": {
+            "adhesion": 0,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.3793103448275862,
+            "survivors": 58,
+            "removed": 14
+          }
+        },
+        {
+          "params": {
+            "adhesion": 0.8,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 1,
+            "survivors": 58,
+            "removed": 14
+          }
+        }
+      ]
+    },
+    {
+      "seed": 4,
+      "arms": [
+        {
+          "params": {
+            "adhesion": 0,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.3793103448275862,
+            "survivors": 58,
+            "removed": 14
+          }
+        },
+        {
+          "params": {
+            "adhesion": 0.8,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 1,
+            "survivors": 58,
+            "removed": 14
+          }
+        }
+      ]
+    },
+    {
+      "seed": 5,
+      "arms": [
+        {
+          "params": {
+            "adhesion": 0,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.603448275862069,
+            "survivors": 58,
+            "removed": 14
+          }
+        },
+        {
+          "params": {
+            "adhesion": 0.8,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.9655172413793104,
+            "survivors": 58,
+            "removed": 14
+          }
+        }
+      ]
+    },
+    {
+      "seed": 6,
+      "arms": [
+        {
+          "params": {
+            "adhesion": 0,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.41379310344827586,
+            "survivors": 58,
+            "removed": 14
+          }
+        },
+        {
+          "params": {
+            "adhesion": 0.8,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 1,
+            "survivors": 58,
+            "removed": 14
+          }
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "arms": [
+        {
+          "params": {
+            "adhesion": 0,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.603448275862069,
+            "survivors": 58,
+            "removed": 14
+          }
+        },
+        {
+          "params": {
+            "adhesion": 0.8,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.5172413793103449,
+            "survivors": 58,
+            "removed": 14
+          }
+        }
+      ]
+    },
+    {
+      "seed": 8,
+      "arms": [
+        {
+          "params": {
+            "adhesion": 0,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.3275862068965517,
+            "survivors": 58,
+            "removed": 14
+          }
+        },
+        {
+          "params": {
+            "adhesion": 0.8,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 1,
+            "survivors": 58,
+            "removed": 14
+          }
+        }
+      ]
+    },
+    {
+      "seed": 9,
+      "arms": [
+        {
+          "params": {
+            "adhesion": 0,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.4482758620689655,
+            "survivors": 58,
+            "removed": 14
+          }
+        },
+        {
+          "params": {
+            "adhesion": 0.8,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.6551724137931034,
+            "survivors": 58,
+            "removed": 14
+          }
+        }
+      ]
+    },
+    {
+      "seed": 10,
+      "arms": [
+        {
+          "params": {
+            "adhesion": 0,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.2413793103448276,
+            "survivors": 58,
+            "removed": 14
+          }
+        },
+        {
+          "params": {
+            "adhesion": 0.8,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 1,
+            "survivors": 58,
+            "removed": 14
+          }
+        }
+      ]
+    },
+    {
+      "seed": 11,
+      "arms": [
+        {
+          "params": {
+            "adhesion": 0,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.6551724137931034,
+            "survivors": 58,
+            "removed": 14
+          }
+        },
+        {
+          "params": {
+            "adhesion": 0.8,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 1,
+            "survivors": 58,
+            "removed": 14
+          }
+        }
+      ]
+    },
+    {
+      "seed": 12,
+      "arms": [
+        {
+          "params": {
+            "adhesion": 0,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.7068965517241379,
+            "survivors": 58,
+            "removed": 14
+          }
+        },
+        {
+          "params": {
+            "adhesion": 0.8,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.9827586206896551,
+            "survivors": 58,
+            "removed": 14
+          }
+        }
+      ]
+    },
+    {
+      "seed": 13,
+      "arms": [
+        {
+          "params": {
+            "adhesion": 0,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.7586206896551724,
+            "survivors": 58,
+            "removed": 14
+          }
+        },
+        {
+          "params": {
+            "adhesion": 0.8,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.9827586206896551,
+            "survivors": 58,
+            "removed": 14
+          }
+        }
+      ]
+    },
+    {
+      "seed": 14,
+      "arms": [
+        {
+          "params": {
+            "adhesion": 0,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.5344827586206896,
+            "survivors": 58,
+            "removed": 14
+          }
+        },
+        {
+          "params": {
+            "adhesion": 0.8,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 1,
+            "survivors": 58,
+            "removed": 14
+          }
+        }
+      ]
+    },
+    {
+      "seed": 15,
+      "arms": [
+        {
+          "params": {
+            "adhesion": 0,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.5,
+            "survivors": 58,
+            "removed": 14
+          }
+        },
+        {
+          "params": {
+            "adhesion": 0.8,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.9655172413793104,
+            "survivors": 58,
+            "removed": 14
+          }
+        }
+      ]
+    },
+    {
+      "seed": 16,
+      "arms": [
+        {
+          "params": {
+            "adhesion": 0,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.3620689655172414,
+            "survivors": 58,
+            "removed": 14
+          }
+        },
+        {
+          "params": {
+            "adhesion": 0.8,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 1,
+            "survivors": 58,
+            "removed": 14
+          }
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "arms": [
+        {
+          "params": {
+            "adhesion": 0,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.3275862068965517,
+            "survivors": 58,
+            "removed": 14
+          }
+        },
+        {
+          "params": {
+            "adhesion": 0.8,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 1,
+            "survivors": 58,
+            "removed": 14
+          }
+        }
+      ]
+    },
+    {
+      "seed": 18,
+      "arms": [
+        {
+          "params": {
+            "adhesion": 0,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.29310344827586204,
+            "survivors": 58,
+            "removed": 14
+          }
+        },
+        {
+          "params": {
+            "adhesion": 0.8,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 1,
+            "survivors": 58,
+            "removed": 14
+          }
+        }
+      ]
+    },
+    {
+      "seed": 19,
+      "arms": [
+        {
+          "params": {
+            "adhesion": 0,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.39655172413793105,
+            "survivors": 58,
+            "removed": 14
+          }
+        },
+        {
+          "params": {
+            "adhesion": 0.8,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 1,
+            "survivors": 58,
+            "removed": 14
+          }
+        }
+      ]
+    },
+    {
+      "seed": 20,
+      "arms": [
+        {
+          "params": {
+            "adhesion": 0,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.8103448275862069,
+            "survivors": 58,
+            "removed": 14
+          }
+        },
+        {
+          "params": {
+            "adhesion": 0.8,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 1,
+            "survivors": 58,
+            "removed": 14
+          }
+        }
+      ]
+    },
+    {
+      "seed": 21,
+      "arms": [
+        {
+          "params": {
+            "adhesion": 0,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.4827586206896552,
+            "survivors": 58,
+            "removed": 14
+          }
+        },
+        {
+          "params": {
+            "adhesion": 0.8,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 1,
+            "survivors": 58,
+            "removed": 14
+          }
+        }
+      ]
+    },
+    {
+      "seed": 22,
+      "arms": [
+        {
+          "params": {
+            "adhesion": 0,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.8275862068965517,
+            "survivors": 58,
+            "removed": 14
+          }
+        },
+        {
+          "params": {
+            "adhesion": 0.8,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 1,
+            "survivors": 58,
+            "removed": 14
+          }
+        }
+      ]
+    },
+    {
+      "seed": 23,
+      "arms": [
+        {
+          "params": {
+            "adhesion": 0,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.4827586206896552,
+            "survivors": 58,
+            "removed": 14
+          }
+        },
+        {
+          "params": {
+            "adhesion": 0.8,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 1,
+            "survivors": 58,
+            "removed": 14
+          }
+        }
+      ]
+    },
+    {
+      "seed": 24,
+      "arms": [
+        {
+          "params": {
+            "adhesion": 0,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.46551724137931033,
+            "survivors": 58,
+            "removed": 14
+          }
+        },
+        {
+          "params": {
+            "adhesion": 0.8,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 1,
+            "survivors": 58,
+            "removed": 14
+          }
+        }
+      ]
+    },
+    {
+      "seed": 25,
+      "arms": [
+        {
+          "params": {
+            "adhesion": 0,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.7413793103448276,
+            "survivors": 58,
+            "removed": 14
+          }
+        },
+        {
+          "params": {
+            "adhesion": 0.8,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 1,
+            "survivors": 58,
+            "removed": 14
+          }
+        }
+      ]
+    },
+    {
+      "seed": 26,
+      "arms": [
+        {
+          "params": {
+            "adhesion": 0,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.6206896551724138,
+            "survivors": 58,
+            "removed": 14
+          }
+        },
+        {
+          "params": {
+            "adhesion": 0.8,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.9655172413793104,
+            "survivors": 58,
+            "removed": 14
+          }
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "arms": [
+        {
+          "params": {
+            "adhesion": 0,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.8620689655172413,
+            "survivors": 58,
+            "removed": 14
+          }
+        },
+        {
+          "params": {
+            "adhesion": 0.8,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.9827586206896551,
+            "survivors": 58,
+            "removed": 14
+          }
+        }
+      ]
+    },
+    {
+      "seed": 28,
+      "arms": [
+        {
+          "params": {
+            "adhesion": 0,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.5344827586206896,
+            "survivors": 58,
+            "removed": 14
+          }
+        },
+        {
+          "params": {
+            "adhesion": 0.8,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 1,
+            "survivors": 58,
+            "removed": 14
+          }
+        }
+      ]
+    },
+    {
+      "seed": 29,
+      "arms": [
+        {
+          "params": {
+            "adhesion": 0,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.39655172413793105,
+            "survivors": 58,
+            "removed": 14
+          }
+        },
+        {
+          "params": {
+            "adhesion": 0.8,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 1,
+            "survivors": 58,
+            "removed": 14
+          }
+        }
+      ]
+    },
+    {
+      "seed": 30,
+      "arms": [
+        {
+          "params": {
+            "adhesion": 0,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.5862068965517241,
+            "survivors": 58,
+            "removed": 14
+          }
+        },
+        {
+          "params": {
+            "adhesion": 0.8,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 1,
+            "survivors": 58,
+            "removed": 14
+          }
+        }
+      ]
+    },
+    {
+      "seed": 31,
+      "arms": [
+        {
+          "params": {
+            "adhesion": 0,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.46551724137931033,
+            "survivors": 58,
+            "removed": 14
+          }
+        },
+        {
+          "params": {
+            "adhesion": 0.8,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 1,
+            "survivors": 58,
+            "removed": 14
+          }
+        }
+      ]
+    },
+    {
+      "seed": 32,
+      "arms": [
+        {
+          "params": {
+            "adhesion": 0,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 0.39655172413793105,
+            "survivors": 58,
+            "removed": 14
+          }
+        },
+        {
+          "params": {
+            "adhesion": 0.8,
+            "range": 0.22,
+            "damage": true,
+            "boundary": "dish"
+          },
+          "summary": {
+            "connected": 1,
+            "survivors": 58,
+            "removed": 14
+          }
+        }
+      ]
+    }
+  ]
+}

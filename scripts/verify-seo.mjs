@@ -21,6 +21,7 @@ const indexableRoutes = new Set([
   '/intelligence/hardware/deliverable-megawatts/',
   '/intelligence/attention_all_you_need/', '/intelligence/aidc101/', '/intelligence/aidc101/101-1/',
   '/intelligence/supply-chain-map/', '/intelligence/swarm/',
+  '/intelligence/swarm-lab/', '/intelligence/swarm-lab/cell-city/', '/intelligence/swarm-lab/self-assembly/', '/intelligence/swarm-lab/mars-jar/', '/intelligence/swarm-lab/memory-islands/',
 ]);
 const arcadeRoutes = ["/meaning/Bran_lab/", "/meaning/Bran_lab/SuperRun/", "/meaning/Bran_lab/GeoDash/", "/meaning/Bran_lab/PacMan/", "/meaning/Bran_lab/BlockLab/", "/meaning/Bran_lab/WonderTrail/", "/meaning/Bran_lab/KartLab/", "/meaning/Bran_lab/CloudMunch/", "/meaning/Bran_lab/BounceTrials/", "/meaning/Bran_lab/StarboundMath/"];
 for (const route of arcadeRoutes) indexableRoutes.add(route);
@@ -116,7 +117,7 @@ if (existsSync(dist)) {
   const specialRoutes = [...routes.keys()].filter((route) => /^\/ouroboros\/\d{6}\/\d{8}\/special\/(?:[a-z0-9-]+\/)?(?:zh-hans\/|zh-hant\/|ja\/)?$/.test(route));
   const publicationRoutes = [...articleRoutes, ...actionFlowPublications, ...blogPublications, ...specialRoutes];
   for (const route of [...publicationRoutes, ...diaryRoutes]) indexableRoutes.add(route);
-  check(routes.size === 36 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length, `expected ${36 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length} HTML routes, found ${routes.size}.`);
+  check(routes.size === 41 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length, `expected ${41 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length} HTML routes, found ${routes.size}.`);
 
   for (const route of arcadeRoutes) check(routes.has(route), `missing arcade route: ${route}`);
 

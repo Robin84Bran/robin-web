@@ -25,6 +25,26 @@ The release check validates Astro/TypeScript, builds all routes, and inspects
 canonical URLs, robots directives, Open Graph/Twitter metadata, JSON-LD,
 sitemaps, internal links, and edge files.
 
+## Swarm Lab
+
+Four small, interactive worlds live at `/intelligence/swarm-lab/`: cooperation,
+local self-assembly, a resource-conserving habitat model, and transferable memory.
+Each has paired controls, deterministic seeds, time scrubbing, CSV/JSON downloads,
+32-seed batch receipts, readable source and explicit limits. These are educational
+toy models—not biological experiments, habitat designs or an actual Voyager run.
+
+The canonical research source is RobinOS2's `06_intelligence/AI_research/AI_swarm`;
+its explicit public allowlist is mirrored into `public/swarm-lab/`. Browser and
+Node runs use the same model files. See [reproduction notes](public/swarm-lab/README.md).
+`pnpm run test:swarm-lab` checks invariants, reproduces every saved batch result
+and validates the rendered routes after a build. It is part of `release:check`.
+
+Intelligence features the lab without replacing the earlier swarm sketches or
+other lessons. All four September 24 diary editions link to it in an afterword;
+their preserved document bodies are unchanged. The lab's explanatory interface
+is in English with Chinese experiment subtitles. No scheduler or external API
+is involved, and simulation playback starts only on request.
+
 ## BTC Probability Atlas
 
 The public Atlas is at
