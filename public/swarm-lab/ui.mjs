@@ -44,7 +44,7 @@ if(root){
     text(`${r.params.windowWidth.toLocaleString()} records / window`,x,oy+51,12);
     text(`${f.recordReads.toLocaleString()} / 12,000 records read`,x,y+74,11);
     text(`Local: ${f.hits}/48 · false alarms: ${f.falseFlags}`,x,y+99,11);
-    text(`Global: ${f.globalAlarm===null?'no decision yet':f.globalAlarm?'trend detected':'no trend detected'}`,x,y+125,11);
+    text(`Global: ${f.globalAlarm===null?(time===120?'abstains: insufficient span':'no decision yet'):f.globalAlarm?'trend detected':'no trend detected'}`,x,y+125,11);
    }else if(e.id==='taste-drift'){
     const gap=Math.min((pw-40)/12,(ph-72)/10),sx=cx-gap*5.5,sy=oy+47;
     for(let j=0;j<120;j++){const c=f.proposals[j],x=sx+(j%12)*gap,y=sy+Math.floor(j/12)*gap;dot(x,y,Math.max(2,gap*.29),!c?'#ddd9cd':c.weird?(c.truth?'#826185':'#d8c8d7'):(c.truth?'#668375':'#c5d1c5'));if(c?.selected){ctx.beginPath();ctx.strokeStyle='#9a7a36';ctx.lineWidth=1.5;ctx.arc(x,y,gap*.43,0,Math.PI*2);ctx.stroke();}}
@@ -65,7 +65,7 @@ if(root){
   marker.forEach(t=>{const x=left+(right-left)*t/Number(timeline.max);ctx.setLineDash([3,4]);line(x,top,x,bottom,'#aaa391');ctx.setLineDash([]);text(String(t),x+3,top-6,10);});
   if(e.id==='shared-channel'){const y=bottom-(bottom-top)*.25;ctx.setLineDash([2,3]);line(left,y,right,y,'#a47b36');ctx.setLineDash([]);text('25% collapse line',left+5,y-5,10,'#8a6630');}
   runs.forEach((r,i)=>{ctx.beginPath();ctx.strokeStyle=colors[i];ctx.lineWidth=2;ctx.setLineDash(i===0?[5,3]:[]);r.history.slice(0,time+1).forEach((f,j)=>{const x=left+(right-left)*j/Number(timeline.max),y=bottom-(bottom-top)*f.value/max;j?ctx.lineTo(x,y):ctx.moveTo(x,y);});ctx.stroke();ctx.setLineDash([]);});
-  text('0',left,bottom+17,10);text(`${timeline.max} ${e.id==='mars-jar'?'days':'steps'}`,right-66,bottom+17,10);text(e.unit,left,top-15,11);
+  text('0',left,bottom+17,10);text(`${timeline.max} ${e.id==='mars-jar'?'days':['taste-drift','shared-channel'].includes(e.id)?'rounds':'steps'}`,right-66,bottom+17,10);text(e.unit,left,top-15,11);
   readout.replaceChildren(...runs.map((r,i)=>{const f=r.history[time],p=document.createElement('p'),b=document.createElement('strong');b.textContent=e.labels[i]+': ';
    const detail=e.id==='mars-jar'?`${f.value.toFixed(1)} crew-days of limiting stock · ${f.alive?'operating':'failed, frozen'} · ${f.lost.reduce((a,b)=>a+b,0).toFixed(1)} total units lost`:e.id==='known-trap'?`${f.hits}/24 true finds · ${f.falseFlags} false alarms · ${f.inspected} inspections · known-neighbor finds ${f.knownHits}/${f.knownTruth}`:e.id==='attention-windows'?`${f.hits}/48 local finds · ${f.falseFlags} false alarms · ${f.recordReads} record-reads · global: ${f.globalAlarm===null?'no decision (unfinished or insufficient span)':f.globalAlarm?'trend detected':'no trend detected'}${r.params.pool&&time===120?` · ${r.params.coordinatorSummaryMerges} additional summary merges`:''}`:e.id==='taste-drift'?`${f.weirdTrueKept} unusual true ideas kept · ${f.weirdTrueProposed} proposed · ${f.weirdProposed}/120 unusual proposals · ${f.falseKept} false ideas kept`:e.id==='shared-channel'?`${f.effectiveDirections.toFixed(1)}/128 effective directions · ${f.uniqueDirections} visited this round · ${f.trueFlags}/16 true directions flagged · ${f.falseFlags} false directions flagged · first collapse: ${f.collapseStep??'not observed'}`:`${(f.value*100).toFixed(1)}% ${e.unit}`;
    p.append(b,document.createTextNode(detail));return p;}));
