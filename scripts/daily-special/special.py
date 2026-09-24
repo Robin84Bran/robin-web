@@ -17,7 +17,7 @@ import tempfile
 from contextlib import contextmanager
 from datetime import datetime, timedelta
 from pathlib import Path
-from urllib.request import urlopen
+from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
 
 HKT = ZoneInfo("Asia/Hong_Kong")
@@ -295,7 +295,8 @@ class DailySpecial:
         url = "https://iamrobin.ai" + path
         local = Path(artifact).read_bytes()
         def fetch(link):
-            with urlopen(link, timeout=30) as response:
+            request = Request(link, headers={"User-Agent": "iamrobin-daily-special-verifier/1.0 (+https://iamrobin.ai)"})
+            with urlopen(request, timeout=30) as response:
                 if response.status != 200:
                     raise ValueError("Public verification failed")
                 return response.read()
