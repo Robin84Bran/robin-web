@@ -1,6 +1,6 @@
-# Swarm Lab — four small worlds
+# Swarm Lab — Eight Small Worlds
 
-Four reproducible teaching models inspired by Robin's September 24, 2026 diary, **From Art to Immortal Cells**. They turn analogies into adjustable rules—not claims that cells, societies, ecosystems and AI are the same thing.
+Eight reproducible teaching models inspired by Robin's September 24, 2026 diary, **From ART to Immortal Cells**, and her follow-up questions about discovery. They turn analogies into adjustable rules—not claims that cells, societies, ecosystems and AI are the same thing. Start with [How to play](HOW_TO_PLAY.md): every control explained, one challenge per world.
 
 Public lab: https://iamrobin.ai/intelligence/swarm-lab/
 
@@ -10,6 +10,10 @@ Public lab: https://iamrobin.ai/intelligence/swarm-lab/
 | A body without a blueprint | What can local adhesion assemble? | [02_self_assembly](02_self_assembly/README.md) |
 | Mars in a jar | Is survival independence, or a long runway? | [03_mars_jar](03_mars_jar/README.md) |
 | The island that forgot the manual | Which kind of memory survives changed rules? | [04_memory_islands](04_memory_islands/README.md) |
+| The Already Known Trap | Do familiar labels hide surprising neighbors? | [05_known_trap](05_known_trap/README.md) |
+| Many Small Windows vs. One Big Eye | What does attention geometry lose? | [06_attention_windows](06_attention_windows/README.md) |
+| Taste Drift | Can unusual true ideas survive a familiar judge? | [07_taste_drift](07_taste_drift/README.md) |
+| Shared Channel | When does a useful lead become a crowd? | [08_shared_channel](08_shared_channel/README.md) |
 
 ## Run it yourself
 
@@ -19,6 +23,7 @@ Node 22+; no dependencies, credentials, network, API calls, live agents or biolo
 node --test tests.mjs
 node run.mjs
 node verify.mjs
+node write-guide.mjs
 ```
 
 `run.mjs` regenerates the complete 32-seed batch (seeds 1–32, default controls, no seed filtering), each experiment's CSV/JSON, and aggregate `results.json`. `verify.mjs` reruns every comparison and checks committed results and model hashes without changing files. The browser imports these exact model files. A fixed seed plus controls plus model version determines the trajectory. Share links preserve them; JSON downloads include every frame. CSV exports contain the plotted metric, not every internal variable.
@@ -42,7 +47,18 @@ Three additional all-seed batches are retained in `results.json` under `sensitiv
 
 This folder is the canonical source. Its public teaching files are mirrored byte-for-byte into `robin-web/public/swarm-lab/` by `sync-public.mjs` with an explicit allowlist. `PROJECT_STATE.md`, local QA output and release receipts are private project operations and are not in that allowlist. Public source and results contain no private conversations or credentials.
 
-The website keeps the original `/intelligence/swarm/` sketches, adds a dedicated hub and four experiment pages, and adds an afterword link outside the preserved diary document. Publication uses a task-owned PR, a passing required verify check, and the existing Cloudflare Workers build. No new scheduler, external agent, infrastructure or analytics is introduced.
+The website keeps the original `/intelligence/swarm/` sketches, provides a dedicated hub and eight experiment pages, and adds an afterword link outside the preserved diary document. Publication uses a task-owned PR, a passing required verify check, and the existing Cloudflare Workers build. No new scheduler, external agent, infrastructure or analytics is introduced.
+
+## Version 1.1.0 — seeing differently
+
+The original four model files and numerical results are unchanged. A local immutable `history/v1.0.0/` snapshot preserves the earlier teaching package; GitHub history preserves its published version.
+
+- Known labels: default recall 62.76% hidden versus 56.77% visible. Zero discount and full scanning test whether the imposed priority rule explains the gap.
+- Attention windows: default local recall 0% / 0% / 100%. Small windows match this deliberately local detector; they abstain on the global trend until a coordinator is added. The budget matches record-reads, not total compute.
+- Taste: protected generators alone barely rescue unusual true ideas at the final selection stage. Blind-review slots test a separate change to judging.
+- Channel: the tested 25% diversity line is first crossed at volume 2, but all true directions are still flagged there. At volume 8, only one is flagged. Diversity is not a substitute for task success.
+
+There are now twelve sensitivity batches, each retaining all 32 seeds: the original three, zero label discount, pooled global summaries, half blind-review slots, and six message volumes. None is empirical calibration. The ART inspiration is grounded in [Anthropic’s report](https://www.anthropic.com/news/claude-discovers-novel-enzyme-system); the causal stories about attention, labels and taste are hypotheses encoded here, not findings established by that report.
 
 ## Sources and limits
 

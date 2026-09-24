@@ -1,4 +1,5 @@
-export const VERSION='1.0.0';
+export const VERSION='1.1.0';
+export const csvCell=value=>/[",\r\n]/.test(String(value))?'"'+String(value).replaceAll('"','""')+'"':String(value);
 export const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
 export const mean=a=>a.reduce((x,y)=>x+y,0)/a.length;
 export function rng(seed=1){let s=seed>>>0;return()=>{s+=0x6D2B79F5;let t=s;t=Math.imul(t^(t>>>15),t|1);t^=t+Math.imul(t^(t>>>7),t|61);return((t^(t>>>14))>>>0)/4294967296;};}

@@ -1,0 +1,1418 @@
+{
+  "version": "1.1.0",
+  "protocol": "Matched seeds 1–32. Defaults frozen before batch. All runs retained. Simulation only; no real-world calibration.",
+  "id": "known-trap",
+  "title": "The Already Known Trap",
+  "metric": "recall",
+  "arms": [
+    {
+      "label": "Labels hidden",
+      "metric": "recall",
+      "n": 32,
+      "mean": 0.6276041666666665,
+      "min": 0.4583333333333333,
+      "p10": 0.5416666666666666,
+      "median": 0.625,
+      "p90": 0.7083333333333334,
+      "max": 0.7916666666666666
+    },
+    {
+      "label": "Labels visible",
+      "metric": "recall",
+      "n": 32,
+      "mean": 0.5677083333333335,
+      "min": 0.4166666666666667,
+      "p10": 0.4583333333333333,
+      "median": 0.5416666666666666,
+      "p90": 0.6666666666666666,
+      "max": 0.7916666666666666
+    }
+  ],
+  "pairedDifference": {
+    "n": 32,
+    "mean": -0.05989583333333334,
+    "min": -0.25000000000000006,
+    "p10": -0.16666666666666669,
+    "median": -0.04166666666666674,
+    "p90": 0,
+    "max": 0.125
+  },
+  "runs": [
+    {
+      "seed": 1,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": false
+          },
+          "summary": {
+            "recall": 0.7916666666666666,
+            "hits": 19,
+            "falseFlags": 1,
+            "inspected": 60,
+            "knownHits": 13,
+            "knownTruth": 16,
+            "knownRecall": 0.8125,
+            "precision": 0.95
+          }
+        },
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": true
+          },
+          "summary": {
+            "recall": 0.5833333333333334,
+            "hits": 14,
+            "falseFlags": 2,
+            "inspected": 60,
+            "knownHits": 7,
+            "knownTruth": 16,
+            "knownRecall": 0.4375,
+            "precision": 0.875
+          }
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": false
+          },
+          "summary": {
+            "recall": 0.5416666666666666,
+            "hits": 13,
+            "falseFlags": 0,
+            "inspected": 60,
+            "knownHits": 6,
+            "knownTruth": 9,
+            "knownRecall": 0.6666666666666666,
+            "precision": 1
+          }
+        },
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": true
+          },
+          "summary": {
+            "recall": 0.5416666666666666,
+            "hits": 13,
+            "falseFlags": 0,
+            "inspected": 60,
+            "knownHits": 4,
+            "knownTruth": 9,
+            "knownRecall": 0.4444444444444444,
+            "precision": 1
+          }
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": false
+          },
+          "summary": {
+            "recall": 0.625,
+            "hits": 15,
+            "falseFlags": 1,
+            "inspected": 60,
+            "knownHits": 9,
+            "knownTruth": 16,
+            "knownRecall": 0.5625,
+            "precision": 0.9375
+          }
+        },
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": true
+          },
+          "summary": {
+            "recall": 0.5,
+            "hits": 12,
+            "falseFlags": 1,
+            "inspected": 60,
+            "knownHits": 5,
+            "knownTruth": 16,
+            "knownRecall": 0.3125,
+            "precision": 0.9230769230769231
+          }
+        }
+      ]
+    },
+    {
+      "seed": 4,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": false
+          },
+          "summary": {
+            "recall": 0.75,
+            "hits": 18,
+            "falseFlags": 1,
+            "inspected": 60,
+            "knownHits": 10,
+            "knownTruth": 13,
+            "knownRecall": 0.7692307692307693,
+            "precision": 0.9473684210526315
+          }
+        },
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": true
+          },
+          "summary": {
+            "recall": 0.75,
+            "hits": 18,
+            "falseFlags": 1,
+            "inspected": 60,
+            "knownHits": 8,
+            "knownTruth": 13,
+            "knownRecall": 0.6153846153846154,
+            "precision": 0.9473684210526315
+          }
+        }
+      ]
+    },
+    {
+      "seed": 5,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": false
+          },
+          "summary": {
+            "recall": 0.5833333333333334,
+            "hits": 14,
+            "falseFlags": 0,
+            "inspected": 60,
+            "knownHits": 8,
+            "knownTruth": 15,
+            "knownRecall": 0.5333333333333333,
+            "precision": 1
+          }
+        },
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": true
+          },
+          "summary": {
+            "recall": 0.5,
+            "hits": 12,
+            "falseFlags": 0,
+            "inspected": 60,
+            "knownHits": 4,
+            "knownTruth": 15,
+            "knownRecall": 0.26666666666666666,
+            "precision": 1
+          }
+        }
+      ]
+    },
+    {
+      "seed": 6,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": false
+          },
+          "summary": {
+            "recall": 0.5833333333333334,
+            "hits": 14,
+            "falseFlags": 1,
+            "inspected": 60,
+            "knownHits": 5,
+            "knownTruth": 12,
+            "knownRecall": 0.4166666666666667,
+            "precision": 0.9333333333333333
+          }
+        },
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": true
+          },
+          "summary": {
+            "recall": 0.5833333333333334,
+            "hits": 14,
+            "falseFlags": 0,
+            "inspected": 60,
+            "knownHits": 3,
+            "knownTruth": 12,
+            "knownRecall": 0.25,
+            "precision": 1
+          }
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": false
+          },
+          "summary": {
+            "recall": 0.6666666666666666,
+            "hits": 16,
+            "falseFlags": 1,
+            "inspected": 60,
+            "knownHits": 6,
+            "knownTruth": 7,
+            "knownRecall": 0.8571428571428571,
+            "precision": 0.9411764705882353
+          }
+        },
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": true
+          },
+          "summary": {
+            "recall": 0.7916666666666666,
+            "hits": 19,
+            "falseFlags": 1,
+            "inspected": 60,
+            "knownHits": 5,
+            "knownTruth": 7,
+            "knownRecall": 0.7142857142857143,
+            "precision": 0.95
+          }
+        }
+      ]
+    },
+    {
+      "seed": 8,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": false
+          },
+          "summary": {
+            "recall": 0.5,
+            "hits": 12,
+            "falseFlags": 0,
+            "inspected": 60,
+            "knownHits": 8,
+            "knownTruth": 12,
+            "knownRecall": 0.6666666666666666,
+            "precision": 1
+          }
+        },
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": true
+          },
+          "summary": {
+            "recall": 0.5,
+            "hits": 12,
+            "falseFlags": 1,
+            "inspected": 60,
+            "knownHits": 5,
+            "knownTruth": 12,
+            "knownRecall": 0.4166666666666667,
+            "precision": 0.9230769230769231
+          }
+        }
+      ]
+    },
+    {
+      "seed": 9,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": false
+          },
+          "summary": {
+            "recall": 0.625,
+            "hits": 15,
+            "falseFlags": 0,
+            "inspected": 60,
+            "knownHits": 9,
+            "knownTruth": 15,
+            "knownRecall": 0.6,
+            "precision": 1
+          }
+        },
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": true
+          },
+          "summary": {
+            "recall": 0.5,
+            "hits": 12,
+            "falseFlags": 1,
+            "inspected": 60,
+            "knownHits": 4,
+            "knownTruth": 15,
+            "knownRecall": 0.26666666666666666,
+            "precision": 0.9230769230769231
+          }
+        }
+      ]
+    },
+    {
+      "seed": 10,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": false
+          },
+          "summary": {
+            "recall": 0.5833333333333334,
+            "hits": 14,
+            "falseFlags": 0,
+            "inspected": 60,
+            "knownHits": 7,
+            "knownTruth": 13,
+            "knownRecall": 0.5384615384615384,
+            "precision": 1
+          }
+        },
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": true
+          },
+          "summary": {
+            "recall": 0.5833333333333334,
+            "hits": 14,
+            "falseFlags": 0,
+            "inspected": 60,
+            "knownHits": 5,
+            "knownTruth": 13,
+            "knownRecall": 0.38461538461538464,
+            "precision": 1
+          }
+        }
+      ]
+    },
+    {
+      "seed": 11,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": false
+          },
+          "summary": {
+            "recall": 0.5416666666666666,
+            "hits": 13,
+            "falseFlags": 1,
+            "inspected": 60,
+            "knownHits": 10,
+            "knownTruth": 17,
+            "knownRecall": 0.5882352941176471,
+            "precision": 0.9285714285714286
+          }
+        },
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": true
+          },
+          "summary": {
+            "recall": 0.4166666666666667,
+            "hits": 10,
+            "falseFlags": 1,
+            "inspected": 60,
+            "knownHits": 5,
+            "knownTruth": 17,
+            "knownRecall": 0.29411764705882354,
+            "precision": 0.9090909090909091
+          }
+        }
+      ]
+    },
+    {
+      "seed": 12,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": false
+          },
+          "summary": {
+            "recall": 0.625,
+            "hits": 15,
+            "falseFlags": 2,
+            "inspected": 60,
+            "knownHits": 11,
+            "knownTruth": 15,
+            "knownRecall": 0.7333333333333333,
+            "precision": 0.8823529411764706
+          }
+        },
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": true
+          },
+          "summary": {
+            "recall": 0.5833333333333334,
+            "hits": 14,
+            "falseFlags": 2,
+            "inspected": 60,
+            "knownHits": 7,
+            "knownTruth": 15,
+            "knownRecall": 0.4666666666666667,
+            "precision": 0.875
+          }
+        }
+      ]
+    },
+    {
+      "seed": 13,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": false
+          },
+          "summary": {
+            "recall": 0.7083333333333334,
+            "hits": 17,
+            "falseFlags": 1,
+            "inspected": 60,
+            "knownHits": 10,
+            "knownTruth": 13,
+            "knownRecall": 0.7692307692307693,
+            "precision": 0.9444444444444444
+          }
+        },
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": true
+          },
+          "summary": {
+            "recall": 0.6666666666666666,
+            "hits": 16,
+            "falseFlags": 1,
+            "inspected": 60,
+            "knownHits": 7,
+            "knownTruth": 13,
+            "knownRecall": 0.5384615384615384,
+            "precision": 0.9411764705882353
+          }
+        }
+      ]
+    },
+    {
+      "seed": 14,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": false
+          },
+          "summary": {
+            "recall": 0.5416666666666666,
+            "hits": 13,
+            "falseFlags": 0,
+            "inspected": 60,
+            "knownHits": 7,
+            "knownTruth": 12,
+            "knownRecall": 0.5833333333333334,
+            "precision": 1
+          }
+        },
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": true
+          },
+          "summary": {
+            "recall": 0.5,
+            "hits": 12,
+            "falseFlags": 0,
+            "inspected": 60,
+            "knownHits": 4,
+            "knownTruth": 12,
+            "knownRecall": 0.3333333333333333,
+            "precision": 1
+          }
+        }
+      ]
+    },
+    {
+      "seed": 15,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": false
+          },
+          "summary": {
+            "recall": 0.625,
+            "hits": 15,
+            "falseFlags": 1,
+            "inspected": 60,
+            "knownHits": 8,
+            "knownTruth": 12,
+            "knownRecall": 0.6666666666666666,
+            "precision": 0.9375
+          }
+        },
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": true
+          },
+          "summary": {
+            "recall": 0.4583333333333333,
+            "hits": 11,
+            "falseFlags": 1,
+            "inspected": 60,
+            "knownHits": 3,
+            "knownTruth": 12,
+            "knownRecall": 0.25,
+            "precision": 0.9166666666666666
+          }
+        }
+      ]
+    },
+    {
+      "seed": 16,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": false
+          },
+          "summary": {
+            "recall": 0.7083333333333334,
+            "hits": 17,
+            "falseFlags": 2,
+            "inspected": 60,
+            "knownHits": 7,
+            "knownTruth": 11,
+            "knownRecall": 0.6363636363636364,
+            "precision": 0.8947368421052632
+          }
+        },
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": true
+          },
+          "summary": {
+            "recall": 0.7083333333333334,
+            "hits": 17,
+            "falseFlags": 2,
+            "inspected": 60,
+            "knownHits": 5,
+            "knownTruth": 11,
+            "knownRecall": 0.45454545454545453,
+            "precision": 0.8947368421052632
+          }
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": false
+          },
+          "summary": {
+            "recall": 0.4583333333333333,
+            "hits": 11,
+            "falseFlags": 1,
+            "inspected": 60,
+            "knownHits": 6,
+            "knownTruth": 8,
+            "knownRecall": 0.75,
+            "precision": 0.9166666666666666
+          }
+        },
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": true
+          },
+          "summary": {
+            "recall": 0.5,
+            "hits": 12,
+            "falseFlags": 0,
+            "inspected": 60,
+            "knownHits": 1,
+            "knownTruth": 8,
+            "knownRecall": 0.125,
+            "precision": 1
+          }
+        }
+      ]
+    },
+    {
+      "seed": 18,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": false
+          },
+          "summary": {
+            "recall": 0.625,
+            "hits": 15,
+            "falseFlags": 0,
+            "inspected": 60,
+            "knownHits": 8,
+            "knownTruth": 12,
+            "knownRecall": 0.6666666666666666,
+            "precision": 1
+          }
+        },
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": true
+          },
+          "summary": {
+            "recall": 0.5833333333333334,
+            "hits": 14,
+            "falseFlags": 0,
+            "inspected": 60,
+            "knownHits": 4,
+            "knownTruth": 12,
+            "knownRecall": 0.3333333333333333,
+            "precision": 1
+          }
+        }
+      ]
+    },
+    {
+      "seed": 19,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": false
+          },
+          "summary": {
+            "recall": 0.625,
+            "hits": 15,
+            "falseFlags": 1,
+            "inspected": 60,
+            "knownHits": 6,
+            "knownTruth": 11,
+            "knownRecall": 0.5454545454545454,
+            "precision": 0.9375
+          }
+        },
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": true
+          },
+          "summary": {
+            "recall": 0.5833333333333334,
+            "hits": 14,
+            "falseFlags": 1,
+            "inspected": 60,
+            "knownHits": 3,
+            "knownTruth": 11,
+            "knownRecall": 0.2727272727272727,
+            "precision": 0.9333333333333333
+          }
+        }
+      ]
+    },
+    {
+      "seed": 20,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": false
+          },
+          "summary": {
+            "recall": 0.5833333333333334,
+            "hits": 14,
+            "falseFlags": 1,
+            "inspected": 60,
+            "knownHits": 8,
+            "knownTruth": 16,
+            "knownRecall": 0.5,
+            "precision": 0.9333333333333333
+          }
+        },
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": true
+          },
+          "summary": {
+            "recall": 0.5,
+            "hits": 12,
+            "falseFlags": 1,
+            "inspected": 60,
+            "knownHits": 5,
+            "knownTruth": 16,
+            "knownRecall": 0.3125,
+            "precision": 0.9230769230769231
+          }
+        }
+      ]
+    },
+    {
+      "seed": 21,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": false
+          },
+          "summary": {
+            "recall": 0.625,
+            "hits": 15,
+            "falseFlags": 1,
+            "inspected": 60,
+            "knownHits": 6,
+            "knownTruth": 11,
+            "knownRecall": 0.5454545454545454,
+            "precision": 0.9375
+          }
+        },
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": true
+          },
+          "summary": {
+            "recall": 0.5416666666666666,
+            "hits": 13,
+            "falseFlags": 0,
+            "inspected": 60,
+            "knownHits": 3,
+            "knownTruth": 11,
+            "knownRecall": 0.2727272727272727,
+            "precision": 1
+          }
+        }
+      ]
+    },
+    {
+      "seed": 22,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": false
+          },
+          "summary": {
+            "recall": 0.5416666666666666,
+            "hits": 13,
+            "falseFlags": 0,
+            "inspected": 60,
+            "knownHits": 7,
+            "knownTruth": 14,
+            "knownRecall": 0.5,
+            "precision": 1
+          }
+        },
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": true
+          },
+          "summary": {
+            "recall": 0.5833333333333334,
+            "hits": 14,
+            "falseFlags": 0,
+            "inspected": 60,
+            "knownHits": 4,
+            "knownTruth": 14,
+            "knownRecall": 0.2857142857142857,
+            "precision": 1
+          }
+        }
+      ]
+    },
+    {
+      "seed": 23,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": false
+          },
+          "summary": {
+            "recall": 0.6666666666666666,
+            "hits": 16,
+            "falseFlags": 1,
+            "inspected": 60,
+            "knownHits": 6,
+            "knownTruth": 9,
+            "knownRecall": 0.6666666666666666,
+            "precision": 0.9411764705882353
+          }
+        },
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": true
+          },
+          "summary": {
+            "recall": 0.7083333333333334,
+            "hits": 17,
+            "falseFlags": 1,
+            "inspected": 60,
+            "knownHits": 3,
+            "knownTruth": 9,
+            "knownRecall": 0.3333333333333333,
+            "precision": 0.9444444444444444
+          }
+        }
+      ]
+    },
+    {
+      "seed": 24,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": false
+          },
+          "summary": {
+            "recall": 0.7083333333333334,
+            "hits": 17,
+            "falseFlags": 1,
+            "inspected": 60,
+            "knownHits": 13,
+            "knownTruth": 18,
+            "knownRecall": 0.7222222222222222,
+            "precision": 0.9444444444444444
+          }
+        },
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": true
+          },
+          "summary": {
+            "recall": 0.4583333333333333,
+            "hits": 11,
+            "falseFlags": 1,
+            "inspected": 60,
+            "knownHits": 6,
+            "knownTruth": 18,
+            "knownRecall": 0.3333333333333333,
+            "precision": 0.9166666666666666
+          }
+        }
+      ]
+    },
+    {
+      "seed": 25,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": false
+          },
+          "summary": {
+            "recall": 0.5833333333333334,
+            "hits": 14,
+            "falseFlags": 1,
+            "inspected": 60,
+            "knownHits": 6,
+            "knownTruth": 13,
+            "knownRecall": 0.46153846153846156,
+            "precision": 0.9333333333333333
+          }
+        },
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": true
+          },
+          "summary": {
+            "recall": 0.5416666666666666,
+            "hits": 13,
+            "falseFlags": 1,
+            "inspected": 60,
+            "knownHits": 3,
+            "knownTruth": 13,
+            "knownRecall": 0.23076923076923078,
+            "precision": 0.9285714285714286
+          }
+        }
+      ]
+    },
+    {
+      "seed": 26,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": false
+          },
+          "summary": {
+            "recall": 0.5833333333333334,
+            "hits": 14,
+            "falseFlags": 2,
+            "inspected": 60,
+            "knownHits": 6,
+            "knownTruth": 9,
+            "knownRecall": 0.6666666666666666,
+            "precision": 0.875
+          }
+        },
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": true
+          },
+          "summary": {
+            "recall": 0.4583333333333333,
+            "hits": 11,
+            "falseFlags": 2,
+            "inspected": 60,
+            "knownHits": 1,
+            "knownTruth": 9,
+            "knownRecall": 0.1111111111111111,
+            "precision": 0.8461538461538461
+          }
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": false
+          },
+          "summary": {
+            "recall": 0.7083333333333334,
+            "hits": 17,
+            "falseFlags": 0,
+            "inspected": 60,
+            "knownHits": 13,
+            "knownTruth": 17,
+            "knownRecall": 0.7647058823529411,
+            "precision": 1
+          }
+        },
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": true
+          },
+          "summary": {
+            "recall": 0.4583333333333333,
+            "hits": 11,
+            "falseFlags": 0,
+            "inspected": 60,
+            "knownHits": 5,
+            "knownTruth": 17,
+            "knownRecall": 0.29411764705882354,
+            "precision": 1
+          }
+        }
+      ]
+    },
+    {
+      "seed": 28,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": false
+          },
+          "summary": {
+            "recall": 0.7083333333333334,
+            "hits": 17,
+            "falseFlags": 0,
+            "inspected": 60,
+            "knownHits": 9,
+            "knownTruth": 15,
+            "knownRecall": 0.6,
+            "precision": 1
+          }
+        },
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": true
+          },
+          "summary": {
+            "recall": 0.6666666666666666,
+            "hits": 16,
+            "falseFlags": 0,
+            "inspected": 60,
+            "knownHits": 7,
+            "knownTruth": 15,
+            "knownRecall": 0.4666666666666667,
+            "precision": 1
+          }
+        }
+      ]
+    },
+    {
+      "seed": 29,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": false
+          },
+          "summary": {
+            "recall": 0.625,
+            "hits": 15,
+            "falseFlags": 2,
+            "inspected": 60,
+            "knownHits": 9,
+            "knownTruth": 16,
+            "knownRecall": 0.5625,
+            "precision": 0.8823529411764706
+          }
+        },
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": true
+          },
+          "summary": {
+            "recall": 0.625,
+            "hits": 15,
+            "falseFlags": 1,
+            "inspected": 60,
+            "knownHits": 8,
+            "knownTruth": 16,
+            "knownRecall": 0.5,
+            "precision": 0.9375
+          }
+        }
+      ]
+    },
+    {
+      "seed": 30,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": false
+          },
+          "summary": {
+            "recall": 0.7083333333333334,
+            "hits": 17,
+            "falseFlags": 0,
+            "inspected": 60,
+            "knownHits": 12,
+            "knownTruth": 14,
+            "knownRecall": 0.8571428571428571,
+            "precision": 1
+          }
+        },
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": true
+          },
+          "summary": {
+            "recall": 0.5833333333333334,
+            "hits": 14,
+            "falseFlags": 0,
+            "inspected": 60,
+            "knownHits": 6,
+            "knownTruth": 14,
+            "knownRecall": 0.42857142857142855,
+            "precision": 1
+          }
+        }
+      ]
+    },
+    {
+      "seed": 31,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": false
+          },
+          "summary": {
+            "recall": 0.7083333333333334,
+            "hits": 17,
+            "falseFlags": 0,
+            "inspected": 60,
+            "knownHits": 10,
+            "knownTruth": 14,
+            "knownRecall": 0.7142857142857143,
+            "precision": 1
+          }
+        },
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": true
+          },
+          "summary": {
+            "recall": 0.6666666666666666,
+            "hits": 16,
+            "falseFlags": 0,
+            "inspected": 60,
+            "knownHits": 7,
+            "knownTruth": 14,
+            "knownRecall": 0.5,
+            "precision": 1
+          }
+        }
+      ]
+    },
+    {
+      "seed": 32,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": false
+          },
+          "summary": {
+            "recall": 0.625,
+            "hits": 15,
+            "falseFlags": 0,
+            "inspected": 60,
+            "knownHits": 10,
+            "knownTruth": 15,
+            "knownRecall": 0.6666666666666666,
+            "precision": 1
+          }
+        },
+        {
+          "params": {
+            "bias": 0.8,
+            "noise": 0.2,
+            "knownShare": 0.5,
+            "budget": 60,
+            "labelsVisible": true
+          },
+          "summary": {
+            "recall": 0.5416666666666666,
+            "hits": 13,
+            "falseFlags": 0,
+            "inspected": 60,
+            "knownHits": 7,
+            "knownTruth": 15,
+            "knownRecall": 0.4666666666666667,
+            "precision": 1
+          }
+        }
+      ]
+    }
+  ]
+}

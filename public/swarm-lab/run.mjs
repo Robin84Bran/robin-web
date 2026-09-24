@@ -2,8 +2,8 @@ import {writeFileSync,readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {dirname,join} from 'node:path';
-import {experiments,compare,VERSION} from './lab.mjs';
-import {stats} from './shared.mjs';
+import {experiments,compare,VERSION,sensitivityCases} from './lab.mjs';
+import {stats,csvCell} from './shared.mjs';
 const root=dirname(fileURLToPath(import.meta.url));
 const seeds=Array.from({length:32},(_,i)=>i+1);
 const results={version:VERSION,seeds,protocol:'Matched seeds 1–32. Defaults frozen before batch. All runs retained. Simulation only; no real-world calibration.',experiments:[]};
@@ -16,10 +16,10 @@ for(const e of experiments){
  const result={id:e.id,title:e.title,metric:e.metric,arms,pairedDifference:paired,runs};
  results.experiments.push(result);
  writeFileSync(join(root,e.folder,'results.json'),JSON.stringify({version:VERSION,protocol:results.protocol,...result},null,2)+'\n');
- const csv=['seed,arm,metric,value',...runs.flatMap(r=>r.arms.map((x,i)=>`${r.seed},${e.labels[i]},${e.metric},${x.summary[e.metric]}`))].join('\n')+'\n';
+ const csv=['seed,arm,metric,value',...runs.flatMap(r=>r.arms.map((x,i)=>[r.seed,e.labels[i],e.metric,x.summary[e.metric]].map(csvCell).join(',')))].join('\n')+'\n';
  writeFileSync(join(root,e.folder,'results.csv'),csv);
 }
-results.sensitivities=[['cell-city',{benefit:0}],['mars-jar',{solar:.5}],['memory-islands',{change:0}]].map(([id,controls])=>{
+results.sensitivities=sensitivityCases.map(([id,controls])=>{
  const e=experiments.find(e=>e.id===id),runs=seeds.map(seed=>({seed,arms:compare(id,{seed,...controls}).map(x=>({params:x.params,summary:x.summary}))}));
  return {id,controls,runs,arms:e.labels.map((label,i)=>({label,metric:e.metric,...stats(runs.map(r=>r.arms[i].summary[e.metric]))}))};
 });

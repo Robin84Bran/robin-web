@@ -19,7 +19,7 @@ const localized: Record<string,[string,string,string]> = {
   ja: ['細胞、エージェントの群れ、そして梯子を離れて生きることをめぐる対話。', '問い、比喩、思考実験をそのまま残した日記です。医学的な助言ではありません。', '日記に戻る →'],
 };
 const words = entry.data.source === 'owner-document' ? localized[entry.data.inLanguage] : ['A moment, kept in its own words.', 'Original text preserved. No translation.', 'Return to Diary →'];
-const labWords:Record<string,[string,string]>={en:['Try the four experiments →','From conversation to a playable Swarm Lab: change the rules, compare controls, inspect the results. Educational toy models—not biological experiments.'], 'zh-Hans':['亲手试试这四个实验 →','把这场聊天变成可以玩的 Swarm Lab：改变规则，对比结果，检查证据。这些是教学模型，不是生物实验。'], 'zh-Hant':['親手試試這四個實驗 →','把這場聊天變成可以玩的 Swarm Lab：改變規則，對比結果，檢查證據。這些是教學模型，不是生物實驗。'],ja:['四つの実験を試す →','この対話から生まれた Swarm Lab。ルールを変え、比較し、結果を確かめられます。生物実験ではなく、学習用の簡略化したモデルです。']};
+const labWords:Record<string,[string,string]>={en:['Explore eight small worlds →','From conversation to a playable Swarm Lab: change the rules, compare controls, inspect the results. Educational toy models—not biological experiments.'], 'zh-Hans':['亲手探索八个小世界 →','把这场聊天变成可以玩的 Swarm Lab：改变规则，对比结果，检查证据。这些是教学模型，不是生物实验。'], 'zh-Hant':['親手探索八個小世界 →','把這場聊天變成可以玩的 Swarm Lab：改變規則，對比結果，檢查證據。這些是教學模型，不是生物實驗。'],ja:['八つの小さな世界を探索する →','この対話から生まれた Swarm Lab。ルールを変え、比較し、結果を確かめられます。生物実験ではなく、学習用の簡略化したモデルです。']};
 const schemas = createDiarySchemas({title: entry.data.title, description: entry.data.excerpt, path, image: entry.data.ogImage,
   datePublished: publicationDate, dateModified: entry.data.updated.toISOString().slice(0,10), inLanguage: entry.data.inLanguage });
 ---

@@ -1,0 +1,2325 @@
+{
+  "version": "1.1.0",
+  "protocol": "Matched seeds 1–32. Defaults frozen before batch. All runs retained. Simulation only; no real-world calibration.",
+  "id": "attention-windows",
+  "title": "Many Small Windows vs. One Big Eye",
+  "metric": "recall",
+  "arms": [
+    {
+      "label": "1 reader",
+      "metric": "recall",
+      "n": 32,
+      "mean": 0,
+      "min": 0,
+      "p10": 0,
+      "median": 0,
+      "p90": 0,
+      "max": 0
+    },
+    {
+      "label": "50 readers",
+      "metric": "recall",
+      "n": 32,
+      "mean": 0,
+      "min": 0,
+      "p10": 0,
+      "median": 0,
+      "p90": 0,
+      "max": 0
+    },
+    {
+      "label": "1,000 readers",
+      "metric": "recall",
+      "n": 32,
+      "mean": 1,
+      "min": 1,
+      "p10": 1,
+      "median": 1,
+      "p90": 1,
+      "max": 1
+    }
+  ],
+  "pairedDifference": {
+    "n": 32,
+    "mean": 1,
+    "min": 1,
+    "p10": 1,
+    "median": 1,
+    "p90": 1,
+    "max": 1
+  },
+  "runs": [
+    {
+      "seed": 1,
+      "arms": [
+        {
+          "params": {
+            "agents": 1,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12000,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": true,
+            "globalTruth": true,
+            "globalCorrect": true,
+            "abstained": false
+          }
+        },
+        {
+          "params": {
+            "agents": 50,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 240,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        },
+        {
+          "params": {
+            "agents": 1000,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 1,
+            "hits": 48,
+            "falseFlags": 32,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "arms": [
+        {
+          "params": {
+            "agents": 1,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12000,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": true,
+            "globalTruth": true,
+            "globalCorrect": true,
+            "abstained": false
+          }
+        },
+        {
+          "params": {
+            "agents": 50,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 240,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        },
+        {
+          "params": {
+            "agents": 1000,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 1,
+            "hits": 48,
+            "falseFlags": 37,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "arms": [
+        {
+          "params": {
+            "agents": 1,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12000,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": true,
+            "globalTruth": true,
+            "globalCorrect": true,
+            "abstained": false
+          }
+        },
+        {
+          "params": {
+            "agents": 50,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 240,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        },
+        {
+          "params": {
+            "agents": 1000,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 1,
+            "hits": 48,
+            "falseFlags": 26,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        }
+      ]
+    },
+    {
+      "seed": 4,
+      "arms": [
+        {
+          "params": {
+            "agents": 1,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12000,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": true,
+            "globalTruth": true,
+            "globalCorrect": true,
+            "abstained": false
+          }
+        },
+        {
+          "params": {
+            "agents": 50,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 240,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        },
+        {
+          "params": {
+            "agents": 1000,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 1,
+            "hits": 48,
+            "falseFlags": 33,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        }
+      ]
+    },
+    {
+      "seed": 5,
+      "arms": [
+        {
+          "params": {
+            "agents": 1,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12000,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": true,
+            "globalTruth": true,
+            "globalCorrect": true,
+            "abstained": false
+          }
+        },
+        {
+          "params": {
+            "agents": 50,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 240,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        },
+        {
+          "params": {
+            "agents": 1000,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 1,
+            "hits": 48,
+            "falseFlags": 38,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        }
+      ]
+    },
+    {
+      "seed": 6,
+      "arms": [
+        {
+          "params": {
+            "agents": 1,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12000,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": true,
+            "globalTruth": true,
+            "globalCorrect": true,
+            "abstained": false
+          }
+        },
+        {
+          "params": {
+            "agents": 50,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 240,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        },
+        {
+          "params": {
+            "agents": 1000,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 1,
+            "hits": 48,
+            "falseFlags": 39,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "arms": [
+        {
+          "params": {
+            "agents": 1,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12000,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": true,
+            "globalTruth": true,
+            "globalCorrect": true,
+            "abstained": false
+          }
+        },
+        {
+          "params": {
+            "agents": 50,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 240,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        },
+        {
+          "params": {
+            "agents": 1000,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 1,
+            "hits": 48,
+            "falseFlags": 27,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        }
+      ]
+    },
+    {
+      "seed": 8,
+      "arms": [
+        {
+          "params": {
+            "agents": 1,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12000,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": true,
+            "globalTruth": true,
+            "globalCorrect": true,
+            "abstained": false
+          }
+        },
+        {
+          "params": {
+            "agents": 50,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 240,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        },
+        {
+          "params": {
+            "agents": 1000,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 1,
+            "hits": 48,
+            "falseFlags": 35,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        }
+      ]
+    },
+    {
+      "seed": 9,
+      "arms": [
+        {
+          "params": {
+            "agents": 1,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12000,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": true,
+            "globalTruth": true,
+            "globalCorrect": true,
+            "abstained": false
+          }
+        },
+        {
+          "params": {
+            "agents": 50,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 240,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        },
+        {
+          "params": {
+            "agents": 1000,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 1,
+            "hits": 48,
+            "falseFlags": 48,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        }
+      ]
+    },
+    {
+      "seed": 10,
+      "arms": [
+        {
+          "params": {
+            "agents": 1,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12000,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": true,
+            "globalTruth": true,
+            "globalCorrect": true,
+            "abstained": false
+          }
+        },
+        {
+          "params": {
+            "agents": 50,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 240,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        },
+        {
+          "params": {
+            "agents": 1000,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 1,
+            "hits": 48,
+            "falseFlags": 35,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        }
+      ]
+    },
+    {
+      "seed": 11,
+      "arms": [
+        {
+          "params": {
+            "agents": 1,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12000,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": true,
+            "globalTruth": true,
+            "globalCorrect": true,
+            "abstained": false
+          }
+        },
+        {
+          "params": {
+            "agents": 50,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 240,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        },
+        {
+          "params": {
+            "agents": 1000,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 1,
+            "hits": 48,
+            "falseFlags": 33,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        }
+      ]
+    },
+    {
+      "seed": 12,
+      "arms": [
+        {
+          "params": {
+            "agents": 1,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12000,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": true,
+            "globalTruth": true,
+            "globalCorrect": true,
+            "abstained": false
+          }
+        },
+        {
+          "params": {
+            "agents": 50,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 240,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        },
+        {
+          "params": {
+            "agents": 1000,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 1,
+            "hits": 48,
+            "falseFlags": 24,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        }
+      ]
+    },
+    {
+      "seed": 13,
+      "arms": [
+        {
+          "params": {
+            "agents": 1,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12000,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": true,
+            "globalTruth": true,
+            "globalCorrect": true,
+            "abstained": false
+          }
+        },
+        {
+          "params": {
+            "agents": 50,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 240,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        },
+        {
+          "params": {
+            "agents": 1000,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 1,
+            "hits": 48,
+            "falseFlags": 28,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        }
+      ]
+    },
+    {
+      "seed": 14,
+      "arms": [
+        {
+          "params": {
+            "agents": 1,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12000,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": true,
+            "globalTruth": true,
+            "globalCorrect": true,
+            "abstained": false
+          }
+        },
+        {
+          "params": {
+            "agents": 50,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 240,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        },
+        {
+          "params": {
+            "agents": 1000,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 1,
+            "hits": 48,
+            "falseFlags": 36,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        }
+      ]
+    },
+    {
+      "seed": 15,
+      "arms": [
+        {
+          "params": {
+            "agents": 1,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12000,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": true,
+            "globalTruth": true,
+            "globalCorrect": true,
+            "abstained": false
+          }
+        },
+        {
+          "params": {
+            "agents": 50,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 240,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        },
+        {
+          "params": {
+            "agents": 1000,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 1,
+            "hits": 48,
+            "falseFlags": 33,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        }
+      ]
+    },
+    {
+      "seed": 16,
+      "arms": [
+        {
+          "params": {
+            "agents": 1,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12000,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": true,
+            "globalTruth": true,
+            "globalCorrect": true,
+            "abstained": false
+          }
+        },
+        {
+          "params": {
+            "agents": 50,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 240,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        },
+        {
+          "params": {
+            "agents": 1000,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 1,
+            "hits": 48,
+            "falseFlags": 41,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "arms": [
+        {
+          "params": {
+            "agents": 1,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12000,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": true,
+            "globalTruth": true,
+            "globalCorrect": true,
+            "abstained": false
+          }
+        },
+        {
+          "params": {
+            "agents": 50,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 240,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        },
+        {
+          "params": {
+            "agents": 1000,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 1,
+            "hits": 48,
+            "falseFlags": 35,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        }
+      ]
+    },
+    {
+      "seed": 18,
+      "arms": [
+        {
+          "params": {
+            "agents": 1,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12000,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": true,
+            "globalTruth": true,
+            "globalCorrect": true,
+            "abstained": false
+          }
+        },
+        {
+          "params": {
+            "agents": 50,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 240,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        },
+        {
+          "params": {
+            "agents": 1000,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 1,
+            "hits": 48,
+            "falseFlags": 30,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        }
+      ]
+    },
+    {
+      "seed": 19,
+      "arms": [
+        {
+          "params": {
+            "agents": 1,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12000,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": true,
+            "globalTruth": true,
+            "globalCorrect": true,
+            "abstained": false
+          }
+        },
+        {
+          "params": {
+            "agents": 50,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 240,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        },
+        {
+          "params": {
+            "agents": 1000,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 1,
+            "hits": 48,
+            "falseFlags": 30,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        }
+      ]
+    },
+    {
+      "seed": 20,
+      "arms": [
+        {
+          "params": {
+            "agents": 1,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12000,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": true,
+            "globalTruth": true,
+            "globalCorrect": true,
+            "abstained": false
+          }
+        },
+        {
+          "params": {
+            "agents": 50,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 240,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        },
+        {
+          "params": {
+            "agents": 1000,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 1,
+            "hits": 48,
+            "falseFlags": 33,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        }
+      ]
+    },
+    {
+      "seed": 21,
+      "arms": [
+        {
+          "params": {
+            "agents": 1,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12000,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": true,
+            "globalTruth": true,
+            "globalCorrect": true,
+            "abstained": false
+          }
+        },
+        {
+          "params": {
+            "agents": 50,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 240,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        },
+        {
+          "params": {
+            "agents": 1000,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 1,
+            "hits": 48,
+            "falseFlags": 27,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        }
+      ]
+    },
+    {
+      "seed": 22,
+      "arms": [
+        {
+          "params": {
+            "agents": 1,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12000,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": true,
+            "globalTruth": true,
+            "globalCorrect": true,
+            "abstained": false
+          }
+        },
+        {
+          "params": {
+            "agents": 50,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 240,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        },
+        {
+          "params": {
+            "agents": 1000,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 1,
+            "hits": 48,
+            "falseFlags": 31,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        }
+      ]
+    },
+    {
+      "seed": 23,
+      "arms": [
+        {
+          "params": {
+            "agents": 1,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12000,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": true,
+            "globalTruth": true,
+            "globalCorrect": true,
+            "abstained": false
+          }
+        },
+        {
+          "params": {
+            "agents": 50,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 240,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        },
+        {
+          "params": {
+            "agents": 1000,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 1,
+            "hits": 48,
+            "falseFlags": 35,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        }
+      ]
+    },
+    {
+      "seed": 24,
+      "arms": [
+        {
+          "params": {
+            "agents": 1,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12000,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": true,
+            "globalTruth": true,
+            "globalCorrect": true,
+            "abstained": false
+          }
+        },
+        {
+          "params": {
+            "agents": 50,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 240,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        },
+        {
+          "params": {
+            "agents": 1000,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 1,
+            "hits": 48,
+            "falseFlags": 29,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        }
+      ]
+    },
+    {
+      "seed": 25,
+      "arms": [
+        {
+          "params": {
+            "agents": 1,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12000,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": true,
+            "globalTruth": true,
+            "globalCorrect": true,
+            "abstained": false
+          }
+        },
+        {
+          "params": {
+            "agents": 50,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 240,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        },
+        {
+          "params": {
+            "agents": 1000,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 1,
+            "hits": 48,
+            "falseFlags": 39,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        }
+      ]
+    },
+    {
+      "seed": 26,
+      "arms": [
+        {
+          "params": {
+            "agents": 1,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12000,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": true,
+            "globalTruth": true,
+            "globalCorrect": true,
+            "abstained": false
+          }
+        },
+        {
+          "params": {
+            "agents": 50,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 240,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        },
+        {
+          "params": {
+            "agents": 1000,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 1,
+            "hits": 48,
+            "falseFlags": 37,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "arms": [
+        {
+          "params": {
+            "agents": 1,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12000,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": true,
+            "globalTruth": true,
+            "globalCorrect": true,
+            "abstained": false
+          }
+        },
+        {
+          "params": {
+            "agents": 50,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 240,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        },
+        {
+          "params": {
+            "agents": 1000,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 1,
+            "hits": 48,
+            "falseFlags": 37,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        }
+      ]
+    },
+    {
+      "seed": 28,
+      "arms": [
+        {
+          "params": {
+            "agents": 1,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12000,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": true,
+            "globalTruth": true,
+            "globalCorrect": true,
+            "abstained": false
+          }
+        },
+        {
+          "params": {
+            "agents": 50,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 240,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        },
+        {
+          "params": {
+            "agents": 1000,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 1,
+            "hits": 48,
+            "falseFlags": 38,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        }
+      ]
+    },
+    {
+      "seed": 29,
+      "arms": [
+        {
+          "params": {
+            "agents": 1,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12000,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": true,
+            "globalTruth": true,
+            "globalCorrect": true,
+            "abstained": false
+          }
+        },
+        {
+          "params": {
+            "agents": 50,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 240,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        },
+        {
+          "params": {
+            "agents": 1000,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 1,
+            "hits": 48,
+            "falseFlags": 26,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        }
+      ]
+    },
+    {
+      "seed": 30,
+      "arms": [
+        {
+          "params": {
+            "agents": 1,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12000,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": true,
+            "globalTruth": true,
+            "globalCorrect": true,
+            "abstained": false
+          }
+        },
+        {
+          "params": {
+            "agents": 50,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 240,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        },
+        {
+          "params": {
+            "agents": 1000,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 1,
+            "hits": 48,
+            "falseFlags": 31,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        }
+      ]
+    },
+    {
+      "seed": 31,
+      "arms": [
+        {
+          "params": {
+            "agents": 1,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12000,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": true,
+            "globalTruth": true,
+            "globalCorrect": true,
+            "abstained": false
+          }
+        },
+        {
+          "params": {
+            "agents": 50,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 240,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        },
+        {
+          "params": {
+            "agents": 1000,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 1,
+            "hits": 48,
+            "falseFlags": 27,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        }
+      ]
+    },
+    {
+      "seed": 32,
+      "arms": [
+        {
+          "params": {
+            "agents": 1,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12000,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": true,
+            "globalTruth": true,
+            "globalCorrect": true,
+            "abstained": false
+          }
+        },
+        {
+          "params": {
+            "agents": 50,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 240,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 0,
+            "hits": 0,
+            "falseFlags": 0,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        },
+        {
+          "params": {
+            "agents": 1000,
+            "noise": 0.6,
+            "drift": 0.5,
+            "pool": false,
+            "records": 12000,
+            "windowWidth": 12,
+            "recordReadBudget": 12000,
+            "coordinatorSummaryMerges": 0
+          },
+          "summary": {
+            "recall": 1,
+            "hits": 48,
+            "falseFlags": 26,
+            "recordReads": 12000,
+            "globalAlarm": null,
+            "globalTruth": true,
+            "globalCorrect": null,
+            "abstained": true
+          }
+        }
+      ]
+    }
+  ]
+}

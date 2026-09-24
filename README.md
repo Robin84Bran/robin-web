@@ -27,7 +27,7 @@ sitemaps, internal links, and edge files.
 
 ## Swarm Lab
 
-Four small, interactive worlds live at `/intelligence/swarm-lab/`: cooperation,
+Eight small, interactive worlds live at `/intelligence/swarm-lab/`: cooperation,
 local self-assembly, a resource-conserving habitat model, and transferable memory.
 Each has paired controls, deterministic seeds, time scrubbing, CSV/JSON downloads,
 32-seed batch receipts, readable source and explicit limits. These are educational
@@ -35,7 +35,12 @@ toy models—not biological experiments, habitat designs or an actual Voyager ru
 
 The canonical research source is RobinOS2's `06_intelligence/AI_research/AI_swarm`;
 its explicit public allowlist is mirrored into `public/swarm-lab/`. Browser and
-Node runs use the same model files. See [reproduction notes](public/swarm-lab/README.md).
+Node runs use the same model files. See [reproduction notes](public/swarm-lab/README.md)
+and the [complete playing guide](public/swarm-lab/HOW_TO_PLAY.md). Worlds 5–8
+test known-label discount, attention geometry, taste feedback and shared-channel
+herding using synthetic rule-based models. Each world explains all controls.
+Version 1.1.0 preserves the first four models; no real AI or biological experiment
+is claimed. Equal record-reads in world 6 do not mean equal total compute.
 `pnpm run test:swarm-lab` checks invariants, reproduces every saved batch result
 and validates the rendered routes after a build. It is part of `release:check`.
 

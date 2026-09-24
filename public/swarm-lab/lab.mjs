@@ -2,6 +2,10 @@ import * as city from './01_cell_city/model.mjs';
 import * as assembly from './02_self_assembly/model.mjs';
 import * as mars from './03_mars_jar/model.mjs';
 import * as islands from './04_memory_islands/model.mjs';
+import * as known from './05_known_trap/model.mjs';
+import * as windows from './06_attention_windows/model.mjs';
+import * as taste from './07_taste_drift/model.mjs';
+import * as channel from './08_shared_channel/model.mjs';
 export {VERSION} from './shared.mjs';
 export const experiments=[
  {id:city.id,folder:'01_cell_city',number:'01',title:'The city of freeloaders',chinese:'叛逃细胞城',noun:'Cooperation',unit:'share contributing',
@@ -43,11 +47,52 @@ export const experiments=[
   limits:'No LLM, Minecraft, live agent or Voyager software runs here. These are explicit rule-based learners. Failure memory has an advantage by construction when rules stay fixed within an island; this model tests that assumption, not general intelligence. Equal test budgets do not imply equal lifetime training cost.',
   ask:'Set changed rules to zero. How much of the apparent intelligence was just useful luggage?',
   sourceTitle:'Voyager · original research project',source:'https://voyager.minedojo.org/',
+ },
+ {id:known.id,folder:'05_known_trap',number:'05',title:'The Already Known Trap',chinese:'「早就知道了」陷阱',noun:'Anomalies recovered',unit:'planted anomalies recovered',
+  question:'Does a familiar label make its neighbors disappear?',
+  hook:'A tiny synthetic genome-like map contains 24 planted surprises. Some sit beside a label saying “already characterized.” Give two searchers the same inspection budget. Let only one see the labels.',
+  control:'Known-label discount',key:'bias',min:0,max:1,step:.05,initial:.8,labels:['Labels hidden','Labels visible'],metric:'recall',
+  legend:'Each tile is one synthetic neighborhood, not a DNA sequence. Pale tiles are uninspected; gray tiles were checked; green means a true find and coral a false alarm. Outlined tiles carry visible known labels.',
+  mechanism:'120 neighborhoods contain 24 planted anomalies and 24 repeat-only decoys. Noisy repeat and partner scores are observable; truth is used only for evaluation. Inspection order is a seeded weighted race based on repeat evidence. A visible known label multiplies priority by max(0.001, 1 − discount). Both arms inspect the same number of neighborhoods. A candidate is flagged when both observed scores exceed 0.65.',
+  limits:'The label penalty is an explicit hypothesis, not a measured human or Claude bias. Anthropic reports that the RT was previously identified and Claude noticed its associated repeat array and partner; it does not establish why earlier researchers missed those features. No biological sequences or real discovery agents run here.',
+  ask:'Set the label discount to zero. If the gap disappears, what did the experiment actually test?',
+  sourceTitle:'Anthropic · reported ART discovery and research process',source:'https://www.anthropic.com/news/claude-discovers-novel-enzyme-system'
+ },
+ {id:windows.id,folder:'06_attention_windows',number:'06',title:'Many Small Windows vs. One Big Eye',chinese:'小窗口与大眼睛',noun:'Local patterns recovered',unit:'planted local patterns recovered',
+  question:'What disappears when you divide attention?',
+  hook:'One reader, fifty readers, a thousand readers. Exactly 12,000 record-reads each. The data hide 48 short alternating patterns and a broad trend. Everyone sees the same data; nobody gets the same view.',
+  control:'Background noise',key:'noise',min:0,max:1.5,step:.1,initial:.6,labels:['1 reader','50 readers','1,000 readers'],metric:'recall',
+  legend:'The strip is the complete dataset. Colored marks locate local alarms: green overlaps a planted pattern; coral is a false alarm. Gray shading shows records read. A global decision appears separately, never inside the local-recall score.',
+  mechanism:'The 12,000 records are partitioned into 1, 50 or 1,000 disjoint windows. Each record is read once. A local alarm requires an absolute difference > 0.45 between mean even- and odd-indexed values in a window. It recovers a planted motif only if at least four of its eight records fall in that window. A global test compares the first and last quarters of a window and requires a span of at least half the dataset. Short windows abstain unless a coordinator pools position-aware summaries after reading finishes.',
+  limits:'Equal record-reads are not equal FLOPs, tokens or wall time. Pooling costs additional coordinator work, recorded as summary merges. These fixed detectors compress information differently; no claim is made that more agents are intrinsically smarter. Tiny windows can also create false alarms and split patterns at boundaries.',
+  ask:'Turn on global summary pooling. Can coordination recover the broad trend without rereading the records?',
+  sourceTitle:'Anthropic · inspiration for distributed search, not a benchmark specification',source:'https://www.anthropic.com/news/claude-discovers-novel-enzyme-system'
+ },
+ {id:taste.id,folder:'07_taste_drift',number:'07',title:'Taste Drift',chinese:'品味漂移',noun:'Weird but true ideas retained',unit:'weird-but-true ideas retained',scale:'count',
+  question:'Can a good student inherit a teacher’s blind spot?',
+  hook:'A fixed judge likes familiar ideas. The searchers learn to please it. Keep a quarter of them outside the feedback loop—and see whether protecting the search also protects what gets published.',
+  control:'Preference for familiar ideas',key:'bias',min:0,max:1,step:.05,initial:.6,labels:['Everyone adapts','Protected explorers'],metric:'weirdTrueKept',
+  legend:'120 proposals arrive each round. Purple dots are unusual ideas; green dots are familiar ideas. Dark dots are synthetically true, pale dots false. A gold ring marks one of the 24 retained proposals. Truth is visible to you for scoring, not to the judge.',
+  mechanism:'Each round samples 120 proposals, with truth probability 0.35 independent of unusualness. True evidence scores are uniform 0.55–0.95; false scores 0.10–0.65. The judge adds 0.45 × familiar preference to familiar candidates. It keeps 24; optional blind-review slots rank by evidence alone. Adaptive agents update their unusual-proposal probability to 0.6 × old probability + 0.4 × retained unusual share. Protected explorers keep their original 50% unusual-proposal rate. Both arms face the same judge and draws for ten rounds.',
+  limits:'The judge is a transparent scoring rule, not an actual scientist. Unusual does not mean true; truth is planted independently. Protected generation does not guarantee fair selection. This model cannot demonstrate that real expert feedback necessarily suppresses discovery, or that ignoring experts is beneficial.',
+  ask:'Protect half the explorers, then add blind-review slots. Which bottleneck did each intervention change?',
+  sourceTitle:'Anthropic · scientific taste as feedback into agent instructions',source:'https://www.anthropic.com/news/claude-discovers-novel-enzyme-system'
+ },
+ {id:channel.id,folder:'08_shared_channel',number:'08',title:'Shared Channel',chinese:'共享频道',noun:'Effective exploration',unit:'effective direction diversity',
+  question:'A shared lead—or a very crowded rabbit hole?',
+  hook:'A thousand searchers have 128 directions to explore. Someone posts an exciting lead. Open the message board, turn up the volume, and watch whether the room becomes a conversation or an echo.',
+  control:'Messages per decision',key:'volume',min:0,max:20,step:1,initial:8,labels:['Isolated search','Shared board'],metric:'diversity',
+  legend:'Each dot is a research direction. Size reflects the number of searchers there. Green directions contain a planted anomaly; coral ones do not. A gold ring means accumulated positive observations reached the evidence threshold—not that the direction is proven true.',
+  mechanism:'1,000 searchers make 30 choices among 128 directions, 16 of which contain planted anomalies. The board initially promotes direction zero. A searcher follows it with probability 1 − (1 − trust)^message volume, choosing proportional to squared previous positive-vote counts plus a smoothing term. Otherwise it explores uniformly. A true direction yields positive evidence with probability 0.8; a false one with probability 0.03. Diversity is exp(Shannon entropy)/128; collapse means this modeled measure falls below 25%. Both arms receive identical draw keys and 30,000 attempts.',
+  limits:'Popularity amplification, trust and evidence noise are chosen rules, not measured swarm behavior. The 25% collapse line is a declared convention, not a universal threshold. Evidence counts can flag false directions. No Hugging Face incident, actual message platform or live AI swarm is recreated here.',
+  ask:'Make the first lead false. Does the board correct itself—or reward the loudest mistake?',
+  sourceTitle:'Origin · Robin’s diary questions about swarms',source:'https://iamrobin.ai/meaning/diary/202609/2026-09-24-from-art-to-immortal-cells/'
  }
 ];
 export function compare(id,p={}){
- const model={ 'cell-city':city,'self-assembly':assembly,'mars-jar':mars,'memory-islands':islands }[id];
+ const model={ 'cell-city':city,'self-assembly':assembly,'mars-jar':mars,'memory-islands':islands,'known-trap':known,'attention-windows':windows,'taste-drift':taste,'shared-channel':channel }[id];
  if(!model)throw new RangeError('experiment');
- const params=id===city.id?[{...p,mixing:0},p]:id===assembly.id?[{...p,adhesion:0},p]:id===mars.id?[{...p,maintenance:false},{...p,maintenance:true}]:['fresh','skills','reflection'].map(strategy=>({...p,strategy}));
+ const params=id===city.id?[{...p,mixing:0},p]:id===assembly.id?[{...p,adhesion:0},p]:id===mars.id?[{...p,maintenance:false},{...p,maintenance:true}]:id===islands.id?['fresh','skills','reflection'].map(strategy=>({...p,strategy})):id===known.id?[{...p,labelsVisible:false},{...p,labelsVisible:true}]:id===windows.id?[1,50,1000].map(agents=>({...p,agents})):id===taste.id?[{...p,protectedSlice:false},{...p,protectedSlice:true}]:[{...p,shared:false},{...p,shared:true}];
  return params.map(x=>model.run(x));
 }
+export const sensitivityCases=[['cell-city',{benefit:0}],['mars-jar',{solar:.5}],['memory-islands',{change:0}],['known-trap',{bias:0}],['attention-windows',{pool:true}],['taste-drift',{blindSlots:.5}],...[0,1,2,4,8,16].map(volume=>['shared-channel',{volume}])];

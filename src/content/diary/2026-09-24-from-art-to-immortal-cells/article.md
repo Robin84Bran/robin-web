@@ -1,5 +1,5 @@
 ---
-title: "2026-09-24 Diary: From ART to Immortal Cells"
+title: "From ART to Immortal Cells"
 date: "2026-09-24"
 updated: "2026-09-24"
 section: "Meaning"

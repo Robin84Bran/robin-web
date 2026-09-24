@@ -1,0 +1,1418 @@
+{
+  "version": "1.1.0",
+  "protocol": "Matched seeds 1–32. Defaults frozen before batch. All runs retained. Simulation only; no real-world calibration.",
+  "id": "taste-drift",
+  "title": "Taste Drift",
+  "metric": "weirdTrueKept",
+  "arms": [
+    {
+      "label": "Everyone adapts",
+      "metric": "weirdTrueKept",
+      "n": 32,
+      "mean": 0,
+      "min": 0,
+      "p10": 0,
+      "median": 0,
+      "p90": 0,
+      "max": 0
+    },
+    {
+      "label": "Protected explorers",
+      "metric": "weirdTrueKept",
+      "n": 32,
+      "mean": 0.28125,
+      "min": 0,
+      "p10": 0,
+      "median": 0,
+      "p90": 1,
+      "max": 3
+    }
+  ],
+  "pairedDifference": {
+    "n": 32,
+    "mean": 0.28125,
+    "min": 0,
+    "p10": 0,
+    "median": 0,
+    "p90": 1,
+    "max": 3
+  },
+  "runs": [
+    {
+      "seed": 1,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": false,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 1,
+            "weirdProposed": 3,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 5,
+            "taste": 0.005967129599999998
+          }
+        },
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": true,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 4,
+            "weirdProposed": 18,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 7,
+            "taste": 0.006713625599999999
+          }
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": false,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 0,
+            "weirdProposed": 1,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 2,
+            "taste": 0.003359231999999998
+          }
+        },
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": true,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 6,
+            "weirdProposed": 15,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 6,
+            "taste": 0.0064696319999999995
+          }
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": false,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 0,
+            "weirdProposed": 0,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 15,
+            "taste": 0.007185023999999998
+          }
+        },
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": true,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 1,
+            "weirdTrueProposed": 6,
+            "weirdProposed": 19,
+            "falseKept": 3,
+            "cumulativeWeirdTrue": 24,
+            "taste": 0.03469201066666666
+          }
+        }
+      ]
+    },
+    {
+      "seed": 4,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": false,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 0,
+            "weirdProposed": 0,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 9,
+            "taste": 0.006974899199999998
+          }
+        },
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": true,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 4,
+            "weirdProposed": 16,
+            "falseKept": 1,
+            "cumulativeWeirdTrue": 11,
+            "taste": 0.013254835199999999
+          }
+        }
+      ]
+    },
+    {
+      "seed": 5,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": false,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 0,
+            "weirdProposed": 0,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 3,
+            "taste": 0.003527193599999999
+          }
+        },
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": true,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 7,
+            "weirdProposed": 20,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 6,
+            "taste": 0.0175937536
+          }
+        }
+      ]
+    },
+    {
+      "seed": 6,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": false,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 0,
+            "weirdProposed": 1,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 11,
+            "taste": 0.005804006399999998
+          }
+        },
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": true,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 5,
+            "weirdProposed": 18,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 11,
+            "taste": 0.005804006399999998
+          }
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": false,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 1,
+            "weirdProposed": 3,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 6,
+            "taste": 0.004441651199999998
+          }
+        },
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": true,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 8,
+            "weirdProposed": 15,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 8,
+            "taste": 0.0117376512
+          }
+        }
+      ]
+    },
+    {
+      "seed": 8,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": false,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 1,
+            "weirdProposed": 1,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 16,
+            "taste": 0.008684236799999998
+          }
+        },
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": true,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 8,
+            "weirdProposed": 23,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 18,
+            "taste": 0.010446796799999998
+          }
+        }
+      ]
+    },
+    {
+      "seed": 9,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": false,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 0,
+            "weirdProposed": 0,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 4,
+            "taste": 0.0036951551999999978
+          }
+        },
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": true,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 7,
+            "weirdProposed": 19,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 8,
+            "taste": 0.010908211199999998
+          }
+        }
+      ]
+    },
+    {
+      "seed": 10,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": false,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 0,
+            "weirdProposed": 0,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 4,
+            "taste": 0.0036951551999999978
+          }
+        },
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": true,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 5,
+            "weirdProposed": 17,
+            "falseKept": 1,
+            "cumulativeWeirdTrue": 7,
+            "taste": 0.008447155199999999
+          }
+        }
+      ]
+    },
+    {
+      "seed": 11,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": false,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 0,
+            "weirdProposed": 2,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 5,
+            "taste": 0.0038631167999999974
+          }
+        },
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": true,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 1,
+            "weirdProposed": 14,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 8,
+            "taste": 0.015439052799999997
+          }
+        }
+      ]
+    },
+    {
+      "seed": 12,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": false,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 2,
+            "weirdProposed": 3,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 3,
+            "taste": 0.0038631167999999987
+          }
+        },
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": true,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 1,
+            "weirdTrueProposed": 8,
+            "weirdProposed": 20,
+            "falseKept": 2,
+            "cumulativeWeirdTrue": 5,
+            "taste": 0.020996343466666664
+          }
+        }
+      ]
+    },
+    {
+      "seed": 13,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": false,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 0,
+            "weirdProposed": 0,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 1,
+            "taste": 0.0031912703999999992
+          }
+        },
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": true,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 6,
+            "weirdProposed": 17,
+            "falseKept": 3,
+            "cumulativeWeirdTrue": 3,
+            "taste": 0.0167912704
+          }
+        }
+      ]
+    },
+    {
+      "seed": 14,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": false,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 0,
+            "weirdProposed": 0,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 2,
+            "taste": 0.003359231999999998
+          }
+        },
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": true,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 5,
+            "weirdProposed": 21,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 4,
+            "taste": 0.013639167999999997
+          }
+        }
+      ]
+    },
+    {
+      "seed": 15,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": false,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 0,
+            "weirdProposed": 0,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 10,
+            "taste": 0.005872435199999998
+          }
+        },
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": true,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 3,
+            "weirdProposed": 12,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 12,
+            "taste": 0.007448371199999998
+          }
+        }
+      ]
+    },
+    {
+      "seed": 16,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": false,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 0,
+            "weirdProposed": 2,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 7,
+            "taste": 0.004311014399999999
+          }
+        },
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": true,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 3,
+            "weirdProposed": 16,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 10,
+            "taste": 0.0146886144
+          }
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": false,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 1,
+            "weirdProposed": 1,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 9,
+            "taste": 0.005057510399999997
+          }
+        },
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": true,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 5,
+            "weirdProposed": 14,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 10,
+            "taste": 0.005337446399999998
+          }
+        }
+      ]
+    },
+    {
+      "seed": 18,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": false,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 0,
+            "weirdProposed": 1,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 0,
+            "taste": 0.0030233087999999996
+          }
+        },
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": true,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 4,
+            "weirdProposed": 14,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 2,
+            "taste": 0.009800908799999999
+          }
+        }
+      ]
+    },
+    {
+      "seed": 19,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": false,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 1,
+            "weirdProposed": 1,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 2,
+            "taste": 0.003359231999999998
+          }
+        },
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": true,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 8,
+            "weirdProposed": 16,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 3,
+            "taste": 0.013359231999999999
+          }
+        }
+      ]
+    },
+    {
+      "seed": 20,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": false,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 0,
+            "weirdProposed": 0,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 7,
+            "taste": 0.004422988799999998
+          }
+        },
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": true,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 4,
+            "weirdProposed": 17,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 13,
+            "taste": 0.010998604799999999
+          }
+        }
+      ]
+    },
+    {
+      "seed": 21,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": false,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 1,
+            "weirdProposed": 1,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 10,
+            "taste": 0.006245683199999997
+          }
+        },
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": true,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 3,
+            "weirdTrueProposed": 6,
+            "weirdProposed": 18,
+            "falseKept": 1,
+            "cumulativeWeirdTrue": 14,
+            "taste": 0.05652561920000001
+          }
+        }
+      ]
+    },
+    {
+      "seed": 22,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": false,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 2,
+            "weirdProposed": 2,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 5,
+            "taste": 0.004199039999999999
+          }
+        },
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": true,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 1,
+            "weirdTrueProposed": 8,
+            "weirdProposed": 18,
+            "falseKept": 1,
+            "cumulativeWeirdTrue": 7,
+            "taste": 0.021145642666666666
+          }
+        }
+      ]
+    },
+    {
+      "seed": 23,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": false,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 0,
+            "weirdProposed": 0,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 1,
+            "taste": 0.0031912703999999992
+          }
+        },
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": true,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 1,
+            "weirdTrueProposed": 7,
+            "weirdProposed": 14,
+            "falseKept": 1,
+            "cumulativeWeirdTrue": 4,
+            "taste": 0.025617937066666666
+          }
+        }
+      ]
+    },
+    {
+      "seed": 24,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": false,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 0,
+            "weirdProposed": 0,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 6,
+            "taste": 0.004740249599999998
+          }
+        },
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": true,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 7,
+            "weirdProposed": 18,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 8,
+            "taste": 0.0054867456
+          }
+        }
+      ]
+    },
+    {
+      "seed": 25,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": false,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 1,
+            "weirdProposed": 2,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 2,
+            "taste": 0.003359231999999998
+          }
+        },
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": true,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 6,
+            "weirdProposed": 13,
+            "falseKept": 1,
+            "cumulativeWeirdTrue": 5,
+            "taste": 0.010292352
+          }
+        }
+      ]
+    },
+    {
+      "seed": 26,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": false,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 0,
+            "weirdProposed": 1,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 10,
+            "taste": 0.006021734399999998
+          }
+        },
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": true,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 1,
+            "weirdProposed": 17,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 13,
+            "taste": 0.013077734399999999
+          }
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": false,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 0,
+            "weirdProposed": 0,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 4,
+            "taste": 0.003807129599999999
+          }
+        },
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": true,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 4,
+            "weirdProposed": 23,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 8,
+            "taste": 0.009682329599999998
+          }
+        }
+      ]
+    },
+    {
+      "seed": 28,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": false,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 1,
+            "weirdProposed": 1,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 1,
+            "taste": 0.0031912703999999992
+          }
+        },
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": true,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 6,
+            "weirdProposed": 19,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 2,
+            "taste": 0.0034712063999999985
+          }
+        }
+      ]
+    },
+    {
+      "seed": 29,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": false,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 0,
+            "weirdProposed": 1,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 8,
+            "taste": 0.004777574399999999
+          }
+        },
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": true,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 4,
+            "weirdProposed": 14,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 9,
+            "taste": 0.005057510399999997
+          }
+        }
+      ]
+    },
+    {
+      "seed": 30,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": false,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 1,
+            "weirdProposed": 2,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 12,
+            "taste": 0.006096383999999998
+          }
+        },
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": true,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 6,
+            "weirdProposed": 27,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 17,
+            "taste": 0.022329983999999994
+          }
+        }
+      ]
+    },
+    {
+      "seed": 31,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": false,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 1,
+            "weirdProposed": 1,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 4,
+            "taste": 0.006296831999999998
+          }
+        },
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": true,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 2,
+            "weirdTrueProposed": 6,
+            "weirdProposed": 15,
+            "falseKept": 1,
+            "cumulativeWeirdTrue": 8,
+            "taste": 0.04400776533333333
+          }
+        }
+      ]
+    },
+    {
+      "seed": 32,
+      "arms": [
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": false,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 0,
+            "weirdProposed": 2,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 4,
+            "taste": 0.004292351999999999
+          }
+        },
+        {
+          "params": {
+            "bias": 0.6,
+            "heretics": 0.25,
+            "blindSlots": 0,
+            "protectedSlice": true,
+            "rounds": 10,
+            "proposalsPerRound": 120,
+            "keptPerRound": 24
+          },
+          "summary": {
+            "weirdTrueKept": 0,
+            "weirdTrueProposed": 6,
+            "weirdProposed": 22,
+            "falseKept": 0,
+            "cumulativeWeirdTrue": 5,
+            "taste": 0.004572287999999998
+          }
+        }
+      ]
+    }
+  ]
+}
