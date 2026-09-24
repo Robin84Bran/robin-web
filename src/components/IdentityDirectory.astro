@@ -35,7 +35,7 @@ const blogEntries = isBinaryDirectory
   : [];
 const specialEntries = isOuroborosDirectory
   ? (await getCollection('dailySpecial', ({ data }) => !data.draft && data.inLanguage === 'en'))
-      .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+      .sort((a, b) => b.data.date.getTime() - a.data.date.getTime() || Number(Boolean(b.data.editionSlug)) - Number(Boolean(a.data.editionSlug)))
   : [];
 const blogLanes = [
   { key: 'BUILD', name: 'Build', cadence: 'Monday · systems into reality' },
@@ -43,7 +43,7 @@ const blogLanes = [
   { key: 'JOY', name: 'Joy', cadence: 'Friday · curiosity into meaning' },
 ] as const;
 const diaryEntries = isMeaningDirectory
-  ? (await getCollection('diary', ({ data }) => !data.draft)).sort(
+  ? (await getCollection('diary', ({ data }) => !data.draft && (!data.originalLanguage || data.inLanguage === data.originalLanguage))).sort(
       (a, b) => b.data.date.getTime() - a.data.date.getTime(),
     )
   : [];

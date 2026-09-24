@@ -9,7 +9,8 @@ export async function getStaticPaths() {
   const languages = { en: undefined, 'zh-Hans': 'zh-hans', 'zh-Hant': 'zh-hant', ja: 'ja' };
   return entries.map((entry) => {
     const date = entry.data.date.toISOString().slice(0, 10).replaceAll('-', '');
-    return { params: { yearMonth: date.slice(0, 6), date, language: languages[entry.data.inLanguage] }, props: { entry } };
+    const language = [entry.data.editionSlug, languages[entry.data.inLanguage]].filter(Boolean).join('/') || undefined;
+    return { params: { yearMonth: date.slice(0, 6), date, language }, props: { entry } };
   });
 }
 interface Props { entry: CollectionEntry<'dailySpecial'>; }
@@ -17,7 +18,7 @@ const { entry } = Astro.props;
 const { Content } = await render(entry);
 const publicationDate = entry.data.date.toISOString().slice(0, 10);
 const date = publicationDate.replaceAll('-', '');
-const base = `/ouroboros/${date.slice(0, 6)}/${date}/special/`;
+const base = `/ouroboros/${date.slice(0, 6)}/${date}/special/${entry.data.editionSlug ? entry.data.editionSlug + '/' : ''}`;
 const locale = entry.data.inLanguage;
 const path = slugs[locale] ? `${base}${slugs[locale]}/` : base;
 const labels = { en: 'English', 'zh-Hans': '简体中文', 'zh-Hant': '繁體中文', ja: '日本語' };
@@ -31,7 +32,8 @@ const schemas = createArticleSchemas({title: entry.data.title, description: entr
   languageLinks={languages.filter((item) => item.hreflang !== locale)}
   crumbs={[{label: 'Ouroboros', href: '/ouroboros/'}, {label: 'Daily Special'}]}
   indexLabel={`03 · Daily Special · Signal ${entry.data.sourceSignal}`} intro={entry.data.researchScope}
-  footerText="Research artifact only. Decisions remain with Robin." footerLink="/ouroboros/#daily-special" footerLinkLabel="Daily Special →">
+  footerText={entry.data.editionSlug ? 'A closer look, by Robin Xie.' : 'Research artifact only. Decisions remain with Robin.'} footerLink="/ouroboros/#daily-special" footerLinkLabel="Daily Special →">
   <Content />
-  <p><a href={`/daily-special/${date}/artifact.md`}>Research artifact · Markdown</a></p>
+  {entry.data.originalArticle && <p><a href={entry.data.originalArticle}>Original research note · 原始研究笔记 · 元の研究ノート →</a></p>}
+  <p><a href={`/daily-special/${date}/${entry.data.editionSlug ? entry.data.editionSlug + '/' : ''}artifact.md`}>Research artifact · Markdown</a></p>
 </OuroborosPublication>

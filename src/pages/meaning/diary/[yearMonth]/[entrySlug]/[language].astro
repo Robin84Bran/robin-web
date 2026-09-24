@@ -1,0 +1,14 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import DiaryEdition from '../../../../../components/DiaryEdition.astro';
+export async function getStaticPaths() {
+  const entries = await getCollection('diary', ({data}) => !data.draft && Boolean(data.originalLanguage) && data.inLanguage !== data.originalLanguage);
+  return entries.map((entry) => ({params: {
+    yearMonth: entry.data.date.toISOString().slice(0,7).replace('-',''),
+    entrySlug: entry.id.split('/')[0], language: entry.data.inLanguage.toLowerCase(),
+  }, props: {entry}}));
+}
+interface Props { entry: CollectionEntry<'diary'>; }
+const { entry } = Astro.props;
+---
+<DiaryEdition {entry} />

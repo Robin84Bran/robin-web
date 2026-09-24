@@ -25,7 +25,7 @@ export default defineConfig({
           || (modelOlympicsPublic && path === '/asymmetry/model-olympics/')
           || /^\/meaning\/Bran_lab\/(?:SuperRun|GeoDash|PacMan|BlockLab|WonderTrail|KartLab|CloudMunch|BounceTrials|StarboundMath)?\/?$/.test(path)
           || /^\/intelligence\/(?:hardware\/(?:deliverable-megawatts\/)?|supply-chain\/|supply-chain-map\/|swarm\/)?$/.test(path)
-          || /^\/meaning\/diary\/\d{6}\/\d{4}-\d{2}-\d{2}-[a-z0-9-]+\/$/.test(path)
+          || /^\/meaning\/diary\/\d{6}\/\d{4}-\d{2}-\d{2}-[a-z0-9-]+\/(?:en\/|zh-hant\/|ja\/)?$/.test(path)
           || /^\/ouroboros\/\d{6}\/\d{8}\/$/.test(path)
           || /^\/ouroboros\/\d{6}\/\d{8}\/(?:zh-hans|zh-hant|ja)\/$/.test(path)
           || /^\/ouroboros\/\d{6}\/\d{8}\/action_item\/$/.test(path)
@@ -33,7 +33,7 @@ export default defineConfig({
           || /^\/ouroboros\/\d{6}\/\d{8}\/actions\/$/.test(path)
           || /^\/ouroboros\/\d{6}\/\d{8}\/actions\/(?:zh-hans|zh-hant|ja)\/$/.test(path)
           || /^\/ouroboros\/\d{6}\/\d{8}\/blog\/$/.test(path)
-          || /^\/ouroboros\/\d{6}\/\d{8}\/special\/(?:zh-hans\/|zh-hant\/|ja\/)?$/.test(path)
+          || /^\/ouroboros\/\d{6}\/\d{8}\/special\/(?:[a-z0-9-]+\/)?(?:zh-hans\/|zh-hant\/|ja\/)?$/.test(path)
           || /^\/ouroboros\/\d{6}\/\d{8}\/blog\/(?:zh-hans|zh-hant|ja)\/$/.test(path);
       },
     }),

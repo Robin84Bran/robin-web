@@ -45,6 +45,23 @@ export function verifySpecial(root) {
     }
     const receipt = receipts.find((r) => r.date.replaceAll('-', '') === date);
     if (receipt && receipt.signal !== signal) errors.push(`${date}: receipt signal mismatch`);
+    // An owner-authorized editorial companion is not a second selected action.
+    // Keep the original completion receipt and its original bytes authoritative.
+    for (const revision of readdirSync(join(directory, date), {withFileTypes:true}).filter((x)=>x.isDirectory())) {
+      const slug = revision.name;
+      if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug) || ['zh-hans','zh-hant','ja'].includes(slug)) { errors.push(`${date}: invalid companion slug`); continue; }
+      const revisedArtifact = join(root, `public/daily-special/${date}/${slug}/artifact.md`);
+      const revisedSha = existsSync(revisedArtifact) ? hash(readFileSync(revisedArtifact)) : null;
+      for (const [file,locale,suffix] of [['article','en',''],['zh-hans','zh-Hans','zh-hans/'],['zh-hant','zh-Hant','zh-hant/'],['ja','ja','ja/']]) {
+        const path = join(directory,date,slug,`${file}.md`);
+        if (!existsSync(path)) { errors.push(`${date}/${slug}: missing ${file}`); continue; }
+        const text = readFileSync(path,'utf8');
+        if (field(text,'editionSlug')!==slug || field(text,'originalArticle')!==`https://iamrobin.ai/ouroboros/${date.slice(0,6)}/${date}/special/`) errors.push(`${date}/${slug}: missing original relationship`);
+        if (Number(field(text,'sourceSignal'))!==signal || field(text,'artifactSha256')!==revisedSha || !revisedSha) errors.push(`${date}/${slug}: inconsistent signal or artifact`);
+        if (field(text,'inLanguage')!==locale || field(text,'translationReview')!=='PASS') errors.push(`${date}/${slug}: unreviewed language`);
+        if (field(text,'canonical')!==`https://iamrobin.ai/ouroboros/${date.slice(0,6)}/${date}/special/${slug}/${suffix}`) errors.push(`${date}/${slug}: canonical mismatch`);
+      }
+    }
   }
   return errors;
 }
