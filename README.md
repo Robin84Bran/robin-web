@@ -7,6 +7,29 @@ The public site is deployed as the Cloudflare Worker `robin-web`. Cloudflare
 Workers Builds watches the GitHub `main` branch and performs the production
 build and deployment.
 
+## Homepage: current work and transformation
+
+The English homepage introduces Robin as an entrepreneur and investor with an
+engineering background. Its Now section links iSunTV's Traditional Chinese
+(`isuntv.com`) and Simplified Chinese (`isun1.com`) sites, the AI-native news lab
+(`isun1.news`), and streaming commerce (`isuntvmall.com`). The first-person
+introduction and “I am also the technical team” describe Robin's current work;
+the closing line is “Find the bottleneck. Build or back the way through it.”
+
+The lower homepage uses a portrait-free SVG ensō with the sequence Engineering
+→ FinTech → Entrepreneurship → Transformation. Its strokes flow slowly while
+labels remain still. Motion pauses offscreen or in a hidden tab, has a visible
+pause/play control, and respects reduced-motion preferences. The upper watch
+portrait and the I AM ROBIN eight-door entrance remain in place.
+
+Shared navigation offers both official profiles (TideiSun and iSunTV), while the
+footer distinguishes Quant Lab and Business GitHub profiles. Person `sameAs`
+links and the generated `llms.txt` include both sets; the existing Person `@id`
+is preserved. Homepage metadata follows the entrepreneur/investor wording.
+The detailed About biography and other language editions retain their existing
+editorial content. Regenerate `llms.txt` with `pnpm run robots:sync` after editing
+`src/data/robot-welcome.json`.
+
 ## Local preview
 
 ```sh

@@ -17,7 +17,9 @@ export const identityWords = [
 
 export const socialLinks = {
   official: 'https://www.tideisun.com/en/robin',
+  officialIsun: 'https://isuntv.com/en/robin',
   github: 'https://github.com/Robin84Bran/',
+  githubBusiness: 'https://github.com/robinxie1984',
   medium: 'https://medium.com/@iamrobin-ai',
   linkedin: 'https://www.linkedin.com/in/nanobin',
 } as const;

@@ -233,14 +233,14 @@ if (existsSync(dist)) {
   check(homepage.includes('"@type":"ProfilePage"'), 'homepage: ProfilePage schema missing.');
   check(homepage.includes('谢玢') && homepage.includes('謝玢'), 'homepage: visible and machine-readable Chinese identity aliases are missing.');
   const homepageDescription = one(homepage, /<meta\s+name="description"\s+content="([^"]+)"/i)?.toLowerCase() ?? '';
-  for (const keyword of ['subsea engineering', 'fintech', 'capital allocation', 'artificial intelligence']) {
+  for (const keyword of ['entrepreneur', 'investor', 'engineering background', 'ai-native businesses']) {
     check(homepageDescription.includes(keyword), `homepage: SEO description is missing ${keyword}.`);
   }
   const homepageSchemas = [...homepage.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/gi)]
     .map((match) => match[1])
     .join(' ')
     .toLowerCase();
-  for (const keyword of ['professional engineer', 'accredited investor', 'ai-native system builder', 'subsea engineering', 'fintech', 'capital allocation', 'ai systems']) {
+  for (const keyword of ['entrepreneur', 'investor', 'engineering background', 'ai-native businesses']) {
     check(homepageSchemas.includes(keyword), `homepage: JSON-LD is missing ${keyword}.`);
   }
   check(about.includes('subsea engineering') && about.includes('FinTech') && about.includes('AI systems'), 'about: resume-backed career spine is missing.');

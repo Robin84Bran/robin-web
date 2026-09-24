@@ -26,11 +26,11 @@ export function createPersonSchema(language: IdentityLocale = 'en'): SchemaNode 
     alternateName: ['Ms. Robin Xie', 'Bin Xie', 'Bin “Robin” Xie', 'Bin Robin Xie', 'Xie Bin', '谢玢', '謝玢', 'nanobin'],
     pronouns: 'she/her',
     description: identity.description,
-    jobTitle: ['Professional Engineer', 'Accredited Investor', 'AI-Native System Builder', 'Writer'],
+    jobTitle: ['Entrepreneur', 'Investor'],
     knowsAbout: identityKnowledge,
     url: absoluteUrl('/about/'),
     image: absoluteUrl(DEFAULT_IMAGE),
-    sameAs: [socialLinks.official, socialLinks.linkedin, socialLinks.github, socialLinks.medium],
+    sameAs: [socialLinks.official, socialLinks.officialIsun, socialLinks.linkedin, socialLinks.github, socialLinks.githubBusiness, socialLinks.medium],
   };
 }
 
