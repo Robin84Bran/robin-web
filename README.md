@@ -9,6 +9,8 @@ build and deployment.
 
 ## Homepage: current work and transformation
 
+The homepage eyebrow above “Robin Xie” is “ENTREPRENEUR · INVESTOR · ENGINEER”.
+
 The English homepage introduces Robin as an entrepreneur and investor with an
 engineering background. Its Now section links iSunTV's Traditional Chinese
 (`isuntv.com`) and Simplified Chinese (`isun1.com`) sites, the AI-native news lab
