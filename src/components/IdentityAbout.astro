@@ -78,6 +78,7 @@ const connections = identityConnections(locale);
 
     <footer class="identity-about__footer">
       <a class="quiet-link" href={profile.homePath}>{profile.homeLinkLabel}<span aria-hidden="true">←</span></a>
+      {locale === 'en' && <a class="quiet-link" href="/identity/">The personal story<span aria-hidden="true">↗</span></a>}
       <nav aria-label="Robin Xie public profiles">
         <a href={socialLinks.linkedin} rel="noreferrer" target="_blank">LinkedIn ↗</a>
         <a href={socialLinks.medium} rel="noreferrer" target="_blank">Medium ↗</a>

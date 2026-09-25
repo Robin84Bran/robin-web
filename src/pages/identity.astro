@@ -1,0 +1,111 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { identityEssay as essay } from '../data/identityEssay';
+import { createPersonSchema, createWebsiteSchema, createBreadcrumbSchema, absoluteUrl } from '../lib/seo';
+const person = createPersonSchema();
+const schema = [person, createWebsiteSchema(), {
+  '@context': 'https://schema.org', '@type': 'ProfilePage',
+  '@id': absoluteUrl('/identity/#profile'), url: absoluteUrl('/identity/'),
+  name: 'Still becoming. — Robin Xie', description: essay.description,
+  mainEntity: { '@id': person['@id'] }, author: { '@id': person['@id'] },
+  inLanguage: 'en', isPartOf: { '@id': absoluteUrl('/#website') },
+  relatedLink: [absoluteUrl('/about/'), absoluteUrl(essay.diaryPath)],
+}, createBreadcrumbSchema([{ name: 'Home', path: '/' }, { name: 'Identity', path: '/identity/' }])];
+---
+<BaseLayout title="Robin Xie · Identity — Still becoming." description={essay.description} path="/identity/" schema={schema}>
+  <article class="identity-essay" aria-labelledby="essay-title">
+    <header class="essay-opening" id="roots">
+      <img class="essay-art essay-art--opening" src="/identity/ink-sakura.webp" width="1122" height="1402" alt="" aria-hidden="true" fetchpriority="low" />
+      <div class="essay-opening__inner">
+        <p class="eyebrow essay-door">I · Identity</p>
+        <h1 id="essay-title">{essay.title}</h1>
+        <p class="essay-roles">Entrepreneur · Investor · Engineer</p>
+        <p class="essay-chapter-mark" aria-hidden="true"><span>01</span><span>/</span><span>Roots</span></p>
+        <div class="essay-introduction">
+          <p class="essay-first-line">{essay.opening}</p>
+          {essay.roots.map(paragraph => <p>{paragraph}</p>)}
+          <p class="essay-signature">Robin Xie · 谢玢 · 謝玢</p>
+          <a class="essay-link" href="/about/">The factual biography <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </header>
+    {essay.chapters.map((chapter, index) => (
+      <section class:list={['essay-chapter', { 'essay-chapter--curiosity': index === 0 }]} id={chapter.id} aria-labelledby={`${chapter.id}-title`}>
+        {index === 0 && <img class="essay-art essay-art--echo" src="/identity/ink-sakura.webp" width="1122" height="1402" alt="" aria-hidden="true" loading="lazy" />}
+        <div class="essay-chapter__inner">
+          <p class="essay-margin" aria-hidden="true"><span>{String(index + 2).padStart(2, '0')}</span><span>{chapter.label}</span></p>
+          <h2 id={`${chapter.id}-title`}>{chapter.title}</h2>
+          {chapter.paragraphs.map(paragraph => <p>{paragraph}</p>)}
+          {index === 0 && <a class="essay-link essay-continue" href="#the-sea">Continue the story <span aria-hidden="true">↓</span></a>}
+        </div>
+      </section>
+    ))}
+    <footer class="essay-ending">
+      <p class="essay-closing">{essay.closing}</p>
+      <p class="essay-mantra">I seek. I become. I AM.</p>
+      <p class="essay-source">Part of this story first appeared in my diary, <a href={essay.diaryPath}>American in Hong Kong</a>.</p>
+      <nav class="essay-next" aria-label="Continue exploring Robin’s story">
+        <a href="/about/">About Robin</a><a href="/asymmetry/">Asymmetry</a><a href="/network/">Network</a>
+      </nav>
+      <nav class="essay-doors" aria-label="Eight-door sequence"><a href="/network/">← Network</a><a href="/">I AM ROBIN</a><a href="/asymmetry/">Asymmetry →</a></nav>
+    </footer>
+  </article>
+</BaseLayout>
+<style>
+  .identity-essay { overflow: clip; }
+  .essay-opening { position: relative; border-bottom: 1px solid var(--line); }
+  .essay-opening__inner { position: relative; width: min(77%, 70rem); margin: 0 auto; padding: 4rem 0 4.5rem; }
+  .essay-door { color: var(--gold-dark); margin: 0 0 1.6rem; }
+  .essay-opening h1 { position: relative; margin: 0 0 1rem; font-family: var(--serif); font-weight: 400; font-size: clamp(3.8rem, 8.4vw, 7.8rem); line-height: 1.05; letter-spacing: -.045em; }
+  .essay-roles { margin: 0; font-family: var(--sans); font-size: .76rem; letter-spacing: .23em; text-transform: uppercase; color: var(--muted); }
+  .essay-chapter-mark { position: absolute; top: 4.7rem; right: 0; border-left: 1px solid var(--gold); padding-left: 1.45rem; min-height: 7rem; display: grid; gap: .65rem; color: var(--gold-dark); font-family: var(--serif); font-size: .9rem; }
+  .essay-chapter-mark span:last-child { font-size: .72rem; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); }
+  .essay-introduction { position: relative; width: min(100%, 36rem); margin-top: 2.8rem; padding-top: 2.1rem; border-top: 1px solid transparent; }
+  .essay-introduction::before, .essay-chapter__inner::before { content: ''; position: absolute; top: 0; left: 0; width: 3rem; border-top: 1px solid var(--gold); }
+  .essay-introduction > p, .essay-chapter__inner > p { font-family: var(--serif); font-size: clamp(1.13rem, 1.95vw, 1.4rem); line-height: 1.48; margin: 0 0 1.4rem; }
+  .essay-introduction .essay-first-line { max-width: 31rem; font-size: clamp(2rem, 3.95vw, 3.55rem); line-height: 1.16; letter-spacing: -.025em; margin-bottom: 2rem; }
+  .essay-introduction .essay-signature { font-size: 1rem; letter-spacing: .035em; color: var(--muted); margin: 2.8rem 0 2.2rem; }
+  .essay-link { font-family: var(--serif); font-size: .96rem; color: var(--gold-dark); text-decoration: none; border-bottom: 1px solid var(--gold); padding-bottom: .3rem; letter-spacing: .05em; }
+  .essay-link:hover { color: var(--ink); border-color: var(--ink); }
+  .essay-art { position: absolute; pointer-events: none; mix-blend-mode: multiply; object-fit: contain; mask-image: radial-gradient(ellipse at right center, #000 30%, transparent 74%); }
+  .essay-art--opening { right: -1rem; top: 8rem; width: min(55vw, 43rem); height: auto; opacity: .8; }
+  .essay-chapter { position: relative; padding: 4.5rem 0; border-bottom: 1px solid var(--line); scroll-margin-top: 6rem; }
+  .essay-chapter__inner { position: relative; width: min(60%, 43rem); margin: 0 auto; padding-top: 2.2rem; }
+  .essay-chapter h2 { margin: 0 0 1.7rem; font-family: var(--serif); font-size: clamp(2.2rem, 4.7vw, 4.1rem); font-weight: 400; letter-spacing: -.035em; line-height: 1.09; text-wrap: balance; }
+  .essay-chapter--curiosity h2 { max-width: 12ch; }
+  .essay-chapter__inner .essay-margin { position: absolute; left: calc(100% + 3.5rem); top: 0; width: 7rem; font-family: var(--sans); font-size: .63rem; letter-spacing: .15em; text-transform: uppercase; color: var(--muted); line-height: 1.7; display: grid; gap: .5rem; }
+  .essay-margin span:first-child { font-family: var(--serif); color: var(--gold-dark); font-size: .95rem; }
+  .essay-art--echo { width: 22rem; height: auto; left: -17rem; top: 4rem; opacity: .5; }
+  .essay-continue { display: inline-block; margin-top: .9rem; }
+  .essay-ending { width: min(77%, 70rem); margin: 0 auto; padding: 4.5rem 0 2.5rem; }
+  .essay-closing { max-width: 40rem; font-family: var(--serif); font-size: clamp(1.8rem, 3vw, 2.65rem); line-height: 1.4; font-style: italic; }
+  .essay-mantra { font-family: var(--serif); color: var(--gold-dark); font-size: 1.3rem; margin: 2rem 0 3rem; }
+  .essay-source { max-width: 36rem; color: var(--muted); font-size: .85rem; line-height: 1.7; }
+  .essay-source a { color: var(--gold-dark); text-underline-offset: .2em; }
+  .essay-next, .essay-doors { display: flex; flex-wrap: wrap; gap: 1rem 2rem; font-family: var(--sans); font-size: .8rem; }
+  .essay-next { margin-top: 2rem; }
+  .essay-next a, .essay-doors a { color: var(--gold-dark); text-decoration: none; padding: .6rem 0; }
+  .essay-doors { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--line); justify-content: space-between; }
+  .identity-essay a:focus-visible { outline: 2px solid var(--gold-dark); outline-offset: 5px; }
+  @media (min-width: 90rem) { .essay-introduction { width: 41rem; } }
+  @media (max-width: 59.99rem) {
+    .essay-opening__inner, .essay-ending { width: calc(100% - 3rem); }
+    .essay-opening__inner { padding: 3rem 0 3.5rem; }
+    .essay-chapter-mark { display: none; }
+    .essay-roles { font-size: .64rem; letter-spacing: .12em; }
+    .essay-introduction { width: min(100%, 36rem); }
+    .essay-art--opening { right: -9rem; top: 8rem; width: 28rem; opacity: .22; }
+    .essay-chapter { padding: 3rem 0; }
+    .essay-chapter__inner { width: min(calc(100% - 3rem), 36rem); }
+    .essay-chapter__inner .essay-margin { position: static; width: auto; display: flex; align-items: baseline; gap: .8rem; margin: 0 0 1.5rem; }
+    .essay-chapter h2 { max-width: 18ch; }
+    .essay-art--echo { opacity: .15; }
+    .essay-ending { padding-top: 3rem; }
+  }
+  @media print {
+    .essay-art, .essay-next, .essay-doors, .essay-chapter-mark, .essay-margin, .essay-continue { display: none !important; }
+    .essay-opening__inner, .essay-chapter__inner, .essay-ending { width: 100%; max-width: none; padding-block: 1rem; }
+    .essay-introduction { width: 100%; }
+    .essay-chapter { padding-block: 1rem; }
+  }
+</style>

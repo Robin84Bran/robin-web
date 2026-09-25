@@ -12,7 +12,7 @@ const identityAliases = ['Bin Xie', 'Bin “Robin” Xie', 'Bin Robin Xie', 'Xie
 const proofAnchors = ['engineering-record', 'payments-record', 'tidebit-record'];
 const portfolioDisclaimer = 'An attention field — subjects I study, not a record of affiliations or holdings.';
 const indexableRoutes = new Set([
-  '/', '/about/', '/network/', '/asymmetry/btc_probability_atlas/', '/resonance/eval/ai_berkshire/', '/intelligence/three-rule-swarm/',
+  '/', '/about/', '/identity/', '/network/', '/asymmetry/btc_probability_atlas/', '/resonance/eval/ai_berkshire/', '/intelligence/three-rule-swarm/',
   '/zh-hans/', '/zh-hans/about/', '/zh-hans/network/',
   '/zh-hant/', '/zh-hant/about/', '/zh-hant/network/',
   '/ja/', '/ja/about/', '/ja/network/',
@@ -359,7 +359,7 @@ if (existsSync(dist)) {
   check(!sitemap.includes('/cn/'), 'sitemap: legacy /cn/ must not be canonical.');
   check(!sitemap.includes('/tw/'), 'sitemap: legacy /tw/ must not be canonical.');
   check(!sitemap.includes('/jp/'), 'sitemap: legacy /jp/ must not be canonical.');
-  check(!sitemap.includes('/identity/'), 'sitemap: identity placeholders must be excluded.');
+  check(sitemap.includes('https://iamrobin.ai/identity/'), 'sitemap: the published Identity essay must be included.');
   check(!sitemap.includes('/projects/'), 'sitemap: hidden projects route must be excluded.');
   check(!sitemap.includes('/ouroborous/'), 'sitemap: misspelled alias must stay excluded.');
 
