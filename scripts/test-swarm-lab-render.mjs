@@ -18,5 +18,5 @@ assert.ok(read('intelligence/index.html').includes('Ideas you can'));
 assert.ok(read('intelligence/swarm/index.html').includes('/intelligence/swarm-lab/'));
 assert.equal(experiments.length,8);
 assert.ok(read('intelligence/swarm-lab/index.html').includes('Eight Small Worlds'));
-assert.ok(read('meaning/diary/202609/2026-09-24-from-art-to-immortal-cells/index.html').includes('>From ART to Immortal Cells</h1>'));
+for (const edition of ['', 'en/']) assert.ok(read(`meaning/diary/202609/2026-09-24-from-art-to-immortal-cells/${edition}index.html`).includes('>🌸 From ART to Immortal Cells</h1>'));
 console.log('Swarm Lab: nine SEO routes, eight parameter guides, static evidence, corrected diary title and four diary links verified.');

@@ -8,8 +8,10 @@ import { verifySpecial } from '../verify-daily-special.mjs';
 const root = process.cwd();
 const hash = (x) => createHash('sha256').update(x).digest('hex');
 const diary='src/content/diary/2026-09-24-from-art-to-immortal-cells';
-test('September 24 diary has the approved title without a date prefix',()=>{
-  assert.match(readFileSync(`${diary}/article.md`,'utf8'),/^title: "From ART to Immortal Cells"$/m);
+test('September 24 diary has the approved sakura title without a date prefix',()=>{
+  for (const edition of ['article', 'en']) {
+    assert.match(readFileSync(`${diary}/${edition}.md`,'utf8'),/^title: "🌸 From ART to Immortal Cells"$/m);
+  }
 });
 const body=(text)=>text.split(/^---\s*$/m).slice(2).join('---').replace(/^\n+/,'');
 test('All four diary editions preserve complete block and table structure and valid body hashes',()=>{
