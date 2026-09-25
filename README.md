@@ -16,11 +16,21 @@ engineering background. Its Now section links iSunTV's Traditional Chinese
 introduction and “I am also the technical team” describe Robin's current work;
 the closing line is “Find the bottleneck. Build or back the way through it.”
 
-The lower homepage uses a portrait-free SVG ensō with the sequence Engineering
-→ FinTech → Entrepreneurship → Transformation. Its strokes flow slowly while
-labels remain still. Motion pauses offscreen or in a hidden tab, has a visible
-pause/play control, and respects reduced-motion preferences. The upper watch
-portrait and the I AM ROBIN eight-door entrance remain in place.
+The lower homepage uses the approved “Dissolve / become” particle ensō. The same
+1,000 particles recur through four forms in a 40-second cycle:
+
+- **Engineering:** a closed pipeline, with a 1 → 10 cue.
+- **FinTech:** a flowing infinity ribbon.
+- **Entrepreneurship:** a seed expanding into a spiral, with a 0 → 1 cue.
+- **Transformation:** a winged form suggesting metamorphosis.
+
+Each form gathers, holds, and dissolves. Its name becomes bold and slightly
+larger once assembled; selecting a name pauses at that form. The caption is
+“Elemental. Emergent. Transformative.” Motion has a pause/play control, stops
+offscreen and in hidden tabs, and starts paused for reduced-motion preferences.
+Canvas painting is capped at 30fps with device pixel ratio capped at 2. A static
+pipeline remains visible without JavaScript or a usable canvas. The upper watch
+portrait and I AM ROBIN eight-door entrance remain in place.
 
 Shared navigation offers both official profiles (TideiSun and iSunTV), while the
 footer distinguishes Quant Lab and Business GitHub profiles. Person `sameAs`
