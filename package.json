@@ -24,7 +24,7 @@
     "autonomy:check": "python3 -m unittest discover -s scripts/autonomy -p 'test_*.py' && node --test scripts/tests/asymmetry-routes.test.mjs",
     "specials:check": "node scripts/verify-daily-special.mjs && node --test scripts/tests/daily-special.test.mjs scripts/tests/editorial-editions.test.mjs && python3 -m unittest discover -s scripts/daily-special -p 'test_*.py'",
     "specials:render": "node scripts/test-daily-special-render.mjs",
-    "test:swarm-lab": "node --test public/swarm-lab/tests.mjs && node public/swarm-lab/verify.mjs && node scripts/test-swarm-lab-render.mjs",
+    "test:swarm-lab": "node --test public/swarm-lab/tests.mjs public/three-rule-swarm/tests.mjs && node public/swarm-lab/verify.mjs && node public/three-rule-swarm/batch.mjs --verify && node scripts/test-swarm-lab-render.mjs",
     "release:check": "pnpm run robots:check && pnpm run privacy:check && pnpm run observability:check && pnpm run actions:check && pnpm run specials:check && pnpm run autonomy:check && pnpm run check && pnpm run build && pnpm run verify:seo && pnpm run specials:render && pnpm run test:ai-berkshire && pnpm run test:swarm-lab && node --test scripts/tests/bran-arcade-edge.test.mjs scripts/tests/bran-classic-gameplay.test.mjs",
     "preview": "astro preview"
   },

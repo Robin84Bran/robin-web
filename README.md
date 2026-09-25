@@ -1,5 +1,9 @@
 # iamrobin.ai — Website v2 / Zen Loop
 
+## Weekly Intelligence — first autonomous iteration
+
+`/intelligence/three-rule-swarm/` is the 2026-W39 teaching experiment: three-rule walkers, a central learner, and a random control. All 192 seeded runs and exact source are available under `/three-rule-swarm/`. The canonical research folder is `06_intelligence/AI_research/AI_swarm/09_three_rule_swarm/`. Observations are matched; computation and mobility are not. The central learner wins the default synthetic comparison. This is not a claim about real insects, LLM swarms or markets.
+
 A static-first Astro website that turns the I AM ROBIN mnemonic into a quiet
 identity cycle: nucleus, growth, sakura drift, and return.
 
