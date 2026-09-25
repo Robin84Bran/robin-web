@@ -8,5 +8,15 @@
     "source": "https://raw.githubusercontent.com/Robin84Bran/robin-web/448920c35dc07d8de1709a1d74131583a7414c7c/public/daily-special/20260924/artifact.md",
     "verifiedAt": "2026-09-24T09:23:32.032988+08:00",
     "scope": "RESEARCH_ARTIFACT_ONLY"
+  },
+  {
+    "date": "2026-09-25",
+    "signal": 4,
+    "url": "https://iamrobin.ai/ouroboros/202609/20260925/special/",
+    "commit": "00dd4db669d162a3c0f5e5ca4be783d5aa3fbeba",
+    "artifactSha256": "b5a17fc4f116bcc003f00ebf814374664e1f907ca093d8e25fd6f3a5b412db2e",
+    "verifiedAt": "2026-09-25T19:36:00.895536+08:00",
+    "scope": "RESEARCH_ARTIFACT_ONLY",
+    "source": "https://raw.githubusercontent.com/Robin84Bran/robin-web/00dd4db669d162a3c0f5e5ca4be783d5aa3fbeba/public/daily-special/20260925/artifact.md"
   }
 ]
