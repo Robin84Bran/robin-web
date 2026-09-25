@@ -195,7 +195,23 @@ const dailySpecial = defineCollection({
   }),
 });
 
+const binaryStory = defineCollection({
+  loader: glob({ pattern: '**/{article,zh-hans,zh-hant,ja}.md', base: './src/content/binary-stories' }),
+  schema: z.object({
+    title: z.string(), storySlug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
+    date: z.coerce.date(), updated: z.coerce.date(), lane: z.enum(['BUILD','INVEST','JOY']),
+    excerpt: z.string(), hero: z.string(), ogImage: z.string(), keywords: z.array(z.string()),
+    canonical: z.url(), inLanguage: z.enum(['en','zh-Hans','zh-Hant','ja']),
+    sourceSpecial: z.url(), sourceArtifactSha256: z.string().regex(/^[a-f0-9]{64}$/),
+    carouselPdf: z.string().regex(/^\/carousels\/[a-z0-9-]+\.pdf$/),
+    carouselCaption: z.string().regex(/^\/carousels\/[a-z0-9-]+\.txt$/),
+    carouselPages: z.number().int().min(6).max(12),
+    translationReview: z.literal('PASS'), draft: z.boolean().default(false),
+  }),
+});
+
 export const collections = {
+  binaryStory,
   dailySpecial,
   dailyBriefing,
   dailyBriefingTranslation,

@@ -38,6 +38,9 @@ const specialEntries = isOuroborosDirectory
   ? (await getCollection('dailySpecial', ({ data }) => !data.draft && data.inLanguage === 'en'))
       .sort((a, b) => b.data.date.getTime() - a.data.date.getTime() || Number(Boolean(b.data.editionSlug)) - Number(Boolean(a.data.editionSlug)))
   : [];
+const binaryStories = isBinaryDirectory
+  ? (await getCollection('binaryStory', ({data})=>!data.draft && data.inLanguage==='en')).sort((a,b)=>b.data.date.getTime()-a.data.date.getTime())
+  : [];
 const blogLanes = [
   { key: 'BUILD', name: 'Build', cadence: 'Systems into reality' },
   { key: 'INVEST', name: 'Invest', cadence: 'Signals into judgment' },
@@ -216,6 +219,7 @@ const meaningSchemas = isMeaningDirectory
               const articles = blogEntries.filter((article) => article.data.lane === lane.key);
               const present = articles.filter((article) => blogArchiveStatus(article.data.date) === 'PRESENT');
               const pipeline = articles.filter((article) => blogArchiveStatus(article.data.date) === 'PIPELINE');
+              const stories = binaryStories.filter(story=>story.data.lane===lane.key);
               return (
                 <section class="binary-lane" aria-labelledby={`binary-lane-${lane.key.toLowerCase()}`}>
                   <header class="binary-lane__heading">
@@ -223,8 +227,9 @@ const meaningSchemas = isMeaningDirectory
                     <h3 id={`binary-lane-${lane.key.toLowerCase()}`}>{lane.name}</h3>
                     <em>{lane.cadence}</em>
                   </header>
-                  {present.length ? (
+                  {present.length || stories.length ? (
                     <nav class="ouroboros-shelf__list binary-present" aria-label={`${lane.name} present articles`}>
+                      {stories.map(story=><a href={new URL(story.data.canonical).pathname}><time datetime={story.data.date.toISOString().slice(0,10)}>{displayDate(story.data.date)}</time><strong>{story.data.title}</strong><span aria-hidden="true">→</span></a>)}
                       {present.map((article) => {
                         const date = compactDate(article.data.date);
                         return (
@@ -237,7 +242,7 @@ const meaningSchemas = isMeaningDirectory
                       })}
                     </nav>
                   ) : (
-                    <p class="ouroboros-shelf__empty">The first present story has not arrived yet.</p>
+                    stories.length===0 && <p class="ouroboros-shelf__empty">The first present story has not arrived yet.</p>
                   )}
                   <details class="binary-pipeline">
                     <summary>

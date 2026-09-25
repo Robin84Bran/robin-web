@@ -7,7 +7,17 @@ from pathlib import Path
 def load(website, day):
     path = Path(website) / "autonomy/policy.json"
     policy = json.loads(path.read_text()) if path.exists() else {}
-    return policy if policy.get("effectiveDate", "9999-12-31") <= day else {}
+    if policy.get("effectiveDate", "9999-12-31") > day:
+        return {}
+    # Preference snapshots may change attention, never cadence or authority.
+    folder = Path(website) / "autonomy/runtime/preferences"
+    snapshots = sorted(p for p in folder.glob("????-??.json") if p.stem <= day[:7])
+    if snapshots:
+        snapshot = json.loads(snapshots[-1].read_text())
+        interests = snapshot.get("interests")
+        if isinstance(interests, list) and interests and len(interests) <= 32 and all(isinstance(x, str) and 0 < len(x) <= 80 for x in interests):
+            policy = {**policy, "interests": interests}
+    return policy
 
 
 def week_key(day):

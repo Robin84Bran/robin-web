@@ -1,5 +1,8 @@
 import unittest
-from autonomy_policy import completed_specials, due_jobs, rank_options, special_due, week_key
+import json
+import tempfile
+from pathlib import Path
+from autonomy_policy import completed_specials, due_jobs, rank_options, special_due, week_key, load
 
 POLICY = {"effectiveDate": "2026-09-25", "specialsPerWeek": 4,
           "specialWeekdays": [0, 1, 3, 5], "interests": ["swarm", "emergence", "payments"]}
@@ -10,6 +13,18 @@ def complete():
 
 
 class PolicyTest(unittest.TestCase):
+    def test_taste_changes_attention_not_authority_or_cadence(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder); (root/'autonomy/runtime/preferences').mkdir(parents=True)
+            (root/'autonomy/policy.json').write_text(json.dumps(POLICY))
+            (root/'autonomy/runtime/preferences/2026-09.json').write_text(json.dumps({'interests':['reconciliation'],'specialsPerWeek':0,'asymmetryAutonomous':True}))
+            (root/'autonomy/runtime/preferences/2026-10.json').write_text(json.dumps({'interests':['future taste']}))
+            policy=load(root,'2026-09-25')
+            self.assertEqual(policy['interests'],['reconciliation'])
+            self.assertEqual(policy['specialsPerWeek'],4)
+            self.assertNotIn('asymmetryAutonomous',policy)
+            self.assertEqual(load(root,'2026-09-24'),{})
+
     def test_four_successful_days_then_no_quota_filler(self):
         days = {}
         selected = []
