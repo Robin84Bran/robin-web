@@ -1,74 +1,111 @@
+---
+const phases = [
+  { name: 'Engineering', cue: '1 → 10', position: 'top' },
+  { name: 'FinTech', cue: 'Flow', position: 'right' },
+  { name: 'Entrepreneurship', cue: '0 → 1', position: 'bottom' },
+  { name: 'Transformation', cue: 'New form', position: 'left' },
+];
+---
 <figure class="transformation-enso" data-enso-motion="paused" aria-label="Engineering → FinTech → Entrepreneurship → Transformation">
   <div class="enso-field">
-    <svg class="enso-flow" viewBox="0 0 440 440" fill="none" aria-hidden="true">
-      <defs>
-        <linearGradient id="enso-ink" x1="80" y1="80" x2="365" y2="365" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#b99163" stop-opacity=".65" />
-          <stop offset=".45" stop-color="#786952" stop-opacity=".8" />
-          <stop offset="1" stop-color="#d9a5a5" stop-opacity=".55" />
-        </linearGradient>
-      </defs>
-      <g class="enso-current enso-current--ink" stroke="url(#enso-ink)" stroke-linecap="round">
-        <path d="M 252 73 C 340 83 378 151 367 238 C 355 330 282 378 194 365 C 106 352 65 294 75 208 C 83 128 139 77 213 76" stroke-width="10" opacity=".62" />
-        <path d="M 271 82 C 346 102 381 184 359 263 C 335 348 251 386 173 359 C 89 330 58 245 84 169 C 105 109 157 79 222 83" stroke-width="2" opacity=".5" />
-        <path d="M 240 82 C 322 87 367 155 357 239 C 346 317 281 365 198 354 C 125 344 78 283 84 213 C 90 145 139 93 205 85" stroke-width="3" opacity=".3" />
-      </g>
-      <g class="enso-current enso-current--wash" stroke="#c89a86" stroke-linecap="round">
-        <path d="M 102 304 C 72 267 64 203 93 151 C 126 91 187 68 257 87 C 328 106 368 165 353 238" stroke-width="1.5" opacity=".28" />
-        <path d="M 349 277 C 316 346 237 374 166 345" stroke-width="5" opacity=".12" />
-      </g>
+    <svg class="enso-fallback" viewBox="0 0 600 600" fill="none" role="img" aria-label="Engineering: a closed pipeline loop">
+      <rect x="174" y="207" width="252" height="186" rx="29" stroke="currentColor" stroke-width="2" />
+      <rect x="168" y="201" width="264" height="198" rx="35" stroke="currentColor" stroke-width="1" opacity=".35" />
     </svg>
-    <ol class="enso-stages" aria-hidden="true">
-      <li>Engineering <span>→</span></li>
-      <li>FinTech <span>→</span></li>
-      <li>Entrepreneurship <span>→</span></li>
-      <li>Transformation <span>→</span></li>
+    <canvas class="enso-particles" width="900" height="900" role="img" aria-label="Particles form an engineering pipeline, a FinTech ribbon, an entrepreneurial seed and spiral, and a winged transformation." hidden></canvas>
+    <ol class="enso-stages" aria-label="Select a phase to pause and inspect its form">
+      {phases.map((phase, index) => <li class={phase.position}>
+        <button type="button" class:list={['enso-phase', { active: index === 0 }]} data-phase={index} aria-pressed={index === 0 ? 'true' : 'false'} disabled>
+          {phase.name}<small>{phase.cue}</small>
+        </button>
+      </li>)}
     </ol>
   </div>
+  <figcaption>Elemental. Emergent. Transformative.</figcaption>
   <button class="enso-motion-toggle" type="button" aria-label="Pause ensō motion" hidden>Pause motion</button>
 </figure>
-
 <style>
   .transformation-enso { width: min(100%, 29rem); margin: 0 auto; }
   .enso-field { position: relative; aspect-ratio: 1; }
-  .enso-flow { display: block; width: 100%; height: 100%; overflow: visible; }
-  .enso-current { transform-origin: 220px 220px; animation: enso-flow 54s linear infinite; animation-play-state: paused; }
-  .enso-current--wash { animation-name: enso-return; animation-duration: 39s; }
-  [data-enso-motion="running"] .enso-current { animation-play-state: running; }
-  .enso-stages { position: absolute; inset: 0; margin: 0; padding: 0; list-style: none; }
-  .enso-stages li { position: absolute; padding: .35rem .3rem; color: var(--ink); background: var(--paper, #f6f2eb); font-family: var(--serif); font-size: clamp(.85rem, 1.3vw, 1rem); white-space: nowrap; }
-  .enso-stages span { color: var(--gold-dark); margin-left: .2rem; font-family: var(--sans); font-size: .7em; }
-  .enso-stages li:nth-child(1) { top: 6%; left: 50%; transform: translateX(-50%); }
-  .enso-stages li:nth-child(2) { top: 48%; right: 0; }
-  .enso-stages li:nth-child(3) { bottom: 5%; left: 50%; transform: translateX(-50%); }
-  .enso-stages li:nth-child(4) { top: 48%; left: 0; }
-  .enso-motion-toggle { display: block; margin: .7rem auto 0; padding: .55rem .8rem; color: var(--muted); background: transparent; border: 0; font: inherit; font-size: .65rem; letter-spacing: .06em; cursor: pointer; text-underline-offset: .3em; }
-  .enso-motion-toggle[hidden] { display: none; }
+  .enso-particles, .enso-fallback { display: block; width: 100%; height: 100%; }
+  .enso-fallback { color: var(--gold-dark); }
+  .enso-particles[hidden], .enso-fallback[hidden], .enso-motion-toggle[hidden] { display: none; }
+  .enso-stages { position: absolute; inset: 0; margin: 0; padding: 0; list-style: none; pointer-events: none; }
+  .enso-stages li { position: absolute; }
+  .enso-stages .top { top: 3%; left: 50%; transform: translateX(-50%); }
+  .enso-stages .right { right: 0; top: 48%; transform: translateY(-50%); }
+  .enso-stages .bottom { bottom: 3%; left: 50%; transform: translateX(-50%); }
+  .enso-stages .left { left: 0; top: 48%; transform: translateY(-50%); }
+  .enso-phase { pointer-events: auto; border: 0; background: var(--paper, #f6f2eb); padding: .35rem .15rem; min-height: 44px; color: var(--muted); font: normal clamp(.72rem, 1.25vw, .94rem) var(--serif); white-space: nowrap; cursor: pointer; transition: color .5s, scale .7s; }
+  .enso-phase:disabled { cursor: default; }
+  .enso-phase.active { font-weight: 700; color: var(--ink); scale: 1.08; }
+  .left .enso-phase { transform-origin: left center; }
+  .right .enso-phase { transform-origin: right center; }
+  .enso-phase small { display: block; margin-top: .4rem; color: var(--gold-dark); font: .5rem var(--sans); letter-spacing: .12em; text-transform: uppercase; opacity: 0; transition: opacity .6s; }
+  .enso-phase.active small { opacity: 1; }
+  figcaption { text-align: center; color: var(--muted); font: italic .85rem var(--serif); }
+  .enso-motion-toggle { display: block; margin: .5rem auto 0; padding: .6rem .8rem; min-height: 44px; color: var(--muted); background: transparent; border: 0; font: inherit; font-size: .65rem; letter-spacing: .06em; cursor: pointer; text-underline-offset: .3em; }
   .enso-motion-toggle:hover { text-decoration: underline; }
-  .enso-motion-toggle:focus-visible { outline: 1px solid var(--gold-dark); outline-offset: 3px; }
-  @keyframes enso-flow { to { transform: rotate(360deg); } }
-  @keyframes enso-return { to { transform: rotate(-360deg); } }
-  @media (prefers-reduced-motion: reduce) { .enso-current { animation: none; } }
+  .enso-phase:focus-visible, .enso-motion-toggle:focus-visible { outline: 1px solid var(--gold-dark); outline-offset: 3px; }
+  @media (prefers-reduced-motion: reduce) { .enso-phase, .enso-phase small { transition: none; } }
 </style>
 
 <script>
-  const figure = document.querySelector<HTMLElement>('.transformation-enso');
-  const button = figure?.querySelector<HTMLButtonElement>('.enso-motion-toggle');
-  if (figure && button) {
-    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-    let pausedByUser = false;
-    let visible = false;
-    const update = () => {
-      const running = !reducedMotion.matches && !pausedByUser && visible && !document.hidden;
-      figure.dataset.ensoMotion = running ? 'running' : 'paused';
-      button.hidden = reducedMotion.matches;
-      button.textContent = pausedByUser ? 'Play motion' : 'Pause motion';
-      button.setAttribute('aria-label', pausedByUser ? 'Play ensō motion' : 'Pause ensō motion');
-    };
-    button.addEventListener('click', () => { pausedByUser = !pausedByUser; update(); });
-    reducedMotion.addEventListener('change', update);
-    document.addEventListener('visibilitychange', update);
-    new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; update(); }).observe(figure);
-    update();
-  }
+import { N, cycle, colors, particles, state, target, cloud, lerp } from '../lib/particle-enso-model.mjs';
+const figure = document.querySelector<HTMLElement>('.transformation-enso');
+const field = figure?.querySelector<HTMLCanvasElement>('.enso-particles');
+const context = field?.getContext('2d');
+const toggle = figure?.querySelector<HTMLButtonElement>('.enso-motion-toggle');
+if (figure && field && context && toggle) {
+const root=figure, canvas=field, ctx=context, button=toggle;
+const buttons=[...root.querySelectorAll<HTMLButtonElement>('.enso-phase')];
+const names=['Engineering','FinTech','Entrepreneurship','Transformation'];
+const meanings=['A closed pipeline: 1 to 10.','A continuous flowing ribbon.','A seed expanding into a spiral: 0 to 1.','A winged form: the same elements in a different order.'];
+const TAU=Math.PI*2, reduce=window.matchMedia('(prefers-reduced-motion: reduce)');
+let time=3.5, wantsMotion=!reduce.matches, visible=false, frame=0, last=0, lastPaint=0, lastStatus='';
+function render(){const st=state(time);const scale=canvas.width/600;ctx.setTransform(scale,0,0,scale,0,0);ctx.clearRect(0,0,600,600);const c=st.coherence,energy=1-c;
+ // A sparse, quiet circular memory stays present while the particles find a new topology.
+ ctx.strokeStyle='#bda982';ctx.globalAlpha=.09*energy;ctx.lineWidth=.7;ctx.beginPath();ctx.arc(300,300,153,-1.2,4.7);ctx.stroke();
+ for(let i=0;i<N;i++){const s=particles[i],a=target(st.p,s,time,st.local),b=cloud(s,time),curl=Math.sin(c*Math.PI)*18;const x=300+lerp(b[0],a[0],c)+curl*Math.sin(s.b*TAU+time*.4),y=300+lerp(b[1],a[1],c)+curl*Math.cos(s.c*TAU+time*.4);ctx.globalAlpha=(.30+.53*s.a)*(.72+.28*c);ctx.fillStyle=colors[i%4];ctx.beginPath();ctx.arc(x,y,.62+s.b*1.25+(st.p===2&&s.u<.13?.25*c:0),0,TAU);ctx.fill();
+ if(energy>.05&&i%8===0){ctx.strokeStyle=colors[i%4];ctx.lineWidth=.55;ctx.globalAlpha=.16*energy;ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(x+energy*9*Math.sin(s.b*TAU+time*.2),y+energy*9*Math.cos(s.c*TAU+time*.2));ctx.stroke();}}
+ ctx.globalAlpha=1;
+ const held=c>.88,status=st.p+':'+held+':'+(st.local>=6.5);
+ if(status!==lastStatus){buttons.forEach((b,i)=>{const active=i===st.p&&held;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});canvas.setAttribute('aria-label',names[st.p]+'. '+meanings[st.p]+(held?' Pattern assembled.':' Particles in transition.'));lastStatus=status;}
+
+}
+
+function tick(now: number) {
+  if (!frame) return;
+  if (!last) last=now;
+  time=(time+Math.min((now-last)/1000,.1))%cycle; last=now;
+  // Cap painting at 30fps to keep this decorative field inexpensive.
+  if (now-lastPaint>=1000/30) { render(); lastPaint=now; }
+  frame=requestAnimationFrame(tick);
+}
+function update() {
+  const running=wantsMotion && visible && !document.hidden;
+  root.dataset.ensoMotion=running?'running':'paused';
+  button.textContent=wantsMotion?'Pause motion':'Play motion';
+  button.setAttribute('aria-label',wantsMotion?'Pause ensō motion':'Play ensō motion');
+  if (running && !frame) { last=0;lastPaint=0;frame=requestAnimationFrame(tick); }
+  else if (!running && frame) { cancelAnimationFrame(frame);frame=0; }
+}
+function resize() {
+  const size=Math.max(1,Math.round(canvas.clientWidth*Math.min(window.devicePixelRatio||1,2)));
+  if (canvas.width!==size) { canvas.width=canvas.height=size;render(); }
+}
+render();canvas.hidden=false;
+root.querySelector('.enso-fallback')?.setAttribute('hidden','');
+buttons.forEach(label=>{
+  label.disabled=false;
+  label.addEventListener('click',()=>{time=Number(label.dataset.phase)*10+4.5;wantsMotion=false;render();update();});
+});
+button.hidden=false;
+button.addEventListener('click',()=>{wantsMotion=!wantsMotion;update();});
+reduce.addEventListener('change',()=>{if(reduce.matches)wantsMotion=false;update();});
+document.addEventListener('visibilitychange',update);
+new IntersectionObserver(([entry])=>{visible=entry.isIntersecting;update();}).observe(root);
+new ResizeObserver(resize).observe(canvas);
+resize();update();
+}
 </script>
