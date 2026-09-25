@@ -1,0 +1,14 @@
+Paying $15 to save 55 cents sounds like a mistake. A deadline can change that calculation.
+
+For a fictional $1,000 US payout, a 1.5% fee is $15. Assume two days earlier access and a 10% annual funding cost: the simple financing value is about $0.55.
+
+If earlier cash certainly avoids an invented $40 late charge, the advantage becomes $25.55 before other incremental costs. If that charge has only a 20% chance of occurring, speed loses $6.45 instead. Under these assumptions the break-even probability is about 36.1%.
+
+The shop, timing gain, rate and charge are hypothetical. Stripe's published US Dashboard fee and reconciliation responsibilities are documented; no customer experiment was run. Terms checked 25 September 2026.
+
+What specifically happens if this money arrives later?
+
+Story: https://iamrobin.ai/binary/stories/the-price-of-friday/
+Sources: https://docs.stripe.com/payouts/instant-payouts
+https://docs.stripe.com/reports/payout-reconciliation
+
