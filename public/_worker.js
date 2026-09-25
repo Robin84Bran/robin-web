@@ -42,6 +42,8 @@ function redirect(url, status) {
 }
 
 const legacyLocaleRedirects = new Map([
+  ['/resonance/btc_probability_atlas/', '/asymmetry/btc_probability_atlas/'],
+  ['/binary/joy/hkipoblindbox/', '/asymmetry/hkipoblindbox/'],
   ['/cn/', '/zh-hans/'],
   ['/cn/about/', '/zh-hans/about/'],
   ['/tw/', '/zh-hant/'],

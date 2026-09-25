@@ -1,5 +1,17 @@
 # Daily Special
 
+## Active contract from 2026-09-25
+
+Read `../autonomy/README.md`. Robin authorized autonomous selection and
+publication: at least four verified Specials per ISO week, without a Telegram
+choice or per-issue approval. The existing bot selects a sourced Signal 1–4 or
+6–8 after the three core outputs pass; Mon/Tue/Thu/Sat are baseline days and
+spare days recover shortfalls. Only verified artifact receipts count.
+Each completed Special feeds a distinct Binary story and 6–12-page Robin
+carousel job. Release/verify/finish instructions below remain current;
+opt-in and no-response descriptions are historical for September 23–24 only.
+Preserve historical receipts and already-saved explicit choices.
+
 Signal 5 remains the daily canonical deep dive. A **Daily Special** is an
 occasional, Robin-selected research artifact from Signal 1–4 or 6–8.
 
@@ -24,11 +36,10 @@ is an example, not a preselected or already-completed task.
 One selected signal becomes one useful map, comparison, evidence table or note.
 Use public primary sources, reopen load-bearing evidence, date every observation,
 and distinguish confirmed facts, calculations, interpretations and missing
-evidence. Read `docs/PUBLIC_EDITORIAL_VOICE.md` in the release repository:
-new public essays explain material uncertainty naturally; private evidence
-records retain UNKNOWN/null. The article should invite a curious reader in,
-not read like a compliance checklist. Use the claim-preserving Stop Slop and
-Humanizer pass, without rewriting immutable sources or past publications.
+evidence. Read `../_shared_docs/PUBLIC_EDITORIAL_VOICE.md`: new public essays
+explain material uncertainty naturally; private evidence records retain
+UNKNOWN/null. Write for a curious reader, not as a compliance checklist. Use
+the claim-preserving Stop Slop and Humanizer pass; preserve immutable sources.
 Prefer 3–6 useful sources and a bounded question; do not expand into a new
 project. Pause with a specific reason if no useful safe research scope exists.
 Investment decisions, trades, spending, applications and external messages stay
@@ -97,15 +108,12 @@ python3 daily_special/special.py finish --date YYYY-MM-DD --commit FULL_SOURCE_C
 before COMPLETE. The bot, not the worker, sends the completion link once.
 If retried, reuse existing artifacts/PRs and receipt rather than duplicate them.
 
-### Owner-authorized editorial companions
-
-An explicit request to rewrite without overwriting the original creates a
-separate `YYYYMMDD/<editionSlug>/` family, with four reviewed editions, an
-`originalArticle` link and its own download/hash. The selected signal and
-original completion receipt remain unchanged; this is an additional explanation,
-not a second selected action or an executed production test.
-
 ## Next-brief continuity
+
+An owner-authorized editorial companion uses a separate
+`YYYYMMDD/<editionSlug>/` family, four reviewed editions, an `originalArticle`
+link and its own artifact/hash. It preserves the selected signal and original
+completion receipt; it is not a second selection or a claim of executed tests.
 
 Starting September 24, the website's four-language Daily Briefing template adds
 a separate previous-brief progress panel, without rewriting Robin's source:

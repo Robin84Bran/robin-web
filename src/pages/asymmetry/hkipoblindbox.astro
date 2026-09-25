@@ -1,8 +1,8 @@
 ---
-import BaseLayout from '../../../layouts/BaseLayout.astro';
-import CheekyBlindBox from '../../../components/joy/CheekyBlindBox.astro';
-import data from '../../../data/hkipoblindbox.json';
-import binary from '../../../data/hkipoblindbox-binary.json';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CheekyBlindBox from '../../components/joy/CheekyBlindBox.astro';
+import data from '../../data/hkipoblindbox.json';
+import binary from '../../data/hkipoblindbox-binary.json';
 const h = data.historical;
 const pct = (v: number) => `${(v * 100).toFixed(1)}%`;
 const bands = ['Below 0%', '0–<20%', '20–<40%', '40% or more'];
@@ -15,12 +15,12 @@ const lenses = [
   ['场势', 'Market setup', 'Who can buy, who can sell, and when?'],
 ];
 ---
-<BaseLayout title="The HK IPO Blind Box — Joy — Robin Xie" description="One human, one AI, and an allocation algorithm with no sense of humor. A public, simulated Hong Kong IPO prediction experiment." path="/binary/joy/hkipoblindbox/" schema={[{"@context":"https://schema.org","@type":"Article","headline":"The HK IPO Blind Box","description":"An auditable simulated Hong Kong IPO prediction experiment.","url":"https://iamrobin.ai/binary/joy/hkipoblindbox/","datePublished":"2026-09-21","author":{"@id":"https://www.tideisun.com/robin#robin-xie"}}]}>
+<BaseLayout title="The HK IPO Blind Box — Asymmetry — Robin Xie" description="One human, one AI, and an allocation algorithm with no sense of humor. A public, simulated Hong Kong IPO prediction experiment." path="/asymmetry/hkipoblindbox/" schema={[{"@context":"https://schema.org","@type":"Article","headline":"The HK IPO Blind Box","description":"An auditable simulated Hong Kong IPO prediction experiment.","url":"https://iamrobin.ai/asymmetry/hkipoblindbox/","datePublished":"2026-09-21","author":{"@id":"https://www.tideisun.com/robin#robin-xie"}}]}>
   <article class="blindbox">
-    <a class="back" href="/binary/#binary-lane-joy">← Binary / Blog / Joy</a>
+    <a class="back" href="/asymmetry/">← Asymmetry</a>
     <header class="hero">
       <div>
-        <p class="eyebrow">JOY FIELD NOTES · EXPERIMENT 001</p>
+        <p class="eyebrow">ASYMMETRY FIELD NOTES · EXPERIMENT 001</p>
         <h1>The HK IPO<br/><em>Blind Box.</em></h1>
         <p class="deck">I researched the company.<br/>The allocation algorithm researched my patience.</p>
         <p class="intro">One human. One AI. Six serious questions.<br/>An unreasonable amount of joy about possibly receiving nothing.</p>
@@ -86,7 +86,7 @@ const lenses = [
     </section>
 
     <section class="letter"><span class="section-no">05 / TO FUTURE ROBIN</span><h2>Keep the curiosity.<br/><em>Keep the receipts.</em></h2><p>A robot can refuse to pick us. A stock can refuse to rise. We can still leave behind an honest record of how we thought—and how much we laughed.</p><p class="rule">Bubu can guess wrong. Bubu cannot secretly edit the exam paper.</p></section>
-    <footer class="page-notes"><div><p class="update-policy">Fresh boxes, fresh receipts: updates when a new IPO forecast freezes or a material result is verified. Smaller changes are reviewed weekly; unchanged data stays put.</p><p>Public snapshot · {binary.generated_at.slice(0,10)} · Simulated experiment<br/>Sources: <a href="https://www2.hkexnews.hk/New-Listings/New-Listing-Information/Main-Board?sc_lang=en">HKEX offering documents</a> and archived daily-price evidence.</p></div><a href="/binary/#binary-lane-joy">Return to Joy ↗</a></footer>
+    <footer class="page-notes"><div><p class="update-policy">Fresh boxes, fresh receipts: updates when a new IPO forecast freezes or a material result is verified. Smaller changes are reviewed weekly; unchanged data stays put.</p><p>Public snapshot · {binary.generated_at.slice(0,10)} · Simulated experiment<br/>Sources: <a href="https://www2.hkexnews.hk/New-Listings/New-Listing-Information/Main-Board?sc_lang=en">HKEX offering documents</a> and archived daily-price evidence.</p></div><a href="/asymmetry/">Return to Joy ↗</a></footer>
   </article>
 </BaseLayout>
 <style>

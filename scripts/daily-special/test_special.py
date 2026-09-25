@@ -55,6 +55,24 @@ class SpecialTest(unittest.TestCase):
         buttons = sum(data["reply_markup"]["inline_keyboard"], [])
         self.assertEqual(len(buttons), 8)
         self.assertNotIn("Signal 5", [b["text"] for b in buttons])
+    def test_autonomous_policy_selects_without_prompt_and_preserves_legacy(self):
+        atomic(self.website / "autonomy/policy.json", {"effectiveDate": "2026-09-23", "specialsPerWeek": 4,
+            "specialWeekdays": [0, 1, 3, 5], "interests": ["swarm"]})
+        flow = self.feature.flow("2026-09-23")
+        for item in flow["actions"]:
+            item["sources"] = ["https://example.com/evidence"]
+        flow["editions"]["en"]["actions"][0]["title"] = "Swarm emergence"
+        atomic(self.feature.site() / "src/data/action-flows/20260923.json", flow)
+        with patch("special.alive", return_value=False):
+            self.feature.tick(self.bot, NOW)
+        self.assertFalse(self.bot.calls)
+        self.assertEqual(self.launched, ["2026-09-23"])
+        entry = self.state()["days"]["2026-09-23"]
+        self.assertEqual(entry["selection"], 1)
+        self.assertEqual(entry["selectedBy"], "OWNER_AUTHORIZED_AUTONOMY")
+        with patch("special.alive", return_value=True):
+            self.feature.tick(self.bot, NOW)
+        self.assertEqual(len(self.launched), 1)
     def test_incomplete_release_no_prompt(self):
         atomic(self.website.parent / "blogs/202609/20260923/actions/publish-state.json", {"status": "DONE", "gates": {"public200": False}})
         self.feature.tick(self.bot, NOW)
