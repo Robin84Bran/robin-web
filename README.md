@@ -15,6 +15,20 @@ The public site is deployed as the Cloudflare Worker `robin-web`. Cloudflare
 Workers Builds watches the GitHub `main` branch and performs the production
 build and deployment.
 
+## Identity: Still becoming
+
+The English `/identity/` door is Robin's personal essay, implemented from the
+selected editorial design: warm paper, large serif typography, chapter notes,
+and decorative ink-and-blossom artwork. Copy lives in `src/data/identityEssay.ts`;
+the page is `src/pages/identity.astro`. It draws on Robin's education account,
+the existing About biography, and the unchanged “American in Hong Kong” diary.
+The essay links to that original diary and to About; English About links back.
+
+Identity is now indexable and included in the sitemap and `llms.txt`. Its
+ProfilePage references the existing shared Person identifier. It has no Chinese
+alternate yet: the Chinese editorial draft is held outside the public repository
+for Robin's revision. No private photographs or messages are published.
+
 ## Homepage: current work and transformation
 
 The homepage eyebrow above “Robin Xie” is “ENTREPRENEUR · INVESTOR · ENGINEER”.
