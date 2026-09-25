@@ -1,5 +1,9 @@
 # iamrobin.ai — Website v2 / Zen Loop
 
+## Special → Binary story bridge
+
+Use the existing `binaryStory` content collection (`src/content/binary-stories/SLUG/{article,zh-hans,zh-hant,ja}.md`) and `/binary/stories/[...story].astro` for new Special-derived stories. Do not overwrite the dated Blog collection or owner articles. Each four-language set carries `storySlug`, `lane`, `date`, `updated`, `title`, `excerpt`, `hero`, `ogImage`, `keywords`, exact `canonical`, `inLanguage`, `translationReview: PASS` after actual editorial review, `sourceSpecial`, `sourceArtifactSha256`, and `carouselPdf`, `carouselCaption`, `carouselPages` (6–12). PDF/caption paths are `/carousels/SLUG.pdf` and `/carousels/SLUG.txt`. The renderer adds native language links, Article/Person schema, source and download links, and lists the English story in its Binary lane. `autonomy:check` rejects incomplete editions, duplicate source hashes, drifted sources and missing/mismatched PDFs. A page download is not a LinkedIn posting receipt.
+
 ## Weekly Intelligence — first autonomous iteration
 
 `/intelligence/three-rule-swarm/` is the 2026-W39 teaching experiment: three-rule walkers, a central learner, and a random control. All 192 seeded runs and exact source are available under `/three-rule-swarm/`. The canonical research folder is `06_intelligence/AI_research/AI_swarm/09_three_rule_swarm/`. Observations are matched; computation and mobility are not. The central learner wins the default synthetic comparison. This is not a claim about real insects, LLM swarms or markets.

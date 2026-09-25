@@ -1,0 +1,27 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import OuroborosPublication from '../../../components/OuroborosPublication.astro';
+import { createArticleSchemas } from '../../../lib/seo';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('binaryStory', ({data})=>!data.draft);
+  const locales={en:'','zh-Hans':'zh-hans','zh-Hant':'zh-hant',ja:'ja'};
+  return entries.map(entry=>({params:{story:[entry.data.storySlug,locales[entry.data.inLanguage]].filter(Boolean).join('/')},props:{entry}}));
+}
+interface Props {entry:CollectionEntry<'binaryStory'>}
+const {entry}=Astro.props, data=entry.data;
+const {Content}=await render(entry);
+const base=`/binary/stories/${data.storySlug}/`,locale=data.inLanguage;
+const slugs={en:'','zh-Hans':'zh-hans','zh-Hant':'zh-hant',ja:'ja'};
+const labels={en:'English','zh-Hans':'简体中文','zh-Hant':'繁體中文',ja:'日本語'};
+const path=base+(slugs[locale]?`${slugs[locale]}/`:'');
+const languages=(Object.keys(slugs) as Array<keyof typeof slugs>).map(key=>({hreflang:key,label:labels[key],path:base+(slugs[key]?`${slugs[key]}/`:'')}));
+const publicationDate=data.date.toISOString().slice(0,10);
+const schema=createArticleSchemas({title:data.title,description:data.excerpt,path,image:data.ogImage,datePublished:publicationDate,dateModified:data.updated.toISOString().slice(0,10),keywords:data.keywords,inLanguage:locale});
+const copy={en:{source:'The research behind this story',pdf:'Download the carousel',caption:'Read the caption',note:'A website edition with a ready-to-share carousel. A download is not a claim of social publication.'},'zh-Hans':{source:'故事背后的研究',pdf:'下载轮播稿',caption:'阅读配文',note:'网页故事与可分享的轮播稿。提供下载不代表已在社交平台发布。'},'zh-Hant':{source:'故事背後的研究',pdf:'下載輪播稿',caption:'閱讀配文',note:'網頁故事與可分享的輪播稿。提供下載不代表已在社交平台發布。'},ja:{source:'この物語のもとになった調査',pdf:'カルーセルをダウンロード',caption:'投稿文を読む',note:'ウェブ記事と共有用のカルーセルです。ダウンロードの提供は、SNSへの投稿完了を意味しません。'}}[locale];
+---
+<OuroborosPublication kind="blog" title={data.title} description={data.excerpt} {path} image={data.ogImage} imageAlt={data.title} hero={data.hero} heroAlt={data.title} {publicationDate} displayDate={publicationDate} {schema} language={locale} alternates={languages} languageLinks={languages.filter(l=>l.hreflang!==locale)} crumbs={[{label:'Binary',href:'/binary/'},{label:data.lane}]} indexLabel={`${data.lane} · Research → story`} intro={data.excerpt} footerText="One question. A different way to see it." footerLink="/binary/" footerLinkLabel="Binary →">
+ <Content />
+ <aside class="story-resources" aria-label="Story sources and downloads"><p><a href={data.sourceSpecial}>{copy.source} →</a></p><p><a href={data.carouselPdf}>{copy.pdf} · {data.carouselPages} pages</a> · <a href={data.carouselCaption}>{copy.caption}</a></p><small>{copy.note}</small></aside>
+</OuroborosPublication>
+<style>.story-resources{border-top:1px solid var(--line);margin-top:3rem;padding-top:1.5rem}.story-resources small{font-size:.8rem;color:var(--muted)}</style>

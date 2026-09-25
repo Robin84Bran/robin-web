@@ -116,7 +116,8 @@ if (existsSync(dist)) {
   const actionFlowPublications = [...actionFlowRoutes, ...actionFlowTranslationRoutes];
   const blogPublications = [...blogRoutes, ...blogTranslationRoutes];
   const specialRoutes = [...routes.keys()].filter((route) => /^\/ouroboros\/\d{6}\/\d{8}\/special\/(?:[a-z0-9-]+\/)?(?:zh-hans\/|zh-hant\/|ja\/)?$/.test(route));
-  const publicationRoutes = [...articleRoutes, ...actionFlowPublications, ...blogPublications, ...specialRoutes];
+  const binaryStoryRoutes = [...routes.keys()].filter(route=>/^\/binary\/stories\/[a-z0-9-]+\/(?:zh-hans\/|zh-hant\/|ja\/)?$/.test(route));
+  const publicationRoutes = [...articleRoutes, ...actionFlowPublications, ...blogPublications, ...specialRoutes, ...binaryStoryRoutes];
   for (const route of [...publicationRoutes, ...diaryRoutes]) indexableRoutes.add(route);
   check(routes.size === 46 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length, `expected ${46 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length} HTML routes, found ${routes.size}.`);
 
