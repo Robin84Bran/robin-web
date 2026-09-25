@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://iamrobin.ai/schemas/ouroboros-blog-manifest.schema.json",
+  "title": "Binary Blog Manifest",
+  "type": "object",
+  "required": ["schemaVersion", "updated", "articles"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "updated": { "type": "string", "format": "date" },
+    "derivatives": {
+      "description": "Additional Special-derived stories; never replaces a dated owner article.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["date", "title", "lane", "sourceArtifactSha256", "sourceSpecial", "canonicalUrl", "status", "archiveStatus", "carouselPdf", "mediumUrl", "linkedinUrl"],
+        "properties": {
+          "date": { "type": "string", "format": "date" },
+          "title": { "type": "string", "minLength": 2 },
+          "lane": { "enum": ["BUILD", "INVEST", "JOY"] },
+          "sourceArtifactSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+          "sourceSpecial": { "type": "string", "format": "uri" },
+          "canonicalUrl": { "type": "string", "format": "uri" },
+          "status": { "enum": ["DRAFT_READY", "REVIEW_READY", "PUBLISHED", "HOLD"] },
+          "archiveStatus": { "enum": ["PRESENT", "PIPELINE"] },
+          "carouselPdf": { "type": "string", "format": "uri" },
+          "mediumUrl": { "type": ["string", "null"], "format": "uri" },
+          "linkedinUrl": { "type": ["string", "null"], "format": "uri" },
+          "commit": { "type": "string", "pattern": "^[a-f0-9]{40}$" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "articles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "date", "lane", "status", "archiveStatus", "canonicalUrl", "canonicalSource", "linkedinSource", "sourceDossier", "mediumUrl", "linkedinUrl"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+-[0-9]{8}$" },
+          "title": { "type": "string", "minLength": 2 },
+          "date": { "type": "string", "format": "date" },
+          "lane": { "enum": ["BUILD", "INVEST", "JOY"] },
+          "status": { "enum": ["CANDIDATE", "DOSSIER_READY", "DRAFT_READY", "REVIEW_READY", "CLEARED", "PUBLISHED", "HOLD", "NO_ISSUE"] },
+          "archiveStatus": { "enum": ["PRESENT", "PIPELINE"] },
+          "canonicalUrl": { "type": ["string", "null"], "format": "uri" },
+          "canonicalPublishedAt": { "type": ["string", "null"], "format": "date-time" },
+          "canonicalSource": { "type": ["string", "null"] },
+          "canonicalSha256": { "type": ["string", "null"], "pattern": "^[a-f0-9]{64}$" },
+          "linkedinSource": { "type": ["string", "null"] },
+          "linkedinSha256": { "type": ["string", "null"], "pattern": "^[a-f0-9]{64}$" },
+          "sourceDossier": { "type": ["string", "null"] },
+          "historicalImport": { "type": "boolean", "default": false },
+          "earlyReleaseApproved": { "type": "boolean", "default": false },
+          "mediumUrl": { "type": ["string", "null"], "format": "uri" },
+          "mediumPublishedAt": { "type": ["string", "null"], "format": "date-time" },
+          "linkedinUrl": { "type": ["string", "null"], "format": "uri" },
+          "linkedinPublishedAt": { "type": ["string", "null"], "format": "date-time" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

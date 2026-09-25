@@ -116,7 +116,7 @@ is involved, and simulation playback starts only on request.
 ## BTC Probability Atlas
 
 The public Atlas is at
-<https://iamrobin.ai/resonance/btc_probability_atlas/>. English is the default;
+<https://iamrobin.ai/asymmetry/btc_probability_atlas/>. English is the default;
 its page-level language menu also supports Simplified Chinese, Traditional
 Chinese and Japanese. The forecast algorithm runs locally each day, while the
 public page remains a reviewed frozen snapshot and does not automatically publish
@@ -125,12 +125,13 @@ verification map.
 
 ## Ouroboros / Daily Special
 
-Signal 5 remains the daily canonical deep dive. After the three daily outputs
-are published, the existing private Telegram consumer offers one optional
-research choice from Signals 1–4 and 6–8, or No. No reply by midnight Hong Kong
-time means No; there is no new scheduler and no automatic selection.
+Signal 5 remains the daily canonical deep dive. Effective September 25, after
+the three daily outputs are verified, the existing private bot selects a bounded
+research action from Signals 1–4 and 6–8 without a selection prompt. Its target
+is at least four verified Specials per ISO week, with spare-day recovery. The
+earlier optional-choice policy is historical; it is not the current workflow.
 
-`/ouroboros/` includes **03 Daily Special**. It stays empty until a selected,
+`/ouroboros/` includes **03 Daily Special**. Only a completed,
 verified research artifact is published. Four-language articles live in
 `src/content/daily-special/YYYYMMDD/`; downloadable artifacts live in
 `public/daily-special/YYYYMMDD/`. The public receipt ledger links exact source

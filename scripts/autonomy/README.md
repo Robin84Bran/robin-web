@@ -118,6 +118,14 @@ recreate a parallel route or reuse a scheduled date slot. Add derivatives under
 the central manifest's separate `derivatives` array keyed by source hash; adapt
 the existing tracker/calendar builders to retain multiple stories on one day
 without replacing `articles` or historical owner entries.
+The existing builders under `blogs/outputs/01a018d0-c834-7623-ae78-bd7eafad3b79/`
+now share `blogs/pipeline/derivative-planning.mjs` (tested with same-day and
+Saturday entries). Derivative records use `date`, `title`, `lane`,
+`sourceArtifactSha256`, `canonicalUrl`, `status`, `archiveStatus`, and nullable
+social URLs. Use the spreadsheet skill, inspect existing workbook inputs before
+refreshing, preserve manual metrics/notes, and render the affected month after
+adding the actual verified story. Never publish a tracker row as PRESENT before
+the story and carousel are live.
 
 Use `$robin-carousel` and the canonical
 `00_identity_output/linkedin/carousel_pipeline/` harness. Read its instructions,
