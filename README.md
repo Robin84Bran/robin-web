@@ -60,6 +60,9 @@ and 6–12-page carousel downloads. Monthly taste reviews and weekly Intelligenc
 simulations share the existing private bot's resumable job ledger.
 
 See [operating and verification contract](scripts/autonomy/README.md).
+The [September 25 release evidence](docs/AUTONOMY_RELEASE_20260925.md) links the
+first autonomous Special, its distinct INVEST story, the reviewed seven-page
+carousel and the first weekly Intelligence game.
 The scripts are source mirrors; Cloudflare serves static content, not the
 private research worker. No private chats, preferences, bot state or credentials
 are bundled. PDF delivery does not imply a LinkedIn post. Only verified

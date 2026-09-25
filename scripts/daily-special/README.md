@@ -15,7 +15,7 @@ Preserve historical receipts and already-saved explicit choices.
 Signal 5 remains the daily canonical deep dive. A **Daily Special** is an
 occasional, Robin-selected research artifact from Signal 1–4 or 6–8.
 
-## Robin's experience
+## Historical September 23–24 selection experience
 
 1. Receive the Daily Briefing, Daily Action Flow and Signal 5 links as usual.
 2. The same private Telegram bot offers seven signal buttons and **No**, once.
@@ -50,8 +50,9 @@ was executed. This does not replace the evening personal One Action check-in.
 ## Runtime and integration
 
 The **existing** `volatility_lab_bot` calls `DailySpecial.tick` once a minute in
-its current loop. It offers only after all three daily branches are DONE with
-their gates confirmed. `handle` runs after existing chat/sender authentication
+its current loop. Under the active contract it selects autonomously only after
+all three daily branches are DONE with their gates confirmed. Historical offers
+retain their original semantics. `handle` runs after existing chat/sender authentication
 and write-ahead capture, before source parsing. No scheduler or Telegram
 consumer is added. A saved selection launches a bounded Codex execution using
 the established unattended CLI pattern, not another recurring task.
