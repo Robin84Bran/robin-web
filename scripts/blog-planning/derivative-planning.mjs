@@ -1,11 +1,14 @@
 // Additional source-hash-keyed stories never consume an owner's M/W/F slot.
 export function appendDerivatives(slots, manifest, start, end, flavor) {
   const seen = new Set();
+  const urls = new Set((manifest.articles ?? []).map(a => a.canonicalUrl).filter(Boolean));
   for (const article of manifest.derivatives ?? []) {
     const hash = article.sourceArtifactSha256;
     if (!/^[a-f0-9]{64}$/.test(hash ?? '')) throw new Error('Derivative needs its source Special SHA-256');
     if (seen.has(hash)) throw new Error('Duplicate derivative source Special');
     seen.add(hash);
+    if (!article.canonicalUrl || urls.has(article.canonicalUrl)) throw new Error('Derivative URL duplicates an owner article or another derivative');
+    urls.add(article.canonicalUrl);
     const key = article.date?.slice(0, 10);
     if (!/^\d{4}-\d{2}-\d{2}$/.test(key ?? '') || !['BUILD', 'INVEST', 'JOY'].includes(article.lane)) throw new Error('Invalid derivative date/lane');
     if (key < start || key > end) continue;

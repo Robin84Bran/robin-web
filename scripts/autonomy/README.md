@@ -7,7 +7,21 @@ execution, social-account posting, paid services, or broader infrastructure auth
 
 ## Daily: 08:00 Asia/Hong_Kong
 
-The existing `daily-briefing-publisher-daemon` starts one run. Read website and
+The existing `daily-briefing-publisher-daemon` starts one run. Its scheduler and
+the existing bot both enter through the same recovery coordinator:
+
+```sh
+/Users/headlessnick/RobinOS2/03_sandbox/volatility_lab/.venv/bin/python /Users/headlessnick/RobinOS2/03_sandbox/volatility_lab/daily_publisher_recovery.py --reconcile --date YYYY-MM-DD
+```
+
+The scheduler monitors the date-owned worker; it must not independently author
+the same daily release. A serialized claim protects the short PID handoff and
+recovers an abandoned claim after 90 seconds. A live owner always wins. The
+existing bot retains retries if the app task ends. No additional scheduler.
+Once core publication is confirmed DONE and no daily owner is active, the
+heartbeat still checks archive-only promotions and releases any material change.
+
+The date-owned worker reads website and
 root AGENTS, daily_briefing/DAEMON_RUNBOOK.md and the publication/language
 standards. Run deadline and blog-archive-sync. Reuse any valid immutable source
 already received; otherwise immediately perform the existing State → Search →
@@ -118,7 +132,7 @@ recreate a parallel route or reuse a scheduled date slot. Add derivatives under
 the central manifest's separate `derivatives` array keyed by source hash; adapt
 the existing tracker/calendar builders to retain multiple stories on one day
 without replacing `articles` or historical owner entries.
-The existing builders under `blogs/outputs/01a018d0-c834-7623-ae78-bd7eafad3b79/`
+The existing builders under `blogs/outputs/<existing-tracker-output>/`
 now share `blogs/pipeline/derivative-planning.mjs` (tested with same-day and
 Saturday entries). Derivative records use `date`, `title`, `lane`,
 `sourceArtifactSha256`, `canonicalUrl`, `status`, `archiveStatus`, and nullable
@@ -126,6 +140,11 @@ social URLs. Use the spreadsheet skill, inspect existing workbook inputs before
 refreshing, preserve manual metrics/notes, and render the affected month after
 adding the actual verified story. Never publish a tracker row as PRESENT before
 the story and carousel are live.
+For a derivative-only update, prefer the existing output folder's
+`sync_derivative_workbooks.mjs`: it imports both workbooks and upserts only
+derivative rows/calendar cells, asserts owner rows are unchanged, preserves
+manual metrics, and keeps a rollback copy. Inspect its output/error scan and
+rendered affected month; do not replace manual planning with a full rebuild.
 
 Use `$robin-carousel` and the canonical
 `00_identity_output/linkedin/carousel_pipeline/` harness. Read its instructions,
