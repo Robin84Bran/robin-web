@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+import {appendDerivatives, rowsByDate} from './derivative-planning.mjs';
+const a = {date:'2026-09-25',title:'Additional story',lane:'INVEST',sourceArtifactSha256:'a'.repeat(64),status:'PUBLISHED',archiveStatus:'PRESENT'};
+const b = {...a,date:'2026-09-26',sourceArtifactSha256:'b'.repeat(64)};
+const slots = appendDerivatives([{key:'2026-09-25',title:'Owner JOY'}],{derivatives:[a,b]},'2026-08-01','2026-12-31','calendar');
+assert.equal(slots.length,3);
+assert.equal(slots[0].title,'Owner JOY');
+assert.equal(slots[2].day,'Saturday');
+assert.deepEqual(rowsByDate(slots,5).get('2026-09-25'),[5,6]);
+assert.throws(()=>appendDerivatives([],{derivatives:[a,a]},'2026-08-01','2026-12-31','calendar'),/Duplicate/);
+assert.throws(()=>appendDerivatives([],{derivatives:[{...a,sourceArtifactSha256:'claimed'}]},'2026-08-01','2026-12-31','calendar'),/SHA/);
+console.log('Derivative planning: owner slot preserved, weekend and same-day stories supported, duplicate/hash gates passed.');
