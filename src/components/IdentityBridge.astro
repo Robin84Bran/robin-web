@@ -14,10 +14,19 @@ const profile = identityProfiles.en;
   <TransformationEnso />
   <section class="identity-now" aria-labelledby="robin-now">
     <h3 id="robin-now" class="eyebrow">Now</h3>
-    <p>Most of my time today is focused on transforming iSunTV (<a href="https://isuntv.com/" hreflang="zh-Hant">繁體中文</a> / <a href="https://isun1.com/" hreflang="zh-Hans">简体中文</a>), a legacy licensed satellite TV media company, into a live <a href="https://isun1.news/">AI-native news lab</a>, <a href="https://isuntvmall.com/">streaming commerce</a>, and one-person-company labs with agents and swarms.</p>
-    <p>In practice, that means moving between strategy, product, capital, and code. At iSunTV and iSunTVMall, for example, <strong>I am also the technical team.</strong></p>
+    <p>Most of my time today is focused on transforming iSunTV (<a href="https://isuntv.com/" hreflang="zh-Hant">陽光衛視</a> / <a href="https://isun1.com/" hreflang="zh-Hans">阳光卫视</a>), a legacy licensed satellite TV media company, into a live <a href="https://isun1.news/">AI-native news lab</a>, <a href="https://isuntvmall.com/">streaming commerce</a>, and one-person-company labs with agents and swarms.</p>
+    <p>In practice, that means moving between strategy, product, capital, and code. At iSunTV and iSunTVMall, for example, I am the technical team.</p>
   </section>
-  <p class="identity-practice">Find the bottleneck.<br /><span>Build or back the way through it.</span></p>
+  <section class="identity-past" aria-labelledby="robin-past">
+    <h3 id="robin-past" class="eyebrow">Past</h3>
+    <div class="identity-past__story">
+      <p>My career began in subsea engineering, working with complex offshore systems and autonomous machines. It taught me to bring ideas into contact with the physical world, where reliability matters and assumptions have consequences.</p>
+      <p>From there, I moved into entrepreneurship and FinTech, working across payments, digital assets, and financial infrastructure. My attention expanded from how a system works to what a business could make possible.</p>
+      <p>Building businesses led me toward capital allocation. I began asking where technology, capital, and human attention could create lasting value over decades, a question that continues to guide my investing across public and private markets.</p>
+      <p>That path brought me to AI infrastructure, energy, robotics, and programmable finance. Through RobinOS, quantitative research labs, and AI-assisted workflows, I have explored how ideas become working systems, with human judgment and responsibility at their center.</p>
+      <p>Along the way, I kept writing, experimenting, and following connections between fields. Some ideas became investments; others became things I built. Those experiences brought me here, still curious about what might become possible next.</p>
+    </div>
+  </section>
   <div class="identity-bridge__discovery">
     <a class="quiet-link" href={profile.aboutPath}>{profile.aboutLinkLabel}<span aria-hidden="true">↗</span></a>
     <IdentityLanguageNav currentLocale="en" page="home" />
@@ -34,15 +43,17 @@ const profile = identityProfiles.en;
   .identity-now p { color: var(--muted); font-size: .96rem; line-height: 1.85; }
   .identity-now p:last-child { margin-bottom: 0; }
   .identity-now a { color: var(--ink); text-decoration-color: var(--gold); text-underline-offset: .22em; }
-  .identity-now strong { color: var(--ink); font-weight: 550; }
-  .identity-practice { margin: .5rem 0; color: var(--ink); font-family: var(--serif); font-size: clamp(1.65rem, 3vw, 2.35rem); line-height: 1.4; letter-spacing: -.02em; }
-  .identity-practice span { color: var(--gold-dark); }
+  .identity-past { grid-column: 1 / -1; display: grid; gap: 1rem 3rem; border-top: 1px solid var(--line); padding-top: 2rem; }
+  .identity-past h3 { margin: 0; color: var(--gold-dark); }
+  .identity-past__story { max-width: 43rem; }
+  .identity-past__story p { margin: 0 0 1.25rem; color: var(--muted); font-size: 1rem; line-height: 1.85; }
+  .identity-past__story p:last-child { margin-bottom: 0; }
   @media (min-width: 60rem) {
     .identity-bridge--transformation { grid-template-columns: minmax(0, 1.3fr) minmax(22rem, 1fr); align-items: start; }
     .identity-bridge__copy { grid-column: 1; grid-row: 1; }
     .identity-bridge--transformation :global(.transformation-enso) { grid-column: 2; grid-row: 1 / 3; align-self: center; }
     .identity-now { grid-column: 1; grid-row: 2; }
-    .identity-practice { grid-column: 1 / -1; }
+    .identity-past { grid-template-columns: minmax(8rem, .45fr) minmax(0, 1.85fr); }
   }
   @media (max-width: 59.99rem) {
     .identity-bridge--transformation { grid-template-columns: minmax(0, 1fr); }

@@ -21,10 +21,13 @@ The homepage eyebrow above “Robin Xie” is “ENTREPRENEUR · INVESTOR · ENG
 
 The English homepage introduces Robin as an entrepreneur and investor with an
 engineering background. Its Now section links iSunTV's Traditional Chinese
-(`isuntv.com`) and Simplified Chinese (`isun1.com`) sites, the AI-native news lab
+(`isuntv.com`, labelled 陽光衛視) and Simplified Chinese (`isun1.com`, labelled 阳光卫视) sites, the AI-native news lab
 (`isun1.news`), and streaming commerce (`isuntvmall.com`). The first-person
-introduction and “I am also the technical team” describe Robin's current work;
-the closing line is “Find the bottleneck. Build or back the way through it.”
+introduction and the regular-weight “I am the technical team” describe Robin's
+current work. A Past section distills the existing About biography into five
+short paragraphs covering engineering, entrepreneurship and FinTech, capital
+allocation, AI experimentation, and writing across disciplines. The former
+large “Find the bottleneck” closing statement has been removed.
 
 The lower homepage uses the approved “Dissolve / become” particle ensō. The same
 1,000 particles recur through four forms in a 40-second cycle:
