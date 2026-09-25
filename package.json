@@ -21,7 +21,7 @@
     "actions:check": "node scripts/verify-action-backlog.mjs",
     "verify:seo": "node scripts/verify-seo.mjs",
     "test:ai-berkshire": "node --test scripts/tests/ai-berkshire.test.mjs",
-    "autonomy:check": "python3 -m unittest discover -s scripts/autonomy -p 'test_*.py' && node --test scripts/tests/asymmetry-routes.test.mjs scripts/tests/binary-stories.test.mjs && node scripts/verify-binary-stories.mjs",
+    "autonomy:check": "python3 -m unittest discover -s scripts/autonomy -p 'test_*.py' && node --test scripts/tests/asymmetry-routes.test.mjs scripts/tests/binary-stories.test.mjs && node scripts/verify-binary-stories.mjs && node scripts/blog-planning/derivative-planning.test.mjs",
     "specials:check": "node scripts/verify-daily-special.mjs && node --test scripts/tests/daily-special.test.mjs scripts/tests/editorial-editions.test.mjs && python3 -m unittest discover -s scripts/daily-special -p 'test_*.py'",
     "specials:render": "node scripts/test-daily-special-render.mjs",
     "test:swarm-lab": "node --test public/swarm-lab/tests.mjs public/three-rule-swarm/tests.mjs && node public/swarm-lab/verify.mjs && node public/three-rule-swarm/batch.mjs --verify && node scripts/test-swarm-lab-render.mjs",
