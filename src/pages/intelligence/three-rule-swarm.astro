@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const path='/intelligence/three-rule-swarm/';
+const description='A crowd with three rules, one centralized learner, and a lunch that moves. Play a seeded search experiment with equal observation budgets and inspect all 192 runs.';
+const schema={'@context':'https://schema.org','@type':'LearningResource',name:'Three Rules, One Lunch',url:`https://iamrobin.ai${path}`,description,inLanguage:'en',learningResourceType:'Interactive simulation',educationalUse:'Experiment'};
+---
+<BaseLayout title="Three Rules, One Lunch — Intelligence — Robin Xie" {path} {description} {schema}>
+ <div class="shell experiment">
+  <a class="quiet-link" href="/intelligence/">← Intelligence</a>
+  <p class="eyebrow">The weekly small experiment · 25 September 2026</p>
+  <h1>Three rules.<br/><em>One lunch.</em></h1>
+  <p class="lead">I invited a swarm to beat one controller.<br/>The controller ate its lunch.</p>
+  <p class="intro">That is the default result—not the ending you have to accept. Give a crowd three simple rules, let one centralized learner remember what worked, then move the food. How much of “intelligence” is really a good place to look?</p>
+  <section class="playground" aria-label="Interactive foraging comparison">
+   <form id="lab-controls">
+    <label>Seed<input name="seed" type="number" min="0" max="4294967295" value="1" step="1"/></label>
+    <label>Walkers / queries per round<select name="agents"><option>8</option><option selected>32</option><option>64</option></select></label>
+    <label>Explore<select name="explore"><option value="0">0%</option><option value="0.15" selected>15%</option><option value="0.5">50%</option><option value="1">100%</option></select></label>
+    <label>Sharing<select name="share"><option value="0">Off</option><option value="0.35" selected>35%</option><option value="0.8">80%</option><option value="1">100%</option></select></label>
+    <label class="check"><input name="shift" type="checkbox" checked/> Move food halfway</label>
+   </form>
+   <div class="buttons"><button id="play" type="button">Play</button><button id="reset" type="button">Replay</button><button id="next-seed" type="button">Next seed</button><button id="download" type="button">Download run</button></div>
+   <p id="lab-status" role="status">Loading the seeded model…</p>
+   <div class="canvas-wrap"><canvas width="1080" height="270" aria-label="Three panels show each policy searching the same food landscape. Numerical scores are below."></canvas></div>
+   <label class="time">Look closer<input id="round" aria-label="Simulation round" type="range" min="0" max="159" value="0"/></label>
+   <div id="scores" class="scores"></div>
+   <p class="fine">Gold = food reward. Dots = queried locations. You see the whole landscape; the policies see only what they sample. On a small screen, swipe the three panels horizontally.</p>
+   <noscript>This game needs JavaScript. The methods and all batch results below remain available.</noscript>
+  </section>
+  <section class="story"><p class="eyebrow">Try this first</p><h2>Turn off the gossip.</h2><p>Play the default seed. Set Sharing to Off and replay. The walkers keep their own short memory, but lose the neighboring traces. Does that change where they gather? Now try another seed before trusting the story.</p>
+   <h2>What the knobs actually do</h2><dl><dt>Walkers / queries</dt><dd>The swarm population, and the number of observations each policy receives per round. More walkers gives <em>everyone</em> more observations.</dd><dt>Explore</dt><dd>A chance to try another direction for a walker, or query a random location for the central learner. Same probability; different mobility.</dd><dt>Sharing</dt><dd>How often a walker follows the best remembered adjacent trace instead of its current heading. Traces fade 3% per round.</dd><dt>Move food</dt><dd>At round 81 the food shifts across the wrapping grid. No policy is told the new location.</dd><dt>Seed</dt><dd>A repeatable world, not a difficulty rating. Keep it fixed to compare one changed rule.</dd></dl>
+   <h2>The crowd is not a tiny genius.</h2><p>Its rules are: keep a direction that improved the last reward; sometimes follow a useful neighboring trace; explore again after repeated disappointments. The central learner instead remembers sampled rewards across the map and can return directly to the best known location.</p><p>That last advantage matters. This is a comparison of search policies and mobility—not proof that one brain is better than many. Both get the same number of observations; they do <em>not</em> get equal computation or equal movement constraints.</p>
+   <h2>All the seeds, including the inconvenient ones.</h2><p>Across seeds 1–32 at the defaults, mean reward per observation was <strong>0.815 central / 0.506 swarm / 0.164 random</strong>. With sharing removed, the swarm fell to <strong>0.226</strong>. Its trace-sharing rule helps here. It still does not beat the central learner.</p><p>We retain six complete batches—192 runs—including no relocation, high exploration, and different query budgets. No seed was dropped. Food never runs out, crowding costs nothing, and successful locations can be reused: a friendly world for centralized memory. Add depletion or costly movement and you have a new experiment, not permission to reuse this conclusion.</p>
+   <p class="fine">Original toy model. No insects, biological replication, language models, market data, investment advice or real-world performance claims.</p>
+   <p class="downloads"><a href="/three-rule-swarm/README.md">Methods &amp; how to play</a> · <a href="/three-rule-swarm/model.mjs">Exact model</a> · <a href="/three-rule-swarm/results.json">All 192 runs</a> · <a href="/three-rule-swarm/tests.mjs">Tests</a></p>
+  </section>
+ </div>
+ <script is:inline type="module" src="/three-rule-swarm/client.mjs"></script>
+</BaseLayout>
+<style>
+ .experiment{padding-block:3rem 5rem}.experiment>.eyebrow{margin-top:3rem}h1{font:400 clamp(3.5rem,8vw,7rem)/1 var(--serif);letter-spacing:-.05em;margin:1.5rem 0}h1 em{color:#426e69}.lead{font:400 clamp(1.3rem,3vw,2rem)/1.45 var(--serif)}.intro,.story{max-width:48rem;line-height:1.85}.intro,.fine,dd{color:var(--muted)}.playground{margin-block:2.5rem;padding:clamp(1rem,3vw,2rem);border:1px solid var(--line);background:#f5f1e8;border-radius:12px}form{display:flex;flex-wrap:wrap;gap:1rem}label{display:grid;gap:.4rem;font-size:.8rem}select,input[type=number],button{font:inherit;padding:.65rem;border:1px solid #c8c3b6;border-radius:5px;background:#fffdf7;color:#292822}input[type=number]{max-width:8rem}.check{display:flex;align-items:center}.buttons{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.2rem}button{cursor:pointer}#play{background:#426e69;color:white}#lab-status{font-size:.85rem}.canvas-wrap{overflow-x:auto}canvas{display:block;width:100%;min-width:750px;height:auto}.time{margin-block:1rem}.time input{width:100%;accent-color:#426e69}.scores{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.scores :global(div){display:grid;gap:.3rem}.scores :global(strong){font-size:.85rem}.scores :global(b){font:400 2rem var(--serif)}.scores :global(span){font-size:.75rem;color:var(--muted)}.fine{font-size:.8rem;line-height:1.7}.story h2{font:400 clamp(1.6rem,4vw,2.5rem)/1.2 var(--serif);margin-top:2.5rem}dt{font-weight:600;margin-top:1rem}dd{margin-left:0}.downloads{font-size:.9rem}@media(max-width:480px){.scores{gap:.5rem}.scores :global(strong){font-size:.73rem}}
+</style>

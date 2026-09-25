@@ -12,7 +12,7 @@ const identityAliases = ['Bin Xie', 'Bin “Robin” Xie', 'Bin Robin Xie', 'Xie
 const proofAnchors = ['engineering-record', 'payments-record', 'tidebit-record'];
 const portfolioDisclaimer = 'An attention field — subjects I study, not a record of affiliations or holdings.';
 const indexableRoutes = new Set([
-  '/', '/about/', '/network/', '/asymmetry/btc_probability_atlas/', '/resonance/eval/ai_berkshire/',
+  '/', '/about/', '/network/', '/asymmetry/btc_probability_atlas/', '/resonance/eval/ai_berkshire/', '/intelligence/three-rule-swarm/',
   '/zh-hans/', '/zh-hans/about/', '/zh-hans/network/',
   '/zh-hant/', '/zh-hant/about/', '/zh-hant/network/',
   '/ja/', '/ja/about/', '/ja/network/',
@@ -118,7 +118,7 @@ if (existsSync(dist)) {
   const specialRoutes = [...routes.keys()].filter((route) => /^\/ouroboros\/\d{6}\/\d{8}\/special\/(?:[a-z0-9-]+\/)?(?:zh-hans\/|zh-hant\/|ja\/)?$/.test(route));
   const publicationRoutes = [...articleRoutes, ...actionFlowPublications, ...blogPublications, ...specialRoutes];
   for (const route of [...publicationRoutes, ...diaryRoutes]) indexableRoutes.add(route);
-  check(routes.size === 45 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length, `expected ${45 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length} HTML routes, found ${routes.size}.`);
+  check(routes.size === 46 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length, `expected ${46 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length} HTML routes, found ${routes.size}.`);
 
   for (const route of arcadeRoutes) check(routes.has(route), `missing arcade route: ${route}`);
 
