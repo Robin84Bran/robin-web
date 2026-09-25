@@ -1,0 +1,527 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-25",
+  "updated": "2026-09-25",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20260925/hero.webp",
+  "actionHero": "/action-item/20260925/hero.webp",
+  "ogImage": "/daily-briefing/20260925/og.webp",
+  "briefingPath": "/ouroboros/202609/20260925/",
+  "actionItemPath": "/ouroboros/202609/20260925/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "Anthropic research",
+          "url": "https://www.anthropic.com/research/project-swap"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Boston Dynamics announcement",
+          "url": "https://bostondynamics.com/news/boston-dynamics-opens-robotics-metaplant-application-center-to-train-humanoid-robots-for-manufacturing-tasks"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Farside Bitcoin ETF table",
+          "url": "https://farside.co.uk/btc/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "SoFi launch announcement",
+          "url": "https://investors.sofi.com/news/news-details/2026/SoFi-Becomes-First-National-Bank-to-Go-Live-with-Stablecoin-Settlement-across-Mastercards-Global-Payments-Network/default.aspx"
+        },
+        {
+          "label": "Mastercard's March plan",
+          "url": "https://www.mastercard.com/global/en/news-and-trends/press/2026/march/sofi-and-mastercard-partner-to-enable-sofiusd-settlement-across-.html"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "sources": [
+        {
+          "label": "SoFi launch",
+          "url": "https://investors.sofi.com/news/news-details/2026/SoFi-Becomes-First-National-Bank-to-Go-Live-with-Stablecoin-Settlement-across-Mastercards-Global-Payments-Network/default.aspx"
+        },
+        {
+          "label": "Visa's historical US settlement launch",
+          "url": "https://corporate.visa.com/en/sites/visa-perspectives/newsroom/visa-launches-stablecoin-settlement-in-the-united-states.html"
+        },
+        {
+          "label": "FedNow overview",
+          "url": "https://www.frbservices.org/financial-services/fednow/about.html"
+        },
+        {
+          "label": "today's canonical Action Item",
+          "url": "https://iamrobin.ai/ouroboros/202609/20260925/action_item/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "Reuters report",
+          "url": "https://www.reuters.com/business/oracle-cites-force-majeure-shield-itself-controversial-data-center-bloomberg-2026-09-24/"
+        },
+        {
+          "label": "Reuters syndication",
+          "url": "https://www.boursorama.com/bourse/actualites-amp/oracle-invoque-la-force-majeure-pour-un-projet-de-centre-de-donnees-en-raison-de-retards-lies-a-l-alimentation-electrique-selon-une-source-9b36661c409457d0988f5624e680842c"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "HEO Series B announcement",
+          "url": "https://www.heospace.com/resources/stories/heo-raises-us-25-million-to-expand-the-worlds-largest-commercial-non-earth-imaging-network-into-geo"
+        },
+        {
+          "label": "Axios reporting",
+          "url": "https://www.axios.com/2026/09/21/heo-satellite-imagery"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Micron's official schedule",
+          "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-to-Report-Fiscal-Fourth-Quarter-Results-on-September-30-2026/default.aspx"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, September 25, 2026",
+      "description": "Eight bounded actions connect preferences, deployment, capital and usable cash.",
+      "centralJudgment": "Trace the obligation to an accepted outcome. The settlement essay is complete as an editorial artifact; seven other actions remain proposed or under observation. Neither a production announcement nor a funding round completes the downstream test.",
+      "fieldLine": "Eight signals. Clear owners. Evidence of completion.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Define a preference-fidelity test",
+          "why": "An autonomous system needs a test of preference fidelity alongside execution quality.",
+          "steps": [
+            "Specify a ten-choice synthetic preference test, with owner rankings hidden from the agent and pairwise agreement as the acceptance metric; keep execution proposed and grant no transaction authority.",
+            "Save sample design and a pairwise-agreement metric before any authorized test. No synthetic run has been performed."
+          ],
+          "done": "READY; specification recorded, execution pending."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "Retain Atlas training-stage classification",
+          "why": "This is a specific new observation for the existing humanoid evidence framework, distinct from yesterday's global shipment denominator.",
+          "steps": [
+            "Retain a training-stage classification until the customer discloses one repeatable production task with accepted output, human assistance and all-in operating cost.",
+            "Require accepted output, assistance and full cost for one repeatable task. Training evidence cannot establish unit economics."
+          ],
+          "done": "WATCHING; production evidence condition retained."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows and Web3 Health",
+          "title": "Keep ETF flow confirmation bounded",
+          "why": "A dated flow observation can update the capital picture without converting it into an order or a claim of portfolio performance.",
+          "steps": [
+            "Keep the flow-confirmation watchpoint open until the next complete session can be compared with both ETF breadth and independently measured onchain activity; do not infer missing activity from ETF totals.",
+            "Archive the dated flow snapshot and require independent activity evidence. This remains a watchpoint, with no order or portfolio action."
+          ],
+          "done": "WATCHING; next complete session and activity evidence pending."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins and Payment Rails",
+          "title": "Specify a settlement comparison",
+          "why": "Payments experience helps separate network settlement from the business's ability to use and reconcile its cash.",
+          "steps": [
+            "Define one comparison sheet for card settlement routes using eligibility, prefunding, usable-cash timing, reconciliation and total disclosed cost; leave unavailable terms unfilled.",
+            "Use one row per route and preserve unavailable commercial terms as UNKNOWN. No payment or customer-data access."
+          ],
+          "done": "READY; comparison specification recorded, execution pending."
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai Content and Visibility",
+          "title": "Publish The Weekend Settlement Gap",
+          "why": "This connects financial operations and systems design in a distinct editorial asset, with a practical question a merchant can understand.",
+          "steps": [
+            "Publish “The Weekend Settlement Gap” (Chinese working title, translated: “The Weekend Settlement Gap”) at [today's canonical Action Item](https://iamrobin.ai/ouroboros/202609/20260925/action_item/). Thesis: faster settlement creates value when it delivers usable, reconciled cash. Evidence spine: SoFi's plan-to-live change; four payment clocks; Visa and FedNow alternatives; a clearly hypothetical liquidity calculation; a bounded evidence sheet. Use the original SoFi, Mastercard, Visa and Federal Reserve sources. Archive a LinkedIn derivative with the four-clock diagram for Robin's manual distribution.",
+            "Complete five-source research, four authored editions, a conceptual diagram, ledger linkage and an archived LinkedIn derivative. Public delivery is verified separately."
+          ],
+          "done": "COMPLETE for the editorial artifact; delivery has separate release gates.",
+          "deepDiveTitle": "Publish The Weekend Settlement Gap"
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure, Career and Capital Projects",
+          "title": "Record the reported delay allocation",
+          "why": "Mapping energy delivery, rent commencement and debt service is an infrastructure underwriting and career skill; this reporting establishes no job opening.",
+          "steps": [
+            "Save one public-evidence delay-allocation dossier distinguishing the reported notice, each company's position and the missing contractual trigger; make no legal conclusion or private-project change.",
+            "Preserve the Reuters attribution and both company positions. The contract and trigger remain UNKNOWN; the private evidence router follows publication."
+          ],
+          "done": "READY; evidence-dossier assignment recorded, contractual determination UNKNOWN."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-Stage Private Markets",
+          "title": "Keep HEO at WATCH",
+          "why": "The round offers a capital-and-systems research case without establishing accessible allocation, profitable utilization or an arranged exit.",
+          "steps": [
+            "WATCH; change to INVESTIGATE only after repeatable GEO service, customer concentration, margin after sensor costs, financing terms and actual access are evidenced.",
+            "Require operating evidence and accessible terms before changing classification. No allocation, application or arranged exit is claimed."
+          ],
+          "done": "WATCHING; INVESTIGATE evidence threshold unpassed."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities and AI Themes",
+          "title": "Freeze a Micron pre-results card",
+          "why": "Memory economics need evidence on demand, supply commitments, margin and cash conversion rather than a share-price narrative alone.",
+          "steps": [
+            "Save a pre-results watch card that changes the thesis only on disclosed memory demand, binding supply commitments, margin and cash conversion, then compare it with the released figures after the call.",
+            "Record demand, binding commitments, margin and cash conversion questions before the call. Results remain unavailable until released."
+          ],
+          "done": "WATCHING; pre-results questions recorded, no earnings outcome assumed."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年9月25日",
+      "description": "八项有边界的行动，连接偏好、部署、资本与可用现金。",
+      "centralJudgment": "沿着责任追到合格成果。结算文章作为编辑成果已经完成；其余七项仍是提案或观察事项。生产上线或完成融资，都不等于后续检验已经完成。",
+      "fieldLine": "八个信号。明确责任。完成证据。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与代理",
+          "title": "定义偏好忠实度测试",
+          "why": "自主系统除了检验执行质量，也需要检验偏好理解是否忠实。",
+          "steps": [
+            "定义一个十选项的合成偏好测试，向代理隐藏主人排序，以两两排序一致率为验收指标；执行仍是提案，不授予交易权限。",
+            "先保存样本设计和两两排序一致率指标，再等待获授权测试；尚未运行合成测试。"
+          ],
+          "done": "READY；规格已记录，尚待执行。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI与机器人",
+          "title": "保留Atlas训练阶段分类",
+          "why": "这是现有人形机器人证据框架中的一项新观察，与昨天的全球销量口径不同。",
+          "steps": [
+            "保持训练阶段分类，直到客户披露一项可重复生产任务的合格产出、人工协助及完整运营成本。",
+            "要求一项可重复任务的合格产出、协助与完整成本；训练证据不能直接证明单位经济性。"
+          ],
+          "done": "WATCHING；保留生产证据条件。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流与Web3健康",
+          "title": "限定ETF资金流确认范围",
+          "why": "有日期的资金流观察可以更新资本图景，不必把它变成交易指令或组合业绩结论。",
+          "steps": [
+            "保持资金流确认观察项开放，等下一完整交易日，结合ETF流入广度与独立测量的链上活动比较；不能用ETF总额填补链上活动证据的空白。",
+            "保存有日期的资金流快照，并要求独立活动证据；仍是观察点，没有订单或组合操作。"
+          ],
+          "done": "WATCHING；等待下一完整交易日与活动证据。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币与支付轨道",
+          "title": "定义结算比较表",
+          "why": "支付经验有助于区分网络结算与企业真正能使用、对清现金的能力。",
+          "steps": [
+            "定义一张银行卡结算路径比较表，统一记录资格、备付、现金可用时间、对账及已披露总成本；未获得的条款留空。",
+            "每条路径一行，未披露商业条款保留UNKNOWN；不付款，不接触客户数据。"
+          ],
+          "done": "READY；比较规格已记录，尚待执行。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai内容与可见度",
+          "title": "发布周末结算的时间差",
+          "why": "这把金融运营与系统设计连成一份独立的编辑成果，并以商户能理解的问题开场。",
+          "steps": [
+            "在[今日行动文章正式路径](https://iamrobin.ai/ouroboros/202609/20260925/action_item/)发布“The Weekend Settlement Gap”，中文工作标题《周末结算的时间差》。论点：更快的结算，要转化为可用且已对清的现金，才创造价值。证据脉络：SoFi从计划到上线；四个支付时钟；Visa与FedNow替代路径；明确标为假设的流动性计算；有边界的证据表。使用SoFi、Mastercard、Visa与美联储原始资料，归档附四时钟图的LinkedIn衍生稿，留给Robin手动分发。",
+            "完成五来源研究、四语文章、概念图、台账链接与归档LinkedIn稿；公开交付单独核实。"
+          ],
+          "done": "编辑成果COMPLETE；交付另有发布关卡。",
+          "deepDiveTitle": "发布周末结算的时间差"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基础设施、职业与资本项目",
+          "title": "记录报道中的延迟责任",
+          "why": "梳理能源交付、起租与偿债的关系，是基础设施承销与职业能力；这则报道并不证明存在招聘岗位。",
+          "steps": [
+            "保存一份公开证据延迟责任档案，区分所报道的通知、双方公司立场与缺失的合同触发条件；不作法律结论，不修改私人项目。",
+            "保留Reuters归因及双方立场；合同与触发条件仍为UNKNOWN，发布后由私有证据路由处理。"
+          ],
+          "done": "READY；证据档案任务已记录，合同判断UNKNOWN。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私募市场",
+          "title": "HEO维持WATCH",
+          "why": "这轮融资提供资本与系统研究案例，却不证明可获得投资份额、利用率已盈利或退出已安排。",
+          "steps": [
+            "WATCH；只有可重复GEO服务、客户集中度、传感器成本后利润率、融资条款及实际参与渠道都有证据，才改为INVESTIGATE。",
+            "先获得运营证据与可参与条款，才改变分类；不代表取得份额、提交申请或安排退出。"
+          ],
+          "done": "WATCHING；尚未通过INVESTIGATE证据门槛。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场与AI主题",
+          "title": "固定Micron业绩前观察卡",
+          "why": "存储经济性需要需求、供应承诺、利润率和现金转化的证据，不能只靠股价叙事。",
+          "steps": [
+            "保存一张业绩前观察卡，只根据已披露的存储需求、具有约束力的供应承诺、利润率与现金转化调整论点，电话会后再与正式数字对照。",
+            "电话会前记录需求、约束性承诺、利润率及现金转化问题；结果在正式披露前仍不可得。"
+          ],
+          "done": "WATCHING；业绩前问题已记录，不预设结果。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年9月25日",
+      "description": "八項有邊界的行動，連接偏好、部署、資本與可用現金。",
+      "centralJudgment": "沿着責任追到合格成果。結算文章作為編輯成果已經完成；其餘七項仍是提案或觀察事項。生產上線或完成融資，都不等於後續檢驗已經完成。",
+      "fieldLine": "八個信號。明確責任。完成證據。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與代理",
+          "title": "定義偏好忠實度測試",
+          "why": "自主系統除了檢驗執行質量，也需要檢驗偏好理解是否忠實。",
+          "steps": [
+            "定義一個十選項的合成偏好測試，向代理隱藏主人排序，以兩兩排序一致率為驗收指標；執行仍是提案，不授予交易權限。",
+            "先保存樣本設計和兩兩排序一致率指標，再等待獲授權測試；尚未運行合成測試。"
+          ],
+          "done": "READY；規格已記錄，尚待執行。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI與機器人",
+          "title": "保留Atlas訓練階段分類",
+          "why": "這是現有人形機器人證據框架中的一項新觀察，與昨天的全球銷量口徑不同。",
+          "steps": [
+            "保持訓練階段分類，直到客戶披露一項可重複生產任務的合格產出、人工協助及完整運營成本。",
+            "要求一項可重複任務的合格產出、協助與完整成本；訓練證據不能直接證明單位經濟性。"
+          ],
+          "done": "WATCHING；保留生產證據條件。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本流與Web3健康",
+          "title": "限定ETF資金流確認範圍",
+          "why": "有日期的資金流觀察可以更新資本圖景，不必把它變成交易指令或組合業績結論。",
+          "steps": [
+            "保持資金流確認觀察項開放，等下一完整交易日，結合ETF流入廣度與獨立測量的鏈上活動比較；不能用ETF總額填補鏈上活動證據的空白。",
+            "保存有日期的資金流快照，並要求獨立活動證據；仍是觀察點，沒有訂單或組合操作。"
+          ],
+          "done": "WATCHING；等待下一完整交易日與活動證據。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣與支付軌道",
+          "title": "定義結算比較表",
+          "why": "支付經驗有助於區分網絡結算與企業真正能使用、對清現金的能力。",
+          "steps": [
+            "定義一張銀行卡結算路徑比較表，統一記錄資格、備付、現金可用時間、對賬及已披露總成本；未獲得的條款留空。",
+            "每條路徑一行，未披露商業條款保留UNKNOWN；不付款，不接觸客戶數據。"
+          ],
+          "done": "READY；比較規格已記錄，尚待執行。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai內容與可見度",
+          "title": "發佈週末結算的時間差",
+          "why": "這把金融運營與系統設計連成一份獨立的編輯成果，並以商戶能理解的問題開場。",
+          "steps": [
+            "在[今日行動文章正式路徑](https://iamrobin.ai/ouroboros/202609/20260925/action_item/)發佈“The Weekend Settlement Gap”，中文工作標題《週末結算的時間差》。論點：更快的結算，要轉化為可用且已對清的現金，才創造價值。證據脈絡：SoFi從計劃到上線；四個支付時鐘；Visa與FedNow替代路徑；明確標為假設的流動性計算；有邊界的證據表。使用SoFi、Mastercard、Visa與美聯儲原始資料，歸檔附四時鐘圖的LinkedIn衍生稿，留給Robin手動分發。",
+            "完成五來源研究、四語文章、概念圖、臺賬鏈接與歸檔LinkedIn稿；公開交付單獨核實。"
+          ],
+          "done": "編輯成果COMPLETE；交付另有發佈關卡。",
+          "deepDiveTitle": "發佈週末結算的時間差"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基礎設施、職業與資本項目",
+          "title": "記錄報道中的延遲責任",
+          "why": "梳理能源交付、起租與償債的關係，是基礎設施承銷與職業能力；這則報道並不證明存在招聘崗位。",
+          "steps": [
+            "保存一份公開證據延遲責任檔案，區分所報道的通知、雙方公司立場與缺失的合同觸發條件；不作法律結論，不修改私人項目。",
+            "保留Reuters歸因及雙方立場；合同與觸發條件仍為UNKNOWN，發佈後由私有證據路由處理。"
+          ],
+          "done": "READY；證據檔案任務已記錄，合同判斷UNKNOWN。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私募市場",
+          "title": "HEO維持WATCH",
+          "why": "這輪融資提供資本與系統研究案例，卻不證明可獲得投資份額、利用率已盈利或退出已安排。",
+          "steps": [
+            "WATCH；只有可重複GEO服務、客戶集中度、傳感器成本後利潤率、融資條款及實際參與渠道都有證據，才改為INVESTIGATE。",
+            "先獲得運營證據與可參與條款，才改變分類；不代表取得份額、提交申請或安排退出。"
+          ],
+          "done": "WATCHING；尚未通過INVESTIGATE證據門檻。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場與AI主題",
+          "title": "固定Micron業績前觀察卡",
+          "why": "存儲經濟性需要需求、供應承諾、利潤率和現金轉化的證據，不能只靠股價敘事。",
+          "steps": [
+            "保存一張業績前觀察卡，只根據已披露的存儲需求、具有約束力的供應承諾、利潤率與現金轉化調整論點，電話會後再與正式數字對照。",
+            "電話會前記錄需求、約束性承諾、利潤率及現金轉化問題；結果在正式披露前仍不可得。"
+          ],
+          "done": "WATCHING；業績前問題已記錄，不預設結果。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年9月25日",
+      "description": "八つの限定課題で好み、配備、資本、使える資金をつなぐ。",
+      "centralJudgment": "責任を検収可能な結果まで追う。決済の記事は編集成果として完成。他の七項目は提案または観察段階だ。稼働発表や調達完了は、その後の検証完了を意味しない。",
+      "fieldLine": "八つのシグナル。責任の所在。完了の証拠。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "フロンティアモデルとエージェント",
+          "title": "好みへの忠実度を試験設計",
+          "why": "自律システムには、実行品質とともに好みの理解が忠実かを測る試験が必要だ。",
+          "steps": [
+            "所有者の順位をエージェントに伏せた、十選択肢の合成選好テストを定義する。ペア別一致率を検収指標とし、実行は提案段階に留め、取引権限は与えない。",
+            "標本設計とペア別一致率を保存し、許可された試験を待つ。合成試験は未実施。"
+          ],
+          "done": "READY。仕様保存、実行待ち。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AIとロボティクス",
+          "title": "Atlasは訓練段階を維持",
+          "why": "昨日の世界販売台数の分母とは異なる、人型ロボット証拠枠組みに加える具体的な新観察だ。",
+          "steps": [
+            "顧客が、反復可能な生産作業一件について合格出力、人の補助、総運営費を開示するまで、訓練段階の分類を維持する。",
+            "反復作業の合格出力、人の補助、全費用を要求。訓練証拠は単位経済性を証明しない。"
+          ],
+          "done": "WATCHING。生産証拠条件を保持。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資金フローとWeb3",
+          "title": "ETF確認の範囲を限定",
+          "why": "日付のあるフローで資本状況を更新できる。売買指示や保有運用成績に変える必要はない。",
+          "steps": [
+            "次の完全な取引日を、ETF流入の広がりと独立に測定したオンチェーン活動の両方と比較できるまで、確認の観察項目を継続する。ETF合計から欠けた活動を推測しない。",
+            "日付付きフローを保存し、独立した活動証拠を要求。観察条件であり発注や保有変更はない。"
+          ],
+          "done": "WATCHING。次の完全な取引日と活動証拠を待つ。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコインと決済",
+          "title": "決済比較を定義",
+          "why": "決済実務の経験が、ネットワーク上の決済と企業が現金を使い照合する能力を分ける助けになる。",
+          "steps": [
+            "カード決済経路について、資格、事前資金、現金を使える時点、照合、開示総費用をそろえた比較表一枚を定義し、得られない条件は空欄にする。",
+            "経路ごとに一行を用い、未開示条件はUNKNOWN。支払いも顧客データ利用も行わない。"
+          ],
+          "done": "READY。比較仕様保存、実行待ち。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.aiの発信",
+          "title": "週末決済の記事を出版",
+          "why": "金融実務とシステム設計を結ぶ独自の記事であり、加盟店が理解できる実際的な問いから始められる。",
+          "steps": [
+            "「The Weekend Settlement Gap」（中国語作業題名「周末结算的时间差」）を[本日の正式アクション記事URL](https://iamrobin.ai/ouroboros/202609/20260925/action_item/)で公開する。主張は、高速決済が価値を生むのは、利用可能で照合済みの現金を届ける時だということ。構成はSoFiの計画から稼働への変化、四つの時計、VisaとFedNowの代替経路、明示的な仮定による流動性計算、範囲を限定した証拠表。SoFi、Mastercard、Visa、連邦準備銀行の原資料を用い、四時計図付きLinkedIn派生稿をRobinの手動配信用に保存する。",
+            "五資料、四言語、概念図、台帳、保存LinkedIn稿を完成。公開配信は別途確認。"
+          ],
+          "done": "編集成果はCOMPLETE。配信は別の公開検証へ。",
+          "deepDiveTitle": "週末決済の記事を出版"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラ、キャリアと資本",
+          "title": "報道された遅延責任を記録",
+          "why": "電力供給、賃料発生、債務返済の関係を整理する力はインフラ審査と職業能力に役立つ。この報道は求人の存在を示さない。",
+          "steps": [
+            "報道された通知、両社の立場、未取得の契約発動条件を分ける公開証拠の遅延責任資料を一件保存する。法的結論や非公開プロジェクトの変更は行わない。",
+            "Reutersの帰属と両社の立場を維持。契約と発動条件はUNKNOWN。公開後に非公開証拠ルーターへ渡す。"
+          ],
+          "done": "READY。証拠資料課題を記録。契約判断UNKNOWN。"
+        },
+        {
+          "signal": 7,
+          "domain": "レイトステージ未公開市場",
+          "title": "HEOはWATCHを維持",
+          "why": "資本とシステムの研究事例であり、投資枠へのアクセス、採算の取れる稼働率、確定した出口を示すものではない。",
+          "steps": [
+            "WATCH。反復可能なGEOサービス、顧客集中度、センサー費用後の利益率、調達条件、実際のアクセスに証拠がそろった時だけINVESTIGATEへ変更する。",
+            "運用証拠とアクセス可能な条件でのみ分類を変更。投資枠取得、申請、出口確定は主張しない。"
+          ],
+          "done": "WATCHING。INVESTIGATE証拠条件は未達。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開株式とAIテーマ",
+          "title": "Micron決算前カードを固定",
+          "why": "メモリーの経済性には需要、供給契約、利益率、現金化の証拠が必要で、株価の物語だけでは足りない。",
+          "steps": [
+            "開示されたメモリー需要、拘束力のある供給約束、利益率、現金化だけで仮説を変える決算前観察カードを保存し、説明会後に公表値と比較する。",
+            "説明会前に需要、拘束力ある約束、利益率、現金化の問いを記録。公表までは結果を利用できない。"
+          ],
+          "done": "WATCHING。決算前の問いを保存し、結果は仮定しない。"
+        }
+      ]
+    }
+  }
+}
