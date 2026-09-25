@@ -1,5 +1,5 @@
 ---
-archiveStatus: "PIPELINE"
+archiveStatus: PRESENT
 title: 快樂的退出之門
 date: 2026-09-25
 updated: 2026-08-21

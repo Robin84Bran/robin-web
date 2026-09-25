@@ -1,5 +1,5 @@
 ---
-archiveStatus: "PIPELINE"
+archiveStatus: PRESENT
 title: The Happy Exit Door
 date: 2026-09-25
 updated: 2026-08-21
