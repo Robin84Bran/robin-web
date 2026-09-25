@@ -16,11 +16,11 @@ export default defineConfig({
       filter: (page) => {
         const path = new URL(page).pathname;
         return [
-          '/', '/about/', '/network/', '/resonance/btc_probability_atlas/', '/resonance/eval/ai_berkshire/',
+          '/', '/about/', '/network/', '/asymmetry/btc_probability_atlas/', '/resonance/eval/ai_berkshire/',
           '/zh-hans/', '/zh-hans/about/', '/zh-hans/network/',
           '/zh-hant/', '/zh-hant/about/', '/zh-hant/network/',
           '/ja/', '/ja/about/', '/ja/network/',
-          '/intelligence/attention_all_you_need/', '/intelligence/aidc101/', '/intelligence/aidc101/101-1/', '/portfolio/', '/books/', '/meaning/', '/ouroboros/', '/ouroboros/execution-ledger/', '/binary/', '/binary/joy/hkipoblindbox/',
+          '/intelligence/attention_all_you_need/', '/intelligence/aidc101/', '/intelligence/aidc101/101-1/', '/portfolio/', '/books/', '/meaning/', '/ouroboros/', '/ouroboros/execution-ledger/', '/binary/', '/asymmetry/hkipoblindbox/',
         ].includes(path)
           || (modelOlympicsPublic && path === '/asymmetry/model-olympics/')
           || /^\/intelligence\/swarm-lab\/(?:cell-city\/|self-assembly\/|mars-jar\/|memory-islands\/|known-trap\/|attention-windows\/|taste-drift\/|shared-channel\/)?$/.test(path)

@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "effectiveDate": "2026-09-25",
+  "timezone": "Asia/Hong_Kong",
+  "dailyStart": "08:00",
+  "sourceMode": "autonomous_research",
+  "specialsPerWeek": 4,
+  "specialWeekdays": [0, 1, 3, 5],
+  "carouselPages": [6, 12],
+  "monthlyTasteReview": true,
+  "weeklyIntelligence": true,
+  "asymmetryAutonomous": false,
+  "interests": ["swarm", "emergence", "agents", "iSunTV", "OPC", "financial infrastructure", "stablecoin", "payments", "Web3", "Web4"]
+}

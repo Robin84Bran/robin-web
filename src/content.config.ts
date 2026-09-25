@@ -19,7 +19,7 @@ const dailyBriefing = defineCollection({
     author: z.url(),
     inLanguage: z.string(),
     draft: z.boolean().default(false),
-    sourceMode: z.enum(['scheduled_chatgpt', 'telegram_robin_source', 'fallback_research']),
+    sourceMode: z.enum(['scheduled_chatgpt', 'telegram_robin_source', 'fallback_research', 'autonomous_research']),
     fallbackReason: z.string().optional(),
   }),
 });
@@ -43,7 +43,7 @@ const dailyBriefingTranslation = defineCollection({
     languageSlug: z.enum(['zh-hans', 'zh-hant', 'ja']),
     translationOf: z.url(),
     draft: z.boolean().default(false),
-    sourceMode: z.enum(['scheduled_chatgpt', 'telegram_robin_source', 'fallback_research']),
+    sourceMode: z.enum(['scheduled_chatgpt', 'telegram_robin_source', 'fallback_research', 'autonomous_research']),
     fallbackReason: z.string().optional(),
   }),
 });

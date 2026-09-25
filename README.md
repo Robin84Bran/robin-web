@@ -42,7 +42,27 @@ The detailed About biography and other language editions retain their existing
 editorial content. Regenerate `llms.txt` with `pnpm run robots:sync` after editing
 `src/data/robot-welcome.json`.
 
-## Local preview
+## Autonomous publishing
+
+The September 25 operating contract promotes primary-source research to the
+08:00 HKT daily run. Ouroboros retains eight signals, the Action Flow and Signal
+5 deep dive. Specials are selected autonomously, targeting at least four
+verified issues per ISO week; completed Specials feed BUILD/INVEST/JOY stories
+and 6–12-page carousel downloads. Monthly taste reviews and weekly Intelligence
+simulations share the existing private bot's resumable job ledger.
+
+See [operating and verification contract](scripts/autonomy/README.md).
+The scripts are source mirrors; Cloudflare serves static content, not the
+private research worker. No private chats, preferences, bot state or credentials
+are bundled. PDF delivery does not imply a LinkedIn post. Only verified
+artifacts count as complete; scheduling policy does not prove weekly output.
+
+BTC Probability Atlas and the HK IPO Blind Box now belong to Asymmetry:
+`/asymmetry/btc_probability_atlas/` and `/asymmetry/hkipoblindbox/`.
+Old bookmarks redirect permanently; the Atlas's existing data/asset URLs remain
+compatible. These remain research/manual systems, with no new trading authority.
+
+## Local preview commands
 
 ```sh
 pnpm install

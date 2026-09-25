@@ -17,6 +17,7 @@ const { entry, index, previous, next } = Astro.props;
 const isPressDirectory = entry.slug === 'network';
 const isOuroborosDirectory = entry.slug === 'ouroboros';
 const isBinaryDirectory = entry.slug === 'binary';
+const isAsymmetryDirectory = entry.slug === 'asymmetry';
 const isMeaningDirectory = entry.slug === 'meaning';
 const briefings = isOuroborosDirectory
   ? (await getCollection('dailyBriefing', ({ data }) => !data.draft)).sort(
@@ -38,9 +39,9 @@ const specialEntries = isOuroborosDirectory
       .sort((a, b) => b.data.date.getTime() - a.data.date.getTime() || Number(Boolean(b.data.editionSlug)) - Number(Boolean(a.data.editionSlug)))
   : [];
 const blogLanes = [
-  { key: 'BUILD', name: 'Build', cadence: 'Monday · systems into reality' },
-  { key: 'INVEST', name: 'Invest', cadence: 'Wednesday · signals into judgment' },
-  { key: 'JOY', name: 'Joy', cadence: 'Friday · curiosity into meaning' },
+  { key: 'BUILD', name: 'Build', cadence: 'Systems into reality' },
+  { key: 'INVEST', name: 'Invest', cadence: 'Signals into judgment' },
+  { key: 'JOY', name: 'Joy', cadence: 'Curiosity into meaning' },
 ] as const;
 const diaryEntries = isMeaningDirectory
   ? (await getCollection('diary', ({ data }) => !data.draft && (!data.originalLanguage || data.inLanguage === data.originalLanguage))).sort(
@@ -79,7 +80,7 @@ const binarySchemas = isBinaryDirectory
         '@type': 'CollectionPage',
         '@id': 'https://iamrobin.ai/binary/#blog',
         name: 'Binary · Blog — Robin Xie',
-        description: 'Robin Xie’s Build, Invest, and Joy essays, published on a Monday, Wednesday, Friday rhythm.',
+        description: 'Robin Xie’s Build, Invest, and Joy stories, growing from research and experiments.',
         url: 'https://iamrobin.ai/binary/',
         inLanguage: 'en',
         author: { '@id': 'https://www.tideisun.com/robin#robin-xie' },
@@ -200,13 +201,13 @@ const meaningSchemas = isMeaningDirectory
                   </a>
                 ))}
               </nav>
-            ) : <p class="special-empty">An occasional research map, comparison or evidence note, selected by Robin after the daily publications. No selection means no Special. The first verified artifact will appear here.</p>}
+            ) : <p class="special-empty">Source-verified research into the questions worth following. Published artifacts appear here after verification.</p>}
           </details>
         </section>
       ) : isBinaryDirectory ? (
         <section class="ouroboros-library binary-library" aria-label="Binary Blog archive">
           <header class="binary-library__heading">
-            <span aria-hidden="true">M · W · F</span>
+            <span aria-hidden="true">Research → story</span>
             <h2>Blog</h2>
             <em>Build · Invest · Joy</em>
           </header>
@@ -222,15 +223,6 @@ const meaningSchemas = isMeaningDirectory
                     <h3 id={`binary-lane-${lane.key.toLowerCase()}`}>{lane.name}</h3>
                     <em>{lane.cadence}</em>
                   </header>
-                  {lane.key === 'JOY' && (
-                    <nav class="ouroboros-shelf__list binary-experiment" aria-label="Joy ongoing experiments">
-                      <a href="/binary/joy/hkipoblindbox/">
-                        <span>Ongoing experiment</span>
-                        <strong>The HK IPO Blind Box</strong>
-                        <span aria-hidden="true">→</span>
-                      </a>
-                    </nav>
-                  )}
                   {present.length ? (
                     <nav class="ouroboros-shelf__list binary-present" aria-label={`${lane.name} present articles`}>
                       {present.map((article) => {
@@ -334,7 +326,11 @@ const meaningSchemas = isMeaningDirectory
         </section>
       ) : (
         <ul>
-          {entry.slug === 'resonance' && <li><span></span><a href="/resonance/btc_probability_atlas/">BTC Probability Atlas · 概率图谱 →</a></li>}
+          {isAsymmetryDirectory && <>
+            <li><span></span><a href="/asymmetry/btc_probability_atlas/">BTC Probability Atlas · 概率图谱 →</a></li>
+            <li><span></span><a href="/asymmetry/hkipoblindbox/">The HK IPO Blind Box →</a></li>
+            <li class="directory-future">Capital simulations and model comparisons. Research only; human judgment remains in the loop.</li>
+          </>}
           {entry.projects.map((project) => project === 'Model Olympics' ? <li><span></span><a href="/asymmetry/model-olympics/">{project} →</a></li> : <li><span></span>{project}</li>)}
           <li class="directory-future"><span></span>more, as it becomes</li>
         </ul>
