@@ -23,7 +23,7 @@ Units: US$ million. Parentheses in the source mean negative values. A dash is pr
 
 Seven numeric cells, five missing cells; numeric-cell coverage = 7/12 = 58.3%, rounded. This is a count, not an asset-weighted coverage measure. The available-cell sum and displayed Total both equal -11.8. Their agreement does not prove a complete day.
 
-Comparison row: September 24 had twelve numeric cells. Its nonzero entries were IBIT +162.6, FBTC +12.9, BITB +4.1, EZBC +4.9, BTCW -4.0 and MSBT +10.2. The other six entries were 0.0. Sum = +190.7, agreeing with the displayed total at the displayed precision. Six positive funds, one negative, five zero. This does not certify the row against underlying issuer reports or rule out later corrections.
+Comparison row: September 24 had twelve numeric cells. Its nonzero entries were IBIT +162.6, FBTC +12.9, BITB +4.1, EZBC +4.9, BTCW -4.0 and MSBT +10.2. The other six entries were 0.0. Sum = +190.7, agreeing with the displayed total at the displayed precision. Five positive funds, one negative, six zero. This does not certify the row against underlying issuer reports or rule out later corrections.
 
 ## A second observation during preparation
 

@@ -18,7 +18,7 @@ draft: false
 translationReview: PASS
 sourceSignal: 3
 researchScope: "核對兩次比特幣 ETF 資金流快照，區分基金流量、份額交易與網絡使用。"
-artifactSha256: e55d2a5b2f892ac8fc1101b670c30646c8afe145fa2e9cc6c3d2ebefeb5f583a
+artifactSha256: 02378f7c7fcef1a2ef1db4588109cf1d0f37833dd802bd003d89cbe736426a07
 evidenceSources: ["https://farside.co.uk/btc/", "https://www.finra.org/investors/investing/investment-products/exchange-traded-funds-and-products", "https://www.sec.gov/newsroom/press-releases/2025-101-sec-permits-kind-creations-redemptions-crypto-etps", "https://docs.coinmetrics.io/network-data/network-data-overview/transactions/transfer-value", "https://github.com/coinmetrics/docs-website/blob/master/asset-metrics/asset-metrics-faqs.md"]
 ---
 
