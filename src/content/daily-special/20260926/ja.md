@@ -18,7 +18,7 @@ draft: false
 translationReview: PASS
 sourceSignal: 3
 researchScope: "ビットコインETFの二つの観察記録を照合し、資金フロー、持分の売買、ネットワーク利用を分けて読む。"
-artifactSha256: e55d2a5b2f892ac8fc1101b670c30646c8afe145fa2e9cc6c3d2ebefeb5f583a
+artifactSha256: 02378f7c7fcef1a2ef1db4588109cf1d0f37833dd802bd003d89cbe736426a07
 evidenceSources: ["https://farside.co.uk/btc/", "https://www.finra.org/investors/investing/investment-products/exchange-traded-funds-and-products", "https://www.sec.gov/newsroom/press-releases/2025-101-sec-permits-kind-creations-redemptions-crypto-etps", "https://docs.coinmetrics.io/network-data/network-data-overview/transactions/transfer-value", "https://github.com/coinmetrics/docs-website/blob/master/asset-metrics/asset-metrics-faqs.md"]
 ---
 
