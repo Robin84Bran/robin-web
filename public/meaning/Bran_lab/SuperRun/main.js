@@ -381,7 +381,7 @@
       },
       platforms: level.platforms.map((item) => ({ ...item })),
       hazards: level.hazards.map((item) => ({ ...item, baseX: item.x, baseY: item.y, t: Math.random() * Math.PI * 2 })),
-      enemies: level.enemies.map((item, index) => createEnemy(item, index)),
+      enemies: level.enemies.map((item, index) => createEnemy(item, index, level.platforms)),
       powerups: level.powerups.map((item, index) => ({ ...item, collected: false, bob: index * 0.8 })),
       stars: level.stars.map((item, index) => ({ ...item, collected: false, bob: index * 0.7, vx: 0, vy: 0 })),
       stations: level.stations.map((item, index) => ({ ...item, used: false, pulse: index * 0.9 })),
@@ -389,9 +389,9 @@
     };
   }
 
-  function createEnemy(entry, index) {
+  function createEnemy(entry, index, platforms) {
     const def = ENEMY_ROSTER[entry.enemyId];
-    return {
+    const enemy = {
       ...entry,
       ...def,
       x: entry.x,
@@ -413,6 +413,7 @@
       damageFlash: 0,
       bob: Math.random() * Math.PI * 2
     };
+    return ['fly_wave', 'thread_drop'].includes(enemy.behavior) ? enemy : BranPlatform.groundEnemy(enemy, platforms);
   }
 
   function loop(now) {
@@ -584,7 +585,7 @@
     }
 
     if (player.ammo <= 0) {
-      showToast("Out of ammo. Find a knowledge crystal.");
+      openChallenge(world, { category: "math", difficulty: Math.min(5, Math.ceil(world.level.id / 2)), reward: "extra_ammo", emergency: true, x: player.x, y: player.y });
       playTone(180, 0.08, "sawtooth", 0.04);
       return;
     }
@@ -721,6 +722,7 @@
       if (!enemy.alive) {
         return;
       }
+      if (enemy.home) BranPlatform.keepEnemyInArena(enemy, world.level.height);
 
       enemy.damageFlash = Math.max(0, enemy.damageFlash - dt);
       enemy.shootTimer -= dt;
@@ -800,15 +802,10 @@
     const oldY = enemy.y;
     enemy.x += enemy.vx * dt;
     resolvePlatformCollisions(enemy, platforms, oldX, oldY, "x");
-    if (enemy.x < enemy.patrolMin || enemy.x + enemy.w > enemy.patrolMax) {
-      enemy.dir *= -1;
-    }
+    BranPlatform.keepEnemyInArena(enemy, Infinity);
     enemy.y += enemy.vy * dt;
     enemy.grounded = false;
     resolvePlatformCollisions(enemy, platforms, oldX, oldY, "y");
-    if (!enemy.grounded) {
-      enemy.dir *= -1;
-    }
   }
 
   function updateFlyEnemy(enemy, dt) {
@@ -977,9 +974,9 @@
     }
 
     state.activePrompt = { item, question };
-    refs.challengeCategory.textContent = `${capitalize(item.category)} Crystal`;
+    refs.challengeCategory.textContent = item.emergency ? "Out of ammo · Math recharge" : `${capitalize(item.category)} Crystal`;
     refs.challengePrompt.textContent = question.prompt;
-    refs.challengeReward.textContent = `Correct answer: full ammo and ${POWERUP_ROSTER[item.reward].name}.`;
+    refs.challengeReward.textContent = item.emergency ? "Solve to refill your ammo and keep going." : `Correct answer: full ammo and ${POWERUP_ROSTER[item.reward].name}.`;
     refs.challengeChoices.innerHTML = "";
     question.choices.forEach((choice, index) => {
       const button = document.createElement("button");
@@ -1022,10 +1019,12 @@
 
     if (correct) {
       world.player.ammo = world.player.maxAmmo;
-      applyPowerUp(item.reward);
-      world.score += 135 + item.difficulty * 12;
-      world.correctAnswers += 1;
-      showToast(`Correct! ${POWERUP_ROSTER[item.reward].name} awarded.`);
+      if (!item.emergency) {
+        applyPowerUp(item.reward);
+        world.score += 135 + item.difficulty * 12;
+        world.correctAnswers += 1;
+      }
+      showToast(item.emergency ? "Ammo refilled. Keep going!" : `Correct! ${POWERUP_ROSTER[item.reward].name} awarded.`);
       spawnBurst(world, item.x + 16, item.y - 10, POWERUP_ROSTER[item.reward].color, 16, 240);
       playTone(620, 0.12, "triangle", 0.05);
     } else {
@@ -1192,7 +1191,8 @@
     const missionFill = document.getElementById('missionFill');
     if (missionFill) missionFill.style.width = `${clamp(state.world.player.x / state.world.level.finish.x * 100, 0, 100)}%`;
     const missionText = document.getElementById('missionText');
-    if (missionText) missionText.textContent = `Brain boosts ${state.world.correctAnswers}/${state.world.totalStations} · ${state.world.checkpointsReached} checkpoints${state.world.player.awaitingMove ? " · Move or jump to continue" : ""}`;
+    const bossHint = BranPlatform.bossHint(state.world);
+    if (missionText) missionText.textContent = `${bossHint}${bossHint ? " · " : ""}Brain boosts ${state.world.correctAnswers}/${state.world.totalStations} · ${state.world.checkpointsReached} checkpoints${state.world.player.awaitingMove ? " · Move or jump to continue" : ""}`;
   }
 
   function render(time) {
