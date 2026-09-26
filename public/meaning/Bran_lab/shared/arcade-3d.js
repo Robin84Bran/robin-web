@@ -191,11 +191,12 @@
       if (visible(g)) {
         const x = (g.x + g.w / 2) / S, y = -(g.y + g.h / 2) / S;
         mesh('portal', 'ring', locked ? '#ff937e' : '#59f2d4', x, y, 0.5, g.w / S, g.h / S, 2, true);
-        label('portalLabel', locked ? 'CLEAR THE BOSS' : 'FINISH', x, y + g.h / S / 2 + 0.5, 0.5, kind === 'dash' ? '#d7fff1' : '#225d57', 2.5);
+        label('portalLabel', locked ? window.BranPlatform.bossHint(world) : 'FINISH', x, y + g.h / S / 2 + 0.5, 0.5, kind === 'dash' ? '#d7fff1' : '#225d57', 2.5);
       }
       world.enemies.forEach((o, i) => {
         if (!o.alive || !visible(o)) return;
         robot('enemy' + i, (o.x + o.w / 2) / S, -(o.y + o.h) / S, 0.65, o.w / S, o.h / S, o.freeze > 0 ? '#98eaff' : (o.colors?.body || (o.type === 'boss' ? '#bc86f5' : '#f58182')), time, Math.abs(o.vx || 0) > 1, o.dir);
+        if (o.type === 'boss' || o.behavior?.startsWith('boss')) label('bossLabel' + i, 'BOSS', (o.x + o.w / 2) / S, -o.y / S + 1, 1, kind === 'dash' ? '#ffffff' : '#225d57', 1.5);
         if (o.maxHp > 1) {
           mesh('hpbase' + i, 'box', '#24374d', (o.x + o.w / 2) / S, -o.y / S + 0.4, 1, o.w / S, 0.1, 0.05);
           mesh('hp' + i, 'box', '#8bf3c8', (o.x + o.w * o.hp / o.maxHp / 2) / S, -o.y / S + 0.4, 1.04, Math.max(0.01, o.w / S * o.hp / o.maxHp), 0.1, 0.05);

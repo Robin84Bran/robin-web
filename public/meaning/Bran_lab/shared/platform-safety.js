@@ -33,5 +33,43 @@
     if (!best) throw new Error('This level needs a safe checkpoint surface.');
     return { x: best.x, y: best.y };
   }
-  window.BranPlatform = Object.freeze({ safeSpawn });
+
+  // Enemy level data is approximate artwork placement; feet must start on solid ground.
+  function groundEnemy(enemy, platforms) {
+    let best = null;
+    for (const platform of platforms) {
+      if (platform.axis || platform.w < enemy.w + 4) continue;
+      const min = platform.x + 2, max = platform.x + platform.w - enemy.w - 2;
+      const x = Math.max(min, Math.min(max, enemy.x));
+      const y = platform.y - enemy.h;
+      if (platforms.some(p => p !== platform && overlaps({ x, y, w: enemy.w, h: enemy.h }, p))) continue;
+      const score = Math.abs(x - enemy.x) + Math.abs(y - enemy.y) * 2;
+      if (!best || score < best.score) best = { x, y, min, max, score };
+    }
+    if (!best) throw new Error('A ground enemy needs a supported arena.');
+    let min = Math.max(best.min, enemy.patrolMin ?? best.min);
+    let max = Math.min(best.max, (enemy.patrolMax ?? best.max + enemy.w) - enemy.w);
+    if (min > max) { min = best.min; max = best.max; }
+    Object.assign(enemy, { x: Math.max(min, Math.min(max, best.x)), y: best.y, vy: 0, grounded: true, patrolMin: min, patrolMax: max + enemy.w });
+    enemy.home = { x: enemy.x, y: enemy.y };
+    return enemy;
+  }
+  function keepEnemyInArena(enemy, height) {
+    if (enemy.x < enemy.patrolMin || enemy.x + enemy.w > enemy.patrolMax) {
+      enemy.x = Math.max(enemy.patrolMin, Math.min(enemy.patrolMax - enemy.w, enemy.x));
+      enemy.dir = enemy.x <= enemy.patrolMin ? 1 : -1;
+    }
+    if (enemy.home && (!Number.isFinite(enemy.y) || enemy.y > height + 100)) {
+      Object.assign(enemy, enemy.home, { vx: 0, vy: 0, grounded: true });
+    }
+  }
+  function bossHint(world) {
+    const boss = world.enemies.find(e => e.alive && (e.type === 'boss' || e.behavior?.startsWith('boss')));
+    if (!world.level.finish.lockedByBoss) return '';
+    if (!boss) return 'Finish unlocked';
+    const dx = boss.x - world.player.x, dy = boss.y - world.player.y;
+    const direction = [Math.abs(dy) > 140 ? (dy > 0 ? 'below ↓' : 'above ↑') : '', Math.abs(dx) > 180 ? (dx > 0 ? 'right →' : 'left ←') : ''].filter(Boolean).join(' · ');
+    return `Boss ${direction || 'in this arena'} · ${boss.hp} HP`;
+  }
+  window.BranPlatform = Object.freeze({ safeSpawn, groundEnemy, keepEnemyInArena, bossHint });
 })();

@@ -384,7 +384,7 @@
       hazards: source.hazards.map((hazard) => ({ ...hazard, baseX: hazard.x, baseY: hazard.y, t: Math.random() * Math.PI * 2 })),
       stations: source.stations.map((station, index) => ({ ...station, used: false, pulse: index * 0.7 })),
       checkpoints: source.checkpoints.map((checkpoint) => ({ ...checkpoint, active: false })),
-      enemies: source.enemies.map((enemy, index) => createEnemy(enemy, index))
+      enemies: source.enemies.map((enemy, index) => createEnemy(enemy, index, platforms))
     };
 
     return world;
@@ -394,7 +394,7 @@
     return world.enemies.some((enemy) => enemy.type === "boss" && enemy.alive);
   }
 
-  function createEnemy(enemy, index) {
+  function createEnemy(enemy, index, platforms) {
     const base = {
       ...enemy,
       w: enemy.type === "boss" ? 92 : enemy.type === "drone" ? 44 : 48,
@@ -411,7 +411,7 @@
       alive: true,
       damageFlash: 0
     };
-    return base;
+    return ['walker', 'boss'].includes(base.type) ? BranPlatform.groundEnemy(base, platforms) : base;
   }
 
   function loop(now) {
@@ -574,7 +574,7 @@
     }
 
     if (player.ammo <= 0) {
-      showToast("Out of ammo. Hit a recharge station!");
+      openChallenge(world, { category: "math", difficulty: Math.min(5, Math.ceil(world.level.id / 2)), emergency: true, x: player.x, y: player.y });
       playTone(180, 0.09, "sawtooth", 0.04);
       return;
     }
@@ -670,13 +670,12 @@
       enemy.shootTimer -= dt;
 
       if (enemy.type === "walker" || enemy.type === "boss") {
+        BranPlatform.keepEnemyInArena(enemy, world.level.height);
         const speed = enemy.type === "boss" ? 110 : 82;
         enemy.vx = speed * enemy.dir;
         enemy.vy += GRAVITY * dt;
         enemy.x += enemy.vx * dt;
-        if (enemy.x < enemy.patrolMin || enemy.x + enemy.w > enemy.patrolMax) {
-          enemy.dir *= -1;
-        }
+        BranPlatform.keepEnemyInArena(enemy, world.level.height);
 
         const oldY = enemy.y;
         enemy.y += enemy.vy * dt;
@@ -876,7 +875,7 @@
 
     state.activePrompt = { station, question };
     showScreen("challenge");
-    challengeCategory.textContent = `${capitalize(station.category)} Recharge`;
+    challengeCategory.textContent = station.emergency ? "Out of ammo · Math recharge" : `${capitalize(station.category)} Recharge`;
     challengePrompt.textContent = question.prompt;
     challengeChoices.innerHTML = "";
 
@@ -910,11 +909,13 @@
 
     if (correct) {
       world.player.ammo = world.player.maxAmmo;
-      world.player.shield = Math.min(2, world.player.shield + 1);
-      world.player.reloadBoost = 2.6;
-      world.score += 120 + question.difficulty * 15;
-      world.correctAnswers += 1;
-      showToast("Recharge perfect: full ammo + shield.");
+      if (!station.emergency) {
+        world.player.shield = Math.min(2, world.player.shield + 1);
+        world.player.reloadBoost = 2.6;
+        world.score += 120 + question.difficulty * 15;
+        world.correctAnswers += 1;
+      }
+      showToast(station.emergency ? "Ammo refilled. Keep going!" : "Recharge perfect: full ammo + shield.");
       playTone(620, 0.12, "triangle", 0.05);
       spawnImpactParticles(world, station.x + 16, station.y - 12, "#2fc992", 16, 240);
     } else {
@@ -1014,7 +1015,8 @@
     const missionFill = document.getElementById('missionFill');
     if (missionFill) missionFill.style.width = `${clamp(state.world.player.x / state.world.level.finish.x * 100, 0, 100)}%`;
     const missionText = document.getElementById('missionText');
-    if (missionText) missionText.textContent = `Brain boosts ${state.world.correctAnswers}/${state.world.totalStations} · ${state.world.checkpointsReached} checkpoints${state.world.player.awaitingMove ? " · Move or jump to continue" : ""}`;
+    const bossHint = BranPlatform.bossHint(state.world);
+    if (missionText) missionText.textContent = `${bossHint}${bossHint ? " · " : ""}Brain boosts ${state.world.correctAnswers}/${state.world.totalStations} · ${state.world.checkpointsReached} checkpoints${state.world.player.awaitingMove ? " · Move or jump to continue" : ""}`;
   }
 
   function renderScene(time) {

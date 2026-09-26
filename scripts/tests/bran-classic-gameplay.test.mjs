@@ -10,7 +10,7 @@ function runtime(game) {
   c.window=c;vm.createContext(c);
   for(const file of ['shared/platform-safety.js','shared/grade4-questions.js',...(game==='SuperRun'?['SuperRun/enemies.js','SuperRun/powerups.js','SuperRun/questions.js','SuperRun/levels.js']:['GeoDash/questions.js','GeoDash/data.js'])])vm.runInContext(readFileSync(new URL(file,root),'utf8'),c);
   // Expose closure state only in this test VM; no debug mutation API is shipped.
-  const code=readFileSync(new URL(`${game}/main.js`,root),'utf8').replace(/\}\)\(\);\s*$/, 'window.qa={state,startLevel,updateWorld,updateCheckpoints,loseLife,takePlayerHit,onKeyDown,updatePlayer,updateFinish,rectsOverlap};})();');
+  const code=readFileSync(new URL(`${game}/main.js`,root),'utf8').replace(/\}\)\(\);\s*$/, 'window.qa={state,startLevel,updateWorld,updateCheckpoints,loseLife,takePlayerHit,onKeyDown,updatePlayer,updateFinish,rectsOverlap,updateEnemies,attemptShoot,resolveChallenge};})();');
   vm.runInContext(code,c);c.qa.state.save.settings.sound=false;return c;
 }
 for(const game of ['SuperRun','GeoDash'])test(`${game}: every checkpoint survives repeated falls, held keys, and auto movement`,()=>{
@@ -99,5 +99,43 @@ for (const game of ['SuperRun', 'GeoDash']) test(`${game}: every finish is reach
    if(q.state.screen==='result')break;
   }
   assert.equal(q.state.screen,'result',`${game} level ${li+1}: touching the gate must complete the level`);
+ }
+});
+
+for (const game of ['SuperRun', 'GeoDash']) test(`${game}: ground enemies stay supported and every boss can be defeated with repeatable ammo recharge`, () => {
+ const c=runtime(game),q=c.qa,levels=vm.runInContext('LEVELS',c);
+ for(let li=0;li<levels.length;li++) {
+  q.startLevel(li);let w=q.state.world;
+  const supported=e=>w.platforms.some(p=>Math.abs(e.y+e.h-p.y)<.01&&e.x>=p.x&&e.x+e.w<=p.x+p.w);
+  for(const e of w.enemies.filter(e=>e.home)) assert(supported(e),`${game} level ${li+1}: supported enemy spawn`);
+  for(let tick=0;tick<3600;tick++){q.updateEnemies(w,1/60);w.enemyBullets=[];}
+  for(const e of w.enemies.filter(e=>e.home)) {
+   assert(e.y<w.level.height,`${game} level ${li+1}: enemy fell out of world`);
+   assert(e.x>=e.patrolMin-.01&&e.x+e.w<=e.patrolMax+.01);
+  }
+  const isBoss=e=>e.type==='boss'||e.behavior?.startsWith('boss');
+  if(!w.enemies.some(isBoss))continue;
+  q.startLevel(li);w=q.state.world;const boss=w.enemies.find(isBoss),p=w.player;
+  // Recover an escaped boss without replenishing its health or unlocking the gate.
+  boss.hp--;const hp=boss.hp;
+  Object.assign(p,{x:w.level.finish.x,y:w.level.finish.y});q.updateFinish(w);assert.notEqual(q.state.screen,'result','a living boss must keep the gate locked');
+  boss.y=w.level.height+200;q.updateEnemies(w,1/60);
+  assert.equal(boss.hp,hp);assert(boss.alive&&supported(boss));assert(!w.bossCleared);
+  const arena=w.platforms.find(t=>Math.abs(boss.y+boss.h-t.y)<.01&&boss.x>=t.x&&boss.x+boss.w<=t.x+t.w);
+  Object.assign(p,{x:arena.x+arena.w-p.w-8,y:arena.y-p.h,vx:0,vy:0,grounded:true,invuln:999,ammo:0,facing:-1});
+  q.state.keys={};let reloads=0,initialLives=p.lives;
+  for(let tick=0;tick<1800&&boss.alive;tick++) {
+   if(p.shootCooldown<=0)q.attemptShoot(w);
+   if(q.state.screen==='challenge') {
+    assert.equal(p.ammo,0);assert(q.state.activePrompt.item?.emergency||q.state.activePrompt.station?.emergency);
+    const score=w.score,correct=w.correctAnswers;
+    q.resolveChallenge(false);assert.equal(q.state.screen,'challenge');
+    q.resolveChallenge(true);assert.equal(p.ammo,p.maxAmmo);assert.equal(w.score,score);assert.equal(w.correctAnswers,correct);reloads++;
+   }
+   q.updateWorld(1/60);
+  }
+  assert(!boss.alive,`${game} level ${li+1}: real shots must defeat the boss`);
+  assert(w.bossCleared);assert(reloads>=1);assert.equal(p.lives,initialLives);
+  Object.assign(p,{x:w.level.finish.x,y:w.level.finish.y,awaitingMove:false});q.updateFinish(w);assert.equal(q.state.screen,'result');
  }
 });
