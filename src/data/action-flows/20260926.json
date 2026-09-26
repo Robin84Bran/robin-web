@@ -1,0 +1,507 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-26",
+  "updated": "2026-09-26",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20260926/hero.webp",
+  "actionHero": "/action-item/20260926/hero.webp",
+  "ogImage": "/daily-briefing/20260926/og.webp",
+  "briefingPath": "/ouroboros/202609/20260926/",
+  "actionItemPath": "/ouroboros/202609/20260926/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "Liquid AI release",
+          "url": "https://huggingface.co/blog/liquidai/lfm2-5-vl-dspark"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "Cognex announcement",
+          "url": "https://investor.cognex.com/news/news-details/2026/Cognex-to-Acquire-RealSense-Expanding-Machine-Vision-Leadership-into-High-Growth-Robotic-Perception-Market/default.aspx"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Farside Bitcoin ETF table",
+          "url": "https://farside.co.uk/btc/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "Federal Reserve release",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260924a.htm"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "sources": [
+        {
+          "label": "Google test update",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/google-project-suncatcher-facts/"
+        },
+        {
+          "label": "today's canonical Action Item",
+          "url": "https://iamrobin.ai/ouroboros/202609/20260926/action_item/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "Google test update",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/google-project-suncatcher-facts/"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Confido announcement",
+          "url": "https://www.confidotech.com/blogs/confido-raises-55m-series-b-to-scale-the-ai-operating-system-for-cpg-brands"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Jabil schedule",
+          "url": "https://investors.jabil.com/news/news-details/2026/Jabil-Announces-Date-for-Fourth-Quarter-and-Fiscal-Year-2026-Earnings-Release-and-Investor-Briefing/default.aspx"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, September 26, 2026",
+      "description": "Eight bounded actions distinguish a useful system from its headline inputs.",
+      "centralJudgment": "Measure the whole job. The thermal essay and its idealized calculation are complete editorial artifacts. Proposed evaluations and diligence remain unexecuted; incomplete flows and future results stay open.",
+      "fieldLine": "Eight signals. Defined work. Honest completion.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Specify a paired image test",
+          "why": "Local visual agents could help an OPC, but faster generation alone does not establish a cheaper reliable workflow.",
+          "steps": [
+            "Record a paired ten-image evaluation specification comparing total latency and accepted answers with drafting on and off; execution remains pending, with no private images or production-routing change.",
+            "Keep the source date and attribution with each observation. Record completion only when the stated evidence exists."
+          ],
+          "done": "READY; a ten-image specification is recorded; no benchmark executed."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "Save a perception supplier card",
+          "why": "This gives the robotics thesis a component-level decision object, distinct from humanoid shipment counts.",
+          "steps": [
+            "Save a perception-supplier diligence card requiring closing confirmation, customer retention and gross-margin evidence before upgrading commercial confidence.",
+            "Keep the source date and attribution with each observation. Record completion only when the stated evidence exists."
+          ],
+          "done": "READY; card records three evidence requirements; closing and economics unverified."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows and Web3 Health",
+          "title": "Retain the incomplete-flow watchpoint",
+          "why": "The preceding ETF narrative should not accumulate confidence merely because another day has passed.",
+          "steps": [
+            "Keep the standing flow watchpoint unchanged until all constituent reports are present and the total is reconciled; require independent activity evidence before any broad Web3-health conclusion.",
+            "Keep the source date and attribution with each observation. Record completion only when the stated evidence exists."
+          ],
+          "done": "WATCHING; constituent completeness and independent activity evidence remain required."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins and Payment Rails",
+          "title": "Separate proposed and final rules",
+          "why": "Payments experience becomes useful at the boundary between the ledger, the regulated entity and the party accountable for redemption.",
+          "steps": [
+            "Save one proposed-versus-final rules checklist for Board-supervised issuers, keeping implementation dates unfilled until the relevant final text is published.",
+            "Keep the source date and attribution with each observation. Record completion only when the stated evidence exists."
+          ],
+          "done": "READY; checklist scope saved; final rule and implementation date UNKNOWN."
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai Content and Visibility",
+          "title": "Publish The Heat Bill in Space",
+          "why": "This connects engineering and capital judgment through a mechanism readers can inspect.",
+          "steps": [
+            "Publish “The Heat Bill in Space” (Chinese working title, translated: “The Heat Bill in Space”) at [today's canonical Action Item](https://iamrobin.ai/ouroboros/202609/20260926/action_item/). Thesis: orbital AI must turn electrical power into reliable useful output while paying for heat rejection. Evidence spine: announced versus completed tests; the radiator constraint; an idealized one-megawatt calculation; lifecycle and workload economics; a bounded evidence card. Use Google, NASA and ESA primary sources, and archive a LinkedIn derivative with the explanatory thermal diagram.",
+            "Keep the source date and attribution with each observation. Record completion only when the stated evidence exists."
+          ],
+          "done": "COMPLETE as an editorial artifact; public delivery has separate release gates.",
+          "deepDiveTitle": "Publish The Heat Bill in Space"
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure, Career and Capital Projects",
+          "title": "Record orbital test evidence requirements",
+          "why": "Power-to-work conversion is an infrastructure underwriting skill and a useful career research wedge; this announcement does not establish a job opening.",
+          "steps": [
+            "Save a public-evidence milestone card requiring in-orbit workload duration, thermal limits, error recovery and delivered output before advancing the project beyond experimental status.",
+            "Keep the source date and attribution with each observation. Record completion only when the stated evidence exists."
+          ],
+          "done": "READY; milestone specification saved; orbital observations not yet established."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-Stage Private Markets",
+          "title": "Keep Confido at WATCH",
+          "why": "Cash application and deductions connect agentic software to familiar payments and reconciliation problems.",
+          "steps": [
+            "WATCH; upgrade to INVESTIGATE only after cohort retention, gross margin after service labor, verified customer savings, preference terms and accessible allocation are evidenced.",
+            "Keep the source date and attribution with each observation. Record completion only when the stated evidence exists."
+          ],
+          "done": "WATCHING; diligence and access conditions unpassed."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities and AI Themes",
+          "title": "Freeze the Jabil pre-results card",
+          "why": "A manufacturer offers a different test of the AI buildout from a model developer or a neocloud.",
+          "steps": [
+            "Save a pre-results card requiring disclosed AI-related demand, segment profitability and working-capital cash effects before changing the investment thesis; do not infer a price target or trade.",
+            "Keep the source date and attribution with each observation. Record completion only when the stated evidence exists."
+          ],
+          "done": "WATCHING; questions saved before September 30; no results assumed."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年9月26日",
+      "description": "八项有边界的行动，区分有效系统与标题里的投入。",
+      "centralJudgment": "衡量整项工作。散热文章与理想化计算已经作为编辑成果完成；拟议评估和尽调尚未执行，未齐资金流与未来业绩仍待确认。",
+      "fieldLine": "八个信号。明确工作。诚实记录完成。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与智能体",
+          "title": "定义图片成对测试",
+          "why": "本地视觉智能体可能帮助一人公司，但生成更快，还不能证明工作流更便宜、更可靠。",
+          "steps": [
+            "保存一份十张图片的成对评估规格，对比开启与关闭草稿模型时的总延迟和合格答案；尚待执行，不使用私人图片，不改变生产路由。",
+            "每项观察保留来源日期与归因；只有相应证据出现，才记录完成。"
+          ],
+          "done": "READY；十图测试规格已记录，未执行基准测试。"
+        },
+        {
+          "signal": 2,
+          "domain": "具身智能与机器人",
+          "title": "保存感知供应商卡",
+          "why": "机器人研究因此多了一个零部件层面的判断对象，可以跳出人形机器人出货量叙事。",
+          "steps": [
+            "保存一张感知供应商尽调卡；取得交割确认、客户留存与毛利率证据后，才提高商业信心。",
+            "每项观察保留来源日期与归因；只有相应证据出现，才记录完成。"
+          ],
+          "done": "READY；卡片记录三项证据要求，交割与经济性未核实。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流与Web3健康度",
+          "title": "保留未齐资金流观察",
+          "why": "不能因为又过了一天，就替此前的ETF叙事增加信心。",
+          "steps": [
+            "维持现有资金流观察条件，直到各基金数据齐备、合计核对完成；对Web3整体健康度作判断前，仍须取得独立活动证据。",
+            "每项观察保留来源日期与归因；只有相应证据出现，才记录完成。"
+          ],
+          "done": "WATCHING；仍要求各基金数据齐备及独立活动证据。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币与支付轨道",
+          "title": "区分提案与最终规则",
+          "why": "账本、受监管实体与赎回责任方之间的边界，正是支付经验能发挥作用的地方。",
+          "steps": [
+            "保存一份适用于美联储监管发行人的“提案／最终规则”对照清单；相关最终文本公布前，实施日期留空。",
+            "每项观察保留来源日期与归因；只有相应证据出现，才记录完成。"
+          ],
+          "done": "READY；清单范围已保存，最终规则和实施日期UNKNOWN。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai内容与可见度",
+          "title": "发布太空计算的散热账单",
+          "why": "用读者能检查的机制，把工程与资本判断接起来。",
+          "steps": [
+            "在[今日行动文章](https://iamrobin.ai/ouroboros/202609/20260926/action_item/)发布“The Heat Bill in Space”，中文工作标题《太空计算的散热账单》。主旨：轨道AI必须把电力转成可靠、有用的产出，同时承担排热成本。证据骨架：宣布测试与完成测试的区别、散热器约束、理想化一兆瓦计算、全生命周期与工作负载经济性、范围明确的证据卡。使用Google、NASA和ESA一手资料，并归档带散热解释图的LinkedIn衍生稿。",
+            "每项观察保留来源日期与归因；只有相应证据出现，才记录完成。"
+          ],
+          "done": "编辑成果COMPLETE；公开交付另有发布关卡。",
+          "deepDiveTitle": "发布太空计算的散热账单"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基础设施、职业与资本项目",
+          "title": "记录轨道测试证据要求",
+          "why": "从电力追到有效工作，是基础设施承销能力，也是职业研究切口；这则公告并未证明存在职位空缺。",
+          "steps": [
+            "保存一张公开证据里程碑卡，要求轨道工作负载持续时间、热限制、错误恢复与交付产出，再考虑把项目从实验阶段上调。",
+            "每项观察保留来源日期与归因；只有相应证据出现，才记录完成。"
+          ],
+          "done": "READY；里程碑规格已保存，轨道观测尚未确立。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私募市场",
+          "title": "Confido维持WATCH",
+          "why": "收款核销和扣款管理，把智能体软件接到熟悉的支付与对账问题上。",
+          "steps": [
+            "WATCH；只有客户分组留存、扣除服务人工后的毛利率、经核实的客户节省、优先权条款与可参与份额获得证据支持，才升至INVESTIGATE。",
+            "每项观察保留来源日期与归因；只有相应证据出现，才记录完成。"
+          ],
+          "done": "WATCHING；尽调与参与条件尚未满足。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开股票与AI主题",
+          "title": "固定Jabil业绩前观察卡",
+          "why": "制造商能提供一个不同于模型开发商或新型云公司的AI建设周期检验。",
+          "steps": [
+            "保存业绩前观察卡，要求披露AI相关需求、分部盈利与营运资本现金影响，才改变投资判断；不推导目标价或交易。",
+            "每项观察保留来源日期与归因；只有相应证据出现，才记录完成。"
+          ],
+          "done": "WATCHING；9月30日前保存问题，不预设业绩。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年9月26日",
+      "description": "八項有邊界的行動，區分有效系統與標題裏的投入。",
+      "centralJudgment": "衡量整項工作。散熱文章與理想化計算已經作為編輯成果完成；擬議評估和盡調尚未執行，未齊資金流與未來業績仍待確認。",
+      "fieldLine": "八個信號。明確工作。誠實記錄完成。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與智能體",
+          "title": "定義圖片成對測試",
+          "why": "本地視覺智能體可能幫助一人公司，但生成更快，還不能證明工作流更便宜、更可靠。",
+          "steps": [
+            "保存一份十張圖片的成對評估規格，對比開啓與關閉草稿模型時的總延遲和合格答案；尚待執行，不使用私人圖片，不改變生產路由。",
+            "每項觀察保留來源日期與歸因；只有相應證據出現，才記錄完成。"
+          ],
+          "done": "READY；十圖測試規格已記錄，未執行基準測試。"
+        },
+        {
+          "signal": 2,
+          "domain": "具身智能與機器人",
+          "title": "保存感知供應商卡",
+          "why": "機器人研究因此多了一個零部件層面的判斷對象，可以跳出人形機器人出貨量敘事。",
+          "steps": [
+            "保存一張感知供應商盡調卡；取得交割確認、客戶留存與毛利率證據後，才提高商業信心。",
+            "每項觀察保留來源日期與歸因；只有相應證據出現，才記錄完成。"
+          ],
+          "done": "READY；卡片記錄三項證據要求，交割與經濟性未核實。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本流與Web3健康度",
+          "title": "保留未齊資金流觀察",
+          "why": "不能因為又過了一天，就替此前的ETF敘事增加信心。",
+          "steps": [
+            "維持現有資金流觀察條件，直到各基金數據齊備、合計核對完成；對Web3整體健康度作判斷前，仍須取得獨立活動證據。",
+            "每項觀察保留來源日期與歸因；只有相應證據出現，才記錄完成。"
+          ],
+          "done": "WATCHING；仍要求各基金數據齊備及獨立活動證據。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣與支付軌道",
+          "title": "區分提案與最終規則",
+          "why": "賬本、受監管實體與贖回責任方之間的邊界，正是支付經驗能發揮作用的地方。",
+          "steps": [
+            "保存一份適用於美聯儲監管發行人的“提案／最終規則”對照清單；相關最終文本公佈前，實施日期留空。",
+            "每項觀察保留來源日期與歸因；只有相應證據出現，才記錄完成。"
+          ],
+          "done": "READY；清單範圍已保存，最終規則和實施日期UNKNOWN。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai內容與可見度",
+          "title": "發佈太空計算的散熱賬單",
+          "why": "用讀者能檢查的機制，把工程與資本判斷接起來。",
+          "steps": [
+            "在[今日行動文章](https://iamrobin.ai/ouroboros/202609/20260926/action_item/)發佈“The Heat Bill in Space”，中文工作標題《太空計算的散熱賬單》。主旨：軌道AI必須把電力轉成可靠、有用的產出，同時承擔排熱成本。證據骨架：宣佈測試與完成測試的區別、散熱器約束、理想化一兆瓦計算、全生命週期與工作負載經濟性、範圍明確的證據卡。使用Google、NASA和ESA一手資料，並歸檔帶散熱解釋圖的LinkedIn衍生稿。",
+            "每項觀察保留來源日期與歸因；只有相應證據出現，才記錄完成。"
+          ],
+          "done": "編輯成果COMPLETE；公開交付另有發佈關卡。",
+          "deepDiveTitle": "發佈太空計算的散熱賬單"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基礎設施、職業與資本項目",
+          "title": "記錄軌道測試證據要求",
+          "why": "從電力追到有效工作，是基礎設施承銷能力，也是職業研究切口；這則公告並未證明存在職位空缺。",
+          "steps": [
+            "保存一張公開證據里程碑卡，要求軌道工作負載持續時間、熱限制、錯誤恢復與交付產出，再考慮把項目從實驗階段上調。",
+            "每項觀察保留來源日期與歸因；只有相應證據出現，才記錄完成。"
+          ],
+          "done": "READY；里程碑規格已保存，軌道觀測尚未確立。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私募市場",
+          "title": "Confido維持WATCH",
+          "why": "收款核銷和扣款管理，把智能體軟件接到熟悉的支付與對賬問題上。",
+          "steps": [
+            "WATCH；只有客戶分組留存、扣除服務人工後的毛利率、經核實的客戶節省、優先權條款與可參與份額獲得證據支持，才升至INVESTIGATE。",
+            "每項觀察保留來源日期與歸因；只有相應證據出現，才記錄完成。"
+          ],
+          "done": "WATCHING；盡調與參與條件尚未滿足。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開股票與AI主題",
+          "title": "固定Jabil業績前觀察卡",
+          "why": "製造商能提供一個不同於模型開發商或新型雲公司的AI建設週期檢驗。",
+          "steps": [
+            "保存業績前觀察卡，要求披露AI相關需求、分部盈利與營運資本現金影響，才改變投資判斷；不推導目標價或交易。",
+            "每項觀察保留來源日期與歸因；只有相應證據出現，才記錄完成。"
+          ],
+          "done": "WATCHING；9月30日前保存問題，不預設業績。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年9月26日",
+      "description": "八つの限定課題で、有用なシステムと見出しの投入量を分ける。",
+      "centralJudgment": "仕事全体を測る。排熱の記事と理想化した計算は編集成果として完成。提案した評価と調査は未実施で、未完成の資金フローと将来の決算は確認待ちだ。",
+      "fieldLine": "八つのシグナル。定義した仕事。正確な完了記録。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "最先端モデルとエージェント",
+          "title": "画像比較試験を仕様化",
+          "why": "ローカルの視覚エージェントは一人企業に役立ち得る。ただし生成速度だけでは、安く信頼できる業務の証明にならない。",
+          "steps": [
+            "同じ10画像でドラフト有無の総遅延と合格回答を比較する仕様を保存する。実行は保留し、私的画像も本番ルーティング変更も用いない。",
+            "観測に出典日と帰属を付け、指定した証拠がある場合だけ完了を記録する。"
+          ],
+          "done": "READY。10画像の仕様保存。ベンチマークは未実施。"
+        },
+        {
+          "signal": 2,
+          "domain": "フィジカルAIとロボティクス",
+          "title": "知覚供給者カードを保存",
+          "why": "人型ロボットの出荷台数とは別に、部品レベルで事業を評価できる。",
+          "steps": [
+            "知覚サプライヤーの調査カードを保存し、買収完了、顧客継続、粗利益率の証拠がそろうまで商業評価を引き上げない。",
+            "観測に出典日と帰属を付け、指定した証拠がある場合だけ完了を記録する。"
+          ],
+          "done": "READY。三つの証拠要件を保存。完了と採算は未確認。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資金フローとWeb3",
+          "title": "未完成フローの観察を継続",
+          "why": "日が一つ進んだだけで、従来のETFの物語への確信を強めるべきではない。",
+          "steps": [
+            "全構成ファンドの報告と合計の照合が済むまで既存の観察条件を維持し、Web3全体の健全性を判断するには独立した活動証拠を求める。",
+            "観測に出典日と帰属を付け、指定した証拠がある場合だけ完了を記録する。"
+          ],
+          "done": "WATCHING。全ファンドの報告と独立した活動証拠を要求。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコインと決済",
+          "title": "提案と最終規則を区別",
+          "why": "台帳、監督対象の法人、償還責任者をつなぐ箇所で決済経験が生きる。",
+          "steps": [
+            "FRB監督対象発行者向けに提案と最終規則を区別する確認表を保存し、関連する最終文書が出るまで実施日は空欄にする。",
+            "観測に出典日と帰属を付け、指定した証拠がある場合だけ完了を記録する。"
+          ],
+          "done": "READY。確認表の範囲を保存。最終規則と実施日はUNKNOWN。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.aiの発信",
+          "title": "宇宙計算の排熱コストを公開",
+          "why": "読者が検算できる仕組みを通して工学と資本判断をつなぐ。",
+          "steps": [
+            "The Heat Bill in Space（中国語仮題の意味は「宇宙計算の排熱コスト」）を[本日のアクション記事](https://iamrobin.ai/ouroboros/202609/20260926/action_item/)として公開する。軌道AIには電力を信頼できる有用な出力に変え、排熱費用を負担する必要がある、という論旨だ。試験計画と完了の区別、放熱面積の制約、理想化した1メガワット計算、寿命と仕事量の経済性、限定的な証拠カードを柱とする。Google、NASA、ESAの一次資料を使い、熱の図解を添えたLinkedIn派生稿を保存する。",
+            "観測に出典日と帰属を付け、指定した証拠がある場合だけ完了を記録する。"
+          ],
+          "done": "編集成果はCOMPLETE。公開配信は別の検証へ。",
+          "deepDiveTitle": "宇宙計算の排熱コストを公開"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラ、キャリアと資本計画",
+          "title": "軌道試験の証拠要件を記録",
+          "why": "電力を実効的な仕事まで追う力はインフラ評価にもキャリア研究にも役立つ。この発表だけで求人があるとは言えない。",
+          "steps": [
+            "軌道での処理継続時間、熱上限、エラー回復、提供出力を求める公開証拠カードを保存し、それまでは実験段階という評価を保つ。",
+            "観測に出典日と帰属を付け、指定した証拠がある場合だけ完了を記録する。"
+          ],
+          "done": "READY。段階確認の仕様を保存。軌道観測は未確認。"
+        },
+        {
+          "signal": 7,
+          "domain": "レイトステージ非公開市場",
+          "title": "ConfidoはWATCHを維持",
+          "why": "入金消込や控除管理は、エージェント型ソフトを決済・照合の経験につなげる。",
+          "steps": [
+            "WATCH。顧客コホートの継続、サービス人件費込みの粗利益率、検証済み顧客節約額、優先権条件、参加可能な投資枠が確認された場合に限りINVESTIGATEへ進める。",
+            "観測に出典日と帰属を付け、指定した証拠がある場合だけ完了を記録する。"
+          ],
+          "done": "WATCHING。調査と投資参加の条件は未達。"
+        },
+        {
+          "signal": 8,
+          "domain": "上場株とAIテーマ",
+          "title": "Jabil決算前カードを固定",
+          "why": "製造企業なら、モデル開発企業や新興クラウドとは違う角度からAI設備投資を検証できる。",
+          "steps": [
+            "AI関連需要、部門採算、運転資本の現金影響を確認する決算前カードを保存し、その開示を待って投資仮説を見直す。目標株価や取引には結び付けない。",
+            "観測に出典日と帰属を付け、指定した証拠がある場合だけ完了を記録する。"
+          ],
+          "done": "WATCHING。9月30日前に問いを保存。決算結果は仮定しない。"
+        }
+      ]
+    }
+  }
+}
