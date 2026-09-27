@@ -13,7 +13,7 @@ import json
 import os
 import re
 import tempfile
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 from zoneinfo import ZoneInfo
@@ -86,7 +86,9 @@ def enqueue_diary_message(
         if message_date is not None
         else datetime.now(HKT)
     )
-    date = received.date().isoformat()
+    # Freeze the diary date at the first message, using Telegram's HKT timestamp.
+    # A replay, later part or /diary_done must never move an existing entry.
+    date = (received.date() + timedelta(days=int(received.hour >= 13))).isoformat()
     slug = _slugify(title)
     entry_slug = f"{date}-{slug}"
     canonical_url = f"https://iamrobin.ai/meaning/diary/{date[:7].replace('-', '')}/{entry_slug}/"
@@ -104,6 +106,7 @@ def enqueue_diary_message(
         "intent": intent,
         "status": "RECEIVED" if intent == "PUBLISH" else "DRAFT",
         "date": date,
+        "datePolicy": "first-message-hkt-1300-v1",
         "entrySlug": entry_slug,
         "title": title,
         "body": body,
@@ -196,7 +199,7 @@ def maybe_handle_diary_message(
                 else:
                     _private_write(queue_path, record)
                 state['active'] = None
-                reply = (f"Diary safely sealed: {record['title']}\n{len(record['parts'])} parts · {len(record['body'])} characters.\n" +
+                reply = (f"Diary safely sealed: {record['title']}\nDiary date: {record['date']} (HKT)\n{len(record['parts'])} parts · {len(record['body'])} characters.\n" +
                          ('Queued for the next 13:00 HKT diary batch. The verified URL follows publication.' if record['intent'] == 'PUBLISH' else 'Saved privately; no publication.'))
         elif text.lstrip().startswith('/'):
             reply = 'Diary collection is active. This command was not added to the body. Finish with /diary_done or save privately with /diary_cancel before switching tasks.'
@@ -217,7 +220,7 @@ def _part(text: str, values: dict) -> dict:
 
 
 def _progress(record: dict) -> str:
-    return (f"Diary saved: {record['title']}\n{len(record['parts'])} parts · {len(record['body'])} characters.\n"
+    return (f"Diary saved: {record['title']}\nDiary date: {record['date']} (HKT)\n{len(record['parts'])} parts · {len(record['body'])} characters.\n"
             'Paste the remaining parts, then send /diary_done. Nothing publishes before that. /diary_status checks progress.')
 
 

@@ -5,6 +5,9 @@
 Long Telegram diaries now collect every batch until `/diary_done`; pauses never
 trigger partial publication. The existing bot keeps private, restart-safe
 collection state and reports saved counts. See [the intake contract](scripts/diary/README.md).
+For new diaries, a first message at or after 13:00 Hong Kong time assigns
+tomorrow's diary date; earlier messages keep today. The bot confirms the date,
+and existing entries retain their saved dates.
 
 The release check includes `diary:check`: multipart, duplicate-delivery,
 interrupted-completion and source-integrity regression tests. The September 7
