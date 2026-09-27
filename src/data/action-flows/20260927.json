@@ -1,0 +1,515 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-27",
+  "updated": "2026-09-27",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20260927/hero.webp",
+  "actionHero": "/action-item/20260927/hero.webp",
+  "ogImage": "/daily-briefing/20260927/og.webp",
+  "briefingPath": "/ouroboros/202609/20260927/",
+  "actionItemPath": "/ouroboros/202609/20260927/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "Anthropic announcement",
+          "url": "https://www.anthropic.com/claude-opus-5-5"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "NVIDIA announcement",
+          "url": "https://blogs.nvidia.com/blog/isaac-ros-5-0-agentic-open-source-robotics/"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "sources": [
+        {
+          "label": "Farside table",
+          "url": "https://farside.co.uk/btc/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "Circle announcement",
+          "url": "https://www.circle.com/pressroom/circle-foundation-announces-support-for-united-nations-development-programme-and-world-food-programme-to-advance-digital-payments-for-development-and-humanitarian-action"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "sources": [
+        {
+          "label": "DroneDeploy release notes",
+          "url": "https://docs-automate.dronedeploy.com/robotics-toolkit/support/agent-release-notes/"
+        },
+        {
+          "label": "ROS 2 actions",
+          "url": "https://design.ros2.org/articles/actions.html"
+        },
+        {
+          "label": "canonical destination",
+          "url": "https://iamrobin.ai/ouroboros/202609/20260927/action_item/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "DOE programme",
+          "url": "https://www.energy.gov/oe/speed-power-through-accelerated-reconductoring-and-other-key-advanced-transmission-technology"
+        },
+        {
+          "label": "DOE announcement",
+          "url": "https://www.energy.gov/articles/energy-department-announces-speed-power-investments-across-26-states-lower-electricity"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Ema announcement",
+          "url": "https://www.ema.ai/blog/funding-announcement/ema-raises-series-b"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "Micron schedule",
+          "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-to-Report-Fiscal-Fourth-Quarter-Results-on-September-30-2026/default.aspx"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, September 27, 2026",
+      "description": "Eight bounded actions distinguish evidence of recovery from promises of autonomy.",
+      "centralJudgment": "Reconcile the effect before repeating the command. The essay and Friday flow snapshot are completed research artifacts; proposed tests, project awards, customer outcomes and future results remain open.",
+      "fieldLine": "Eight signals. Defined work. Honest completion.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Specify the paired model evaluation",
+          "why": "Agent infrastructure earns its place by reducing the total work needed to finish a task.",
+          "steps": [
+            "Save a paired-evaluation specification for ten fixed, public-input tasks, with cost per accepted result including retries and reviewer minutes as the acceptance metric; execution remains pending.",
+            "Keep the dated evidence and record execution only after the specified acceptance condition is met."
+          ],
+          "done": "READY; ten-task specification saved, evaluation unexecuted."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "Save the robot acceptance card",
+          "why": "Physical AI diligence should include recovery behavior alongside perception and model capability.",
+          "steps": [
+            "Save one robot-acceptance card requiring evidence for lost-reply recovery, stale-observation handling and operator intervention; mark all untested fields unknown.",
+            "Keep the dated evidence and record execution only after the specified acceptance condition is met."
+          ],
+          "done": "READY; lost replies, stale observations and intervention evidence required."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows and Web3 Health",
+          "title": "Close Friday’s missing-row observation",
+          "why": "A change in evidence quality deserves a state update without becoming a trading signal.",
+          "steps": [
+            "Close the September 25 missing-row watchpoint with the dated complete snapshot and US$134.5 million total, retaining the revision caveat and leaving broader activity unconfirmed.",
+            "Keep the dated evidence and record execution only after the specified acceptance condition is met."
+          ],
+          "done": "COMPLETE; September 25 provider row now complete at US$134.5m, revision caveat retained."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins and Payment Rails",
+          "title": "Define the programme evidence threshold",
+          "why": "Payments experience helps distinguish a funded infrastructure programme from a proven improvement for recipients.",
+          "steps": [
+            "Save a programme evidence card whose upgrade threshold is published end-to-end delivery cost, recipient access and reconciliation performance against an existing route.",
+            "Keep the dated evidence and record execution only after the specified acceptance condition is met."
+          ],
+          "done": "READY; cost, access and reconciliation comparison specified, outcomes unmeasured."
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai Content and Visibility",
+          "title": "Publish When Robots Lose the Reply",
+          "why": "This joins agents, robotics and payment-system thinking through a useful recovery mechanism.",
+          "steps": [
+            "Publish When Robots Lose the Reply at the [canonical destination](https://iamrobin.ai/ouroboros/202609/20260927/action_item/), with the thesis that dependable autonomy must reconcile effects before repeating commands; use a lost-reply example, durable command identity, physical-state verification and a bounded test specification as the evidence spine, grounded in DroneDeploy, ROS 2 and AWS documentation, and archive a LinkedIn derivative.",
+            "Keep the dated evidence and record execution only after the specified acceptance condition is met."
+          ],
+          "done": "COMPLETE as an editorial artifact; public delivery has separate gates.",
+          "deepDiveTitle": "Publish When Robots Lose the Reply"
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure, Career and Capital Projects",
+          "title": "Separate SPARK delivery milestones",
+          "why": "Tracking that path is an infrastructure underwriting skill; this announcement establishes no job opening.",
+          "steps": [
+            "Save a SPARK milestone card with separate selection, executed award and energized-capacity fields, advancing each only on its own dated evidence.",
+            "Keep the dated evidence and record execution only after the specified acceptance condition is met."
+          ],
+          "done": "READY; selection recorded, executed award and energized capacity UNKNOWN."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-Stage Private Markets",
+          "title": "Keep Ema at WATCH",
+          "why": "The relevant diligence connects agent outcomes to renewals, service burden and capital terms.",
+          "steps": [
+            "Record WATCH, upgrading only when independently corroborated customer economics, financing terms and actual investment access are available; no application or transaction follows.",
+            "Keep the dated evidence and record execution only after the specified acceptance condition is met."
+          ],
+          "done": "WATCHING; customer economics, terms and access remain unverified."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities and AI Themes",
+          "title": "Retain the Micron catalyst card",
+          "why": "An unchanged precommitment protects the thesis from being rewritten after the result.",
+          "steps": [
+            "Retain the existing Micron catalyst card through September 30, accepting an update only from released results that address margins, capital spending and customer commitments.",
+            "Keep the dated evidence and record execution only after the specified acceptance condition is met."
+          ],
+          "done": "WATCHING; existing September 30 catalyst retained without inventing new results."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年9月27日",
+      "description": "八项有边界的行动，区分恢复证据与自主能力承诺。",
+      "centralJudgment": "重复指令前，先核对实际效果。文章与周五资金流快照已作为研究成果完成；拟议测试、项目拨款、客户成效与未来业绩仍待验证。",
+      "fieldLine": "八个信号。明确工作。诚实记录完成。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与智能体",
+          "title": "定义模型成对评估",
+          "why": "智能体基础设施的价值，在于减少完成整项工作所需的总投入。",
+          "steps": [
+            "保存一份十项固定公开输入任务的成对评估规格，以包含重试成本和复核分钟数的每项合格成果成本为验收指标；测试尚待执行。",
+            "保留带日期的证据，只有满足指定验收条件才记录执行完成。"
+          ],
+          "done": "READY；十任务规格已保存，评估未执行。"
+        },
+        {
+          "signal": 2,
+          "domain": "具身AI与机器人",
+          "title": "保存机器人验收卡",
+          "why": "具身AI尽调除了感知与模型能力，也应检查故障后的恢复表现。",
+          "steps": [
+            "保存一张机器人验收卡，要求提供回执丢失恢复、过期观测处理及人工介入的证据；未测试字段保留未知。",
+            "保留带日期的证据，只有满足指定验收条件才记录执行完成。"
+          ],
+          "done": "READY；要求回执丢失、过期观测及人工介入证据。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流与Web3健康度",
+          "title": "关闭周五数据未齐观察项",
+          "why": "证据质量变化值得更新记录，无须把它升级成交易信号。",
+          "steps": [
+            "用带日期的完整快照及1.345亿美元合计，关闭9月25日数据未齐的观察项，保留修订说明，链上整体活动仍待确认。",
+            "保留带日期的证据，只有满足指定验收条件才记录执行完成。"
+          ],
+          "done": "COMPLETE；9月25日供应商数据现已齐备，合计1.345亿美元，保留修订说明。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币与支付通道",
+          "title": "定义援助项目证据门槛",
+          "why": "支付行业经验有助于区分获得资助的基础设施项目和收款人已经得到的改善。",
+          "steps": [
+            "保存项目证据卡，把公布相对于现有通道的全程交付成本、收款人可用性与对账表现设为升级门槛。",
+            "保留带日期的证据，只有满足指定验收条件才记录执行完成。"
+          ],
+          "done": "READY；已定义成本、获取与对账比较，效果尚未衡量。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai内容与传播",
+          "title": "发布机器人丢了回执之后",
+          "why": "恢复机制把智能体、机器人和支付系统经验连接起来，形成一个有用的问题。",
+          "steps": [
+            "在[规范页面](https://iamrobin.ai/ouroboros/202609/20260927/action_item/)发布When Robots Lose the Reply，中文工作标题为《机器人丢了回执之后》；论点是可靠自主系统应先核对实际效果再重复指令，以回执丢失案例、持久指令身份、物理状态核验及有边界的测试规格为四段证据主线，依据DroneDeploy、ROS 2与AWS文档，并归档LinkedIn衍生稿。",
+            "保留带日期的证据，只有满足指定验收条件才记录执行完成。"
+          ],
+          "done": "编辑成果COMPLETE；公开交付另有验证关卡。",
+          "deepDiveTitle": "发布机器人丢了回执之后"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基础设施、职业与资本项目",
+          "title": "分开记录SPARK里程碑",
+          "why": "追踪这条路径体现基础设施分析能力；公告没有证明任何职位空缺。",
+          "steps": [
+            "保存SPARK里程碑卡，分别记录入选、已签署拨款及已通电容量，每项只凭对应的带日期证据升级。",
+            "保留带日期的证据，只有满足指定验收条件才记录执行完成。"
+          ],
+          "done": "READY；已记录入选，已签署拨款和通电容量UNKNOWN。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私募市场",
+          "title": "Ema维持WATCH",
+          "why": "尽调应把智能体成果与续约、服务负担及资本条款接起来。",
+          "steps": [
+            "记录为WATCH，只有客户经济性获得独立佐证、融资条款及实际投资渠道明确后才升级；不开展申请或交易。",
+            "保留带日期的证据，只有满足指定验收条件才记录执行完成。"
+          ],
+          "done": "WATCHING；客户经济性、条款与渠道未核实。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场与AI主题",
+          "title": "保留Micron催化剂卡",
+          "why": "维持原来的事前标准，可以避免看到结果后再改写论点。",
+          "steps": [
+            "继续保留现有Micron催化剂卡至9月30日，仅依据已发布、涉及利润率、资本支出与客户承诺的业绩资料更新。",
+            "保留带日期的证据，只有满足指定验收条件才记录执行完成。"
+          ],
+          "done": "WATCHING；保留9月30日原观察项，不虚构新业绩。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年9月27日",
+      "description": "八項有邊界的行動，區分恢復證據與自主能力承諾。",
+      "centralJudgment": "重複指令前，先核對實際效果。文章與週五資金流快照已作為研究成果完成；擬議測試、項目撥款、客戶成效與未來業績仍待驗證。",
+      "fieldLine": "八個信號。明確工作。誠實記錄完成。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與智能體",
+          "title": "定義模型成對評估",
+          "why": "智能體基礎設施的價值，在於減少完成整項工作所需的總投入。",
+          "steps": [
+            "保存一份十項固定公開輸入任務的成對評估規格，以包含重試成本和複核分鐘數的每項合格成果成本為驗收指標；測試尚待執行。",
+            "保留帶日期的證據，只有滿足指定驗收條件才記錄執行完成。"
+          ],
+          "done": "READY；十任務規格已保存，評估未執行。"
+        },
+        {
+          "signal": 2,
+          "domain": "具身AI與機器人",
+          "title": "保存機器人驗收卡",
+          "why": "具身AI盡調除了感知與模型能力，也應檢查故障後的恢復表現。",
+          "steps": [
+            "保存一張機器人驗收卡，要求提供回執丟失恢復、過期觀測處理及人工介入的證據；未測試字段保留未知。",
+            "保留帶日期的證據，只有滿足指定驗收條件才記錄執行完成。"
+          ],
+          "done": "READY；要求回執丟失、過期觀測及人工介入證據。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本流與Web3健康度",
+          "title": "關閉週五數據未齊觀察項",
+          "why": "證據質量變化值得更新記錄，無須把它升級成交易信號。",
+          "steps": [
+            "用帶日期的完整快照及1.345億美元合計，關閉9月25日數據未齊的觀察項，保留修訂說明，鏈上整體活動仍待確認。",
+            "保留帶日期的證據，只有滿足指定驗收條件才記錄執行完成。"
+          ],
+          "done": "COMPLETE；9月25日供應商數據現已齊備，合計1.345億美元，保留修訂說明。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣與支付通道",
+          "title": "定義援助項目證據門檻",
+          "why": "支付行業經驗有助於區分獲得資助的基礎設施項目和收款人已經得到的改善。",
+          "steps": [
+            "保存項目證據卡，把公佈相對於現有通道的全程交付成本、收款人可用性與對賬表現設為升級門檻。",
+            "保留帶日期的證據，只有滿足指定驗收條件才記錄執行完成。"
+          ],
+          "done": "READY；已定義成本、獲取與對賬比較，效果尚未衡量。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai內容與傳播",
+          "title": "發佈機器人丟了回執之後",
+          "why": "恢復機制把智能體、機器人和支付系統經驗連接起來，形成一個有用的問題。",
+          "steps": [
+            "在[規範頁面](https://iamrobin.ai/ouroboros/202609/20260927/action_item/)發佈When Robots Lose the Reply，中文工作標題為《機器人丟了回執之後》；論點是可靠自主系統應先核對實際效果再重複指令，以回執丟失案例、持久指令身份、物理狀態核驗及有邊界的測試規格為四段證據主線，依據DroneDeploy、ROS 2與AWS文檔，並歸檔LinkedIn衍生稿。",
+            "保留帶日期的證據，只有滿足指定驗收條件才記錄執行完成。"
+          ],
+          "done": "編輯成果COMPLETE；公開交付另有驗證關卡。",
+          "deepDiveTitle": "發佈機器人丟了回執之後"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基礎設施、職業與資本項目",
+          "title": "分開記錄SPARK里程碑",
+          "why": "追蹤這條路徑體現基礎設施分析能力；公告沒有證明任何職位空缺。",
+          "steps": [
+            "保存SPARK里程碑卡，分別記錄入選、已簽署撥款及已通電容量，每項只憑對應的帶日期證據升級。",
+            "保留帶日期的證據，只有滿足指定驗收條件才記錄執行完成。"
+          ],
+          "done": "READY；已記錄入選，已簽署撥款和通電容量UNKNOWN。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私募市場",
+          "title": "Ema維持WATCH",
+          "why": "盡調應把智能體成果與續約、服務負擔及資本條款接起來。",
+          "steps": [
+            "記錄為WATCH，只有客戶經濟性獲得獨立佐證、融資條款及實際投資渠道明確後才升級；不開展申請或交易。",
+            "保留帶日期的證據，只有滿足指定驗收條件才記錄執行完成。"
+          ],
+          "done": "WATCHING；客戶經濟性、條款與渠道未核實。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場與AI主題",
+          "title": "保留Micron催化劑卡",
+          "why": "維持原來的事前標準，可以避免看到結果後再改寫論點。",
+          "steps": [
+            "繼續保留現有Micron催化劑卡至9月30日，僅依據已發佈、涉及利潤率、資本支出與客戶承諾的業績資料更新。",
+            "保留帶日期的證據，只有滿足指定驗收條件才記錄執行完成。"
+          ],
+          "done": "WATCHING；保留9月30日原觀察項，不虛構新業績。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年9月27日",
+      "description": "八つの限定課題で復旧の証拠と自律性の約束を区別する。",
+      "centralJudgment": "再送する前に効果を照合する。記事と金曜日のフロー確認は研究成果として完了。提案した試験、正式な交付、顧客成果、将来の決算は未確認だ。",
+      "fieldLine": "八つのシグナル。定義した仕事。正確な完了記録。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "最先端モデルとエージェント",
+          "title": "モデル比較評価を仕様化",
+          "why": "エージェント基盤の価値は、仕事を終えるための総負担を減らせるかで決まる。",
+          "steps": [
+            "公開情報を入力とする固定十課題の比較試験仕様を保存し、再試行と確認作業の時間を含む合格成果当たりのコストを評価軸とする。試験は未実施。",
+            "日付付き証拠を残し、指定した受入条件を満たした場合のみ実行完了を記録する。"
+          ],
+          "done": "READY。十課題の仕様を保存。評価は未実施。"
+        },
+        {
+          "signal": 2,
+          "domain": "フィジカルAIとロボット",
+          "title": "ロボット受入カードを保存",
+          "why": "フィジカルAIの評価では、認識やモデル能力に加え、復旧時の挙動も確認したい。",
+          "steps": [
+            "応答消失からの復旧、古い観測の扱い、作業員の介入について証拠を求めるロボット受入カードを保存し、未試験の欄は不明のまま残す。",
+            "日付付き証拠を残し、指定した受入条件を満たした場合のみ実行完了を記録する。"
+          ],
+          "done": "READY。応答消失、古い観測、人の介入の証拠を要求。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資金フローとWeb3",
+          "title": "金曜日の未報告確認を完了",
+          "why": "証拠が改善したら記録を更新する。それを売買シグナルに変える必要はない。",
+          "steps": [
+            "日付付きの完全なスナップショットと1億3,450万米ドルの合計で9月25日の未報告確認項目を閉じ、修正の可能性を明記する。広範な活動の確認は保留する。",
+            "日付付き証拠を残し、指定した受入条件を満たした場合のみ実行完了を記録する。"
+          ],
+          "done": "COMPLETE。9月25日の提供者報告は全件そろい1億3,450万米ドル。修正の可能性を明記。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコインと決済",
+          "title": "支援事業の証拠条件を定義",
+          "why": "決済の経験を使えば、資金が付いた事業と受取人に届いた改善を区別できる。",
+          "steps": [
+            "既存経路との比較による全工程コスト、受取人の利用可能性、照合実績の公表を評価引き上げ条件とする事業カードを保存する。",
+            "日付付き証拠を残し、指定した受入条件を満たした場合のみ実行完了を記録する。"
+          ],
+          "done": "READY。コスト、利用可能性、照合の比較を定義。効果は未測定。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.aiの発信",
+          "title": "ロボットの応答が消えたときを公開",
+          "why": "復旧という仕組みを通じて、エージェント、ロボット、決済の知識をつなげられる。",
+          "steps": [
+            "When Robots Lose the Reply（ロボットの応答が消えたとき）を[正規ページ](https://iamrobin.ai/ouroboros/202609/20260927/action_item/)で公開する。信頼できる自律システムは再送前に実際の効果を照合すべきだという主張を、応答消失の例、永続的な命令識別子、物理状態の確認、限定した試験仕様の四段階で説明し、DroneDeploy、ROS 2、AWSの文書を根拠にLinkedIn用原稿も保存する。",
+            "日付付き証拠を残し、指定した受入条件を満たした場合のみ実行完了を記録する。"
+          ],
+          "done": "編集成果はCOMPLETE。公開配信は別の検証へ。",
+          "deepDiveTitle": "ロボットの応答が消えたときを公開"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基盤とキャリア、資本事業",
+          "title": "SPARKの段階を区別",
+          "why": "その経路を分析する能力がインフラ評価に役立つ。この発表から求人の存在は確認できない。",
+          "steps": [
+            "選定、締結済み交付、通電済み容量を分けたSPARK進捗カードを保存し、それぞれの日付付き証拠でのみ更新する。",
+            "日付付き証拠を残し、指定した受入条件を満たした場合のみ実行完了を記録する。"
+          ],
+          "done": "READY。選定を記録。締結済み交付と通電容量はUNKNOWN。"
+        },
+        {
+          "signal": 7,
+          "domain": "成長段階の未公開市場",
+          "title": "EmaはWATCHを維持",
+          "why": "エージェントの成果を、更新契約、サービス負担、資本条件と結び付けて調べたい。",
+          "steps": [
+            "WATCHと記録し、顧客の採算に独立した裏付けがあり、資金調達条件と実際の投資参加経路が確認できた場合のみ引き上げる。応募や取引は行わない。",
+            "日付付き証拠を残し、指定した受入条件を満たした場合のみ実行完了を記録する。"
+          ],
+          "done": "WATCHING。顧客採算、条件、参加経路は未確認。"
+        },
+        {
+          "signal": 8,
+          "domain": "上場株とAIテーマ",
+          "title": "Micron予定カードを維持",
+          "why": "事前に決めた条件を維持すれば、結果を見てから仮説を書き換えずに済む。",
+          "steps": [
+            "既存のMicron予定カードを9月30日まで維持し、利益率、設備投資、顧客の契約上の約束に関する公表済み決算資料でのみ更新する。",
+            "日付付き証拠を残し、指定した受入条件を満たした場合のみ実行完了を記録する。"
+          ],
+          "done": "WATCHING。9月30日の既存条件を維持。新しい決算結果は仮定しない。"
+        }
+      ]
+    }
+  }
+}
