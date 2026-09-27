@@ -11,8 +11,8 @@ canonical: "https://iamrobin.ai/meaning/diary/202609/2026-09-27-release-the-morp
 author: "https://iamrobin.ai/#person"
 inLanguage: "und"
 source: telegram
-sourceId: "telegram-527110871"
-bodySha256: 31a1343f7e8871e802bfc61ef04f82a0979d8ea4eb25b391f6b925e190a8ba1e
+sourceId: "telegram-527110871-repair-20260927"
+bodySha256: 3a807d1cff78d2e30cb68eb94e2213773538a02600ff488ce76e5e07080ed398
 draft: false
 ---
 
@@ -106,3 +106,5 @@ And, rather suspiciously, it sounds like how you’ve been trying to live your o
 Release the Morpheus:
 
 Explore with chaos.
+
+Evolve by reality. Promote with Occam. Survive with Murphy. Secure by blast radius.

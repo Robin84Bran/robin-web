@@ -1,7 +1,7 @@
 ---
 title: "🏝️ American in Hong Kong"
 date: 2026-09-07
-updated: 2026-09-07
+updated: 2026-09-27
 section: Meaning
 series: Diary
 excerpt: "I logged into Facebook first time in a couple of years and was pleasantly surprised of my US friends sending birthday greetings and asking for how I have been for the last decad…"
@@ -11,8 +11,8 @@ canonical: "https://iamrobin.ai/meaning/diary/202609/2026-09-07-american-in-hong
 author: "https://iamrobin.ai/#person"
 inLanguage: "und"
 source: telegram
-sourceId: "telegram-527110734"
-bodySha256: 4ee05f48b94f7534af93eb4ff67200d732aae01972aeecfce8b4f128d459460d
+sourceId: "telegram-527110734-repair-20260927"
+bodySha256: f907584c006087b1a02e4bfafbf62a1af94274142aa167e5e40dc73dfcbdeeb0
 draft: false
 ---
 
@@ -40,3 +40,9 @@ I logged into Facebook first time in a couple of years and was pleasantly surpri
 😘🍀 One succeeded. That exit gave me the financial freedom, and the ultimate freedom to choose what I work on.  So naturally, I kept working. 
 
 😇🌐 Today, I invest and build around AI infrastructure, robotics, intelligent systems, and the capital systems underneath them. I am especially fascinated by physical AI: what happens when tokens become infrastructure, intelligence gets a body, and machines begin participating in the economy.
+
+🥹🪷 I view wealth through an engineering lens: money behaves like fluid mechanics, capital flows follow mathematical cycles, and portfolios require structural integrity.
+
+😂 🛝 I am also building AI-driven quant lab (sometimes nicknamed “quantum lab”) across public markets, digital assets, and private opportunities.  As of now, my AI agents forms more like a circus than an organization: they bring me much more joy than net profit. There are just so many ROFL thingies between myself, Teddy, Maimai, Sweetie, my lovely AI council who constantly makes hilarious mistakes, laugh and pick on each other.  
+
+😉🤗 I’m an American 🇺🇸 based in Hong Kong 🇭🇰. If you’re building something serious in these areas and passing through Hong Kong, come say hello. I’m always happy to compare notes, make a useful introduction, and occasionally lend a desk or meeting room. Weird questions are especially welcome.

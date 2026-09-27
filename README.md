@@ -1,5 +1,16 @@
 # iamrobin.ai — Website v2 / Zen Loop
 
+## Meaning Diary completeness
+
+Long Telegram diaries now collect every batch until `/diary_done`; pauses never
+trigger partial publication. The existing bot keeps private, restart-safe
+collection state and reports saved counts. See [the intake contract](scripts/diary/README.md).
+
+The release check includes `diary:check`: multipart, duplicate-delivery,
+interrupted-completion and source-integrity regression tests. The September 7
+and September 27, 2026 endings have been restored from Robin's supplied text;
+their previous paragraphs, URLs and artwork are preserved.
+
 ## Special → Binary story bridge
 
 Use the existing `binaryStory` content collection (`src/content/binary-stories/SLUG/{article,zh-hans,zh-hant,ja}.md`) and `/binary/stories/[...story].astro` for new Special-derived stories. Do not overwrite the dated Blog collection or owner articles. Each four-language set carries `storySlug`, `lane`, `date`, `updated`, `title`, `excerpt`, `hero`, `ogImage`, `keywords`, exact `canonical`, `inLanguage`, `translationReview: PASS` after actual editorial review, `sourceSpecial`, `sourceArtifactSha256`, and `carouselPdf`, `carouselCaption`, `carouselPages` (6–12). PDF/caption paths are `/carousels/SLUG.pdf` and `/carousels/SLUG.txt`. The renderer adds native language links, Article/Person schema, source and download links, and lists the English story in its Binary lane. `autonomy:check` rejects incomplete editions, duplicate source hashes, drifted sources and missing/mismatched PDFs. A page download is not a LinkedIn posting receipt.
