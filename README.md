@@ -37,6 +37,7 @@ Entrepreneurship, Transformation, and I AM. Sections 00–03 use Robin's supplie
 copy. Transformation opens with her systems-and-roles paragraphs, followed by
 her current iSunTV work. I AM begins “iamrobin.ai is where I think in public”.
 The page preserves sector evidence links, questions, principles and contact.
+The traditional iSunTV link in About is `https://www.isuntv.com` (corrected 27 September 2026).
 
 `/identity/` is a zen watercolor entrance: four illustrated phases rotate gently
 and link to the corresponding About sections. Manual selection pauses rotation;
