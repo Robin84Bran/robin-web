@@ -48,9 +48,6 @@ const displayDate = entry.data.date.toLocaleDateString('en-US', { timeZone: 'UTC
   <Content />
   <aside class="distribution-links" aria-label="Article distribution">
     <p>Also published</p>
-    {entry.data.mediumUrl
-      ? <a href={entry.data.mediumUrl} rel="noreferrer" target="_blank">Medium ↗</a>
-      : <span>Medium</span>}
     {entry.data.linkedinUrl
       ? <a href={entry.data.linkedinUrl} rel="noreferrer" target="_blank">LinkedIn ↗</a>
       : <span>LinkedIn</span>}

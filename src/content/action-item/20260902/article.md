@@ -108,9 +108,9 @@ The default for iamrobin.ai should therefore remain indexable, snippet-eligible 
 
 Visibility inside Google is useful. Dependence on Google is fragile. The same article should have paths back to Robin that a platform cannot unilaterally erase.
 
-The canonical website is the first owned surface. It preserves URLs, revisions, language editions, schema and internal relationships. An email list or direct notification channel can become the second. LinkedIn and Medium remain rented distribution surfaces that point back to the canonical source. Telegram completion receipts prove publication to Robin; they are operational evidence rather than public reach.
+The canonical website is the first owned surface. It preserves URLs, revisions, language editions, schema and internal relationships. An email list or direct notification channel can become the second. LinkedIn remains a rented distribution surface that points back to the canonical source. Telegram completion receipts prove publication to Robin; they are operational evidence rather than public reach.
 
-This architecture changes the negotiation. Google can alter presentation, measurement or eligibility. LinkedIn can change feed distribution. Medium can change import or paywall behavior. Robin still owns the authoritative page, the source record and the relationship with readers who choose a direct channel.
+This architecture changes the negotiation. Google can alter presentation, measurement or eligibility. LinkedIn can change feed distribution. Robin still owns the authoritative page, the source record and the relationship with readers who choose a direct channel.
 
 Social derivatives should compress the argument instead of copying the full article. The opening earns attention, one diagram carries the mechanism, one question invites thought and the canonical link offers the complete sourced version. If a platform sends no useful reader back, Robin can reduce effort there without losing the underlying asset.
 
@@ -121,7 +121,7 @@ Google says AI Overview and AI Mode links are included in Search Console’s Web
 The learning loop therefore needs several measures:
 
 1. Search Console impressions, clicks, CTR and query families for each canonical page.
-2. Referrals from Google, LinkedIn, Medium and other answer engines where observable.
+2. Referrals from Google, LinkedIn and other answer engines where observable.
 3. Direct traffic and returning readers after publication.
 4. Verified AI citations collected through bounded, reproducible query checks.
 5. Downstream reuse: backlinks, newsletter mentions, invitations, collaborations and internal RobinOS retrieval.

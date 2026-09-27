@@ -244,7 +244,14 @@ if (existsSync(dist)) {
   for (const keyword of ['entrepreneur', 'investor', 'engineering background', 'ai-native businesses']) {
     check(homepageSchemas.includes(keyword), `homepage: JSON-LD is missing ${keyword}.`);
   }
-  check(about.includes('subsea engineering') && about.includes('FinTech') && about.includes('AI systems'), 'about: resume-backed career spine is missing.');
+  check(about.includes('I AM ROBIN.') && about.includes('I build and back systems that expand human and organizational autonomy.'), 'about: approved identity and career spine are missing.');
+  for (const sector of ['subsea-engineering', 'fintech', 'entrepreneurship', 'transformation']) {
+    check(about.includes(`id="${sector}"`), `about: sector ${sector} missing.`);
+  }
+  for (const html of [homepage, about]) {
+    check(html.includes('https://github.com/RobinXie1984'), 'identity: public GitHub profile missing.');
+    check(!html.includes('medium.com') && !html.includes('GitHub · Quant Lab'), 'identity: retired social profile remains.');
+  }
   check(simplifiedHome.includes('谢玢 Robin Xie') && simplifiedHome.includes('资本配置'), 'zh-Hans home: canonical Chinese identity copy is missing.');
   check(traditionalHome.includes('謝玢 Robin Xie') && traditionalHome.includes('資本配置'), 'zh-Hant home: canonical Chinese identity copy is missing.');
   check(japaneseHome.includes('Robin Xie（謝玢）') && japaneseHome.includes('AIシステム'), 'ja home: canonical Japanese identity copy is missing.');

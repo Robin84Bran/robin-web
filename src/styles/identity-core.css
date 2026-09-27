@@ -1,0 +1,52 @@
+.core-story { position: relative; overflow: clip; isolation: isolate; }
+.core-thread { position: absolute; z-index: -1; top: 5rem; right: -3rem; width: min(66vw, 65rem); height: 112rem; object-fit: cover; object-position: top right; mix-blend-mode: multiply; pointer-events: none; opacity: .82; }
+.core-shell { width: min(84%, 74rem); margin: 0 auto; }
+.core-opening { padding: 4rem 0 2.8rem; max-width: 60rem; }
+.core-eyebrow, .core-kicker { color: var(--gold-dark); font-family: var(--sans); font-size: .65rem; letter-spacing: .19em; text-transform: uppercase; line-height: 1.7; }
+.core-opening h1 { font: 400 clamp(3.5rem, 7.8vw, 7.4rem)/1.05 var(--serif); letter-spacing: -.045em; margin: 1.2rem 0; }
+.core-signature { font: 1.05rem var(--serif); color: var(--muted); letter-spacing: .08em; }
+.core-opening blockquote { max-width: 34rem; font: italic clamp(1.3rem, 2.2vw, 1.85rem)/1.5 var(--serif); color: var(--ink); border-left: 1px solid var(--gold); margin: 2.4rem 0 0; padding-left: 1.3rem; }
+.core-axis { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--line); margin: 0 0 5rem; background: rgba(248,245,239,.84); }
+.core-axis a { display: flex; flex-direction: column; gap: .7rem; padding: 1.2rem; border-right: 1px solid var(--line); text-decoration: none; color: var(--ink); font: 1rem/1.5 var(--serif); }
+.core-axis a:last-child { border-right: 0; }
+.core-axis span { color: var(--gold-dark); font-size: .75rem; }
+.core-body { display: grid; grid-template-columns: 7rem minmax(0, 35rem); gap: 2rem; }
+.core-margin { display: flex; flex-direction: column; gap: 1.3rem; align-self: start; position: sticky; top: 7rem; border-left: 1px solid var(--gold); padding: .5rem 0 .5rem 1rem; }
+.core-margin a { font: .7rem/1.6 var(--sans); color: var(--muted); text-decoration: none; }
+.core-margin a:hover, .core-links a:hover { color: var(--ink); }
+.core-chapter { scroll-margin-top: 7rem; margin-bottom: 5rem; }
+.core-chapter h2, .core-contact h2 { margin: .7rem 0 1.8rem; font: 400 clamp(2.15rem, 3.3vw, 3.25rem)/1.15 var(--serif); letter-spacing: -.03em; text-wrap: balance; }
+.core-prose p:not(.core-kicker) { font: 1.25rem/1.65 var(--serif); margin: 0 0 1.4rem; }
+.core-prose { min-width: 0; }
+.core-links { display: flex; flex-wrap: wrap; gap: .7rem 1.4rem; margin-top: 1.8rem; }
+.core-links a, .core-source, .core-contact a { color: var(--gold-dark); font: .8rem/1.8 var(--sans); text-underline-offset: .3em; }
+.core-self { border-top: 1px solid var(--line); padding-top: 2.5rem; }
+.core-self h2 { font-size: 4rem; }
+.core-questions { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; border-top: 1px solid var(--line); padding-top: 1.5rem; }
+.core-questions h3 { font: 400 1.3rem var(--serif); }
+.core-questions ul { padding: 0; list-style: none; font: .95rem/2 var(--serif); color: var(--muted); }
+.core-contact { padding: 3rem 0; }
+.core-end { border-top: 1px solid var(--line); padding: 1.5rem 0 3rem; display: flex; flex-wrap: wrap; gap: 1.6rem; }
+.core-end a { color: var(--gold-dark); font-size: .8rem; text-decoration: none; }
+.core-story a:focus-visible { outline: 2px solid var(--gold-dark); outline-offset: 5px; }
+@media(max-width: 900px) {
+ .core-shell { width: calc(100% - 3rem); }
+ .core-body { grid-template-columns: 1fr; gap: 0; }
+ .core-margin { position: static; flex-direction: row; flex-wrap: wrap; margin-bottom: 3rem; gap: .8rem 1.5rem; }
+ .core-prose { max-width: 39rem; margin: auto; }
+ .core-thread { width: 70%; right: -5%; opacity: .58; }
+}
+@media(max-width: 560px) {
+ .core-opening { padding: 2.7rem 0 1.8rem; min-height: 33rem; }
+ .core-opening h1 { font-size: clamp(2.8rem, 11.5vw, 4rem); white-space: nowrap; }
+ .core-eyebrow { font-size: .55rem; letter-spacing: .11em; }
+ .core-opening blockquote { margin-top: 3rem; max-width: 85%; font-size: 1.4rem; }
+ .core-thread { top: 17rem; right: -2rem; width: 90%; height: 30rem; object-fit: cover; object-position: 65% 37%; opacity: .9; }
+ .core-axis { grid-template-columns: repeat(2,1fr); margin-bottom: 2.8rem; }
+ .core-axis a { padding: .9rem; background: rgba(248,245,239,.72); font-size: .9rem; }
+ .core-axis a:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+ .core-axis a:nth-child(2) { border-right: 0; }
+ .core-prose p:not(.core-kicker) { font-size: 1.13rem; line-height: 1.65; }
+ .core-chapter { margin-bottom: 3.8rem; }
+ .core-questions { gap: 1rem; }
+}

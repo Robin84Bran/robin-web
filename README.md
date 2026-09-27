@@ -29,19 +29,22 @@ The public site is deployed as the Cloudflare Worker `robin-web`. Cloudflare
 Workers Builds watches the GitHub `main` branch and performs the production
 build and deployment.
 
-## Identity: Still becoming
+## About and Identity: I AM ROBIN
 
-The English `/identity/` door is Robin's personal essay, implemented from the
-selected editorial design: warm paper, large serif typography, chapter notes,
-and decorative ink-and-blossom artwork. Copy lives in `src/data/identityEssay.ts`;
-the page is `src/pages/identity.astro`. It draws on Robin's education account,
-the existing About biography, and the unchanged “American in Hong Kong” diary.
-The essay links to that original diary and to About; English About links back.
+The English `/about/` is Robin's full first-person story. Copy lives in
+`src/data/identityCore.ts`: Roots, Subsea Engineering, FinTech / Web3 / AI Agents,
+Entrepreneurship, Transformation, and I AM. Sections 00–03 use Robin's supplied
+copy. Transformation opens with her systems-and-roles paragraphs, followed by
+her current iSunTV work. I AM begins “iamrobin.ai is where I think in public”.
+The page preserves sector evidence links, questions, principles and contact.
 
-Identity is now indexable and included in the sitemap and `llms.txt`. Its
-ProfilePage references the existing shared Person identifier. It has no Chinese
-alternate yet: the Chinese editorial draft is held outside the public repository
-for Robin's revision. No private photographs or messages are published.
+`/identity/` is a zen watercolor entrance: four illustrated phases rotate gently
+and link to the corresponding About sections. Manual selection pauses rotation;
+keyboard focus and reduced-motion preferences are respected. Mobile layouts
+keep the artwork visible and use two-column phase controls. Both pages retain
+the original serif typography and the shared Person identifier. About's language
+routes remain available with their existing copy; these are not new translations
+of the revised English story. No private chats or source documents are published.
 
 ## Homepage: current work and transformation
 
@@ -60,7 +63,7 @@ large “Find the bottleneck” closing statement has been removed.
 The lower homepage uses the approved “Dissolve / become” particle ensō. The same
 1,000 particles recur through four forms in a 40-second cycle:
 
-- **Engineering:** a closed pipeline, with a 1 → 10 cue.
+- **Engineering:** a conceptual subsea robot with thrusters, camera, tether, manipulator and skid.
 - **FinTech:** a flowing infinity ribbon.
 - **Entrepreneurship:** a seed expanding into a spiral, with a 0 → 1 cue.
 - **Transformation:** a winged form suggesting metamorphosis.
@@ -70,16 +73,17 @@ larger once assembled; selecting a name pauses at that form. The caption is
 “Elemental. Emergent. Transformative.” Motion has a pause/play control, stops
 offscreen and in hidden tabs, and starts paused for reduced-motion preferences.
 Canvas painting is capped at 30fps with device pixel ratio capped at 2. A static
-pipeline remains visible without JavaScript or a usable canvas. The upper watch
+subsea illustration remains visible without JavaScript or a usable canvas. The upper watch
 portrait and I AM ROBIN eight-door entrance remain in place.
 
-Shared navigation offers both official profiles (TideiSun and iSunTV), while the
-footer distinguishes Quant Lab and Business GitHub profiles. Person `sameAs`
-links and the generated `llms.txt` include both sets; the existing Person `@id`
-is preserved. Homepage metadata follows the entrepreneur/investor wording.
-The detailed About biography and other language editions retain their existing
-editorial content. Regenerate `llms.txt` with `pnpm run robots:sync` after editing
-`src/data/robot-welcome.json`.
+Shared navigation offers both official profiles (TideiSun and iSunTV). The
+public GitHub profile is `https://github.com/RobinXie1984`; the private Quant Lab
+profile is no longer advertised. Medium promotion, social links, article
+“Also published” links, Person sameAs and crawler-profile links are removed.
+Historical source-only distribution metadata is retained; it is not rendered.
+Repository-specific evidence links continue to identify their actual repositories.
+The existing Person `@id` is preserved. Regenerate `llms.txt` with
+`pnpm run robots:sync` after editing `src/data/robot-welcome.json`.
 
 ## Autonomous publishing
 
@@ -114,7 +118,7 @@ pnpm dev
 ## Validation
 
 ```sh
-pnpm run release:check
+TZ=UTC pnpm run release:check
 pnpm audit --prod
 ```
 

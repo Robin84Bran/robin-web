@@ -105,9 +105,9 @@ Googleには全体離脱より細かな制御がある。[robots metaの仕様](
 
 Google内の可視性は有用だが、Googleへの依存は脆い。各記事には、プラットフォームが一方的に消せない帰路を持たせる。
 
-canonicalサイトは第一の自有面であり、URL、改訂、言語版、schema、内部関係を保つ。メールリストや直接通知は第二の自有面になり得る。LinkedInとMediumは借りている配信面としてcanonical原文へ戻す。Telegramの完了通知は運用証拠であり、公開到達の指標ではない。
+canonicalサイトは第一の自有面であり、URL、改訂、言語版、schema、内部関係を保つ。メールリストや直接通知は第二の自有面になり得る。LinkedInは借りている配信面としてcanonical原文へ戻す。Telegramの完了通知は運用証拠であり、公開到達の指標ではない。
 
-Googleは表示や測定を変え、LinkedInはfeedを変え、Mediumは取り込みやpaywallを変えられる。それでもRobinは権威あるページ、出典記録、直接つながった読者との関係を所有できる。
+Googleは表示や測定を変え、LinkedInはfeedを変えられる。それでもRobinは権威あるページ、出典記録、直接つながった読者との関係を所有できる。
 
 SNS向け派生稿は全文の複製ではなく、主張を圧縮する。冒頭で注意を得て、図で仕組みを示し、問いを一つ置き、完全な根拠はcanonicalリンクで渡す。質の高い読者を返さないサービスへの工数を減らしても、基礎資産は失われない。
 
@@ -118,7 +118,7 @@ GoogleはAI OverviewとAI ModeのリンクをSearch ConsoleのWebパフォーマ
 学習ループには少なくとも六つの観測を置く。
 
 1. canonicalページごとのSearch Console表示、クリック、CTR、query family。
-2. 観測できるGoogle、LinkedIn、Medium、他の回答エンジンからのreferral。
+2. 観測できるGoogle、LinkedIn、他の回答エンジンからのreferral。
 3. 公開後のdirect trafficと再訪。
 4. 範囲を固定し再現可能なクエリ検査で確認したAI引用。
 5. backlink、newsletter、招待、協業、RobinOS内検索などの再利用。
