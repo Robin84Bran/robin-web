@@ -105,9 +105,9 @@ iamrobin.ai的預設應是：公開論證可索引、可顯示snippet。只有�
 
 Google裡的可見性有用，對Google的依賴很脆弱。每篇文章都要保留平台無法單方面刪除的回家路徑。
 
-canonical網站是第一自有陣地，保存URL、修訂、語言版本、schema與內容關係；電子郵件名單或直接通知可以成為第二陣地。LinkedIn與Medium是租來的分發面，應指回canonical原文。Telegram完成回執是營運證據，不是公共觸達。
+canonical網站是第一自有陣地，保存URL、修訂、語言版本、schema與內容關係；電子郵件名單或直接通知可以成為第二陣地。LinkedIn是租來的分發面，應指回canonical原文。Telegram完成回執是營運證據，不是公共觸達。
 
-Google、LinkedIn或Medium都可以改規則，Robin仍擁有權威頁面、來源紀錄，以及主動選擇直接渠道的讀者關係。社交稿應壓縮論點，不要複製全文：開頭爭取注意力，一張圖說明機制，一個問題邀請思考，canonical連結交付完整證據。平台若長期帶不回有效讀者，就減少投入，不損害底層資產。
+Google和LinkedIn都可以改規則，Robin仍擁有權威頁面、來源紀錄，以及主動選擇直接渠道的讀者關係。社交稿應壓縮論點，不要複製全文：開頭爭取注意力，一張圖說明機制，一個問題邀請思考，canonical連結交付完整證據。平台若長期帶不回有效讀者，就減少投入，不損害底層資產。
 
 ## 測量引用、訪問與再利用
 
@@ -116,7 +116,7 @@ Google表示AI Overview和AI Mode連結會計入Search Console的Web績效報告
 學習回路至少包含六項：
 
 1. 每個canonical頁面的Search Console展示、點擊、CTR與query family。
-2. 可觀察的Google、LinkedIn、Medium與其他答案引擎referral。
+2. 可觀察的Google、LinkedIn與其他答案引擎referral。
 3. 發布後的直接流量與回訪讀者。
 4. 以有界、可重現查詢收集的AI引用。
 5. 下游再利用：backlink、newsletter提及、邀請、合作與RobinOS內部檢索。

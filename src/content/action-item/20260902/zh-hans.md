@@ -107,9 +107,9 @@ Google还有比全站退出更细的工具。[robots meta规范](https://develop
 
 Google里的可见性有用，对Google的依赖很脆弱。每篇文章都要留一条平台无法单方面删除的回家路径。
 
-canonical网站是第一自有阵地，保存URL、修订、语言版本、schema与内容关系；邮件名单或直接通知可以成为第二阵地。LinkedIn和Medium是租来的分发面，应指回canonical原文。Telegram完成回执用于运营举证，不等于公共触达。
+canonical网站是第一自有阵地，保存URL、修订、语言版本、schema与内容关系；邮件名单或直接通知可以成为第二阵地。LinkedIn是租来的分发面，应指回canonical原文。Telegram完成回执用于运营举证，不等于公共触达。
 
-架构一旦成立，谈判关系就变了。Google可以改展示、测量或资格；LinkedIn可以改feed；Medium可以改导入与付费墙。Robin仍拥有权威页面、来源记录，以及主动选择直接渠道的读者关系。
+架构一旦成立，谈判关系就变了。Google可以改展示、测量或资格；LinkedIn可以改feed；Robin仍拥有权威页面、来源记录，以及主动选择直接渠道的读者关系。
 
 社交稿应压缩论点，不要复制全文。开头争取注意力，一张图讲清机制，一个问题邀请思考，canonical链接交付完整证据。某个平台长期带不回有效读者，就减少投入，而不损害底层资产。
 
@@ -120,7 +120,7 @@ Google称AI Overview和AI Mode的链接会计入Search Console的Web绩效报告
 因此学习回路至少包括六项：
 
 1. 每个canonical页面的Search Console展示、点击、CTR与query family。
-2. 可观察的Google、LinkedIn、Medium及其他答案引擎referral。
+2. 可观察的Google、LinkedIn及其他答案引擎referral。
 3. 发布后的直接流量与回访读者。
 4. 用有界、可复现查询收集的AI引用。
 5. 下游再利用：backlink、newsletter提及、邀请、合作和RobinOS内部检索。

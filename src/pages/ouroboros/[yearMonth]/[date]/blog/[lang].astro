@@ -54,9 +54,6 @@ const displayDate = entry.data.date.toLocaleDateString(localeMap[entry.data.inLa
   <Content />
   <aside class="distribution-links" aria-label="Article distribution">
     <p>{localized.distribution}</p>
-    {entry.data.mediumUrl
-      ? <a href={entry.data.mediumUrl} rel="noreferrer" target="_blank">Medium ↗</a>
-      : <span>Medium</span>}
     {entry.data.linkedinUrl
       ? <a href={entry.data.linkedinUrl} rel="noreferrer" target="_blank">LinkedIn ↗</a>
       : <span>LinkedIn</span>}

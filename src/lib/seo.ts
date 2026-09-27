@@ -30,7 +30,7 @@ export function createPersonSchema(language: IdentityLocale = 'en'): SchemaNode 
     knowsAbout: identityKnowledge,
     url: absoluteUrl('/about/'),
     image: absoluteUrl(DEFAULT_IMAGE),
-    sameAs: [socialLinks.official, socialLinks.officialIsun, socialLinks.linkedin, socialLinks.github, socialLinks.githubBusiness, socialLinks.medium],
+    sameAs: [socialLinks.official, socialLinks.officialIsun, socialLinks.linkedin, socialLinks.github],
   };
 }
 
@@ -42,7 +42,7 @@ export function createWebsiteSchema(): SchemaNode {
     name: SITE_NAME,
     alternateName: 'I AM ROBIN',
     url: absoluteUrl('/'),
-    description: 'The visual world of Robin Xie: identity, systems, capital, books, and becoming.',
+    description: 'The visual world of Robin Xie: identity, entrepreneurship, investing, engineering, and AI.',
     inLanguage: ['en', 'zh-Hans', 'zh-Hant', 'ja'],
     publisher: { '@id': personId },
   };

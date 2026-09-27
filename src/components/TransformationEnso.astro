@@ -1,6 +1,6 @@
 ---
 const phases = [
-  { name: 'Engineering', cue: '1 → 10', position: 'top' },
+  { name: 'Engineering', cue: 'Subsea robotics', position: 'top' },
   { name: 'FinTech', cue: 'Flow', position: 'right' },
   { name: 'Entrepreneurship', cue: '0 → 1', position: 'bottom' },
   { name: 'Transformation', cue: 'New form', position: 'left' },
@@ -8,11 +8,8 @@ const phases = [
 ---
 <figure class="transformation-enso" data-enso-motion="paused" aria-label="Engineering → FinTech → Entrepreneurship → Transformation">
   <div class="enso-field">
-    <svg class="enso-fallback" viewBox="0 0 600 600" fill="none" role="img" aria-label="Engineering: a closed pipeline loop">
-      <rect x="174" y="207" width="252" height="186" rx="29" stroke="currentColor" stroke-width="2" />
-      <rect x="168" y="201" width="264" height="198" rx="35" stroke="currentColor" stroke-width="1" opacity=".35" />
-    </svg>
-    <canvas class="enso-particles" width="900" height="900" role="img" aria-label="Particles form an engineering pipeline, a FinTech ribbon, an entrepreneurial seed and spiral, and a winged transformation." hidden></canvas>
+    <div class="enso-fallback" role="img" aria-label="A conceptual subsea robot with thrusters, camera, tether, and manipulator"></div>
+    <canvas class="enso-particles" width="900" height="900" role="img" aria-label="Particles form a subsea robot, a FinTech ribbon, an entrepreneurial seed and spiral, and a winged transformation." hidden></canvas>
     <ol class="enso-stages" aria-label="Select a phase to pause and inspect its form">
       {phases.map((phase, index) => <li class={phase.position}>
         <button type="button" class:list={['enso-phase', { active: index === 0 }]} data-phase={index} aria-pressed={index === 0 ? 'true' : 'false'} disabled>
@@ -28,7 +25,7 @@ const phases = [
   .transformation-enso { width: min(100%, 29rem); margin: 0 auto; }
   .enso-field { position: relative; aspect-ratio: 1; }
   .enso-particles, .enso-fallback { display: block; width: 100%; height: 100%; }
-  .enso-fallback { color: var(--gold-dark); }
+  .enso-fallback { aspect-ratio: 1; background: url(/identity/core/phase-atlas.webp) left top / 200% 200%; mix-blend-mode: multiply; }
   .enso-particles[hidden], .enso-fallback[hidden], .enso-motion-toggle[hidden] { display: none; }
   .enso-stages { position: absolute; inset: 0; margin: 0; padding: 0; list-style: none; pointer-events: none; }
   .enso-stages li { position: absolute; }
@@ -60,7 +57,7 @@ if (figure && field && context && toggle) {
 const root=figure, canvas=field, ctx=context, button=toggle;
 const buttons=[...root.querySelectorAll<HTMLButtonElement>('.enso-phase')];
 const names=['Engineering','FinTech','Entrepreneurship','Transformation'];
-const meanings=['A closed pipeline: 1 to 10.','A continuous flowing ribbon.','A seed expanding into a spiral: 0 to 1.','A winged form: the same elements in a different order.'];
+const meanings=['A subsea robot: thrusters, camera, tether, and an articulated manipulator.','A continuous flowing ribbon.','A seed expanding into a spiral: 0 to 1.','A winged form: the same elements in a different order.'];
 const TAU=Math.PI*2, reduce=window.matchMedia('(prefers-reduced-motion: reduce)');
 let time=3.5, wantsMotion=!reduce.matches, visible=false, frame=0, last=0, lastPaint=0, lastStatus='';
 function render(){const st=state(time);const scale=canvas.width/600;ctx.setTransform(scale,0,0,scale,0,0);ctx.clearRect(0,0,600,600);const c=st.coherence,energy=1-c;
