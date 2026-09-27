@@ -10,6 +10,12 @@ gate for reproducible regression checks; it is not a second service.
 3. Send `/diary_done` alone after the last batch. Only now is the source queued
    for the next 13:00 HKT diary publication batch.
 
+New diary dates follow the first Telegram message's Hong Kong timestamp:
+before 13:00 = today; at or after 13:00 = tomorrow. The bot displays the assigned
+date in acknowledgments and `/diary_status`. Later parts, completion, retries
+and processing delays do not change it. Existing entries are not redated.
+Future-dated new entries remain outside today's publication queue.
+
 `/diary_status` checks collection. `/diary_cancel` closes it as a retained private
 draft. `/diary_draft` uses the same collection flow but never publishes.
 There is no timeout-based completion and no new scheduler. Separate messages

@@ -62,6 +62,17 @@ test('rejects source paths outside inbox', () => {
   assert.match(result.stderr, /inside publishing\/inbox/);
 });
 
+test('new future-dated diaries stay queued until their HKT date, including delayed batches', () => {
+  const f = fixture();
+  f.record.datePolicy = 'first-message-hkt-1300-v1';
+  f.record.date = '2999-01-01';
+  fs.writeFileSync(f.source, JSON.stringify(f.record));
+  assert.deepEqual(JSON.parse(run(f, 'pending').stdout), []);
+  f.record.date = '2000-01-01';
+  fs.writeFileSync(f.source, JSON.stringify(f.record));
+  assert.equal(JSON.parse(run(f, 'pending').stdout).length, 1);
+});
+
 test('unsealed multipart source cannot enter any publication step', () => {
   const f = fixture();
   f.record.status = 'COLLECTING';

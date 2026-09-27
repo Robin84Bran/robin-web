@@ -98,11 +98,13 @@ function updateState(file, record, status, detail = null) {
   return next;
 }
 function pending() {
+  const todayHkt = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Hong_Kong', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
   const records = fs.existsSync(INBOX)
     ? fs.readdirSync(INBOX).filter((name) => name.endsWith('.json')).map((name) => {
         const file = path.join(INBOX, name);
         return { file, ...validateRecord(readJson(file)) };
-      }).filter((record) => record.intent === 'PUBLISH' && !['DONE', 'HOLD', 'COLLECTING'].includes(record.status) && (!record.intake || record.intake.sealed === true))
+      }).filter((record) => record.intent === 'PUBLISH' && !['DONE', 'HOLD', 'COLLECTING'].includes(record.status) && (!record.intake || record.intake.sealed === true)
+        && (record.datePolicy !== 'first-message-hkt-1300-v1' || record.date <= todayHkt))
     : [];
   console.log(JSON.stringify(records, null, 2));
 }
