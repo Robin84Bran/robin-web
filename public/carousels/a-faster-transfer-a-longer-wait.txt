@@ -1,0 +1,13 @@
+A payment can win the transfer race and still leave its recipient waiting longer.
+
+Invented example, in minutes: route A takes 1 to transfer and 120 more until usable, for 121 total. Route B takes 30 to transfer and 0 more, for 30 total. Same start and intended amount; the intervals do not overlap. Fees and other delivery differences are excluded.
+
+Halving A's transfer saves 30 seconds. Reducing its remaining wait to 20 minutes instead saves 100 minutes. These are arithmetic illustrations, not pilot data, forecasts, or feasible-intervention claims.
+
+UNHCR's December 2022 Ukraine pilot description offers a historical route from USDC in a Vibrant wallet to MoneyGram cash conversion. It does not establish current availability or recipient waiting times. Circle Foundation's September 2026 announcement describes support for payment programmes, not matched usable-aid timing results.
+
+For a builder: record transfer completion and the moment the intended amount can be used. Keep non-completions visible with their observation deadline. Define the endpoint around the intended recipient's use.
+
+Story: https://iamrobin.ai/binary/stories/a-faster-transfer-a-longer-wait/
+Source Special: https://iamrobin.ai/ouroboros/202609/20260927/special/
+
