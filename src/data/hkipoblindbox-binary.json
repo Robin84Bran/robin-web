@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T03:49:05.247808+00:00",
+  "generated_at": "2026-09-28T01:36:43.243468+00:00",
   "version": "binary-exec-v1.0",
   "forecasts": [
     {
@@ -81,6 +81,22 @@
       "prospectus_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0922/2026092200005.pdf",
       "participation": "SUBSCRIBE",
       "commitment": "83c1a5f212ce2e5c43da9ed62856320327a710de47ccf3cc11c9b14cfc32d42d"
+    },
+    {
+      "stock_code": "01256",
+      "issuer_name": "Beijing ESWIN Computing Technology Co., Ltd.",
+      "listing_date": "2026-10-09",
+      "prediction": "YES",
+      "version": "binary-exec-v1.0",
+      "frozen_at": "2026-09-28T01:34:00.165348+00:00",
+      "target_at_offer_high": 1.75,
+      "target_at_offer_low": 1.63,
+      "offer_high": 1.59,
+      "offer_low": 1.48,
+      "target_formula": "ceil_to_listing_day_tick(1.10 * FINAL_ISSUE_PRICE)",
+      "prospectus_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0928/2026092800035.pdf",
+      "participation": "SUBSCRIBE",
+      "commitment": "27799398786e865fd3c381ce649aec04d3edac7ceabde64ea62d9d025c852871"
     }
   ],
   "scope": "Independent five-session layer; original three-session experiment preserved",
