@@ -123,3 +123,13 @@ Date: September 24, 2026 release for the quarter ended August 31; verified Septe
 **Why Robin should care:** Infrastructure distribution offers an earnings lens beyond GPU shipment headlines; no share-price prediction is needed.
 
 **One Action:** Save a consolidated earnings bridge separating revenue growth, gross margin and operating margin, leaving AI attribution and future cash conversion unproven.
+
+## Monday allocator close
+
+*Editorial context added to the publication; the archived source remains unchanged.*
+
+The crypto pulse is an unchanged US$134.5 million Friday ETF inflow, with no verified new session or broad activity upgrade. The equity pulse is TD SYNNEX's reported revenue growth alongside lower gross margin and higher operating margin; it supports a more careful earnings bridge, not a price target. Their original references appear in Signals 3 and 8.
+
+Compared with the September 21 allocator edition, the agent question moves from persistent memory toward permissions that survive migration and revocation. The infrastructure question moves from who absorbs construction delay toward whether queued demand represents a legitimate project. These are changes in the evidence selected for attention, not portfolio changes. [Previous Monday](https://iamrobin.ai/ouroboros/202609/20260921/)
+
+The week's biggest risk is counting permission, requested capacity or revenue growth as if each already established a usable economic outcome. The strongest opportunity is a small acceptance specification connecting the promise to evidence. The unresolved question is whether better delegation reduces total review and recovery cost; the proposed test has not run.
