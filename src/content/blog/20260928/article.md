@@ -1,5 +1,5 @@
 ---
-archiveStatus: "PIPELINE"
+archiveStatus: "PRESENT"
 title: The Strategy That Ate Its Own Funding
 date: 2026-09-28
 updated: 2026-08-21

@@ -1,5 +1,5 @@
 ---
-archiveStatus: "PIPELINE"
+archiveStatus: "PRESENT"
 title: 自分の資金調達を食べた戦略
 date: 2026-09-28
 updated: 2026-08-21

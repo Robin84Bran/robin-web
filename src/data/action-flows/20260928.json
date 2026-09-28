@@ -1,0 +1,515 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-28",
+  "updated": "2026-09-28",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20260928/hero.webp",
+  "actionHero": "/action-item/20260928/hero.webp",
+  "ogImage": "/daily-briefing/20260928/og.webp",
+  "briefingPath": "/ouroboros/202609/20260928/",
+  "actionItemPath": "/ouroboros/202609/20260928/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "launch",
+          "url": "https://www.docker.com/blog/introducing-cloud-sandboxes-start-on-your-laptop-finish-in-the-cloud/"
+        },
+        {
+          "label": "release",
+          "url": "https://docs.docker.com/ai/sandboxes/release-notes/"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "robot",
+          "url": "https://bimanual-robot-learning.github.io/"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "flows",
+          "url": "https://farside.co.uk/btc/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "fed",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260924a.htm"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "sources": [
+        {
+          "label": "compare",
+          "url": "https://docs.docker.com/ai/sandboxes/cloud/local-vs-cloud/"
+        },
+        {
+          "label": "kit",
+          "url": "https://www.docker.com/blog/docker-sandbox-kit-spec/"
+        },
+        {
+          "label": "canonical destination",
+          "url": "https://iamrobin.ai/ouroboros/202609/20260928/action_item/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "mass",
+          "url": "https://www.mass.gov/doc/directive-to-the-electric-distribution-companies-regarding-data-center-interconnection-requests/download"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "ema",
+          "url": "https://www.ema.ai/blog/funding-announcement/ema-raises-series-b"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "sources": [
+        {
+          "label": "snx",
+          "url": "https://ir.tdsynnex.com/news/news-details/2026/TD-SYNNEX-Reports-Record-Fiscal-2026-Third-Quarter-Results/default.aspx"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, September 28, 2026",
+      "description": "Eight bounded actions distinguish authority, requested capacity and accepted outcomes.",
+      "centralJudgment": "Verify the destination grant and the return path. The essay is complete as research; acceptance tests remain unexecuted. Quiet market slots retain existing thresholds.",
+      "fieldLine": "Eight signals. Defined work. Honest completion.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Specify the migration acceptance card",
+          "why": "A one-person company needs bounded delegation that survives a change of machine.",
+          "steps": [
+            "Save a migration acceptance card requiring separate destination permissions and a revocation test; leave execution pending.",
+            "Keep dated evidence and advance only when the stated acceptance condition is met."
+          ],
+          "done": "READY; destination policy and revocation criteria saved. Test unexecuted."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "Specify a bimanual comparison",
+          "why": "The useful robotics question is what coordination contributes under equal data and compute.",
+          "steps": [
+            "Save one bimanual comparison specification that holds task, data and compute constant while measuring collisions, completion and interventions; no robot experiment is claimed.",
+            "Keep dated evidence and advance only when the stated acceptance condition is met."
+          ],
+          "done": "READY; matched task, data and compute criteria saved. Robot test unexecuted."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows and Web3 Health",
+          "title": "Retain Friday’s flow snapshot",
+          "why": "Keeping observation time separate from reporting time prevents an old inflow becoming a fresh signal.",
+          "steps": [
+            "Retain the existing Friday snapshot until a later complete dated session or an explicit provider correction justifies an update.",
+            "Keep dated evidence and advance only when the stated acceptance condition is met."
+          ],
+          "done": "WATCHING; already-covered September 25 row retained. No new flow claim."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins and Payment Rails",
+          "title": "Retain the regulatory watchpoint",
+          "why": "Payments experience helps distinguish a consultation from an operating license or a live route.",
+          "steps": [
+            "Keep the existing regulatory watchpoint open, advancing it only on a dated official notice that changes the proposal or establishes final requirements.",
+            "Keep dated evidence and advance only when the stated acceptance condition is met."
+          ],
+          "done": "WATCHING; proposal remains a proposal. No final rule inferred."
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai Content and Visibility",
+          "title": "Publish An Agent Needs a Return Ticket",
+          "why": "This joins agent infrastructure, operating discipline and a small company's cost of supervision.",
+          "steps": [
+            "Publish An Agent Needs a Return Ticket at the [canonical destination](https://iamrobin.ai/ouroboros/202609/20260928/action_item/), with the thesis that moving compute requires re-establishing destination authority and a verified route home; explain separate state, effective permission, revocation and artifact return using Docker's primary documentation, a conceptual diagram and an unexecuted acceptance specification, and archive a LinkedIn derivative.",
+            "Keep dated evidence and advance only when the stated acceptance condition is met."
+          ],
+          "done": "COMPLETE as an editorial artifact; public delivery has separate gates.",
+          "deepDiveTitle": "Publish An Agent Needs a Return Ticket"
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure, Career and Capital Projects",
+          "title": "Separate queue and delivery evidence",
+          "why": "Project legitimacy, milestones and cost responsibility form an infrastructure diligence wedge; this establishes no job opening.",
+          "steps": [
+            "Save a Massachusetts queue-evidence card separating requested capacity, demonstrated project legitimacy and energized capacity, with no inference that one proves the next.",
+            "Keep dated evidence and advance only when the stated acceptance condition is met."
+          ],
+          "done": "READY; requested capacity, legitimacy and energized capacity separated."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-Stage Private Markets",
+          "title": "Keep Ema at WATCH",
+          "why": "The decision threshold remains durable economics and actual access, rather than excitement around coordination software.",
+          "steps": [
+            "Retain WATCH until independently corroborated customer economics, financing terms and investment access are documented; no application or transaction follows.",
+            "Keep dated evidence and advance only when the stated acceptance condition is met."
+          ],
+          "done": "WATCHING; independent economics, terms and access remain unverified."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities and AI Themes",
+          "title": "Save the consolidated margin bridge",
+          "why": "Infrastructure distribution offers an earnings lens beyond GPU shipment headlines; no share-price prediction is needed.",
+          "steps": [
+            "Save a consolidated earnings bridge separating revenue growth, gross margin and operating margin, leaving AI attribution and future cash conversion unproven.",
+            "Keep dated evidence and advance only when the stated acceptance condition is met."
+          ],
+          "done": "COMPLETE as a research card; GAAP gross and operating margin separated. AI attribution remains unproven."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年9月28日",
+      "description": "八项有边界的行动，分清权限、申请容量与合格成果。",
+      "centralJudgment": "核对目的地授权与成果返回路径。文章作为研究已完成，验收测试尚未执行。安静的市场领域保留原门槛。",
+      "fieldLine": "八个信号。明确工作。诚实记录完成。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与智能体｜迁到云端，权限要重新落地",
+          "title": "保存迁移验收卡",
+          "why": "一人公司的委托边界，需要经得起换一台机器。",
+          "steps": [
+            "保存一张迁移验收卡，要求单独核对目的地权限并测试撤权；执行仍待开展。",
+            "保留带日期证据，只在满足指定验收条件后推进状态。"
+          ],
+          "done": "READY；已保存目的地策略与撤权条件，测试未执行。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI与机器人｜两只手，让协同问题显形",
+          "title": "保存双臂比较规格",
+          "why": "机器人研究值得追问：在数据和算力相同的条件下，协同结构究竟增加多少价值。",
+          "steps": [
+            "保存一份双臂比较规格，固定任务、数据和算力，衡量碰撞、完成率及人工介入；不声称已做机器人实验。",
+            "保留带日期证据，只在满足指定验收条件后推进状态。"
+          ],
+          "done": "READY；已固定任务、数据和算力条件，机器人测试未执行。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流与Web3健康度｜周五的数据，留在周五",
+          "title": "保留周五资金流快照",
+          "why": "区分观察时间与报告时间，才能避免把旧流入包装成新信号。",
+          "steps": [
+            "保留原周五快照，只在出现更晚且完整的交易日数据或供应商明确修订时更新。",
+            "保留带日期证据，只在满足指定验收条件后推进状态。"
+          ],
+          "done": "WATCHING；保留已报道的9月25日数据，不宣称新资金流。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币与支付通道｜发行人规则仍是提案",
+          "title": "保留监管观察项",
+          "why": "支付经验的价值，在于分清征求意见、营业许可与真实运营通道。",
+          "steps": [
+            "保持原监管观察项开放，只凭改变提案或确定最终要求的带日期官方通知推进状态。",
+            "保留带日期证据，只在满足指定验收条件后推进状态。"
+          ],
+          "done": "WATCHING；提案仍是提案，不推定最终规则。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai内容与影响力｜解释智能体搬家时带走了什么",
+          "title": "发布智能体也需要一张回程票",
+          "why": "这个问题把智能体基础设施、运营纪律与小公司的监督成本连在一起。",
+          "steps": [
+            "在[规范地址](https://iamrobin.ai/ouroboros/202609/20260928/action_item/)发布An Agent Needs a Return Ticket，中文工作标题为《智能体也需要一张回程票》：迁移算力时，必须重新落实目的地权限并验证成果的返回路径；以Docker原始文档、概念图和未执行的验收规格，串联独立状态、有效权限、撤权及成果返回，并归档LinkedIn衍生稿。",
+            "保留带日期证据，只在满足指定验收条件后推进状态。"
+          ],
+          "done": "编辑成果COMPLETE；公开交付另有验证关卡。",
+          "deepDiveTitle": "发布智能体也需要一张回程票"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基础设施、职业与资本项目｜先核实排队资格，再数兆瓦",
+          "title": "分开记录排队与交付证据",
+          "why": "项目真实性、里程碑与成本责任构成基础设施尽调切口；这里没有已确认的招聘岗位。",
+          "steps": [
+            "保存一张马萨诸塞州并网证据卡，分开列出申请容量、已证明的项目真实性和已通电容量，不能用前一项证明后一项。",
+            "保留带日期证据，只在满足指定验收条件后推进状态。"
+          ],
+          "done": "READY；申请容量、项目真实性与通电容量分别记录。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私募市场｜Ema继续留在观察名单",
+          "title": "Ema维持WATCH",
+          "why": "判断门槛仍是可持续经济性与真实参与渠道，不能用对协同软件的兴奋替代。",
+          "steps": [
+            "维持WATCH，直到客户经济性获得独立佐证，且融资条款、投资渠道有据可查；不开展申请或交易。",
+            "保留带日期证据，只在满足指定验收条件后推进状态。"
+          ],
+          "done": "WATCHING；独立经济性、条款及渠道未核实。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场与AI主题｜收入和利润率，各说一段故事",
+          "title": "保存合并利润率桥接表",
+          "why": "基础设施分销提供了GPU出货之外的盈利观察角度，无须附带股价预测。",
+          "steps": [
+            "保存一张合并业绩桥接表，分开列出收入增长、毛利率和营业利润率；AI归因及未来现金转化仍待证明。",
+            "保留带日期证据，只在满足指定验收条件后推进状态。"
+          ],
+          "done": "研究卡COMPLETE；分开记录GAAP毛利率和营业利润率，AI归因仍未证明。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年9月28日",
+      "description": "八項有邊界的行動，分清權限、申請容量與合格成果。",
+      "centralJudgment": "核對目的地授權與成果返回路徑。文章作為研究已完成，驗收測試尚未執行。安靜的市場領域保留原門檻。",
+      "fieldLine": "八個信號。明確工作。誠實記錄完成。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與智能體｜遷到雲端，權限要重新落地",
+          "title": "保存遷移驗收卡",
+          "why": "一人公司的委託邊界，需要經得起換一臺機器。",
+          "steps": [
+            "保存一張遷移驗收卡，要求單獨核對目的地權限並測試撤權；執行仍待開展。",
+            "保留帶日期證據，只在滿足指定驗收條件後推進狀態。"
+          ],
+          "done": "READY；已保存目的地策略與撤權條件，測試未執行。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI與機器人｜兩隻手，讓協同問題顯形",
+          "title": "保存雙臂比較規格",
+          "why": "機器人研究值得追問：在數據和算力相同的條件下，協同結構究竟增加多少價值。",
+          "steps": [
+            "保存一份雙臂比較規格，固定任務、數據和算力，衡量碰撞、完成率及人工介入；不聲稱已做機器人實驗。",
+            "保留帶日期證據，只在滿足指定驗收條件後推進狀態。"
+          ],
+          "done": "READY；已固定任務、數據和算力條件，機器人測試未執行。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本流與Web3健康度｜週五的數據，留在週五",
+          "title": "保留週五資金流快照",
+          "why": "區分觀察時間與報告時間，才能避免把舊流入包裝成新信號。",
+          "steps": [
+            "保留原週五快照，只在出現更晚且完整的交易日數據或供應商明確修訂時更新。",
+            "保留帶日期證據，只在滿足指定驗收條件後推進狀態。"
+          ],
+          "done": "WATCHING；保留已報道的9月25日數據，不宣稱新資金流。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣與支付通道｜發行人規則仍是提案",
+          "title": "保留監管觀察項",
+          "why": "支付經驗的價值，在於分清徵求意見、營業許可與真實運營通道。",
+          "steps": [
+            "保持原監管觀察項開放，只憑改變提案或確定最終要求的帶日期官方通知推進狀態。",
+            "保留帶日期證據，只在滿足指定驗收條件後推進狀態。"
+          ],
+          "done": "WATCHING；提案仍是提案，不推定最終規則。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai內容與影響力｜解釋智能體搬家時帶走了什麼",
+          "title": "發佈智能體也需要一張回程票",
+          "why": "這個問題把智能體基礎設施、運營紀律與小公司的監督成本連在一起。",
+          "steps": [
+            "在[規範地址](https://iamrobin.ai/ouroboros/202609/20260928/action_item/)發佈An Agent Needs a Return Ticket，中文工作標題為《智能體也需要一張回程票》：遷移算力時，必須重新落實目的地權限並驗證成果的返回路徑；以Docker原始文檔、概念圖和未執行的驗收規格，串聯獨立狀態、有效權限、撤權及成果返回，並歸檔LinkedIn衍生稿。",
+            "保留帶日期證據，只在滿足指定驗收條件後推進狀態。"
+          ],
+          "done": "編輯成果COMPLETE；公開交付另有驗證關卡。",
+          "deepDiveTitle": "發佈智能體也需要一張回程票"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基礎設施、職業與資本項目｜先核實排隊資格，再數兆瓦",
+          "title": "分開記錄排隊與交付證據",
+          "why": "項目真實性、里程碑與成本責任構成基礎設施盡調切口；這裏沒有已確認的招聘崗位。",
+          "steps": [
+            "保存一張馬薩諸塞州併網證據卡，分開列出申請容量、已證明的項目真實性和已通電容量，不能用前一項證明後一項。",
+            "保留帶日期證據，只在滿足指定驗收條件後推進狀態。"
+          ],
+          "done": "READY；申請容量、項目真實性與通電容量分別記錄。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私募市場｜Ema繼續留在觀察名單",
+          "title": "Ema維持WATCH",
+          "why": "判斷門檻仍是可持續經濟性與真實參與渠道，不能用對協同軟件的興奮替代。",
+          "steps": [
+            "維持WATCH，直到客戶經濟性獲得獨立佐證，且融資條款、投資渠道有據可查；不開展申請或交易。",
+            "保留帶日期證據，只在滿足指定驗收條件後推進狀態。"
+          ],
+          "done": "WATCHING；獨立經濟性、條款及渠道未核實。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場與AI主題｜收入和利潤率，各說一段故事",
+          "title": "保存合併利潤率橋接表",
+          "why": "基礎設施分銷提供了GPU出貨之外的盈利觀察角度，無須附帶股價預測。",
+          "steps": [
+            "保存一張合併業績橋接表，分開列出收入增長、毛利率和營業利潤率；AI歸因及未來現金轉化仍待證明。",
+            "保留帶日期證據，只在滿足指定驗收條件後推進狀態。"
+          ],
+          "done": "研究卡COMPLETE；分開記錄GAAP毛利率和營業利潤率，AI歸因仍未證明。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年9月28日",
+      "description": "八つの限定課題で権限、申請容量、合格成果を区別する。",
+      "centralJudgment": "移動先の権限と成果の帰路を確認する。記事は研究成果として完成したが、受入試験は未実施。静かな市場では既存の条件を維持する。",
+      "fieldLine": "八つのシグナル。定義した仕事。正確な完了記録。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "最先端モデルとエージェント｜クラウドへの移動には権限の境界がある",
+          "title": "移行受入カードを保存",
+          "why": "一人企業の委任範囲は、実行する機械が変わっても明確である必要がある。",
+          "steps": [
+            "移動先の権限確認と失効試験を求める移行受入カードを保存する。試験自体は未実施とする。",
+            "日付付き証拠を保存し、定義した受入条件を満たした場合だけ状態を進める。"
+          ],
+          "done": "READY。移動先の方針と失効条件を保存。試験は未実施。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AIとロボティクス｜二つの手が協調を問う",
+          "title": "双腕比較仕様を保存",
+          "why": "同じデータ量と計算量で協調構造がどれだけ役立つかが、価値のある問いになる。",
+          "steps": [
+            "課題、データ、計算量を固定し、衝突、完了、人の介入を測る双腕比較仕様を保存する。ロボット実験を行ったとはしない。",
+            "日付付き証拠を保存し、定義した受入条件を満たした場合だけ状態を進める。"
+          ],
+          "done": "READY。課題、データ、計算量を固定。ロボット試験は未実施。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資本フローとWeb3｜金曜日の数値は金曜日に置く",
+          "title": "金曜日のフローを維持",
+          "why": "観測日と報告日を分ければ、古い流入を新しいシグナルに見せずに済む。",
+          "steps": [
+            "後日の完全な取引日データ、または提供者による明示的な訂正が出るまで、既存の金曜日の記録を維持する。",
+            "日付付き証拠を保存し、定義した受入条件を満たした場合だけ状態を進める。"
+          ],
+          "done": "WATCHING。既報の9月25日行を維持。新しいフローとはしない。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコインと決済｜発行体の規則はまだ提案段階",
+          "title": "規制監視を維持",
+          "why": "決済の実務経験は、意見募集、営業許可、稼働する決済経路を区別する力になる。",
+          "steps": [
+            "既存の規制監視を続け、提案の変更または最終要件を示す日付付き公式通知が出た場合だけ状態を進める。",
+            "日付付き証拠を保存し、定義した受入条件を満たした場合だけ状態を進める。"
+          ],
+          "done": "WATCHING。提案は提案のまま。最終規則を仮定しない。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.aiの発信｜エージェントは何を持って移るのか",
+          "title": "エージェントにも帰りの切符が要るを公開",
+          "why": "エージェント基盤、運用規律、小さな会社の監督コストをつなぐ問いだ。",
+          "steps": [
+            "[正規公開先](https://iamrobin.ai/ouroboros/202609/20260928/action_item/)でAn Agent Needs a Return Ticket、日本語題「エージェントにも帰りの切符が要る」を公開する。計算の移行には移動先の権限の再設定と成果の帰路の確認が要るという論旨で、Dockerの一次文書、概念図、未実施の受入試験仕様から、別々の状態、実効権限、失効、成果物の回収を説明し、LinkedIn派生稿を保存する。",
+            "日付付き証拠を保存し、定義した受入条件を満たした場合だけ状態を進める。"
+          ],
+          "done": "編集成果はCOMPLETE。公開配信は別の検証へ。",
+          "deepDiveTitle": "エージェントにも帰りの切符が要るを公開"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラと資本案件｜メガワットを数える前に申請を確かめる",
+          "title": "申請と供給の証拠を分離",
+          "why": "案件の実在性、段階、費用負担はインフラ調査の切り口になる。求人の存在を示すものではない。",
+          "steps": [
+            "申請容量、確認された案件の実在性、通電済み容量を分けるマサチューセッツ州接続証拠カードを保存し、前の段階を次の段階の証明に使わない。",
+            "日付付き証拠を保存し、定義した受入条件を満たした場合だけ状態を進める。"
+          ],
+          "done": "READY。申請容量、案件の実在性、通電容量を分ける。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期プライベート市場｜Emaは継続監視",
+          "title": "EmaはWATCHを維持",
+          "why": "必要なのは持続する採算と実際の参加経路であり、協調ソフトへの期待だけでは足りない。",
+          "steps": [
+            "顧客採算の独立した裏付け、調達条件、投資参加経路がそろうまでWATCHを維持する。申請や取引は行わない。",
+            "日付付き証拠を保存し、定義した受入条件を満たした場合だけ状態を進める。"
+          ],
+          "done": "WATCHING。独立した採算、条件、参加経路は未確認。"
+        },
+        {
+          "signal": 8,
+          "domain": "上場株とAI｜売上と利益率は違う部分を語る",
+          "title": "連結利益率比較を保存",
+          "why": "インフラ流通はGPU出荷以外から利益を見る窓になる。株価予測は必要ない。",
+          "steps": [
+            "売上成長、粗利益率、営業利益率を分けた連結業績の比較表を保存する。AIへの帰属と将来の現金化は未証明とする。",
+            "日付付き証拠を保存し、定義した受入条件を満たした場合だけ状態を進める。"
+          ],
+          "done": "研究カードはCOMPLETE。GAAP粗利益率と営業利益率を分離。AIへの帰属は未証明。"
+        }
+      ]
+    }
+  }
+}
