@@ -1,0 +1,14 @@
+The hand turning the lid gets the action scene. The hand holding the jar makes it possible.
+
+That is a useful question for builders: what must remain stable for the visible action to succeed?
+
+VoxAct-B (CoRL 2024) uses acting and stabilizing roles, together with language and voxel representations. ACT (RSS 2023) offers a joint-policy starting point. Their published results do not isolate the value of role information in the comparison proposed here.
+
+The September 28 Daily Special proposes three conditions: joint control, explicit roles, and the same extra module with constant role input during training and evaluation. If the last two match, the role labels have not earned the credit. Match data, observations, scenes and total resource caps. Keep collisions, rescues and timeouts visible.
+
+No experiment has been run for this story. The software analogy remains a question to test.
+
+Story: https://iamrobin.ai/binary/stories/the-hand-that-holds-still/
+Source Special: https://iamrobin.ai/ouroboros/202609/20260928/special/
+Primary research: https://voxact-b.github.io/ and https://tonyzhaozh.github.io/aloha/
+
