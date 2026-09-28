@@ -1,5 +1,5 @@
 ---
-archiveStatus: "PIPELINE"
+archiveStatus: "PRESENT"
 title: 吃掉自己資金費的策略
 date: 2026-09-28
 updated: 2026-08-21
