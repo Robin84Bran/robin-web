@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-22T01:08:38.613087+00:00",
+  "generated_at": "2026-09-28T01:36:43.317624+00:00",
   "money_mode": "SIMULATED",
   "forecasts": [
     {
@@ -89,6 +89,24 @@
         0.35695596309872396,
         0.23654540690784034,
         0.13167207628781158
+      ],
+      "target_return": 0.1,
+      "score": null
+    },
+    {
+      "case_id": "HKEX-PENDING-01256-1257ea8e",
+      "stock_code": "01256",
+      "issuer_name": "Beijing ESWIN Computing Technology Co., Ltd.",
+      "listing_date": "2026-10-09",
+      "mode": "FORWARD",
+      "frozen_at": "2026-09-28T01:33:59.965228+00:00",
+      "model_version": "six_lens_prior_v0.1",
+      "commitment": "a0a0bf21f5edde11feec15dbdd35eeab6463be14846c2727ee008b48cdb9259b",
+      "probabilities": [
+        0.3178811232435818,
+        0.36436267199148953,
+        0.2130820891664985,
+        0.10467411559843019
       ],
       "target_return": 0.1,
       "score": null
