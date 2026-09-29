@@ -8,7 +8,7 @@ const LIBRARY = 'https://cdn.gtranslate.net/widgets/latest/lib.min.js';
 const KEY = 'iamrobin-language';
 const providerKey = '__GT_TRANSLATE_LANGS';
 const supported = new Set(languages.map(([code]) => code));
-const sourceHtmlLang = document.documentElement.dataset.originalLanguage || document.documentElement.lang;
+const sourceHtmlLang = document.querySelector('meta[name="source-language"]')?.content || document.documentElement.lang;
 const source = normalizeLanguage(sourceHtmlLang);
 const arcade = location.pathname.startsWith('/meaning/Bran_lab/');
 const atlas = location.pathname.startsWith('/asymmetry/btc_probability_atlas/');
