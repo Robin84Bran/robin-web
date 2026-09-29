@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const path='/intelligence/one-door/';
+const description='One large carrier, six medium ones, or twenty-four small ones? Play a fixed-capacity experiment in failures, queues and useful work. Inspect all 640 seeded runs.';
+const schema={'@context':'https://schema.org','@type':'LearningResource',name:'One Door, Many Hands',url:`https://iamrobin.ai${path}`,description,inLanguage:'en',learningResourceType:'Interactive simulation',educationalUse:'Experiment'};
+---
+<BaseLayout title="One Door, Many Hands — Intelligence — Robin Xie" {path} {description} {schema}>
+ <div class="shell experiment">
+  <a class="quiet-link" href="/intelligence/">← Intelligence</a>
+  <p class="eyebrow">The weekly small experiment · 2026-W40 · 29 September 2026</p>
+  <h1>One door.<br/><em>Many hands.</em></h1>
+  <p class="lead">Surviving the disaster is excellent.<br/>Getting anything through the door would also be nice.</p>
+  <p class="intro">You have 24 units of carrying capacity. Put them in one big carrier, six medium ones, or twenty-four small ones. Then narrow the doorway and break some carriers. Which fleet still gets useful work done?</p>
+  <section class="playground" aria-label="Carrier capacity experiment">
+   <form id="door-controls">
+    <label>Seed<input name="seed" type="number" min="0" max="4294967295" value="1" step="1" required/></label>
+    <label>Door slots<select name="slots"><option value="1">1 body / round</option><option value="2" selected>2 bodies / round</option><option value="4">4 bodies / round</option><option value="24">24 bodies / round</option></select></label>
+    <label>Failure chance<select name="failure"><option value="0">0%</option><option value="0.35" selected>35%</option><option value="0.7">70%</option><option value="1">100%</option></select></label>
+    <label>Shared failure<select name="common"><option value="0" selected>0% · independent</option><option value="0.5">50% · mixed</option><option value="1">100% · all or none</option></select></label>
+    <label>Return cycle<select name="cycle"><option value="3">3 rounds</option><option value="6" selected>6 rounds</option><option value="12">12 rounds</option></select></label>
+   </form>
+   <div class="buttons"><button id="play" type="button">Play</button><button id="reset" type="button">Replay</button><button id="next-seed" type="button">Next seed</button><button id="defaults" type="button">Defaults</button><button id="download" type="button">Download run</button></div>
+   <p id="lab-status" role="status">Loading the seeded model…</p>
+   <canvas id="door-view" width="900" height="615" aria-label="Three fleets carry the same total payload through separate identical doors. Gold units just crossed; crossed-out units failed. Scores are available in the table below."></canvas>
+   <p class="fine">Gold: just crossed · Pale green: returning · Crossed out: failed. Each row has its own identical door. Circle sizes are illustrative; this is a service queue, not collision physics.</p>
+   <label class="time">Inspect any round<input id="tick" aria-label="Simulation round" type="range" min="0" max="120" value="0"/></label>
+   <div class="table-wrap"><table><caption>Current run · delivered work units</caption><thead><tr><th>Fleet</th><th>Total</th><th>After shock</th><th>Alive</th></tr></thead><tbody id="score-body"></tbody></table></div>
+   <canvas id="curve" width="900" height="240" aria-label="Cumulative delivered work. Brown: one carrier. Green: six. Purple: twenty-four. Dashed line marks the round-61 disruption."></canvas>
+   <p class="fine">Brown = one · Green = six · Purple = twenty-four. The dashed line marks disruption. Playback starts only when you press Play.</p>
+   <noscript>JavaScript is needed to play. The complete results, methods and source downloads below remain available.</noscript>
+  </section>
+  <section class="story">
+   <p class="eyebrow">Try this first</p><h2>Keep the bodies. Widen the door.</h2>
+   <p>Play the default seed, then drag the time slider to the end. Change Door slots from 2 to 24. The same carriers fail in both runs; only the service limit changes. Now set Shared failure to 100%. Twenty-four bodies can still share one bad day.</p>
+   <h2>A crowd can queue very efficiently.</h2>
+   <p>The big carrier moves 24 work units at once. Each medium carrier moves four; each small one moves one. A crossing uses one door slot, whatever the payload. After crossing, a carrier returns six rounds later. At round 61, the failure draw removes bodies permanently.</p>
+   <p>All three fleets use the same rotating queue. Nobody learns, predicts the damage, or gets a smarter dispatcher. The question is about splitting capacity, not measuring intelligence. The body-count limit is an assumption: if a large carrier took proportionally more door time, this would be a different experiment.</p>
+   <h2>The middle fleet wins this sample.</h2>
+   <p>Across all 64 default seeds, six carriers deliver <strong>147.50</strong> work units after the shock, versus <strong>138.75</strong> for one and <strong>119.69</strong> for twenty-four. The single carrier stops completely in <strong>27 of 64</strong> runs; neither larger fleet has a complete outage in this sample.</p>
+   <div class="table-wrap"><table><caption>All 64 seeds per setting · mean work in rounds 61–120</caption><thead><tr><th>Setting</th><th>One</th><th>Six</th><th>24</th></tr></thead><tbody><tr><th scope="row">Default</th><td>138.75</td><td>147.50</td><td>119.69</td></tr><tr><th scope="row">Wide door</th><td>138.75</td><td>147.50</td><td>152.66</td></tr><tr><th scope="row">No failures</th><td>240</td><td>240</td><td>120</td></tr><tr><th scope="row">Shared failures</th><td>150</td><td>150</td><td>75</td></tr></tbody></table></div>
+   <p>With a wide door, each fleet has the same <em>expected</em> post-shock output: <strong>156</strong>. The different sample averages are finite-seed variation. Splitting the load changes the risk of losing everything; it does not create payload from nowhere.</p>
+   <p>With fully shared failures, every fleet has <strong>24 complete outages in 64 runs</strong>. The small carriers still face the queue. Redundancy needs failures that are sufficiently independent; counting bodies alone tells you very little.</p>
+   <h2>What the controls mean</h2><dl>
+    <dt>Seed</dt><dd>A repeatable failure draw, not a difficulty level. Compare one changed rule on the same seed, then inspect the batch.</dd>
+    <dt>Door slots</dt><dd>Maximum bodies served per round. Every fleet has a separate door with this same limit; the fleets do not compete with each other.</dd>
+    <dt>Failure chance</dt><dd>Each body's marginal chance of permanent loss at round 61. Large and small bodies receive the same probability, not an equal engineering cost.</dd>
+    <dt>Shared failure</dt><dd>The chance that this run uses one all-or-none loss draw for every body. Otherwise losses are independent. At 50%, the whole run selects one of those two mechanisms.</dd>
+    <dt>Return cycle</dt><dd>Rounds between a carrier's crossings. Increasing it can make the door less restrictive because fewer bodies are ready at once.</dd>
+   </dl>
+   <h2>Where the analogy stops</h2><p>The model holds initial payload, cycle time, door rule and failure probability constant. It does not match body count, computing work, manufacturing cost or actuation count. There is no energy bill, cargo inventory, repair, debris or geometric collision. No biological, robotics or trading performance is established.</p>
+   <p>The ten settings were fixed before evaluation. All <strong>640 seeded runs</strong> are retained, including high failure, half-shared failures and faster or slower return cycles. Zero observed outages does not mean zero outage probability. A healthy-looking fleet is useful only to the extent that it delivers work.</p>
+   <p class="downloads"><a href="/one-door/README.md" download>Method &amp; parameter guide ↓</a><a href="/one-door/source.zip" download>Source package ↓</a><a href="/one-door/results.json" download>All 640 runs ↓</a><a href="/one-door/model.mjs">Read the model</a></p>
+   <p class="fine">Continue with <a href="/intelligence/three-rule-swarm/">Three Rules, One Lunch</a> for search and shared traces, or visit the <a href="/intelligence/swarm-lab/">eight Swarm Lab worlds</a>.</p>
+  </section>
+ </div>
+ <script is:inline type="module" src="/one-door/client.mjs"></script>
+</BaseLayout>
+<style>
+ .experiment{padding-block:3rem 5rem}.experiment>.eyebrow{margin-top:3rem}h1{font:400 clamp(3.5rem,8vw,7rem)/1 var(--serif);letter-spacing:-.05em;margin:1.5rem 0}h1 em{color:#426e69}.lead{font:400 clamp(1.3rem,3vw,2rem)/1.45 var(--serif)}.intro,.story{max-width:48rem;line-height:1.85}.intro,.fine,dd{color:var(--muted)}.playground{margin-block:2.5rem;padding:clamp(1rem,3vw,2rem);border:1px solid var(--line);background:#f7f3eb;border-radius:12px}form{display:flex;flex-wrap:wrap;gap:1rem}label{display:grid;gap:.4rem;font-size:.8rem}select,input[type=number],button{font:inherit;min-height:44px;padding:.65rem;border:1px solid #b8b3a6;border-radius:5px;background:#fffdf7;color:#292822}input[type=number]{max-width:9rem}.buttons{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.2rem}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #a96d29;outline-offset:3px}#play{background:#326d63;color:white}#lab-status{font-size:.85rem;min-height:2.5em}canvas{display:block;width:100%;height:auto}.time{margin-block:1rem}.time input{width:100%;min-height:44px;accent-color:#326d63}.fine{font-size:.8rem;line-height:1.7}.story h2{font:400 clamp(1.6rem,4vw,2.5rem)/1.2 var(--serif);margin-top:2.5rem}dt{font-weight:600;margin-top:1rem}dd{margin-left:0}.downloads{display:flex;flex-wrap:wrap;gap:1rem;font-size:.9rem}.table-wrap{overflow-x:auto;margin-block:1.5rem}table{border-collapse:collapse;width:100%;font-size:.85rem}caption{text-align:left;color:var(--muted);font-size:.8rem;padding-bottom:.7rem}th,td{text-align:left;padding:.75rem .5rem;border-bottom:1px solid var(--line)}th{font-weight:500}td{font-variant-numeric:tabular-nums}@media(max-width:480px){form{display:grid;grid-template-columns:1fr 1fr}label,select{min-width:0}table{font-size:.75rem}th,td{padding:.65rem .3rem}.playground{margin-inline:-.3rem}}
+</style>
