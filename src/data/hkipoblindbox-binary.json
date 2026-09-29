@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T01:36:43.243468+00:00",
+  "generated_at": "2026-09-29T08:54:37.990769+00:00",
   "version": "binary-exec-v1.0",
   "forecasts": [
     {
@@ -117,5 +117,13 @@
     "always_yes_accuracy": 0.7137096774193549,
     "screened_difference": "No exclusions; identical selected portfolio. No demonstrated screening advantage.",
     "unseen": false
+  },
+  "forward": {
+    "forecasts": 6,
+    "reviewed_paths": 4,
+    "yes_d5": 1,
+    "no_d5": 0,
+    "pending_d5": 5,
+    "source_note": "Single-vendor completed daily bars; official final issue prices and independent opening-price checks. Market counterfactuals, not personal fills."
   }
 }
