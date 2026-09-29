@@ -1,0 +1,13 @@
+A data centre can incur interest before it earns a pound from a customer.
+
+VIRTUS announced £2.45bn of committed financing on 24 September. The package includes £1.2bn of green capex facilities, with term and revolving tranches, and supports refinancing and development. The reviewed announcements do not establish actual drawings, pricing or a project delay.
+
+Consider a separate, invented example: £100m already drawn at 6% annual simple interest costs £3m over six months and £6m over twelve. Draw half at the start and half after three months, and the six-month interest is £2.25m. That timing must fit contractual and construction needs.
+
+This is gross-interest arithmetic, not an estimate of VIRTUS costs or returns. It excludes fees, compounding, hedges, interest on cash, operating costs and revenues. Undrawn availability costs belong in a fuller comparison. Starting service does not stop loan interest.
+
+Story: https://iamrobin.ai/binary/stories/the-cost-of-waiting/
+Source Special: https://iamrobin.ai/ouroboros/202609/20260929/special/
+VIRTUS financing: https://virtusdatacentres.com/press-releases/virtus-secures-gbp2-45-billion-financing-package-to-support-continued-growth
+Standard Chartered financing: https://www.sc.com/uk/2026/09/25/standard-chartered-supports-virtus-data-centres-gbp2-45-billion-financing-package/
+Clifford Chance refinancing: https://www.cliffordchance.com/news/news/2026/09/clifford-chance-advises-on-245-billion-portfolio-financing-for-virtus-data-centres.html
