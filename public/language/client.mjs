@@ -1,5 +1,6 @@
 import { languageMenuMarkup, languages } from './menu.mjs';
 import { normalizeLanguage, initialLanguage } from './policy.mjs';
+import { createEditorialLayer } from './editorial.mjs';
 
 // GTranslate's current same-page engine, reviewed 2026-09-29. The vendor CDN
 // does not provide CORS headers for SRI. Load only on translation, from the
@@ -35,8 +36,11 @@ const storage = {
 let loading;
 let busy = false;
 let active = source;
+const editorial = createEditorialLayer(document);
 function restoreTranslator() {
+  editorial.restore();
   if (window.__GT?.translator?.libReady) window.__GT.translator.revert();
+  editorial.restore();
 }
 function setStatus(message, state = 'ready') {
   status.textContent = message;
@@ -107,13 +111,15 @@ async function translate(lang) {
   original.disabled = true;
   setStatus('Translating this page…', 'loading');
   try {
+    restoreTranslator();
+    const authored = editorial.apply(lang);
+    editorial.protectNames(lang);
     nativeSimulationLanguage(lang);
     if (lang === source || atlas) {
-      restoreTranslator();
+      // The original or built-in tool needs no third-party translation.
     } else {
       const translator = await loadTranslator();
       // Always translate from the original, never compound machine translations.
-      translator.revert();
       await new Promise((resolve, reject) => {
         if (!translator.translate(source, lang)) { reject(new Error('Translation could not start.')); return; }
         const start = performance.now();
@@ -125,12 +131,16 @@ async function translate(lang) {
       });
     }
     selected(lang);
+    editorial.apply(lang);
+    editorial.names(lang);
     storage.set(KEY, lang);
     storage.remove(providerKey);
     document.documentElement.lang = ({ 'zh-CN': 'zh-Hans', 'zh-TW': 'zh-Hant' })[lang] || lang;
     nativeSimulationLanguage(lang);
-    setStatus(lang === source ? 'Original page.' : atlas ? 'Built-in translation · same page.' : 'Automatic translation · same page.');
+    setStatus(authored ? 'Owner-approved About copy · navigation may be automatically translated.' : lang === source ? 'Original page.' : atlas ? 'Built-in translation · same page.' : 'Automatic translation · same page.');
     badge.textContent = ({ en: 'Automatic translation', 'zh-CN': '自动翻译 · 查看原文请点 🌐', 'zh-TW': '自動翻譯 · 查看原文請點 🌐', ja: '自動翻訳 · 原文は 🌐 から' })[lang];
+    if (authored && lang === 'zh-CN') badge.textContent = '正文为谢玢定稿 · 导航可能自动翻译';
+    if (authored && lang === 'zh-TW') badge.textContent = '正文為谢玢定稿 · 導覽可能自動翻譯';
     badge.hidden = lang === source || atlas;
     menu.open = false;
     if (wasOpen) summary.focus({ preventScroll: true });
@@ -157,6 +167,7 @@ original.addEventListener('click', () => {
   storage.set(KEY, 'original');
   document.documentElement.lang = sourceHtmlLang;
   selected(source);
+  editorial.names(source);
   badge.hidden = true;
   setStatus('Original page.');
 });
@@ -178,6 +189,7 @@ if (arcade) {
   translate(preferred);
 } else {
   setStatus('Original page.');
+  editorial.names(source);
 }
 // A restored back/forward-cache page must not claim a translation after the
 // provider restores its source on pagehide.

@@ -9,7 +9,7 @@
 .core-axis { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--line); margin: 0 0 5rem; background: rgba(248,245,239,.84); }
 .core-axis a { display: flex; flex-direction: column; gap: .7rem; padding: 1.2rem; border-right: 1px solid var(--line); text-decoration: none; color: var(--ink); font: 1rem/1.5 var(--serif); }
 .core-axis a:last-child { border-right: 0; }
-.core-axis span { color: var(--gold-dark); font-size: .75rem; }
+.core-axis a > span:first-child { color: var(--gold-dark); font-size: .75rem; }
 .core-body { display: grid; grid-template-columns: 7rem minmax(0, 35rem); gap: 2rem; }
 .core-margin { display: flex; flex-direction: column; gap: 1.3rem; align-self: start; position: sticky; top: 7rem; border-left: 1px solid var(--gold); padding: .5rem 0 .5rem 1rem; }
 .core-margin a { font: .7rem/1.6 var(--sans); color: var(--muted); text-decoration: none; }

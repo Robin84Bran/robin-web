@@ -1,0 +1,83 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import IdentityLanguageNav from '../components/IdentityLanguageNav.astro';
+import { identityCore as story } from '../data/identityCore';
+import { identityProfiles, identityAboutAlternates } from '../data/identity';
+import { identityConnections } from '../data/identityConnections';
+import { socialLinks } from '../data/site';
+import { createIdentityPageSchemas } from '../lib/seo';
+import '../styles/identity-core.css';
+import { aboutHans, aboutHant } from '../data/aboutChinese';
+interface Props { locale?: 'en' | 'zh-Hans' | 'zh-Hant' }
+const { locale = 'en' } = Astro.props;
+const profile = identityProfiles[locale];
+const copy = locale === 'zh-Hans' ? aboutHans : locale === 'zh-Hant' ? aboutHant : {};
+const t = (key: string, fallback: string) => copy[key] ?? fallback;
+const a = (key: string, fallback: string) => ({ 'data-about-copy': key, 'data-about-en': fallback });
+const connections = identityConnections('en');
+const proofHref = (href: string) => href.startsWith('/network/#') ? href.replace('/network/', profile.networkPath) : href;
+const companies = [
+ {label:'iSunTV · www.isuntv.com',href:'https://www.isuntv.com'},
+ {label:'iSunTV · isun1.com',href:'https://isun1.com'},
+ {label:'iSunTV · isunmedia.com',href:'https://isunmedia.com'},
+ {label:'iSunTVMall',href:'https://isuntvmall.com'},
+ {label:'AI-native news lab',href:'https://isun1.news'},
+];
+---
+<BaseLayout title={profile.aboutTitle} description={profile.aboutDescription} path={profile.aboutPath} language={locale} alternates={identityAboutAlternates} schema={createIdentityPageSchemas(locale,profile.aboutPath,profile.aboutTitle,profile.aboutDescription)}>
+ <article class="core-story">
+  <img class="core-thread" src="/identity/core/living-thread.webp" width="1024" height="1536" alt="" aria-hidden="true" />
+  <div class="core-shell">
+   <IdentityLanguageNav currentLocale={locale} page="about" />
+   <header class="core-opening" id="roots">
+    <p class="core-eyebrow" {...a('roles', story.roles)}>{t('roles', story.roles)}</p>
+    <h1 {...a('title', story.title)}>{t('title', story.title)}</h1>
+    <p class="core-signature notranslate" translate="no">Robin Xie · 谢玢 · 謝玢</p>
+    <blockquote {...a('spine', story.spine)}>{t('spine', story.spine)}</blockquote>
+   </header>
+   <nav class="core-axis" aria-label="My four sectors">
+    {story.chapters.map((chapter,i)=><a href={`#${chapter.id}`}><span>{String(i+1).padStart(2,'0')}</span><span {...a(`label${i}`,chapter.label)}>{t(`label${i}`,chapter.label)}</span></a>)}
+   </nav>
+   <div class="core-body">
+    <nav class="core-margin" aria-label="Story chapters">
+     <a href="#roots-story">13½ · Roots</a>
+     {story.chapters.map((chapter,i)=><a href={`#${chapter.id}`}>{String(i+1).padStart(2,'0')} · <span {...a(`label${i}`,['Engineering','FinTech','Entrepreneurship','Transformation'][i])}>{t(`label${i}`,['Engineering','FinTech','Entrepreneurship','Transformation'][i])}</span></a>)}
+     <a href="#i-am" {...a('self','I AM.')}>{t('self','I AM.')}</a>
+     <a href="/identity/">Identity in motion ↗</a>
+    </nav>
+    <div class="core-prose">
+     <section id="roots-story" class="core-chapter">
+      <p class="core-kicker">中科大少年班</p>
+      <h2 {...a('opening', story.opening)}>{t('opening', story.opening)}</h2>
+      {story.roots.map((p,j)=><p {...a(`roots${j}`,p)}>{t(`roots${j}`,p)}</p>)}
+     </section>
+     {story.chapters.map((chapter,i)=><section class="core-chapter" id={chapter.id}>
+      <p class="core-kicker">{String(i+1).padStart(2,'0')} · <span {...a(`label${i}`,chapter.label)}>{t(`label${i}`,chapter.label)}</span></p>
+      <h2 {...a(`heading${i}`,chapter.title)}>{t(`heading${i}`,chapter.title)}</h2>
+      {chapter.paragraphs.map((p,j)=><p {...a(`p${i}_${j}`,p)}>{t(`p${i}_${j}`,p)}</p>)}
+      <nav class="core-links" aria-label={`${chapter.label} sources and work`}>
+       {connections.proofLinks[i]?.map((link,j)=><a href={proofHref(link.href)}><span {...a(`link${i}_${j}`,link.label)}>{t(`link${i}_${j}`,link.label)}</span> ↗</a>)}
+       {i===1 && <a href="/network/#02--hkex-public-company"><span {...a('listed','Listed-company appointments')}>{t('listed','Listed-company appointments')}</span> ↗</a>}
+       {i===3 && companies.map((link,j)=><a href={link.href} target="_blank" rel="noreferrer"><span {...a(`company${j}`,link.label)}>{t(`company${j}`,link.label)}</span> ↗</a>)}
+      </nav>
+     </section>)}
+     <section class="core-chapter core-self" id="i-am">
+      <h2 {...a('self','I AM.')}>{t('self','I AM.')}</h2>
+      {story.core.map((p,j)=><p {...a(`core${j}`,p)}>{t(`core${j}`,p)}</p>)}
+      <a class="core-source" href={story.diaryPath}>From my diary: American in Hong Kong ↗</a>
+     </section>
+     <aside class="core-questions">
+      <section><h3>{profile.questionsTitle}</h3><ul>{profile.questions.map(q=><li>{q}</li>)}</ul></section>
+      <section><h3>{profile.principlesTitle}</h3><ul>{profile.principles.map(q=><li>{q}</li>)}</ul></section>
+     </aside>
+     <section class="core-contact" id="work-with-robin">
+      <p class="core-kicker">Build · Invest · Collaborate</p><h2>Work with me.</h2><p>{connections.context}</p>
+      <a href={socialLinks.linkedin} target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a>
+     </section>
+    </div>
+   </div>
+   <nav class="core-end" aria-label="Continue exploring"><a href="/identity/">Identity in motion</a><a href="/asymmetry/">Asymmetry</a><a href="/network/">Network</a><a href={socialLinks.github}>GitHub</a></nav>
+  </div>
+ <script is:inline type="application/json" id="about-owner-copy" set:html={JSON.stringify({'zh-CN':aboutHans,'zh-TW':aboutHant}).replaceAll('<','\\u003c')} />
+ </article>
+</BaseLayout>

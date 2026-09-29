@@ -4,6 +4,37 @@ import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { normalizeLanguage, initialLanguage } from '../../public/language/policy.mjs';
 import { languageMenuMarkup } from '../../public/language/menu.mjs';
+import { normalizeRobinName } from '../../public/language/editorial.mjs';
+
+test('Chinese transliterations use the owner-specified name without changing English brands', () => {
+  assert.equal(normalizeRobinName('罗宾与羅賓；罗宾·谢；羅賓 謝伊'), '谢玢与谢玢；谢玢；谢玢');
+  assert.equal(normalizeRobinName('Robin Xie, RobinOS, 谢玢, 謝玢'), 'Robin Xie, RobinOS, 谢玢, 謝玢');
+});
+
+test('About uses one structure, all approved paragraphs and intact public links', () => {
+  const read = p => readFileSync(new URL('../../dist/'+p+'/index.html',import.meta.url),'utf8');
+  const pages = ['about','zh-hans/about','zh-hant/about'].map(read);
+  const links = html => [...html.matchAll(/href="([^"]+)"/g)].map(m=>m[1]);
+  const destinations = ['/network/#engineering-record','/network/#payments-record','/network/#tidebit-record',
+    '/network/#02--hkex-public-company','/binary/#binary-lane-invest','/ouroboros/','/projects/','/intelligence/',
+    'https://www.isuntv.com','https://isun1.com','https://isunmedia.com','https://isuntvmall.com','https://isun1.news',
+    '/meaning/diary/202609/2026-09-07-american-in-hong-kong/'];
+  for (const [index, html] of pages.entries()) {
+    assert.equal((html.match(/<h1\b/g)||[]).length,1);
+    assert.equal((html.match(/<p data-about-copy="(?:roots\d|p\d_\d|core\d)"/g)||[]).length,24);
+    for (const dest of destinations) {
+      const localized = index && /#(?:engineering|payments|tidebit)-record$/.test(dest)
+        ? dest.replace('/network/',index === 1 ? '/zh-hans/network/' : '/zh-hant/network/') : dest;
+      assert.ok(links(html).includes(localized),localized);
+    }
+    const packet = JSON.parse(html.match(/id="about-owner-copy"[^>]*>(.*?)<\/script>/s)[1]);
+    assert.deepEqual(Object.keys(packet['zh-CN']),Object.keys(packet['zh-TW']));
+    assert.ok(packet['zh-CN'].roots0.startsWith('年方十三半'));
+    assert.equal(packet['zh-CN'].core2,'何须预言未来？当下的我，正亲手将其缔造与雕琢。');
+  }
+  assert.match(pages[1],/<p data-about-copy="roots0"[^>]*>年方十三半/);
+  assert.match(pages[2],/<p data-about-copy="roots0"[^>]*>年方十三半，正值豆蔻年華/);
+});
 
 test('four choices; English default; preserve explicit preference and original', () => {
   assert.equal(initialLanguage('auto', null), 'en');

@@ -100,9 +100,16 @@ The traditional iSunTV link in About is `https://www.isuntv.com` (corrected 27 S
 and link to the corresponding About sections. Manual selection pauses rotation;
 keyboard focus and reduced-motion preferences are respected. Mobile layouts
 keep the artwork visible and use two-column phase controls. Both pages retain
-the original serif typography and the shared Person identifier. About's language
-routes remain available with their existing copy; these are not new translations
-of the revised English story. No private chats or source documents are published.
+the original serif typography and the shared Person identifier. English and both
+Chinese About routes share `src/components/AboutStory.astro`. Robin's approved
+September 30 Chinese copy and reviewed Traditional Chinese edition live in
+`src/data/aboutChinese.ts`; the globe uses those exact paragraphs instead of
+machine paraphrases. English text and public link destinations are retained.
+`public/language/editorial.mjs` restores authored copy on language changes and
+normalizes Chinese Robin transliterations to the owner-specified `谢玢`, including
+late translator DOM updates. URLs, code, private inputs and source archives are
+not rewritten. Japanese retains automatic translation and its existing route.
+No private chats or source documents are published.
 
 ## Homepage: current work and transformation
 
