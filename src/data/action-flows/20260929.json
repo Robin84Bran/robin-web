@@ -1,0 +1,527 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-29",
+  "updated": "2026-09-29",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20260929/hero.webp",
+  "actionHero": "/action-item/20260929/hero.webp",
+  "ogImage": "/daily-briefing/20260929/og.webp",
+  "briefingPath": "/ouroboros/202609/20260929/",
+  "actionItemPath": "/ouroboros/202609/20260929/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "holo",
+          "url": "https://huggingface.co/blog/Hcompany/holo4"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "robot",
+          "url": "https://www.agibot.com/article/231/detail/123.html"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "flows",
+          "url": "https://farside.co.uk/btc/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "rails",
+          "url": "https://www.volantetech.com/news/volante-and-circle-advance-stablecoin-capabilities/"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "sources": [
+        {
+          "label": "holo",
+          "url": "https://huggingface.co/blog/Hcompany/holo4"
+        },
+        {
+          "label": "osworld",
+          "url": "https://osworld-v2.xlang.ai/"
+        },
+        {
+          "label": "automation",
+          "url": "https://github.com/zapier/AutomationBench"
+        },
+        {
+          "label": "browsergym",
+          "url": "https://github.com/ServiceNow/BrowserGym"
+        },
+        {
+          "label": "verified",
+          "url": "https://github.com/ServiceNow/webarena-verified"
+        },
+        {
+          "label": "canonical destination",
+          "url": "https://iamrobin.ai/ouroboros/202609/20260929/action_item/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "virtus",
+          "url": "https://virtusdatacentres.com/press-releases/virtus-secures-gbp2-45-billion-financing-package-to-support-continued-growth"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "sima",
+          "url": "https://www.businesswire.com/news/home/20260928291227/en/"
+        },
+        {
+          "label": "simaMirror",
+          "url": "https://www.streetinsider.com/Business%2BWire/SiMa.ai%2BReaches%2B%241.45B%2BValuation%2Bwith%2B%24500%2BMillion%2Bin%2BTotal%2BFunding%2Bto%2BScale%2BPhysical%2BAI%2Bin%2BHumanoids%2C%2BAutomotive%2C%2Band%2BDrones/27110843.html"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "nvda",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-a-150-billion-share-repurchase-authorization-increase"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, September 29, 2026",
+      "description": "Eight actions separate capability, delivery stage and verified outcomes.",
+      "centralJudgment": "Compare the whole configured agent and name what changed. Financing, customer evaluation and buyback authorization remain distinct from delivered results.",
+      "fieldLine": "Eight signals. Defined work. Honest completion.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Specify a matched-interface test",
+          "why": "For an agent-driven small company, the useful comparison must include the workflow and the interface that can actually be used.",
+          "steps": [
+            "Save one matched-interface evaluation card requiring identical tasks, initial state, permissions and completion criteria before comparing model costs.",
+            "Advance only on dated evidence satisfying the stated condition."
+          ],
+          "done": "READY; tasks, state, authority and acceptance criteria saved. Experiment unexecuted."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "Record fleet evidence requirements",
+          "why": "This connects embodied AI with the operational cost of coordinating many agents.",
+          "steps": [
+            "Save one fleet evidence card requiring useful task-hours, human intervention and service availability before upgrading the deployment to proven labor economics.",
+            "Advance only on dated evidence satisfying the stated condition."
+          ],
+          "done": "READY; useful hours, intervention and service availability requested. Economics unproven."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows and Web3 Health",
+          "title": "Hold the incomplete ETF row",
+          "why": "A capital-flow thesis should advance on completed observations rather than the fastest available number.",
+          "steps": [
+            "Keep the September 28 flow classification pending until every issuer entry is reported or the provider explicitly marks the row complete.",
+            "Advance only on dated evidence satisfying the stated condition."
+          ],
+          "done": "WATCHING; September 28 issuer entries incomplete. Final net flow unavailable."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins, FinTech and Token Rails",
+          "title": "Track the bank adoption stage",
+          "why": "Payments experience is useful for separating an available rail from a service that has operational owners and paying usage.",
+          "steps": [
+            "Save one adoption-stage card that advances only when a named bank confirms production USDC activity and its operational scope.",
+            "Advance only on dated evidence satisfying the stated condition."
+          ],
+          "done": "WATCHING; a named production bank and operating scope are required."
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai Content, Distribution and Visibility",
+          "title": "Publish The Interface Is Part of the Model",
+          "why": "This gives Robin an evidence-led explanation linking agents, enterprise software and operating economics.",
+          "steps": [
+            "Publish The Interface Is Part of the Model at the [canonical destination](https://iamrobin.ai/ouroboros/202609/20260929/action_item/), with the thesis that agent economics depend on model, interface and acceptance conditions together; use an evidence spine of Holo4’s disclosures, OSWorld 2.0 scoring, AutomationBench task sets, BrowserGym and WebArena-Verified, add a conceptual comparison diagram and a proposed matched test, and archive a LinkedIn derivative.",
+            "Advance only on dated evidence satisfying the stated condition."
+          ],
+          "done": "COMPLETE as an editorial artifact; live delivery has separate gates.",
+          "deepDiveTitle": "Publish The Interface Is Part of the Model"
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure, Career Opportunities and Capital Projects",
+          "title": "Separate financing from delivery",
+          "why": "The infrastructure career wedge is translating financing terms into delivery milestones; this is not a verified job opening.",
+          "steps": [
+            "Save one financing-to-delivery card separating committed funds, drawn funds, construction milestones and energized capacity, leaving undisclosed terms unresolved.",
+            "Advance only on dated evidence satisfying the stated condition."
+          ],
+          "done": "READY; commitments, draws, construction and energized capacity separated."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-Stage Private Markets",
+          "title": "Keep SiMa.ai at WATCH",
+          "why": "Edge computing links physical AI demand to software integration, design wins and the time needed to turn silicon into revenue.",
+          "steps": [
+            "Classify SiMa.ai as WATCH until financing terms, independently corroborated customer economics and actual investment access support a change.",
+            "Advance only on dated evidence satisfying the stated condition."
+          ],
+          "done": "WATCHING; terms, independent customer economics and investment access required."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities and AI Themes",
+          "title": "Record the buyback bridge",
+          "why": "AI capital allocation needs a bridge between headline authorization, cash flow and net dilution.",
+          "steps": [
+            "Save one buyback bridge that updates only from subsequent filings showing repurchase cash, shares purchased and share-count changes; do not infer a stock-price outcome.",
+            "Advance only on dated evidence satisfying the stated condition."
+          ],
+          "done": "READY; authorization is recorded, subsequent actual purchases remain to be verified."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年9月29日",
+      "description": "八项行动，分清能力、交付阶段与已验证成果。",
+      "centralJudgment": "比较完整的智能体配置，并写明变化来自哪里。融资、客户评估和回购授权，都要与已经交付的结果区分。",
+      "fieldLine": "八个信号。明确工作。诚实记录完成。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与智能体｜接口一变，比较也变了",
+          "title": "保存同接口测试规格",
+          "why": "依靠智能体运作的小公司，需要比较实际可用的接口与完整工作流程。",
+          "steps": [
+            "保存一张同接口评测卡：比较模型成本前，先固定任务、初始状态、权限与完成标准。",
+            "只凭满足指定条件的带日期证据推进状态。"
+          ],
+          "done": "READY；任务、状态、权限与验收条件已保存，实验未执行。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI与机器人｜主题公园成为群体运营试场",
+          "title": "记录群体运营证据要求",
+          "why": "这个案例把具身智能与多智能体协调的运营成本连在一起。",
+          "steps": [
+            "保存一张群体运营证据卡，只有有效任务时数、人工介入和服务可用率有据可查，才升级为劳动经济性已获证明。",
+            "只凭满足指定条件的带日期证据推进状态。"
+          ],
+          "done": "READY；要求有效时数、人工介入与服务可用率，经济性未证明。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流与Web3健康度｜周一的数据还没齐",
+          "title": "保留未完整ETF数据",
+          "why": "资本流判断应建立在完整观察上，而不是最先出现的数字上。",
+          "steps": [
+            "9月28日资金流分类保持待定，直到全部发行人数据齐备，或供应商明确标注该行已完整。",
+            "只凭满足指定条件的带日期证据推进状态。"
+          ],
+          "done": "WATCHING；9月28日发行人数据未齐，最终净流量暂无。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币、金融科技与代币通道｜银行先获得评估入口",
+          "title": "跟踪银行采用阶段",
+          "why": "支付经验有助于分清可用通道与已有运营责任人、已有付费使用的服务。",
+          "steps": [
+            "保存一张采用阶段卡，只在具名银行确认生产环境中的USDC活动及其运营范围后推进状态。",
+            "只凭满足指定条件的带日期证据推进状态。"
+          ],
+          "done": "WATCHING；需要具名生产银行与运营范围。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai内容、分发与影响力｜把接口问题讲清楚",
+          "title": "发布接口也是模型的一部分",
+          "why": "这篇解释把智能体、企业软件与运营经济性连起来，让Robin用证据建立自己的判断。",
+          "steps": [
+            "在[规范地址](https://iamrobin.ai/ouroboros/202609/20260929/action_item/)发布The Interface Is Part of the Model，中文工作标题《接口也是模型的一部分》：智能体经济性由模型、接口与验收条件共同决定；以Holo4披露、OSWorld 2.0评分、AutomationBench任务集、BrowserGym及WebArena-Verified组成证据骨架，加入概念比较图和拟议的匹配测试，并归档LinkedIn衍生稿。",
+            "只凭满足指定条件的带日期证据推进状态。"
+          ],
+          "done": "编辑成果COMPLETE；公开交付另有验证关卡。",
+          "deepDiveTitle": "发布接口也是模型的一部分"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基础设施、职业机会与资本项目｜融资为容量争取跑道",
+          "title": "分开融资与交付",
+          "why": "基础设施职业切口，在于把融资条款转成可交付的里程碑；这里没有已核实的招聘岗位。",
+          "steps": [
+            "保存一张融资到交付证据卡，分开列出承诺资金、已提款、建设里程碑和通电容量；未披露条款继续保留空缺。",
+            "只凭满足指定条件的带日期证据推进状态。"
+          ],
+          "done": "READY；承诺、提款、建设与通电容量分别记录。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私募市场｜Physical AI为下一代芯片筹资",
+          "title": "SiMa.ai维持WATCH",
+          "why": "边缘算力把Physical AI需求与软件集成、客户设计采用，以及芯片转成收入所需的时间连在一起。",
+          "steps": [
+            "将SiMa.ai归为WATCH，直到融资条款、独立佐证的客户经济性及真实投资渠道足以支持改变判断。",
+            "只凭满足指定条件的带日期证据推进状态。"
+          ],
+          "done": "WATCHING；需要条款、独立客户经济性与投资渠道。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场与AI主题｜回购授权是一项未来资本选择",
+          "title": "记录回购桥接表",
+          "why": "分析AI资本配置，需要把授权标题、现金流与净稀释连接起来。",
+          "steps": [
+            "保存一张回购桥接表，仅凭后续申报披露的回购现金、购入股数与股数变化更新，不推定股价结果。",
+            "只凭满足指定条件的带日期证据推进状态。"
+          ],
+          "done": "READY；授权已记录，后续实际回购仍待核验。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年9月29日",
+      "description": "八項行動，分清能力、交付階段與已驗證成果。",
+      "centralJudgment": "比較完整的智能體配置，並寫明變化來自哪裏。融資、客戶評估和回購授權，都要與已經交付的結果區分。",
+      "fieldLine": "八個信號。明確工作。誠實記錄完成。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與智能體｜介面一變，比較也變了",
+          "title": "保存同介面測試規格",
+          "why": "依靠智能體運作的小公司，需要比較實際可用的介面與完整工作流程。",
+          "steps": [
+            "保存一張同介面評測卡：比較模型成本前，先固定任務、初始狀態、權限與完成標準。",
+            "只憑滿足指定條件的帶日期證據推進狀態。"
+          ],
+          "done": "READY；任務、狀態、權限與驗收條件已保存，實驗未執行。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI與機器人｜主題公園成為羣體運營試場",
+          "title": "記錄羣體運營證據要求",
+          "why": "這個案例把具身智能與多智能體協調的運營成本連在一起。",
+          "steps": [
+            "保存一張羣體運營證據卡，只有有效任務時數、人工介入和服務可用率有據可查，才升級為勞動經濟性已獲證明。",
+            "只憑滿足指定條件的帶日期證據推進狀態。"
+          ],
+          "done": "READY；要求有效時數、人工介入與服務可用率，經濟性未證明。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本流與Web3健康度｜週一的數據還沒齊",
+          "title": "保留未完整ETF數據",
+          "why": "資本流判斷應建立在完整觀察上，而不是最先出現的數字上。",
+          "steps": [
+            "9月28日資金流分類保持待定，直到全部發行人數據齊備，或供應商明確標註該行已完整。",
+            "只憑滿足指定條件的帶日期證據推進狀態。"
+          ],
+          "done": "WATCHING；9月28日發行人數據未齊，最終淨流量暫無。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣、金融科技與代幣通道｜銀行先獲得評估入口",
+          "title": "跟蹤銀行採用階段",
+          "why": "支付經驗有助於分清可用通道與已有運營責任人、已有付費使用的服務。",
+          "steps": [
+            "保存一張採用階段卡，只在具名銀行確認生產環境中的USDC活動及其運營範圍後推進狀態。",
+            "只憑滿足指定條件的帶日期證據推進狀態。"
+          ],
+          "done": "WATCHING；需要具名生產銀行與運營範圍。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai內容、分發與影響力｜把介面問題講清楚",
+          "title": "發佈介面也是模型的一部分",
+          "why": "這篇解釋把智能體、企業軟體與運營經濟性連起來，讓Robin用證據建立自己的判斷。",
+          "steps": [
+            "在[規範地址](https://iamrobin.ai/ouroboros/202609/20260929/action_item/)發佈The Interface Is Part of the Model，中文工作標題《介面也是模型的一部分》：智能體經濟性由模型、介面與驗收條件共同決定；以Holo4披露、OSWorld 2.0評分、AutomationBench任務集、BrowserGym及WebArena-Verified組成證據骨架，加入概念比較圖和擬議的匹配測試，並歸檔LinkedIn衍生稿。",
+            "只憑滿足指定條件的帶日期證據推進狀態。"
+          ],
+          "done": "編輯成果COMPLETE；公開交付另有驗證關卡。",
+          "deepDiveTitle": "發佈介面也是模型的一部分"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基礎設施、職業機會與資本項目｜融資為容量爭取跑道",
+          "title": "分開融資與交付",
+          "why": "基礎設施職業切口，在於把融資條款轉成可交付的里程碑；這裏沒有已核實的招聘崗位。",
+          "steps": [
+            "保存一張融資到交付證據卡，分開列出承諾資金、已提款、建設里程碑和通電容量；未披露條款繼續保留空缺。",
+            "只憑滿足指定條件的帶日期證據推進狀態。"
+          ],
+          "done": "READY；承諾、提款、建設與通電容量分別記錄。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私募市場｜Physical AI為下一代芯片籌資",
+          "title": "SiMa.ai維持WATCH",
+          "why": "邊緣算力把Physical AI需求與軟體集成、客戶設計採用，以及芯片轉成收入所需的時間連在一起。",
+          "steps": [
+            "將SiMa.ai歸為WATCH，直到融資條款、獨立佐證的客戶經濟性及真實投資渠道足以支持改變判斷。",
+            "只憑滿足指定條件的帶日期證據推進狀態。"
+          ],
+          "done": "WATCHING；需要條款、獨立客戶經濟性與投資渠道。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場與AI主題｜回購授權是一項未來資本選擇",
+          "title": "記錄回購橋接表",
+          "why": "分析AI資本配置，需要把授權標題、現金流與淨稀釋連接起來。",
+          "steps": [
+            "保存一張回購橋接表，僅憑後續申報披露的回購現金、購入股數與股數變化更新，不推定股價結果。",
+            "只憑滿足指定條件的帶日期證據推進狀態。"
+          ],
+          "done": "READY；授權已記錄，後續實際回購仍待核驗。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年9月29日",
+      "description": "八つの行動で能力、供給段階、検証済み成果を分ける。",
+      "centralJudgment": "構成済みエージェント全体を比較し、何が変わったかを明示する。資金調達、顧客評価、買戻し承認は供給済み成果と区別する。",
+      "fieldLine": "八つのシグナル。定義した仕事。正確な完了記録。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "最先端モデルとエージェント｜インターフェースが比較を変える",
+          "title": "同一インターフェース試験を定義",
+          "why": "エージェントを使う小さな会社では、実際に使えるインターフェースと業務全体を比べたい。",
+          "steps": [
+            "課題、初期状態、権限、完了条件を固定してからモデル費用を比べる、同一インターフェース評価カードを保存する。",
+            "定めた条件を満たす日付付き証拠が出た場合だけ進める。"
+          ],
+          "done": "READY。課題、状態、権限、受入条件を保存。実験は未実施。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AIとロボティクス｜テーマパークが群運用の試験場に",
+          "title": "群運用の証拠条件を記録",
+          "why": "身体を持つAIと、多数のエージェントを調整する運用費用をつなぐ例だ。",
+          "steps": [
+            "有用な作業時間、人の介入、サービス可用性を条件とする群運用証拠カードを保存し、条件がそろうまで労働採算の実証に格上げしない。",
+            "定めた条件を満たす日付付き証拠が出た場合だけ進める。"
+          ],
+          "done": "READY。有用時間、介入、可用性を要求。採算は未証明。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産フローとWeb3｜月曜日の行はまだ未完成",
+          "title": "未完成のETF行を保留",
+          "why": "資本フローの判断は、最も早い数字よりも完了した観測を重視したい。",
+          "steps": [
+            "全発行体の値が埋まるか、提供者が行の完成を明示するまで、9月28日のフロー分類を保留する。",
+            "定めた条件を満たす日付付き証拠が出た場合だけ進める。"
+          ],
+          "done": "WATCHING。9月28日の発行体データは未完成。最終フローは不明。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコインと決済｜銀行に評価の入口ができる",
+          "title": "銀行の導入段階を追う",
+          "why": "決済経験は、使える経路と、運用責任者や有償利用があるサービスを見分ける力になる。",
+          "steps": [
+            "実名の銀行がUSDCの本番利用と運用範囲を確認した場合だけ進める、導入段階カードを保存する。",
+            "定めた条件を満たす日付付き証拠が出た場合だけ進める。"
+          ],
+          "done": "WATCHING。本番利用する実名銀行と運用範囲が必要。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.aiの発信｜インターフェースを問い直す",
+          "title": "インターフェースもモデルの一部を公開",
+          "why": "エージェント、企業ソフト、運用採算を結ぶ、証拠に基づいたRobinの解説になる。",
+          "steps": [
+            "[正規公開先](https://iamrobin.ai/ouroboros/202609/20260929/action_item/)にThe Interface Is Part of the Model、日本語題「インターフェースもモデルの一部」を公開する。採算はモデル、インターフェース、受入条件で決まるという論旨を、Holo4、OSWorld 2.0、AutomationBench、BrowserGym、WebArena-Verifiedで支え、概念図と未実施の比較試験案を添え、LinkedIn派生稿を保存する。",
+            "定めた条件を満たす日付付き証拠が出た場合だけ進める。"
+          ],
+          "done": "編集成果はCOMPLETE。公開配信は別途検証。",
+          "deepDiveTitle": "インターフェースもモデルの一部を公開"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラと資本案件｜資金が容量開発に時間を与える",
+          "title": "資金と供給を分離",
+          "why": "融資条件を供給の節目に置き換える力がインフラ分野の仕事につながる。確認済みの求人ではない。",
+          "steps": [
+            "約定資金、引出済み資金、建設段階、通電容量を分ける資金調達から供給へのカードを保存し、非開示条件は未解決のままにする。",
+            "定めた条件を満たす日付付き証拠が出た場合だけ進める。"
+          ],
+          "done": "READY。約定、引出、建設、通電を分離。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期プライベート市場｜Physical AIが次の半導体を資金化",
+          "title": "SiMa.aiはWATCH",
+          "why": "エッジ計算はPhysical AIの需要を、ソフト統合、設計採用、半導体が売上に変わる時間につなぐ。",
+          "steps": [
+            "調達条件、独立した裏付けのある顧客採算、実際の投資参加経路が判断変更を支えるまで、SiMa.aiをWATCHに分類する。",
+            "定めた条件を満たす日付付き証拠が出た場合だけ進める。"
+          ],
+          "done": "WATCHING。条件、独立した顧客採算、投資参加経路が必要。"
+        },
+        {
+          "signal": 8,
+          "domain": "上場株とAI｜買戻し枠は将来の資本選択",
+          "title": "買戻し比較表を記録",
+          "why": "AIへの資本配分は、承認額、キャッシュフロー、純希薄化をつないで読みたい。",
+          "steps": [
+            "今後の開示にある買戻し現金、購入株数、株数変化だけで更新する比較表を保存し、株価への効果は仮定しない。",
+            "定めた条件を満たす日付付き証拠が出た場合だけ進める。"
+          ],
+          "done": "READY。承認を記録。実際の買戻しは今後確認する。"
+        }
+      ]
+    }
+  }
+}
