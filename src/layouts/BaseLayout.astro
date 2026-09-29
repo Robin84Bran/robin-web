@@ -29,6 +29,8 @@ const { title, description, path, image, imageAlt, imageWidth, imageHeight, type
 <html lang={language}>
   <head>
     <SeoHead {title} {description} {path} {image} {imageAlt} {imageWidth} {imageHeight} {type} {noindex} {schema} {language} {alternates} />
+    <link rel="stylesheet" href="/language/menu.css" />
+    <script is:inline type="module" src="/language/client.mjs"></script>
   </head>
   <body data-path={path}>
     <a class="skip-link" href="#content">Skip to content</a>

@@ -1,5 +1,6 @@
 ---
 import { identityWords, navItems, socialLinks } from '../data/site';
+import LanguageMenu from './LanguageMenu.astro';
 
 interface Props {
   currentPath: string;
@@ -43,11 +44,12 @@ const { currentPath } = Astro.props;
     <div class="github-link official-links" role="group" aria-label="Official profiles">
       <a href={socialLinks.official} rel="noreferrer" target="_blank">TideiSun <span aria-hidden="true">↗</span></a>
       <a href={socialLinks.officialIsun} rel="noreferrer" target="_blank">iSunTV <span aria-hidden="true">↗</span></a>
+      <LanguageMenu />
     </div>
   </div>
 </header>
 
 <style>
-  .official-links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: .4rem .85rem; }
+  .official-links { display: flex; flex-wrap: nowrap; align-items: center; justify-content: flex-end; gap: .4rem .85rem; }
   .official-links a { text-decoration: none; }
 </style>
