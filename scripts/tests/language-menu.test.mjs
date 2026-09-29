@@ -20,6 +20,7 @@ test('About uses one structure, all approved paragraphs and intact public links'
     'https://www.isuntv.com','https://isun1.com','https://isunmedia.com','https://isuntvmall.com','https://isun1.news',
     '/meaning/diary/202609/2026-09-07-american-in-hong-kong/'];
   for (const [index, html] of pages.entries()) {
+    if (index) assert.ok(links(html).includes(index === 1 ? '/zh-hans/' : '/zh-hant/'));
     assert.equal((html.match(/<h1\b/g)||[]).length,1);
     assert.equal((html.match(/<p data-about-copy="(?:roots\d|p\d_\d|core\d)"/g)||[]).length,24);
     for (const dest of destinations) {

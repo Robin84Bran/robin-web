@@ -76,7 +76,7 @@ const companies = [
      </section>
     </div>
    </div>
-   <nav class="core-end" aria-label="Continue exploring"><a href="/identity/">Identity in motion</a><a href="/asymmetry/">Asymmetry</a><a href="/network/">Network</a><a href={socialLinks.github}>GitHub</a></nav>
+   <nav class="core-end" aria-label="Continue exploring">{locale !== 'en' && <a href={profile.homePath}>{profile.homeLinkLabel}</a>}<a href="/identity/">Identity in motion</a><a href="/asymmetry/">Asymmetry</a><a href="/network/">Network</a><a href={socialLinks.github}>GitHub</a></nav>
   </div>
  <script is:inline type="application/json" id="about-owner-copy" set:html={JSON.stringify({'zh-CN':aboutHans,'zh-TW':aboutHant}).replaceAll('<','\\u003c')} />
  </article>
