@@ -93,10 +93,63 @@ class CheckinTests(unittest.TestCase):
         self.feature.tick(self.bot, tomorrow + timedelta(days=1))
         self.assertIn("Write one plain-English sentence", self.bot.calls[-1][1]["text"])
 
-    def test_no_response_keeps_one_action(self):
+    def test_no_response_expires_old_action_and_selects_newest(self):
+        self.feature.tick(self.bot, self.now)
+        original = self.state()["days"][self.day]["actionId"]
+        self.article("20260921", title="AI agents learn a new trick")
+        self.feature.tick(self.bot, self.now + timedelta(days=1))
+        self.assertEqual(self.state()["actions"][original]["status"], "EXPIRED")
+        self.assertIn("AI agents learn a new trick", self.bot.calls[-1][1]["text"])
+        self.assertEqual(sum(a["status"] == "OPEN" for a in self.state()["actions"].values()), 1)
+
+    def test_old_legacy_carry_is_not_repeated(self):
+        self.feature.tick(self.bot, self.now)
+        self.feature.handle(self.bot, self.click("carry"), self.now)
+        self.article("20260929", title="Latest AI research")
+        self.feature.tick(self.bot, self.now + timedelta(days=9))
+        self.assertIn("Latest AI research", self.bot.calls[-1][1]["text"])
+        self.assertNotIn("Who evaluates", self.bot.calls[-1][1]["text"])
+
+    def test_explicit_carry_expires_when_source_ages_out(self):
+        self.feature.tick(self.bot, self.now)
+        for offset in range(3):
+            moment = self.now + timedelta(days=offset)
+            self.feature.tick(self.bot, moment)
+            self.feature.handle(self.bot, self.click("carry", 10 + offset, moment.date().isoformat()), moment)
+        self.article("20260923", title="New AI infrastructure")
+        self.feature.tick(self.bot, self.now + timedelta(days=3))
+        self.assertIn("New AI infrastructure", self.bot.calls[-1][1]["text"])
+
+    def test_candidates_sort_across_article_types_and_freshness_boundary(self):
+        self.article("20260918")  # Three-calendar-day window includes 18th.
+        self.article("20260917")  # Not 17th.
+        self.article("20260921", title="Newest AI blog")
+        package = self.website.parent / "blogs/202609/20260921/action_item"
+        text = (package / "article.md").read_text().replace("/action_item/", "/blog/")
+        (package / "article.md").write_text(text)
+        package.rename(package.parent / "blog")
+        self.assertEqual(len(self.feature.candidates(self.day)), 2)
+        self.assertEqual(self.feature.candidates("2026-09-21")[0]["title"], "Newest AI blog")
+
+    def test_no_recent_source_uses_honest_fallback_not_old_news(self):
+        self.feature.tick(self.bot, self.now + timedelta(days=9))
+        self.assertIn("No fresh published topic today", self.bot.calls[-1][1]["text"])
+        self.assertNotIn("https://", self.bot.calls[-1][1]["text"])
+
+    def test_ignored_topic_not_recycled_as_another_task(self):
         self.feature.tick(self.bot, self.now)
         self.feature.tick(self.bot, self.now + timedelta(days=1))
-        self.assertEqual(len(self.state()["actions"]), 1)
+        self.assertNotIn("Who evaluates", self.bot.calls[-1][1]["text"])
+
+    def test_current_day_receipt_unchanged_and_completed_history_preserved(self):
+        self.feature.tick(self.bot, self.now)
+        before = self.state()["days"][self.day].copy()
+        self.article("20260920", title="Updated AI title")
+        self.feature.tick(self.bot, self.now)
+        self.assertEqual(self.state()["days"][self.day], before)
+        self.feature.handle(self.bot, self.click("done"), self.now)
+        self.feature.tick(self.bot, self.now + timedelta(days=1))
+        self.assertEqual(self.state()["actions"][before["actionId"]]["status"], "DONE")
 
     def test_other_completed_action_does_not_complete_suggestion(self):
         self.feature.tick(self.bot, self.now)

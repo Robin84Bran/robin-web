@@ -12,12 +12,13 @@ import os
 import re
 import tempfile
 from contextlib import contextmanager
-from datetime import datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
 HKT = ZoneInfo("Asia/Hong_Kong")
 COMMANDS = {"/one_action", "/one_done", "/one_carry"}
+FRESH_DAYS = 3  # Today and the preceding two HKT publication dates.
 
 
 def read_json(path, default=None):
@@ -76,9 +77,12 @@ class OneAction:
         files = sorted(blogs.glob("??????/????????/action_item/article.md"), reverse=True)
         files += sorted(blogs.glob("??????/????????/blog/article.md"), reverse=True)
         candidates = []
+        cutoff = (date.fromisoformat(today) - timedelta(days=FRESH_DAYS - 1)).strftime("%Y%m%d")
         for path in files:
             issue = path.parent.parent.name
             if not re.fullmatch(r"\d{8}", issue) or issue > today.replace("-", ""):
+                continue
+            if issue < cutoff:
                 continue
             release = read_json(path.parent / "publish-state.json", {})
             manifest = read_json(path.parent / "manifest.json", {})
@@ -92,13 +96,29 @@ class OneAction:
                 continue
             if not re.search(r"\bAI\b|artificial intelligence|model|agent|compute|robot|inference|evaluation|infrastructure", title + " " + field(text, "excerpt"), re.I):
                 continue
-            candidates.append({"title": title, "url": url})
-        return candidates[:60]
+            candidates.append({"title": title, "url": url, "sourceDate": datetime.strptime(issue, "%Y%m%d").date().isoformat()})
+        return sorted(candidates, key=lambda item: item["sourceDate"], reverse=True)[:60]
 
     def ensure_day(self, state, day):
         if day in state["days"]:
             return state["days"][day]
-        pending = next((a for a in reversed(list(state["actions"].values())) if a["status"] == "OPEN"), None)
+        sources = self.candidates(day)
+        fresh_urls = {source["url"] for source in sources}
+        yesterday = (date.fromisoformat(day) - timedelta(days=1)).isoformat()
+        previous = state["days"].get(yesterday, {})
+        pending = None
+        for action in state["actions"].values():
+            if action["status"] != "OPEN":
+                continue
+            # Silence is not consent to keep yesterday's homework. Explicit
+            # carries last only until tomorrow and only while the source is fresh.
+            if (previous.get("status") == "CARRY_FORWARD"
+                    and previous.get("actionId") == action["id"]
+                    and action["url"] in fresh_urls):
+                pending = action
+            else:
+                action.update(status="EXPIRED", expiredAt=day,
+                              expiryReason="NO_EXPLICIT_CARRY_OR_SOURCE_NOT_FRESH")
         if pending is None:
             # Progress through a small, reusable explanation / diligence /
             # distribution sequence before moving on to another published piece.
@@ -107,7 +127,11 @@ class OneAction:
                 ("invest", "Write one diligence question an angel investor should ask about this AI idea.", "Write just one investor question beginning ‘What evidence would show…?’"),
                 ("share", "Share this existing article with one sentence explaining why it matters, on your preferred channel.", "Draft one sentence to accompany this link; sending it can wait."),
             ]
-            for source in self.candidates(day):
+            for source in sources:
+                # Do not repackage an ignored article as another task tomorrow.
+                if any(a["url"] == source["url"] and a["status"] == "EXPIRED"
+                       for a in state["actions"].values()):
+                    continue
                 for kind, task, small in steps:
                     key = hashlib.sha256((source["url"] + kind).encode()).hexdigest()[:16]
                     if key not in state["actions"]:
@@ -118,7 +142,7 @@ class OneAction:
                     break
             if pending is None:
                 key = "own-" + day
-                pending = {"id": key, "title": "One AI idea from your existing work", "url": "",
+                pending = {"id": key, "title": "No fresh published topic today — one idea from your current AI work", "url": "",
                            "kind": "explain", "task": "Write one sentence explaining an AI idea you have already worked on.",
                            "small": "Name one AI idea you would like to explain.", "status": "OPEN", "created": day, "carries": 0}
             state["actions"][pending["id"]] = pending
@@ -134,9 +158,12 @@ class OneAction:
                 "Did you complete one concrete content or distribution action today?\n"
                 f"If not, one small step:\n{action['title']}\n{task}")
         if action["url"]:
+            if action.get("sourceDate"):
+                text += "\nPublished / 发布日期: " + action["sourceDate"]
             text += "\n" + action["url"]
         text += "\nDone = completed this. Something else? /one_done + a few words."
-        text += "\n今天完成一个内容或传播行动了吗？完成点 Done；明天继续点 Carry forward。"
+        text += "\nNo reply = a fresh suggestion tomorrow. Carry forward keeps this only while fresh."
+        text += "\n完成点 Done；不回应，明天换新题。Carry forward 仅在内容仍新鲜时保留。"
         buttons = [[{"text": "Done ✓", "callback_data": f"oa:{day}:done"},
                     {"text": "Carry forward →", "callback_data": f"oa:{day}:carry"}]]
         return {"text": text, "reply_markup": {"inline_keyboard": buttons}, "disable_web_page_preview": True}
@@ -229,7 +256,7 @@ class OneAction:
                         if entry["status"] != "CARRY_FORWARD":
                             state["actions"][entry["actionId"]]["carries"] += 1
                         entry["status"] = "CARRY_FORWARD"
-                        reply = "Saved. Same action tomorrow. / 记住了，明天接着做。"
+                        reply = "Saved for tomorrow if still fresh; otherwise a newer topic. / 已记下；明天仍新鲜就继续，否则换新题。"
                     else:
                         entry.update(status="DONE", completedAt=now.isoformat(), evidence="ROBIN_SELF_REPORT")
                         detail = text.partition(" ")[2].strip() if token == "/one_done" else ""

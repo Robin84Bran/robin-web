@@ -3,25 +3,37 @@
 Robin's daily loop: at 20:30 Asia/Hong_Kong, the existing private Telegram bot
 asks whether she completed one content or distribution action. It offers one
 small step grounded in a due, published AI article. Tap **Done** or **Carry
-forward**. No answer leaves the action open. Nothing stacks up.
+forward**. No answer expires the suggestion at the next daily selection; it
+does not become recurring homework. Nothing stacks up.
 
 - **Done** records Robin's self-report and ends today's check-in.
-- **Carry forward** keeps the same action for tomorrow. After two carries the
+- **Carry forward** explicitly keeps the same action for the next HKT day only
+  if its published source remains within the three-calendar-day freshness
+  window (today and the preceding two dates). After two carries the
   suggestion shrinks. A smaller draft counts as its own completed step; it is
   not evidence of public distribution.
 - `/one_action` shows today's action; `/one_done` and `/one_carry` work without
   buttons. `/one_done <what I actually did>` records a different completed
-  action while preserving the unfinished suggestion.
+  action without falsely completing the suggestion. An uncarried suggestion
+  expires at the next daily selection.
 - Plain `Done` or `Carry forward` works while today's prompt is open, outside
   Daily Briefing intake. Buttons and explicit commands also work during intake.
 - Old buttons never complete a new day's action. Repeated clicks are idempotent.
 
-The progression reuses existing material: a three-sentence AI explanation,
+Newest-first selection reuses existing material: a three-sentence AI explanation,
 one angel-investor diligence question, then one small distribution action.
 Only due packages with `DONE`/`PUBLISHED` evidence and a canonical iamrobin.ai
-article URL qualify. Unpublished, future, and unrelated topics are skipped.
+article URL qualify. All article types are sorted together by publication date.
+Unpublished, future, unrelated, and older-than-window topics are skipped.
+An ignored article is not recycled tomorrow as a different task. Freshness is
+publication recency, not an unsupported claim that a topic is trending.
+Explicit carries are rechecked against publication eligibility. Old day entries,
+delivery receipts and completed actions remain unchanged; expired suggestions
+are retained as EXPIRED, never counted as completed. Today's saved prompt is
+stable, so an old button cannot accidentally complete a replacement action.
 No suitable source means one sentence about Robin's existing AI work, with no
-invented publication or claim. There is never more than one open action.
+invented publication or claim, explicitly labeled as having no fresh published
+topic. There is never more than one open action. Published dates appear in prompts.
 
 ## Ownership and runtime
 
