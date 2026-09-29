@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {readFileSync,existsSync} from 'node:fs';
+const read=p=>readFileSync(new URL('../dist/'+p,import.meta.url),'utf8');
+const route='intelligence/one-door/',html=read(route+'index.html');
+assert.equal((html.match(/<h1\b/g)||[]).length,1);
+for(const fragment of ['https://iamrobin.ai/'+route,'application/ld+json','LearningResource','/one-door/client.mjs','147.50','640 seeded runs','Where the analogy stops','name="seed"','name="slots"','name="failure"','name="common"','name="cycle"','id="tick"','id="download"'])assert.ok(html.includes(fragment),fragment);
+for(const name of ['source.zip','README.md','model.mjs','client.mjs','tests.mjs','batch.mjs','results.json'])assert.ok(existsSync(new URL('../dist/one-door/'+name,import.meta.url)),name);
+assert.ok(read('intelligence/index.html').includes('href="/'+route+'"'));
+assert.ok(read('sitemap-0.xml').includes('https://iamrobin.ai/'+route));
+console.log('One Door: discoverability, SEO, controls, source/method assets and static results verified.');
