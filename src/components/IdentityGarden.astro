@@ -1,5 +1,9 @@
 ---
 import { identityWords } from '../data/site';
+import { homepageCopy, type HomeLocale } from '../data/homeChinese';
+interface Props { locale?: HomeLocale }
+const { locale = 'en' } = Astro.props;
+const { t, a } = homepageCopy(locale);
 
 const positions = [
   { dx: '-12rem', dy: '-11.5rem', mdx: '-7.4rem', mdy: '-10.2rem', driftX: '-1.1rem', driftY: '-1.6rem' },
@@ -38,8 +42,8 @@ const petals = [
         const style = `--dx:${position.dx};--dy:${position.dy};--mdx:${position.mdx};--mdy:${position.mdy};--drift-x:${position.driftX};--drift-y:${position.driftY};--step:${index}`;
         return (
           <li class={`identity-garden__node identity-garden__node--${item.tone}`} style={style}>
-            <a href={`/${item.slug}/`} aria-label={`${item.word} project directory`}>
-              <span class="identity-garden__letter">{item.letter}</span><span class="identity-garden__tail">{item.word.slice(1)}</span>
+            <a class="notranslate" translate="no" href={`/${item.slug}/`} aria-label={`${item.word} project directory`}>
+              <span class="identity-garden__letter">{item.letter}</span><span class="identity-garden__tail">{item.word.slice(1)}<small class="identity-garden__translation" {...a('door'+index,'')}>{t('door'+index,'')}</small></span>
             </a>
           </li>
         );
@@ -56,3 +60,8 @@ const petals = [
     {petals.map(([x, y, rotation], index) => <i style={`--px:${x};--py:${y};--pr:${rotation};--petal:${index}`}></i>)}
   </div>
 </section>
+
+<style>
+  .identity-garden__translation { display: block; font: .68rem var(--sans); letter-spacing: .05em; white-space: nowrap; }
+  .identity-garden__translation:empty { display: none; }
+</style>
