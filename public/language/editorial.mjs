@@ -5,10 +5,11 @@ export function normalizeRobinName(text) {
 }
 
 export function createEditorialLayer(doc) {
-  const packet = doc.getElementById('about-owner-copy');
+  const home = Boolean(doc.getElementById('home-owner-copy'));
+  const packet = doc.getElementById(home ? 'home-owner-copy' : 'about-owner-copy');
   const copy = packet ? JSON.parse(packet.textContent) : {};
-  const slots = [...doc.querySelectorAll('[data-about-copy]')].map(node => ({
-    node, original: node.textContent, translate: node.getAttribute('translate'),
+  const slots = [...doc.querySelectorAll('[data-about-copy],[data-home-copy]')].map(node => ({
+    node, original: node.hasAttribute('data-home-html') ? node.innerHTML : node.textContent, translate: node.getAttribute('translate'),
     protected: node.classList.contains('notranslate'),
   }));
   const changed = new Map();
@@ -31,7 +32,8 @@ export function createEditorialLayer(doc) {
     for (const {wrapper, original} of nameSlots) wrapper.replaceWith(original);
     nameSlots.length = 0;
     for (const slot of slots) {
-      slot.node.textContent = slot.original;
+      if (slot.node.hasAttribute('data-home-html')) slot.node.innerHTML = slot.original;
+      else slot.node.textContent = slot.original;
       slot.node.classList.toggle('notranslate', slot.protected);
       if (slot.translate === null) slot.node.removeAttribute('translate');
       else slot.node.setAttribute('translate', slot.translate);
@@ -40,9 +42,12 @@ export function createEditorialLayer(doc) {
   function apply(lang) {
     let count = 0;
     for (const { node } of slots) {
-      const value = lang === 'en' ? node.dataset.aboutEn : copy[lang]?.[node.dataset.aboutCopy];
+      const value = lang === 'en' ? (node.dataset.homeEn ?? node.dataset.aboutEn) : copy[lang]?.[node.dataset.homeCopy ?? node.dataset.aboutCopy];
       if (value !== undefined) {
-        node.textContent = value;
+        // Only checked-in owner packets may supply inline markup. Never use
+        // provider output or user input as HTML; other slots stay text-only.
+        if (node.hasAttribute('data-home-html')) node.innerHTML = value;
+        else node.textContent = value;
         node.classList.add('notranslate');
         node.setAttribute('translate', 'no');
         count++;
@@ -56,7 +61,7 @@ export function createEditorialLayer(doc) {
     const nodes = [];
     while (walker.nextNode()) nodes.push(walker.currentNode);
     for (const node of nodes) {
-      if (node.parentElement?.closest('script,style,code,pre,textarea,input,[contenteditable],[data-private],.notranslate,[data-about-copy]')) continue;
+      if (node.parentElement?.closest('script,style,code,pre,textarea,input,[contenteditable],[data-private],.notranslate,[data-about-copy],[data-home-copy]')) continue;
       // Protect identity tokens before the provider splits or reorders them.
       const parts = node.nodeValue.split(/(\bRobin(?:\s+Xie)?\b|谢玢|謝玢)/g);
       if (parts.length === 1) continue;

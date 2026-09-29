@@ -97,11 +97,17 @@ function nativeSimulationLanguage(lang) {
   const doors = document.querySelector('.site-header .doors-nav summary');
   if (doors && chrome[3]) doors.textContent = chrome[3];
   document.querySelectorAll('.site-header .doors-menu strong').forEach((node, i) => { if (chrome[i + 4]) node.textContent = chrome[i + 4]; });
+  const homePacket = document.getElementById('home-owner-copy');
+  const homeCopy = homePacket ? JSON.parse(homePacket.textContent)[lang] : null;
+  if (homeCopy) document.querySelectorAll('.site-header .doors-menu strong').forEach((node, i) => {
+    node.textContent = homeCopy['door'+i];
+  });
   const locale = ({ 'zh-CN': 'zh-Hans', 'zh-TW': 'zh-Hant' })[lang] || lang;
   for (const id of ['ab-language', 'af-language', 'ai-berkshire-language', ...(atlas ? ['language'] : [])]) {
     const control = document.getElementById(id);
     if (control) { control.value = id === 'language' ? lang : locale; control.dispatchEvent(new Event('change')); }
   }
+  document.dispatchEvent(new Event('site-language-change'));
 }
 async function translate(lang) {
   if (busy || !supported.has(lang)) return;
@@ -137,7 +143,7 @@ async function translate(lang) {
     storage.remove(providerKey);
     document.documentElement.lang = ({ 'zh-CN': 'zh-Hans', 'zh-TW': 'zh-Hant' })[lang] || lang;
     nativeSimulationLanguage(lang);
-    setStatus(authored ? 'Owner-approved About copy · navigation may be automatically translated.' : lang === source ? 'Original page.' : atlas ? 'Built-in translation · same page.' : 'Automatic translation · same page.');
+    setStatus(authored ? 'Owner-approved copy · navigation may be automatically translated.' : lang === source ? 'Original page.' : atlas ? 'Built-in translation · same page.' : 'Automatic translation · same page.');
     badge.textContent = ({ en: 'Automatic translation', 'zh-CN': '自动翻译 · 查看原文请点 🌐', 'zh-TW': '自動翻譯 · 查看原文請點 🌐', ja: '自動翻訳 · 原文は 🌐 から' })[lang];
     if (authored && lang === 'zh-CN') badge.textContent = '正文为谢玢定稿 · 导航可能自动翻译';
     if (authored && lang === 'zh-TW') badge.textContent = '正文為谢玢定稿 · 導覽可能自動翻譯';
@@ -146,9 +152,9 @@ async function translate(lang) {
     if (wasOpen) summary.focus({ preventScroll: true });
   } catch (error) {
     restoreTranslator();
-    nativeSimulationLanguage('en');
     storage.remove(providerKey);
     document.documentElement.lang = sourceHtmlLang;
+    nativeSimulationLanguage(source);
     selected(source);
     badge.hidden = true;
     setStatus(`${error.message} Original text is still available.`, 'error');
@@ -162,10 +168,10 @@ async function translate(lang) {
 buttons.forEach((button) => button.addEventListener('click', () => translate(button.dataset.language)));
 original.addEventListener('click', () => {
   restoreTranslator();
-  nativeSimulationLanguage('en');
   storage.remove(providerKey);
   storage.set(KEY, 'original');
   document.documentElement.lang = sourceHtmlLang;
+  nativeSimulationLanguage(source);
   selected(source);
   editorial.names(source);
   badge.hidden = true;

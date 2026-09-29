@@ -2,47 +2,51 @@
 import IdentityLanguageNav from './IdentityLanguageNav.astro';
 import TransformationEnso from './TransformationEnso.astro';
 import { identityProfiles } from '../data/identity';
-const profile = identityProfiles.en;
+import { homepageCopy, type HomeLocale } from '../data/homeChinese';
+interface Props { locale?: HomeLocale }
+const { locale = 'en' } = Astro.props;
+const profile = identityProfiles[locale];
+const { t, a } = homepageCopy(locale);
 ---
 
 <section class="identity-bridge identity-bridge--transformation shell" aria-labelledby="robin-introduction">
   <div class="identity-bridge__copy">
-    <p class="eyebrow">Robin Xie · 谢玢 · 謝玢</p>
-    <h2 id="robin-introduction">Entrepreneur and investor<br /><span>with an engineering background.</span></h2>
-    <p>I began in subsea engineering, moved into FinTech and entrepreneurship, and now build AI-native businesses and systems while allocating attention and capital.</p>
+    <p class="eyebrow" {...a('signature','Robin Xie · 谢玢 · 謝玢')}>{t('signature','Robin Xie · 谢玢 · 謝玢')}</p>
+    <h2 id="robin-introduction" data-home-html {...a('roles','Entrepreneur and investor<br /><span>with an engineering background.</span>')} set:html={t('roles','Entrepreneur and investor<br /><span>with an engineering background.</span>')} />
+    <p {...a('intro',"I began in subsea engineering, moved into FinTech and entrepreneurship, and now build AI-native businesses and systems while allocating attention and capital.")} set:html={t('intro',"I began in subsea engineering, moved into FinTech and entrepreneurship, and now build AI-native businesses and systems while allocating attention and capital.")} />
   </div>
-  <TransformationEnso />
+  <TransformationEnso locale={locale} />
   <section class="identity-now" aria-labelledby="robin-now">
-    <h3 id="robin-now" class="eyebrow">Now</h3>
-    <p>Most of my time today is focused on transforming iSunTV (<a href="https://isuntv.com/" hreflang="zh-Hant">陽光衛視</a> / <a href="https://isun1.com/" hreflang="zh-Hans">阳光卫视</a>), a legacy licensed satellite TV media company, into a live <a href="https://isun1.news/">AI-native news lab</a>, <a href="https://isuntvmall.com/">streaming commerce</a>, and one-person-company labs with agents and swarms.</p>
-    <p>In practice, that means moving between strategy, product, capital, and code. At iSunTV and iSunTVMall, for example, I am the technical team.</p>
+    <h3 id="robin-now" class="eyebrow" {...a('now','Now')}>{t('now','Now')}</h3>
+    <p data-home-html {...a('now0',"Most of my time today is focused on transforming iSunTV (<a href=\"https://isuntv.com/\" hreflang=\"zh-Hant\">陽光衛視</a> / <a href=\"https://isun1.com/\" hreflang=\"zh-Hans\">阳光卫视</a>), a legacy licensed satellite TV media company, into a live <a href=\"https://isun1.news/\">AI-native news lab</a>, <a href=\"https://isuntvmall.com/\">streaming commerce</a>, and one-person-company labs with agents and swarms.")} set:html={t('now0',"Most of my time today is focused on transforming iSunTV (<a href=\"https://isuntv.com/\" hreflang=\"zh-Hant\">陽光衛視</a> / <a href=\"https://isun1.com/\" hreflang=\"zh-Hans\">阳光卫视</a>), a legacy licensed satellite TV media company, into a live <a href=\"https://isun1.news/\">AI-native news lab</a>, <a href=\"https://isuntvmall.com/\">streaming commerce</a>, and one-person-company labs with agents and swarms.")} />
+    <p {...a('now1',"In practice, that means moving between strategy, product, capital, and code. At iSunTV and iSunTVMall, for example, I am the technical team.")} set:html={t('now1',"In practice, that means moving between strategy, product, capital, and code. At iSunTV and iSunTVMall, for example, I am the technical team.")} />
   </section>
   <section class="identity-past" aria-labelledby="robin-past">
-    <h3 id="robin-past" class="eyebrow">Past</h3>
+    <h3 id="robin-past" class="eyebrow" {...a('past','Past')}>{t('past','Past')}</h3>
     <div class="identity-past__story">
-      <p>My career began in subsea engineering, working with complex offshore systems and autonomous machines. It taught me to bring ideas into contact with the physical world, where reliability matters and assumptions have consequences.</p>
-      <p>From there, I moved into entrepreneurship and FinTech, working across payments, digital assets, and financial infrastructure. My attention expanded from how a system works to what a business could make possible.</p>
-      <p>Building businesses led me toward capital allocation. I began asking where technology, capital, and human attention could create lasting value over decades, a question that continues to guide my investing across public and private markets.</p>
-      <p>That path brought me to AI infrastructure, energy, robotics, and programmable finance. Through RobinOS, quantitative research labs, and AI-assisted workflows, I have explored how ideas become working systems, with human judgment and responsibility at their center.</p>
-      <p>Along the way, I kept writing, experimenting, and following connections between fields. Some ideas became investments; others became things I built. Those experiences brought me here, still curious about what might become possible next.</p>
+      <p {...a('past0',"My career began in subsea engineering, working with complex offshore systems and autonomous machines. It taught me to bring ideas into contact with the physical world, where reliability matters and assumptions have consequences.")} set:html={t('past0',"My career began in subsea engineering, working with complex offshore systems and autonomous machines. It taught me to bring ideas into contact with the physical world, where reliability matters and assumptions have consequences.")} />
+      <p {...a('past1',"From there, I moved into entrepreneurship and FinTech, working across payments, digital assets, and financial infrastructure. My attention expanded from how a system works to what a business could make possible.")} set:html={t('past1',"From there, I moved into entrepreneurship and FinTech, working across payments, digital assets, and financial infrastructure. My attention expanded from how a system works to what a business could make possible.")} />
+      <p {...a('past2',"Building businesses led me toward capital allocation. I began asking where technology, capital, and human attention could create lasting value over decades, a question that continues to guide my investing across public and private markets.")} set:html={t('past2',"Building businesses led me toward capital allocation. I began asking where technology, capital, and human attention could create lasting value over decades, a question that continues to guide my investing across public and private markets.")} />
+      <p {...a('past3',"That path brought me to AI infrastructure, energy, robotics, and programmable finance. Through RobinOS, quantitative research labs, and AI-assisted workflows, I have explored how ideas become working systems, with human judgment and responsibility at their center.")} set:html={t('past3',"That path brought me to AI infrastructure, energy, robotics, and programmable finance. Through RobinOS, quantitative research labs, and AI-assisted workflows, I have explored how ideas become working systems, with human judgment and responsibility at their center.")} />
+      <p {...a('past4',"Along the way, I kept writing, experimenting, and following connections between fields. Some ideas became investments; others became things I built. Those experiences brought me here, still curious about what might become possible next.")} set:html={t('past4',"Along the way, I kept writing, experimenting, and following connections between fields. Some ideas became investments; others became things I built. Those experiences brought me here, still curious about what might become possible next.")} />
     </div>
   </section>
   <div class="identity-bridge__discovery">
     <a class="quiet-link" href={profile.aboutPath}>{profile.aboutLinkLabel}<span aria-hidden="true">↗</span></a>
-    <IdentityLanguageNav currentLocale="en" page="home" />
+    <IdentityLanguageNav currentLocale={locale} page="home" />
   </div>
 </section>
 
 <style>
   .identity-bridge--transformation { gap: 2.5rem 3rem; }
   .identity-bridge__copy h2 { margin: 1.2rem 0 1.5rem; font-size: clamp(2rem, 3.8vw, 3.15rem); line-height: 1.14; letter-spacing: -.035em; }
-  .identity-bridge__copy h2 span { color: var(--muted); font-size: .76em; }
+  .identity-bridge__copy h2 :global(span) { color: var(--muted); font-size: .76em; }
   .identity-bridge__copy > p:not(.eyebrow) { font-size: clamp(1.1rem, 1.6vw, 1.25rem); line-height: 1.75; margin-bottom: 0; }
   .identity-now { max-width: 43rem; border-top: 1px solid var(--line); padding-top: 1.5rem; }
   .identity-now h3 { margin: 0 0 1rem; color: var(--gold-dark); }
   .identity-now p { color: var(--muted); font-size: .96rem; line-height: 1.85; }
   .identity-now p:last-child { margin-bottom: 0; }
-  .identity-now a { color: var(--ink); text-decoration-color: var(--gold); text-underline-offset: .22em; }
+  .identity-now :global(a) { color: var(--ink); text-decoration-color: var(--gold); text-underline-offset: .22em; }
   .identity-past { grid-column: 1 / -1; display: grid; gap: 1rem 3rem; border-top: 1px solid var(--line); padding-top: 2rem; }
   .identity-past h3 { margin: 0; color: var(--gold-dark); }
   .identity-past__story { max-width: 43rem; }

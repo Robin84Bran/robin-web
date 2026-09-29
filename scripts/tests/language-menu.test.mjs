@@ -37,6 +37,42 @@ test('About uses one structure, all approved paragraphs and intact public links'
   assert.match(pages[2],/<p data-about-copy="roots0"[^>]*>年方十三半，正值豆蔻年華/);
 });
 
+test('homepage editions share all owner copy, eight doors and original link destinations', () => {
+  const read = p => readFileSync(new URL('../../dist/'+p+'index.html',import.meta.url),'utf8');
+  const pages = ['', 'zh-hans/', 'zh-hant/'].map(read);
+  const packet = JSON.parse(pages[0].match(/id="home-owner-copy"[^>]*>(.*?)<\/script>/s)[1]);
+  assert.deepEqual(Object.keys(packet['zh-CN']), Object.keys(packet['zh-TW']));
+  const labels = ['灵份本真','错位天成','宿旨所向','共鸣追响','衔尾回环','零一交织','智能之光','罗网星罗'];
+  labels.forEach((label,i) => assert.equal(packet['zh-CN']['door'+i],label));
+  assert.equal(packet['zh-CN'].signature,'谢玢 · ROBIN XIE');
+  assert.equal(packet['zh-CN'].caption,'本真。涌现。重塑。');
+  assert.equal(packet['zh-CN'].pause,'凝神停伫 · 执于当下');
+  const hrefs = html => [...html.matchAll(/href="([^"]+)"/g)].map(m=>m[1]);
+  const links = ['https://isuntv.com/','https://isun1.com/','https://isun1.news/','https://isuntvmall.com/'];
+  for (const [i, html] of pages.entries()) {
+    assert.equal((html.match(/<h1\b/g)||[]).length,1);
+    assert.equal((html.match(/data-home-copy="past\d"/g)||[]).length,5);
+    assert.equal((html.match(/data-home-copy="now\d"/g)||[]).length,2);
+    assert.equal((html.match(/data-home-copy="door\d"/g)||[]).length,8);
+    assert.equal((html.match(/data-home-copy="phase\d"/g)||[]).length,4);
+    for (const href of links) assert.ok(hrefs(html).includes(href),href);
+    assert.match(html,/width="829" height="1122"/);
+    if (i) {
+      const copy = packet[i===1?'zh-CN':'zh-TW'];
+      for (const key of ['intro','now1','past0','past1','past2','past3','past4']) {
+        assert.ok(html.includes('>'+copy[key]+'</p>'),key+' must be visible, not just in JSON');
+      }
+    }
+  }
+  for (const copy of Object.values(packet)) {
+    assert.deepEqual(hrefs(copy.now0),links);
+    assert.doesNotMatch(JSON.stringify(copy),/<(?:script|iframe|img)|on\w+=|javascript:/i);
+    assert.doesNotMatch(JSON.stringify(copy),/罗宾|羅賓/);
+  }
+  assert.match(pages[0],/<span>Ms\.<\/span> Robin Xie<small>谢玢 · 謝玢<\/small>/);
+  assert.match(pages[0],/Entrepreneur and investor<br\s*\/?><span>with an engineering background\.<\/span>/);
+});
+
 test('four choices; English default; preserve explicit preference and original', () => {
   assert.equal(initialLanguage('auto', null), 'en');
   assert.equal(initialLanguage('zh-CN', null), 'en');

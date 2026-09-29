@@ -1,4 +1,8 @@
 ---
+import { homepageCopy, type HomeLocale } from '../data/homeChinese';
+interface Props { locale?: HomeLocale }
+const { locale = 'en' } = Astro.props;
+const { t, a } = homepageCopy(locale);
 const phases = [
   { name: 'Engineering', cue: 'Subsea robotics', position: 'top' },
   { name: 'FinTech', cue: 'Flow', position: 'right' },
@@ -13,13 +17,13 @@ const phases = [
     <ol class="enso-stages" aria-label="Select a phase to pause and inspect its form">
       {phases.map((phase, index) => <li class={phase.position}>
         <button type="button" class:list={['enso-phase', { active: index === 0 }]} data-phase={index} aria-pressed={index === 0 ? 'true' : 'false'} disabled>
-          {phase.name}<small>{phase.cue}</small>
+          <span {...a('phase'+index,phase.name)}>{t('phase'+index,phase.name)}</span><small {...a('cue'+index,phase.cue)}>{t('cue'+index,phase.cue)}</small>
         </button>
       </li>)}
     </ol>
   </div>
-  <figcaption>Elemental. Emergent. Transformative.</figcaption>
-  <button class="enso-motion-toggle" type="button" aria-label="Pause ensō motion" hidden>Pause motion</button>
+  <figcaption {...a('caption','Elemental. Emergent. Transformative.')}>{t('caption','Elemental. Emergent. Transformative.')}</figcaption>
+  <button class="enso-motion-toggle" type="button" aria-label="Pause ensō motion" data-home-copy="pause" data-home-en="Pause motion" hidden>{t('pause','Pause motion')}</button>
 </figure>
 <style>
   .transformation-enso { width: min(100%, 29rem); margin: 0 auto; }
@@ -82,8 +86,13 @@ function tick(now: number) {
 function update() {
   const running=wantsMotion && visible && !document.hidden;
   root.dataset.ensoMotion=running?'running':'paused';
-  button.textContent=wantsMotion?'Pause motion':'Play motion';
-  button.setAttribute('aria-label',wantsMotion?'Pause ensō motion':'Play ensō motion');
+  button.dataset.homeCopy=wantsMotion?'pause':'play';
+  button.dataset.homeEn=wantsMotion?'Pause motion':'Play motion';
+  const locale=({'zh-Hans':'zh-CN','zh-Hant':'zh-TW'} as Record<string,string>)[document.documentElement.lang];
+  const packet=document.getElementById('home-owner-copy');
+  const copy=packet?JSON.parse(packet.textContent || '{}'):{};
+  button.textContent=copy[locale]?.[button.dataset.homeCopy] || button.dataset.homeEn;
+  button.setAttribute('aria-label',locale ? button.textContent : wantsMotion?'Pause ensō motion':'Play ensō motion');
   if (running && !frame) { last=0;lastPaint=0;frame=requestAnimationFrame(tick); }
   else if (!running && frame) { cancelAnimationFrame(frame);frame=0; }
 }
@@ -101,6 +110,7 @@ button.hidden=false;
 button.addEventListener('click',()=>{wantsMotion=!wantsMotion;update();});
 reduce.addEventListener('change',()=>{if(reduce.matches)wantsMotion=false;update();});
 document.addEventListener('visibilitychange',update);
+document.addEventListener('site-language-change',update);
 new IntersectionObserver(([entry])=>{visible=entry.isIntersecting;update();}).observe(root);
 new ResizeObserver(resize).observe(canvas);
 resize();update();

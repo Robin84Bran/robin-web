@@ -252,8 +252,8 @@ if (existsSync(dist)) {
     check(html.includes('https://github.com/RobinXie1984'), 'identity: public GitHub profile missing.');
     check(!html.includes('medium.com') && !html.includes('GitHub · Quant Lab'), 'identity: retired social profile remains.');
   }
-  check(simplifiedHome.includes('谢玢 Robin Xie') && simplifiedHome.includes('资本配置'), 'zh-Hans home: canonical Chinese identity copy is missing.');
-  check(traditionalHome.includes('謝玢 Robin Xie') && traditionalHome.includes('資本配置'), 'zh-Hant home: canonical Chinese identity copy is missing.');
+  check(simplifiedHome.includes('谢玢 · ROBIN XIE') && simplifiedHome.includes('调度资本') && simplifiedHome.includes('破晓当下 (NOW)'), 'zh-Hans home: owner-approved Chinese identity copy is missing.');
+  check(traditionalHome.includes('谢玢 · ROBIN XIE') && traditionalHome.includes('調度資本') && traditionalHome.includes('破曉當下 (NOW)'), 'zh-Hant home: owner-approved Traditional Chinese identity copy is missing.');
   check(japaneseHome.includes('Robin Xie（謝玢）') && japaneseHome.includes('AIシステム'), 'ja home: canonical Japanese identity copy is missing.');
   check(network.includes('Projects came and went. The questions remained.') && network.includes('Global Token Limited'), 'Network: canonical English public record is missing.');
   check(simplifiedNetwork.includes('项目有聚散，所问未曾改。') && simplifiedNetwork.includes('香港上市公司'), 'zh-Hans Network: approved Chinese public record is missing.');

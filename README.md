@@ -113,6 +113,16 @@ No private chats or source documents are published.
 
 ## Homepage: current work and transformation
 
+English and both Chinese homepage routes share `HomeStory.astro`. Robin's
+September 30 homepage wording is maintained in `src/data/homeChinese.ts`, with
+reviewed Traditional Chinese, and reused by the same-page globe. This includes
+the eight poetic door labels, identity, introduction, Now/Past paragraphs and
+particle ensō labels. Preserve intentional wording such as “灵份本真” and
+“罗网星罗”. Approved slots are excluded from machine translation; only checked-in
+HTML slots may preserve inline presentation and the existing four public links.
+Switching to English restores its original copy and markup. Motion controls
+retain the selected language when pausing, resuming or returning to the tab.
+
 The homepage eyebrow above “Robin Xie” is “ENTREPRENEUR · INVESTOR · ENGINEER”.
 
 The English homepage introduces Robin as an entrepreneur and investor with an
