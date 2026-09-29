@@ -1,5 +1,49 @@
 # iamrobin.ai — Website v2 / Zen Loop
 
+## Global language menu (29 September 2026)
+
+Every built HTML page has one upper-right **🌐** control: English (default),
+简体中文, 繁體中文, 日本語. It translates the **current DOM**, without navigating to
+a differently designed locale page. Navigation, article text and footer share
+the same treatment. A saved choice follows ordinary page navigation. Existing
+authored editions, canonical URLs, hreflang, schema and immutable diary sources
+are unchanged; the older inline language bars are visually retired.
+
+`public/language/` owns the control, preference policy, styles and provider
+adapter. `BaseLayout`/`SiteHeader` use it; the `language-pages` Astro integration
+adds it to standalone HTML games/maps and future HTML pages. The postbuild gate
+checks every output page for one control and one client. Diary `und` language
+metadata uses automatic source detection, including mixed-language entries.
+
+Automatic display translation uses GTranslate's current same-page library,
+not Google's retiring Website Translator widget. It loads only when a different
+language is needed. It sends visible text to GTranslate/Google, is labeled as
+automatic, and may translate below-the-fold passages as they enter view. It is
+not a native editorial PASS or a replacement for searchable authored editions.
+Images/PDFs, canvas drawings, code and editable fields are not rewritten. Native
+AIDC simulator translations are coordinated by the same globe. Original-text
+restoration, failed-provider messages and bounded timeouts remain available.
+
+The provider has no CORS response header for Subresource Integrity; its external
+library URL is therefore a documented dependency, not a claimed immutable asset.
+The reviewed 2026-09-29 library SHA-384 is
+`/VaUDm+MvvVN/P0SuQv0ONSrMXNllFxg+W9pUjTdpK55FKDcEK1CM81YILbXB1Dj`.
+CSP allows only its CDN and translation endpoint in addition to existing hosts;
+no new secrets, subscriptions, account settings or Worker bindings are used.
+Provider documentation: https://gtranslate.io/blog/google-translate-website-widget-discontinued
+and https://gtranslate.io/privacy-policy .
+
+Bran Lab keeps its no-background-provider/no-beacon behavior. Even a saved
+language preference never loads translation there automatically; choosing a
+language on the game page is the explicit opt-in. Game saves are not read or
+modified by our adapter; forms, editable notes, HUD and passport are excluded.
+Private game progress is not a translation input. This is distinct from the
+ordinary public article/diary auto-translation behavior.
+
+Validate with `pnpm run build` and `pnpm run release:check`. Browser checks must
+also cover actual service translation, blocked service, long-diary ending,
+original round-trip, mobile dropdown geometry, and an interactive page.
+
 ## Meaning Diary completeness
 
 Long Telegram diaries now collect every batch until `/diary_done`; pauses never
@@ -208,8 +252,8 @@ a second action-completion receipt or overwrite the original.
 The September 24 diary was explicitly supplied and authorized as a Word document,
 including English, Traditional Chinese and Japanese translations. Its original
 Chinese text, paragraph boundaries, emphasis, colors, links and tables are kept.
-This is a specific owner-approved exception to the usual original-only diary
-workflow, not automatic translation of all diaries. Each edition has its own
+These remain separately reviewed, authored editions. The global globe additionally
+offers on-page automatic display translation for every diary. Each authored edition has its own
 canonical, reciprocal language links and body hash; translated editions require
 native editorial review. The archive lists the source once. Private source
 documents and import receipts stay outside the public repository.

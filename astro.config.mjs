@@ -2,6 +2,7 @@ import { defineConfig } from 'astro/config';
 import { readFileSync } from 'node:fs';
 import sitemap from '@astrojs/sitemap';
 import { sites } from '@openai/sites-vite-plugin';
+import languagePages from './scripts/language-pages.mjs';
 
 const isSitesBuild = process.env.SITES_BUILD === '1';
 const modelOlympics = JSON.parse(readFileSync(new URL('./src/data/model-olympics.json', import.meta.url), 'utf8'));
@@ -11,6 +12,7 @@ export default defineConfig({
   site: 'https://iamrobin.ai',
   output: 'static',
   integrations: [
+    languagePages(),
     sitemap({
       customPages: ["https://iamrobin.ai/intelligence/supply-chain-map/", "https://iamrobin.ai/meaning/Bran_lab/", "https://iamrobin.ai/meaning/Bran_lab/SuperRun/", "https://iamrobin.ai/meaning/Bran_lab/GeoDash/", "https://iamrobin.ai/meaning/Bran_lab/PacMan/", "https://iamrobin.ai/meaning/Bran_lab/BlockLab/", "https://iamrobin.ai/meaning/Bran_lab/WonderTrail/", "https://iamrobin.ai/meaning/Bran_lab/KartLab/", "https://iamrobin.ai/meaning/Bran_lab/CloudMunch/", "https://iamrobin.ai/meaning/Bran_lab/BounceTrials/", "https://iamrobin.ai/meaning/Bran_lab/StarboundMath/"],
       filter: (page) => {

@@ -1,0 +1,25 @@
+.site-language { position: relative; flex: 0 0 auto; color: #302d27; font: 14px/1.5 system-ui, sans-serif; letter-spacing: normal; text-transform: none; white-space: normal; }
+.site-language summary { display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 1px solid transparent; border-radius: 50%; cursor: pointer; list-style: none; font-size: 21px; background: transparent; }
+.site-language summary::-webkit-details-marker { display: none; }
+.site-language summary:hover, .site-language[open] summary { background: #b4915d12; border-color: #b4915d40; }
+.site-language :focus-visible { outline: 2px solid #896936; outline-offset: 3px; }
+.site-language__panel { position: absolute; z-index: 100; top: calc(100% + 8px); right: 0; width: min(270px, calc(100vw - 24px)); padding: 16px; box-sizing: border-box; border: 1px solid #ded7cc; border-radius: 12px; background: #faf8f2; box-shadow: 0 12px 40px #302d271c; text-align: left; max-height: calc(100dvh - 90px); overflow-y: auto; }
+.site-language__heading { margin: 0 0 10px; font-size: 12px; color: #766c5f; }
+.site-language button { font: inherit; letter-spacing: normal; text-transform: none; color: inherit; cursor: pointer; }
+.site-language__options { display: grid; gap: 2px; }
+.site-language__options button { display: flex; align-items: center; justify-content: space-between; min-height: 44px; width: 100%; border: 0; border-radius: 6px; padding: 10px 12px; background: transparent; text-align: left; }
+.site-language__options button:hover, .site-language__options button[aria-pressed="true"] { background: #b4915d16; }
+.site-language__options button span { visibility: hidden; color: #896936; }
+.site-language__options button[aria-pressed="true"] span { visibility: visible; }
+.site-language__options button:disabled { opacity: .5; cursor: wait; }
+.site-language__status { font-size: 12px; margin: 12px 0 5px; color: #615139; }
+.site-language__note { font-size: 11px; line-height: 1.55; margin: 0; color: #766c5f; }
+.site-language__original { margin-top: 12px; border: 0; border-top: 1px solid #ded7cc; padding: 12px 0 0; background: none; font-size: 12px !important; width: 100%; text-align: left; }
+.site-language[data-state="error"] summary { border-color: #a46648; }
+.site-language--floating { position: fixed; top: max(10px, env(safe-area-inset-top)); right: max(12px, env(safe-area-inset-right)); z-index: 1000; background: #faf8f2f5; border-radius: 50%; }
+/* One visible language control, including the two native AIDC simulators. */
+.identity-languages, .publication-languages, .action-flow__languages,
+.language-label:has(#ab-language), .af-language-label:has(#af-language),
+.language-label:has(#ai-berkshire-language), .language-menu:has(#language) { display: none !important; }
+.language-auto-note { position: fixed; bottom: 12px; left: 50%; transform: translateX(-50%); z-index: 90; max-width: calc(100vw - 24px); border: 1px solid #ded7cc; border-radius: 20px; padding: 6px 14px; background: #faf8f2f5; color: #615139; font: 11px/1.5 system-ui, sans-serif; text-align: center; pointer-events: none; }
+.language-auto-note[hidden] { display: none; }
