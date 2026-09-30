@@ -1,7 +1,7 @@
 // Robin's approved About copy, supplied 2026-09-30. Not machine paraphrase.
 export const aboutHans: Record<string, string> = {
   title: '我是谢玢。', roles: '创业者 · 投资人 · 工程师',
-  spine: '我构建并支持拓展个人与组织自主性的系统。',
+  spine: '心向更多的自由和无限的可能。',
   opening: '年方十三半，正值豆蔻年华。',
   roots0: '年方十三半，正值豆蔻年华，我踏入了中科大少年班的殿堂。至十八岁半，计算机学士，远涉重洋，赴美深造。',
   roots1: '科学铸就了我生命的底色：剥离表象以探寻机理，怀疑定势以叩问真理；即便温存的解释碎如尘埃，亦要在虚无中执着前行。然而，我心中的狂热与好奇岂能止于冰冷的代码？它誓要在浩瀚的现实沧海中，一试锋芒。',
@@ -39,7 +39,7 @@ export const aboutHans: Record<string, string> = {
 
 export const aboutHant: Record<string, string> = {
   title: '我是谢玢。', roles: '創業者 · 投資人 · 工程師',
-  spine: '我構建並支持拓展個人與組織自主性的系統。',
+  spine: '心向更多的自由和無限的可能。',
   opening: '年方十三半，正值豆蔻年華。',
   roots0: '年方十三半，正值豆蔻年華，我踏入了中科大少年班的殿堂。至十八歲半，計算機學士，遠涉重洋，赴美深造。',
   roots1: '科學鑄就了我生命的底色：剝離表象以探尋機理，懷疑定勢以叩問真理；即便溫存的解釋碎如塵埃，亦要在虛無中執著前行。然而，我心中的狂熱與好奇豈能止於冰冷的代碼？它誓要在浩瀚的現實滄海中，一試鋒芒。',
