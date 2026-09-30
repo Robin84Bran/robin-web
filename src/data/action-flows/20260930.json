@@ -1,0 +1,535 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-30",
+  "updated": "2026-09-30",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20260930/hero.webp",
+  "actionHero": "/action-item/20260930/hero.webp",
+  "ogImage": "/daily-briefing/20260930/og.webp",
+  "briefingPath": "/ouroboros/202609/20260930/",
+  "actionItemPath": "/ouroboros/202609/20260930/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "openai",
+          "url": "https://developers.openai.com/api/docs/changelog"
+        },
+        {
+          "label": "codex",
+          "url": "https://developers.openai.com/codex/changelog/"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "robot",
+          "url": "https://www.indiannewsnetwork.net/news/kinetiq-rrobotics-deploys-nova-robotic-concierge-at-cochin-international-airport20260929131449/"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "near",
+          "url": "https://bitwiseinvestments.com/newsroom/the-bitwise-near-etf-nrr-launches-as-first-spot-near-etp-in-the-us"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "fed",
+          "url": "https://www.govinfo.gov/content/pkg/FR-2026-09-29/html/2026-19899.htm"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "sources": [
+        {
+          "label": "amd",
+          "url": "https://newsroom.amd.com/news/amd-acquire-world-labs/"
+        },
+        {
+          "label": "joining",
+          "url": "https://www.worldlabs.ai/blog/amd-announcement"
+        },
+        {
+          "label": "atlas",
+          "url": "https://www.worldlabs.ai/blog/atlas"
+        },
+        {
+          "label": "transfer",
+          "url": "https://www.worldlabs.ai/blog/real-to-sim-to-real"
+        },
+        {
+          "label": "taxonomy",
+          "url": "https://www.worldlabs.ai/blog/taxonomy-of-world-models"
+        },
+        {
+          "label": "canonical destination",
+          "url": "https://iamrobin.ai/ouroboros/202609/20260930/action_item/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "samsung",
+          "url": "https://news.samsung.com/in/samsung-to-invest-usd-1-billion-in-ai-infrastructure-company-helix"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "general",
+          "url": "https://siliconangle.com/2026/09/29/world-model-startup-general-intuition-closes-220m-investment/"
+        },
+        {
+          "label": "games",
+          "url": "https://gamesbeat.com/general-intuition-raises-another-220m-at-6-2b-valuation-for-training-models-with-game-data/"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "amd",
+          "url": "https://newsroom.amd.com/news/amd-acquire-world-labs/"
+        },
+        {
+          "label": "joining",
+          "url": "https://www.worldlabs.ai/blog/amd-announcement"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, September 30, 2026",
+      "description": "Eight actions connect available capabilities with verified work.",
+      "centralJudgment": "Price the whole path to accepted outcomes. Models, financing and distribution each require a different completion test.",
+      "fieldLine": "Eight signals. Defined work. Honest completion.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Specify the delegated-work comparison",
+          "why": "The practical question is whether one repeatable workflow can finish with fewer interventions at an acceptable total cost.",
+          "steps": [
+            "Save a comparison specification for one bounded workflow across GPT-6.1 Sol and the existing baseline, counting accepted outcomes, total spend, retries and human interventions; do not run paid calls.",
+            "Advance only when dated evidence meets the stated acceptance condition."
+          ],
+          "done": "READY; specification saved, paid evaluation unexecuted."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "Record the airport evidence test",
+          "why": "The software workflow behind the robot may matter as much as its physical form.",
+          "steps": [
+            "Save a deployment evidence card requiring completed passenger requests, human handoffs and service availability before treating Nova as proven labor substitution.",
+            "Advance only when dated evidence meets the stated acceptance condition."
+          ],
+          "done": "READY; deployment evidence requirements saved, labor savings unproven."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows and Web3 Health",
+          "title": "Watch NRR net creations",
+          "why": "Agent-related crypto narratives need a capital-flow test independent of token price and issuer marketing.",
+          "steps": [
+            "Keep a first-week NRR watch card open until dated net creations can be distinguished from seed capital and secondary trading volume.",
+            "Advance only when dated evidence meets the stated acceptance condition."
+          ],
+          "done": "WATCHING; seed and net-creation evidence required."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins, FinTech, Payment Standards and Token Rails",
+          "title": "Keep the regulatory watchpoint",
+          "why": "Payments experience helps separate a procedural route from permission to launch a service.",
+          "steps": [
+            "Maintain the standing watchpoint for a final rule or a named issuer approval, without advancing the proposal to an implemented payment rail.",
+            "Advance only when dated evidence meets the stated acceptance condition."
+          ],
+          "done": "WATCHING; final rule or named approval required."
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai Content, Distribution and Visibility",
+          "title": "Publish the robot-practice essay",
+          "why": "This connects Robin’s capital-allocation lens with an understandable mechanism behind Physical AI.",
+          "steps": [
+            "Publish Who Pays for the Robot’s Practice at the [canonical destination](https://iamrobin.ai/ouroboros/202609/20260930/action_item/), with an evidence spine of the acquisition agreement, model functions, simulation transfer, total trial costs and a proposed acceptance test; use five primary sources, a conceptual diagram and an archived LinkedIn derivative.",
+            "Advance only when dated evidence meets the stated acceptance condition."
+          ],
+          "done": "COMPLETE as an editorial artifact; public delivery has separate gates.",
+          "deepDiveTitle": "Publish the robot-practice essay"
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure, Career Opportunities and Capital Projects",
+          "title": "Separate Helix capital and delivery",
+          "why": "Infrastructure analysis should connect who supplies capital with who carries construction and power-delivery obligations.",
+          "steps": [
+            "Save a Helix capital-to-delivery card separating announced investment, project commitments, power milestones and operating capacity, leaving undisclosed terms unresolved.",
+            "Advance only when dated evidence meets the stated acceptance condition."
+          ],
+          "done": "READY; investment, projects, power and operations separated."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-Stage Private Markets",
+          "title": "Watch General Intuition terms",
+          "why": "This is a relevant capital watchpoint at the intersection of world models, simulation and robotics.",
+          "steps": [
+            "Keep General Intuition on WATCH pending financing terms and independently corroborated paid customer outcomes; make no investment or application.",
+            "Advance only when dated evidence meets the stated acceptance condition."
+          ],
+          "done": "WATCHING; terms, access and independently corroborated outcomes required."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities and AI/Physical-AI Themes",
+          "title": "Record the AMD acquisition bridge",
+          "why": "The valuation question connects share issuance, integration and workload demand rather than treating the announcement as immediate earnings.",
+          "steps": [
+            "Save an acquisition bridge with announced consideration, closing conditions, eventual dilution and disclosed commercial milestones; leave unreported synergies blank.",
+            "Advance only when dated evidence meets the stated acceptance condition."
+          ],
+          "done": "READY; agreement recorded; closing, dilution and synergies remain to be verified."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年9月30日",
+      "description": "八项行动，把可用能力连接到验收成果。",
+      "centralJudgment": "计算抵达验收成果的完整成本。模型、融资与分销，各有不同的完成检验。",
+      "fieldLine": "八个信号。明确工作。诚实记录完成。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与智能体｜委派工作多了一条低价路径",
+          "title": "定义委派工作比较",
+          "why": "实际问题是：某项重复工作能否在可接受的总成本内，以更少人工介入完成。",
+          "steps": [
+            "保存一份有边界的流程比较规格，对照GPT-6.1 Sol与现有基线，记录验收成果、总支出、重试和人工介入；不执行付费调用。",
+            "只凭满足验收条件的带日期证据推进状态。"
+          ],
+          "done": "READY；规格已保存，付费评估未执行。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI与机器人｜机场让接待机器人面对真实需求",
+          "title": "记录机场部署证据条件",
+          "why": "机器人背后的软件流程可能与它的外形同样重要。",
+          "steps": [
+            "保存部署证据卡，要求完成的旅客请求、人工接手和服务可用率数据，再判断Nova是否实现了有证据支持的劳动替代。",
+            "只凭满足验收条件的带日期证据推进状态。"
+          ],
+          "done": "READY；证据条件已保存，劳动节省未证明。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流与Web3健康度｜新包装不等于新流入",
+          "title": "观察NRR净申购",
+          "why": "与智能体有关的加密叙事，需要独立于币价和发行方宣传的资金流检验。",
+          "steps": [
+            "保留NRR首周观察卡，待带日期的净申购可与种子资本及二级市场成交量区分后再更新判断。",
+            "只凭满足验收条件的带日期证据推进状态。"
+          ],
+          "done": "WATCHING；需要分清种子资产与净申购。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币、金融科技与支付标准｜提案仍在提案阶段",
+          "title": "保留监管观察条件",
+          "why": "支付经验能帮助区分申请路径与获准开展业务。",
+          "steps": [
+            "维持对最终规则或具名发行许可的观察条件，不把提案升级为已经实施的支付通道。",
+            "只凭满足验收条件的带日期证据推进状态。"
+          ],
+          "done": "WATCHING；等待最终规则或具名许可。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai内容与传播｜追踪机器人的练习成本",
+          "title": "发布机器人练习成本文章",
+          "why": "这把Robin的资本配置视角，与Physical AI背后可解释的机制连在一起。",
+          "steps": [
+            "在[正式发布页](https://iamrobin.ai/ouroboros/202609/20260930/action_item/)发布Who Pays for the Robot’s Practice，中文题《谁为机器人的练习买单》；证据主线依次为收购协议、模型功能、模拟迁移、完整试验成本与拟议验收测试，使用五个原始来源、概念图，并归档LinkedIn派生稿。",
+            "只凭满足验收条件的带日期证据推进状态。"
+          ],
+          "done": "编辑成果COMPLETE；公开交付另有验证。",
+          "deepDiveTitle": "发布机器人练习成本文章"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基础设施、职业与资本项目｜三星进入基础设施资本结构",
+          "title": "分开Helix资本与交付",
+          "why": "基础设施分析应把出资者与建设、电力交付责任承担方连起来。",
+          "steps": [
+            "保存Helix资本到交付卡，区分投资公告、项目承诺、电力节点和运营容量，未披露条款继续留空。",
+            "只凭满足验收条件的带日期证据推进状态。"
+          ],
+          "done": "READY；投资、项目、电力与运营分别记录。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私募市场｜世界模型融资延长试验跑道",
+          "title": "观察General Intuition条款",
+          "why": "这是世界模型、模拟、机器人交汇处值得跟踪的资本信号。",
+          "steps": [
+            "General Intuition维持WATCH，等待融资条款与独立佐证的付费客户成果；不投资、不申请。",
+            "只凭满足验收条件的带日期证据推进状态。"
+          ],
+          "done": "WATCHING；等待条款、参与渠道及独立佐证成果。"
+        },
+        {
+          "signal": 8,
+          "domain": "上市股票与AI主题｜AMD拟买入模型研究能力",
+          "title": "记录AMD收购桥接表",
+          "why": "估值应连接股份发行、整合与工作负载需求，不能把公告直接当成盈利。",
+          "steps": [
+            "保存收购桥接表，列明公告对价、交割条件、最终摊薄与已披露商业节点；未报告的协同保持空白。",
+            "只凭满足验收条件的带日期证据推进状态。"
+          ],
+          "done": "READY；协议已记录，交割、摊薄、协同仍待验证。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年9月30日",
+      "description": "八項行動，把可用能力連接到驗收成果。",
+      "centralJudgment": "計算抵達驗收成果的完整成本。模型、融資與分銷，各有不同的完成檢驗。",
+      "fieldLine": "八個信號。明確工作。誠實記錄完成。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與智能體｜委派工作多了一條低價路徑",
+          "title": "定義委派工作比較",
+          "why": "實際問題是：某項重複工作能否在可接受的總成本內，以更少人工介入完成。",
+          "steps": [
+            "保存一份有邊界的流程比較規格，對照GPT-6.1 Sol與現有基線，記錄驗收成果、總支出、重試和人工介入；不執行付費調用。",
+            "只憑滿足驗收條件的帶日期證據推進狀態。"
+          ],
+          "done": "READY；規格已保存，付費評估未執行。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI與機器人｜機場讓接待機器人面對真實需求",
+          "title": "記錄機場部署證據條件",
+          "why": "機器人背後的軟體流程可能與它的外形同樣重要。",
+          "steps": [
+            "保存部署證據卡，要求完成的旅客請求、人工接手和服務可用率數據，再判斷Nova是否實現了有證據支持的勞動替代。",
+            "只憑滿足驗收條件的帶日期證據推進狀態。"
+          ],
+          "done": "READY；證據條件已保存，勞動節省未證明。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本流與Web3健康度｜新包裝不等於新流入",
+          "title": "觀察NRR淨申購",
+          "why": "與智能體有關的加密敘事，需要獨立於幣價和發行方宣傳的資金流檢驗。",
+          "steps": [
+            "保留NRR首周觀察卡，待帶日期的淨申購可與種子資本及二級市場成交量區分後再更新判斷。",
+            "只憑滿足驗收條件的帶日期證據推進狀態。"
+          ],
+          "done": "WATCHING；需要分清種子資產與淨申購。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣、金融科技與支付標準｜提案仍在提案階段",
+          "title": "保留監管觀察條件",
+          "why": "支付經驗能幫助區分申請路徑與獲准開展業務。",
+          "steps": [
+            "維持對最終規則或具名發行許可的觀察條件，不把提案升級為已經實施的支付通道。",
+            "只憑滿足驗收條件的帶日期證據推進狀態。"
+          ],
+          "done": "WATCHING；等待最終規則或具名許可。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai內容與傳播｜追蹤機器人的練習成本",
+          "title": "發佈機器人練習成本文章",
+          "why": "這把Robin的資本配置視角，與Physical AI背後可解釋的機制連在一起。",
+          "steps": [
+            "在[正式發佈頁](https://iamrobin.ai/ouroboros/202609/20260930/action_item/)發佈Who Pays for the Robot’s Practice，中文題《誰為機器人的練習買單》；證據主線依次為收購協議、模型功能、模擬遷移、完整試驗成本與擬議驗收測試，使用五個原始來源、概念圖，並歸檔LinkedIn派生稿。",
+            "只憑滿足驗收條件的帶日期證據推進狀態。"
+          ],
+          "done": "編輯成果COMPLETE；公開交付另有驗證。",
+          "deepDiveTitle": "發佈機器人練習成本文章"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基礎設施、職業與資本項目｜三星進入基礎設施資本結構",
+          "title": "分開Helix資本與交付",
+          "why": "基礎設施分析應把出資者與建設、電力交付責任承擔方連起來。",
+          "steps": [
+            "保存Helix資本到交付卡，區分投資公告、項目承諾、電力節點和運營容量，未披露條款繼續留空。",
+            "只憑滿足驗收條件的帶日期證據推進狀態。"
+          ],
+          "done": "READY；投資、項目、電力與運營分別記錄。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私募市場｜世界模型融資延長試驗跑道",
+          "title": "觀察General Intuition條款",
+          "why": "這是世界模型、模擬、機器人交匯處值得跟蹤的資本信號。",
+          "steps": [
+            "General Intuition維持WATCH，等待融資條款與獨立佐證的付費客戶成果；不投資、不申請。",
+            "只憑滿足驗收條件的帶日期證據推進狀態。"
+          ],
+          "done": "WATCHING；等待條款、參與渠道及獨立佐證成果。"
+        },
+        {
+          "signal": 8,
+          "domain": "上市股票與AI主題｜AMD擬買入模型研究能力",
+          "title": "記錄AMD收購橋接表",
+          "why": "估值應連接股份發行、整合與工作負載需求，不能把公告直接當成盈利。",
+          "steps": [
+            "保存收購橋接表，列明公告對價、交割條件、最終攤薄與已披露商業節點；未報告的協同保持空白。",
+            "只憑滿足驗收條件的帶日期證據推進狀態。"
+          ],
+          "done": "READY；協議已記錄，交割、攤薄、協同仍待驗證。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年9月30日",
+      "description": "八つの行動で利用できる能力と検証済み成果をつなぐ。",
+      "centralJudgment": "受入済み成果までの総費用を見る。モデル、資金、販売経路にはそれぞれ違う完了確認が必要だ。",
+      "fieldLine": "八つのシグナル。定義した仕事。正確な完了記録。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "最先端モデルとエージェント｜委任の低コスト経路が増える",
+          "title": "委任業務の比較仕様を定義",
+          "why": "一つの反復業務を、許容できる総費用と少ない人の介入で完了できるかが実務の問いだ。",
+          "steps": [
+            "範囲を限定した業務についてGPT-6.1 Solと現行基準を比較する仕様を保存し、受入済み成果、総支出、再試行、人の介入を数える。有料呼出しは実行しない。",
+            "受入条件を満たす日付付き証拠が出たときだけ進める。"
+          ],
+          "done": "READY。仕様を保存。有料評価は未実施。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AIとロボティクス｜空港で接客の実需に向き合う",
+          "title": "空港導入の証拠条件を記録",
+          "why": "機体の形と同じくらい、背後のソフト業務が重要かもしれない。",
+          "steps": [
+            "完了した旅客依頼、人への引継ぎ、可用性を求める導入証拠カードを保存し、労働代替が実証済みとは扱わない。",
+            "受入条件を満たす日付付き証拠が出たときだけ進める。"
+          ],
+          "done": "READY。必要証拠を保存。労働費削減は未証明。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資金フローとWeb3｜新商品と新規流入を分ける",
+          "title": "NRR純設定を観察",
+          "why": "エージェント関連の暗号資産論には、価格や発行者の宣伝と独立した資金フローの検証が必要だ。",
+          "steps": [
+            "NRR初週の観察カードを維持し、日付付き純設定がシード資金や二次市場売買高から分離できるまで判断を保留する。",
+            "受入条件を満たす日付付き証拠が出たときだけ進める。"
+          ],
+          "done": "WATCHING。シード資産と純設定の区別が必要。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコインと決済標準｜提案の段階を守る",
+          "title": "規制の観察条件を維持",
+          "why": "決済経験は、申請経路と事業開始の許可を見分ける助けになる。",
+          "steps": [
+            "最終規則または実名の発行者認可という観察条件を維持し、提案を実装済み決済経路に格上げしない。",
+            "受入条件を満たす日付付き証拠が出たときだけ進める。"
+          ],
+          "done": "WATCHING。最終規則か実名の認可を待つ。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.aiの発信｜ロボットの練習費を追う",
+          "title": "ロボットの練習費を解説",
+          "why": "Robinの資本配分の視点とPhysical AIの具体的な仕組みを結べる。",
+          "steps": [
+            "[正規公開先](https://iamrobin.ai/ouroboros/202609/20260930/action_item/)にWho Pays for the Robot’s Practice、日本語題「ロボットの練習代は誰が払う」を公開する。合意、モデル機能、実機への移行、総試験費用、提案する受入試験を五つの一次資料と概念図で説明し、LinkedIn派生稿を保存する。",
+            "受入条件を満たす日付付き証拠が出たときだけ進める。"
+          ],
+          "done": "編集成果はCOMPLETE。公開配信は別途検証。",
+          "deepDiveTitle": "ロボットの練習費を解説"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラと資本案件｜Samsungが資本構成に加わる",
+          "title": "Helix資本と供給を分離",
+          "why": "誰が出資し、誰が建設と電力供給の責任を負うのかを結ぶ分析が重要になる。",
+          "steps": [
+            "Helixの投資発表、案件約束、電力工程、稼働容量を分けるカードを保存し、非開示条件は未解決のままにする。",
+            "受入条件を満たす日付付き証拠が出たときだけ進める。"
+          ],
+          "done": "READY。投資、案件、電力、稼働を分離。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期プライベート市場｜世界モデルの試験期間を資金化",
+          "title": "General Intuition条件を観察",
+          "why": "世界モデル、シミュレーション、ロボティクスが交わる資本観察点だ。",
+          "steps": [
+            "融資・出資条件と独立した裏付けのある有償顧客成果を待ち、General IntuitionはWATCHに保つ。投資も応募もしない。",
+            "受入条件を満たす日付付き証拠が出たときだけ進める。"
+          ],
+          "done": "WATCHING。条件、参加経路、独立確認済み成果を待つ。"
+        },
+        {
+          "signal": 8,
+          "domain": "上場株とAIテーマ｜AMDがモデル研究能力を買う合意",
+          "title": "AMD買収比較表を記録",
+          "why": "評価には株式発行、統合、計算需要を結び、発表を即時の利益と見なさない。",
+          "steps": [
+            "公表対価、完了条件、最終希薄化、開示された商用化の節目を並べる買収比較表を保存し、未公表の相乗効果は空欄にする。",
+            "受入条件を満たす日付付き証拠が出たときだけ進める。"
+          ],
+          "done": "READY。合意を記録。完了、希薄化、相乗効果は未確認。"
+        }
+      ]
+    }
+  }
+}
