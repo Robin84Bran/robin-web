@@ -2,9 +2,13 @@
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import OuroborosPublication from './OuroborosPublication.astro';
 import { createDiarySchemas } from '../lib/seo';
+import { normalizeDiaryLinks } from '../lib/diaryLinks.mjs';
 interface Props { entry: CollectionEntry<'diary'>; }
 const { entry } = Astro.props;
-const { Content } = await render(entry);
+await render(entry);
+const renderedHtml = (entry as CollectionEntry<'diary'> & { rendered?: { html?: string } }).rendered?.html;
+if (typeof renderedHtml !== 'string') throw new Error(`Diary ${entry.id} has no rendered HTML.`);
+const diaryHtml = normalizeDiaryLinks(renderedHtml);
 const publicationDate = entry.data.date.toISOString().slice(0, 10);
 const displayDate = entry.data.date.toLocaleDateString('en-US', { timeZone: 'UTC', month: 'long', day: 'numeric', year: 'numeric' });
 const path = new URL(entry.data.canonical).pathname;
@@ -30,7 +34,7 @@ const schemas = createDiarySchemas({title: entry.data.title, description: entry.
   languageLinks={languages.filter((item)=> item.hreflang!==entry.data.inLanguage)}
   crumbs={[{label:'Meaning',href:'/meaning/'},{label:'Diary'}]}
   intro={words[0]} footerText={words[1]} footerLink="/meaning/#diary" footerLinkLabel={words[2]}>
-  <div class="diary-document"><Content /></div>
+  <div class="diary-document" set:html={diaryHtml} />
   {entry.data.sourceId==='2026-09-24-from-art-to-immortal-cells'&&<aside class="diary-lab"><a href="/intelligence/swarm-lab/">{labWords[entry.data.inLanguage][0]}</a><p>{labWords[entry.data.inLanguage][1]}</p></aside>}
 </OuroborosPublication>
 <style>
