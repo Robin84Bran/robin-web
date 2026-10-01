@@ -28,7 +28,7 @@ export default defineConfig({
           || /^\/intelligence\/swarm-lab\/(?:cell-city\/|self-assembly\/|mars-jar\/|memory-islands\/|known-trap\/|attention-windows\/|taste-drift\/|shared-channel\/)?$/.test(path)
           || /^\/binary\/stories\/[a-z0-9-]+\/(?:zh-hans\/|zh-hant\/|ja\/)?$/.test(path)
           || /^\/meaning\/Bran_lab\/(?:SuperRun|GeoDash|PacMan|BlockLab|WonderTrail|KartLab|CloudMunch|BounceTrials|StarboundMath)?\/?$/.test(path)
-          || /^\/intelligence\/(?:hardware\/(?:deliverable-megawatts\/)?|supply-chain\/|supply-chain-map\/|swarm\/)?$/.test(path)
+          || /^\/intelligence\/(?:hardware\/(?:(?:bankable|deliverable)-megawatts\/)?|supply-chain\/|supply-chain-map\/|swarm\/)?$/.test(path)
           || /^\/meaning\/diary\/\d{6}\/\d{4}-\d{2}-\d{2}-[a-z0-9-]+\/(?:en\/|zh-hant\/|ja\/)?$/.test(path)
           || /^\/ouroboros\/\d{6}\/\d{8}\/$/.test(path)
           || /^\/ouroboros\/\d{6}\/\d{8}\/(?:zh-hans|zh-hant|ja)\/$/.test(path)

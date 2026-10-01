@@ -18,6 +18,7 @@ const indexableRoutes = new Set([
   '/ja/', '/ja/about/', '/ja/network/',
   '/portfolio/', '/books/', '/meaning/', '/ouroboros/', '/ouroboros/execution-ledger/', '/binary/', '/asymmetry/hkipoblindbox/',
   '/intelligence/', '/intelligence/hardware/', '/intelligence/supply-chain/',
+  '/intelligence/hardware/bankable-megawatts/',
   '/intelligence/hardware/deliverable-megawatts/',
   '/intelligence/attention_all_you_need/', '/intelligence/aidc101/', '/intelligence/aidc101/101-1/',
   '/intelligence/supply-chain-map/', '/intelligence/swarm/',
@@ -119,7 +120,7 @@ if (existsSync(dist)) {
   const binaryStoryRoutes = [...routes.keys()].filter(route=>/^\/binary\/stories\/[a-z0-9-]+\/(?:zh-hans\/|zh-hant\/|ja\/)?$/.test(route));
   const publicationRoutes = [...articleRoutes, ...actionFlowPublications, ...blogPublications, ...specialRoutes, ...binaryStoryRoutes];
   for (const route of [...publicationRoutes, ...diaryRoutes]) indexableRoutes.add(route);
-  check(routes.size === 47 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length, `expected ${47 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length} HTML routes, found ${routes.size}.`);
+  check(routes.size === 48 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length, `expected ${48 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length} HTML routes, found ${routes.size}.`);
 
   for (const route of arcadeRoutes) check(routes.has(route), `missing arcade route: ${route}`);
 

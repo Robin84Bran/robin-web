@@ -1,0 +1,374 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import IntelligencePageLead from '../../../components/intelligence/IntelligencePageLead.astro';
+
+const path = '/intelligence/hardware/bankable-megawatts/';
+const title = 'The Megawatt Needs a Balance Sheet';
+const description = 'September 2026 AI infrastructure field note: five tests for deciding whether requested power has become an underwritten obligation.';
+const published = '2026-10-01';
+
+const underwritingTests = [
+  { label: 'Legitimate', note: 'Is the request specific enough to deserve scarce queue capacity?' },
+  { label: 'Allocated', note: 'Who pays for generation, transmission, and distribution upgrades?' },
+  { label: 'Secured', note: 'What collateral survives cancellation or a smaller-than-promised load?' },
+  { label: 'Approved', note: 'Which regulator, lender, or counterparty still has to say yes?' },
+  { label: 'Delivered', note: 'What still separates the obligation from energized, accepted power?' },
+] as const;
+
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    '@id': `https://iamrobin.ai${path}#article`,
+    headline: title,
+    description,
+    url: `https://iamrobin.ai${path}`,
+    datePublished: published,
+    dateModified: published,
+    inLanguage: 'en',
+    author: { '@id': 'https://www.tideisun.com/robin#robin-xie' },
+    isPartOf: { '@id': 'https://iamrobin.ai/intelligence/#page' },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Intelligence', item: 'https://iamrobin.ai/intelligence/' },
+      { '@type': 'ListItem', position: 2, name: 'AI Hardware', item: 'https://iamrobin.ai/intelligence/hardware/' },
+      { '@type': 'ListItem', position: 3, name: title, item: `https://iamrobin.ai${path}` },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title={`${title} — Intelligence — Robin Xie`}
+  {description}
+  {path}
+  type="article"
+  {schema}
+>
+  <IntelligencePageLead
+    lens="Flow / September 2026"
+    title="Bankable megawatts."
+    line="Power requests become real when failure has an owner."
+  />
+
+  <article class="field-note shell">
+    <header class="field-note__header">
+      <p class="field-note__date"><time datetime={published}>October 1, 2026</time> · 8 minute field note</p>
+      <h2>The obligation behind the megawatt</h2>
+      <p class="field-note__lede">
+        September's strongest AI-infrastructure signal was not the amount of power companies requested. It was the arrival of rules and contracts that ask who pays when that demand is late, smaller than forecast, or never connects.
+      </p>
+    </header>
+
+    <ol class="underwriting-test" aria-label="Five tests for a bankable megawatt">
+      {underwritingTests.map((test, index) => (
+        <li>
+          <span>{String(index + 1).padStart(2, '0')}</span>
+          <strong>{test.label}</strong>
+          <small>{test.note}</small>
+        </li>
+      ))}
+    </ol>
+
+    <section>
+      <p class="eyebrow">01 / The queue</p>
+      <h2>A request consumes a scarce resource before it consumes electricity.</h2>
+      <p>
+        Massachusetts now directs utilities to eliminate speculative data-center projects from interconnection queues. For projects above <strong>25 MW</strong>, the state points to fees, deposits, or other requirements that can establish whether the request is legitimate.
+      </p>
+      <p>
+        This matters because an interconnection study has an opportunity cost. A placeholder project can delay housing, factories, distributed energy, and another data center with committed customers and capital. Queue position is not delivered power, but it is already a claim on engineering time.
+      </p>
+    </section>
+
+    <section>
+      <p class="eyebrow">02 / The obligation</p>
+      <h2>California turned a forecast into a minimum payment.</h2>
+      <p>
+        California's enacted AB 2383 requires generation tariffs for covered data centers. The payment mechanism must run for at least <strong>10 years</strong> and include non-completion and early-termination fees, upfront collateral or prepayment, and a minimum payment based on the projected load in the interconnection application.
+      </p>
+      <p>
+        The important shift is not punitive. It is informational. A developer that accepts those obligations is sending a stronger demand signal than one that can reserve a large block of future capacity without carrying the downside.
+      </p>
+    </section>
+
+    <section>
+      <p class="eyebrow">03 / The subscriber</p>
+      <h2>New supply is more credible when the beneficiary funds it.</h2>
+      <p>
+        Georgia Power says Google's proposed subscription will support approximately <strong>96 MW</strong> of uprates at the existing Vogtle and Hatch nuclear plants. The utility expects the structure to create approximately <strong>$900 million</strong> of customer benefits over the life of the units and protect nonparticipating customers from incremental uprate costs.
+      </p>
+      <p>
+        The agreement does not create 96 operating megawatts today. The Hatch work and the tariff remain subject to Georgia Public Service Commission approval. What it does provide is a named subscriber, a proposed cost-allocation mechanism, existing generating assets, and a regulatory path.
+      </p>
+    </section>
+
+    <section>
+      <p class="eyebrow">04 / The financing</p>
+      <h2>Committed capital clears one gate, not every gate.</h2>
+      <p>
+        VIRTUS completed a <strong>£2.45 billion</strong> financing package from a 13-bank group, including a <strong>£1.2 billion</strong> green capex facility. That is stronger evidence than a financing target: the funding framework exists.
+      </p>
+      <p>
+        The package supports expansion including the proposed <strong>78 MW</strong> Saunderton campus. It does not make those 78 MW operational. Planning, power delivery, construction, commissioning, customer acceptance, and utilization remain separate evidence.
+      </p>
+    </section>
+
+    <section>
+      <p class="eyebrow">05 / The public grid</p>
+      <h2>Selected funding is still waiting to become infrastructure.</h2>
+      <p>
+        The U.S. Department of Energy selected 31 SPARK grid projects across 26 states and estimates the portfolio could make more than <strong>23 GW</strong> of additional capacity available. Its own timetable places expected awards between October 2026 and January 2027.
+      </p>
+      <p>
+        Selection is not an executed award. An award is not a completed line. A completed line is not a data-center interconnection. Public funding can improve the path to power without collapsing those stages into one headline number.
+      </p>
+    </section>
+
+    <aside class="field-note__rule">
+      <p class="eyebrow">The September rule</p>
+      <blockquote>
+        Capacity is not bankable because someone wants it. It becomes bankable when documents say who pays, for how long, and what happens when the forecast fails.
+      </blockquote>
+    </aside>
+
+    <section>
+      <p class="eyebrow">06 / What to watch next</p>
+      <h2>The next evidence is contractual and physical.</h2>
+      <ul class="watch-list">
+        <li>Queue deposits, study milestones, site control, and withdrawal rules.</li>
+        <li>Tariff approval, minimum bills, collateral, and termination payments.</li>
+        <li>Named subscribers, financing close, and notice to proceed.</li>
+        <li>Executed awards, equipment orders, construction, and energization.</li>
+        <li>Accepted load, utilization, reliability, and who absorbs any shortfall.</li>
+      </ul>
+      <p>
+        A balance sheet does not replace a substation. It tells the rest of the system whether the customer is prepared to pay while the substation becomes real.
+      </p>
+    </section>
+
+    <footer class="field-note__sources">
+      <p class="eyebrow">Sources / refreshed October 1, 2026</p>
+      <ul>
+        <li><a href="https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB2383">California Legislature — AB 2383 enrolled text</a></li>
+        <li><a href="https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/">California Governor — enacted data-center legislation</a></li>
+        <li><a href="https://www.mass.gov/executive-orders/no-658-establishing-requirements-for-responsible-data-center-development-and-operations-in-massachusetts-to-protect-and-support-ratepayers-communities-and-the-environment">Massachusetts — Executive Order 658</a></li>
+        <li><a href="https://www.mass.gov/doc/directive-to-the-electric-distribution-companies-regarding-data-center-interconnection-requests/download">Massachusetts DPU — data-center interconnection directive</a></li>
+        <li><a href="https://www.georgiapower.com/news-hub/press-releases/agreement-with-google-provides-%24900-million-customer-benefits-advances-nuclear-energy.html">Georgia Power — Google nuclear-uprate subscription</a></li>
+        <li><a href="https://virtusdatacentres.com/press-releases/virtus-secures-gbp2-45-billion-financing-package-to-support-continued-growth">VIRTUS — completed £2.45 billion financing</a></li>
+        <li><a href="https://www.energy.gov/oe/speed-power-through-accelerated-reconductoring-and-other-key-advanced-transmission-technology">U.S. Department of Energy — SPARK selections and award timetable</a></li>
+      </ul>
+      <a class="field-note__back" href="/intelligence/hardware/">← Return to AI Hardware</a>
+    </footer>
+  </article>
+</BaseLayout>
+
+<style>
+  .field-note {
+    max-width: 58rem;
+    margin-bottom: clamp(5rem, 10vw, 9rem);
+  }
+
+  .field-note__header,
+  .field-note section,
+  .field-note__rule,
+  .field-note__sources {
+    max-width: 46rem;
+    margin-inline: auto;
+  }
+
+  .field-note__date {
+    margin-bottom: 1rem;
+    color: var(--muted);
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .field-note__header h2,
+  .field-note section h2 {
+    font-family: var(--serif);
+    font-weight: 400;
+    letter-spacing: -0.025em;
+  }
+
+  .field-note__header h2 {
+    max-width: 14ch;
+    font-size: clamp(2rem, 6vw, 4.2rem);
+    line-height: 0.98;
+  }
+
+  .field-note__lede {
+    max-width: 40rem;
+    margin-top: 1.5rem;
+    color: var(--muted);
+    font-family: var(--serif);
+    font-size: clamp(1.1rem, 2.4vw, 1.45rem);
+    line-height: 1.55;
+  }
+
+  .underwriting-test {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: clamp(3.5rem, 8vw, 6.5rem) 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .underwriting-test li {
+    position: relative;
+    display: grid;
+    gap: 0.45rem;
+    min-height: 10rem;
+    padding: 1rem 0.8rem;
+  }
+
+  .underwriting-test li:not(:last-child) {
+    border-right: 1px solid var(--line);
+  }
+
+  .underwriting-test li::after {
+    position: absolute;
+    right: -0.36rem;
+    bottom: 1.1rem;
+    z-index: 1;
+    width: 0.65rem;
+    height: 0.65rem;
+    content: '';
+    background: var(--paper);
+    border-top: 1px solid var(--gold);
+    border-right: 1px solid var(--gold);
+    transform: rotate(45deg);
+  }
+
+  .underwriting-test li:last-child::after {
+    display: none;
+  }
+
+  .underwriting-test span {
+    color: var(--silver);
+    font-size: 0.58rem;
+    letter-spacing: 0.12em;
+  }
+
+  .underwriting-test strong {
+    align-self: end;
+    font-family: var(--serif);
+    font-size: 1.05rem;
+    font-weight: 500;
+  }
+
+  .underwriting-test small {
+    color: var(--muted);
+    font-size: 0.68rem;
+    line-height: 1.45;
+  }
+
+  .field-note section {
+    margin-top: clamp(4rem, 8vw, 7rem);
+  }
+
+  .field-note section h2 {
+    max-width: 22ch;
+    margin: 0.75rem 0 1.4rem;
+    font-size: clamp(1.75rem, 4vw, 2.8rem);
+    line-height: 1.08;
+  }
+
+  .field-note section > p:not(.eyebrow),
+  .field-note section li {
+    color: var(--muted);
+    font-family: var(--serif);
+    font-size: clamp(1rem, 1.8vw, 1.12rem);
+    line-height: 1.72;
+  }
+
+  .field-note section > p + p {
+    margin-top: 1rem;
+  }
+
+  .field-note strong {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  .field-note__rule {
+    margin-top: clamp(4.5rem, 9vw, 8rem);
+    padding: clamp(1.6rem, 4vw, 2.8rem);
+    background:
+      radial-gradient(circle at 88% 16%, rgba(180, 145, 93, 0.14), transparent 36%),
+      rgba(255, 255, 255, 0.34);
+    border: 1px solid rgba(180, 145, 93, 0.32);
+  }
+
+  .field-note__rule blockquote {
+    max-width: 30ch;
+    margin: 1rem 0 0;
+    font-family: var(--serif);
+    font-size: clamp(1.45rem, 3.8vw, 2.4rem);
+    line-height: 1.18;
+  }
+
+  .watch-list {
+    display: grid;
+    gap: 0.55rem;
+    margin: 1.5rem 0 0;
+    padding-left: 1.1rem;
+  }
+
+  .field-note__sources {
+    margin-top: clamp(4.5rem, 9vw, 8rem);
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--line);
+  }
+
+  .field-note__sources ul {
+    display: grid;
+    gap: 0.6rem;
+    margin: 1.2rem 0 0;
+    padding-left: 1rem;
+  }
+
+  .field-note__sources li,
+  .field-note__sources a {
+    color: var(--muted);
+    font-size: 0.78rem;
+    line-height: 1.5;
+  }
+
+  .field-note__sources a:hover {
+    color: var(--ink);
+  }
+
+  .field-note__back {
+    display: inline-block;
+    margin-top: 2rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 720px) {
+    .underwriting-test {
+      grid-template-columns: 1fr;
+    }
+
+    .underwriting-test li {
+      min-height: 0;
+      padding: 1rem 0;
+    }
+
+    .underwriting-test li:not(:last-child) {
+      border-right: 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .underwriting-test li::after {
+      display: none;
+    }
+  }
+</style>
