@@ -1,0 +1,531 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-01",
+  "updated": "2026-10-01",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20261001/hero.webp",
+  "actionHero": "/action-item/20261001/hero.webp",
+  "ogImage": "/daily-briefing/20261001/og.webp",
+  "briefingPath": "/ouroboros/202610/20261001/",
+  "actionItemPath": "/ouroboros/202610/20261001/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "google",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+        },
+        {
+          "label": "fairwind",
+          "url": "https://deepmind.google/fairwind-program/"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "relay",
+          "url": "https://www.prnewswire.com/news-releases/relay-robotics-brings-autonomous-delivery-to-hca-florida-jfk-hospital-302893249.html"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "btc",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "eth",
+          "url": "https://farside.co.uk/eth/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "stripe",
+          "url": "https://stripe.com/newsroom/news/ousd-is-now-available-on-stripe"
+        },
+        {
+          "label": "bridge",
+          "url": "https://www.withbridge.com/blog/ousd-is-live-issued-by-bridge"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "sources": [
+        {
+          "label": "google",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+        },
+        {
+          "label": "fairwind",
+          "url": "https://deepmind.google/fairwind-program/"
+        },
+        {
+          "label": "controls",
+          "url": "https://deepmind.google/blog/securing-the-future-of-ai-agents/"
+        },
+        {
+          "label": "openai",
+          "url": "https://developers.openai.com/changelog/"
+        },
+        {
+          "label": "canonical destination",
+          "url": "https://iamrobin.ai/ouroboros/202610/20261001/action_item/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "coreweave",
+          "url": "https://coreweave.com/news/coreweave-delivers-nvidia-vera-rubin-nvl72-performance-at-production-scale-starting-with-cognition"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "varda",
+          "url": "https://www.prnewswire.com/news-releases/varda-announces-251-million-series-d-to-scale-space-based-pharmaceutical-processing-302893651.html"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "micron_release",
+          "url": "https://www.nasdaq.com/press-release/micron-technology-inc-reports-record-fiscal-fourth-quarter-and-full-year-2026-results"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, October 1, 2026",
+      "description": "Eight actions separate announced capability from accepted work.",
+      "centralJudgment": "Require a usable path and the right evidence before treating a milestone as an operating result.",
+      "fieldLine": "Eight signals. Defined work. Honest completion.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Specify the access-ready evaluation",
+          "why": "RobinOS can prepare a fair comparison without changing its working model or permissions.",
+          "steps": [
+            "Save a twelve-case evaluation specification with fixed inputs, boundaries, deadlines, accepted outcomes, total costs and human interventions; leave execution pending supported access.",
+            "Advance only when dated evidence satisfies the acceptance condition."
+          ],
+          "done": "READY; twelve-case specification saved, evaluation unexecuted."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "Record hospital delivery evidence",
+          "why": "This offers a concrete way to examine what makes autonomy usable beyond a robot demonstration.",
+          "steps": [
+            "Save a hospital-delivery evidence card requiring completed trips, human handoffs, failed door or elevator interactions and staff minutes per delivery before estimating labor savings.",
+            "Advance only when dated evidence satisfies the acceptance condition."
+          ],
+          "done": "READY; evidence fields saved; hospital savings unverified."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows and Web3 Health",
+          "title": "Await complete ETF coverage",
+          "why": "A capital-flow view should wait for comparable coverage rather than turn missing reports into zero.",
+          "steps": [
+            "Keep the September 30–October 2 observation window open until all three sessions have complete BTC and ETH fund coverage; then update the research classification, without trading.",
+            "Advance only when dated evidence satisfies the acceptance condition."
+          ],
+          "done": "WATCHING; three fully covered sessions required."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins, FinTech, Payment Standards and Token Rails",
+          "title": "Separate OUSD responsibilities",
+          "why": "Payments experience is useful for testing redemption responsibility, reconciliation and access rather than choosing a token by its partners.",
+          "steps": [
+            "Save an inactive OUSD assessment row separating issuer, redemption terms, transaction charges, rewards, reconciliation and Hong Kong/US eligibility, with undisclosed fields left unresolved.",
+            "Advance only when dated evidence satisfies the acceptance condition."
+          ],
+          "done": "READY; assessment fields saved; no service activated."
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai Content, Distribution and Visibility",
+          "title": "Publish the model-access essay",
+          "why": "This turns frontier-model attention into a reusable operating method.",
+          "steps": [
+            "Publish Google’s New Brain Has an Access Problem at the [canonical destination](https://iamrobin.ai/ouroboros/202610/20261001/action_item/), with an evidence spine of release state, job-specific access, accepted outcomes, full cost and a twelve-case evaluation proposal; include original sources, a conceptual visual and an archived LinkedIn derivative.",
+            "Advance only when dated evidence satisfies the acceptance condition."
+          ],
+          "done": "COMPLETE as an editorial artifact; public delivery has separate gates.",
+          "deepDiveTitle": "Publish the model-access essay"
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure, Career Opportunities and Capital Projects",
+          "title": "Record Rubin workload conditions",
+          "why": "The infrastructure career and capital lens should ask how system integration turns hardware into useful delivered work; no vacancy is inferred.",
+          "steps": [
+            "Save a Rubin evidence card separating availability, benchmark conditions, accepted tasks, power, utilization and total cost; leave undisclosed deployment economics unresolved.",
+            "Advance only when dated evidence satisfies the acceptance condition."
+          ],
+          "done": "READY; supplier-reported customer benchmark recorded; local performance untested."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-Stage Private Markets",
+          "title": "Keep Varda on WATCH",
+          "why": "This connects capital intensity with a physical process whose eventual customer value still needs proof.",
+          "steps": [
+            "Classify Varda WATCH until a defined drug, terrestrial comparator, regulatory path and independently corroborated commercial milestones can support investigation; do not pursue an investment or application.",
+            "Advance only when dated evidence satisfies the acceptance condition."
+          ],
+          "done": "WATCHING; drug, comparator, regulatory path and corroborated milestones required."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities and AI/Physical-AI Themes",
+          "title": "Separate Micron results and guidance",
+          "why": "A memory thesis needs reported revenue, cash generation and capacity spending in separate columns.",
+          "steps": [
+            "Save a Micron earnings bridge separating reported Q4 results, Q1 guidance and net capital expenditure; defer the relative-price judgment until matching final closes are verified.",
+            "Advance only when dated evidence satisfies the acceptance condition."
+          ],
+          "done": "READY; company results and guidance recorded; relative price comparison unresolved."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年10月1日",
+      "description": "八项行动，分清能力公告与验收成果。",
+      "centralJudgment": "先确认可用路径及对应证据，再把节点认作运营成果。",
+      "fieldLine": "八个信号。明确工作。诚实记录完成。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与智能体｜Argon先有标价，再等扩大开放",
+          "title": "定义访问就绪评估",
+          "why": "RobinOS可以先准备公平比较，不必改变现有模型或权限。",
+          "steps": [
+            "保存十二题评估规格，固定输入、边界、期限、验收成果、总成本及人工介入；等待受支持访问后再执行。",
+            "仅在带日期证据满足验收条件时推进。"
+          ],
+          "done": "READY；十二题规格已保存，评估未执行。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI与机器人｜医院机器人先得过门这一关",
+          "title": "记录医院配送证据",
+          "why": "这个案例让我们能具体检查，演示之外的自主性靠什么落地。",
+          "steps": [
+            "保存医院配送证据卡，要求完成趟次、人工接手、门或电梯交互失败，以及每次配送耗用的员工分钟数，再估算劳动节省。",
+            "仅在带日期证据满足验收条件时推进。"
+          ],
+          "done": "READY；证据字段已保存，医院节省未核实。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流与Web3健康度｜最新一行仍缺报送",
+          "title": "等待完整ETF覆盖",
+          "why": "资金流判断应等待可比覆盖，不能把缺报写成零。",
+          "steps": [
+            "保留9月30日至10月2日观察窗口，等三个交易日BTC与ETH基金数据都完整后再更新研究分类，不交易。",
+            "仅在带日期证据满足验收条件时推进。"
+          ],
+          "done": "WATCHING；需三个覆盖完整的交易日。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币、金融科技与支付标准｜OUSD把发行主体问题放回桌面",
+          "title": "分清OUSD责任",
+          "why": "支付经验可以用来检验赎回责任、对账及准入，不必凭合作伙伴名单选币。",
+          "steps": [
+            "保存一行未激活的OUSD评估，分别列发行方、赎回条款、交易费、奖励、对账及香港/美国资格，未披露项目保持待核。",
+            "仅在带日期证据满足验收条件时推进。"
+          ],
+          "done": "READY；评估字段已保存，未激活服务。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai内容与传播｜聪明模型也需要上班日期",
+          "title": "发布模型访问文章",
+          "why": "这把前沿模型注意力转成可复用的运营方法。",
+          "steps": [
+            "在[正式发布页](https://iamrobin.ai/ouroboros/202610/20261001/action_item/)发布Google’s New Brain Has an Access Problem，中文题《Google新大脑的访问难题》；证据主线为发布状态、具体工作访问权、验收成果、完整成本及十二题评估提案，附原始来源、概念图和归档LinkedIn派生稿。",
+            "仅在带日期证据满足验收条件时推进。"
+          ],
+          "done": "编辑成果COMPLETE；公开交付另有验证。",
+          "deepDiveTitle": "发布模型访问文章"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基础设施、职业与资本项目｜Rubin进入具名客户的生产负载",
+          "title": "记录Rubin负载条件",
+          "why": "基础设施职业与资本视角，应追问系统集成怎样把硬件变成实际成果；不据此推断职位。",
+          "steps": [
+            "保存Rubin证据卡，分开可用性、基准条件、验收任务、电力、利用率及总成本，未披露的部署经济性保持待核。",
+            "仅在带日期证据满足验收条件时推进。"
+          ],
+          "done": "READY；供应商披露客户基准已记录，本地性能未测。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私募市场｜Varda为返回地球的路径融资",
+          "title": "维持Varda观察",
+          "why": "这把资本密集度，与最终客户价值仍待证明的物理过程联系起来。",
+          "steps": [
+            "将Varda列为WATCH，待明确药物、地面对照、监管路径及独立佐证商业节点足以支持调查后再升级；不寻求投资或申请。",
+            "仅在带日期证据满足验收条件时推进。"
+          ],
+          "done": "WATCHING；等待药物、对照、监管路径及佐证节点。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场与AI主题｜Micron观察节点变成已披露季度",
+          "title": "分开Micron实绩与指引",
+          "why": "存储投资论点需要把已报收入、现金创造与产能投入分列。",
+          "steps": [
+            "保存Micron业绩桥接表，分开第四财季实绩、第一财季指引及净资本开支；匹配最终收盘价核实前，暂缓相对股价判断。",
+            "仅在带日期证据满足验收条件时推进。"
+          ],
+          "done": "READY；已记录实绩及指引，相对股价待核。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年10月1日",
+      "description": "八項行動，分清能力公告與驗收成果。",
+      "centralJudgment": "先確認可用路徑及對應證據，再把節點認作運營成果。",
+      "fieldLine": "八個信號。明確工作。誠實記錄完成。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與智能體｜Argon先有標價，再等擴大開放",
+          "title": "定義訪問就緒評估",
+          "why": "RobinOS可以先準備公平比較，不必改變現有模型或權限。",
+          "steps": [
+            "保存十二題評估規格，固定輸入、邊界、期限、驗收成果、總成本及人工介入；等待受支持訪問後再執行。",
+            "僅在帶日期證據滿足驗收條件時推進。"
+          ],
+          "done": "READY；十二題規格已保存，評估未執行。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI與機器人｜醫院機器人先得過門這一關",
+          "title": "記錄醫院配送證據",
+          "why": "這個案例讓我們能具體檢查，演示之外的自主性靠什麼落地。",
+          "steps": [
+            "保存醫院配送證據卡，要求完成趟次、人工接手、門或電梯交互失敗，以及每次配送耗用的員工分鐘數，再估算勞動節省。",
+            "僅在帶日期證據滿足驗收條件時推進。"
+          ],
+          "done": "READY；證據字段已保存，醫院節省未核實。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本流與Web3健康度｜最新一行仍缺報送",
+          "title": "等待完整ETF覆蓋",
+          "why": "資金流判斷應等待可比覆蓋，不能把缺報寫成零。",
+          "steps": [
+            "保留9月30日至10月2日觀察窗口，等三個交易日BTC與ETH基金數據都完整後再更新研究分類，不交易。",
+            "僅在帶日期證據滿足驗收條件時推進。"
+          ],
+          "done": "WATCHING；需三個覆蓋完整的交易日。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣、金融科技與支付標準｜OUSD把發行主體問題放回桌面",
+          "title": "分清OUSD責任",
+          "why": "支付經驗可以用來檢驗贖回責任、對賬及准入，不必憑合作伙伴名單選幣。",
+          "steps": [
+            "保存一行未激活的OUSD評估，分別列發行方、贖回條款、交易費、獎勵、對賬及香港/美國資格，未披露項目保持待核。",
+            "僅在帶日期證據滿足驗收條件時推進。"
+          ],
+          "done": "READY；評估字段已保存，未激活服務。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai內容與傳播｜聰明模型也需要上班日期",
+          "title": "發佈模型訪問文章",
+          "why": "這把前沿模型注意力轉成可複用的運營方法。",
+          "steps": [
+            "在[正式發佈頁](https://iamrobin.ai/ouroboros/202610/20261001/action_item/)發佈Google’s New Brain Has an Access Problem，中文題《Google新大腦的訪問難題》；證據主線為發佈狀態、具體工作訪問權、驗收成果、完整成本及十二題評估提案，附原始來源、概念圖和歸檔LinkedIn派生稿。",
+            "僅在帶日期證據滿足驗收條件時推進。"
+          ],
+          "done": "編輯成果COMPLETE；公開交付另有驗證。",
+          "deepDiveTitle": "發佈模型訪問文章"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基礎設施、職業與資本項目｜Rubin進入具名客戶的生產負載",
+          "title": "記錄Rubin負載條件",
+          "why": "基礎設施職業與資本視角，應追問系統集成怎樣把硬體變成實際成果；不據此推斷職位。",
+          "steps": [
+            "保存Rubin證據卡，分開可用性、基準條件、驗收任務、電力、利用率及總成本，未披露的部署經濟性保持待核。",
+            "僅在帶日期證據滿足驗收條件時推進。"
+          ],
+          "done": "READY；供應商披露客戶基準已記錄，本地性能未測。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私募市場｜Varda為返回地球的路徑融資",
+          "title": "維持Varda觀察",
+          "why": "這把資本密集度，與最終客戶價值仍待證明的物理過程聯繫起來。",
+          "steps": [
+            "將Varda列為WATCH，待明確藥物、地面對照、監管路徑及獨立佐證商業節點足以支持調查後再升級；不尋求投資或申請。",
+            "僅在帶日期證據滿足驗收條件時推進。"
+          ],
+          "done": "WATCHING；等待藥物、對照、監管路徑及佐證節點。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場與AI主題｜Micron觀察節點變成已披露季度",
+          "title": "分開Micron實績與指引",
+          "why": "存儲投資論點需要把已報收入、現金創造與產能投入分列。",
+          "steps": [
+            "保存Micron業績橋接表，分開第四財季實績、第一財季指引及淨資本開支；匹配最終收盤價核實前，暫緩相對股價判斷。",
+            "僅在帶日期證據滿足驗收條件時推進。"
+          ],
+          "done": "READY；已記錄實績及指引，相對股價待核。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年10月1日",
+      "description": "八つの行動で能力発表と受入済み成果を分ける。",
+      "centralJudgment": "使える経路と適切な証拠を確認してから、節目を運用成果と評価する。",
+      "fieldLine": "八つのシグナル。定義した仕事。正確な完了記録。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "最先端モデルとエージェント｜Argonは一般提供より先に値段が付く",
+          "title": "利用準備の評価仕様を定義",
+          "why": "RobinOSは現行モデルや権限を変えず、公平な比較を準備できる。",
+          "steps": [
+            "入力、境界、期限、受入成果、総費用、人の介入を固定した十二課題の評価仕様を保存し、対応経路から利用できるまで実行を保留する。",
+            "日付付き証拠が受入条件を満たしたときだけ進める。"
+          ],
+          "done": "READY。十二課題の仕様を保存。評価は未実施。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AIとロボット｜病院のロボットはまず扉を通る",
+          "title": "病院配送の証拠を記録",
+          "why": "デモを超えて自律動作を使えるようにする条件を具体的に調べられる。",
+          "steps": [
+            "配送完了件数、人への引き継ぎ、扉・エレベーター連携失敗、配送一件当たり職員時間を求める証拠カードを保存し、人件費削減の推計はその後に行う。",
+            "日付付き証拠が受入条件を満たしたときだけ進める。"
+          ],
+          "done": "READY。証拠項目を保存。病院の節約額は未確認。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産資金フローとWeb3｜最新行にはまだ未報告がある",
+          "title": "ETF全件報告を待つ",
+          "why": "資金フローは比較可能な報告範囲を待ち、欠測をゼロにしない。",
+          "steps": [
+            "9月30日から10月2日の三取引日についてBTC・ETH両方の全基金報告がそろうまで観察枠を維持し、その後に研究分類を更新する。取引は行わない。",
+            "日付付き証拠が受入条件を満たしたときだけ進める。"
+          ],
+          "done": "WATCHING。三取引日の全基金報告が必要。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコインと決済｜OUSDの発行主体を確かめる",
+          "title": "OUSDの責任を分離",
+          "why": "決済経験を使い、提携先の顔ぶれより償還責任、照合、利用条件を確認する。",
+          "steps": [
+            "未有効化のOUSD評価行を保存し、発行者、償還条件、取引料、報酬、照合、香港・米国の資格を分け、未開示項目は未確認のまま残す。",
+            "日付付き証拠が受入条件を満たしたときだけ進める。"
+          ],
+          "done": "READY。評価項目を保存。サービスは有効化していない。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.aiの発信｜優秀なモデルにも勤務開始日が要る",
+          "title": "モデル利用権の記事を公開",
+          "why": "先端モデルへの関心を再利用できる運営方法に変える。",
+          "steps": [
+            "[正規ページ](https://iamrobin.ai/ouroboros/202610/20261001/action_item/)にGoogle’s New Brain Has an Access Problemを公開する。提供段階、業務別利用権、受入成果、総費用、十二課題の評価案を主線に、一次資料、概念図、保存用LinkedIn原稿を添える。",
+            "日付付き証拠が受入条件を満たしたときだけ進める。"
+          ],
+          "done": "編集成果はCOMPLETE。公開配信は別途検証。",
+          "deepDiveTitle": "モデル利用権の記事を公開"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラとキャリア・資本案件｜Rubinが実名顧客の本番へ",
+          "title": "Rubinの測定条件を記録",
+          "why": "インフラのキャリア・資本分析では、システム統合がハードをどう成果へ変えるかを見る。求人は推定しない。",
+          "steps": [
+            "Rubinの証拠カードを保存し、利用可能性、測定条件、受入タスク、電力、稼働率、総費用を分け、未開示の採算は未確認とする。",
+            "日付付き証拠が受入条件を満たしたときだけ進める。"
+          ],
+          "done": "READY。供給者掲載の顧客測定を記録。現地試験は未実施。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期未上場市場｜Vardaが地球へ戻る道に資金を集める",
+          "title": "VardaをWATCHに維持",
+          "why": "資本集約性と、最終顧客価値が未立証の物理的工程をつなぐ案件だ。",
+          "steps": [
+            "VardaをWATCHとし、特定薬剤、地上対照、規制経路、独立裏付けの商業進捗が調査を支えるまで維持する。投資や申請は行わない。",
+            "日付付き証拠が受入条件を満たしたときだけ進める。"
+          ],
+          "done": "WATCHING。薬剤、対照、規制経路、裏付け済み進捗を待つ。"
+        },
+        {
+          "signal": 8,
+          "domain": "上場株とAIテーマ｜Micronの注目日が実績に変わる",
+          "title": "Micron実績と見通しを分離",
+          "why": "メモリ投資仮説では報告売上、現金創出、能力増強支出を別欄に置く。",
+          "steps": [
+            "Micron決算整理表を保存し、第4四半期実績、第1四半期見通し、純設備投資を分離する。対応する確定終値を確認するまで相対株価の判断は保留する。",
+            "日付付き証拠が受入条件を満たしたときだけ進める。"
+          ],
+          "done": "READY。実績と見通しを記録。相対株価は未確認。"
+        }
+      ]
+    }
+  }
+}

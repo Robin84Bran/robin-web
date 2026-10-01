@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="840" viewBox="0 0 1200 840" role="img" aria-labelledby="title desc">
+<title id="title">From announced capability to accepted work</title><desc id="desc">Four distinct stages: capability, access for a named job, operation within boundaries, and accepted outcome. Record full cost and human interventions. Proposed evaluation framework; no Argon test performed.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10" fill="none" stroke="#80705d" stroke-width="1.5"/></marker></defs>
+<rect width="1200" height="840" fill="#f5f2ec"/>
+<g font-family="Arial,sans-serif" fill="#302e2a">
+<text x="60" y="55" font-size="16" letter-spacing="3">IAMROBIN.AI / AGENTIC AI</text>
+<text x="60" y="118" font-family="Georgia,serif" font-size="46">When can the model start work?</text>
+<text x="60" y="165" font-size="23" fill="#69645d">A proposed evaluation path · each stage needs its own evidence</text>
+<rect x="60" y="215" width="480" height="135" rx="8" fill="#e7dccb"/><text x="90" y="263" font-size="27">1 / CAPABILITY</text><text x="90" y="310" font-size="21">What has the provider demonstrated?</text>
+<rect x="660" y="215" width="480" height="135" rx="8" fill="#e2e6df"/><text x="690" y="263" font-size="27">2 / ACCESS</text><text x="690" y="310" font-size="21">Can this team use it for this job?</text>
+<path d="M548 283H645" stroke="#80705d" stroke-width="2" marker-end="url(#arrow)"/><path d="M900 362V414" stroke="#80705d" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="660" y="433" width="480" height="135" rx="8" fill="#e7dccb"/><text x="690" y="480" font-size="27">3 / OPERATION</text><text x="690" y="525" font-size="21">Tools, boundaries, deadline, recovery</text>
+<rect x="60" y="433" width="480" height="135" rx="8" fill="#e2e6df"/><text x="90" y="480" font-size="27">4 / ACCEPTED OUTCOME</text><text x="90" y="525" font-size="21">Inspect the result and all failed attempts</text>
+<path d="M648 500H555" stroke="#80705d" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="60" y="620" width="1080" height="122" rx="8" fill="#fffdfa" stroke="#b6a894"/>
+<text x="90" y="668" font-size="25">COUNT THE WHOLE WORKFLOW</text><text x="90" y="711" font-size="21">Machine cost + review + retries + recovery + human interruptions</text>
+<text x="60" y="793" font-size="20" fill="#69645d">Author-designed framework. No Argon evaluation or measured gain is claimed.</text>
+</g></svg>
