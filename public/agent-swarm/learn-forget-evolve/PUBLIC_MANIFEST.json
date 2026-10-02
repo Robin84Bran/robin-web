@@ -24,8 +24,8 @@
     },
     {
       "path": "batch.mjs",
-      "bytes": 3183,
-      "sha256": "baa39af3cc39e7cf0f57ce5193318c91fbab91051bf29ea62dce9b45907cc558"
+      "bytes": 3205,
+      "sha256": "e9b8a4d063bee4b55dd1753becf99b925cb63336953423ecc173142c5d3299c7"
     },
     {
       "path": "client.mjs",
@@ -56,6 +56,11 @@
       "path": "renderer.mjs",
       "bytes": 12074,
       "sha256": "c946043422e0524599a43f4990f858641c23767173a3f84f6d0bcdd4d0958164"
+    },
+    {
+      "path": "replay-verification.mjs",
+      "bytes": 1641,
+      "sha256": "888dfdf41a64a7f9b3646dcbd9113976f25667c0242fdd3c0014d4f46b377676"
     },
     {
       "path": "results.json",
