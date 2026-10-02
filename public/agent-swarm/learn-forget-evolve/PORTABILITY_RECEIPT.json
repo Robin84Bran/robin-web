@@ -1,0 +1,33 @@
+{
+  "schema": "portable-fingerprint-transition-v1",
+  "reason": "Linux x64 and macOS arm64 emitted final-bit evaluation differences; diagnostic FNV policy fingerprints previously hashed raw float serialization. Only diagnostic fingerprint serialization is now canonical at twelve significant digits. Actual policy values and decisions remain full precision.",
+  "fingerprintMethod": "fnv1a32-policy-json-12-significant-digits-v1",
+  "archive": "diagnostics/pre-portable-fingerprint",
+  "before": {
+    "modelSha256": "681f2e8844bab8f2a1515f67b09e0885d15b4923a007e69705380a4acb388326",
+    "resultsSha256": "513c8724b3d7e310573ee452b7e2fa877d1bb0f2c39a8de6bee7120282dabf93"
+  },
+  "after": {
+    "modelSha256": "baca6e620d444f2e2043c4983f76d9c7d3de85e8f1a3aee8ede2fabaf8714cac",
+    "resultsSha256": "68b03b7c015d86f5ca38ea9cfe517d23ea679034d54cd1a0cdfbd348a4d59e53"
+  },
+  "validation": {
+    "referenceRuntime": "Node26.7.0 macOS arm64",
+    "runsCompared": 96,
+    "armSummariesExact": 384,
+    "summaryValuesExact": 9600,
+    "allAggregatesExact": true,
+    "allHypothesisDecisionsExact": true,
+    "allEvaluationHistoriesExact": true,
+    "lineageEntriesWithExactNonFingerprintFields": 6144,
+    "diagnosticFingerprintsChanged": 12288,
+    "rawFinalPoliciesExact": 384,
+    "completeRepresentativeFrameSetsExact": 16
+  },
+  "portableRounding": {
+    "absoluteLimit": 4.440892098500626e-16,
+    "relativeLimit": 7.105427357601002e-15,
+    "bothRequired": true,
+    "scope": "Only named heldout/evaluation score fields, fit/gate/retention numerical diagnostics and their relevant continuous statistics. Exact policy fingerprints, source hash, promotion decisions, work, energy, budgets, timestamps and schema."
+  }
+}

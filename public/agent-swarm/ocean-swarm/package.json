@@ -1,0 +1,13 @@
+{
+  "name": "agent-swarm-lab-ocean-swarm",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A deterministic reduced-order ocean sensing constellation experiment",
+  "scripts": {
+    "test": "node --test tests.mjs",
+    "batch": "node batch.mjs",
+    "verify": "node batch.mjs --verify"
+  },
+  "engines": { "node": ">=22" }
+}

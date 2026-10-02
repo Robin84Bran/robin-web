@@ -1,0 +1,26 @@
+{
+  "reviewDate": "2026-10-03",
+  "scope": "Metric accounting only; controllers and actual outcomes unchanged",
+  "previousModelSha256": "719d6362f3487e2870d4d7d82bf77376da3091eb05b2c3b2964f22b33aa90c6b",
+  "currentModelSha256": "681f2e8844bab8f2a1515f67b09e0885d15b4923a007e69705380a4acb388326",
+  "unchangedRunMetricComparisons": 8064,
+  "previousAcceptance": {
+    "passed": false,
+    "winningRegimes": 2,
+    "retained": false,
+    "matchedBudgets": true
+  },
+  "currentAcceptance": {
+    "passed": false,
+    "winningRegimes": 2,
+    "retained": false,
+    "matchedBudgets": true
+  },
+  "retainedEvidence": "diagnostics/pre-metric-correction",
+  "finalDocumentationReview": {
+    "date": "2026-10-03",
+    "documentationOnly": true,
+    "clarification": "README now distinguishes external field-station calibration energy (0.04 per probe, 34.56 default) from onboard battery debits; mission energy includes both.",
+    "modelAndResultsUnchanged": true
+  }
+}

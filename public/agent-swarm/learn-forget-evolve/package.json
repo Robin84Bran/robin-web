@@ -1,0 +1,1 @@
+{"name":"agent-swarm-learn-forget-evolve","version":"1.0.0","private":true,"type":"module","scripts":{"test":"node --test tests.mjs","batch":"node batch.mjs","verify":"node batch.mjs --verify"}}

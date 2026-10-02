@@ -1,0 +1,1 @@
+{"type":"object","properties":{"routes":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","minimum":0,"maximum":99},"sites":{"type":"array","items":{"type":"integer","minimum":0,"maximum":19},"minItems":3,"maxItems":3}},"required":["id","sites"],"additionalProperties":false}}},"required":["routes"],"additionalProperties":false}

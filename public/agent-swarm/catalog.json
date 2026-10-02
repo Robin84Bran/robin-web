@@ -1,0 +1,56 @@
+[
+  {
+    "id": "roach-emergence",
+    "number": 1,
+    "title": "Roach Emergence",
+    "scene": "land",
+    "question": "When does local signaling earn its energy cost?",
+    "folder": "01_roach_emergence",
+    "modelSha256": "5b74b4ef93611a62e8e9a6ca515bd2e8bb03a88d9a100334ee0f10138c9d2eae"
+  },
+  {
+    "id": "shared-reality",
+    "number": 2,
+    "title": "Shared Reality",
+    "scene": "beliefs",
+    "question": "Can agents agree enough to act without agreeing confidently on a mistake?",
+    "folder": "02_shared_reality",
+    "modelSha256": "f32f5443db25435e8d7fb68efaa5cda1c70d90369c372568a33d55c1fb838a0a"
+  },
+  {
+    "id": "learn-forget-evolve",
+    "number": 3,
+    "title": "Learn, Forget, Evolve",
+    "scene": "evolution",
+    "question": "Can a small policy change adapt to a new world without erasing the old one?",
+    "folder": "03_learn_forget_evolve",
+    "modelSha256": "baca6e620d444f2e2043c4983f76d9c7d3de85e8f1a3aee8ede2fabaf8714cac"
+  },
+  {
+    "id": "asteroid-button",
+    "number": 4,
+    "title": "The Asteroid Button",
+    "scene": "asteroid",
+    "question": "Does distributing a fixed budget preserve useful work after correlated damage?",
+    "folder": "04_asteroid_button",
+    "modelSha256": "d3405103c57634d28428508c985191bd45e80ad8fc59af288c0226cd42912f13"
+  },
+  {
+    "id": "ocean-swarm",
+    "number": 5,
+    "title": "Ocean Swarm",
+    "scene": "ocean",
+    "question": "Who repairs the sensing constellation when the sea breaks the plan?",
+    "folder": "05_ocean_swarm",
+    "modelSha256": "414278069ed7fae4da8f067b60e01e1efd1a9d50b75807469d4d9f104617e069"
+  },
+  {
+    "id": "minimum-intelligence",
+    "number": 6,
+    "title": "Minimum Intelligence",
+    "scene": "frontier",
+    "question": "How much model planning earns its place when physical work, information and complexity all count?",
+    "folder": "06_minimum_intelligence",
+    "modelSha256": "0e99a913acf681dccc58ea53f61ef3cc58ecacb432e96f47ac9b83361f318a9c"
+  }
+]

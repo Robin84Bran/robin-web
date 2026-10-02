@@ -1,0 +1,121 @@
+{
+  "schema": "agent-swarm-public-source-v1",
+  "scenario": "minimum-intelligence",
+  "files": [
+    {
+      "path": "CAMPAIGN.json",
+      "bytes": 559,
+      "sha256": "1366b77f371a8f8982c63d08943dec9553755691df84f787548fac4767b7cee6"
+    },
+    {
+      "path": "EXPERIMENT.md",
+      "bytes": 5368,
+      "sha256": "f3b9e0252aba1fb4bb9849876b2f1464684f9cbc521548960a5525913deeb8e2"
+    },
+    {
+      "path": "MODEL_RECEIPT.json",
+      "bytes": 191170,
+      "sha256": "d836ba97688e14a5b521530fa3d2c509def5634414fc219457713380eed77e94"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8517,
+      "sha256": "023075b23d6234f31b3e7ffb9be83ba183c6af05d1c3e15196feafec9639dc46"
+    },
+    {
+      "path": "RESULTS.md",
+      "bytes": 4721,
+      "sha256": "ff813a4c66887fa9350f51c443b7b8627e26047daa01cf097faa8fd422a248cd"
+    },
+    {
+      "path": "SOURCE_PACKAGE_README.md",
+      "bytes": 1292,
+      "sha256": "dde19fd3c434da70757a0aa3c0ce8c2dcb93bcc04b73646ef7e02c507b0a013d"
+    },
+    {
+      "path": "assemble.mjs",
+      "bytes": 5154,
+      "sha256": "7b7c2e99015a3a3a67f1b46431f725233b02eef6ebcd48dab74161c8484328be"
+    },
+    {
+      "path": "batch.mjs",
+      "bytes": 3885,
+      "sha256": "cd5318504f03f56849ecc881057ce371484171a6ec74aa6e030a4cf0629c14e4"
+    },
+    {
+      "path": "client.mjs",
+      "bytes": 11151,
+      "sha256": "ddf620c66fb5d90816b770028e1b356f5673c0baf6d128862269810a6cd69903"
+    },
+    {
+      "path": "decision-instructions.txt",
+      "bytes": 383,
+      "sha256": "a0cfb84cb7899cf8340e39b5526826c12ce66ecf741137f5dfade7e91cca19da"
+    },
+    {
+      "path": "decision-schema.json",
+      "bytes": 358,
+      "sha256": "604950fabf7c84be01bbf791dbca6864c1897451f25c58a79640857341bea0c8"
+    },
+    {
+      "path": "decisions.json",
+      "bytes": 2281372,
+      "sha256": "41f0036a14bedd0e21657b696dd71195eb75963888862747685a002d279529c5"
+    },
+    {
+      "path": "index.html",
+      "bytes": 11986,
+      "sha256": "5851adc66adc00d3a97ec2356e07d0aa4474a085bb5c20848a211ed92442acd5"
+    },
+    {
+      "path": "lab.css",
+      "bytes": 10462,
+      "sha256": "25dd722e0080c7cb5313a466f9c07ae3e4f7b88d01e22f84ea8b1355af1d9a6f"
+    },
+    {
+      "path": "model.mjs",
+      "bytes": 10974,
+      "sha256": "0e99a913acf681dccc58ea53f61ef3cc58ecacb432e96f47ac9b83361f318a9c"
+    },
+    {
+      "path": "package.json",
+      "bytes": 254,
+      "sha256": "e689f99333be821d34d1f3d3251fa054541e2b1b25b5e41981ea0a8b9c16bd44"
+    },
+    {
+      "path": "renderer.mjs",
+      "bytes": 12074,
+      "sha256": "c946043422e0524599a43f4990f858641c23767173a3f84f6d0bcdd4d0958164"
+    },
+    {
+      "path": "results.json",
+      "bytes": 313140,
+      "sha256": "d37ba675ee3803458f38d5fccdfe1fe66a34f0623a037f9a1066b41ebc5512f0"
+    },
+    {
+      "path": "runner.mjs",
+      "bytes": 6376,
+      "sha256": "18a75f7d1938ae1321372e123a3dcd56327d675eec3c361b5c5dcc1bdcb16715"
+    },
+    {
+      "path": "tapes.mjs",
+      "bytes": 138112,
+      "sha256": "bfea6cf113af45a8a9c0261ad11ea823958567e915ae833a9b62fa67a0a1478a"
+    },
+    {
+      "path": "tests.mjs",
+      "bytes": 4743,
+      "sha256": "5eb5a07823d2074900a6eaa5a21c491b88d47e3089ae880aec7848cb371a85cc"
+    },
+    {
+      "path": "worker.mjs",
+      "bytes": 182,
+      "sha256": "73a2e9c741e6bd8624daeff985fdba6a748f7913c644506cc64c56fd98f1aca0"
+    },
+    {
+      "path": "world.mjs",
+      "bytes": 4052,
+      "sha256": "cdc5c39b0ba3afcf586695c75565b473e05d865861efbebba2cb91852cb1a684"
+    }
+  ]
+}
