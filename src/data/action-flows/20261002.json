@@ -1,0 +1,527 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-02",
+  "updated": "2026-10-02",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20261002/hero.webp",
+  "actionHero": "/action-item/20261002/hero.webp",
+  "ogImage": "/daily-briefing/20261002/og.webp",
+  "briefingPath": "/ouroboros/202610/20261002/",
+  "actionItemPath": "/ouroboros/202610/20261002/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "S1.1",
+          "url": "https://developers.openai.com/codex/changelog/"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "S2.1",
+          "url": "https://www.prnewswire.com/news-releases/agility-and-fort-robotics-announce-strategic-partnership-to-advance-humanoid-robot-safety-302895323.html"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "S3.1",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "S3.2",
+          "url": "https://farside.co.uk/eth/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "S4.1",
+          "url": "https://chain.link/blog/chainlink-swift-hackathon-2026"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "sources": [
+        {
+          "label": "S5.1",
+          "url": "https://www.prnewswire.com/news-releases/sharon-ai-enters-into-gpu-backed-debt-facility-expanding-funding-flexibility-for-ai-factory-deployments-302895839.html"
+        },
+        {
+          "label": "S5.2",
+          "url": "https://investors.broadcom.com/static-files/96641754-401f-4090-a4ab-210728c83a28"
+        },
+        {
+          "label": "S5.3",
+          "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute"
+        },
+        {
+          "label": "S5.4",
+          "url": "https://blogs.nvidia.com/blog/nvidia-ai-factory-compute/"
+        },
+        {
+          "label": "S5.5",
+          "url": "https://www.prnewswire.com/news-releases/palebluedot-ai-raises-200m-series-c-round-to-scale-super-intelligence-infrastructure-platform-302896601.html"
+        },
+        {
+          "label": "canonical destination",
+          "url": "https://iamrobin.ai/ouroboros/202610/20261002/action_item/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "COMPLETE",
+      "sources": [
+        {
+          "label": "S6.1",
+          "url": "https://www.prnewswire.com/news-releases/sharon-ai-enters-into-gpu-backed-debt-facility-expanding-funding-flexibility-for-ai-factory-deployments-302895839.html"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "S7.1",
+          "url": "https://www.prnewswire.com/news-releases/palebluedot-ai-raises-200m-series-c-round-to-scale-super-intelligence-infrastructure-platform-302896601.html"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "S8.1",
+          "url": "https://www.digi.com/company/press-releases/2026/digi-to-acquire-disruptive-technologies"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, October 2, 2026",
+      "description": "Eight actions connect recovery, rights and financing to evidence.",
+      "centralJudgment": "Give every claim its next acceptance condition, and keep obligations visible when systems change.",
+      "fieldLine": "Eight signals. Defined work. Honest completion.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Specify three recovery cases",
+          "why": "RobinOS needs fewer abandoned or duplicated jobs, measured at the accepted output.",
+          "steps": [
+            "Save a three-case acceptance specification covering interrupted submission, delayed environment startup and failed preparation, with exactly one accepted job or one explicit failure as the endpoint; leave execution pending a separate controlled trial.",
+            "Advance only when dated evidence meets the recorded condition."
+          ],
+          "done": "READY; three-case specification saved, trial not executed."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "Record Digit safety acceptance",
+          "why": "The infrastructure surrounding autonomy can be as commercially consequential as the robot.",
+          "steps": [
+            "Save a Digit 5 validation card requiring a named customer’s accepted safety integration, intervention frequency and productive operating hours before estimating labor savings.",
+            "Advance only when dated evidence meets the recorded condition."
+          ],
+          "done": "READY; validation fields saved, customer acceptance unverified."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows and Web3 Health",
+          "title": "Complete the existing ETF window",
+          "why": "Capital-flow judgments need consistent coverage before they become a regime claim.",
+          "steps": [
+            "Keep the existing September 30–October 2 observation window open until all three BTC and ETH sessions have full fund coverage, then classify the combined flow without trading.",
+            "Advance only when dated evidence meets the recorded condition."
+          ],
+          "done": "WATCHING; September 30 is complete, October 1 incomplete, October 2 pending."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins, FinTech, Payment Standards and Token Rails",
+          "title": "Specify dividend cutoff controls",
+          "why": "Robin’s payments experience helps distinguish a working message flow from enforceable investor rights.",
+          "steps": [
+            "Save a dividend-control specification for one transfer at the record cutoff, requiring one entitlement, one payment identity and an explicit retry state; perform no transaction.",
+            "Advance only when dated evidence meets the recorded condition."
+          ],
+          "done": "READY; specification saved, no payment or production test."
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai Content, Distribution and Visibility",
+          "title": "Publish the compute-exit essay",
+          "why": "This develops a distinct capital-allocation argument beyond the earlier Google–Marvell supplier discussion.",
+          "steps": [
+            "Publish The Price of Leaving Your Compute Supplier at the [canonical destination](https://iamrobin.ai/ouroboros/202610/20261002/action_item/); explain supplier choice, financing, cash collection, exit costs and an evidence checklist, with five original sources, a conceptual diagram and an archived LinkedIn derivative.",
+            "Advance only when dated evidence meets the recorded condition."
+          ],
+          "done": "COMPLETE as an editorial artifact; public delivery has separate gates.",
+          "deepDiveTitle": "Publish the compute-exit essay"
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure, Career Opportunities and Capital Projects",
+          "title": "Calculate illustrative interest",
+          "why": "The engineering and capital career opportunity is to connect usable compute, customer acceptance and cash; this announcement establishes no job opening.",
+          "steps": [
+            "Save an illustrative interest-sensitivity card for US$178 million and US$356 million drawn at 9.95%, explicitly excluding fees, principal repayment and unknown company cash flows.",
+            "Advance only when dated evidence meets the recorded condition."
+          ],
+          "done": "COMPLETE as illustrative arithmetic; actual draw and debt-service coverage remain unknown."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-Stage Private Markets",
+          "title": "Keep PaleBlueDot on WATCH",
+          "why": "Private-market attention should earn its way from a financing headline to underwriting evidence.",
+          "steps": [
+            "Classify PaleBlueDot WATCH, requiring cancellation terms, realized revenue and debt structure before upgrading to investigation; no accessible allocation for Robin is verified.",
+            "Advance only when dated evidence meets the recorded condition."
+          ],
+          "done": "WATCHING; cancellation terms, realized revenue and debt structure required."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities and AI/Physical-AI Themes",
+          "title": "Track Digi closing and cash",
+          "why": "This offers a public-equity route into the data collection layer beneath Physical AI. No relative share-price move is asserted without matched closing data.",
+          "steps": [
+            "Save an acquisition watch card that requires closing confirmation and separately tracks target revenue, recurring revenue and realized post-acquisition cash contribution.",
+            "Advance only when dated evidence meets the recorded condition."
+          ],
+          "done": "READY; agreement terms recorded, closing and realized contribution pending."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年10月2日",
+      "description": "八项行动，用证据连接恢复能力、权利与融资。",
+      "centralJudgment": "每项判断都要有下一步验收条件，系统改变时也要看清仍在的义务。",
+      "fieldLine": "八个信号。明确工作。诚实记录完成。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与智能体｜恢复能力有了具体软件版本",
+          "title": "定义三项恢复试验",
+          "why": "RobinOS需要减少遗留或重复任务，衡量单位应是验收成果。",
+          "steps": [
+            "保存三项验收规格，覆盖提交中断、环境启动延迟和准备失败；每项以一个验收成果或一个明确失败为终点，执行留待独立受控试验。",
+            "带日期证据满足记录条件后才推进。"
+          ],
+          "done": "READY；三项规格已保存，试验未执行。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI与机器人｜工厂必须能让机器人停下",
+          "title": "记录Digit安全验收",
+          "why": "自主设备周边的基础设施，商业价值可能与机器人本身同样重要。",
+          "steps": [
+            "保存Digit 5验证卡，要求具名客户的安全集成验收、人工干预频率和有效生产小时，再估算劳动节省。",
+            "带日期证据满足记录条件后才推进。"
+          ],
+          "done": "READY；验证字段已保存，客户验收未核实。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流与Web3健康度｜季末流出终于有了完整数据",
+          "title": "完成既有ETF观察窗口",
+          "why": "资金流判断先要有一致覆盖，再谈市场状态。",
+          "steps": [
+            "保留现有9月30日至10月2日观察窗口，等三个交易日BTC与ETH基金覆盖完整后，再分类合计资金流，不交易。",
+            "带日期证据满足记录条件后才推进。"
+          ],
+          "done": "WATCHING；9月30日完整，10月1日缺报，10月2日待发生。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币、金融科技与支付标准｜一笔股息需要一个权益答案",
+          "title": "定义股息截止控制",
+          "why": "Robin的支付经验，适合分辨消息流能跑通与投资人权利可履行之间的距离。",
+          "steps": [
+            "保存一项股息控制规格，以登记截止时的一笔转移为例，要求唯一权益、唯一支付标识及明确重试状态；不执行交易。",
+            "带日期证据满足记录条件后才推进。"
+          ],
+          "done": "READY；规格已保存，未支付或测试生产系统。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai内容与传播｜换芯片之前，先问退出多少钱",
+          "title": "发布算力退出文章",
+          "why": "这把此前Google–Marvell供应商讨论，推进到一个独立的资本配置问题。",
+          "steps": [
+            "在[正式发布页](https://iamrobin.ai/ouroboros/202610/20261002/action_item/)发布The Price of Leaving Your Compute Supplier，中文题《离开算力供应商，要付什么代价》；解释供应商选择、融资、回款、退出成本及证据清单，附五项原始来源、概念图和归档LinkedIn派生稿。",
+            "带日期证据满足记录条件后才推进。"
+          ],
+          "done": "编辑成果COMPLETE；公开交付另有验证。",
+          "deepDiveTitle": "发布算力退出文章"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基础设施、职业与资本项目｜GPU抵押融资有了明确利率",
+          "title": "计算利息示例",
+          "why": "工程与资本职业的结合点，是把可用算力、客户验收及现金接起来；本公告不证明存在招聘职位。",
+          "steps": [
+            "保存利息敏感度示例卡，以9.95%计算1.78亿及3.56亿美元提款额，明确排除费用、本金偿还和未披露的公司现金流。",
+            "带日期证据满足记录条件后才推进。"
+          ],
+          "done": "示例算术COMPLETE；实际提款及偿债覆盖率仍未知。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私募市场｜PaleBlueDot为新增算力融资",
+          "title": "维持PaleBlueDot观察",
+          "why": "对私募项目的关注，需要从融资标题推进到可审查证据。",
+          "steps": [
+            "将PaleBlueDot列为WATCH，取得合同取消条款、已实现收入及债务结构后再考虑升级调查；尚未核实Robin可参与的份额。",
+            "带日期证据满足记录条件后才推进。"
+          ],
+          "done": "WATCHING；需要取消条款、已实现收入及债务结构。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场与Physical AI｜Digi向感知层收购",
+          "title": "跟踪Digi交割与现金",
+          "why": "这是观察Physical AI底层数据采集的一条上市公司路径。匹配收盘数据未核实，不作相对股价判断。",
+          "steps": [
+            "保存收购观察卡，要求交割确认，并分别跟踪目标营收、经常性收入及收购后实际现金贡献。",
+            "带日期证据满足记录条件后才推进。"
+          ],
+          "done": "READY；协议条款已记录，交割及实际贡献待核。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年10月2日",
+      "description": "八項行動，用證據連接恢復能力、權利與融資。",
+      "centralJudgment": "每項判斷都要有下一步驗收條件，系統改變時也要看清仍在的義務。",
+      "fieldLine": "八個信號。明確工作。誠實記錄完成。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與智能體｜恢復能力有了具體軟體版本",
+          "title": "定義三項恢復試驗",
+          "why": "RobinOS需要減少遺留或重複任務，衡量單位應是驗收成果。",
+          "steps": [
+            "保存三項驗收規格，覆蓋提交中斷、環境啓動延遲和準備失敗；每項以一個驗收成果或一個明確失敗為終點，執行留待獨立受控試驗。",
+            "帶日期證據滿足記錄條件後才推進。"
+          ],
+          "done": "READY；三項規格已保存，試驗未執行。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI與機器人｜工廠必須能讓機器人停下",
+          "title": "記錄Digit安全驗收",
+          "why": "自主設備周邊的基礎設施，商業價值可能與機器人本身同樣重要。",
+          "steps": [
+            "保存Digit 5驗證卡，要求具名客戶的安全集成驗收、人工干預頻率和有效生產小時，再估算勞動節省。",
+            "帶日期證據滿足記錄條件後才推進。"
+          ],
+          "done": "READY；驗證字段已保存，客戶驗收未核實。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本流與Web3健康度｜季末流出終於有了完整數據",
+          "title": "完成既有ETF觀察窗口",
+          "why": "資金流判斷先要有一致覆蓋，再談市場狀態。",
+          "steps": [
+            "保留現有9月30日至10月2日觀察窗口，等三個交易日BTC與ETH基金覆蓋完整後，再分類合計資金流，不交易。",
+            "帶日期證據滿足記錄條件後才推進。"
+          ],
+          "done": "WATCHING；9月30日完整，10月1日缺報，10月2日待發生。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣、金融科技與支付標準｜一筆股息需要一個權益答案",
+          "title": "定義股息截止控制",
+          "why": "Robin的支付經驗，適合分辨消息流能跑通與投資人權利可履行之間的距離。",
+          "steps": [
+            "保存一項股息控制規格，以登記截止時的一筆轉移為例，要求唯一權益、唯一支付標識及明確重試狀態；不執行交易。",
+            "帶日期證據滿足記錄條件後才推進。"
+          ],
+          "done": "READY；規格已保存，未支付或測試生產系統。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai內容與傳播｜換晶片之前，先問退出多少錢",
+          "title": "發佈算力退出文章",
+          "why": "這把此前Google–Marvell供應商討論，推進到一個獨立的資本配置問題。",
+          "steps": [
+            "在[正式發佈頁](https://iamrobin.ai/ouroboros/202610/20261002/action_item/)發佈The Price of Leaving Your Compute Supplier，中文題《離開算力供應商，要付什麼代價》；解釋供應商選擇、融資、回款、退出成本及證據清單，附五項原始來源、概念圖和歸檔LinkedIn派生稿。",
+            "帶日期證據滿足記錄條件後才推進。"
+          ],
+          "done": "編輯成果COMPLETE；公開交付另有驗證。",
+          "deepDiveTitle": "發佈算力退出文章"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基礎設施、職業與資本項目｜GPU抵押融資有了明確利率",
+          "title": "計算利息示例",
+          "why": "工程與資本職業的結合點，是把可用算力、客戶驗收及現金接起來；本公告不證明存在招聘職位。",
+          "steps": [
+            "保存利息敏感度示例卡，以9.95%計算1.78億及3.56億美元提款額，明確排除費用、本金償還和未披露的公司現金流。",
+            "帶日期證據滿足記錄條件後才推進。"
+          ],
+          "done": "示例算術COMPLETE；實際提款及償債覆蓋率仍未知。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私募市場｜PaleBlueDot為新增算力融資",
+          "title": "維持PaleBlueDot觀察",
+          "why": "對私募項目的關注，需要從融資標題推進到可審查證據。",
+          "steps": [
+            "將PaleBlueDot列為WATCH，取得合同取消條款、已實現收入及債務結構後再考慮升級調查；尚未核實Robin可參與的份額。",
+            "帶日期證據滿足記錄條件後才推進。"
+          ],
+          "done": "WATCHING；需要取消條款、已實現收入及債務結構。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場與Physical AI｜Digi向感知層收購",
+          "title": "跟蹤Digi交割與現金",
+          "why": "這是觀察Physical AI底層數據採集的一條上市公司路徑。匹配收盤數據未核實，不作相對股價判斷。",
+          "steps": [
+            "保存收購觀察卡，要求交割確認，並分別跟蹤目標營收、經常性收入及收購後實際現金貢獻。",
+            "帶日期證據滿足記錄條件後才推進。"
+          ],
+          "done": "READY；協議條款已記錄，交割及實際貢獻待核。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年10月2日",
+      "description": "復旧、権利、融資を証拠へつなぐ八つの行動。",
+      "centralJudgment": "各判断に次の受入条件を置き、システムを替えても残る義務を見えるようにする。",
+      "fieldLine": "八つのシグナル。定義した仕事。正確な完了記録。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "最先端モデルとエージェント｜復旧を検証できる新バージョン",
+          "title": "復旧三例の仕様を定義",
+          "why": "RobinOSでは放置・重複ジョブを減らし、受入済み成果で測りたい。",
+          "steps": [
+            "送信中断、環境起動遅延、準備失敗の三つの受入仕様を保存する。各項目は一つの受入成果か一つの明示的失敗で終わることを条件とし、実行は別の管理された試験に残す。",
+            "日付付き証拠が記録した条件を満たしたら進める。"
+          ],
+          "done": "READY。三例の仕様を保存。試験は未実施。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AIとロボット｜工場からロボットを止める",
+          "title": "Digit安全受入を記録",
+          "why": "自律機械を囲むインフラにも、機体と同程度の事業価値が生まれ得る。",
+          "steps": [
+            "Digit 5の検証カードを保存し、人件費削減の推計前に、実名顧客の安全統合受入、介入頻度、有効稼働時間を求める。",
+            "日付付き証拠が記録した条件を満たしたら進める。"
+          ],
+          "done": "READY。検証項目を保存。顧客受入は未確認。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産資金フローとWeb3｜四半期末の流出額がそろう",
+          "title": "既存ETF観察期間を完了",
+          "why": "資金フローの判断には、比較できる報告範囲が先に必要だ。",
+          "steps": [
+            "既存の9月30日〜10月2日観察期間を維持し、三取引日のBTC・ETH全基金報告がそろってから合算フローを分類する。取引は行わない。",
+            "日付付き証拠が記録した条件を満たしたら進める。"
+          ],
+          "done": "WATCHING。9月30日は全件、10月1日は未報告あり、10月2日は未到来。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコインと決済基盤｜配当の権利者を一つに定める",
+          "title": "配当確定時の管理を定義",
+          "why": "Robinの決済経験は、メッセージの動作と投資家の権利履行を区別する力になる。",
+          "steps": [
+            "権利確定時点の一件の移転について、権利一件、支払識別子一件、明示的な再試行状態を条件とする配当管理仕様を保存する。送金は実行しない。",
+            "日付付き証拠が記録した条件を満たしたら進める。"
+          ],
+          "done": "READY。仕様を保存。送金・本番試験は未実施。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.aiの発信｜チップを替えても退出費用は残る",
+          "title": "計算資源の退出記事を公開",
+          "why": "以前のGoogle–Marvell供給者論から、独自の資本配分の問題へ進められる。",
+          "steps": [
+            "[公開先](https://iamrobin.ai/ouroboros/202610/20261002/action_item/)にThe Price of Leaving Your Compute Supplierを掲載する。中国語題は《离开算力供应商，要付什么代价》。供給者選択、融資、回収、退出費用、証拠項目を説明し、一次資料五件、概念図、保存用LinkedIn派生稿を付ける。",
+            "日付付き証拠が記録した条件を満たしたら進める。"
+          ],
+          "done": "編集成果はCOMPLETE。公開配信は別途検証。",
+          "deepDiveTitle": "計算資源の退出記事を公開"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラと資本計画｜GPU担保融資に金利が付く",
+          "title": "利息の例を計算",
+          "why": "実用計算資源、顧客検収、現金をつなぐ仕事に工学と資本の接点がある。発表から求人の存在は推定しない。",
+          "steps": [
+            "金利9.95%で借入実行額1億7,800万・3億5,600万米ドルの利息感応度例を保存し、手数料、元本返済、未開示の実際のキャッシュフローを除外する。",
+            "日付付き証拠が記録した条件を満たしたら進める。"
+          ],
+          "done": "例示計算はCOMPLETE。実際の実行額と返済余裕率は不明。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期プライベート市場｜PaleBlueDotが増設資金を調達",
+          "title": "PaleBlueDotをWATCHに維持",
+          "why": "私募案件への関心は、調達見出しから審査できる証拠へ進める必要がある。",
+          "steps": [
+            "PaleBlueDotをWATCHとし、解約条項、実現売上、債務構成を得てから調査への格上げを検討する。Robinが参加できる投資枠は確認していない。",
+            "日付付き証拠が記録した条件を満たしたら進める。"
+          ],
+          "done": "WATCHING。解約条件、実現売上、債務構成が必要。"
+        },
+        {
+          "signal": 8,
+          "domain": "上場株とPhysical AI｜Digiがセンシング層を買う",
+          "title": "Digi完了と現金を追跡",
+          "why": "Physical AIの下支えとなるデータ収集を上場企業から観察できる。同一日の終値を確認していないため相対株価は論じない。",
+          "steps": [
+            "買収観察カードを保存し、完了確認を条件に、対象売上、経常収益、買収後の実際の現金貢献を分けて追跡する。",
+            "日付付き証拠が記録した条件を満たしたら進める。"
+          ],
+          "done": "READY。契約条件を記録。完了と実現貢献は未確認。"
+        }
+      ]
+    }
+  }
+}

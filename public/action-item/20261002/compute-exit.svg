@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620" role="img" aria-labelledby="t d">
+<title id="t">The price of changing compute suppliers</title><desc id="d">Conceptual framework. Compute supply reaches a workload. Customer acceptance precedes cash collection. Cash services financing obligations. Moving the workload requires separate review of migration, overlap and remaining obligations.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#346d65" stroke-width="1.6"/></marker></defs>
+<rect width="960" height="620" rx="12" fill="#f3f1e9"/>
+<g font-family="Arial, sans-serif" fill="#20332f"><text x="48" y="53" font-size="15" letter-spacing="2">COMPUTE / CAPITAL / CHOICE</text><text x="48" y="101" font-size="32">What moves, and what stays payable?</text><text x="48" y="134" font-size="17">A conceptual framework. No undisclosed transaction terms assumed.</text>
+<g fill="#fffdf8" stroke="#abbcb2" stroke-width="1.5"><rect x="48" y="185" width="232" height="100" rx="8"/><rect x="364" y="185" width="232" height="100" rx="8"/><rect x="680" y="185" width="232" height="100" rx="8"/><rect x="48" y="365" width="232" height="100" rx="8"/><rect x="364" y="365" width="232" height="100" rx="8"/><rect x="680" y="365" width="232" height="100" rx="8"/></g>
+<g font-size="22"><text x="68" y="222">Compute supply</text><text x="384" y="222">Accepted work</text><text x="700" y="222">Cash collected</text><text x="68" y="402">Alternative supply</text><text x="384" y="402">Migration + overlap</text><text x="700" y="402">Debt obligations</text></g>
+<g font-size="16" fill="#50635c"><text x="68" y="252">Capacity and delivery</text><text x="384" y="252">Customer acceptance</text><text x="700" y="252">Amount and timing</text><text x="68" y="432">Available when needed?</text><text x="384" y="432">Cash needed to move</text><text x="700" y="432">What remains due?</text></g>
+<g fill="none" stroke="#346d65" stroke-width="2.5" marker-end="url(#arrow)"><path d="M280 235 H351"/><path d="M596 235 H667"/><path d="M796 285 V351"/><path d="M280 415 H351"/></g>
+<path d="M480 365 V297" fill="none" stroke="#346d65" stroke-width="2.5" stroke-dasharray="6 6" marker-end="url(#arrow)"/>
+<text x="501" y="331" font-size="15" fill="#50635c">Only after acceptance</text>
+<path d="M48 506 H912" stroke="#abbcb2"/>
+<text x="48" y="543" font-size="20">Exit worksheet = surviving obligations + transition costs − recoverable value</text><text x="48" y="576" font-size="16" fill="#50635c">Keep timing, contract rights and unavailable evidence in separate fields.</text></g></svg>
