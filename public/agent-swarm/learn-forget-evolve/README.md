@@ -48,7 +48,7 @@ npm run batch
 npm run verify
 ```
 
-`results.json` preserves 24 paired seeds × four regimes × four arms, every phase score, all promotion/rejection lineages, aggregate metrics, descriptive paired confidence intervals, and the exact model SHA-256. Verification recomputes 384 arm outcomes and all lineages, requiring exact equality. `record:false` changes only whether animation frames are retained.
+`results.json` preserves 24 paired seeds × four regimes × four arms, every phase score, all promotion/rejection lineages, aggregate metrics, descriptive paired confidence intervals, and the exact model SHA-256. Verification recomputes 384 arm outcomes and all lineages. Source SHA-256, diagnostic policy fingerprints, promotion/rejection decisions, all work/energy/budget values, counts and structure remain exact. Explicitly named continuous evaluation fields alone have the portable rounding bounds described below; `npm run verify -- --exact` requires byte-for-byte equality everywhere. `record:false` changes only whether animation frames are retained.
 
 The final model exports pure `policyScores()` and `policyAction()` boundaries and a standalone frozen evaluator. Policies cannot read an environment object, seed, phase label or payoff table. A fixed seed makes an experiment replayable, not an empirical claim about a deployed learning system.
 
@@ -63,3 +63,13 @@ Resource sites do not deplete and agents do not collide. Cue semantics and the b
 校准使用外部野外站能源，每次探测计入 0.04 单位任务能耗，不扣除个体的随身电池；移动和有毒采集才从随身电池扣除。默认 864 次探测为每组增加 34.56 单位外部能耗。因此总任务能耗包含随身耗电和外部校准，两者不能混作同一初始电池预算。
 
 Metric review (2026-10-03): computational accounting was separated by operation without changing any decision or outcome. Prior source/results are preserved in `diagnostics/pre-metric-correction/`. 中文：记忆表行更新、训练策略评分和诊断策略评分已分别计数；总策略评分只相加同单位操作，不再把行更新混作评分。所有决策和结果保持不变。
+
+## Portable fingerprints and evaluation precision
+
+The source/evidence pair predating this correction is preserved in `diagnostics/pre-portable-fingerprint/`, with a SHA-256 manifest. Linux x64 Node22.18.0 differed from macOS arm64 only in final-bit evaluation numbers (maximum absolute error 2.22e−16, maximum relative error 3.60e−15) and diagnostic fingerprints produced by hashing their full-precision policy serialization. No integer outcome or promotion decision differed.
+
+Policy fingerprints now use `fnv1a32-policy-json-12-significant-digits-v1`: numeric values are represented at twelve significant decimal digits **only while constructing the diagnostic fingerprint**, with a `p12-` prefix. The policy, mutation, action selection, fitting, promotion gates and heldout evaluator retain their original full-precision numbers. Raw final policies remain available in `simulate(...).audit.finalPolicies`. This non-security fingerprint groups negligible representation noise; it is not a cryptographic identity or a claim that arbitrarily different policies are equivalent. The complete source file retains its strict cryptographic SHA-256.
+
+The portable verifier permits a difference only in named heldout/retention summaries, continuous heldout statistics, per-epoch fitting/gate scores and phase-evaluation scores, and only when **both** absolute difference ≤ `2 * Number.EPSILON` (4.44e−16) and relative difference ≤ `32 * Number.EPSILON` (7.11e−15). Zero, null, integer counts, source hashes, normalized fingerprints, selection/promotion decisions, reasons, timestamps, useful work, energy, computational budgets and structure are exact. There is no near-zero absolute-only exemption; a tiny relative change cannot hide a gate flip. `--exact` remains available for full byte comparison.
+
+`PORTABILITY_RECEIPT.json` records the exact transition comparison: all 384 arm summaries, aggregate statistics, phase evaluations, 6,144 non-fingerprint lineage entries and 384 raw final policies are unchanged; sixteen representative full arm trajectories also match exactly. The new evidence differs only in the declared fingerprint strings, fingerprint-method metadata and updated source hash. Tests establish stability for adjacent-float perturbations of representative policies, rejection of meaningful policy changes, and strict rejection of altered gates, fingerprints, source hashes, work, budgets or schema. Frozen unsuccessful hypotheses remain unsuccessful.

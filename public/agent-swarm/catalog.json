@@ -24,7 +24,7 @@
     "scene": "evolution",
     "question": "Can a small policy change adapt to a new world without erasing the old one?",
     "folder": "03_learn_forget_evolve",
-    "modelSha256": "681f2e8844bab8f2a1515f67b09e0885d15b4923a007e69705380a4acb388326"
+    "modelSha256": "baca6e620d444f2e2043c4983f76d9c7d3de85e8f1a3aee8ede2fabaf8714cac"
   },
   {
     "id": "asteroid-button",
