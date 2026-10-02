@@ -1,0 +1,1 @@
+{"name":"agent-swarm-minimum-intelligence","version":"1.0.0","private":true,"type":"module","scripts":{"test":"node --test tests.mjs","models":"node runner.mjs","assemble":"node assemble.mjs","batch":"node batch.mjs","verify":"node batch.mjs --verify"}}

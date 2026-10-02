@@ -1,0 +1,4 @@
+import {SketchWorld} from './renderer.mjs';
+const base=new URL('./',import.meta.url),cards=[...document.querySelectorAll('[data-card-world]')],renderers=[];
+for(const c of cards){try{const id=c.dataset.cardWorld,mod=await import(new URL(`${id}/model.mjs`,base)),run=mod.simulate({...mod.defaults,record:true});const renderer=new SketchWorld(c,mod.meta.scene);renderer.angle=-.64;renderer.draw(run,Math.floor(run.arms[0].frames.length*.56),Math.min(1,run.arms.length-1));renderers.push(renderer);if(id==='roach-emergence'){const hero=document.querySelector('[data-hub-world]');if(hero){const r=new SketchWorld(hero,'land');r.draw(run,Math.floor(run.arms[0].frames.length*.32),2);renderers.push(r);}}}catch(e){console.warn('Field sketch unavailable',e.message);}}
+addEventListener('pagehide',()=>renderers.forEach(r=>r.destroy()),{once:true});

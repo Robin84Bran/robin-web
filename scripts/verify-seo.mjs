@@ -26,6 +26,8 @@ const indexableRoutes = new Set([
   '/intelligence/swarm-lab/known-trap/', '/intelligence/swarm-lab/attention-windows/', '/intelligence/swarm-lab/taste-drift/', '/intelligence/swarm-lab/shared-channel/',
 ]);
 const arcadeRoutes = ["/meaning/Bran_lab/", "/meaning/Bran_lab/SuperRun/", "/meaning/Bran_lab/GeoDash/", "/meaning/Bran_lab/PacMan/", "/meaning/Bran_lab/BlockLab/", "/meaning/Bran_lab/WonderTrail/", "/meaning/Bran_lab/KartLab/", "/meaning/Bran_lab/CloudMunch/", "/meaning/Bran_lab/BounceTrials/", "/meaning/Bran_lab/StarboundMath/"];
+const agentSwarmRoutes = ['/intelligence/agent-swarm/', ...['roach-emergence', 'shared-reality', 'learn-forget-evolve', 'asteroid-button', 'ocean-swarm', 'minimum-intelligence'].map(slug => `/intelligence/agent-swarm/${slug}/`)];
+for (const route of agentSwarmRoutes) indexableRoutes.add(route);
 for (const route of arcadeRoutes) indexableRoutes.add(route);
 if (modelOlympicsPublic) indexableRoutes.add('/asymmetry/model-olympics/');
 const identityFamilies = [
@@ -120,7 +122,8 @@ if (existsSync(dist)) {
   const binaryStoryRoutes = [...routes.keys()].filter(route=>/^\/binary\/stories\/[a-z0-9-]+\/(?:zh-hans\/|zh-hant\/|ja\/)?$/.test(route));
   const publicationRoutes = [...articleRoutes, ...actionFlowPublications, ...blogPublications, ...specialRoutes, ...binaryStoryRoutes];
   for (const route of [...publicationRoutes, ...diaryRoutes]) indexableRoutes.add(route);
-  check(routes.size === 48 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length, `expected ${48 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length} HTML routes, found ${routes.size}.`);
+  check(routes.size === 48 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length + agentSwarmRoutes.length, `expected ${48 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length + agentSwarmRoutes.length} HTML routes, found ${routes.size}.`);
+  for (const route of agentSwarmRoutes) check(routes.has(route), `missing Agent Swarm route: ${route}`);
 
   for (const route of arcadeRoutes) check(routes.has(route), `missing arcade route: ${route}`);
 

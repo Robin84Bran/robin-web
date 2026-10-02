@@ -1,0 +1,21 @@
+{
+  "schema": "model-campaign-v1",
+  "startedAt": "2026-10-02T16:21:18.805Z",
+  "finishedAt": "2026-10-02T16:39:07.829Z",
+  "schedulerWallMs": 1069025,
+  "concurrency": 8,
+  "expectedCalls": 333,
+  "completed": 333,
+  "failed": 0,
+  "cliVersion": "codex-cli 0.160.0",
+  "models": [
+    "gpt-6-sol",
+    "gpt-6-luna"
+  ],
+  "billing": {
+    "mechanism": "Existing ChatGPT subscription authentication",
+    "actualDollars": null,
+    "equalDollarFrontier": "UNKNOWN"
+  },
+  "protocolSha256": "f3b9e0252aba1fb4bb9849876b2f1464684f9cbc521548960a5525913deeb8e2"
+}

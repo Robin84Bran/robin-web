@@ -1,0 +1,24 @@
+{
+  "reviewDate": "2026-10-03",
+  "scope": "Metric accounting only; controllers and actual outcomes unchanged",
+  "previousModelSha256": "dba287ff6b1e413d89e8d0fa6f1384d04bc3d4a4aee9b9048ef59bb2140df4b2",
+  "currentModelSha256": "f32f5443db25435e8d7fb68efaa5cda1c70d90369c372568a33d55c1fb838a0a",
+  "unchangedRunMetricComparisons": 5376,
+  "previousAcceptance": {
+    "passed": false,
+    "winningRegimes": 0,
+    "noLargePrivateLoss": true
+  },
+  "currentAcceptance": {
+    "passed": false,
+    "winningRegimes": 0,
+    "noLargePrivateLoss": true
+  },
+  "retainedEvidence": "diagnostics/pre-metric-correction",
+  "finalDocumentationReview": {
+    "date": "2026-10-03",
+    "documentationOnly": true,
+    "clarification": "README now states that partitions check connectivity at send time; accepted in-flight packets may arrive after the cut and remain subject to evidence expiry.",
+    "modelAndResultsUnchanged": true
+  }
+}

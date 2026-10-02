@@ -1,0 +1,76 @@
+{
+  "schema": "agent-swarm-public-source-v1",
+  "scenario": "ocean-swarm",
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 1284,
+      "sha256": "4a94240276974259ef92d94801fbbe20af1371aac9dcbaf55dc876d2f5e90324"
+    },
+    {
+      "path": "EXPERIMENT.md",
+      "bytes": 3219,
+      "sha256": "73312eaf2d4be68910f06e5f9c137d0ac65329923f763d805f2bf4bf42e94afe"
+    },
+    {
+      "path": "README.md",
+      "bytes": 11755,
+      "sha256": "73c41a0fa1419f3e5985e49603eaa643717d8df342947f24b355fbcd63def7b6"
+    },
+    {
+      "path": "SOURCE_PACKAGE_README.md",
+      "bytes": 1292,
+      "sha256": "dde19fd3c434da70757a0aa3c0ce8c2dcb93bcc04b73646ef7e02c507b0a013d"
+    },
+    {
+      "path": "batch.mjs",
+      "bytes": 4302,
+      "sha256": "631952fda7998cf7112b7f97de66a27f40c08686165b95a52fa789a23ead2b38"
+    },
+    {
+      "path": "client.mjs",
+      "bytes": 11151,
+      "sha256": "ddf620c66fb5d90816b770028e1b356f5673c0baf6d128862269810a6cd69903"
+    },
+    {
+      "path": "index.html",
+      "bytes": 10040,
+      "sha256": "704164ac90e285d816466b0710744e2fac492e738e7145268701ead805844895"
+    },
+    {
+      "path": "lab.css",
+      "bytes": 10462,
+      "sha256": "25dd722e0080c7cb5313a466f9c07ae3e4f7b88d01e22f84ea8b1355af1d9a6f"
+    },
+    {
+      "path": "model.mjs",
+      "bytes": 30753,
+      "sha256": "414278069ed7fae4da8f067b60e01e1efd1a9d50b75807469d4d9f104617e069"
+    },
+    {
+      "path": "package.json",
+      "bytes": 355,
+      "sha256": "f508727f71016af0ec5ba542cc41e52e6dff803dce2286c08ea78a65d441ef67"
+    },
+    {
+      "path": "renderer.mjs",
+      "bytes": 12074,
+      "sha256": "c946043422e0524599a43f4990f858641c23767173a3f84f6d0bcdd4d0958164"
+    },
+    {
+      "path": "results.json",
+      "bytes": 687170,
+      "sha256": "a3864f69a97ccc7a1c1ee752e271f237c7c9fd0829807474f546fdab339cec41"
+    },
+    {
+      "path": "tests.mjs",
+      "bytes": 8456,
+      "sha256": "c609063edfdb29f076a772b4ff14e150460d092c83b20e53af69a907afc6d2e6"
+    },
+    {
+      "path": "worker.mjs",
+      "bytes": 182,
+      "sha256": "73a2e9c741e6bd8624daeff985fdba6a748f7913c644506cc64c56fd98f1aca0"
+    }
+  ]
+}
