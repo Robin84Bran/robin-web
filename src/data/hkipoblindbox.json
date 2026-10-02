@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-28T01:36:43.317624+00:00",
+  "generated_at": "2026-10-02T09:00:49.721207+00:00",
   "money_mode": "SIMULATED",
   "forecasts": [
     {
@@ -19,7 +19,12 @@
         0.1699114624631788
       ],
       "target_return": 0.1,
-      "score": null
+      "score": {
+        "exact_hit": false,
+        "brier": 0.7400224830690291,
+        "target_touched": true,
+        "ordinal_partial_credit": 0.6666666666666667
+      }
     },
     {
       "case_id": "HKEX-20260929-09607",
@@ -37,7 +42,12 @@
         0.184043023402531
       ],
       "target_return": 0.1,
-      "score": null
+      "score": {
+        "exact_hit": false,
+        "brier": 0.8418085474088148,
+        "target_touched": false,
+        "ordinal_partial_credit": 0.6666666666666667
+      }
     },
     {
       "case_id": "HKEX-20260929-06731",
@@ -55,7 +65,12 @@
         0.13760380237861514
       ],
       "target_return": 0.1,
-      "score": null
+      "score": {
+        "exact_hit": true,
+        "brier": 0.5642883359263586,
+        "target_touched": true,
+        "ordinal_partial_credit": 1.0
+      }
     },
     {
       "case_id": "HKEX-20260929-03757",
@@ -73,7 +88,12 @@
         0.1203423631671774
       ],
       "target_return": 0.1,
-      "score": null
+      "score": {
+        "exact_hit": false,
+        "brier": 0.6976420115707291,
+        "target_touched": false,
+        "ordinal_partial_credit": 0.6666666666666667
+      }
     },
     {
       "case_id": "HKEX-PENDING-06802-cb95eeb5",
@@ -137,6 +157,6 @@
     "title": "The HK IPO Blind Box",
     "subtitle": "I researched the company. The allocation algorithm researched my patience.",
     "money_mode": "SIMULATION ONLY",
-    "forecast_status": "Initial forward probabilities are uncalibrated priors. No matured forward win rate yet."
+    "forecast_status": "Initial forward probabilities are uncalibrated priors. Matured results are descriptive; the sample does not establish calibration or an edge."
   }
 }
