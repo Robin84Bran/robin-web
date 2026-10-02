@@ -4,6 +4,15 @@ import CheekyBlindBox from '../../components/joy/CheekyBlindBox.astro';
 import data from '../../data/hkipoblindbox.json';
 import binary from '../../data/hkipoblindbox-binary.json';
 const h = data.historical;
+const scored = data.forecasts.flatMap((f) => f.score ? [f.score] : []);
+const n = scored.length;
+const correct = scored.filter((s) => s.exact_hit).length;
+const accuracy = n ? correct / n : 0;
+const brier = n ? scored.reduce((sum, s) => sum + s.brier, 0) / n : 0;
+const z = 1.96;
+const den = 1 + z * z / (n || 1);
+const center = (accuracy + z * z / (2 * (n || 1))) / den;
+const half = z * Math.sqrt(accuracy * (1 - accuracy) / (n || 1) + z * z / (4 * (n || 1) ** 2)) / den;
 const pct = (v: number) => `${(v * 100).toFixed(1)}%`;
 const bands = ['Below 0%', '0–<20%', '20–<40%', '40% or more'];
 const lenses = [
@@ -61,18 +70,20 @@ const lenses = [
       </article>)}</div>
       <p><strong>The exit rule:</strong> keep the +10% limit through sessions 1–5. From session 6, use an OCO +10% target / −10% stop. A gap below the stop can lose more than 10%. A price touching a limit does not prove an order filled.</p>
       <p><strong>Forward evidence:</strong> {binary.forward.yes_d5} YES outcomes, {binary.forward.no_d5} NO outcomes and {binary.forward.pending_d5} still pending across {binary.forward.forecasts} frozen calls. {binary.forward.reviewed_paths} paths have completed-session evidence. An early target hit can resolve YES; a first-day miss cannot resolve NO. This small, partly observed sample does not establish a forecasting edge.</p>
-      <p class="aside">{binary.forward.source_note} The original D3 outcomes remain pending.</p>
+      <p class="aside">{binary.forward.source_note} The original D3 results are reported separately below.</p>
       <blockquote>“The lottery handles rejection.<br/>We handle the receipts.”</blockquote>
       <details><summary>The five-day rehearsal, with the awkward bits left in</summary><p>The {binary.historical.window[0]}–{binary.historical.window[1]} inventory contains {binary.historical.inventory} listings. Under the declared daily-bar execution assumptions, {binary.historical.yes_d5} of {binary.historical.known_d5} resolved five-day labels reached the +10% limit in time; {binary.historical.no_d5} did not. One recent listing is still pending. This is historical reconstruction, not unseen prediction or a personal trading win rate.</p><p>The binary prediction recipe scored {pct(binary.historical.binary_accuracy)}, versus {pct(binary.historical.always_yes_accuracy)} for always saying YES. The fixed screen excluded no IPOs, so it selected the same portfolio as subscribing to all. No screening advantage has been demonstrated. There are {binary.historical.modeled_exits} modeled exits, {binary.historical.execution_gaps} unresolved execution histories, and {binary.historical.open_positions} known open positions. Missing evidence stays missing; we do not publish a complete portfolio return from an incomplete ledger.</p><p>Only redacted calls and aggregate evidence appear here. Private model details, capital assumptions and personal logs remain private.</p></details>
     </section>
 
     <section aria-labelledby="forward-title">
-      <div class="section-heading"><div><span class="section-no">03 / SEALED ENVELOPES</span><h2 id="forward-title">The next boxes.</h2></div><span class="pending">{data.forecasts.length} frozen · outcomes pending</span></div>
-      <p class="section-intro">These are forecasts for the highest traded price within the first three trading days, relative to the final issue price. The initial probabilities are <strong>uncalibrated research priors</strong>. There is no earned forward win rate yet.</p>
+      <div class="section-heading"><div><span class="section-no">03 / SEALED ENVELOPES</span><h2 id="forward-title">The next boxes.</h2></div><span class="pending">{data.forecasts.length} frozen · {n} scored</span></div>
+      <p class="section-intro">These are forecasts for the highest traded price within the first three trading days, relative to the final issue price. The initial probabilities are <strong>uncalibrated research priors</strong>. Matured results are descriptive; this small sample cannot establish calibration or a forecasting edge.</p>
+      {n > 0 && <p class="score-explainer"><strong>{correct} correct return bands out of {n} matured D3 forecasts ({pct(accuracy)}).</strong> Coverage: {n}/{data.forecasts.length} frozen calls scored; the remainder have not completed three sessions. 95% Wilson interval: {pct(Math.max(0, center - half))}–{pct(Math.min(1, center + half))}. Multiclass Brier: {brier.toFixed(3)}. Completed daily highs use single-vendor evidence with archived official issue prices and independent opening/date checks. These are market-price labels, not subscription profits or fills. Frozen calls and models remain unchanged.</p>}
       <details class="legacy"><summary>Open the original three-session research (unchanged)</summary>
       <div class="forecast-list">{data.forecasts.map((f) => <article class="forecast">
         <header><span class="ticker">HKEX · {f.stock_code}</span><h3>{f.issuer_name}</h3><p>Expected listing · <time datetime={f.listing_date ?? ''}>{f.listing_date}</time></p></header>
         <div class="probabilities" aria-label="Frozen return probabilities">{f.probabilities.map((p,i) => <div><span>{bands[i]}</span><strong>{pct(p)}</strong><i style={`--prob:${p * 100}%`} aria-hidden="true"></i></div>)}</div>
+        {f.score && <p class="aside">D3 return-band forecast: <strong>{f.score.exact_hit ? 'correct' : 'missed'}</strong>. Comparison target {f.score.target_touched ? 'touched' : 'not touched'}; touching is not a fill.</p>}
         <footer><p>Comparison sell target: <strong>final issue price × {(1+f.target_return).toFixed(2)}</strong>. Price touching the target does not prove an order filled.</p><details><summary>Open the timestamp, not the box</summary><p>Frozen {f.frozen_at}<br/>Version {f.model_version}</p><code>{f.commitment}</code></details></footer>
       </article>)}</div></details>
     </section>
