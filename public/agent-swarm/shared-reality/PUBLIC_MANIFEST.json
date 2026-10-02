@@ -9,8 +9,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7589,
-      "sha256": "f81479e8d114fa8c31bf39e2e181e97c509fcb239528ec29bd7fe929255641f4"
+      "bytes": 9027,
+      "sha256": "51579441a49ac4688c6d8e74083360877631c61df07ec178b7e73d9b474c848c"
     },
     {
       "path": "RESULTS.md",
@@ -24,8 +24,8 @@
     },
     {
       "path": "batch.mjs",
-      "bytes": 2885,
-      "sha256": "b8b3152abe0456f9c95ed2961f88b09afb39e237e534fb7e78e6424258b4e23a"
+      "bytes": 3027,
+      "sha256": "7c51093b68c62029754923e1e28a2ba713e343a61ffef2d6d453bb3b9db8122b"
     },
     {
       "path": "client.mjs",
@@ -59,8 +59,8 @@
     },
     {
       "path": "replay-verification.mjs",
-      "bytes": 1641,
-      "sha256": "888dfdf41a64a7f9b3646dcbd9113976f25667c0242fdd3c0014d4f46b377676"
+      "bytes": 2960,
+      "sha256": "eb98c3f2d0eeb3a62165121bd6326b4d6db19f721854dac0cb5b64896e25a1f3"
     },
     {
       "path": "results.json",
@@ -74,8 +74,8 @@
     },
     {
       "path": "tests.mjs",
-      "bytes": 3273,
-      "sha256": "d311690eb4e7ff7d4c9376b64b8ab2bbd4556473ee0447b9e34ae1d0b2a7280b"
+      "bytes": 6681,
+      "sha256": "01cf480644def14c4d7f4bac687041c8fdb2d576893eab103426206882f134b2"
     },
     {
       "path": "worker.mjs",

@@ -46,7 +46,7 @@ npm run batch
 npm run verify
 ```
 
-`results.json` contains 24 fixed paired seeds × four regimes × four arms, every numerical outcome, aggregates, descriptive paired t intervals and the exact `model.mjs` SHA-256. `--verify` reruns all 384 arm outcomes and requires byte-for-byte equality. The browser calls the identical ESM model. `record:false` skips animation snapshots without changing a result.
+`results.json` contains 24 fixed paired seeds × four regimes × four arms, every numerical outcome, aggregates, descriptive paired t intervals and the exact `model.mjs` SHA-256. `--verify` reruns all 384 arm outcomes. It requires exact structure, source hash, decisions, counts, costs, work and missing-value status. A narrowly scoped machine-rounding allowance applies only to `brier`, `forecastRMSE`, `calibrationError`, their continuous aggregate statistics and the `sourceVsEchoBrier` paired statistics: absolute difference ≤ `Number.EPSILON / 2` (1.11e−16) **and** relative difference ≤ `8 * Number.EPSILON` (1.78e−15). Aggregate sample counts stay exact. `npm run verify -- --exact` additionally requires byte-for-byte equality everywhere. The browser calls the identical ESM model. `record:false` skips animation snapshots without changing a result.
 
 Read the exported `audit` object for the actual information boundary, prediction definition and bandwidth accounting. The saved batch report retains failed hypotheses as evidence. A graphical scene cannot establish distributed intelligence on its own.
 
@@ -61,3 +61,7 @@ The model assumes honest source identities, known station coordinates, exact sel
 通信范围、丢包和东西分区只在发送时检查。分区开始后不再接受新的跨区发送；此前已经进入传输队列的消息仍可能送达，并继续受证据有效期限制。因此，这不是立即清除所有在途消息的物理断网模型。
 
 Metric review (2026-10-03): undefined-rate handling was corrected without changing controllers or outcomes. Prior source/results are preserved in `diagnostics/pre-metric-correction/`. 中文：没有符合条件的共识检查时，错误率为 null；汇总显示有效样本数，不把缺少证据当成零错误。控制器和实际结果未改变。
+
+## Portable numerical replay
+
+The saved results and model are unchanged. Node22.18.0 and Node26.7.0 on macOS arm64 reproduce the saved JSON byte-for-byte. Ubuntu x64 Node22.18.0 produced seventeen final-bit differences in continuous forecast/calibration values, with maximum absolute error 5.55e−17 and relative error 8.51e−16; source hashes, all integer outcomes, structure and hypothesis decisions matched. This is observed cross-platform floating-point rounding, not a changed simulation treatment. The declared portable bounds are only twice that observed scale and apply to explicitly named paths, never a blanket approximate comparison. Tests reject changed hashes, work, energy, counts, nulls, schema, material forecast errors and near-zero relative errors. The default verifier reports any accepted rounding count; strict `--exact` mode remains available. No frozen evidence is rounded or regenerated to hide the difference.
