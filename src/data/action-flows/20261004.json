@@ -1,0 +1,535 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-04",
+  "updated": "2026-10-04",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20261004/hero.webp",
+  "actionHero": "/action-item/20261004/hero.webp",
+  "ogImage": "/daily-briefing/20261004/og.webp",
+  "briefingPath": "/ouroboros/202610/20261004/",
+  "actionItemPath": "/ouroboros/202610/20261004/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "dots",
+          "url": "https://learn.chatgpt.com/docs/dots"
+        },
+        {
+          "label": "codex",
+          "url": "https://learn.chatgpt.com/docs/changelog"
+        },
+        {
+          "label": "openai",
+          "url": "https://developers.openai.com/api/docs/changelog"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "momenta",
+          "url": "https://www.streetinsider.com/Reuters/Mercedes-backed%2BMomenta%2Btargets%2BDubai%2Band%2BEurope%2Bfor%2Brobotaxi%2Bexpansion/27124143.html"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "btc",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "eth",
+          "url": "https://farside.co.uk/eth/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "x402",
+          "url": "https://www.linuxfoundation.org/press/linux-foundation-appoints-michael-hursta-as-executive-director-of-the-x402-foundation"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "swarm",
+          "url": "https://iamrobin.ai/intelligence/agent-swarm/"
+        },
+        {
+          "label": "ocean",
+          "url": "https://iamrobin.ai/agent-swarm/ocean-swarm/README.md"
+        },
+        {
+          "label": "plans",
+          "url": "https://iamrobin.ai/agent-swarm/minimum-intelligence/RESULTS.md"
+        },
+        {
+          "label": "cemri",
+          "url": "https://arxiv.org/abs/2503.13657"
+        },
+        {
+          "label": "huang",
+          "url": "https://arxiv.org/abs/2408.00989"
+        },
+        {
+          "label": "the dated canonical",
+          "url": "https://iamrobin.ai/ouroboros/202610/20261004/action_item/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "energy",
+          "url": "https://news.we-energies.com/we-energies-agreement-with-oracle-expected-to-save-customers-approximately-300-million/"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "armadin",
+          "url": "https://www.armadin.com/blog-posts/investors-back-armadin-platform-strategy-with-new-round-of-funding"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "onsemi",
+          "url": "https://investor.onsemi.com/news-releases/news-release-details/onsemi-and-synaptics-announce-revised-merger-agreement"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, October 4, 2026",
+      "description": "Eight bounded actions separate persistent work, shared failure and verified economics.",
+      "centralJudgment": "Count independent evidence and accepted outcomes before increasing autonomy or exposure.",
+      "fieldLine": "Eight signals. Clear boundaries. Evidence before promotion.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Define the persistent-agent comparison",
+          "why": "RobinOS can compare a persistent research-to-draft workflow with its existing process without assuming a new model or account entitlement.",
+          "steps": [
+            "Save a 48-hour read-only comparison specification with accepted drafts, human minutes, recovery outcomes and attempted boundary crossings; leave execution and results unmeasured.",
+            "Advance only when dated evidence satisfies the stated acceptance condition."
+          ],
+          "done": "READY; 48-hour comparison specification saved; no execution or measured results."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "Specify Momenta operating evidence",
+          "why": "The Physical AI thesis should distinguish vehicles deployed from service delivered, including the cost of remote assistance.",
+          "steps": [
+            "Save a Momenta operating-evidence card requiring paid driverless miles, interventions per distance and fully loaded cost per mile before treating the fleet target as commercial scale.",
+            "Advance only when dated evidence satisfies the stated acceptance condition."
+          ],
+          "done": "READY; operating thresholds saved; paid miles, interventions and cost unverified."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows and Web3 Health",
+          "title": "Preserve the incomplete ETF window",
+          "why": "A repeatable allocation process should preserve the same completeness rule even when a partial number fits its thesis.",
+          "steps": [
+            "Keep the September 30–October 2 flow window unclassified until both Friday rows are complete, retaining the missing-field flags and existing three-session rule.",
+            "Advance only when dated evidence satisfies the stated acceptance condition."
+          ],
+          "done": "WATCHING; Friday BlackRock reports missing; no final weekly classification."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins and Payment Rails",
+          "title": "Specify the zero-money x402 test",
+          "why": "Robin’s payments experience is useful at the boundary between an agent requesting a service and someone becoming liable for its bill.",
+          "steps": [
+            "Save a zero-money x402 test specification covering duplicate requests, authorization expiry and refund reconciliation; use mock responses and authorize no purchase.",
+            "Advance only when dated evidence satisfies the stated acceptance condition."
+          ],
+          "done": "READY; mock-only specification saved; no purchase or payment."
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai Content and Visibility",
+          "title": "Publish the shared-failure essay",
+          "why": "This gives iamrobin.ai a distinct argument about shared failure, beyond the earlier essay on work waiting for a receiver.",
+          "steps": [
+            "Publish Why More Agents Can Fail Together at [the dated canonical](https://iamrobin.ai/ouroboros/202610/20261004/action_item/), with an evidence spine covering shared observations, the Ocean counterexample, independent verification, authority and a bounded test; include original sources, a conceptual diagram and an archived LinkedIn derivative.",
+            "Advance only when dated evidence satisfies the stated acceptance condition."
+          ],
+          "done": "READY; four-language editorial package archived; public delivery still requires release gates.",
+          "deepDiveTitle": "Publish the shared-failure essay"
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure, Career and Capital",
+          "title": "Prepare the power-contract review",
+          "why": "Infrastructure judgment requires reading risk allocation beneath headline megawatts. This announcement does not establish an open job or completed facility.",
+          "steps": [
+            "Save a contract-review card for the regulatory filing, with subscription term, volume, termination liability and ratepayer protection left unknown until disclosed.",
+            "Advance only when dated evidence satisfies the stated acceptance condition."
+          ],
+          "done": "READY; filing review fields saved; terms, volume and liabilities unverified."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-Stage Private Markets",
+          "title": "Keep Armadin on WATCH",
+          "why": "Agent security may become an operating expense that grows with delegated authority; customer repair outcomes matter more than attack demonstrations.",
+          "steps": [
+            "Classify Armadin WATCH until verifiable recurring revenue, retention, investor terms and customer-confirmed remediation support diligence; no investment access or transaction is assumed.",
+            "Advance only when dated evidence satisfies the stated acceptance condition."
+          ],
+          "done": "WATCHING; customer economics and investment terms required; no transaction."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities and Physical AI",
+          "title": "Prepare the acquisition financing review",
+          "why": "Physical AI exposure should be evaluated through the price and obligations used to acquire it.",
+          "steps": [
+            "Save a pro-forma financing review with debt commitments, cash generation and synergy timing as required inputs; defer any valuation conclusion until those inputs are verified.",
+            "Advance only when dated evidence satisfies the stated acceptance condition."
+          ],
+          "done": "READY; financing inputs recorded as missing; no valuation or trade."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年10月4日",
+      "description": "八项有限行动，分清持续工作、共同失效和可验证经济性。",
+      "centralJudgment": "增加自主权或敞口之前，先统计独立证据与验收成果。",
+      "fieldLine": "八个信号。清楚边界。有证据才推进。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与智能体｜常驻智能体需要看得见的边界",
+          "title": "定义常驻智能体比较",
+          "why": "RobinOS可以将持续研究到草稿的流程与现有做法比较，不假定新模型发布或账户已获使用权。",
+          "steps": [
+            "保存一份48小时只读比较规格，记录验收草稿、人工分钟数、恢复结果和越界尝试；执行与结果保持未测。",
+            "带日期证据满足既定验收条件后才推进。"
+          ],
+          "done": "READY；48小时比较规格已存，未执行、未测结果。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI与机器人｜Momenta的车队目标还缺运营分母",
+          "title": "定义Momenta运营证据",
+          "why": "Physical AI研究应区分车辆部署与服务交付，并计入远程协助成本。",
+          "steps": [
+            "保存一张Momenta运营证据卡，要求收费无人驾驶里程、单位距离干预次数和全成本每英里费用，再判断车队目标是否代表商业规模。",
+            "带日期证据满足既定验收条件后才推进。"
+          ],
+          "done": "READY；运营门槛已存，收费里程、干预与成本未核。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流与Web3健康度｜周五仍是未完整的观察",
+          "title": "保留未完整ETF窗口",
+          "why": "可重复的配置流程应坚持同一完整性规则，即使暂计数字恰好符合原有论点。",
+          "steps": [
+            "在周五两组记录完整之前，保留9月30日至10月2日资金流窗口未分类状态，保留缺报标记和既有连续三日规则。",
+            "带日期证据满足既定验收条件后才推进。"
+          ],
+          "done": "WATCHING；周五BlackRock仍缺报，未作最终周度分类。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币与支付轨道｜x402有了标准治理负责人",
+          "title": "定义零资金x402测试",
+          "why": "Robin的支付经验可以用来识别智能体请求服务与某人承担账单责任之间的边界。",
+          "steps": [
+            "保存一份零资金x402测试规格，覆盖重复请求、授权过期及退款对账；使用模拟响应，不授权购买。",
+            "带日期证据满足既定验收条件后才推进。"
+          ],
+          "done": "READY；仅模拟规格已存，没有购买或付款。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai内容与传播｜数清独立的失效路径",
+          "title": "发布共同失效文章",
+          "why": "这为iamrobin.ai增加共同失效的独立论点，与此前讨论接收方队列的文章区分开。",
+          "steps": [
+            "在[当日正式发布页](https://iamrobin.ai/ouroboros/202610/20261004/action_item/)发布Why More Agents Can Fail Together，中文题《为什么更多智能体会一起失败》；证据骨架涵盖共享观察、Ocean反例、独立验证、权限和有限测试，附原始来源、概念图与归档LinkedIn派生稿。",
+            "带日期证据满足既定验收条件后才推进。"
+          ],
+          "done": "READY；四语编辑包已归档，公开交付仍需通过发布门槛。",
+          "deepDiveTitle": "发布共同失效文章"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基础设施、职业与资本｜谁接下昂贵的电力合约",
+          "title": "准备购电合约审查",
+          "why": "基础设施判断需要读清兆瓦标题背后的风险分配。公告不证明职位开放或设施竣工。",
+          "steps": [
+            "为监管申报保存一张合约审查卡，认购期限、数量、终止责任及普通用户保护在披露前保持未知。",
+            "带日期证据满足既定验收条件后才推进。"
+          ],
+          "done": "READY；申报审查字段已存，期限、数量与责任未核。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私募市场｜Armadin融资领先于已披露的经营数据",
+          "title": "维持Armadin观察",
+          "why": "智能体安全可能成为随委派权限增长的经营支出，客户实际修复结果比攻击演示更重要。",
+          "steps": [
+            "将Armadin列为WATCH，等可验证的经常性收入、留存率、投资条款及客户确认的修复支持尽调；不假定投资渠道或交易。",
+            "带日期证据满足既定验收条件后才推进。"
+          ],
+          "done": "WATCHING；需要客户经济性和投资条款，没有交易。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开股票与Physical AI｜onsemi改写收购账单",
+          "title": "准备收购融资审查",
+          "why": "Physical AI敞口应连同取得它所付的价格与承担的义务一起评估。",
+          "steps": [
+            "保存一份合并融资审查表，以债务承诺、现金生成和协同时间为必需输入；核实前暂不作估值结论。",
+            "带日期证据满足既定验收条件后才推进。"
+          ],
+          "done": "READY；融资输入仍缺失，不作估值或交易。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年10月4日",
+      "description": "八項有限行動，分清持續工作、共同失效和可驗證經濟性。",
+      "centralJudgment": "增加自主權或敞口之前，先統計獨立證據與驗收成果。",
+      "fieldLine": "八個信號。清楚邊界。有證據才推進。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與智能體｜常駐智能體需要看得見的邊界",
+          "title": "定義常駐智能體比較",
+          "why": "RobinOS可以將持續研究到草稿的流程與現有做法比較，不假定新模型發佈或賬戶已獲使用權。",
+          "steps": [
+            "保存一份48小時只讀比較規格，記錄驗收草稿、人工分鐘數、恢復結果和越界嘗試；執行與結果保持未測。",
+            "帶日期證據滿足既定驗收條件後才推進。"
+          ],
+          "done": "READY；48小時比較規格已存，未執行、未測結果。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI與機器人｜Momenta的車隊目標還缺運營分母",
+          "title": "定義Momenta運營證據",
+          "why": "Physical AI研究應區分車輛部署與服務交付，並計入遠程協助成本。",
+          "steps": [
+            "保存一張Momenta運營證據卡，要求收費無人駕駛里程、單位距離干預次數和全成本每英里費用，再判斷車隊目標是否代表商業規模。",
+            "帶日期證據滿足既定驗收條件後才推進。"
+          ],
+          "done": "READY；運營門檻已存，收費里程、干預與成本未核。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本流與Web3健康度｜週五仍是未完整的觀察",
+          "title": "保留未完整ETF窗口",
+          "why": "可重複的配置流程應堅持同一完整性規則，即使暫計數字恰好符合原有論點。",
+          "steps": [
+            "在週五兩組記錄完整之前，保留9月30日至10月2日資金流窗口未分類狀態，保留缺報標記和既有連續三日規則。",
+            "帶日期證據滿足既定驗收條件後才推進。"
+          ],
+          "done": "WATCHING；週五BlackRock仍缺報，未作最終周度分類。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣與支付軌道｜x402有了標準治理負責人",
+          "title": "定義零資金x402測試",
+          "why": "Robin的支付經驗可以用來識別智能體請求服務與某人承擔賬單責任之間的邊界。",
+          "steps": [
+            "保存一份零資金x402測試規格，覆蓋重複請求、授權過期及退款對賬；使用模擬響應，不授權購買。",
+            "帶日期證據滿足既定驗收條件後才推進。"
+          ],
+          "done": "READY；僅模擬規格已存，沒有購買或付款。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai內容與傳播｜數清獨立的失效路徑",
+          "title": "發佈共同失效文章",
+          "why": "這為iamrobin.ai增加共同失效的獨立論點，與此前討論接收方隊列的文章區分開。",
+          "steps": [
+            "在[當日正式發佈頁](https://iamrobin.ai/ouroboros/202610/20261004/action_item/)發佈Why More Agents Can Fail Together，中文題《為什麼更多智能體會一起失敗》；證據骨架涵蓋共享觀察、Ocean反例、獨立驗證、權限和有限測試，附原始來源、概念圖與歸檔LinkedIn派生稿。",
+            "帶日期證據滿足既定驗收條件後才推進。"
+          ],
+          "done": "READY；四語編輯包已歸檔，公開交付仍需通過發佈門檻。",
+          "deepDiveTitle": "發佈共同失效文章"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基礎設施、職業與資本｜誰接下昂貴的電力合約",
+          "title": "準備購電合約審查",
+          "why": "基礎設施判斷需要讀清兆瓦標題背後的風險分配。公告不證明職位開放或設施竣工。",
+          "steps": [
+            "為監管申報保存一張合約審查卡，認購期限、數量、終止責任及普通用戶保護在披露前保持未知。",
+            "帶日期證據滿足既定驗收條件後才推進。"
+          ],
+          "done": "READY；申報審查字段已存，期限、數量與責任未核。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私募市場｜Armadin融資領先於已披露的經營數據",
+          "title": "維持Armadin觀察",
+          "why": "智能體安全可能成為隨委派權限增長的經營支出，客戶實際修復結果比攻擊演示更重要。",
+          "steps": [
+            "將Armadin列為WATCH，等可驗證的經常性收入、留存率、投資條款及客戶確認的修復支持盡調；不假定投資渠道或交易。",
+            "帶日期證據滿足既定驗收條件後才推進。"
+          ],
+          "done": "WATCHING；需要客戶經濟性和投資條款，沒有交易。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開股票與Physical AI｜onsemi改寫收購賬單",
+          "title": "準備收購融資審查",
+          "why": "Physical AI敞口應連同取得它所付的價格與承擔的義務一起評估。",
+          "steps": [
+            "保存一份合併融資審查表，以債務承諾、現金生成和協同時間為必需輸入；核實前暫不作估值結論。",
+            "帶日期證據滿足既定驗收條件後才推進。"
+          ],
+          "done": "READY；融資輸入仍缺失，不作估值或交易。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年10月4日",
+      "description": "継続稼働、共有障害、確認できる採算性を分ける八つの限定行動。",
+      "centralJudgment": "自律性や投資対象を広げる前に、独立した証拠と受入成果を数える。",
+      "fieldLine": "八つのシグナル。明確な境界。証拠に基づく前進。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "最先端モデルとエージェント｜常駐するほど境界を見える形に",
+          "title": "常駐エージェント比較を定義",
+          "why": "RobinOSは新モデルの公開やアカウントの利用資格を仮定せず、継続的な調査から草稿までの工程を既存手順と比較できる。",
+          "steps": [
+            "48時間の読み取り専用比較仕様を保存し、受入草稿、人の作業分数、復旧結果、境界を越えようとした行動を記録対象にする。実行と結果は未測定とする。",
+            "日付付き証拠が既定の受入条件を満たした時だけ進める。"
+          ],
+          "done": "READY。48時間比較仕様を保存。未実行・未測定。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AIとロボティクス｜Momentaの台数目標に必要な運用の分母",
+          "title": "Momentaの運用証拠を定義",
+          "why": "Physical AIの検討では、車両の配置とサービスの提供を分け、遠隔支援の費用も含める。",
+          "steps": [
+            "Momentaの運用証拠カードを保存し、有料無人走行距離、距離当たり介入回数、総費用ベースの一マイル単価が揃うまで、台数目標を商用規模と扱わない。",
+            "日付付き証拠が既定の受入条件を満たした時だけ進める。"
+          ],
+          "done": "READY。運用基準を保存。有料距離、介入、費用は未確認。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資金フローとWeb3｜金曜日の観測はまだ未完了",
+          "title": "未完了ETF観測を維持",
+          "why": "暫定値が仮説に合っていても、再現可能な判断には同じ完全性ルールが必要だ。",
+          "steps": [
+            "金曜日の両表が揃うまで9月30日から10月2日の観測窓を未分類のまま維持し、欠測表示と既存の三営業日ルールを残す。",
+            "日付付き証拠が既定の受入条件を満たした時だけ進める。"
+          ],
+          "done": "WATCHING。金曜日のBlackRock報告が欠け、週次分類は未確定。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコインと決済基盤｜x402の標準化を担う人事",
+          "title": "資金なしx402試験を定義",
+          "why": "エージェントのサービス要求と誰かの支払義務が発生する境界に、Robinの決済経験を生かせる。",
+          "steps": [
+            "資金を使わないx402試験仕様を保存し、重複要求、権限失効、返金照合を対象にする。模擬応答を用い、購入を承認しない。",
+            "日付付き証拠が既定の受入条件を満たした時だけ進める。"
+          ],
+          "done": "READY。模擬仕様のみ保存。購入・支払いなし。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.aiの発信｜独立した故障経路を数える",
+          "title": "共有障害を記事にする",
+          "why": "受け手の待ち行列を扱った前の記事とは別に、共有された故障について固有の議論を提示できる。",
+          "steps": [
+            "[当日の正式記事](https://iamrobin.ai/ouroboros/202610/20261004/action_item/)にWhy More Agents Can Fail Togetherを公開する。共有観測、Oceanの反例、独立検証、権限、限定試験の証拠構成とし、原典、概念図、保存用LinkedIn派生稿を添える。",
+            "日付付き証拠が既定の受入条件を満たした時だけ進める。"
+          ],
+          "done": "READY。四言語の編集成果を保存。公開配信にはリリース検証が必要。",
+          "deepDiveTitle": "共有障害を記事にする"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラとキャリアと資本｜高い電力契約を誰が引き受けるか",
+          "title": "電力契約審査を準備",
+          "why": "インフラ判断には、メガワットの見出しの下にあるリスク分担を読む力が要る。発表から求人の存在や施設完成は確認できない。",
+          "steps": [
+            "規制申請の契約審査カードを保存し、引受期間、数量、解約責任、一般需要家保護は開示まで不明とする。",
+            "日付付き証拠が既定の受入条件を満たした時だけ進める。"
+          ],
+          "done": "READY。申請審査項目を保存。期間、数量、責任は未確認。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期非公開市場｜Armadinの資金調達と見えない事業採算",
+          "title": "ArmadinをWATCHに維持",
+          "why": "委譲権限の拡大とともにエージェントのセキュリティ費用も増え得る。攻撃デモより、顧客の修復結果を重視したい。",
+          "steps": [
+            "ArmadinをWATCHに分類し、検証可能な継続収益、継続率、投資条件、顧客が確認した修復実績が揃ってから精査する。投資経路や取引は仮定しない。",
+            "日付付き証拠が既定の受入条件を満たした時だけ進める。"
+          ],
+          "done": "WATCHING。顧客経済性と投資条件が必要。取引なし。"
+        },
+        {
+          "signal": 8,
+          "domain": "上場株とPhysical AI｜onsemiが買収の支払条件を変更",
+          "title": "買収資金調達審査を準備",
+          "why": "Physical AIへの投資を評価するには、その取得価格と引き受ける義務も見る必要がある。",
+          "steps": [
+            "統合後の資金調達審査表を保存し、融資確約、現金創出、相乗効果の時期を必須入力とする。確認できるまで評価額の結論を保留する。",
+            "日付付き証拠が既定の受入条件を満たした時だけ進める。"
+          ],
+          "done": "READY。資金調達の入力が未確認。評価や取引は行わない。"
+        }
+      ]
+    }
+  }
+}
