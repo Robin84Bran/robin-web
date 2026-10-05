@@ -103,7 +103,7 @@ function pending() {
     ? fs.readdirSync(INBOX).filter((name) => name.endsWith('.json')).map((name) => {
         const file = path.join(INBOX, name);
         return { file, ...validateRecord(readJson(file)) };
-      }).filter((record) => record.intent === 'PUBLISH' && !['DONE', 'HOLD', 'COLLECTING'].includes(record.status) && (!record.intake || record.intake.sealed === true)
+      }).filter((record) => record.intent === 'PUBLISH' && !['DONE', 'COLLECTING'].includes(record.status) && (!record.intake || record.intake.sealed === true)
         && (record.datePolicy !== 'first-message-hkt-1300-v1' || record.date <= todayHkt))
     : [];
   console.log(JSON.stringify(records, null, 2));

@@ -36,3 +36,9 @@ unsealed-publication rejection and first-batch-only corruption.
 The September 7 and September 27, 2026 diaries received owner-supplied ending
 corrections. Existing paragraphs and artwork are unchanged. Original intake
 records remain archived privately; corrected source revisions have new hashes.
+
+Held releases remain in the pending queue with their HOLD status intact. The
+operator must inspect the retained candidate and resolve the failing gate before
+advancing it. Discoverability does not authorize clearing a safety hold. The
+existing private bot sends one preserved-content delay alert per held source;
+delivery failure is retried without acknowledging it or interrupting intake.

@@ -1,5 +1,5 @@
 ---
-archiveStatus: "PIPELINE"
+archiveStatus: "PRESENT"
 title: Zero Trades Was the Correct Trade
 date: 2026-10-05
 updated: 2026-08-21

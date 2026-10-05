@@ -1,0 +1,539 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-05",
+  "updated": "2026-10-05",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20261005/hero.webp",
+  "actionHero": "/action-item/20261005/hero.webp",
+  "ogImage": "/daily-briefing/20261005/og.webp",
+  "briefingPath": "/ouroboros/202610/20261005/",
+  "actionItemPath": "/ouroboros/202610/20261005/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "speed",
+          "url": "https://learn.chatgpt.com/docs/agent-configuration/speed"
+        },
+        {
+          "label": "pricing",
+          "url": "https://learn.chatgpt.com/docs/pricing"
+        },
+        {
+          "label": "weekly",
+          "url": "https://learn.chatgpt.com/docs/whats-new"
+        },
+        {
+          "label": "openai",
+          "url": "https://developers.openai.com/api/docs/changelog"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "suncatcher",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-prototype/"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "btc",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "eth",
+          "url": "https://farside.co.uk/eth/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "icba",
+          "url": "https://www.icba.org/web/payments/w/occ-release-oct-2026"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "speed",
+          "url": "https://learn.chatgpt.com/docs/agent-configuration/speed"
+        },
+        {
+          "label": "pricing",
+          "url": "https://learn.chatgpt.com/docs/pricing"
+        },
+        {
+          "label": "sol",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6.1-sol"
+        },
+        {
+          "label": "openai",
+          "url": "https://developers.openai.com/api/docs/changelog"
+        },
+        {
+          "label": "weekly",
+          "url": "https://learn.chatgpt.com/docs/whats-new"
+        },
+        {
+          "label": "today’s canonical",
+          "url": "https://iamrobin.ai/ouroboros/202610/20261005/action_item/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "job",
+          "url": "https://openai.com/careers/technical-program-manager-infrastructure-strategy-and-delivery-operations-san-francisco/"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "flow",
+          "url": "https://www.flowengineering.com/blog/series-b-press-release"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "tesla",
+          "url": "https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, October 5, 2026",
+      "description": "Eight evidence-linked actions separate speed, operating counts and economic outcomes.",
+      "centralJudgment": "Price verified completion and retain missing evidence before making a bigger commitment.",
+      "fieldLine": "Eight signals. One accepted outcome at a time.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Specify the speed comparison",
+          "why": "Robin can evaluate speed as a routing decision for genuinely time-sensitive work instead of upgrading every unattended task.",
+          "steps": [
+            "Prepare a fixed-case speed comparison card that records accepted outcomes, elapsed time, human minutes and actual billed usage; do not buy a plan or run a paid experiment from this brief.",
+            "Advance only when dated evidence satisfies the stated acceptance condition."
+          ],
+          "done": "Comparison specification saved; trial and measured outcomes pending."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "Retain the orbital telemetry watch",
+          "why": "A physical-compute thesis needs useful uptime and error evidence before it can support a commercial cost comparison.",
+          "steps": [
+            "Retain one telemetry watch card with useful TPU hours, radiation errors and thermal duty cycle left unfilled until dated measurements are published.",
+            "Advance only when dated evidence satisfies the stated acceptance condition."
+          ],
+          "done": "Watch card retained; quantified orbital performance unavailable."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows and Web3 Health",
+          "title": "Keep weekly ETF totals provisional",
+          "why": "Research discipline here means waiting for the denominator to close, without converting incomplete flow data into a portfolio instruction.",
+          "steps": [
+            "Keep the weekly comparison provisional until all three missing cells resolve, then recompute both totals from the same five sessions.",
+            "Advance only when dated evidence satisfies the stated acceptance condition."
+          ],
+          "done": "Missing IBIT, ETHA and ETHB retained; final totals unavailable."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins and Payments",
+          "title": "Separate lawsuit requests from court orders",
+          "why": "Payments experience helps separate what an institution is permitted to do from what its product team can build.",
+          "steps": [
+            "Create a litigation evidence card separating the complaint, any court order and the OCC response; leave disposition unconfirmed until an actual ruling is available.",
+            "Advance only when dated evidence satisfies the stated acceptance condition."
+          ],
+          "done": "Evidence card separates plaintiff claims and unconfirmed court disposition."
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai Content and Distribution",
+          "title": "Publish the agent-cost essay",
+          "why": "This gives the OPC discussion a reusable break-even calculation without inventing a measured RobinOS productivity gain.",
+          "steps": [
+            "Publish Faster Agents Can Cost More Per Finished Job at [today’s canonical](https://iamrobin.ai/ouroboros/202610/20261005/action_item/), covering billing units, critical-path time, accepted outcomes and a bounded comparison; include official documentation, an explicitly hypothetical calculation, an explanatory visual and an archived LinkedIn derivative.",
+            "Advance only when dated evidence satisfies the stated acceptance condition."
+          ],
+          "done": "Four complete editions prepared; public release and delivery still require verification.",
+          "deepDiveTitle": "Publish the agent-cost essay"
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure and Career",
+          "title": "Prepare the private role evidence matrix",
+          "why": "The role connects infrastructure capital with program governance, while specific experience and compensation still require evidence.",
+          "steps": [
+            "Save a private role-to-evidence matrix identifying documented experience and unresolved gaps; do not submit an application or contact the employer.",
+            "Advance only when dated evidence satisfies the stated acceptance condition."
+          ],
+          "done": "Private matrix template saved; experience evidence and fit pending; no application."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-Stage Private Markets",
+          "title": "Investigate Flow with financial conditions",
+          "why": "Hardware coordination is a useful agent market, but valuation must eventually connect to recurring revenue and retained customer value; direct investment access is unverified.",
+          "steps": [
+            "Classify Flow as INVESTIGATE, with promotion conditional on verifiable recurring revenue, retention, gross margin and actual deal terms; collect public evidence only.",
+            "Advance only when dated evidence satisfies the stated acceptance condition."
+          ],
+          "done": "INVESTIGATE criteria saved; recurring revenue, retention, margins and deal terms unverified."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities and AI Themes",
+          "title": "Prepare the Tesla earnings bridge",
+          "why": "Physical-AI narratives deserve the same separation between shipped units and cash economics as compute infrastructure.",
+          "steps": [
+            "Prepare one October 21 earnings bridge linking deliveries and storage deployment to reported margins and cash flow; leave financial outcomes blank until the release.",
+            "Advance only when dated evidence satisfies the stated acceptance condition."
+          ],
+          "done": "October 21 review card saved; margins and cash flow unreported."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年10月5日",
+      "description": "八项有证据连接的行动，区分速度、运营数量与经济结果。",
+      "centralJudgment": "加大投入之前，先给核验完成定价，并保留证据缺口。",
+      "fieldLine": "八个信号。逐项验收。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与智能体｜加速有两种不同的价格",
+          "title": "定义加速比较",
+          "why": "Robin 可以把加速当作时效敏感任务的调度选择，而不是给所有无人值守任务一律升级。",
+          "steps": [
+            "准备一张固定样本对照卡，记录验收成果、耗时、人工分钟数和实际计费；本简报不授权购买方案或运行付费试验。",
+            "带日期证据满足既定验收条件后才推进。"
+          ],
+          "done": "比较规格已存；试验与实测结果仍待执行。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 与机器人｜Suncatcher 正在等待测量结果",
+          "title": "保留在轨遥测观察",
+          "why": "物理算力的商业成本比较，需要有效运行时长和错误率作基础。",
+          "steps": [
+            "保留一张遥测观察卡，在正式发布带日期的测量结果前，把 TPU 有效小时、辐射错误率和热占空比留空。",
+            "带日期证据满足既定验收条件后才推进。"
+          ],
+          "done": "观察卡已保留；在轨量化表现未披露。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资金流与 Web3 健康｜周度总额仍未完整",
+          "title": "维持ETF周度暂定状态",
+          "why": "研究纪律是等数据完整，而不是把不完整流量变成投资组合指令。",
+          "steps": [
+            "维持周度比较的暂定状态；待三个缺失格全部补齐，再用同样五个交易日重算两项总额。",
+            "带日期证据满足既定验收条件后才推进。"
+          ],
+          "done": "IBIT、ETHA和ETHB缺口已保留；最终总额未知。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币与支付｜牌照假设进入诉讼",
+          "title": "分清诉讼请求与法院命令",
+          "why": "支付经验的价值之一，是区分机构依法能做什么，与产品团队技术上能做什么。",
+          "steps": [
+            "建立一张诉讼证据卡，分列起诉书、法院命令和 OCC 答辩；实际裁决出现前，不确认案件结果。",
+            "带日期证据满足既定验收条件后才推进。"
+          ],
+          "done": "证据卡分清原告主张与尚未确认的法院结果。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai 内容与分发｜给完成的一单定价",
+          "title": "发布智能体成本文章",
+          "why": "这能为 OPC 讨论留下可重复计算的盈亏平衡框架，不虚构 RobinOS 已实现的生产率提升。",
+          "steps": [
+            "在[今日正式页面](https://iamrobin.ai/ouroboros/202610/20261005/action_item/)发布 Faster Agents Can Cost More Per Finished Job，中文工作标题《智能体更快，完成一单却可能更贵》；以计费单位、关键路径、验收成果和有限对照为证据骨架，附官方文档、明确标注的假设计算、解释图和归档 LinkedIn 衍生稿。",
+            "带日期证据满足既定验收条件后才推进。"
+          ],
+          "done": "四个完整版本已准备；公开发布与送达仍须验证。",
+          "deepDiveTitle": "发布智能体成本文章"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基础设施与职业｜交付协调成为明确岗位",
+          "title": "准备私人岗位证据表",
+          "why": "该岗位把基础设施资本与项目治理连接起来，但具体经验和待遇仍须证据确认。",
+          "steps": [
+            "保存一张私人岗位与经历对照表，列出已有证明和待确认缺口；不投递申请，也不联系雇主。",
+            "带日期证据满足既定验收条件后才推进。"
+          ],
+          "done": "私人对照模板已存；经历证据与匹配度待核，没有申请。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私人市场｜Flow 的采用率需要收入连接",
+          "title": "有条件研究Flow",
+          "why": "硬件协调是值得研究的智能体市场，但估值最终要连接持续收入和客户留存价值；可直接参与的投资渠道尚未核实。",
+          "steps": [
+            "将 Flow 归为 INVESTIGATE，后续升级须有可核实的持续收入、留存率、毛利率及真实交易条款；仅收集公开证据。",
+            "带日期证据满足既定验收条件后才推进。"
+          ],
+          "done": "INVESTIGATE门槛已存；持续收入、留存、利润率及交易条件未核。"
+        },
+        {
+          "signal": 8,
+          "domain": "上市股票与 AI 主题｜Tesla 先报数量，后报经济账",
+          "title": "准备Tesla财报连接表",
+          "why": "Physical AI 叙事与算力基建一样，都应区分交付数量与现金经济。",
+          "steps": [
+            "准备一张10月21日财报连接表，将汽车交付、储能部署与正式披露的利润率及现金流对应；发布前把财务结果留空。",
+            "带日期证据满足既定验收条件后才推进。"
+          ],
+          "done": "10月21日复核卡已存；利润率与现金流未披露。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年10月5日",
+      "description": "八項有證據連接的行動，區分速度、運營數量與經濟結果。",
+      "centralJudgment": "加大投入之前，先給核驗完成定價，並保留證據缺口。",
+      "fieldLine": "八個信號。逐項驗收。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與智能體｜加速有兩種不同的價格",
+          "title": "定義加速比較",
+          "why": "Robin 可以把加速當作時效敏感任務的調度選擇，而不是給所有無人值守任務一律升級。",
+          "steps": [
+            "準備一張固定樣本對照卡，記錄驗收成果、耗時、人工分鐘數和實際計費；本簡報不授權購買方案或運行付費試驗。",
+            "帶日期證據滿足既定驗收條件後才推進。"
+          ],
+          "done": "比較規格已存；試驗與實測結果仍待執行。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 與機器人｜Suncatcher 正在等待測量結果",
+          "title": "保留在軌遙測觀察",
+          "why": "物理算力的商業成本比較，需要有效運行時長和錯誤率作基礎。",
+          "steps": [
+            "保留一張遙測觀察卡，在正式發佈帶日期的測量結果前，把 TPU 有效小時、輻射錯誤率和熱佔空比留空。",
+            "帶日期證據滿足既定驗收條件後才推進。"
+          ],
+          "done": "觀察卡已保留；在軌量化表現未披露。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資金流與 Web3 健康｜周度總額仍未完整",
+          "title": "維持ETF周度暫定狀態",
+          "why": "研究紀律是等數據完整，而不是把不完整流量變成投資組合指令。",
+          "steps": [
+            "維持周度比較的暫定狀態；待三個缺失格全部補齊，再用同樣五個交易日重算兩項總額。",
+            "帶日期證據滿足既定驗收條件後才推進。"
+          ],
+          "done": "IBIT、ETHA和ETHB缺口已保留；最終總額未知。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣與支付｜牌照假設進入訴訟",
+          "title": "分清訴訟請求與法院命令",
+          "why": "支付經驗的價值之一，是區分機構依法能做什麼，與產品團隊技術上能做什麼。",
+          "steps": [
+            "建立一張訴訟證據卡，分列起訴書、法院命令和 OCC 答辯；實際裁決出現前，不確認案件結果。",
+            "帶日期證據滿足既定驗收條件後才推進。"
+          ],
+          "done": "證據卡分清原告主張與尚未確認的法院結果。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai 內容與分發｜給完成的一單定價",
+          "title": "發佈智能體成本文章",
+          "why": "這能為 OPC 討論留下可重複計算的盈虧平衡框架，不虛構 RobinOS 已實現的生產率提升。",
+          "steps": [
+            "在[今日正式頁面](https://iamrobin.ai/ouroboros/202610/20261005/action_item/)發佈 Faster Agents Can Cost More Per Finished Job，中文工作標題《智能體更快，完成一單卻可能更貴》；以計費單位、關鍵路徑、驗收成果和有限對照為證據骨架，附官方文檔、明確標註的假設計算、解釋圖和歸檔 LinkedIn 衍生稿。",
+            "帶日期證據滿足既定驗收條件後才推進。"
+          ],
+          "done": "四個完整版本已準備；公開發布與送達仍須驗證。",
+          "deepDiveTitle": "發佈智能體成本文章"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基礎設施與職業｜交付協調成為明確崗位",
+          "title": "準備私人崗位證據表",
+          "why": "該崗位把基礎設施資本與項目治理連接起來，但具體經驗和待遇仍須證據確認。",
+          "steps": [
+            "保存一張私人崗位與經歷對照表，列出已有證明和待確認缺口；不投遞申請，也不聯繫僱主。",
+            "帶日期證據滿足既定驗收條件後才推進。"
+          ],
+          "done": "私人對照模板已存；經歷證據與匹配度待核，沒有申請。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私人市場｜Flow 的採用率需要收入連接",
+          "title": "有條件研究Flow",
+          "why": "硬體協調是值得研究的智能體市場，但估值最終要連接持續收入和客戶留存價值；可直接參與的投資渠道尚未核實。",
+          "steps": [
+            "將 Flow 歸為 INVESTIGATE，後續升級須有可核實的持續收入、留存率、毛利率及真實交易條款；僅收集公開證據。",
+            "帶日期證據滿足既定驗收條件後才推進。"
+          ],
+          "done": "INVESTIGATE門檻已存；持續收入、留存、利潤率及交易條件未核。"
+        },
+        {
+          "signal": 8,
+          "domain": "上市股票與 AI 主題｜Tesla 先報數量，後報經濟賬",
+          "title": "準備Tesla財報連接表",
+          "why": "Physical AI 敘事與算力基建一樣，都應區分交付數量與現金經濟。",
+          "steps": [
+            "準備一張10月21日財報連接表，將汽車交付、儲能部署與正式披露的利潤率及現金流對應；發佈前把財務結果留空。",
+            "帶日期證據滿足既定驗收條件後才推進。"
+          ],
+          "done": "10月21日複核卡已存；利潤率與現金流未披露。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年10月5日",
+      "description": "速度、運営数量、経済成果を分ける八つの証拠付き行動。",
+      "centralJudgment": "大きな約束の前に、検証済み完了の費用を計り、証拠の欠落を残す。",
+      "fieldLine": "八つのシグナル。成果を一件ずつ受け入れる。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "先端モデルとエージェント｜高速化には二つの価格がある",
+          "title": "速度比較を定義",
+          "why": "Robinは、無人作業を一律に上位化する前に、時間制約の強い仕事へ高速化を振り分けられる。",
+          "steps": [
+            "固定ケースの比較票を用意し、受入済み成果、所要時間、人の作業分数、実際の利用料金を記録する。本稿を根拠に契約購入や有料試験は行わない。",
+            "日付付き証拠が既定の受入条件を満たした時だけ進める。"
+          ],
+          "done": "比較仕様を保存。試験と実測結果は未実行。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AIとロボット｜Suncatcherは測定結果を待つ段階",
+          "title": "軌道測定の観測を維持",
+          "why": "物理的な計算基盤の商用コストを比較するには、有効稼働時間と誤りの記録が必要だ。",
+          "steps": [
+            "一枚の遠隔測定観測票を維持し、日付付きの測定値が公表されるまでTPU有効時間、放射線誤り率、熱的稼働率を空欄にする。",
+            "日付付き証拠が既定の受入条件を満たした時だけ進める。"
+          ],
+          "done": "観測票を維持。定量的な軌道運転結果は未開示。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産資金フローとWeb3｜週間合計はまだ未確定",
+          "title": "ETF週間値を暫定扱いに",
+          "why": "不完全なフローを資産配分の指示へ変えず、観測が揃うまで留保することに価値がある。",
+          "steps": [
+            "欠けた三つの値が揃うまで週間比較を暫定扱いとし、同じ五取引日で両方の合計を再計算する。",
+            "日付付き証拠が既定の受入条件を満たした時だけ進める。"
+          ],
+          "done": "IBIT、ETHA、ETHBの欠落を保持。最終合計は未確認。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコインと決済｜免許の前提が訴訟の対象に",
+          "title": "原告請求と裁判命令を区別",
+          "why": "決済の実務経験は、技術上できることと法的に許されることを区別する助けになる。",
+          "steps": [
+            "訴状、裁判所の命令、OCCの答弁を分けた証拠票を作り、実際の判断が出るまで結論を未確認とする。",
+            "日付付き証拠が既定の受入条件を満たした時だけ進める。"
+          ],
+          "done": "原告の主張と未確認の裁判結果を分けた。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.aiの内容と発信｜完了した仕事に価格を付ける",
+          "title": "エージェント費用の記事を公開",
+          "why": "RobinOSの生産性向上を実測したかのように語らず、OPCの議論に再計算できる損益分岐の枠組みを残せる。",
+          "steps": [
+            "[本日の正式記事](https://iamrobin.ai/ouroboros/202610/20261005/action_item/)にFaster Agents Can Cost More Per Finished Jobを公開する。中国語仮題は《智能体更快，完成一单却可能更贵》。料金単位、クリティカルパス、受入済み成果、限定比較を柱とし、公式文書、仮定と明記した計算、説明図、保存用LinkedIn派生稿を添える。",
+            "日付付き証拠が既定の受入条件を満たした時だけ進める。"
+          ],
+          "done": "完全な四言語版を準備。公開と配信には検証が必要。",
+          "deepDiveTitle": "エージェント費用の記事を公開"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラとキャリア｜交付調整が明確な職務になる",
+          "title": "非公開の職務証拠表を準備",
+          "why": "インフラ資本と事業管理の接点が見える一方、具体的経験と条件には証拠が要る。",
+          "steps": [
+            "非公開の職務・実績対応表を保存し、裏付けのある経験と未解決の不足を示す。応募や雇用主への連絡は行わない。",
+            "日付付き証拠が既定の受入条件を満たした時だけ進める。"
+          ],
+          "done": "非公開の対応表ひな型を保存。経験と適合は未確認。応募なし。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期非公開市場｜Flowの普及を収益につなぐ証拠",
+          "title": "財務条件付きでFlowを精査",
+          "why": "ハードウェアの調整はエージェントの有望な用途だが、評価額には継続収益と顧客価値の裏付けが必要だ。直接の投資経路は未確認。",
+          "steps": [
+            "FlowをINVESTIGATEと分類し、検証可能な継続収益、継続率、粗利率、実際の投資条件が揃うことを次段階の条件にする。収集は公開証拠に限る。",
+            "日付付き証拠が既定の受入条件を満たした時だけ進める。"
+          ],
+          "done": "INVESTIGATEの条件を保存。継続収益、継続率、利益率、条件は未確認。"
+        },
+        {
+          "signal": 8,
+          "domain": "上場株とAIテーマ｜Teslaの数量と採算は別に届く",
+          "title": "Tesla決算確認表を準備",
+          "why": "Physical AIの物語にも、計算基盤と同じく出荷量と現金収支を分ける規律が必要だ。",
+          "steps": [
+            "10月21日の決算確認表を準備し、納車と蓄電導入を開示利益率・キャッシュフローへ結び付ける。発表までは財務結果を空欄にする。",
+            "日付付き証拠が既定の受入条件を満たした時だけ進める。"
+          ],
+          "done": "10月21日の確認票を保存。利益率と現金収支は未開示。"
+        }
+      ]
+    }
+  }
+}

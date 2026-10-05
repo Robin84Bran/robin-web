@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="1220" viewBox="0 0 760 1220" role="img" aria-labelledby="t d">
+<title id="t">More workers can share one blind spot</title><desc id="d">A common source feeds three workers whose agreement returns to acceptance. An alternative adds a separate observation and a check before acceptance. Conceptual design only, not measured performance.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="none" stroke="#67756c" stroke-width="1.5"/></marker></defs>
+<rect width="760" height="1220" fill="#f5f2e9"/>
+<g font-family="Arial, sans-serif" fill="#24392f"><text x="40" y="57" font-size="23" letter-spacing="2">OUROBOROS / DESIGN QUESTION</text><text x="40" y="118" font-size="38">Who checked the shared source?</text>
+<text x="40" y="190" font-size="30">A / More voices, one source</text>
+<g fill="none" stroke="#67756c" stroke-width="3" marker-end="url(#a)"><path d="M380 277V321H148V357M380 321V357M380 321H612V357"/><path d="M148 425V476H380V519M380 425V519M612 425V476H380"/></g>
+<g fill="#e0e6dc" stroke="#819080"><rect x="230" y="216" width="300" height="61" rx="5"/><rect x="58" y="357" width="180" height="68" rx="5"/><rect x="290" y="357" width="180" height="68" rx="5"/><rect x="522" y="357" width="180" height="68" rx="5"/><rect x="230" y="519" width="300" height="68" rx="5"/></g>
+<g text-anchor="middle" font-size="28"><text x="380" y="256">Shared source</text><text x="148" y="400">Worker 1</text><text x="380" y="400">Worker 2</text><text x="612" y="400">Worker 3</text><text x="380" y="562">Agreement</text></g>
+<text x="40" y="632" font-size="25">Different voices can inherit the same error.</text>
+<line x1="40" x2="720" y1="671" y2="671" stroke="#c8cec5"/>
+<text x="40" y="723" font-size="30">B / Give the check another view</text>
+<g fill="none" stroke="#67756c" stroke-width="3" marker-end="url(#a)"><path d="M205 826V890M555 826V890M360 925H399M555 958V1002"/></g>
+<g fill="#e0e6dc" stroke="#819080"><rect x="50" y="756" width="310" height="70" rx="5"/><rect x="400" y="756" width="310" height="70" rx="5"/><rect x="50" y="890" width="310" height="68" rx="5"/><rect x="400" y="890" width="310" height="68" rx="5"/><rect x="340" y="1002" width="370" height="68" rx="5"/></g>
+<g text-anchor="middle" font-size="28"><text x="205" y="800">Shared source</text><text x="555" y="800">Separate source</text><text x="205" y="933">Worker / team</text><text x="555" y="933">Evidence check</text><text x="525" y="1045">Accept / correct / stop</text></g>
+<text x="40" y="1119" font-size="25">Specify what a disagreement changes.</text><text x="40" y="1168" font-size="23" fill="#626f65">Conceptual only. No measured improvement.</text><text x="40" y="1202" font-size="23" fill="#626f65">A separate path can still be wrong.</text></g></svg>
