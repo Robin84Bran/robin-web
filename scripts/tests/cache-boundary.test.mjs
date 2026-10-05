@@ -13,6 +13,13 @@ const { loadRemoteImage, revalidateRemoteImage } = await import(pathToFileURL(re
 const url = 'https://example.invalid/synthetic.png';
 const imageConfig = { domains: ['example.invalid'], remotePatterns: [] };
 
+test('cache boundary checks use the dependency selected by the release lockfile', () => {
+  const installed = createRequire(remotePath)('http-cache-semantics/package.json').version;
+  const lock = readFileSync('pnpm-lock.yaml', 'utf8');
+  assert.ok(lock.includes('  http-cache-semantics@' + installed + ':'),
+    'Installed cache dependency differs from lockfile; install the governed candidate before testing');
+});
+
 test('production remains static and delegates assets without a server cache-policy dependency', () => {
   const config = readFileSync('astro.config.mjs', 'utf8');
   const worker = readFileSync('public/_worker.js', 'utf8');
