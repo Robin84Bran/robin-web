@@ -1,5 +1,5 @@
 ---
-archiveStatus: "PIPELINE"
+archiveStatus: "PRESENT"
 title: 零交易，才是正确的交易
 date: 2026-10-05
 updated: 2026-08-21

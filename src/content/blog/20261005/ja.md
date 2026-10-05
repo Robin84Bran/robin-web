@@ -1,5 +1,5 @@
 ---
-archiveStatus: "PIPELINE"
+archiveStatus: "PRESENT"
 title: 取引ゼロが正解だった日
 date: 2026-10-05
 updated: 2026-08-21
