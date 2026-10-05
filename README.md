@@ -1,5 +1,21 @@
 # iamrobin.ai — Website v2 / Zen Loop
 
+## Publication recovery (5 October 2026)
+
+Retained October 3–5 editions and the October 3 diary are released without
+rewriting their sources. The private publisher now reconciles overdue dates,
+shares a cross-date release lock, and alerts once when a saved release remains
+delayed. A date is not complete while its Action Flow receipt is incomplete.
+Held diaries remain visible in the queue without clearing their safety gate.
+There is still one Telegram consumer and no additional scheduler.
+
+The cache dependency receives a compatible lockfile refresh, with unchanged
+production audit and supply-chain-age gates. This is not a claim that upstream
+generic stale-cache behavior is fixed. `pnpm run cache:check` tests this site's
+static asset boundary and Astro's image TTL/revalidation controls; it runs before
+every release check. Runtime state, private sources and delivery receipts stay
+outside the public repository.
+
 ## Global language menu (29 September 2026)
 
 Every built HTML page has one upper-right **🌐** control: English (default),

@@ -31,6 +31,21 @@ function run(f, ...args) {
   });
 }
 
+test('a held sealed diary stays visible across days without clearing its safety hold', () => {
+  const f = fixture();
+  f.record.status = 'HOLD';
+  fs.writeFileSync(f.source, JSON.stringify(f.record));
+  for (let attempt = 0; attempt < 2; attempt++) {
+    const result = run(f, 'pending');
+    assert.equal(result.status, 0, result.stderr);
+    const records = JSON.parse(result.stdout);
+    assert.equal(records.length, 1);
+    assert.equal(records[0].status, 'HOLD');
+    assert.equal(JSON.parse(fs.readFileSync(f.source)).status, 'HOLD');
+    assert.equal(records[0].bodySha256, f.record.bodySha256);
+  }
+});
+
 test('materialize preserves source text, paragraphizes Telegram lines, and sync requires art', () => {
   const f = fixture();
   const materialize = run(f, 'materialize', '--source', f.source);
