@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-02T09:00:49.721207+00:00",
+  "generated_at": "2026-10-05T09:44:41.602589+00:00",
   "money_mode": "SIMULATED",
   "forecasts": [
     {
@@ -111,7 +111,12 @@
         0.13167207628781158
       ],
       "target_return": 0.1,
-      "score": null
+      "score": {
+        "exact_hit": false,
+        "brier": 1.0128943068409637,
+        "target_touched": true,
+        "ordinal_partial_credit": 0.33333333333333337
+      }
     },
     {
       "case_id": "HKEX-PENDING-01256-1257ea8e",
