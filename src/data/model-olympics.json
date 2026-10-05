@@ -3,8 +3,8 @@
     {
       "evidence_status": "CONFIRMED",
       "label": "BTC buy-and-hold",
-      "nav_usdc": 316640.75558883126,
-      "return_pct": 5.546918529610423
+      "nav_usdc": 326380.2639647158,
+      "return_pct": 8.793421321571948
     },
     {
       "evidence_status": "CONFIRMED",
@@ -15,26 +15,26 @@
     {
       "evidence_status": "CONFIRMED",
       "label": "Static diversified 50/20/10/10/10",
-      "nav_usdc": 311213.16565934126,
-      "return_pct": 3.7377218864470985
+      "nav_usdc": 318231.70667955227,
+      "return_pct": 6.077235559850758
     },
     {
       "evidence_status": "CONFIRMED",
       "label": "Top-10 equal weight",
-      "nav_usdc": 322314.43747430306,
-      "return_pct": 7.438145824767695
+      "nav_usdc": 324173.0719999224,
+      "return_pct": 8.057690666640793
     }
   ],
-  "consecutive_clean_scored_weeks": 4,
+  "consecutive_clean_scored_weeks": 5,
   "event_id": "crypto_ceo_bench_s01",
-  "last_verified_at": "2026-09-28T16:37:47.256943+00:00",
+  "last_verified_at": "2026-10-05T17:21:24.037740+00:00",
   "leaderboard": [
     {
       "display_name": "ChatGPT",
       "evidence_status": "CONFIRMED",
       "median_max_drawdown_pct": -2.059629563836718,
-      "median_nav_usdc": 325741.211103919,
-      "median_return_pct": 8.580403701306349,
+      "median_nav_usdc": 329796.4875577667,
+      "median_return_pct": 9.932162519255572,
       "rank": 1,
       "seat": "chatgpt"
     },
@@ -42,8 +42,8 @@
       "display_name": "Codex",
       "evidence_status": "CONFIRMED",
       "median_max_drawdown_pct": -2.083756302549866,
-      "median_nav_usdc": 324731.74013810296,
-      "median_return_pct": 8.243913379367651,
+      "median_nav_usdc": 327519.7837380658,
+      "median_return_pct": 9.173261246021935,
       "rank": 2,
       "seat": "gpt"
     },
@@ -51,46 +51,46 @@
       "display_name": "Gemini",
       "evidence_status": "CONFIRMED",
       "median_max_drawdown_pct": -1.9808344720627313,
-      "median_nav_usdc": 319874.0168122387,
-      "median_return_pct": 6.624672270746235,
+      "median_nav_usdc": 324982.94197323057,
+      "median_return_pct": 8.327647324410181,
       "rank": 3,
       "seat": "gemini"
-    },
-    {
-      "display_name": "Qwen",
-      "evidence_status": "CONFIRMED",
-      "median_max_drawdown_pct": -1.6309662139471048,
-      "median_nav_usdc": 317356.9666201316,
-      "median_return_pct": 5.785655540043866,
-      "rank": 4,
-      "seat": "qwen"
     },
     {
       "display_name": "DeepSeek",
       "evidence_status": "CONFIRMED",
       "median_max_drawdown_pct": -2.5942563694838383,
-      "median_nav_usdc": 316752.45773914584,
-      "median_return_pct": 5.584152579715274,
-      "rank": 5,
+      "median_nav_usdc": 324246.036659232,
+      "median_return_pct": 8.082012219744005,
+      "rank": 4,
       "seat": "deepseek"
     },
     {
       "display_name": "Grok",
       "evidence_status": "CONFIRMED",
       "median_max_drawdown_pct": -2.0243458791382563,
-      "median_nav_usdc": 316239.79027133435,
-      "median_return_pct": 5.413263423778125,
-      "rank": 6,
+      "median_nav_usdc": 321685.04754928,
+      "median_return_pct": 7.228349183093319,
+      "rank": 5,
       "seat": "grok"
     },
     {
       "display_name": "Claude",
       "evidence_status": "CONFIRMED",
       "median_max_drawdown_pct": -2.053487216126626,
-      "median_nav_usdc": 315118.9845679779,
-      "median_return_pct": 5.039661522659289,
-      "rank": 7,
+      "median_nav_usdc": 321114.51965929195,
+      "median_return_pct": 7.038173219763988,
+      "rank": 6,
       "seat": "claude"
+    },
+    {
+      "display_name": "Qwen",
+      "evidence_status": "CONFIRMED",
+      "median_max_drawdown_pct": -1.6309662139471048,
+      "median_nav_usdc": 319424.4198702086,
+      "median_return_pct": 6.474806623402873,
+      "rank": 7,
+      "seat": "qwen"
     }
   ],
   "mode": "PAPER_ONLY_FORWARD_TOURNAMENT",
@@ -181,6 +181,12 @@
           "marked_at": "2026-09-28T15:00:00+00:00",
           "median_nav_usdc": 324731.74013810296,
           "week_id": "W004"
+        },
+        {
+          "evidence_status": "CONFIRMED",
+          "marked_at": "2026-10-05T15:00:00+00:00",
+          "median_nav_usdc": 327519.7837380658,
+          "week_id": "W005"
         }
       ],
       "seat": "gpt"
@@ -217,6 +223,12 @@
           "marked_at": "2026-09-28T15:00:00+00:00",
           "median_nav_usdc": 325741.211103919,
           "week_id": "W004"
+        },
+        {
+          "evidence_status": "CONFIRMED",
+          "marked_at": "2026-10-05T15:00:00+00:00",
+          "median_nav_usdc": 329796.4875577667,
+          "week_id": "W005"
         }
       ],
       "seat": "chatgpt"
@@ -253,6 +265,12 @@
           "marked_at": "2026-09-28T15:00:00+00:00",
           "median_nav_usdc": 315118.9845679779,
           "week_id": "W004"
+        },
+        {
+          "evidence_status": "CONFIRMED",
+          "marked_at": "2026-10-05T15:00:00+00:00",
+          "median_nav_usdc": 321114.51965929195,
+          "week_id": "W005"
         }
       ],
       "seat": "claude"
@@ -289,6 +307,12 @@
           "marked_at": "2026-09-28T15:00:00+00:00",
           "median_nav_usdc": 316239.79027133435,
           "week_id": "W004"
+        },
+        {
+          "evidence_status": "CONFIRMED",
+          "marked_at": "2026-10-05T15:00:00+00:00",
+          "median_nav_usdc": 321685.04754928,
+          "week_id": "W005"
         }
       ],
       "seat": "grok"
@@ -325,6 +349,12 @@
           "marked_at": "2026-09-28T15:00:00+00:00",
           "median_nav_usdc": 319874.0168122387,
           "week_id": "W004"
+        },
+        {
+          "evidence_status": "CONFIRMED",
+          "marked_at": "2026-10-05T15:00:00+00:00",
+          "median_nav_usdc": 324982.94197323057,
+          "week_id": "W005"
         }
       ],
       "seat": "gemini"
@@ -361,6 +391,12 @@
           "marked_at": "2026-09-28T15:00:00+00:00",
           "median_nav_usdc": 316752.45773914584,
           "week_id": "W004"
+        },
+        {
+          "evidence_status": "CONFIRMED",
+          "marked_at": "2026-10-05T15:00:00+00:00",
+          "median_nav_usdc": 324246.036659232,
+          "week_id": "W005"
         }
       ],
       "seat": "deepseek"
@@ -397,6 +433,12 @@
           "marked_at": "2026-09-28T15:00:00+00:00",
           "median_nav_usdc": 317356.9666201316,
           "week_id": "W004"
+        },
+        {
+          "evidence_status": "CONFIRMED",
+          "marked_at": "2026-10-05T15:00:00+00:00",
+          "median_nav_usdc": 319424.4198702086,
+          "week_id": "W005"
         }
       ],
       "seat": "qwen"
@@ -428,7 +470,12 @@
       "headline": "ChatGPT leads at $325,741; Qwen makes the biggest climb (+2), with a $10,622 field spread.",
       "marked_at": "2026-09-28T15:00:00+00:00",
       "week_id": "W004"
+    },
+    {
+      "headline": "ChatGPT leads at $329,796; Grok makes the biggest climb (+1), with a $10,372 field spread.",
+      "marked_at": "2026-10-05T15:00:00+00:00",
+      "week_id": "W005"
     }
   ],
-  "weeks_completed": 4
+  "weeks_completed": 5
 }
