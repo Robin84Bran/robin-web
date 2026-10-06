@@ -29,9 +29,10 @@
     "diary:check": "python3 -m unittest discover -s scripts/diary -p 'test_*.py' && node --test scripts/diary/tests/diary-publisher.test.mjs scripts/diary/tests/diary-links.test.mjs",
     "cache:check": "node --test scripts/tests/cache-boundary.test.mjs",
     "prerelease:check": "pnpm run cache:check",
-    "release:check": "pnpm run diary:check && pnpm run robots:check && pnpm run privacy:check && pnpm run observability:check && pnpm run actions:check && pnpm run specials:check && pnpm run autonomy:check && pnpm run check && pnpm run build && pnpm run verify:seo && pnpm run specials:render && pnpm run test:ai-berkshire && pnpm run test:swarm-lab && node --test scripts/tests/bran-arcade-edge.test.mjs scripts/tests/bran-classic-gameplay.test.mjs scripts/tests/bran-mini-recovery.test.mjs && pnpm run test:agent-swarm",
+    "release:check": "pnpm run diary:check && pnpm run robots:check && pnpm run privacy:check && pnpm run observability:check && pnpm run actions:check && pnpm run specials:check && pnpm run autonomy:check && pnpm run check && pnpm run build && pnpm run verify:seo && pnpm run specials:render && pnpm run test:ai-berkshire && pnpm run test:swarm-lab && node --test scripts/tests/bran-arcade-edge.test.mjs scripts/tests/bran-classic-gameplay.test.mjs scripts/tests/bran-mini-recovery.test.mjs && pnpm run test:agent-swarm && pnpm run test:receipt-gap",
     "preview": "astro preview",
-    "test:agent-swarm": "node scripts/test-agent-swarm.mjs"
+    "test:agent-swarm": "node scripts/test-agent-swarm.mjs",
+    "test:receipt-gap": "node --test public/receipt-gap/tests.mjs && node public/receipt-gap/batch.mjs --verify && node scripts/test-receipt-gap-render.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.9",
