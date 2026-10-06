@@ -1,0 +1,535 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-06",
+  "updated": "2026-10-06",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20261006/hero.webp",
+  "actionHero": "/action-item/20261006/hero.webp",
+  "ogImage": "/daily-briefing/20261006/og.webp",
+  "briefingPath": "/ouroboros/202610/20261006/",
+  "actionItemPath": "/ouroboros/202610/20261006/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "google",
+          "url": "https://workspaceupdates.googleblog.com/2026/09/skills-gemini-app-workspace.html"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "robco",
+          "url": "https://www.rob.co/en-us/resources/news/press/robco-becomes-a-unicorn"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "NOW",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "btc",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "eth",
+          "url": "https://farside.co.uk/eth/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "andra",
+          "url": "https://www.businesswire.com/news/home/20261005415837/en/"
+        },
+        {
+          "label": "andrasite",
+          "url": "https://www.andraonchain.com/"
+        },
+        {
+          "label": "andranews",
+          "url": "https://www.andraonchain.com/news"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "priority": "NOW",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "beam",
+          "url": "https://reflection.ai/blog/introducing-beam"
+        },
+        {
+          "label": "moe",
+          "url": "https://huggingface.co/blog/moe"
+        },
+        {
+          "label": "memory",
+          "url": "https://docs.nvidia.com/nim/large-language-models/2.0.13/troubleshooting/memory.html"
+        },
+        {
+          "label": "quant",
+          "url": "https://huggingface.co/docs/transformers/v4.49.0/en/quantization/bitsandbytes"
+        },
+        {
+          "label": "tpu",
+          "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute"
+        },
+        {
+          "label": "today’s canonical",
+          "url": "https://iamrobin.ai/ouroboros/202610/20261006/action_item/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "arizona",
+          "url": "https://www.azag.gov/press-release/attorney-general-mayes-host-community-conversation-data-centers-october-14"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "NEXT",
+      "status": "READY",
+      "sources": [
+        {
+          "label": "namespace",
+          "url": "https://namespace.so/blog/series-b"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "sources": [
+        {
+          "label": "terawulf",
+          "url": "https://investors.terawulf.com/sec-filings/all-sec-filings/content/0001628280-26-064757/wulf-20261001.htm"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, October 6, 2026",
+      "description": "Eight bounded actions connect reusable instructions, deployment evidence and infrastructure delivery.",
+      "centralJudgment": "A right, a contract and a working service are different milestones. Preserve the evidence needed to cross each boundary.",
+      "fieldLine": "Eight signals. Separate access from delivery.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Specify one portable skill",
+          "why": "A repeatable editorial or vendor-review procedure is more useful than another model ranking when its permissions and acceptance rules survive reuse.",
+          "steps": [
+            "Prepare one redacted skill portability card with a fixed input, expected output, permissions and version hash; test each surface only when account access is available.",
+            "Advance only when dated original evidence meets the stated condition."
+          ],
+          "done": "Same redacted input, permissions, expected output and version hash recorded; surface tests await available access."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "Prepare the Alfie deployment card",
+          "why": "Robotics value becomes measurable when integration effort and useful work can be compared across paid sites.",
+          "steps": [
+            "Create an Alfie deployment card requiring autonomous hours, interventions per hour, changeover time, installed cost and payback evidence before upgrading from a product watch.",
+            "Advance only when dated original evidence meets the stated condition."
+          ],
+          "done": "Five paid-site operating measures supported by dated original evidence; prototype claims alone do not pass."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows and Web3 Health",
+          "title": "Reconcile the complete ETF week",
+          "why": "The reporting clock belongs beside the flow total; a late issuer print can change the apparent regime.",
+          "steps": [
+            "Save a matched-session flow reconciliation with missing cells preserved as null and recompute October 5 only after every issuer reports; this creates no portfolio instruction.",
+            "Advance only when dated original evidence meets the stated condition."
+          ],
+          "done": "Matching five-session totals recomputed and October 5 missing issuer cells preserved until complete."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins and Token Rails",
+          "title": "Define tokenized-fund adoption",
+          "why": "Payments experience makes the gap between a transferable token and an enforceable fund interest especially important.",
+          "steps": [
+            "Prepare an adoption evidence card requiring a named fund, authorized participant, completed creation/redemption and reconciled official register before recording production adoption.",
+            "Advance only when dated original evidence meets the stated condition."
+          ],
+          "done": "Named fund and participant, completed creation/redemption and reconciled official records verified."
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai Content and Visibility",
+          "title": "Publish the open-weight economics essay",
+          "why": "This gives the open-model discussion a concrete arithmetic check and an operating decision, distinct from earlier essays about supplier exit terms or premium agent speed.",
+          "steps": [
+            "Publish Open Weights Still Need Expensive Machines at [today’s canonical](https://iamrobin.ai/ouroboros/202610/20261006/action_item/), explaining release rights, sparse-model memory, inference overhead and utilization; include five primary sources, a labeled illustrative diagram and an archived LinkedIn derivative.",
+            "Advance only when dated original evidence meets the stated condition."
+          ],
+          "done": "Four full editions, primary sources, illustrative visual and archived derivative prepared; public publication and delivery require verified receipts.",
+          "deepDiveTitle": "Publish the open-weight economics essay"
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure, Career and Capital",
+          "title": "Record the Arizona policy milestone",
+          "why": "Infrastructure leadership requires tracking the authority that can actually change a permit or schedule; the announcement establishes no job opening.",
+          "steps": [
+            "Create one October 14 policy watch card distinguishing the Attorney General’s proposal, enacted legislation, permit decisions and project-specific delivery effects.",
+            "Advance only when dated original evidence meets the stated condition."
+          ],
+          "done": "Proposal, enacted law, permit decisions and project impacts recorded separately after the October 14 event."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-Stage Private Markets",
+          "title": "Investigate Namespace with conditions",
+          "why": "This is a direct connection between agent output and the machines needed to turn it into tested software. Valuation, investor terms and accessible allocation remain undisclosed here.",
+          "steps": [
+            "Classify Namespace as INVESTIGATE and save a public-evidence checklist for absolute revenue, retention, gross margin, hardware utilization and deal access before any investment assessment.",
+            "Advance only when dated original evidence meets the stated condition."
+          ],
+          "done": "Absolute revenue, retention, margins, utilization and accessible deal terms supported before investment assessment."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities and AI Themes",
+          "title": "Track Muskie from contract to delivery",
+          "why": "The listed-equity thesis can be tested against an explicit sequence of approvals, financing, construction and customer obligations.",
+          "steps": [
+            "Save a Muskie milestone bridge with separate fields for approval, debt close, energized capacity and contracted revenue; leave missing outcomes blank until original filings establish them.",
+            "Advance only when dated original evidence meets the stated condition."
+          ],
+          "done": "Approval, debt closing, energized capacity and contracted revenue verified in separate fields."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年10月6日",
+      "description": "八项有边界的行动，连接复用指令、部署证据与基础设施交付。",
+      "centralJudgment": "权利、合同与可用服务，是不同的里程碑。每跨一步，都保留所需证据。",
+      "fieldLine": "八个信号。分清访问与交付。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与智能体",
+          "title": "定义一个可迁移skill",
+          "why": "编辑或供应商评审流程能否重复使用，取决于权限和验收条件能否一并保留，比又一张模型排名更有用。",
+          "steps": [
+            "准备一张脱敏的 skill 迁移卡，固定输入、预期输出、权限和版本哈希；只有具备账号访问条件时才测试各界面。",
+            "只有带日期的一手证据满足既定条件才推进。"
+          ],
+          "done": "脱敏输入、权限、预期输出及版本哈希固定；各界面测试等待可用访问。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 与机器人",
+          "title": "准备Alfie部署卡",
+          "why": "把付费现场的集成工作量与有效产出放在一起比较，机器人的价值才可衡量。",
+          "steps": [
+            "建立一张 Alfie 部署卡，要求自主运行小时、每小时人工介入、换线时间、安装总成本及回收期证据齐备，才从产品观察升级。",
+            "只有带日期的一手证据满足既定条件才推进。"
+          ],
+          "done": "五项付费现场运营指标均有带日期的一手证据；仅有原型主张不够。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资金流与 Web3 健康",
+          "title": "核对完整ETF交易周",
+          "why": "流量总额旁边必须放上报告时间；迟到的一项发行人数据就能改变表面上的资金状态。",
+          "steps": [
+            "保存一张同交易日资金核对表，缺失值保留为null，待全部发行人报告后再计算10月5日；这不构成持仓指令。",
+            "只有带日期的一手证据满足既定条件才推进。"
+          ],
+          "done": "同一五个交易日总额重新计算，10月5日缺失发行人数据保留至补齐。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币与代币轨道",
+          "title": "定义代币化基金采用",
+          "why": "支付经验让可转让代币与可执行基金权益之间的差距格外值得追问。",
+          "steps": [
+            "准备一张采用证据卡，只有具名基金、授权参与者、完成的申赎及核对一致的正式登记册齐备，才记录为生产采用。",
+            "只有带日期的一手证据满足既定条件才推进。"
+          ],
+          "done": "具名基金及参与者、完成的申赎与一致的正式记录均已核验。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai 内容与可见度",
+          "title": "发布开放权重经济文章",
+          "why": "这为开放模型讨论提供了具体算术和运营判断，与此前供应商退出条款、智能体加速付费两篇文章各有分工。",
+          "steps": [
+            "在[今日规范页面](https://iamrobin.ai/ouroboros/202610/20261006/action_item/)发布《开放权重仍需要昂贵机器》，英文标题为 Open Weights Still Need Expensive Machines，解释发布权利、稀疏模型内存、推理开销及利用率；附五个一手来源、标明假设的图解和存档 LinkedIn 衍生稿。",
+            "只有带日期的一手证据满足既定条件才推进。"
+          ],
+          "done": "四个完整版本、一手资料、示例图及衍生稿已准备；公开发布和送达仍需核验回执。",
+          "deepDiveTitle": "发布开放权重经济文章"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基础设施、职业与资本",
+          "title": "记录亚利桑那政策节点",
+          "why": "基础设施负责人需要分清谁有权改变许可或工期；这份公告没有建立任何招聘机会。",
+          "steps": [
+            "建立一张10月14日政策观察卡，分别记录总检察长提案、已生效法律、许可决定及具体项目的交付影响。",
+            "只有带日期的一手证据满足既定条件才推进。"
+          ],
+          "done": "10月14日活动后，分别记录提案、已生效法律、许可决定及项目影响。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私募市场",
+          "title": "有条件研究Namespace",
+          "why": "智能体输出与把它变成经过测试的软件所需机器，形成了直接连接。这里的估值、投资条款和可取得份额仍未披露。",
+          "steps": [
+            "将 Namespace 分类为 INVESTIGATE，保存一张公开证据清单，要求绝对收入、留存、毛利率、硬件利用率及投资渠道齐备后再评估投资。",
+            "只有带日期的一手证据满足既定条件才推进。"
+          ],
+          "done": "绝对收入、留存、利润率、利用率和实际投资条款获证据支持后再评估投资。"
+        },
+        {
+          "signal": 8,
+          "domain": "上市股票与AI主题",
+          "title": "跟踪Muskie从合同到交付",
+          "why": "上市公司投资逻辑可以沿审批、融资、建设和客户义务的明确顺序检验。",
+          "steps": [
+            "保存一张 Muskie 里程碑表，分别记录批准、债务交割、通电容量和合同收入；原始文件尚未证实的结果留空。",
+            "只有带日期的一手证据满足既定条件才推进。"
+          ],
+          "done": "批准、债务交割、通电容量与合同收入分别核验。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年10月6日",
+      "description": "八項有邊界的行動，連接複用指令、部署證據與基礎設施交付。",
+      "centralJudgment": "權利、合同與可用服務，是不同的里程碑。每跨一步，都保留所需證據。",
+      "fieldLine": "八個信號。分清訪問與交付。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與智能體",
+          "title": "定義一個可遷移skill",
+          "why": "編輯或供應商評審流程能否重複使用，取決於權限和驗收條件能否一併保留，比又一張模型排名更有用。",
+          "steps": [
+            "準備一張脫敏的 skill 遷移卡，固定輸入、預期輸出、權限和版本哈希；只有具備賬號訪問條件時才測試各界面。",
+            "只有帶日期的一手證據滿足既定條件才推進。"
+          ],
+          "done": "脫敏輸入、權限、預期輸出及版本哈希固定；各界面測試等待可用訪問。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 與機器人",
+          "title": "準備Alfie部署卡",
+          "why": "把付費現場的集成工作量與有效產出放在一起比較，機器人的價值才可衡量。",
+          "steps": [
+            "建立一張 Alfie 部署卡，要求自主運行小時、每小時人工介入、換線時間、安裝總成本及回收期證據齊備，才從產品觀察升級。",
+            "只有帶日期的一手證據滿足既定條件才推進。"
+          ],
+          "done": "五項付費現場運營指標均有帶日期的一手證據；僅有原型主張不夠。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資金流與 Web3 健康",
+          "title": "核對完整ETF交易周",
+          "why": "流量總額旁邊必須放上報告時間；遲到的一項發行人數據就能改變表面上的資金狀態。",
+          "steps": [
+            "保存一張同交易日資金核對表，缺失值保留為null，待全部發行人報告後再計算10月5日；這不構成持倉指令。",
+            "只有帶日期的一手證據滿足既定條件才推進。"
+          ],
+          "done": "同一五個交易日總額重新計算，10月5日缺失發行人數據保留至補齊。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣與代幣軌道",
+          "title": "定義代幣化基金採用",
+          "why": "支付經驗讓可轉讓代幣與可執行基金權益之間的差距格外值得追問。",
+          "steps": [
+            "準備一張採用證據卡，只有具名基金、授權參與者、完成的申贖及核對一致的正式登記冊齊備，才記錄為生產採用。",
+            "只有帶日期的一手證據滿足既定條件才推進。"
+          ],
+          "done": "具名基金及參與者、完成的申贖與一致的正式記錄均已核驗。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.ai 內容與可見度",
+          "title": "發佈開放權重經濟文章",
+          "why": "這為開放模型討論提供了具體算術和運營判斷，與此前供應商退出條款、智能體加速付費兩篇文章各有分工。",
+          "steps": [
+            "在[今日規範頁面](https://iamrobin.ai/ouroboros/202610/20261006/action_item/)發佈《開放權重仍需要昂貴機器》，英文標題為 Open Weights Still Need Expensive Machines，解釋發佈權利、稀疏模型記憶體、推理開銷及利用率；附五個一手來源、標明假設的圖解和存檔 LinkedIn 衍生稿。",
+            "只有帶日期的一手證據滿足既定條件才推進。"
+          ],
+          "done": "四個完整版本、一手資料、示例圖及衍生稿已準備；公開發布和送達仍需核驗回執。",
+          "deepDiveTitle": "發佈開放權重經濟文章"
+        },
+        {
+          "signal": 6,
+          "domain": "AI基礎設施、職業與資本",
+          "title": "記錄亞利桑那政策節點",
+          "why": "基礎設施負責人需要分清誰有權改變許可或工期；這份公告沒有建立任何招聘機會。",
+          "steps": [
+            "建立一張10月14日政策觀察卡，分別記錄總檢察長提案、已生效法律、許可決定及具體項目的交付影響。",
+            "只有帶日期的一手證據滿足既定條件才推進。"
+          ],
+          "done": "10月14日活動後，分別記錄提案、已生效法律、許可決定及項目影響。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私募市場",
+          "title": "有條件研究Namespace",
+          "why": "智能體輸出與把它變成經過測試的軟體所需機器，形成了直接連接。這裏的估值、投資條款和可取得份額仍未披露。",
+          "steps": [
+            "將 Namespace 分類為 INVESTIGATE，保存一張公開證據清單，要求絕對收入、留存、毛利率、硬體利用率及投資渠道齊備後再評估投資。",
+            "只有帶日期的一手證據滿足既定條件才推進。"
+          ],
+          "done": "絕對收入、留存、利潤率、利用率和實際投資條款獲證據支持後再評估投資。"
+        },
+        {
+          "signal": 8,
+          "domain": "上市股票與AI主題",
+          "title": "跟蹤Muskie從合同到交付",
+          "why": "上市公司投資邏輯可以沿審批、融資、建設和客戶義務的明確順序檢驗。",
+          "steps": [
+            "保存一張 Muskie 里程碑表，分別記錄批准、債務交割、通電容量和合同收入；原始文件尚未證實的結果留空。",
+            "只有帶日期的一手證據滿足既定條件才推進。"
+          ],
+          "done": "批准、債務交割、通電容量與合同收入分別核驗。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年10月6日",
+      "description": "再利用する指示、配備証拠、インフラ交付を結ぶ八つの限定行動。",
+      "centralJudgment": "権利、契約、稼働サービスは別の節目だ。境界を越えるたびに必要な証拠を残す。",
+      "fieldLine": "八つのシグナル。アクセスと交付を分ける。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "先端モデルとエージェント",
+          "title": "移植できるskillを定義",
+          "why": "編集や取引先評価の手順を繰り返すには、権限と受入条件も一緒に引き継ぐ必要がある。モデル順位より実務的な論点だ。",
+          "steps": [
+            "機密を除いたskill移植票を作り、入力、期待出力、権限、版のハッシュを固定する。各画面の試験はアカウントで利用できる段階で行う。",
+            "日付付き一次証拠が既定の条件を満たした時に進める。"
+          ],
+          "done": "機密除去済み入力、権限、期待出力、版ハッシュを固定。各画面の試験は利用可能になってから。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AIとロボット",
+          "title": "Alfieの導入票を準備",
+          "why": "有償導入先の統合作業と有用な仕事量を比較して初めて、ロボットの価値を測れる。",
+          "steps": [
+            "Alfie導入票を作り、自律稼働時間、毎時の介入回数、段取り替え時間、設置総費用、回収期間の証拠を揃えることを、製品観測から進む条件にする。",
+            "日付付き一次証拠が既定の条件を満たした時に進める。"
+          ],
+          "done": "有償現場の五つの稼働指標を日付付き一次証拠で確認。試作機の主張だけでは足りない。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産フローとWeb3",
+          "title": "揃ったETF週間値を照合",
+          "why": "フロー合計には報告時点を添える必要がある。遅れて届く一社の数値で、見かけの状況は変わる。",
+          "steps": [
+            "同じ取引日で照合するフロー表を保存し、欠損はnullのまま維持する。10月5日は全発行体が報告してから再計算する。保有方針を指示するものではない。",
+            "日付付き一次証拠が既定の条件を満たした時に進める。"
+          ],
+          "done": "同じ五取引日の合計を再計算し、10月5日の欠落発行体欄は揃うまで維持。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコインとトークン基盤",
+          "title": "トークン化基金の採用を定義",
+          "why": "決済の経験があるからこそ、移転可能なトークンと法的に行使できる基金持分の差を問える。",
+          "steps": [
+            "採用証拠票を準備し、具体的な基金、指定参加者、完了した設定・解約、正式台帳との一致が揃うまで本番採用と記録しない。",
+            "日付付き一次証拠が既定の条件を満たした時に進める。"
+          ],
+          "done": "基金と参加者を特定し、設定・解約の完了と正式記録との一致を確認。"
+        },
+        {
+          "signal": 5,
+          "domain": "iamrobin.aiの発信",
+          "title": "公開ウェイトの経済記事を公開",
+          "why": "具体的な計算と運用判断を示せる。供給者からの退出条件や有料の生成加速を扱った過去の記事とも論点が異なる。",
+          "steps": [
+            "[本日の正規ページ](https://iamrobin.ai/ouroboros/202610/20261006/action_item/)に「公開ウェイトにも高価な機械が要る」、英題Open Weights Still Need Expensive Machinesを公開する。公開権利、疎なモデルのメモリー、推論の追加負荷、稼働率を説明し、一次資料五件、仮定を明記した図、保管用LinkedIn原稿を添える。",
+            "日付付き一次証拠が既定の条件を満たした時に進める。"
+          ],
+          "done": "完全な四言語、一次資料、説明図、派生原稿を準備。公開と配信には検証済み受領記録が必要。",
+          "deepDiveTitle": "公開ウェイトの経済記事を公開"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラと資本",
+          "title": "Arizonaの政策節目を記録",
+          "why": "インフラ責任者には、誰が許可や工程を実際に変えられるかを追う力が要る。この発表から求人の存在は分からない。",
+          "steps": [
+            "10月14日の政策観測票を作り、司法長官の提案、成立した法律、許可判断、個別案件の納期影響を分けて記録する。",
+            "日付付き一次証拠が既定の条件を満たした時に進める。"
+          ],
+          "done": "10月14日の集会後、提案、成立法、許可判断、案件影響を別々に記録。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期非公開市場",
+          "title": "条件付きでNamespaceを精査",
+          "why": "エージェントの出力と、試験済みソフトウェアに変える機械が直結する。評価額、投資条件、取得可能な割当はここでは未開示だ。",
+          "steps": [
+            "NamespaceをINVESTIGATEと分類し、売上実額、継続率、粗利率、設備稼働率、投資経路の公開証拠リストを保存する。投資評価は証拠が揃ってから行う。",
+            "日付付き一次証拠が既定の条件を満たした時に進める。"
+          ],
+          "done": "売上実額、継続率、利益率、稼働率、実際の投資条件を裏付けてから投資を評価。"
+        },
+        {
+          "signal": 8,
+          "domain": "上場株とAI",
+          "title": "Muskieの契約と交付を追跡",
+          "why": "上場株の仮説を承認、資金調達、建設、顧客義務という順序で検証できる。",
+          "steps": [
+            "Muskieの節目表を保存し、承認、借入完了、通電容量、契約収入を別欄にする。原本の開示が揃うまで未確認の結果は空欄に保つ。",
+            "日付付き一次証拠が既定の条件を満たした時に進める。"
+          ],
+          "done": "承認、借入完了、通電容量、契約収入をそれぞれ確認。"
+        }
+      ]
+    }
+  }
+}
