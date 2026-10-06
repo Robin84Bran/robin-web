@@ -1,0 +1,13 @@
+A room can gain money while people leave. One large suitcase can outweigh several small ones.
+
+For September 28 to October 2, 2026, the captured Bitcoin fund table added to +$241.1 million: IBIT +$450.2 million, the other eleven funds combined -$209.1 million. Four funds were positive, five negative, three zero. These are calculations from Farside, not an independent issuer audit.
+
+The sum weights dollars. The count weights funds. Neither counts unique investors. A thousand people adding one dollar and one person adding a thousand dollars produce the same total; these are imaginary examples, not descriptions of the week.
+
+Subtracting IBIT gives the recorded remainder, not a simulation of a market without IBIT. To ask about broad participation, name the measure: funds, distinct holders, or flow relative to assets. Each needs its own denominator.
+
+Later incomplete sessions are excluded; the provider may revise the table. No investor-level record or return forecast is supplied.
+
+Story: https://iamrobin.ai/binary/stories/the-total-has-no-headcount/
+Source Special: https://iamrobin.ai/ouroboros/202610/20261006/special/
+Data: https://farside.co.uk/btc/
