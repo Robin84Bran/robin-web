@@ -290,3 +290,14 @@ offers on-page automatic display translation for every diary. Each authored edit
 canonical, reciprocal language links and body hash; translated editions require
 native editorial review. The archive lists the source once. Private source
 documents and import receipts stay outside the public repository.
+
+## Weekly Intelligence — The Receipt Gap
+
+`/intelligence/receipt-gap/` is the 2026-W41 experiment: lost acknowledgements,
+retry rules and atomic receiver keys under a fixed credit budget. It retains
+640 seeded worlds / 2,560 policy outcomes, failure cases and key-retention
+sensitivities. Run `pnpm run test:receipt-gap` after a build. Public source,
+method, complete results and a source ZIP live under `public/receipt-gap/`.
+Canonical research: `06_intelligence/AI_research/AI_swarm/11_receipt_gap/`.
+Keyed attempts cost twice as much by assumption; no universal policy winner,
+provider guarantee, biological or financial result is claimed.

@@ -18,7 +18,7 @@ export default defineConfig({
       filter: (page) => {
         const path = new URL(page).pathname;
         return [
-          '/', '/about/', '/identity/', '/network/', '/asymmetry/btc_probability_atlas/', '/resonance/eval/ai_berkshire/', '/intelligence/three-rule-swarm/', '/intelligence/one-door/',
+          '/', '/about/', '/identity/', '/network/', '/asymmetry/btc_probability_atlas/', '/resonance/eval/ai_berkshire/', '/intelligence/three-rule-swarm/', '/intelligence/one-door/', '/intelligence/receipt-gap/',
           '/zh-hans/', '/zh-hans/about/', '/zh-hans/network/',
           '/zh-hant/', '/zh-hant/about/', '/zh-hant/network/',
           '/ja/', '/ja/about/', '/ja/network/',
