@@ -1,5 +1,20 @@
 # iamrobin.ai — Website v2 / Zen Loop
 
+## Background runtime recovery (7 October 2026)
+
+Special and downstream workers resolve an existing Codex installation rather
+than depending on one historical desktop-app path. A private website-scoped
+`recoveryModel` selects the account-tested CLI model independently of desktop
+defaults. No installation, authentication, global preference, scheduler or
+permission changes are made. Regression tests cover the missing-app fallback,
+model override and missing-runtime failure. Runtime health never substitutes
+for protected release checks and verified public receipts.
+
+The release lockfile upgrades Sharp 0.35.4 to 0.35.5 (bundled librsvg 2.63.2)
+for [GHSA-wq5f-xc86-pv6w](https://github.com/advisories/GHSA-wq5f-xc86-pv6w).
+Production audit and supply-chain-age checks remain enabled; the dependency
+update is validated by the complete static build and rendering test suite.
+
 ## Publication recovery (5 October 2026)
 
 Retained October 3–5 editions and the October 3 diary are released without
