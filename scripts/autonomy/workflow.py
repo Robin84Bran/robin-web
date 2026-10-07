@@ -15,6 +15,7 @@ from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
 
 from autonomy_policy import due_jobs, load
+from worker_runtime import worker_command
 
 HKT = ZoneInfo("Asia/Hong_Kong")
 DEFAULT = Path("/Users/headlessnick/RobinOS2/00_identity_output/website")
@@ -132,7 +133,7 @@ class Workflow:
         try:
             with (folder / "execution.jsonl").open("a") as log:
                 os.chmod(log.name, 0o600)
-                result = subprocess.run(["/Users/headlessnick/Desktop/ChatGPT.app/Contents/Resources/codex", "exec",
+                result = subprocess.run([*worker_command(self.website),
                     "--ephemeral", "--json", "--color", "never", "-C", str(self.website), "-"],
                     input=prompt, text=True, stdout=log, stderr=subprocess.STDOUT, timeout=14400, check=False)
                 reason = f"EXIT_{result.returncode}_WITHOUT_RECEIPT"
