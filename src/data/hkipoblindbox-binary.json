@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T09:08:12.006074+00:00",
+  "generated_at": "2026-10-07T02:19:00.412506+00:00",
   "version": "binary-exec-v1.0",
   "forecasts": [
     {
@@ -97,6 +97,22 @@
       "prospectus_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0928/2026092800035.pdf",
       "participation": "SUBSCRIBE",
       "commitment": "27799398786e865fd3c381ce649aec04d3edac7ceabde64ea62d9d025c852871"
+    },
+    {
+      "stock_code": "02636",
+      "issuer_name": "Shenzhen Transsion Holdings Co., Ltd.",
+      "listing_date": "2026-10-15",
+      "prediction": "YES",
+      "version": "binary-exec-v1.0",
+      "frozen_at": "2026-10-07T02:17:57.839681+00:00",
+      "target_at_offer_high": 42.68,
+      "target_at_offer_low": 38.84,
+      "offer_high": 38.8,
+      "offer_low": 35.3,
+      "target_formula": "ceil_to_listing_day_tick(1.10 * FINAL_ISSUE_PRICE)",
+      "prospectus_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1007/2026100700007.pdf",
+      "participation": "SUBSCRIBE",
+      "commitment": "7b6079e0053259bdfed0405f6a86a60c5f7d1b9ab4d50020cfe96916abd9b49a"
     }
   ],
   "scope": "Independent five-session layer; original three-session experiment preserved",
@@ -119,11 +135,11 @@
     "unseen": false
   },
   "forward": {
-    "forecasts": 6,
+    "forecasts": 7,
     "reviewed_paths": 5,
     "yes_d5": 3,
     "no_d5": 2,
-    "pending_d5": 1,
+    "pending_d5": 2,
     "source_note": "Single-vendor completed daily bars; official final issue prices and independent opening-price checks. Market counterfactuals, not personal fills."
   }
 }

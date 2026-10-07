@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-05T09:44:41.602589+00:00",
+  "generated_at": "2026-10-07T02:19:00.375771+00:00",
   "money_mode": "SIMULATED",
   "forecasts": [
     {
@@ -132,6 +132,24 @@
         0.36436267199148953,
         0.2130820891664985,
         0.10467411559843019
+      ],
+      "target_return": 0.1,
+      "score": null
+    },
+    {
+      "case_id": "HKEX-PENDING-02636-105a1424",
+      "stock_code": "02636",
+      "issuer_name": "Shenzhen Transsion Holdings Co., Ltd.",
+      "listing_date": "2026-10-15",
+      "mode": "FORWARD",
+      "frozen_at": "2026-10-07T02:17:57.681399+00:00",
+      "model_version": "six_lens_prior_v0.1",
+      "commitment": "3cfcf8f8eae869e4bb8f26e804800003c088fac23086330a08df58a97fad3d1d",
+      "probabilities": [
+        0.25,
+        0.35,
+        0.25,
+        0.15
       ],
       "target_return": 0.1,
       "score": null
