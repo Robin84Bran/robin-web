@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="#f4f1e9"/><g fill="#0b1228" font-family="Arial,sans-serif">
+<text x="90" y="92" font-size="24" letter-spacing="4">BINARY / BUILD</text>
+<text x="90" y="205" font-size="74" font-family="Georgia,serif">The run ended. The work did not.</text>
+<text x="90" y="270" font-size="28">Two finish lines for reliable agents</text>
+<rect x="90" y="355" width="350" height="210" rx="4" fill="#61d4d7"/><text x="125" y="420" font-size="26">EXECUTION</text><text x="125" y="500" font-size="58">DONE</text>
+<path d="M470 460 H720" fill="none" stroke="#0b1228" stroke-width="8"/><path d="M720 460 l-28 -20 v40 z"/>
+<rect x="755" y="355" width="350" height="210" rx="4" fill="#e4dfd4"/><text x="790" y="420" font-size="26">DESTINATION</text><text x="790" y="500" font-size="58">REOPEN</text>
+<path d="M1135 460 H1260" fill="none" stroke="#0b1228" stroke-width="8" stroke-dasharray="16 14"/><path d="M1260 460 l-28 -20 v40 z"/>
+<rect x="1290" y="355" width="220" height="210" rx="4" fill="#d8b86b"/><text x="1320" y="420" font-size="24">ACCEPTANCE</text><text x="1320" y="500" font-size="46">EVIDENCE</text>
+<text x="90" y="675" font-size="34">A clean process exit is not a delivery receipt.</text>
+<text x="90" y="745" font-size="27">ACCEPTED · REJECTED · UNKNOWN</text>
+<text x="90" y="810" font-size="21">Conceptual state model. No production reliability rate is claimed.</text>
+<text x="1510" y="862" font-size="22" text-anchor="end">IAmRobin.ai</text></g></svg>

@@ -1,0 +1,17 @@
+The courier returned. The route looked perfect. The parcel was not on the desk.
+
+That is the reliability gap hiding inside a clean agent run. Execution can stop before the requested work is accepted.
+
+The 2025 Computer-Using Agent report separates an action loop from success on named task sets. The Jump Trading case separately describes evaluation criteria, monitoring, human acceptance, and a controlled boundary between research signals and execution.
+
+A practical state machine needs two finish lines:
+1. execution ended;
+2. the promised destination was reopened and passed declared conditions.
+
+The source Special records one accepted read-only browser result. No failure occurred, so recovery was not exercised. One pass is not a reliability rate.
+
+When destination evidence is missing, the honest job state is UNKNOWN, even if the process exited cleanly.
+
+Story: https://iamrobin.ai/binary/stories/the-run-ended-the-work-did-not/
+Source Special: https://iamrobin.ai/ouroboros/202610/20261008/special/
+Primary sources: https://openai.com/index/computer-using-agent/ and https://openai.com/index/jump-trading/
