@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-09",
+  "updated": "2026-10-09",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20261009/hero.webp",
+  "actionHero": "/action-item/20261009/hero.webp",
+  "ogImage": "/daily-briefing/20261009/og.webp",
+  "briefingPath": "/ouroboros/202610/20261009/",
+  "actionItemPath": "/ouroboros/202610/20261009/action_item/",
+  "actions": [
+    {"signal": 1, "priority": "NOW", "status": "READY", "sources": [{"label": "google-cloud", "url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026"}]},
+    {"signal": 2, "priority": "WATCH", "status": "WATCHING", "sources": [{"label": "minerva", "url": "https://www.globenewswire.com/news-release/2026/10/6/3375277/0/en/minerva-humanoids-emerges-from-stealth-with-10m-pre-seed-round-led-by-general-catalyst-to-build-humanoid-robots-for-the-world-s-most-dangerous-jobs.html"}]},
+    {"signal": 3, "priority": "WATCH", "status": "WATCHING", "sources": [{"label": "btc", "url": "https://farside.co.uk/btc/"}, {"label": "eth", "url": "https://farside.co.uk/eth/"}]},
+    {"signal": 4, "priority": "NEXT", "status": "READY", "sources": [{"label": "securitize", "url": "https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html"}]},
+    {"signal": 5, "priority": "NOW", "status": "READY", "sources": [{"label": "google-cloud", "url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026"}, {"label": "openai-agents", "url": "https://developers.openai.com/api/docs/guides/agents-api/overview"}, {"label": "nist", "url": "https://www.nist.gov/publications/zero-trust-architecture"}]},
+    {"signal": 6, "priority": "NEXT", "status": "READY", "sources": [{"label": "reuters-firmus", "url": "https://www.investing.com/news/stock-market-news/australian-nvidiabacked-ai-data-centre-operator-firmus-shelves-ipo-4939919"}]},
+    {"signal": 7, "priority": "WATCH", "status": "WATCHING", "sources": [{"label": "reuters-manus", "url": "https://www.streetinsider.com/Reuters/Manus%2Braises%2Bmore%2Bthan%2B%24500%2Bmillion%2Bafter%2BMeta%2Bexit/27162541.html"}]},
+    {"signal": 8, "priority": "WATCH", "status": "WATCHING", "sources": [{"label": "broadcom", "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-redefines-ai-infrastructure-industry-leading-networking"}]}
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, October 9, 2026",
+      "description": "Eight bounded actions turn persistence, Physical AI, capital and infrastructure signals into evidence gates.",
+      "centralJudgment": "Autonomy and investment claims advance only after their named recovery or economics evidence arrives.",
+      "fieldLine": "Eight signals. Preserve authority, evidence and denominators.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "Frontier Models and Agents", "title": "Design the 48-hour revocation trial", "why": "Persistent execution becomes useful only when recovery and accepted outcomes are measured.", "steps": ["Freeze one read-only task, identities and permissions.", "Inject one revoked grant and one connector outage."], "done": "Five metrics and receipts exist; no performance claim precedes the run."},
+        {"signal": 2, "domain": "Physical AI and Robotics", "title": "Watch Roger's paid pilot", "why": "Funding and a demonstration do not establish hazardous-work safety or reliability.", "steps": ["Record customer-confirmed paid operating hours and interventions.", "Add takeover latency, completion rate and safety events."], "done": "All five fields have dated customer evidence."},
+        {"signal": 3, "domain": "Crypto Capital Flows and Web3 Health", "title": "Wait for three complete inflow sessions", "why": "One synchronized outflow day is evidence, not a durable capital regime.", "steps": ["Freeze completed BTC and ETH issuer tables.", "Count the streak only after every key cell reports."], "done": "Three completed combined-inflow sessions exist; no trade instruction is created."},
+        {"signal": 4, "domain": "Stablecoins, FinTech and Token Rails", "title": "Audit one Securitize stock", "why": "Rights-bearing tokens still need executable liquidity and conversion evidence.", "steps": ["Record eligibility, entitlement and conversion path.", "Measure executable spread, depth, settlement time and restrictions."], "done": "Seven read-only fields have dated evidence before any capital action."},
+        {"signal": 5, "domain": "iamrobin.ai Content and Visibility", "title": "Publish the permission-loss protocol", "why": "Readers need a falsifiable distinction between uptime and autonomy.", "steps": ["Publish four reviewed editions with six public sources.", "Archive the derivative and verify the public destination."], "done": "Four routes, schema, source parity, public bytes and delivery receipts pass.", "deepDiveTitle": "Publish the permission-loss protocol"},
+        {"signal": 6, "domain": "AI Infrastructure, Career and Capital", "title": "Build the Firmus kill-sheet", "why": "Unbuilt capacity and forecast earnings cannot be priced like operating assets.", "steps": ["Record live megawatts and customer-contract tenor.", "Add debt per live megawatt and sponsor sell-down terms."], "done": "Four gates have audited evidence; otherwise no investment conclusion."},
+        {"signal": 7, "domain": "Late-Stage Private Markets", "title": "Keep Manus at watch", "why": "A large financing does not establish durable agent economics.", "steps": ["Require paid-user retention and post-inference gross margin.", "Require intervention-free completion of paid tasks."], "done": "All three diligence fields are disclosed before INVESTIGATE."},
+        {"signal": 8, "domain": "Public Equities and AI Themes", "title": "Check Broadcom after OCP", "why": "A product demonstration is not customer qualification or booked revenue.", "steps": ["Reopen customer qualification and production timing after OCP.", "Record rack-level power from a source."], "done": "At least two of three fields are confirmed; until then AVGO remains WATCH."}
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年10月9日",
+      "description": "八项有边界的行动，把持久代理、Physical AI、资本与基础设施信号变成证据门槛。",
+      "centralJudgment": "只有明确的恢复或经济性证据到位，自治与投资判断才向前推进。",
+      "fieldLine": "八个信号。保留权限、证据与分母。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "前沿模型与智能体", "title": "设计48小时断权实验", "why": "只有恢复与合格成果被测量，持续运行才有实用价值。", "steps": ["冻结只读任务、身份与权限。", "注入一次撤权与一次连接器中断。"], "done": "五项指标和收据齐备；运行前不作性能结论。"},
+        {"signal": 2, "domain": "Physical AI与机器人", "title": "观察Roger付费试点", "why": "融资和演示不能证明危险作业的安全与可靠性。", "steps": ["记录客户确认的付费小时与介入次数。", "补充接管延迟、完成率和安全事件。"], "done": "五项字段都有带日期的客户证据。"},
+        {"signal": 3, "domain": "加密资本流与Web3", "title": "等待连续三个完整流入日", "why": "一天同步流出不是持久资本制度。", "steps": ["冻结完整BTC与ETH发行人表。", "关键单元格完整后才计算连续日。"], "done": "连续三个完整交易日合计净流入；不生成交易指令。"},
+        {"signal": 4, "domain": "稳定币、金融科技与代币轨道", "title": "审计一枚Securitize股票代币", "why": "保留权利的代币仍需可执行流动性与转换证据。", "steps": ["记录资格、法律权益和转换路径。", "测量价差、深度、结算时间与限制。"], "done": "七项只读字段都有证据，且没有资本动作。"},
+        {"signal": 5, "domain": "iamrobin.ai内容与可见度", "title": "发布断权实验协议", "why": "读者需要可证伪地区分在线时长与自治。", "steps": ["以六个公开来源发布四语审阅版。", "存档衍生稿并核验公开目的地。"], "done": "四条路线、schema、来源一致性、公开字节和送达收据通过。", "deepDiveTitle": "发布断权实验协议"},
+        {"signal": 6, "domain": "AI基础设施、职业与资本", "title": "制作Firmus kill-sheet", "why": "未建产能与预测收益不能按运营资产定价。", "steps": ["记录上线MW与客户合约期限。", "补充每上线MW债务与发起人出售条款。"], "done": "四道门都有审计证据；否则不形成投资结论。"},
+        {"signal": 7, "domain": "后期私募市场", "title": "Manus保持WATCH", "why": "大额融资不证明持久的代理经济性。", "steps": ["要求付费留存与扣除推理成本后的毛利。", "要求付费任务无人工介入完成率。"], "done": "三项尽调字段齐备后才进入INVESTIGATE。"},
+        {"signal": 8, "domain": "公开股票与AI主题", "title": "OCP后检查Broadcom", "why": "产品展示不是客户认证或已入账收入。", "steps": ["OCP后重查客户认证与量产时间。", "从来源记录每机架功耗。"], "done": "三项至少两项确认；此前AVGO保持WATCH。"}
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年10月9日",
+      "description": "八項有邊界的行動，把持久代理、Physical AI、資本與基礎設施訊號變成證據門檻。",
+      "centralJudgment": "只有明確的恢復或經濟性證據到位，自治與投資判斷才向前推進。",
+      "fieldLine": "八個訊號。保留權限、證據與分母。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "前沿模型與智能體", "title": "設計48小時撤權實驗", "why": "只有恢復與合格成果被測量，持續運行才有實用價值。", "steps": ["凍結唯讀任務、身分與權限。", "注入一次撤權與一次連接器中斷。"], "done": "五項指標和收據齊備；運行前不作性能結論。"},
+        {"signal": 2, "domain": "Physical AI與機器人", "title": "觀察Roger付費試點", "why": "融資和演示不能證明危險作業的安全與可靠性。", "steps": ["記錄客戶確認的付費時數與介入次數。", "補充接管延遲、完成率和安全事件。"], "done": "五項欄位都有帶日期的客戶證據。"},
+        {"signal": 3, "domain": "加密資本流與Web3", "title": "等待連續三個完整流入日", "why": "一天同步流出不是持久資本制度。", "steps": ["凍結完整BTC與ETH發行人表。", "關鍵欄位完整後才計算連續日。"], "done": "連續三個完整交易日合計淨流入；不生成交易指令。"},
+        {"signal": 4, "domain": "穩定幣、金融科技與代幣軌道", "title": "審計一枚Securitize股票代幣", "why": "保留權利的代幣仍需可執行流動性與轉換證據。", "steps": ["記錄資格、法律權益和轉換路徑。", "測量價差、深度、結算時間與限制。"], "done": "七項唯讀欄位都有證據，且沒有資本動作。"},
+        {"signal": 5, "domain": "iamrobin.ai內容與可見度", "title": "發布撤權實驗協議", "why": "讀者需要可證偽地區分在線時長與自治。", "steps": ["以六個公開來源發布四語審閱版。", "存檔衍生稿並核驗公開目的地。"], "done": "四條路線、schema、來源一致性、公開bytes和送達收據通過。", "deepDiveTitle": "發布撤權實驗協議"},
+        {"signal": 6, "domain": "AI基礎設施、職業與資本", "title": "製作Firmus kill-sheet", "why": "未建產能與預測收益不能按營運資產定價。", "steps": ["記錄上線MW與客戶合約期限。", "補充每上線MW債務與發起人出售條款。"], "done": "四道門都有審計證據；否則不形成投資結論。"},
+        {"signal": 7, "domain": "後期私募市場", "title": "Manus維持WATCH", "why": "大額融資不證明持久的代理經濟性。", "steps": ["要求付費留存與扣除推理成本後毛利。", "要求付費任務無人工介入完成率。"], "done": "三項盡調欄位齊備後才進入INVESTIGATE。"},
+        {"signal": 8, "domain": "公開股票與AI主題", "title": "OCP後檢查Broadcom", "why": "產品展示不是客戶認證或已入帳收入。", "steps": ["OCP後重查客戶認證與量產時間。", "從來源記錄每機架功耗。"], "done": "三項至少兩項確認；此前AVGO維持WATCH。"}
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年10月9日",
+      "description": "永続agent、Physical AI、資本、infraを証拠条件へ変える八つの限定行動。",
+      "centralJudgment": "指定した復旧または経済性の証拠が届いた時だけ判断を進める。",
+      "fieldLine": "八つのsignal。authority、evidence、denominatorを保つ。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "先端モデルとエージェント", "title": "48時間の権限取消し試験を設計", "why": "復旧と受入成果を測って初めて永続実行に価値が出る。", "steps": ["読取専用task、identity、permissionを固定する。", "権限取消しとconnector停止を一度ずつ注入する。"], "done": "五指標とreceiptが揃い、実行前に性能を主張しない。"},
+        {"signal": 2, "domain": "Physical AIとロボット", "title": "Rogerの有料pilotを観測", "why": "資金とdemoは危険作業の安全性や信頼性を示さない。", "steps": ["顧客確認済み有料時間と介入を記録する。", "引継ぎ遅延、完了率、安全eventを加える。"], "done": "五項目に日付付き顧客証拠がある。"},
+        {"signal": 3, "domain": "暗号資産フローとWeb3", "title": "完全な三連続流入日を待つ", "why": "一日の同時流出は永続regimeではない。", "steps": ["完全なBTCとETH issuer表を固定する。", "主要cellが揃ってから連続日を数える。"], "done": "三市場日連続で合計純流入し、取引指示を作らない。"},
+        {"signal": 4, "domain": "Stablecoin、FinTech、Token Rail", "title": "Securitize tokenを一つ監査", "why": "権利を持つtokenにも実行流動性と転換証拠が要る。", "steps": ["資格、法的権利、転換経路を記録する。", "spread、depth、settlement、制限を測る。"], "done": "七つのread-only項目に証拠があり、資本行動はない。"},
+        {"signal": 5, "domain": "iamrobin.aiの内容と可視性", "title": "権限喪失protocolを公開", "why": "uptimeとautonomyを反証可能に分ける必要がある。", "steps": ["六つの公開sourceで四言語版を公開する。", "派生稿を保存し公開destinationを検証する。"], "done": "四route、schema、source parity、public bytes、delivery receiptが通る。", "deepDiveTitle": "権限喪失protocolを公開"},
+        {"signal": 6, "domain": "AI基盤、キャリア、資本", "title": "Firmus kill-sheetを作成", "why": "未建設容量と予測利益は稼働資産ではない。", "steps": ["live MWと顧客契約期間を記録する。", "live MW当たりdebtとsponsor売却条件を加える。"], "done": "四条件に監査証拠がなければ投資結論を出さない。"},
+        {"signal": 7, "domain": "後期未公開市場", "title": "ManusをWATCHに維持", "why": "大型調達は持続的agent economicsを示さない。", "steps": ["有料retentionとinference後gross marginを求める。", "無介入の有料task完了率を求める。"], "done": "三項目開示後だけINVESTIGATEへ進む。"},
+        {"signal": 8, "domain": "公開株式とAI", "title": "OCP後にBroadcomを確認", "why": "demoは顧客qualificationやbooked revenueではない。", "steps": ["OCP後に顧客認証と量産時期を再確認する。", "sourceからrack-level powerを記録する。"], "done": "三項目中二つを確認するまでAVGOはWATCH。"}
+      ]
+    }
+  }
+}
