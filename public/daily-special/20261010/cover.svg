@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">The robot sold. Who paid twice?</title>
+  <desc id="desc">A quiet editorial diagram connecting revenue, operating hours, customer output, repeat orders and service economics.</desc>
+  <rect width="1600" height="900" fill="#f4efe5"/>
+  <path d="M0 146H1600M0 754H1600" stroke="#cbbfa9" stroke-width="2"/>
+  <path d="M186 0V900M1414 0V900" stroke="#ded5c5" stroke-width="1"/>
+  <g fill="none" stroke="#5d695f" stroke-width="3">
+    <circle cx="355" cy="450" r="116"/>
+    <circle cx="800" cy="450" r="116"/>
+    <circle cx="1245" cy="450" r="116"/>
+    <path d="M471 450H684M916 450H1129" stroke-dasharray="10 13"/>
+  </g>
+  <g fill="#a75438">
+    <circle cx="355" cy="450" r="13"/>
+    <circle cx="800" cy="450" r="13"/>
+    <circle cx="1245" cy="450" r="13"/>
+  </g>
+  <g fill="#23312c" font-family="Georgia, 'Times New Roman', serif">
+    <text x="186" y="100" font-size="25" letter-spacing="7">DAILY SPECIAL · SIGNAL 2</text>
+    <text x="800" y="238" font-size="73" text-anchor="middle">The robot sold.</text>
+    <text x="800" y="319" font-size="73" text-anchor="middle" font-style="italic">Who paid twice?</text>
+  </g>
+  <g fill="#23312c" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="355" y="431" font-size="23" letter-spacing="3">REVENUE</text>
+    <text x="355" y="480" font-size="18" fill="#687169">WHO PAID FIRST?</text>
+    <text x="800" y="431" font-size="23" letter-spacing="3">WORK</text>
+    <text x="800" y="480" font-size="18" fill="#687169">WHAT SURVIVED THE SHIFT?</text>
+    <text x="1245" y="431" font-size="23" letter-spacing="3">RETENTION</text>
+    <text x="1245" y="480" font-size="18" fill="#687169">WHO PAID AGAIN?</text>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#4f5b55">
+    <text x="186" y="817" letter-spacing="2">CUSTOMER MIX · PRODUCTIVE HOURS · SERVICE-ADJUSTED ECONOMICS</text>
+    <text x="1414" y="817" text-anchor="end">iamrobin.ai</text>
+  </g>
+</svg>
