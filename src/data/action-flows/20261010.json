@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "updated": "2026-10-10",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20261010/hero.webp",
+  "actionHero": "/action-item/20261010/hero.webp",
+  "ogImage": "/daily-briefing/20261010/og.webp",
+  "briefingPath": "/ouroboros/202610/20261010/",
+  "actionItemPath": "/ouroboros/202610/20261010/action_item/",
+  "actions": [
+    {"signal":1,"priority":"NOW","status":"READY","sources":[{"label":"openai","url":"https://developers.openai.com/api/docs/models/gpt-6.1-sol"}]},
+    {"signal":2,"priority":"WATCH","status":"WATCHING","sources":[{"label":"ndrc","url":"https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261009_1408037.html"}]},
+    {"signal":3,"priority":"WATCH","status":"WATCHING","sources":[{"label":"btc","url":"https://farside.co.uk/btc/"},{"label":"eth","url":"https://farside.co.uk/ethereum-etf-flow-all-data/"}]},
+    {"signal":4,"priority":"NEXT","status":"READY","sources":[{"label":"circle","url":"https://investor.circle.com/news/news-details/2026/Tereina-an-SAP-Backed-Company-and-Circle-Bring-USDC-and-EURC-into-Enterprise-Workflows-Starting-with-the-SAP-Ecosystem-Behind-84-of-Global-Commerce/default.aspx"}]},
+    {"signal":5,"priority":"NOW","status":"READY","sources":[{"label":"biostudybench","url":"https://arxiv.org/abs/2610.07614"},{"label":"biohub","url":"https://biohub.org/news/virtual-biology-initiative/"}]},
+    {"signal":6,"priority":"NEXT","status":"READY","sources":[{"label":"reuters-spacex","url":"https://www.marketscreener.com/news/spacex-seeks-40-billion-to-buy-nvidia-chips-ft-reports-ce785dd9df8cf525"}]},
+    {"signal":7,"priority":"WATCH","status":"WATCHING","sources":[{"label":"sec-iambic","url":"https://www.sec.gov/Archives/edgar/data/1997038/000119312526417416/iam-20261008.htm"}]},
+    {"signal":8,"priority":"WATCH","status":"WATCHING","sources":[{"label":"grain","url":"https://www.prnewswire.com/news-releases/grain-management-announces-definitive-agreement-to-sell-nationwide-800-mhz-spectrum-portfolio-to-spacex-302902974.html"}]}
+  ],
+  "editions": {
+    "en": {
+      "title":"Daily Action Flow, October 10, 2026","description":"Eight bounded actions turn latency, robotics, capital, proof and infrastructure signals into evidence gates.","centralJudgment":"Advance only when the named accepted-outcome, operating or proof evidence arrives.","fieldLine":"Eight signals. Preserve evidence, authority and the denominator.","inLanguage":"en","languageSlug":"","translationReview":"PASS",
+      "actions":[
+        {"signal":1,"domain":"Frontier Models and Agents","title":"Run the matched latency test","why":"Six-times pricing needs accepted-outcome economics.","steps":["Freeze ten read-only tool-heavy tasks.","Record time, full cost, retries and human waiting."],"done":"Ultrafast routes only where total accepted-outcome cost falls."},
+        {"signal":2,"domain":"Physical AI and Robotics","title":"Add the revenue-quality gate","why":"Policy support does not establish productive deployment.","steps":["Record private paying customers and repeat orders.","Add service-adjusted margin, government share and operating hours."],"done":"All five fields have customer evidence; otherwise WATCH."},
+        {"signal":3,"domain":"Crypto Capital Flows and Web3 Health","title":"Wait for three complete inflow sessions","why":"Three-session outflows do not justify new collateral risk.","steps":["Freeze completed BTC and ETH tables.","Count only sessions with all material cells."],"done":"Three consecutive combined-inflow sessions exist; no trade instruction."},
+        {"signal":4,"domain":"Stablecoins, FinTech and Token Rails","title":"Compare one supplier invoice","why":"ERP reach is not adoption or realized savings.","steps":["Redact one real SunTV invoice.","Compare bank and USDC routes across fees, FX, timing, refunds, accounting and compliance."],"done":"An end-to-end advantage is evidenced before any migration."},
+        {"signal":5,"domain":"iamrobin.ai Content and Visibility","title":"Publish the proof-loop framework","why":"Abundant hypotheses need falsification and retained failure.","steps":["Publish four reviewed editions and sources.","Archive the derivative and verify public routes."],"done":"Four routes, schema, parity, public bytes and delivery receipts pass.","deepDiveTitle":"Publish the proof-loop framework"},
+        {"signal":6,"domain":"AI Infrastructure, Career and Capital","title":"Build the obsolete-chip template","why":"Supplier savings can return as financing and residual-value risk.","steps":["Record borrower, recourse, LTV and take-or-pay.","Add refresh, residual value and deliverable power."],"done":"The term sheet has seven evidence fields before return analysis."},
+        {"signal":7,"domain":"Late-Stage Private Markets","title":"Keep Iambic at watch","why":"An AI platform does not remove clinical risk.","steps":["Require human safety and pharmacokinetics.","Require runway through the readout and material partnership economics."],"done":"All three thresholds pass before INVESTIGATE; no IPO order."},
+        {"signal":8,"domain":"Public Equities and AI Themes","title":"Wait for a binding carrier signal","why":"A one-day fall is not an investment conclusion.","steps":["Reopen ASTS's next carrier agreement.","Require minimum purchases or explicit spectrum access."],"done":"A binding signal exists; until then WATCH and do not buy the dip."}
+      ]
+    },
+    "zh-Hans": {
+      "title":"每日行动流，2026年10月10日","description":"八项有边界的行动，把延迟、机器人、资本、证明与基础设施信号变成证据门。","centralJudgment":"只有明确的成果、运营或证明证据到位，判断才前进。","fieldLine":"八个信号。保留证据、权限与分母。","inLanguage":"zh-Hans","languageSlug":"zh-hans","translationReview":"PASS",
+      "actions":[
+        {"signal":1,"domain":"前沿模型与智能体","title":"运行配对延迟测试","why":"六倍定价需要合格成果经济性。","steps":["冻结十个只读多工具任务。","记录时间、全成本、重试和人工等待。"],"done":"只有合格成果总成本下降才路由Ultrafast。"},
+        {"signal":2,"domain":"Physical AI与机器人","title":"加入收入质量门","why":"政策支持不等于生产性部署。","steps":["记录私人付费客户和复购。","补充服务后毛利、政府占比和运行小时。"],"done":"五项都有客户证据，否则WATCH。"},
+        {"signal":3,"domain":"加密资本流与Web3","title":"等待三个完整流入日","why":"三日流出不支持新增抵押风险。","steps":["冻结完整BTC与ETH表。","只有关键单元格齐全才计数。"],"done":"连续三个合计流入日出现；不生成交易指令。"},
+        {"signal":4,"domain":"稳定币、金融科技与代币轨道","title":"比较一张供应商发票","why":"ERP触达不是采用率或实际节省。","steps":["脱敏一张真实SunTV发票。","比较银行与USDC路径的费用、汇差、时效、退款、会计和合规。"],"done":"完整优势有证据后才迁移。"},
+        {"signal":5,"domain":"iamrobin.ai内容与可见度","title":"发布证明循环框架","why":"廉价假设需要证伪和失败记忆。","steps":["发布四语审阅版及来源。","存档衍生稿并核验公开路线。"],"done":"四条路线、schema、一致性、公开字节和送达收据通过。","deepDiveTitle":"发布证明循环框架"},
+        {"signal":6,"domain":"AI基础设施、职业与资本","title":"制作过时芯片模板","why":"供应商节省可能变成融资与残值风险。","steps":["记录借款人、追索、LTV和take-or-pay。","补充更新、残值与可交付电力。"],"done":"七项证据字段齐全后才分析回报。"},
+        {"signal":7,"domain":"后期私募市场","title":"Iambic维持WATCH","why":"AI平台不能消除临床风险。","steps":["要求人体安全与药代。","要求覆盖读数的现金和实质合作经济。"],"done":"三项同时通过才INVESTIGATE；不提交IPO订单。"},
+        {"signal":8,"domain":"公开股票与AI主题","title":"等待有约束力的运营商信号","why":"单日下跌不是投资结论。","steps":["重查ASTS下一份运营商合同。","要求最低采购或明确频谱权。"],"done":"信号出现前维持WATCH且不抄底。"}
+      ]
+    },
+    "zh-Hant": {
+      "title":"每日行動流，2026年10月10日","description":"八項有邊界的行動，把延遲、機器人、資本、證明與基礎設施訊號變成證據門。","centralJudgment":"只有明確的成果、營運或證明證據到位，判斷才前進。","fieldLine":"八個訊號。保留證據、權限與分母。","inLanguage":"zh-Hant","languageSlug":"zh-hant","translationReview":"PASS",
+      "actions":[
+        {"signal":1,"domain":"前沿模型與智能體","title":"運行配對延遲測試","why":"六倍定價需要合格成果經濟性。","steps":["凍結十個唯讀多工具任務。","記錄時間、全成本、重試和人工等待。"],"done":"只有合格成果總成本下降才路由Ultrafast。"},
+        {"signal":2,"domain":"Physical AI與機器人","title":"加入收入質量門","why":"政策支持不等於生產性部署。","steps":["記錄私人付費客戶和復購。","補充服務後毛利、政府佔比和運行時數。"],"done":"五項都有客戶證據，否則WATCH。"},
+        {"signal":3,"domain":"加密資本流與Web3","title":"等待三個完整流入日","why":"三日流出不支持新增抵押風險。","steps":["凍結完整BTC與ETH表。","只有關鍵欄位齊全才計數。"],"done":"連續三個合計流入日出現；不生成交易指令。"},
+        {"signal":4,"domain":"穩定幣、金融科技與代幣軌道","title":"比較一張供應商發票","why":"ERP觸達不是採用率或實際節省。","steps":["脫敏一張真實SunTV發票。","比較銀行與USDC路徑的費用、匯差、時效、退款、會計和合規。"],"done":"完整優勢有證據後才遷移。"},
+        {"signal":5,"domain":"iamrobin.ai內容與可見度","title":"發布證明循環框架","why":"廉價假設需要證偽和失敗記憶。","steps":["發布四語審閱版及來源。","存檔衍生稿並核驗公開路線。"],"done":"四條路線、schema、一致性、公開bytes和送達收據通過。","deepDiveTitle":"發布證明循環框架"},
+        {"signal":6,"domain":"AI基礎設施、職業與資本","title":"製作過時晶片模板","why":"供應商節省可能變成融資與殘值風險。","steps":["記錄借款人、追索、LTV和take-or-pay。","補充更新、殘值與可交付電力。"],"done":"七項證據欄位齊全後才分析回報。"},
+        {"signal":7,"domain":"後期私募市場","title":"Iambic維持WATCH","why":"AI平臺不能消除臨床風險。","steps":["要求人體安全與藥代。","要求覆蓋讀數的現金和實質合作經濟。"],"done":"三項同時通過才INVESTIGATE；不提交IPO訂單。"},
+        {"signal":8,"domain":"公開股票與AI主題","title":"等待有約束力的營運商訊號","why":"單日下跌不是投資結論。","steps":["重查ASTS下一份營運商合約。","要求最低採購或明確頻譜權。"],"done":"訊號出現前維持WATCH且不抄底。"}
+      ]
+    },
+    "ja": {
+      "title":"デイリー・アクション・フロー、2026年10月10日","description":"latency、robotics、capital、proof、infraを証拠条件へ変える八つの限定行動。","centralJudgment":"指定したaccepted outcome、operating、proofの証拠が届いた時だけ判断を進める。","fieldLine":"八つのsignal。evidence、authority、denominatorを保つ。","inLanguage":"ja","languageSlug":"ja","translationReview":"PASS",
+      "actions":[
+        {"signal":1,"domain":"先端モデルとエージェント","title":"matched latency testを実行","why":"六倍価格にはaccepted-outcome economicsが要る。","steps":["read-onlyのtool-heavy taskを十件固定する。","時間、総費用、retry、人の待ち時間を記録する。"],"done":"総費用が下がる場合だけUltrafastへrouteする。"},
+        {"signal":2,"domain":"Physical AIとロボット","title":"revenue-quality gateを追加","why":"政策支援はproductive deploymentを証明しない。","steps":["民間有料顧客とrepeat orderを記録する。","service後margin、政府比率、稼働時間を加える。"],"done":"五項目に顧客証拠がなければWATCH。"},
+        {"signal":3,"domain":"暗号資産フローとWeb3","title":"完全な三連続流入日を待つ","why":"三日流出は新たな担保riskを支持しない。","steps":["完全なBTCとETH表を固定する。","material cellが揃ったsessionだけ数える。"],"done":"三連続合計流入日があり、取引指示は作らない。"},
+        {"signal":4,"domain":"Stablecoin、FinTech、Token Rail","title":"supplier invoiceを一件比較","why":"ERP reachはadoptionやrealized savingではない。","steps":["実際のSunTV invoiceをanonymizeする。","bankとUSDCをfee、FX、時間、refund、accounting、complianceで比較する。"],"done":"end-to-end advantageの証拠後だけ移行する。"},
+        {"signal":5,"domain":"iamrobin.aiの内容と可視性","title":"proof-loop frameworkを公開","why":"安いhypothesisにはfalsificationとfailure memoryが要る。","steps":["四言語版とsourceを公開する。","派生稿を保存しpublic routeを検証する。"],"done":"四route、schema、parity、public bytes、delivery receiptが通る。","deepDiveTitle":"proof-loop frameworkを公開"},
+        {"signal":6,"domain":"AI基盤、キャリア、資本","title":"obsolete-chip templateを作る","why":"supplier savingはfinancingとresidual riskへ戻り得る。","steps":["borrower、recourse、LTV、take-or-payを記録する。","refresh、residual value、deliverable powerを加える。"],"done":"七項目の証拠後にreturnを分析する。"},
+        {"signal":7,"domain":"後期未公開市場","title":"IambicをWATCHに維持","why":"AI platformはclinical riskを消さない。","steps":["human safetyとpharmacokineticsを求める。","readoutまでのrunwayとmaterial partnership economicsを求める。"],"done":"三条件同時通過後だけINVESTIGATEし、IPO orderは出さない。"},
+        {"signal":8,"domain":"公開株式とAI theme","title":"binding carrier signalを待つ","why":"一日の下落はinvestment conclusionではない。","steps":["ASTSの次のcarrier agreementを確認する。","minimum purchaseか明示的spectrum accessを求める。"],"done":"signal前はWATCHを維持しdipを買わない。"}
+      ]
+    }
+  }
+}
