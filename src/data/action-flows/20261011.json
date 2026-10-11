@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "updated": "2026-10-11",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20261011/hero.webp",
+  "actionHero": "/action-item/20261011/hero.webp",
+  "ogImage": "/daily-briefing/20261011/og.webp",
+  "briefingPath": "/ouroboros/202610/20261011/",
+  "actionItemPath": "/ouroboros/202610/20261011/action_item/",
+  "actions": [
+    {"signal":1,"priority":"NOW","status":"READY","sources":[{"label":"openai-dots","url":"https://developers.openai.com/codex/app/dots"}]},
+    {"signal":2,"priority":"WATCH","status":"WATCHING","sources":[{"label":"multiply-labs","url":"https://www.multiplylabs.com/"}]},
+    {"signal":3,"priority":"WATCH","status":"WATCHING","sources":[{"label":"btc","url":"https://farside.co.uk/btc/"},{"label":"eth","url":"https://farside.co.uk/ethereum-etf-flow-all-data/"}]},
+    {"signal":4,"priority":"WATCH","status":"WATCHING","sources":[{"label":"sec-chad","url":"https://www.sec.gov/edgar/search/#/q=CHAD"}]},
+    {"signal":5,"priority":"NOW","status":"READY","sources":[{"label":"tum-robogym","url":"https://www.mirmi.tum.de/en/mirmi/research/research-centers/robogym/"},{"label":"neura-tum","url":"https://neura-robotics.com/europes-largest-physical-ai-training-center-neura-tum/"},{"label":"xdof","url":"https://www.xdof.ai/blog"}]},
+    {"signal":6,"priority":"NEXT","status":"READY","sources":[{"label":"goldman-ai-credit","url":"https://www.goldmansachs.com/insights/articles/ai-investment-is-raising-credit-market-risks"}]},
+    {"signal":7,"priority":"WATCH","status":"WATCHING","sources":[{"label":"reflection","url":"https://reflection.ai/blog/beam"}]},
+    {"signal":8,"priority":"WATCH","status":"WATCHING","sources":[{"label":"msft","url":"https://www.microsoft.com/en-us/Investor"}]}
+  ],
+  "editions": {
+    "en": {"title":"Daily Action Flow, October 11, 2026","description":"Eight bounded actions turn agent permissions, physical AI, capital flows, financing and market signals into evidence gates.","centralJudgment":"Advance only when operating evidence clears the named gate.","fieldLine":"Eight signals. Preserve authority, provenance and the denominator.","inLanguage":"en","languageSlug":"","translationReview":"PASS","actions":[
+      {"signal":1,"domain":"Frontier Models and Agents","title":"Test the Dots permission boundary","why":"A new interface matters only when it completes accepted work without excess authority.","steps":["Freeze three read-only workflows with explicit permissions.","Record completion, blocked actions, rescues and destination evidence."],"done":"All three finish within authority with accepted receipts."},
+      {"signal":2,"domain":"Life Sciences Automation","title":"Wait for independent pharmacy evidence","why":"Issuer throughput claims do not establish operating economics or quality.","steps":["Require third-party error and intervention data.","Add full labour, consumables, uptime and validation cost."],"done":"A comparable external deployment supports quality and total-cost claims."},
+      {"signal":3,"domain":"Crypto Capital Flows","title":"Keep collateral unchanged","why":"Divergent one-day ETF flows do not justify a risk change.","steps":["Freeze three complete BTC and ETH sessions.","Reconcile direction with price, basis and liquidity."],"done":"Three complete sessions support a consistent regime; no trade instruction."},
+      {"signal":4,"domain":"Late-Stage Markets","title":"Hold CHAD at filing review","why":"Offering terms are visible while post-listing economics remain unproved.","steps":["Reopen final prospectus and pricing terms.","Track float, redemption, dilution and use of proceeds."],"done":"Final filed terms resolve all four fields before INVESTIGATE."},
+      {"signal":5,"domain":"iamrobin.ai Content and Visibility","title":"Publish the experience-factory framework","why":"Robot data compounds only when held-out transfer and economics improve.","steps":["Publish four reviewed editions and primary sources.","Verify schema, language parity, public routes and receipts."],"done":"Four public editions and evidence gates pass.","deepDiveTitle":"Publish the experience-factory framework"},
+      {"signal":6,"domain":"AI Infrastructure and Credit","title":"Build the debt absorption table","why":"AI issuance growth can move risk from equity stories into credit structure.","steps":["Record issuer, maturity, coupon, security and use of proceeds.","Separate comparable periods and refinancings from new capacity."],"done":"The table reconciles proceeds, debt service and deliverable capacity."},
+      {"signal":7,"domain":"Open Models and Funding","title":"Keep Reflection on watch","why":"Preliminary talks and release plans are weaker than signed terms and usable artifacts.","steps":["Require a signed funding disclosure or filed evidence.","Hash released weights, license and inference instructions."],"done":"Financing or release is independently verifiable; otherwise WATCH."},
+      {"signal":8,"domain":"Public Equities and AI Themes","title":"Separate price from operating proof","why":"Market value does not establish product adoption or cash conversion.","steps":["Reconcile the close and diluted share count.","Track Azure growth, capex and free-cash-flow conversion."],"done":"Operating evidence explains the repricing before any investment conclusion."}
+    ]},
+    "zh-Hans": {"title":"每日行动流，2026年10月11日","description":"八项有边界的行动，把权限、Physical AI、资本流、融资与市场信号变成证据门。","centralJudgment":"只有运营证据通过明确门槛，判断才前进。","fieldLine":"八个信号。保留权限、来源与分母。","inLanguage":"zh-Hans","languageSlug":"zh-hans","translationReview":"PASS","actions":[
+      {"signal":1,"domain":"前沿模型与智能体","title":"测试Dots权限边界","why":"新界面只有在不过度授权下完成合格工作才有价值。","steps":["冻结三个权限明确的只读流程。","记录完成、阻塞、救援与目的地证据。"],"done":"三个流程都在权限内完成并有合格收据。"},
+      {"signal":2,"domain":"生命科学自动化","title":"等待独立药房证据","why":"公司吞吐主张不能证明运营经济或质量。","steps":["要求第三方错误率与介入数据。","加入人力、耗材、正常运行和验证全成本。"],"done":"可比外部部署支持质量与总成本主张。"},
+      {"signal":3,"domain":"加密资本流","title":"保持抵押不变","why":"单日ETF流向分歧不支持改变风险。","steps":["冻结三个完整BTC与ETH交易日。","结合价格、基差和流动性核对方向。"],"done":"三个完整交易日支持一致机制；不生成交易指令。"},
+      {"signal":4,"domain":"后期市场","title":"CHAD维持文件审阅","why":"发行条款可见，上市后经济仍未证明。","steps":["重开最终招股书与定价条款。","跟踪流通、赎回、稀释和资金用途。"],"done":"最终文件解决四项字段后才INVESTIGATE。"},
+      {"signal":5,"domain":"iamrobin.ai内容与可见度","title":"发布经验工厂框架","why":"只有留出迁移与经济改善，机器人数据才会复利。","steps":["发布四语审阅版与主要来源。","核验schema、语言一致、公开路线和收据。"],"done":"四个公开版本与证据门全部通过。","deepDiveTitle":"发布经验工厂框架"},
+      {"signal":6,"domain":"AI基础设施与信贷","title":"建立债务吸收表","why":"AI发行增长会把风险从股票故事转入信贷结构。","steps":["记录发行人、到期、票息、担保与资金用途。","区分可比期间、再融资与新增产能。"],"done":"表格核对资金、偿债与可交付产能。"},
+      {"signal":7,"domain":"开放模型与融资","title":"Reflection维持WATCH","why":"初步谈判与发布计划弱于签署条款和可用工件。","steps":["要求签署融资披露或监管文件。","哈希权重、许可证与推理说明。"],"done":"融资或发布可独立核验，否则WATCH。"},
+      {"signal":8,"domain":"公开股票与AI主题","title":"把价格与运营证明分开","why":"市值不能证明产品采用或现金转化。","steps":["核对收盘价与稀释股数。","跟踪Azure增长、资本开支与自由现金流转化。"],"done":"运营证据解释重估后才形成投资结论。"}
+    ]},
+    "zh-Hant": {"title":"每日行動流，2026年10月11日","description":"八項有邊界的行動，把權限、Physical AI、資本流、融資與市場訊號變成證據門。","centralJudgment":"只有營運證據通過明確門檻，判斷才前進。","fieldLine":"八個訊號。保留權限、來源與分母。","inLanguage":"zh-Hant","languageSlug":"zh-hant","translationReview":"PASS","actions":[
+      {"signal":1,"domain":"前沿模型與智能體","title":"測試Dots權限邊界","why":"新介面只有在不過度授權下完成合格工作才有價值。","steps":["凍結三個權限明確的唯讀流程。","記錄完成、阻塞、救援與目的地證據。"],"done":"三個流程都在權限內完成並有合格收據。"},
+      {"signal":2,"domain":"生命科學自動化","title":"等待獨立藥房證據","why":"公司吞吐主張不能證明營運經濟或品質。","steps":["要求第三方錯誤率與介入資料。","加入人力、耗材、正常運行和驗證全成本。"],"done":"可比外部部署支持品質與總成本主張。"},
+      {"signal":3,"domain":"加密資本流","title":"保持抵押不變","why":"單日ETF流向分歧不支持改變風險。","steps":["凍結三個完整BTC與ETH交易日。","結合價格、基差和流動性核對方向。"],"done":"三個完整交易日支持一致機制；不生成交易指令。"},
+      {"signal":4,"domain":"後期市場","title":"CHAD維持文件審閱","why":"發行條款可見，上市後經濟仍未證明。","steps":["重開最終招股書與定價條款。","跟蹤流通、贖回、稀釋和資金用途。"],"done":"最終文件解決四項欄位後才INVESTIGATE。"},
+      {"signal":5,"domain":"iamrobin.ai內容與可見度","title":"發布經驗工廠框架","why":"只有留出遷移與經濟改善，機器人資料才會複利。","steps":["發布四語審閱版與主要來源。","核驗schema、語言一致、公開路線和收據。"],"done":"四個公開版本與證據門全部通過。","deepDiveTitle":"發布經驗工廠框架"},
+      {"signal":6,"domain":"AI基礎設施與信貸","title":"建立債務吸收表","why":"AI發行增長會把風險從股票故事轉入信貸結構。","steps":["記錄發行人、到期、票息、擔保與資金用途。","區分可比期間、再融資與新增產能。"],"done":"表格核對資金、償債與可交付產能。"},
+      {"signal":7,"domain":"開放模型與融資","title":"Reflection維持WATCH","why":"初步談判與發布計畫弱於簽署條款和可用工件。","steps":["要求簽署融資披露或監管文件。","雜湊權重、許可證與推理說明。"],"done":"融資或發布可獨立核驗，否則WATCH。"},
+      {"signal":8,"domain":"公開股票與AI主題","title":"把價格與營運證明分開","why":"市值不能證明產品採用或現金轉化。","steps":["核對收盤價與稀釋股數。","跟蹤Azure增長、資本開支與自由現金流轉化。"],"done":"營運證據解釋重估後才形成投資結論。"}
+    ]},
+    "ja": {"title":"デイリー・アクション・フロー、2026年10月11日","description":"権限、Physical AI、資本フロー、融資、市場の八シグナルを証拠条件へ変える。","centralJudgment":"指定した運用証拠が条件を通過した時だけ判断を進める。","fieldLine":"八つのシグナル。権限、来歴、分母を保つ。","inLanguage":"ja","languageSlug":"ja","translationReview":"PASS","actions":[
+      {"signal":1,"domain":"先端モデルとエージェント","title":"Dotsの権限境界を試す","why":"新しい画面の価値は過剰権限なしに合格仕事を終えるかで決まる。","steps":["権限を明示したread-only手順を三件固定する。","完了、阻害、救援、宛先証拠を記録する。"],"done":"三件すべてが権限内で完了し合格receiptを持つ。"},
+      {"signal":2,"domain":"生命科学自動化","title":"独立した薬局証拠を待つ","why":"企業の処理量主張は運用経済や品質を証明しない。","steps":["第三者の誤り率と介入データを求める。","人件費、消耗品、稼働率、検証の総費用を加える。"],"done":"比較可能な外部配備が品質と総費用を支持する。"},
+      {"signal":3,"domain":"暗号資産フロー","title":"担保を変更しない","why":"一日のETFフロー分岐はrisk変更を支持しない。","steps":["完全なBTCとETHの三sessionを固定する。","価格、basis、流動性と方向を照合する。"],"done":"三sessionが一貫したregimeを支持し、取引指示は作らない。"},
+      {"signal":4,"domain":"後期市場","title":"CHADを書類審査に置く","why":"募集条件は見えても上場後の経済性は未証明だ。","steps":["最終prospectusと価格条件を再確認する。","float、償還、希薄化、資金使途を追う。"],"done":"最終提出書類が四項目を解決してからINVESTIGATE。"},
+      {"signal":5,"domain":"iamrobin.aiの内容と可視性","title":"経験工場の枠組みを公開する","why":"robot dataはhold-out transferと経済性が改善して初めて複利化する。","steps":["四言語の審査版と一次資料を公開する。","schema、言語parity、公開route、receiptを検証する。"],"done":"四公開版と証拠条件がすべて通る。","deepDiveTitle":"経験工場の枠組みを公開する"},
+      {"signal":6,"domain":"AI基盤と信用","title":"債務吸収表を作る","why":"AI発行増はriskを株式物語からcredit構造へ移し得る。","steps":["発行体、満期、coupon、担保、資金使途を記録する。","比較期間、借換え、新規capacityを分ける。"],"done":"資金、debt service、提供可能capacityが照合できる。"},
+      {"signal":7,"domain":"Open Modelと資金調達","title":"ReflectionをWATCHに保つ","why":"予備交渉と公開計画は署名条件や利用可能artifactより弱い。","steps":["署名済み調達開示か提出証拠を求める。","weights、license、推論手順をhashする。"],"done":"調達かreleaseを独立検証できなければWATCH。"},
+      {"signal":8,"domain":"公開株式とAIテーマ","title":"価格と運用証明を分ける","why":"時価総額は採用やcash conversionを証明しない。","steps":["終値と希薄化後株数を照合する。","Azure成長、capex、free cash flow転換を追う。"],"done":"運用証拠が再評価を説明してから投資判断する。"}
+    ]}
+  }
+}
