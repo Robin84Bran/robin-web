@@ -1,0 +1,20 @@
+Ownership looks $100,000 cheaper than RaaS in Agility Robotics' illustrative five-year customer-payment model.
+
+Then the denominator arrives.
+
+Using the source research's shared tote-moving scenario, the difference is about 6.8 cents per accepted move. At Agility's own illustrative $30.50 hourly labor rate, that equals roughly eight seconds of human time.
+
+If ownership required eight additional intervention seconds per accepted move, the disclosed price gap would be absorbed. This is a break-even threshold, not observed Digit 5 performance.
+
+The useful pilot card is small:
+1. scheduled and productive time;
+2. attempted and accepted moves;
+3. intervention and recovery seconds;
+4. the intervener's loaded labor cost; and
+5. who carries repair, replacement and downtime.
+
+The cheapest invoice may still win. It has to win after the rescue enters the ledger.
+
+Full story and sources: https://iamrobin.ai/binary/stories/eight-seconds-can-erase-the-gap/
+
+#PhysicalAI #Robotics #HumanoidRobots #UnitEconomics #RaaS
