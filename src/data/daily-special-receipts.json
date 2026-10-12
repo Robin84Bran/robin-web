@@ -108,5 +108,15 @@
     "verifiedAt": "2026-10-10T09:13:59.344725+08:00",
     "scope": "RESEARCH_ARTIFACT_ONLY",
     "source": "https://raw.githubusercontent.com/Robin84Bran/robin-web/f9a650b5bbc2c4c3baa4e335053ae035eecf882a/public/daily-special/20261010/artifact.md"
+  },
+  {
+    "date": "2026-10-12",
+    "signal": 2,
+    "url": "https://iamrobin.ai/ouroboros/202610/20261012/special/",
+    "commit": "a1dcf880e4f856fda0cd5f9cea2ced0cad82fa6a",
+    "artifactSha256": "21432ec526c8cfe35dc6375622cdaac6be5fac57d2dcbce5dbbc9cc4d095b8e3",
+    "verifiedAt": "2026-10-12T09:27:10.865847+08:00",
+    "scope": "RESEARCH_ARTIFACT_ONLY",
+    "source": "https://raw.githubusercontent.com/Robin84Bran/robin-web/a1dcf880e4f856fda0cd5f9cea2ced0cad82fa6a/public/daily-special/20261012/artifact.md"
   }
 ]
