@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12",
+  "updated": "2026-10-12",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20261012/hero.webp",
+  "actionHero": "/action-item/20261012/hero.webp",
+  "ogImage": "/daily-briefing/20261012/og.webp",
+  "briefingPath": "/ouroboros/202610/20261012/",
+  "actionItemPath": "/ouroboros/202610/20261012/action_item/",
+  "actions": [
+    {"signal":1,"priority":"NOW","status":"READY","sources":[{"label":"anthropic-haiku-5-5","url":"https://www.anthropic.com/claude-haiku-5-5"}]},
+    {"signal":2,"priority":"NEXT","status":"READY","sources":[{"label":"agility-investors","url":"https://www.agilityrobotics.com/investors"},{"label":"agility-sec-presentation","url":"https://www.sec.gov/Archives/edgar/data/2074973/000121390026107261/ea030784201ex99-1.htm"}]},
+    {"signal":3,"priority":"WATCH","status":"WATCHING","sources":[{"label":"btc-etf-flows","url":"https://farside.co.uk/btc/"},{"label":"eth-etf-flows","url":"https://farside.co.uk/ethereum-etf-flow-all-data/"}]},
+    {"signal":4,"priority":"WATCH","status":"WATCHING","sources":[{"label":"okx-tokenized-stocks","url":"https://www.okx.com/en-gb/help/okx-to-list-unified-tokenized-stocks-xbrkb-xwen-and-more-for-spot-trading"},{"label":"xstocks-legal","url":"https://xstocks.com/legal"}]},
+    {"signal":5,"priority":"NOW","status":"READY","sources":[{"label":"ls-power-fund-vi","url":"https://www.lspower.com/news/ls-power-closes-6-billion-fund-vi/"},{"label":"constellation-pjm-sale","url":"https://investors.constellationenergy.com/node/9851/pdf"},{"label":"pjm-capacity-markets","url":"https://learn.pjm.com/three-priorities/buying-and-selling-energy/capacity-markets.aspx"}]},
+    {"signal":6,"priority":"NEXT","status":"READY","sources":[{"label":"ls-power-fund-vi","url":"https://www.lspower.com/news/ls-power-closes-6-billion-fund-vi/"},{"label":"google-nuclear","url":"https://blog.google/company-news/why-were-backing-americas-existing-nuclear-plants/"}]},
+    {"signal":7,"priority":"WATCH","status":"WATCHING","sources":[{"label":"etched-report","url":"https://techcrunch.com/2026/10/05/etched-weighs-investment-offers-at-40-billion-to-50-billion-valuations/"},{"label":"etched","url":"https://www.etched.com/"}]},
+    {"signal":8,"priority":"WATCH","status":"WATCHING","sources":[{"label":"pltr-history","url":"https://stockanalysis.com/stocks/pltr/history/"},{"label":"qqq-history","url":"https://chartexchange.com/symbol/nasdaq-qqq/historical/"}]}
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, October 12, 2026",
+      "description": "Eight bounded actions turn model economics, humanoid deployment, capital flows, token rails, power infrastructure and market prices into evidence gates.",
+      "centralJudgment": "Advance only when the operating denominator and destination evidence are explicit.",
+      "fieldLine": "Eight signals. Preserve the contract, the denominator and the authority boundary.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal":1,"domain":"Frontier Models and Agents","title":"Price the accepted outcome","why":"A cheaper worker model helps only if retries improve accepted work without increasing rescues.","steps":["Freeze 50 representative RobinOS tasks and one acceptance rubric.","Compare strong-only routing with cheap workers under the same planner and critic."],"done":"Cost, accepted outcomes, rescue minutes and recovery rate are measured on one denominator."},
+        {"signal":2,"domain":"Physical AI","title":"Build the humanoid cost stack","why":"Hardware price omits deployment, maintenance, downtime, intervention and failed actions.","steps":["Define one tote-move task and 80% productive utilization.","Record five-year fully loaded cost per successful action for each deployment model."],"done":"Ownership and RaaS cases share the same task, utilization and failure definition."},
+        {"signal":3,"domain":"Crypto Capital Flows","title":"Keep risk unchanged","why":"A negative completed week does not establish a durable regime or justify a trade.","steps":["Wait for rolling five-day BTC and ETH ETF flows to turn positive together.","Reconcile the sessions with price, basis and liquidity before changing the research view."],"done":"Both five-day windows are positive and reconciled; no trade instruction is created."},
+        {"signal":4,"domain":"Token Rails","title":"Observe one xBRKB weekend","why":"Continuous access does not establish shareholder rights, depth or convergence.","steps":["Record spread and visible depth through one complete weekend.","Measure convergence error after the next NYSE open without opening a position."],"done":"A read-only ledger contains timestamps, depth, spreads and Monday convergence."},
+        {"signal":5,"domain":"iamrobin.ai Content and Visibility","title":"Publish the AI power underwriting frame","why":"Fund size and nameplate capacity become investable only through deliverable contracted cash flow.","steps":["Publish four reviewed editions with the one-page underwriting card and primary sources.","Verify schema, language parity, public routes and delivery receipts."],"done":"Four public editions and all release evidence gates pass.","deepDiveTitle":"Underwriting the AI Power Fund"},
+        {"signal":6,"domain":"AI Infrastructure and Capital Projects","title":"Complete the power underwriting card","why":"Reliable megawatts accrue value only at a usable node under a financeable agreement.","steps":["Separate deliverable MW, node, capacity revenue, fuel hedge and contracted load.","Keep upgrade capex, permits, debt and exit dependence explicit, with gaps UNKNOWN."],"done":"The card reconciles cash flow, required capital and downside coverage without an assumed AI premium."},
+        {"signal":7,"domain":"Late-Stage Private Markets","title":"Keep Etched on watch","why":"Early offers and company order claims are weaker than signed financing and stable commercial operation.","steps":["Seek no shares and make no outreach.","Reopen only with independently disclosed throughput per watt, runtime, revenue, concentration and migration cost."],"done":"The five evidence fields are independently verifiable; otherwise WATCH remains."},
+        {"signal":8,"domain":"Public Equities and AI Themes","title":"Do not chase the rerating","why":"Price outperformance and analyst targets do not establish comparable operating improvement.","steps":["Track new contract value, revenue growth, gross margin and free cash flow.","Separate company evidence from QQQ movement and analyst commentary."],"done":"New operating disclosure explains the repricing before any investment conclusion."}
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年10月12日",
+      "description": "八项有边界的行动，把模型经济、机器人部署、资本流、代币轨道、电力基础设施与市场价格变成证据门。",
+      "centralJudgment": "只有运营分母与目的地证据明确，判断才前进。",
+      "fieldLine": "八个信号。保留合同、分母与权限边界。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal":1,"domain":"前沿模型与智能体","title":"计算合格结果成本","why":"便宜worker只有在不增加人工救援的前提下改善合格工作才有价值。","steps":["冻结50项RobinOS代表任务与同一验收规则。","在同一planner和critic下比较强模型单独路线与便宜worker路线。"],"done":"用同一分母量出成本、合格结果、救援分钟与恢复率。"},
+        {"signal":2,"domain":"Physical AI","title":"建立人形机器人全成本栈","why":"硬件价格没有包含部署、维护、停机、介入与失败动作。","steps":["定义同一搬箱任务与80%生产利用率。","按成功动作记录两种部署模式的五年全成本。"],"done":"自有与RaaS采用同一任务、利用率与失败定义。"},
+        {"signal":3,"domain":"加密资本流","title":"保持风险不变","why":"一个负流出周不能证明长期机制，也不支持交易。","steps":["等待BTC与ETH滚动五日ETF流同时转正。","改变研究判断前，结合价格、基差与流动性核对。"],"done":"两个五日窗口同时转正并完成核对；不生成交易指令。"},
+        {"signal":4,"domain":"代币轨道","title":"只读观察一个xBRKB周末","why":"连续交易不能证明股东权利、深度或收敛。","steps":["记录完整周末的价差与可见深度。","不建仓，测量下一次NYSE开盘后的收敛误差。"],"done":"只读账本包含时间戳、深度、价差与周一收敛。"},
+        {"signal":5,"domain":"iamrobin.ai内容与可见度","title":"发布AI电力承销框架","why":"基金规模与铭牌容量只有通过可交付的签约现金流才可投资。","steps":["发布四语审阅版、一页承销卡与主要来源。","核验schema、语言一致、公开路线与发送收据。"],"done":"四个公开版本与全部发布证据门通过。","deepDiveTitle":"如何承销AI电力基金"},
+        {"signal":6,"domain":"AI基础设施与资本项目","title":"完成电力承销卡","why":"可靠兆瓦只有在可用节点与可融资协议下才会累积价值。","steps":["分开可交付MW、节点、容量收入、燃料对冲与签约负荷。","明确改造资本、许可、债务与退出依赖，缺失保持UNKNOWN。"],"done":"不假设AI溢价，卡片也能核对现金流、必要资本与下行覆盖。"},
+        {"signal":7,"domain":"后期私募市场","title":"Etched维持WATCH","why":"早期要约与公司订单主张弱于已签融资与稳定商业运行。","steps":["不求购股份，不进行外联。","只有每瓦吞吐、稳定运行、收入、集中度与迁移成本可独立验证才重开。"],"done":"五项证据都可独立核验，否则维持WATCH。"},
+        {"signal":8,"domain":"公开股票与AI主题","title":"不追逐重估","why":"价格跑赢与分析师目标不能证明可比运营改善。","steps":["跟踪新增合同额、收入增长、毛利率与自由现金流。","把公司证据与QQQ走势及分析师评论分开。"],"done":"新增运营披露解释重估后才形成投资结论。"}
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年10月12日",
+      "description": "八項有邊界的行動，把模型經濟、機器人部署、資本流、代幣軌道、電力基礎設施與市場價格變成證據門。",
+      "centralJudgment": "只有營運分母與目的地證據明確，判斷才前進。",
+      "fieldLine": "八個訊號。保留合約、分母與權限邊界。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal":1,"domain":"前沿模型與智能體","title":"計算合格結果成本","why":"便宜worker只有在不增加人工救援的前提下改善合格工作才有價值。","steps":["凍結50項RobinOS代表任務與同一驗收規則。","在同一planner和critic下比較強模型單獨路線與便宜worker路線。"],"done":"用同一分母量出成本、合格結果、救援分鐘與恢復率。"},
+        {"signal":2,"domain":"Physical AI","title":"建立人形機器人全成本棧","why":"硬體價格沒有包含部署、維護、停機、介入與失敗動作。","steps":["定義同一搬箱任務與80%生產利用率。","按成功動作記錄兩種部署模式的五年全成本。"],"done":"自有與RaaS採用同一任務、利用率與失敗定義。"},
+        {"signal":3,"domain":"加密資本流","title":"保持風險不變","why":"一個負流出週不能證明長期機制，也不支持交易。","steps":["等待BTC與ETH滾動五日ETF流同時轉正。","改變研究判斷前，結合價格、基差與流動性核對。"],"done":"兩個五日窗口同時轉正並完成核對；不生成交易指令。"},
+        {"signal":4,"domain":"代幣軌道","title":"唯讀觀察一個xBRKB週末","why":"連續交易不能證明股東權利、深度或收斂。","steps":["記錄完整週末的價差與可見深度。","不建倉，測量下一次NYSE開盤後的收斂誤差。"],"done":"唯讀帳本包含時間戳、深度、價差與週一收斂。"},
+        {"signal":5,"domain":"iamrobin.ai內容與可見度","title":"發布AI電力承銷框架","why":"基金規模與銘牌容量只有通過可交付的簽約現金流才可投資。","steps":["發布四語審閱版、一頁承銷卡與主要來源。","核驗schema、語言一致、公開路線與發送收據。"],"done":"四個公開版本與全部發布證據門通過。","deepDiveTitle":"如何承銷AI電力基金"},
+        {"signal":6,"domain":"AI基礎設施與資本專案","title":"完成電力承銷卡","why":"可靠兆瓦只有在可用節點與可融資協議下才會累積價值。","steps":["分開可交付MW、節點、容量收入、燃料對沖與簽約負荷。","明確改造資本、許可、債務與退出依賴，缺失保持UNKNOWN。"],"done":"不假設AI溢價，卡片也能核對現金流、必要資本與下行覆蓋。"},
+        {"signal":7,"domain":"後期私募市場","title":"Etched維持WATCH","why":"早期要約與公司訂單主張弱於已簽融資與穩定商業運行。","steps":["不求購股份，不進行外聯。","只有每瓦吞吐、穩定運行、收入、集中度與遷移成本可獨立驗證才重開。"],"done":"五項證據都可獨立核驗，否則維持WATCH。"},
+        {"signal":8,"domain":"公開股票與AI主題","title":"不追逐重估","why":"價格跑贏與分析師目標不能證明可比營運改善。","steps":["跟蹤新增合約額、收入增長、毛利率與自由現金流。","把公司證據與QQQ走勢及分析師評論分開。"],"done":"新增營運披露解釋重估後才形成投資結論。"}
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年10月12日",
+      "description": "モデル経済、humanoid配備、資本フロー、token rail、電力インフラ、市場価格の八シグナルを証拠条件へ変える。",
+      "centralJudgment": "運用上の分母と宛先証拠が明確な場合だけ判断を進める。",
+      "fieldLine": "八つのシグナル。契約、分母、権限境界を保つ。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal":1,"domain":"先端モデルとエージェント","title":"合格結果の費用を測る","why":"安いworkerは救援を増やさず合格仕事を改善する時だけ有効だ。","steps":["代表的なRobinOSタスク50件と一つの受入基準を固定する。","同じplannerとcriticで強モデル単独と安価worker経路を比較する。"],"done":"費用、合格結果、救援時間、回復率が同じ分母で測定される。"},
+        {"signal":2,"domain":"Physical AI","title":"humanoid総費用を組み立てる","why":"hardware価格には配備、保守、停止、介入、失敗動作が含まれない。","steps":["同じtote移動と80%生産稼働率を定義する。","成功動作当たり五年総費用を配備方式ごとに記録する。"],"done":"所有とRaaSが同じタスク、稼働率、失敗定義を使う。"},
+        {"signal":3,"domain":"暗号資産フロー","title":"riskを変更しない","why":"一週間の流出は永続regimeも取引理由も証明しない。","steps":["BTCとETHの五日ETFフローが同時にプラスになるまで待つ。","見方を変える前に価格、basis、流動性と照合する。"],"done":"両五日窓がプラスで照合済みとなり、取引指示は作らない。"},
+        {"signal":4,"domain":"Token Rail","title":"xBRKBの一週末を観察する","why":"24時間取引は株主権、深さ、収束を証明しない。","steps":["完全な週末のspreadと可視depthを記録する。","positionを持たず次のNYSE寄り後の収束誤差を測る。"],"done":"read-only台帳に時刻、depth、spread、月曜収束が揃う。"},
+        {"signal":5,"domain":"iamrobin.aiの内容と可視性","title":"AI電力精査枠組みを公開する","why":"ファンド規模と銘板容量は供給可能な契約cash flowを通じて初めて投資対象になる。","steps":["四言語の審査版、1ページカード、一次資料を公開する。","schema、言語parity、公開route、配信receiptを確認する。"],"done":"四公開版と全release証拠条件が通る。","deepDiveTitle":"AI電力ファンドをどう精査するか"},
+        {"signal":6,"domain":"AI基盤と資本案件","title":"電力精査カードを完成する","why":"信頼できるMWは利用可能nodeと融資可能契約があって価値を持つ。","steps":["供給可能MW、node、容量収入、燃料hedge、契約負荷を分ける。","改修費、許認可、負債、出口依存を明記し欠損はUNKNOWNにする。"],"done":"AI premiumを仮定せずcash flow、必要資本、downside coverageが照合できる。"},
+        {"signal":7,"domain":"後期private market","title":"EtchedをWATCHに保つ","why":"初期offerと会社の受注主張は署名済み調達と安定商用運転より弱い。","steps":["株式を求めず、連絡もしない。","独立した性能、稼働、売上、集中、移行費の証拠が出た時だけ再開する。"],"done":"五項目を独立検証できなければWATCHを維持する。"},
+        {"signal":8,"domain":"公開株式とAIテーマ","title":"reratingを追わない","why":"株価上昇とanalyst目標は同程度の運用改善を証明しない。","steps":["新規契約、売上成長、粗利率、free cash flowを追う。","会社証拠をQQQ変動とanalyst論評から分ける。"],"done":"新しい運用開示が再評価を説明してから投資判断する。"}
+      ]
+    }
+  }
+}
