@@ -1,0 +1,770 @@
+{
+  "checkedAt": "2026-10-12T09:40:59.839316+00:00",
+  "tlsVerificationDisabled": false,
+  "resolver": "ordinary system DNS for HTTP checks; Google DNS-over-HTTPS for DNS evidence",
+  "passed": false,
+  "redirects": [
+    {
+      "url": "http://iamrobin.net/",
+      "expected": "https://iamrobin.ai/",
+      "status": "301",
+      "location": "https://iamrobin.ai/",
+      "curlExit": 0,
+      "error": "",
+      "followed": [
+        "200",
+        "https://iamrobin.ai/",
+        "1",
+        "0"
+      ],
+      "followExit": 0,
+      "followError": "",
+      "passed": true
+    },
+    {
+      "url": "http://iamrobin.net/about/?redirect_check=20261012",
+      "expected": "https://iamrobin.ai/about/?redirect_check=20261012",
+      "status": "301",
+      "location": "https://iamrobin.ai/about/?redirect_check=20261012",
+      "curlExit": 0,
+      "error": "",
+      "followed": [
+        "200",
+        "https://iamrobin.ai/about/?redirect_check=20261012",
+        "1",
+        "0"
+      ],
+      "followExit": 0,
+      "followError": "",
+      "passed": true
+    },
+    {
+      "url": "http://www.iamrobin.net/",
+      "expected": "https://iamrobin.ai/",
+      "status": "301",
+      "location": "https://iamrobin.ai/",
+      "curlExit": 0,
+      "error": "",
+      "followed": [
+        "200",
+        "https://iamrobin.ai/",
+        "1",
+        "0"
+      ],
+      "followExit": 0,
+      "followError": "",
+      "passed": true
+    },
+    {
+      "url": "http://www.iamrobin.net/about/?redirect_check=20261012",
+      "expected": "https://iamrobin.ai/about/?redirect_check=20261012",
+      "status": "301",
+      "location": "https://iamrobin.ai/about/?redirect_check=20261012",
+      "curlExit": 0,
+      "error": "",
+      "followed": [
+        "200",
+        "https://iamrobin.ai/about/?redirect_check=20261012",
+        "1",
+        "0"
+      ],
+      "followExit": 0,
+      "followError": "",
+      "passed": true
+    },
+    {
+      "url": "http://iamrobin.xyz/",
+      "expected": "https://iamrobin.ai/",
+      "status": "301",
+      "location": "https://iamrobin.ai/",
+      "curlExit": 0,
+      "error": "",
+      "followed": [
+        "200",
+        "https://iamrobin.ai/",
+        "1",
+        "0"
+      ],
+      "followExit": 0,
+      "followError": "",
+      "passed": true
+    },
+    {
+      "url": "http://iamrobin.xyz/about/?redirect_check=20261012",
+      "expected": "https://iamrobin.ai/about/?redirect_check=20261012",
+      "status": "301",
+      "location": "https://iamrobin.ai/about?redirect_check=20261012",
+      "curlExit": 0,
+      "error": "",
+      "followed": [
+        "200",
+        "https://iamrobin.ai/about/?redirect_check=20261012",
+        "2",
+        "0"
+      ],
+      "followExit": 0,
+      "followError": "",
+      "passed": false
+    },
+    {
+      "url": "http://www.iamrobin.xyz/",
+      "expected": "https://iamrobin.ai/",
+      "status": "301",
+      "location": "https://iamrobin.ai/",
+      "curlExit": 0,
+      "error": "",
+      "followed": [
+        "200",
+        "https://iamrobin.ai/",
+        "1",
+        "0"
+      ],
+      "followExit": 0,
+      "followError": "",
+      "passed": true
+    },
+    {
+      "url": "http://www.iamrobin.xyz/about/?redirect_check=20261012",
+      "expected": "https://iamrobin.ai/about/?redirect_check=20261012",
+      "status": "301",
+      "location": "https://iamrobin.ai/about?redirect_check=20261012",
+      "curlExit": 0,
+      "error": "",
+      "followed": [
+        "200",
+        "https://iamrobin.ai/about/?redirect_check=20261012",
+        "2",
+        "0"
+      ],
+      "followExit": 0,
+      "followError": "",
+      "passed": false
+    },
+    {
+      "url": "https://iamrobin.net/",
+      "expected": "https://iamrobin.ai/",
+      "status": "301",
+      "location": "https://iamrobin.ai/",
+      "curlExit": 0,
+      "error": "",
+      "followed": [
+        "200",
+        "https://iamrobin.ai/",
+        "1",
+        "0"
+      ],
+      "followExit": 0,
+      "followError": "",
+      "passed": true
+    },
+    {
+      "url": "https://iamrobin.net/about/?redirect_check=20261012",
+      "expected": "https://iamrobin.ai/about/?redirect_check=20261012",
+      "status": "301",
+      "location": "https://iamrobin.ai/about/?redirect_check=20261012",
+      "curlExit": 0,
+      "error": "",
+      "followed": [
+        "200",
+        "https://iamrobin.ai/about/?redirect_check=20261012",
+        "1",
+        "0"
+      ],
+      "followExit": 0,
+      "followError": "",
+      "passed": true
+    },
+    {
+      "url": "https://www.iamrobin.net/",
+      "expected": "https://iamrobin.ai/",
+      "status": "301",
+      "location": "https://iamrobin.ai/",
+      "curlExit": 0,
+      "error": "",
+      "followed": [
+        "200",
+        "https://iamrobin.ai/",
+        "1",
+        "0"
+      ],
+      "followExit": 0,
+      "followError": "",
+      "passed": true
+    },
+    {
+      "url": "https://www.iamrobin.net/about/?redirect_check=20261012",
+      "expected": "https://iamrobin.ai/about/?redirect_check=20261012",
+      "status": "301",
+      "location": "https://iamrobin.ai/about/?redirect_check=20261012",
+      "curlExit": 0,
+      "error": "",
+      "followed": [
+        "200",
+        "https://iamrobin.ai/about/?redirect_check=20261012",
+        "1",
+        "0"
+      ],
+      "followExit": 0,
+      "followError": "",
+      "passed": true
+    },
+    {
+      "url": "https://iamrobin.xyz/",
+      "expected": "https://iamrobin.ai/",
+      "status": null,
+      "location": null,
+      "curlExit": 28,
+      "error": "curl: (28) Failed to connect to iamrobin.xyz port 443 after 5011 ms: Timeout was reached",
+      "followed": [
+        "000",
+        "https://iamrobin.xyz/",
+        "0",
+        "0"
+      ],
+      "followExit": 28,
+      "followError": "curl: (28) Failed to connect to iamrobin.xyz port 443 after 5011 ms: Timeout was reached",
+      "passed": false
+    },
+    {
+      "url": "https://iamrobin.xyz/about/?redirect_check=20261012",
+      "expected": "https://iamrobin.ai/about/?redirect_check=20261012",
+      "status": null,
+      "location": null,
+      "curlExit": 28,
+      "error": "curl: (28) Failed to connect to iamrobin.xyz port 443 after 5011 ms: Timeout was reached",
+      "followed": [
+        "000",
+        "https://iamrobin.xyz/about/?redirect_check=20261012",
+        "0",
+        "0"
+      ],
+      "followExit": 28,
+      "followError": "curl: (28) Failed to connect to iamrobin.xyz port 443 after 5011 ms: Timeout was reached",
+      "passed": false
+    },
+    {
+      "url": "https://www.iamrobin.xyz/",
+      "expected": "https://iamrobin.ai/",
+      "status": null,
+      "location": null,
+      "curlExit": 28,
+      "error": "curl: (28) Failed to connect to www.iamrobin.xyz port 443 after 5007 ms: Timeout was reached",
+      "followed": [
+        "000",
+        "https://www.iamrobin.xyz/",
+        "0",
+        "0"
+      ],
+      "followExit": 28,
+      "followError": "curl: (28) Failed to connect to www.iamrobin.xyz port 443 after 5004 ms: Timeout was reached",
+      "passed": false
+    },
+    {
+      "url": "https://www.iamrobin.xyz/about/?redirect_check=20261012",
+      "expected": "https://iamrobin.ai/about/?redirect_check=20261012",
+      "status": null,
+      "location": null,
+      "curlExit": 28,
+      "error": "curl: (28) Failed to connect to www.iamrobin.xyz port 443 after 5011 ms: Timeout was reached",
+      "followed": [
+        "000",
+        "https://www.iamrobin.xyz/about/?redirect_check=20261012",
+        "0",
+        "0"
+      ],
+      "followExit": 28,
+      "followError": "curl: (28) Failed to connect to www.iamrobin.xyz port 443 after 5010 ms: Timeout was reached",
+      "passed": false
+    }
+  ],
+  "dns": [
+    {
+      "domain": "iamrobin.net",
+      "type": "NS",
+      "result": {
+        "Status": 0,
+        "TC": false,
+        "RD": true,
+        "RA": true,
+        "AD": false,
+        "CD": false,
+        "Question": [
+          {
+            "name": "iamrobin.net.",
+            "type": 2
+          }
+        ],
+        "Answer": [
+          {
+            "name": "iamrobin.net.",
+            "type": 2,
+            "TTL": 21198,
+            "data": "sue.ns.cloudflare.com."
+          },
+          {
+            "name": "iamrobin.net.",
+            "type": 2,
+            "TTL": 21198,
+            "data": "jerome.ns.cloudflare.com."
+          }
+        ]
+      },
+      "curlExit": 0,
+      "error": ""
+    },
+    {
+      "domain": "iamrobin.net",
+      "type": "A",
+      "result": {
+        "Status": 0,
+        "TC": false,
+        "RD": true,
+        "RA": true,
+        "AD": false,
+        "CD": false,
+        "Question": [
+          {
+            "name": "iamrobin.net.",
+            "type": 1
+          }
+        ],
+        "Answer": [
+          {
+            "name": "iamrobin.net.",
+            "type": 1,
+            "TTL": 300,
+            "data": "188.114.97.12"
+          },
+          {
+            "name": "iamrobin.net.",
+            "type": 1,
+            "TTL": 300,
+            "data": "188.114.96.12"
+          }
+        ],
+        "Comment": "Response from 172.64.32.145."
+      },
+      "curlExit": 0,
+      "error": ""
+    },
+    {
+      "domain": "iamrobin.net",
+      "type": "MX",
+      "result": {
+        "Status": 0,
+        "TC": false,
+        "RD": true,
+        "RA": true,
+        "AD": false,
+        "CD": false,
+        "Question": [
+          {
+            "name": "iamrobin.net.",
+            "type": 15
+          }
+        ],
+        "Answer": [
+          {
+            "name": "iamrobin.net.",
+            "type": 15,
+            "TTL": 300,
+            "data": "0 ."
+          }
+        ],
+        "Comment": "Response from 172.64.32.145."
+      },
+      "curlExit": 0,
+      "error": ""
+    },
+    {
+      "domain": "iamrobin.net",
+      "type": "TXT",
+      "result": {
+        "Status": 0,
+        "TC": false,
+        "RD": true,
+        "RA": true,
+        "AD": false,
+        "CD": false,
+        "Question": [
+          {
+            "name": "iamrobin.net.",
+            "type": 16
+          }
+        ],
+        "Answer": [
+          {
+            "name": "iamrobin.net.",
+            "type": 16,
+            "TTL": 300,
+            "data": "v=spf1 -all"
+          }
+        ],
+        "Comment": "Response from 108.162.192.145."
+      },
+      "curlExit": 0,
+      "error": ""
+    },
+    {
+      "domain": "iamrobin.xyz",
+      "type": "NS",
+      "result": {
+        "Status": 0,
+        "TC": false,
+        "RD": true,
+        "RA": true,
+        "AD": false,
+        "CD": false,
+        "Question": [
+          {
+            "name": "iamrobin.xyz.",
+            "type": 2
+          }
+        ],
+        "Answer": [
+          {
+            "name": "iamrobin.xyz.",
+            "type": 2,
+            "TTL": 1612,
+            "data": "dns1.registrar-servers.com."
+          },
+          {
+            "name": "iamrobin.xyz.",
+            "type": 2,
+            "TTL": 1612,
+            "data": "dns2.registrar-servers.com."
+          }
+        ]
+      },
+      "curlExit": 0,
+      "error": ""
+    },
+    {
+      "domain": "iamrobin.xyz",
+      "type": "A",
+      "result": {
+        "Status": 0,
+        "TC": false,
+        "RD": true,
+        "RA": true,
+        "AD": false,
+        "CD": false,
+        "Question": [
+          {
+            "name": "iamrobin.xyz.",
+            "type": 1
+          }
+        ],
+        "Answer": [
+          {
+            "name": "iamrobin.xyz.",
+            "type": 1,
+            "TTL": 1800,
+            "data": "192.64.119.129"
+          }
+        ],
+        "Comment": "Response from 156.154.133.200."
+      },
+      "curlExit": 0,
+      "error": ""
+    },
+    {
+      "domain": "iamrobin.xyz",
+      "type": "MX",
+      "result": {
+        "Status": 0,
+        "TC": false,
+        "RD": true,
+        "RA": true,
+        "AD": false,
+        "CD": false,
+        "Question": [
+          {
+            "name": "iamrobin.xyz.",
+            "type": 15
+          }
+        ],
+        "Answer": [
+          {
+            "name": "iamrobin.xyz.",
+            "type": 15,
+            "TTL": 1800,
+            "data": "15 eforward4.registrar-servers.com."
+          },
+          {
+            "name": "iamrobin.xyz.",
+            "type": 15,
+            "TTL": 1800,
+            "data": "20 eforward5.registrar-servers.com."
+          },
+          {
+            "name": "iamrobin.xyz.",
+            "type": 15,
+            "TTL": 1800,
+            "data": "10 eforward2.registrar-servers.com."
+          },
+          {
+            "name": "iamrobin.xyz.",
+            "type": 15,
+            "TTL": 1800,
+            "data": "10 eforward3.registrar-servers.com."
+          },
+          {
+            "name": "iamrobin.xyz.",
+            "type": 15,
+            "TTL": 1800,
+            "data": "10 eforward1.registrar-servers.com."
+          }
+        ],
+        "Comment": "Response from 156.154.133.200."
+      },
+      "curlExit": 0,
+      "error": ""
+    },
+    {
+      "domain": "iamrobin.xyz",
+      "type": "TXT",
+      "result": {
+        "Status": 0,
+        "TC": false,
+        "RD": true,
+        "RA": true,
+        "AD": false,
+        "CD": false,
+        "Question": [
+          {
+            "name": "iamrobin.xyz.",
+            "type": 16
+          }
+        ],
+        "Answer": [
+          {
+            "name": "iamrobin.xyz.",
+            "type": 16,
+            "TTL": 1800,
+            "data": "v=spf1 include:spf.efwd.registrar-servers.com ~all"
+          }
+        ],
+        "Comment": "Response from 156.154.133.200."
+      },
+      "curlExit": 0,
+      "error": ""
+    },
+    {
+      "domain": "iamrobin.ai",
+      "type": "NS",
+      "result": {
+        "Status": 0,
+        "TC": false,
+        "RD": true,
+        "RA": true,
+        "AD": true,
+        "CD": false,
+        "Question": [
+          {
+            "name": "iamrobin.ai.",
+            "type": 2
+          }
+        ],
+        "Answer": [
+          {
+            "name": "iamrobin.ai.",
+            "type": 2,
+            "TTL": 21600,
+            "data": "jerome.ns.cloudflare.com."
+          },
+          {
+            "name": "iamrobin.ai.",
+            "type": 2,
+            "TTL": 21600,
+            "data": "sue.ns.cloudflare.com."
+          }
+        ],
+        "Comment": "Response from 173.245.59.181."
+      },
+      "curlExit": 0,
+      "error": ""
+    },
+    {
+      "domain": "iamrobin.ai",
+      "type": "A",
+      "result": {
+        "Status": 0,
+        "TC": false,
+        "RD": true,
+        "RA": true,
+        "AD": true,
+        "CD": false,
+        "Question": [
+          {
+            "name": "iamrobin.ai.",
+            "type": 1
+          }
+        ],
+        "Answer": [
+          {
+            "name": "iamrobin.ai.",
+            "type": 1,
+            "TTL": 300,
+            "data": "188.114.97.12"
+          },
+          {
+            "name": "iamrobin.ai.",
+            "type": 1,
+            "TTL": 300,
+            "data": "188.114.96.12"
+          }
+        ],
+        "Comment": "Response from 172.64.32.145."
+      },
+      "curlExit": 0,
+      "error": ""
+    },
+    {
+      "domain": "iamrobin.ai",
+      "type": "MX",
+      "result": {
+        "Status": 0,
+        "TC": false,
+        "RD": true,
+        "RA": true,
+        "AD": true,
+        "CD": false,
+        "Question": [
+          {
+            "name": "iamrobin.ai.",
+            "type": 15
+          }
+        ],
+        "Answer": [
+          {
+            "name": "iamrobin.ai.",
+            "type": 15,
+            "TTL": 300,
+            "data": "1 smtp.google.com."
+          }
+        ],
+        "Comment": "Response from 108.162.192.145."
+      },
+      "curlExit": 0,
+      "error": ""
+    },
+    {
+      "domain": "iamrobin.ai",
+      "type": "TXT",
+      "result": {
+        "Status": 0,
+        "TC": false,
+        "RD": true,
+        "RA": true,
+        "AD": true,
+        "CD": false,
+        "Question": [
+          {
+            "name": "iamrobin.ai.",
+            "type": 16
+          }
+        ],
+        "Answer": [
+          {
+            "name": "iamrobin.ai.",
+            "type": 16,
+            "TTL": 300,
+            "data": "v=spf1 include:_spf.google.com ~all"
+          },
+          {
+            "name": "iamrobin.ai.",
+            "type": 16,
+            "TTL": 300,
+            "data": "google-site-verification=HxehCrEEKEvTZCeth01toeqzbuNGw2UBsmp-KO6IidU"
+          },
+          {
+            "name": "iamrobin.ai.",
+            "type": 16,
+            "TTL": 300,
+            "data": "google-site-verification=qvQZUHga4EAC2HNMxylJ90EDp9GwdTMys6z5rtwK5cw"
+          }
+        ],
+        "Comment": "Response from 172.64.32.145."
+      },
+      "curlExit": 0,
+      "error": ""
+    }
+  ],
+  "dnsChecks": [
+    {
+      "domain": "iamrobin.net",
+      "type": "NS",
+      "expected": [
+        "jerome.ns.cloudflare.com.",
+        "sue.ns.cloudflare.com."
+      ],
+      "observed": [
+        "jerome.ns.cloudflare.com.",
+        "sue.ns.cloudflare.com."
+      ],
+      "passed": true
+    },
+    {
+      "domain": "iamrobin.net",
+      "type": "MX",
+      "expected": [
+        "0 ."
+      ],
+      "observed": [
+        "0 ."
+      ],
+      "passed": true
+    },
+    {
+      "domain": "iamrobin.net",
+      "type": "TXT",
+      "expected": [
+        "v=spf1 -all"
+      ],
+      "observed": [
+        "v=spf1 -all"
+      ],
+      "passed": true
+    },
+    {
+      "domain": "iamrobin.xyz",
+      "type": "NS",
+      "expected": [
+        "jerome.ns.cloudflare.com.",
+        "sue.ns.cloudflare.com."
+      ],
+      "observed": [
+        "dns1.registrar-servers.com.",
+        "dns2.registrar-servers.com."
+      ],
+      "passed": false
+    },
+    {
+      "domain": "iamrobin.xyz",
+      "type": "MX",
+      "expected": [
+        "0 ."
+      ],
+      "observed": [
+        "10 eforward1.registrar-servers.com.",
+        "10 eforward2.registrar-servers.com.",
+        "10 eforward3.registrar-servers.com.",
+        "15 eforward4.registrar-servers.com.",
+        "20 eforward5.registrar-servers.com."
+      ],
+      "passed": false
+    },
+    {
+      "domain": "iamrobin.xyz",
+      "type": "TXT",
+      "expected": [
+        "v=spf1 -all"
+      ],
+      "observed": [
+        "v=spf1 include:spf.efwd.registrar-servers.com ~all"
+      ],
+      "passed": false
+    }
+  ]
+}
