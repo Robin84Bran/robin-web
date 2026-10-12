@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Eight seconds can erase the gap</title>
+  <desc id="desc">A quiet editorial diagram translates a one hundred thousand dollar contract gap into an eight second break-even clock beside a tote.</desc>
+  <rect width="1200" height="630" fill="#0b1228"/>
+  <path d="M70 92H1130M70 538H1130" stroke="#31405f" stroke-width="1"/>
+  <text x="70" y="68" fill="#61d4d7" font-family="Arial, sans-serif" font-size="20" letter-spacing="5">BINARY / INVEST</text>
+  <text x="70" y="176" fill="#f4f1e9" font-family="Georgia, serif" font-size="56">A $100,000 gap</text>
+  <text x="70" y="233" fill="#a9b5cc" font-family="Arial, sans-serif" font-size="24">becomes a clock when accepted work is the denominator.</text>
+  <g transform="translate(82 318)">
+    <rect width="258" height="116" rx="4" fill="#f4f1e9"/>
+    <text x="24" y="40" fill="#52617b" font-family="Arial, sans-serif" font-size="16" letter-spacing="2">DISCLOSED GAP</text>
+    <text x="24" y="88" fill="#0b1228" font-family="Georgia, serif" font-size="45">$100,000</text>
+  </g>
+  <path d="M372 376H498" stroke="#61d4d7" stroke-width="4"/>
+  <path d="M488 366L500 376 488 386" fill="none" stroke="#61d4d7" stroke-width="4"/>
+  <g transform="translate(520 286)">
+    <circle cx="104" cy="90" r="88" fill="none" stroke="#d8b86b" stroke-width="5"/>
+    <path d="M104 17V34M104 146V163M31 90H48M160 90H177" stroke="#d8b86b" stroke-width="4"/>
+    <text x="104" y="103" text-anchor="middle" fill="#f4f1e9" font-family="Georgia, serif" font-size="58">00:08</text>
+    <text x="104" y="202" text-anchor="middle" fill="#a9b5cc" font-family="Arial, sans-serif" font-size="15" letter-spacing="2">BREAK-EVEN TIME</text>
+  </g>
+  <path d="M742 376H858" stroke="#61d4d7" stroke-width="4"/>
+  <path d="M848 366L860 376 848 386" fill="none" stroke="#61d4d7" stroke-width="4"/>
+  <g transform="translate(884 311)">
+    <path d="M0 25L105 0 210 25 105 52Z" fill="#d8b86b"/>
+    <path d="M0 25V117L105 149V52Z" fill="#9f8248"/>
+    <path d="M210 25V117L105 149V52Z" fill="#c6a75e"/>
+    <path d="M105 0V52" stroke="#0b1228" stroke-width="3"/>
+    <text x="105" y="184" text-anchor="middle" fill="#f4f1e9" font-family="Arial, sans-serif" font-size="18">ONE ACCEPTED MOVE</text>
+  </g>
+  <text x="70" y="584" fill="#a9b5cc" font-family="Arial, sans-serif" font-size="18">Scenario threshold, not observed performance</text>
+  <text x="1130" y="584" text-anchor="end" fill="#f4f1e9" font-family="Arial, sans-serif" font-size="18">IAmRobin.ai</text>
+</svg>
