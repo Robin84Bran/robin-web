@@ -1,5 +1,29 @@
 # iamrobin.ai — Website v2 / Zen Loop
 
+## Domain redirects — completed October 12, 2026
+
+`iamrobin.net` and `iamrobin.xyz`, including both `www` hosts, permanently
+redirect over HTTP and HTTPS to `https://iamrobin.ai`, preserving the requested
+path and query string. DNS is hosted on Cloudflare Free; domain registration
+and renewal remain at Namecheap.
+
+Final verification at **19:11 HKT on October 12, 2026** passed all **16 redirect
+checks** and **6 public DNS checks**. Each tested URL returned a direct **301**
+to the exact destination and then **200** in one redirect, using ordinary system
+DNS and normal TLS certificate validation. No address overrides or insecure TLS
+options were used in the final run.
+
+With Robin's explicit approval, the unused Namecheap email-forwarding service
+on these two redirect-only domains was replaced with null MX `0 .` and SPF
+`v=spf1 -all`. Neither domain had forwarding recipients to migrate. Existing
+`iamrobin.ai` email, website, and unrelated services/settings were untouched.
+The temporary completion monitor was deleted after verification passed.
+
+- [Final verification receipt](maintenance/domain-redirects-20261012/verification-20261012T111124Z.json)
+- [Earlier fresh-DNS HTTPS receipt](maintenance/domain-redirects-20261012/fresh-dns-20261012T104519Z.json) — successful service checks while this Mac still cached the old address; not the final completion gate.
+- [Change history, DNS baseline and rollback notes](maintenance/domain-redirects-20261012/README.md)
+- [Reusable read-only verifier](maintenance/domain-redirects-20261012/verify.py)
+
 ## Background runtime recovery (7 October 2026)
 
 Special and downstream workers resolve an existing Codex installation rather

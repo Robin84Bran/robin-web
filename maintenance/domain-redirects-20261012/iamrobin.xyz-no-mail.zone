@@ -1,0 +1,4 @@
+; Redirect-only domain: replaces unused registrar email forwarding.
+$ORIGIN iamrobin.xyz.
+@ 300 IN MX 0 .
+@ 300 IN TXT "v=spf1 -all"
