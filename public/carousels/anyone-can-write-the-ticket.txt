@@ -1,0 +1,20 @@
+Anyone can create a Solana DvP trade record naming two parties and a settlement authority.
+
+That is not the security failure. No trade token moves at creation, and the creator cannot fund or settle as the parties.
+
+The real boundary appears when software mistakes an existing record for an agreed ticket.
+
+Before funding, a client has to verify:
+1. program ownership;
+2. the fixed account layout;
+3. the derived address and identity fields;
+4. amounts, timing and authority; and
+5. both settlement destinations.
+
+Then test the refusal path: keep the familiar parties and mints, change one material field, and require rejection before a funding instruction is built.
+
+Atomic settlement makes the last button safer. Good client design makes the earlier refusal boring.
+
+Full story and sources: https://iamrobin.ai/binary/stories/anyone-can-write-the-ticket/
+
+#Solana #DvP #Settlement #FinTech #SystemsDesign
