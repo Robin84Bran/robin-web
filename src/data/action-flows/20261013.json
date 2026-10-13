@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-13",
+  "updated": "2026-10-13",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20261013/hero.webp",
+  "actionHero": "/action-item/20261013/hero.webp",
+  "ogImage": "/daily-briefing/20261013/og.webp",
+  "briefingPath": "/ouroboros/202610/20261013/",
+  "actionItemPath": "/ouroboros/202610/20261013/action_item/",
+  "actions": [
+    {"signal":1,"priority":"NOW","status":"READY","sources":[{"label":"meta-muse-wonder","url":"https://research.meta.ai/blog/muse-wonder"},{"label":"meta-model-page","url":"https://dev.meta.ai/models/muse-wonder"}]},
+    {"signal":2,"priority":"NEXT","status":"WATCHING","sources":[{"label":"hp-flexrobotics","url":"https://www.hpinc.com/hp-exxonmobil-expand-deployment-of-flexrobotics-technology"}]},
+    {"signal":3,"priority":"WATCH","status":"WATCHING","sources":[{"label":"btc-etf-flows","url":"https://farside.co.uk/btc/"},{"label":"eth-etf-flows","url":"https://farside.co.uk/eth/"}]},
+    {"signal":4,"priority":"NEXT","status":"READY","sources":[{"label":"solana-dvp-announcement","url":"https://solana.com/news/solana-foundation-launches-solana-dv-p-an-atomic-settlement-program-built-for-financial-institutions"},{"label":"solana-dvp-docs","url":"https://solana.com/docs/defi/dvp-program"}]},
+    {"signal":5,"priority":"NOW","status":"READY","sources":[{"label":"meta-muse-wonder","url":"https://research.meta.ai/blog/muse-wonder"},{"label":"openai-dots-privacy","url":"https://help.openai.com/en/articles/20001529-dots-privacy-security-and-safety-faqs"},{"label":"openai-long-horizon","url":"https://openai.com/index/safety-alignment-long-horizon-models/"}]},
+    {"signal":6,"priority":"NEXT","status":"READY","sources":[{"label":"microsoft-maia-300","url":"https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/"}]},
+    {"signal":7,"priority":"WATCH","status":"WATCHING","sources":[{"label":"oratomic-news","url":"https://www.oratomic.com/news"},{"label":"axios-funding","url":"https://www.axios.com/newsletters/axios-pro-rata-ef74e379-7b84-4591-85a4-2420bb1f47de"}]},
+    {"signal":8,"priority":"WATCH","status":"WATCHING","sources":[{"label":"bms-action-1","url":"https://investors.bms.com/iframes/press-releases/press-release-details/2026/Bristol-Myers-Squibb-Announces-Positive-Topline-Results-from-the-Interim-Analysis-of-Phase-3-ACTION-1-for-RYZ101-RayzeBios-Radiopharmaceutical-Therapy-in-Patients-with-GEP-NETs/default.aspx"},{"label":"bms-10k","url":"https://www.sec.gov/Archives/edgar/data/14272/000001427226000004/bmy-20251231.htm"}]}
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, October 13, 2026",
+      "description": "Eight bounded actions turn agent memory, industrial robotics, settlement rails, infrastructure and capital events into evidence gates.",
+      "centralJudgment": "Increase autonomy only when memory, authority and acceptance share an inspectable record.",
+      "fieldLine": "Eight signals. Trace the memory, freeze the denominator, preserve the boundary.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal":1,"domain":"Frontier Models and Agents","title":"Test Wonder as a recovery supervisor","why":"Persistent state is valuable only when it improves rescue without expanding unauthorized action.","steps":["Freeze 20 deliberately broken RobinOS tasks and one acceptance rubric.","Place Wonder only in planning, criticism and recovery under the same worker route."],"done":"Rescue rate, retained failure state, unauthorized actions and cost per rescue share one denominator."},
+        {"signal":2,"domain":"Physical AI and Robotics","title":"Wait for deployment denominators","why":"Nine systems establish customer expansion, while safety exposure, utilization and downtime remain undisclosed.","steps":["Track the seven added systems through deployment.","Reopen only when H&P reports human-exposure hours or unplanned downtime on a comparable basis."],"done":"A comparable pre/post operating metric is public; otherwise WATCHING remains."},
+        {"signal":3,"domain":"Crypto Capital Flows","title":"Do not turn missing data into zero","why":"The October 12 issuer table was incomplete at cutoff, so a final flow signal did not exist.","steps":["Wait for all issuers to report the session.","Require three complete sessions of BTC inflow and ETH outflow before changing the structural view."],"done":"Three fully reported sessions confirm the divergence; no trade instruction is created."},
+        {"signal":4,"domain":"Stablecoins and Token Rails","title":"Walk through atomic settlement on devnet","why":"Technical atomicity lowers principal risk while legal finality and term verification remain separate.","steps":["Record create, dual funding, settlement and reclaim on devnet with no real assets.","Document upgrade authority, stored-term checks and legal-finality gaps."],"done":"A read-only trace covers all four states and the three residual risks."},
+        {"signal":5,"domain":"iamrobin.ai Content and Distribution","title":"Publish the governed memory framework","why":"Persistent memory becomes leverage only when it can be traced, expired, scoped and corrected.","steps":["Publish four reviewed editions, the five-class taxonomy and proposed matched experiment.","Verify source parity, schema, public routes and delivery receipts."],"done":"Four public editions and every protected-release gate pass.","deepDiveTitle":"Your AI Should Remember Less"},
+        {"signal":6,"domain":"AI Infrastructure and Capital Projects","title":"Map the custom-chip tax migration","why":"Maia can change who captures rent without eliminating HBM, foundry, network, power and software costs.","steps":["Separate accelerator, HBM, networking, packaging, power and migration costs.","Compare cost per accepted token on the same workload before accepting the 40% claim."],"done":"The model uses one workload and complete cost stack; unsupported fields stay UNKNOWN."},
+        {"signal":7,"domain":"Late-Stage Private Markets","title":"Keep Oratomic on watch","why":"A $5.4 billion valuation validates investor belief, not a fault-tolerant machine.","steps":["Seek no shares and make no company outreach.","Reopen only with repeatable logical error, stable runtime, correction overhead and customer-workload evidence."],"done":"All four technical fields are independently reproducible; otherwise WATCH remains."},
+        {"signal":8,"domain":"Public Equities and AI Themes","title":"Wait for the ACTION-1 effect size","why":"A positive topline endpoint does not reveal patient benefit, toxicity or manufacturing scale.","steps":["Track sample size, hazard ratio, median PFS and grade 3/4 toxicity at the medical presentation.","Add actinium-225 dose-manufacturing capacity before reassessing platform value."],"done":"All five fields are disclosed and reconciled; price movement is not used as causality."}
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年10月13日",
+      "description": "八项有边界的行动，把代理记忆、工业机器人、结算轨道、基础设施与资本事件变成证据门。",
+      "centralJudgment": "只有记忆、权限与验收共享一条可审计记录，自治才升级。",
+      "fieldLine": "八个信号。追溯记忆，冻结分母，保留边界。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal":1,"domain":"前沿模型与智能体","title":"把Wonder作为恢复监督者测试","why":"持续状态只有在不扩大越权动作的前提下改善恢复才有价值。","steps":["冻结20个故意破坏的RobinOS任务与同一验收规则。","保持worker路线不变，只让Wonder负责规划、批评与恢复。"],"done":"恢复率、失败状态保留、越权动作与每次恢复成本使用同一分母。"},
+        {"signal":2,"domain":"Physical AI与机器人","title":"等待部署分母","why":"九套系统证明客户扩张，安全暴露、利用率与停机仍未披露。","steps":["跟踪新增七套系统的部署。","只有H&P用可比口径披露人工暴露小时或非计划停机才重开。"],"done":"公开可比的部署前后指标，否则维持WATCHING。"},
+        {"signal":3,"domain":"Crypto资本流","title":"不把缺失数据写成零","why":"截止时10月12日发行人表仍不完整，因此不存在最终流量信号。","steps":["等待所有发行人补齐。","只有BTC流入与ETH流出连续三个完整交易日才改变结构判断。"],"done":"三个完整交易日确认分化；不生成交易指令。"},
+        {"signal":4,"domain":"稳定币与Token Rails","title":"在devnet演练原子结算","why":"技术原子性降低本金风险，法律终局性与条款核验仍是独立问题。","steps":["不用真实资产，记录创建、双边入金、结算与撤回。","列明升级权限、链上条款核验和法律终局性缺口。"],"done":"只读轨迹覆盖四个状态与三个剩余风险。"},
+        {"signal":5,"domain":"iamrobin.ai内容与分发","title":"发布记忆治理框架","why":"持久记忆只有在可追溯、会过期、有边界且能纠错时才是杠杆。","steps":["发布四个审阅版、五类记忆框架与拟议对照实验。","核验来源一致、schema、公开路线与发送收据。"],"done":"四个公开版本与全部受保护发布门通过。","deepDiveTitle":"你的AI应该少记一点"},
+        {"signal":6,"domain":"AI基础设施与资本项目","title":"画出自研芯片的税负迁移","why":"Maia可能改变租金归属，但不会消除HBM、代工、网络、电力与软件成本。","steps":["拆开加速器、HBM、网络、封装、电力与迁移成本。","在同一负载上比较每个合格token成本后再接受40%结论。"],"done":"模型采用同一负载与完整成本栈；缺失保持UNKNOWN。"},
+        {"signal":7,"domain":"后期私募市场","title":"Oratomic维持WATCH","why":"54亿美元估值验证的是投资者信念，不是容错机器。","steps":["不寻求股份，不联系公司。","只有逻辑错误率、稳定运行、纠错开销和客户工作负载可重复才重开。"],"done":"四项技术证据可独立复现，否则维持WATCH。"},
+        {"signal":8,"domain":"公开股票与AI主题","title":"等待ACTION-1效应量","why":"正面顶线结果没有给出患者获益、毒性或制造规模。","steps":["在医学会议追踪样本量、风险比、中位PFS与3/4级毒性。","加入Ac-225剂量制造能力后再评估平台价值。"],"done":"五个字段披露并核对；不用股价替代因果。"}
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年10月13日",
+      "description": "八項有邊界的行動，把代理記憶、工業機器人、結算軌道、基礎設施與資本事件變成證據門。",
+      "centralJudgment": "只有記憶、權限與驗收共享一條可稽核紀錄，自治才升級。",
+      "fieldLine": "八個訊號。追溯記憶，凍結分母，保留邊界。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal":1,"domain":"前沿模型與智能體","title":"把Wonder作為恢復監督者測試","why":"持續狀態只有在不擴大越權行動的前提下改善恢復才有價值。","steps":["凍結20個故意破壞的RobinOS任務與同一驗收規則。","保持worker路線不變，只讓Wonder負責規劃、批評與恢復。"],"done":"恢復率、失敗狀態保留、越權行動與每次恢復成本使用同一分母。"},
+        {"signal":2,"domain":"Physical AI與機器人","title":"等待部署分母","why":"九套系統證明客戶擴張，安全暴露、利用率與停機仍未披露。","steps":["追蹤新增七套系統的部署。","只有H&P用可比口徑披露人工暴露小時或非計畫停機才重開。"],"done":"公開可比的部署前後指標，否則維持WATCHING。"},
+        {"signal":3,"domain":"Crypto資本流","title":"不把缺失資料寫成零","why":"截止時10月12日發行人表仍不完整，因此不存在最終流量訊號。","steps":["等待所有發行人補齊。","只有BTC流入與ETH流出連續三個完整交易日才改變結構判斷。"],"done":"三個完整交易日確認分化；不生成交易指令。"},
+        {"signal":4,"domain":"穩定幣與Token Rails","title":"在devnet演練原子結算","why":"技術原子性降低本金風險，法律終局性與條款核驗仍是獨立問題。","steps":["不用真實資產，記錄建立、雙邊入金、結算與撤回。","列明升級權限、鏈上條款核驗和法律終局性缺口。"],"done":"唯讀軌跡覆蓋四個狀態與三個剩餘風險。"},
+        {"signal":5,"domain":"iamrobin.ai內容與分發","title":"發布記憶治理框架","why":"持久記憶只有在可追溯、會過期、有邊界且能糾錯時才是槓桿。","steps":["發布四個審閱版、五類記憶框架與擬議對照實驗。","核驗來源一致、schema、公開路線與發送收據。"],"done":"四個公開版本與全部受保護發布門通過。","deepDiveTitle":"你的AI應該少記一點"},
+        {"signal":6,"domain":"AI基礎設施與資本專案","title":"畫出自研晶片的稅負遷移","why":"Maia可能改變租金歸屬，但不會消除HBM、代工、網路、電力與軟體成本。","steps":["拆開加速器、HBM、網路、封裝、電力與遷移成本。","在同一負載上比較每個合格token成本後再接受40%結論。"],"done":"模型採用同一負載與完整成本棧；缺失保持UNKNOWN。"},
+        {"signal":7,"domain":"後期私募市場","title":"Oratomic維持WATCH","why":"54億美元估值驗證的是投資者信念，不是容錯機器。","steps":["不尋求股份，不聯絡公司。","只有邏輯錯誤率、穩定運行、糾錯開銷和客戶工作負載可重複才重開。"],"done":"四項技術證據可獨立重現，否則維持WATCH。"},
+        {"signal":8,"domain":"公開股票與AI主題","title":"等待ACTION-1效應量","why":"正面頂線結果沒有給出患者獲益、毒性或製造規模。","steps":["在醫學會議追蹤樣本量、風險比、中位PFS與3/4級毒性。","加入Ac-225劑量製造能力後再評估平台價值。"],"done":"五個欄位披露並核對；不用股價替代因果。"}
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年10月13日",
+      "description": "エージェント記憶、産業ロボット、決済レール、インフラ、資本イベントの八シグナルを証拠条件へ変える。",
+      "centralJudgment": "記憶、権限、受入判定が同じ検証可能な記録を持つ場合だけ自律性を高める。",
+      "fieldLine": "八つのシグナル。記憶を追跡し、分母を固定し、境界を守る。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal":1,"domain":"先端モデルとエージェント","title":"Wonderを回復監督として試す","why":"永続状態は権限外行動を増やさず救援を改善する場合だけ価値がある。","steps":["意図的に壊したRobinOSタスク20件と一つの受入基準を固定する。","worker経路を変えずWonderを計画、批評、回復だけに使う。"],"done":"救援率、失敗状態の保持、権限外行動、救援当たり費用を同じ分母で測る。"},
+        {"signal":2,"domain":"Physical AIとロボティクス","title":"配備後の分母を待つ","why":"九システムは顧客拡大を示すが、安全曝露、稼働率、停止時間は未開示だ。","steps":["追加七システムの配備を追う。","H&Pが人員曝露時間または計画外停止を比較可能に開示した時だけ再評価する。"],"done":"配備前後の比較指標が公開されるまでWATCHINGを維持する。"},
+        {"signal":3,"domain":"暗号資産フロー","title":"欠損をゼロにしない","why":"締切時点で10月12日の発行体表は未完成で、最終フローは存在しなかった。","steps":["全発行体の報告を待つ。","BTC流入とETH流出が三つの完全な取引日で続くまで構造判断を変えない。"],"done":"三つの完全日が分岐を確認し、取引指示は作らない。"},
+        {"signal":4,"domain":"ステーブルコインとToken Rail","title":"devnetで原子決済を確認する","why":"技術的原子性は元本riskを下げる一方、法的finalityと条件確認は別問題だ。","steps":["実資産を使わず作成、双方入金、決済、回収を記録する。","upgrade権限、保存条件の確認、法的finalityを整理する。"],"done":"read-only追跡が四状態と三残存riskを覆う。"},
+        {"signal":5,"domain":"iamrobin.aiの内容と配信","title":"統制された記憶の枠組みを公開する","why":"永続記憶は出所、期限、権限範囲、訂正経路があって初めてleverageになる。","steps":["四言語審査版、五分類、提案実験を公開する。","資料parity、schema、公開route、配信receiptを確認する。"],"done":"四公開版と全保護release条件が通る。","deepDiveTitle":"AIには少なく覚えさせよう"},
+        {"signal":6,"domain":"AI基盤と資本案件","title":"独自chipのrent移動を測る","why":"Maiaはrentの帰属を変えてもHBM、foundry、network、電力、software費を消さない。","steps":["accelerator、HBM、network、packaging、電力、移行費を分ける。","同じworkloadの合格token費用で40%主張を検証する。"],"done":"同一workloadと完全費用stackを使い、欠損はUNKNOWNにする。"},
+        {"signal":7,"domain":"後期private market","title":"OratomicをWATCHに保つ","why":"54億ドル評価は投資家の信念を示し、耐故障machineを証明しない。","steps":["株式を求めず会社に連絡しない。","論理error、安定稼働、訂正overhead、顧客workloadが再現可能な時だけ再開する。"],"done":"四技術項目を独立再現できなければWATCHを維持する。"},
+        {"signal":8,"domain":"公開株式とAIテーマ","title":"ACTION-1の効果量を待つ","why":"正のtopline結果だけでは患者利益、毒性、製造規模は分からない。","steps":["医学発表で症例数、hazard ratio、median PFS、grade 3/4毒性を追う。","Ac-225 dose製造能力を加えてplatform価値を見直す。"],"done":"五項目が開示・照合され、株価を因果証拠に使わない。"}
+      ]
+    }
+  }
+}
