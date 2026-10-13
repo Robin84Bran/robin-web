@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">An atomic trade can still be the wrong trade</title>
+  <desc id="desc">Two escrow rails converge on one atomic settlement gate, while a separate trade ticket must be verified.</desc>
+  <rect width="1600" height="900" fill="#f1eee6"/>
+  <g fill="none" stroke="#d9d6cd" stroke-width="1">
+    <path d="M0 180H1600M0 360H1600M0 540H1600M0 720H1600"/>
+    <path d="M200 0V900M400 0V900M600 0V900M800 0V900M1000 0V900M1200 0V900M1400 0V900"/>
+  </g>
+  <text x="110" y="112" fill="#617060" font-family="Arial,sans-serif" font-size="23" letter-spacing="4">DAILY SPECIAL · 13 OCT 2026 · SIGNAL 4</text>
+  <text x="110" y="222" fill="#202823" font-family="Georgia,serif" font-size="64">An atomic trade can still be</text>
+  <text x="110" y="300" fill="#202823" font-family="Georgia,serif" font-size="64">the wrong trade.</text>
+  <g fill="#f8f6f0" stroke="#526b5b" stroke-width="3">
+    <rect x="120" y="430" width="310" height="150" rx="8"/>
+    <rect x="120" y="640" width="310" height="150" rx="8"/>
+    <rect x="655" y="515" width="330" height="185" rx="8"/>
+    <rect x="1165" y="515" width="310" height="185" rx="8"/>
+  </g>
+  <g fill="#27392d" font-family="Arial,sans-serif" text-anchor="middle">
+    <text x="275" y="482" font-size="21" letter-spacing="2">ASSET LEG</text>
+    <text x="275" y="530" font-size="28">Escrow A</text>
+    <text x="275" y="692" font-size="21" letter-spacing="2">PAYMENT LEG</text>
+    <text x="275" y="740" font-size="28">Escrow B</text>
+    <text x="820" y="565" font-size="21" letter-spacing="2">ONE TRANSACTION</text>
+    <text x="820" y="620" font-size="30">Both move</text>
+    <text x="820" y="660" font-size="25">or neither does</text>
+    <text x="1320" y="565" font-size="21" letter-spacing="2">TRADE TICKET</text>
+    <text x="1320" y="620" font-size="29">Read before</text>
+    <text x="1320" y="660" font-size="29">you fund</text>
+  </g>
+  <g fill="none" stroke="#526b5b" stroke-width="4">
+    <path d="M450 505H595Q625 505 625 545V575H650"/>
+    <path d="M450 715H595Q625 715 625 675V640H650"/>
+    <path d="M1005 608H1140"/>
+    <path d="M578 559L606 575L578 591M578 624L606 640L578 656M1112 592L1140 608L1112 624"/>
+  </g>
+  <path d="M1320 480V420H820V490" fill="none" stroke="#9b7257" stroke-width="3" stroke-dasharray="10 10"/>
+  <text x="110" y="845" fill="#526052" font-family="Arial,sans-serif" font-size="22">Atomic execution prevents a half-trade. It does not verify the ticket.</text>
+  <text x="1450" y="845" fill="#526052" font-family="Arial,sans-serif" font-size="20" text-anchor="end">iamrobin.ai</text>
+</svg>
