@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-07T02:19:00.375771+00:00",
+  "generated_at": "2026-10-13T09:22:27.348671+00:00",
   "money_mode": "SIMULATED",
   "forecasts": [
     {
@@ -134,7 +134,12 @@
         0.10467411559843019
       ],
       "target_return": 0.1,
-      "score": null
+      "score": {
+        "exact_hit": true,
+        "brier": 0.5614438684722732,
+        "target_touched": false,
+        "ordinal_partial_credit": 1.0
+      }
     },
     {
       "case_id": "HKEX-PENDING-02636-105a1424",
