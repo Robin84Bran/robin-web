@@ -1,0 +1,82 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const path='/intelligence/portable-self/';
+const description='When one task moves through changing bodies, what should persist? Play five controller rules across 640 seeded worlds and inspect where portable memory helps or hurts.';
+const schema={'@context':'https://schema.org','@type':'LearningResource',name:'The Portable Self',url:`https://iamrobin.ai${path}`,description,inLanguage:'en',learningResourceType:'Interactive simulation',educationalUse:'Experiment'};
+const policies=[
+ ['carry','01','Carry every habit','One learned actuator map follows the task everywhere.'],
+ ['reset','02','Start blank','Every handoff erases motor memory.'],
+ ['portable','03','Portable core','Task continuity plus one map per capability fingerprint.'],
+ ['frozen','04','Frozen manual','Controls 1–4 are assumed to mean N–E–S–W forever.'],
+ ['random','05','Random control','A seeded learning-disabled baseline.'],
+];
+---
+<BaseLayout title="The Portable Self — Intelligence — Robin Xie" {path} {description} {schema}>
+ <div class="shell experiment">
+  <a class="quiet-link" href="/intelligence/">← Intelligence</a>
+  <p class="eyebrow">The weekly small experiment · 2026-W42 · 13 October 2026</p>
+  <h1>The mind stayed.<br/><em>The body changed.</em></h1>
+  <p class="lead">Which memories should cross the doorway?</p>
+  <p class="intro">One assembly recipe moves through four bodies. Each body hides a different control mapping. Carry every motor habit, forget everything, or keep a portable core with body-specific maps. Then change the bodies until the tidy answer breaks.</p>
+
+  <section class="playground" aria-label="The Portable Self experiment">
+   <form id="portable-controls">
+    <label>Seed<input name="seed" type="number" min="0" max="4294967295" step="1" value="1" required/></label>
+    <label>Handoff<select name="swapEvery"><option value="4">Every 4 ticks</option><option value="8" selected>Every 8 ticks</option><option value="24">Every 24 ticks</option></select></label>
+    <label>Bodies<select name="bodyCount"><option value="4" selected>4 · recurring</option><option value="12">12 · one use</option></select></label>
+    <label>Control difference<select name="divergence"><option value="0">Same controls</option><option value="1">One swapped pair</option><option value="2" selected>Fully remapped</option></select></label>
+    <label>Firmware drift<select name="driftAt"><option value="0" selected>None</option><option value="48">Remap at tick 48</option></select></label>
+    <label>Capability label<select name="manifestFresh"><option value="true" selected>Fresh after drift</option><option value="false">Stale after drift</option></select></label>
+   </form>
+   <div class="buttons"><button id="play" type="button">Play</button><button id="step" type="button">Step</button><button id="end" type="button">Show outcome</button><button id="reset" type="button">Replay</button><button id="next-seed" type="button">Next seed</button><button id="defaults" type="button">Defaults</button></div>
+   <p id="lab-status" role="status">Loading the seeded model…</p>
+   <label class="time">Inspect any tick<input id="tick" aria-label="Simulation tick" type="range" min="0" max="95" value="0"/></label>
+   <div class="worlds">
+    {policies.map(([id,num,name,note])=><article class="world" data-policy={id}>
+      <p class="eyebrow">{num} / fixed rule</p><h2>{name}</h2><p class="rule">{note}</p>
+      <p class="body">body —</p><p class="instruction">Loading…</p><p class="verdict">—</p>
+      <div class="trace" aria-label={`${name} recent action results`}></div><p class="counts"></p>
+    </article>)}
+   </div>
+   <p class="fine">Each dot is one action: green matched the target; rust did not. Panels see the same target, body label and after-action feedback, with one control choice per tick. Only you—the evaluator—can compare all five worlds.</p>
+   <div class="buttons"><button id="share" type="button">Link this world</button><button id="download" type="button">Download run</button></div>
+   <noscript>JavaScript is needed to play. The complete batch, method and source remain available below.</noscript>
+  </section>
+
+  <section class="story">
+   <p class="eyebrow">Try this first</p><h2>Let the old body return.</h2>
+   <p>Press <strong>Show outcome</strong>. The portable core remembers a separate map when each of four bodies returns. Now choose <strong>Same controls</strong>: one shared habit becomes useful, and separating memories wastes time. Choose <strong>12 · one use</strong>: no body returns, so portable memory and starting blank become the same rule.</p>
+
+   <h2>Continuity is not one thing.</h2>
+   <p>Every tick requests north, east, south or west. The controller chooses physical control 1–4; the body's hidden bijection decides what actually happens. A correct command advances the recipe. Four correct commands complete one toy assembly.</p>
+   <p>The three adaptive controllers share the same feedback update. They differ only in what crosses a handoff. Carry every habit keeps one global actuator map. Start blank deletes it. Portable core retains the task and stores a map under the advertised capability fingerprint. The frozen and random policies do not learn.</p>
+
+   <h2>Remembering the boundary helped—until it did not.</h2>
+   <div class="table-wrap"><table><caption>Seeds 1–64 · mean correct commands out of 96 ticks</caption><thead><tr><th>Setting</th><th>Carry all</th><th>Blank</th><th>Portable</th><th>Frozen</th><th>Random</th></tr></thead><tbody>
+    <tr><th scope="row">Default recurring bodies</th><td>72.797</td><td>72.938</td><td><strong>87.938</strong></td><td>2.281</td><td>24.484</td></tr>
+    <tr><th scope="row">Same mapping</th><td>94.156</td><td>73.141</td><td>88.344</td><td><strong>96</strong></td><td>23.578</td></tr>
+    <tr><th scope="row">Rapid handoff</th><td>49.922</td><td>50.984</td><td><strong>88.094</strong></td><td>3.047</td><td>24.156</td></tr>
+    <tr><th scope="row">One-use bodies</th><td>72.875</td><td>72.406</td><td>72.406</td><td>3.813</td><td>24.078</td></tr>
+   </tbody></table></div>
+   <p>In the default batch, portable-minus-blank averages <strong>+15 commands</strong>. With a handoff every four ticks, it is <strong>+37.109</strong>. With one-use bodies, the difference is exactly zero. With identical mappings, carrying the shared habit beats the portable core by <strong>5.813</strong>; the frozen manual is perfect because its assumption happens to be true.</p>
+
+   <h2>A fresh label can cost more—and still be safer.</h2>
+   <p>Turn on firmware drift at tick 48, then compare fresh and stale labels. Stale labels produce <strong>7.547 mean errors from obsolete recalled maps</strong>. Yet stale-label throughput is 80.406 correct commands versus 80.125 with fresh labels: repairing an old map happens to cost slightly less than four complete recalibrations in this toy.</p>
+   <p>That does not make stale capability metadata good. Every wrong command has equal, reversible cost here. A hazardous actuator could make one stale move unacceptable. Versioning and safe probing are separate design choices; a throughput score cannot settle safety.</p>
+
+   <h2>What the controls mean</h2>
+   <dl><dt>Seed</dt><dd>A repeatable recipe and set of actuator mappings, not a difficulty rank.</dd><dt>Handoff</dt><dd>Action ticks before the next body takes over. All policies get the same action count.</dd><dt>Bodies</dt><dd>Four identities recur; twelve bodies appear once each in the default 96-tick run.</dd><dt>Control difference</dt><dd>Same controls, one swapped pair, or a full seeded permutation. Every mapping remains one-to-one.</dd><dt>Firmware drift</dt><dd>At tick 48 every hidden mapping changes. No controller is told the mapping itself.</dd><dt>Capability label</dt><dd>Fresh publishes a new versioned fingerprint. Stale reuses the old label while feedback remains available.</dd></dl>
+
+   <h2>Where the self stops.</h2>
+   <p>“Portable self” means scoped controller state in a deterministic toy. It is not consciousness, personality, biological memory, a robot benchmark or evidence about children, companions, animals or human identity. There is no perception noise, latency, injury, safety envelope, language memory or semantic transfer. Commands are abstract and reversible.</p>
+   <p>All <strong>640 matched seeded worlds and 3,200 policy outcomes</strong> are retained across ten settings, including identical mappings, one-use bodies, rapid/slow handoffs and fresh/stale drift. No seed was removed. The private source scan supplied a question—not instructions, public facts or prose—and is not included here.</p>
+   <p class="downloads"><a href="/portable-self/README.md" download>Method &amp; parameter guide ↓</a><a href="/portable-self/source.zip" download>Source package ↓</a><a href="/portable-self/results.json" download>All batch results ↓</a><a href="/portable-self/model.mjs">Read the model</a></p>
+   <p class="fine">Previously: <a href="/intelligence/receipt-gap/">The Receipt Gap</a> · Explore the <a href="/intelligence/swarm-lab/">eight small worlds</a>.</p>
+  </section>
+ </div>
+ <script is:inline type="module" src="/portable-self/client.mjs"></script>
+</BaseLayout>
+<style>
+ .experiment{padding-block:3rem 5rem}.experiment>.eyebrow{margin-top:3rem}h1{font:400 clamp(3.4rem,8vw,7rem)/1 var(--serif);letter-spacing:-.05em;margin:1.5rem 0}h1 em{color:#426e69}.lead{font:400 clamp(1.3rem,3vw,2rem)/1.45 var(--serif)}.intro,.story{max-width:48rem;line-height:1.85}.intro,.fine,dd{color:var(--muted)}.playground{margin-block:2.5rem;padding:clamp(1rem,3vw,2rem);border:1px solid var(--line);background:#f7f3eb;border-radius:12px}form{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}label{display:grid;gap:.4rem;font-size:.8rem}select,input[type=number],button{font:inherit;min-height:44px;padding:.65rem;border:1px solid #aaa391;border-radius:4px;background:#fffdf7;color:#292822;min-width:0;width:100%}.buttons{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.2rem}.buttons button{width:auto}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #a96d29;outline-offset:3px}#play{background:#326d63;color:#fff}#lab-status{font-size:.85rem;min-height:2.5em}.time{margin-block:1rem}.time input{width:100%;min-height:44px;accent-color:#326d63}.worlds{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.world{border-top:1px solid #c4bdad;padding:1rem 0;min-width:0}.world:nth-child(3){grid-column:1/-1;background:#eef1e9;padding:1rem}.world h2{font:400 1.65rem var(--serif);margin:.35rem 0}.world .eyebrow{font-size:.65rem}.rule,.body{font-size:.78rem;color:#626258}.body{text-transform:uppercase;letter-spacing:.06em}.instruction{font-variant-numeric:tabular-nums}.verdict{display:inline-block;font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;padding:.2rem .45rem;border-radius:99px;background:#e7dfd2}.verdict[data-state=correct]{background:#d7e4d8;color:#28513b}.verdict[data-state=wrong]{background:#efd2be;color:#71391f}.trace{display:flex;flex-wrap:wrap;gap:4px;min-height:22px;margin-top:.8rem}.trace :global(.dot){width:10px;height:10px;border-radius:50%;border:1px solid #827e72}.trace :global(.correct){background:#6e8b72}.trace :global(.wrong){background:#bc6b47}.counts{font-size:.82rem;font-variant-numeric:tabular-nums}.fine{font-size:.8rem;line-height:1.7}.story h2{font:400 clamp(1.6rem,4vw,2.5rem)/1.2 var(--serif);margin-top:2.5rem}dt{font-weight:600;margin-top:1rem}dd{margin-left:0}.downloads{display:flex;flex-wrap:wrap;gap:1rem;font-size:.9rem}.table-wrap{overflow-x:auto;margin-block:1.5rem}table{border-collapse:collapse;width:100%;font-size:.84rem}caption{text-align:left;color:var(--muted);font-size:.8rem;padding-bottom:.7rem}th,td{text-align:left;padding:.75rem .5rem;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}th{font-weight:500}@media(max-width:680px){form{grid-template-columns:1fr 1fr}.worlds{grid-template-columns:1fr}.world:nth-child(3){grid-column:auto}.playground{margin-inline:-.3rem}table{font-size:.72rem}th,td{padding:.6rem .25rem}}@media(max-width:380px){form{grid-template-columns:1fr}}
+</style>
+
