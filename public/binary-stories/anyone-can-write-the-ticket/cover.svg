@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Anyone can write the ticket</title>
+  <desc id="desc">A permissionless trade record passes through program, identity and economic-term checks before funding and atomic settlement.</desc>
+  <rect width="1600" height="900" fill="#f4f1e9"/>
+  <g fill="#0b1228" font-family="Arial, sans-serif">
+    <text x="88" y="82" font-size="23" letter-spacing="4">BINARY / BUILD</text>
+    <text x="88" y="182" font-size="78" font-family="Georgia, serif">Anyone can write the ticket.</text>
+    <text x="88" y="246" font-size="28">The first token still needs a verification gate.</text>
+
+    <rect x="88" y="334" width="272" height="212" rx="6" fill="#e4dfd4"/>
+    <text x="122" y="388" font-size="21" letter-spacing="2">PERMISSIONLESS</text>
+    <text x="122" y="450" font-size="43">CREATE</text>
+    <text x="122" y="498" font-size="23">Any payer signs</text>
+    <text x="122" y="529" font-size="23">No trade token moves</text>
+
+    <path d="M390 440 H450" fill="none" stroke="#0b1228" stroke-width="7"/>
+    <path d="M450 440 l-24 -17 v34 z"/>
+
+    <rect x="480" y="302" width="420" height="276" rx="6" fill="#61d4d7"/>
+    <text x="516" y="356" font-size="21" letter-spacing="2">VERIFY BEFORE FUNDING</text>
+    <line x1="516" y1="380" x2="864" y2="380" stroke="#0b1228" stroke-width="2"/>
+    <text x="516" y="426" font-size="25">01  Program owner + 458 bytes</text>
+    <text x="516" y="468" font-size="25">02  PDA + parties + mints + nonce</text>
+    <text x="516" y="510" font-size="25">03  Amounts + time + destinations</text>
+    <text x="516" y="552" font-size="21">Mismatch → stop before transaction build</text>
+
+    <path d="M930 440 H990" fill="none" stroke="#0b1228" stroke-width="7"/>
+    <path d="M990 440 l-24 -17 v34 z"/>
+
+    <rect x="1020" y="334" width="196" height="212" rx="6" fill="#d8b86b"/>
+    <text x="1054" y="390" font-size="21" letter-spacing="2">PARTIES</text>
+    <text x="1054" y="450" font-size="43">FUND</text>
+    <text x="1054" y="500" font-size="23">Each signs</text>
+    <text x="1054" y="531" font-size="23">its own leg</text>
+
+    <path d="M1246 440 H1306" fill="none" stroke="#0b1228" stroke-width="7"/>
+    <path d="M1306 440 l-24 -17 v34 z"/>
+
+    <rect x="1336" y="334" width="180" height="212" rx="6" fill="#0b1228"/>
+    <g fill="#f4f1e9">
+      <text x="1426" y="399" font-size="19" text-anchor="middle">AUTHORITY</text>
+      <text x="1426" y="455" font-size="31" text-anchor="middle">SETTLE</text>
+      <text x="1426" y="505" font-size="20" text-anchor="middle">BOTH</text>
+      <text x="1426" y="531" font-size="20" text-anchor="middle">OR NEITHER</text>
+    </g>
+
+    <text x="88" y="674" font-size="37" font-family="Georgia, serif">The record is a proposal. The first token makes it real.</text>
+    <text x="88" y="742" font-size="24">Address identity and economic terms require separate checks.</text>
+    <text x="88" y="792" font-size="20">Conceptual integration gate · Read-only research · No asset movement</text>
+    <text x="1516" y="858" font-size="22" text-anchor="end">IAmRobin.ai</text>
+  </g>
+</svg>
