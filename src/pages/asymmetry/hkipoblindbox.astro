@@ -14,6 +14,7 @@ const den = 1 + z * z / (n || 1);
 const center = (accuracy + z * z / (2 * (n || 1))) / den;
 const half = z * Math.sqrt(accuracy * (1 - accuracy) / (n || 1) + z * z / (4 * (n || 1) ** 2)) / den;
 const pct = (v: number) => `${(v * 100).toFixed(1)}%`;
+const price = (v: number) => v.toLocaleString('en-HK', { minimumFractionDigits: 2, maximumFractionDigits: 3, useGrouping: false });
 const bands = ['Below 0%', '0–<20%', '20–<40%', '40% or more'];
 const lenses = [
   ['天时', 'Timing', 'Why this industry, now?'],
@@ -64,7 +65,7 @@ const lenses = [
         <header><span class="ticker">HKEX · {f.stock_code}</span><h3>{f.issuer_name}</h3></header>
         <div class="binary-answer"><strong>{f.prediction}</strong><span>+10% by session five?</span></div>
         <p class="participation">{f.participation} · simulated participation</p>
-        <p>Conditional sell limit: <strong>{f.target_at_offer_low && f.target_at_offer_low !== f.target_at_offer_high ? `HK$${f.target_at_offer_low.toFixed(2)}–${f.target_at_offer_high.toFixed(2)}` : `HK$${f.target_at_offer_high.toFixed(2)}`}</strong></p>
+        <p>Conditional sell limit: <strong>{f.target_at_offer_low && f.target_at_offer_low !== f.target_at_offer_high ? `HK$${price(f.target_at_offer_low)}–${price(f.target_at_offer_high)}` : `HK$${price(f.target_at_offer_high)}`}</strong></p>
         <p class="aside">Based on {f.offer_low && f.offer_low !== f.offer_high ? `HK$${f.offer_low.toFixed(2)}–${f.offer_high.toFixed(2)}` : `HK$${f.offer_high.toFixed(2)}`} offer terms; recompute from the final issue price, rounding up to a valid tick.</p>
         <details><summary>The sealed receipt</summary><p>Frozen {f.frozen_at}<br/>Version {f.version}<br/>Expected listing {f.listing_date}</p><code>{f.commitment}</code><a href={f.prospectus_url}>Issuer prospectus ↗</a></details>
       </article>)}</div>
