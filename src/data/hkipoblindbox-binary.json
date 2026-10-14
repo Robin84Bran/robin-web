@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T16:37:19.378919+00:00",
+  "generated_at": "2026-10-14T01:34:11.254267+00:00",
   "version": "binary-exec-v1.0",
   "forecasts": [
     {
@@ -113,6 +113,22 @@
       "prospectus_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1007/2026100700007.pdf",
       "participation": "SUBSCRIBE",
       "commitment": "7b6079e0053259bdfed0405f6a86a60c5f7d1b9ab4d50020cfe96916abd9b49a"
+    },
+    {
+      "stock_code": "06157",
+      "issuer_name": "Jiangsu Slender West Lake Culture and Tourism Co., Ltd.",
+      "listing_date": "2026-10-23",
+      "prediction": "YES",
+      "version": "binary-exec-v1.0",
+      "frozen_at": "2026-10-14T01:33:00.552133+00:00",
+      "target_at_offer_high": 5.58,
+      "target_at_offer_low": 4.315,
+      "offer_high": 5.07,
+      "offer_low": 3.92,
+      "target_formula": "ceil_to_listing_day_tick(1.10 * FINAL_ISSUE_PRICE)",
+      "prospectus_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1014/2026101400023.pdf",
+      "participation": "SUBSCRIBE",
+      "commitment": "b71c6d23bc0aedf87a8b3353ee4c382020ac8acc44d233ab5f73ae0f9fb9d6c2"
     }
   ],
   "scope": "Independent five-session layer; original three-session experiment preserved",
@@ -135,11 +151,11 @@
     "unseen": false
   },
   "forward": {
-    "forecasts": 7,
+    "forecasts": 8,
     "reviewed_paths": 6,
     "yes_d5": 3,
     "no_d5": 2,
-    "pending_d5": 2,
+    "pending_d5": 3,
     "source_note": "Single-vendor completed daily bars; official final issue prices and independent opening-price checks. Market counterfactuals, not personal fills."
   }
 }
