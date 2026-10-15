@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-15",
+  "updated": "2026-10-15",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20261015/hero.webp",
+  "actionHero": "/action-item/20261015/hero.webp",
+  "ogImage": "/daily-briefing/20261015/og.webp",
+  "briefingPath": "/ouroboros/202610/20261015/",
+  "actionItemPath": "/ouroboros/202610/20261015/action_item/",
+  "actions": [
+    {"signal":1,"priority":"NOW","status":"READY","sources":[{"label":"grok-voice-3","url":"https://x.ai/news/grok-voice-3"}]},
+    {"signal":2,"priority":"NEXT","status":"WATCHING","sources":[{"label":"fort-connectivity","url":"https://www.fortrobotics.com/news/fort-robotics-expands-its-trust-layer-for-physical-ai-with-connectivity-aggregation-to-keep-autonomous-machines-reliably-connected-anywhere?hs_amp=true"},{"label":"fort-product","url":"https://www.fortrobotics.com/connectivity-aggregation"}]},
+    {"signal":3,"priority":"WATCH","status":"WATCHING","sources":[{"label":"btc-etf-flows","url":"https://farside.co.uk/btc/"},{"label":"eth-etf-flows","url":"https://farside.co.uk/eth/"}]},
+    {"signal":4,"priority":"WATCH","status":"WATCHING","sources":[{"label":"pendle-supernvda","url":"https://app.pendle.finance/trade/markets/0xb06e7781ad4d205c67368fd01bf817977cfdecbe/swap?chain=base&tab=info&view=pt"},{"label":"pendle-docs","url":"https://docs.pendle.finance/"}]},
+    {"signal":5,"priority":"NOW","status":"READY","sources":[{"label":"anthropic-scion","url":"https://www.anthropic.com/engineering/redesigning-source-control"},{"label":"ouroboros-archive","url":"https://iamrobin.ai/ouroboros/"}]},
+    {"signal":6,"priority":"NEXT","status":"READY","sources":[{"label":"aep-google-ppa","url":"https://pr.aep.com/news/releases/read/12314/AEP-Advances-Innovative-Energy-Solution-for-Google-with-702MW-of-Bloom-Fuel-Cells"}]},
+    {"signal":7,"priority":"WATCH","status":"WATCHING","sources":[{"label":"salience-series-b","url":"https://www.saliencelabs.ai/salience-labs-125-million-series-b-funding/"}]},
+    {"signal":8,"priority":"WATCH","status":"WATCHING","sources":[{"label":"generate-zealand","url":"https://generatebiomedicines.com/news-releases/generate-biomedicines-and-zealand-pharma-enter-collaboration-and-license-agreement-to-develop-protein-therapeutics-engineered-with-ai-for-metabolic-diseases/"},{"label":"genb-history","url":"https://stockanalysis.com/stocks/genb/history/"},{"label":"qqq-history","url":"https://stockanalysis.com/etf/qqq/history/"}]}
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, October 15, 2026",
+      "description": "Eight bounded actions turn voice agents, robot connectivity, capital flows, tokenized yield, veto authority and infrastructure risk into evidence gates.",
+      "centralJudgment": "When execution gets cheap, accountability moves to exceptions, interfaces and the authority to refuse.",
+      "fieldLine": "Eight signals. Price the outcome, test the failure, preserve the right to say no.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal":1,"domain":"Frontier Models and Agents","title":"Measure cost per correct resolution","why":"A low voice-minute price does not prove cheap, accurate completion.","steps":["Freeze 20 harmless simulated cases and the allowed tools.","Compare correct completion, takeovers, rework and fully loaded cost."],"done":"One table supports a routing decision without customer or payment authority."},
+        {"signal":2,"domain":"Physical AI and Robotics","title":"Test the lost-link boundary","why":"Connectivity claims matter only when the machine fails safely and recovers quickly.","steps":["Disable the primary network under a controlled customer test.","Record recovery time, local safe state and on-site intervention."],"done":"All three measures are public; otherwise WATCHING remains."},
+        {"signal":3,"domain":"Crypto Capital Flows","title":"Require five complete positive sessions","why":"One inflow day has not reversed the completed five-session withdrawal.","steps":["Exclude every session with missing issuer rows.","Recompute combined BTC and ETH rolling flows after settlement."],"done":"Five complete sessions turn positive; missing data is never zero."},
+        {"signal":4,"domain":"Stablecoins and Token Rails","title":"Separate organic yield from incentives","why":"A live tokenized-equity market can still be subsidy-led and thin.","steps":["Track market depth after major incentives decline.","Classify yield sources for four consecutive weeks."],"done":"Usable depth and non-incentive yield persist for four weeks; no purchase occurs."},
+        {"signal":5,"domain":"iamrobin.ai Content and Distribution","title":"Publish the scarcity of no","why":"Cheap execution makes problem definition, refusal and credible feedback more valuable.","steps":["Publish four reviewed editions with Anthropic's limits intact.","Archive the reader experiment and LinkedIn derivative without posting externally."],"done":"Four public editions and every protected-release gate pass.","deepDiveTitle":"The Scarcity of No"},
+        {"signal":6,"domain":"AI Infrastructure and Capital Projects","title":"Map the twenty-year risk allocation","why":"A long PPA improves bankability while fuel, replacement and delay risk remain.","steps":["List delay, fuel, replacement and early-termination risks.","Name the bearer only where public evidence supports it."],"done":"One project card preserves every undisclosed allocation as UNKNOWN."},
+        {"signal":7,"domain":"Late-Stage Private Markets","title":"Wait for production acceptance","why":"A financing close and 64-port demo do not prove volume manufacturing.","steps":["Identify the first paying production customer.","Capture accepted port scale, power per port and optical loss."],"done":"All three operating fields are disclosed before WATCH becomes INVESTIGATE."},
+        {"signal":8,"domain":"Public Equities and AI Themes","title":"Follow cash before milestone headlines","why":"The upfront payment shows willingness to pay; efficacy and total deal value remain conditional.","steps":["Track the first candidate disclosure from the two programs.","Record the target combination and prespecified advantage over existing therapy."],"done":"Both fields are disclosed; one-day price action remains contextual only."}
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年10月15日",
+      "description": "八项有边界的行动，把语音代理、机器人连接、资本流、Token 收益、否决权与基础设施风险变成证据门。",
+      "centralJudgment": "执行变便宜以后，责任会移向异常、接口和拒绝执行的权力。",
+      "fieldLine": "八个信号。计算结果成本，测试失败边界，保留说不的权力。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal":1,"domain":"前沿模型与代理","title":"计算每个正确解决的成本","why":"便宜的语音分钟不能证明正确完成也便宜。","steps":["冻结20个无副作用模拟案例和允许工具。","比较正确闭环、人工接管、返工与完整成本。"],"done":"一张表支持路由判断，不开放客户或付款权限。"},
+        {"signal":2,"domain":"Physical AI与机器人","title":"测试失联边界","why":"只有机器安全失败并快速恢复，连接声称才有价值。","steps":["在受控客户测试中切断主网络。","记录恢复时间、本地安全状态与现场介入。"],"done":"三项实测全部公开，否则维持WATCHING。"},
+        {"signal":3,"domain":"Crypto资本流","title":"要求五个完整正流入日","why":"一天流入没有扭转五个完整交易日的撤退。","steps":["排除任何发行人缺报的交易日。","结算后重算BTC与ETH合计滚动流量。"],"done":"五个完整交易日转正；缺失数据永不写成零。"},
+        {"signal":4,"domain":"稳定币与Token Rails","title":"分开有机收益与激励","why":"Tokenized equity市场已经上线，仍可能由补贴驱动且深度不足。","steps":["主要激励下降后继续跟踪市场深度。","连续四周标注收益来源。"],"done":"可用深度与非激励收益持续四周；不发生购买。"},
+        {"signal":5,"domain":"iamrobin.ai内容与分发","title":"发布说不的稀缺性","why":"执行便宜以后，问题定义、拒绝与可信反馈更有价值。","steps":["保留Anthropic边界，发布四个审阅版。","归档读者实验与LinkedIn衍生稿，不在外部平台发布。"],"done":"四个公开版本与全部受保护发布门通过。","deepDiveTitle":"说不的稀缺性"},
+        {"signal":6,"domain":"AI基础设施与资本项目","title":"绘制二十年风险分配","why":"长期PPA改善融资条件，但燃料、换机和延期风险仍在。","steps":["列出延期、燃料、设备更换与提前解约风险。","只有公开证据存在时才写承担方。"],"done":"一页项目卡把所有未披露分配保留为UNKNOWN。"},
+        {"signal":7,"domain":"晚期私募","title":"等待量产验收","why":"融资完成与64端口演示不能证明量产。","steps":["识别第一家付费量产客户。","记录验收端口规模、每端口功耗与光学损耗。"],"done":"三项运营字段齐全后才把WATCH升为INVESTIGATE。"},
+        {"signal":8,"domain":"公开市场与AI主题","title":"先跟现金再看里程碑标题","why":"首付款证明付费意愿，疗效与总交易价值仍有条件。","steps":["跟踪两个项目的首次候选物披露。","记录靶点组合和相对现有疗法的预设差异。"],"done":"两项均披露；一天股价只作背景。"}
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年10月15日",
+      "description": "八項有邊界的行動，把語音代理、機器人連線、資本流、Token收益、否決權與基礎設施風險變成證據門。",
+      "centralJudgment": "執行變便宜以後，責任會移向異常、介面和拒絕執行的權力。",
+      "fieldLine": "八個訊號。計算結果成本，測試失敗邊界，保留說不的權力。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal":1,"domain":"前沿模型與代理","title":"計算每個正確解決的成本","why":"便宜的語音分鐘不能證明正確完成也便宜。","steps":["凍結20個無副作用模擬案例和允許工具。","比較正確閉環、人工接管、返工與完整成本。"],"done":"一張表支援路由判斷，不開放客戶或付款權限。"},
+        {"signal":2,"domain":"Physical AI與機器人","title":"測試失聯邊界","why":"只有機器安全失敗並快速恢復，連線聲稱才有價值。","steps":["在受控客戶測試中切斷主網路。","記錄恢復時間、本地安全狀態與現場介入。"],"done":"三項實測全部公開，否則維持WATCHING。"},
+        {"signal":3,"domain":"Crypto資本流","title":"要求五個完整正流入日","why":"一天流入沒有扭轉五個完整交易日的撤退。","steps":["排除任何發行人缺報的交易日。","結算後重算BTC與ETH合計滾動流量。"],"done":"五個完整交易日轉正；缺失資料永不寫成零。"},
+        {"signal":4,"domain":"穩定幣與Token Rails","title":"分開有機收益與激勵","why":"Tokenized equity市場已經上線，仍可能由補貼驅動且深度不足。","steps":["主要激勵下降後繼續追蹤市場深度。","連續四週標註收益來源。"],"done":"可用深度與非激勵收益持續四週；不發生購買。"},
+        {"signal":5,"domain":"iamrobin.ai內容與分發","title":"發布說不的稀缺性","why":"執行便宜以後，問題定義、拒絕與可信回饋更有價值。","steps":["保留Anthropic邊界，發布四個審閱版。","歸檔讀者實驗與LinkedIn衍生稿，不在外部平台發布。"],"done":"四個公開版本與全部受保護發布門通過。","deepDiveTitle":"說不的稀缺性"},
+        {"signal":6,"domain":"AI基礎設施與資本專案","title":"繪製二十年風險分配","why":"長期PPA改善融資條件，但燃料、換機和延期風險仍在。","steps":["列出延期、燃料、設備更換與提前解約風險。","只有公開證據存在時才寫承擔方。"],"done":"一頁專案卡把所有未披露分配保留為UNKNOWN。"},
+        {"signal":7,"domain":"晚期私募","title":"等待量產驗收","why":"融資完成與64埠展示不能證明量產。","steps":["識別第一家付費量產客戶。","記錄驗收埠規模、每埠功耗與光學損耗。"],"done":"三項營運欄位齊全後才把WATCH升為INVESTIGATE。"},
+        {"signal":8,"domain":"公開市場與AI主題","title":"先跟現金再看里程碑標題","why":"首付款證明付費意願，療效與總交易價值仍有條件。","steps":["追蹤兩個專案的首次候選物披露。","記錄靶點組合和相對現有療法的預設差異。"],"done":"兩項均披露；一天股價只作背景。"}
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年10月15日",
+      "description": "音声エージェント、ロボット接続、資金フロー、token利回り、拒否権、インフラリスクを八つの証拠条件へ変える。",
+      "centralJudgment": "実行が安くなるほど、責任は例外、インターフェース、拒否する権限へ移る。",
+      "fieldLine": "八つのシグナル。成果単価を測り、故障境界を試し、ノーと言う権限を守る。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal":1,"domain":"先端モデルとエージェント","title":"正しい解決一件の費用を測る","why":"安い音声時間単価は正確な完了の安さを証明しない。","steps":["副作用のない模擬案件20件と許可toolを固定する。","正しい完了、有人引継ぎ、手戻り、総費用を比較する。"],"done":"一表がrouting判断を支え、顧客・決済権限は与えない。"},
+        {"signal":2,"domain":"Physical AIとロボティクス","title":"通信断の境界を試す","why":"安全に停止し速く復旧して初めて接続性の価値が分かる。","steps":["管理された顧客試験で主回線を切る。","復旧時間、安全状態、現地介入を記録する。"],"done":"三項目が公開されるまでWATCHINGを保つ。"},
+        {"signal":3,"domain":"暗号資産フロー","title":"完全な五日間の純流入を待つ","why":"一日の流入は確定五日間の撤退を覆していない。","steps":["発行体欄が欠けた日を除外する。","確定後にBTCとETHの合算rolling flowを再計算する。"],"done":"完全な五日間がプラスになり、欠損をゼロにしない。"},
+        {"signal":4,"domain":"ステーブルコインとToken Rail","title":"有機利回りと報奨を分ける","why":"稼働中のtokenized equity市場も補助金主導で薄い可能性がある。","steps":["主要報奨低下後の市場深度を追う。","四週連続で利回り源を分類する。"],"done":"実用深度と非報奨利回りが四週続き、購入は行わない。"},
+        {"signal":5,"domain":"iamrobin.aiの内容と配信","title":"ノーの希少性を公開する","why":"安い実行は問題定義、拒否、信頼できるfeedbackの価値を上げる。","steps":["Anthropicの限界を保って四審査版を公開する。","読者実験とLinkedIn稿を保存し、外部投稿しない。"],"done":"四公開版と全保護release条件が通る。","deepDiveTitle":"ノーの希少性"},
+        {"signal":6,"domain":"AI基盤と資本案件","title":"二十年のリスク配分を描く","why":"長期PPAは資金調達を助けても燃料、交換、遅延リスクを消さない。","steps":["遅延、燃料、設備交換、早期解約を列挙する。","公開証拠がある場合だけ負担者を書く。"],"done":"一ページ案件cardが未開示配分をUNKNOWNに保つ。"},
+        {"signal":7,"domain":"後期未公開市場","title":"量産受入れを待つ","why":"資金調達完了と64port実演は量産を証明しない。","steps":["最初の有償量産顧客を特定する。","受入済みport規模、port当たり電力、光損失を記録する。"],"done":"三運用項目が揃ってからWATCHをINVESTIGATEへ上げる。"},
+        {"signal":8,"domain":"公開株式とAIテーマ","title":"見出しより先に現金を追う","why":"一時金は支払意思を示すが、有効性と総価値は条件付きだ。","steps":["二プログラムの最初の候補開示を追う。","標的組合せと既存治療への事前差異を記録する。"],"done":"両項目が開示され、一日株価は文脈だけに使う。"}
+      ]
+    }
+  }
+}
