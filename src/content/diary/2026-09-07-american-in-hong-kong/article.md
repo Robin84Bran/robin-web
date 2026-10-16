@@ -1,7 +1,7 @@
 ---
 title: "🏝️ American in Hong Kong"
 date: 2026-09-07
-updated: 2026-09-27
+updated: 2026-10-17
 section: Meaning
 series: Diary
 excerpt: "I logged into Facebook first time in a couple of years and was pleasantly surprised of my US friends sending birthday greetings and asking for how I have been for the last decad…"
