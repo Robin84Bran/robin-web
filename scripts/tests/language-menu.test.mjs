@@ -5,6 +5,51 @@ import { join } from 'node:path';
 import { normalizeLanguage, initialLanguage } from '../../public/language/policy.mjs';
 import { languageMenuMarkup } from '../../public/language/menu.mjs';
 import { normalizeRobinName } from '../../public/language/editorial.mjs';
+import { createEditorialLayer } from '../../public/language/editorial.mjs';
+
+test('AIHK diary includes full owner Chinese, original English, and an exact PDF attachment', () => {
+  const read = p => readFileSync(new URL('../../'+p, import.meta.url), 'utf8');
+  const html = read('dist/meaning/diary/202609/2026-09-07-american-in-hong-kong/index.html');
+  const copy = JSON.parse(read('src/data/diaryAIHKChinese.json'));
+  const packet = JSON.parse(html.match(/id="diary-owner-copy"[^>]*>(.*?)<\/script>/s)[1]);
+  for (const lang of ['zh-CN', 'zh-TW']) {
+    assert.equal(copy[lang].length, 15);
+    assert.equal((packet[lang].body.match(/<p>/g)||[]).length, 15);
+    assert.equal((packet[lang].body.match(/<strong>/g)||[]).length, 9);
+    assert.doesNotMatch(packet[lang].body, /<(?!\/?(?:p|strong)>)/);
+    for (const paragraph of copy[lang]) assert.ok(packet[lang].body.includes(paragraph.replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>')));
+  }
+  assert.ok(html.includes('Weird questions are especially welcome.'));
+  assert.ok(html.indexOf('class="diary-attachment"') > html.indexOf('Weird questions are especially welcome.'));
+  const asset = 'diary/2026-09-07-american-in-hong-kong/Robin_Xie_AIHK.pdf';
+  assert.ok(html.includes(`href="/${asset}" download="Robin_Xie_AIHK.pdf"`));
+  assert.deepEqual(readFileSync(new URL('../../dist/'+asset, import.meta.url)), readFileSync(new URL('../../public/'+asset, import.meta.url)));
+});
+
+test('diary editorial copy preserves bold markup and restores original on repeated switches', () => {
+  const attrs = new Map([['data-diary-copy','body'], ['data-diary-html','']]);
+  const classes = new Set();
+  const node = {innerHTML:'<p>Original English.</p>', dataset:{diaryCopy:'body'},
+    hasAttribute:k=>attrs.has(k), getAttribute:k=>attrs.get(k)??null,
+    setAttribute:(k,v)=>attrs.set(k,v), removeAttribute:k=>attrs.delete(k),
+    classList:{contains:k=>classes.has(k), add:k=>classes.add(k), toggle:(k,on)=>on?classes.add(k):classes.delete(k)}};
+  const body = '<p>😌 <strong>十多年前</strong></p>';
+  const doc = {getElementById:id=>id==='diary-owner-copy'?{textContent:JSON.stringify({'zh-CN':{body},'zh-TW':{body:'<p>繁體</p>'}})}:null,
+    querySelectorAll:()=>[node]};
+  const layer = createEditorialLayer(doc);
+  for (let i=0;i<2;i++) {
+    assert.equal(layer.apply('zh-CN'),true);
+    assert.equal(node.innerHTML,body);
+    assert.equal(attrs.get('translate'),'no');
+    layer.restore();
+    assert.equal(node.innerHTML,'<p>Original English.</p>');
+    assert.equal(attrs.has('translate'),false);
+    assert.equal(layer.apply('ja'),false);
+    assert.equal(layer.apply('zh-TW'),true);
+    assert.equal(node.innerHTML,'<p>繁體</p>');
+    layer.restore();
+  }
+});
 
 test('Chinese transliterations use the owner-specified name without changing English brands', () => {
   assert.equal(normalizeRobinName('罗宾与羅賓；罗宾·谢；羅賓 謝伊'), '谢玢与谢玢；谢玢；谢玢');
