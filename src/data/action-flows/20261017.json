@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-17",
+  "updated": "2026-10-17",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20261017/hero.webp",
+  "actionHero": "/action-item/20261017/hero.webp",
+  "ogImage": "/daily-briefing/20261017/og.webp",
+  "briefingPath": "/ouroboros/202610/20261017/",
+  "actionItemPath": "/ouroboros/202610/20261017/action_item/",
+  "actions": [
+    {"signal": 1, "priority": "NOW", "status": "READY", "sources": [{"label": "openai-third-moment", "url": "https://openai.com/index/third-moment-research/"}]},
+    {"signal": 2, "priority": "WATCH", "status": "WATCHING", "sources": [{"label": "hesai-kosmo", "url": "https://www.hesaitech.com/9974-2/"}]},
+    {"signal": 3, "priority": "WATCH", "status": "WATCHING", "sources": [{"label": "btc-etf-flows", "url": "https://farside.co.uk/btc/"}, {"label": "eth-etf-flows", "url": "https://farside.co.uk/eth/"}]},
+    {"signal": 4, "priority": "WATCH", "status": "WATCHING", "sources": [{"label": "jupiter-yolo", "url": "https://jup.ag/yolo"}, {"label": "yolo-rules-review", "url": "https://cryptovank.com/defi/jupiter-yolo-1000x-leverage/"}]},
+    {"signal": 5, "priority": "NOW", "status": "READY", "sources": [{"label": "stack-overflow-chatgpt", "url": "https://openai.com/index/stack-overflow-chatgpt-plugin/"}]},
+    {"signal": 6, "priority": "NEXT", "status": "READY", "sources": [{"label": "ferc-ohio-flagship", "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261013-5422&optimized=false"}, {"label": "utility-dive-ohio", "url": "https://www.utilitydive.com/news/pjm-softbank-ohio-ai-flagship-state-agreement-approach/832962/"}]},
+    {"signal": 7, "priority": "WATCH", "status": "WATCHING", "sources": [{"label": "modal-series-d", "url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d"}]},
+    {"signal": 8, "priority": "WATCH", "status": "WATCHING", "sources": [{"label": "amd-history", "url": "https://stockanalysis.com/stocks/amd/history/"}, {"label": "qqq-history", "url": "https://stockanalysis.com/etf/qqq/history/"}]}
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, October 17, 2026",
+      "description": "Eight bounded actions turn agent recovery, robot data, ETF flows, payout structure, answerable archives, power obligations, compute margins, and public-market repricing into explicit gates.",
+      "centralJudgment": "A claim becomes useful only after its recovery, settlement, evidence, or financing boundary is visible.",
+      "fieldLine": "Eight signals. Follow the boundary that decides value.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "Frontier Models and Agents", "title": "Inject one recoverable failure", "why": "Long runs matter when the system detects incomplete work and recovers without hiding human effort.", "steps": ["Freeze one read-only eight-hour task and acceptance test.", "Inject one tool timeout and record delivery, recoveries, human minutes, and cost."], "done": "One matched record shows whether the recovery layer reduces coordination."},
+        {"signal": 2, "domain": "Physical AI and Robotics", "title": "Require customer deployment economics", "why": "A 99% company result lacks the denominator needed for deployment judgment.", "steps": ["Capture cost per newly deployed environment from a paying customer.", "Record on-site human takeovers for the same task distribution."], "done": "Both measures exist before WATCH changes."},
+        {"signal": 3, "domain": "Crypto Capital Flows", "title": "Wait for complete positive flows", "why": "Five complete sessions remain negative and missing issuer rows are not zero.", "steps": ["Freeze the five-session definition.", "Recompute only after every October 16 issuer row is complete."], "done": "Bitcoin and Ether both turn positive on complete data."},
+        {"signal": 4, "domain": "Stablecoins and Payment Rails", "title": "Separate displayed and settled profit", "why": "House-pool liquidity can make a profitable screen different from a paid claim.", "steps": ["Record publicly verifiable pool balance and queued claims.", "Match them to actual payout evidence without using capital."], "done": "Every displayed profit state maps to a settled, queued, or UNKNOWN state."},
+        {"signal": 5, "domain": "iamrobin.ai Content and Distribution", "title": "Publish the answerable archive", "why": "Archives compound when a current answer preserves sources, tension, and correction paths.", "steps": ["Publish four reviewed editions and the five-field answer structure.", "Archive the twelve-question paper test and LinkedIn draft without external posting."], "done": "Four public editions and every protected-release gate pass.", "deepDiveTitle": "The Archive Must Answer Back"},
+        {"signal": 6, "domain": "AI Infrastructure and Capital Projects", "title": "Name the power obligor", "why": "Planned megawatts become financeable only when payment duties and guarantees survive low utilization.", "steps": ["Identify legal obligor, guarantee, and minimum-payment duration.", "Keep interconnection and cost recovery unresolved until final evidence."], "done": "One project card separates planned, deliverable, and financeable capacity."},
+        {"signal": 7, "domain": "Late-Stage Private Markets", "title": "Underwrite compute-adjusted gross profit", "why": "Run rate can grow while compute commitments absorb the value.", "steps": ["Obtain gross profit after compute expense.", "List non-cancellable capacity commitments and preference terms."], "done": "Both fields exist before WATCH becomes INVESTIGATE."},
+        {"signal": 8, "domain": "Public Equities and AI Themes", "title": "Test orders before changing thesis", "why": "AMD underperformance does not establish weaker demand or earnings.", "steps": ["Wait for the next official AMD disclosure.", "Check customer-demand and cash-collection expectations only."], "done": "The move is classified as valuation or earnings change from company evidence."}
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年10月17日",
+      "description": "八项有边界的行动，把代理恢复、机器人数据、ETF流量、支付结构、可回答档案、电力责任、算力毛利和市场重估变成明确门槛。",
+      "centralJudgment": "一项主张只有在恢复、结算、证据或融资边界清楚后，才真正可用。",
+      "fieldLine": "八个信号。沿着决定价值的边界行动。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "前沿模型与代理", "title": "注入一次可恢复失败", "why": "长时运行只有能识别未完成工作并诚实计算人工成本时才有价值。", "steps": ["冻结一个八小时只读任务和验收标准。", "注入一次工具超时，记录交付、恢复、人工分钟和成本。"], "done": "一份匹配记录证明恢复层是否降低协调负担。"},
+        {"signal": 2, "domain": "Physical AI与机器人", "title": "要求客户部署经济性", "why": "99%的公司数据缺少部署判断所需分母。", "steps": ["取得付费客户每个新环境上线成本。", "记录同一任务分布下的现场人工接管。"], "done": "两项齐全后才改变WATCH。"},
+        {"signal": 3, "domain": "加密资本流", "title": "等待完整正流量", "why": "五个完整交易日仍为负，发行人缺报不等于零。", "steps": ["固定五日窗口定义。", "10月16日所有发行人行完整后再计算。"], "done": "完整数据上BTC与ETH同时转正。"},
+        {"signal": 4, "domain": "稳定币与支付轨道", "title": "分开显示盈利与已结算盈利", "why": "house pool流动性会令盈利画面与已支付债权不同。", "steps": ["记录公开可验证池余额和待付队列。", "在不动用资本的前提下匹配实际支付证据。"], "done": "每项显示盈利都标为已结算、排队或UNKNOWN。"},
+        {"signal": 5, "domain": "iamrobin.ai内容与分发", "title": "发布可回答档案", "why": "档案保留来源、张力与更正路径时才会复利。", "steps": ["发布四个审阅版本和五字段回答结构。", "归档十二问题纸面测试和LinkedIn草稿，不在外部发布。"], "done": "四个公开版本和全部受保护发布门通过。", "deepDiveTitle": "让档案回答问题"},
+        {"signal": 6, "domain": "AI基础设施与资本项目", "title": "写明电力义务主体", "why": "只有付款义务和担保能承受低利用率，规划兆瓦才可能融资。", "steps": ["识别法律义务主体、担保和最低付款期限。", "最终证据出现前保留并网和成本回收缺口。"], "done": "一张项目卡分开规划、可交付和可融资产能。"},
+        {"signal": 7, "domain": "后期私募", "title": "核算扣除算力后的毛利", "why": "run rate增长时，容量承诺仍可能吸走价值。", "steps": ["取得扣除计算成本后的毛利。", "列出不可取消容量承诺与优先条款。"], "done": "两项齐全后才从WATCH升为INVESTIGATE。"},
+        {"signal": 8, "domain": "公开市场与AI主题", "title": "改变判断前先验证订单", "why": "AMD跑输大盘并不证明需求或盈利减弱。", "steps": ["等待下一次AMD官方披露。", "只检查客户需求与现金回收预期。"], "done": "根据公司证据归类为估值或盈利变化。"}
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年10月17日",
+      "description": "八項有邊界的行動，把代理恢復、機器人數據、ETF流量、支付結構、可回答檔案、電力責任、算力毛利和市場重估變成明確門檻。",
+      "centralJudgment": "一項主張只有在恢復、結算、證據或融資邊界清楚後，才真正可用。",
+      "fieldLine": "八個訊號。沿著決定價值的邊界行動。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "前沿模型與代理", "title": "注入一次可恢復失敗", "why": "長時運行只有能識別未完成工作並誠實計算人工成本時才有價值。", "steps": ["凍結一個八小時只讀任務和驗收標準。", "注入一次工具逾時，記錄交付、恢復、人工分鐘和成本。"], "done": "一份匹配記錄證明恢復層是否降低協調負擔。"},
+        {"signal": 2, "domain": "Physical AI與機器人", "title": "要求客戶部署經濟性", "why": "99%的公司數據缺少部署判斷所需分母。", "steps": ["取得付費客戶每個新環境上線成本。", "記錄同一任務分布下的現場人工接管。"], "done": "兩項齊全後才改變WATCH。"},
+        {"signal": 3, "domain": "加密資本流", "title": "等待完整正流量", "why": "五個完整交易日仍為負，發行人缺報不等於零。", "steps": ["固定五日視窗定義。", "10月16日所有發行人資料完整後再計算。"], "done": "完整數據上BTC與ETH同時轉正。"},
+        {"signal": 4, "domain": "穩定幣與支付軌道", "title": "分開顯示盈利與已結算盈利", "why": "house pool流動性會令盈利畫面與已支付債權不同。", "steps": ["記錄公開可驗證池餘額和待付隊列。", "在不動用資本下匹配實際支付證據。"], "done": "每項顯示盈利都標為已結算、排隊或UNKNOWN。"},
+        {"signal": 5, "domain": "iamrobin.ai內容與分發", "title": "發布可回答檔案", "why": "檔案保留來源、張力與更正路徑時才會複利。", "steps": ["發布四個審閱版本和五欄回答結構。", "歸檔十二問題紙面測試和LinkedIn草稿，不在外部發布。"], "done": "四個公開版本和全部受保護發布門通過。", "deepDiveTitle": "讓檔案回答問題"},
+        {"signal": 6, "domain": "AI基礎設施與資本項目", "title": "寫明電力義務主體", "why": "只有付款義務和擔保能承受低利用率，規劃兆瓦才可能融資。", "steps": ["識別法律義務主體、擔保和最低付款期限。", "最終證據出現前保留併網和成本回收缺口。"], "done": "一張項目卡分開規劃、可交付和可融資產能。"},
+        {"signal": 7, "domain": "後期私募", "title": "核算扣除算力後的毛利", "why": "run rate增長時，容量承諾仍可能吸走價值。", "steps": ["取得扣除計算成本後的毛利。", "列出不可取消容量承諾與優先條款。"], "done": "兩項齊全後才由WATCH升為INVESTIGATE。"},
+        {"signal": 8, "domain": "公開市場與AI主題", "title": "改變判斷前先驗證訂單", "why": "AMD跑輸大市並不證明需求或盈利減弱。", "steps": ["等待下一次AMD官方披露。", "只檢查客戶需求與現金回收預期。"], "done": "根據公司證據歸類為估值或盈利變化。"}
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年10月17日",
+      "description": "回復、ロボットデータ、ETFフロー、支払構造、答えるアーカイブ、電力債務、計算粗利、市場再評価を8つの条件へ変える。",
+      "centralJudgment": "主張は、回復、決済、証拠、融資の境界が見えて初めて使える。",
+      "fieldLine": "8つのシグナル。価値を決める境界を追う。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "フロンティアモデルとエージェント", "title": "回復可能な障害を一つ入れる", "why": "長時間実行は未完了を検出し、人手を隠さず回復して初めて価値を持つ。", "steps": ["8時間の読み取り専用課題と受入れ条件を固定する。", "ツール停止を一度入れ、成果、回復、人手、費用を記録する。"], "done": "比較記録が回復層の調整負担削減を示す。"},
+        {"signal": 2, "domain": "Physical AIとロボティクス", "title": "顧客導入経済性を求める", "why": "99%という企業値には導入判断の分母がない。", "steps": ["有料顧客の新環境当たり費用を取る。", "同じタスク分布で現場介入回数を記録する。"], "done": "両方が揃うまでWATCHを変えない。"},
+        {"signal": 3, "domain": "暗号資産フロー", "title": "完全な純流入を待つ", "why": "完全な5営業日はマイナスで、欠損はゼロではない。", "steps": ["5営業日の定義を固定する。", "10月16日の全発行体欄が揃ってから再計算する。"], "done": "完全データでBTCとETHが同時にプラスへ転じる。"},
+        {"signal": 4, "domain": "ステーブルコインと決済", "title": "表示利益と決済利益を分ける", "why": "house poolの流動性で画面利益と支払済み請求は異なる。", "steps": ["公開検証できる残高と待ち請求を記録する。", "資本を使わず実支払証拠と照合する。"], "done": "各利益を決済、待ち、UNKNOWNへ分類する。"},
+        {"signal": 5, "domain": "iamrobin.aiの内容と配信", "title": "答えられるアーカイブを公開する", "why": "出典、緊張、訂正経路を保つとアーカイブが複利化する。", "steps": ["審査済み4版と5項目回答構造を公開する。", "12問テストとLinkedIn稿を保存し、外部投稿しない。"], "done": "4公開版と全保護リリース条件が通る。", "deepDiveTitle": "アーカイブに答えさせる"},
+        {"signal": 6, "domain": "AIインフラと資本案件", "title": "電力債務者を特定する", "why": "低利用時も支払義務と保証が残って初めて計画MWは融資可能になる。", "steps": ["法的債務者、保証、最低支払期間を特定する。", "最終証拠まで接続と費用回収を未解決にする。"], "done": "案件カードが計画、供給可能、融資可能容量を分ける。"},
+        {"signal": 7, "domain": "後期未公開市場", "title": "計算費控除後粗利を調べる", "why": "run rateが伸びても容量契約が価値を吸収し得る。", "steps": ["計算費控除後の粗利益を得る。", "取消不能容量契約と優先条件を並べる。"], "done": "両方が揃ってからWATCHをINVESTIGATEへ上げる。"},
+        {"signal": 8, "domain": "公開株式とAIテーマ", "title": "判断変更前に受注を確認する", "why": "AMDの劣後は需要や利益の悪化を証明しない。", "steps": ["次のAMD公式開示を待つ。", "顧客需要と回収見通しだけを確認する。"], "done": "企業証拠から評価変化か利益変化かを分類する。"}
+      ]
+    }
+  }
+}
