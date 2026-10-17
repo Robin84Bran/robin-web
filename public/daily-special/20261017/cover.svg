@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">One timeout, six receipts</title>
+  <desc id="desc">A tool timeout passes through six evidence gates: fault, detection, resume, side effects, acceptance and delivery.</desc>
+  <rect width="1600" height="900" fill="#f1eee6"/>
+  <g fill="none" stroke="#d8d4ca" stroke-width="1">
+    <path d="M0 180H1600M0 360H1600M0 540H1600M0 720H1600"/>
+    <path d="M200 0V900M400 0V900M600 0V900M800 0V900M1000 0V900M1200 0V900M1400 0V900"/>
+  </g>
+  <text x="110" y="105" fill="#6c6a60" font-family="Arial,sans-serif" font-size="22" letter-spacing="4">DAILY SPECIAL · 17 OCT 2026 · SIGNAL 1</text>
+  <text x="110" y="225" fill="#262821" font-family="Georgia,serif" font-size="72">One timeout.</text>
+  <text x="110" y="309" fill="#262821" font-family="Georgia,serif" font-size="72">Six receipts.</text>
+  <path d="M120 470H1480" fill="none" stroke="#59634f" stroke-width="6"/>
+  <g font-family="Arial,sans-serif" text-anchor="middle">
+    <g fill="#9b7257">
+      <circle cx="150" cy="470" r="28"/><circle cx="410" cy="470" r="28"/><circle cx="670" cy="470" r="28"/>
+      <circle cx="930" cy="470" r="28"/><circle cx="1190" cy="470" r="28"/><circle cx="1450" cy="470" r="28"/>
+    </g>
+    <g fill="#f8f5ed" font-size="20" font-weight="700">
+      <text x="150" y="477">1</text><text x="410" y="477">2</text><text x="670" y="477">3</text>
+      <text x="930" y="477">4</text><text x="1190" y="477">5</text><text x="1450" y="477">6</text>
+    </g>
+    <g fill="#30342b" font-size="19" letter-spacing="2">
+      <text x="150" y="545">FAULT</text><text x="410" y="545">DETECT</text><text x="670" y="545">RESUME</text>
+      <text x="930" y="545">EFFECTS</text><text x="1190" y="545">ACCEPT</text><text x="1450" y="545">DELIVER</text>
+    </g>
+    <g fill="#6c6a60" font-family="Georgia,serif" font-size="24">
+      <text x="150" y="600">Did it happen?</text><text x="410" y="600">Was it seen?</text><text x="670" y="600">Which state?</text>
+      <text x="930" y="600">Anything twice?</text><text x="1190" y="600">Is it right?</text><text x="1450" y="600">Did it arrive?</text>
+    </g>
+  </g>
+  <rect x="110" y="690" width="1380" height="74" rx="7" fill="#59634f"/>
+  <text x="150" y="738" fill="#f7f4eb" font-family="Georgia,serif" font-size="29">A green check is the last receipt, not the whole recovery.</text>
+  <text x="1488" y="830" fill="#62675d" font-family="Arial,sans-serif" font-size="20" text-anchor="end">iamrobin.ai</text>
+</svg>
