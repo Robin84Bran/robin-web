@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-18",
+  "updated": "2026-10-18",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20261018/hero.webp",
+  "actionHero": "/action-item/20261018/hero.webp",
+  "ogImage": "/daily-briefing/20261018/og.webp",
+  "briefingPath": "/ouroboros/202610/20261018/",
+  "actionItemPath": "/ouroboros/202610/20261018/action_item/",
+  "actions": [
+    {"signal": 1, "priority": "NEXT", "status": "READY", "sources": [{"label": "DeepSeek updates", "url": "https://api-docs.deepseek.com/updates/"}]},
+    {"signal": 2, "priority": "WATCH", "status": "WATCHING", "sources": [{"label": "Origin", "url": "https://origin.tech/blog/origin-emerges-from-stealth-with-20-million"}, {"label": "Mint", "url": "https://www.livemint.com/companies/start-ups/origin-raises-20-million-from-accel-zacua-to-scale-construction-robotics-in-us-europe-11792047136480.html"}]},
+    {"signal": 3, "priority": "WATCH", "status": "WATCHING", "sources": [{"label": "Farside BTC", "url": "https://farside.co.uk/btc/"}, {"label": "Farside ETH", "url": "https://farside.co.uk/eth/"}]},
+    {"signal": 4, "priority": "NEXT", "status": "READY", "sources": [{"label": "Mastercard", "url": "https://www.mastercard.com/global/en/news-and-trends/press/2026/october/mastercard-and-bvnk-launch-global-money-platform-to-power-a-mult.html"}]},
+    {"signal": 5, "priority": "NOW", "status": "COMPLETE", "sources": [{"label": "DeepSeek", "url": "https://api-docs.deepseek.com/updates/"}, {"label": "Anthropic", "url": "https://www.anthropic.com/news/investigating-unintended-model-actions"}, {"label": "NIST", "url": "https://www.nist.gov/itl/ai-risk-management-framework"}]},
+    {"signal": 6, "priority": "WATCH", "status": "WATCHING", "sources": [{"label": "EverWind", "url": "https://everwindfuels.com/2026/10/everwind-announces-10-billion-investment-in-point-tupper-data-centre-campus-and-renewable-energy-portfolio-across-nova-scotia/"}, {"label": "Reuters via CNA", "url": "https://www.channelnewsasia.com/business/anthropic-signs-lease-first-canadian-data-center-6467591"}]},
+    {"signal": 7, "priority": "WATCH", "status": "WATCHING", "sources": [{"label": "Ramp", "url": "https://www.prnewswire.com/news-releases/ramp-reaches-60-billion-valuation-as-annualized-revenue-tops-2-billion-302909315.html"}]},
+    {"signal": 8, "priority": "WATCH", "status": "WATCHING", "sources": [{"label": "TSMC", "url": "https://investor.tsmc.com/english/quarterly-results/2026/q3"}, {"label": "TSM history", "url": "https://stockanalysis.com/stocks/tsm/history/"}, {"label": "QQQ history", "url": "https://stockanalysis.com/etf/qqq/history/"}]}
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, October 18, 2026",
+      "description": "Eight bounded actions separate provider claims, plans, prices, and accepted outcomes.",
+      "centralJudgment": "Expand authority only after a fixed task produces accepted, recoverable results.",
+      "fieldLine": "Eight signals. One bounded next move each.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "Frontier Models and Agents", "title": "Benchmark one accepted task", "why": "Provider efficiency claims matter only when the same real task remains acceptable at lower total cost.", "steps": ["Freeze one read-only research task and its acceptance test.", "Compare acceptance, total cost, takeovers, and recoveries."], "done": "All four measures exist and no production route changes."},
+        {"signal": 2, "domain": "Physical AI and Robotics", "title": "Wait for site economics", "why": "Six deployed robots are useful evidence, while uptime, rework, intervention, and retention remain unknown.", "steps": ["Record a named paying deployment when public.", "Add uptime, rework, and takeovers from dated evidence."], "done": "All four site-economics fields are evidenced; otherwise WATCH."},
+        {"signal": 3, "domain": "Crypto Capital Flows", "title": "Keep the five-session window", "why": "A fixed complete window prevents provisional zeros and one-day rebounds from becoming a regime claim.", "steps": ["Refresh complete BTC and ETH issuer rows.", "Upgrade only when both five-session sums are positive."], "done": "The classification is refreshed without a trade instruction."},
+        {"signal": 4, "domain": "Stablecoins and Payment Rails", "title": "Score one live corridor", "why": "A platform launch does not prove end-to-end cost, speed, redemption, or compliance.", "steps": ["Choose one currently supported asset and corridor.", "Record fee, arrival time, redemption entity, and compliance owner."], "done": "Every corridor field has current public evidence."},
+        {"signal": 5, "domain": "Content and Visibility", "title": "Define bounded standing delegation", "why": "A recurring decision disappears only when authority, acceptance, exceptions, recovery, and revocation are explicit.", "steps": ["Publish the four-language paper framework.", "Keep the five-task experiment NOT_RUN until separately authorized."], "done": "Canonical article, sources, ledger, visual, and archived derivative pass local gates."},
+        {"signal": 6, "domain": "AI Infrastructure and Career", "title": "Separate leased from energized megawatts", "why": "A capacity lease signals demand while permits, interconnection, and delivery remain conditional.", "steps": ["Record binding capacity and all conditions.", "Add target energization and delay liability."], "done": "Four deliverability fields are evidenced; otherwise WATCH."},
+        {"signal": 7, "domain": "Late-Stage Private Markets", "title": "Hold Ramp at WATCH", "why": "Company-reported scale lacks audited margin, retention, credit-loss, and round-term evidence.", "steps": ["Request no allocation and make no contact.", "Track audited revenue, gross margin, retention, losses, and terms when public."], "done": "All five underwriting fields exist before INVESTIGATE."},
+        {"signal": 8, "domain": "Public Equities", "title": "Separate price from demand", "why": "Two-session underperformance cannot establish weaker AI orders or fair value.", "steps": ["At the next filing, update AI demand and 2nm ramp.", "Add overseas-fab margin dilution without using price as a proxy."], "done": "The thesis changes only from company evidence; no trade is created."}
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年10月18日",
+      "description": "八项有边界行动，分开公司声明、计划、价格与合格成果。",
+      "centralJudgment": "只有固定任务产生合格且可恢复的结果，才扩大权限。",
+      "fieldLine": "八个信号，每个只有一个有边界的下一步。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "前沿模型与代理", "title": "测试一项合格任务", "why": "只有同一真实任务以更低总成本继续合格，提供商效率声明才有意义。", "steps": ["冻结一项只读研究任务及验收。", "比较合格率、总成本、接管和恢复。"], "done": "四项指标齐备且不改变生产路线。"},
+        {"signal": 2, "domain": "Physical AI与机器人", "title": "等待现场经济性", "why": "六台部署有信息，但正常运行、返工、接管和续约仍未知。", "steps": ["出现公开付费部署时记录客户。", "补齐正常运行、返工和接管。"], "done": "四项现场字段有证据，否则WATCH。"},
+        {"signal": 3, "domain": "加密资本流", "title": "保持五日窗口", "why": "固定完整窗口避免暂列零和单日反弹成为制度判断。", "steps": ["更新完整BTC与ETH发行人行。", "仅在两者五日和同时转正时升级。"], "done": "完成分类更新且不产生交易指令。"},
+        {"signal": 4, "domain": "稳定币与支付", "title": "评分一条真实走廊", "why": "平台发布不证明端到端成本、速度、赎回或合规。", "steps": ["选一项当前支持的资产与走廊。", "记录费用、到账、赎回主体和合规责任。"], "done": "所有走廊字段都有当前公开证据。"},
+        {"signal": 5, "domain": "内容与可见度", "title": "定义有边界持续委托", "why": "权限、验收、例外、恢复与撤销明确后，反复决定才真正消失。", "steps": ["发布四语纸面框架。", "五任务实验保持NOT_RUN，等待另行授权。"], "done": "文章、来源、台账、视觉与归档衍生物通过本地门。"},
+        {"signal": 6, "domain": "AI基础设施与职业", "title": "分开租赁与通电兆瓦", "why": "容量租约说明需求，许可、并网与交付仍有条件。", "steps": ["记录约束性容量与全部条件。", "补充目标通电和延误责任。"], "done": "四项交付字段有证据，否则WATCH。"},
+        {"signal": 7, "domain": "后期私募", "title": "Ramp维持WATCH", "why": "公司规模声明缺审计毛利、留存、信用损失和条款。", "steps": ["不申请份额，也不联系。", "公开后追踪审计收入、毛利、留存、损失和条款。"], "done": "五项承销字段齐备后才INVESTIGATE。"},
+        {"signal": 8, "domain": "公开市场", "title": "分开价格与需求", "why": "两日跑输不能证明AI订单或公允价值变差。", "steps": ["下次披露更新AI需求与2nm爬坡。", "补充海外厂毛利影响，不用价格做代理。"], "done": "只依据公司证据改判断，不产生交易。"}
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年10月18日",
+      "description": "八項有邊界行動，分開公司聲明、計劃、價格與合格成果。",
+      "centralJudgment": "只有固定任務產生合格且可恢復結果，才擴大權限。",
+      "fieldLine": "八個訊號，每個只有一個有邊界的下一步。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "前沿模型與代理", "title": "測試一項合格任務", "why": "同一真實任務以更低總成本維持合格，效率聲明才有意義。", "steps": ["凍結一項唯讀任務及驗收。", "比較合格、成本、接管和恢復。"], "done": "四項指標齊備且不改生產路線。"},
+        {"signal": 2, "domain": "Physical AI與機器人", "title": "等待現場經濟性", "why": "六台部署有資訊，正常運行、返工、接管和續約仍未知。", "steps": ["記錄公開付費部署。", "補齊運行、返工和接管。"], "done": "四項字段有證據，否則WATCH。"},
+        {"signal": 3, "domain": "加密資本流", "title": "保持五日窗口", "why": "固定完整窗口阻止暫列零成為制度判斷。", "steps": ["更新完整BTC與ETH行。", "兩者五日和同時轉正才升級。"], "done": "更新分類且不產生交易。"},
+        {"signal": 4, "domain": "穩定幣與支付", "title": "評分一條真實走廊", "why": "發布不證明成本、速度、贖回和合規。", "steps": ["選一條已支援走廊。", "記錄費用、到帳、贖回和責任。"], "done": "全部字段有當前證據。"},
+        {"signal": 5, "domain": "內容與可見度", "title": "定義有邊界持續委託", "why": "權限、驗收、例外、恢復和撤銷明確後，決定才消失。", "steps": ["發布四語紙面框架。", "五任務實驗保持NOT_RUN。"], "done": "文章、來源、台賬、視覺和歸檔衍生物通過。"},
+        {"signal": 6, "domain": "AI基礎設施與職業", "title": "分開租賃與通電兆瓦", "why": "租約說明需求，交付仍有條件。", "steps": ["記錄容量與條件。", "補充通電日和延誤責任。"], "done": "四項字段有證據，否則WATCH。"},
+        {"signal": 7, "domain": "後期私募", "title": "Ramp維持WATCH", "why": "公司聲明缺審計毛利、留存、損失和條款。", "steps": ["不申請份額、不聯絡。", "公開後追蹤五項承銷字段。"], "done": "字段齊備後才INVESTIGATE。"},
+        {"signal": 8, "domain": "公開市場", "title": "分開價格與需求", "why": "兩日跑輸不能證明AI訂單轉弱。", "steps": ["更新AI需求與2nm爬坡。", "補充海外廠毛利影響。"], "done": "只依公司證據改判斷，不交易。"}
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー 2026年10月18日",
+      "description": "会社主張、計画、価格、受入成果を分ける8つの行動。",
+      "centralJudgment": "固定タスクが受入可能で回復可能な結果を出した後だけ権限を広げる。",
+      "fieldLine": "8シグナル、それぞれに境界付きの次の一手。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "フロンティアモデル", "title": "一つの受入タスクを測る", "why": "同じ実務が低い総費用で受理されて初めて効率主張に意味がある。", "steps": ["読み取り専用タスクと基準を固定する。", "受入れ、費用、介入、回復を比べる。"], "done": "4指標が揃い本番経路を変えない。"},
+        {"signal": 2, "domain": "Physical AI", "title": "現場経済を待つ", "why": "6台は情報だが稼働、手直し、介入、更新は不明。", "steps": ["公開された有料現場を記録する。", "稼働、手直し、介入を加える。"], "done": "4項目が揃うまでWATCH。"},
+        {"signal": 3, "domain": "暗号資産フロー", "title": "5日窓を保つ", "why": "固定完全窓は暫定値の物語化を防ぐ。", "steps": ["BTCとETHの完全行を更新する。", "両方がプラスの時だけ昇格する。"], "done": "取引指示なしで分類を更新する。"},
+        {"signal": 4, "domain": "決済レール", "title": "一つの実経路を採点する", "why": "開始発表は費用、速度、償還、規制を証明しない。", "steps": ["対応済み経路を一つ選ぶ。", "費用、着金、償還、責任を記録する。"], "done": "全項目に現在証拠がある。"},
+        {"signal": 5, "domain": "コンテンツ", "title": "境界付き継続委任を定義する", "why": "権限、受入れ、例外、回復、取消しが明確な時だけ判断が消える。", "steps": ["4言語の紙上枠組みを公開する。", "5タスク試験はNOT_RUNのままにする。"], "done": "記事、情報源、台帳、画像、保存草案が通過する。"},
+        {"signal": 6, "domain": "AIインフラ", "title": "賃貸MWと通電MWを分ける", "why": "容量契約は需要であり、許認可と接続は条件付き。", "steps": ["拘束容量と条件を記録する。", "通電日と遅延責任を加える。"], "done": "4項目が揃うまでWATCH。"},
+        {"signal": 7, "domain": "未公開市場", "title": "RampをWATCHに保つ", "why": "監査済み利益率、維持率、損失、条件がない。", "steps": ["配分申請も接触もしない。", "公開時に5項目を追跡する。"], "done": "全項目後にINVESTIGATE。"},
+        {"signal": 8, "domain": "公開株式", "title": "価格と需要を分ける", "why": "二日間の劣後はAI注文悪化を証明しない。", "steps": ["AI需要と2nm立上げを更新する。", "海外工場の利益率影響を加える。"], "done": "会社証拠だけで判断し取引を作らない。"}
+      ]
+    }
+  }
+}
