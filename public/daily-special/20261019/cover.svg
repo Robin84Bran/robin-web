@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f3efe7"/>
+  <g stroke="#d8d3c8" stroke-width="1">
+    <path d="M96 0V900M1504 0V900M0 132H1600M0 792H1600"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="112" y="91" fill="#52685b" font-size="24" letter-spacing="4">DAILY SPECIAL · 19 OCT 2026 · SIGNAL 3</text>
+    <text x="112" y="236" fill="#202823" font-family="Georgia, serif" font-size="76">The outflow slowed.</text>
+    <text x="112" y="324" fill="#202823" font-family="Georgia, serif" font-size="76">It did not reverse.</text>
+    <text x="112" y="383" fill="#657068" font-size="25" letter-spacing="2">BTC + ETH ETP NET FLOW · USD MILLIONS</text>
+
+    <line x1="1330" y1="438" x2="1330" y2="695" stroke="#5d675f" stroke-width="2"/>
+    <text x="1346" y="430" fill="#657068" font-size="20">ZERO</text>
+
+    <text x="112" y="499" fill="#2a332d" font-size="29">5–9 OCT</text>
+    <rect x="342" y="452" width="988" height="70" rx="3" fill="#a65e4d"/>
+    <text x="362" y="498" fill="#fffaf2" font-size="31">−1,221.1</text>
+
+    <text x="112" y="629" fill="#2a332d" font-size="29">12–16 OCT</text>
+    <rect x="886" y="582" width="444" height="70" rx="3" fill="#b97862"/>
+    <text x="906" y="628" fill="#fffaf2" font-size="31">−548.5</text>
+
+    <path d="M342 718H886" stroke="#52725e" stroke-width="3"/>
+    <path d="M342 718l14-8v16zM886 718l-14-8v16z" fill="#52725e"/>
+    <text x="520" y="763" fill="#446251" font-size="29">55.1% smaller outflow</text>
+
+    <text x="112" y="850" fill="#657068" font-size="21">Two adjacent five-session windows · Source: Farside Investors · Author calculations</text>
+  </g>
+</svg>
