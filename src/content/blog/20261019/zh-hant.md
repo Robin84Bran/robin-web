@@ -1,5 +1,5 @@
 ---
-archiveStatus: "PIPELINE"
+archiveStatus: "PRESENT"
 title: 一套有心跳的策略
 date: 2026-10-19
 updated: 2026-08-21

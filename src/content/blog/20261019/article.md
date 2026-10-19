@@ -1,5 +1,5 @@
 ---
-archiveStatus: "PIPELINE"
+archiveStatus: "PRESENT"
 title: A Strategy With a Heartbeat
 date: 2026-10-19
 updated: 2026-08-21

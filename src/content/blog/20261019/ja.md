@@ -1,5 +1,5 @@
 ---
-archiveStatus: "PIPELINE"
+archiveStatus: "PRESENT"
 title: ハートビートのある戦略
 date: 2026-10-19
 updated: 2026-08-21
