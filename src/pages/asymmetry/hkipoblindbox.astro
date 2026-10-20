@@ -61,6 +61,7 @@ const lenses = [
       <h2 id="binary-title">Will the box pay for its own confetti?</h2>
       <p>Robin requested one button: <strong>if allotted, do we predict a +10% limit sell within the first five trading sessions?</strong> The answer is YES or NO. The allocation algorithm already supplies enough rejection.</p>
       <p class="aside">YES is a frozen forecast, not a promised fill. Default participation is SUBSCRIBE unless the registered screen finds a serious reason to skip. A NO forecast alone does not veto a box. This separate layer has no demonstrated forward edge yet.</p>
+      <p class="aside"><strong>Timetable update · 20 October 2026:</strong> DBS lists a <strong>22 October, noon HKT</strong> subscription deadline for Microintelligence (03275) and Dongshan Precision (02384). The HKEX public deadline remains 23 October, noon HKT (White Form applications: 11:30). The earlier date is a DBS broker deadline, not a verified IBKR cutoff; IBKR availability and cutoff remain unknown. Frozen forecasts and conditional sell targets are unchanged. <a href="https://www.hk.dbs.com/ecportalweb/ipo/IPO.aspx?Lang=en-us">DBS timetable ↗</a></p>
       <div class="binary-list">{binary.forecasts.map((f) => <article class="binary-card">
         <header><span class="ticker">HKEX · {f.stock_code}</span><h3>{f.issuer_name}</h3></header>
         <div class="binary-answer"><strong>{f.prediction}</strong><span>+10% by session five?</span></div>
