@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Nine minutes cannot prove a shift</title>
+  <desc id="desc">A visual comparison of a 90.9 percent ideal battery ceiling and an 83.3 percent twenty-hour work floor.</desc>
+  <rect width="1600" height="900" fill="#f4f1e9"/>
+  <path d="M96 96H1504M96 804H1504" stroke="#c8c1b3" stroke-width="2"/>
+  <text x="96" y="166" fill="#1d2a27" font-family="Georgia, serif" font-size="34" letter-spacing="4">DAILY SPECIAL · 20 OCTOBER 2026</text>
+  <text x="96" y="276" fill="#10201c" font-family="Georgia, serif" font-size="82">Nine minutes cannot</text>
+  <text x="96" y="366" fill="#10201c" font-family="Georgia, serif" font-size="82">prove a shift.</text>
+  <text x="96" y="438" fill="#52605c" font-family="Arial, sans-serif" font-size="28">A battery ceiling is not a customer outcome.</text>
+  <rect x="96" y="518" width="1308" height="54" rx="27" fill="#d8d1c4"/>
+  <rect x="96" y="518" width="1189" height="54" rx="27" fill="#1f6b59"/>
+  <rect x="1285" y="518" width="119" height="54" rx="27" fill="#c86b3c"/>
+  <text x="96" y="620" fill="#1f6b59" font-family="Arial, sans-serif" font-size="46" font-weight="700">90 min run</text>
+  <text x="1285" y="620" text-anchor="middle" fill="#9e4e27" font-family="Arial, sans-serif" font-size="46" font-weight="700">9 min</text>
+  <g transform="translate(96 696)">
+    <text x="0" y="0" fill="#10201c" font-family="Arial, sans-serif" font-size="32">Ideal battery-only ceiling</text>
+    <text x="450" y="0" fill="#1f6b59" font-family="Georgia, serif" font-size="54">90.9%</text>
+    <text x="760" y="0" fill="#10201c" font-family="Arial, sans-serif" font-size="32">20-hour work floor</text>
+    <text x="1150" y="0" fill="#9e4e27" font-family="Georgia, serif" font-size="54">83.3%</text>
+  </g>
+  <text x="96" y="778" fill="#52605c" font-family="Arial, sans-serif" font-size="25">The remaining ≤7.6 percentage points must contain every other system loss.</text>
+</svg>
