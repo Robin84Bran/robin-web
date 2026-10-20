@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-14T01:34:11.215626+00:00",
+  "generated_at": "2026-10-20T01:21:17.348471+00:00",
   "money_mode": "SIMULATED",
   "forecasts": [
     {
@@ -173,6 +173,42 @@
         0.3443523569080199,
         0.25857691413311573,
         0.16310066161094977
+      ],
+      "target_return": 0.1,
+      "score": null
+    },
+    {
+      "case_id": "HKEX-PENDING-03275-a277876b",
+      "stock_code": "03275",
+      "issuer_name": "Changzhou Microintelligence Co., Ltd",
+      "listing_date": "2026-10-28",
+      "mode": "FORWARD",
+      "frozen_at": "2026-10-20T01:19:34.971892+00:00",
+      "model_version": "six_lens_prior_v0.1",
+      "commitment": "f167d18db99cb5e8d91664294dd2df38237d6aeae75fdb57bb5a40578e4ecbf1",
+      "probabilities": [
+        0.25,
+        0.35,
+        0.25,
+        0.15
+      ],
+      "target_return": 0.1,
+      "score": null
+    },
+    {
+      "case_id": "HKEX-PENDING-02384-86e4d9c8",
+      "stock_code": "02384",
+      "issuer_name": "Suzhou Dongshan Precision Manufacturing Co., Ltd.",
+      "listing_date": "2026-10-28",
+      "mode": "FORWARD",
+      "frozen_at": "2026-10-20T01:19:49.288324+00:00",
+      "model_version": "six_lens_prior_v0.1",
+      "commitment": "0cd2c780741eac584f8814d2d54ed4377dca8964b3828109186f84864f3b5248",
+      "probabilities": [
+        0.20335891752553806,
+        0.3307770955234576,
+        0.27450582592096956,
+        0.19135816103003492
       ],
       "target_return": 0.1,
       "score": null

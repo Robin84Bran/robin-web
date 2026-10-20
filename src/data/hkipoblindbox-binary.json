@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T09:10:34.722760+00:00",
+  "generated_at": "2026-10-20T01:21:17.387075+00:00",
   "version": "binary-exec-v1.0",
   "forecasts": [
     {
@@ -129,6 +129,38 @@
       "prospectus_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1014/2026101400023.pdf",
       "participation": "SUBSCRIBE",
       "commitment": "b71c6d23bc0aedf87a8b3353ee4c382020ac8acc44d233ab5f73ae0f9fb9d6c2"
+    },
+    {
+      "stock_code": "03275",
+      "issuer_name": "Changzhou Microintelligence Co., Ltd",
+      "listing_date": "2026-10-28",
+      "prediction": "YES",
+      "version": "binary-exec-v1.0",
+      "frozen_at": "2026-10-20T01:19:35.145023+00:00",
+      "target_at_offer_high": 23.62,
+      "target_at_offer_low": 18.3,
+      "offer_high": 21.46,
+      "offer_low": 16.63,
+      "target_formula": "ceil_to_listing_day_tick(1.10 * FINAL_ISSUE_PRICE)",
+      "prospectus_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1020/2026102000029.pdf",
+      "participation": "SUBSCRIBE",
+      "commitment": "cac448f6415fe16b847f8072ea3bb9dbc666feb747c7690ee40123689541af60"
+    },
+    {
+      "stock_code": "02384",
+      "issuer_name": "Suzhou Dongshan Precision Manufacturing Co., Ltd.",
+      "listing_date": "2026-10-28",
+      "prediction": "YES",
+      "version": "binary-exec-v1.0",
+      "frozen_at": "2026-10-20T01:19:49.467155+00:00",
+      "target_at_offer_high": 103.2,
+      "target_at_offer_low": null,
+      "offer_high": 93.8,
+      "offer_low": null,
+      "target_formula": "ceil_to_listing_day_tick(1.10 * FINAL_ISSUE_PRICE)",
+      "prospectus_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1020/2026102000017.pdf",
+      "participation": "SUBSCRIBE",
+      "commitment": "1d4a2644fb8bdfd39ebb35d444dbfb95c059cb7e2cbe0b468360cf037b806f65"
     }
   ],
   "scope": "Independent five-session layer; original three-session experiment preserved",
@@ -151,11 +183,11 @@
     "unseen": false
   },
   "forward": {
-    "forecasts": 8,
+    "forecasts": 10,
     "reviewed_paths": 7,
     "yes_d5": 3,
     "no_d5": 3,
-    "pending_d5": 2,
+    "pending_d5": 4,
     "source_note": "Single-vendor completed daily bars; official final issue prices and independent opening-price checks. Market counterfactuals, not personal fills."
   }
 }
