@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-20",
+  "updated": "2026-10-20",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20261020/hero.webp",
+  "actionHero": "/action-item/20261020/hero.webp",
+  "ogImage": "/daily-briefing/20261020/og.webp",
+  "briefingPath": "/ouroboros/202610/20261020/",
+  "actionItemPath": "/ouroboros/202610/20261020/action_item/",
+  "actions": [
+    {"signal": 1, "priority": "NEXT", "status": "READY", "sources": [{"label": "Anthropic Alignment Science", "url": "https://alignment.anthropic.com/2026/graft/"}]},
+    {"signal": 2, "priority": "WATCH", "status": "WATCHING", "sources": [{"label": "Agility Robotics", "url": "https://www.agilityrobotics.com/content/agility-robotics-selects-nyobolt-as-its-ultra-fast-charging-battery-technology-partner-for-digit-5"}]},
+    {"signal": 3, "priority": "WATCH", "status": "WATCHING", "sources": [{"label": "Strategy", "url": "https://www.strategy.com/press/strategy-repurchases-193-million-of-strc-acquires-267-btc-and-increases-digital-credit-securities-repurchase-program-to-3-billion_10-19-2026"}]},
+    {"signal": 4, "priority": "WATCH", "status": "WATCHING", "sources": [{"label": "Spout Introduction", "url": "https://spout.finance/docs/introduction/"}, {"label": "Spout Terms", "url": "https://spout.finance/terms/"}]},
+    {"signal": 5, "priority": "NOW", "status": "COMPLETE", "sources": [{"label": "Spout Covered Calls", "url": "https://spout.finance/docs/covered-call-strategy/"}, {"label": "Investor.gov", "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/covered-call"}]},
+    {"signal": 6, "priority": "WATCH", "status": "WATCHING", "sources": [{"label": "X-energy", "url": "https://www.globenewswire.com/news-release/2026/10/19/3383439/0/en/x-energy-amazon-american-electric-power-partner-to-bring-smr-project-to-indiana.html"}]},
+    {"signal": 7, "priority": "WATCH", "status": "WATCHING", "sources": [{"label": "Tenstorrent", "url": "https://tenstorrent.com/newsroom"}, {"label": "Reuters", "url": "https://www.investing.com/news/stock-market-news/ai-chip-startup-tenstorrent-more-than-doubles-its-valuation-to-62-billion-in-funding-round-4957179"}]},
+    {"signal": 8, "priority": "WATCH", "status": "WATCHING", "sources": [{"label": "Modal", "url": "https://modal.com/blog/nvidia-vera-sandboxes"}]}
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, October 20, 2026",
+      "description": "Eight bounded actions separate reviewer approval, operating evidence, cash-flow rights, and delivered infrastructure.",
+      "centralJudgment": "Change state only from independent acceptance, complete ledgers, customer operation, and delivered capacity.",
+      "fieldLine": "Eight signals. One bounded next move each.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "Frontier Models and Agents", "title": "Hide the acceptance set", "why": "A reviewer can approve work while sharing the executor's blind spot.", "steps": ["Choose one existing read-only workflow.", "Add an executor-inaccessible holdout check and compare approval with accepted completion."], "done": "Both rates are measured before any authority expansion."},
+        {"signal": 2, "domain": "Physical AI and Robotics", "title": "Keep Digit 5 on watch", "why": "Fast-charge targets repeat October 16 and still lack full-shift customer economics.", "steps": ["Preserve the announcement as a watchpoint.", "Wait for accepted tasks, downtime, intervention, and cycle life from a named customer."], "done": "Customer operating evidence replaces targets; otherwise WATCH."},
+        {"signal": 3, "domain": "Crypto Capital Flows", "title": "Split the cash uses", "why": "Strategy spent far more repurchasing STRC than acquiring Bitcoin in this disclosure.", "steps": ["Record BTC purchases, securities repurchases, and new financing separately.", "Wait for three consecutive periods before calling a structural shift."], "done": "The series is complete and creates no trade."},
+        {"signal": 4, "domain": "Stablecoins and Financial Rails", "title": "Demand the full option ledger", "why": "Zero interest moves cost into upside rights and a complex settlement stack.", "steps": ["Reconcile shares, premium, fees, debt, assignment, and rebuilding.", "Keep the product EXPERIMENTAL until one complete production cycle is independently readable."], "done": "A full ledger closes from deposit to final withdrawal."},
+        {"signal": 5, "domain": "Content and Visibility", "title": "Publish the rights map", "why": "Readers need to see who pays cash, who receives it, and which right moves.", "steps": ["Publish the four-language evidence-led explainer.", "Archive its source register, rights card, ledger entry, visuals, and derivative."], "done": "Article, translations, source parity, local checks, and protected release pass."},
+        {"signal": 6, "domain": "AI Infrastructure and Career", "title": "Gate the Indiana reactor plan", "why": "A 960MW study and milestone funding are development options rather than delivered power.", "steps": ["Track licensing, final investment decision, offtake, cost cap, and delay bearer.", "Upgrade only after formal documents establish at least two fields."], "done": "Two fields are confirmed without treating planned capacity as live."},
+        {"signal": 7, "domain": "Late-Stage Private Markets", "title": "Separate capital from manufacturing", "why": "Tenstorrent closed real financing while shipment and margin evidence remain undisclosed.", "steps": ["Keep the company at WATCH.", "Seek Galaxy shipments, unaffiliated repurchase, margin range, and wafer coverage."], "done": "Three of four fields are disclosed before INVESTIGATE."},
+        {"signal": 8, "domain": "Public Equities", "title": "Price the completed task", "why": "Early Vera throughput omits network calls and total cost per accepted agent task.", "steps": ["Wait for cost, p95 latency, and failure rate at matched concurrency.", "Include GPU, CPU, memory, network, and retries in one denominator."], "done": "Matched production economics replace an early customer test; no trade."}
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年10月20日",
+      "description": "八项有边界行动，分开评审通过、运营证据、现金流权利与实际交付。",
+      "centralJudgment": "只让独立验收、完整账本、客户运营与已交付容量改变状态。",
+      "fieldLine": "八个信号，每个只有一个有边界的下一步。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "前沿模型与代理", "title": "隐藏验收集", "why": "评审者可能与执行者共享盲点，并在任务未完成时通过。", "steps": ["选择一个既有只读流程。", "加入执行者不可见的留出验收，对照批准率与合格完成率。"], "done": "扩权前两项比率都已测量。"},
+        {"signal": 2, "domain": "Physical AI与机器人", "title": "Digit 5继续WATCH", "why": "快充目标已在10月16日出现，仍无完整班次客户经济性。", "steps": ["把公告保留为观察点。", "等待具名客户披露合格任务、停机、干预和循环寿命。"], "done": "客户运营证据取代目标，否则维持WATCH。"},
+        {"signal": 3, "domain": "加密资本流", "title": "拆分三类现金用途", "why": "本次披露中，Strategy回购STRC的金额远高于购入Bitcoin。", "steps": ["分列BTC购买、证券回购和新增融资。", "连续三期后才判断结构变化。"], "done": "序列完整，且不产生交易。"},
+        {"signal": 4, "domain": "稳定币与金融轨道", "title": "索取完整期权账本", "why": "零利息把成本移动到上涨权和复杂结算堆栈。", "steps": ["核对股票、权利金、费用、债务、行权与重建。", "一段完整生产周期可独立读取前保持EXPERIMENTAL。"], "done": "账本从存入一直闭合到最终提款。"},
+        {"signal": 5, "domain": "内容与可见度", "title": "发布权利交换图", "why": "读者需要看清谁付现金、谁收现金，以及哪项权利移动。", "steps": ["发布四语证据型解释。", "归档来源、权利卡、账本条目、视觉与衍生文本。"], "done": "文章、翻译、来源一致、本地检查和保护发布通过。"},
+        {"signal": 6, "domain": "AI基础设施与职业", "title": "给印第安纳反应堆设闸", "why": "960MW研究与里程碑资金是开发期权，不是已交付电力。", "steps": ["跟踪许可、最终投资决定、承购、成本上限和延期承担者。", "正式文件确认至少两项才升级。"], "done": "两项字段获确认，且不把规划容量写成在运。"},
+        {"signal": 7, "domain": "后期私募", "title": "分开资本与制造", "why": "Tenstorrent完成真实融资，出货与毛利证据仍未披露。", "steps": ["公司维持WATCH。", "寻找Galaxy出货、非关联复购、毛利区间和晶圆保障。"], "done": "四项中三项披露后才INVESTIGATE。"},
+        {"signal": 8, "domain": "公开市场", "title": "给完成任务定价", "why": "Vera早期吞吐测试排除了网络调用，也没有每项合格任务总成本。", "steps": ["等待匹配并发下成本、p95时延与失败率。", "把GPU、CPU、内存、网络与重试放入同一分母。"], "done": "生产经济性取代早期客户测试，不交易。"}
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年10月20日",
+      "description": "八項有邊界行動，分開評審通過、營運證據、現金流權利與實際交付。",
+      "centralJudgment": "只讓獨立驗收、完整帳本、客戶營運與已交付容量改變狀態。",
+      "fieldLine": "八個訊號，每個只有一個有邊界的下一步。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "前沿模型與代理", "title": "隱藏驗收集", "why": "評審者可能與執行者共享盲點，並在任務未完成時通過。", "steps": ["選擇一個既有唯讀流程。", "加入執行者不可見的留出驗收，對照批准與合格完成。"], "done": "擴權前兩項比率都已測量。"},
+        {"signal": 2, "domain": "Physical AI與機器人", "title": "Digit 5繼續WATCH", "why": "快充目標已在10月16日出現，仍無完整班次客戶經濟性。", "steps": ["把公告保留為觀察點。", "等待具名客戶披露合格任務、停機、干預與循環壽命。"], "done": "客戶營運證據取代目標，否則維持WATCH。"},
+        {"signal": 3, "domain": "加密資本流", "title": "拆分三類現金用途", "why": "本次披露中，Strategy回購STRC遠高於購買Bitcoin。", "steps": ["分列BTC購買、證券回購與新增融資。", "連續三期後才判斷結構變化。"], "done": "序列完整且不產生交易。"},
+        {"signal": 4, "domain": "穩定幣與金融軌道", "title": "索取完整期權帳本", "why": "零利息把成本移到上漲權與複雜結算堆疊。", "steps": ["核對股票、權利金、費用、債務、行權與重建。", "完整生產周期可獨立讀取前保持EXPERIMENTAL。"], "done": "帳本從存入閉合到最終提款。"},
+        {"signal": 5, "domain": "內容與可見度", "title": "發布權利交換圖", "why": "讀者需要看清誰付現金、誰收現金，以及哪項權利移動。", "steps": ["發布四語證據型解釋。", "歸檔來源、權利卡、帳本條目、視覺與衍生文本。"], "done": "文章、翻譯、來源一致、本地檢查和保護發布通過。"},
+        {"signal": 6, "domain": "AI基礎設施與職業", "title": "給印第安納反應爐設閘", "why": "960MW研究與里程碑資金是開發期權，不是已交付電力。", "steps": ["追蹤許可、最終投資決定、承購、成本上限和延期承擔者。", "正式文件確認至少兩項才升級。"], "done": "兩項字段獲確認且不把規劃容量寫成在運。"},
+        {"signal": 7, "domain": "後期私募", "title": "分開資本與製造", "why": "Tenstorrent完成真實融資，出貨與毛利仍未披露。", "steps": ["公司維持WATCH。", "尋找Galaxy出貨、外部復購、毛利區間和晶圓保障。"], "done": "四項中三項披露後才INVESTIGATE。"},
+        {"signal": 8, "domain": "公開市場", "title": "給完成任務定價", "why": "Vera早期吞吐測試排除網路，也沒有每項合格任務總成本。", "steps": ["等待匹配併發下成本、p95延遲與失敗率。", "把GPU、CPU、記憶體、網路與重試放入同一分母。"], "done": "生產經濟性取代早期測試，不交易。"}
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー 2026年10月20日",
+      "description": "レビュー承認、運用証拠、キャッシュフロー権利、実納品を分ける8つの行動。",
+      "centralJudgment": "独立受理、完全な元帳、顧客運用、提供済み容量だけで状態を変える。",
+      "fieldLine": "8シグナル、それぞれに境界付きの次の一手。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "フロンティアモデル", "title": "受理セットを隠す", "why": "レビュー担当が実行者と盲点を共有し、未完了を承認することがある。", "steps": ["既存の読み取り専用業務を一つ選ぶ。", "実行者から見えない留保テストで承認率と受理完了を比べる。"], "done": "権限拡大前に両方を測定する。"},
+        {"signal": 2, "domain": "Physical AI", "title": "Digit 5をWATCHに保つ", "why": "急速充電目標は10月16日の反復で、顧客の一勤務経済がない。", "steps": ["発表を監視点として残す。", "実名顧客の受理タスク、停止、介入、寿命を待つ。"], "done": "顧客運用証拠が目標を置換するまでWATCH。"},
+        {"signal": 3, "domain": "暗号資産フロー", "title": "資金用途を三分する", "why": "今回のStrategyはBitcoin購入よりSTRC買い戻しへ多額を使った。", "steps": ["BTC購入、証券買い戻し、新規調達を分ける。", "構造変化は三期連続で判断する。"], "done": "系列が揃い、取引を作らない。"},
+        {"signal": 4, "domain": "ステーブルコイン", "title": "完全なオプション元帳を求める", "why": "ゼロ金利は費用を上昇権と複雑な決済へ移す。", "steps": ["株、プレミアム、費用、債務、行使、再構築を照合する。", "完全な本番周期が読めるまでEXPERIMENTALに保つ。"], "done": "入庫から最終出庫まで元帳が閉じる。"},
+        {"signal": 5, "domain": "コンテンツ", "title": "権利交換図を公開する", "why": "誰が現金を払い受け取り、どの権利が動くかを読者に示す。", "steps": ["4言語の証拠型解説を公開する。", "情報源、権利カード、台帳、画像、派生文を保管する。"], "done": "記事、翻訳、情報源一致、ローカル検査、保護リリースが通る。"},
+        {"signal": 6, "domain": "AIインフラ", "title": "Indiana計画を段階管理する", "why": "960MWの調査と節目資金は開発オプションで、供給電力ではない。", "steps": ["許認可、FID、引取、費用上限、遅延負担を追う。", "正式文書で二項目を確認してから昇格する。"], "done": "二項目確認後も計画容量を稼働扱いしない。"},
+        {"signal": 7, "domain": "未公開市場", "title": "資本と製造を分ける", "why": "Tenstorrentは調達を完了したが、出荷と利益率は未開示だ。", "steps": ["WATCHを維持する。", "Galaxy出荷、外部再購入、粗利、ウエハー確保を求める。"], "done": "四項目中三つでINVESTIGATEへ移す。"},
+        {"signal": 8, "domain": "公開株式", "title": "完了タスクを原価にする", "why": "Vera初期試験はネットワークと受理タスク総費用を省く。", "steps": ["同時実行を揃えた費用、p95、失敗率を待つ。", "GPU、CPU、メモリ、ネットワーク、再試行を同じ分母に入れる。"], "done": "本番経済が初期顧客試験を置換し、取引を作らない。"}
+      ]
+    }
+  }
+}
