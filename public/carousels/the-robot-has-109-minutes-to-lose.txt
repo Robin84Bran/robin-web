@@ -1,0 +1,15 @@
+The robot has 109 minutes to lose.
+
+Agility Robotics says Digit 5 will run for 90 minutes, recharge in nine and deliver more than 20 productive hours in a day. The ideal battery math supports about 21 hours 49 minutes of runtime.
+
+Use exactly 20 hours as the floor and a narrow operating envelope appears: 109 minutes.
+
+That budget has to absorb docking, charger queues, cooling, blocked paths, service, faults, intervention and rejected work. Across a fleet, ten perfectly staggered robots would already consume 90.9% of one charger's clock.
+
+Fast charging can remove a battery bottleneck. It can also move the bottleneck into the rest of the shift.
+
+The next useful denominator is accepted tasks per scheduled hour, with productive autonomous minutes beside it.
+
+Full story and sources: https://iamrobin.ai/binary/stories/the-robot-has-109-minutes-to-lose/
+
+#PhysicalAI #Robotics #Operations #Automation #Build
