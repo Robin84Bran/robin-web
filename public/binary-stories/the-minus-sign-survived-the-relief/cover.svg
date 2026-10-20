@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">The minus sign survived the relief</title>
+  <desc id="desc">Two clocks separate a 55.1 percent reduction in outflow magnitude from Bitcoin and Ether five-session totals that remain below zero.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071126"/>
+      <stop offset="1" stop-color="#111d38"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#23314e" stroke-width="1" opacity=".42"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <text x="104" y="104" fill="#61d4d7" font-family="Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="5">BINARY / INVEST</text>
+  <text x="104" y="184" fill="#f4f1e9" font-family="Georgia, serif" font-size="68" font-weight="700">The minus sign survived the relief.</text>
+  <text x="104" y="238" fill="#aab5cc" font-family="Arial, sans-serif" font-size="27">Outflow slowed 55.1%. Direction still did not cross zero.</text>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="104" y="325" width="650" height="330" rx="24" fill="#101d38" stroke="#61d4d7" stroke-width="3"/>
+    <text x="144" y="378" fill="#61d4d7" font-size="20" font-weight="700" letter-spacing="4">CLOCK 1 / VELOCITY</text>
+    <text x="144" y="448" fill="#f4f1e9" font-size="50" font-weight="700">OUTFLOW MAGNITUDE</text>
+    <rect x="144" y="500" width="520" height="35" rx="18" fill="#253451"/>
+    <rect x="144" y="500" width="520" height="35" rx="18" fill="#d46b72" opacity=".55"/>
+    <text x="144" y="576" fill="#aab5cc" font-size="22">PRIOR</text>
+    <text x="234" y="576" fill="#f4f1e9" font-size="26" font-weight="700">-$1,221.1m</text>
+    <path d="M412 567H470" stroke="#61d4d7" stroke-width="5"/>
+    <path d="M459 555l16 12-16 12" fill="none" stroke="#61d4d7" stroke-width="5"/>
+    <text x="497" y="576" fill="#aab5cc" font-size="22">LATEST</text>
+    <text x="588" y="576" fill="#f4f1e9" font-size="26" font-weight="700">-$548.5m</text>
+    <text x="144" y="625" fill="#d8b86b" font-size="31" font-weight="700">55.1% smaller</text>
+
+    <rect x="790" y="325" width="702" height="330" rx="24" fill="#171b31" stroke="#d8b86b" stroke-width="3"/>
+    <text x="830" y="378" fill="#d8b86b" font-size="20" font-weight="700" letter-spacing="4">CLOCK 2 / DIRECTION</text>
+    <line x1="830" y1="478" x2="1450" y2="478" stroke="#7ee0a1" stroke-width="3"/>
+    <text x="1450" y="462" fill="#7ee0a1" font-size="18" font-weight="700" text-anchor="end">ZERO / CONFIRMATION LINE</text>
+    <rect x="870" y="478" width="220" height="103" rx="12" fill="#3a1f32" stroke="#d46b72" stroke-width="3"/>
+    <text x="980" y="520" fill="#aab5cc" font-size="21" text-anchor="middle">BITCOIN</text>
+    <text x="980" y="561" fill="#f4f1e9" font-size="34" font-weight="700" text-anchor="middle">-$228.4m</text>
+    <rect x="1150" y="478" width="220" height="145" rx="12" fill="#3a1f32" stroke="#d46b72" stroke-width="3"/>
+    <text x="1260" y="520" fill="#aab5cc" font-size="21" text-anchor="middle">ETHER</text>
+    <text x="1260" y="561" fill="#f4f1e9" font-size="34" font-weight="700" text-anchor="middle">-$320.1m</text>
+    <text x="830" y="625" fill="#d46b72" font-size="31" font-weight="700">Both still below zero</text>
+  </g>
+
+  <line x1="104" y1="720" x2="1492" y2="720" stroke="#2b3854" stroke-width="2"/>
+  <text x="104" y="785" fill="#f4f1e9" font-family="Georgia, serif" font-size="38">Improvement is evidence. Confirmation is a separate event.</text>
+  <text x="104" y="836" fill="#aab5cc" font-family="Arial, sans-serif" font-size="21">Two completed five-session windows · US$ millions · October 5–16, 2026</text>
+  <text x="1492" y="836" fill="#f4f1e9" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="end">IAmRobin.ai</text>
+</svg>
