@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-21",
+  "updated": "2026-10-21",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20261021/hero.webp",
+  "actionHero": "/action-item/20261021/hero.webp",
+  "ogImage": "/daily-briefing/20261021/og.webp",
+  "briefingPath": "/ouroboros/202610/20261021/",
+  "actionItemPath": "/ouroboros/202610/20261021/action_item/",
+  "actions": [
+    {"signal": 1, "priority": "NEXT", "status": "READY", "sources": [{"label": "OpenAI", "url": "https://openai.com/index/openai-to-acquire-orchestra-bio/"}]},
+    {"signal": 2, "priority": "WATCH", "status": "WATCHING", "sources": [{"label": "a16z", "url": "https://a16z.com/announcement/investing-in-eka-robotics/"}]},
+    {"signal": 3, "priority": "WATCH", "status": "WATCHING", "sources": [{"label": "Farside BTC", "url": "https://farside.co.uk/btc/"}, {"label": "Farside ETH", "url": "https://farside.co.uk/eth/"}, {"label": "DefiLlama", "url": "https://defillama.com/"}]},
+    {"signal": 4, "priority": "WATCH", "status": "WATCHING", "sources": [{"label": "OKXICE", "url": "https://www.okx.com/en-us/okxicetsv"}, {"label": "SEC", "url": "https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities"}]},
+    {"signal": 5, "priority": "NOW", "status": "COMPLETE", "sources": [{"label": "SEC Tokenized Securities", "url": "https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities"}, {"label": "Investor.gov", "url": "https://www.investor.gov/what-registered-owner-what-beneficial-owner"}]},
+    {"signal": 6, "priority": "WATCH", "status": "WATCHING", "sources": [{"label": "Business Insider report summary", "url": "https://www.investing.com/news/stock-market-news/amazon-stockpiles-nvidia-ai-hardware-ahead-of-power-availability-business-insider-4960890"}]},
+    {"signal": 7, "priority": "WATCH", "status": "WATCHING", "sources": [{"label": "Otter", "url": "https://otter.ai/blog/general-catalyst-backs-otter-ais-voice-ai-ambitions-with-320m-growth-investment"}]},
+    {"signal": 8, "priority": "WATCH", "status": "WATCHING", "sources": [{"label": "Micron", "url": "https://investors.micron.com/news/press-release/2026/Micron-Invests-in-New-York-Critical-Minerals-Processing-With-Indium-Corporation/default.aspx"}]}
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, October 21, 2026",
+      "description": "Eight bounded actions separate announced capability, operating evidence, enforceable rights, delivered infrastructure, and repayable capital.",
+      "centralJudgment": "Change state only when accepted work, complete ledgers, enforceable claims, customer cohorts, or delivered capacity replace announcements.",
+      "fieldLine": "Eight signals. One bounded next move each.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "Frontier Models and Agents", "title": "Test the acquired agent loop", "why": "An acquisition establishes ownership and integration intent, while accepted laboratory outcomes remain unmeasured.", "steps": ["Choose one bounded literature-to-assay workflow.", "Measure accepted outputs, corrections, dependency misses, elapsed time, and human rescue against the current process."], "done": "The matched workflow closes with reviewer acceptance and no authority expansion."},
+        {"signal": 2, "domain": "Physical AI and Robotics", "title": "Wait for a production shift", "why": "A fast laboratory throughput claim is useful, though it does not establish reliability in manufacturing conditions.", "steps": ["Preserve the reported 1,500 picks per hour as a laboratory claim.", "Seek accepted tasks, interventions, downtime, changeover, and fully loaded cost from one production shift."], "done": "Named-customer production evidence replaces laboratory throughput; otherwise WATCH."},
+        {"signal": 3, "domain": "Crypto Capital Flows", "title": "Keep flows source-labelled", "why": "One large Bitcoin ETF inflow was concentrated and the latest day remained incomplete.", "steps": ["Record BTC ETF, ETH ETF, TVL, and stablecoin changes in separate rows.", "Wait for completed daily data before forming any trend judgment."], "done": "Three complete periods agree across the chosen denominators and create no trade."},
+        {"signal": 4, "domain": "Stablecoins and Financial Rails", "title": "Map the enforceable claim", "why": "Issuer objections and venue relief say little about the exact right a token holder can enforce.", "steps": ["Classify each product as issuer-recorded, custodial, or synthetic.", "Record issuer position, backing, rights, exit, and failure recovery with dated evidence."], "done": "Every row identifies the party that owes the holder and the unresolved fields remain UNKNOWN."},
+        {"signal": 5, "domain": "Content and Visibility", "title": "Publish the rights map", "why": "Readers need a practical distinction between a ticker, an ownership record, and a contractual exposure.", "steps": ["Publish the four-language evidence-led article and conceptual visual.", "Archive sources, the six-line rights card, ledger entry, and LinkedIn draft without posting it."], "done": "Article, translations, source parity, local gates, protected release, and public checks pass."},
+        {"signal": 6, "domain": "AI Infrastructure and Career", "title": "Measure rack-to-power delay", "why": "Delivered accelerators can begin depreciating before powered capacity is ready.", "steps": ["Track rack receipt, warehouse dwell, power-ready date, acceptance, and first useful workload separately.", "Compute idle capital days and time to accepted production output."], "done": "A dated asset cohort closes from delivery to accepted workload with all delay bearers identified."},
+        {"signal": 7, "domain": "Late-Stage Private Markets", "title": "Separate financing from retention", "why": "Repayable growth capital can finance acquisition while hiding cohort economics.", "steps": ["Record debt-like repayment, covenants, and customer-acquisition use separately from equity.", "Seek retained paid teams, net revenue retention, gross margin, and payback by cohort."], "done": "Cohort economics and financing obligations are disclosed before any stronger judgment."},
+        {"signal": 8, "domain": "Public Equities", "title": "Gate the mineral supply chain", "why": "Strategic funding and a supply agreement do not disclose capacity, commissioning, price, or qualification.", "steps": ["Track funded capacity, permits, commissioning, qualification, contracted volume, and price formula.", "Upgrade only after delivered qualified material is reconciled to contracted demand."], "done": "Physical delivery and qualification replace announced upstream intent; no trade."}
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年10月21日",
+      "description": "八项有边界行动，分开已宣布能力、运营证据、可执行权利、已交付基础设施与可偿还资本。",
+      "centralJudgment": "只有合格成果、完整账本、可执行请求权、客户队列或已交付容量取代公告时才改变状态。",
+      "fieldLine": "八个信号，每个只有一个有边界的下一步。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "前沿模型与代理", "title": "测试收购后的代理闭环", "why": "收购证明所有权与整合意图，实验室合格成果仍未测量。", "steps": ["选择一个有边界的文献到实验流程。", "与现流程比较合格输出、纠错、依赖遗漏、耗时和人工救援。"], "done": "匹配流程经评审验收闭合，且不扩大权限。"},
+        {"signal": 2, "domain": "Physical AI与机器人", "title": "等待完整生产班次", "why": "实验室高速吞吐有参考价值，却不能证明制造环境可靠性。", "steps": ["把每小时1,500次抓取保留为实验室主张。", "索取一个生产班次的合格任务、干预、停机、换线和全成本。"], "done": "具名客户生产证据取代实验室吞吐，否则维持WATCH。"},
+        {"signal": 3, "domain": "加密资本流", "title": "给每组资金流标明来源", "why": "一次大型Bitcoin ETF流入高度集中，最新一天数据仍不完整。", "steps": ["分别记录BTC ETF、ETH ETF、TVL和稳定币变化。", "等每日数据完整后再判断趋势。"], "done": "三个完整周期在选定分母下同向，且不产生交易。"},
+        {"signal": 4, "domain": "稳定币与金融轨道", "title": "绘制可执行请求权", "why": "发行人异议和场所豁免都不足以说明持有人能执行什么权利。", "steps": ["把产品分类为发行人登记、托管或合成。", "用带日期证据记录发行人立场、支持资产、权利、退出和失败追偿。"], "done": "每行都指出谁欠持有人什么，未解决字段保持UNKNOWN。"},
+        {"signal": 5, "domain": "内容与可见度", "title": "发布权利地图", "why": "读者需要区分代码、所有权记录与合同敞口。", "steps": ["发布四语证据型文章和概念图。", "归档来源、六行权利卡、账本条目和不外发的LinkedIn草稿。"], "done": "文章、翻译、来源一致、本地闸门、保护发布和公开验证通过。"},
+        {"signal": 6, "domain": "AI基础设施与职业", "title": "测量机架到通电的延迟", "why": "加速器可以在供电容量就绪前开始折旧。", "steps": ["分别跟踪机架到货、仓储天数、通电日、验收和首个有效负载。", "计算闲置资本天数与产生合格成果所需时间。"], "done": "一个资产队列从交付闭合到合格负载，并明确所有延期承担者。"},
+        {"signal": 7, "domain": "后期私募", "title": "分开融资与留存", "why": "可偿还增长资本能资助获客，却可能遮住客户队列经济性。", "steps": ["把类债偿还、契约和获客用途与股权分开记录。", "索取付费团队留存、净收入留存、毛利和分队列回收期。"], "done": "披露客户队列经济与融资义务后才作更强判断。"},
+        {"signal": 8, "domain": "公开市场", "title": "给矿物供应链设闸", "why": "战略资金与供应协议没有披露产能、投产、价格或认证。", "steps": ["跟踪受资助产能、许可、投产、认证、合同量和定价公式。", "合格材料实际交付并与合同需求核对后才升级。"], "done": "实物交付和认证取代上游意图，不交易。"}
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年10月21日",
+      "description": "八項有邊界行動，分開已宣佈能力、營運證據、可執行權利、已交付基礎設施與可償還資本。",
+      "centralJudgment": "只有合格成果、完整帳本、可執行請求權、客戶隊列或已交付容量取代公告時才改變狀態。",
+      "fieldLine": "八個訊號，每個只有一個有邊界的下一步。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "前沿模型與代理", "title": "測試收購後的代理閉環", "why": "收購證明所有權與整合意圖，實驗室合格成果仍未測量。", "steps": ["選擇一個有邊界的文獻到實驗流程。", "與現流程比較合格輸出、糾錯、依賴遺漏、耗時和人工救援。"], "done": "匹配流程經評審驗收閉合，且不擴大權限。"},
+        {"signal": 2, "domain": "Physical AI與機器人", "title": "等待完整生產班次", "why": "實驗室高速吞吐有參考價值，卻不能證明製造環境可靠性。", "steps": ["把每小時1,500次抓取保留為實驗室主張。", "索取一個生產班次的合格任務、干預、停機、換線和全成本。"], "done": "具名客戶生產證據取代實驗室吞吐，否則維持WATCH。"},
+        {"signal": 3, "domain": "加密資本流", "title": "給每組資金流標明來源", "why": "一次大型Bitcoin ETF流入高度集中，最新一天資料仍不完整。", "steps": ["分別記錄BTC ETF、ETH ETF、TVL和穩定幣變化。", "等每日資料完整後再判斷趨勢。"], "done": "三個完整周期在選定分母下同向，且不產生交易。"},
+        {"signal": 4, "domain": "穩定幣與金融軌道", "title": "繪製可執行請求權", "why": "發行人異議和場所豁免都不足以說明持有人能執行什麼權利。", "steps": ["把產品分類為發行人登記、託管或合成。", "用帶日期證據記錄發行人立場、支持資產、權利、退出和失敗追償。"], "done": "每行都指出誰欠持有人什麼，未解決字段保持UNKNOWN。"},
+        {"signal": 5, "domain": "內容與可見度", "title": "發佈權利地圖", "why": "讀者需要區分代碼、所有權記錄與合約曝險。", "steps": ["發佈四語證據型文章和概念圖。", "歸檔來源、六行權利卡、帳本條目和不外發的LinkedIn草稿。"], "done": "文章、翻譯、來源一致、本地閘門、保護髮布和公開驗證通過。"},
+        {"signal": 6, "domain": "AI基礎設施與職業", "title": "測量機架到通電的延遲", "why": "加速器可以在供電容量就緒前開始折舊。", "steps": ["分別追蹤機架到貨、倉儲天數、通電日、驗收和首個有效負載。", "計算閒置資本天數與產生合格成果所需時間。"], "done": "一個資產隊列從交付閉合到合格負載，並明確所有延期承擔者。"},
+        {"signal": 7, "domain": "後期私募", "title": "分開融資與留存", "why": "可償還增長資本能資助獲客，卻可能遮住客戶隊列經濟性。", "steps": ["把類債償還、契約和獲客用途與股權分開記錄。", "索取付費團隊留存、淨收入留存、毛利和分隊列回收期。"], "done": "披露客戶隊列經濟與融資義務後才作更強判斷。"},
+        {"signal": 8, "domain": "公開市場", "title": "給礦物供應鏈設閘", "why": "戰略資金與供應協議沒有披露產能、投產、價格或認證。", "steps": ["追蹤受資助產能、許可、投產、認證、合約量和定價公式。", "合格材料實際交付並與合約需求核對後才升級。"], "done": "實物交付和認證取代上游意圖，不交易。"}
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー 2026年10月21日",
+      "description": "発表能力、運用証拠、執行可能な権利、納入済み基盤、返済資本を分ける8つの行動。",
+      "centralJudgment": "受理成果、完全な台帳、執行可能な請求、顧客コホート、納入済み容量が発表を置換した時だけ状態を変える。",
+      "fieldLine": "8シグナル、それぞれに境界付きの次の一手。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "フロンティアモデル", "title": "買収後のエージェント循環を試す", "why": "買収は所有と統合意図を示すが、受理された研究成果は未測定だ。", "steps": ["文献から実験までの限定業務を一つ選ぶ。", "受理成果、修正、依存漏れ、時間、人手救援を現行工程と比べる。"], "done": "権限を広げず、査読受理まで対応工程が閉じる。"},
+        {"signal": 2, "domain": "Physical AI", "title": "本番一勤務を待つ", "why": "高速な実験室処理は有用だが、製造環境の信頼性を示さない。", "steps": ["毎時1,500ピックを実験室主張として保存する。", "本番一勤務の受理タスク、介入、停止、段替え、総費用を求める。"], "done": "実名顧客の本番証拠が実験室速度を置換するまでWATCH。"},
+        {"signal": 3, "domain": "暗号資産フロー", "title": "資金流に出典を付ける", "why": "大きなBitcoin ETF流入は集中し、直近日は未完了だ。", "steps": ["BTC ETF、ETH ETF、TVL、ステーブルコインを別行にする。", "日次データ完了後に傾向を判断する。"], "done": "三つの完了期間が同じ方向を示しても取引は作らない。"},
+        {"signal": 4, "domain": "金融レール", "title": "執行可能な請求を描く", "why": "発行体異議と市場免除だけでは保有者の権利は分からない。", "steps": ["商品を発行体記録、カストディ、合成に分類する。", "発行体姿勢、裏付け、権利、退出、障害回収を日付資料で記録する。"], "done": "全行で債務者を示し、未解決はUNKNOWNのまま残す。"},
+        {"signal": 5, "domain": "コンテンツ", "title": "権利マップを公開する", "why": "ティッカー、所有記録、契約エクスポージャーを区別する必要がある。", "steps": ["4言語の証拠型記事と概念図を公開する。", "情報源、六行カード、台帳、外部投稿しないLinkedIn草稿を保管する。"], "done": "記事、翻訳、出典一致、ローカル検査、保護リリース、公開検査が通る。"},
+        {"signal": 6, "domain": "AIインフラ", "title": "ラックから通電まで測る", "why": "加速器は電力設備の完成前に減価を始め得る。", "steps": ["受領、倉庫日数、通電日、受入れ、初の有用負荷を分ける。", "遊休資本日数と受理成果までの時間を計算する。"], "done": "一つの資産コホートが納入から受理負荷まで閉じ、遅延負担者が判明する。"},
+        {"signal": 7, "domain": "未公開市場", "title": "資金調達と定着を分ける", "why": "返済型成長資金は顧客獲得を支えつつコホート経済を隠し得る。", "steps": ["返済、コベナンツ、獲得用途を株式と分ける。", "有料チーム定着、NRR、粗利、コホート回収期間を求める。"], "done": "コホート経済と資金義務の開示後にのみ判断を強める。"},
+        {"signal": 8, "domain": "公開株式", "title": "鉱物供給へゲートを置く", "why": "戦略資金と供給契約は容量、稼働、価格、認定を示さない。", "steps": ["資金対象容量、許可、稼働、認定、契約量、価格式を追う。", "認定済み材料の納入を需要契約と照合してから昇格する。"], "done": "現物納入と認定が上流意図を置換し、取引は作らない。"}
+      ]
+    }
+  }
+}
