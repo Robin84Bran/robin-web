@@ -1,0 +1,78 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const path='/intelligence/signal-or-silence/';
+const description='When heartbeats vanish, is the service down or the evidence delayed? Play three status policies across 640 seeded worlds and keep uncertainty visible.';
+const schema={'@context':'https://schema.org','@type':'LearningResource',name:'Signal or Silence',url:`https://iamrobin.ai${path}`,description,inLanguage:'en',learningResourceType:'Interactive simulation',educationalUse:'Experiment'};
+const policies=[
+ ['fixed','01','Fixed timeout','A learning-disabled clock turns silence into DOWN after one fixed age.'],
+ ['adaptive','02','Adaptive timeout','Observed arrival gaps stretch or shrink a bounded DOWN threshold.'],
+ ['uncertain','03','Keep UNKNOWN','Silence first becomes UNKNOWN; DOWN requires a longer gap.'],
+];
+---
+<BaseLayout title="Signal or Silence — Intelligence — Robin Xie" {path} {description} {schema}>
+ <div class="shell experiment">
+  <a class="quiet-link" href="/intelligence/">← Intelligence</a>
+  <p class="eyebrow">The weekly small experiment · 2026-W43 · 19 October 2026</p>
+  <h1>The pulse vanished.<br/><em>The truth did not arrive.</em></h1>
+  <p class="lead">When should silence become DOWN?</p>
+  <p class="intro">One hidden service. One unreliable channel. Three observers receive the same heartbeats and must choose UP, DOWN or—if the rule allows it—UNKNOWN. Delay the evidence, remove the outage, and watch certainty become an engineering decision.</p>
+
+  <section class="playground" aria-label="Signal or Silence experiment">
+   <form id="signal-controls">
+    <label>Seed<input name="seed" type="number" min="0" max="4294967295" step="1" value="1" required/></label>
+    <label>Heartbeat<select name="heartbeatEvery"><option value="2">Every 2 ticks</option><option value="4" selected>Every 4 ticks</option><option value="8">Every 8 ticks</option></select></label>
+    <label>Packet loss<select name="dropRate"><option value="0">0%</option><option value="12" selected>12%</option><option value="30">30%</option><option value="60">60%</option></select></label>
+    <label>Burst delay<select name="burstDelay"><option value="2">Up to 2 ticks</option><option value="14" selected>Up to 14 ticks</option><option value="30">Up to 30 ticks</option></select></label>
+    <label>Outage<select name="outageLength"><option value="0">No outage</option><option value="12">12 ticks</option><option value="40" selected>40 ticks</option><option value="80">80 ticks</option></select></label>
+    <label>Burst timing<select name="burstTiming"><option value="before" selected>Before outage</option><option value="overlap">Across outage</option></select></label>
+    <label>Decision tempo<select name="decisionTempo"><option value="aggressive">Aggressive · 6 / 18</option><option value="standard" selected>Standard · 10 / 26</option><option value="patient">Patient · 14 / 34</option></select></label>
+   </form>
+   <div class="buttons"><button id="play" type="button">Play</button><button id="step" type="button">Step</button><button id="end" type="button">Show outcome</button><button id="reset" type="button">Replay</button><button id="next-seed" type="button">Next seed</button><button id="defaults" type="button">Defaults</button></div>
+   <p id="lab-status" role="status">Loading the seeded world…</p>
+   <canvas id="signal-world" aria-label="Evaluator view of the hidden service, heartbeat channel, delay window and true outage"></canvas>
+   <label class="time">Inspect any tick<input id="tick" aria-label="Simulation tick" type="range" min="0" max="239" value="0"/></label>
+   <div class="worlds">
+    {policies.map(([id,num,name,note])=><article class="world" data-policy={id}>
+      <p class="eyebrow">{num} / status rule</p><h2>{name}</h2><p class="rule">{note}</p>
+      <p class="verdict" data-state="unknown">UNKNOWN</p><p class="threshold">No evidence yet</p>
+      <div class="trace" aria-label={`${name} recent status decisions`}></div><p class="counts"></p>
+    </article>)}
+   </div>
+   <p class="fine">Green = UP, rust = DOWN, gold = UNKNOWN. The large diagram is an evaluator view: policies cannot see the true outage, dropped packets or future arrivals. “Useful UP” is eligibility to route one abstract tick of work, not measured production traffic.</p>
+   <div class="buttons"><button id="share" type="button">Link this world</button><button id="download" type="button">Download run</button></div>
+   <noscript>JavaScript is needed to play. Complete batch results, method and source remain available below.</noscript>
+  </section>
+
+  <section class="story">
+   <p class="eyebrow">Try this first</p><h2>Remove the failure. Keep the fear.</h2>
+   <p>Press <strong>Show outcome</strong>. Then choose <strong>No outage</strong> and 30% packet loss. DOWN can now only be a false accusation, but a rule that never accuses may spend useful time UNKNOWN. Next choose a twelve-tick outage. Some patient rules will never reach DOWN before the service returns.</p>
+
+   <h2>Silence carries no cause.</h2>
+   <p>The service attempts a numbered heartbeat every four ticks while it is UP. The default channel drops 12% and delays ordinary packets one or two ticks; a marked burst can hold them for up to 14. Every observer sees exactly the same arrivals. None sees whether a missing pulse was dropped, delayed or never sent.</p>
+   <p>Fixed timeout is the learning-disabled baseline. Adaptive timeout moves a bounded threshold from observed arrival gaps. Keep UNKNOWN uses the fixed timeout first, but refuses a binary failure claim for another sixteen ticks. More state changes the answer; it does not reveal the hidden world.</p>
+
+   <h2>Every cleaner verdict moved dirt elsewhere.</h2>
+   <div class="table-wrap"><table><caption>Default setting · seeds 1–64 · mean ticks</caption><thead><tr><th>Policy</th><th>Healthy UP</th><th>False DOWN</th><th>Healthy UNKNOWN</th><th>Outage still UP</th><th>To DOWN</th></tr></thead><tbody>
+    <tr><th scope="row">Fixed</th><td>193.156</td><td>4.516</td><td>2.328</td><td>7.844</td><td>7.844</td></tr>
+    <tr><th scope="row">Adaptive</th><td><strong>193.922</strong></td><td>3.750</td><td>2.328</td><td>9.625</td><td>9.625</td></tr>
+    <tr><th scope="row">Keep UNKNOWN</th><td>193.156</td><td><strong>2.047</strong></td><td>4.797</td><td>7.844</td><td>23.844</td></tr>
+   </tbody></table></div>
+   <p>Adaptation retained 0.766 more healthy routing ticks than fixed, but kept routing 1.781 ticks longer into the outage. Under 30% loss, it reduced mean false-DOWN time from 14.141 to 7.484 while increasing outage-UP time from 6.750 to 12.516. It traded one kind of error for another.</p>
+   <p>UNKNOWN reduced false DOWN by declining to decide. In the no-outage stress it made zero false-DOWN declarations but spent 5.047 healthy ticks UNKNOWN. In the default outage it spent sixteen outage ticks UNKNOWN and reached DOWN after 23.844 ticks. During twelve-tick outages it never reached DOWN in any of 64 runs; adaptive reached DOWN in 49. A missing detection is <code>null</code>, never zero.</p>
+
+   <h2>What the controls change</h2>
+   <dl><dt>Seed</dt><dd>Replays the exact packet drops and delays; it is not a difficulty rank.</dd><dt>Heartbeat</dt><dd>How often an UP service attempts a pulse.</dd><dt>Packet loss</dt><dd>An independent synthetic drop probability.</dd><dt>Burst delay</dt><dd>The maximum delay during the gold window.</dd><dt>Outage</dt><dd>How long the hidden service emits no heartbeats; zero removes failure.</dd><dt>Burst timing</dt><dd>Moves delay before or across the outage.</dd><dt>Decision tempo</dt><dd>Changes fixed and UNKNOWN thresholds. Adaptive bounds remain 8–30.</dd></dl>
+
+   <h2>Where the signal stops.</h2>
+   <p>This is a deterministic teaching world, not a production failure detector, SLO, Cloudflare measurement or operating recommendation. Clocks are perfect. Delay and loss are simplified. There is one observer, one service and no quorum, correlated failures, Byzantine behavior, autoscaling, routing topology, user impact or escalation cost.</p>
+   <p>The <a href="https://dspace.jaist.ac.jp/dspace/handle/10119/4784?locale=en">φ accrual failure detector paper</a> motivates continuous suspicion and adaptation to network conditions. This game implements neither φ nor its measured system. It keeps three outcomes separate so the reader can see what each threshold buys.</p>
+   <p>All <strong>640 matched seeded worlds and 1,920 policy outcomes</strong> are retained across ten predeclared settings. No seed was removed. The private source scan supplied the question—not instructions, public facts or prose—and is excluded from the release.</p>
+   <p class="downloads"><a href="/signal-or-silence/README.md" download>Method &amp; parameter guide ↓</a><a href="/signal-or-silence/source.zip" download>Source package ↓</a><a href="/signal-or-silence/results.json" download>All batch results ↓</a><a href="/signal-or-silence/model.mjs">Read the model</a></p>
+   <p class="fine">Previously: <a href="/intelligence/portable-self/">The Portable Self</a> · Explore the <a href="/intelligence/swarm-lab/">eight small worlds</a>.</p>
+  </section>
+ </div>
+ <script is:inline type="module" src="/signal-or-silence/client.mjs"></script>
+</BaseLayout>
+<style>
+ .experiment{padding-block:3rem 5rem}.experiment>.eyebrow{margin-top:3rem}h1{font:400 clamp(3.35rem,8vw,7rem)/.98 var(--serif);letter-spacing:-.055em;margin:1.5rem 0}h1 em{color:#9b5a3e}.lead{font:400 clamp(1.3rem,3vw,2rem)/1.45 var(--serif)}.intro,.story{max-width:49rem;line-height:1.85}.intro,.fine,dd{color:var(--muted)}.playground{margin-block:2.5rem;padding:clamp(1rem,3vw,2rem);border:1px solid var(--line);background:#f7f3eb;border-radius:12px}form{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}label{display:grid;gap:.4rem;font-size:.8rem}select,input[type=number],button{font:inherit;min-height:44px;padding:.65rem;border:1px solid #aaa391;border-radius:4px;background:#fffdf7;color:#292822;min-width:0;width:100%}.buttons{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.2rem}.buttons button{width:auto}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #a96d29;outline-offset:3px}#play{background:#326d63;color:#fff}#lab-status{font-size:.85rem;min-height:2.5em}#signal-world{display:block;width:100%;height:280px;margin-top:.6rem;border:1px solid #d0c8b7;border-radius:8px}.time{margin-block:1rem}.time input{width:100%;min-height:44px;accent-color:#326d63}.worlds{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}.world{border-top:1px solid #c4bdad;padding:1rem 0;min-width:0}.world h2{font:400 1.55rem var(--serif);margin:.35rem 0}.world .eyebrow{font-size:.65rem}.rule,.threshold{font-size:.78rem;color:#626258}.verdict{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.08em;padding:.25rem .55rem;border-radius:99px;background:#ead39c;color:#654a12}.verdict[data-state=up]{background:#d7e4d8;color:#28513b}.verdict[data-state=down]{background:#efd2be;color:#71391f}.trace{display:flex;flex-wrap:wrap;gap:3px;min-height:24px;margin-top:.8rem}.trace :global(.dot){width:8px;height:8px;border-radius:50%;border:1px solid #827e72}.trace :global(.up){background:#6e8b72}.trace :global(.down){background:#bc6b47}.trace :global(.unknown){background:#d5ad57}.counts{font-size:.78rem;font-variant-numeric:tabular-nums}.fine{font-size:.8rem;line-height:1.7}.story h2{font:400 clamp(1.6rem,4vw,2.5rem)/1.2 var(--serif);margin-top:2.5rem}.story code{font-size:.9em}dt{font-weight:600;margin-top:1rem}dd{margin-left:0}.downloads{display:flex;flex-wrap:wrap;gap:1rem;font-size:.9rem}.table-wrap{overflow-x:auto;margin-block:1.5rem}table{border-collapse:collapse;width:100%;font-size:.84rem}caption{text-align:left;color:var(--muted);font-size:.8rem;padding-bottom:.7rem}th,td{text-align:left;padding:.75rem .5rem;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}th{font-weight:500}@media(max-width:820px){form{grid-template-columns:1fr 1fr}.worlds{grid-template-columns:1fr}.playground{margin-inline:-.3rem}table{font-size:.72rem}th,td{padding:.6rem .25rem}}@media(max-width:420px){form{grid-template-columns:1fr}#signal-world{height:250px}}
+</style>

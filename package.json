@@ -29,11 +29,12 @@
     "diary:check": "python3 -m unittest discover -s scripts/diary -p 'test_*.py' && node --test scripts/diary/tests/diary-publisher.test.mjs scripts/diary/tests/diary-links.test.mjs",
     "cache:check": "node --test scripts/tests/cache-boundary.test.mjs",
     "prerelease:check": "pnpm run cache:check",
-    "release:check": "pnpm run diary:check && pnpm run robots:check && pnpm run privacy:check && pnpm run observability:check && pnpm run actions:check && pnpm run specials:check && pnpm run autonomy:check && pnpm run check && pnpm run build && pnpm run verify:seo && pnpm run specials:render && pnpm run test:ai-berkshire && pnpm run test:swarm-lab && node --test scripts/tests/bran-arcade-edge.test.mjs scripts/tests/bran-classic-gameplay.test.mjs scripts/tests/bran-mini-recovery.test.mjs && pnpm run test:agent-swarm && pnpm run test:receipt-gap && pnpm run test:portable-self",
+    "release:check": "pnpm run diary:check && pnpm run robots:check && pnpm run privacy:check && pnpm run observability:check && pnpm run actions:check && pnpm run specials:check && pnpm run autonomy:check && pnpm run check && pnpm run build && pnpm run verify:seo && pnpm run specials:render && pnpm run test:ai-berkshire && pnpm run test:swarm-lab && node --test scripts/tests/bran-arcade-edge.test.mjs scripts/tests/bran-classic-gameplay.test.mjs scripts/tests/bran-mini-recovery.test.mjs && pnpm run test:agent-swarm && pnpm run test:receipt-gap && pnpm run test:portable-self && pnpm run test:signal-or-silence",
     "preview": "astro preview",
     "test:agent-swarm": "node scripts/test-agent-swarm.mjs",
     "test:receipt-gap": "node --test public/receipt-gap/tests.mjs && node public/receipt-gap/batch.mjs --verify && node scripts/test-receipt-gap-render.mjs",
-    "test:portable-self": "node --test public/portable-self/tests.mjs && node public/portable-self/batch.mjs --verify && node scripts/test-portable-self-render.mjs"
+    "test:portable-self": "node --test public/portable-self/tests.mjs && node public/portable-self/batch.mjs --verify && node scripts/test-portable-self-render.mjs",
+    "test:signal-or-silence": "node --test public/signal-or-silence/tests.mjs && node public/signal-or-silence/batch.mjs --verify && node scripts/test-signal-or-silence-render.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.9",

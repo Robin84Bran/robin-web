@@ -340,3 +340,16 @@ method, complete results and a source ZIP live under `public/receipt-gap/`.
 Canonical research: `06_intelligence/AI_research/AI_swarm/11_receipt_gap/`.
 Keyed attempts cost twice as much by assumption; no universal policy winner,
 provider guarantee, biological or financial result is claimed.
+
+## Weekly Intelligence — Signal or Silence
+
+`/intelligence/signal-or-silence/` is the 2026-W43 experiment: a hidden service,
+lossy/delayed heartbeats and three status rules receiving identical evidence.
+It retains 640 seeded worlds / 1,920 policy outcomes, including no-outage,
+short-outage, high-loss and delay-overlap sensitivities. Run
+`pnpm run test:signal-or-silence` after a build. Public source, the frozen
+experiment contract, complete results and a source ZIP live under
+`public/signal-or-silence/`. Canonical research:
+`06_intelligence/AI_research/AI_swarm/13_signal_or_silence/`. UNKNOWN, false
+DOWN and routing during a true outage remain separate measures; the toy is not
+a production reliability benchmark or infrastructure recommendation.
