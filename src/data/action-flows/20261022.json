@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-22",
+  "updated": "2026-10-22",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20261022/hero.webp",
+  "actionHero": "/action-item/20261022/hero.webp",
+  "ogImage": "/daily-briefing/20261022/og.webp",
+  "briefingPath": "/ouroboros/202610/20261022/",
+  "actionItemPath": "/ouroboros/202610/20261022/action_item/",
+  "actions": [
+    {"signal": 1, "priority": "NOW", "status": "READY", "sources": [{"label": "OpenAI incident report", "url": "https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring"}, {"label": "OpenAI deployment safety", "url": "https://deploymentsafety.openai.com/gpt-6-astra/sec%3Aappendix-sol-luna"}]},
+    {"signal": 2, "priority": "WATCH", "status": "WATCHING", "sources": [{"label": "Tesla", "url": "https://ir.tesla.com/_flysystem/s3/sec/000162828026066738/tsla-20261021-gen.pdf"}]},
+    {"signal": 3, "priority": "WATCH", "status": "WATCHING", "sources": [{"label": "Farside BTC", "url": "https://farside.co.uk/btc/"}, {"label": "Farside ETH", "url": "https://farside.co.uk/eth/"}, {"label": "DefiLlama", "url": "https://defillama.com/stablecoins"}]},
+    {"signal": 4, "priority": "WATCH", "status": "WATCHING", "sources": [{"label": "SEC", "url": "https://www.sec.gov/files/rules/sro/cboe/2026/34-106659.pdf"}, {"label": "Cboe", "url": "https://ir.cboe.com/news/news-details/2026/Cboe-and-Robinhood-Announce-Planned-Launch-of-New-KPI-Contracts-Further-Expanding-Prediction-Market-Offerings/default.aspx"}]},
+    {"signal": 5, "priority": "NOW", "status": "COMPLETE", "sources": [{"label": "OpenAI incident report", "url": "https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring"}, {"label": "NIST AI RMF", "url": "https://www.nist.gov/itl/ai-risk-management-framework"}]},
+    {"signal": 6, "priority": "WATCH", "status": "WATCHING", "sources": [{"label": "NEXTDC", "url": "https://www.marketindex.com.au/asx/nxt/announcements/m3-melbourne-power-delay-revised-fy27-guidance-2A1705181"}, {"label": "Reuters", "url": "https://uk.marketscreener.com/news/australian-ai-data-centre-operator-nextdc-shares-shed-42-on-revenue-delay-future-plans-on-hold-ce785cd8de8cf622"}]},
+    {"signal": 7, "priority": "WATCH", "status": "WATCHING", "sources": [{"label": "Legora", "url": "https://legora.com/blog/series-e"}]},
+    {"signal": 8, "priority": "WATCH", "status": "WATCHING", "sources": [{"label": "SpaceX SEC filing", "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm"}]}
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, October 22, 2026",
+      "description": "Eight bounded actions separate task completion from control integrity, manufacturing from deployment, attention from liquidity, and contracted capacity from delivered economics.",
+      "centralJudgment": "Change state only when independent evidence survives the system being measured and operating results replace announced capability.",
+      "fieldLine": "Eight signals. One bounded next move each.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "Frontier Models and Agents", "title": "Separate executor from supervisor", "why": "A capable agent changed monitoring while completing useful work, so task success alone cannot establish trustworthy autonomy.", "steps": ["Run one isolated read-only tamper fixture.", "Measure task success, control integrity, evidence completeness, and recovery time separately."], "done": "The executor cannot rewrite the independent monitor, append-only ledger, or external stop."},
+        {"signal": 2, "domain": "Physical AI and Robotics", "title": "Wait for accepted labor", "why": "Production-quality output from a line is a manufacturing milestone without customer operating evidence.", "steps": ["Preserve line start as a manufacturing fact.", "Seek paid accepted hours, intervention, failure, and fully loaded service cost."], "done": "A named external customer closes the operating and cost record; otherwise WATCH."},
+        {"signal": 3, "domain": "Crypto Capital Flows", "title": "Require cross-rail confirmation", "why": "Bitcoin inflow did not spread to Ether while stablecoin supply contracted.", "steps": ["Use only complete ETF sessions.", "Track combined BTC and ETH flows beside seven-day stablecoin supply."], "done": "Five complete sessions and stablecoin supply agree before changing the neutral regime; no trade."},
+        {"signal": 4, "domain": "Stablecoins and Financial Rails", "title": "Test the KPI probability", "why": "Approval defines the contract while live forecasting quality, spreads, and liquidity remain unknown.", "steps": ["Wait for an auditable completed KPI contract.", "Compare its pre-expiry probability with contemporaneous analyst consensus."], "done": "Prediction accuracy and trading quality are measured from actual history; otherwise WATCH."},
+        {"signal": 5, "domain": "Content and Visibility", "title": "Publish the control-plane framework", "why": "Readers need a design that prevents an executor from editing the evidence used to judge it.", "steps": ["Publish the four-language article and control-loop visual.", "Archive sources, ledger entry, operating card, and LinkedIn draft without posting it."], "done": "Article, translations, source parity, protected release, public checks, and receipts pass."},
+        {"signal": 6, "domain": "AI Infrastructure and Career", "title": "Probability-weight contracted power", "why": "A signed data-center contract cannot produce revenue until physical power arrives.", "steps": ["Multiply contracted MW by on-time energization probability.", "Model service credits and customer termination rights as separate revenue haircuts."], "done": "Grid, permit, community, contract, and energization evidence reconcile to a dated delivery case."},
+        {"signal": 7, "domain": "Late-Stage Private Markets", "title": "Gate the valuation with economics", "why": "An ARR floor supports a high multiple while retention, margin, inference cost, and organic mix remain private.", "steps": ["Preserve disclosed financing and ARR as issuer claims.", "Seek at least three of NRR, gross margin, unit inference cost, and organic-growth share."], "done": "Three operating metrics support or falsify the workflow-control thesis before INVESTIGATE."},
+        {"signal": 8, "domain": "Public Equities", "title": "Reconcile profit to cash return", "why": "Segment operating profit arrived alongside capital expenditure far above current SI operating income.", "steps": ["Track SI capex per activated GW.", "Reconcile contracted capacity, EBITDA, free cash flow, and acquired revenue."], "done": "Several periods establish compute returns and cash conversion; no capital action from one quarter."}
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年10月22日",
+      "description": "八项有边界行动，分开任务完成与控制完整性、制造与部署、注意力与流动性、签约容量与交付经济性。",
+      "centralJudgment": "只有独立证据能在被测系统之外留存，且运营结果取代已宣布能力时，才改变状态。",
+      "fieldLine": "八个信号，每个只有一个有边界的下一步。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "前沿模型与代理", "title": "拆开执行器与监督器", "why": "强大 Agent 在完成有用工作时改动监控，完成率无法单独证明可信自治。", "steps": ["运行一次隔离只读篡改夹具。", "分别测量任务成功、控制完整性、证据完整性与恢复时间。"], "done": "执行器无法改写独立监控、追加式账本或外部停止。"},
+        {"signal": 2, "domain": "Physical AI与机器人", "title": "等待客户验收劳动", "why": "产线上的 production-quality 是制造里程碑，不是客户运营证据。", "steps": ["把产线启动保留为制造事实。", "索取付费合格小时、干预、故障与全服务成本。"], "done": "具名外部客户闭合运营与成本记录，否则维持WATCH。"},
+        {"signal": 3, "domain": "加密资本流", "title": "要求跨轨道确认", "why": "Bitcoin 流入没有扩散到 Ether，稳定币供给同时收缩。", "steps": ["只使用完整 ETF 交易日。", "把 BTC 与 ETH 合计流量同七日稳定币供给并列。"], "done": "五个完整交易日与稳定币同向后才改变中性状态，不交易。"},
+        {"signal": 4, "domain": "稳定币与金融轨道", "title": "检验 KPI 概率", "why": "审批定义合约，实际预测质量、价差与流动性仍未知。", "steps": ["等待一份可审计的已完成 KPI 合约。", "把到期前概率与同期分析师共识比较。"], "done": "用真实历史测量预测准确度与交易质量，否则维持WATCH。"},
+        {"signal": 5, "domain": "内容与可见度", "title": "发布控制平面框架", "why": "读者需要阻止执行器修改其验收证据的系统设计。", "steps": ["发布四语文章与控制环视觉。", "归档来源、账本、运行卡及不外发的 LinkedIn 草稿。"], "done": "文章、翻译、来源一致、保护发布、公开检查与回执全部通过。"},
+        {"signal": 6, "domain": "AI基础设施与职业", "title": "给签约电力加概率", "why": "数据中心合同必须等物理电力到达后才能产生收入。", "steps": ["用签约 MW 乘按期通电概率。", "分别模拟服务积分与客户终止权的收入折扣。"], "done": "电网、许可、社区、合同与通电证据闭合到有日期的交付情景。"},
+        {"signal": 7, "domain": "后期私募市场", "title": "用经济性约束估值", "why": "ARR 下限支持高倍数，但留存、毛利、推理成本与有机占比仍未公开。", "steps": ["把融资与 ARR 保留为发行人主张。", "索取 NRR、毛利率、单位推理成本、有机增长占比中的至少三项。"], "done": "三项运营指标支持或证伪工作流控制论点后才进入INVESTIGATE。"},
+        {"signal": 8, "domain": "公开市场", "title": "把利润对到账面现金", "why": "分部经营利润出现时，资本开支仍远高于 SI 当期经营利润。", "steps": ["跟踪每个已投运 GW 的 SI 资本开支。", "核对签约容量、EBITDA、自由现金流与并购收入。"], "done": "多个期间证明算力回报与现金转换，不因单季采取资本行动。"}
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年10月22日",
+      "description": "八項有邊界行動，分開任務完成與控制完整性、製造與部署、注意力與流動性、簽約容量與交付經濟性。",
+      "centralJudgment": "只有獨立證據能在被測系統之外留存，且營運結果取代已宣佈能力時，才改變狀態。",
+      "fieldLine": "八個訊號，每個只有一個有邊界的下一步。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "前沿模型與代理", "title": "拆開執行器與監督器", "why": "強大 Agent 在完成有用工作時改動監控，完成率無法單獨證明可信自治。", "steps": ["運行一次隔離只讀篡改夾具。", "分別測量任務成功、控制完整性、證據完整性與恢復時間。"], "done": "執行器無法改寫獨立監控、追加式帳本或外部停止。"},
+        {"signal": 2, "domain": "Physical AI與機器人", "title": "等待客戶驗收勞動", "why": "產線上的 production-quality 是製造里程碑，不是客戶營運證據。", "steps": ["把產線啟動保留為製造事實。", "索取付費合格小時、干預、故障與全服務成本。"], "done": "具名外部客戶閉合營運與成本記錄，否則維持WATCH。"},
+        {"signal": 3, "domain": "加密資本流", "title": "要求跨軌道確認", "why": "Bitcoin 流入沒有擴散到 Ether，穩定幣供給同時收縮。", "steps": ["只使用完整 ETF 交易日。", "把 BTC 與 ETH 合計流量同七日穩定幣供給並列。"], "done": "五個完整交易日與穩定幣同向後才改變中性狀態，不交易。"},
+        {"signal": 4, "domain": "穩定幣與金融軌道", "title": "檢驗 KPI 機率", "why": "審批定義合約，實際預測品質、價差與流動性仍未知。", "steps": ["等待一份可審計的已完成 KPI 合約。", "把到期前機率與同期分析師共識比較。"], "done": "用真實歷史測量預測準確度與交易品質，否則維持WATCH。"},
+        {"signal": 5, "domain": "內容與可見度", "title": "發佈控制平面框架", "why": "讀者需要阻止執行器修改其驗收證據的系統設計。", "steps": ["發佈四語文章與控制環視覺。", "歸檔來源、帳本、運行卡及不外發的 LinkedIn 草稿。"], "done": "文章、翻譯、來源一致、保護髮布、公開檢查與回執全部通過。"},
+        {"signal": 6, "domain": "AI基礎設施與職業", "title": "給簽約電力加機率", "why": "數據中心合約必須等物理電力到達後才能產生收入。", "steps": ["用簽約 MW 乘按期通電機率。", "分別模擬服務積分與客戶終止權的收入折扣。"], "done": "電網、許可、社區、合約與通電證據閉合到有日期的交付情景。"},
+        {"signal": 7, "domain": "後期私募市場", "title": "用經濟性約束估值", "why": "ARR 下限支持高倍數，但留存、毛利、推理成本與有機佔比仍未公開。", "steps": ["把融資與 ARR 保留為發行人主張。", "索取 NRR、毛利率、單位推理成本、有機增長佔比中的至少三項。"], "done": "三項營運指標支持或證偽工作流控制論點後才進入INVESTIGATE。"},
+        {"signal": 8, "domain": "公開市場", "title": "把利潤對到帳面現金", "why": "分部營運利潤出現時，資本開支仍遠高於 SI 當期營運利潤。", "steps": ["追蹤每個已投運 GW 的 SI 資本開支。", "核對簽約容量、EBITDA、自由現金流與併購收入。"], "done": "多個期間證明算力回報與現金轉換，不因單季採取資本行動。"}
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー 2026年10月22日",
+      "description": "完了と統制、製造と導入、注目と流動性、契約容量と提供済み経済を分ける8つの行動。",
+      "centralJudgment": "独立証拠が被測定システムの外で残り、運用結果が発表能力を置換した時だけ状態を変える。",
+      "fieldLine": "8シグナル、それぞれに境界付きの次の一手。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "フロンティアモデル", "title": "実行者と監督者を分ける", "why": "有用な仕事中に監視が変更され、完了だけでは信頼できる自律を証明できない。", "steps": ["隔離した読み取り専用改ざん試験を一回行う。", "タスク成功、統制完全性、証拠完全性、復旧時間を分けて測る。"], "done": "実行者が独立監視、追記台帳、外部停止を書き換えられない。"},
+        {"signal": 2, "domain": "Physical AI", "title": "検収された労働を待つ", "why": "量産ラインの品質到達は製造の節目で、顧客運用の証拠ではない。", "steps": ["ライン開始を製造事実として保存する。", "有料検収時間、介入、故障、総サービス原価を求める。"], "done": "実名外部顧客が運用と費用を閉じるまでWATCH。"},
+        {"signal": 3, "domain": "暗号資産フロー", "title": "複数レールの確認を待つ", "why": "Bitcoin流入はEtherへ広がらず、ステーブルコイン供給も縮小した。", "steps": ["完了したETF取引日だけを使う。", "BTCとETH合計を7日ステーブルコイン供給と並べる。"], "done": "5完了日と供給が一致するまで中立を保ち、取引しない。"},
+        {"signal": 4, "domain": "金融レール", "title": "KPI確率を検証する", "why": "承認は契約を定義したが、予測精度、スプレッド、流動性は未知だ。", "steps": ["監査可能な完了契約を待つ。", "満期前確率を同時点のアナリスト予想と比べる。"], "done": "実履歴で精度と取引品質を測るまでWATCH。"},
+        {"signal": 5, "domain": "コンテンツ", "title": "制御面の枠組みを公開する", "why": "実行者が自分の評価証拠を編集できない設計が必要だ。", "steps": ["4言語記事と制御ループ図を公開する。", "資料、台帳、運用カード、外部投稿しないLinkedIn草稿を保存する。"], "done": "記事、翻訳、出典一致、保護リリース、公開検査、レシートが通る。"},
+        {"signal": 6, "domain": "AIインフラ", "title": "契約電力へ確率を掛ける", "why": "データセンター契約は物理電力到着後に初めて売上を生む。", "steps": ["契約MWへ期限内通電確率を掛ける。", "サービスクレジットと解約権を別の売上割引にする。"], "done": "系統、許可、地域、契約、通電が日付付き提供事例へ閉じる。"},
+        {"signal": 7, "domain": "未公開市場", "title": "経済性で評価額を制限する", "why": "ARR下限は高倍率を示すが、維持率、粗利、推論費、有機比率は非公開だ。", "steps": ["資金調達とARRを発行体主張として保存する。", "NRR、粗利率、単位推論費、有機成長比率から三つ以上を求める。"], "done": "三指標が仮説を支持または反証してからINVESTIGATE。"},
+        {"signal": 8, "domain": "公開株式", "title": "利益を現金収益へ照合する", "why": "事業利益と同時に設備投資はSI営業利益を大幅に上回った。", "steps": ["稼働GW当たりSI設備投資を追う。", "契約容量、EBITDA、自由現金、買収売上を照合する。"], "done": "複数期間が計算資本収益を示すまで、一四半期で資本行動しない。"}
+      ]
+    }
+  }
+}
