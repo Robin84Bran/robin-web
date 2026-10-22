@@ -1,0 +1,109 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import * as Teddy from '../../../data/open-council/teddy.md';
+import * as Followup from '../../../data/open-council/followup.md';
+import * as Claude from '../../../data/open-council/claude.md';
+import * as Grok from '../../../data/open-council/grok.md';
+
+const path = '/intelligence/council/autonomous-engineering/';
+const title = 'The Dawn of Autonomous Engineering';
+const description = 'An open AI council on Gemini’s overnight coding experiment. Teddy opens; Robin, Claude and Grok take positions. Gemini’s seat is open. Where do you stand?';
+// Preserve every speaker's words; only normalize headings within the host page.
+const prose = async (entry: typeof Teddy) => (await entry.compiledContent()).replace(/<(\/?)h([1-6])\b/g, (_match: string, slash: string, level: string) => `<${slash}h${Math.min(6, Number(level) + 2)}`);
+const motions = [
+  'Autonomous coding should become a default overnight engineering workflow within two years.',
+  'Human review capacity will become a greater bottleneck than code generation.',
+  'Machine-readable institutional memory will become a defensible corporate asset.',
+  'The economic impact of autonomous optimization will exceed the value of faster code generation alone.',
+];
+const positions = [
+  ['Uncertain', 'Disagree', 'Seat open', 'Uncertain'],
+  ['Agree', 'Agree — different scarce resource', 'Seat open', 'Agree'],
+  ['Agree', 'Uncertain', 'Seat open', 'Agree'],
+  ['Agree', 'Agree — long-run thesis', 'Seat open', 'Agree'],
+];
+const schema = {
+  '@context': 'https://schema.org', '@type': 'Article',
+  '@id': `https://iamrobin.ai${path}#council`, headline: title, description,
+  url: `https://iamrobin.ai${path}`, datePublished: '2026-10-22', dateModified: '2026-10-22',
+  inLanguage: 'en', genre: 'Open AI council discussion',
+  editor: { '@id': 'https://www.tideisun.com/robin#robin-xie' },
+  isPartOf: { '@id': 'https://iamrobin.ai/intelligence/#page' },
+};
+---
+
+<BaseLayout title={`${title} — Open AI Council — Robin Xie`} {description} {path} {schema} type="article">
+  <div class="council shell">
+    <header>
+      <a href="/intelligence/">← Intelligence</a>
+      <p class="eyebrow">AI Council · Round 1 · <time datetime="2026-10-22">22 October 2026</time></p>
+      <h1>The Dawn of Autonomous Engineering</h1>
+      <p class="lede">One opening. Four motions. Different minds at the table.</p>
+      <p>Google reported an overnight Gemini coding experiment on its roughly 205,000-line Python agent framework: six optimization proposals, two accepted. What might an entrepreneur build around that possibility?</p>
+      <p class="small">ChatGPT → Claude | Gemini | Grok. Claude and Grok received the same opening, Robin’s votes and public-source facts, without seeing each other’s replies. Gemini’s seat is open. No winner and no closing verdict.</p>
+      <nav aria-label="Council speakers"><a href="#teddy">Teddy opens</a><a href="#votes">The votes</a><a href="#claude">Claude</a><a href="#gemini">Gemini</a><a href="#grok">Grok</a><a href="#your-turn">Your turn</a></nav>
+    </header>
+    <section id="teddy" aria-labelledby="teddy-title">
+      <p class="eyebrow">ChatGPT / Teddy · Original opening</p><h2 id="teddy-title">Let’s open the possibilities.</h2>
+      <div class="transcript" data-speaker="teddy" set:html={prose(Teddy)} />
+      <details><summary>Robin’s choices and Teddy’s follow-up</summary>
+        <p>Robin chose: <strong>1 uncertain · 2 agree · 3 agree · 4 agree</strong>, asking for opposing arguments and practical experiments.</p>
+        <p class="small">This earlier follow-up is included separately. It was not sent to the other respondents. Its “verdict” wording belongs to Teddy’s response, not to the council as a whole.</p>
+        <div class="transcript" data-speaker="followup" set:html={prose(Followup)} />
+      </details>
+    </section>
+    <section id="votes" aria-labelledby="votes-title"><h2 id="votes-title">Where everyone starts</h2>
+      <p class="small">Positions, not a scorecard. Read each member’s qualifications below. Teddy posed the motions; no vote is attributed to him.</p>
+      <div class="tablewrap" tabindex="0" role="region" aria-label="Council positions, scroll horizontally on small screens">
+        <table><caption>Four motions, four seats</caption><thead><tr><th scope="col">Motion</th>{['Robin','Claude','Gemini','Grok'].map(name => <th scope="col">{name}</th>)}</tr></thead>
+          <tbody>{motions.map((motion, i) => <tr><th scope="row">{i + 1}. {motion}</th>{positions[i].map(position => <td>{position}</td>)}</tr>)}</tbody>
+        </table>
+      </div>
+    </section>
+    <section id="claude" aria-labelledby="claude-title"><p class="eyebrow">Independent council response · Original words</p><h2 id="claude-title">Claude</h2><div class="transcript" data-speaker="claude" set:html={prose(Claude)} /></section>
+    <section id="gemini" aria-labelledby="gemini-title"><p class="eyebrow">An open seat</p><h2 id="gemini-title">Gemini</h2><p>No council response has been received. The first attempt produced no recoverable answer; a retry returned a service error. We’re leaving the chair open.</p></section>
+    <section id="grok" aria-labelledby="grok-title"><p class="eyebrow">Independent council response · Original words</p><h2 id="grok-title">Grok</h2><div class="transcript" data-speaker="grok" set:html={prose(Grok)} /></section>
+    <section id="your-turn" aria-labelledby="your-turn-title">
+      <p class="eyebrow">The next move is open</p><h2 id="your-turn-title">What would you ask them next?</h2>
+      <p>You can keep your position, change your mind, or add a fifth motion.</p>
+      <p class="small">Your choices stay on this page. This is a conversation starter, not a public poll: no votes are submitted, tallied or saved.</p>
+      {motions.map((motion, i) => <fieldset><legend>{i + 1}. {motion}</legend>{['Agree','Uncertain','Disagree'].map(v => <label><input type="radio" name={`m${i+1}`} value={v} /> <span>{v}</span></label>)}</fieldset>)}
+      <label for="council-question">Your next question</label><textarea id="council-question" class="notranslate" translate="no" maxlength="12000" placeholder="What possibility should the council explore next?"></textarea>
+      <p><button id="prepare-council" type="button">Prepare my reply</button></p>
+      <label for="council-reply">Your copyable reply</label><textarea id="council-reply" class="notranslate" translate="no" readonly></textarea>
+      <p id="council-status" role="status" aria-live="polite" class="small">Choose any motions, add a question, then prepare your reply.</p>
+      <p class="small">Copy the reply into your own AI conversation to keep exploring. This page does not send messages to the models. Leaving or reloading clears your choices.</p>
+      <noscript><p>The discussion is readable without JavaScript. Enable JavaScript to prepare a reply, or copy the four motions into your own conversation.</p></noscript>
+    </section>
+    <details class="source-notes"><summary>Sources and a few useful qualifications</summary>
+      <p>This is an exploratory AI conversation. Votes express positions; forecasts, analogies and proposed experiments remain open to challenge.</p>
+      <ul><li><a href="https://developers.googleblog.com/optimizing-a-200000-line-python-codebase-overnight-with-gemini-4-argon/">Google’s account of the overnight experiment</a></li><li><a href="https://github.com/google/adk-python/commit/1754b3eeb6cdb2c16e3b30619a12066623df132e">The merged code and benchmark record</a></li></ul>
+      <p>The full framework benchmark used instant model and tool responses: 65.6 seconds became 56.1 seconds across 158 internal turns. The merged changes combined work from an initial two-hour run and a later eleven-hour run. Reviewer time, model expense and net business return were not established.</p>
+      <p>The speakers’ words are preserved. Claude’s 2.5% estimate assumes two seconds per internal turn; it is an illustrative calculation, not a measured production result. Internal turns need not map one-to-one to model calls, and elapsed time does not directly establish CPU-cost savings. Keeping two of six proposals alone cannot prove the optimal rejection rate or a review bottleneck.</p>
+      <p>Teddy’s original embedded widgets appear here as captured text. Some calculator inputs were unavailable; the displayed values are illustrative, not a reproducible calculation. The working voting controls are in “Your turn” above.</p>
+      <p>Experiments mentioned by the council are proposals, not completed work or financial instructions. The discussion stays open.</p>
+    </details>
+  </div>
+  <script is:inline type="module" src="/council/reply.mjs"></script>
+</BaseLayout>
+
+<style is:global>
+  .council{max-width:900px;padding-block:3rem 6rem;font:1.12rem/1.8 var(--serif);overflow-wrap:anywhere}
+  .council h1{font-size:clamp(2.4rem,6vw,4rem);line-height:1.08;letter-spacing:-.04em;margin:1rem 0 1.5rem}
+  .council h2{font-size:2rem;line-height:1.25;font-weight:400;margin:0 0 1.3rem}
+  .council h3{font-size:1.4rem;line-height:1.4;margin:2rem 0 1rem}.council h4{font-size:1.2rem;margin:1.5rem 0 .8rem}
+  .council p{margin:1rem 0}.council .lede{font-size:1.4rem}.council .small{font: .9rem/1.7 var(--sans,system-ui);color:var(--muted)}
+  .council a{text-decoration:underline;text-underline-offset:.2em;color:#3d6859}.council nav{display:flex;flex-wrap:wrap;gap:1rem;font: .9rem/1.7 system-ui;margin:2rem 0}
+  .council section{border-top:1px solid var(--line);margin-top:3rem;padding-top:2rem;scroll-margin-top:6rem}
+  .council details{margin:2rem 0}.council summary{cursor:pointer;font:1rem/1.6 system-ui;color:#3d6859;padding:.75rem 0}
+  .council ul,.council ol{padding-left:1.5rem;list-style:revert}.council li{margin:.55rem 0}
+  .council table{border-collapse:collapse;font:.9rem/1.6 system-ui;width:100%;margin:1.5rem 0}.council th,.council td{padding:.8rem;border:1px solid var(--line);text-align:left;min-width:105px}.council th:first-child{min-width:220px}
+  .council .transcript table,.council .tablewrap{display:block;overflow-x:auto}.council caption{text-align:left;padding:.7rem 0;color:var(--muted)}
+  .council blockquote{border-left:3px solid #789486;margin:1.2rem 0;padding-left:1rem}.council pre{overflow:auto;white-space:pre-wrap}
+  .council fieldset{border:1px solid var(--line);padding:1.2rem;margin:1.5rem 0;min-width:0}.council legend{font:1rem/1.6 system-ui;padding:0 .5rem}
+  .council label{font:1rem/1.5 system-ui;display:inline-flex;align-items:center;gap:.4rem;margin-right:1rem;min-height:44px}.council input{accent-color:#3d6859;width:18px;height:18px}
+  .council textarea{box-sizing:border-box;display:block;width:100%;min-height:120px;padding:1rem;border:1px solid #9da99d;border-radius:4px;font:1rem/1.6 system-ui;background:#fffdf8;color:var(--ink)}
+  .council #council-reply{min-height:190px}.council button{font:1rem/1.5 system-ui;padding:.8rem 1.1rem;border:1px solid #607b68;border-radius:4px;background:#e8eee1;color:#264a38;cursor:pointer}
+  .council :focus-visible{outline:2px solid #3d6859;outline-offset:4px}.council .source-notes{border-top:1px solid var(--line);padding-top:1rem}
+  @media(max-width:600px){.council{font-size:1.05rem;padding-inline:20px}.council h2{font-size:1.65rem}}
+</style>
