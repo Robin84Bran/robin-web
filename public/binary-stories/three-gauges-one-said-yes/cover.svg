@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Three gauges. One said yes.</title>
+  <desc id="desc">Three separate measurement cards show Bitcoin ETP flows positive, Ether ETP flows negative, and USD stablecoin circulation negative. Lines converge on a breadth gate labeled one of three.</desc>
+  <rect width="1600" height="900" fill="#0B1228"/>
+  <g opacity="0.12" stroke="#F4F1E9" stroke-width="1">
+    <path d="M80 110H1520M80 260H1520M80 410H1520M80 560H1520M80 710H1520"/>
+    <path d="M200 70V830M520 70V830M840 70V830M1160 70V830M1480 70V830"/>
+  </g>
+  <text x="110" y="115" fill="#61D4D7" font-family="Arial, sans-serif" font-size="28" letter-spacing="5">BINARY / INVEST</text>
+  <text x="110" y="205" fill="#F4F1E9" font-family="Georgia, serif" font-size="72">Three gauges.</text>
+  <text x="110" y="282" fill="#F4F1E9" font-family="Georgia, serif" font-size="72">One said yes.</text>
+  <text x="110" y="335" fill="#B7C0D5" font-family="Arial, sans-serif" font-size="28">Breadth is agreement, not addition.</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="110" y="420" width="350" height="220" rx="18" fill="#121D3A" stroke="#61D4D7" stroke-width="3"/>
+    <text x="145" y="470" fill="#B7C0D5" font-size="22" letter-spacing="2">BITCOIN ETP FLOW</text>
+    <text x="145" y="555" fill="#61D4D7" font-size="62" font-weight="700">+$211.2m</text>
+    <text x="145" y="603" fill="#F4F1E9" font-size="25">five complete sessions</text>
+    <rect x="515" y="420" width="350" height="220" rx="18" fill="#121D3A" stroke="#D8B86B" stroke-width="3"/>
+    <text x="550" y="470" fill="#B7C0D5" font-size="22" letter-spacing="2">ETHER ETP FLOW</text>
+    <text x="550" y="555" fill="#D8B86B" font-size="62" font-weight="700">-$388.9m</text>
+    <text x="550" y="603" fill="#F4F1E9" font-size="25">same five sessions</text>
+    <rect x="920" y="420" width="455" height="220" rx="18" fill="#121D3A" stroke="#D8B86B" stroke-width="3"/>
+    <text x="955" y="470" fill="#B7C0D5" font-size="22" letter-spacing="2">USD STABLECOIN STOCK</text>
+    <text x="955" y="555" fill="#D8B86B" font-size="62" font-weight="700">-$2.368bn</text>
+    <text x="955" y="603" fill="#F4F1E9" font-size="25">seven calendar days</text>
+  </g>
+  <g fill="none" stroke-width="4">
+    <path d="M285 640V700H670" stroke="#61D4D7"/>
+    <path d="M690 640V700" stroke="#D8B86B"/>
+    <path d="M1148 640V700H710" stroke="#D8B86B"/>
+  </g>
+  <rect x="610" y="684" width="160" height="92" rx="46" fill="#F4F1E9"/>
+  <text x="690" y="743" text-anchor="middle" fill="#0B1228" font-family="Arial, sans-serif" font-size="34" font-weight="700">1 / 3</text>
+  <text x="825" y="742" fill="#F4F1E9" font-family="Arial, sans-serif" font-size="27">directional confirmation</text>
+  <text x="1490" y="842" text-anchor="end" fill="#B7C0D5" font-family="Arial, sans-serif" font-size="24">IAmRobin.ai</text>
+</svg>
