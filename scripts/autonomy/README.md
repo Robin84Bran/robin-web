@@ -1,5 +1,11 @@
 # Ouroboros → Binary → Intelligence
 
+October 23 owner update: new Daily Action and Daily Special editions follow
+`docs/DAILY_EDITORIAL_RELAY.md` from October 24. Codex background/facts → Teddy
+brainstorm → Claude hook/logic → Gemini natural article → Codex factual audit.
+No minimum, at most 3,000 English words; actual provider receipts and one-retry
+fallback. Preserve source, timing, ownership, historical releases and all gates.
+
 Owner authorization: 2026-09-25. This contract supersedes the old 09:00
 Telegram-first/13:00 fallback and opt-in Special policies. Same scheduler, same
 Telegram consumer, same site and research roots. Never interpret it as financial

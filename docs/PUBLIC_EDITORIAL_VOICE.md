@@ -1,5 +1,10 @@
 # Public editorial voice
 
+October 23 update: new Daily Action and Daily Special editions use
+`DAILY_EDITORIAL_RELAY.md` from October 24: source/background packet → Teddy
+brainstorm → Claude hook/logic → Gemini engaging article → Codex factual audit.
+Keep prompts simple, no minimum length and at most 3,000 English words.
+
 Robin's direction, 24 September 2026. This governs newly authored public essays,
 Signal 5 deep dives and Daily Specials. It does not rewrite immutable briefing
 sources, owner-authored diaries, historical articles or operational receipts.

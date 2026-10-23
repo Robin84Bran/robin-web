@@ -1,5 +1,14 @@
 # Daily Special
 
+## October 23 daily writing update
+
+For new editions dated October 24 onward, read `docs/DAILY_EDITORIAL_RELAY.md`
+from the repository root. Codex background/facts → business ChatGPT brainstorm
+→ Claude hook/logic → Gemini engaging article → Codex factual audit. Simple
+prompts; no minimum and at most 3,000 English words. Retry once and transfer
+missing roles to the next provider or Codex, recording genuine provenance
+privately. Do not reopen historical completed editions or change release gates.
+
 ## Active contract from 2026-09-25
 
 Read `../autonomy/README.md`. Robin authorized autonomous selection and
