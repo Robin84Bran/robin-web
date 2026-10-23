@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-23",
+  "updated": "2026-10-23",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20261023/hero.webp",
+  "actionHero": "/action-item/20261023/hero.webp",
+  "ogImage": "/daily-briefing/20261023/og.webp",
+  "briefingPath": "/ouroboros/202610/20261023/",
+  "actionItemPath": "/ouroboros/202610/20261023/action_item/",
+  "actions": [
+    {"signal":1,"priority":"NEXT","status":"READY","sources":[{"label":"Anthropic","url":"https://claude.com/resources/articles/claude-duet"}]},
+    {"signal":2,"priority":"WATCH","status":"WATCHING","sources":[{"label":"Agility Robotics","url":"https://investingnews.com/agility-robotics-expands-nvidia-collaboration-as-it-prepares-digit-5-for-commercial-scale/"}]},
+    {"signal":3,"priority":"WATCH","status":"WATCHING","sources":[{"label":"Farside BTC","url":"https://farside.co.uk/btc/"},{"label":"Farside ETH","url":"https://farside.co.uk/eth/"},{"label":"DefiLlama","url":"https://defillama.com/stablecoins"}]},
+    {"signal":4,"priority":"WATCH","status":"WATCHING","sources":[{"label":"Aero","url":"https://aero.xyz/articles/aero-launches-today/"},{"label":"Unchained","url":"https://unchainedcrypto.com/aerodrome-and-velodrome-merge-into-aero-sending-all-exchange-revenue-to-aero-stakers/"}]},
+    {"signal":5,"priority":"NOW","status":"COMPLETE","sources":[{"label":"Backtest overfitting","url":"https://escholarship.org/uc/item/4w1110bb"},{"label":"NBER multiple testing","url":"https://www.nber.org/papers/w20592"},{"label":"NIST AI RMF","url":"https://www.nist.gov/itl/ai-risk-management-framework"}]},
+    {"signal":6,"priority":"NEXT","status":"READY","sources":[{"label":"Nebius","url":"https://nebius.com/newsroom/nebius-secures-3-5-billion-financing-facility-with-citi"}]},
+    {"signal":7,"priority":"WATCH","status":"WATCHING","sources":[{"label":"Nouscom","url":"https://www.globenewswire.com/news-release/2026/10/19/3382989/0/en/nouscom-raises-120-million-135-million-in-oversubscribed-series-d-financing-and-will-present-long-term-cancer-interception-clinical-data-in-lynch-syndrome-carriers-at-esmo.html"}]},
+    {"signal":8,"priority":"WATCH","status":"WATCHING","sources":[{"label":"Merck and Moderna","url":"https://www.merck.com/news/merck-and-moderna-will-present-results-from-landmark-phase-3-interpath-001-trial-for-intismeran-autogene-plus-keytruda-pembrolizumab-at-esmo-2026-presidential-symposium/"}]}
+  ],
+  "editions": {
+    "en": {
+      "title":"Daily Action Flow, October 23, 2026","description":"Eight bounded actions test accepted autonomous work, customer-verified robotics, capital breadth, durable liquidity, decision-grade research, infrastructure clocks, clinical controls, and manufacturing economics.","centralJudgment":"Change state only when announced capability becomes an accepted outcome and the evidence survives independent review.","fieldLine":"Eight signals. One bounded next move each.","inLanguage":"en","languageSlug":"","translationReview":"PASS",
+      "actions":[
+        {"signal":1,"domain":"Frontier Models and Agents","title":"Benchmark accepted autonomy","why":"Claude Duet offers persistent cloud work while accepted outcomes, intervention, recovery, and cost remain unmeasured.","steps":["Use one existing research task with a fixed budget.","Record acceptance, rescues, recovery, and total cost against the current workflow."],"done":"Integrate only if accepted output improves without widening authority."},
+        {"signal":2,"domain":"Physical AI and Robotics","title":"Wait for customer acceptance","why":"Digit 5 has a common compute and safety path while certification and delivered operating evidence remain ahead.","steps":["Preserve the platform change as production-readiness evidence.","Seek productive hours, takeover rate, failure rate, and service cost from a customer."],"done":"A comparable customer record clears the commercial gate; otherwise WATCH."},
+        {"signal":3,"domain":"Crypto Capital Flows","title":"Require broad capital confirmation","why":"Bitcoin-led ETF inflow arrived while seven-day stablecoin supply still contracted.","steps":["Use completed ETF sessions only.","Track five-session ETH flow beside seven-day stablecoin growth."],"done":"Both measures turn positive before changing the broad-capital state; no trade."},
+        {"signal":4,"domain":"Stablecoins and Financial Rails","title":"Separate subsidy from demand","why":"Aero directs incentives toward predicted markets while durable organic liquidity remains unknown.","steps":["Track one actual stock-token pool for seven complete days.","Separate subsidies, unsubsidized fees, and retained liquidity after rewards fall."],"done":"Organic fees and liquidity persist after weaker rewards; otherwise WATCH."},
+        {"signal":5,"domain":"Content and Visibility","title":"Publish the evidence contract","why":"A stopped paper test can create value when it preserves conditional fills, residual risk, and an allocation decision.","steps":["Publish the four-language Quant Lab framework and operating card.","Archive the ledger, sources, visuals, and LinkedIn draft without posting externally."],"done":"Protected release, public parity, receipts, and source gates pass."},
+        {"signal":6,"domain":"AI Infrastructure and Career","title":"Map the 364-day bridge","why":"A short secured facility compresses commissioning, utilization, receipts, interest, and refinancing into one clock.","steps":["Place delivery, customer cash, interest, and maturity on one timeline.","Stress delayed commissioning and lower utilization without treating contracts as cash."],"done":"The dated bridge identifies the funding gap and refinancing dependency."},
+        {"signal":7,"domain":"Late-Stage Private Markets","title":"Wait for controlled prevention evidence","why":"Nouscom has financing and early single-arm observations while controlled efficacy and long-term safety remain unresolved.","steps":["Read ESMO abstract 3438O and its full presentation.","Record follow-up attrition and the next trial's control design before transaction work."],"done":"Controlled design and durable follow-up support a deeper diligence state; otherwise WATCH."},
+        {"signal":8,"domain":"Public Markets and Life Sciences","title":"Underwrite manufacturing after efficacy","why":"Randomized recurrence-free survival improved while overall survival and dose economics remain unsettled.","steps":["Update the hypothesis from the full ESMO presentation.","Model turnaround time, manufacturing cost, reimbursement, and mature survival separately."],"done":"Clinical benefit and scalable unit economics reconcile; no capital action from the headline alone."}
+      ]
+    },
+    "zh-Hans": {
+      "title":"每日行动流，2026年10月23日","description":"八项有边界行动，检验代理验收、机器人工时、资本广度、自然流动性、研究证据、基础设施时钟、临床对照与制造经济性。","centralJudgment":"只有已宣布能力变成验收结果，且证据经得起独立复核时，才改变状态。","fieldLine":"八个信号，每个只有一个有边界的下一步。","inLanguage":"zh-Hans","languageSlug":"zh-hans","translationReview":"PASS",
+      "actions":[
+        {"signal":1,"domain":"前沿模型与代理","title":"检验被验收的自治","why":"Claude Duet 可在云端持续工作，但成果验收、人工介入、恢复和成本尚未实测。","steps":["用一个现有研究任务和固定预算对照。","记录验收、救援、恢复与总成本。"],"done":"只有在不扩大权限时改善验收结果，才接入。"},
+        {"signal":2,"domain":"Physical AI与机器人","title":"等待客户验收","why":"Digit 5 统一计算与安全路径，认证和交付运营证据仍在前方。","steps":["把平台变化保留为生产准备证据。","索取客户有效工时、接管率、故障率和服务成本。"],"done":"可比客户记录通过商业门槛，否则WATCH。"},
+        {"signal":3,"domain":"加密资本流","title":"要求广泛资本确认","why":"ETF 流入以 Bitcoin 为主，七日稳定币供应仍收缩。","steps":["只使用完整 ETF 交易日。","并列五日 ETH 流量与七日稳定币增长。"],"done":"两项同时转正后才改变资本状态，不交易。"},
+        {"signal":4,"domain":"稳定币与金融轨道","title":"分开补贴与需求","why":"Aero 把奖励导向预测市场，持续自然流动性仍未知。","steps":["跟踪一个真实股票代币池七个完整日。","分开补贴、非补贴费用与奖励下降后的留存。"],"done":"较弱奖励下仍有自然费用和流动性，否则WATCH。"},
+        {"signal":5,"domain":"内容与可见度","title":"发布证据契约","why":"停止的纸面测试只要保留条件成交、残余风险和资源决定，就能创造价值。","steps":["发布四语 Quant Lab 框架与运行卡。","归档账本、来源、视觉与不外发的 LinkedIn 草稿。"],"done":"保护发布、公开一致性、回执和来源门槛全部通过。"},
+        {"signal":6,"domain":"AI基础设施与职业","title":"绘制364天资金桥","why":"短期担保融资把投产、利用率、回款、利息和再融资压进同一时钟。","steps":["把交付、回款、利息和到期放在同一时间轴。","压力测试延迟投产和较低利用率，不把合同当现金。"],"done":"有日期的资金桥标出缺口和再融资依赖。"},
+        {"signal":7,"domain":"后期私募市场","title":"等待对照预防证据","why":"Nouscom 已融资并有早期单臂观察，对照疗效与长期安全仍未解决。","steps":["阅读 ESMO 摘要3438O和完整报告。","记录随访流失与下一试验对照设计。"],"done":"对照设计和耐久随访支持深入尽调，否则WATCH。"},
+        {"signal":8,"domain":"公开市场与生命科学","title":"疗效后再核算制造","why":"随机试验改善无复发生存，总生存与单剂经济性仍未确定。","steps":["用完整 ESMO 报告更新假设。","分别模拟制造时间、成本、支付与成熟生存数据。"],"done":"临床获益与可扩展单位经济性闭合，不因标题采取资本行动。"}
+      ]
+    },
+    "zh-Hant": {
+      "title":"每日行動流，2026年10月23日","description":"八項有邊界行動，檢驗代理驗收、機器人工時、資本廣度、自然流動性、研究證據、基礎設施時鐘、臨床對照與製造經濟性。","centralJudgment":"只有已宣佈能力變成驗收結果，且證據經得起獨立複核時，才改變狀態。","fieldLine":"八個訊號，每個只有一個有邊界的下一步。","inLanguage":"zh-Hant","languageSlug":"zh-hant","translationReview":"PASS",
+      "actions":[
+        {"signal":1,"domain":"前沿模型與代理","title":"檢驗被驗收的自治","why":"Claude Duet 可在雲端持續工作，但成果驗收、人工介入、恢復和成本尚未實測。","steps":["用一個現有研究任務和固定預算對照。","記錄驗收、救援、恢復與總成本。"],"done":"只有在不擴大權限時改善驗收結果，才接入。"},
+        {"signal":2,"domain":"Physical AI與機器人","title":"等待客戶驗收","why":"Digit 5 統一計算與安全路徑，認證和交付營運證據仍在前方。","steps":["把平台變化保留為生產準備證據。","索取客戶有效工時、接管率、故障率和服務成本。"],"done":"可比客戶記錄通過商業門檻，否則WATCH。"},
+        {"signal":3,"domain":"加密資本流","title":"要求廣泛資本確認","why":"ETF 流入以 Bitcoin 為主，七日穩定幣供應仍收縮。","steps":["只使用完整 ETF 交易日。","並列五日 ETH 流量與七日穩定幣增長。"],"done":"兩項同時轉正後才改變資本狀態，不交易。"},
+        {"signal":4,"domain":"穩定幣與金融軌道","title":"分開補貼與需求","why":"Aero 把獎勵導向預測市場，持續自然流動性仍未知。","steps":["跟蹤一個真實股票代幣池七個完整日。","分開補貼、非補貼費用與獎勵下降後的留存。"],"done":"較弱獎勵下仍有自然費用和流動性，否則WATCH。"},
+        {"signal":5,"domain":"內容與可見度","title":"發佈證據契約","why":"停止的紙面測試只要保留條件成交、殘餘風險和資源決定，就能創造價值。","steps":["發佈四語 Quant Lab 框架與運行卡。","歸檔帳本、來源、視覺與不外發的 LinkedIn 草稿。"],"done":"保護髮布、公開一致性、回執和來源門檻全部通過。"},
+        {"signal":6,"domain":"AI基礎設施與職業","title":"繪製364天資金橋","why":"短期擔保融資把投產、利用率、回款、利息和再融資壓進同一時鐘。","steps":["把交付、回款、利息和到期放在同一時間軸。","壓力測試延遲投產和較低利用率，不把合約當現金。"],"done":"有日期的資金橋標出缺口和再融資依賴。"},
+        {"signal":7,"domain":"後期私募市場","title":"等待對照預防證據","why":"Nouscom 已融資並有早期單臂觀察，對照療效與長期安全仍未解決。","steps":["閱讀 ESMO 摘要3438O和完整報告。","記錄隨訪流失與下一試驗對照設計。"],"done":"對照設計和耐久隨訪支持深入盡調，否則WATCH。"},
+        {"signal":8,"domain":"公開市場與生命科學","title":"療效後再核算製造","why":"隨機試驗改善無復發生存，總生存與單劑經濟性仍未確定。","steps":["用完整 ESMO 報告更新假設。","分別模擬製造時間、成本、支付與成熟生存數據。"],"done":"臨床獲益與可擴展單位經濟性閉合，不因標題採取資本行動。"}
+      ]
+    },
+    "ja": {
+      "title":"デイリー・アクション・フロー 2026年10月23日","description":"受入済み自律、顧客検収ロボット、資本の広がり、自然流動性、研究証拠、資金時計、対照試験、製造経済を検証する8つの行動。","centralJudgment":"発表された能力が受入成果となり、証拠が独立審査に耐えた時だけ状態を変える。","fieldLine":"8シグナル、それぞれに境界付きの次の一手。","inLanguage":"ja","languageSlug":"ja","translationReview":"PASS",
+      "actions":[
+        {"signal":1,"domain":"フロンティアモデル","title":"受入済み自律を測る","why":"Claude Duetは継続的に働くが、受入成果、介入、回復、費用は未測定だ。","steps":["既存調査を固定予算で比較する。","受入、救援、回復、総費用を記録する。"],"done":"権限を広げず成果が改善した時だけ統合する。"},
+        {"signal":2,"domain":"Physical AI","title":"顧客検収を待つ","why":"Digit 5は計算と安全経路を統一したが、認証と納入運用証拠はこれからだ。","steps":["生産準備の証拠として保存する。","顧客の有効時間、引継ぎ率、故障率、費用を求める。"],"done":"比較可能な顧客記録までWATCH。"},
+        {"signal":3,"domain":"暗号資産フロー","title":"広い資本確認を求める","why":"Bitcoin主導ETF流入の一方で7日ステーブルコイン供給は縮小した。","steps":["完了ETF日だけを使う。","5日ETHフローと7日供給増を並べる。"],"done":"両方が正になるまで状態を変えず、取引しない。"},
+        {"signal":4,"domain":"金融レール","title":"補助と需要を分ける","why":"Aeroは予測市場へ報酬を向けるが、自然流動性は未知だ。","steps":["一つの株式トークンプールを7完了日追う。","補助、非補助手数料、報酬低下後の残存を分ける。"],"done":"弱い報酬でも自然手数料と流動性が残るまでWATCH。"},
+        {"signal":5,"domain":"コンテンツ","title":"証拠契約を公開する","why":"停止した紙上テストも条件付き約定、残存リスク、配分判断を残せば価値を作る。","steps":["4言語のQuant Lab枠組みと運営カードを公開する。","台帳、資料、画像、外部投稿しないLinkedIn草稿を保存する。"],"done":"保護リリース、公開一致、レシート、出典ゲートが通る。"},
+        {"signal":6,"domain":"AIインフラ","title":"364日ブリッジを描く","why":"短期担保融資は稼働、利用率、入金、利息、借換えを同じ時計へ置く。","steps":["納入、入金、利息、満期を一つの時間軸にする。","遅延稼働と低利用率をストレスし、契約を現金扱いしない。"],"done":"日付付きブリッジが資金不足と借換え依存を示す。"},
+        {"signal":7,"domain":"未公開市場","title":"対照予防証拠を待つ","why":"Nouscomには資金と初期単群観察があるが、対照効果と長期安全は未解決だ。","steps":["ESMO抄録3438Oと完全発表を読む。","追跡脱落と次試験の対照設計を記録する。"],"done":"対照設計と長期追跡が深い精査を支持するまでWATCH。"},
+        {"signal":8,"domain":"公開市場と生命科学","title":"有効性後に製造を評価する","why":"無再発生存は改善したが、全生存と一回当たり経済性は未確定だ。","steps":["完全ESMO発表で仮説を更新する。","製造時間、費用、償還、成熟生存を分けてモデル化する。"],"done":"臨床便益と拡張可能な単位経済が整合するまで資本行動しない。"}
+      ]
+    }
+  }
+}
