@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-20T09:28:09.951463+00:00",
+  "generated_at": "2026-10-23T10:57:15.345928+00:00",
   "money_mode": "SIMULATED",
   "forecasts": [
     {
@@ -168,7 +168,7 @@
       "case_id": "HKEX-PENDING-06157-6d5d92fc",
       "stock_code": "06157",
       "issuer_name": "Jiangsu Slender West Lake Culture and Tourism Co., Ltd.",
-      "listing_date": "2026-10-23",
+      "listing_date": null,
       "mode": "FORWARD",
       "frozen_at": "2026-10-14T01:33:00.386759+00:00",
       "model_version": "six_lens_prior_v0.1",
