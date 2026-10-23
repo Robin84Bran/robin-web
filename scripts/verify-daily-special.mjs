@@ -2,6 +2,7 @@ import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { specialLengthOK } from './publisher/bin/editorial-relay.mjs';
 
 const hash = (bytes) => createHash('sha256').update(bytes).digest('hex');
 const field = (text, key) => text.split('---')[1]?.match(new RegExp(`^${key}:\\s*(.+)$`, 'm'))?.[1]?.trim().replace(/^["']|["']$/g, '');
@@ -36,6 +37,11 @@ export function verifySpecial(root) {
       const path = join(directory, date, `${file}.md`);
       if (!existsSync(path)) { errors.push(`${date}: missing ${file}`); continue; }
       const text = readFileSync(path, 'utf8');
+      if (locale === 'en') {
+        const words = (text.replace(/^---\s*\n[\s\S]*?\n---\s*\n/, '').match(/\b[\w’'-]+\b/g) ?? []).length;
+        const day = `${date.slice(0,4)}-${date.slice(4,6)}-${date.slice(6,8)}`;
+        if (!specialLengthOK(words, day)) errors.push(`${date}: English article must be nonempty and new editions at most 3000 words`);
+      }
       const currentSignal = Number(field(text, 'sourceSignal'));
       signal ??= currentSignal;
       if (![1, 2, 3, 4, 6, 7, 8].includes(currentSignal) || currentSignal !== signal) errors.push(`${date}: invalid or inconsistent signal`);

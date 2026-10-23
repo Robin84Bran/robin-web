@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import { createHash } from 'node:crypto';
+import { actionLengthOK, effectiveDate } from './editorial-relay.mjs';
 import { existsSync, mkdirSync, readFileSync, writeFileSync, copyFileSync, renameSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -691,7 +692,7 @@ function articleWordCount(markdown) {
   return (articleBody(markdown).match(/\b[\w’'-]+\b/g) ?? []).length;
 }
 
-function actionStyle(markdown) {
+function actionStyle(markdown, date) {
   const body = articleBody(markdown);
   const title = frontmatterValue(markdown, 'title') ?? '';
   const titleWords = (String(title).match(/\b[\w’']+\b/g) ?? []).length;
@@ -699,8 +700,10 @@ function actionStyle(markdown) {
     englishOnly: !/[\u3400-\u9fff]/u.test(body),
     forbiddenConstruction: !/\bnot\b[^.!?\n]{0,180}\bbut\b/iu.test(body),
     restrainedEmDash: (body.match(/—/g) ?? []).length <= 5,
-    conclusionFirst: body.slice(0, 1200).includes('The conclusion'),
-    requiredClose: body.includes('## Categories and keywords') && body.includes('**Hashtags:**'),
+    ...(date >= effectiveDate ? { readerOpening: body.trim().length > 0 } : {
+      conclusionFirst: body.slice(0, 1200).includes('The conclusion'),
+      requiredClose: body.includes('## Categories and keywords') && body.includes('**Hashtags:**'),
+    }),
     shortTitle: titleWords > 0 && titleWords <= 10,
     directTitle: !/[:—–]/.test(String(title)),
   };
@@ -728,8 +731,8 @@ async function ingestAction(date) {
     visualNodes: frontmatterValue(article, 'visualNodes'),
   };
   const words = articleWordCount(article);
-  const style = actionStyle(article);
-  if (words < 2000 || words > 3500) throw new Error(`Action item word count ${words} is outside 2000–3500.`);
+  const style = actionStyle(article, date);
+  if (!actionLengthOK(words, date)) throw new Error(`Action item word count ${words} fails the date-specific editorial limit (new editions: at most 3000, no minimum).`);
   if (!Object.values(style).every(Boolean)) throw new Error(`Action item style contract failed: ${JSON.stringify(style)}`);
   if (!metadata.ledgerId || !metadata.sourceAction || !/item\s*5/i.test(metadata.sourceAction)) throw new Error('Action item source or ledger linkage is missing.');
   if (!readFileSync(aiCircularLedger, 'utf8').includes(`## ${metadata.ledgerId} `)) throw new Error(`Ledger entry ${metadata.ledgerId} is missing.`);
@@ -794,9 +797,9 @@ function actionCheck(date) {
   }
   const article = checks.article ? readFileSync(paths.article, 'utf8') : '';
   const words = articleWordCount(article);
-  const style = actionStyle(article);
+  const style = actionStyle(article, date);
   const languages = languageContract(paths);
-  const ok = Object.values(checks).every(Boolean) && words >= 2000 && words <= 3500 && Object.values(style).every(Boolean) && languages.ok;
+  const ok = Object.values(checks).every(Boolean) && actionLengthOK(words, date) && Object.values(style).every(Boolean) && languages.ok;
   console.log(JSON.stringify({ ok, date, status: dailyState.actionItem.status, checks, words, style, languages }, null, 2));
   if (!ok) process.exitCode = 1;
 }
