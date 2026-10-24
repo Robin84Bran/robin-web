@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">The customer arrived before the electricity</title>
+  <desc id="desc">Four horizontal timelines compare the 2027 customer window, 2026 to 2027 company-wide commitments, 2028 convertible maturity, and the reported 2030s grid horizon.</desc>
+  <rect width="1600" height="900" fill="#f4f0e8"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#202a28">
+    <text x="112" y="102" font-size="22" letter-spacing="5">DAILY SPECIAL · 24 OCTOBER 2026</text>
+    <text x="112" y="214" font-size="65" font-weight="600">The customer arrived</text>
+    <text x="112" y="290" font-size="65" font-weight="600">before the electricity.</text>
+    <text x="112" y="352" font-size="25" fill="#657068">One AI site · four clocks that stopped agreeing</text>
+
+    <line x1="440" y1="438" x2="1390" y2="438" stroke="#c8cec6" stroke-width="5"/>
+    <line x1="440" y1="548" x2="1390" y2="548" stroke="#c8cec6" stroke-width="5"/>
+    <line x1="440" y1="658" x2="1390" y2="658" stroke="#c8cec6" stroke-width="5"/>
+    <line x1="440" y1="768" x2="1390" y2="768" stroke="#c8cec6" stroke-width="5"/>
+
+    <text x="112" y="447" font-size="22" letter-spacing="2">CUSTOMER</text>
+    <text x="112" y="557" font-size="22" letter-spacing="2">COMMITMENTS</text>
+    <text x="112" y="667" font-size="22" letter-spacing="2">FINANCING</text>
+    <text x="112" y="777" font-size="22" letter-spacing="2">GRID POWER</text>
+
+    <circle cx="670" cy="438" r="15" fill="#9a594f"/>
+    <text x="700" y="447" font-size="30" font-weight="600" fill="#9a594f">Q1 2027 window</text>
+
+    <line x1="545" y1="548" x2="750" y2="548" stroke="#b07a3a" stroke-width="18" stroke-linecap="round"/>
+    <text x="785" y="557" font-size="30" font-weight="600" fill="#8b672e">mainly 2026–27</text>
+
+    <circle cx="905" cy="658" r="15" fill="#526a63"/>
+    <text x="935" y="667" font-size="30" font-weight="600" fill="#526a63">15 Jun 2028</text>
+
+    <circle cx="1280" cy="768" r="15" fill="#345d70"/>
+    <text x="1000" y="731" font-size="28" font-weight="600" fill="#345d70">reported early-to-mid 2030s</text>
+
+    <text x="112" y="855" font-size="20" fill="#657068">Company-wide commitments and financing are context, not a Loughton balance sheet.</text>
+  </g>
+</svg>
