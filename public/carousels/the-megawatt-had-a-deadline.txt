@@ -1,0 +1,16 @@
+The megawatt had a deadline.
+
+A planned 23,000-GPU supercomputer at Loughton carried a Q1 2027 customer window. The reported grid-power horizon moved into the early-to-mid 2030s. Microsoft withdrew.
+
+That is more than a delay. A megawatt arriving after the customer's planning window can be a different product.
+
+AI capacity is not just a GPU count or a power number. It is power, place and time arriving together.
+
+The useful sequence is:
+announced → contracted → powered → commissioned → revenue-producing.
+
+Each arrow needs its own evidence. A signature does not energize a rack.
+
+Full story and sources: https://iamrobin.ai/binary/stories/the-megawatt-had-a-deadline/
+
+#AIInfrastructure #DataCenters #PowerGrid #Commissioning #SystemsThinking
