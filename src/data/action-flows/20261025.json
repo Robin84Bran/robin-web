@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-25",
+  "updated": "2026-10-25",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20261025/hero.webp",
+  "actionHero": "/action-item/20261025/hero.webp",
+  "ogImage": "/daily-briefing/20261025/og.webp",
+  "briefingPath": "/ouroboros/202610/20261025/",
+  "actionItemPath": "/ouroboros/202610/20261025/action_item/",
+  "actions": [
+    {"signal":1,"priority":"NEXT","status":"READY","sources":[{"label":"Google Cloud","url":"https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-brings-openai-models-to-customers"}]},
+    {"signal":2,"priority":"WATCH","status":"WATCHING","sources":[{"label":"Formic","url":"https://www.businesswire.com/news/home/20261022651853/en/Formic-Raises-%2450-Million-to-Scale-Physical-AI-Across-American-Manufacturing"}]},
+    {"signal":3,"priority":"WATCH","status":"WATCHING","sources":[{"label":"Farside BTC","url":"https://farside.co.uk/btc/"},{"label":"Farside ETH","url":"https://farside.co.uk/eth/"},{"label":"DefiLlama","url":"https://defillama.com/stablecoins"}]},
+    {"signal":4,"priority":"NEXT","status":"READY","sources":[{"label":"Phantom","url":"https://phantom.com/learn/blog/phantom-puts-its-cftc-no-action-relief-to-work-bringing-prediction-markets-to-us-users"},{"label":"Phantom disclosures","url":"https://phantom.com/us-prediction-markets-disclosures"}]},
+    {"signal":5,"priority":"NOW","status":"COMPLETE","sources":[{"label":"NVIDIA SimReady","url":"https://developer.nvidia.com/blog/5-steps-to-create-simready-assets-for-robotics-with-frontier-ai-models/"},{"label":"SimReady Foundation","url":"https://nvidia.github.io/simready-foundation/"}]},
+    {"signal":6,"priority":"NEXT","status":"READY","sources":[{"label":"NVIDIA","url":"https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout"}]},
+    {"signal":7,"priority":"WATCH","status":"WATCHING","sources":[{"label":"Higgsfield","url":"https://higgsfield.ai/blog/higgsfield-series-b-extension-tcv-nvidia"}]},
+    {"signal":8,"priority":"WATCH","status":"WATCHING","sources":[{"label":"Amgen","url":"https://www.amgen.com/newsroom/press-releases/2026/10/imdelltra-in-combination-with-imfinzi-reduced-risk-of-death-by-an-unprecedented-58-in-firstline-extensive-stage-small-cell-lung-cancer"}]}
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, October 25, 2026",
+      "description": "Eight bounded actions test model procurement, robot economics, capital breadth, wallet-market friction, prototype evidence, test capacity, revenue quality, and clinical scalability.",
+      "centralJudgment": "Capability matters only when the delivery chain produces an accepted result with explicit cost, evidence, and recovery boundaries.",
+      "fieldLine": "Eight signals. One bounded next move each.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal":1,"domain":"Frontier Models and Agents","title":"Compare procurement routes","why":"Unified billing changes access, while productivity still requires matched accepted outcomes.","steps":["Wait for actual Google Cloud preview access.","Run one Quant Lab task through two available paths and record acceptance, rescue, latency, and total cost."],"done":"A matched comparison supports a routing change; otherwise retain the current route."},
+        {"signal":2,"domain":"Physical AI and Robotics","title":"Price the accepted unit","why":"Company-reported hours and renewal are useful only when service, downtime, and output economics close.","steps":["Select one public Formic customer case.","Compare monthly fees, service, downtime, scrap, and cost per accepted unit with the manual baseline."],"done":"Decision-grade operating economics are available; otherwise WATCH."},
+        {"signal":3,"domain":"Crypto Capital Flows","title":"Wait for complete flow rows","why":"HODL and ETHV were missing, and stablecoin supply was still contracting.","steps":["Wait for both missing fund entries.","Recompute five-session BTC and ETH flows alongside seven-day stablecoin growth."],"done":"Both complete measures turn positive before the state changes; no trade."},
+        {"signal":4,"domain":"Financial Rails","title":"Map the wallet friction","why":"The interface is simple while custody, identity, fees, spreads, resolution, and withdrawal remain a regulated chain.","steps":["Record one visible contract's buy and sell quote, spread, fees, custodian, and resolution source.","Calculate immediate-exit loss and draw the withdrawal path on paper."],"done":"The full cost and responsibility chain is visible without opening or funding an account."},
+        {"signal":5,"domain":"Content and Visibility","title":"Publish the question-first prototype","why":"Images, CAD, simulation, and physical objects answer different questions.","steps":["Publish the four-language evidence-ladder article with every unperformed test labelled as a plan.","Archive the LinkedIn derivative without posting it."],"done":"Protected release, public parity, privacy, source, and receipt gates pass."},
+        {"signal":6,"domain":"AI Infrastructure and Career","title":"Track test-capacity acceptance","why":"A capacity advance becomes useful supply only after yield, acceptance, and delivery.","steps":["Use April 2027 as the KYEC milestone.","Track target production, qualified yield, customer acceptance, and actual delivery while keeping protection terms UNKNOWN."],"done":"Qualified accepted output supports a supply-model increase."},
+        {"signal":7,"domain":"Late-Stage Private Markets","title":"Require revenue quality","why":"A company-reported run rate omits paid retention, inference cost, refunds, and financing terms.","steps":["Obtain paid-cohort retention and gross profit after inference and refunds.","Obtain the extension amount, valuation, and preference terms."],"done":"All evidence supports INVESTIGATE; otherwise WATCH."},
+        {"signal":8,"domain":"Public Markets and Life Sciences","title":"Test clinical scalability","why":"Survival benefit must be assessed with administration, monitoring, label, and commercial burden.","steps":["Track the first-line filing and proposed label.","Record administration, cytokine-release-syndrome monitoring, and inpatient or outpatient requirements."],"done":"The treatment path supports scalable delivery without erasing safety costs."}
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年10月25日",
+      "description": "八项有边界行动，检验模型采购、机器人经济、资本广度、钱包市场摩擦、原型证据、测试产能、收入质量与临床规模化。",
+      "centralJudgment": "只有当交付链以明确成本、证据与恢复边界产生可验收结果时，能力才有价值。",
+      "fieldLine": "八个信号，每个只有一个有边界的下一步。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal":1,"domain":"前沿模型与代理","title":"比较采购路径","why":"统一账单改变接入，生产力仍须由同任务验收结果证明。","steps":["等待真正获得 Google Cloud 预览资格。","用两条可用路径运行同一个 Quant Lab 任务，记录验收、救援、延迟与总成本。"],"done":"同任务比较支持改变路由，否则保留现状。"},
+        {"signal":2,"domain":"Physical AI与机器人","title":"核算合格产出成本","why":"公司报告的小时与续约，只有接上服务、停机与产出经济才有决策价值。","steps":["选择一个公开 Formic 客户案例。","把月费、服务、停机、废品与每件合格产品成本和人工基线比较。"],"done":"取得决策级运营经济，否则 WATCH。"},
+        {"signal":3,"domain":"加密资本流","title":"等待完整资金流","why":"HODL 与 ETHV 缺失，稳定币供应仍在收缩。","steps":["等待两个缺失基金数据。","重新计算五个交易日 BTC 与 ETH 流量，并对照七日稳定币增长。"],"done":"完整的两项指标同时转正才改状态，不交易。"},
+        {"signal":4,"domain":"金融轨道","title":"画出钱包摩擦","why":"界面简单，托管、身份、费用、价差、结果认定与提款仍构成受监管链条。","steps":["记录一个可见合约的买卖报价、价差、费用、托管方与结果来源。","纸面计算立即退出损耗并画出提款路径。"],"done":"不开户不入金即可看清完整成本与责任链。"},
+        {"signal":5,"domain":"内容与可见度","title":"发布问题优先原型","why":"图像、CAD、模拟与实体物件回答不同问题。","steps":["发布四语证据阶梯文章，把所有未执行测试标为计划。","归档而不发布 LinkedIn 衍生稿。"],"done":"保护发布、公开一致、隐私、来源与回执门槛通过。"},
+        {"signal":6,"domain":"AI基础设施与职业","title":"追踪测试产能验收","why":"产能预付款只有通过良率、验收与交付才成为可用供给。","steps":["把2027年4月设为 KYEC 节点。","追踪目标量产、合格良率、客户验收与实际交付，保护条款保持 UNKNOWN。"],"done":"合格且被验收的产出支持上调供给模型。"},
+        {"signal":7,"domain":"后期私募市场","title":"要求收入质量","why":"公司报告的运行率没有付费留存、推理成本、退款与融资条款。","steps":["取得付费用户群留存与扣除推理、退款后的毛利。","取得扩展轮金额、估值与优先条款。"],"done":"全部证据支持才进入 INVESTIGATE，否则 WATCH。"},
+        {"signal":8,"domain":"公开市场与生命科学","title":"检验临床规模化","why":"生存获益必须与给药、监测、标签与商业负担一起评估。","steps":["追踪一线申报与拟议标签。","记录给药、细胞因子释放综合征监测及住院或门诊要求。"],"done":"治疗路径支持规模化，且没有隐去安全成本。"}
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年10月25日",
+      "description": "八項有邊界行動，檢驗模型採購、機器人經濟、資本廣度、錢包市場摩擦、原型證據、測試產能、收入品質與臨床規模化。",
+      "centralJudgment": "只有當交付鏈以明確成本、證據與恢復邊界產生可驗收結果時，能力才有價值。",
+      "fieldLine": "八個訊號，每個只有一個有邊界的下一步。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal":1,"domain":"前沿模型與代理","title":"比較採購路徑","why":"統一帳單改變接入，生產力仍須由同任務驗收結果證明。","steps":["等待真正取得 Google Cloud 預覽資格。","用兩條可用路徑運行同一個 Quant Lab 任務，記錄驗收、救援、延遲與總成本。"],"done":"同任務比較支持改變路由，否則保留現狀。"},
+        {"signal":2,"domain":"Physical AI與機器人","title":"核算合格產出成本","why":"公司報告的時數與續約，只有接上服務、停機與產出經濟才有決策價值。","steps":["選擇一個公開 Formic 客戶案例。","把月費、服務、停機、廢品與每件合格產品成本和人工基線比較。"],"done":"取得決策級營運經濟，否則 WATCH。"},
+        {"signal":3,"domain":"加密資本流","title":"等待完整資金流","why":"HODL 與 ETHV 缺失，穩定幣供應仍在收縮。","steps":["等待兩個缺失基金數據。","重新計算五個交易日 BTC 與 ETH 流量，並對照七日穩定幣增長。"],"done":"完整的兩項指標同時轉正才改狀態，不交易。"},
+        {"signal":4,"domain":"金融軌道","title":"畫出錢包摩擦","why":"介面簡單，託管、身份、費用、價差、結果認定與提款仍構成受監管鏈條。","steps":["記錄一個可見合約的買賣報價、價差、費用、託管方與結果來源。","紙面計算立即退出損耗並畫出提款路徑。"],"done":"不開戶不入金即可看清完整成本與責任鏈。"},
+        {"signal":5,"domain":"內容與可見度","title":"發布問題優先原型","why":"圖像、CAD、模擬與實體物件回答不同問題。","steps":["發布四語證據階梯文章，把所有未執行測試標為計劃。","歸檔而不發布 LinkedIn 衍生稿。"],"done":"保護發布、公開一致、隱私、來源與回執門檻通過。"},
+        {"signal":6,"domain":"AI基礎設施與職業","title":"追蹤測試產能驗收","why":"產能預付款只有通過良率、驗收與交付才成為可用供給。","steps":["把2027年4月設為 KYEC 節點。","追蹤目標量產、合格良率、客戶驗收與實際交付，保護條款保持 UNKNOWN。"],"done":"合格且被驗收的產出支持上調供給模型。"},
+        {"signal":7,"domain":"後期私募市場","title":"要求收入品質","why":"公司報告的運行率沒有付費留存、推理成本、退款與融資條款。","steps":["取得付費用戶群留存與扣除推理、退款後的毛利。","取得擴展輪金額、估值與優先條款。"],"done":"全部證據支持才進入 INVESTIGATE，否則 WATCH。"},
+        {"signal":8,"domain":"公開市場與生命科學","title":"檢驗臨床規模化","why":"生存獲益必須與給藥、監測、標籤與商業負擔一起評估。","steps":["追蹤一線申報與擬議標籤。","記錄給藥、細胞因子釋放綜合徵監測及住院或門診要求。"],"done":"治療路徑支持規模化，且沒有隱去安全成本。"}
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー 2026年10月25日",
+      "description": "モデル調達、ロボット経済、資本の広がり、ウォレット摩擦、試作証拠、試験能力、収益品質、臨床拡張性を検証する8つの行動。",
+      "centralJudgment": "能力は、引き渡しの鎖が明確な費用、証拠、回復境界と共に受入成果を生む時に価値を持つ。",
+      "fieldLine": "8シグナル、それぞれに境界付きの次の一手。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal":1,"domain":"フロンティアモデル","title":"調達経路を比較する","why":"統一請求は接続を変えるが、生産性は同一仕事の受入成果で証明する。","steps":["実際のGoogle Cloudプレビュー権限を待つ。","同じQuant Lab仕事を二経路で走らせ、受入、救援、遅延、総費用を記録する。"],"done":"同一仕事比較が経路変更を支持する。支持しなければ維持する。"},
+        {"signal":2,"domain":"Physical AI","title":"合格品費用を測る","why":"会社報告の時間と更新は、保守、停止、出力経済につながって初めて判断材料になる。","steps":["公開Formic顧客事例を一つ選ぶ。","月額、保守、停止、廃棄、合格品当たり費用を人作業と比較する。"],"done":"意思決定級の運用経済を得るまでWATCH。"},
+        {"signal":3,"domain":"暗号資産フロー","title":"完全な行を待つ","why":"HODLとETHVが欠け、ステーブルコイン供給も縮小した。","steps":["二つの未報告値を待つ。","完全な5取引日BTC・ETHフローと7日ステーブルコイン増を再計算する。"],"done":"両方がプラスになるまで状態を変えず、取引しない。"},
+        {"signal":4,"domain":"金融レール","title":"ウォレット摩擦を描く","why":"画面は簡単でも、保管、本人確認、費用、価格差、結果判定、出金は規制の鎖を作る。","steps":["一契約の売買価格、価格差、全費用、保管者、結果源を記録する。","即時退出損失と出金経路を紙上で描く。"],"done":"口座開設や入金なしで費用と責任の鎖が見える。"},
+        {"signal":5,"domain":"コンテンツ","title":"問い先行の試作を公開する","why":"画像、CAD、シミュレーション、実物は別の問いに答える。","steps":["未実施試験を計画と表示した4言語記事を公開する。","LinkedIn派生稿は投稿せず保存する。"],"done":"保護リリース、公開一致、プライバシー、出典、受領ゲートが通る。"},
+        {"signal":6,"domain":"AIインフラ","title":"試験能力の受入を追う","why":"前払能力は歩留まり、受入、納入後にだけ利用可能な供給になる。","steps":["2027年4月をKYEC節目にする。","目標量産、合格歩留まり、顧客受入、実納入を追い、保護条項はUNKNOWNにする。"],"done":"合格し受入済みの出力が供給モデル上方修正を支える。"},
+        {"signal":7,"domain":"未公開市場","title":"収益品質を求める","why":"会社報告ランレートには有料継続、推論費、返金、融資条件がない。","steps":["有料顧客群の継続と推論・返金後粗利を得る。","拡張ラウンド金額、評価、優先条件を得る。"],"done":"全証拠が支持した時だけINVESTIGATE、それ以外はWATCH。"},
+        {"signal":8,"domain":"公開市場と生命科学","title":"臨床拡張性を試す","why":"生存利益は投与、監視、ラベル、商業負担と一緒に評価する。","steps":["一次適応申請と提案ラベルを追う。","投与、サイトカイン放出症候群監視、入院・外来要件を記録する。"],"done":"安全費用を隠さず治療経路が規模化を支える。"}
+      ]
+    }
+  }
+}
