@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-23T10:57:15.345928+00:00",
+  "generated_at": "2026-10-25T10:42:21.116643+00:00",
   "money_mode": "SIMULATED",
   "forecasts": [
     {
@@ -186,7 +186,7 @@
       "case_id": "HKEX-PENDING-03275-a277876b",
       "stock_code": "03275",
       "issuer_name": "Changzhou Microintelligence Co., Ltd",
-      "listing_date": "2026-10-28",
+      "listing_date": null,
       "mode": "FORWARD",
       "frozen_at": "2026-10-20T01:19:34.971892+00:00",
       "model_version": "six_lens_prior_v0.1",
