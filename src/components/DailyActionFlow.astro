@@ -100,6 +100,8 @@ const schemas = createArticleSchemas({
       {flow.actions.map((action, index) => {
         const chapter = edition.actions[index];
         const isDeepDive = action.signal === 5;
+        const deepDivePublished = isDeepDive && action.deepDiveAvailable !== false;
+        const deepDiveTitle = chapter.deepDiveTitle ?? chapter.title;
         const outcome = flow.date >= '2026-09-23' ? actionOutcome(flow, action) : undefined;
         return (
           <section class:list={['action-chapter', { 'action-chapter--deep': isDeepDive }]} id={action.priority.toLowerCase()}>
@@ -116,10 +118,12 @@ const schemas = createArticleSchemas({
               </div>
             </div>
             <div class="action-chapter__visual">
-              {isDeepDive ? (
-                <a href={edition.languageSlug ? `${flow.actionItemPath}${edition.languageSlug}/` : flow.actionItemPath} aria-label={chapter.deepDiveTitle}>
-                  <img src={flow.actionHero} alt={chapter.deepDiveTitle} width="1600" height="900" loading="lazy" />
+              {deepDivePublished ? (
+                <a href={edition.languageSlug ? `${flow.actionItemPath}${edition.languageSlug}/` : flow.actionItemPath} aria-label={deepDiveTitle}>
+                  <img src={flow.actionHero} alt={deepDiveTitle} width="1600" height="900" loading="lazy" />
                 </a>
+              ) : isDeepDive ? (
+                <img src={flow.actionHero} alt={deepDiveTitle} width="1600" height="900" loading="lazy" />
               ) : (
                 <div class="action-chapter__number">
                   <strong>{action.visualValue}</strong>
@@ -136,7 +140,7 @@ const schemas = createArticleSchemas({
               <h3>{localized.done}</h3>
               <p>{chapter.done}</p>
               {outcome?.artifact && <p><a href={outcome.artifact}>{outcome.researchOnly ? 'Daily Special · research artifact only' : localized.artifact} ↗</a></p>}
-              {isDeepDive && (
+              {deepDivePublished && (
                 <a class="action-chapter__deep-link" href={edition.languageSlug ? `${flow.actionItemPath}${edition.languageSlug}/` : flow.actionItemPath}>
                   {localized.deep} →
                 </a>

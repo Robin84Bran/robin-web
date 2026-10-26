@@ -333,10 +333,21 @@ if (existsSync(dist)) {
   check(actionFlowTranslationRoutes.length === actionFlowRoutes.length * 3, 'action flows: every English Action Flow must have three translations.');
   for (const route of actionFlowPublications) {
     const article = readFileSync(routes.get(route), 'utf8');
+    const compact = route.match(/^\/ouroboros\/\d{6}\/(\d{8})\/actions\//)?.[1];
+    const flowPath = compact ? join(root, 'src', 'data', 'action-flows', `${compact}.json`) : undefined;
+    const flow = flowPath && existsSync(flowPath) ? JSON.parse(readFileSync(flowPath, 'utf8')) : undefined;
+    const signalFive = flow?.actions?.find((action) => action.signal === 5);
+    const deepDiveAvailable = signalFive?.deepDiveAvailable !== false;
     check(article.includes('Daily Action Flow') || /每日(?:行动|行動)流|アクション・フロー/.test(article), `${route}: Daily Action Flow title is missing.`);
     check(article.includes('CIO') || /中心判断|核心判斷|核心判断/.test(article), `${route}: CIO decision framing is missing.`);
     check(article.includes('Definition of done') || /完成定義|完成定义|完了条件/.test(article), `${route}: definition-of-done field is missing.`);
-    check(article.includes('/action_item/'), `${route}: signal-five canonical deep dive link is missing.`);
+    check(Boolean(flow), `${route}: action-flow source data is missing.`);
+    check(
+      deepDiveAvailable ? article.includes(flow?.actionItemPath) : !article.includes(flow?.actionItemPath),
+      deepDiveAvailable
+        ? `${route}: signal-five canonical deep dive link is missing.`
+        : `${route}: held signal-five deep dive link must not be published.`,
+    );
   }
 
   const publicationComponent = readFileSync(join(root, 'src', 'components', 'OuroborosPublication.astro'), 'utf8');
