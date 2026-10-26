@@ -5,6 +5,7 @@ export interface ActionSource {
 
 export interface ActionFlowSignal {
   signal: number;
+  deepDiveAvailable?: boolean;
   priority: 'NOW' | 'NEXT' | 'WATCH';
   status: 'COMPLETE' | 'READY' | 'WATCHING' | 'UNKNOWN' | 'BLOCKED' | 'SUPERSEDED';
   visualValue: string;

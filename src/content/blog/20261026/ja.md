@@ -1,5 +1,5 @@
 ---
-archiveStatus: "PIPELINE"
+archiveStatus: "PRESENT"
 title: 3,409契約、Greeksは全てnull
 date: 2026-10-26
 updated: 2026-08-21
