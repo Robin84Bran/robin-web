@@ -1,0 +1,18 @@
+The dashboard says 100%. The calendar says a day is missing.
+
+If reliability begins with recorded invocations, an expected run that never appears can vanish from the denominator.
+
+In a purely illustrative month:
+
+29 delivered / 29 recorded = 100% transport
+28 accepted / 30 expected = 93.3% outcome
+
+Both rates are honest. They answer different questions.
+
+The repair is an expected-occurrence ledger created before work begins, then joined forward to invocation, session, root turn, artifact and acceptance. Keep one occurrence identity and separate attempt identities for retries.
+
+Green is useful. But green begins too late.
+
+Full story and official sources: https://iamrobin.ai/binary/stories/the-perfect-score-lost-a-day/
+
+#AgenticAI #ReliabilityEngineering #Automation #Observability #SystemsThinking
