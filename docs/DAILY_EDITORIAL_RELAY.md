@@ -23,10 +23,42 @@ the eight-signal Briefing, Action Flow, Binary calendar, Diary or evening check-
    worth following. No manufactured biography, quotes, facts or certainty.
 5. **Codex: final factual audit, not a stylistic takeover.** Reopen load-bearing
    sources, check claims and links, repair unsupported certainty, and preserve the
-   model's lively voice. Keep the audit outside the public essay. Translate the
+   model's lively voice. Keep the change log private and source caveats in end notes. Translate the
    audited English canonical into the existing three complete native editions.
 
-## Exact simple prompts
+## October 26 update — light factual audit
+
+Robin approved the minimally corrected October 26 essay with Gemini's original
+ending and qualifications in notes. Apply this approach to future Daily Action
+and Daily Special articles; the three provider prompts below stay unchanged.
+
+- Preserve the final writer's storytelling, rhythm, metaphors, humor, concrete
+  examples and ending. Do not replace an open ending with an editor's verdict,
+  question, checklist or governance lesson. Background and entrepreneurial
+  possibilities remain at the center when that is the story.
+- Change prose only for a genuinely unsupported factual claim, misattribution,
+  inaccurate number or date, broken source, privacy exposure or material ambiguity
+  that would mislead the reader. Use the smallest correction that fixes it.
+  Stylistic preferences and a different thesis are not factual defects.
+- Put supporting caveats, evidence boundaries and methodological qualifications
+  in a clearly visible end section, "Notes and sources". Keep essential factual
+  corrections in the claim itself: a note cannot rescue a false headline,
+  invented quotation or an invented deployment presented as reported news.
+- Keep clearly introduced "Picture..." or "Imagine..." examples lively. Do not
+  insert repetitive "fictional", "assumptions" or similar labels into the story;
+  explain their status and implementation dependencies in the notes. A real
+  product sharing a brainstormed name does not establish the imagined behavior.
+- Use useful precision, not decorative decimals. Preserve material uncertainty
+  in notes and do not turn conditional paper results into live outcomes.
+- Keep untouched provider text, the minimally corrected draft, a side-by-side
+  diff and a factual change log privately. Check that the original ending is
+  unchanged unless a genuine factual issue requires a documented local fix.
+  Record distinct body and notes hashes. Never manufacture provider participation.
+- From October 26, mechanical sentence-pattern and punctuation quotas are
+  editorial suggestions, not reasons to rewrite an approved voice. Source,
+  privacy, four-language, length and protected-release gates remain mandatory.
+
+## Exact simple prompts (unchanged)
 
 Teddy:
 `those are the facts and resources, brainstorm and diverge for council discussion`
