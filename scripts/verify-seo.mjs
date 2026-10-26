@@ -312,7 +312,13 @@ if (existsSync(dist)) {
   for (const route of [...actionRoutes, ...actionTranslationRoutes]) {
     const article = readFileSync(routes.get(route), 'utf8');
     check(article.includes('>Action Item</span>'), `${route}: Action Item series marker missing.`);
-    check(article.includes('AI Circularity'), `${route}: ledger framing missing.`);
+    const actionDate = route.match(/\/(\d{8})\/action_item\//)?.[1];
+    if (actionDate && actionDate >= '20261026') {
+      check(article.includes('>Daily Action Item</p>'), `${route}: Daily Action series label missing.`);
+      check(!article.includes('01 · AI Circularity Ledger'), `${route}: obsolete ledger framing leaked into a new essay.`);
+    } else {
+      check(article.includes('AI Circularity'), `${route}: historical ledger framing missing.`);
+    }
   }
 
   for (const route of briefingRoutes) {

@@ -698,8 +698,11 @@ function actionStyle(markdown, date) {
   const titleWords = (String(title).match(/\b[\w’']+\b/g) ?? []).length;
   return {
     englishOnly: !/[\u3400-\u9fff]/u.test(body),
-    forbiddenConstruction: !/\bnot\b[^.!?\n]{0,180}\bbut\b/iu.test(body),
-    restrainedEmDash: (body.match(/—/g) ?? []).length <= 5,
+    // October 26: light factual audit preserves voice; historical quotas remain.
+    ...(date < '2026-10-26' ? {
+      forbiddenConstruction: !/\bnot\b[^.!?\n]{0,180}\bbut\b/iu.test(body),
+      restrainedEmDash: (body.match(/—/g) ?? []).length <= 5,
+    } : {}),
     ...(date >= effectiveDate ? { readerOpening: body.trim().length > 0 } : {
       conclusionFirst: body.slice(0, 1200).includes('The conclusion'),
       requiredClose: body.includes('## Categories and keywords') && body.includes('**Hashtags:**'),

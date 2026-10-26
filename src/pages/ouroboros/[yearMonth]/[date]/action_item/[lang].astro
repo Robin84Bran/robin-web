@@ -46,8 +46,10 @@ const localized = entry.data.inLanguage === 'ja'
   {publicationDate} {displayDate} schema={schemas} language={entry.data.inLanguage} alternates={languages}
   languageLinks={languages.filter((item) => item.hreflang !== entry.data.inLanguage)}
   crumbs={[{ label: 'Ouroboros', href: '/ouroboros/' }, { label: 'Daily Briefing', href: `${briefingPath}${entry.data.languageSlug}/` }, { label: 'Action Item' }]}
-  indexLabel="01 · AI Circularity Ledger" intro={localized.intro}
-  footerText={localized.footer} footerLink={`${briefingPath}${entry.data.languageSlug}/`} footerLinkLabel={localized.back}
+  indexLabel={publicationDate >= '2026-10-26' ? 'Daily Action Item' : '01 · AI Circularity Ledger'}
+  intro={publicationDate >= '2026-10-26' ? '' : localized.intro}
+  footerText={publicationDate >= '2026-10-26' ? '' : localized.footer}
+  footerLink={`${briefingPath}${entry.data.languageSlug}/`} footerLinkLabel={localized.back}
 >
   <Content />
 </OuroborosPublication>
