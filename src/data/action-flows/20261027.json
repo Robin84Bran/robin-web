@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-27",
+  "updated": "2026-10-27",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20261027/hero.webp",
+  "actionHero": "/action-item/20261027/hero.webp",
+  "ogImage": "/daily-briefing/20261027/og.webp",
+  "briefingPath": "/ouroboros/202610/20261027/",
+  "actionItemPath": "/ouroboros/202610/20261027/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NOW",
+      "status": "READY",
+      "visualValue": "10",
+      "visualLabel": "matched tasks with acceptance evidence",
+      "sources": [
+        {"label": "Anthropic", "url": "https://www.anthropic.com/news/s1-sec"},
+        {"label": "SEC", "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm"}
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "100K+",
+      "visualLabel": "company-reported tote moves",
+      "sources": [{"label": "GXO", "url": "https://investors.gxo.com/news-releases/news-release-details/gxo-and-agility-robotics-expand-partnership-accelerate"}]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$300B",
+      "visualLabel": "stablecoin threshold with incomplete ETF rows",
+      "sources": [
+        {"label": "DefiLlama", "url": "https://defillama.com/stablecoins"},
+        {"label": "Farside BTC", "url": "https://farside.co.uk/btc/"},
+        {"label": "Farside ETH", "url": "https://farside.co.uk/eth/"}
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2",
+      "visualLabel": "conflicting official launch states",
+      "sources": [
+        {"label": "EQX docs", "url": "https://docs.eqxlabs.io/"},
+        {"label": "EQX homepage", "url": "https://www.eqxlabs.io/"}
+      ]
+    },
+    {
+      "signal": 5,
+      "deepDiveAvailable": true,
+      "priority": "NOW",
+      "status": "READY",
+      "visualValue": "14D",
+      "visualLabel": "paper-first customer evidence ladder",
+      "sources": [
+        {"label": "Proof Market", "url": "https://github.com/Robin84Bran/proof-market"},
+        {"label": "Action Item", "url": "https://iamrobin.ai/ouroboros/202610/20261027/action_item/"}
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NOW",
+      "status": "READY",
+      "visualValue": "$63B",
+      "visualLabel": "compute financing risk map",
+      "sources": [{"label": "Blackstone", "url": "https://www.blackstone.com/news/press/bank-of-america-blackstone-citi-and-morgan-stanley-announce-landmark-63-billion-financing-structure-to-enable-ai-compute/"}]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$600M",
+      "visualLabel": "Series C with operating economics missing",
+      "sources": [{"label": "Bedrock Robotics", "url": "https://www.globenewswire.com/news-release/2026/10/26/3388197/0/en/Bedrock-Robotics-Raises-600M-Series-C-at-4-1B-Valuation-to-Transform-the-Trillion-Dollar-Construction-Industry.html"}]
+    },
+    {
+      "signal": 8,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "$35B",
+      "visualLabel": "announced structure before proposed ATM",
+      "sources": [{"label": "Meta", "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Announces-Launch-of-Offering-of-Depositary-Shares-Representing-an-Interest-in-Mandatory-Convertible-Preferred-Stock-and-Concurrent-Forward-Sale-Agreements/default.aspx"}]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, October 27, 2026",
+      "description": "Eight bounded actions separate financing, launch labels and complaints from accepted outcomes, executable products and real customer commitment.",
+      "centralJudgment": "Evidence becomes decision-grade when someone accepts an outcome, repeats a purchase or puts something scarce at risk.",
+      "fieldLine": "Eight signals. Signal 5 opens today's essay.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "Frontier Models and Agents", "title": "Separate the filing from capability", "why": "An S-1 improves disclosure; it does not prove better autonomous work.", "steps": ["Freeze ten replayable Quant Lab tasks and acceptance criteria.", "Compare accepted completion, recovery and cost without changing production authority."], "done": "One matched evidence table exists; financing and task quality remain separate."},
+        {"signal": 2, "domain": "Physical AI and Robotics", "title": "Wait for accepted-site economics", "why": "A repeat deployment is stronger than a demo but omits intervention and payback.", "steps": ["Confirm the two planned sites reach live operation.", "Record intervention minutes, downtime and accepted tote moves on one denominator."], "done": "Upgrade only when comparable accepted-output economics appear."},
+        {"signal": 3, "domain": "Crypto Capital Flows", "title": "Complete the missing rows", "why": "Stablecoin contraction and partial ETF reporting cannot support a broad re-entry claim.", "steps": ["Wait for complete October 26 BTC and ETH fund rows.", "Compare complete ETF totals with seven-day stablecoin supply."], "done": "Breadth upgrades only if both measures expand; no trade."},
+        {"signal": 4, "domain": "Stablecoins and Payment Rails", "title": "Resolve the launch conflict", "why": "Official pages disagree about whether EQX is live.", "steps": ["Wait for consistent official launch state without opening an account.", "Record one after-hours spread, executable depth and redemption description."], "done": "Usable liquidity is evidenced or the status remains WATCH."},
+        {"signal": 5, "domain": "Content and Distribution", "title": "Price the complaint with commitment", "why": "Pain becomes demand evidence only when a buyer spends something scarce.", "steps": ["Read the essay and define the fourteen-day continue rule.", "Record the last commitment rung reached without inventing a customer."], "done": "A real case, comparison, pilot decision and price response exist, or the experiment stops honestly."},
+        {"signal": 6, "domain": "AI Infrastructure and Capital", "title": "Map who absorbs the loss", "why": "An SPV reallocates chip residual risk rather than removing it.", "steps": ["Draw cash flows across the banks, Blackstone, Broadcom and Anthropic.", "Stress a 50% residual-value decline and mark undisclosed terms UNKNOWN."], "done": "The payment order and unresolved loss bearer fit on one page."},
+        {"signal": 7, "domain": "Late-Stage Private Markets", "title": "Demand paid-hour economics", "why": "Funding and customer-count claims omit autonomous-work quality and margin.", "steps": ["Obtain paid autonomous hours and unplanned takeovers per hundred hours.", "Obtain customer continuation, hourly gross margin and preference terms."], "done": "Upgrade only when operating and financing evidence both clear."},
+        {"signal": 8, "domain": "Public Equities", "title": "Separate announced and proposed capital", "why": "Meta's announced structure and unsigned ATM carry different certainty and dilution.", "steps": ["Put the approximately $35 billion structure, up-to-$60 billion ATM and capex on separate lines.", "Stress settlement timing, dilution and infrastructure cash return."], "done": "Uses, settlement dates and return assumptions remain distinct."}
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年10月27日",
+      "description": "八项有边界行动，把融资、上线标签和抱怨与合格成果、可用产品及真实客户投入分开。",
+      "centralJudgment": "当有人验收成果、重复购买，或拿出稀缺资源时，证据才足以支持决策。",
+      "fieldLine": "八个信号，Signal 5 可阅读全文。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "前沿模型与代理", "title": "把上市文件与能力分开", "why": "S-1 改善披露，不会证明自主工作更好。", "steps": ["冻结十个可重放 Quant Lab 任务及验收标准。", "不改生产权限，比较合格完成、恢复和成本。"], "done": "形成一张同条件证据表，融资与任务质量保持分开。"},
+        {"signal": 2, "domain": "Physical AI与机器人", "title": "等待站点合格产出经济", "why": "复购比演示强，仍缺介入和回收数据。", "steps": ["确认两个计划站点真实投运。", "用同一分母记录介入分钟、停机与合格搬运。"], "done": "只有可比合格产出经济出现才升级。"},
+        {"signal": 3, "domain": "加密资本流", "title": "补齐缺失报数", "why": "稳定币收缩和不完整 ETF 数据不能支持全面回流。", "steps": ["等待 10 月 26 日 BTC 与 ETH 完整基金行。", "把完整 ETF 合计与七日稳定币供给并列。"], "done": "两者同时扩张才升级广度；不交易。"},
+        {"signal": 4, "domain": "稳定币与支付轨道", "title": "解决上线状态冲突", "why": "EQX 官方页面对是否上线说法不一致。", "steps": ["不开账户，等待官方状态一致。", "记录一次盘后价差、可成交深度和赎回说明。"], "done": "可用流动性得到证明，否则保持 WATCH。"},
+        {"signal": 5, "domain": "内容与分发", "title": "用投入为抱怨定价", "why": "只有买方付出稀缺资源，痛点才开始成为需求证据。", "steps": ["阅读文章并定义十四天继续标准。", "记录最后达到的投入级别，不虚构客户。"], "done": "出现真实案例、方案比较、试点决定和价格反应，否则诚实停止。"},
+        {"signal": 6, "domain": "AI 基础设施与资本", "title": "画出谁承担损失", "why": "SPV 重新分配芯片残值风险，没有消除它。", "steps": ["画出银行、Blackstone、Broadcom 与 Anthropic 的现金流。", "压力测试残值下降 50%，未披露条款标 UNKNOWN。"], "done": "付款顺序与未解决损失承担者可在一页看清。"},
+        {"signal": 7, "domain": "后期私募", "title": "要求付费小时经济", "why": "融资与客户数量没有说明自主工作质量和毛利。", "steps": ["取得付费自主小时及每百小时非计划接管。", "取得客户续用、小时毛利与优先权条款。"], "done": "运营与融资证据同时通过才升级。"},
+        {"signal": 8, "domain": "公开市场", "title": "分开已宣布和拟议资本", "why": "Meta 已宣布结构与未签 ATM 的确定性和稀释不同。", "steps": ["把约 350 亿美元结构、最高 600 亿美元 ATM 和资本开支分列。", "压力测试交割时间、稀释与基础设施现金回报。"], "done": "用途、交割日期和回报假设保持分开。"}
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年10月27日",
+      "description": "八項有邊界行動，把融資、上線標籤和抱怨與合格成果、可用產品及真實客戶投入分開。",
+      "centralJudgment": "當有人驗收成果、重複購買，或拿出稀缺資源時，證據才足以支持決策。",
+      "fieldLine": "八個信號，Signal 5 可閱讀全文。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "前沿模型與代理", "title": "把上市文件與能力分開", "why": "S-1 改善披露，不會證明自主工作更好。", "steps": ["凍結十個可重放 Quant Lab 任務及驗收標準。", "不改生產權限，比較合格完成、恢復和成本。"], "done": "形成一張同條件證據表，融資與任務質量保持分開。"},
+        {"signal": 2, "domain": "Physical AI與機械人", "title": "等待站點合格產出經濟", "why": "復購比演示強，仍缺介入和回收數據。", "steps": ["確認兩個計劃站點真實投運。", "用同一分母記錄介入分鐘、停機與合格搬運。"], "done": "只有可比合格產出經濟出現才升級。"},
+        {"signal": 3, "domain": "加密資本流", "title": "補齊缺失報數", "why": "穩定幣收縮和不完整 ETF 數據不能支持全面回流。", "steps": ["等待 10 月 26 日 BTC 與 ETH 完整基金資料。", "把完整 ETF 合計與七日穩定幣供給並列。"], "done": "兩者同步擴張才升級廣度；不交易。"},
+        {"signal": 4, "domain": "穩定幣與支付軌道", "title": "解決上線狀態衝突", "why": "EQX 官方頁面對是否上線說法不一致。", "steps": ["不開賬戶，等待官方狀態一致。", "記錄一次盤後價差、可成交深度和贖回說明。"], "done": "可用流動性得到證明，否則保持 WATCH。"},
+        {"signal": 5, "domain": "內容與分發", "title": "用投入為抱怨定價", "why": "只有買方付出稀缺資源，痛點才開始成為需求證據。", "steps": ["閱讀文章並定義十四天繼續標準。", "記錄最後達到的投入級別，不虛構客戶。"], "done": "出現真實案例、方案比較、試點決定和價格反應，否則誠實停止。"},
+        {"signal": 6, "domain": "AI 基礎設施與資本", "title": "畫出誰承擔損失", "why": "SPV 重新分配晶片殘值風險，沒有消除它。", "steps": ["畫出銀行、Blackstone、Broadcom 與 Anthropic 的現金流。", "壓力測試殘值下降 50%，未披露條款標 UNKNOWN。"], "done": "付款次序與未解決損失承擔者可在一頁看清。"},
+        {"signal": 7, "domain": "後期私募", "title": "要求付費小時經濟", "why": "融資與客戶數量沒有說明自主工作質量和毛利。", "steps": ["取得付費自主小時及每百小時非計劃接管。", "取得客戶續用、每小時毛利與優先權條款。"], "done": "營運與融資證據同時通過才升級。"},
+        {"signal": 8, "domain": "公開市場", "title": "分開已宣布和擬議資本", "why": "Meta 已宣布結構與未簽 ATM 的確定性和攤薄不同。", "steps": ["把約 350 億美元結構、最高 600 億美元 ATM 和資本開支分列。", "壓力測試交割時間、攤薄與基礎設施現金回報。"], "done": "用途、交割日期和回報假設保持分開。"}
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年10月27日",
+      "description": "8つの限定行動で、資金調達、ローンチ表示、苦情を、合格成果、利用可能な製品、実際の顧客コミットから分ける。",
+      "centralJudgment": "成果が受け入れられ、再購入され、誰かが希少なものを賭けたとき、証拠は意思決定に耐える。",
+      "fieldLine": "8つのシグナル。Signal 5から本日の記事を読める。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "フロンティアモデルとエージェント", "title": "提出書類と能力を分ける", "why": "S-1は開示を改善するが、自律作業の向上は証明しない。", "steps": ["再現可能なQuant Labタスク10件と合格基準を凍結する。", "生産権限を変えず、合格、回復、コストを比較する。"], "done": "同条件の証拠表を一つ作り、資金調達とタスク品質を分ける。"},
+        {"signal": 2, "domain": "Physical AIとロボティクス", "title": "拠点の合格経済性を待つ", "why": "再展開はデモより強いが、介入と回収を欠く。", "steps": ["計画中の二拠点が実稼働したことを確認する。", "介入分数、停止、合格搬送を同じ分母で記録する。"], "done": "比較可能な合格成果の経済性が出た場合だけ格上げする。"},
+        {"signal": 3, "domain": "暗号資本フロー", "title": "欠けた行を完成させる", "why": "供給縮小と不完全なETF報告では広範な回帰を言えない。", "steps": ["10月26日のBTCとETH全ファンド行を待つ。", "完全なETF合計と7日間のステーブルコイン供給を比べる。"], "done": "両方が拡大したときだけ広がりを格上げする。取引しない。"},
+        {"signal": 4, "domain": "ステーブルコインと決済レール", "title": "公開状態の矛盾を解く", "why": "EQXの公式ページは稼働状況で一致しない。", "steps": ["口座を開かず、公式表示が一致するまで待つ。", "時間外のスプレッド、約定可能な厚み、償還説明を一度記録する。"], "done": "利用可能な流動性が示されなければWATCHを維持する。"},
+        {"signal": 5, "domain": "コンテンツと流通", "title": "コミットで苦情を値付けする", "why": "買い手が希少なものを払って初めて痛みが需要証拠になる。", "steps": ["記事を読み、十四日間の継続条件を定義する。", "顧客を作らず、最後に到達したコミット段を記録する。"], "done": "実例、比較、試験判断、価格反応が揃うか、正直に停止する。"},
+        {"signal": 6, "domain": "AIインフラと資本", "title": "損失負担者を描く", "why": "SPVはチップ残価リスクを再配分するだけだ。", "steps": ["銀行、Blackstone、Broadcom、Anthropicの資金流を描く。", "残価50%下落を試し、未開示条件をUNKNOWNにする。"], "done": "支払順位と未解決の損失負担者を1ページで示す。"},
+        {"signal": 7, "domain": "後期未公開市場", "title": "有償時間の経済性を求める", "why": "調達と顧客数は自律作業品質や粗利を示さない。", "steps": ["有償自律時間と100時間あたり計画外介入を得る。", "顧客継続、時間粗利、優先条件を得る。"], "done": "運用と資金調達の証拠がともに揃った場合だけ格上げする。"},
+        {"signal": 8, "domain": "公開市場", "title": "発表済みと提案中を分ける", "why": "Metaの発表済み構造と未契約ATMは確度と希薄化が異なる。", "steps": ["約350億ドル構造、最大600億ドルATM、設備投資を別行に置く。", "決済時期、希薄化、インフラ現金回収をストレスする。"], "done": "使途、決済日、回収仮定を分けて保つ。"}
+      ]
+    }
+  }
+}
