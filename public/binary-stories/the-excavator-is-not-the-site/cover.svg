@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">The excavator can work all night. The site cannot.</title>
+  <desc id="desc">An excavator, haul fleet, placement area and acceptance gate form one dependent flow. The haul stage is the narrowest bottleneck.</desc>
+  <rect width="1200" height="675" fill="#0B1228"/>
+  <path d="M0 552 C212 498 395 607 611 539 C820 473 999 523 1200 454 L1200 675 L0 675 Z" fill="#101C3A"/>
+  <g opacity="0.18" stroke="#61D4D7" stroke-width="1">
+    <path d="M72 304 H1128 M72 368 H1128 M72 432 H1128 M72 496 H1128"/>
+    <path d="M168 282 V520 M360 282 V520 M552 282 V520 M744 282 V520 M936 282 V520"/>
+  </g>
+  <text x="72" y="75" fill="#61D4D7" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="3">BINARY / BUILD · SYSTEM FLOW</text>
+  <text x="72" y="151" fill="#F4F1E9" font-family="Georgia, serif" font-size="52" font-weight="700">The excavator can work all night.</text>
+  <text x="72" y="214" fill="#F4F1E9" font-family="Georgia, serif" font-size="52" font-weight="700">The site can't.</text>
+  <text x="72" y="260" fill="#AAB5C8" font-family="Arial, sans-serif" font-size="21">Autonomy removes one constraint. The slowest dependent step still sets the flow.</text>
+  <g transform="translate(72 334)">
+    <g>
+      <rect x="0" y="0" width="204" height="130" rx="10" fill="#F4F1E9"/>
+      <text x="20" y="31" fill="#536079" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1.4">EXCAVATE</text>
+      <path d="M32 93 h86 l20 -32 h26 l-18 51 h-114 z" fill="#D8B86B"/>
+      <circle cx="64" cy="108" r="10" fill="#0B1228"/><circle cx="129" cy="108" r="10" fill="#0B1228"/>
+      <text x="184" y="59" text-anchor="end" fill="#0B1228" font-family="Georgia, serif" font-size="32" font-weight="700">100</text>
+    </g>
+    <path d="M214 65 H253" stroke="#61D4D7" stroke-width="4"/><path d="M240 53 L255 65 L240 77" fill="none" stroke="#61D4D7" stroke-width="4"/>
+    <g transform="translate(264 0)">
+      <rect width="204" height="130" rx="10" fill="#D8B86B"/>
+      <text x="20" y="31" fill="#0B1228" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1.4">HAUL</text>
+      <rect x="29" y="67" width="90" height="32" rx="4" fill="#0B1228"/><path d="M119 74 h38 l18 25 h-56 z" fill="#0B1228"/>
+      <circle cx="58" cy="108" r="10" fill="#F4F1E9"/><circle cx="147" cy="108" r="10" fill="#F4F1E9"/>
+      <text x="184" y="58" text-anchor="end" fill="#0B1228" font-family="Georgia, serif" font-size="38" font-weight="700">60</text>
+    </g>
+    <path d="M478 65 H517" stroke="#61D4D7" stroke-width="4"/><path d="M504 53 L519 65 L504 77" fill="none" stroke="#61D4D7" stroke-width="4"/>
+    <g transform="translate(528 0)">
+      <rect width="204" height="130" rx="10" fill="#F4F1E9"/>
+      <text x="20" y="31" fill="#536079" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1.4">PLACE</text>
+      <path d="M28 108 L69 66 L112 104 L151 74 L177 108 Z" fill="#61D4D7"/>
+      <text x="184" y="59" text-anchor="end" fill="#0B1228" font-family="Georgia, serif" font-size="34" font-weight="700">75</text>
+    </g>
+    <path d="M742 65 H781" stroke="#61D4D7" stroke-width="4"/><path d="M768 53 L783 65 L768 77" fill="none" stroke="#61D4D7" stroke-width="4"/>
+    <g transform="translate(792 0)">
+      <rect width="264" height="130" rx="10" fill="#F4F1E9"/>
+      <text x="20" y="31" fill="#536079" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1.4">ACCEPTED SITE FLOW</text>
+      <text x="20" y="97" fill="#0B1228" font-family="Georgia, serif" font-size="58" font-weight="700">60</text>
+      <text x="245" y="99" text-anchor="end" fill="#536079" font-family="Arial, sans-serif" font-size="16">illustrative units</text>
+    </g>
+  </g>
+  <text x="72" y="607" fill="#D8B86B" font-family="Arial, sans-serif" font-size="19" font-weight="700">THE BOTTLENECK MOVES. IT DOES NOT DISAPPEAR.</text>
+  <text x="1128" y="626" text-anchor="end" fill="#F4F1E9" font-family="Arial, sans-serif" font-size="17">IAmRobin.ai</text>
+</svg>
