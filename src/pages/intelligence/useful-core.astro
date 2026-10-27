@@ -1,0 +1,77 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const path='/intelligence/useful-core/';
+const description='When components fail, should a system keep chasing the full job or preserve a smaller useful core? Play four policies across 640 matched seeded worlds.';
+const schema={'@context':'https://schema.org','@type':'LearningResource',name:'The Useful Core',url:`https://iamrobin.ai${path}`,description,inLanguage:'en',learningResourceType:'Interactive simulation',educationalUse:'Experiment'};
+const policies=[
+ ['monolith','01','Full job','Twelve units when all eight modules work. Zero when any required part is down.'],
+ ['graceful','02','Graceful shed','Pays architecture and switching costs to choose the highest feasible tier.'],
+ ['core','03','Core only','Attempts the smallest two-unit bundle and leaves larger opportunities unused.'],
+ ['random','04','Random mode','A seeded baseline picks full, reduced or core without looking at feasibility.'],
+];
+---
+<BaseLayout title="The Useful Core — Intelligence — Robin Xie" {path} {description} {schema}>
+ <div class="shell experiment">
+  <a class="quiet-link" href="/intelligence/">← Intelligence</a>
+  <p class="eyebrow">The weekly small experiment · 2026-W44 · 26 October 2026</p>
+  <h1>Keep the whole job.<br/><em>Or keep something useful.</em></h1>
+  <p class="lead">What survives when capacity does not?</p>
+  <p class="intro">Eight abstract modules face the same failures, repairs and shocks. One policy protects peak output. One sheds work deliberately. Two baselines reveal what each choice leaves behind.</p>
+
+  <section class="playground" aria-label="The Useful Core experiment">
+   <form id="core-controls">
+    <label>Seed<input name="seed" type="number" min="0" max="4294967295" step="1" value="1" required/></label>
+    <label>Failure<select name="failureRate"><option value="0">0% per tick</option><option value="1">1% per tick</option><option value="3" selected>3% per tick</option><option value="8">8% per tick</option></select></label>
+    <label>Repair<select name="repairRate"><option value="0">No repair</option><option value="4">4% per tick</option><option value="8" selected>8% per tick</option><option value="20">20% per tick</option></select></label>
+    <label>Shock size<select name="shockSize"><option value="0">No shock</option><option value="2" selected>2 modules</option><option value="4">4 modules</option></select></label>
+    <label>Shock interval<select name="shockEvery"><option value="0">Disabled</option><option value="20">Every 20 ticks</option><option value="30" selected>Every 30 ticks</option></select></label>
+    <label>Switch cost<select name="switchCost"><option value="0">Free</option><option value="1" selected>1 work unit</option><option value="3">3 work units</option></select></label>
+   </form>
+   <div class="buttons"><button id="play" type="button">Play</button><button id="step" type="button">Step</button><button id="end" type="button">Show outcome</button><button id="reset" type="button">Replay</button><button id="next-seed" type="button">Next seed</button><button id="defaults" type="button">Defaults</button></div>
+   <p id="lab-status" role="status">Loading the seeded world…</p>
+   <canvas id="core-world" aria-label="Eight module states and the matched failure timeline"></canvas>
+   <label class="time">Inspect any tick<input id="tick" aria-label="Simulation tick" type="range" min="0" max="119" value="0"/></label>
+   <div class="worlds">
+    {policies.map(([id,num,name,note])=><article class="world" data-policy={id}>
+      <p class="eyebrow">{num} / work policy</p><h2>{name}</h2><p class="rule">{note}</p>
+      <p class="mode" data-feasible="true">FULL</p><div class="bar" aria-hidden="true"><span></span></div><p class="counts"></p>
+    </article>)}
+   </div>
+   <p class="fine">Green modules are ready; rust modules are down. The component board is an evaluator view. Every policy sees current health, but none sees future failures. Work units are assigned toy values—not money, uptime or measured production.</p>
+   <div class="buttons"><button id="share" type="button">Link this world</button><button id="download" type="button">Download run</button></div>
+   <noscript>JavaScript is needed to play. Complete batch results, method and source remain available below.</noscript>
+  </section>
+
+  <section class="story">
+   <p class="eyebrow">Try this first</p><h2>Remove the damage. Reveal the price.</h2>
+   <p>Press <strong>Show outcome</strong>. Then choose 0% failure and no shock. Full job now completes 1,440 units; graceful shed completes 1,200 because modularity carries overhead. Next restore the default failures, then raise the shock to four modules. Resilience only means something when its cost remains visible.</p>
+
+   <h2>One missing part can erase a complete plan.</h2>
+   <p>Full work needs three actuators, two sensors, one link and two power cells. It returns twelve units or none. Reduced work needs two actuators, one sensor and one power cell for six. Core work needs one actuator and one power cell for two.</p>
+   <p>Full job always attempts the largest bundle. Graceful shed chooses the highest feasible tier, but its modular architecture yields only 10/5/2 units and pays when it changes tier. Core only and random mode are learning-disabled comparison rules. Every policy receives one decision per tick and the same current component state.</p>
+
+   <h2>The reversal is the result.</h2>
+   <div class="table-wrap"><table><caption>Mean useful work · seeds 1–64</caption><thead><tr><th>Setting</th><th>Full job</th><th>Graceful</th><th>Core only</th><th>Random</th></tr></thead><tbody>
+    <tr><th scope="row">Calm</th><td><strong>1,440</strong></td><td>1,200</td><td>240</td><td>812.125</td></tr>
+    <tr><th scope="row">Default</th><td>128.438</td><td><strong>454.906</strong></td><td>203.438</td><td>254.875</td></tr>
+    <tr><th scope="row">Harsh</th><td>24</td><td><strong>127.797</strong></td><td>86.031</td><td>64.5</td></tr>
+    <tr><th scope="row">No repair</th><td>49.125</td><td><strong>119.453</strong></td><td>53.281</td><td>66.281</td></tr>
+   </tbody></table></div>
+   <p>In the default batch, full job is productive for 10.703 of 120 ticks on average. Graceful shed remains productive for 101.719, changes tier 17.984 times and completes about 455 work units. Free switching raises that to 470; a three-unit switching cost lowers it to 430.484.</p>
+   <p>Core only is productive for the same 101.719 ticks as graceful shed but averages 203.438 units because it refuses every larger bundle. The totals are not a universal ranking. They expose peak capacity, continued participation, failed attempts and reconfiguration as different outcomes.</p>
+
+   <h2>What the controls change</h2>
+   <dl><dt>Seed</dt><dd>Replays all failure, repair, shock and random-policy draws.</dd><dt>Failure</dt><dd>Independent chance that each ready module fails on a tick.</dd><dt>Repair</dt><dd>Independent chance that each down module returns before new failures.</dd><dt>Shock</dt><dd>A matched correlated event removes currently ready modules.</dd><dt>Switch cost</dt><dd>Work deducted only when graceful shed changes tier.</dd></dl>
+
+   <h2>Where the toy stops.</h2>
+   <p>This is a deterministic teaching world, not a robot benchmark, biological model, production reliability forecast, architecture recommendation or trading system. Modules are abstract. Equal counts do not establish equal cost, mass, energy or capability. Failures, repairs and work values are assumptions.</p>
+   <p>All <strong>640 matched seeded worlds and 2,560 policy outcomes</strong> are retained across ten predeclared settings. No seed was removed. The private source scan supplied the question—not instructions, facts or public prose—and is excluded from the release.</p>
+   <p class="downloads"><a href="/useful-core/README.md" download>Method &amp; parameter guide ↓</a><a href="/useful-core/source.zip" download>Source package ↓</a><a href="/useful-core/results.json" download>All batch results ↓</a><a href="/useful-core/model.mjs">Read the model</a></p>
+   <p class="fine">Previously: <a href="/intelligence/signal-or-silence/">Signal or Silence</a> · Explore the <a href="/intelligence/swarm-lab/">eight small worlds</a>.</p>
+  </section>
+ </div>
+ <script is:inline type="module" src="/useful-core/client.mjs"></script>
+</BaseLayout>
+<style>
+ .experiment{padding-block:3rem 5rem}.experiment>.eyebrow{margin-top:3rem}h1{font:400 clamp(3.35rem,8vw,7rem)/.98 var(--serif);letter-spacing:-.055em;margin:1.5rem 0}h1 em{color:#9b5a3e}.lead{font:400 clamp(1.3rem,3vw,2rem)/1.45 var(--serif)}.intro,.story{max-width:49rem;line-height:1.85}.intro,.fine,dd{color:var(--muted)}.playground{margin-block:2.5rem;padding:clamp(1rem,3vw,2rem);border:1px solid var(--line);background:#f7f3eb;border-radius:12px}form{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}label{display:grid;gap:.4rem;font-size:.8rem}select,input[type=number],button{font:inherit;min-height:44px;padding:.65rem;border:1px solid #aaa391;border-radius:4px;background:#fffdf7;color:#292822;min-width:0;width:100%}.buttons{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.2rem}.buttons button{width:auto}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #a96d29;outline-offset:3px}#play{background:#326d63;color:#fff}#lab-status{font-size:.85rem;min-height:2.5em}#core-world{display:block;width:100%;height:250px;margin-top:.6rem;border:1px solid #d0c8b7;border-radius:8px}.time{margin-block:1rem}.time input{width:100%;min-height:44px;accent-color:#326d63}.worlds{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.world{border-top:1px solid #c4bdad;padding:1rem 0;min-width:0}.world h2{font:400 1.55rem var(--serif);margin:.35rem 0}.world .eyebrow{font-size:.65rem}.rule{font-size:.78rem;color:#626258}.mode{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.08em;padding:.25rem .55rem;border-radius:99px;background:#d7e4d8;color:#28513b}.mode[data-feasible=false]{background:#efd2be;color:#71391f}.bar{height:7px;background:#ddd6c8;margin-top:.8rem}.bar span{display:block;height:100%;background:#557b70}.counts{font-size:.78rem;font-variant-numeric:tabular-nums}.fine{font-size:.8rem;line-height:1.7}.story h2{font:400 clamp(1.6rem,4vw,2.5rem)/1.2 var(--serif);margin-top:2.5rem}dt{font-weight:600;margin-top:1rem}dd{margin-left:0}.downloads{display:flex;flex-wrap:wrap;gap:1rem;font-size:.9rem}.table-wrap{overflow-x:auto;margin-block:1.5rem}table{border-collapse:collapse;width:100%;font-size:.84rem}caption{text-align:left;color:var(--muted);font-size:.8rem;padding-bottom:.7rem}th,td{text-align:left;padding:.75rem .5rem;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}th{font-weight:500}@media(max-width:820px){form{grid-template-columns:1fr 1fr}.worlds{grid-template-columns:1fr}.playground{margin-inline:-.3rem}table{font-size:.72rem}th,td{padding:.6rem .25rem}}@media(max-width:420px){form{grid-template-columns:1fr}#core-world{height:250px}}
+</style>
