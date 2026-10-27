@@ -1,0 +1,17 @@
+An autonomous excavator can keep digging after the operator goes home.
+
+That does not mean the construction site can.
+
+A site is a dependent flow:
+
+dig → load → haul → place → accept
+
+If the excavator can produce 100 illustrative units per hour, trucks can move 60 and the placement area can receive 75, accepted flow cannot exceed 60 without changing the surrounding system. Raising the machine to 130 would make its dashboard look better and leave the site unchanged.
+
+The useful metric is accepted output per scheduled site-hour, with waiting, remote assistance, downtime, rework, fuel and total labor underneath it.
+
+Bedrock says its autonomous excavators are now doing paid work. That is a meaningful boundary. The next proof is whether the whole site finishes sooner.
+
+Full story and sources: https://iamrobin.ai/binary/stories/the-excavator-is-not-the-site/
+
+#PhysicalAI #ConstructionTech #Robotics #SystemsThinking #Automation
