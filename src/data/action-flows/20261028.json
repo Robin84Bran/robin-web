@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-28",
+  "updated": "2026-10-28",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20261028/hero.webp",
+  "actionHero": "/action-item/20261028/hero.webp",
+  "ogImage": "/daily-briefing/20261028/og.webp",
+  "briefingPath": "/ouroboros/202610/20261028/",
+  "actionItemPath": "/ouroboros/202610/20261028/action_item/",
+  "actions": [
+    {"signal":1,"priority":"NOW","status":"READY","visualValue":"10","visualLabel":"replayable Terra shadow tasks","sources":[{"label":"OpenAI","url":"https://openai.com/index/introducing-gpt-6-1-terra/"},{"label":"Release notes","url":"https://help.openai.com/en/articles/9624314-model-release-notes"}]},
+    {"signal":2,"priority":"WATCH","status":"WATCHING","visualValue":"P99","visualLabel":"edge latency and recovery boundary","sources":[{"label":"T-Mobile","url":"https://www.t-mobile.com/news/network/physical-ai-is-leaving-the-lab"}]},
+    {"signal":3,"priority":"WATCH","status":"WATCHING","visualValue":"-0.68%","visualLabel":"seven-day USD stablecoin supply","sources":[{"label":"Farside BTC","url":"https://farside.co.uk/btc/"},{"label":"Farside ETH","url":"https://farside.co.uk/eth/"},{"label":"DefiLlama API","url":"https://stablecoins.llama.fi/stablecoincharts/all"},{"label":"Complete-day summary","url":"https://coinpulsehq.com/crypto-market-data/"}]},
+    {"signal":4,"priority":"NOW","status":"READY","visualValue":"2027","visualLabel":"OCC final rule effective January 18","sources":[{"label":"Federal Register","url":"https://www.govinfo.gov/content/pkg/FR-2026-10-23/html/2026-21706.htm"}]},
+    {"signal":5,"deepDiveAvailable":true,"priority":"NOW","status":"READY","visualValue":"E2E","visualLabel":"accepted-outcome latency waterfall","sources":[{"label":"OpenAI Terra","url":"https://openai.com/index/introducing-gpt-6-1-terra/"},{"label":"Cerebras and Oracle","url":"https://cerebras.gcs-web.com/news-releases/news-release-details/cerebras-and-oracle-team-bring-cerebras-ai-inference-oracle"},{"label":"NVIDIA and Oracle","url":"https://nvidianews.nvidia.com/news/nvidia-and-oracle-expand-nvidia-vera-rubin-to-multi-gigawatt-scale-and-bring-nvidia-vera-cpu-to-oracle-cloud-infrastructure"},{"label":"Action Item","url":"https://iamrobin.ai/ouroboros/202610/20261028/action_item/"}]},
+    {"signal":6,"priority":"NEXT","status":"READY","visualValue":"GW+","visualLabel":"planned capacity versus delivered power","sources":[{"label":"NVIDIA","url":"https://nvidianews.nvidia.com/news/nvidia-and-oracle-expand-nvidia-vera-rubin-to-multi-gigawatt-scale-and-bring-nvidia-vera-cpu-to-oracle-cloud-infrastructure"}]},
+    {"signal":7,"priority":"WATCH","status":"WATCHING","visualValue":"$2.1B","visualLabel":"maximum cash and contingent consideration","sources":[{"label":"Guidewire","url":"https://guidewire.gcs-web.com/news-releases/news-release-details/guidewire-signs-definitive-agreement-acquire-hyperexponential"}]},
+    {"signal":8,"priority":"WATCH","status":"WATCHING","visualValue":"4","visualLabel":"gates from OCI GA to gross margin","sources":[{"label":"Cerebras","url":"https://cerebras.gcs-web.com/news-releases/news-release-details/cerebras-and-oracle-team-bring-cerebras-ai-inference-oracle"}]}
+  ],
+  "editions": {
+    "en": {
+      "title":"Daily Action Flow, October 28, 2026",
+      "description":"Eight bounded actions measure accepted outcomes, edge reliability, regulatory rights, delivered infrastructure and financial conversion rather than announcement speed.",
+      "centralJudgment":"A faster component creates value only when the whole system reaches an accepted outcome sooner and at lower intervention cost.",
+      "fieldLine":"Eight signals. Signal 5 opens today's essay.",
+      "inLanguage":"en","languageSlug":"","translationReview":"PASS",
+      "actions":[
+        {"signal":1,"domain":"Frontier Models and Agents","title":"Measure Terra on accepted work","why":"Vendor speed and price do not establish RobinOS outcome economics.","steps":["Freeze ten read-only replay tasks and acceptance criteria.","Record accepted completion, human minutes, recovery and total cost."],"done":"A matched evidence table exists without changing production authority."},
+        {"signal":2,"domain":"Physical AI and Robotics","title":"Test the edge boundary","why":"Offload changes battery constraints but creates network and recovery risk.","steps":["Run the same controlled task locally and at the edge.","Record P50/P99 latency, disconnected safety state, recovery and takeover."],"done":"WATCH remains until comparable reliability and task-cost evidence exists."},
+        {"signal":3,"domain":"Crypto Capital Flows","title":"Require synchronized breadth","why":"One Bitcoin inflow day conflicts with Ether outflow and contracting stablecoin supply.","steps":["Wait for three complete BTC and ETH ETF sessions.","Compare combined flow with seven-day USD stablecoin supply."],"done":"Upgrade only when both expand; no trade."},
+        {"signal":4,"domain":"Stablecoins and Payment Rails","title":"Map the legal money object","why":"Stablecoins and tokenized deposits carry different claims, yield rules and regulators.","steps":["Separate issuer, claim, reserves, yield, redemption and regulator.","Mark every field unsupported by the final rule UNKNOWN."],"done":"One evidence-linked rule map exists before product comparison."},
+        {"signal":5,"domain":"Content and Distribution","title":"Publish the latency waterfall","why":"The slowest system step can erase a faster model's gain.","steps":["Read the essay and select one replayable workflow.","Show model, tool, data, human and recovery time on one waterfall."],"done":"Four editions and one archived LinkedIn derivative are publicly verifiable."},
+        {"signal":6,"domain":"AI Infrastructure and Capital","title":"Separate plan from delivered power","why":"A multi-gigawatt target is not energized accepted capacity.","steps":["Record Vera GA and planned capacity separately.","Keep energized MW, accepted clusters, utilization and cash flow UNKNOWN until evidenced."],"done":"The OCI delivery card prevents planned capacity from becoming operating proof."},
+        {"signal":7,"domain":"Late-Stage Private Markets","title":"Rebuild the exit multiple","why":"Cash and contingent ARR value require operating data to interpret.","steps":["Wait for closing and disclosed revenue, NRR, margin and concentration.","Add contingent thresholds and integration cost before calculating a multiple."],"done":"WATCH changes only after both transaction and operating evidence clear."},
+        {"signal":8,"domain":"Public Equities","title":"Gate distribution before earnings","why":"Planned OCI availability is not adoption, revenue or margin.","steps":["Track actual OCI GA and the first named paying customer.","Then record inference-revenue increment and cloud gross margin."],"done":"Keep WATCH until all four gates exist; no trade."}
+      ]
+    },
+    "zh-Hans": {
+      "title":"每日行动流，2026年10月28日","description":"八项有边界行动，衡量合格成果、边缘可靠性、监管权利、已交付基础设施与财务转化。","centralJudgment":"只有整个系统更快、更少介入地交出合格成果，局部加速才创造价值。","fieldLine":"八个信号，Signal 5 可阅读全文。","inLanguage":"zh-Hans","languageSlug":"zh-hans","translationReview":"PASS",
+      "actions":[
+        {"signal":1,"domain":"前沿模型与代理","title":"用合格工作衡量 Terra","why":"厂商速度与价格不能证明 RobinOS 成果经济。","steps":["冻结十个只读可回放任务和验收标准。","记录合格完成、人工分钟、恢复和总成本。"],"done":"形成同条件证据表，不改变生产权限。"},
+        {"signal":2,"domain":"Physical AI与机器人","title":"测试边缘边界","why":"卸载改变电池约束，也带来网络和恢复风险。","steps":["同一受控任务分别本地和边缘运行。","记录 P50/P99 延迟、断网安全、恢复和接管。"],"done":"可比可靠性与任务成本出现前保持 WATCH。"},
+        {"signal":3,"domain":"加密资本流","title":"要求同步广度","why":"BTC 单日流入与 ETH 流出及稳定币收缩冲突。","steps":["等待三个完整 BTC 与 ETH ETF 交易日。","把合计流量与七日美元稳定币供应比较。"],"done":"两者同步扩张才升级；不交易。"},
+        {"signal":4,"domain":"稳定币与支付轨道","title":"映射法律货币对象","why":"稳定币和代币化存款的索偿权、收益规则及监管者不同。","steps":["分开发行人、索偿权、储备、收益、赎回和监管者。","最终规则不支持的字段标 UNKNOWN。"],"done":"比较产品前形成一页证据映射。"},
+        {"signal":5,"domain":"内容与分发","title":"发布延迟瀑布图","why":"系统最慢一步可以抹掉更快模型的收益。","steps":["阅读文章并选择一个可回放工作流。","在一张图展示模型、工具、数据、人工和恢复时间。"],"done":"四种语言及一份 LinkedIn 衍生稿可公开验证。"},
+        {"signal":6,"domain":"AI 基础设施与资本","title":"分开计划与已交付电力","why":"多吉瓦目标不是已通电、已验收容量。","steps":["分开记录 Vera GA 与计划容量。","已通电 MW、验收集群、利用率和现金流保持 UNKNOWN。"],"done":"OCI 交付卡阻止计划容量变成运营证明。"},
+        {"signal":7,"domain":"后期私募","title":"重建退出倍数","why":"现金与 ARR 或有价值必须结合运营数据解释。","steps":["等待交割和收入、NRR、毛利及集中度披露。","加入或有门槛与整合成本后再算倍数。"],"done":"交易与运营证据都通过才改变 WATCH。"},
+        {"signal":8,"domain":"公开市场","title":"盈利前先设分发门槛","why":"计划在 OCI 上线不等于采用、收入或毛利。","steps":["跟踪实际 OCI GA 与首个具名付费客户。","再记录推理收入增量和云业务毛利。"],"done":"四门齐全前保持 WATCH；不交易。"}
+      ]
+    },
+    "zh-Hant": {
+      "title":"每日行動流，2026年10月28日","description":"八項有邊界行動，衡量合格成果、邊緣可靠性、監管權利、已交付基礎設施與財務轉化。","centralJudgment":"只有整個系統更快、更少介入地交出合格成果，局部加速才創造價值。","fieldLine":"八個信號，Signal 5 可閱讀全文。","inLanguage":"zh-Hant","languageSlug":"zh-hant","translationReview":"PASS",
+      "actions":[
+        {"signal":1,"domain":"前沿模型與代理","title":"用合格工作衡量 Terra","why":"廠商速度與價格不能證明 RobinOS 成果經濟。","steps":["凍結十個只讀可重放任務和驗收標準。","記錄合格完成、人工分鐘、恢復和總成本。"],"done":"形成同條件證據表，不改變生產權限。"},
+        {"signal":2,"domain":"Physical AI與機械人","title":"測試邊緣邊界","why":"卸載改變電池約束，也帶來網絡和恢復風險。","steps":["同一受控任務分別本地和邊緣運行。","記錄 P50/P99 延遲、斷網安全、恢復和接管。"],"done":"可比可靠性與任務成本出現前保持 WATCH。"},
+        {"signal":3,"domain":"加密資本流","title":"要求同步廣度","why":"BTC 單日流入與 ETH 流出及穩定幣收縮衝突。","steps":["等待三個完整 BTC 與 ETH ETF 交易日。","把合計流量與七日美元穩定幣供應比較。"],"done":"兩者同步擴張才升級；不交易。"},
+        {"signal":4,"domain":"穩定幣與支付軌道","title":"映射法律貨幣對象","why":"穩定幣和代幣化存款的索償權、收益規則及監管者不同。","steps":["分開發行人、索償權、儲備、收益、贖回和監管者。","最終規則不支持的欄位標 UNKNOWN。"],"done":"比較產品前形成一頁證據映射。"},
+        {"signal":5,"domain":"內容與分發","title":"發布延遲瀑布圖","why":"系統最慢一步可以抹掉更快模型的收益。","steps":["閱讀文章並選擇一個可重放工作流程。","在一張圖展示模型、工具、資料、人工和恢復時間。"],"done":"四種語言及一份 LinkedIn 衍生稿可公開驗證。"},
+        {"signal":6,"domain":"AI 基礎設施與資本","title":"分開計劃與已交付電力","why":"多吉瓦目標不是已通電、已驗收容量。","steps":["分開記錄 Vera GA 與計劃容量。","已通電 MW、驗收集群、利用率和現金流保持 UNKNOWN。"],"done":"OCI 交付卡阻止計劃容量變成營運證明。"},
+        {"signal":7,"domain":"後期私募","title":"重建退出倍數","why":"現金與 ARR 或有價值必須結合營運數據解釋。","steps":["等待交割和收入、NRR、毛利及集中度披露。","加入或有門檻與整合成本後再算倍數。"],"done":"交易與營運證據都通過才改變 WATCH。"},
+        {"signal":8,"domain":"公開市場","title":"盈利前先設分發門檻","why":"計劃在 OCI 上線不等於採用、收入或毛利。","steps":["跟蹤實際 OCI GA 與首個具名付費客戶。","再記錄推理收入增量和雲業務毛利。"],"done":"四門齊全前保持 WATCH；不交易。"}
+      ]
+    },
+    "ja": {
+      "title":"デイリー・アクション・フロー、2026年10月28日","description":"8つの限定行動で、合格成果、エッジ信頼性、規制上の権利、供給済みインフラ、財務転換を測る。","centralJudgment":"部分的な高速化は、システム全体が少ない介入で合格成果へ早く到達して初めて価値になる。","fieldLine":"8つのシグナル。Signal 5から本日の記事を読める。","inLanguage":"ja","languageSlug":"ja","translationReview":"PASS",
+      "actions":[
+        {"signal":1,"domain":"フロンティアモデルとエージェント","title":"合格作業でTerraを測る","why":"ベンダーの速度と価格はRobinOSの成果経済を証明しない。","steps":["読み取り専用の再現タスク10件と合格基準を固定する。","合格、人の分数、復旧、総コストを記録する。"],"done":"生産権限を変えず同条件の証拠表を作る。"},
+        {"signal":2,"domain":"Physical AIとロボティクス","title":"エッジ境界を試す","why":"オフロードは電池制約を変えるが通信と復旧リスクを作る。","steps":["同じ管理タスクをローカルとエッジで実行する。","P50/P99遅延、通信断安全、復旧、引き継ぎを記録する。"],"done":"比較可能な信頼性とコストが出るまでWATCH。"},
+        {"signal":3,"domain":"暗号資本フロー","title":"同期した広がりを求める","why":"BTC一日流入はETH流出とstablecoin縮小に反する。","steps":["BTCとETH ETFの完了日を3日待つ。","合計フローと7日間のドルstablecoin供給を比べる。"],"done":"両方が拡大した場合だけ格上げする。取引しない。"},
+        {"signal":4,"domain":"Stablecoinと決済レール","title":"法的な貨幣対象を写す","why":"stablecoinとtokenized depositは請求権と規則が異なる。","steps":["発行者、請求権、準備、利回り、償還、監督者を分ける。","最終規則で確認できない項目をUNKNOWNにする。"],"done":"製品比較前に証拠付き規則マップを作る。"},
+        {"signal":5,"domain":"コンテンツと配信","title":"遅延ウォーターフォールを公開する","why":"最も遅い工程が速いモデルの利得を消せる。","steps":["記事を読み再現可能な業務を一つ選ぶ。","モデル、ツール、データ、人、復旧時間を一図にする。"],"done":"4言語とLinkedIn派生稿一つを公開検証できる。"},
+        {"signal":6,"domain":"AIインフラと資本","title":"計画と供給電力を分ける","why":"multi-gigawatt目標は通電・検収済み容量ではない。","steps":["Vera GAと計画容量を別々に記録する。","通電MW、検収、稼働率、現金流をUNKNOWNに保つ。"],"done":"OCI供給カードが計画を運用証拠へ変えない。"},
+        {"signal":7,"domain":"後期未公開市場","title":"exit倍率を組み直す","why":"現金と条件付きARR価値には運営データが必要。","steps":["完了と売上、NRR、粗利、集中の開示を待つ。","条件閾値と統合費を加えてから倍率を算出する。"],"done":"取引と運営の証拠が揃った場合だけWATCHを変える。"},
+        {"signal":8,"domain":"公開株式","title":"利益予測前に配信をgateする","why":"OCI提供計画は採用、売上、粗利ではない。","steps":["実際のOCI GAと最初の実名有料顧客を追う。","推論売上増分とcloud粗利を記録する。"],"done":"4つが揃うまでWATCH。取引しない。"}
+      ]
+    }
+  }
+}
