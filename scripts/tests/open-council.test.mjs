@@ -6,6 +6,28 @@ import { prepareReply } from '../../public/council/reply.mjs';
 const read = path => readFileSync(new URL('../../' + path, import.meta.url), 'utf8');
 const path = '/intelligence/council/autonomous-engineering/';
 
+test('October 29 council keeps empty seats and replies bound to its own topic', async () => {
+  const route = '/intelligence/council/million-good-questions/';
+  const { prepareReply: prepareWeeklyReply } = await import('../../public/council/million-good-questions.mjs');
+  const empty = prepareWeeklyReply([], '');
+  assert.ok(empty.includes('https://iamrobin.ai' + route));
+  assert.match(empty, /1: not chosen; 2: not chosen; 3: not chosen; 4: not chosen/);
+  const reply = prepareWeeklyReply(['Disagree'], '<script>example</script>');
+  assert.ok(reply.endsWith('My question: <script>example</script>'));
+  const html = read('dist' + route + 'index.html');
+  assert.equal((html.match(/<h1\b/g) || []).length, 1);
+  assert.equal((html.match(/type="radio"/g) || []).length, 12);
+  assert.doesNotMatch(html, /type="radio"[^>]*\bchecked\b/);
+  assert.ok(html.includes('Codex-only opening'));
+  assert.ok(html.includes('Robin has not submitted choices'));
+  assert.ok(html.includes('No winner and no closing verdict.'));
+  assert.ok(html.includes('rel="canonical" href="https://iamrobin.ai' + route + '"'));
+  assert.ok(read('dist/intelligence/index.html').includes(route));
+  assert.ok(read('dist/sitemap-0.xml').includes(route));
+  assert.doesNotMatch(html, /https?:\/\/(?:chatgpt|claude|gemini|grok)\.[^\s"<]+|\/Users\/|private_reviews|receipt\.json/);
+  assert.doesNotMatch(read('public/council/million-good-questions.mjs'), /fetch\(|XMLHttpRequest|sendBeacon|localStorage|sessionStorage|innerHTML|\.submit\(/);
+});
+
 test('approved council transcripts preserve original words, ignoring terminal whitespace only', () => {
   const expected = {
     teddy: '7a60357808d276d9c4022429e143c29a5c72460b8907059d4dc776fb2f46fdc2',

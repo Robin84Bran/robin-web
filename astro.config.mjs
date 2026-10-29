@@ -19,6 +19,7 @@ export default defineConfig({
         const path = new URL(page).pathname;
         return [
           '/intelligence/council/autonomous-engineering/',
+          '/intelligence/council/million-good-questions/',
           '/', '/about/', '/identity/', '/network/', '/asymmetry/btc_probability_atlas/', '/resonance/eval/ai_berkshire/', '/intelligence/three-rule-swarm/', '/intelligence/one-door/', '/intelligence/receipt-gap/', '/intelligence/portable-self/', '/intelligence/signal-or-silence/', '/intelligence/useful-core/',
           '/zh-hans/', '/zh-hans/about/', '/zh-hans/network/',
           '/zh-hant/', '/zh-hant/about/', '/zh-hant/network/',
