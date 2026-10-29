@@ -1,0 +1,19 @@
+The driver can leave the cab without human labor leaving the mile.
+
+Kodiak AI announced an agreement for DTL Transport to deploy its system in 75 DTL-owned and DTL-operated trucks, paying by the mile. The metal sits with the carrier.
+
+The support layer does not disappear. Kodiak's filing describes integration, remote monitoring, operational support and remote support as part of Driver-as-a-Service.
+
+That creates a cleaner investor question:
+
+provider gross profit per accepted paid mile = (revenue − full provider cost) / accepted paid miles
+
+Count the assists, their duration, unavailable hours, field recoveries, maintenance and idle time. Then ask whether accepted mileage grows faster than the support cost around it.
+
+The empty cab is the visible breakthrough. The offboard ledger decides whether it compounds.
+
+Full story and sources: https://iamrobin.ai/binary/stories/the-empty-cab-still-has-a-payroll/
+
+Illustrations are not Kodiak or DTL operating data. DTL price, support burden and gross margin remain unknown.
+
+#AutonomousTrucking #UnitEconomics #PhysicalAI #SystemsThinking #Investing

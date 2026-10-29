@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">The empty cab still has a payroll</title>
+  <desc id="desc">A driverless truck in the center of a ring of offboard support work: integration, monitoring, remote assistance, maintenance and recovery.</desc>
+  <rect width="1600" height="900" fill="#091323"/>
+  <path d="M70 73h64" stroke="#E0BA69" stroke-width="6"/>
+  <text x="156" y="81" fill="#AFC0CF" font-family="Arial, sans-serif" font-size="25" letter-spacing="2">BINARY / INVEST</text>
+  <text x="70" y="190" fill="#F2EFE7" font-family="Georgia, serif" font-size="75">The empty cab still has a payroll</text>
+  <text x="72" y="244" fill="#AFC0CF" font-family="Arial, sans-serif" font-size="27">Customer-owned metal does not make offboard support free.</text>
+
+  <g fill="none" stroke="#2D4558">
+    <ellipse cx="800" cy="553" rx="350" ry="230" stroke-width="2" stroke-dasharray="7 11"/>
+    <path d="M800 363v95M493 456l193 80M513 695l198-78M1107 456l-193 80M1087 695l-198-78" stroke-width="2"/>
+  </g>
+
+  <g font-family="Arial, sans-serif">
+    <g transform="translate(661 461)">
+      <rect width="278" height="184" rx="20" fill="#10263A" stroke="#64D2D0" stroke-width="3"/>
+      <path d="M48 78h104l33 29h45v42H48z" fill="#64D2D0" opacity=".2" stroke="#64D2D0" stroke-width="3"/>
+      <path d="M152 78v29h33" stroke="#64D2D0" stroke-width="3"/>
+      <circle cx="91" cy="151" r="18" fill="#091323" stroke="#F2EFE7" stroke-width="3"/>
+      <circle cx="204" cy="151" r="18" fill="#091323" stroke="#F2EFE7" stroke-width="3"/>
+      <path d="M101 107h33" stroke="#E0BA69" stroke-width="4"/>
+      <text x="139" y="43" fill="#F2EFE7" font-size="22" font-weight="700" text-anchor="middle">PAID MILE</text>
+    </g>
+
+    <g fill="#0E1D2D" stroke="#607488" stroke-width="2">
+      <rect x="690" y="308" width="220" height="65" rx="10"/>
+      <rect x="280" y="421" width="220" height="65" rx="10"/>
+      <rect x="1098" y="421" width="220" height="65" rx="10"/>
+      <rect x="344" y="705" width="220" height="65" rx="10"/>
+      <rect x="1036" y="705" width="220" height="65" rx="10"/>
+    </g>
+    <g fill="#F2EFE7" font-size="21" text-anchor="middle">
+      <text x="800" y="348">INTEGRATE</text>
+      <text x="390" y="461">MONITOR</text>
+      <text x="1208" y="461">REMOTE ASSIST</text>
+      <text x="454" y="745">MAINTAIN</text>
+      <text x="1146" y="745">RECOVER</text>
+    </g>
+    <text x="800" y="824" fill="#E0BA69" font-size="24" text-anchor="middle">GROSS PROFIT / ACCEPTED PAID MILE = UNKNOWN</text>
+    <text x="1470" y="844" fill="#F2EFE7" font-size="24" text-anchor="end">IAmRobin.ai</text>
+  </g>
+</svg>
