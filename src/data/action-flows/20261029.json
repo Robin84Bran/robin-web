@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-29",
+  "updated": "2026-10-29",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20261029/hero.webp",
+  "actionHero": "/action-item/20261029/hero.webp",
+  "ogImage": "/daily-briefing/20261029/og.webp",
+  "briefingPath": "/ouroboros/202610/20261029/",
+  "actionItemPath": "/ouroboros/202610/20261029/action_item/",
+  "actions": [
+    {"signal":1,"priority":"NOW","status":"READY","visualValue":"5","visualLabel":"nodes in a governed action path","sources":[{"label":"OpenAI","url":"https://openai.com/index/openai-servicenow-partnership-expansion/"},{"label":"ServiceNow","url":"https://investor.servicenow.com/news/news-details/2026/ServiceNow-Reports-Third-Quarter-2026-Financial-Results/default.aspx"}]},
+    {"signal":2,"priority":"WATCH","status":"WATCHING","visualValue":"75","visualLabel":"contracted driverless trucks","sources":[{"label":"Kodiak","url":"https://kodiakrobotics.gcs-web.com/news-releases/news-release-details/kodiak-ai-and-dtl-transport-reach-historic-agreement-deploy-75"}]},
+    {"signal":3,"priority":"WATCH","status":"WATCHING","visualValue":"-0.83%","visualLabel":"eight-day USD stablecoin supply","sources":[{"label":"Farside BTC","url":"https://farside.co.uk/btc/"},{"label":"Farside ETH","url":"https://farside.co.uk/eth/"},{"label":"DefiLlama API","url":"https://stablecoins.llama.fi/stablecoincharts/all"},{"label":"Complete-day summary","url":"https://coinpulsehq.com/crypto-market-data/"}]},
+    {"signal":4,"priority":"NEXT","status":"READY","visualValue":"ALP","visualLabel":"token rails versus real liquidity","sources":[{"label":"Stellar","url":"https://stellar.org/press/tokenization-gave-private-assets-rails-pontoro-is-building-the-liquidity-layer"}]},
+    {"signal":5,"deepDiveAvailable":true,"priority":"NOW","status":"READY","visualValue":"5","visualLabel":"permission and recovery nodes","sources":[{"label":"OpenAI and ServiceNow","url":"https://openai.com/index/openai-servicenow-partnership-expansion/"},{"label":"NIST AI RMF","url":"https://www.nist.gov/itl/ai-risk-management-framework"},{"label":"Action Item","url":"https://iamrobin.ai/ouroboros/202610/20261029/action_item/"}]},
+    {"signal":6,"priority":"NEXT","status":"READY","visualValue":"850MW","visualLabel":"company-reported delivered capacity","sources":[{"label":"Oracle","url":"https://www.oracle.com/news/announcement/blog/ai-world-building-the-next-decade-of-oracle-cloud-infrastructure-2026-10-27/"}]},
+    {"signal":7,"priority":"WATCH","status":"WATCHING","visualValue":"$400M","visualLabel":"Series C with economics undisclosed","sources":[{"label":"Upwind","url":"https://www.upwind.io/feed/the-next-wave-is-here-upwinds-400m-series-c-to-build-the-cloud-ai-security-platform"}]},
+    {"signal":8,"priority":"WATCH","status":"WATCHING","visualValue":"103%","visualLabel":"Google Cloud revenue growth","sources":[{"label":"SEC","url":"https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm"},{"label":"Alphabet","url":"https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q3-2026/"}]}
+  ],
+  "editions": {
+    "en": {
+      "title":"Daily Action Flow, October 29, 2026","description":"Eight bounded actions separate context from authority, contracts from operations, rails from liquidity and capacity from economic conversion.","centralJudgment":"Autonomy scales safely only when every action has an explicit permission boundary and a verifiable receipt.","fieldLine":"Eight signals. Signal 5 opens today's essay.","inLanguage":"en","languageSlug":"","translationReview":"PASS",
+      "actions":[
+        {"signal":1,"domain":"Frontier Models and Agents","title":"Map the governed action path","why":"A connector can expose context without granting execution authority.","steps":["Draw context, proposal, permission check, execution and receipt.","Keep every unowned or unrecoverable node BLOCKED."],"done":"One read-only workflow has an explicit authority and recovery map."},
+        {"signal":2,"domain":"Physical AI and Robotics","title":"Track contracted trucks into operations","why":"A binding agreement is stronger than an MOU but is not operating evidence.","steps":["Separate contracted, delivered and driverless-authorized trucks.","Record paid miles, interventions, uptime and full cost per mile."],"done":"Unknown operational fields remain visible until launch evidence exists."},
+        {"signal":3,"domain":"Crypto Capital Flows","title":"Require synchronized breadth","why":"Bitcoin inflow conflicts with Ether outflow and contracting stablecoins.","steps":["Wait for three complete BTC and ETH ETF sessions.","Compare combined flows with seven-day stablecoin supply."],"done":"Upgrade only when both expand; no trade."},
+        {"signal":4,"domain":"Stablecoins and Payment Rails","title":"Expose the liquidity boundary","why":"Token transferability does not guarantee redemption liquidity.","steps":["Record eligibility, pricing, liquid sleeve and suspension rules.","Add volume, spreads and failures only when disclosed."],"done":"A rule-linked table keeps unsupported numbers UNKNOWN."},
+        {"signal":5,"domain":"Content and Distribution","title":"Publish the permission map","why":"Reading, proposing, executing, publishing and recovery are different capabilities.","steps":["Read the essay and map one live workflow.","Mark every policy gate and recovery receipt."],"done":"Four editions and one archived LinkedIn derivative are publicly verifiable."},
+        {"signal":6,"domain":"AI Infrastructure and Capital","title":"Separate delivered from accepted capacity","why":"Company-reported MW and future GW are different evidence states.","steps":["Record delivered, energized and customer-accepted MW separately.","Keep utilization, capex and contract economics UNKNOWN until sourced."],"done":"The OCI card cannot convert plans into operating proof."},
+        {"signal":7,"domain":"Late-Stage Private Markets","title":"Hold valuation until economics exist","why":"Round size does not reveal price, retention, margin or terms.","steps":["Collect valuation, ARR, NRR, gross margin and burn.","Add concentration, preferences and dilution before INVESTIGATE."],"done":"WATCH changes only after full-cost economics can be diligenced."},
+        {"signal":8,"domain":"Public Equities","title":"Gate Cloud growth through capital returns","why":"Revenue and profit matter, but capital intensity completes the picture.","steps":["Track Cloud growth and operating margin.","Pair them with AI capex and incremental free cash flow."],"done":"Keep WATCH and make no trade until the four-gate card is complete."}
+      ]
+    },
+    "zh-Hans": {
+      "title":"每日行动流，2026年10月29日","description":"八项有边界行动，把上下文与权限、合同与运营、轨道与流动性、容量与经济转化分开。","centralJudgment":"只有每个动作都有明确权限边界和可核查回执，自治才能安全扩展。","fieldLine":"八个信号，Signal 5 可阅读全文。","inLanguage":"zh-Hans","languageSlug":"zh-hans","translationReview":"PASS",
+      "actions":[
+        {"signal":1,"domain":"前沿模型与代理","title":"画出治理动作路径","why":"连接器可暴露上下文，却不会自动授予执行权。","steps":["画出上下文、建议、权限检查、执行与回执。","没有责任人或恢复路径的节点保持 BLOCKED。"],"done":"一个只读工作流拥有明确权限与恢复图。"},
+        {"signal":2,"domain":"Physical AI与机器人","title":"把合同车辆跟踪到运营","why":"约束性协议强于 MOU，但不是运营证据。","steps":["分开合同、已交付与获准无人运行车辆。","记录付费里程、介入、可用率与完整每英里成本。"],"done":"启动证据出现前，运营字段保持 UNKNOWN。"},
+        {"signal":3,"domain":"加密资本流","title":"要求同步广度","why":"BTC 流入与 ETH 流出及稳定币收缩冲突。","steps":["等待三个完整 BTC 与 ETH ETF 交易日。","把合计流量与七日稳定币供应比较。"],"done":"两者同步扩张才升级；不交易。"},
+        {"signal":4,"domain":"稳定币与支付轨道","title":"公开流动性边界","why":"token 可转移不保证赎回流动性。","steps":["记录资格、定价、流动资产池与暂停规则。","成交量、价差与失败只在披露后加入。"],"done":"证据表让不支持的数字保持 UNKNOWN。"},
+        {"signal":5,"domain":"内容与分发","title":"发布权限地图","why":"读取、建议、执行、发布和恢复是不同能力。","steps":["阅读文章并映射一个真实工作流。","标出每个策略门和恢复回执。"],"done":"四种语言及 LinkedIn 衍生稿可公开验证。"},
+        {"signal":6,"domain":"AI 基础设施与资本","title":"分开交付与验收容量","why":"公司报告 MW 与未来 GW 是不同证据状态。","steps":["分开记录已交付、已通电与客户验收 MW。","利用率、资本开支与合同经济保持 UNKNOWN。"],"done":"OCI 卡不会把计划转成运营证明。"},
+        {"signal":7,"domain":"晚期私募","title":"经济数据出现前保持估值 HOLD","why":"融资规模不揭示价格、留存、毛利或条款。","steps":["收集估值、ARR、NRR、毛利与消耗。","加入集中度、优先权和稀释后再 INVESTIGATE。"],"done":"完整成本经济可核清后才改变 WATCH。"},
+        {"signal":8,"domain":"公开股票","title":"用资本回报约束云增长","why":"收入和利润重要，但资本密度补全判断。","steps":["跟踪 Cloud 增长与经营利润率。","配对 AI 资本开支与增量自由现金流。"],"done":"四门完整前保持 WATCH、不交易。"}
+      ]
+    },
+    "zh-Hant": {
+      "title":"每日行動流，2026年10月29日","description":"八項有邊界行動，把脈絡與權限、合約與營運、軌道與流動性、容量與經濟轉化分開。","centralJudgment":"只有每個動作都有明確權限邊界及可核查回執，自治才能安全擴展。","fieldLine":"八個信號，Signal 5 可閱讀全文。","inLanguage":"zh-Hant","languageSlug":"zh-hant","translationReview":"PASS",
+      "actions":[
+        {"signal":1,"domain":"前沿模型與代理","title":"畫出治理動作路徑","why":"連接器可暴露脈絡，卻不會自動授予執行權。","steps":["畫出脈絡、建議、權限檢查、執行與回執。","沒有責任人或恢復路徑的節點維持 BLOCKED。"],"done":"一個只讀工作流程擁有明確權限與恢復圖。"},
+        {"signal":2,"domain":"Physical AI與機械人","title":"把合約車輛跟蹤到營運","why":"約束性協議強於 MOU，但不是營運證據。","steps":["分開合約、已交付及獲准無人運行車輛。","記錄付費里程、介入、可用率及完整每英里成本。"],"done":"啟動證據出現前，營運欄位維持 UNKNOWN。"},
+        {"signal":3,"domain":"加密資本流","title":"要求同步廣度","why":"BTC 流入與 ETH 流出及穩定幣收縮衝突。","steps":["等待三個完整 BTC 與 ETH ETF 交易日。","把合計流量與七日穩定幣供應比較。"],"done":"兩者同步擴張才升級；不交易。"},
+        {"signal":4,"domain":"穩定幣與支付軌道","title":"公開流動性邊界","why":"token 可轉移不保證贖回流動性。","steps":["記錄資格、定價、流動資產池及暫停規則。","成交量、價差與失敗只在披露後加入。"],"done":"證據表讓不支持的數字維持 UNKNOWN。"},
+        {"signal":5,"domain":"內容與分發","title":"發布權限地圖","why":"讀取、建議、執行、發布與恢復是不同能力。","steps":["閱讀文章並映射一個真實工作流程。","標出每個政策門及恢復回執。"],"done":"四種語言及 LinkedIn 衍生稿可公開驗證。"},
+        {"signal":6,"domain":"AI 基礎設施與資本","title":"分開交付與驗收容量","why":"公司報告 MW 與未來 GW 是不同證據狀態。","steps":["分開記錄已交付、已通電及客戶驗收 MW。","利用率、資本開支與合約經濟維持 UNKNOWN。"],"done":"OCI 卡不會把計劃轉成營運證明。"},
+        {"signal":7,"domain":"晚期私募","title":"經濟數據出現前維持估值 HOLD","why":"融資規模不揭示價格、留存、毛利或條款。","steps":["收集估值、ARR、NRR、毛利及消耗。","加入集中度、優先權和稀釋後再 INVESTIGATE。"],"done":"完整成本經濟可核清後才改變 WATCH。"},
+        {"signal":8,"domain":"公開股票","title":"用資本回報約束雲端增長","why":"收入和盈利重要，但資本密度補全判斷。","steps":["跟蹤 Cloud 增長及營業利潤率。","配對 AI 資本開支及增量自由現金流。"],"done":"四門完整前維持 WATCH、不交易。"}
+      ]
+    },
+    "ja": {
+      "title":"デイリー・アクション・フロー、2026年10月29日","description":"8つの限定行動で文脈と権限、契約と運用、レールと流動性、容量と経済転換を分ける。","centralJudgment":"各操作に明示的な権限境界と検証可能なreceiptがある場合だけ、自律性を安全に拡大できる。","fieldLine":"8つのシグナル。Signal 5から本日の記事を読める。","inLanguage":"ja","languageSlug":"ja","translationReview":"PASS",
+      "actions":[
+        {"signal":1,"domain":"フロンティアモデルとエージェント","title":"管理された操作経路を描く","why":"接続は文脈を見せても実行権限を自動付与しない。","steps":["文脈、提案、権限確認、実行、receiptを描く。","所有者や復旧経路のない節点はBLOCKEDにする。"],"done":"一つの読み取り専用業務に権限・復旧図がある。"},
+        {"signal":2,"domain":"Physical AIとロボティクス","title":"契約車両を運用まで追う","why":"拘束力ある契約はMOUより強いが運用証拠ではない。","steps":["契約、納入、無人許可済み台数を分ける。","有償距離、介入、稼働率、総費用を記録する。"],"done":"開始証拠まで運用欄はUNKNOWNを保つ。"},
+        {"signal":3,"domain":"暗号資本フロー","title":"同期した広がりを求める","why":"BTC流入はETH流出とstablecoin縮小に反する。","steps":["BTCとETH ETFの完了日を3日待つ。","合計flowと7日stablecoin供給を比べる。"],"done":"両方が拡大した場合だけ格上げする。取引しない。"},
+        {"signal":4,"domain":"Stablecoinと決済レール","title":"流動性境界を見せる","why":"token移転可能性は償還流動性を保証しない。","steps":["資格、価格、流動資産、停止規則を記録する。","取引量、spread、失敗は開示後だけ加える。"],"done":"証拠表が未確認数値をUNKNOWNに保つ。"},
+        {"signal":5,"domain":"コンテンツと配信","title":"permission mapを公開する","why":"閲覧、提案、実行、公開、復旧は別能力である。","steps":["記事を読み実業務を一つmappingする。","各policy gateと復旧receiptを示す。"],"done":"4言語とLinkedIn派生稿を公開検証できる。"},
+        {"signal":6,"domain":"AIインフラと資本","title":"納入容量と検収容量を分ける","why":"会社報告MWと将来GWは別の証拠状態である。","steps":["納入、通電、顧客検収MWを分ける。","利用率、capex、契約経済はUNKNOWNに保つ。"],"done":"OCI cardは計画を運用証拠に変えない。"},
+        {"signal":7,"domain":"後期未公開市場","title":"経済が出るまでvaluationをHOLD","why":"調達額は価格、retention、margin、条件を示さない。","steps":["valuation、ARR、NRR、粗利、burnを集める。","集中、優先権、希薄化を加えてからINVESTIGATEする。"],"done":"総費用経済を精査できた場合だけWATCHを変える。"},
+        {"signal":8,"domain":"公開株式","title":"Cloud成長を資本returnでgateする","why":"売上と利益だけでは資本集約度が欠ける。","steps":["Cloud成長と営業利益率を追う。","AI capexと増分free cash flowを対応させる。"],"done":"4門が揃うまでWATCH、取引しない。"}
+      ]
+    }
+  }
+}
