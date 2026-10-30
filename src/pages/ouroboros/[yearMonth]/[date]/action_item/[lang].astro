@@ -14,6 +14,7 @@ export async function getStaticPaths() {
 interface Props { entry: CollectionEntry<'actionItemTranslation'>; }
 const { entry } = Astro.props as Props;
 const { Content } = await render(entry);
+const contentHasH1 = /^\s*#\s+/m.test(entry.body ?? '');
 const publicationDate = entry.data.date.toISOString().slice(0, 10);
 const compactDate = publicationDate.replaceAll('-', '');
 const briefingPath = `/ouroboros/${compactDate.slice(0, 6)}/${compactDate}/`;
@@ -50,6 +51,7 @@ const localized = entry.data.inLanguage === 'ja'
   intro={publicationDate >= '2026-10-26' ? '' : localized.intro}
   footerText={publicationDate >= '2026-10-26' ? '' : localized.footer}
   footerLink={`${briefingPath}${entry.data.languageSlug}/`} footerLinkLabel={localized.back}
+  {contentHasH1}
 >
   <Content />
 </OuroborosPublication>

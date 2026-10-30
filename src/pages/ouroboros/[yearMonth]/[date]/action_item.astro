@@ -14,6 +14,7 @@ export async function getStaticPaths() {
 interface Props { entry: CollectionEntry<'actionItem'>; }
 const { entry } = Astro.props;
 const { Content } = await render(entry);
+const contentHasH1 = /^\s*#\s+/m.test(entry.body ?? '');
 const publicationDate = entry.data.date.toISOString().slice(0, 10);
 const compactDate = publicationDate.replaceAll('-', '');
 const briefingPath = `/ouroboros/${compactDate.slice(0, 6)}/${compactDate}/`;
@@ -43,6 +44,7 @@ const displayDate = entry.data.date.toLocaleDateString('en-US', { timeZone: 'UTC
   intro={publicationDate >= '2026-10-26' ? '' : 'A commercial loop with a scoreboard.'}
   footerText={publicationDate >= '2026-10-26' ? '' : 'From signal to ledger. From ledger to memory.'}
   footerLink={briefingPath} footerLinkLabel="Return to today’s eight signals →"
+  {contentHasH1}
 >
   <Content />
 </OuroborosPublication>
