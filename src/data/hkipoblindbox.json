@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-30T01:33:23.922693+00:00",
+  "generated_at": "2026-10-30T09:33:44.287560+00:00",
   "money_mode": "SIMULATED",
   "forecasts": [
     {
@@ -216,12 +216,17 @@
         0.19135816103003492
       ],
       "target_return": 0.1,
-      "score": null
+      "score": {
+        "exact_hit": true,
+        "brier": 0.6011855394705284,
+        "target_touched": false,
+        "ordinal_partial_credit": 1.0
+      }
     },
     {
       "case_id": "HKEX-PENDING-09917-c07895d4",
       "stock_code": "09917",
-      "issuer_name": "DENGLIN TECH-P",
+      "issuer_name": "Suzhou Denglin Technology Co., Ltd. - P",
       "listing_date": "2026-11-10",
       "mode": "FORWARD",
       "frozen_at": "2026-10-30T01:32:16.613120+00:00",
@@ -239,7 +244,7 @@
     {
       "case_id": "HKEX-PENDING-09621-8ebbbb35",
       "stock_code": "09621",
-      "issuer_name": "RELYEZ ENERGY",
+      "issuer_name": "RelyEZ Energy Storage Technology Co., Ltd.",
       "listing_date": "2026-11-09",
       "mode": "FORWARD",
       "frozen_at": "2026-10-30T01:32:16.838024+00:00",
@@ -275,7 +280,7 @@
     {
       "case_id": "HKEX-PENDING-07672-88a7a284",
       "stock_code": "07672",
-      "issuer_name": "XINDE SEMI",
+      "issuer_name": "Jiangsu Xinde Semiconductor Technology Co., Ltd.",
       "listing_date": "2026-11-10",
       "mode": "FORWARD",
       "frozen_at": "2026-10-30T01:32:17.293029+00:00",
@@ -293,7 +298,7 @@
     {
       "case_id": "HKEX-PENDING-02206-36a67e1d",
       "stock_code": "02206",
-      "issuer_name": "NEAUTUS",
+      "issuer_name": "Sichuan Neautus Traditional Chinese Medicine Co., Ltd.",
       "listing_date": "2026-11-11",
       "mode": "FORWARD",
       "frozen_at": "2026-10-30T01:32:17.526969+00:00",
@@ -311,7 +316,7 @@
     {
       "case_id": "HKEX-PENDING-02681-c82a302c",
       "stock_code": "02681",
-      "issuer_name": "HOSIN ELEC",
+      "issuer_name": "HOSIN Electronics Co., LTD.",
       "listing_date": "2026-11-12",
       "mode": "FORWARD",
       "frozen_at": "2026-10-30T01:32:17.760296+00:00",
