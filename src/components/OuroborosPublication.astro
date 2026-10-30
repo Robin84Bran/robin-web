@@ -34,6 +34,7 @@ interface Props {
   footerText: string;
   footerLink?: string;
   footerLinkLabel?: string;
+  contentHasH1?: boolean;
 }
 
 const {
@@ -57,6 +58,7 @@ const {
   footerText,
   footerLink,
   footerLinkLabel,
+  contentHasH1 = false,
 } = Astro.props;
 ---
 
@@ -84,7 +86,7 @@ const {
         ))}
       </div>
       {indexLabel && <p class="publication-index">{indexLabel}</p>}
-      <h1>{title}</h1>
+      {!contentHasH1 && <h1>{title}</h1>}
       <p class="publication-date"><time datetime={publicationDate}>{displayDate}</time></p>
       <nav class="publication-languages" aria-label="Other language editions">
         {languageLinks.map((link) => <a href={link.path} hreflang={link.hreflang} lang={link.hreflang}>{link.label}</a>)}

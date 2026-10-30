@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-30",
+  "updated": "2026-10-30",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20261030/hero.webp",
+  "actionHero": "/action-item/20261030/hero.webp",
+  "ogImage": "/daily-briefing/20261030/og.webp",
+  "briefingPath": "/ouroboros/202610/20261030/",
+  "actionItemPath": "/ouroboros/202610/20261030/action_item/",
+  "actions": [
+    {"signal":1,"priority":"WATCH","status":"WATCHING","visualValue":"MINUTES","visualLabel":"current continuous interaction window","sources":[{"label":"Google DeepMind","url":"https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"},{"label":"Genie model page","url":"https://deepmind.google/models/genie/"}]},
+    {"signal":2,"priority":"NEXT","status":"READY","visualValue":"WORKEN","visualLabel":"proposed productive-work measure","sources":[{"label":"AGIBOT","url":"https://www.prnewswire.com/news-releases/agibot-introduces-worken-to-measure-productive-robot-work-at-agibot-innovation-day-2026-302923486.html"}]},
+    {"signal":3,"priority":"WATCH","status":"WATCHING","visualValue":"-$943.8M","visualLabel":"complete-day USDT and USDC supply change","sources":[{"label":"Farside BTC","url":"https://farside.co.uk/btc/"},{"label":"Farside ETH","url":"https://farside.co.uk/eth/"},{"label":"DefiLlama","url":"https://stablecoins.llama.fi/stablecoincharts/all"},{"label":"Complete-day summary","url":"https://tradradar.io/markets/etf-flows"}]},
+    {"signal":4,"priority":"NEXT","status":"READY","visualValue":"DEFAULT","visualLabel":"Stellar now available in MetaMask","sources":[{"label":"Stellar","url":"https://stellar.org/press/stellar-is-now-live-in-metamask-expanding-access-to-global-digital-finance"}]},
+    {"signal":5,"deepDiveAvailable":true,"priority":"NOW","status":"READY","visualValue":"5","visualLabel":"linked records in a reality receipt","sources":[{"label":"Google DeepMind","url":"https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"},{"label":"NIST AI TEVV","url":"https://www.nist.gov/topics/artificial-intelligence/ai-test-evaluation-validation-and-verification-tevv"},{"label":"Action Item","url":"https://iamrobin.ai/ouroboros/202610/20261030/action_item/"}]},
+    {"signal":6,"priority":"NEXT","status":"READY","visualValue":"$106M","visualLabel":"secured GPU facility","sources":[{"label":"USD.AI","url":"https://www.prnewswire.com/news-releases/usdai-closes-106-million-financing-for-nexgen-cloud-ai-infrastructure-302922222.html"}]},
+    {"signal":7,"priority":"WATCH","status":"WATCHING","visualValue":"$620M","visualLabel":"Series D with deployment economics undisclosed","sources":[{"label":"FuriosaAI","url":"https://furiosa.ai/blog/furiosaai-raises-620m-series-d"},{"label":"FuriosaAI release","url":"https://via.tt/2f21d16"}]},
+    {"signal":8,"priority":"WATCH","status":"WATCHING","visualValue":"$220B","visualLabel":"Amazon 2026 cash capex outlook","sources":[{"label":"Amazon IR","url":"https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/"},{"label":"Amazon earnings PDF","url":"https://s2.q4cdn.com/299287126/files/doc_financials/2026/q3/AMZN-Q3-2026-Earnings-Release.pdf"}]}
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, October 30, 2026",
+      "description": "Eight bounded actions separate world-model possibility from physical validity, financial announcements from economics and cloud growth from capital return.",
+      "centralJudgment": "A credible autonomy claim needs a matched real-world receipt, not only a convincing simulation or benchmark.",
+      "fieldLine": "Eight signals. Signal 5 opens today's essay.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal":1,"domain":"Frontier Models and Agents","title":"Preserve the preview boundary","why":"A live generated world is useful exploration, not physical validation.","steps":["Record session length, drift and failed edits.","Keep real-robot transfer UNKNOWN until a matched trial exists."],"done":"The Genie 4 card separates preview capability from deployed outcome."},
+        {"signal":2,"domain":"Physical AI and Robotics","title":"Define one Worken denominator","why":"Robot count and benchmark score do not measure accepted unattended work.","steps":["Choose one customer task and freeze its acceptance rule.","Record productive hours, failures, intervention, uptime and full cost."],"done":"The proposed metric has an auditable task-level denominator."},
+        {"signal":3,"domain":"Crypto Capital Flows","title":"Wait for synchronized breadth","why":"BTC inflow conflicts with ETH outflow and contracting stablecoin supply.","steps":["Collect three complete BTC and ETH ETF sessions.","Compare combined flows with seven-day stablecoin supply."],"done":"Upgrade only when both expand; no trade."},
+        {"signal":4,"domain":"Stablecoins and Payment Rails","title":"Measure use after default access","why":"A default network entry reduces setup friction but does not prove adoption.","steps":["Track active addresses and transaction quality after launch.","Keep retention, liquidity and customer value UNKNOWN until disclosed."],"done":"The Stellar card distinguishes access from sustained use."},
+        {"signal":5,"domain":"Content and Distribution","title":"Publish the reality receipt","why":"Simulation needs a linked physical trial before success becomes decision-useful.","steps":["Read the essay and choose one bounded task.","Freeze acceptance, run the closest real match and retain every intervention."],"done":"Four editions and an archived LinkedIn derivative are publicly verifiable."},
+        {"signal":6,"domain":"AI Infrastructure and Capital","title":"Audit the contracted GPU facility","why":"Take-or-pay demand is stronger than a plan, but rate, leverage and operating economics remain missing.","steps":["Record funded servers, shipment, commissioning and customer acceptance.","Add interest, LTV, utilization and full operating cost when disclosed."],"done":"The facility card cannot convert financing into profitable operation."},
+        {"signal":7,"domain":"Late-Stage Private Markets","title":"Hold valuation until economics exist","why":"A large round and card shipment target do not reveal unit economics or customer concentration.","steps":["Collect revenue, gross margin, burn, preferences and concentration.","Separate ordered, shipped, installed and accepted accelerator cards."],"done":"WATCH changes only when deployment and full-cost economics can be diligenced."},
+        {"signal":8,"domain":"Public Equities","title":"Pair AWS growth with capital return","why":"Revenue and operating income rise while free cash flow absorbs heavy investment.","steps":["Track AWS growth and operating margin.","Pair them with capex, incremental free cash flow and accepted capacity."],"done":"Keep WATCH and make no trade until the capital-return bridge is complete."}
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年10月30日",
+      "description": "八项有边界行动，把世界模型的可能性与物理有效、融资公告与经济性、云增长与资本回报分开。",
+      "centralJudgment": "可信的自治主张需要匹配现实回执，而不只是逼真模拟或基准成绩。",
+      "fieldLine": "八个信号，Signal 5 可阅读全文。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal":1,"domain":"前沿模型与代理","title":"保留研究预览边界","why":"实时生成世界适合探索，不是物理验证。","steps":["记录会话时长、漂移和失败编辑。","匹配实体试验前，让迁移结论保持 UNKNOWN。"],"done":"Genie 4 卡把预览能力与部署结果分开。"},
+        {"signal":2,"domain":"Physical AI 与机器人","title":"定义一个 Worken 分母","why":"机器人数量和基准分数不衡量被接受的无人工作。","steps":["选择一个客户任务并冻结验收规则。","记录生产小时、失败、介入、可用率和全成本。"],"done":"提议指标拥有可审计的任务级分母。"},
+        {"signal":3,"domain":"加密资本流","title":"等待同步广度","why":"BTC 流入与 ETH 流出及稳定币收缩冲突。","steps":["收集三个完整 BTC 和 ETH ETF 交易日。","比较合计流量与七日稳定币供应。"],"done":"两者同步扩张才升级；不交易。"},
+        {"signal":4,"domain":"稳定币与支付轨道","title":"默认接入后衡量使用","why":"默认网络入口降低设置摩擦，却不证明采用。","steps":["跟踪发布后的活跃地址与交易质量。","留存、流动性和客户价值保持 UNKNOWN。"],"done":"Stellar 卡把接入与持续使用分开。"},
+        {"signal":5,"domain":"内容与分发","title":"发布现实回执","why":"模拟成功需要链接实体试验，才足以支持决策。","steps":["阅读文章并选择一个有边界任务。","冻结验收、运行最接近的现实匹配并保留每次介入。"],"done":"四种语言及 LinkedIn 衍生稿可公开验证。"},
+        {"signal":6,"domain":"AI 基础设施与资本","title":"审计已签约 GPU 融资","why":"照付不议需求强于计划，但利率、杠杆与运营经济仍缺失。","steps":["记录获资助服务器、发货、投运与客户验收。","披露后加入利息、LTV、利用率和完整运营成本。"],"done":"融资卡不会把融资转成盈利运营证明。"},
+        {"signal":7,"domain":"晚期私募","title":"经济数据出现前保持估值 HOLD","why":"大额融资和卡片发货目标不揭示单位经济与客户集中度。","steps":["收集收入、毛利、消耗、优先权与集中度。","分开订购、发货、安装与验收加速卡。"],"done":"部署与完整成本可核清后才改变 WATCH。"},
+        {"signal":8,"domain":"公开股票","title":"把 AWS 增长与资本回报配对","why":"收入与经营利润上升时，自由现金流仍吸收重投资。","steps":["跟踪 AWS 增长与经营利润率。","配对资本开支、增量自由现金流与验收容量。"],"done":"资本回报桥完整前保持 WATCH、不交易。"}
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年10月30日",
+      "description": "八項有邊界行動，把世界模型的可能性與物理有效、融資公告與經濟性、雲端增長與資本回報分開。",
+      "centralJudgment": "可信的自治主張需要匹配現實回執，而不只是逼真模擬或基準成績。",
+      "fieldLine": "八個信號，Signal 5 可閱讀全文。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal":1,"domain":"前沿模型與代理","title":"保留研究預覽邊界","why":"即時生成世界適合探索，不是物理驗證。","steps":["記錄會話時長、漂移和失敗編輯。","匹配實體試驗前，讓遷移結論維持 UNKNOWN。"],"done":"Genie 4 卡把預覽能力與部署結果分開。"},
+        {"signal":2,"domain":"Physical AI 與機械人","title":"定義一個 Worken 分母","why":"機械人數量與基準分數不衡量獲接受的無人工作。","steps":["選擇一個客戶任務並凍結驗收規則。","記錄生產小時、失敗、介入、可用率與全成本。"],"done":"提議指標擁有可審計的任務級分母。"},
+        {"signal":3,"domain":"加密資本流","title":"等待同步廣度","why":"BTC 流入與 ETH 流出及穩定幣收縮衝突。","steps":["收集三個完整 BTC 與 ETH ETF 交易日。","比較合計流量與七日穩定幣供應。"],"done":"兩者同步擴張才升級；不交易。"},
+        {"signal":4,"domain":"穩定幣與支付軌道","title":"預設接入後衡量使用","why":"預設網絡入口降低設定摩擦，卻不證明採用。","steps":["跟蹤發布後的活躍地址與交易質素。","留存、流動性和客戶價值維持 UNKNOWN。"],"done":"Stellar 卡把接入與持續使用分開。"},
+        {"signal":5,"domain":"內容與分發","title":"發布現實回執","why":"模擬成功需要連結實體試驗，才足以支援決策。","steps":["閱讀文章並選擇一個有邊界任務。","凍結驗收、運行最接近的現實匹配並保留每次介入。"],"done":"四種語言及 LinkedIn 衍生稿可公開驗證。"},
+        {"signal":6,"domain":"AI 基礎設施與資本","title":"審計已簽約 GPU 融資","why":"照付不議需求強於計劃，但利率、槓桿與營運經濟仍缺失。","steps":["記錄獲資助伺服器、付運、投運與客戶驗收。","披露後加入利息、LTV、利用率及完整營運成本。"],"done":"融資卡不會把融資轉成盈利營運證明。"},
+        {"signal":7,"domain":"晚期私募","title":"經濟數據出現前維持估值 HOLD","why":"大額融資和卡片付運目標不揭示單位經濟與客戶集中度。","steps":["收集收入、毛利、消耗、優先權與集中度。","分開訂購、付運、安裝與驗收加速卡。"],"done":"部署與完整成本可核清後才改變 WATCH。"},
+        {"signal":8,"domain":"公開股票","title":"把 AWS 增長與資本回報配對","why":"收入與營業利潤上升時，自由現金流仍吸收重投資。","steps":["跟蹤 AWS 增長與營業利潤率。","配對資本開支、增量自由現金流與驗收容量。"],"done":"資本回報橋完整前維持 WATCH、不交易。"}
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年10月30日",
+      "description": "8つの限定行動でworld modelの可能性と物理妥当性、資金調達と経済性、cloud成長と資本returnを分ける。",
+      "centralJudgment": "信頼できる自律性の主張には、説得的なsimulationやbenchmarkだけでなく、対応する現実receiptが必要だ。",
+      "fieldLine": "8つのシグナル。Signal 5から本日の記事を読める。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal":1,"domain":"フロンティアモデルとエージェント","title":"研究previewの境界を守る","why":"生成世界は探索に有用だが物理検証ではない。","steps":["session長、drift、失敗した編集を記録する。","対応実機試験までtransferをUNKNOWNにする。"],"done":"Genie 4 cardがpreview能力と導入成果を分ける。"},
+        {"signal":2,"domain":"Physical AIとロボティクス","title":"Workenの分母を一つ定義する","why":"台数とbenchmarkは受入済み無人作業を測らない。","steps":["顧客タスクを一つ選び受入規則を固定する。","生産時間、失敗、介入、uptime、総費用を記録する。"],"done":"提案指標に監査可能なタスク分母がある。"},
+        {"signal":3,"domain":"暗号資本フロー","title":"同期した広がりを待つ","why":"BTC流入はETH流出とstablecoin縮小に反する。","steps":["BTCとETH ETFの完了日を3日集める。","合計flowと7日stablecoin供給を比べる。"],"done":"両方が拡大した場合だけ格上げする。取引しない。"},
+        {"signal":4,"domain":"Stablecoinと決済レール","title":"標準access後の利用を測る","why":"標準network入口は設定摩擦を下げても採用を証明しない。","steps":["開始後のactive addressと取引品質を追う。","retention、流動性、顧客価値はUNKNOWNにする。"],"done":"Stellar cardがaccessと継続利用を分ける。"},
+        {"signal":5,"domain":"コンテンツと配信","title":"reality receiptを公開する","why":"simulation成功には意思決定前の実機試験が要る。","steps":["記事を読み限定タスクを一つ選ぶ。","受入を固定し最も近い実試験と全介入を残す。"],"done":"4言語とLinkedIn派生稿を公開検証できる。"},
+        {"signal":6,"domain":"AIインフラと資本","title":"契約済みGPU融資を監査する","why":"take-or-payは計画より強いが金利、leverage、運用経済がない。","steps":["融資対象server、出荷、稼働、顧客受入を記録する。","開示後に金利、LTV、利用率、総運用費を加える。"],"done":"融資cardは資金調達を黒字運用へ変換しない。"},
+        {"signal":7,"domain":"後期未公開市場","title":"経済が出るまでvaluationをHOLD","why":"大型roundと出荷目標はunit economicsや顧客集中を示さない。","steps":["売上、粗利、burn、優先権、集中度を集める。","注文、出荷、設置、受入cardを分ける。"],"done":"導入と総費用を精査できた場合だけWATCHを変える。"},
+        {"signal":8,"domain":"公開株式","title":"AWS成長と資本returnを組み合わせる","why":"売上と営業利益が伸びてもfree cash flowは重投資を吸収する。","steps":["AWS成長と営業利益率を追う。","capex、増分free cash flow、受入容量を組み合わせる。"],"done":"資本return bridgeが揃うまでWATCH、取引しない。"}
+      ]
+    }
+  }
+}
