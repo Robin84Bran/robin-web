@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-25T10:42:21.116643+00:00",
+  "generated_at": "2026-10-30T01:33:23.922693+00:00",
   "money_mode": "SIMULATED",
   "forecasts": [
     {
@@ -214,6 +214,114 @@
         0.3307770955234576,
         0.27450582592096956,
         0.19135816103003492
+      ],
+      "target_return": 0.1,
+      "score": null
+    },
+    {
+      "case_id": "HKEX-PENDING-09917-c07895d4",
+      "stock_code": "09917",
+      "issuer_name": "DENGLIN TECH-P",
+      "listing_date": "2026-11-10",
+      "mode": "FORWARD",
+      "frozen_at": "2026-10-30T01:32:16.613120+00:00",
+      "model_version": "six_lens_prior_v0.1",
+      "commitment": "2f40b46d0be0b24ecb798aaf4c1e1c69eca5f516249bab4a03a81a6e6df67193",
+      "probabilities": [
+        0.25,
+        0.35,
+        0.25,
+        0.15
+      ],
+      "target_return": 0.1,
+      "score": null
+    },
+    {
+      "case_id": "HKEX-PENDING-09621-8ebbbb35",
+      "stock_code": "09621",
+      "issuer_name": "RELYEZ ENERGY",
+      "listing_date": "2026-11-09",
+      "mode": "FORWARD",
+      "frozen_at": "2026-10-30T01:32:16.838024+00:00",
+      "model_version": "six_lens_prior_v0.1",
+      "commitment": "e0908ce6e15bab05fb31dc223e779d72e931206950872438f2504518b34b4d1f",
+      "probabilities": [
+        0.23397006734791448,
+        0.3443523569080199,
+        0.25857691413311573,
+        0.16310066161094977
+      ],
+      "target_return": 0.1,
+      "score": null
+    },
+    {
+      "case_id": "HKEX-PENDING-00054-8b49c42e",
+      "stock_code": "00054",
+      "issuer_name": "HEMAY PHARMA-B",
+      "listing_date": "2026-11-09",
+      "mode": "FORWARD",
+      "frozen_at": "2026-10-30T01:32:17.061920+00:00",
+      "model_version": "six_lens_prior_v0.1",
+      "commitment": "8ba30b812bab8a46481587eca7a264353463a997bcb44eb7572b9a803e43c454",
+      "probabilities": [
+        0.2664546825551511,
+        0.35484334807943957,
+        0.24109816698679418,
+        0.13760380237861514
+      ],
+      "target_return": 0.1,
+      "score": null
+    },
+    {
+      "case_id": "HKEX-PENDING-07672-88a7a284",
+      "stock_code": "07672",
+      "issuer_name": "XINDE SEMI",
+      "listing_date": "2026-11-10",
+      "mode": "FORWARD",
+      "frozen_at": "2026-10-30T01:32:17.293029+00:00",
+      "model_version": "six_lens_prior_v0.1",
+      "commitment": "a95141a2c2cb386ccf1d5593430bd4c1485f1921f1e99f0cf03562201b07ee16",
+      "probabilities": [
+        0.25,
+        0.35,
+        0.25,
+        0.15
+      ],
+      "target_return": 0.1,
+      "score": null
+    },
+    {
+      "case_id": "HKEX-PENDING-02206-36a67e1d",
+      "stock_code": "02206",
+      "issuer_name": "NEAUTUS",
+      "listing_date": "2026-11-11",
+      "mode": "FORWARD",
+      "frozen_at": "2026-10-30T01:32:17.526969+00:00",
+      "model_version": "six_lens_prior_v0.1",
+      "commitment": "a3c31fb872ed7fc8c972a3b0367ef1b3e36f4014d4b20c524ac56c9e770b79df",
+      "probabilities": [
+        0.2184094089817301,
+        0.3379316178569775,
+        0.2667658545384177,
+        0.17689311862287466
+      ],
+      "target_return": 0.1,
+      "score": null
+    },
+    {
+      "case_id": "HKEX-PENDING-02681-c82a302c",
+      "stock_code": "02681",
+      "issuer_name": "HOSIN ELEC",
+      "listing_date": "2026-11-12",
+      "mode": "FORWARD",
+      "frozen_at": "2026-10-30T01:32:17.760296+00:00",
+      "model_version": "six_lens_prior_v0.1",
+      "commitment": "8a9b19c90f066386809799b849298bad00bb9946f095ce224b821c47e8842f71",
+      "probabilities": [
+        0.23397006734791448,
+        0.3443523569080199,
+        0.25857691413311573,
+        0.16310066161094977
       ],
       "target_return": 0.1,
       "score": null
