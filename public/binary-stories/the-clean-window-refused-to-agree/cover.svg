@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">The clean window refused to agree</title>
+  <desc id="desc">Five complete session cells feed three separate gauges. Bitcoin is positive, Ether and dollar stablecoins are negative, so the completeness gate passes while the breadth gate remains split.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#081126"/>
+      <stop offset="1" stop-color="#101b36"/>
+    </linearGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1300" cy="160" r="230" fill="#61D4D7" opacity="0.07" filter="url(#soft)"/>
+  <circle cx="1260" cy="760" r="250" fill="#D8B86B" opacity="0.06" filter="url(#soft)"/>
+
+  <text x="92" y="92" fill="#61D4D7" font-family="Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="5">BINARY / INVEST</text>
+  <text x="92" y="182" fill="#F4F1E9" font-family="Georgia, serif" font-size="68" font-weight="700">The clean window</text>
+  <text x="92" y="260" fill="#F4F1E9" font-family="Georgia, serif" font-size="68" font-weight="700">refused to agree.</text>
+  <text x="96" y="316" fill="#B8C3D9" font-family="Arial, sans-serif" font-size="28">Every required cell was present. The directions still split.</text>
+
+  <g transform="translate(95 395)">
+    <text x="0" y="-24" fill="#8694AE" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="3">FIVE COMPLETE SESSIONS</text>
+    <g fill="#152542" stroke="#61D4D7" stroke-width="2">
+      <rect x="0" y="0" width="105" height="64" rx="10"/>
+      <rect x="121" y="0" width="105" height="64" rx="10"/>
+      <rect x="242" y="0" width="105" height="64" rx="10"/>
+      <rect x="363" y="0" width="105" height="64" rx="10"/>
+      <rect x="484" y="0" width="105" height="64" rx="10"/>
+    </g>
+    <g fill="#DDE5F0" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle">
+      <text x="52" y="40">23 OCT</text><text x="173" y="40">26 OCT</text><text x="294" y="40">27 OCT</text><text x="415" y="40">28 OCT</text><text x="536" y="40">29 OCT</text>
+    </g>
+    <path d="M 612 32 H 702" stroke="#61D4D7" stroke-width="3"/>
+    <path d="M 690 20 L 706 32 L 690 44" fill="none" stroke="#61D4D7" stroke-width="3"/>
+    <rect x="730" y="-14" width="250" height="92" rx="14" fill="#152542" stroke="#61D4D7" stroke-width="2"/>
+    <text x="855" y="18" fill="#61D4D7" font-family="Arial, sans-serif" font-size="17" font-weight="700" text-anchor="middle" letter-spacing="2">COMPLETENESS</text>
+    <text x="855" y="55" fill="#F4F1E9" font-family="Georgia, serif" font-size="30" font-weight="700" text-anchor="middle">PASS</text>
+  </g>
+
+  <g transform="translate(96 590)">
+    <g>
+      <rect x="0" y="0" width="340" height="120" rx="16" fill="#12213D" stroke="#61D4D7" stroke-width="2"/>
+      <text x="28" y="38" fill="#9BACCA" font-family="Arial, sans-serif" font-size="18" font-weight="700">BITCOIN PRODUCTS</text>
+      <text x="28" y="88" fill="#61D4D7" font-family="Georgia, serif" font-size="42" font-weight="700">+$302.9m</text>
+    </g>
+    <g transform="translate(366 0)">
+      <rect x="0" y="0" width="340" height="120" rx="16" fill="#12213D" stroke="#D8B86B" stroke-width="2"/>
+      <text x="28" y="38" fill="#9BACCA" font-family="Arial, sans-serif" font-size="18" font-weight="700">ETHER PRODUCTS</text>
+      <text x="28" y="88" fill="#F0CC77" font-family="Georgia, serif" font-size="42" font-weight="700">−$271.3m</text>
+    </g>
+    <g transform="translate(732 0)">
+      <rect x="0" y="0" width="340" height="120" rx="16" fill="#12213D" stroke="#D8B86B" stroke-width="2"/>
+      <text x="28" y="38" fill="#9BACCA" font-family="Arial, sans-serif" font-size="18" font-weight="700">USD STABLECOINS</text>
+      <text x="28" y="88" fill="#F0CC77" font-family="Georgia, serif" font-size="42" font-weight="700">−$3.125bn</text>
+    </g>
+    <path d="M 1098 60 H 1188" stroke="#D8B86B" stroke-width="3"/>
+    <path d="M 1176 48 L 1192 60 L 1176 72" fill="none" stroke="#D8B86B" stroke-width="3"/>
+    <rect x="1216" y="0" width="270" height="120" rx="16" fill="#261F2B" stroke="#D8B86B" stroke-width="2"/>
+    <text x="1351" y="39" fill="#D8B86B" font-family="Arial, sans-serif" font-size="17" font-weight="700" text-anchor="middle" letter-spacing="2">BREADTH</text>
+    <text x="1351" y="83" fill="#F4F1E9" font-family="Georgia, serif" font-size="34" font-weight="700" text-anchor="middle">SPLIT</text>
+  </g>
+
+  <line x1="96" y1="792" x2="1504" y2="792" stroke="#2B3853"/>
+  <text x="96" y="837" fill="#9BACCA" font-family="Arial, sans-serif" font-size="20">23–29 October 2026 · Dated provider estimates · No trade or price forecast</text>
+  <text x="1504" y="837" fill="#F4F1E9" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="end">IAmRobin.ai</text>
+</svg>

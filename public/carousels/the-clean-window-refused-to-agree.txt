@@ -1,0 +1,18 @@
+The missing cells disappeared. The disagreement did not.
+
+Across the five latest complete U.S. sessions through October 29:
+
+Bitcoin product flow: +$302.9m
+Ether product flow: -$271.3m
+Compatible listed-product net: +$31.6m
+USD-stablecoin circulation: -$3.125bn from October 23 to 29
+
+The net was positive because two large component paths nearly cancelled. It retained only 10.4% of the Bitcoin inflow after the Ether outflow was subtracted.
+
+Completeness and confirmation are separate gates. The data can be ready while the system remains split.
+
+Full story and sources: https://iamrobin.ai/binary/stories/the-clean-window-refused-to-agree/
+
+Dated provider estimates. No transfer between rails, investor motive, trade or price path is established.
+
+#BitcoinETF #EthereumETF #Stablecoins #MarketStructure #DataQuality
