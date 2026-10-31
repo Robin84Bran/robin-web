@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-30T09:33:44.287560+00:00",
+  "generated_at": "2026-10-31T01:48:22.361637+00:00",
   "money_mode": "SIMULATED",
   "forecasts": [
     {
@@ -327,6 +327,24 @@
         0.3443523569080199,
         0.25857691413311573,
         0.16310066161094977
+      ],
+      "target_return": 0.1,
+      "score": null
+    },
+    {
+      "case_id": "HKEX-PENDING-02065-57e5cb12",
+      "stock_code": "02065",
+      "issuer_name": "Amicro Technology Co., Ltd.",
+      "listing_date": "2026-11-12",
+      "mode": "FORWARD",
+      "frozen_at": "2026-10-31T01:47:33.899920+00:00",
+      "model_version": "six_lens_prior_v0.1",
+      "commitment": "1b42cf0610267fd4be1044b55c3c5aea303a1bc37c7c7312d2021ae6486ee970",
+      "probabilities": [
+        0.2664546825551511,
+        0.35484334807943957,
+        0.24109816698679418,
+        0.13760380237861514
       ],
       "target_return": 0.1,
       "score": null

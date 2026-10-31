@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T01:33:43.573851+00:00",
+  "generated_at": "2026-10-31T01:48:22.399402+00:00",
   "version": "binary-exec-v1.0",
   "forecasts": [
     {
@@ -257,6 +257,22 @@
       "prospectus_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1030/2026103000025.pdf",
       "participation": "SUBSCRIBE",
       "commitment": "3a8cfc1bd2eae223720e4085127e2ad5b5ea413e7675140543ebb4fd5604f984"
+    },
+    {
+      "stock_code": "02065",
+      "issuer_name": "Amicro Technology Co., Ltd.",
+      "listing_date": "2026-11-12",
+      "prediction": "YES",
+      "version": "binary-exec-v1.0",
+      "frozen_at": "2026-10-31T01:47:34.106572+00:00",
+      "target_at_offer_high": 12.74,
+      "target_at_offer_low": 10.2,
+      "offer_high": 11.58,
+      "offer_low": 9.27,
+      "target_formula": "ceil_to_listing_day_tick(1.10 * FINAL_ISSUE_PRICE)",
+      "prospectus_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1030/2026103002447.pdf",
+      "participation": "SUBSCRIBE",
+      "commitment": "1f3a852f78419f32ad042646feb978e3827b36317a069763f53bf80be9b3d8df"
     }
   ],
   "scope": "Independent five-session layer; original three-session experiment preserved",
@@ -279,11 +295,11 @@
     "unseen": false
   },
   "forward": {
-    "forecasts": 16,
+    "forecasts": 17,
     "reviewed_paths": 8,
     "yes_d5": 3,
     "no_d5": 4,
-    "pending_d5": 9,
+    "pending_d5": 10,
     "source_note": "Single-vendor completed daily bars; official final issue prices and independent opening-price checks. Market counterfactuals, not personal fills."
   }
 }
