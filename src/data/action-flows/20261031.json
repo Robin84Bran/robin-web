@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-31",
+  "updated": "2026-10-31",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20261031/hero.webp",
+  "actionHero": "/action-item/20261031/hero.webp",
+  "ogImage": "/daily-briefing/20261031/og.webp",
+  "briefingPath": "/ouroboros/202610/20261031/",
+  "actionItemPath": "/ouroboros/202610/20261031/action_item/",
+  "actions": [
+    {"signal":1,"priority":"NEXT","status":"READY","visualValue":"2×","visualLabel":"selected Work and Codex allowance groups","sources":[{"label":"OpenAI","url":"https://help.openai.com/en/articles/6825453-chatgpt-release-notes"}]},
+    {"signal":2,"priority":"WATCH","status":"WATCHING","visualValue":"99%","visualLabel":"company-defined autonomy readiness","sources":[{"label":"Kodiak AI","url":"https://kodiakrobotics.gcs-web.com/"},{"label":"SEC filing","url":"https://www.sec.gov/Archives/edgar/data/1853138/000162828026032862/kdk-20260331.htm"}]},
+    {"signal":3,"priority":"WATCH","status":"WATCHING","visualValue":"+$440.8M","visualLabel":"four-session BTC ETF net flow","sources":[{"label":"Farside BTC","url":"https://farside.co.uk/btc/"},{"label":"Farside ETH","url":"https://farside.co.uk/eth/"}]},
+    {"signal":4,"priority":"NEXT","status":"READY","visualValue":"402","visualLabel":"payment completed, acceptance separate","sources":[{"label":"x402","url":"https://github.com/x402-foundation/x402"},{"label":"CoinDesk commentary","url":"https://www.coindesk.com/coindesk-indices/2026/10/28/crypto-long-and-short-what-happens-when-an-ai-agent-pays-for-the-wrong-thing"}]},
+    {"signal":5,"deepDiveAvailable":true,"priority":"NOW","status":"READY","visualValue":"API","visualLabel":"inspectable robot protocol","sources":[{"label":"Opentrons","url":"https://opentrons.com/archives/news/opentrons-announces-40m-series-e-round-to-standardize-ai-driven-science-on-its-robots"},{"label":"Protocol API","url":"https://docs.opentrons.com/v2/"},{"label":"Action Item","url":"https://iamrobin.ai/ouroboros/202610/20261031/action_item/"}]},
+    {"signal":6,"priority":"WATCH","status":"WATCHING","visualValue":"TALKS","visualLabel":"reported credit support remains unsigned","sources":[{"label":"Reuters syndication","url":"https://new.streetinsider.com/Reuters/Nvidia%2Bin%2Btalks%2Bto%2Bgive%2Bcredit%2Bsupport%2Bfor%2BNscale's%2Bdeal%2Bwith%2BAnthropic,%2BThe%2BInformation%2Breports/27259701.html"},{"label":"Nscale","url":"https://www.nscale.com/press-releases/pre-ipo-convertible-financing"}]},
+    {"signal":7,"priority":"WATCH","status":"WATCHING","visualValue":"$40M","visualLabel":"Series E with economics undisclosed","sources":[{"label":"Opentrons","url":"https://opentrons.com/archives/news/opentrons-announces-40m-series-e-round-to-standardize-ai-driven-science-on-its-robots"}]},
+    {"signal":8,"priority":"WATCH","status":"WATCHING","visualValue":"$63.7B","visualLabel":"company-wide total backlog","sources":[{"label":"Quanta IR","url":"https://investors.quantaservices.com/news-events/press-releases/detail/407/quanta-services-reports-third-quarter-2026-results"}]}
+  ],
+  "editions": {
+    "en": {
+      "title":"Daily Action Flow, October 31, 2026","description":"Eight bounded actions separate available capacity from accepted work, internal readiness from launch, settlement from delivery and infrastructure exposure from attributable returns.","centralJudgment":"Every capability claim needs the next receipt from the person, machine or balance sheet that accepts the result.","fieldLine":"Eight signals. Signal 5 opens today's essay.","inLanguage":"en","languageSlug":"","translationReview":"PASS",
+      "actions":[
+        {"signal":1,"domain":"Frontier Models and Agents","title":"Measure accepted work after the allowance change","why":"More capacity can increase useful trials and retries alike.","steps":["Freeze representative tasks and authority rules.","Record accepted outcomes, retries, human minutes and usage."],"done":"The comparison uses one denominator and makes no productivity claim before results."},
+        {"signal":2,"domain":"Physical AI and Robotics","title":"Keep readiness separate from launch","why":"Kodiak's 99 percent score is internally defined while the I-45 service remains planned.","steps":["Record the launch date and customer-accepted loads.","Add interventions, incidents and full per-mile economics."],"done":"WATCH changes only on external operating evidence."},
+        {"signal":3,"domain":"Crypto Capital Flows","title":"Preserve the complete common window","why":"BTC inflow and ETH outflow still diverge.","steps":["Exclude incomplete October 30 rows.","Wait for synchronized ETF flows and stablecoin expansion."],"done":"HOLD remains; no trade."},
+        {"signal":4,"domain":"Stablecoins and Payment Rails","title":"Specify the acceptance receipt","why":"Settlement proves money moved, not that the result was useful.","steps":["Define delivery hash, acceptance rule and dispute state.","Run only a zero-money specification."],"done":"No live payment or capital movement occurs."},
+        {"signal":5,"domain":"Content and Distribution","title":"Publish the shared-language essay","why":"A protocol makes the AI-to-robot handoff inspectable.","steps":["Read the four reviewed editions.","Keep scientific design, physical execution and reproduction as separate evidence questions."],"done":"Four public editions and the archived LinkedIn derivative are verifiable."},
+        {"signal":6,"domain":"AI Infrastructure and Capital","title":"Map the unsigned guarantee","why":"Reported credit support may transfer construction, demand or default risk.","steps":["Record guarantee, recourse, power and construction parties.","Leave every unsigned term UNKNOWN."],"done":"Talks remain talks until signed documents appear."},
+        {"signal":7,"domain":"Late-Stage Private Markets","title":"Separate installations from productive experiments","why":"A round and installed base do not disclose utilization or economics.","steps":["Collect valuation, revenue, margin and active utilization.","Track protocol reuse, failures, service cost and renewals."],"done":"Keep WATCH and assume no investment access."},
+        {"signal":8,"domain":"Public Equities","title":"Require AI attribution in Quanta results","why":"Company-wide backlog cannot establish AI-specific revenue or return.","steps":["Track load-center revenue, margin and backlog conversion.","Pair growth with working capital and free cash flow."],"done":"Keep WATCH and make no trade."}
+      ]
+    },
+    "zh-Hans": {
+      "title":"每日行动流，2026年10月31日","description":"八项有边界行动，把可用容量与验收工作、内部准备度与上线、结算与交付、主题暴露与可归因回报分开。","centralJudgment":"每项能力主张都需要来自接受结果的人、机器或资产负债表的下一张回执。","fieldLine":"八个信号，Signal 5 可阅读全文。","inLanguage":"zh-Hans","languageSlug":"zh-hans","translationReview":"PASS",
+      "actions":[
+        {"signal":1,"domain":"前沿模型与代理","title":"额度变化后衡量验收工作","why":"更多容量可能同时增加有效试验和重试。","steps":["冻结代表任务与权限规则。","记录验收结果、重试、人工分钟和用量。"],"done":"结果出现前不作生产力判断。"},
+        {"signal":2,"domain":"Physical AI 与机器人","title":"把准备度与上线分开","why":"99% 是内部指标，I-45 服务仍在计划。","steps":["记录上线日期与客户验收运输。","加入介入、事故和每英里完整经济。"],"done":"只用外部运营证据改变 WATCH。"},
+        {"signal":3,"domain":"加密资本流","title":"保留完整共同窗口","why":"BTC 流入与 ETH 流出仍分化。","steps":["排除不完整的 10 月 30 日行。","等待 ETF 同步流入与稳定币扩张。"],"done":"保持 HOLD；不交易。"},
+        {"signal":4,"domain":"稳定币与支付轨道","title":"定义验收回执","why":"结算证明资金移动，不证明结果有用。","steps":["定义交付哈希、验收规则和争议状态。","只运行零资金规范。"],"done":"不发生真实付款或资本移动。"},
+        {"signal":5,"domain":"内容与分发","title":"发布共同语言文章","why":"协议让 AI 到机器人的交接可检查。","steps":["阅读四种已审版本。","把科学设计、实体执行和复现作为三种证据。"],"done":"四种公开版本与存档 LinkedIn 衍生稿可核验。"},
+        {"signal":6,"domain":"AI 基础设施与资本","title":"绘制未签担保图","why":"信用支持可能转移建设、需求或违约风险。","steps":["记录担保、追索、电力与建设方。","未签字段保持 UNKNOWN。"],"done":"签署文件出现前保持谈判状态。"},
+        {"signal":7,"domain":"晚期私募","title":"分开装机与有效实验","why":"融资和装机量不披露利用率与经济。","steps":["收集估值、收入、毛利与活跃利用。","跟踪协议复用、失败、服务成本和续约。"],"done":"保持 WATCH，不假设投资渠道。"},
+        {"signal":8,"domain":"公开股票","title":"要求 Quanta 的 AI 归因","why":"公司整体积压订单不能证明 AI 收入或回报。","steps":["跟踪负载中心收入、利润与积压转化。","把增长与营运资本、自由现金流配对。"],"done":"保持 WATCH；不交易。"}
+      ]
+    },
+    "zh-Hant": {
+      "title":"每日行動流，2026年10月31日","description":"八項有邊界行動，把可用容量與驗收工作、內部準備度與上線、結算與交付、主題暴露與可歸因回報分開。","centralJudgment":"每項能力主張都需要來自接受結果的人、機器或資產負債表的下一張回執。","fieldLine":"八個信號，Signal 5 可閱讀全文。","inLanguage":"zh-Hant","languageSlug":"zh-hant","translationReview":"PASS",
+      "actions":[
+        {"signal":1,"domain":"前沿模型與代理","title":"額度變化後衡量驗收工作","why":"更多容量可能同時增加有效試驗和重試。","steps":["凍結代表任務與權限規則。","記錄驗收結果、重試、人工分鐘和用量。"],"done":"結果出現前不作生產力判斷。"},
+        {"signal":2,"domain":"Physical AI 與機械人","title":"把準備度與上線分開","why":"99% 是內部指標，I-45 服務仍在計劃。","steps":["記錄上線日期與客戶驗收運輸。","加入介入、事故和每英里完整經濟。"],"done":"只用外部營運證據改變 WATCH。"},
+        {"signal":3,"domain":"加密資本流","title":"保留完整共同窗口","why":"BTC 流入與 ETH 流出仍分化。","steps":["排除不完整的 10 月 30 日行。","等待 ETF 同步流入與穩定幣擴張。"],"done":"維持 HOLD；不交易。"},
+        {"signal":4,"domain":"穩定幣與支付軌道","title":"定義驗收回執","why":"結算證明資金移動，不證明結果有用。","steps":["定義交付雜湊、驗收規則和爭議狀態。","只運行零資金規範。"],"done":"不發生真實付款或資本移動。"},
+        {"signal":5,"domain":"內容與分發","title":"發布共同語言文章","why":"協議讓 AI 到機械人的交接可檢查。","steps":["閱讀四種已審版本。","把科學設計、實體執行和復現作為三種證據。"],"done":"四種公開版本與存檔 LinkedIn 衍生稿可核驗。"},
+        {"signal":6,"domain":"AI 基礎設施與資本","title":"繪製未簽擔保圖","why":"信用支持可能轉移建設、需求或違約風險。","steps":["記錄擔保、追索、電力與建設方。","未簽欄位維持 UNKNOWN。"],"done":"簽署文件出現前維持談判狀態。"},
+        {"signal":7,"domain":"晚期私募","title":"分開裝機與有效實驗","why":"融資和裝機量不披露利用率與經濟。","steps":["收集估值、收入、毛利與活躍利用。","跟蹤協議復用、失敗、服務成本和續約。"],"done":"維持 WATCH，不假設投資渠道。"},
+        {"signal":8,"domain":"公開股票","title":"要求 Quanta 的 AI 歸因","why":"公司整體積壓訂單不能證明 AI 收入或回報。","steps":["跟蹤負載中心收入、利潤與積壓轉化。","把增長與營運資本、自由現金流配對。"],"done":"維持 WATCH；不交易。"}
+      ]
+    },
+    "ja": {
+      "title":"デイリー・アクション・フロー、2026年10月31日","description":"8つの限定行動で、利用枠と受入済み作業、社内準備度と稼働開始、決済と納品、テーマ関連性と帰属可能な収益を分ける。","centralJudgment":"能力の主張には、結果を受け入れる人、機械、または貸借対照表から次の受領証が要る。","fieldLine":"8つのシグナル。Signal 5から本日の記事を読める。","inLanguage":"ja","languageSlug":"ja","translationReview":"PASS",
+      "actions":[
+        {"signal":1,"domain":"フロンティアモデルとエージェント","title":"利用枠変更後の受入成果を測る","why":"容量拡大は有効な試験と再試行をともに増やし得る。","steps":["代表タスクと権限ルールを固定する。","受入成果、再試行、人手時間、利用量を記録する。"],"done":"結果前に生産性向上を主張しない。"},
+        {"signal":2,"domain":"Physical AIとロボティクス","title":"準備度と稼働開始を分ける","why":"99%は社内指標でI-45サービスは計画段階だ。","steps":["開始日と顧客受入済み輸送を記録する。","介入、事故、1マイル当たり総採算を加える。"],"done":"外部運用証拠でのみWATCHを変える。"},
+        {"signal":3,"domain":"暗号資本フロー","title":"完了済み共通期間を保つ","why":"BTC流入とETH流出は分かれたままだ。","steps":["未完了の10月30日行を除外する。","ETF同期流入とstablecoin拡大を待つ。"],"done":"HOLDを維持し取引しない。"},
+        {"signal":4,"domain":"Stablecoinと決済レール","title":"受入受領証を定義する","why":"決済は資金移動を示すが結果の有用性は示さない。","steps":["納品hash、受入規則、紛争状態を定義する。","資金ゼロの仕様だけを作る。"],"done":"実支払いや資本移動を行わない。"},
+        {"signal":5,"domain":"コンテンツと配信","title":"共通言語の記事を公開する","why":"protocolはAIからロボットへの引継ぎを検証可能にする。","steps":["4つのレビュー済み版を読む。","設計、実行、再現を別の証拠問題として扱う。"],"done":"4言語版と保存済みLinkedIn派生稿を検証できる。"},
+        {"signal":6,"domain":"AIインフラと資本","title":"未署名保証を図にする","why":"信用補完は建設、需要、債務不履行リスクを移し得る。","steps":["保証、遡及請求、電力、建設主体を記録する。","未署名項目をUNKNOWNに保つ。"],"done":"署名文書まで協議として扱う。"},
+        {"signal":7,"domain":"後期未公開市場","title":"設置と有効実験を分ける","why":"資金調達と設置台数は利用率や採算を示さない。","steps":["評価額、売上、粗利、稼働利用を集める。","protocol再利用、失敗、保守費、更新を追う。"],"done":"WATCHを維持し投資経路を想定しない。"},
+        {"signal":8,"domain":"公開株式","title":"QuantaのAI帰属を求める","why":"全社受注残はAI固有の売上や収益を示せない。","steps":["負荷集中拠点の売上、利益、受注転換を追う。","成長を運転資本とfree cash flowに対応させる。"],"done":"WATCHを維持し取引しない。"}
+      ]
+    }
+  }
+}
