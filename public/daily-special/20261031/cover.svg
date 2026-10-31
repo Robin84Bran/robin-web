@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Bitcoin inflows tell one part of crypto’s story</title>
+  <desc id="desc">Three quiet market channels show positive Bitcoin ETF flows beside negative Ether ETF flows and contracting stablecoin circulation.</desc>
+  <rect width="1600" height="900" fill="#f4f0e8"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#202a28">
+    <text x="112" y="104" font-size="22" letter-spacing="5">DAILY SPECIAL · 31 OCTOBER 2026</text>
+    <text x="112" y="208" font-size="66" font-weight="600">One channel turned positive.</text>
+    <text x="112" y="288" font-size="66" font-weight="600">Two pointed the other way.</text>
+    <text x="112" y="350" font-size="25" fill="#657068">Five complete ETF sessions · aligned stablecoin endpoints</text>
+
+    <g transform="translate(112 454)">
+      <rect x="0" y="0" width="420" height="226" rx="24" fill="#e7ebe4"/>
+      <text x="34" y="46" font-size="18" letter-spacing="3" fill="#657068">BITCOIN PRODUCTS</text>
+      <text x="34" y="124" font-size="50" font-weight="600" fill="#345d70">+$302.9M</text>
+      <path d="M34 176h310" stroke="#c8cec6" stroke-width="8" stroke-linecap="round"/>
+      <path d="M252 176h92m0 0-28-22m28 22-28 22" stroke="#345d70" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <rect x="476" y="0" width="420" height="226" rx="24" fill="#eee7df"/>
+      <text x="510" y="46" font-size="18" letter-spacing="3" fill="#657068">ETHER PRODUCTS</text>
+      <text x="510" y="124" font-size="50" font-weight="600" fill="#9a594f">−$271.3M</text>
+      <path d="M544 176h310" stroke="#c8cec6" stroke-width="8" stroke-linecap="round"/>
+      <path d="M544 176h92m-92 0 28-22m-28 22 28 22" stroke="#9a594f" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <rect x="952" y="0" width="420" height="226" rx="24" fill="#eee7df"/>
+      <text x="986" y="46" font-size="18" letter-spacing="3" fill="#657068">USD STABLECOINS</text>
+      <text x="986" y="124" font-size="50" font-weight="600" fill="#9a594f">−1.03%</text>
+      <path d="M1020 176h310" stroke="#c8cec6" stroke-width="8" stroke-linecap="round"/>
+      <path d="M1020 176h92m-92 0 28-22m-28 22 28 22" stroke="#9a594f" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <line x1="112" y1="792" x2="1488" y2="792" stroke="#c8cec6" stroke-width="3"/>
+    <text x="112" y="842" font-size="21" fill="#657068">Public-source research · complete through 29 October</text>
+  </g>
+</svg>
