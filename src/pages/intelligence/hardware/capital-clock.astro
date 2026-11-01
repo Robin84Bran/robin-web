@@ -1,0 +1,381 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import IntelligencePageLead from '../../../components/intelligence/IntelligencePageLead.astro';
+
+const path = '/intelligence/hardware/capital-clock/';
+const title = 'The Clock Inside the Capital Stack';
+const description = 'October 2026 AI infrastructure field note: five dates that determine whether financed compute becomes billable capacity before the debt comes due.';
+const published = '2026-11-01';
+
+const capitalClock = [
+  { label: 'Funded', note: 'When is capital committed, available, and actually drawn?' },
+  { label: 'Delivered', note: 'When is equipment shipped, tested, and accepted?' },
+  { label: 'Powered', note: 'When can the rack receive reliable electricity?' },
+  { label: 'Billing', note: 'When does contracted demand become customer cash?' },
+  { label: 'Matured', note: 'When must principal be refinanced or repaid?' },
+] as const;
+
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    '@id': `https://iamrobin.ai${path}#article`,
+    headline: title,
+    description,
+    url: `https://iamrobin.ai${path}`,
+    datePublished: published,
+    dateModified: published,
+    inLanguage: 'en',
+    author: { '@id': 'https://www.tideisun.com/robin#robin-xie' },
+    isPartOf: { '@id': 'https://iamrobin.ai/intelligence/#page' },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Intelligence', item: 'https://iamrobin.ai/intelligence/' },
+      { '@type': 'ListItem', position: 2, name: 'AI Hardware', item: 'https://iamrobin.ai/intelligence/hardware/' },
+      { '@type': 'ListItem', position: 3, name: title, item: `https://iamrobin.ai${path}` },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title={`${title} — Intelligence — Robin Xie`}
+  {description}
+  {path}
+  type="article"
+  {schema}
+>
+  <IntelligencePageLead
+    lens="Flow / October 2026"
+    title="Capital clocks."
+    line="A contract can survive while its cash flow arrives too late."
+  />
+
+  <article class="field-note shell">
+    <header class="field-note__header">
+      <p class="field-note__date"><time datetime={published}>November 1, 2026</time> · 9 minute field note</p>
+      <h2>The dates behind financed compute</h2>
+      <p class="field-note__lede">
+        October's strongest AI-infrastructure signal was not simply that more debt appeared. It was that equipment, power, customer billing, and repayment now run on different clocks—and contracts do not synchronize them automatically.
+      </p>
+    </header>
+
+    <ol class="capital-clock" aria-label="Five dates in the AI infrastructure capital clock">
+      {capitalClock.map((step, index) => (
+        <li>
+          <span>{String(index + 1).padStart(2, '0')}</span>
+          <strong>{step.label}</strong>
+          <small>{step.note}</small>
+        </li>
+      ))}
+    </ol>
+
+    <section>
+      <p class="eyebrow">01 / Power before billing</p>
+      <h2>Contracted capacity can still miss the revenue year.</h2>
+      <p>
+        NEXTDC says delays to third-party electricity-network work pushed the next power increase at its M3 Melbourne data center into FY2028. The company removed approximately <strong>A$140 million</strong> of net revenue and approximately <strong>A$140 million</strong> of underlying EBITDA associated with affected contracts from its FY2027 guidance.
+      </p>
+      <p>
+        The capacity remains contracted, subject to the customer's rights. Service credits, possible termination rights, and the contracts' eventual contribution are still unresolved. The contract did not disappear. Its billing date moved because the power date moved first.
+      </p>
+    </section>
+
+    <section>
+      <p class="eyebrow">02 / The refinancing date</p>
+      <h2>Long contracts can sit behind short money.</h2>
+      <p>
+        Nebius entered a <strong>US$3.5 billion</strong> senior secured facility with Citi. Its maturity is <strong>364 days</strong>; initial pricing is Term SOFR plus 2.75 percentage points and can rise to 3.50 points, subject to other adjustments.
+      </p>
+      <p>
+        Nebius says the proceeds will support data-center development and GPU procurement and points to more than US$40 billion of long-term customer contracts. Those contracts may support later asset-backed financing. They do not turn a 364-day bridge into collected cash. Construction, utilization, receipts, and refinancing still have to fit inside the same calendar.
+      </p>
+    </section>
+
+    <section>
+      <p class="eyebrow">03 / The supplier date</p>
+      <h2>An advance purchases a place in line.</h2>
+      <p>
+        NVIDIA announced a <strong>US$1.1 billion</strong> capacity-reservation advance to KYEC for new U.S. semiconductor-testing facilities and equipment. High-volume production is targeted for April 2027.
+      </p>
+      <p>
+        The payment moves part of the supplier's expansion burden onto the buyer and can make future capacity more credible. It is not qualified output today. Yield, testing, acceptance, and the arrival of usable components remain later gates.
+      </p>
+    </section>
+
+    <section>
+      <p class="eyebrow">04 / The loss waterfall</p>
+      <h2>A special-purpose vehicle tells us where risk was placed.</h2>
+      <p>
+        Bank of America, Blackstone, Citi, and Morgan Stanley announced a <strong>US$63 billion</strong> transaction through a new vehicle that will buy Broadcom XPUs and networking products and lease them to Anthropic. Delivery is expected to begin in 2027.
+      </p>
+      <p>
+        Bank of America, Citi, and Morgan Stanley arrange the first-lien financing. Blackstone provides the committed second-lien portion. Broadcom supplies residual-value support equal to the first-lien amount. The structure separates payment priority from hardware-value support; it does not prove delivery, utilization, lease collections, or the economics of every layer.
+      </p>
+    </section>
+
+    <section>
+      <p class="eyebrow">05 / The carrying cost</p>
+      <h2>Collateral has a price before it has an outcome.</h2>
+      <p>
+        Sharon AI announced a committed <strong>US$356 million</strong> senior secured GPU-backed facility at <strong>9.95%</strong> fixed interest, excluding fees. The company says GPUs and associated cash flows secure the vehicle and reports customer total contract value above US$8.8 billion.
+      </p>
+      <p>
+        A commitment is not proof of full drawdown, and total contract value is not cash available for interest. The disclosed rate makes one clock visible: once capital is drawn, customer receipts and useful hardware life must outrun financing cost.
+      </p>
+    </section>
+
+    <aside class="field-note__rule">
+      <p class="eyebrow">The October rule</p>
+      <blockquote>
+        Do not underwrite the contract and the debt on separate calendars. Put power, equipment, billing, and maturity on one line.
+      </blockquote>
+    </aside>
+
+    <section>
+      <p class="eyebrow">06 / What to watch next</p>
+      <h2>The next evidence is a dated sequence.</h2>
+      <ul class="watch-list">
+        <li>Commitment, draw, interest start, and maturity dates.</li>
+        <li>Equipment shipment, testing, acceptance, and warranty milestones.</li>
+        <li>Grid work, energization, commissioning, and reliable rack power.</li>
+        <li>Customer start, minimum payment, service-credit, and termination dates.</li>
+        <li>Collateral priority, residual-value support, and refinancing conditions.</li>
+      </ul>
+      <p>
+        A financing headline names the amount. A useful underwriting record names the sequence—and the party that pays when one date slips past another.
+      </p>
+    </section>
+
+    <footer class="field-note__sources">
+      <p class="eyebrow">Sources / refreshed November 1, 2026</p>
+      <ul>
+        <li><a href="https://www.marketindex.com.au/asx/nxt/announcements/m3-melbourne-power-delay-revised-fy27-guidance-2A1705181">NEXTDC — M3 Melbourne power delay and revised FY2027 guidance</a></li>
+        <li><a href="https://nebius.com/newsroom/nebius-secures-3-5-billion-financing-facility-with-citi">Nebius — US$3.5 billion Citi facility</a></li>
+        <li><a href="https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout">NVIDIA — supply-chain capacity agreements</a></li>
+        <li><a href="https://www.blackstone.com/news/press/bank-of-america-blackstone-citi-and-morgan-stanley-announce-landmark-63-billion-financing-structure-to-enable-ai-compute/">Blackstone — US$63 billion compute-financing structure</a></li>
+        <li><a href="https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/10/bank-of-america--blackstone--citi-and-morgan-stanley-announce-la">Bank of America — counterparty release for the compute-financing structure</a></li>
+        <li><a href="https://www.prnewswire.com/news-releases/sharon-ai-enters-into-gpu-backed-debt-facility-expanding-funding-flexibility-for-ai-factory-deployments-302895839.html">Sharon AI — committed GPU-backed debt facility</a></li>
+      </ul>
+      <a class="field-note__back" href="/intelligence/hardware/">← Return to AI Hardware</a>
+    </footer>
+  </article>
+</BaseLayout>
+
+<style>
+  .field-note {
+    max-width: 58rem;
+    margin-bottom: clamp(5rem, 10vw, 9rem);
+  }
+
+  .field-note__header,
+  .field-note section,
+  .field-note__rule,
+  .field-note__sources {
+    max-width: 46rem;
+    margin-inline: auto;
+  }
+
+  .field-note__date {
+    margin-bottom: 1rem;
+    color: var(--muted);
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .field-note__header h2,
+  .field-note section h2 {
+    font-family: var(--serif);
+    font-weight: 400;
+    letter-spacing: -0.025em;
+  }
+
+  .field-note__header h2 {
+    max-width: 14ch;
+    font-size: clamp(2rem, 6vw, 4.2rem);
+    line-height: 0.98;
+  }
+
+  .field-note__lede {
+    max-width: 40rem;
+    margin-top: 1.5rem;
+    color: var(--muted);
+    font-family: var(--serif);
+    font-size: clamp(1.1rem, 2.4vw, 1.45rem);
+    line-height: 1.55;
+  }
+
+  .capital-clock {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: clamp(3.5rem, 8vw, 6.5rem) 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .capital-clock li {
+    position: relative;
+    display: grid;
+    gap: 0.45rem;
+    min-height: 10rem;
+    padding: 1rem 0.8rem;
+  }
+
+  .capital-clock li:not(:last-child) {
+    border-right: 1px solid var(--line);
+  }
+
+  .capital-clock li::after {
+    position: absolute;
+    right: -0.36rem;
+    bottom: 1.1rem;
+    z-index: 1;
+    width: 0.65rem;
+    height: 0.65rem;
+    content: '';
+    background: var(--paper);
+    border-top: 1px solid var(--gold);
+    border-right: 1px solid var(--gold);
+    transform: rotate(45deg);
+  }
+
+  .capital-clock li:last-child::after {
+    display: none;
+  }
+
+  .capital-clock span {
+    color: var(--silver);
+    font-size: 0.58rem;
+    letter-spacing: 0.12em;
+  }
+
+  .capital-clock strong {
+    align-self: end;
+    font-family: var(--serif);
+    font-size: 1.05rem;
+    font-weight: 500;
+  }
+
+  .capital-clock small {
+    color: var(--muted);
+    font-size: 0.68rem;
+    line-height: 1.45;
+  }
+
+  .field-note section {
+    margin-top: clamp(4rem, 8vw, 7rem);
+  }
+
+  .field-note section h2 {
+    max-width: 22ch;
+    margin: 0.75rem 0 1.4rem;
+    font-size: clamp(1.75rem, 4vw, 2.8rem);
+    line-height: 1.08;
+  }
+
+  .field-note section > p:not(.eyebrow),
+  .field-note section li {
+    color: var(--muted);
+    font-family: var(--serif);
+    font-size: clamp(1rem, 1.8vw, 1.12rem);
+    line-height: 1.72;
+  }
+
+  .field-note section > p + p {
+    margin-top: 1rem;
+  }
+
+  .field-note strong {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  .field-note__rule {
+    margin-top: clamp(4.5rem, 9vw, 8rem);
+    padding: clamp(1.6rem, 4vw, 2.8rem);
+    background:
+      radial-gradient(circle at 88% 16%, rgba(180, 145, 93, 0.14), transparent 36%),
+      rgba(255, 255, 255, 0.34);
+    border: 1px solid rgba(180, 145, 93, 0.32);
+  }
+
+  .field-note__rule blockquote {
+    max-width: 31ch;
+    margin: 1rem 0 0;
+    font-family: var(--serif);
+    font-size: clamp(1.45rem, 3.8vw, 2.4rem);
+    line-height: 1.18;
+  }
+
+  .watch-list {
+    display: grid;
+    gap: 0.55rem;
+    margin: 1.5rem 0 0;
+    padding-left: 1.25rem;
+  }
+
+  .field-note__sources {
+    margin-top: clamp(4.5rem, 9vw, 8rem);
+    padding-top: 2rem;
+    border-top: 1px solid var(--line);
+  }
+
+  .field-note__sources ul {
+    display: grid;
+    gap: 0.55rem;
+    margin: 1.2rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .field-note__sources li,
+  .field-note__sources a {
+    color: var(--muted);
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+
+  .field-note__sources a {
+    text-decoration-color: rgba(180, 145, 93, 0.55);
+    text-underline-offset: 0.2em;
+  }
+
+  .field-note__back {
+    display: inline-block;
+    margin-top: 2.2rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 48rem) {
+    .capital-clock {
+      grid-template-columns: 1fr;
+    }
+
+    .capital-clock li {
+      grid-template-columns: 2rem 6rem 1fr;
+      align-items: center;
+      min-height: 0;
+      padding: 1rem 0;
+    }
+
+    .capital-clock li:not(:last-child) {
+      border-right: 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .capital-clock li::after {
+      display: none;
+    }
+
+    .capital-clock strong {
+      align-self: center;
+    }
+  }
+</style>
