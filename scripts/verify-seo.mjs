@@ -20,6 +20,7 @@ const indexableRoutes = new Set([
   '/ja/', '/ja/about/', '/ja/network/',
   '/portfolio/', '/books/', '/meaning/', '/ouroboros/', '/ouroboros/execution-ledger/', '/binary/', '/asymmetry/hkipoblindbox/',
   '/intelligence/', '/intelligence/hardware/', '/intelligence/supply-chain/',
+  '/intelligence/hardware/capital-clock/',
   '/intelligence/hardware/bankable-megawatts/',
   '/intelligence/hardware/deliverable-megawatts/',
   '/intelligence/attention_all_you_need/', '/intelligence/aidc101/', '/intelligence/aidc101/101-1/',
@@ -124,7 +125,7 @@ if (existsSync(dist)) {
   const binaryStoryRoutes = [...routes.keys()].filter(route=>/^\/binary\/stories\/[a-z0-9-]+\/(?:zh-hans\/|zh-hant\/|ja\/)?$/.test(route));
   const publicationRoutes = [...articleRoutes, ...actionFlowPublications, ...blogPublications, ...specialRoutes, ...binaryStoryRoutes];
   for (const route of [...publicationRoutes, ...diaryRoutes]) indexableRoutes.add(route);
-  check(routes.size === 54 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length + agentSwarmRoutes.length, `expected ${54 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length + agentSwarmRoutes.length} HTML routes, found ${routes.size}.`);
+  check(routes.size === 55 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length + agentSwarmRoutes.length, `expected ${55 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length + agentSwarmRoutes.length} HTML routes, found ${routes.size}.`);
   for (const route of agentSwarmRoutes) check(routes.has(route), `missing Agent Swarm route: ${route}`);
 
   for (const route of arcadeRoutes) check(routes.has(route), `missing arcade route: ${route}`);
@@ -235,6 +236,7 @@ if (existsSync(dist)) {
   const binary = readFileSync(routes.get('/binary/'), 'utf8');
   const meaning = readFileSync(routes.get('/meaning/'), 'utf8');
   const infrastructure = readFileSync(routes.get('/intelligence/hardware/deliverable-megawatts/'), 'utf8');
+  const capitalClock = readFileSync(routes.get('/intelligence/hardware/capital-clock/'), 'utf8');
   check(homepage.includes('"@type":"Person"'), 'homepage: Person schema missing.');
   check(homepage.includes('"@type":"WebSite"'), 'homepage: WebSite schema missing.');
   check(homepage.includes('"@type":"ProfilePage"'), 'homepage: ProfilePage schema missing.');
@@ -282,6 +284,9 @@ if (existsSync(dist)) {
   check(infrastructure.includes('From paper gigawatts to operating compute'), 'AI infrastructure field note: canonical thesis is missing.');
   check(infrastructure.includes('"@type":"Article"') && infrastructure.includes('"@type":"BreadcrumbList"'), 'AI infrastructure field note: Article and BreadcrumbList schema are required.');
   check(!infrastructure.includes('sourceThread') && !infrastructure.includes('source_thread') && !infrastructure.includes('chatgpt.com/c/'), 'AI infrastructure field note: private provenance pointer detected.');
+  check(capitalClock.includes('The dates behind financed compute'), 'AI infrastructure capital-clock field note: canonical thesis is missing.');
+  check(capitalClock.includes('"@type":"Article"') && capitalClock.includes('"@type":"BreadcrumbList"'), 'AI infrastructure capital-clock field note: Article and BreadcrumbList schema are required.');
+  check(!capitalClock.includes('sourceThread') && !capitalClock.includes('source_thread') && !capitalClock.includes('chatgpt.com/c/'), 'AI infrastructure capital-clock field note: private provenance pointer detected.');
   check((ouroboros.match(/<details class="ouroboros-shelf"/g) ?? []).length === 3, 'ouroboros: expected Briefing, Action Flow and Daily Special shelves.');
   check(ouroboros.includes('id="daily-special"') && ouroboros.includes('Daily Special'), 'ouroboros: Daily Special shelf missing.');
   check((binary.match(/<section class="binary-lane"/g) ?? []).length === 3, 'binary: expected Build, Invest, and Joy lanes.');
