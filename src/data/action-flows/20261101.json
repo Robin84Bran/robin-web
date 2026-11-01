@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-01",
+  "updated": "2026-11-01",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20261101/hero.webp",
+  "actionHero": "/action-item/20261101/hero.webp",
+  "ogImage": "/daily-briefing/20261101/og.webp",
+  "briefingPath": "/ouroboros/202611/20261101/",
+  "actionItemPath": "/ouroboros/202611/20261101/action_item/",
+  "actions": [
+    {"signal":1,"priority":"NEXT","status":"READY","visualValue":"PR","visualLabel":"follow-through after opening","sources":[{"label":"Qwen Code","url":"https://qwenlm.github.io/qwen-code-docs/en/blog/updates/weekly-update-2026-10-29/"}]},
+    {"signal":2,"priority":"WATCH","status":"WATCHING","visualValue":">10","visualLabel":"humanoids reported in Texas","sources":[{"label":"Reuters","url":"https://www.reuters.com/world/china/foxconn-working-new-tie-up-with-openai-says-there-is-no-ai-bubble-2026-10-30/"}]},
+    {"signal":3,"priority":"WATCH","status":"WATCHING","visualValue":"-$799M","visualLabel":"one-day BTC and ETH ETF net flow","sources":[{"label":"Farside BTC","url":"https://farside.co.uk/btc/"},{"label":"Farside ETH","url":"https://farside.co.uk/eth/"}]},
+    {"signal":4,"priority":"NEXT","status":"READY","visualValue":"4","visualLabel":"tokenized equities accepted as collateral","sources":[{"label":"Kamino","url":"https://kamino.com/blog/kamino-integrates-backpack-securities-tokenized-equities"},{"label":"SolanaFloor","url":"https://solanafloor.com/news/kamino-enables-collateralization-of-backpack-securities"}]},
+    {"signal":5,"deepDiveAvailable":true,"priority":"NOW","status":"READY","visualValue":"4 USES","visualLabel":"discovery, citation, visits and training","sources":[{"label":"OpenAI","url":"https://openai.com/index/helping-websites-express-ai-training-preferences/"},{"label":"Google","url":"https://developers.google.com/search/blog/2026/10/ai-training-control"},{"label":"IETF draft","url":"https://datatracker.ietf.org/doc/draft-kelley-aipref-training-preference-signal/"},{"label":"Action Item","url":"https://iamrobin.ai/ouroboros/202611/20261101/action_item/"}]},
+    {"signal":6,"priority":"WATCH","status":"WATCHING","visualValue":"IVR","visualLabel":"company emulator demonstration","sources":[{"label":"Powerlattice","url":"https://www.powerlatticeinc.com/news/powerlattice-demonstrates-industrys-first-monolithic-ivr-chiplet"}]},
+    {"signal":7,"priority":"WATCH","status":"UNKNOWN","visualValue":"£540–577M","visualLabel":"unreconciled reported Series C range","sources":[{"label":"Companies House","url":"https://find-and-update.company-information.service.gov.uk/company/14143636/filing-history"},{"label":"Sifted","url":"https://sifted.eu/articles/exclusive-fractile-series-c"},{"label":"Tech Funding News","url":"https://techfundingnews.com/fractile-577m-series-c-nvidia-ai-chips/"}]},
+    {"signal":8,"priority":"WATCH","status":"WATCHING","visualValue":"$7.3B","visualLabel":"DCAI quarterly revenue","sources":[{"label":"Intel SEC filing","url":"https://www.sec.gov/Archives/edgar/data/50863/000005086326000188/q326earningsrelease.htm"}]}
+  ],
+  "editions": {
+    "en": {
+      "title":"Daily Action Flow, November 1, 2026","description":"Eight bounded actions test accepted work, productive robotics, complete capital-flow windows, collateral demand, publisher permissions, package power, financing evidence and cash conversion.","centralJudgment":"Count the receipt that proves useful acceptance, not the announcement that makes the capability available.","fieldLine":"Eight signals. Signal 5 opens today's essay.","inLanguage":"en","languageSlug":"","translationReview":"PASS",
+      "actions":[
+        {"signal":1,"domain":"Frontier Models and Agents","title":"Measure PR acceptance, not agent activity","why":"Qwen can now follow CI and review after a PR opens, but feature availability does not establish useful completion.","steps":["Freeze one non-production PR with representative failed checks and comments.","Compare accepted outcome, retries, human minutes and total cost with the current Codex workflow."],"done":"One common-denominator acceptance record exists before any productivity claim."},
+        {"signal":2,"domain":"Physical AI and Robotics","title":"Require productive-hours evidence","why":"More than ten reported humanoids in a factory is adoption evidence, not accepted-output economics.","steps":["Record accepted output, interventions, failures and continuous productive hours.","Calculate the hourly all-in cost before treating expansion as progress."],"done":"Keep WATCH until operating evidence replaces installed-unit counts."},
+        {"signal":3,"domain":"Crypto Capital Flows","title":"Preserve the next complete session","why":"BTC and ETH ETFs turned negative together after an earlier divergence, but one redemption day does not establish persistence.","steps":["Wait for the next complete common trading window.","Track stablecoin supply and application revenue separately from ETF flow."],"done":"HOLD remains and no trade occurs."},
+        {"signal":4,"domain":"Stablecoins and Payment Rails","title":"Separate collateral supply from borrowing","why":"Tokenized shares can now back USDC loans, while platform supply does not reveal deposits, loans or losses in the new market.","steps":["Track Backpack-token deposits and actual borrowing balances for four weeks.","Record interest, liquidations and risk-adjusted returns as separate fields."],"done":"Demand is judged from persistent balances, not the launch figure."},
+        {"signal":5,"domain":"Content and Visibility","title":"Publish the publisher-permission essay","why":"Discovery, answer citation, referral visits and model training are different uses and outcomes.","steps":["Read the four exact-text reviewed editions.","Keep provider implementation and measured traffic separate from the site's declared preference."],"done":"Four public editions and their sources are verifiable without changing site permissions."},
+        {"signal":6,"domain":"AI Infrastructure","title":"Test power on a real accelerator","why":"An integrated regulator demonstrated on a company emulator is not yet whole-system customer evidence.","steps":["Compare equivalent output quality and throughput on a real accelerator.","Record input power, thermals, packaging cost and cooling together."],"done":"Token Factory assumptions remain unchanged until matched-system evidence appears."},
+        {"signal":7,"domain":"Late-Stage Private Markets","title":"Reconcile Fractile's financing","why":"Filings show share-class and allotment activity, while reported totals still span £540 million to £577 million.","steps":["Reconcile each allotment and the final financing terms.","Wait for paid production use, matched-model costs and customer concentration."],"done":"Status remains UNKNOWN and no investment access is assumed."},
+        {"signal":8,"domain":"Public Equities","title":"Test DCAI growth against cash conversion","why":"Intel's data-center growth and lower next-quarter group guidance describe different parts of the company result.","steps":["Separate DCAI revenue growth from pressure in other segments.","Test whether growth improves group operating cash flow and free cash flow."],"done":"Keep WATCH and make no trade."}
+      ]
+    },
+    "zh-Hans": {
+      "title":"每日行动流，2026年11月1日","description":"八项有边界行动，分别检验验收工作、机器人有效产出、完整资金流窗口、抵押需求、发布者权限、封装供电、融资证据和现金转化。","centralJudgment":"要计算证明成果被有效接受的回执，而不是计算宣布能力可用的公告。","fieldLine":"八个信号，Signal 5 可阅读全文。","inLanguage":"zh-Hans","languageSlug":"zh-hans","translationReview":"PASS",
+      "actions":[
+        {"signal":1,"domain":"前沿模型与代理","title":"衡量 PR 验收，而非代理活动","why":"Qwen 现在能在 PR 创建后跟进 CI 与评审，但功能可用不等于有效完成。","steps":["用代表性失败检查与评论冻结一个非生产 PR。","以验收结果、重试、人工分钟和总成本对比现有 Codex 流程。"],"done":"在作出生产力主张前，形成同一分母的验收记录。"},
+        {"signal":2,"domain":"Physical AI 与机器人","title":"要求有效工时证据","why":"工厂内报告的十多台人形机器人是采用证据，不是验收产出的经济性。","steps":["记录验收产出、人工介入、失败和连续有效工时。","把扩张视为进展前，计算每小时全成本。"],"done":"在运营证据替代装机数量前保持 WATCH。"},
+        {"signal":3,"domain":"加密资本流","title":"保留下一个完整交易日","why":"BTC 与 ETH ETF 在此前分化后同步转负，但单日赎回不能证明持续性。","steps":["等待下一个完整共同交易窗口。","把稳定币供应和应用收入与 ETF 流量分开跟踪。"],"done":"保持 HOLD；不交易。"},
+        {"signal":4,"domain":"稳定币与支付轨道","title":"分开抵押供应和实际借款","why":"代币化股票现可支持 USDC 借款，但平台供应量不揭示新市场的存款、贷款或损失。","steps":["连续四周跟踪 Backpack 代币存款与实际借款余额。","分别记录利息、清算和风险调整回报。"],"done":"以持续余额而非上线数字判断需求。"},
+        {"signal":5,"domain":"内容与可见性","title":"发布发布者权限文章","why":"发现、回答引用、推荐访问和模型训练是不同的使用与结果。","steps":["阅读四种经过原文核对的版本。","把提供商实施和实际流量与网站声明的偏好分开。"],"done":"四种公开版本及来源均可核验，且不改变网站权限。"},
+        {"signal":6,"domain":"AI 基础设施","title":"在真实加速器上测试供电","why":"公司模拟器上的集成稳压器演示尚不是完整系统的客户证据。","steps":["在真实加速器上比较同等输出质量与吞吐量。","同时记录输入功率、散热、封装成本和冷却。"],"done":"在匹配系统证据出现前，不修改 Token Factory 假设。"},
+        {"signal":7,"domain":"晚期私募","title":"核清 Fractile 融资","why":"申报显示股类和配股活动，但报告总额仍为 5.40 亿至 5.77 亿英镑。","steps":["逐项核对配股与最终融资条款。","等待付费生产使用、同模型成本和客户集中度。"],"done":"状态保持 UNKNOWN，不假设任何投资渠道。"},
+        {"signal":8,"domain":"公开股票","title":"检验 DCAI 增长的现金转化","why":"Intel 数据中心增长与下一季度集团指引下降描述的是公司结果的不同部分。","steps":["把 DCAI 收入增长与其他业务压力分开。","检验增长是否改善集团经营现金流与自由现金流。"],"done":"保持 WATCH；不交易。"}
+      ]
+    },
+    "zh-Hant": {
+      "title":"每日行動流，2026年11月1日","description":"八項有邊界行動，分別檢驗驗收工作、機械人有效產出、完整資金流窗口、抵押需求、發布者權限、封裝供電、融資證據和現金轉化。","centralJudgment":"要計算證明成果被有效接受的回執，而不是計算宣布能力可用的公告。","fieldLine":"八個信號，Signal 5 可閱讀全文。","inLanguage":"zh-Hant","languageSlug":"zh-hant","translationReview":"PASS",
+      "actions":[
+        {"signal":1,"domain":"前沿模型與代理","title":"衡量 PR 驗收，而非代理活動","why":"Qwen 現在能在 PR 建立後跟進 CI 與評審，但功能可用不等於有效完成。","steps":["用代表性失敗檢查與評論凍結一個非生產 PR。","以驗收結果、重試、人工分鐘和總成本對比現有 Codex 流程。"],"done":"在作出生產力主張前，形成同一分母的驗收記錄。"},
+        {"signal":2,"domain":"Physical AI 與機械人","title":"要求有效工時證據","why":"工廠內報告的十多台人形機械人是採用證據，不是驗收產出的經濟性。","steps":["記錄驗收產出、人工介入、失敗和連續有效工時。","把擴張視為進展前，計算每小時全成本。"],"done":"在營運證據替代裝機數量前維持 WATCH。"},
+        {"signal":3,"domain":"加密資本流","title":"保留下一個完整交易日","why":"BTC 與 ETH ETF 在此前分化後同步轉負，但單日贖回不能證明持續性。","steps":["等待下一個完整共同交易窗口。","把穩定幣供應和應用收入與 ETF 流量分開跟蹤。"],"done":"維持 HOLD；不交易。"},
+        {"signal":4,"domain":"穩定幣與支付軌道","title":"分開抵押供應和實際借款","why":"代幣化股票現可支持 USDC 借款，但平台供應量不揭示新市場的存款、貸款或損失。","steps":["連續四週跟蹤 Backpack 代幣存款與實際借款餘額。","分別記錄利息、清算和風險調整回報。"],"done":"以持續餘額而非上線數字判斷需求。"},
+        {"signal":5,"domain":"內容與可見性","title":"發布發布者權限文章","why":"發現、回答引用、推薦訪問和模型訓練是不同的使用與結果。","steps":["閱讀四種經過原文核對的版本。","把供應商實施和實際流量與網站聲明的偏好分開。"],"done":"四種公開版本及來源均可核驗，且不改變網站權限。"},
+        {"signal":6,"domain":"AI 基礎設施","title":"在真實加速器上測試供電","why":"公司模擬器上的整合穩壓器示範尚不是完整系統的客戶證據。","steps":["在真實加速器上比較同等輸出品質與吞吐量。","同時記錄輸入功率、散熱、封裝成本和冷卻。"],"done":"在匹配系統證據出現前，不修改 Token Factory 假設。"},
+        {"signal":7,"domain":"晚期私募","title":"核清 Fractile 融資","why":"申報顯示股類和配股活動，但報告總額仍為 5.40 億至 5.77 億英鎊。","steps":["逐項核對配股與最終融資條款。","等待付費生產使用、同模型成本和客戶集中度。"],"done":"狀態維持 UNKNOWN，不假設任何投資渠道。"},
+        {"signal":8,"domain":"公開股票","title":"檢驗 DCAI 增長的現金轉化","why":"Intel 數據中心增長與下一季度集團指引下降描述的是公司結果的不同部分。","steps":["把 DCAI 收入增長與其他業務壓力分開。","檢驗增長是否改善集團經營現金流與自由現金流。"],"done":"維持 WATCH；不交易。"}
+      ]
+    },
+    "ja": {
+      "title":"デイリー・アクション・フロー、2026年11月1日","description":"8つの限定行動で、受入済み作業、ロボットの有効成果、完全な資金フロー期間、担保需要、出版者権限、パッケージ内電力、資金調達証拠、現金転換を検証する。","centralJudgment":"能力が利用可能だという発表ではなく、有用な受入を証明する受領証を数える。","fieldLine":"8つのシグナル。Signal 5から本日の記事を読める。","inLanguage":"ja","languageSlug":"ja","translationReview":"PASS",
+      "actions":[
+        {"signal":1,"domain":"フロンティアモデルとエージェント","title":"エージェント活動ではなくPR受入を測る","why":"QwenはPR作成後のCIとレビューを追えるが、機能の存在は有用な完了を証明しない。","steps":["代表的な失敗チェックとコメントを持つ非本番PRを固定する。","受入成果、再試行、人手時間、総費用を現在のCodexフローと比較する。"],"done":"生産性を主張する前に同一分母の受入記録を作る。"},
+        {"signal":2,"domain":"Physical AIとロボティクス","title":"有効稼働時間の証拠を求める","why":"工場の10台超という報告は採用証拠であり、受入成果の採算ではない。","steps":["受入成果、介入、失敗、連続有効稼働時間を記録する。","拡大を進歩とみなす前に1時間当たり総費用を計算する。"],"done":"運用証拠が設置台数に代わるまでWATCHを維持する。"},
+        {"signal":3,"domain":"暗号資本フロー","title":"次の完全な取引日を保つ","why":"BTCとETHのETFは以前の分化後に同時マイナスとなったが、1日の償還は継続性を示さない。","steps":["次の完全な共通取引期間を待つ。","stablecoin供給とアプリ収益をETFフローと分けて追う。"],"done":"HOLDを維持し取引しない。"},
+        {"signal":4,"domain":"Stablecoinと決済レール","title":"担保供給と実借入を分ける","why":"トークン化株式でUSDCを借りられるが、プラットフォーム供給額は新市場の預入、融資、損失を示さない。","steps":["Backpackトークン預入と実借入残高を4週間追う。","金利、清算、リスク調整後収益を別項目にする。"],"done":"開始時の数字ではなく持続残高で需要を判断する。"},
+        {"signal":5,"domain":"コンテンツと可視性","title":"出版者権限の記事を公開する","why":"発見、回答内引用、参照訪問、モデル学習は異なる利用と結果だ。","steps":["原文一致を確認した4言語版を読む。","提供者の実装と実測トラフィックをサイトの宣言から分ける。"],"done":"サイト権限を変えずに4言語版と出典を検証できる。"},
+        {"signal":6,"domain":"AIインフラ","title":"実アクセラレータで電力を試す","why":"会社のエミュレータ上の統合電圧レギュレータ実演は顧客システム全体の証拠ではない。","steps":["実アクセラレータで同等品質とスループットを比較する。","入力電力、熱、実装費、冷却を同時に記録する。"],"done":"対応システム証拠までToken Factory前提を変えない。"},
+        {"signal":7,"domain":"後期未公開市場","title":"Fractileの資金調達を照合する","why":"登記は株式区分と割当活動を示すが、報道総額は5.40億〜5.77億ポンドの幅がある。","steps":["各割当と最終条件を照合する。","有料本番利用、同一モデル費用、顧客集中度を待つ。"],"done":"UNKNOWNを維持し投資経路を想定しない。"},
+        {"signal":8,"domain":"公開株式","title":"DCAI成長の現金転換を試す","why":"Intelのデータセンター成長と次四半期の全社見通し低下は別の会社結果を表す。","steps":["DCAI収益成長を他部門の圧力から分ける。","成長が全社営業キャッシュフローとfree cash flowを改善するか確かめる。"],"done":"WATCHを維持し取引しない。"}
+      ]
+    }
+  }
+}
