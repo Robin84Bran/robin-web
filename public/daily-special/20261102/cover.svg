@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">How a robot checks its own work</title>
+  <desc id="desc">A quiet act-observe-judge loop shows a robot checking progress before continuing or retrying a step.</desc>
+  <rect width="1600" height="900" fill="#f4f0e8"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#202a28">
+    <text x="112" y="104" font-size="22" letter-spacing="5">DAILY SPECIAL · 2 NOVEMBER 2026</text>
+    <text x="112" y="214" font-size="68" font-weight="600">The machine acted.</text>
+    <text x="112" y="296" font-size="68" font-weight="600">Now it has to check.</text>
+    <text x="112" y="358" font-size="25" fill="#657068">Gemini Robotics ER 2 · step-local retry · accepted outcomes</text>
+
+    <g transform="translate(112 470)">
+      <rect x="0" y="0" width="1376" height="218" rx="28" fill="#e7ebe4"/>
+      <g font-size="18" letter-spacing="3" fill="#657068">
+        <text x="44" y="52">ACT</text>
+        <text x="352" y="52">OBSERVE</text>
+        <text x="704" y="52">JUDGE</text>
+        <text x="1028" y="52">CONTINUE OR RETRY</text>
+      </g>
+      <g fill="none" stroke="#345d70" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="78" cy="132" r="30" fill="#f4f0e8"/>
+        <path d="M118 132h184m0 0-28-22m28 22-28 22"/>
+        <circle cx="386" cy="132" r="30" fill="#f4f0e8"/>
+        <path d="M426 132h228m0 0-28-22m28 22-28 22"/>
+        <circle cx="738" cy="132" r="30" fill="#f4f0e8"/>
+        <path d="M778 132h200m0 0-28-22m28 22-28 22"/>
+        <circle cx="1012" cy="132" r="30" fill="#f4f0e8"/>
+        <path d="M1052 132h230m0 0-28-22m28 22-28 22"/>
+      </g>
+      <text x="44" y="194" font-size="20" fill="#657068">The new verb between an instruction and the next step is check.</text>
+    </g>
+
+    <line x1="112" y1="792" x2="1488" y2="792" stroke="#c8cec6" stroke-width="3"/>
+    <text x="112" y="842" font-size="21" fill="#657068">Google reports 57.4% five-band progress classification · public-source research</text>
+  </g>
+</svg>
