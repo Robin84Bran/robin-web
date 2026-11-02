@@ -1,0 +1,21 @@
+Google's highest robot-progress band spans 80% through 100%.
+
+That creates a useful contradiction: almost finished and finished can share one label.
+
+Gemini Robotics ER 2 makes progress observable. Google says a system can use that estimate to adjust an action or retry one failed step instead of restarting the whole sequence.
+
+But the published numbers answer narrower questions:
+
+57.4%: five-band progress classification
+91.3%: moment finding in video
+0.96 seconds: mean absolute distance for the reported moment-finding benchmark
+
+None is an accepted customer-job completion rate.
+
+The missing layer is an external acceptance receipt: a human-defined final-state check applied after the model judgment.
+
+Full story and sources: https://iamrobin.ai/binary/stories/the-finish-line-is-twenty-points-wide/
+
+Google-reported preview benchmarks. No robot or tabletop trial was run. Safety-critical use is excluded.
+
+#Robotics #PhysicalAI #GeminiRobotics #Automation #SystemsEngineering
