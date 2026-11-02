@@ -1,0 +1,549 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-02",
+  "updated": "2026-11-02",
+  "signalCount": 8,
+  "hero": "/daily-briefing/20261102/hero.webp",
+  "actionHero": "/action-item/20261102/hero.webp",
+  "ogImage": "/daily-briefing/20261102/og.webp",
+  "briefingPath": "/ouroboros/202611/20261102/",
+  "actionItemPath": "/ouroboros/202611/20261102/action_item/",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "GA",
+      "visualLabel": "client-executed computer use",
+      "sources": [
+        {
+          "label": "Gemini changelog",
+          "url": "https://ai.google.dev/gemini-api/docs/changelog"
+        },
+        {
+          "label": "Computer Use docs",
+          "url": "https://ai.google.dev/gemini-api/docs/computer-use"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "ER2",
+      "visualLabel": "outcome observation and local retry",
+      "sources": [
+        {
+          "label": "Google Cloud",
+          "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-robotics-embodied-reasoning-2-is-now-available-on-google-cloud"
+        },
+        {
+          "label": "Gemini changelog",
+          "url": "https://ai.google.dev/gemini-api/docs/changelog"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "-$634M",
+      "visualLabel": "weekly BTC and ETH ETF net flow",
+      "sources": [
+        {
+          "label": "Farside BTC",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "Farside ETH",
+          "url": "https://farside.co.uk/eth/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "20",
+      "visualLabel": "signed tokenization participants",
+      "sources": [
+        {
+          "label": "DTCC",
+          "url": "https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live"
+        },
+        {
+          "label": "Production trades",
+          "url": "https://www.dtcc.com/products-and-services/digital-assets/tokenization/live-production-trades"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "deepDiveAvailable": true,
+      "priority": "NOW",
+      "status": "READY",
+      "visualValue": "78% / -29%",
+      "visualLabel": "segment growth and share repricing",
+      "sources": [
+        {
+          "label": "Intel SEC release",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000188/q326earningsrelease.htm"
+        },
+        {
+          "label": "Intel 10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm"
+        },
+        {
+          "label": "Action Item",
+          "url": "https://iamrobin.ai/ouroboros/202611/20261102/action_item/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "WATCH",
+      "status": "UNKNOWN",
+      "visualValue": "$25B",
+      "visualLabel": "priced debt awaiting close",
+      "sources": [
+        {
+          "label": "Microsoft",
+          "url": "https://news.microsoft.com/source/2026/10/29/microsoft-announces-debt-offerings-7"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "UNKNOWN",
+      "visualValue": "$40M + $60M",
+      "visualLabel": "equity and growth facility",
+      "sources": [
+        {
+          "label": "Collective",
+          "url": "https://www.collective.com/blog/collective-raises-100m"
+        },
+        {
+          "label": "Company explanation",
+          "url": "https://www.collective.com/blog/100m-to-power-the-new-era-of-solo-business"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "-5.3%",
+      "visualLabel": "equal-weight cloud basket week",
+      "sources": [
+        {
+          "label": "Alphabet SEC",
+          "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm"
+        },
+        {
+          "label": "Amazon SEC",
+          "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, November 2, 2026",
+      "description": "Eight bounded actions test accepted browser work, physical-task verification, complete capital-flow windows, tokenized settlement, segment-to-cash conversion, debt closing, OPC economics and cloud cash returns.",
+      "centralJudgment": "A released capability, priced financing or growing segment becomes valuable only when its result is accepted and its economics are visible.",
+      "fieldLine": "Eight signals. Signal 5 opens today's evidence page.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Measure accepted browser work",
+          "why": "Computer Use is generally available, while the client still executes actions and owns permissions and safety decisions.",
+          "steps": [
+            "Freeze identical non-production tasks and acceptance criteria.",
+            "Compare completion, intervention, retries and total cost with the current workflow."
+          ],
+          "done": "No replacement occurs before accepted outcomes improve."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "Test outcome-aware local retry",
+          "why": "ER 2 can observe progress and retry locally, while shift-level production evidence remains unavailable.",
+          "steps": [
+            "Use three tabletop tasks with explicit terminal states.",
+            "Record accepted completion, retries, takeover, time and cost."
+          ],
+          "done": "Production claims wait for customer-site evidence."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows",
+          "title": "Keep the weekly window frozen",
+          "why": "BTC and ETH ETFs ended the complete week with a combined outflow, which does not establish motive or broad crypto health.",
+          "steps": [
+            "Wait for the next complete common session.",
+            "Track stablecoin supply and application revenue separately."
+          ],
+          "done": "HOLD remains and no trade occurs."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins and Payment Rails",
+          "title": "Count completed settlement legs",
+          "why": "DTCC launched a production rail with signed participants, while eligible assets and signatures do not establish settled use.",
+          "steps": [
+            "Record security and cash legs for the first production trades.",
+            "Track completion time, failures and collateral release."
+          ],
+          "done": "Usage is measured from completed trades, not eligibility."
+        },
+        {
+          "signal": 5,
+          "domain": "Content and Visibility",
+          "title": "Publish the Intel evidence page",
+          "why": "Segment growth, group guidance and share price describe different scopes and expectations.",
+          "steps": [
+            "Preserve Astra's exact audited English text and four complete editions.",
+            "Keep causes unresolved where the cited evidence cannot isolate them."
+          ],
+          "done": "Four public editions and original sources are verifiable."
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure",
+          "title": "Wait for the debt close",
+          "why": "Microsoft priced $25 billion of notes for general purposes, with completion expected November 4.",
+          "steps": [
+            "Confirm closing from a primary filing.",
+            "Map maturities, interest and disclosed uses to identifiable projects."
+          ],
+          "done": "General proceeds stay separate from AI capacity."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-Stage Private Markets",
+          "title": "Separate equity from the facility",
+          "why": "Collective announced equity and a growth facility with different economics and undisclosed absolute ARR.",
+          "steps": [
+            "Request ARR, retention, support hours and autonomous completion.",
+            "Record facility provider, duration, pricing and losses separately."
+          ],
+          "done": "Status remains UNKNOWN until economics are disclosed."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities",
+          "title": "Build a common cloud cash table",
+          "why": "Strong cloud revenue growth coexisted with a negative observation-basket week.",
+          "steps": [
+            "Use one window for cloud revenue, capex, free cash flow and adjusted closes.",
+            "Keep business growth separate from causal price claims."
+          ],
+          "done": "WATCH remains and no trade occurs."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年11月2日",
+      "description": "八项有边界行动，分别检验浏览器任务验收、实体任务验证、完整资金流窗口、代币化结算、部门到现金的转化、债务完成、个人公司经济性与云现金回报。",
+      "centralJudgment": "一项已上线能力、已定价融资或增长部门，只有在结果获得验收且经济性可见时才形成价值。",
+      "fieldLine": "八个信号，Signal 5 可阅读全文。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与代理",
+          "title": "衡量浏览器任务验收",
+          "why": "Computer Use 已全面可用，但客户端仍负责执行、权限与安全决定。",
+          "steps": [
+            "冻结相同的非生产任务与验收标准。",
+            "与现有流程比较完成率、介入、重试和总成本。"
+          ],
+          "done": "验收结果改善前不替换现有流程。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 与机器人",
+          "title": "测试结果感知的局部重试",
+          "why": "ER 2 可以观察进度并局部重试，但尚无跨班次生产证据。",
+          "steps": [
+            "运行三个终态明确的桌面任务。",
+            "记录验收完成、重试、接管、时长和成本。"
+          ],
+          "done": "生产主张等待客户现场证据。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流",
+          "title": "冻结完整周窗口",
+          "why": "BTC 与 ETH ETF 在完整一周合计净流出，但这不证明动机或整个加密经济状况。",
+          "steps": [
+            "等待下一个完整共同交易日。",
+            "分开跟踪稳定币供应和应用收入。"
+          ],
+          "done": "保持 HOLD；不交易。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币与支付轨道",
+          "title": "计算已完成结算环节",
+          "why": "DTCC 已上线生产轨道并有签约参与者，但合资格资产和签约不等于已结算使用。",
+          "steps": [
+            "记录首批生产交易的证券端与现金端。",
+            "跟踪完成时间、失败和抵押品释放。"
+          ],
+          "done": "用已完成交易衡量使用量，而非合资格数量。"
+        },
+        {
+          "signal": 5,
+          "domain": "内容与可见性",
+          "title": "发布 Intel 证据页",
+          "why": "部门增长、集团指引与股价描述不同范围和预期。",
+          "steps": [
+            "保留 Astra 已审计英文原文和四种完整版本。",
+            "引用证据不能隔离原因时，保持归因未决。"
+          ],
+          "done": "四种公开版本与原始来源均可核验。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基础设施",
+          "title": "等待债务交易完成",
+          "why": "Microsoft 已为一般用途定价 250 亿美元票据，预计 11 月 4 日完成。",
+          "steps": [
+            "从主要申报确认完成。",
+            "把期限、利息和披露用途映射到可识别项目。"
+          ],
+          "done": "一般用途资金与 AI 产能保持分开。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私募",
+          "title": "分开股权与融资工具",
+          "why": "Collective 公布了经济性不同的股权和增长工具，绝对 ARR 未披露。",
+          "steps": [
+            "要求 ARR、留存、支持工时和自主完成率。",
+            "分别记录工具提供者、期限、价格和损失。"
+          ],
+          "done": "经济性披露前状态保持 UNKNOWN。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开股票",
+          "title": "建立统一云现金表",
+          "why": "强劲云收入增长与观察篮子一周下跌同时发生。",
+          "steps": [
+            "用同一窗口记录云收入、资本开支、自由现金流和调整后收盘价。",
+            "把业务增长与因果价格主张分开。"
+          ],
+          "done": "保持 WATCH；不交易。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年11月2日",
+      "description": "八項有邊界行動，分別檢驗瀏覽器任務驗收、實體任務驗證、完整資金流窗口、代幣化結算、部門到現金的轉化、債務完成、個人公司經濟性與雲端現金回報。",
+      "centralJudgment": "一項已上線能力、已定價融資或成長部門，只有在結果獲得驗收且經濟性可見時才形成價值。",
+      "fieldLine": "八個訊號，Signal 5 可閱讀全文。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與代理",
+          "title": "衡量瀏覽器任務驗收",
+          "why": "Computer Use 已全面開放使用，但用戶端仍負責執行、權限與安全決策。",
+          "steps": [
+            "凍結相同的非正式環境任務與驗收標準。",
+            "與現有流程比較完成率、介入、重試和總成本。"
+          ],
+          "done": "驗收結果改善前不取代現有流程。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 與機器人",
+          "title": "測試結果感知的局部重試",
+          "why": "ER 2 可以觀察進度並局部重試，但仍缺少跨班次生產證據。",
+          "steps": [
+            "執行三個終態明確的桌面任務。",
+            "記錄驗收完成、重試、接管、時長和成本。"
+          ],
+          "done": "生產主張等待客戶現場證據。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本流",
+          "title": "凍結完整週窗口",
+          "why": "BTC 與 ETH ETF 在完整一週合計淨流出，但這不證明動機或整體加密經濟狀況。",
+          "steps": [
+            "等待下一個完整共同交易日。",
+            "分開追蹤穩定幣供給和應用收入。"
+          ],
+          "done": "維持 HOLD；不交易。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣與支付軌道",
+          "title": "計算已完成結算環節",
+          "why": "DTCC 已上線正式軌道並有簽約參與者，但合資格資產和簽約不等於已結算使用。",
+          "steps": [
+            "記錄首批正式交易的證券端與現金端。",
+            "追蹤完成時間、失敗和擔保品釋放。"
+          ],
+          "done": "用已完成交易衡量使用量，而非合資格數量。"
+        },
+        {
+          "signal": 5,
+          "domain": "內容與能見度",
+          "title": "發布 Intel 證據頁",
+          "why": "部門成長、集團指引與股價描述不同範圍和預期。",
+          "steps": [
+            "保留 Astra 已審計英文原文和四種完整版本。",
+            "引用證據無法隔離原因時，維持歸因未決。"
+          ],
+          "done": "四種公開版本與原始來源均可驗證。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基礎設施",
+          "title": "等待債務交易完成",
+          "why": "Microsoft 已為一般用途定價 250 億美元票據，預計 11 月 4 日完成。",
+          "steps": [
+            "從主要申報確認完成。",
+            "把期限、利息和披露用途對應至可辨識項目。"
+          ],
+          "done": "一般用途資金與 AI 產能保持分開。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私募",
+          "title": "分開股權與融資工具",
+          "why": "Collective 公布經濟性不同的股權和成長工具，絕對 ARR 尚未披露。",
+          "steps": [
+            "要求 ARR、留存、支援工時和自主完成率。",
+            "分別記錄工具提供者、期限、價格和損失。"
+          ],
+          "done": "經濟性披露前狀態維持 UNKNOWN。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開股票",
+          "title": "建立統一雲端現金表",
+          "why": "強勁雲端營收成長與觀察籃子一週下跌同時發生。",
+          "steps": [
+            "用同一窗口記錄雲端營收、資本支出、自由現金流和調整後收盤價。",
+            "把業務成長與因果價格主張分開。"
+          ],
+          "done": "維持 WATCH；不交易。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年11月2日",
+      "description": "8つの限定行動で、ブラウザー作業の受入、実作業の検証、完全な資金フロー期間、トークン化決済、部門から現金への転換、社債完了、個人企業の採算、クラウドの現金収益を検証する。",
+      "centralJudgment": "機能公開、資金調達の条件決定、部門成長は、成果が受け入れられ、採算が見えたときに価値へ変わる。",
+      "fieldLine": "8つのシグナル。Signal 5から本日の記事を読める。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "最先端モデルとエージェント",
+          "title": "受け入れ済みブラウザー作業を測る",
+          "why": "Computer Useは一般提供となったが、実行、権限、安全判断は引き続きクライアントが担う。",
+          "steps": [
+            "同一の非本番タスクと受入基準を固定する。",
+            "完了、介入、再試行、総費用を現行手順と比較する。"
+          ],
+          "done": "受入成果が改善するまで置き換えない。"
+        },
+        {
+          "signal": 2,
+          "domain": "フィジカルAIとロボティクス",
+          "title": "結果を見た局所再試行を試す",
+          "why": "ER 2は進捗を観察して局所的に再試行できるが、勤務シフト単位の本番証拠はない。",
+          "steps": [
+            "終了状態を定めた3つの卓上タスクを実行する。",
+            "受入完了、再試行、引継ぎ、時間、費用を記録する。"
+          ],
+          "done": "本番主張は顧客現場の証拠を待つ。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資金フロー",
+          "title": "完全な週間期間を固定する",
+          "why": "BTCとETHのETFは週間合計で流出したが、動機や暗号経済全体の状態は示さない。",
+          "steps": [
+            "次の完全な共通取引日を待つ。",
+            "ステーブルコイン供給とアプリ収益を別に追う。"
+          ],
+          "done": "HOLDを維持し、取引しない。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコインと決済基盤",
+          "title": "完了した決済の両側を数える",
+          "why": "DTCCは契約参加者を伴う本番基盤を開始したが、対象資産と契約は決済済み利用を示さない。",
+          "steps": [
+            "初期本番取引の証券側と現金側を記録する。",
+            "完了時間、失敗、担保解除を追う。"
+          ],
+          "done": "対象数ではなく完了取引で利用を測る。"
+        },
+        {
+          "signal": 5,
+          "domain": "コンテンツと発信力",
+          "title": "Intelの証拠ページを公開する",
+          "why": "部門成長、全社見通し、株価は異なる範囲と期待を示す。",
+          "steps": [
+            "Astraの監査済み英語原文と4言語版を維持する。",
+            "資料が原因を分離できない部分は帰属を未解決に保つ。"
+          ],
+          "done": "4言語版と原典を公開確認できる。"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラ",
+          "title": "社債発行完了を待つ",
+          "why": "Microsoftは一般事業目的の250億ドル社債の条件を決め、完了は11月4日の予定だ。",
+          "steps": [
+            "一次申告で完了を確認する。",
+            "満期、利息、開示使途を特定可能な案件に対応づける。"
+          ],
+          "done": "一般資金とAI処理能力を分けて扱う。"
+        },
+        {
+          "signal": 7,
+          "domain": "レイターステージ未公開市場",
+          "title": "出資と資金枠を分ける",
+          "why": "Collectiveは採算の異なる出資と成長資金枠を発表し、ARR実額は非開示だ。",
+          "steps": [
+            "ARR、継続率、支援時間、自律完了を確認する。",
+            "提供者、期間、価格、損失を別に記録する。"
+          ],
+          "done": "採算開示までUNKNOWNを維持する。"
+        },
+        {
+          "signal": 8,
+          "domain": "上場株式",
+          "title": "共通のクラウド現金表を作る",
+          "why": "強いクラウド売上成長と観測用バスケットの週間下落が同時に起きた。",
+          "steps": [
+            "同じ期間でクラウド売上、設備投資、自由現金流、調整後終値を記録する。",
+            "事業成長と株価下落の因果主張を分ける。"
+          ],
+          "done": "WATCHを維持し、取引しない。"
+        }
+      ]
+    }
+  }
+}
+

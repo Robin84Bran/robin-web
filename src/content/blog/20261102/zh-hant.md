@@ -1,5 +1,5 @@
 ---
-archiveStatus: "PIPELINE"
+archiveStatus: "PRESENT"
 title: 38份報告，零個投資組合決定
 date: 2026-11-02
 updated: 2026-08-21

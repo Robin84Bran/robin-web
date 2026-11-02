@@ -1,5 +1,5 @@
 ---
-archiveStatus: "PIPELINE"
+archiveStatus: "PRESENT"
 title: 38本のレポート、投資判断はゼロ
 date: 2026-11-02
 updated: 2026-08-21

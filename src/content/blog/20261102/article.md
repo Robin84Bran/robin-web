@@ -1,5 +1,5 @@
 ---
-archiveStatus: "PIPELINE"
+archiveStatus: "PRESENT"
 title: 38 Reports and Zero Portfolio Decisions
 date: 2026-11-02
 updated: 2026-08-21
