@@ -1,0 +1,80 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const path='/intelligence/bridge-or-bus/';
+const description='When interfaces drift, should heterogeneous services maintain pairwise adapters or share one translation layer?';
+const schema={'@context':'https://schema.org','@type':'LearningResource',name:'Bridge or Bus?',url:`https://iamrobin.ai${path}`,description,inLanguage:'en',learningResourceType:'Interactive simulation',educationalUse:'Experiment'};
+const policies=[
+ ['direct','01','Direct bridges','Repair the first stale pair needed by the oldest job.'],
+ ['shared','02','Shared layer','Repair one service adapter and depend on a recoverable hub.'],
+ ['static','03','Static bridges','Never repair after a schema changes.'],
+ ['random','04','Random repair','Patch a seeded random stale pair from current demand.'],
+];
+---
+<BaseLayout title="Bridge or Bus? — Intelligence — Robin Xie" {path} {description} {schema}>
+ <div class="experiment shell">
+  <a class="quiet-link" href="/intelligence/">← Intelligence</a>
+  <p class="eyebrow">Weekly small experiment · 2026-W45</p>
+  <h1>Bridge<br/><em>or bus?</em></h1>
+  <p class="lead">A shared language removes many translations. It also creates one place where every conversation can stop.</p>
+  <p class="intro">Send the same multi-stage jobs through changing service interfaces. Direct bridges repair pair by pair. A shared layer repairs service by service. Static and random baselines show what each architecture is actually buying.</p>
+
+  <section class="playground" aria-label="Bridge or Bus experiment">
+   <form id="bridge-controls">
+    <label>Seed<input name="seed" type="number" min="0" max="4294967295" step="1" value="1" required/></label>
+    <label>Services<select name="services"><option value="4">4 services</option><option value="8" selected>8 services</option><option value="12">12 services</option></select></label>
+    <label>Route length<select name="routeLength"><option value="2">2 services</option><option value="3" selected>3 services</option><option value="4">4 services</option></select></label>
+    <label>Schema drift<select name="driftRate"><option value="0">Stable</option><option value="3" selected>3% per tick</option><option value="8">8% per tick</option></select></label>
+    <label>Hub outage<select name="hubOutageRate"><option value="0">Never</option><option value="2" selected>2% while up</option><option value="8">8% while up</option></select></label>
+    <label>Repairs<select name="repairsPerTick"><option value="0">None</option><option value="1" selected>1 per tick</option><option value="2">2 per tick</option></select></label>
+    <label>Route pool<select name="routePoolSize"><option value="0" selected>Broad demand</option><option value="2">2 repeated routes</option><option value="4">4 repeated routes</option></select></label>
+   </form>
+   <div class="buttons"><button id="play" type="button">Play</button><button id="step" type="button">Step</button><button id="end" type="button">Show outcome</button><button id="reset" type="button">Replay</button><button id="next-seed" type="button">Next seed</button><button id="defaults" type="button">Defaults</button></div>
+   <p id="lab-status" role="status">Loading the seeded world…</p>
+   <canvas id="bridge-world" aria-label="Service schema versions, shared hub state and matched event timeline"></canvas>
+   <label class="time">Inspect any tick<input id="tick" aria-label="Simulation tick" type="range" min="0" max="159" value="0"/></label>
+   <div class="worlds">
+    {policies.map(([id,num,name,note])=><article class="world" data-policy={id}>
+      <p class="eyebrow">{num} / integration policy</p><h2>{name}</h2><p class="rule">{note}</p>
+      <p class="mode" data-feasible="true">READY</p><div class="bar" aria-hidden="true"><span></span></div><p class="counts"></p>
+    </article>)}
+   </div>
+   <p class="fine">Rust nodes changed schema on this tick. The hub and version board are an evaluator view; all policies receive the same current state and no future events. A repair is one abstract action—not a measured engineering cost.</p>
+   <div class="buttons"><button id="share" type="button">Link this world</button><button id="download" type="button">Download run</button></div>
+   <noscript>JavaScript is needed to play. Complete batch results, method and source remain available below.</noscript>
+  </section>
+
+  <section class="story">
+   <p class="eyebrow">Try this first</p><h2>Freeze the interfaces. Keep the outage.</h2>
+   <p>Press <strong>Show outcome</strong>. Then set schema drift to Stable. Direct, static and random bridges now deliver every job in the saved batch; the shared layer still loses a fraction to hub downtime. Restore drift, then choose two repeated routes. A small working set changes the result again.</p>
+
+   <h2>A shared language changes the repair surface.</h2>
+   <p>Each job names an ordered route through distinct services. Direct delivery needs a current adapter for every adjacent pair. Shared delivery needs one current adapter for every service on the route—and a live hub. Schema drift invalidates adapters that mention an old integer version.</p>
+   <p>Every policy sees the same queue, versions, hub state and past outcomes. Each receives the same repair opportunities and can attempt the same first three queued jobs per tick. Direct and shared systems deliberately have different adapter counts and failure domains. That difference is the mechanism, not a hidden advantage.</p>
+
+   <h2>The fan-out is useful. The dependency is real.</h2>
+   <div class="table-wrap"><table><caption>Mean delivered jobs out of 320 · seeds 1–64</caption><thead><tr><th>Setting</th><th>Direct</th><th>Shared</th><th>Static</th><th>Random</th></tr></thead><tbody>
+    <tr><th scope="row">Default</th><td>127.234</td><td><strong>319.344</strong></td><td>15.719</td><td>70.922</td></tr>
+    <tr><th scope="row">Stable schemas</th><td><strong>320</strong></td><td>319.344</td><td><strong>320</strong></td><td><strong>320</strong></td></tr>
+    <tr><th scope="row">Rapid drift</th><td>53.828</td><td><strong>317.438</strong></td><td>7.047</td><td>20.359</td></tr>
+    <tr><th scope="row">Twelve services</th><td>39.562</td><td><strong>319.281</strong></td><td>11.156</td><td>21.250</td></tr>
+    <tr><th scope="row">Fragile hub</th><td>127.234</td><td><strong>284.859</strong></td><td>15.719</td><td>70.922</td></tr>
+    <tr><th scope="row">Two repeated routes</th><td><strong>319.688</strong></td><td>319.328</td><td>20.719</td><td>319.547</td></tr>
+   </tbody></table></div>
+   <p>In the default batch, the shared layer averages 37.156 repairs and 0.326 ticks of delivery latency. Direct bridges average 152.625 repairs and 15.357 ticks because one version change can stale many demanded pairs. With two repeated routes, direct repair reuses a small working set and narrowly leads.</p>
+   <p>This is not a universal ranking. The shared layer compresses adapter fan-out; the direct system avoids a common outage boundary. Stable interfaces, route concentration, repair capacity and hub reliability change the answer.</p>
+
+   <h2>What the controls change</h2>
+   <dl><dt>Seed</dt><dd>Replays arrivals, routes, version changes, hub events and random repairs.</dd><dt>Services</dt><dd>Changes the number of distinct interfaces in the world.</dd><dt>Route length</dt><dd>Changes how many services each job must cross.</dd><dt>Schema drift</dt><dd>Per-service chance of incrementing its version each tick.</dd><dt>Hub outage</dt><dd>Chance the shared layer goes down while available; recovery stays at 35% per tick.</dd><dt>Repairs</dt><dd>Adapter-update opportunities available to every policy.</dd><dt>Route pool</dt><dd>Broad demand creates new combinations; a small pool repeats known routes.</dd></dl>
+
+   <h2>Where the toy stops.</h2>
+   <p>This is a deterministic teaching world, not an agent-framework benchmark, API-gateway test, service-mesh recommendation, production reliability forecast, biological model or trading system. Services and schemas are integers. Payload transformation, security boundaries, network latency, partial failure, compute and engineering cost are absent.</p>
+   <p>All <strong>640 matched seeded worlds and 2,560 policy outcomes</strong> are retained across ten predeclared settings. No seed was removed. Delivery, expiry, blocked attempts, repair actions and latency remain separate. The private source scan supplied the question—not instructions, facts or public prose—and is excluded from the release.</p>
+   <p class="downloads"><a href="/bridge-or-bus/README.md" download>Method &amp; parameter guide ↓</a><a href="/bridge-or-bus/source.zip" download>Source package ↓</a><a href="/bridge-or-bus/results.json" download>All batch results ↓</a><a href="/bridge-or-bus/model.mjs">Read the model</a></p>
+   <p class="fine">Previously: <a href="/intelligence/useful-core/">The Useful Core</a> · Explore the <a href="/intelligence/swarm-lab/">eight small worlds</a>.</p>
+  </section>
+ </div>
+ <script is:inline type="module" src="/bridge-or-bus/client.mjs"></script>
+</BaseLayout>
+<style>
+ .experiment{padding-block:3rem 5rem}.experiment>.eyebrow{margin-top:3rem}h1{font:400 clamp(3.35rem,8vw,7rem)/.98 var(--serif);letter-spacing:-.055em;margin:1.5rem 0}h1 em{color:#9b5a3e}.lead{font:400 clamp(1.3rem,3vw,2rem)/1.45 var(--serif)}.intro,.story{max-width:49rem;line-height:1.85}.intro,.fine,dd{color:var(--muted)}.playground{margin-block:2.5rem;padding:clamp(1rem,3vw,2rem);border:1px solid var(--line);background:#f7f3eb;border-radius:12px}form{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}label{display:grid;gap:.4rem;font-size:.8rem}select,input[type=number],button{font:inherit;min-height:44px;padding:.65rem;border:1px solid #aaa391;border-radius:4px;background:#fffdf7;color:#292822;min-width:0;width:100%}.buttons{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.2rem}.buttons button{width:auto}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #a96d29;outline-offset:3px}#play{background:#326d63;color:#fff}#lab-status{font-size:.85rem;min-height:2.5em}#bridge-world{display:block;width:100%;height:270px;margin-top:.6rem;border:1px solid #d0c8b7;border-radius:8px}.time{margin-block:1rem}.time input{width:100%;min-height:44px;accent-color:#326d63}.worlds{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.world{border-top:1px solid #c4bdad;padding:1rem 0;min-width:0}.world h2{font:400 1.55rem var(--serif);margin:.35rem 0}.world .eyebrow{font-size:.65rem}.rule{font-size:.78rem;color:#626258}.mode{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.08em;padding:.25rem .55rem;border-radius:99px;background:#d7e4d8;color:#28513b}.mode[data-feasible=false]{background:#efd2be;color:#71391f}.bar{height:7px;background:#ddd6c8;margin-top:.8rem}.bar span{display:block;height:100%;background:#557b70}.counts{font-size:.78rem;font-variant-numeric:tabular-nums}.fine{font-size:.8rem;line-height:1.7}.story h2{font:400 clamp(1.6rem,4vw,2.5rem)/1.2 var(--serif);margin-top:2.5rem}dt{font-weight:600;margin-top:1rem}dd{margin-left:0}.downloads{display:flex;flex-wrap:wrap;gap:1rem;font-size:.9rem}.table-wrap{overflow-x:auto;margin-block:1.5rem}table{border-collapse:collapse;width:100%;font-size:.84rem}caption{text-align:left;color:var(--muted);font-size:.8rem;padding-bottom:.7rem}th,td{text-align:left;padding:.75rem .5rem;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}th{font-weight:500}@media(max-width:900px){form{grid-template-columns:1fr 1fr}.worlds{grid-template-columns:1fr}.playground{margin-inline:-.3rem}table{font-size:.72rem}th,td{padding:.6rem .25rem}}@media(max-width:420px){form{grid-template-columns:1fr}#bridge-world{height:270px}}
+</style>

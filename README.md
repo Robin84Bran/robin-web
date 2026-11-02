@@ -353,3 +353,16 @@ experiment contract, complete results and a source ZIP live under
 `06_intelligence/AI_research/AI_swarm/13_signal_or_silence/`. UNKNOWN, false
 DOWN and routing during a true outage remain separate measures; the toy is not
 a production reliability benchmark or infrastructure recommendation.
+
+## Weekly Intelligence — Bridge or Bus?
+
+`/intelligence/bridge-or-bus/` is the 2026-W45 experiment: multi-stage jobs,
+changing interface versions, direct pairwise adapters and one shared translation
+layer. It retains 640 matched worlds / 2,560 policy outcomes across broad and
+repeated routes, stable and rapid schema drift, hub failure and repair-budget
+sensitivities. Run `pnpm run test:bridge-or-bus` after a build. Public source,
+the frozen experiment contract, complete results and a source ZIP live under
+`public/bridge-or-bus/`. Canonical research:
+`06_intelligence/AI_research/AI_swarm/15_bridge_or_bus/`. The model is a
+deterministic teaching mechanism, not a framework benchmark or architecture
+recommendation.
