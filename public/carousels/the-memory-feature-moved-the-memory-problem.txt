@@ -1,0 +1,18 @@
+Anthropic's new Message Threads can make long agent conversations send less context on each follow-up.
+
+The contradiction is that the memory feature does not remove the application's memory problem. It moves it.
+
+A server thread lasts five minutes after its last request. If it disappears, recovery creates a fresh thread and replays the complete conversation. That only works if the application still owns the full ledger.
+
+One credential-free local failure injection waited 360 seconds against a 300-second lifetime. The client recovered once, returned 22, recorded zero duplicate user turns, and made zero provider API calls.
+
+That is evidence for one local replay path, not live Claude latency, token savings, cost, quality or service behavior.
+
+The design rule is simple:
+
+Use the thread as a shortcut.
+Treat the ledger as truth.
+
+Full story and sources: https://iamrobin.ai/binary/stories/the-memory-feature-moved-the-memory-problem/
+
+#AgenticAI #Claude #AIAgents #ReliabilityEngineering #SystemsDesign
