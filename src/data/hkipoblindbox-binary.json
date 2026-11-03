@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T01:48:22.399402+00:00",
+  "generated_at": "2026-11-03T09:05:29.829410+00:00",
   "version": "binary-exec-v1.0",
   "forecasts": [
     {
@@ -298,8 +298,8 @@
     "forecasts": 17,
     "reviewed_paths": 8,
     "yes_d5": 3,
-    "no_d5": 4,
-    "pending_d5": 10,
+    "no_d5": 5,
+    "pending_d5": 9,
     "source_note": "Single-vendor completed daily bars; official final issue prices and independent opening-price checks. Market counterfactuals, not personal fills."
   }
 }
