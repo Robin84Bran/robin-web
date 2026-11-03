@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title description">
+  <title id="title">The folder behind a five-minute thread</title>
+  <description id="description">A quiet diagram of a temporary conversation thread returning to a durable application ledger after five minutes.</description>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4f1ea"/>
+      <stop offset="1" stop-color="#e8e2d7"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#242722" stroke-opacity="0.055" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#paper)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M240 234H610C642 234 668 260 668 292V612C668 644 642 670 610 670H240C208 670 182 644 182 612V292C182 260 208 234 240 234Z" stroke="#222722" stroke-width="3"/>
+    <path d="M182 330H668" stroke="#222722" stroke-opacity="0.28" stroke-width="2"/>
+    <path d="M250 292H412" stroke="#b05a3c" stroke-width="6"/>
+    <path d="M250 394H560M250 454H520M250 514H578M250 574H470" stroke="#222722" stroke-opacity="0.55" stroke-width="3"/>
+
+    <path d="M668 452H890" stroke="#b05a3c" stroke-width="4" stroke-dasharray="10 16"/>
+    <path d="M858 428L890 452L858 476" stroke="#b05a3c" stroke-width="4"/>
+
+    <circle cx="1116" cy="452" r="202" stroke="#222722" stroke-width="3"/>
+    <circle cx="1116" cy="452" r="148" stroke="#222722" stroke-opacity="0.18" stroke-width="2"/>
+    <path d="M1116 316V452L1218 510" stroke="#222722" stroke-width="7"/>
+    <circle cx="1116" cy="452" r="12" fill="#b05a3c" stroke="none"/>
+
+    <path d="M1318 452H1444V704H742" stroke="#222722" stroke-opacity="0.5" stroke-width="3" stroke-dasharray="3 13"/>
+    <path d="M774 680L742 704L774 728" stroke="#222722" stroke-opacity="0.5" stroke-width="3"/>
+  </g>
+
+  <text x="182" y="142" fill="#222722" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="24" letter-spacing="5">DAILY SPECIAL · SIGNAL 1</text>
+  <text x="182" y="790" fill="#222722" font-family="Georgia, 'Times New Roman', serif" font-size="54">The folder behind a five-minute thread</text>
+  <text x="1116" y="208" text-anchor="middle" fill="#b05a3c" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="24" letter-spacing="3">05:00</text>
+  <text x="182" y="840" fill="#222722" fill-opacity="0.62" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="20" letter-spacing="2">CREATE · CONTINUE · REPLAY</text>
+</svg>
