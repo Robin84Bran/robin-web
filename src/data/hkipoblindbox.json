@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-31T01:48:22.361637+00:00",
+  "generated_at": "2026-11-04T09:27:32.389947+00:00",
   "money_mode": "SIMULATED",
   "forecasts": [
     {
@@ -263,7 +263,7 @@
       "case_id": "HKEX-PENDING-00054-8b49c42e",
       "stock_code": "00054",
       "issuer_name": "HEMAY PHARMA-B",
-      "listing_date": "2026-11-09",
+      "listing_date": null,
       "mode": "FORWARD",
       "frozen_at": "2026-10-30T01:32:17.061920+00:00",
       "model_version": "six_lens_prior_v0.1",
