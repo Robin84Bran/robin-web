@@ -6,9 +6,10 @@ import { prepareReply } from '../../public/council/reply.mjs';
 const read = path => readFileSync(new URL('../../' + path, import.meta.url), 'utf8');
 const path = '/intelligence/council/autonomous-engineering/';
 
-test('October 29 council keeps empty seats and replies bound to its own topic', async () => {
-  const route = '/intelligence/council/million-good-questions/';
-  const { prepareReply: prepareWeeklyReply } = await import('../../public/council/million-good-questions.mjs');
+for (const slug of ['million-good-questions', 'customer-sends-agent']) {
+test(`${slug} council keeps empty seats and replies bound to its own topic`, async () => {
+  const route = `/intelligence/council/${slug}/`;
+  const { prepareReply: prepareWeeklyReply } = await import(`../../public/council/${slug}.mjs`);
   const empty = prepareWeeklyReply([], '');
   assert.ok(empty.includes('https://iamrobin.ai' + route));
   assert.match(empty, /1: not chosen; 2: not chosen; 3: not chosen; 4: not chosen/);
@@ -25,8 +26,9 @@ test('October 29 council keeps empty seats and replies bound to its own topic', 
   assert.ok(read('dist/intelligence/index.html').includes(route));
   assert.ok(read('dist/sitemap-0.xml').includes(route));
   assert.doesNotMatch(html, /https?:\/\/(?:chatgpt|claude|gemini|grok)\.[^\s"<]+|\/Users\/|private_reviews|receipt\.json/);
-  assert.doesNotMatch(read('public/council/million-good-questions.mjs'), /fetch\(|XMLHttpRequest|sendBeacon|localStorage|sessionStorage|innerHTML|\.submit\(/);
+  assert.doesNotMatch(read(`public/council/${slug}.mjs`), /fetch\(|XMLHttpRequest|sendBeacon|localStorage|sessionStorage|innerHTML|\.submit\(/);
 });
+}
 
 test('approved council transcripts preserve original words, ignoring terminal whitespace only', () => {
   const expected = {
