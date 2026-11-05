@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T09:05:29.829410+00:00",
+  "generated_at": "2026-11-05T01:00:48.504550+00:00",
   "version": "binary-exec-v1.0",
   "forecasts": [
     {
@@ -273,6 +273,22 @@
       "prospectus_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1030/2026103002447.pdf",
       "participation": "SUBSCRIBE",
       "commitment": "1f3a852f78419f32ad042646feb978e3827b36317a069763f53bf80be9b3d8df"
+    },
+    {
+      "stock_code": "06935",
+      "issuer_name": "ADASPACE",
+      "listing_date": "2026-11-13",
+      "prediction": "YES",
+      "version": "binary-exec-v1.0",
+      "frozen_at": "2026-11-05T01:00:34.569924+00:00",
+      "target_at_offer_high": 36.52,
+      "target_at_offer_low": 27.4,
+      "offer_high": 33.2,
+      "offer_low": 24.9,
+      "target_formula": "ceil_to_listing_day_tick(1.10 * FINAL_ISSUE_PRICE)",
+      "prospectus_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1105/2026110500055.pdf",
+      "participation": "SUBSCRIBE",
+      "commitment": "4041bb59eee2cb5c1fc99e6c4648423e8795dc52ad2907dac515e91e93b340c0"
     }
   ],
   "scope": "Independent five-session layer; original three-session experiment preserved",
@@ -295,11 +311,11 @@
     "unseen": false
   },
   "forward": {
-    "forecasts": 17,
+    "forecasts": 18,
     "reviewed_paths": 8,
     "yes_d5": 3,
     "no_d5": 5,
-    "pending_d5": 9,
+    "pending_d5": 10,
     "source_note": "Single-vendor completed daily bars; official final issue prices and independent opening-price checks. Market counterfactuals, not personal fills."
   }
 }
