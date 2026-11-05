@@ -1,0 +1,544 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-05",
+  "updated": "2026-11-05",
+  "signalCount": 8,
+  "briefingPath": "/ouroboros/202611/20261105/",
+  "actionItemPath": "/ouroboros/202611/20261105/action_item/",
+  "hero": "/daily-briefing/20261105/hero.webp",
+  "ogImage": "/daily-briefing/20261105/og.webp",
+  "actionHero": "/action-item/20261105/hero.webp",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "v0.2.2-rc.1",
+      "visualLabel": "Harness release candidate",
+      "sources": [
+        {
+          "label": "Official release notes",
+          "url": "https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.2-rc.1"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "65,000+ hours",
+      "visualLabel": "reported robot operation",
+      "sources": [
+        {
+          "label": "Agility transaction completion",
+          "url": "https://www.agilityrobotics.com/content/agility-robotics-and-churchill-capital-corp-xi-complete-business-combination"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "-$200.9M",
+      "visualLabel": "November 3 joint ETF flows",
+      "sources": [
+        {
+          "label": "BTC table",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "ETH table",
+          "url": "https://farside.co.uk/eth/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "per second",
+      "visualLabel": "USDY yield pricing",
+      "sources": [
+        {
+          "label": "Ondo product announcement",
+          "url": "https://ondo.finance/blog/usdy-continuous-pricing"
+        },
+        {
+          "label": "Migration documentation",
+          "url": "https://docs.ondo.finance/"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "deepDiveAvailable": true,
+      "priority": "NOW",
+      "status": "READY",
+      "visualValue": "$182M",
+      "visualLabel": "ARC presale revenue",
+      "sources": [
+        {
+          "label": "Circle Q3 results",
+          "url": "https://www.circle.com/pressroom/circle-reports-third-quarter-2026-results"
+        },
+        {
+          "label": "Circle investor relations",
+          "url": "https://investor.circle.com/"
+        },
+        {
+          "label": "Action Item",
+          "url": "https://iamrobin.ai/ouroboros/202611/20261105/action_item/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "WATCH",
+      "status": "READY",
+      "visualValue": "1,300 MW",
+      "visualLabel": "capacity in exclusivity",
+      "sources": [
+        {
+          "label": "Hut 8 Q3 release",
+          "url": "https://www.hut8.com/news-insights/press-releases/hut-8-reports-third-quarter-2026-results"
+        },
+        {
+          "label": "Beacon Point commercialization",
+          "url": "https://www.hut8.com/news-insights/press-releases/hut-8-fully-commercializes-1-gw-beacon-point-ai-data-center-campus"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$150M",
+      "visualLabel": "Series C announced",
+      "sources": [
+        {
+          "label": "Sentra financing announcement",
+          "url": "https://sentra.io/news/sentra-raises-150-million-agentic-data-security"
+        },
+        {
+          "label": "Company account",
+          "url": "https://sentra.io/blog/why-we-raised-150m-series-c-data-security"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$5B",
+      "visualLabel": "fiscal 2027 data-center target",
+      "sources": [
+        {
+          "label": "Qualcomm results",
+          "url": "https://investor.qualcomm.com/files/content_files/FY2026-4th-Quarter-Earnings-Release.pdf"
+        },
+        {
+          "label": "Investor release",
+          "url": "https://investor.qualcomm.com/news-events/press-releases/news-details/2026/Qualcomm-Earnings-Release-Available-on-Companys-Investor-Relations-Website-c5258267a/default.aspx"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, November 5, 2026",
+      "description": "Eight bounded actions examine agent recovery, robot delivery, ETF breadth, USDY pricing, Circle revenue quality, data-center capacity, agent-data security and Qualcomm execution.",
+      "centralJudgment": "Targets and headline growth become useful when delivery, recurring economics and reconciliation can be verified.",
+      "fieldLine": "Eight signals. Signal 5 opens today's Circle evidence page.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Test one scheduled Harness task",
+          "why": "The release candidate combines scheduling and review, but its stability and unattended completion are unmeasured.",
+          "steps": [
+            "Run one scheduled task in a credential-free isolated repository.",
+            "Record acceptance, recovery and human-review minutes."
+          ],
+          "done": "The task has an accepted result and a recorded recovery and review cost."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "Establish Agility's first-quarter baseline",
+          "why": "Committed orders and designed capacity do not establish delivered units or paid use.",
+          "steps": [
+            "Capture actual delivered units and paid operating hours in the first quarterly report.",
+            "Add recognized revenue, cash use and fully diluted shares."
+          ],
+          "done": "One reported baseline separates delivery, use, revenue and dilution."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows",
+          "title": "Wait for complete ETF flow rows",
+          "why": "November 3 was negative across BTC and ETH; November 4 totals remain incomplete while fund entries are blank.",
+          "steps": [
+            "Keep the regime at WATCH.",
+            "After both November 4 tables have every fund update, assess whether they show a provisional joint re-entry day."
+          ],
+          "done": "A flow decision uses complete BTC and ETH rows."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins and Payment Rails",
+          "title": "Reconcile USDY across time boundaries",
+          "why": "Continuous pricing makes timestamp agreement and accrued yield operational requirements.",
+          "steps": [
+            "Simulate one balance across a UTC day boundary and a weekend.",
+            "Compare timestamps and yield in the legacy oracle, new Wrapper and redemption quote."
+          ],
+          "done": "Differences among the three prices are explained or resolved."
+        },
+        {
+          "signal": 5,
+          "domain": "Content and Visibility",
+          "title": "Publish the Circle revenue evidence page",
+          "why": "Circle's headline combines reserve income, network activity and ARC presale revenue.",
+          "steps": [
+            "Build the Q3 revenue bridge, separating reserve income, other revenue and the ARC presale.",
+            "Publish the complete four-language page and archive a LinkedIn draft for manual publication."
+          ],
+          "done": "The page shows the three revenue buckets and a next-quarter test of recurring network use."
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure and Careers",
+          "title": "Track 1,300 megawatts through delivery gates",
+          "why": "Exclusivity precedes financing, construction, energization and billing.",
+          "steps": [
+            "Build a stage funnel for the 1,300 megawatts.",
+            "Move capacity between stages only when primary evidence confirms the next gate."
+          ],
+          "done": "Every recorded megawatt has a supported stage and source."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-Stage Private Markets",
+          "title": "Gate Sentra on operating evidence",
+          "why": "The financing announcement omits the revenue base, retention, margin and independent outcomes needed to judge durability.",
+          "steps": [
+            "Keep Sentra at WATCH.",
+            "Upgrade to INVESTIGATE only after verifiable recurring revenue, net retention, gross margin and independent customer outcomes appear."
+          ],
+          "done": "All four evidence requirements are met before an upgrade."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities",
+          "title": "Test Qualcomm's data-center target against results",
+          "why": "The $5 billion fiscal 2027 target is guidance; shipments and recognized revenue must substantiate it.",
+          "steps": [
+            "Next quarter, record actual data-center revenue and Amazon-related shipments.",
+            "Reconcile segment margin and inventory movement against the target."
+          ],
+          "done": "Reported shipments, revenue, margin and inventory sit beside the guidance."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年11月5日",
+      "description": "八项有边界行动，检验代理恢复、机器人交付、ETF 广度、USDY 定价、Circle 收入质量、数据中心容量、代理数据安全与高通执行情况。",
+      "centralJudgment": "目标与表面增长只有在交付、经常性经济性及对账结果可核实时才有判断价值。",
+      "fieldLine": "八个信号。信号 5 可打开今日 Circle 证据页。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与代理",
+          "title": "测试一项 Harness 定时任务",
+          "why": "这一候选版本整合了调度与审查，但稳定性和无人值守完成情况尚无公开测量。",
+          "steps": [
+            "在无凭证的隔离代码库中运行一项定时任务。",
+            "记录验收结果、恢复情况和人工审查分钟数。"
+          ],
+          "done": "任务结果通过验收，恢复与审查成本均有记录。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 与机器人",
+          "title": "建立 Agility 首季基线",
+          "why": "订单承诺与设计产能不能证明实际交付量或付费使用量。",
+          "steps": [
+            "从首份季度报告记录实际交付台数和付费运行小时数。",
+            "补充已确认收入、现金消耗和完全稀释股数。"
+          ],
+          "done": "一份披露基线分别列明交付、使用、收入和股权稀释。"
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto 资本流",
+          "title": "等待完整的 ETF 资金流数据",
+          "why": "11 月 3 日 BTC 与 ETH 均为净流出；11 月 4 日仍有基金数据空缺。",
+          "steps": [
+            "维持 WATCH。",
+            "两张 11 月 4 日表格的基金数据全部更新后，再判断是否出现暂时的共同回流。"
+          ],
+          "done": "资金流判断同时依据完整的 BTC 和 ETH 数据。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币与支付轨道",
+          "title": "核对 USDY 跨时段定价",
+          "why": "连续定价使时间戳一致性和应计收益核对成为运营要求。",
+          "steps": [
+            "模拟一笔余额跨越 UTC 日期边界及周末。",
+            "比较旧预言机、新 Wrapper 和赎回报价的时间戳与收益。"
+          ],
+          "done": "三种价格之间的差异均得到解释或解决。"
+        },
+        {
+          "signal": 5,
+          "domain": "内容与可见度",
+          "title": "发布 Circle 收入证据页",
+          "why": "Circle 的收入标题数字混合了储备收入、网络活动和 ARC 预售收入。",
+          "steps": [
+            "制作第三季度收入拆解，区分储备收入、其他收入与 ARC 预售。",
+            "发布完整四语页面，并存档供人工发布的 LinkedIn 草稿。"
+          ],
+          "done": "页面列明三类收入，并给出下季度检验经常性网络使用的指标。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基础设施与职业",
+          "title": "跟踪 1,300 兆瓦的交付关口",
+          "why": "排他性阶段仍早于融资、建设、通电和计费。",
+          "steps": [
+            "为 1,300 兆瓦建立阶段漏斗。",
+            "仅在原始证据确认下一关口后，才将容量移入下一阶段。"
+          ],
+          "done": "每笔已记录容量都有证据支持的阶段与来源。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私募市场",
+          "title": "以经营证据评估 Sentra",
+          "why": "融资公告缺少判断业务持续性所需的收入基数、留存率、毛利率和独立客户结果。",
+          "steps": [
+            "将 Sentra 保持在 WATCH。",
+            "只有在可核实的经常性收入、净留存率、毛利率及独立客户结果披露后，才升级为 INVESTIGATE。"
+          ],
+          "done": "升级前四项证据要求全部满足。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场",
+          "title": "用业绩检验高通数据中心目标",
+          "why": "2027 财年 50 亿美元目标属于指引，仍需出货和已确认收入支撑。",
+          "steps": [
+            "下季度记录实际数据中心收入及亚马逊相关出货。",
+            "将业务利润率和库存变化与目标一同核对。"
+          ],
+          "done": "报告中的出货、收入、利润率和库存数据与指引并列。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年11月5日",
+      "description": "八項有邊界行動，檢驗代理復原、機器人交付、ETF 廣度、USDY 定價、Circle 收入品質、資料中心容量、代理資料安全與高通執行情況。",
+      "centralJudgment": "目標與表面增長只有在交付、經常性經濟效益及對帳結果可核實時才有判斷價值。",
+      "fieldLine": "八個訊號。訊號 5 可開啟今日 Circle 證據頁。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與代理",
+          "title": "測試一項 Harness 排程任務",
+          "why": "這個候選版本整合了排程與審查，但穩定性和無人值守完成情況尚無公開測量。",
+          "steps": [
+            "在沒有憑證的隔離程式碼庫中執行一項排程任務。",
+            "記錄驗收結果、復原情況和人工審查分鐘數。"
+          ],
+          "done": "任務結果通過驗收，復原與審查成本均有記錄。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 與機器人",
+          "title": "建立 Agility 首季基線",
+          "why": "訂單承諾與設計產能不能證明實際交付量或付費使用量。",
+          "steps": [
+            "從首份季度報告記錄實際交付台數和付費運作時數。",
+            "補充已確認收入、現金消耗和完全稀釋股數。"
+          ],
+          "done": "一份披露基線分別列明交付、使用、收入和股權稀釋。"
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto 資本流",
+          "title": "等待完整的 ETF 資金流數據",
+          "why": "11 月 3 日 BTC 與 ETH 均為淨流出；11 月 4 日仍有基金數據空缺。",
+          "steps": [
+            "維持 WATCH。",
+            "兩張 11 月 4 日表格的基金數據全部更新後，再判斷是否出現暫時的共同回流。"
+          ],
+          "done": "資金流判斷同時依據完整的 BTC 和 ETH 數據。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣與支付軌道",
+          "title": "核對 USDY 跨時段定價",
+          "why": "連續定價使時間戳一致性和應計收益核對成為營運要求。",
+          "steps": [
+            "模擬一筆餘額跨越 UTC 日期邊界及週末。",
+            "比較舊預言機、新 Wrapper 和贖回報價的時間戳與收益。"
+          ],
+          "done": "三種價格之間的差異均獲解釋或解決。"
+        },
+        {
+          "signal": 5,
+          "domain": "內容與可見度",
+          "title": "發布 Circle 收入證據頁",
+          "why": "Circle 的收入標題數字混合了儲備收入、網絡活動和 ARC 預售收入。",
+          "steps": [
+            "製作第三季度收入拆解，區分儲備收入、其他收入與 ARC 預售。",
+            "發布完整四語頁面，並存檔供人工發布的 LinkedIn 草稿。"
+          ],
+          "done": "頁面列明三類收入，並提出下季度檢驗經常性網絡使用的指標。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基礎設施與職業",
+          "title": "追蹤 1,300 兆瓦的交付關口",
+          "why": "排他性階段仍早於融資、建設、通電和計費。",
+          "steps": [
+            "為 1,300 兆瓦建立階段漏斗。",
+            "僅在原始證據確認下一關口後，才將容量移入下一階段。"
+          ],
+          "done": "每筆已記錄容量都有證據支持的階段與來源。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私募市場",
+          "title": "以營運證據評估 Sentra",
+          "why": "融資公告缺少判斷業務持續性所需的收入基數、留存率、毛利率和獨立客戶結果。",
+          "steps": [
+            "將 Sentra 保持在 WATCH。",
+            "只有在可核實的經常性收入、淨留存率、毛利率及獨立客戶結果披露後，才升級為 INVESTIGATE。"
+          ],
+          "done": "升級前四項證據要求全部滿足。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場",
+          "title": "用業績檢驗高通資料中心目標",
+          "why": "2027 財年 50 億美元目標屬於指引，仍需出貨和已確認收入支持。",
+          "steps": [
+            "下季度記錄實際資料中心收入及亞馬遜相關出貨。",
+            "將業務利潤率和庫存變化與目標一同核對。"
+          ],
+          "done": "報告中的出貨、收入、利潤率和庫存數據與指引並列。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年11月5日",
+      "description": "8つの範囲を定めた行動で、エージェントの復旧、ロボットの納品、ETF資金フロー、USDYの価格、Circleの収益の質、データセンター容量、エージェントのデータ保護、Qualcommの実行を検証する。",
+      "centralJudgment": "目標や見出し上の成長は、納品、継続的な収益性、照合結果を確認できて初めて判断材料になる。",
+      "fieldLine": "8つのシグナル。シグナル5から本日のCircleの証拠ページを開く。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "最先端モデルとエージェント",
+          "title": "Harnessの定期タスクを1件試す",
+          "why": "このリリース候補はスケジュールとレビューを統合するが、安定性と無人完了率の公開測定はない。",
+          "steps": [
+            "認証情報のない隔離リポジトリで定期タスクを1件実行する。",
+            "受け入れ結果、復旧、人によるレビュー時間を記録する。"
+          ],
+          "done": "成果が受け入れられ、復旧とレビューの負担が記録されている。"
+        },
+        {
+          "signal": 2,
+          "domain": "フィジカルAIとロボティクス",
+          "title": "Agilityの最初の四半期基準を作る",
+          "why": "注文の約束と設計上の生産能力だけでは、実際の納品台数や有料利用は分からない。",
+          "steps": [
+            "最初の四半期報告から実際の納品台数と有料稼働時間を記録する。",
+            "認識済み売上高、現金使用額、完全希薄化後株式数を加える。"
+          ],
+          "done": "納品、利用、売上、希薄化を分けた報告上の基準ができる。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資金フロー",
+          "title": "ETF資金フローの確定を待つ",
+          "why": "11月3日はBTCとETHの両方が純流出で、11月4日には未記入のファンド欄が残る。",
+          "steps": [
+            "状況をWATCHに保つ。",
+            "11月4日の両表で全ファンドが更新された後、両方への暫定的な再流入日か判断する。"
+          ],
+          "done": "BTCとETHの完全な行に基づいて判断する。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコインと決済基盤",
+          "title": "時刻の境界をまたぐUSDY価格を照合する",
+          "why": "連続的な価格設定では、時刻の一致と経過利回りの照合が運用上必要になる。",
+          "steps": [
+            "UTCの日付境界と週末をまたぐ残高を1件シミュレーションする。",
+            "旧オラクル、新Wrapper、償還見積もりの時刻と利回りを比較する。"
+          ],
+          "done": "3つの価格の差が説明または解消されている。"
+        },
+        {
+          "signal": 5,
+          "domain": "コンテンツと発信力",
+          "title": "Circleの収益を分解した証拠ページを公開する",
+          "why": "Circleの見出し上の数字には準備金収入、ネットワーク活動、ARCのプレセール収入が混在する。",
+          "steps": [
+            "第3四半期の収益を準備金収入、その他の収入、ARCプレセールに分ける。",
+            "4言語の完全版を公開し、手動投稿用のLinkedIn草稿を保存する。"
+          ],
+          "done": "ページに3つの収益区分と次四半期の継続的なネットワーク利用の検証項目がある。"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラとキャリア",
+          "title": "1,300MWを納品段階ごとに追う",
+          "why": "独占交渉段階は、資金調達、建設、通電、請求に先行する。",
+          "steps": [
+            "1,300MWの段階別一覧を作る。",
+            "一次資料が次の段階を確認したときだけ容量を移す。"
+          ],
+          "done": "記録した各容量に根拠のある段階と出典がある。"
+        },
+        {
+          "signal": 7,
+          "domain": "レイターステージ未公開市場",
+          "title": "Sentraを事業実績で評価する",
+          "why": "資金調達の発表には、継続性の判断に必要な売上基盤、継続率、粗利益率、独立した顧客成果がない。",
+          "steps": [
+            "SentraをWATCHに保つ。",
+            "検証可能な継続収益、純継続率、粗利益率、独立した顧客成果が示された後にだけINVESTIGATEへ上げる。"
+          ],
+          "done": "4つの証拠条件をすべて満たしてから評価を上げる。"
+        },
+        {
+          "signal": 8,
+          "domain": "上場市場",
+          "title": "Qualcommのデータセンター目標を実績で検証する",
+          "why": "2027会計年度の50億ドル目標は見通しであり、出荷と認識済み売上による裏付けが必要だ。",
+          "steps": [
+            "次四半期に実際のデータセンター売上とAmazon関連の出荷を記録する。",
+            "事業の利益率と在庫の変化を目標と照合する。"
+          ],
+          "done": "報告された出荷、売上、利益率、在庫を見通しと並べる。"
+        }
+      ]
+    }
+  }
+}
