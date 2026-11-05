@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-04T09:27:32.389947+00:00",
+  "generated_at": "2026-11-05T01:00:48.463997+00:00",
   "money_mode": "SIMULATED",
   "forecasts": [
     {
@@ -345,6 +345,24 @@
         0.35484334807943957,
         0.24109816698679418,
         0.13760380237861514
+      ],
+      "target_return": 0.1,
+      "score": null
+    },
+    {
+      "case_id": "HKEX-PENDING-06935-a64987fb",
+      "stock_code": "06935",
+      "issuer_name": "ADASPACE",
+      "listing_date": "2026-11-13",
+      "mode": "FORWARD",
+      "frozen_at": "2026-11-05T01:00:34.295791+00:00",
+      "model_version": "six_lens_prior_v0.1",
+      "commitment": "c8e6af14b76e99af3ec68e1e38ded02f251ad547bfa32f09895ddba61713ccff",
+      "probabilities": [
+        0.28328659481037505,
+        0.3588596354173864,
+        0.23193544710599548,
+        0.1259183226662429
       ],
       "target_return": 0.1,
       "score": null
