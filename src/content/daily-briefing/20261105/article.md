@@ -93,7 +93,7 @@ One Action — one complete publishing assignment:
 - **Evidence spine:** Circle and USDC background; Q3 revenue bridge; reserve yield and circulation; ARC presale contribution; the recurring network metrics that the next quarter can verify.
 - **First derivative:** Archive a LinkedIn draft that explains reserve income, network income and token events as three buckets for manual publication.
 
-## 6. AI infrastructure and careers｜Hut 8 advances 1.3 gigawatts into exclusivity
+## 6. AI infrastructure｜Hut 8 advances 1.3 gigawatts into exclusivity
 
 Date: November 4, 2026.
 
