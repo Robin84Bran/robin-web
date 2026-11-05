@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">USDY Starts Counting Between Midnights</title>
+  <desc id="desc">A quiet editorial chart contrasts a midnight step with a continuous price line.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4f1e9"/>
+      <stop offset="1" stop-color="#e7e1d5"/>
+    </linearGradient>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" fill="none" stroke="#1b2a2f" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <g fill="#183138">
+    <text x="120" y="130" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="24" letter-spacing="5">DAILY SPECIAL · SIGNAL 4</text>
+    <text x="120" y="250" font-family="Georgia, 'Times New Roman', serif" font-size="82">USDY starts counting</text>
+    <text x="120" y="340" font-family="Georgia, 'Times New Roman', serif" font-size="82">between midnights</text>
+  </g>
+  <g transform="translate(120 455)">
+    <path d="M0 245H1360M0 0V245" fill="none" stroke="#183138" stroke-opacity="0.28" stroke-width="2"/>
+    <path d="M0 190H640V92H1360" fill="none" stroke="#9a4f32" stroke-width="7"/>
+    <path d="M0 196C360 170 790 127 1360 72" fill="none" stroke="#1e6a68" stroke-width="8"/>
+    <circle cx="640" cy="92" r="10" fill="#9a4f32"/>
+    <circle cx="640" cy="136" r="10" fill="#1e6a68"/>
+    <path d="M640 -5V255" stroke="#183138" stroke-opacity="0.26" stroke-width="2" stroke-dasharray="8 10"/>
+    <text x="592" y="285" fill="#183138" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="24">00:00 UTC</text>
+    <text x="1020" y="58" fill="#1e6a68" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="22">CONTINUOUS</text>
+    <text x="1020" y="116" fill="#9a4f32" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="22">DAILY STEP</text>
+  </g>
+  <text x="120" y="835" fill="#183138" fill-opacity="0.72" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="22">5 NOVEMBER 2026 · IAMROBIN.AI</text>
+</svg>
