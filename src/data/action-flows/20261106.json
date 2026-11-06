@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-06",
+  "updated": "2026-11-06",
+  "signalCount": 8,
+  "briefingPath": "/ouroboros/202611/20261106/",
+  "actionItemPath": "/ouroboros/202611/20261106/action_item/",
+  "hero": "/daily-briefing/20261106/hero.webp",
+  "ogImage": "/daily-briefing/20261106/og.webp",
+  "actionHero": "/action-item/20261106/hero.webp",
+  "actions": [
+    {"signal":1,"priority":"NEXT","status":"READY","visualValue":"81 Firefox","visualLabel":"reported high-severity findings","sources":[{"label":"OpenAI announcement","url":"https://openai.com/index/introducing-gpt-6-cyber/"},{"label":"System card","url":"https://deploymentsafety.openai.com/gpt-6-cyber"}]},
+    {"signal":2,"priority":"WATCH","status":"WATCHING","visualValue":"6 months","visualLabel":"planned pilot window","sources":[{"label":"ID Logistics release","url":"https://www.id-logistics.com/media/2026/11/PR-ID-Logistics-Humanoid-Robots-Germany.pdf"}]},
+    {"signal":3,"priority":"WATCH","status":"WATCHING","visualValue":"+$127.6M","visualLabel":"November 4 joint ETF flows","sources":[{"label":"BTC table","url":"https://farside.co.uk/bitcoin-etf-flow-all-data/"},{"label":"ETH table","url":"https://farside.co.uk/ethereum-etf-flow-all-data/"}]},
+    {"signal":4,"priority":"NEXT","status":"READY","visualValue":"46 assets","visualLabel":"tokenized-stock catalog","sources":[{"label":"SODAX announcement","url":"https://www.sodax.com/news/sodax-whitelists-22-more-robinhood-stocks-across-4-networks"}]},
+    {"signal":5,"deepDiveAvailable":true,"priority":"NOW","status":"READY","visualValue":"18 sessions","visualLabel":"live deliberation study","sources":[{"label":"Google Research","url":"https://www.research.google/blog/agile-deliberation-how-ai-helps-humans-define-the-gray-areas/"},{"label":"CVPR paper","url":"https://openaccess.thecvf.com/content/CVPR2026/html/Stretcu_Agile_Deliberation_CVPR_2026_paper.html"},{"label":"Action Item","url":"https://iamrobin.ai/ouroboros/202611/20261106/action_item/"}]},
+    {"signal":6,"priority":"NEXT","status":"READY","visualValue":"financial assurance","visualLabel":"pre-spend project protection","sources":[{"label":"OpenAI infrastructure compact","url":"https://openai.com/index/setting-new-standard-responsible-ai-infrastructure/"}]},
+    {"signal":7,"priority":"WATCH","status":"WATCHING","visualValue":"$100M","visualLabel":"Series C closed","sources":[{"label":"Ocient announcement","url":"https://ocient.com/newsroom/press-releases/ocient-raises-100m-in-series-c-funding/"}]},
+    {"signal":8,"priority":"WATCH","status":"WATCHING","visualValue":"$2.37B","visualLabel":"fiscal Q1 revenue","sources":[{"label":"Coherent results","url":"https://coherent.gcs-web.com/news-releases/news-release-details/coherent-corp-reports-first-quarter-fiscal-2027-results"}]}
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, November 6, 2026",
+      "description": "Eight bounded actions test agent scope, warehouse integration, ETF breadth, tokenized-stock execution, learnable taste, infrastructure assurances, private-market economics and optical returns.",
+      "centralJudgment": "A capability becomes useful when its scope, delivery evidence and next acceptance test are visible together.",
+      "fieldLine": "Eight signals. Signal 5 opens today's editorial-taste evidence page.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal":1,"domain":"Frontier Models and Agents","title":"Test scope under a tempting shortcut","why":"GPT-6 Cyber pairs stronger security work with provider-reported boundary adherence, while access remains restricted.","steps":["Create one isolated Honest Agent task where an unauthorized shortcut is faster.","Record boundary adherence, reproducible evidence and truthful unfinished-work reporting."],"done":"The test has a replayable result and a clear boundary verdict."},
+        {"signal":2,"domain":"Physical AI and Robotics","title":"Define the warehouse pilot acceptance card","why":"Sorting tests precede evidence about throughput, intervention and sustained operation.","steps":["Wait for ID Logistics and Terra Robotics to choose the pilot task.","Record hourly completions, human takeovers, recovery time and continuous duration."],"done":"The selected task has one source-backed operating baseline."},
+        {"signal":3,"domain":"Crypto Capital Flows","title":"Require two more complete positive sessions","why":"November 4 improved breadth across BTC and ETH, while one session cannot establish persistence.","steps":["Mark November 4 as a provisional re-entry day.","Check the combined total after each of the next two jointly complete sessions."],"done":"Both later complete sessions keep the combined BTC and ETH total positive, or the provisional label is revoked."},
+        {"signal":4,"domain":"Stablecoins and Payment Rails","title":"Measure one tokenized-stock quote path","why":"A 46-asset catalog establishes access rather than executable quality.","steps":["Run a read-only quote test for one newly listed GrelfSwap stock token.","Record spread, executable depth, settlement path and rights disclosure."],"done":"One quote path is documented from interface to disclosed rights."},
+        {"signal":5,"domain":"Content and Visibility","title":"Publish the taste boundary-case essay","why":"The Google study gives a bounded method for refining subjective categories and a clear transfer question for editorial selection.","steps":["Publish Astra's exact English article and three reviewed language editions.","Archive the LinkedIn derivative and preserve the proposed experiment as unrun."],"done":"Four public editions explain the 18-session scope and keep editorial transfer a proposed test."},
+        {"signal":6,"domain":"AI Infrastructure","title":"Verify one campus financial assurance","why":"OpenAI's compact introduces project protection before major spending, with a defined owned-and-operated scope.","steps":["Add a financial-assurance field to the infrastructure tracker.","From one actual agreement, capture guarantor, amount, triggers and covered costs."],"done":"One agreement supports every recorded assurance field."},
+        {"signal":7,"domain":"Late-Stage Private Markets","title":"Gate Ocient on operating economics","why":"The Series C announcement omits absolute revenue, margin, concentration and service mix.","steps":["Keep Ocient at WATCH.","Upgrade only after all four operating fields become verifiable."],"done":"Absolute revenue, gross margin, customer concentration and subscription-versus-services mix are supported before INVESTIGATE."},
+        {"signal":8,"domain":"Public Equities","title":"Test optical growth against capital returns","why":"Coherent's quarter adds revenue and margin evidence while full-year growth remains guidance.","steps":["At the next report, record added capacity, capital expenditure and customer concentration.","Compare those fields with gross margin and revenue growth."],"done":"The thesis strengthens only when growth continues to convert into returns on capital."}
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年11月6日",
+      "description": "八项有边界行动，检验 Agent 权限、仓库集成、ETF 广度、股票代币执行、可学习品味、基建担保、私募经济性与光连接回报。",
+      "centralJudgment": "能力只有在适用范围、交付证据与下一项验收测试同时可见时，才真正有用。",
+      "fieldLine": "八个信号。信号 5 可打开今日编辑品味证据页。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal":1,"domain":"前沿模型与 Agent","title":"用诱人的捷径测试权限边界","why":"GPT-6 Cyber 同时提升安全任务能力与厂商报告的边界遵守表现，访问仍然受限。","steps":["创建一项隔离 Honest Agent 任务，让越权捷径看起来更快。","记录边界遵守、可复现证据与未完成工作报告。"],"done":"测试拥有可重放结果与清晰边界结论。"},
+        {"signal":2,"domain":"Physical AI 与机器人","title":"定义仓库试点验收卡","why":"分拣测试仍早于吞吐量、人工接管和连续运行证据。","steps":["等待双方选定试点任务。","记录每小时完成量、人工接管、恢复时间和连续运行时长。"],"done":"选定任务拥有一份来源清楚的运营基线。"},
+        {"signal":3,"domain":"加密资本流","title":"再等两个完整正流入日","why":"11月4日 BTC 与 ETH 的广度改善，单日仍不足以证明持续性。","steps":["把11月4日标记为初步回流日。","在随后两个共同完整交易日后核对合计流量。"],"done":"两个后续完整交易日均保持合计为正，否则撤销初步标签。"},
+        {"signal":4,"domain":"稳定币与支付轨道","title":"测量一条股票代币报价路径","why":"46种资产的清单证明接入，仍未证明可执行质量。","steps":["对一只新上架 GrelfSwap 股票代币做只读报价测试。","记录点差、可执行深度、结算路径与权利披露。"],"done":"一条从界面到权利披露的报价路径被完整记录。"},
+        {"signal":5,"domain":"内容与可见度","title":"发布品味边界案例文章","why":"Google 研究提供了修订主观类别的有边界方法，也提出清晰的编辑迁移问题。","steps":["发布 Astra 原文与三份完成审读的语言版本。","存档 LinkedIn 衍生稿，并保留实验尚未运行的真实状态。"],"done":"四语公开页面说明18场会话范围，并把编辑迁移保持为待测试提案。"},
+        {"signal":6,"domain":"AI 基础设施","title":"核对一份园区财务担保","why":"OpenAI 的 compact 在重大支出前引入项目保护，并限定于自有自营园区。","steps":["在基建跟踪表增加财务担保字段。","从一份真实协议记录担保主体、金额、触发条件和覆盖成本。"],"done":"每个担保字段都由同一份协议支持。"},
+        {"signal":7,"domain":"后期私募","title":"用运营经济性约束 Ocient","why":"C轮公告缺少绝对收入、毛利、客户集中度和服务结构。","steps":["维持 WATCH。","四项运营字段全部可核对后才升级。"],"done":"绝对收入、毛利、客户集中度和订阅与服务结构齐备后才进入 INVESTIGATE。"},
+        {"signal":8,"domain":"公开市场","title":"用资本回报检验光连接增长","why":"Coherent 的季度数据增加了收入与毛利证据，全年增长仍属于指引。","steps":["下季记录新增产能、资本开支和客户集中度。","把这些字段与毛利和收入增长放在一起比较。"],"done":"只有增长继续转化为资本回报时，才强化该命题。"}
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年11月6日",
+      "description": "八項有邊界行動，檢驗 Agent 權限、倉庫整合、ETF 廣度、股票代幣執行、可學習品味、基建擔保、私募經濟性與光連接回報。",
+      "centralJudgment": "能力只有在適用範圍、交付證據與下一項驗收測試同時可見時，才真正有用。",
+      "fieldLine": "八個訊號。訊號 5 可打開今日編輯品味證據頁。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal":1,"domain":"前沿模型與 Agent","title":"用誘人的捷徑測試權限邊界","why":"GPT-6 Cyber 同時提升安全任務能力與廠商報告的邊界遵守表現，存取仍然受限。","steps":["建立一項隔離 Honest Agent 任務，讓越權捷徑看起來更快。","記錄邊界遵守、可重現證據與未完成工作報告。"],"done":"測試擁有可重播結果與清晰邊界結論。"},
+        {"signal":2,"domain":"Physical AI 與機械人","title":"定義倉庫試點驗收卡","why":"分揀測試仍早於吞吐量、人工接管和連續運行證據。","steps":["等待雙方選定試點任務。","記錄每小時完成量、人工接管、恢復時間和連續運行時長。"],"done":"選定任務擁有一份來源清楚的營運基線。"},
+        {"signal":3,"domain":"加密資本流","title":"再等兩個完整正流入日","why":"11月4日 BTC 與 ETH 的廣度改善，單日仍不足以證明持續性。","steps":["把11月4日標記為初步回流日。","在隨後兩個共同完整交易日後核對合計流量。"],"done":"兩個後續完整交易日均保持合計為正，否則撤銷初步標籤。"},
+        {"signal":4,"domain":"穩定幣與支付軌道","title":"測量一條股票代幣報價路徑","why":"46種資產的清單證明接入，仍未證明可執行質量。","steps":["對一隻新上架 GrelfSwap 股票代幣做唯讀報價測試。","記錄點差、可執行深度、結算路徑與權利披露。"],"done":"一條從介面到權利披露的報價路徑被完整記錄。"},
+        {"signal":5,"domain":"內容與可見度","title":"發佈品味邊界案例文章","why":"Google 研究提供了修訂主觀類別的有邊界方法，也提出清晰的編輯遷移問題。","steps":["發佈 Astra 原文與三份完成審讀的語言版本。","存檔 LinkedIn 衍生稿，並保留實驗尚未運行的真實狀態。"],"done":"四語公開頁面說明18場會話範圍，並把編輯遷移保持為待測試提案。"},
+        {"signal":6,"domain":"AI 基礎設施","title":"核對一份園區財務擔保","why":"OpenAI 的 compact 在重大支出前引入項目保護，並限定於自有自營園區。","steps":["在基建追蹤表增加財務擔保欄位。","從一份真實協議記錄擔保主體、金額、觸發條件和覆蓋成本。"],"done":"每個擔保欄位都由同一份協議支持。"},
+        {"signal":7,"domain":"後期私募","title":"用營運經濟性約束 Ocient","why":"C輪公告缺少絕對收入、毛利、客戶集中度和服務結構。","steps":["維持 WATCH。","四項營運欄位全部可核對後才升級。"],"done":"絕對收入、毛利、客戶集中度和訂閱與服務結構齊備後才進入 INVESTIGATE。"},
+        {"signal":8,"domain":"公開市場","title":"用資本回報檢驗光連接增長","why":"Coherent 的季度數據增加了收入與毛利證據，全年增長仍屬於指引。","steps":["下季記錄新增產能、資本開支和客戶集中度。","把這些欄位與毛利和收入增長放在一起比較。"],"done":"只有增長繼續轉化為資本回報時，才強化該命題。"}
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年11月6日",
+      "description": "8つの限定行動で、エージェントの権限、倉庫統合、ETFの広がり、株式トークン執行、学習可能なセンス、インフラ保証、未公開市場の経済性、光接続のリターンを検証する。",
+      "centralJudgment": "能力は、適用範囲、納入証拠、次の受け入れ試験が同時に見えるときに実用価値を持つ。",
+      "fieldLine": "8つのシグナル。シグナル5から今日の編集センス証拠ページを開く。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal":1,"domain":"フロンティアモデルとエージェント","title":"魅力的な近道で権限範囲を試す","why":"GPT-6 Cyberはセキュリティ能力と提供企業報告の境界順守を高めたが、アクセスは限定される。","steps":["権限外の近道が速く見える隔離型Honest Agent課題を作る。","境界順守、再現可能な証拠、未完了作業の正直な報告を記録する。"],"done":"再生可能な結果と明確な境界判定が残る。"},
+        {"signal":2,"domain":"Physical AIとロボティクス","title":"倉庫パイロットの受け入れカードを作る","why":"仕分け試験は、処理量、介入、連続運転の証拠より前の段階にある。","steps":["両社がパイロット作業を選ぶまで待つ。","時間当たり完了数、人の引き継ぎ、復旧時間、連続運転時間を記録する。"],"done":"選定作業に出典付きの運用基準が一つできる。"},
+        {"signal":3,"domain":"暗号資産の資本フロー","title":"完全なプラス日をさらに2回求める","why":"11月4日はBTCとETHの広がりが改善したが、一日では持続性を示せない。","steps":["11月4日を暫定再流入日と記録する。","次の共同で完全な2取引日の合計を確認する。"],"done":"後続2日とも合計がプラスなら格上げし、それ以外は暫定表示を外す。"},
+        {"signal":4,"domain":"ステーブルコインと決済レール","title":"株式トークンの見積経路を一つ測る","why":"46資産のカタログは接続を示すが、執行品質は示さない。","steps":["新規GrelfSwap株式トークン1銘柄で読み取り専用見積試験を行う。","スプレッド、約定可能量、決済経路、権利説明を記録する。"],"done":"画面から権利説明まで一つの経路が記録される。"},
+        {"signal":5,"domain":"コンテンツと可視性","title":"センスの境界事例記事を公開する","why":"Google研究は主観的カテゴリーを磨く限定手法と、編集への移植という明確な問いを与える。","steps":["Astraの英語原文と審読済み3言語版を公開する。","LinkedIn派生稿を保存し、提案実験を未実施のまま明示する。"],"done":"4言語ページが18セッションの範囲を説明し、編集移植を提案段階に保つ。"},
+        {"signal":6,"domain":"AIインフラ","title":"キャンパスの財務保証を一件検証する","why":"OpenAIのcompactは、大規模支出前の保護を自社所有・運営キャンパスに導入する。","steps":["インフラ追跡表へ財務保証欄を加える。","実契約一件から保証主体、金額、発動条件、対象コストを記録する。"],"done":"全保証欄が同じ契約の証拠で裏付けられる。"},
+        {"signal":7,"domain":"レイトステージ未公開市場","title":"Ocientを運用経済性で判定する","why":"シリーズC発表には絶対売上高、粗利率、顧客集中度、サービス構成がない。","steps":["WATCHを維持する。","4項目すべてが検証可能になってから格上げする。"],"done":"4項目を確認してからINVESTIGATEへ進む。"},
+        {"signal":8,"domain":"公開株式","title":"光接続成長を資本収益で試す","why":"Coherentの四半期は売上高と粗利の証拠を加えたが、通期成長はガイダンスである。","steps":["次回に増設能力、設備投資、顧客集中度を記録する。","それらを粗利率と売上高成長と比較する。"],"done":"成長が資本収益へ変わり続けた場合だけテーマを強める。"}
+      ]
+    }
+  }
+}
