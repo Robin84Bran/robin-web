@@ -1,0 +1,532 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-07",
+  "updated": "2026-11-07",
+  "signalCount": 8,
+  "briefingPath": "/ouroboros/202611/20261107/",
+  "actionItemPath": "/ouroboros/202611/20261107/action_item/",
+  "hero": "/daily-briefing/20261107/hero.webp",
+  "ogImage": "/daily-briefing/20261107/og.webp",
+  "actionHero": "/action-item/20261107/hero.webp",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "hours or days",
+      "visualLabel": "documented managed runtime",
+      "sources": [
+        {
+          "label": "Mistral announcement",
+          "url": "https://mistral.ai/news/build-with-studio/"
+        },
+        {
+          "label": "Managed Agents docs",
+          "url": "https://docs.mistral.ai/studio/agents/overview"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2,000+",
+      "visualLabel": "company-reported deployed robots",
+      "sources": [
+        {
+          "label": "Serve release",
+          "url": "https://ir.serverobotics.com/news-releases/news-release-details/serve-robotics-launches-physical-ai-services-opening-technology"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "-$530.1M",
+      "visualLabel": "November 5 joint ETF flow",
+      "sources": [
+        {
+          "label": "BTC table",
+          "url": "https://farside.co.uk/bitcoin-etf-flow-all-data/"
+        },
+        {
+          "label": "ETH table",
+          "url": "https://farside.co.uk/ethereum-etf-flow-all-data/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "read only",
+      "visualLabel": "connected-account boundary",
+      "sources": [
+        {
+          "label": "Claude Personal Finance",
+          "url": "https://claude.com/resources/articles/introducing-personal-finance-in-claude"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "deepDiveAvailable": true,
+      "priority": "NOW",
+      "status": "READY",
+      "visualValue": "one case",
+      "visualLabel": "proposed public evidence artifact",
+      "sources": [
+        {
+          "label": "iamrobin.ai",
+          "url": "https://iamrobin.ai/"
+        },
+        {
+          "label": "GitHub guidance",
+          "url": "https://docs.github.com/en/repositories/creating-and-managing-repositories/best-practices-for-repositories"
+        },
+        {
+          "label": "Action Item",
+          "url": "https://iamrobin.ai/ouroboros/202611/20261107/action_item/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$500M",
+      "visualLabel": "reported loan sale process",
+      "sources": [
+        {
+          "label": "Reuters syndication",
+          "url": "https://www.globalbankingandfinance.com/ing-puts-500-million-data-center-loans-up-sale-bloomberg/"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$75M",
+      "visualLabel": "Series B announced",
+      "sources": [
+        {
+          "label": "Kalepa announcement",
+          "url": "https://kalepa.com/news-posts/kalepa-raises-75-million-series-b"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$547.9M",
+      "visualLabel": "September 30 holding value",
+      "sources": [
+        {
+          "label": "Reuters syndication",
+          "url": "https://live.euronext.com/en/financial-news/alphabet-discloses-548-million-worth-qualcomm-stake"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, November 7, 2026",
+      "description": "Eight bounded actions test managed recovery, robot-service economics, ETF direction, read-only finance, public evidence, infrastructure credit, private-market economics and order evidence.",
+      "centralJudgment": "A claim becomes useful when the next evidence gate is visible and bounded.",
+      "fieldLine": "Eight signals. Signal 5 opens today’s agent-evidence essay.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Test managed-agent recovery once",
+          "why": "Mistral documents resumption from completed steps, while duplicate side effects and independent completion economics remain open.",
+          "steps": [
+            "Interrupt one side-effect-free task after a tool call.",
+            "Record the resume point, final result and any repeated action."
+          ],
+          "done": "The replay shows one correct resume and zero duplicate actions."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "Wait for Bedrock operating evidence",
+          "why": "Serve has launched the service and named a customer, while field reliability and savings remain undisclosed.",
+          "steps": [
+            "Track Bedrock and Serve disclosures.",
+            "Record remote-connectivity uptime or field-support cost only when a source reports it."
+          ],
+          "done": "One customer-backed operating metric becomes available."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows",
+          "title": "Calculate the complete weekly ETF total",
+          "why": "November 5 reversed the prior inflow, while November 6 rows remained incomplete at cutoff.",
+          "steps": [
+            "Wait for both November 6 tables to complete.",
+            "Sum the week across BTC and ETH on the same basis."
+          ],
+          "done": "The weekly direction is based on jointly complete sessions."
+        },
+        {
+          "signal": 4,
+          "domain": "FinTech and Payments",
+          "title": "Trace one Personal Finance answer to transactions",
+          "why": "Connected accounts add useful context inside a read-only boundary.",
+          "steps": [
+            "Open one official product demonstration.",
+            "Check whether each aggregate links back to underlying transactions."
+          ],
+          "done": "One answer is traceable from summary to source transactions."
+        },
+        {
+          "signal": 5,
+          "domain": "Content and Distribution",
+          "title": "Publish the agent-evidence essay",
+          "why": "A stranger needs inspectable work evidence before a system claim can earn confidence.",
+          "steps": [
+            "Publish Astra’s exact English article and three reviewed editions.",
+            "Archive the LinkedIn draft and keep the evidence page as proposed future work."
+          ],
+          "done": "Four public editions preserve the limited review and proposal boundary."
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure",
+          "title": "Track the November 19 clearing evidence",
+          "why": "A competitive sale can reveal the market price for data-center credit exposure.",
+          "steps": [
+            "Watch for a completed transaction after November 19.",
+            "Record buyer, discount and unsold portion from attributable reporting."
+          ],
+          "done": "A completed sale supplies price discovery, or the watch remains open."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-Stage Private Markets",
+          "title": "Hold Kalepa at INVESTIGATE pending economics",
+          "why": "The round and company growth claims are public, while terms and deployment economics remain unavailable.",
+          "steps": [
+            "Seek customer-verifiable renewals.",
+            "Record unit deployment economics and customization intensity."
+          ],
+          "done": "Operating evidence supports or rejects the INVESTIGATE classification."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities",
+          "title": "Separate Alphabet ownership from Qualcomm orders",
+          "why": "The quarter-end holding adds relationship evidence and does not establish a same-day purchase or order.",
+          "steps": [
+            "Record the September 30 holding in the ownership lane.",
+            "Update the operating thesis only with confirmed orders, revenue or cash flow."
+          ],
+          "done": "Ownership and operating evidence remain separate in the quarterly review."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年11月7日",
+      "description": "八项有边界行动，检验托管恢复、机器人服务经济性、ETF方向、只读金融、公开证据、基建信用、私募经济性与订单证据。",
+      "centralJudgment": "主张只有在下一项证据闸门清晰且有边界时，才具备行动价值。",
+      "fieldLine": "八个信号。信号5可打开今日 Agent 证据文章。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与 Agent",
+          "title": "测试一次托管 Agent 恢复",
+          "why": "Mistral 说明系统可从已完成步骤接续，重复副作用与独立完成经济性仍待验证。",
+          "steps": [
+            "在一次无外部副作用的工具调用后中断任务。",
+            "记录恢复位置、最终结果与重复动作。"
+          ],
+          "done": "重放显示恢复位置正确，且没有重复动作。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 与机器人",
+          "title": "等待 Bedrock 运营证据",
+          "why": "Serve 已推出服务并公布客户，现场可靠性与节省仍未披露。",
+          "steps": [
+            "追踪 Bedrock 与 Serve 的公开信息。",
+            "只有来源披露后才记录远程连接稳定性或现场支持成本。"
+          ],
+          "done": "出现一项客户支持的运营指标。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流",
+          "title": "计算完整周度 ETF 合计",
+          "why": "11月5日逆转前一日流入，核验时11月6日表格仍不完整。",
+          "steps": [
+            "等待 BTC 与 ETH 的11月6日表格都完成。",
+            "用相同口径合计全周流量。"
+          ],
+          "done": "周度方向只使用共同完整交易日。"
+        },
+        {
+          "signal": 4,
+          "domain": "金融科技与支付",
+          "title": "把一次 Personal Finance 回答追溯到交易",
+          "why": "已连接账户在只读边界内增加真实语境。",
+          "steps": [
+            "查看一次官方产品演示。",
+            "检查每个汇总数字能否回到基础交易。"
+          ],
+          "done": "一项回答可从汇总追溯到来源交易。"
+        },
+        {
+          "signal": 5,
+          "domain": "内容与传播",
+          "title": "发布 Agent 证据文章",
+          "why": "陌生读者需要可检查的工作证据，才能评估系统主张。",
+          "steps": [
+            "发布 Astra 英文原文与三份完成审读的版本。",
+            "存档 LinkedIn 草稿，并把证据页保留为未来提案。"
+          ],
+          "done": "四语公开页面保留有限审阅与提案边界。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基建",
+          "title": "追踪11月19日后的成交证据",
+          "why": "竞争出售可以揭示数据中心信用敞口的市场价格。",
+          "steps": [
+            "等待11月19日后出现已完成交易。",
+            "从可归属报道记录买方、折价与未售出份额。"
+          ],
+          "done": "成交提供价格发现，否则继续观察。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私募",
+          "title": "维持 Kalepa 的 INVESTIGATE",
+          "why": "融资与公司增长主张已公开，条款和部署经济性仍待披露。",
+          "steps": [
+            "寻找客户可核验的续约。",
+            "记录单位部署经济性与定制强度。"
+          ],
+          "done": "运营证据支持或否定 INVESTIGATE 分类。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场",
+          "title": "把 Alphabet 持仓与 Qualcomm 订单分开",
+          "why": "季度末持仓增加关系证据，也没有建立当天买入或订单事实。",
+          "steps": [
+            "把9月30日持仓记录在所有权栏。",
+            "只有确认订单、收入或现金流后才更新运营命题。"
+          ],
+          "done": "季度复核中，所有权与运营证据保持分开。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年11月7日",
+      "description": "八項有邊界行動，檢驗托管恢復、機械人服務經濟性、ETF方向、唯讀金融、公開證據、基建信貸、私募經濟性與訂單證據。",
+      "centralJudgment": "主張只有在下一項證據閘門清晰且有邊界時，才具備行動價值。",
+      "fieldLine": "八個訊號。訊號5可打開今日 Agent 證據文章。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與 Agent",
+          "title": "测试一次托管 Agent 恢複",
+          "why": "Mistral 说明系統可從已完成步骤接續，重複副作用與独立完成經濟性仍待驗證。",
+          "steps": [
+            "在一次无外部副作用的工具调用後中断任務。",
+            "記錄恢複位置、最终結果與重複動作。"
+          ],
+          "done": "重放显示恢複位置正确，且没有重複動作。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 與机器人",
+          "title": "等待 Bedrock 運營證據",
+          "why": "Serve 已推出服務并公布客戶，現場可靠性與节省仍未披露。",
+          "steps": [
+            "追踪 Bedrock 與 Serve 的公開信息。",
+            "只有來源披露後才記錄远程连接稳定性或現場支持成本。"
+          ],
+          "done": "出現一項客戶支持的運營指标。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流",
+          "title": "计算完整周度 ETF 合计",
+          "why": "11月5日逆转前一日流入，核驗時11月6日表格仍不完整。",
+          "steps": [
+            "等待 BTC 與 ETH 的11月6日表格都完成。",
+            "用相同口径合计全周流量。"
+          ],
+          "done": "周度方向只使用共同完整交易日。"
+        },
+        {
+          "signal": 4,
+          "domain": "金融科技與支付",
+          "title": "把一次 Personal Finance 回答追溯到交易",
+          "why": "已连接账戶在只讀边界内增加真實语境。",
+          "steps": [
+            "查看一次官方产品演示。",
+            "检查每個汇总数字能否回到基础交易。"
+          ],
+          "done": "一項回答可從汇总追溯到來源交易。"
+        },
+        {
+          "signal": 5,
+          "domain": "内容與传播",
+          "title": "發布 Agent 證據文章",
+          "why": "陌生讀者需要可检查的工作證據，才能评估系統主张。",
+          "steps": [
+            "發布 Astra 英文原文與三份完成審讀的版本。",
+            "存档 LinkedIn 草稿，并把證據頁保留為未來提案。"
+          ],
+          "done": "四语公開頁面保留有限審阅與提案边界。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基建",
+          "title": "追踪11月19日後的成交證據",
+          "why": "竞争出售可以揭示数據中心信用敞口的市場價格。",
+          "steps": [
+            "等待11月19日後出現已完成交易。",
+            "從可归属报道記錄買方、折價與未售出份額。"
+          ],
+          "done": "成交提供價格發現，否则继續观察。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私募",
+          "title": "維持 Kalepa 的 INVESTIGATE",
+          "why": "融资與公司增长主张已公開，条款和部署經濟性仍待披露。",
+          "steps": [
+            "寻找客戶可核驗的續约。",
+            "記錄單位部署經濟性與定制强度。"
+          ],
+          "done": "運營證據支持或否定 INVESTIGATE 分類。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場",
+          "title": "把 Alphabet 持仓與 Qualcomm 订單分開",
+          "why": "季度末持仓增加关系證據，也没有建立当天買入或订單事實。",
+          "steps": [
+            "把9月30日持仓記錄在所有权栏。",
+            "只有确认订單、收入或現金流後才更新運營命题。"
+          ],
+          "done": "季度複核中，所有权與運營證據保持分開。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年11月7日",
+      "description": "8つの限定行動で、復旧、ロボットサービス、ETF、読み取り専用金融、公開証拠、インフラ信用、未公開市場、注文証拠を検証する。",
+      "centralJudgment": "主張は、次の証拠ゲートが明確で限定されるときに行動価値を持つ。",
+      "fieldLine": "8つのシグナル。シグナル5から今日のエージェント証拠記事を開く。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "フロンティアモデルとエージェント",
+          "title": "マネージド・エージェントの復旧を一度試す",
+          "why": "Mistralは完了ステップからの再開を説明しているが、重複副作用と独立した完了経済性は未検証だ。",
+          "steps": [
+            "外部副作用のないツール実行後にタスクを中断する。",
+            "再開位置、最終結果、反復された動作を記録する。"
+          ],
+          "done": "正しい位置から一度再開し、重複動作がゼロになる。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AIとロボティクス",
+          "title": "Bedrockの運用証拠を待つ",
+          "why": "Serveはサービスと顧客を発表したが、現場の信頼性と節約効果は未開示だ。",
+          "steps": [
+            "BedrockとServeの発表を追跡する。",
+            "出典が示した時だけ遠隔接続の稼働率や現場支援コストを記録する。"
+          ],
+          "done": "顧客に裏づけられた運用指標が一つ得られる。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資本フロー",
+          "title": "完全な週間ETF合計を計算する",
+          "why": "11月5日は前日の流入を反転し、検証時点で11月6日の表は未完成だった。",
+          "steps": [
+            "BTCとETH双方の11月6日表の完成を待つ。",
+            "同じ基準で週間合計を計算する。"
+          ],
+          "done": "共同で完全な取引日から週間方向を判断する。"
+        },
+        {
+          "signal": 4,
+          "domain": "FinTechと決済",
+          "title": "Personal Financeの回答を取引までたどる",
+          "why": "接続口座は読み取り専用の範囲で実データの文脈を加える。",
+          "steps": [
+            "公式製品デモを一つ確認する。",
+            "各集計値が基礎取引まで追跡できるか調べる。"
+          ],
+          "done": "一つの回答を要約から元取引まで追跡できる。"
+        },
+        {
+          "signal": 5,
+          "domain": "コンテンツと配信",
+          "title": "エージェント証拠の記事を公開する",
+          "why": "初めての読者がシステム主張を評価するには、検証できる仕事の証拠が要る。",
+          "steps": [
+            "Astraの英語原文と審読済み3言語版を公開する。",
+            "LinkedIn草稿を保存し、証拠ページを将来提案として保つ。"
+          ],
+          "done": "4言語ページが限定調査と提案の境界を維持する。"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラ",
+          "title": "11月19日後の成約証拠を追う",
+          "why": "競争売却はデータセンター信用エクスポージャーの市場価格を示し得る。",
+          "steps": [
+            "11月19日後の完了取引を待つ。",
+            "帰属できる報道から買い手、割引率、売れ残りを記録する。"
+          ],
+          "done": "成約が価格発見を与え、それまでは監視を続ける。"
+        },
+        {
+          "signal": 7,
+          "domain": "レイトステージ未公開市場",
+          "title": "KalepaをINVESTIGATEに保つ",
+          "why": "資金調達と会社の成長主張は公開済みだが、条件と導入経済性は未開示だ。",
+          "steps": [
+            "顧客が確認できる更新契約を探す。",
+            "導入単位の経済性と個別対応の強さを記録する。"
+          ],
+          "done": "運用証拠がINVESTIGATE分類を支持または棄却する。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開株式",
+          "title": "Alphabet保有とQualcomm注文を分ける",
+          "why": "四半期末保有は関係証拠を増やすが、同日購入や注文を示さない。",
+          "steps": [
+            "9月30日保有を所有権欄に記録する。",
+            "確認済み注文、売上高、キャッシュフローでのみ事業仮説を更新する。"
+          ],
+          "done": "四半期レビューで所有と事業証拠を分けて保つ。"
+        }
+      ]
+    }
+  }
+}
