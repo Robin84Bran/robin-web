@@ -1,0 +1,20 @@
+At most once includes never.
+
+Mistral documents a useful boundary for deployed tools: one call will not quietly execute twice, yet a crash can still leave the model unsure whether the outside action took effect.
+
+The same lost-call label can hide two opposite realities:
+
+• zero accepted effects
+• one accepted effect whose confirmation was lost
+
+The retry count cannot tell them apart. The destination needs to recognize one stable operation ID and return an acceptance receipt.
+
+That creates three separate records: the session checkpoint, the intended operation identity, and the destination's observed state.
+
+The source experiment proved only the first layer with one local read-only SHA-256 step. It caused zero external effects. Live service deduplication and recovery economics remain UNKNOWN.
+
+At most once limits repetition. The receipt tells you whether once happened.
+
+Full story and sources: https://iamrobin.ai/binary/stories/at-most-once-includes-never/
+
+#AIAgents #SystemsDesign #ReliabilityEngineering #Idempotency #DurableExecution
