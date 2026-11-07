@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">At most once includes never</title>
+  <desc id="desc">A lost tool call branches into two hidden destination states: zero accepted effects or one accepted effect. A stable operation key and destination receipt reconnect both paths to a safe recovery decision.</desc>
+  <rect width="1600" height="900" fill="#0B1228"/>
+  <g opacity=".14" stroke="#61D4D7" stroke-width="1"><path d="M0 150H1600M0 300H1600M0 450H1600M0 600H1600M0 750H1600"/><path d="M200 0V900M400 0V900M600 0V900M800 0V900M1000 0V900M1200 0V900M1400 0V900"/></g>
+  <text x="110" y="116" fill="#61D4D7" font-family="Arial, sans-serif" font-size="24" letter-spacing="5">BINARY / BUILD</text>
+  <text x="110" y="235" fill="#F4F1E9" font-family="Georgia, serif" font-size="78">At most once</text>
+  <text x="110" y="330" fill="#D8B86B" font-family="Georgia, serif" font-size="78">includes never.</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="110" y="430" width="270" height="126" rx="12" fill="#121D3B" stroke="#61D4D7" stroke-width="3"/>
+    <text x="245" y="480" fill="#F4F1E9" text-anchor="middle" font-size="26">LOST CALL</text><text x="245" y="520" fill="#9FB0CB" text-anchor="middle" font-size="22">outcome unknown</text>
+    <path d="M380 493H520M520 493L650 430M520 493L650 620" fill="none" stroke="#61D4D7" stroke-width="5" stroke-linecap="round"/>
+    <rect x="650" y="368" width="320" height="126" rx="12" fill="#121D3B" stroke="#D8B86B" stroke-width="3"/>
+    <text x="810" y="418" fill="#F4F1E9" text-anchor="middle" font-size="26">ZERO EFFECTS</text><text x="810" y="458" fill="#9FB0CB" text-anchor="middle" font-size="22">nothing accepted</text>
+    <rect x="650" y="558" width="320" height="126" rx="12" fill="#121D3B" stroke="#D8B86B" stroke-width="3"/>
+    <text x="810" y="608" fill="#F4F1E9" text-anchor="middle" font-size="26">ONE EFFECT</text><text x="810" y="648" fill="#9FB0CB" text-anchor="middle" font-size="22">receipt was lost</text>
+    <path d="M970 431H1085M970 621H1085M1085 431V621M1085 526H1180" fill="none" stroke="#61D4D7" stroke-width="5" stroke-linecap="round"/>
+    <rect x="1180" y="463" width="300" height="126" rx="12" fill="#D8B86B"/>
+    <text x="1330" y="513" fill="#0B1228" text-anchor="middle" font-size="25" font-weight="700">SAME OPERATION ID</text><text x="1330" y="553" fill="#0B1228" text-anchor="middle" font-size="21">read destination receipt</text>
+  </g>
+  <text x="1490" y="850" fill="#F4F1E9" opacity=".8" text-anchor="end" font-family="Arial, sans-serif" font-size="24">IAmRobin.ai</text>
+</svg>
