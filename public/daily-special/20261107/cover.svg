@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">How an AI Agent Remembers Finished Work</title>
+  <desc id="desc">A quiet editorial diagram shows one worker ending after a completed tool call, a saved bookmark, and a replacement worker continuing from the next step.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3efe6"/>
+      <stop offset="1" stop-color="#e5dfd2"/>
+    </linearGradient>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" fill="none" stroke="#172d32" stroke-opacity="0.075" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <g fill="#183238">
+    <text x="120" y="126" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="24" letter-spacing="5">DAILY SPECIAL · SIGNAL 1</text>
+    <text x="120" y="248" font-family="Georgia, 'Times New Roman', serif" font-size="78">How an AI agent remembers</text>
+    <text x="120" y="334" font-family="Georgia, 'Times New Roman', serif" font-size="78">finished work</text>
+  </g>
+  <g transform="translate(120 430)">
+    <path d="M0 130H1360" stroke="#183238" stroke-opacity="0.3" stroke-width="3"/>
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+      <rect x="0" y="76" width="260" height="108" rx="8" fill="#183238"/>
+      <text x="30" y="124" fill="#f3efe6" font-size="22">WORKER 01</text>
+      <text x="30" y="156" fill="#f3efe6" fill-opacity="0.7" font-size="17">CALCULATE</text>
+      <path d="M260 130H430" stroke="#1e6a68" stroke-width="8"/>
+      <circle cx="430" cy="130" r="23" fill="#1e6a68"/>
+      <path d="M430 109V35" stroke="#1e6a68" stroke-width="5"/>
+      <path d="M430 34L452 49L430 65Z" fill="#9a4f32"/>
+      <text x="350" y="225" fill="#183238" font-size="19">TOOL COMPLETE</text>
+      <text x="354" y="254" fill="#183238" fill-opacity="0.65" font-size="17">BOOKMARK SAVED</text>
+      <path d="M453 130H650" stroke="#183238" stroke-opacity="0.28" stroke-width="5" stroke-dasharray="12 13"/>
+      <path d="M610 102L650 130L610 158" fill="none" stroke="#183238" stroke-opacity="0.46" stroke-width="5"/>
+      <rect x="690" y="76" width="310" height="108" rx="8" fill="#1e6a68"/>
+      <text x="720" y="124" fill="#f3efe6" font-size="22">WORKER 02</text>
+      <text x="720" y="156" fill="#f3efe6" fill-opacity="0.75" font-size="17">CONTINUE NEXT STEP</text>
+      <path d="M1000 130H1185" stroke="#1e6a68" stroke-width="8"/>
+      <circle cx="1228" cy="130" r="43" fill="#9a4f32"/>
+      <path d="M1207 131L1222 146L1250 113" fill="none" stroke="#f3efe6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="1166" y="225" fill="#183238" font-size="19">COMPLETE</text>
+    </g>
+    <g transform="translate(0 320)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+      <rect x="0" y="0" width="1360" height="86" rx="8" fill="#183238" fill-opacity="0.08" stroke="#183238" stroke-opacity="0.22"/>
+      <text x="32" y="36" fill="#183238" font-size="18">AGENT SESSION</text>
+      <text x="32" y="64" fill="#183238" fill-opacity="0.64" font-size="16">WHERE SHOULD PROCESSING RESUME?</text>
+      <text x="775" y="36" fill="#9a4f32" font-size="18">EXTERNAL RECEIPT</text>
+      <text x="775" y="64" fill="#183238" fill-opacity="0.64" font-size="16">WHAT HAS THE RECEIVER ALREADY DONE?</text>
+    </g>
+  </g>
+  <text x="120" y="880" fill="#183238" fill-opacity="0.72" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="22">7 NOVEMBER 2026 · IAMROBIN.AI</text>
+</svg>
