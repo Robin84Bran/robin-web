@@ -1,0 +1,536 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-08",
+  "updated": "2026-11-08",
+  "signalCount": 8,
+  "briefingPath": "/ouroboros/202611/20261108/",
+  "actionItemPath": "/ouroboros/202611/20261108/action_item/",
+  "hero": "/daily-briefing/20261108/hero.webp",
+  "ogImage": "/daily-briefing/20261108/og.webp",
+  "actionHero": "/action-item/20261108/hero.webp",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "~1 hour",
+      "visualLabel": "provider workflow demonstration",
+      "sources": [
+        {
+          "label": "Google DeepMind",
+          "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "hundreds",
+      "visualLabel": "planned factory robot deployments",
+      "sources": [
+        {
+          "label": "Aptiv release",
+          "url": "https://ir.aptiv.com/news/news-details/2026/Aptiv-Accelerates-Robotics-Expansion-With-Industry-Partners-2026-d-6_DOGBsW/default.aspx"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "-$1.647B",
+      "visualLabel": "combined weekly ETF flow",
+      "sources": [
+        {
+          "label": "BTC table",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "ETH table",
+          "url": "https://farside.co.uk/eth/"
+        },
+        {
+          "label": "Stablecoins",
+          "url": "https://defillama.com/stablecoins"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "T+0",
+      "visualLabel": "announced auction settlement",
+      "sources": [
+        {
+          "label": "Tether",
+          "url": "https://tether.io/news/hadron-by-tether-collaborates-with-redstone-to-expand-pricing-settlement-and-liquidity-infrastructure-for-tokenized-assets/"
+        },
+        {
+          "label": "RedStone",
+          "url": "https://www.redstone.finance/blog/redstone-hadron-by-tether/"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "deepDiveAvailable": true,
+      "priority": "NOW",
+      "status": "READY",
+      "visualValue": "3 frames",
+      "visualLabel": "proposed controlled comparison",
+      "sources": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2406.07791"
+        },
+        {
+          "label": "ACL Anthology",
+          "url": "https://aclanthology.org/2025.ijcnlp-long.18/"
+        },
+        {
+          "label": "Action Item",
+          "url": "https://iamrobin.ai/ouroboros/202611/20261108/action_item/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "reported",
+      "visualLabel": "older-GPU capacity wind-down",
+      "sources": [
+        {
+          "label": "Reuters syndication",
+          "url": "https://www.streetinsider.com/Reuters/Microsoft%2Bis%2Bwinding%2Bdown%2BOracle%2Bdeal%2Bto%2Brent%2BAI%2Bcloud%2Bcapacity,%2BBloomberg%2BNews%2Breports/27306455.html"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$7.8B",
+      "visualLabel": "acquisition plus financing",
+      "sources": [
+        {
+          "label": "Shield announcement",
+          "url": "https://shield.ai/shield-to-acquire-echodyne-in-a-transaction-valued-at-5-3-billion-and-raise-2-5-billion-at-a-28-8-billion-valuation/"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$27.5B",
+      "visualLabel": "three disclosed exposure buckets",
+      "sources": [
+        {
+          "label": "AMD 10-Q",
+          "url": "https://ir.amd.com/financial-information/sec-filings/content/0001437749-26-032514"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, November 8, 2026",
+      "description": "Eight bounded actions test professional agents, factory deployment, crypto liquidity, tokenized-asset auctions, résumé evaluation, GPU capacity, autonomy consolidation and public-company exposure.",
+      "centralJudgment": "Announcements become useful when each next evidence gate is observable and bounded.",
+      "fieldLine": "Eight signals. Signal 5 opens today’s résumé-framing method.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Benchmark the chemistry workflow once",
+          "why": "The reported speedup is operationally interesting, while independent correctness, intervention and cost evidence remains open.",
+          "steps": [
+            "Choose one public dataset with known answers.",
+            "Run the agent workflow and a fixed script on the same acceptance rule."
+          ],
+          "done": "Correctness, interventions and cost per accepted result are recorded."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "Build a robot acceptance table",
+          "why": "Planned units are not accepted production capacity.",
+          "steps": [
+            "Record accepted robots only.",
+            "Add line utilization and verified labor-hour change each quarter."
+          ],
+          "done": "The table separates plans from accepted operating evidence."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows",
+          "title": "Keep three liquidity measures separate",
+          "why": "ETF flows, stablecoin supply and price weakened over an aligned window but measure different things.",
+          "steps": [
+            "Track each measure in its own column for four weeks.",
+            "Compare only aligned weekly boundaries."
+          ],
+          "done": "Four complete aligned observations are available."
+        },
+        {
+          "signal": 4,
+          "domain": "FinTech and Payments",
+          "title": "Wait for auction receipts",
+          "why": "The announced T+0 mechanism is testable, while adoption and stressed-market performance remain unknown.",
+          "steps": [
+            "Capture the first attributable auction receipt.",
+            "Record spread, size, settlement time and failure rate."
+          ],
+          "done": "One live transaction supplies all four fields."
+        },
+        {
+          "signal": 5,
+          "domain": "Content and Distribution",
+          "title": "Publish the résumé-framing method",
+          "why": "A credible comparison needs frozen facts and an equally controlled judge process.",
+          "steps": [
+            "Publish Astra’s exact English article and three reviewed translations.",
+            "Archive the human-review LinkedIn draft; do not claim experiment results."
+          ],
+          "done": "Four public editions preserve the method-only boundary."
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure",
+          "title": "Track generation-specific capacity evidence",
+          "why": "The reported wind-down could reflect workload fit rather than market-wide demand.",
+          "steps": [
+            "Watch Oracle utilization and Microsoft replacement capacity.",
+            "Record generation-specific price evidence when attributable."
+          ],
+          "done": "Confirmed capacity and replacement economics resolve the current report boundary."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-Stage Private Markets",
+          "title": "Hold Shield at INVESTIGATE",
+          "why": "Transaction value and financing show capital appetite, not integrated operating performance.",
+          "steps": [
+            "Track closing and integrated-product orders separately.",
+            "Add delivery cycle and margin only from attributable disclosures."
+          ],
+          "done": "All four gates have evidence or remain explicitly UNKNOWN."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities",
+          "title": "Separate AMD exposure buckets",
+          "why": "Commitments and guarantees alter capital analysis but are not current losses.",
+          "steps": [
+            "Track cloud purchases, uncommenced leases, maximum guarantees and payments separately.",
+            "Reconcile changes each quarter."
+          ],
+          "done": "The model never counts maximum exposure as current-period cost."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年11月8日",
+      "description": "八项有边界行动，检验专业 Agent、工厂部署、加密流动性、代币化资产拍卖、简历评估、GPU 容量、自主系统整合与上市公司风险暴露。",
+      "centralJudgment": "只有下一项证据闸门可观察且有边界时，公告才具备行动价值。",
+      "fieldLine": "八个信号。信号5打开今日简历表达方法文章。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与 Agent",
+          "title": "对化学工作流做一次基准测试",
+          "why": "官方速度演示具备运营意义，独立正确率、干预量与成本证据仍待验证。",
+          "steps": [
+            "选择一个答案已知的公开数据集。",
+            "用同一验收规则运行 Agent 工作流和固定脚本。"
+          ],
+          "done": "记录正确率、干预次数与单次验收结果成本。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 与机器人",
+          "title": "建立机器人验收表",
+          "why": "计划数量不等于已验收产能。",
+          "steps": [
+            "只记录已验收机器人。",
+            "每季度加入产线利用率与可核验工时变化。"
+          ],
+          "done": "表格把计划与运营证据分开。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流",
+          "title": "把三项流动性指标分开",
+          "why": "ETF 流量、稳定币供应与价格在对齐窗口内转弱，但含义不同。",
+          "steps": [
+            "连续四周分栏记录。",
+            "只比较对齐的周度边界。"
+          ],
+          "done": "取得四个完整且对齐的观察。"
+        },
+        {
+          "signal": 4,
+          "domain": "金融科技与支付",
+          "title": "等待拍卖回执",
+          "why": "T+0 机制可测试，采用与压力表现仍未知。",
+          "steps": [
+            "捕捉首笔可归属拍卖回执。",
+            "记录价差、金额、结算时间与失败率。"
+          ],
+          "done": "一笔真实交易提供四个字段。"
+        },
+        {
+          "signal": 5,
+          "domain": "内容与传播",
+          "title": "发布简历表达方法文章",
+          "why": "可信比较需要冻结事实，也需要控制评审过程。",
+          "steps": [
+            "发布 Astra 英文原文与三份审读译文。",
+            "存档待人工审阅的 LinkedIn 草稿，不声称已有实验结果。"
+          ],
+          "done": "四语页面保留仅方法边界。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基建",
+          "title": "追踪不同代际容量证据",
+          "why": "据报缩减可能反映工作负载适配，并不等于全市场需求。",
+          "steps": [
+            "追踪 Oracle 利用率与 Microsoft 替代容量。",
+            "只有可归属时才记录代际价格。"
+          ],
+          "done": "确认容量与替代经济性解决当前报道边界。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私募",
+          "title": "维持 Shield 的 INVESTIGATE",
+          "why": "交易价值与融资显示资本意愿，不等于整合后的运营表现。",
+          "steps": [
+            "分开追踪成交与整合后订单。",
+            "只从可归属披露加入交付周期和利润率。"
+          ],
+          "done": "四个门槛均有证据或明确保持 UNKNOWN。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场",
+          "title": "分开 AMD 风险暴露",
+          "why": "承诺与保证改变资本分析，但不是当期损失。",
+          "steps": [
+            "分开追踪云采购、未开始租约、最高保证与付款。",
+            "每季度对账。"
+          ],
+          "done": "模型不把最高风险暴露计作当期成本。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年11月8日",
+      "description": "八項有邊界行動，檢驗專業 Agent、工廠部署、加密流動性、代幣化資產拍賣、履歷評估、GPU 容量、自主系統整合與上市公司風險敞口。",
+      "centralJudgment": "只有下一項證據閘門可觀察且有邊界時，公告才具備行動價值。",
+      "fieldLine": "八個訊號。訊號5打開今日履歷表達方法文章。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與 Agent",
+          "title": "对化学工作流做一次基准测试",
+          "why": "官方速度演示具备營運意义，独立正确率、干预量與成本證據仍待验证。",
+          "steps": [
+            "选择一个答案已知的公開数据集。",
+            "用同一驗收规则运行 Agent 工作流和固定脚本。"
+          ],
+          "done": "記錄正确率、干预次数與单次驗收結果成本。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 與机器人",
+          "title": "建立机器人驗收表",
+          "why": "計劃數量不等于已驗收产能。",
+          "steps": [
+            "只記錄已驗收机器人。",
+            "每季度加入产线利用率與可核验工时变化。"
+          ],
+          "done": "表格把計劃與營運證據分开。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流",
+          "title": "把三项流動性指标分开",
+          "why": "ETF 流量、稳定币供應與價格在对齐窗口内转弱，但含义不同。",
+          "steps": [
+            "连续四周分栏記錄。",
+            "只比较对齐的周度边界。"
+          ],
+          "done": "取得四个完整且对齐的观察。"
+        },
+        {
+          "signal": 4,
+          "domain": "金融科技與支付",
+          "title": "等待拍卖回执",
+          "why": "T+0 机制可测试，采用與压力表现仍未知。",
+          "steps": [
+            "捕捉首笔可归属拍卖回执。",
+            "記錄价差、金额、結算时间與失败率。"
+          ],
+          "done": "一笔真实交易提供四个字段。"
+        },
+        {
+          "signal": 5,
+          "domain": "内容與传播",
+          "title": "发布履歷表達方法文章",
+          "why": "可信比较需要冻结事实，也需要控制评审过程。",
+          "steps": [
+            "发布 Astra 英文原文與三份审读译文。",
+            "存档待人工审阅的 LinkedIn 草稿，不声称已有實驗結果。"
+          ],
+          "done": "四语页面保留仅方法边界。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基建",
+          "title": "追踪不同代际容量證據",
+          "why": "据报缩减可能反映工作负载适配，并不等于全市场需求。",
+          "steps": [
+            "追踪 Oracle 利用率與 Microsoft 替代容量。",
+            "只有可归属时才記錄代际價格。"
+          ],
+          "done": "确认容量與替代經濟性解决当前报道边界。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私募",
+          "title": "维持 Shield 的 INVESTIGATE",
+          "why": "交易价值與融资顯示资本意愿，不等于整合后的營運表现。",
+          "steps": [
+            "分开追踪成交與整合后订单。",
+            "只从可归属披露加入交付周期和利润率。"
+          ],
+          "done": "四个門檻均有證據或明确保持 UNKNOWN。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市场",
+          "title": "分开 AMD 風險暴露",
+          "why": "承诺與擔保改变资本分析，但不是当期损失。",
+          "steps": [
+            "分开追踪云採購、未開始租约、最高擔保與付款。",
+            "每季度对账。"
+          ],
+          "done": "模型不把最高風險暴露计作当期成本。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年11月8日",
+      "description": "8つの限定行動で、専門エージェント、工場導入、暗号流動性、トークン資産オークション、職務経歴書評価、GPU容量、自律統合、企業エクスポージャーを検証する。",
+      "centralJudgment": "発表は次の証拠ゲートが観察可能で限定されるときに行動価値を持つ。",
+      "fieldLine": "8つのシグナル。シグナル5から今日の表現方法の記事を開く。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "フロンティアモデルとエージェント",
+          "title": "化学ワークフローを一度ベンチマークする",
+          "why": "速度の提供元デモは興味深いが、独立した正確性、介入、コスト証拠は未確認だ。",
+          "steps": [
+            "答えが既知の公開データセットを選ぶ。",
+            "同じ合格基準でエージェントと固定スクリプトを実行する。"
+          ],
+          "done": "正確性、介入回数、合格結果当たりコストを記録する。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AIとロボティクス",
+          "title": "ロボット受入表を作る",
+          "why": "計画台数は受入済み生産能力ではない。",
+          "steps": [
+            "受入済みロボットだけを記録する。",
+            "稼働率と検証可能な工数変化を四半期ごとに追加する。"
+          ],
+          "done": "計画と運用証拠を分離できる。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資本フロー",
+          "title": "三つの流動性指標を分ける",
+          "why": "ETF、ステーブルコイン供給、価格は同じ期間に弱含んだが別の尺度だ。",
+          "steps": [
+            "四週間、別々の列で追跡する。",
+            "揃った週次境界だけを比較する。"
+          ],
+          "done": "完全で整合した四観測を得る。"
+        },
+        {
+          "signal": 4,
+          "domain": "FinTechと決済",
+          "title": "オークション記録を待つ",
+          "why": "T+0の仕組みは検証可能だが、採用とストレス時性能は不明だ。",
+          "steps": [
+            "最初の帰属可能な取引記録を得る。",
+            "スプレッド、金額、決済時間、失敗率を記録する。"
+          ],
+          "done": "一つの実取引が四項目を満たす。"
+        },
+        {
+          "signal": 5,
+          "domain": "コンテンツと配信",
+          "title": "職務経歴書の表現方法を公開する",
+          "why": "信頼できる比較には固定事実と統制された評価過程が必要だ。",
+          "steps": [
+            "Astraの英語原文と審読済み三言語版を公開する。",
+            "人間レビュー用LinkedIn草稿を保存し、結果を主張しない。"
+          ],
+          "done": "四言語版が方法のみの境界を守る。"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラ",
+          "title": "世代別容量の証拠を追う",
+          "why": "報道された縮小はワークロード適合を示す可能性があり、市場全体需要とは限らない。",
+          "steps": [
+            "Oracle稼働率とMicrosoft代替容量を追う。",
+            "帰属可能な世代別価格だけを記録する。"
+          ],
+          "done": "確認済み容量と代替経済性が報道境界を解く。"
+        },
+        {
+          "signal": 7,
+          "domain": "レイトステージ未公開市場",
+          "title": "ShieldをINVESTIGATEに保つ",
+          "why": "取引額と資金調達は資本意欲を示すが、統合後業績ではない。",
+          "steps": [
+            "完了と統合製品受注を分けて追う。",
+            "帰属可能な開示から納入周期と利益率を追加する。"
+          ],
+          "done": "四ゲートに証拠があるかUNKNOWNを維持する。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開株式",
+          "title": "AMDのエクスポージャーを分ける",
+          "why": "契約と保証は資本分析を変えるが当期損失ではない。",
+          "steps": [
+            "クラウド購入、未開始リース、最大保証、支払いを分ける。",
+            "四半期ごとに照合する。"
+          ],
+          "done": "最大エクスポージャーを当期費用にしない。"
+        }
+      ]
+    }
+  }
+}
