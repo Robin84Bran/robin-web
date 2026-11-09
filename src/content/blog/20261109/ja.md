@@ -1,5 +1,5 @@
 ---
-archiveStatus: "PIPELINE"
+archiveStatus: "PRESENT"
 title: DCAが資産承継をつくる
 date: 2026-11-09
 updated: 2026-08-21
