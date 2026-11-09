@@ -1,5 +1,5 @@
 ---
-archiveStatus: "PIPELINE"
+archiveStatus: "PRESENT"
 title: DCA Builds the Estate
 date: 2026-11-09
 updated: 2026-08-21

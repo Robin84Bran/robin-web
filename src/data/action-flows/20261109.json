@@ -1,0 +1,541 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-09",
+  "updated": "2026-11-09",
+  "signalCount": 8,
+  "briefingPath": "/ouroboros/202611/20261109/",
+  "actionItemPath": "/ouroboros/202611/20261109/action_item/",
+  "hero": "/daily-briefing/20261109/hero.webp",
+  "ogImage": "/daily-briefing/20261109/og.webp",
+  "actionHero": "/action-item/20261109/hero.webp",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NOW",
+      "status": "READY",
+      "visualValue": "2 paths",
+      "visualLabel": "summary reuse versus transcript correction",
+      "sources": [
+        {
+          "label": "Anthropic research",
+          "url": "https://www.anthropic.com/research/components-of-agent-memory"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "NEXT",
+      "status": "WATCHING",
+      "visualValue": ">2,000",
+      "visualLabel": "reported autonomous construction rounds",
+      "sources": [
+        {
+          "label": "FieldAI",
+          "url": "https://www.fieldai.com/news/kajima-full-scale-deployment-of-robots-with-general-purpose-autonomy-software-on-construction-sites"
+        },
+        {
+          "label": "Industry reporting",
+          "url": "https://www.decn.co.jp/?p=189088"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "-$1.647B",
+      "visualLabel": "combined weekly ETF flow",
+      "sources": [
+        {
+          "label": "BTC",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "ETH",
+          "url": "https://farside.co.uk/eth/"
+        },
+        {
+          "label": "Stablecoins",
+          "url": "https://stablecoins.llama.fi/stablecoincharts/all"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "24/7",
+      "visualLabel": "permissioned trading claim to test",
+      "sources": [
+        {
+          "label": "Issuer",
+          "url": "https://www.prnewswire.com/news-releases/first-trades-of-tokenized-us-equity-under-sec-innovation-exemption-executed-on-the-canton-network-302929795.html"
+        },
+        {
+          "label": "TSV",
+          "url": "https://www.tokenizedstockvenue.com/notice-1.4.html"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "deepDiveAvailable": true,
+      "priority": "NOW",
+      "status": "READY",
+      "visualValue": "$1.05",
+      "visualLabel": "one fifteen-second 720p generation",
+      "sources": [
+        {
+          "label": "Google",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+        },
+        {
+          "label": "Historical source asset",
+          "url": "https://iamrobin.ai/ouroboros/202608/20260820/action_item/"
+        },
+        {
+          "label": "Action Item",
+          "url": "https://iamrobin.ai/ouroboros/202611/20261109/action_item/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NOW",
+      "status": "READY",
+      "visualValue": "> $4B ARR",
+      "visualLabel": "target conditioned on acceptance",
+      "sources": [
+        {
+          "label": "IREN results",
+          "url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-reports-q1-fy27-results"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "up to $160M",
+      "visualLabel": "structured financing ceiling",
+      "sources": [
+        {
+          "label": "Laza announcement",
+          "url": "https://www.shifamed.com/press-releases/laza-medical-raises-up-to-160-million-in-series-b-financing-led-by-ge-healthcare-to-advance-intelligent-imaging-for-transforming-the-cath-lab/"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "700 → 2,000+",
+      "visualLabel": "management driverless-fleet targets",
+      "sources": [
+        {
+          "label": "Uber results",
+          "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Results-for-Third-Quarter-2026/"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, November 9, 2026",
+      "description": "Eight bounded actions test agent memory, construction robotics, crypto liquidity, tokenized shares, media economics, AI infrastructure acceptance, clinical robotics and autonomous-vehicle economics.",
+      "centralJudgment": "Growth becomes useful evidence only when the next operating state can be observed separately.",
+      "fieldLine": "Eight signals. Signal 5 opens today’s full-cost media story.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Compare memory correction paths",
+          "why": "Controlled research suggests traceable correction matters more than accumulating notes.",
+          "steps": [
+            "Run one recurring task with summary-only reuse.",
+            "Run the same task with transcript-backed correction."
+          ],
+          "done": "Record next-round factual errors and cost per accepted result."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "Measure construction replication cost",
+          "why": "Multi-site rounds advance the story, while intervention and return remain undisclosed.",
+          "steps": [
+            "Track deployment time at each new site.",
+            "Add human-support hours and cost per useful round."
+          ],
+          "done": "The next sites show whether replication cost declines."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows",
+          "title": "Use two conditions for returning capital",
+          "why": "ETF flows and stablecoin supply both contracted over the week.",
+          "steps": [
+            "Recompute weekly ETF net flow.",
+            "Check the aligned seven-day stablecoin change."
+          ],
+          "done": "Both weekly ETF flow and stablecoin supply stop contracting."
+        },
+        {
+          "signal": 4,
+          "domain": "FinTech and Payments",
+          "title": "Test round-the-clock liquidity",
+          "why": "A completed permissioned trade establishes mechanism, while usable depth remains open.",
+          "steps": [
+            "Capture closed-market quotes and executed value.",
+            "Record spread and failed transactions."
+          ],
+          "done": "A continuous session supplies attributable liquidity evidence."
+        },
+        {
+          "signal": 5,
+          "domain": "Content and Distribution",
+          "title": "Publish the full-cost story",
+          "why": "A $1.05 generation price excludes retries, editing, verification and distribution.",
+          "steps": [
+            "Publish Astra's exact article and reviewed translations.",
+            "Archive the two-opening LinkedIn derivative for human posting."
+          ],
+          "done": "Four public editions preserve the proposed-test boundary."
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure",
+          "title": "Separate delivery from revenue",
+          "why": "IREN's ARR target depends on commissioning, testing and customer acceptance.",
+          "steps": [
+            "Record installation and test status.",
+            "Add acceptance, billing start and GAAP revenue separately."
+          ],
+          "done": "Every Horizon stage has an attributable date or remains UNKNOWN."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-Stage Private Markets",
+          "title": "Treat financing as a ceiling",
+          "why": "Up to $160 million describes structured capacity rather than proven cash or product approval.",
+          "steps": [
+            "Track funded tranches and comparative clinical evidence.",
+            "Record regulatory submission and hospital deployment separately."
+          ],
+          "done": "Each financing, clinical and authorization gate has evidence."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities",
+          "title": "Measure autonomy per vehicle",
+          "why": "Fleet targets show scale; trips, utilization and cash contribution show economics.",
+          "steps": [
+            "Track paid trips and utilization per vehicle.",
+            "Add attributable cash contribution."
+          ],
+          "done": "All three measures improve together."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年11月9日",
+      "description": "八项有边界行动检验 Agent 记忆、工地机器人、加密流动性、代币化股票、媒体经济、AI 基建验收、临床机器人与自动驾驶经济性。",
+      "centralJudgment": "只有把下一项运营状态分开观察，增长才会变成有用证据。",
+      "fieldLine": "八个信号。信号5打开今日完整成本媒体文章。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与 Agent",
+          "title": "比较两条记忆纠错路径",
+          "why": "受控研究说明，可追溯纠错比不断累积笔记更重要。",
+          "steps": [
+            "用只沿用摘要的方式运行一次重复任务。",
+            "用回查原始记录并修正摘要的方式再运行一次。"
+          ],
+          "done": "记录下一轮事实错误率与单次验收结果成本。"
+        },
+        {
+          "signal": 2,
+          "domain": "物理 AI 与机器人",
+          "title": "测量工地复制成本",
+          "why": "跨现场巡回推进了证据，人工接管与回报仍未披露。",
+          "steps": [
+            "记录每个新工地的部署时间。",
+            "加入人工支持时数与每次有效巡检成本。"
+          ],
+          "done": "新工地显示复制成本是否下降。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流",
+          "title": "用两个条件确认资金回流",
+          "why": "ETF 流量与稳定币供应在同一周收缩。",
+          "steps": [
+            "重算 ETF 周净流。",
+            "检查对齐的稳定币七日变化。"
+          ],
+          "done": "ETF 周流量和稳定币供应同时停止收缩。"
+        },
+        {
+          "signal": 4,
+          "domain": "金融科技与支付",
+          "title": "检验全天候流动性",
+          "why": "首笔许可制交易证明机制可运行，可用深度仍待验证。",
+          "steps": [
+            "捕捉闭市时段报价与成交额。",
+            "记录价差与失败交易。"
+          ],
+          "done": "一个连续时段提供可归属的流动性证据。"
+        },
+        {
+          "signal": 5,
+          "domain": "内容与传播",
+          "title": "发布完整成本文章",
+          "why": "1.05美元生成价不含重试、编辑、核查与分发。",
+          "steps": [
+            "发布 Astra 英文原文与三份审读译文。",
+            "存档供人工发布的双开场 LinkedIn 草稿。"
+          ],
+          "done": "四语页面保留方案而非结果边界。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基建",
+          "title": "分开交付与收入",
+          "why": "IREN 的 ARR 目标取决于调试、测试与客户验收。",
+          "steps": [
+            "记录安装与测试状态。",
+            "分开加入验收、计费开始与 GAAP 收入。"
+          ],
+          "done": "每个 Horizon 状态都有可归属日期或保持 UNKNOWN。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私募",
+          "title": "把融资视为上限",
+          "why": "最高1.6亿美元描述结构化融资能力，不等于已到账现金或产品获批。",
+          "steps": [
+            "追踪已到账分期与比较性临床证据。",
+            "分开记录监管提交与医院部署。"
+          ],
+          "done": "融资、临床和审批门槛都有证据。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场",
+          "title": "测量每车自动驾驶经济性",
+          "why": "车队目标说明规模，订单、利用率与现金贡献说明经济性。",
+          "steps": [
+            "追踪每车付费订单与利用率。",
+            "加入可归属的现金贡献。"
+          ],
+          "done": "三项指标同时改善。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年11月9日",
+      "description": "八項有邊界行動檢驗 Agent 記憶、工地機器人、加密流動性、代幣化股票、媒體經濟、AI 基建驗收、臨床機器人與自動駕駛經濟性。",
+      "centralJudgment": "只有把下一項營運狀態分開觀察，增長才會變成有用證據。",
+      "fieldLine": "八個訊號。訊號5打開今日完整成本媒體文章。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與 Agent",
+          "title": "比较两条記忆纠错路径",
+          "why": "受控研究说明，可追溯纠错比不断累积笔記更重要。",
+          "steps": [
+            "用只沿用摘要的方式运行一次重複任务。",
+            "用回查原始記錄并修正摘要的方式再运行一次。"
+          ],
+          "done": "記錄下一轮事实错误率與单次驗收結果成本。"
+        },
+        {
+          "signal": 2,
+          "domain": "物理 AI 與机器人",
+          "title": "测量工地複制成本",
+          "why": "跨現場巡回推进了證据，人工接管與回報仍未披露。",
+          "steps": [
+            "記錄每个新工地的部署时間。",
+            "加入人工支持时數與每次有效巡检成本。"
+          ],
+          "done": "新工地显示複制成本是否下降。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本流",
+          "title": "用两个条件确認資金回流",
+          "why": "ETF 流量與稳定币供应在同一周收缩。",
+          "steps": [
+            "重算 ETF 周净流。",
+            "检查对齐的稳定币七日变化。"
+          ],
+          "done": "ETF 周流量和稳定币供应同时停止收缩。"
+        },
+        {
+          "signal": 4,
+          "domain": "金融科技與支付",
+          "title": "检驗全天候流動性",
+          "why": "首笔许可制交易證明机制可运行，可用深度仍待驗證。",
+          "steps": [
+            "捕捉闭市时段報价與成交额。",
+            "記錄价差與失败交易。"
+          ],
+          "done": "一个连續时段提供可歸属的流動性證据。"
+        },
+        {
+          "signal": 5,
+          "domain": "内容與传播",
+          "title": "發布完整成本文章",
+          "why": "1.05美元生成价不含重试、编辑、核查與分發。",
+          "steps": [
+            "發布 Astra 英文原文與三份審读譯文。",
+            "存档供人工發布的双開場 LinkedIn 草稿。"
+          ],
+          "done": "四语页面保留方案而非結果边界。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基建",
+          "title": "分開交付與收入",
+          "why": "IREN 的 ARR 目標取决于调试、测试與客戶驗收。",
+          "steps": [
+            "記錄安装與测试状態。",
+            "分開加入驗收、计費開始與 GAAP 收入。"
+          ],
+          "done": "每个 Horizon 状態都有可歸属日期或保持 UNKNOWN。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私募",
+          "title": "把融資视為上限",
+          "why": "最高1.6亿美元描述結構化融資能力，不等于已到账現金或產品获批。",
+          "steps": [
+            "追踪已到账分期與比较性臨床證据。",
+            "分開記錄监管提交與醫院部署。"
+          ],
+          "done": "融資、臨床和審批門槛都有證据。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場",
+          "title": "测量每車自動驾駛经濟性",
+          "why": "車队目標说明规模，訂单、利用率與現金贡献说明经濟性。",
+          "steps": [
+            "追踪每車付費訂单與利用率。",
+            "加入可歸属的現金贡献。"
+          ],
+          "done": "三項指標同时改善。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年11月9日",
+      "description": "8つの限定行動で、エージェント記憶、建設ロボット、暗号流動性、トークン株式、メディア経済、AIインフラ受け入れ、臨床ロボット、自動運転経済性を検証する。",
+      "centralJudgment": "次の運用状態を分けて観察できるとき、成長は役立つ証拠になる。",
+      "fieldLine": "8つのシグナル。シグナル5から今日の総コスト記事を開く。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "フロンティアモデルとエージェント",
+          "title": "記憶の訂正経路を比較する",
+          "why": "管理された研究は、記録の蓄積より追跡可能な訂正の重要性を示す。",
+          "steps": [
+            "要約だけを再利用して反復業務を一度行う。",
+            "元の記録を参照して要約を訂正し、同じ業務を行う。"
+          ],
+          "done": "次回の事実誤認と合格結果当たりコストを記録する。"
+        },
+        {
+          "signal": 2,
+          "domain": "フィジカルAIとロボティクス",
+          "title": "建設現場への展開コストを測る",
+          "why": "複数現場での巡回は前進だが、介入と顧客収益は未開示だ。",
+          "steps": [
+            "新しい現場ごとの導入時間を記録する。",
+            "人の支援時間と有効な巡回一回当たりコストを加える。"
+          ],
+          "done": "経験とともに展開コストが下がるか分かる。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資本フロー",
+          "title": "資本回帰を二条件で確認する",
+          "why": "ETFフローとステーブルコイン供給は同じ週に縮小した。",
+          "steps": [
+            "週次ETF純フローを再計算する。",
+            "揃った七日間の供給変化を確認する。"
+          ],
+          "done": "両方の週次縮小が止まる。"
+        },
+        {
+          "signal": 4,
+          "domain": "FinTechと決済",
+          "title": "24時間流動性を検証する",
+          "why": "許可制取引の完了は仕組みを示すが、使える厚みは未確認だ。",
+          "steps": [
+            "市場閉場中の気配値と約定額を取る。",
+            "スプレッドと失敗取引を記録する。"
+          ],
+          "done": "連続した時間帯で帰属可能な流動性証拠を得る。"
+        },
+        {
+          "signal": 5,
+          "domain": "コンテンツと配信",
+          "title": "総コストの物語を公開する",
+          "why": "1.05ドルの生成価格に再試行、編集、検証、配信は含まれない。",
+          "steps": [
+            "Astraの原文と審読済み三言語版を公開する。",
+            "人間投稿用の二つの冒頭案を保存する。"
+          ],
+          "done": "四言語版が提案段階の境界を守る。"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラ",
+          "title": "納入と収益を分ける",
+          "why": "IRENのARR目標は試運転、検査、顧客受け入れに左右される。",
+          "steps": [
+            "設置と試験の状態を記録する。",
+            "受け入れ、課金開始、GAAP収益を分ける。"
+          ],
+          "done": "各Horizon段階に帰属可能な日付があるかUNKNOWNを維持する。"
+        },
+        {
+          "signal": 7,
+          "domain": "レイトステージ未公開市場",
+          "title": "資金調達を上限として扱う",
+          "why": "最大1.6億ドルは構造化枠であり、入金や製品承認の証明ではない。",
+          "steps": [
+            "入金済みトランシェと比較臨床証拠を追う。",
+            "規制申請と病院導入を分けて記録する。"
+          ],
+          "done": "資金、臨床、承認の各ゲートに証拠がある。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開株式",
+          "title": "車両当たりの自動運転経済性を測る",
+          "why": "車両目標は規模を、乗車、稼働率、現金貢献は経済性を示す。",
+          "steps": [
+            "車両当たり有料乗車と稼働率を追う。",
+            "帰属可能な現金貢献を加える。"
+          ],
+          "done": "三つの指標が同時に改善する。"
+        }
+      ]
+    }
+  }
+}
+
