@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Three Crypto Gauges Turned Down Together</title>
+  <desc id="desc">A quiet editorial diagram shows Bitcoin products, Ether products and stablecoin circulation all declining across the latest measured window.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4f0e7"/>
+      <stop offset="1" stop-color="#e3ddd0"/>
+    </linearGradient>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" fill="none" stroke="#183238" stroke-opacity="0.075" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <g fill="#183238">
+    <text x="120" y="124" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="24" letter-spacing="5">DAILY SPECIAL · SIGNAL 3</text>
+    <text x="120" y="245" font-family="Georgia, 'Times New Roman', serif" font-size="78">Three crypto gauges</text>
+    <text x="120" y="332" font-family="Georgia, 'Times New Roman', serif" font-size="78">turned down together</text>
+  </g>
+  <g transform="translate(120 430)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+    <g transform="translate(0 0)">
+      <rect width="410" height="250" rx="10" fill="#183238" fill-opacity="0.055" stroke="#183238" stroke-opacity="0.22"/>
+      <text x="28" y="48" fill="#183238" font-size="20">BITCOIN PRODUCTS</text>
+      <text x="28" y="88" fill="#9a4f32" font-size="28">−$1.282B</text>
+      <path d="M34 140L112 128L190 158L268 146L368 204" fill="none" stroke="#9a4f32" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="368" cy="204" r="10" fill="#9a4f32"/>
+    </g>
+    <g transform="translate(475 0)">
+      <rect width="410" height="250" rx="10" fill="#183238" fill-opacity="0.055" stroke="#183238" stroke-opacity="0.22"/>
+      <text x="28" y="48" fill="#183238" font-size="20">ETHER PRODUCTS</text>
+      <text x="28" y="88" fill="#9a4f32" font-size="28">−$365.2M</text>
+      <path d="M34 140L112 148L190 124L268 169L368 205" fill="none" stroke="#9a4f32" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="368" cy="205" r="10" fill="#9a4f32"/>
+    </g>
+    <g transform="translate(950 0)">
+      <rect width="410" height="250" rx="10" fill="#183238" fill-opacity="0.055" stroke="#183238" stroke-opacity="0.22"/>
+      <text x="28" y="48" fill="#183238" font-size="20">USD STABLECOINS</text>
+      <text x="28" y="88" fill="#9a4f32" font-size="28">−1.7253%</text>
+      <path d="M34 128L112 139L190 155L268 180L368 207" fill="none" stroke="#9a4f32" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="368" cy="207" r="10" fill="#9a4f32"/>
+    </g>
+    <rect x="0" y="300" width="1360" height="82" rx="8" fill="#1e6a68"/>
+    <text x="32" y="351" fill="#f4f0e7" font-size="20">ONE COMPLETE WEEK · THREE DIFFERENT MEASURES · ONE DATED DIRECTION</text>
+  </g>
+  <text x="120" y="866" fill="#183238" fill-opacity="0.72" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="22">9 NOVEMBER 2026 · IAMROBIN.AI</text>
+</svg>
