@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Three down arrows are not one number</title>
+  <desc id="desc">Two weekly product flow meters and one stablecoin reservoir gauge point down while a measurement boundary keeps the values separate.</desc>
+  <rect width="1600" height="900" fill="#091226"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M175 235H610V500" stroke="#61D4D7" stroke-width="30"/>
+    <path d="M365 235V500" stroke="#61D4D7" stroke-width="30"/>
+    <path d="M315 445L365 510L415 445" stroke="#61D4D7" stroke-width="24"/>
+    <path d="M560 445L610 510L660 445" stroke="#61D4D7" stroke-width="24"/>
+    <rect x="120" y="140" width="570" height="470" rx="36" stroke="#2C3A58" stroke-width="4"/>
+    <path d="M980 285H1420V650H980Z" stroke="#D8B86B" stroke-width="18"/>
+    <path d="M985 475C1090 430 1180 525 1285 475C1350 445 1390 460 1415 475V645H985Z" fill="#D8B86B" fill-opacity=".18" stroke="#D8B86B" stroke-width="8"/>
+    <path d="M1200 175V390" stroke="#D8B86B" stroke-width="30"/>
+    <path d="M1150 325L1200 390L1250 325" stroke="#D8B86B" stroke-width="24"/>
+    <path d="M800 105V795" stroke="#F4F1E9" stroke-opacity=".22" stroke-width="3" stroke-dasharray="14 18"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#F4F1E9">
+    <text x="120" y="90" font-size="26" letter-spacing="5" fill="#61D4D7">BINARY / INVEST</text>
+    <text x="120" y="700" font-family="Georgia, serif" font-size="72">Three arrows agree.</text>
+    <text x="120" y="780" font-family="Georgia, serif" font-size="72">The units do not.</text>
+    <text x="145" y="580" font-size="28" fill="#9BA7BF">WEEKLY PRODUCT FLOWS</text>
+    <text x="1035" y="715" font-size="28" fill="#D8B86B">STABLECOIN STOCK</text>
+    <text x="1290" y="842" font-size="24" fill="#9BA7BF">IAmRobin.ai</text>
+  </g>
+</svg>

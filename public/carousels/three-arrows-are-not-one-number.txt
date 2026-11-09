@@ -1,0 +1,17 @@
+Three down arrows are not one number.
+
+In the latest complete window:
+
+• Bitcoin-product flows: -$1.282bn
+• Ether-product flows: -$0.365bn
+• tracked USD-stablecoin value: -$5.148bn / -1.7253%
+
+All three gauges contracted. But only the first two can be added. They are aligned five-session flow estimates. The stablecoin reading is a change in an estimated stock across seven calendar days.
+
+A pipe meter and a reservoir gauge can agree on direction without measuring the same water.
+
+The useful result is breadth, not an invented $6.8bn total. And even that breadth result is dated: one complete window does not prove causality, predict prices or validate an investment rule.
+
+Full story, method and sources: https://iamrobin.ai/binary/stories/three-arrows-are-not-one-number/
+
+#DigitalAssets #BitcoinETF #EthereumETF #Stablecoins #InvestmentResearch
