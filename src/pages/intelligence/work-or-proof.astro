@@ -1,0 +1,80 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const path='/intelligence/work-or-proof/';
+const description='When only reviewed candidates count, how should a fixed team divide its action budget between producing work and verifying it?';
+const schema={'@context':'https://schema.org','@type':'LearningResource',name:'Work or Proof?',url:`https://iamrobin.ai${path}`,description,inLanguage:'en',learningResourceType:'Interactive simulation',educationalUse:'Experiment'};
+const policies=[
+ ['makerHeavy','01','Six make, two check','Put 75% of every tick into producing candidates.'],
+ ['balanced','02','Four make, four check','Split the fixed action budget evenly.'],
+ ['checkerHeavy','03','Two make, six check','Keep six review actions even when the queue is empty.'],
+ ['adaptive','04','Queue-aware','Make below a visible target; check at or above it.'],
+ ['random','05','Random split','Choose make or check from a seeded 50/50 draw.'],
+];
+---
+<BaseLayout title="Work or Proof? — Intelligence — Robin Xie" {path} {description} {schema}>
+ <div class="experiment shell">
+  <a class="quiet-link" href="/intelligence/">← Intelligence</a>
+  <p class="eyebrow">Weekly small experiment · 2026-W46</p>
+  <h1>Work<br/><em>or proof?</em></h1>
+  <p class="lead">A busy pipeline can make more work than it can honestly finish.</p>
+  <p class="intro">Give five teams the same action budget and the same hidden-quality candidate stream. Only reviewed valid candidates count. Change review capacity, expiry and queue size; keep blocked, expired and idle work visible.</p>
+
+  <section class="playground" aria-label="Work or Proof experiment">
+   <form id="proof-controls">
+    <label>Seed<input name="seed" type="number" min="0" max="4294967295" step="1" value="1" required/></label>
+    <label>Actions<select name="actionsPerTick"><option value="4">4 per tick</option><option value="8" selected>8 per tick</option><option value="16">16 per tick</option></select></label>
+    <label>Candidate quality<select name="qualityRate"><option value="35">35% valid</option><option value="70" selected>70% valid</option><option value="100">100% valid</option></select></label>
+    <label>Review capacity<select name="reviewBatch"><option value="1" selected>1 candidate</option><option value="2">2 candidates</option><option value="3">3 candidates</option></select></label>
+    <label>Review deadline<select name="deadline"><option value="4">4 ticks</option><option value="12" selected>12 ticks</option><option value="30">30 ticks</option></select></label>
+    <label>Queue limit<select name="queueLimit"><option value="16">16 candidates</option><option value="64" selected>64 candidates</option><option value="128">128 candidates</option></select></label>
+    <label>Queue-aware target<select name="adaptiveTarget"><option value="4">4 candidates</option><option value="8" selected>8 candidates</option><option value="16">16 candidates</option></select></label>
+   </form>
+   <div class="buttons"><button id="play" type="button">Play</button><button id="step" type="button">Step</button><button id="end" type="button">Show outcome</button><button id="reset" type="button">Replay</button><button id="next-seed" type="button">Next seed</button><button id="defaults" type="button">Defaults</button></div>
+   <p id="lab-status" role="status">Loading the seeded workflow…</p>
+   <canvas id="proof-world" aria-label="Unreviewed queue length for five matched action-allocation policies"></canvas>
+   <label class="time">Inspect any tick<input id="tick" aria-label="Simulation tick" type="range" min="0" max="119" value="0"/></label>
+   <div class="worlds">
+    {policies.map(([id,num,name,note])=><article class="world" data-policy={id}>
+      <p class="eyebrow">{num} / allocation policy</p><h2>{name}</h2><p class="rule">{note}</p>
+      <p class="mode" data-feasible="true">READY</p><div class="bar" aria-hidden="true"><span></span></div><p class="counts"></p>
+    </article>)}
+   </div>
+   <p class="fine">A queue bar shows produced candidates that have not crossed review. Candidate validity is hidden from every policy until review; the reader sees outcomes, not an oracle available to the policy.</p>
+   <div class="buttons"><button id="share" type="button">Link this world</button><button id="download" type="button">Download run</button></div>
+   <noscript>JavaScript is needed to play. Complete batch results, method and source remain available below.</noscript>
+  </section>
+
+  <section class="story">
+   <p class="eyebrow">Try this first</p><h2>Triple review capacity. Keep the team.</h2>
+   <p>Press <strong>Show outcome</strong>. Then let one review action inspect three candidates. The six-maker team changes from a clogged queue to the strongest fixed allocation. Restore one candidate per review and shrink the queue to 16. Activity stays high; accepted work does not.</p>
+
+   <h2>Production is not completion.</h2>
+   <p>Every tick contains eight make-or-check actions. Production places one candidate with hidden seeded validity into a first-in, first-out queue. Review perfectly accepts valid candidates and rejects invalid ones. Unreviewed candidates expire after the deadline. A full queue blocks production.</p>
+   <p>Every policy draws from the same candidate sequence and sees only its queue and past reviews. The queue-aware rule uses no quality oracle: it makes below a visible target and checks at or above it. Fixed policies produce first and review second within each tick.</p>
+
+   <h2>The same accepted total can hide opposite failures.</h2>
+   <div class="table-wrap"><table><caption>Mean accepted valid candidates · seeds 1–64</caption><thead><tr><th>Setting</th><th>6 make / 2 check</th><th>4 / 4</th><th>2 / 6</th><th>Queue-aware</th><th>Random</th></tr></thead><tbody>
+    <tr><th scope="row">Default</th><td>167.250</td><td><strong>334.750</strong></td><td>167.500</td><td>331.828</td><td>317.031</td></tr>
+    <tr><th scope="row">Perfect quality</th><td>240</td><td><strong>480</strong></td><td>240</td><td>476</td><td>454.828</td></tr>
+    <tr><th scope="row">35% valid</th><td>83.734</td><td><strong>167.281</strong></td><td>84.625</td><td>165.859</td><td>158.391</td></tr>
+    <tr><th scope="row">Two per review</th><td>334.734</td><td>334.750</td><td>167.500</td><td><strong>443.891</strong></td><td>333.063</td></tr>
+    <tr><th scope="row">Three per review</th><td><strong>503.234</strong></td><td>334.750</td><td>167.500</td><td>499</td><td>333.516</td></tr>
+   </tbody></table></div>
+   <p>In the default batch, six-makers average 346 expiries, 72 blocked production actions and 62 candidates still waiting. Two-makers accept nearly the same total but spend 480 review actions idle. Similar accepted totals conceal overload on one side and unused capacity on the other.</p>
+   <p>When one review action handles three candidates, six-makers accept 503.234 on average. The balance is conditional on review throughput—not a universal maker/checker ratio.</p>
+
+   <h2>What the controls change</h2>
+   <dl><dt>Seed</dt><dd>Replays candidate quality and random-policy actions.</dd><dt>Actions</dt><dd>Total production-or-review opportunities available to every policy per tick.</dd><dt>Candidate quality</dt><dd>Seeded probability a produced candidate is valid.</dd><dt>Review capacity</dt><dd>Oldest candidates inspected per review action.</dd><dt>Review deadline</dt><dd>Ticks an unreviewed candidate may wait before expiry.</dd><dt>Queue limit</dt><dd>Maximum unreviewed candidates retained.</dd><dt>Queue-aware target</dt><dd>Visible level where the adaptive policy switches from making to checking.</dd></dl>
+
+   <h2>Where the toy stops.</h2>
+   <p>This is a deterministic teaching world, not an employee or model productivity benchmark, quality-assurance prescription, agent-framework test, biological model or financial system. Candidate validity is a bit. Review is perfect and equally difficult for every candidate. Rework, correlated errors, reviewer mistakes, task heterogeneity, learning, safety severity, compute, money and human judgment are absent.</p>
+   <p>All <strong>640 matched seeded worlds and 3,200 policy outcomes</strong> are retained across ten predeclared settings. No seed was removed. Accepted, rejected, expired, blocked, idle and queued outcomes remain separate. No private conversation text is included.</p>
+   <p class="downloads"><a href="/work-or-proof/README.md" download>Method &amp; parameter guide ↓</a><a href="/work-or-proof/source.zip" download>Source package ↓</a><a href="/work-or-proof/results.json" download>All batch results ↓</a><a href="/work-or-proof/model.mjs">Read the model</a></p>
+   <p class="fine">Previously: <a href="/intelligence/bridge-or-bus/">Bridge or Bus?</a> · Explore the <a href="/intelligence/swarm-lab/">eight small worlds</a>.</p>
+  </section>
+ </div>
+ <script is:inline type="module" src="/work-or-proof/client.mjs"></script>
+</BaseLayout>
+<style>
+ .experiment{padding-block:3rem 5rem}.experiment>.eyebrow{margin-top:3rem}h1{font:400 clamp(3.35rem,8vw,7rem)/.98 var(--serif);letter-spacing:-.055em;margin:1.5rem 0}h1 em{color:#9b5a3e}.lead{font:400 clamp(1.3rem,3vw,2rem)/1.45 var(--serif)}.intro,.story{max-width:49rem;line-height:1.85}.intro,.fine,dd{color:var(--muted)}.playground{margin-block:2.5rem;padding:clamp(1rem,3vw,2rem);border:1px solid var(--line);background:#f7f3eb;border-radius:12px}form{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}label{display:grid;gap:.4rem;font-size:.8rem}select,input[type=number],button{font:inherit;min-height:44px;padding:.65rem;border:1px solid #aaa391;border-radius:4px;background:#fffdf7;color:#292822;min-width:0;width:100%}.buttons{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.2rem}.buttons button{width:auto}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #a96d29;outline-offset:3px}#play{background:#326d63;color:#fff}#lab-status{font-size:.85rem;min-height:2.5em}#proof-world{display:block;width:100%;height:300px;margin-top:.6rem;border:1px solid #d0c8b7;border-radius:8px}.time{margin-block:1rem}.time input{width:100%;min-height:44px;accent-color:#326d63}.worlds{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.world{border-top:1px solid #c4bdad;padding:1rem 0;min-width:0}.world h2{font:400 1.55rem var(--serif);margin:.35rem 0}.world .eyebrow{font-size:.65rem}.rule{font-size:.78rem;color:#626258}.mode{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.08em;padding:.25rem .55rem;border-radius:99px;background:#d7e4d8;color:#28513b}.mode[data-feasible=false]{background:#efd2be;color:#71391f}.bar{height:7px;background:#ddd6c8;margin-top:.8rem}.bar span{display:block;height:100%;background:#557b70}.counts{font-size:.78rem;font-variant-numeric:tabular-nums}.fine{font-size:.8rem;line-height:1.7}.story h2{font:400 clamp(1.6rem,4vw,2.5rem)/1.2 var(--serif);margin-top:2.5rem}dt{font-weight:600;margin-top:1rem}dd{margin-left:0}.downloads{display:flex;flex-wrap:wrap;gap:1rem;font-size:.9rem}.table-wrap{overflow-x:auto;margin-block:1.5rem}table{border-collapse:collapse;width:100%;font-size:.84rem}caption{text-align:left;color:var(--muted);font-size:.8rem;padding-bottom:.7rem}th,td{text-align:left;padding:.75rem .5rem;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}th{font-weight:500}@media(max-width:900px){form{grid-template-columns:1fr 1fr}.worlds{grid-template-columns:1fr}.playground{margin-inline:-.3rem}table{font-size:.72rem}th,td{padding:.6rem .25rem}}@media(max-width:420px){form{grid-template-columns:1fr}#proof-world{height:300px}}
+</style>
