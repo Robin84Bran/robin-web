@@ -1,0 +1,29 @@
+<svg viewBox="0 0 680 146" role="img" aria-labelledby="c13t">
+<title id="c13t">v0.3.2: Claude and GPT-6 Sol on the same 293 compliant runs</title>
+<g class="mark"><title>Claude, full trace: 293 correct all-clear (of 293 compliant runs)</title><rect class="hit" x="0" y="6.0" width="680" height="34"/>
+<text class="label" x="0" y="27.0">Claude, full trace</text>
+<path class="f-ok" d="M190.0 14.0H526.0q4.0 0 4.0 4.0V28.0q0 4.0 -4.0 4.0H190.0Z"/>
+<text class="inbar" x="196.0" y="27.0">293</text>
+<text class="value" x="540.0" y="27.0">293/293 cleared</text></g>
+<g class="mark"><title>GPT-6 Sol, full trace: 288 correct all-clear · 5 no verdict (of 293 compliant runs)</title><rect class="hit" x="0" y="40.0" width="680" height="34"/>
+<text class="label" x="0" y="61.0">GPT-6 Sol, full trace</text>
+<rect class="f-ok" x="190.0" y="48.0" width="332.2" height="18"/>
+<text class="inbar" x="196.0" y="61.0">288</text>
+<path class="f-none" d="M524.2 48.0H527.1q2.9 0 2.9 2.9V63.1q0 2.9 -2.9 2.9H524.2Z"/>
+<text class="value" x="540.0" y="61.0">288/293 cleared</text></g>
+<g class="mark"><title>Claude, report only: 42 correct all-clear · 17 false alarm · 234 no verdict (of 293 compliant runs)</title><rect class="hit" x="0" y="74.0" width="680" height="34"/>
+<text class="label" x="0" y="95.0">Claude, report only</text>
+<rect class="f-ok" x="190.0" y="82.0" width="46.7" height="18"/>
+<text class="inbar" x="196.0" y="95.0">42</text>
+<rect class="f-bad" x="238.7" y="82.0" width="17.7" height="18"/>
+<path class="f-none" d="M258.5 82.0H526.0q4.0 0 4.0 4.0V96.0q0 4.0 -4.0 4.0H258.5Z"/>
+<text class="inbar dark" x="264.5" y="95.0">234</text>
+<text class="value" x="540.0" y="95.0">42/293 cleared</text></g>
+<g class="mark"><title>GPT-6 Sol, report only: 25 correct all-clear · 7 false alarm · 261 no verdict (of 293 compliant runs)</title><rect class="hit" x="0" y="108.0" width="680" height="34"/>
+<text class="label" x="0" y="129.0">GPT-6 Sol, report only</text>
+<rect class="f-ok" x="190.0" y="116.0" width="27.0" height="18"/>
+<rect class="f-bad" x="219.0" y="116.0" width="6.1" height="18"/>
+<path class="f-none" d="M227.1 116.0H526.0q4.0 0 4.0 4.0V130.0q0 4.0 -4.0 4.0H227.1Z"/>
+<text class="inbar dark" x="233.1" y="129.0">261</text>
+<text class="value" x="540.0" y="129.0">25/293 cleared</text></g>
+</svg>

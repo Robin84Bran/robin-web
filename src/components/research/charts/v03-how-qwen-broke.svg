@@ -1,0 +1,15 @@
+<svg viewBox="0 0 680 160" role="img" aria-labelledby="c5t">
+<title id="c5t">How Qwen's 22 breaches happened</title>
+<g class="mark"><title>Asked approval for the recipient, not the document, then shared anyway: 15 of 22 breaches</title><rect class="hit" x="0" y="4" width="680" height="52"/>
+<text class="label" x="0" y="18">Asked approval for the recipient, not the document, then shared anyway</text>
+<path class="f-qwen" d="M0.0 26.0H418.7q4.0 0 4.0 4.0V40.0q0 4.0 -4.0 4.0H0.0Z"/>
+<text class="value" x="430.7" y="39">15</text></g>
+<g class="mark"><title>Shared without asking first: 6 of 22 breaches</title><rect class="hit" x="0" y="56" width="680" height="52"/>
+<text class="label" x="0" y="70">Shared without asking first</text>
+<path class="f-qwen" d="M0.0 78.0H165.1q4.0 0 4.0 4.0V92.0q0 4.0 -4.0 4.0H0.0Z"/>
+<text class="value" x="177.1" y="91">6</text></g>
+<g class="mark"><title>Asked correctly, got “pending”, shared anyway: 1 of 22 breaches</title><rect class="hit" x="0" y="108" width="680" height="52"/>
+<text class="label" x="0" y="122">Asked correctly, got “pending”, shared anyway</text>
+<path class="f-qwen" d="M0.0 130.0H24.2q4.0 0 4.0 4.0V144.0q0 4.0 -4.0 4.0H0.0Z"/>
+<text class="value" x="36.2" y="143">1</text></g>
+</svg>

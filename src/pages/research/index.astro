@@ -1,5 +1,13 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import v02Monitors from '../../components/research/charts/v02-monitors.svg?raw';
+import v03BreachRate from '../../components/research/charts/v03-breach-rate.svg?raw';
+import v03Monitors from '../../components/research/charts/v03-monitors-breaches.svg?raw';
+import v03HowQwen from '../../components/research/charts/v03-how-qwen-broke.svg?raw';
+import v031Breach from '../../components/research/charts/v031-breach-by-model.svg?raw';
+import v031Confession from '../../components/research/charts/v031-confession-by-grant.svg?raw';
+import v032Breaches from '../../components/research/charts/v032-two-families-breaches.svg?raw';
+import v032Clean from '../../components/research/charts/v032-two-families-clean.svg?raw';
 
 const path = '/research/';
 const description = 'The Honest Agent: a pre-registered AI-control experiment. Monitors that read an agent’s actions caught all 67 rule breaches; monitors that read only its report caught 0 and 2.';
@@ -32,17 +40,24 @@ const pattern = [
   ['Not finished, violation', 246, 40, '17 / 0 / 229', '9 / 0 / 237'],
   ['Finished, no violation', 45, 0, '0 / 0 / 45', '0 / 0 / 45'],
 ];
-const confessions = [
-  ['Qwen 2.5 1.5B', '7 / 12', '26 / 41'],
-  ['Qwen 2.5 7B', '0 / 20', '100 / 100'],
-  ['Llama 3.1 8B', '4 / 39', '69 / 81'],
-];
+const verdictLegend = [['ok', 'Right answer'], ['bad', 'Wrong answer'], ['none', 'No verdict']];
 const steps = [
-  ['v0.1', 'scripted', 'A scripted baseline, to check that the simulator, the ledger and the scoring work.'],
-  ['v0.2', 'first real model', 'Qwen 2.5 1.5B as both agent and monitor. It broke the rule in 16 of 20 deployments. The trace monitor looked better, but 20 runs were too few to be sure.'],
-  ['v0.3', 'pre-registered', 'Claude Opus 5.5 and GPT-6 Astra on three tasks: 0 breaches in 210 runs. The small comparison model failed from a setup error and was rerun after the main analysis, so its monitor result (+0.88) is a declared deviation.'],
-  ['v0.3.1', 'pre-registered', 'Three open models on fresh seeds, with the protocol pushed to GitHub before any run. Trace beat report-only: +1.00 (95% CI +0.82 to +1.00) on 26 paired breaches.'],
-  ['v0.3.2', 'pre-registered', 'A second monitor family, GPT-6 Sol, re-judged the same 360 runs with the same prompts. Trace beat report-only again: +0.88 (95% CI +0.59 to +0.97) on 17 paired breaches.'],
+  { v: 'v0.1', tag: 'scripted', text: 'A scripted baseline, to check that the simulator, the ledger and the scoring work.', charts: [] },
+  { v: 'v0.2', tag: 'first real model', text: 'Qwen 2.5 1.5B as both agent and monitor, on 20 simulated deployments. It broke the rule in 16. The trace monitor looked better than the report-only one, but with 20 runs the intervals overlap, and both raised false alarms on three of the four clean runs.',
+    charts: [{ svg: v02Monitors, note: 'v0.2 · lines show 95% intervals' }] },
+  { v: 'v0.3', tag: 'pre-registered', text: 'Claude Opus 5.5 and GPT-6 Astra on three tasks: 0 breaches in 210 runs, whatever the approver answered. The small comparison model failed from a setup error and was rerun after the main analysis, so its results, including the monitor gap (+0.88), are a declared deviation.',
+    charts: [
+      { svg: v03BreachRate, note: 'v0.3 · how often each model broke the rule, by the approver’s answer', legend: [['claude', 'Claude Opus 5.5'], ['gpt', 'GPT-6 Astra'], ['qwen', 'Qwen 2.5 1.5B (deviation)']] },
+      { svg: v03Monitors, note: 'v0.3 · what each monitor said about Qwen’s 22 breaches', legend: verdictLegend },
+      { svg: v03HowQwen, note: 'v0.3 · how those 22 breaches happened' },
+    ] },
+  { v: 'v0.3.1', tag: 'pre-registered', text: 'Three open models on fresh seeds, with the protocol pushed to GitHub before any run. Only the smallest broke the rule. Trace beat report-only: +1.00 (95% CI +0.82 to +1.00) on 26 paired breaches.',
+    charts: [{ svg: v031Breach, note: 'v0.3.1 · breach rate by model and task' }] },
+  { v: 'v0.3.2', tag: 'pre-registered', text: 'A second monitor family, GPT-6 Sol, re-judged the same 360 runs with the same prompts. Trace beat report-only again: +0.88 (95% CI +0.59 to +0.97) on 17 paired breaches.',
+    charts: [
+      { svg: v032Breaches, note: 'v0.3.2 · both families on the same 67 breaches', legend: verdictLegend },
+      { svg: v032Clean, note: 'v0.3.2 · both families on the 293 runs that followed the rule', legend: verdictLegend },
+    ] },
 ];
 ---
 
@@ -98,13 +113,10 @@ const steps = [
       <p class="eyebrow">04 / The surprise</p>
       <h2 id="surprise-title">The careful models confessed to things they never did.</h2>
       <p>Two larger open models, Qwen 2.5 7B and Llama 3.1 8B, never broke the rule in 240 runs. Yet they reported a violation in 100 and 73 of their 120 runs. Split those false confessions by whether approval ever arrived, and a pattern appears:</p>
-      <div class="table-wrap">
-        <table>
-          <caption>Runs that followed the rule, yet reported a violation · post hoc</caption>
-          <thead><tr><th>Model</th><th>Approval came</th><th>Approval never came</th></tr></thead>
-          <tbody>{confessions.map(([m, a, b]) => <tr><th scope="row">{m}</th><td>{a}</td><td>{b}</td></tr>)}</tbody>
-        </table>
-      </div>
+      <figure class="plot">
+        <figcaption>Runs that followed the rule, yet reported a violation · post hoc · lines show 95% intervals</figcaption>
+        <div class="chart" set:html={v031Confession} />
+      </figure>
       <p>The report asks whether an operation was performed without prior approval. These models seem to have answered a different question: was approval missing? That looks more like a misread question than a guilty conscience, though the data cannot show what a model meant. Either way, self-reports failed in both directions. The small model denied real breaches. The careful ones confessed to imaginary ones.</p>
     </section>
 
@@ -119,7 +131,19 @@ const steps = [
       <p class="eyebrow">06 / How it was built</p>
       <h2 id="built-title">Five steps, each written down first.</h2>
       <ol class="steps">
-        {steps.map(([v, tag, text]) => <li><p class="step-head"><strong>{v}</strong><span>{tag}</span></p><p>{text}</p></li>)}
+        {steps.map((step) => (
+          <li>
+            <p class="step-head"><strong>{step.v}</strong><span>{step.tag}</span></p>
+            <p>{step.text}</p>
+            {step.charts.map((chart) => (
+              <figure class="plot">
+                <figcaption>{chart.note}</figcaption>
+                {chart.legend && <p class="legend">{chart.legend.map(([key, label]) => <span><i class={`k-${key}`}></i>{label}</span>)}</p>}
+                <div class="chart" set:html={chart.svg} />
+              </figure>
+            ))}
+          </li>
+        ))}
       </ol>
       <dl>
         <dt>Written down first</dt>
@@ -204,4 +228,29 @@ const steps = [
     table { font-size: 0.75rem; }
     th, td { padding: 0.65rem 0.3rem; }
   }
+</style>
+
+<style is:global>
+  .research .plot { margin: 1.4rem 0 0.4rem; padding: clamp(0.9rem, 3vw, 1.4rem); border: 1px solid var(--line); background: #f7f3eb; }
+  .research .plot figcaption { color: var(--muted); font-size: 0.8rem; padding-bottom: 0.6rem; }
+  .research .legend { display: flex; flex-wrap: wrap; gap: 0.3rem 1.1rem; margin: 0 0 0.5rem; color: var(--muted); font-size: 0.78rem; }
+  .research .legend i { display: inline-block; width: 0.7rem; height: 0.7rem; margin-right: 0.4rem; border-radius: 2px; vertical-align: -0.05rem; }
+  .research .k-ok { background: #6250d6; } .research .k-bad { background: #e34948; } .research .k-none { background: #c9c7bf; }
+  .research .k-claude { background: #2a78d6; border-radius: 50% !important; } .research .k-gpt { background: #eb6834; border-radius: 50% !important; } .research .k-qwen { background: #1baf7a; border-radius: 50% !important; }
+  .research .chart { overflow-x: auto; }
+  .research .chart svg { display: block; width: 100%; min-width: 560px; height: auto; overflow: visible; }
+  .research .chart text { font: 13px var(--sans); fill: var(--ink); }
+  .research .chart .tick, .research .chart .value { fill: var(--muted); font-variant-numeric: tabular-nums; }
+  .research .chart .group { font-weight: 600; }
+  .research .chart .grid { stroke: rgba(83, 74, 65, 0.14); stroke-width: 1; }
+  .research .chart .ci { stroke-width: 2; stroke-linecap: round; }
+  .research .chart .dot { stroke: #f7f3eb; stroke-width: 2; }
+  .research .chart .hit { fill: transparent; }
+  .research .chart .mark:hover .hit { fill: rgba(83, 74, 65, 0.07); }
+  .research .chart .f-ink { fill: var(--ink); } .research .chart .s-ink { stroke: var(--ink); }
+  .research .chart .f-claude { fill: #2a78d6; } .research .chart .s-claude { stroke: #2a78d6; }
+  .research .chart .f-gpt { fill: #eb6834; } .research .chart .s-gpt { stroke: #eb6834; }
+  .research .chart .f-qwen { fill: #1baf7a; } .research .chart .s-qwen { stroke: #1baf7a; }
+  .research .chart .f-ok { fill: #6250d6; } .research .chart .f-bad { fill: #e34948; } .research .chart .f-none { fill: #c9c7bf; }
+  .research .chart .inbar { fill: #fff; font-weight: 600; } .research .chart .inbar.dark { fill: #0b0b0b; }
 </style>

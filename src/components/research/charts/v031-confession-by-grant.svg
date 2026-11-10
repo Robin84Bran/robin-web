@@ -1,0 +1,46 @@
+<svg viewBox="0 0 680 296" role="img" aria-labelledby="c11t">
+<title id="c11t">v0.3.1: on runs that followed the rule, how often the report still said “violation”, by whether approval ever arrived</title>
+<line class="grid" x1="190.0" x2="190.0" y1="8" y2="270"/>
+<text class="tick" x="190.0" y="288" text-anchor="middle">0%</text>
+<line class="grid" x1="292.5" x2="292.5" y1="8" y2="270"/>
+<text class="tick" x="292.5" y="288" text-anchor="middle">25%</text>
+<line class="grid" x1="395.0" x2="395.0" y1="8" y2="270"/>
+<text class="tick" x="395.0" y="288" text-anchor="middle">50%</text>
+<line class="grid" x1="497.5" x2="497.5" y1="8" y2="270"/>
+<text class="tick" x="497.5" y="288" text-anchor="middle">75%</text>
+<line class="grid" x1="600.0" x2="600.0" y1="8" y2="270"/>
+<text class="tick" x="600.0" y="288" text-anchor="middle">100%</text>
+<text class="group" x="0" y="24">Qwen 2.5 1.5B</text>
+<g class="mark"><title>Qwen 2.5 1.5B — Approval came: 7 of 12 (58%; 95% CI 32–81%)</title><rect class="hit" x="0" y="32.0" width="680" height="26"/>
+<text class="label" x="14" y="49.0">Approval came</text>
+<line class="ci s-ink" x1="321.0" x2="520.8" y1="45.0" y2="45.0"/>
+<circle class="dot f-ink" cx="429.2" cy="45.0" r="5"/>
+<text class="value" x="610.0" y="49.0">7/12</text></g>
+<g class="mark"><title>Qwen 2.5 1.5B — Approval never came: 26 of 41 (63%; 95% CI 48–76%)</title><rect class="hit" x="0" y="58.0" width="680" height="26"/>
+<text class="label" x="14" y="75.0">Approval never came</text>
+<line class="ci s-ink" x1="387.3" x2="503.3" y1="71.0" y2="71.0"/>
+<circle class="dot f-ink" cx="450.0" cy="71.0" r="5"/>
+<text class="value" x="610.0" y="75.0">26/41</text></g>
+<text class="group" x="0" y="110">Qwen 2.5 7B</text>
+<g class="mark"><title>Qwen 2.5 7B — Approval came: 0 of 20 (0%; 95% CI 0–16%)</title><rect class="hit" x="0" y="118.0" width="680" height="26"/>
+<text class="label" x="14" y="135.0">Approval came</text>
+<line class="ci s-ink" x1="190.0" x2="256.1" y1="131.0" y2="131.0"/>
+<circle class="dot f-ink" cx="190.0" cy="131.0" r="5"/>
+<text class="value" x="610.0" y="135.0">0/20</text></g>
+<g class="mark"><title>Qwen 2.5 7B — Approval never came: 100 of 100 (100%; 95% CI 96–100%)</title><rect class="hit" x="0" y="144.0" width="680" height="26"/>
+<text class="label" x="14" y="161.0">Approval never came</text>
+<line class="ci s-ink" x1="584.8" x2="600.0" y1="157.0" y2="157.0"/>
+<circle class="dot f-ink" cx="600.0" cy="157.0" r="5"/>
+<text class="value" x="610.0" y="161.0">100/100</text></g>
+<text class="group" x="0" y="196">Llama 3.1 8B</text>
+<g class="mark"><title>Llama 3.1 8B — Approval came: 4 of 39 (10%; 95% CI 4–24%)</title><rect class="hit" x="0" y="204.0" width="680" height="26"/>
+<text class="label" x="14" y="221.0">Approval came</text>
+<line class="ci s-ink" x1="206.7" x2="286.7" y1="217.0" y2="217.0"/>
+<circle class="dot f-ink" cx="232.1" cy="217.0" r="5"/>
+<text class="value" x="610.0" y="221.0">4/39</text></g>
+<g class="mark"><title>Llama 3.1 8B — Approval never came: 69 of 81 (85%; 95% CI 76–91%)</title><rect class="hit" x="0" y="230.0" width="680" height="26"/>
+<text class="label" x="14" y="247.0">Approval never came</text>
+<line class="ci s-ink" x1="501.1" x2="564.4" y1="243.0" y2="243.0"/>
+<circle class="dot f-ink" cx="539.3" cy="243.0" r="5"/>
+<text class="value" x="610.0" y="247.0">69/81</text></g>
+</svg>
