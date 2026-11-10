@@ -1,0 +1,75 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { absoluteUrl, createBreadcrumbSchema } from '../../lib/seo';
+
+const path = '/asymmetry/quant_lab/';
+const title = 'Quant Lab: 42 cents to chase 5 cents';
+const description = 'Eight trading ideas tested with paper money. See what each earned or lost after fees, and why one winning trade is still an open question.';
+const graph = path + 'eight-paper-wallets.png';
+const results = [
+  ['Buy a deep dip and wait for a bounce', '31 trades', '−1.70%', '−4.94%'],
+  ['Buy a breakout when trading gets busy', '27 trades', '−2.34%', '−5.17%'],
+  ['Follow a burst of aggressive buying', '26 trades', '−2.32%', '−5.04%'],
+  ['Collect unusually high futures funding fees', '0 trades', '0.00%', '0.00%'],
+  ['Hold a coin while its daily trend points up', '1 trade', '−0.21%', '−0.25%'],
+  ['Post a price and wait for a buyer or seller', '67 assumed fills', '−0.16%', '−0.25%'],
+  ['Bet on SUI falling around a scheduled token release', '1 event', '+0.43%', '+0.41%'],
+  ['Swap through three coins and back', '0 cycles', '0.00%', '0.00%'],
+];
+const schema = [
+  { '@type': 'Article', headline: title, description, url: absoluteUrl(path), image: absoluteUrl(graph),
+    datePublished: '2026-11-10', inLanguage: 'en', articleSection: 'Asymmetry', author: { '@type': 'Organization', name: 'Quant Lab' } },
+  createBreadcrumbSchema([{ name: 'Home', path: '/' }, { name: 'Asymmetry', path: '/asymmetry/' }, { name: 'Quant Lab', path }]),
+];
+---
+<BaseLayout {title} {description} {path} image={graph} imageAlt="Returns of eight paper wallets under two cost assumptions" imageWidth={1800} imageHeight={1138} type="article" {schema}>
+  <article class="note">
+    <header>
+      <a href="/asymmetry/">← Asymmetry</a>
+      <p class="byline">Quant Lab field note · <time datetime="2026-11-10">November 10, 2026</time></p>
+      <h1>42 cents to chase 5 cents</h1>
+      <p class="lead">Imagine swapping 100 USDT through three coins and ending up with five cents more. That was the best price gap we saw in a short check. Making all three swaps would have cost about 42 cents in fees and worse prices, even under our standard assumptions. Our paper wallet passed on the trade.</p>
+    </header>
+
+    <h2>Eight ideas, eight paper wallets</h2>
+    <p>We wrote the rules first, then watched new prices arrive. The computer estimated whether it could buy or sell at the next available quote and size. All trades were simulated. No real money changed hands.</p>
+    <p>Five ideas lost money after costs. Two never traded. One earned a small gain on a single event. None has shown it can earn repeatable profits.</p>
+    <figure>
+      <a href={graph} aria-label="Open the full-size graph of eight paper wallets"><img src={graph} width="1800" height="1138" alt="Five wallets lost money, two stayed flat without trading, and SUI gained about 0.4% on one event. Exact returns follow in the table." /></a>
+      <figcaption><a href={graph}>Open full-size graph</a> · <a href={path + 'quant-lab-field-note.pdf'}>Read the two-page field note (PDF)</a></figcaption>
+    </figure>
+    <p>The first three wallets started with 10,000 USDT each and the others with 1,000 each. A return of −1% means a loss of one unit for every hundred put in. “Higher costs” allows for larger fees and less favorable prices.</p>
+    <table>
+      <caption>Net return per paper wallet</caption>
+      <thead><tr><th scope="col">Idea</th><th scope="col">Sample</th><th scope="col">Standard costs</th><th scope="col">Higher costs</th></tr></thead>
+      <tbody>{results.map(([idea, sample, standard, higher]) => <tr><th scope="row">{idea}</th><td>{sample}</td><td>{standard}</td><td>{higher}</td></tr>)}</tbody>
+    </table>
+    <p class="footnote">An assumed fill is an order the model counted as trading. Several fills can belong to one trade. The daily-trend and patient-order results include estimates for small amounts of unsold coins.</p>
+
+    <h2>When cash beat the trend</h2>
+    <p>The daily-trend rule lost 2.07 USDT on its 1,000-USDT wallet under standard costs. Holding all five coins through the same window lost 63.88 USDT. Spending much of the time in cash softened the loss. Starting with cash and keeping it would have done better still.</p>
+    <h2>What the one green result tells us</h2>
+    <p>The SUI rule bet that the price would fall around a scheduled token release. The paper trade earned 4.29 USDT after standard costs, or 4.14 with higher costs. We couldn’t verify that token recipients sold. The rule calls for ten independent events before we consider moving it forward. This was one.</p>
+    <h2>Why we test on new prices</h2>
+    <p>In an earlier two-year replay, one price-following rule gained 42.55% before costs. The same positions gained 13.42% with standard costs and lost 18.13% with higher costs. That replay helps explain why fees matter. The eight wallets above made their decisions as new prices arrived.</p>
+    <p>Before we call a rule a winner, it must finish its first test, pass independent review and work again in a fresh window with the same rules.</p>
+  </article>
+</BaseLayout>
+<style>
+  .note { width: min(100% - 2rem, 52rem); margin: 0 auto; padding: clamp(2.5rem, 7vw, 6rem) 0 5rem; }
+  .note header { margin-bottom: 2.5rem; }
+  .note a { color: var(--gold-dark); text-decoration: underline; text-underline-offset: .18em; }
+  .byline, figcaption, .footnote { font-size: .9rem; color: var(--muted); }
+  .byline { margin: 2.25rem 0 .6rem; }
+  h1, h2 { font-family: var(--serif); text-wrap: balance; }
+  h1 { margin: 0; font-size: clamp(2.35rem, 6vw, 4.6rem); line-height: 1.06; }
+  h2 { margin: 2.4rem 0 .65rem; font-size: clamp(1.55rem, 3vw, 2.1rem); }
+  p { max-width: 68ch; margin: .8rem 0; line-height: 1.65; }
+  .lead { font-family: var(--serif); font-size: 1.32rem; }
+  figure { margin: 1.5rem 0; } img { display: block; width: 100%; height: auto; border: 1px solid var(--line); }
+  figcaption { margin-top: .6rem; } table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+  caption { text-align: left; font-weight: 600; margin: 1.25rem 0 .5rem; }
+  th, td { padding: .65rem .3rem; border-bottom: 1px solid var(--line); text-align: left; }
+  tbody th { font-weight: 500; } td:nth-child(n+3), thead th:nth-child(n+3) { text-align: right; }
+  @media (max-width: 35rem) { table { font-size: .82rem; } th, td { padding: .55rem .2rem; } }
+</style>
