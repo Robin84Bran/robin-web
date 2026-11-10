@@ -7,7 +7,7 @@ const description = 'Replay a simulated outage as 32 autonomous subsea agents ma
 <!doctype html>
 <html lang="en">
 <head>
-<SeoHead {title} {description} {path} />
+<SeoHead {title} {description} {path} schema={{ "@type": "WebPage", name: title, description, url: new URL(path, "https://iamrobin.ai").href, inLanguage: "en" }} />
 <style is:global>
 :root{color-scheme:dark;--ink:#e9f2f3;--muted:#91a8ad;--line:#355860;--ok:#76d2b2;--bad:#ff7a72;--gold:#e6c47b;--sea:#071b24}
 *{box-sizing:border-box}body{margin:0;background:#031017;color:var(--ink);font:14px/1.45 ui-monospace,SFMono-Regular,Menlo,monospace}
