@@ -42,6 +42,8 @@ function redirect(url, status) {
 }
 
 const legacyLocaleRedirects = new Map([
+  ['/resonance/', '/research/'],
+  ['/identity/resonance/', '/research/'],
   ['/resonance/btc_probability_atlas/', '/asymmetry/btc_probability_atlas/'],
   ['/binary/joy/hkipoblindbox/', '/asymmetry/hkipoblindbox/'],
   ['/cn/', '/zh-hans/'],
@@ -107,7 +109,7 @@ export default {
       return redirect(url, 301);
     }
 
-    const legacyIdentity = url.pathname.match(/^\/identity\/(identity|asymmetry|meaning|resonance|ouroboros|binary|intelligence|network)\/?$/);
+    const legacyIdentity = url.pathname.match(/^\/identity\/(identity|asymmetry|meaning|resonance|research|ouroboros|binary|intelligence|network)\/?$/);
     if (legacyIdentity) {
       url.pathname = `/${legacyIdentity[1]}/`;
       return redirect(url, 301);

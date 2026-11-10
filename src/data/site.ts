@@ -8,7 +8,7 @@ export const identityWords = [
   { letter: 'I', word: 'Identity', slug: 'identity', tone: 'sakura', projects: ['iamrobin.ai', 'RobinOS identity layer'] },
   { letter: 'A', word: 'Asymmetry', slug: 'asymmetry', tone: 'sakura', projects: ['Quant Lab', 'Capital systems', 'Model Olympics'] },
   { letter: 'M', word: 'Meaning', slug: 'meaning', tone: 'gold', projects: ['Diary', 'Bran_lab'] },
-  { letter: 'R', word: 'Resonance', slug: 'resonance', tone: 'silver', projects: ['Writing', 'Conversations'] },
+  { letter: 'R', word: 'Research', slug: 'research', tone: 'silver', projects: ['Evidence and oversight', 'Coordination and delegation', 'Memory, adaptation and resilience'] },
   { letter: 'O', word: 'Ouroboros', slug: 'ouroboros', tone: 'sakura', projects: ['RobinOS journey', 'Time loops'] },
   { letter: 'B', word: 'Binary', slug: 'binary', tone: 'ink', projects: ['Blog'] },
   { letter: 'I', word: 'Intelligence', slug: 'intelligence', tone: 'sakura', projects: ['AI collaborators', 'Quant research'] },
