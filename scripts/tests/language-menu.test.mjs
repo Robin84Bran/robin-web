@@ -87,7 +87,7 @@ test('homepage editions share all owner copy, eight doors and original link dest
   const pages = ['', 'zh-hans/', 'zh-hant/'].map(read);
   const packet = JSON.parse(pages[0].match(/id="home-owner-copy"[^>]*>(.*?)<\/script>/s)[1]);
   assert.deepEqual(Object.keys(packet['zh-CN']), Object.keys(packet['zh-TW']));
-  const labels = ['灵份本真','错位天成','宿旨所向','共鸣追响','衔尾回环','零一交织','智能之光','罗网星罗'];
+  const labels = ['灵份本真','错位天成','宿旨所向','研究','衔尾回环','零一交织','智能之光','罗网星罗'];
   labels.forEach((label,i) => assert.equal(packet['zh-CN']['door'+i],label));
   assert.equal(packet['zh-CN'].signature,'谢玢 · ROBIN XIE');
   assert.equal(packet['zh-CN'].caption,'本真。涌现。重塑。');

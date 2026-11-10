@@ -1,32 +1,45 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-const path = '/research/';
-const description = 'Independent research by Robin Xie on evidence and oversight, coordination and delegation, and memory, adaptation and resilience.';
-const schema = {
-  '@context': 'https://schema.org',
-  '@type': 'CollectionPage',
-  '@id': 'https://iamrobin.ai/research/#collection',
-  name: 'Research — Robin Xie',
-  description,
-  url: 'https://iamrobin.ai/research/',
-  inLanguage: 'en',
-  hasPart: [{ '@type': 'Article', name: 'The Honest Agent', url: 'https://iamrobin.ai/research/honestagent/' }],
-};
+import programme from '../../data/research-programme.json';
+const {directions, experiments, studies} = programme;
+const path='/research/';
+const description='A research programme on evidence and oversight, coordination and delegation, and memory, adaptation and resilience. Explore the studies and every weekly playable seed.';
+const schema={'@context':'https://schema.org','@type':'CollectionPage',name:'Research — Robin Xie',url:`https://iamrobin.ai${path}`,description,inLanguage:'en',hasPart:[...studies.map(s=>({'@type':'Article',name:s.title,url:`https://iamrobin.ai${s.href}`})),...experiments.map(e=>({'@type':'LearningResource',name:e.title,url:`https://iamrobin.ai/intelligence/${e.id}/`}))]};
 ---
-<BaseLayout title="Research — I AM ROBIN" {path} {description} {schema}>
-  <section class="shell research-index">
-    <a class="quiet-link" href="/">← I AM ROBIN</a>
-    <p class="eyebrow">04 / 08 · Research</p>
-    <h1>Research</h1>
-    <p class="lead">How intelligent systems act, coordinate and remain useful.</p>
-    <section aria-labelledby="honestagent-title">
-      <p class="eyebrow">Evidence and oversight · Research study</p>
-      <h2 id="honestagent-title"><a href="/research/honestagent/">The Honest Agent</a></h2>
-      <p>What should a monitor observe before trusting an agent’s report?</p>
-      <a class="quiet-link" href="/research/honestagent/">Read the study →</a>
+<BaseLayout title="Research — Robin Xie" {path} {description} {schema}>
+  <main class="shell research-programme">
+    <header class="research-heading">
+      <p class="eyebrow">04 / 08 · Research <span>The connected questions</span></p>
+      <h1>What allows intelligent systems to act reliably?</h1>
+      <p>Three connected questions. Small worlds to explore them. Studies to put them to the test.</p>
+    </header>
+    <nav class="programme-index" aria-label="Research directions">{directions.map((d,i)=><a href={`#${d.id}`}><span>0{i+1}</span>{d.title}</a>)}</nav>
+    <p class="catalogue-note">{experiments.length} weekly experiments · {studies.length} studies · One growing programme</p>
+    <section class="question-map" aria-label="Research programme: agency under constraints">
+      <div class="central-question"><p>Our shared question</p><h2>Agency under<br /><em>constraints</em></h2><span>What can a system know,<br />and what should it do next?</span><span class="central-stem" aria-hidden="true"></span></div>
+      {directions.map(d=><section id={d.id} class={`direction direction-${d.id}`} aria-labelledby={`${d.id}-title`}>
+        <img src={`/programme/${d.image}`} alt="" width="240" height="160" loading="lazy" />
+        <h2 id={`${d.id}-title`}>{d.title}</h2>
+        <p class="short-question">{d.shortQuestion}</p>
+        <p class="central-question-copy">{d.question}</p>
+        <ul class="research-items">
+          {studies.filter(s=>s.direction===d.id).map(s=><li data-research-study><a href={s.href}><span class="item-title">{s.title} <span aria-hidden="true">→</span></span><small class="maturity">{s.maturity}</small></a></li>)}
+          {experiments.filter(e=>e.direction===d.id).map(e=><li data-research-seed={e.id}><a href={`/intelligence/${e.id}/`}><span class="item-title">{e.title} <span aria-hidden="true">→</span></span><small class="maturity">{e.maturity}<span class="week"> · {e.week}</span></small></a></li>)}
+        </ul>
+      </section>)}
     </section>
-    <p><a class="quiet-link" href="/intelligence/">Explore the playable experiments and visual explanations →</a></p>
-  </section>
+    <section class="featured-study" aria-labelledby="featured-title">
+      <div><p class="eyebrow">Featured research · Empirical study</p><h2 id="featured-title">The Honest Agent</h2></div>
+      <p>Should a monitor read an agent’s report, or what it actually did? Follow the experiment, the evidence, and the questions it opened.</p>
+      <a href="/research/honestagent/">Read the study →</a>
+    </section>
+    <section class="research-loop" aria-labelledby="loop-title">
+      <h2 id="loop-title" class="eyebrow">From exploration to investigation</h2>
+      <ol><li>Playable question</li><li>Frozen study</li><li>Findings</li><li>New questions</li></ol>
+    </section>
+    <div class="programme-footnote"><p>A playable seed explores a mechanism. “Protocol drafted” means a study is designed and has not yet run. Empirical studies report actual model runs within their stated limits.</p><p>New weekly experiments join this map as the programme grows.</p></div>
+    <nav class="research-outlinks" aria-label="Continue exploring"><a href="/intelligence/">Playable worlds in Intelligence →</a><a href="#evidence">Explore the studies →</a></nav>
+  </main>
 </BaseLayout>
 <script is:inline>
   const oldArticleAnchors = ["test-title", "found-title", "twist-title", "surprise-title", "limits-title", "built-title", "next-title"];
@@ -35,11 +48,7 @@ const schema = {
   }
 </script>
 <style>
-  .research-index{padding-block:3rem 6rem;min-height:75vh}
-  .research-index>h1{font:400 clamp(2.5rem,6vw,4.5rem)/1.1 var(--serif);letter-spacing:-.04em;margin-top:1.3rem}
-  .research-index .lead{max-width:42rem;font:400 clamp(1.3rem,3vw,1.8rem)/1.5 var(--serif)}
-  .research-index section{margin-block:2.5rem;padding-block:2rem;border-block:1px solid var(--line)}
-  .research-index h2{font:400 clamp(1.8rem,4vw,2.6rem)/1.2 var(--serif);margin-bottom:1rem}
-  .research-index h2 a{text-decoration:none}
-  .research-index section>p:not(.eyebrow){color:var(--muted);line-height:1.7}
+.research-programme{padding-block:2.8rem 4rem}.research-heading .eyebrow>span{margin-left:1rem;padding-left:1rem;border-left:1px solid var(--line);color:var(--muted)}.research-heading h1{font:400 clamp(2.3rem,3.8vw,3.3rem)/1.1 var(--serif);letter-spacing:-.04em;margin:1.5rem 0 1rem}.research-heading>p:last-child{font:1rem/1.7 var(--sans);color:var(--muted);margin-bottom:1.5rem;max-width:52rem}.programme-index{display:flex;flex-wrap:wrap;gap:.6rem 1.8rem;padding-block:1.1rem;border-block:1px solid var(--line)}.programme-index a{text-decoration:none;font:400 .83rem/1.5 var(--sans);color:#42665b}.programme-index span{font-size:.6rem;color:var(--gold-dark);margin-right:.6rem}.catalogue-note{font-size:.66rem;letter-spacing:.08em;color:var(--muted);margin:1rem 0 0;text-align:right}.question-map{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(14rem,.9fr) minmax(0,1fr);gap:1rem 2.7rem;margin:1.5rem 0 3rem}.central-question{grid-column:2;grid-row:1;align-self:center;text-align:center;border:1px solid var(--line-strong);border-radius:50%;padding:2.8rem .8rem;position:relative}.central-question:before,.central-question:after{content:'';position:absolute;top:50%;width:2.7rem;border-top:1px solid var(--gold);opacity:.55}.central-question:before{right:100%}.central-question:after{left:100%}.central-question p{font:.58rem/1.5 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--gold-dark);margin-bottom:.8rem}.central-question h2{font:italic 400 clamp(1.8rem,3vw,2.65rem)/1.12 var(--serif);letter-spacing:-.035em;margin:0 0 .8rem}.central-question h2 em{font-style:inherit}.central-question>span{font:.7rem/1.6 var(--sans);color:var(--muted)}.central-question .central-stem{position:absolute;top:100%;left:50%;height:6rem;border-left:1px solid var(--gold);opacity:.5}.direction{scroll-margin-top:2rem}.direction-evidence{grid-column:1;grid-row:1}.direction-coordination{grid-column:3;grid-row:1}.direction-memory{grid-column:1/-1;grid-row:2;max-width:62rem;width:100%;justify-self:center;text-align:center;border-top:1px solid var(--line);padding-top:1.2rem;margin-top:.4rem}.direction>img{width:170px;height:113px;object-fit:contain;margin:0 auto .4rem;mix-blend-mode:multiply}.direction-evidence>img{margin-left:0}.direction-coordination>img{margin-right:0}.direction>h2{font:400 clamp(1.45rem,2vw,1.9rem)/1.13 var(--serif);letter-spacing:-.02em;color:#42665b;margin:0 0 .4rem}.short-question{font:italic 1.3rem/1.3 var(--serif);margin:0 0 .6rem}.central-question-copy{font:.76rem/1.65 var(--sans);color:var(--muted);margin:0 0 .5rem;max-width:29rem}.direction-memory .central-question-copy{max-width:none}.direction-memory>img{width:155px;height:83px}.research-items{padding:0;margin:0;list-style:none}.research-items li{border-top:1px solid var(--line);padding:.9rem 0}.research-items a{text-decoration:none;display:block}.item-title{font:400 1.25rem/1.22 var(--serif);display:block;letter-spacing:-.015em}.item-title>span{color:var(--gold-dark);white-space:nowrap}.maturity{display:block;font:600 .57rem/1.5 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--gold-dark);margin-top:.4rem}.maturity .week{font-weight:400;color:var(--muted);letter-spacing:.03em;white-space:nowrap}.direction-memory .research-items{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem;text-align:left;margin-top:1rem}.featured-study{display:grid;grid-template-columns:1fr 1.2fr auto;gap:2.2rem;align-items:center;border-block:1px solid var(--line);padding-block:2rem}.featured-study .eyebrow{font-size:.65rem}.featured-study h2{font:400 2.3rem/1.1 var(--serif);margin:0;letter-spacing:-.03em}.featured-study>p{font:.88rem/1.7 var(--sans);color:var(--muted);margin:0;padding-left:1.5rem;border-left:1px solid var(--line)}.featured-study>a{background:#45665c;color:var(--moon-bright);border-radius:2rem;padding:.75rem 1.2rem;font:400 1rem/1.4 var(--serif);text-decoration:none;white-space:nowrap}.research-loop{display:flex;align-items:center;gap:2rem;padding-block:2rem;border-bottom:1px solid var(--line)}.research-loop h2{margin:0;max-width:13rem;font-size:.65rem;line-height:1.6}.research-loop ol{padding:0;margin:0;list-style:none;display:flex;justify-content:space-between;gap:2rem;flex:1}.research-loop li{font:400 1.2rem/1.4 var(--serif)}.research-loop li+li:before{content:'→';color:var(--gold-dark);margin-right:1.5rem}.programme-footnote{display:flex;gap:3rem;padding-top:1.2rem;font:.72rem/1.7 var(--sans);color:var(--muted)}.programme-footnote p:first-child{max-width:44rem}.research-outlinks{display:flex;justify-content:center;gap:2rem;margin:1.8rem 0 .5rem}.research-outlinks a{font:italic 1.05rem/1.5 var(--serif);color:#42665b;text-decoration:none}a:hover{text-decoration:underline;text-underline-offset:.25em}
+@media(max-width:1000px){.question-map{grid-template-columns:minmax(0,1fr) 12rem minmax(0,1fr);gap:1rem 1.4rem}.central-question{padding:2.1rem .5rem}.central-question:before,.central-question:after{width:1.4rem}.central-question h2{font-size:1.9rem}.direction>h2{font-size:1.5rem}.item-title{font-size:1.14rem}.week{display:block}.featured-study{gap:1rem;grid-template-columns:1fr 1.2fr}.featured-study>a{grid-column:2;width:fit-content}.research-loop{display:block}.research-loop h2{max-width:none;margin-bottom:1rem}.research-loop ol{gap:.7rem}.research-loop li{font-size:1.1rem}.research-loop li+li:before{margin-right:.7rem}}
+@media(max-width:720px){.research-programme{padding-top:1.8rem}.research-heading .eyebrow{font-size:.6rem}.research-heading .eyebrow>span{margin-left:.6rem;padding-left:.6rem}.research-heading h1{font-size:2.7rem;line-height:1.07}.wide-break{display:none}.research-heading>p:last-child{font-size:.9rem}.programme-index{display:grid;gap:.6rem}.programme-index a{font-size:.78rem}.catalogue-note{text-align:left;font-size:.6rem}.question-map{display:flex;flex-direction:column;gap:1.6rem}.central-question{order:0;align-self:center;max-width:19rem;width:100%;padding:2rem 1rem;margin-block:1rem}.central-question:before,.central-question:after,.central-question .central-stem{display:none}.direction{order:1;border-top:1px solid var(--line);padding-top:1.5rem}.direction>img,.direction-evidence>img,.direction-coordination>img{width:135px;height:90px;margin:0 0 .6rem}.direction h2{font-size:1.8rem}.direction .central-question-copy{font-size:.82rem}.direction-memory{text-align:left;max-width:none;margin:0}.direction-memory .research-items{display:block;margin-top:0}.direction-memory>img{height:90px}.item-title{font-size:1.35rem}.research-items li{padding:1rem 0}.week{display:inline}.maturity{font-size:.59rem}.featured-study{grid-template-columns:1fr;gap:1.2rem}.featured-study h2{font-size:2.2rem}.featured-study>p{padding:0;border:0}.featured-study>a{grid-column:1}.research-loop ol{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.research-loop li+li:before{content:none}.research-loop li{font-size:1.15rem}.programme-footnote{display:block;padding-top:1.3rem}.research-outlinks{flex-direction:column;gap:.8rem;margin-top:1rem}}
 </style>

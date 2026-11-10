@@ -16,6 +16,7 @@ from zoneinfo import ZoneInfo
 
 from autonomy_policy import due_jobs, load
 from worker_runtime import worker_command
+from research_handoff import due_research, validate_packet, notify_research, fingerprint
 
 HKT = ZoneInfo("Asia/Hong_Kong")
 DEFAULT = Path("/Users/headlessnick/RobinOS2/00_identity_output/website")
@@ -80,6 +81,8 @@ class Workflow:
         with self.locked() as state:
             for job in due_jobs(policy, state["jobs"], specials, day):
                 state["jobs"][job["id"]] = job
+            for job in due_research(state["jobs"], now):
+                state["jobs"][job["id"]] = job
             return list(state["jobs"].values())
 
     def tick(self, now=None):
@@ -128,6 +131,17 @@ class Workflow:
                   "Use task-owned PR, required verify, protected merge, existing Cloudflare Workers Builds and public verification. No Wrangler bypass. "
                   "Inspect existing artifacts, jobs and PRs before retrying. Complete only with verified evidence; blocked source access is not a successful scan. "
                   "The existing bot owns recovery; do not launch another worker. Preserve all unrelated changes.")
+        if job["kind"] == "research":
+            notify_research(self.website, key)
+            prompt = (f"Prepare the private Research kickoff {key} in {self.website}. "
+                      "Read root/website AGENTS and autonomy/README.md, including the Research handoff contract. "
+                      f"The source is {job['sourceJobId']}; inspect its verified receipt and existing method/source artifacts. "
+                      "Preserve the weekly experiment and Open Council workflows. Read public primary sources if useful. "
+                      "Write a source-bound private kickoff with rival explanations, a falsifiable question, baselines, metrics, "
+                      "failure cases, a frozen-study design and an open invitation for Robin. Do not run new model trials, "
+                      "spend, change frozen evidence, publish, merge, or execute proposed experiments. "
+                      "Keep the packet inside this job's private runtime folder. Finish using the research receipt contract. "
+                      "Actual model results remain UNKNOWN until a separately authorized study has run.")
         folder = self.folder(key)
         folder.mkdir(parents=True, exist_ok=True, mode=0o700)
         try:
@@ -154,6 +168,12 @@ class Workflow:
             job = dict(state["jobs"][key])
         if receipt.get("jobId") != key or receipt.get("kind") != job["kind"]:
             raise ValueError("Receipt does not match job")
+        if job["kind"] == "research":
+            with self.locked() as state:
+                validate_packet(job, receipt, self.runtime, state["jobs"])
+                state["jobs"][key].update(status="COMPLETE", receipt=receipt,
+                    verifiedAt=datetime.now(HKT).isoformat(), receiptSha256=hashlib.sha256(receipt_path.read_bytes()).hexdigest())
+            return {"status": "COMPLETE", "jobId": key, "phase": "PRIVATE_RESEARCH_KICKOFF"}
         if job["kind"] in {"taste", "intelligence"}:
             coverage = receipt.get("coverage", {})
             if not all(coverage.get(k, {}).get("status") == "READ" and coverage[k].get("sources")
@@ -197,10 +217,22 @@ class Workflow:
                     raise ValueError("Binary lane and 6–12-page carousel required")
                 if not any(a["path"].endswith(".pdf") for a in receipt["assets"]) or not receipt.get("carouselReviewSha256"):
                     raise ValueError("Missing carousel PDF/review")
+        research_keys = []
         with self.locked() as state:
-            state["jobs"][key].update(status="COMPLETE", receipt=receipt,
-                verifiedAt=datetime.now(HKT).isoformat(), receiptSha256=hashlib.sha256(receipt_path.read_bytes()).hexdigest())
-        return {"status": "COMPLETE", "jobId": key}
+            current = state["jobs"][key]
+            same_completed_source = current.get("status") == "COMPLETE" and fingerprint(current.get("receipt", {})) == fingerprint(receipt)
+            verified_at = current.get("verifiedAt") if same_completed_source else None
+            current.update(status="COMPLETE", receipt=receipt,
+                verifiedAt=verified_at or datetime.now(HKT).isoformat(), receiptSha256=hashlib.sha256(receipt_path.read_bytes()).hexdigest())
+            if job["kind"] == "intelligence":
+                for child in due_research(state["jobs"], datetime.now(HKT)):
+                    state["jobs"][child["id"]] = child
+                    research_keys.append(child["id"])
+        notices = [notify_research(self.website, child) for child in research_keys]
+        result = {"status": "COMPLETE", "jobId": key}
+        if research_keys:
+            result.update(researchJobs=research_keys, researchNotifications=notices)
+        return result
 
 
 if __name__ == "__main__":

@@ -14,7 +14,7 @@ for(const e of experiments){
  assert.ok(!html.includes('NaN')&&!html.includes('undefined'),route+' finite rendered evidence');
 }
 for(const suffix of ['', 'en/', 'zh-hant/', 'ja/'])assert.ok(read(`meaning/diary/202609/2026-09-24-from-art-to-immortal-cells/${suffix}index.html`).includes('href="/intelligence/swarm-lab/"'));
-assert.ok(read('intelligence/index.html').includes('Ideas you can'));
+assert.ok(read('intelligence/index.html').includes('href="/intelligence/swarm-lab/"'), 'Library preserves Swarm Lab discovery');
 assert.ok(read('intelligence/swarm/index.html').includes('/intelligence/swarm-lab/'));
 assert.equal(experiments.length,8);
 assert.ok(read('intelligence/swarm-lab/index.html').includes('Eight Small Worlds'));

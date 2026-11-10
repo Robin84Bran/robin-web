@@ -195,3 +195,52 @@ BTC Probability Atlas and HK IPO Blind Box belong under Asymmetry with Model
 Olympics. Preserve legacy URLs through redirects. The door remains manual
 until the first successful loop is verified; this publisher cannot authorize
 trading or silently turn on existing financial runners.
+
+
+## Research handoff — owner update 11 November 2026
+
+The weekly Intelligence and Thursday Open Council cadences and procedures stay
+unchanged. A newly verified playable Intelligence release now opens a separate
+private Research kickoff and invites Robin through the existing owner Telegram
+channel. This does not authorize paid calls, new empirical runs or publication.
+
+For every new weekly experiment, register it in
+`src/data/research-programme.json` with its week, one-line question, research
+direction and actual maturity. Both hubs render every entry; never truncate the
+Research list or hide older seeds behind a filter or archive. Keep existing game
+routes, source folders and frozen evidence intact. Add councils to the same
+public catalogue when they are actually published, preserving their own workflow.
+
+`research_handoff.py` queues a source-receipt-keyed `research:` job only after
+Intelligence `finish` has verified the committed and live artifact bytes and
+release gates. Reconciliation can recover an interrupted queue write. It excludes
+pre-11-November completions, does not reopen DONE games, and uses the existing
+locked downstream ledger and worker. No new scheduler or poller. The parent
+release remains COMPLETE if notification delivery is UNKNOWN.
+
+The kickoff worker reads the actual source method, assumptions and results,
+then drafts one small falsifiable investigation. Include these Markdown headings:
+`Seed and evidence`, `Rival explanations`, `Falsifiable question`, `Study design`,
+and `Robin joins`. Explain what is scripted and what is measured with real
+models; propose baselines, fixed budgets, held-out seeds, metrics, a null result,
+sensitivity checks, expected failure modes and what could reverse the result.
+Keep the ending open for Robin. A protocol draft is not a completed study.
+
+Save `kickoff.md` inside this research job's existing private runtime folder. Its
+finish receipt includes `jobId`, `kind: research`, the job's exact
+`sourceReceiptSha256`, `packetPath` and `packetSha256`. Use the existing
+`workflow.py finish` command. This completes a private kickoff only. Preserve
+ANTresidency protocols and approval boundaries; do not run or publish proposed
+studies until their authority is established in the individual project.
+
+Notification uses the existing configured publisher bot and owner chat plus
+`delivery-once.mjs`. It reports the verified playable link and invites Robin to
+choose or challenge the next question. Confirmed sends are reused; ambiguous
+sends stay UNKNOWN and require message-ID reconciliation, never blind resend.
+A missing channel is an explicit coverage gap; report it through the existing
+app heartbeat as a meaningful delivery failure. No notification for historical
+backfill, unchanged pending work or speculative game ideas.
+
+If the currently released website has no shared catalogue yet, retain its existing
+Intelligence discovery link and leave pending page-layout work private. The
+Research kickoff and invitation do not depend on publishing that pending design.
