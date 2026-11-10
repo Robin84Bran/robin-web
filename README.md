@@ -366,3 +366,15 @@ the frozen experiment contract, complete results and a source ZIP live under
 `06_intelligence/AI_research/AI_swarm/15_bridge_or_bus/`. The model is a
 deterministic teaching mechanism, not a framework benchmark or architecture
 recommendation.
+
+## Weekly Intelligence — Work or Proof?
+
+`/intelligence/work-or-proof/` is the 2026-W46 experiment: one fixed team action
+budget divided between producing candidates and reviewing them. It retains 640
+matched worlds / 3,200 policy outcomes across candidate quality, review capacity,
+deadline, queue and team-size sensitivities. Run `pnpm run test:work-or-proof`
+after a build. Public source, the frozen experiment contract, complete results
+and a source ZIP live under `public/work-or-proof/`. Canonical research:
+`06_intelligence/AI_research/AI_swarm/16_work_or_proof/`. Accepted, rejected,
+expired, blocked, idle and queued outcomes remain separate; the model is not a
+worker or model productivity benchmark.
