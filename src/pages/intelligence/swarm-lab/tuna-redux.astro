@@ -1,9 +1,13 @@
+---
+import SeoHead from '../../../components/SeoHead.astro';
+const path = '/intelligence/swarm-lab/tuna-redux/';
+const title = 'TUNA Redux — Subsea Swarm Replay';
+const description = 'Replay a simulated outage as 32 autonomous subsea agents maintain connectivity among four terminals.';
+---
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>TUNA Redux — Swarm / seed 42</title>
+<SeoHead {title} {description} {path} />
 <style is:global>
 :root{color-scheme:dark;--ink:#e9f2f3;--muted:#91a8ad;--line:#355860;--ok:#76d2b2;--bad:#ff7a72;--gold:#e6c47b;--sea:#071b24}
 *{box-sizing:border-box}body{margin:0;background:#031017;color:var(--ink);font:14px/1.45 ui-monospace,SFMono-Regular,Menlo,monospace}
