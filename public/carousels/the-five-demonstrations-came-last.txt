@@ -1,0 +1,15 @@
+The five demonstrations came last.
+
+NVIDIA reports that GR00T 2 reached 95% average success on Dexter-50 after five target-robot demonstrations per task. Those demonstrations took less than three minutes of robot data.
+
+But the model arrived after 436,414 reported hours of human video, handheld-gripper demonstrations and robot teleoperation. And the 50 benchmark tasks were selected from tasks that reached at least 80% after five episodes.
+
+That does not make the result uninteresting. It makes the mechanism clearer.
+
+The short lesson adapted a broad prior to a new body. It did not teach the task from scratch.
+
+The useful diligence question is not only “How many demonstrations?” It is “What had already been learned before the count began?”
+
+Full story, method and sources: https://iamrobin.ai/binary/stories/the-five-demonstrations-came-last/
+
+#Robotics #PhysicalAI #GR00T #MachineLearning #RobotLearning

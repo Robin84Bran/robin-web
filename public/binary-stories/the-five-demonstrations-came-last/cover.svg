@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">The five demonstrations came last</title>
+  <desc id="desc">Human video, handheld-gripper demonstrations and robot teleoperation converge into five Dexter demonstrations, a task-specific adapter and one evaluation gate.</desc>
+  <rect width="1600" height="900" fill="#0B1228"/>
+  <g opacity=".14" stroke="#61D4D7" stroke-width="1"><path d="M0 150H1600M0 300H1600M0 450H1600M0 600H1600M0 750H1600"/><path d="M200 0V900M400 0V900M600 0V900M800 0V900M1000 0V900M1200 0V900M1400 0V900"/></g>
+  <text x="110" y="110" fill="#61D4D7" font-family="Arial, sans-serif" font-size="24" letter-spacing="5">BINARY / BUILD</text>
+  <text x="110" y="220" fill="#F4F1E9" font-family="Georgia, serif" font-size="72">The five demonstrations</text>
+  <text x="110" y="305" fill="#D8B86B" font-family="Georgia, serif" font-size="72">came last.</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="110" y="408" width="300" height="108" rx="12" fill="#121D3B" stroke="#61D4D7" stroke-width="3"/>
+    <text x="260" y="452" fill="#F4F1E9" text-anchor="middle" font-size="24">402,730 HOURS</text><text x="260" y="488" fill="#9FB0CB" text-anchor="middle" font-size="20">human video</text>
+    <rect x="110" y="548" width="300" height="108" rx="12" fill="#121D3B" stroke="#61D4D7" stroke-width="3"/>
+    <text x="260" y="592" fill="#F4F1E9" text-anchor="middle" font-size="24">10,184 HOURS</text><text x="260" y="628" fill="#9FB0CB" text-anchor="middle" font-size="20">handheld gripper</text>
+    <rect x="110" y="688" width="300" height="108" rx="12" fill="#121D3B" stroke="#61D4D7" stroke-width="3"/>
+    <text x="260" y="732" fill="#F4F1E9" text-anchor="middle" font-size="24">23,500 HOURS</text><text x="260" y="768" fill="#9FB0CB" text-anchor="middle" font-size="20">robot teleoperation</text>
+    <path d="M410 462H555M410 602H555M410 742H555M555 462V742M555 602H650" fill="none" stroke="#61D4D7" stroke-width="5" stroke-linecap="round"/>
+    <rect x="650" y="535" width="250" height="134" rx="12" fill="#D8B86B"/>
+    <text x="775" y="585" fill="#0B1228" text-anchor="middle" font-size="27" font-weight="700">5 DEXTER</text><text x="775" y="622" fill="#0B1228" text-anchor="middle" font-size="23">demonstrations</text>
+    <path d="M900 602H1010" stroke="#61D4D7" stroke-width="5" stroke-linecap="round"/>
+    <rect x="1010" y="535" width="220" height="134" rx="12" fill="#121D3B" stroke="#D8B86B" stroke-width="3"/>
+    <text x="1120" y="585" fill="#F4F1E9" text-anchor="middle" font-size="25">TASK-SPECIFIC</text><text x="1120" y="622" fill="#9FB0CB" text-anchor="middle" font-size="22">LoRA adapter</text>
+    <path d="M1230 602H1330" stroke="#61D4D7" stroke-width="5" stroke-linecap="round"/>
+    <rect x="1330" y="535" width="160" height="134" rx="12" fill="#121D3B" stroke="#61D4D7" stroke-width="3"/>
+    <text x="1410" y="585" fill="#F4F1E9" text-anchor="middle" font-size="30">95%</text><text x="1410" y="622" fill="#9FB0CB" text-anchor="middle" font-size="20">selected set</text>
+  </g>
+  <text x="1490" y="850" fill="#F4F1E9" opacity=".8" text-anchor="end" font-family="Arial, sans-serif" font-size="24">IAmRobin.ai</text>
+</svg>
