@@ -10,7 +10,7 @@ const schema={'@type':'LearningResource',name:title,description,url:new URL(path
  <a class="quiet-link" href="/intelligence/swarm-lab/">← Swarm Lab</a>
  <h1>TUNA Redux</h1>
  <p class="question">Why do the agents return to a grid?</p>
- <p class="hook">Four terminals sit at the corners of a cable ring. Each of the 32 agents starts at an assigned relay position. Watch the agents leave to repair a cable, then switch off their instruction to go home. Both replays use the same failures.</p>
+ <p class="hook">Four terminals sit at the corners of a cable ring. Each of the 32 agents starts at an assigned relay position. Watch the agents leave to repair a cable, then switch off their instruction to go home. Both replays use the same seed and failures. After tick 39, playback loops to the starting grid.</p>
  <section class="bench" aria-label="Subsea replay">
   <div class="stage">
    <div><svg id="ocean" viewBox="0 0 100 100" role="img" aria-label="Four fixed terminals and 32 mobile agents"></svg>
@@ -21,6 +21,7 @@ const schema={'@type':'LearningResource',name:title,description,url:new URL(path
     <h2 id="status">Loading replay…</h2><p id="homes"></p><p id="detail"></p>
     <p>Scrub to tick 32, when service returns. Switch the rule to compare positions at the same instant.</p>
     <p>Gold diamonds mark terminals. Dashed cables are broken. Green agents hold or relay, amber agents repair, blue agents move or recharge, and grey agents are down.</p>
+    <p id="summary"></p>
     <p class="small">Seed 42 · 40 ticks · simulated network</p>
    </aside>
   </div>

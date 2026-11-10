@@ -24,6 +24,11 @@ function pause(){
 }
 function selectRun(){
  pause();frames=runs[mode.value];
+ const last=frames[frames.length-1];
+ const connected=frames.filter(frame=>frame.service_connected).length;
+ document.querySelector('#summary').textContent='Full run · '+connected+'/'+frames.length+
+  ' ticks connected · '+last.energy_cost.toFixed(2)+' energy units · '+last.communication_messages+
+  ' messages · '+last.human_escalations+' escalations';
  const timeline=document.querySelector('#timeline');
  timeline.replaceChildren();
  for(const f of frames){
