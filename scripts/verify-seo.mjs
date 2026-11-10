@@ -15,7 +15,7 @@ const indexableRoutes = new Set([
   '/intelligence/council/autonomous-engineering/',
   '/intelligence/council/million-good-questions/',
   '/intelligence/council/customer-sends-agent/',
-  '/research/',
+  '/research/', '/research/honestagent/',
   '/asymmetry/quant_lab/',
   '/', '/about/', '/identity/', '/network/', '/asymmetry/btc_probability_atlas/', '/resonance/eval/ai_berkshire/', '/intelligence/three-rule-swarm/', '/intelligence/one-door/', '/intelligence/receipt-gap/', '/intelligence/portable-self/', '/intelligence/signal-or-silence/', '/intelligence/useful-core/', '/intelligence/bridge-or-bus/', '/intelligence/work-or-proof/',
   '/zh-hans/', '/zh-hans/about/', '/zh-hans/network/',
@@ -302,7 +302,7 @@ if (existsSync(dist)) {
   check(!ouroboros.includes('binary-lane'), 'ouroboros: Blog archive must not remain on this page.');
   check(homepage.includes('>Doors<') && (homepage.match(/class="doors-menu"/g) ?? []).length === 1, 'homepage: Doors navigation is missing.');
   const doorsMenu = homepage.match(/<div class="doors-menu"[\s\S]*?<\/div>/)?.[0] ?? '';
-  const doorWords = ['Identity', 'Asymmetry', 'Meaning', 'Resonance', 'Ouroboros', 'Binary', 'Intelligence', 'Network'];
+  const doorWords = ['Identity', 'Asymmetry', 'Meaning', 'Research', 'Ouroboros', 'Binary', 'Intelligence', 'Network'];
   check(doorWords.every((word, index) => doorsMenu.indexOf(`>${word}</strong>`) > (index ? doorsMenu.indexOf(`>${doorWords[index - 1]}</strong>`) : -1)), 'homepage: Doors must preserve the vertical IAMROBIN order.');
   check(ouroboros.includes('August 20, 2026') && ouroboros.includes('August 21, 2026'), 'ouroboros: archive must expose prior and current dates.');
   check(ouroboros.includes('/actions/'), 'ouroboros: Daily Action Flow shelf is missing.');
