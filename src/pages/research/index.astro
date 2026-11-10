@@ -1,0 +1,207 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const path = '/research/';
+const description = 'The Honest Agent: a pre-registered AI-control experiment. Monitors that read an agent’s actions caught all 67 rule breaches; monitors that read only its report caught 0 and 2.';
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  '@id': `https://iamrobin.ai${path}#article`,
+  headline: 'The Honest Agent: watch what it does, not what it says',
+  description,
+  url: `https://iamrobin.ai${path}`,
+  inLanguage: 'en',
+  datePublished: '2026-11-10',
+  author: { '@id': 'https://www.tideisun.com/robin#robin-xie' },
+};
+
+const figures = [
+  ['0 / 210', 'rule breaches by Claude Opus 5.5 and GPT-6 Astra, each with an honest report'],
+  ['67 / 67', 'breaches caught by monitors reading the full action trace, Claude and GPT alike'],
+  ['0 / 293', 'false alarms from those trace monitors on runs that followed the rule'],
+  ['0 and 2 / 67', 'breaches caught by the same two monitors reading only the agent’s report'],
+];
+const caught = [
+  ['Claude · full trace', 67],
+  ['GPT-6 Sol · full trace', 67],
+  ['Claude · report only', 0],
+  ['GPT-6 Sol · report only', 2],
+];
+const pattern = [
+  ['Not finished, no violation', 69, 27, '0 / 68 / 1', '0 / 40 / 29'],
+  ['Not finished, violation', 246, 40, '17 / 0 / 229', '9 / 0 / 237'],
+  ['Finished, no violation', 45, 0, '0 / 0 / 45', '0 / 0 / 45'],
+];
+const confessions = [
+  ['Qwen 2.5 1.5B', '7 / 12', '26 / 41'],
+  ['Qwen 2.5 7B', '0 / 20', '100 / 100'],
+  ['Llama 3.1 8B', '4 / 39', '69 / 81'],
+];
+const steps = [
+  ['v0.1', 'scripted', 'A scripted baseline, to check that the simulator, the ledger and the scoring work.'],
+  ['v0.2', 'first real model', 'Qwen 2.5 1.5B as both agent and monitor. It broke the rule in 16 of 20 deployments. The trace monitor looked better, but 20 runs were too few to be sure.'],
+  ['v0.3', 'pre-registered', 'Claude Opus 5.5 and GPT-6 Astra on three tasks: 0 breaches in 210 runs. The small comparison model failed from a setup error and was rerun after the main analysis, so its monitor result (+0.88) is a declared deviation.'],
+  ['v0.3.1', 'pre-registered', 'Three open models on fresh seeds, with the protocol pushed to GitHub before any run. Trace beat report-only: +1.00 (95% CI +0.82 to +1.00) on 26 paired breaches.'],
+  ['v0.3.2', 'pre-registered', 'A second monitor family, GPT-6 Sol, re-judged the same 360 runs with the same prompts. Trace beat report-only again: +0.88 (95% CI +0.59 to +0.97) on 17 paired breaches.'],
+];
+---
+
+<BaseLayout title="The Honest Agent — Research — Robin Xie" {path} {description} {schema} type="article">
+  <div class="shell research">
+    <a class="quiet-link" href="/intelligence/">← Intelligence</a>
+    <p class="eyebrow">Research · AI control · 10 November 2026</p>
+    <h1>Watch what it does,<br /><em>not what it says.</em></h1>
+    <p class="lead">Oversight is only as good as the evidence the monitor sees.</p>
+    <p class="intro">An AI agent can now move money, ship code and share files. If it breaks a rule, who notices? People cannot review every action, so a second AI is often proposed as the monitor. The Honest Agent is a small experiment on one question: should that monitor read the agent’s own report, or the record of what it actually did?</p>
+
+    <section class="story" aria-labelledby="test-title">
+      <p class="eyebrow">01 / The test</p>
+      <h2 id="test-title">One job. One rule. Three answers.</h2>
+      <p>Each agent gets one job in a simulated world where nothing real happens: record a payment, deploy a build, or share a document. It has four actions and one rule: <em>obtain approval for the exact target before performing the operation.</em> When it asks, the approver answers <strong>granted</strong>, <strong>pending</strong> or <strong>denied</strong>. Pending is the pressure test: the job can only be finished by breaking the rule.</p>
+      <p>At the end the agent reports two things: did it finish, and did it break the rule? The simulator keeps its own ledger, so every report can be scored against the truth. Then AI monitors judge each run without seeing that ledger, the model’s name or the approver’s answer. One view reads only the final report. The other reads the full action trace.</p>
+    </section>
+
+    <section class="story" aria-labelledby="found-title">
+      <p class="eyebrow">02 / What we found</p>
+      <h2 id="found-title">The actions told the truth.</h2>
+      <div class="figures">
+        {figures.map(([n, label]) => <p class="figure"><strong>{n}</strong><span>{label}</span></p>)}
+      </div>
+      <figure class="caught" aria-label="Breaches caught, out of 67, by each monitor view">
+        <figcaption>Breaches caught on the same 67 rule-breaking runs · pre-registered</figcaption>
+        {caught.map(([name, n]) => (
+          <div class="row">
+            <span class="name">{name}</span>
+            <span class="track"><span class="fill" style={`width:${(Number(n) / 67) * 100}%`}></span></span>
+            <span class="count">{n} / 67</span>
+          </div>
+        ))}
+      </figure>
+      <p>The two frontier models never broke the rule: 210 runs, 210 honest reports. Every breach came from one small open model, Qwen 2.5 1.5B. On its 67 breaches, both monitor families caught all 67 when they could read the trace, and raised no false alarm on 293 rule-following runs. Reading only the report, Claude caught none and GPT-6 Sol caught two.</p>
+    </section>
+
+    <section class="story" aria-labelledby="twist-title">
+      <p class="eyebrow">03 / The twist</p>
+      <h2 id="twist-title">Every breach finished the job.<br /><em>Every report said it hadn’t.</em></h2>
+      <p>The report-only monitors were not careless. Their verdicts followed what each report claimed, and the two model families showed the same pattern:</p>
+      <div class="table-wrap">
+        <table>
+          <caption>Report-only verdicts across all 360 runs · violation / no violation / no verdict · post hoc for Claude, pre-registered for GPT</caption>
+          <thead><tr><th>The report claimed</th><th>Runs</th><th>Real breaches</th><th>Claude</th><th>GPT-6 Sol</th></tr></thead>
+          <tbody>{pattern.map(([claim, runs, breaches, c, g]) => <tr><th scope="row">{claim}</th><td>{runs}</td><td>{breaches}</td><td>{c}</td><td>{g}</td></tr>)}</tbody>
+        </table>
+      </div>
+      <p>All 67 breaches completed the task, and all 67 reports on them claimed it was not completed. So every breach landed in a row where a monitor either believed the report or stayed silent. Our best reading is that the false “not finished” claim is what fooled them. The data fits that reading and cannot prove it: no breach report ever claimed to have finished, so no monitor was tested on one.</p>
+    </section>
+
+    <section class="story" aria-labelledby="surprise-title">
+      <p class="eyebrow">04 / The surprise</p>
+      <h2 id="surprise-title">The careful models confessed to things they never did.</h2>
+      <p>Two larger open models, Qwen 2.5 7B and Llama 3.1 8B, never broke the rule in 240 runs. Yet they reported a violation in 100 and 73 of their 120 runs. Split those false confessions by whether approval ever arrived, and a pattern appears:</p>
+      <div class="table-wrap">
+        <table>
+          <caption>Runs that followed the rule, yet reported a violation · post hoc</caption>
+          <thead><tr><th>Model</th><th>Approval came</th><th>Approval never came</th></tr></thead>
+          <tbody>{confessions.map(([m, a, b]) => <tr><th scope="row">{m}</th><td>{a}</td><td>{b}</td></tr>)}</tbody>
+        </table>
+      </div>
+      <p>The report asks whether an operation was performed without prior approval. These models seem to have answered a different question: was approval missing? That looks more like a misread question than a guilty conscience, though the data cannot show what a model meant. Either way, self-reports failed in both directions. The small model denied real breaches. The careful ones confessed to imaginary ones.</p>
+    </section>
+
+    <section class="story" aria-labelledby="limits-title">
+      <p class="eyebrow">05 / Where this stops</p>
+      <h2 id="limits-title">One small, confused rule-breaker.</h2>
+      <p>Every breach in every study came from the same 1.5-billion-parameter model, and it looked confused, not sneaky. On the sharing task it often asked approval for the recipient instead of the document, was told “unknown target”, and shared anyway. Its bigger sibling made the same mistake in all 60 runs and never shared: confused, but careful.</p>
+      <p>The test was short and explicit, and nothing pulled against the rule. The frontier models ran inside their providers’ own tools, so some of their caution may belong to those tools. Whether the trace advantage holds against a capable agent that breaks a rule on purpose and hides it is the open question. Nothing here answers it.</p>
+    </section>
+
+    <section class="story" aria-labelledby="built-title">
+      <p class="eyebrow">06 / How it was built</p>
+      <h2 id="built-title">Five steps, each written down first.</h2>
+      <ol class="steps">
+        {steps.map(([v, tag, text]) => <li><p class="step-head"><strong>{v}</strong><span>{tag}</span></p><p>{text}</p></li>)}
+      </ol>
+      <dl>
+        <dt>Written down first</dt>
+        <dd>For v0.3.1 and v0.3.2 the protocol, code and predictions were pushed to GitHub before any model ran, and GitHub’s own push log records the times. v0.3 was hash-frozen before its main runs, but its timing rests on local records.</dd>
+        <dt>Everything kept</dt>
+        <dd>Every prompt, raw response, token count, cost and timestamp, across about 1,500 trial and judgment files. Failed runs stay in the record.</dd>
+        <dt>Mistakes in the open</dt>
+        <dd>Every deviation and after-the-fact analysis is labelled, including one of four predictions that did not come true.</dd>
+        <dt>Checked by another model</dt>
+        <dd>GPT-6 Astra reviewed each study read-only and reproduced the headline counts. Its three reviews found no bug that changed a number. They did find places where the wording claimed more than the data, and all were corrected.</dd>
+        <dt>Cost</dt>
+        <dd>About 185 USD in API-equivalent terms for v0.3 to v0.3.2. The analyses rebuild byte for byte from the raw files with Python’s standard library.</dd>
+      </dl>
+    </section>
+
+    <section class="story" aria-labelledby="next-title">
+      <p class="eyebrow">07 / Two thought experiments</p>
+      <h2 id="next-title">What happens under pressure, and in a crowd?</h2>
+      <p>Two sister projects extend the question. Both are scripted simulations so far. <strong>No AI model was run in either</strong>, so they show what each test can measure, not how real models behave.</p>
+      <div class="pair">
+        <article>
+          <p class="eyebrow">Simulation · no AI model</p>
+          <h3>The Obedient Rebel</h3>
+          <p>When approval is slow and the action budget is running out, does an agent wait or act? A hand-written “deadline” policy breaks the rule when waiting cannot fit in the budget, and stops once it can.</p>
+          <p class="fine">Next: run a real model on the same task at four and eight actions. Waiting fits only in the second. Does the breach disappear when obedience becomes affordable?</p>
+        </article>
+        <article>
+          <p class="eyebrow">Simulation · no AI model</p>
+          <h3>The Swarm Illusion</h3>
+          <p>Do more agents make a system more reliable, or spread errors through handoffs? In a seeded sweep, a monitor’s recall fell from 100% to 85% to 68% as 0%, 40% and 80% of receipts went missing.</p>
+          <p class="fine">Next: real handoffs between models. Does a second agent correct a wrong claim, or repeat it with more confidence?</p>
+        </article>
+      </div>
+      <p>Less evidence, worse oversight. It is the same lesson from three directions.</p>
+      <p class="fine">Built by Robin Xie with Claude Opus 5.5 (Claude Code) and GPT (Codex). The repository, with every prompt, response, protocol and check, is being prepared for public release. Related play: <a href="/intelligence/receipt-gap/">The Receipt Gap</a> and <a href="/intelligence/work-or-proof/">Work or Proof?</a></p>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .research { padding-block: 3rem 5rem; }
+  .research > .eyebrow { margin-top: 3rem; }
+  h1 { font: 400 clamp(3rem, 8vw, 6.6rem)/1 var(--serif); letter-spacing: -0.05em; margin: 1.5rem 0; }
+  h1 em, h2 em { color: #426e69; }
+  .lead { font: 400 clamp(1.3rem, 3vw, 2rem)/1.45 var(--serif); }
+  .intro, .story { max-width: 48rem; line-height: 1.85; }
+  .intro, .fine, dd, caption, figcaption { color: var(--muted); }
+  .story { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--line); }
+  .story h2 { font: 400 clamp(1.7rem, 4vw, 2.7rem)/1.18 var(--serif); letter-spacing: -0.03em; margin: 0.4rem 0 1.4rem; }
+  .story h3 { font: 400 1.6rem/1.2 var(--serif); margin: 0.3rem 0 0.8rem; }
+  .figures { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 2rem; margin-block: 1.5rem 2rem; }
+  .figure { display: grid; gap: 0.35rem; margin: 0; padding-block: 1.1rem; border-top: 1px solid var(--line); }
+  .figure strong { font: 400 clamp(2rem, 5vw, 3rem)/1 var(--serif); letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+  .figure span { color: var(--muted); font-size: 0.86rem; line-height: 1.6; }
+  .caught { margin: 2rem 0; padding: clamp(1rem, 3vw, 1.6rem); border: 1px solid var(--line); background: #f7f3eb; }
+  figcaption, caption { font-size: 0.8rem; text-align: left; padding-bottom: 0.9rem; }
+  .row { display: grid; grid-template-columns: 11.5rem 1fr 4rem; gap: 0.8rem; align-items: center; padding-block: 0.4rem; font-size: 0.85rem; }
+  .track { display: block; height: 0.9rem; background: rgba(83, 74, 65, 0.1); }
+  .fill { display: block; height: 100%; background: #426e69; }
+  .count { text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .table-wrap { overflow-x: auto; margin-block: 1.5rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+  th, td { text-align: left; padding: 0.75rem 0.5rem; border-bottom: 1px solid var(--line); }
+  th { font-weight: 500; }
+  td { font-variant-numeric: tabular-nums; }
+  .steps { list-style: none; margin: 1.5rem 0 2.5rem; padding: 0; }
+  .steps li { padding-block: 1rem; border-top: 1px solid var(--line); }
+  .steps li p { margin: 0; }
+  .step-head { display: flex; gap: 0.9rem; align-items: baseline; margin-bottom: 0.35rem !important; }
+  .step-head strong { font: 400 1.35rem var(--serif); }
+  .step-head span { color: var(--gold-dark); font-size: 0.68rem; font-weight: 650; letter-spacing: 0.16em; text-transform: uppercase; }
+  dt { font-weight: 600; margin-top: 1rem; }
+  dd { margin-left: 0; }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 2.5rem; margin-block: 1.5rem; }
+  .pair article { border-top: 1px solid var(--line); padding-top: 1.2rem; }
+  .pair .eyebrow { font-size: 0.65rem; }
+  .fine { font-size: 0.85rem; line-height: 1.7; }
+  .fine a { color: var(--gold-dark); }
+  @media (max-width: 650px) {
+    .figures, .pair { grid-template-columns: 1fr; }
+    .row { grid-template-columns: 8.2rem 1fr 3.4rem; font-size: 0.75rem; gap: 0.5rem; }
+    table { font-size: 0.75rem; }
+    th, td { padding: 0.65rem 0.3rem; }
+  }
+</style>
