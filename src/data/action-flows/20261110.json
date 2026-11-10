@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-10",
+  "updated": "2026-11-10",
+  "signalCount": 8,
+  "briefingPath": "/ouroboros/202611/20261110/",
+  "actionItemPath": "/ouroboros/202611/20261110/action_item/",
+  "hero": "/daily-briefing/20261110/hero.webp",
+  "ogImage": "/daily-briefing/20261110/og.webp",
+  "actionHero": "/action-item/20261110/hero.webp",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NOW",
+      "status": "READY",
+      "visualValue": "-20%",
+      "visualLabel": "standard token price versus Fable 5.1",
+      "sources": [{"label": "Anthropic release", "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"}]
+    },
+    {
+      "signal": 2,
+      "priority": "NOW",
+      "status": "READY",
+      "visualValue": "5 demos",
+      "visualLabel": "reported task-adaptation input",
+      "sources": [{"label": "NVIDIA research", "url": "https://research.nvidia.com/labs/gear/gr00t-2/"}]
+    },
+    {
+      "signal": 3,
+      "priority": "NEXT",
+      "status": "WATCHING",
+      "visualValue": "28.9%",
+      "visualLabel": "common-equity proceeds allocated to BTC",
+      "sources": [{"label": "Strategy release", "url": "https://www.strategy.com/press/strategy-acquires-1036-btc-and-repurchases-188-million-of-strc_11-09-2026"}]
+    },
+    {
+      "signal": 4,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "upcoming",
+      "visualLabel": "platform state, not a live market",
+      "sources": [{"label": "Avalanche", "url": "https://www.avalanche.com/about/blog/wall-streets-next-chapter-is-being-built-on-avalanche/"}]
+    },
+    {
+      "signal": 5,
+      "deepDiveAvailable": true,
+      "priority": "NOW",
+      "status": "READY",
+      "visualValue": "4 stages",
+      "visualLabel": "capacity, reliable power, compute and cash",
+      "sources": [
+        {"label": "EIA", "url": "https://www.eia.gov/energyexplained/electricity/"},
+        {"label": "Action Item", "url": "https://iamrobin.ai/ouroboros/202611/20261110/action_item/"}
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "WATCHING",
+      "visualValue": "$3.4B",
+      "visualLabel": "generation-platform transaction value",
+      "sources": [{"label": "Piper Sandler", "url": "https://www.pipersandler.com/investment-banking-transactions/onepwr-solutions-20260901"}]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "UNKNOWN",
+      "visualValue": "0 new",
+      "visualLabel": "novel rounds passing today's evidence gate",
+      "sources": [{"label": "Shield AI", "url": "https://shield.ai/shield-to-acquire-echodyne-in-a-transaction-valued-at-5-3-billion-and-raise-2-5-billion-at-a-28-8-billion-valuation/"}]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$3.57B",
+      "visualLabel": "reported backlog",
+      "sources": [{"label": "Rocket Lab results", "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-third-quarter-2026-financial-results-posts"}]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, November 10, 2026",
+      "description": "Eight bounded actions test model economics, robot adaptation, capital allocation, tokenized markets, useful compute, power delivery, private-market novelty and launch execution.",
+      "centralJudgment": "A large commitment becomes useful only when its conversion into accepted work, operating capacity or cash is observable.",
+      "fieldLine": "Eight signals. Signal 5 opens today’s megawatts-to-useful-compute method.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "Frontier Models and Agents", "title": "Price one accepted outcome", "why": "Lower token prices matter only if acceptance, intervention and recovery stay comparable.", "steps": ["Run one frozen RobinOS task on the current configuration.", "Run the same task on Fable 5.2 and record all retries."], "done": "Accepted-outcome cost and human minutes are recorded for both runs."},
+        {"signal": 2, "domain": "Physical AI and Robotics", "title": "Cap adaptation at five demonstrations", "why": "Provider results suggest a small demonstration set can materially change task success.", "steps": ["Choose one repeatable bimanual task.", "Record adaptation time, success and recovery minutes."], "done": "Every attempt has a result and attributed human intervention."},
+        {"signal": 3, "domain": "Crypto Capital Flows", "title": "Separate Strategy’s uses of equity", "why": "Bitcoin purchases compete with preferred repurchases and cash inside the same financing flow.", "steps": ["Build a four-week allocation table.", "Classify bitcoin, security repurchases and cash separately."], "done": "The direction of marginal bitcoin buying capacity is observable."},
+        {"signal": 4, "domain": "FinTech and Payments", "title": "Wait for the launch specification", "why": "Ledger selection establishes infrastructure intent, not a functioning market.", "steps": ["Capture participant and settlement rules when published.", "Test asset and cash portability from the formal specification."], "done": "The platform can be classified as a new market or internal clearing upgrade."},
+        {"signal": 5, "domain": "Content and Distribution", "title": "Publish the conversion method", "why": "Megawatts, reliable power, saleable compute and collected cash are different asset states.", "steps": ["Publish Astra’s exact article and reviewed translations.", "Preserve inputs, outputs and sensitivity boundaries for the proposed simulator."], "done": "Four public editions preserve the evidence and proposal boundaries."},
+        {"signal": 6, "domain": "AI Infrastructure", "title": "Track power through five operating gates", "why": "An equipment commitment does not establish installed, interconnected or operating power.", "steps": ["Record delivery, gas, installation, interconnection and operation separately.", "Advance a field only with attributable evidence."], "done": "Every gate has a dated source or remains UNKNOWN."},
+        {"signal": 7, "domain": "Late-Stage Private Markets", "title": "Keep the quiet-day watchpoint", "why": "No new round passed today’s date, evidence, stage and novelty gates.", "steps": ["Retain Shield as a standing watchpoint.", "Look for closing and verifiable priority terms without repeating the headline."], "done": "The ledger changes only when new decision-grade evidence appears."},
+        {"signal": 8, "domain": "Public Equities", "title": "Connect orders to delivery", "why": "Backlog is an opportunity; hardware tests, launch readiness and revenue recognition determine conversion.", "steps": ["Track Neutron hardware and launch-readiness milestones.", "Add cancellation rights and expected twelve-month revenue recognition."], "done": "Every new order changes an explicit delivery-risk field."}
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流｜2026年11月10日",
+      "description": "八项有边界的行动，覆盖模型经济性、机器人适配、资本配置、代币化市场、有效算力、电力交付、私募市场新颖性与发射执行。",
+      "centralJudgment": "只有当承诺转化为可验收工作、运营能力或现金的过程可观察时，大数字才有用。",
+      "fieldLine": "八个信号。信号5展开今日“从兆瓦到有效算力”的方法。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "前沿模型与智能体", "title": "为一次验收结果定价", "why": "只有在验收、人工干预与恢复可比时，较低的代币价格才有意义。", "steps": ["用当前配置运行一个冻结的 RobinOS 任务。", "用 Fable 5.2 运行同一任务并记录全部重试。"], "done": "两次运行的验收结果成本与人工分钟均已记录。"},
+        {"signal": 2, "domain": "具身智能与机器人", "title": "把适配限制在五次示范", "why": "供应商结果表明，少量示范可能显著改变任务成功率。", "steps": ["选择一个可重复的双手任务。", "记录适配时间、成功率与恢复分钟。"], "done": "每次尝试都有结果和可归因的人工干预。"},
+        {"signal": 3, "domain": "加密资本流", "title": "拆分 Strategy 的股权资金用途", "why": "比特币购买与优先股回购及现金在同一融资流中竞争。", "steps": ["建立四周配置表。", "分别归类比特币、证券回购与现金。"], "done": "边际比特币购买能力的方向可被观察。"},
+        {"signal": 4, "domain": "金融科技与支付", "title": "等待正式上线规范", "why": "选择账本只证明基础设施意图，不等于市场已运行。", "steps": ["发布后记录参与者与结算规则。", "依据正式规范检验资产和现金可移转性。"], "done": "可将平台归类为新市场或内部清算升级。"},
+        {"signal": 5, "domain": "内容与分发", "title": "发布转化方法", "why": "兆瓦、可靠电力、可销售算力和已收现金是不同的资产状态。", "steps": ["发布 Astra 原文及经审校的译文。", "为拟议模拟器保留输入、输出与敏感性边界。"], "done": "四个公开版本均保留证据边界与提案边界。"},
+        {"signal": 6, "domain": "AI 基础设施", "title": "通过五道运营闸门跟踪电力", "why": "设备承诺不等于已经安装、并网或投入运营的电力。", "steps": ["分别记录交付、燃气、安装、并网与运营。", "仅凭可归因证据推进字段。"], "done": "每道闸门都有日期来源，否则保持 UNKNOWN。"},
+        {"signal": 7, "domain": "后期私募市场", "title": "保留安静日观察点", "why": "今天没有新一轮融资通过日期、证据、阶段与新颖性闸门。", "steps": ["保留 Shield 作为持续观察点。", "寻找交割与可验证优先权条款，不重复旧标题。"], "done": "只有出现新的决策级证据时才更新台账。"},
+        {"signal": 8, "domain": "公开市场股票", "title": "把订单连接到交付", "why": "积压订单是机会；硬件测试、发射准备与收入确认决定转化。", "steps": ["跟踪 Neutron 硬件与发射准备里程碑。", "加入取消权与未来十二个月预期收入确认。"], "done": "每笔新订单都会改变一个明确的交付风险字段。"}
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流｜2026年11月10日",
+      "description": "八項有邊界的行動，涵蓋模型經濟性、機器人適配、資本配置、代幣化市場、有效算力、電力交付、私募市場新穎性與發射執行。",
+      "centralJudgment": "只有當承諾轉化為可驗收工作、營運能力或現金的過程可觀察時，大數字才有用。",
+      "fieldLine": "八個信號。信號5展開今日「從兆瓦到有效算力」的方法。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "前沿模型與智能體", "title": "為一次驗收結果定價", "why": "只有在驗收、人工介入與恢復可比時，較低的代幣價格才有意義。", "steps": ["用目前配置執行一個凍結的 RobinOS 任務。", "用 Fable 5.2 執行同一任務並記錄全部重試。"], "done": "兩次執行的驗收結果成本與人工分鐘均已記錄。"},
+        {"signal": 2, "domain": "具身智能與機器人", "title": "把適配限制在五次示範", "why": "供應商結果顯示，少量示範可能顯著改變任務成功率。", "steps": ["選擇一個可重複的雙手任務。", "記錄適配時間、成功率與恢復分鐘。"], "done": "每次嘗試都有結果和可歸因的人工介入。"},
+        {"signal": 3, "domain": "加密資本流", "title": "拆分 Strategy 的股權資金用途", "why": "比特幣購買與優先股回購及現金在同一融資流中競爭。", "steps": ["建立四週配置表。", "分別歸類比特幣、證券回購與現金。"], "done": "邊際比特幣購買能力的方向可被觀察。"},
+        {"signal": 4, "domain": "金融科技與支付", "title": "等待正式上線規範", "why": "選擇帳本只證明基礎設施意圖，不等於市場已運行。", "steps": ["發布後記錄參與者與結算規則。", "依據正式規範檢驗資產和現金可移轉性。"], "done": "可將平台歸類為新市場或內部清算升級。"},
+        {"signal": 5, "domain": "內容與分發", "title": "發布轉化方法", "why": "兆瓦、可靠電力、可銷售算力和已收現金是不同的資產狀態。", "steps": ["發布 Astra 原文及經審校的譯文。", "為擬議模擬器保留輸入、輸出與敏感性邊界。"], "done": "四個公開版本均保留證據邊界與提案邊界。"},
+        {"signal": 6, "domain": "AI 基礎設施", "title": "通過五道營運閘門追蹤電力", "why": "設備承諾不等於已經安裝、併網或投入營運的電力。", "steps": ["分別記錄交付、燃氣、安裝、併網與營運。", "僅憑可歸因證據推進欄位。"], "done": "每道閘門都有日期來源，否則保持 UNKNOWN。"},
+        {"signal": 7, "domain": "後期私募市場", "title": "保留安靜日觀察點", "why": "今天沒有新一輪融資通過日期、證據、階段與新穎性閘門。", "steps": ["保留 Shield 作為持續觀察點。", "尋找交割與可驗證優先權條款，不重複舊標題。"], "done": "只有出現新的決策級證據時才更新台帳。"},
+        {"signal": 8, "domain": "公開市場股票", "title": "把訂單連接到交付", "why": "積壓訂單是機會；硬體測試、發射準備與收入確認決定轉化。", "steps": ["追蹤 Neutron 硬體與發射準備里程碑。", "加入取消權與未來十二個月預期收入確認。"], "done": "每筆新訂單都會改變一個明確的交付風險欄位。"}
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクションフロー｜2026年11月10日",
+      "description": "モデル経済性、ロボット適応、資本配分、トークン化市場、有用計算、電力供給、非公開市場の新規性、打ち上げ遂行を検証する8つの限定行動。",
+      "centralJudgment": "大きなコミットメントが有用になるのは、受入済み作業、運用能力、現金への転換が観測できるときだけだ。",
+      "fieldLine": "8シグナル。シグナル5は本日の「メガワットから有用計算へ」の方法を開く。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "フロンティアモデルとエージェント", "title": "受入済み成果1件を価格化する", "why": "低いトークン価格は、受入、介入、復旧が比較可能な場合にだけ意味を持つ。", "steps": ["現行構成で凍結した RobinOS タスクを1件実行する。", "Fable 5.2で同じタスクを実行し、全再試行を記録する。"], "done": "両実行の受入済み成果コストと人手時間が記録される。"},
+        {"signal": 2, "domain": "フィジカルAIとロボティクス", "title": "適応を5回の実演に制限する", "why": "提供元の結果は、少数の実演がタスク成功率を大きく変え得ることを示す。", "steps": ["反復可能な両手タスクを1つ選ぶ。", "適応時間、成功率、復旧時間を記録する。"], "done": "全試行に結果と帰属可能な人手介入が残る。"},
+        {"signal": 3, "domain": "暗号資産の資本フロー", "title": "Strategyの株式資金用途を分ける", "why": "ビットコイン購入は同じ資金フロー内で優先株買戻しと現金に競合する。", "steps": ["4週間の配分表を作る。", "ビットコイン、証券買戻し、現金を別々に分類する。"], "done": "限界的なビットコイン購買力の方向が観測できる。"},
+        {"signal": 4, "domain": "フィンテックと決済", "title": "正式な開始仕様を待つ", "why": "台帳の選定はインフラ意図を示すが、稼働市場を証明しない。", "steps": ["公表時に参加者と決済規則を記録する。", "正式仕様から資産と現金の可搬性を検証する。"], "done": "新市場か内部清算更新かを分類できる。"},
+        {"signal": 5, "domain": "コンテンツと流通", "title": "転換方法を公開する", "why": "メガワット、信頼できる電力、販売可能な計算、回収済み現金は別の資産状態だ。", "steps": ["Astraの原文と審査済み翻訳を公開する。", "提案シミュレーターの入力、出力、感度境界を保存する。"], "done": "4つの公開版が証拠と提案の境界を維持する。"},
+        {"signal": 6, "domain": "AIインフラ", "title": "5つの運用ゲートで電力を追う", "why": "設備コミットメントは、設置済み、接続済み、稼働中の電力を証明しない。", "steps": ["納入、ガス、設置、系統接続、稼働を別々に記録する。", "帰属可能な証拠がある場合だけ項目を進める。"], "done": "各ゲートに日付付き出典があるか、UNKNOWNのままになる。"},
+        {"signal": 7, "domain": "後期非公開市場", "title": "静かな日の監視点を維持する", "why": "本日は日付、証拠、段階、新規性のゲートを通過した新規ラウンドがなかった。", "steps": ["Shieldを継続監視点として残す。", "見出しを繰り返さず、クロージングと検証可能な優先条件を探す。"], "done": "新しい意思決定級の証拠が出た場合だけ台帳が変わる。"},
+        {"signal": 8, "domain": "上場株式", "title": "受注を納入につなぐ", "why": "受注残は機会であり、ハードウェア試験、打ち上げ準備、収益認識が転換を決める。", "steps": ["Neutronのハードウェアと打ち上げ準備の節目を追う。", "解約権と今後12か月の予想収益認識を加える。"], "done": "新規受注ごとに明示的な納入リスク項目が変わる。"}
+      ]
+    }
+  }
+}
