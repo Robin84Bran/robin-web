@@ -336,7 +336,11 @@ const meaningSchemas = isMeaningDirectory
             <li><span></span><a href="/asymmetry/hkipoblindbox/">The HK IPO Blind Box →</a></li>
             <li class="directory-future">Capital simulations and model comparisons. Research only; human judgment remains in the loop.</li>
           </>}
-          {entry.projects.map((project) => project === 'Model Olympics' ? <li><span></span><a href="/asymmetry/model-olympics/">{project} →</a></li> : <li><span></span>{project}</li>)}
+          {entry.projects.map((project) => {
+            const href = project === 'Model Olympics' ? '/asymmetry/model-olympics/'
+              : isAsymmetryDirectory && project === 'Quant Lab' ? '/asymmetry/quant_lab/' : undefined;
+            return <li><span></span>{href ? <a href={href}>{project} →</a> : project}</li>;
+          })}
           <li class="directory-future"><span></span>more, as it becomes</li>
         </ul>
       )
