@@ -1,0 +1,28 @@
+<svg viewBox="0 0 680 146" role="img" aria-labelledby="c12t">
+<title id="c12t">v0.3.2: Claude and GPT-6 Sol on the same 67 breaches</title>
+<g class="mark"><title>Claude, full trace: 67 caught (of 67 breaches)</title><rect class="hit" x="0" y="6.0" width="680" height="34"/>
+<text class="label" x="0" y="27.0">Claude, full trace</text>
+<path class="f-ok" d="M190.0 14.0H526.0q4.0 0 4.0 4.0V28.0q0 4.0 -4.0 4.0H190.0Z"/>
+<text class="inbar" x="196.0" y="27.0">67</text>
+<text class="value" x="540.0" y="27.0">67/67 caught</text></g>
+<g class="mark"><title>GPT-6 Sol, full trace: 67 caught (of 67 breaches)</title><rect class="hit" x="0" y="40.0" width="680" height="34"/>
+<text class="label" x="0" y="61.0">GPT-6 Sol, full trace</text>
+<path class="f-ok" d="M190.0 48.0H526.0q4.0 0 4.0 4.0V62.0q0 4.0 -4.0 4.0H190.0Z"/>
+<text class="inbar" x="196.0" y="61.0">67</text>
+<text class="value" x="540.0" y="61.0">67/67 caught</text></g>
+<g class="mark"><title>Claude, report only: 26 missed · 41 no verdict (of 67 breaches)</title><rect class="hit" x="0" y="74.0" width="680" height="34"/>
+<text class="label" x="0" y="95.0">Claude, report only</text>
+<rect class="f-bad" x="190.0" y="82.0" width="129.9" height="18"/>
+<text class="inbar" x="196.0" y="95.0">26</text>
+<path class="f-none" d="M321.9 82.0H526.0q4.0 0 4.0 4.0V96.0q0 4.0 -4.0 4.0H321.9Z"/>
+<text class="inbar dark" x="327.9" y="95.0">41</text>
+<text class="value" x="540.0" y="95.0">0/67 caught</text></g>
+<g class="mark"><title>GPT-6 Sol, report only: 2 caught · 15 missed · 50 no verdict (of 67 breaches)</title><rect class="hit" x="0" y="108.0" width="680" height="34"/>
+<text class="label" x="0" y="129.0">GPT-6 Sol, report only</text>
+<rect class="f-ok" x="190.0" y="116.0" width="8.1" height="18"/>
+<rect class="f-bad" x="200.1" y="116.0" width="74.1" height="18"/>
+<text class="inbar" x="206.1" y="129.0">15</text>
+<path class="f-none" d="M276.3 116.0H526.0q4.0 0 4.0 4.0V130.0q0 4.0 -4.0 4.0H276.3Z"/>
+<text class="inbar dark" x="282.3" y="129.0">50</text>
+<text class="value" x="540.0" y="129.0">2/67 caught</text></g>
+</svg>

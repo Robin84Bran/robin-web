@@ -1,0 +1,45 @@
+<svg viewBox="0 0 720 262" role="img" aria-labelledby="c0t">
+<title id="c0t">v0.2: what each monitor caught on 20 simulated deployments by Qwen 2.5 1.5B</title>
+<line class="grid" x1="190.0" x2="190.0" y1="8" y2="236"/>
+<text class="tick" x="190.0" y="254" text-anchor="middle">0%</text>
+<line class="grid" x1="302.5" x2="302.5" y1="8" y2="236"/>
+<text class="tick" x="302.5" y="254" text-anchor="middle">25%</text>
+<line class="grid" x1="415.0" x2="415.0" y1="8" y2="236"/>
+<text class="tick" x="415.0" y="254" text-anchor="middle">50%</text>
+<line class="grid" x1="527.5" x2="527.5" y1="8" y2="236"/>
+<text class="tick" x="527.5" y="254" text-anchor="middle">75%</text>
+<line class="grid" x1="640.0" x2="640.0" y1="8" y2="236"/>
+<text class="tick" x="640.0" y="254" text-anchor="middle">100%</text>
+<text class="group" x="0" y="24">Breaches caught, of those it ruled on</text>
+<g class="mark"><title>Breaches caught, of those it ruled on — Report-only monitor: 10 of 13 (77%; 95% CI 50–92%)</title><rect class="hit" x="0" y="32.0" width="720" height="26"/>
+<text class="label" x="14" y="49.0">Report-only monitor</text>
+<line class="ci s-ink" x1="413.8" x2="603.2" y1="45.0" y2="45.0"/>
+<circle class="dot f-ink" cx="536.2" cy="45.0" r="5"/>
+<text class="value" x="650.0" y="49.0">10/13</text></g>
+<g class="mark"><title>Breaches caught, of those it ruled on — Trace monitor: 14 of 16 (88%; 95% CI 64–97%)</title><rect class="hit" x="0" y="58.0" width="720" height="26"/>
+<text class="label" x="14" y="75.0">Trace monitor</text>
+<line class="ci s-ink" x1="477.9" x2="624.3" y1="71.0" y2="71.0"/>
+<circle class="dot f-ink" cx="583.8" cy="71.0" r="5"/>
+<text class="value" x="650.0" y="75.0">14/16</text></g>
+<g class="mark"><title>Breaches caught, of those it ruled on — Policy checker (code): 16 of 16 (100%; 95% CI 81–100%)</title><rect class="hit" x="0" y="84.0" width="720" height="26"/>
+<text class="label" x="14" y="101.0">Policy checker (code)</text>
+<line class="ci s-ink" x1="552.9" x2="640.0" y1="97.0" y2="97.0"/>
+<circle class="dot f-ink" cx="640.0" cy="97.0" r="5"/>
+<text class="value" x="650.0" y="101.0">16/16</text></g>
+<text class="group" x="0" y="136">False alarms on the 4 clean runs</text>
+<g class="mark"><title>False alarms on the 4 clean runs — Report-only monitor: 3 of 4 (75%; 95% CI 30–95%)</title><rect class="hit" x="0" y="144.0" width="720" height="26"/>
+<text class="label" x="14" y="161.0">Report-only monitor</text>
+<line class="ci s-ink" x1="325.3" x2="619.5" y1="157.0" y2="157.0"/>
+<circle class="dot f-ink" cx="527.5" cy="157.0" r="5"/>
+<text class="value" x="650.0" y="161.0">3/4</text></g>
+<g class="mark"><title>False alarms on the 4 clean runs — Trace monitor: 3 of 4 (75%; 95% CI 30–95%)</title><rect class="hit" x="0" y="170.0" width="720" height="26"/>
+<text class="label" x="14" y="187.0">Trace monitor</text>
+<line class="ci s-ink" x1="325.3" x2="619.5" y1="183.0" y2="183.0"/>
+<circle class="dot f-ink" cx="527.5" cy="183.0" r="5"/>
+<text class="value" x="650.0" y="187.0">3/4</text></g>
+<g class="mark"><title>False alarms on the 4 clean runs — Policy checker (code): 0 of 4 (0%; 95% CI 0–49%)</title><rect class="hit" x="0" y="196.0" width="720" height="26"/>
+<text class="label" x="14" y="213.0">Policy checker (code)</text>
+<line class="ci s-ink" x1="190.0" x2="410.5" y1="209.0" y2="209.0"/>
+<circle class="dot f-ink" cx="190.0" cy="209.0" r="5"/>
+<text class="value" x="650.0" y="213.0">0/4</text></g>
+</svg>

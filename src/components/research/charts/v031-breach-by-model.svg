@@ -1,0 +1,45 @@
+<svg viewBox="0 0 680 262" role="img" aria-labelledby="c6t">
+<title id="c6t">v0.3.1: breach rate by model and task</title>
+<line class="grid" x1="190.0" x2="190.0" y1="8" y2="236"/>
+<text class="tick" x="190.0" y="254" text-anchor="middle">0%</text>
+<line class="grid" x1="292.5" x2="292.5" y1="8" y2="236"/>
+<text class="tick" x="292.5" y="254" text-anchor="middle">25%</text>
+<line class="grid" x1="395.0" x2="395.0" y1="8" y2="236"/>
+<text class="tick" x="395.0" y="254" text-anchor="middle">50%</text>
+<line class="grid" x1="497.5" x2="497.5" y1="8" y2="236"/>
+<text class="tick" x="497.5" y="254" text-anchor="middle">75%</text>
+<line class="grid" x1="600.0" x2="600.0" y1="8" y2="236"/>
+<text class="tick" x="600.0" y="254" text-anchor="middle">100%</text>
+<text class="group" x="0" y="24">Deployment task (v0.2&#x27;s task)</text>
+<g class="mark"><title>Deployment task (v0.2&#x27;s task) — Qwen 2.5 1.5B: 51 of 60 (85%; 95% CI 74–92%)</title><rect class="hit" x="0" y="32.0" width="680" height="26"/>
+<text class="label" x="14" y="49.0">Qwen 2.5 1.5B</text>
+<line class="ci s-ink" x1="492.9" x2="566.8" y1="45.0" y2="45.0"/>
+<circle class="dot f-ink" cx="538.5" cy="45.0" r="5"/>
+<text class="value" x="610.0" y="49.0">51/60</text></g>
+<g class="mark"><title>Deployment task (v0.2&#x27;s task) — Qwen 2.5 7B: 0 of 60 (0%; 95% CI 0–6%)</title><rect class="hit" x="0" y="58.0" width="680" height="26"/>
+<text class="label" x="14" y="75.0">Qwen 2.5 7B</text>
+<line class="ci s-ink" x1="190.0" x2="214.7" y1="71.0" y2="71.0"/>
+<circle class="dot f-ink" cx="190.0" cy="71.0" r="5"/>
+<text class="value" x="610.0" y="75.0">0/60</text></g>
+<g class="mark"><title>Deployment task (v0.2&#x27;s task) — Llama 3.1 8B: 0 of 60 (0%; 95% CI 0–6%)</title><rect class="hit" x="0" y="84.0" width="680" height="26"/>
+<text class="label" x="14" y="101.0">Llama 3.1 8B</text>
+<line class="ci s-ink" x1="190.0" x2="214.7" y1="97.0" y2="97.0"/>
+<circle class="dot f-ink" cx="190.0" cy="97.0" r="5"/>
+<text class="value" x="610.0" y="101.0">0/60</text></g>
+<text class="group" x="0" y="136">Sharing task (v0.3&#x27;s task)</text>
+<g class="mark"><title>Sharing task (v0.3&#x27;s task) — Qwen 2.5 1.5B: 16 of 60 (27%; 95% CI 17–39%)</title><rect class="hit" x="0" y="144.0" width="680" height="26"/>
+<text class="label" x="14" y="161.0">Qwen 2.5 1.5B</text>
+<line class="ci s-ink" x1="260.2" x2="349.9" y1="157.0" y2="157.0"/>
+<circle class="dot f-ink" cx="299.3" cy="157.0" r="5"/>
+<text class="value" x="610.0" y="161.0">16/60</text></g>
+<g class="mark"><title>Sharing task (v0.3&#x27;s task) — Qwen 2.5 7B: 0 of 60 (0%; 95% CI 0–6%)</title><rect class="hit" x="0" y="170.0" width="680" height="26"/>
+<text class="label" x="14" y="187.0">Qwen 2.5 7B</text>
+<line class="ci s-ink" x1="190.0" x2="214.7" y1="183.0" y2="183.0"/>
+<circle class="dot f-ink" cx="190.0" cy="183.0" r="5"/>
+<text class="value" x="610.0" y="187.0">0/60</text></g>
+<g class="mark"><title>Sharing task (v0.3&#x27;s task) — Llama 3.1 8B: 0 of 60 (0%; 95% CI 0–6%)</title><rect class="hit" x="0" y="196.0" width="680" height="26"/>
+<text class="label" x="14" y="213.0">Llama 3.1 8B</text>
+<line class="ci s-ink" x1="190.0" x2="214.7" y1="209.0" y2="209.0"/>
+<circle class="dot f-ink" cx="190.0" cy="209.0" r="5"/>
+<text class="value" x="610.0" y="213.0">0/60</text></g>
+</svg>

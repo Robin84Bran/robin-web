@@ -1,0 +1,70 @@
+<svg viewBox="0 0 680 374" role="img" aria-labelledby="c1t">
+<title id="c1t">Approval breach rate with 95% Wilson intervals, by actor and approval answer</title>
+<line class="grid" x1="150.0" x2="150.0" y1="8" y2="348"/>
+<text class="tick" x="150.0" y="366" text-anchor="middle">0%</text>
+<line class="grid" x1="262.5" x2="262.5" y1="8" y2="348"/>
+<text class="tick" x="262.5" y="366" text-anchor="middle">25%</text>
+<line class="grid" x1="375.0" x2="375.0" y1="8" y2="348"/>
+<text class="tick" x="375.0" y="366" text-anchor="middle">50%</text>
+<line class="grid" x1="487.5" x2="487.5" y1="8" y2="348"/>
+<text class="tick" x="487.5" y="366" text-anchor="middle">75%</text>
+<line class="grid" x1="600.0" x2="600.0" y1="8" y2="348"/>
+<text class="tick" x="600.0" y="366" text-anchor="middle">100%</text>
+<text class="group" x="0" y="24">Granted</text>
+<g class="mark"><title>Claude Opus 5.5, granted: 0 of 35 breached (0%; 95% CI 0–10%)</title>
+<rect class="hit" x="0" y="32.0" width="680" height="26"/>
+<text class="label" x="14" y="49.0">Claude Opus 5.5</text>
+<line class="ci s-claude" x1="150.0" x2="194.5" y1="45.0" y2="45.0"/>
+<circle class="dot f-claude" cx="150.0" cy="45.0" r="5"/>
+<text class="value" x="610.0" y="49.0">0/35</text></g>
+<g class="mark"><title>GPT-6 Astra, granted: 0 of 35 breached (0%; 95% CI 0–10%)</title>
+<rect class="hit" x="0" y="58.0" width="680" height="26"/>
+<text class="label" x="14" y="75.0">GPT-6 Astra</text>
+<line class="ci s-gpt" x1="150.0" x2="194.5" y1="71.0" y2="71.0"/>
+<circle class="dot f-gpt" cx="150.0" cy="71.0" r="5"/>
+<text class="value" x="610.0" y="75.0">0/35</text></g>
+<g class="mark"><title>Qwen 2.5 1.5B, granted: 7 of 20 breached (35%; 95% CI 18–57%) — deviation (post-freeze rerun)</title>
+<rect class="hit" x="0" y="84.0" width="680" height="26"/>
+<text class="label" x="14" y="101.0">Qwen 2.5 1.5B</text>
+<line class="ci s-qwen" x1="231.5" x2="405.2" y1="97.0" y2="97.0"/>
+<circle class="dot f-qwen" cx="307.5" cy="97.0" r="5"/>
+<text class="value" x="610.0" y="101.0">7/20</text></g>
+<text class="group" x="0" y="136">Pending</text>
+<g class="mark"><title>Claude Opus 5.5, pending: 0 of 35 breached (0%; 95% CI 0–10%)</title>
+<rect class="hit" x="0" y="144.0" width="680" height="26"/>
+<text class="label" x="14" y="161.0">Claude Opus 5.5</text>
+<line class="ci s-claude" x1="150.0" x2="194.5" y1="157.0" y2="157.0"/>
+<circle class="dot f-claude" cx="150.0" cy="157.0" r="5"/>
+<text class="value" x="610.0" y="161.0">0/35</text></g>
+<g class="mark"><title>GPT-6 Astra, pending: 0 of 35 breached (0%; 95% CI 0–10%)</title>
+<rect class="hit" x="0" y="170.0" width="680" height="26"/>
+<text class="label" x="14" y="187.0">GPT-6 Astra</text>
+<line class="ci s-gpt" x1="150.0" x2="194.5" y1="183.0" y2="183.0"/>
+<circle class="dot f-gpt" cx="150.0" cy="183.0" r="5"/>
+<text class="value" x="610.0" y="187.0">0/35</text></g>
+<g class="mark"><title>Qwen 2.5 1.5B, pending: 8 of 20 breached (40%; 95% CI 22–61%) — deviation (post-freeze rerun)</title>
+<rect class="hit" x="0" y="196.0" width="680" height="26"/>
+<text class="label" x="14" y="213.0">Qwen 2.5 1.5B</text>
+<line class="ci s-qwen" x1="248.5" x2="426.0" y1="209.0" y2="209.0"/>
+<circle class="dot f-qwen" cx="330.0" cy="209.0" r="5"/>
+<text class="value" x="610.0" y="213.0">8/20</text></g>
+<text class="group" x="0" y="248">Denied</text>
+<g class="mark"><title>Claude Opus 5.5, denied: 0 of 35 breached (0%; 95% CI 0–10%)</title>
+<rect class="hit" x="0" y="256.0" width="680" height="26"/>
+<text class="label" x="14" y="273.0">Claude Opus 5.5</text>
+<line class="ci s-claude" x1="150.0" x2="194.5" y1="269.0" y2="269.0"/>
+<circle class="dot f-claude" cx="150.0" cy="269.0" r="5"/>
+<text class="value" x="610.0" y="273.0">0/35</text></g>
+<g class="mark"><title>GPT-6 Astra, denied: 0 of 35 breached (0%; 95% CI 0–10%)</title>
+<rect class="hit" x="0" y="282.0" width="680" height="26"/>
+<text class="label" x="14" y="299.0">GPT-6 Astra</text>
+<line class="ci s-gpt" x1="150.0" x2="194.5" y1="295.0" y2="295.0"/>
+<circle class="dot f-gpt" cx="150.0" cy="295.0" r="5"/>
+<text class="value" x="610.0" y="299.0">0/35</text></g>
+<g class="mark"><title>Qwen 2.5 1.5B, denied: 7 of 20 breached (35%; 95% CI 18–57%) — deviation (post-freeze rerun)</title>
+<rect class="hit" x="0" y="308.0" width="680" height="26"/>
+<text class="label" x="14" y="325.0">Qwen 2.5 1.5B</text>
+<line class="ci s-qwen" x1="231.5" x2="405.2" y1="321.0" y2="321.0"/>
+<circle class="dot f-qwen" cx="307.5" cy="321.0" r="5"/>
+<text class="value" x="610.0" y="325.0">7/20</text></g>
+</svg>

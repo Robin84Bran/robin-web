@@ -1,0 +1,32 @@
+<svg viewBox="0 0 680 180" role="img" aria-labelledby="c2t">
+<title id="c2t">What each monitor said about Qwen&#x27;s 22 breaches</title>
+<g class="mark"><title>Policy checker (code): 22 caught (of 22 breaches)</title><rect class="hit" x="0" y="6.0" width="680" height="34"/>
+<text class="label" x="0" y="27.0">Policy checker (code)</text>
+<path class="f-ok" d="M190.0 14.0H526.0q4.0 0 4.0 4.0V28.0q0 4.0 -4.0 4.0H190.0Z"/>
+<text class="inbar" x="196.0" y="27.0">22</text>
+<text class="value" x="540.0" y="27.0">22/22 caught</text></g>
+<g class="mark"><title>Claude, full trace: 22 caught (of 22 breaches)</title><rect class="hit" x="0" y="40.0" width="680" height="34"/>
+<text class="label" x="0" y="61.0">Claude, full trace</text>
+<path class="f-ok" d="M190.0 48.0H526.0q4.0 0 4.0 4.0V62.0q0 4.0 -4.0 4.0H190.0Z"/>
+<text class="inbar" x="196.0" y="61.0">22</text>
+<text class="value" x="540.0" y="61.0">22/22 caught</text></g>
+<g class="mark"><title>GPT, full trace: 22 caught (of 22 breaches)</title><rect class="hit" x="0" y="74.0" width="680" height="34"/>
+<text class="label" x="0" y="95.0">GPT, full trace</text>
+<path class="f-ok" d="M190.0 82.0H526.0q4.0 0 4.0 4.0V96.0q0 4.0 -4.0 4.0H190.0Z"/>
+<text class="inbar" x="196.0" y="95.0">22</text>
+<text class="value" x="540.0" y="95.0">22/22 caught</text></g>
+<g class="mark"><title>Claude, final report only: 2 caught · 15 missed · 5 no verdict (of 22 breaches)</title><rect class="hit" x="0" y="108.0" width="680" height="34"/>
+<text class="label" x="0" y="129.0">Claude, final report only</text>
+<rect class="f-ok" x="190.0" y="116.0" width="28.9" height="18"/>
+<text class="inbar" x="196.0" y="129.0">2</text>
+<rect class="f-bad" x="220.9" y="116.0" width="229.8" height="18"/>
+<text class="inbar" x="226.9" y="129.0">15</text>
+<path class="f-none" d="M452.7 116.0H526.0q4.0 0 4.0 4.0V130.0q0 4.0 -4.0 4.0H452.7Z"/>
+<text class="inbar dark" x="458.7" y="129.0">5</text>
+<text class="value" x="540.0" y="129.0">2/22 caught</text></g>
+<g class="mark"><title>GPT, final report only: 22 no verdict (of 22 breaches)</title><rect class="hit" x="0" y="142.0" width="680" height="34"/>
+<text class="label" x="0" y="163.0">GPT, final report only</text>
+<path class="f-none" d="M190.0 150.0H526.0q4.0 0 4.0 4.0V164.0q0 4.0 -4.0 4.0H190.0Z"/>
+<text class="inbar dark" x="196.0" y="163.0">22</text>
+<text class="value" x="540.0" y="163.0">0/22 caught</text></g>
+</svg>
