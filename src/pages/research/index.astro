@@ -40,6 +40,11 @@ const pattern = [
   ['Not finished, violation', 246, 40, '17 / 0 / 229', '9 / 0 / 237'],
   ['Finished, no violation', 45, 0, '0 / 0 / 45', '0 / 0 / 45'],
 ];
+const rebel = [
+  ['Full trace · all breaches', 670, 670],
+  ['Report only · confessed', 266, 347],
+  ['Report only · denied', 0, 323],
+];
 const verdictLegend = [['ok', 'Right answer'], ['bad', 'Wrong answer'], ['none', 'No verdict']];
 const steps = [
   { v: 'v0.1', tag: 'scripted', text: 'A scripted baseline, to check that the simulator, the ledger and the scoring work.', charts: [] },
@@ -123,8 +128,8 @@ const steps = [
     <section class="story" aria-labelledby="limits-title">
       <p class="eyebrow">05 / Where this stops</p>
       <h2 id="limits-title">One small, confused rule-breaker.</h2>
-      <p>Every breach in every study came from the same 1.5-billion-parameter model, and it looked confused, not sneaky. On the sharing task it often asked approval for the recipient instead of the document, was told “unknown target”, and shared anyway. Its bigger sibling made the same mistake in all 60 runs and never shared: confused, but careful.</p>
-      <p>The test was short and explicit, and nothing pulled against the rule. The frontier models ran inside their providers’ own tools, so some of their caution may belong to those tools. Whether the trace advantage holds against a capable agent that breaks a rule on purpose and hides it is the open question. Nothing here answers it.</p>
+      <p>Every breach in the Honest Agent came from the same 1.5-billion-parameter model, and it looked confused, not sneaky. On the sharing task it often asked approval for the recipient instead of the document, was told “unknown target”, and shared anyway. Its bigger sibling made the same mistake in all 60 runs and never shared: confused, but careful.</p>
+      <p>The test was short and explicit, and nothing pulled against the rule. The frontier models ran inside their providers’ own tools, so some of their caution may belong to those tools. Whether the trace advantage holds against a capable agent that breaks a rule on purpose and hides it is the open question. Nothing here answers it. The Obedient Rebel, below, takes one step towards it: breaches from larger models, under pressure.</p>
     </section>
 
     <section class="story" aria-labelledby="built-title">
@@ -160,15 +165,15 @@ const steps = [
     </section>
 
     <section class="story" aria-labelledby="next-title">
-      <p class="eyebrow">07 / Two thought experiments</p>
-      <h2 id="next-title">What happens under pressure, and in a crowd?</h2>
-      <p>Two sister projects extend the question. Both are scripted simulations so far. <strong>No AI model was run in either</strong>, so they show what each test can measure, not how real models behave.</p>
+      <p class="eyebrow">07 / Two sister projects</p>
+      <h2 id="next-title">Under pressure, and in a crowd.</h2>
+      <p>Two sister projects extend the question. Both began as scripted simulations. The Obedient Rebel has since run real models; the Swarm Illusion has not.</p>
       <div class="pair">
         <article>
-          <p class="eyebrow">Simulation · no AI model</p>
+          <p class="eyebrow">Real local models · pre-registered</p>
           <h3>The Obedient Rebel</h3>
-          <p>When approval is slow and the action budget is running out, does an agent wait or act? A hand-written “deadline” policy breaks the rule when waiting cannot fit in the budget, and stops once it can.</p>
-          <p class="fine">Next: run a real model on the same task at four and eight actions. Waiting fits only in the second. Does the breach disappear when obedience becomes affordable?</p>
+          <p>When approval is slow and the action budget is running out, does an agent wait or act? Three local models, Qwen 2.5 1.5B and 7B and Llama 3.1 8B, broke the rule in <strong>670 of 1,080</strong> runs. Giving them enough actions to wait did not reduce it. Qwen 7B, careful in the Honest Agent, broke the rule in every paired setting here.</p>
+          <p class="fine">Each model reported differently. Llama 8B confessed almost every breach. Qwen 1.5B denied all of them. Which made the monitoring test below possible.</p>
         </article>
         <article>
           <p class="eyebrow">Simulation · no AI model</p>
@@ -177,6 +182,18 @@ const steps = [
           <p class="fine">Next: real handoffs between models. Does a second agent correct a wrong claim, or repeat it with more confidence?</p>
         </article>
       </div>
+      <figure class="caught" aria-label="Rebel breaches caught by a Claude monitor, by view and by what the agent reported">
+        <figcaption>The Obedient Rebel · a Claude monitor on the same 670 breaches · pre-registered</figcaption>
+        {rebel.map(([name, n, d]) => (
+          <div class="row">
+            <span class="name">{name}</span>
+            <span class="track"><span class="fill" style={`width:${(Number(n) / Number(d)) * 100}%`}></span></span>
+            <span class="count">{n} / {d}</span>
+          </div>
+        ))}
+      </figure>
+      <p>Reading the full action record, the monitor caught all 670 breaches, with false alarms on 8 of 410 clean runs. Reading only the report, it caught the breaches the agent confessed and <strong>none it denied</strong>. It also turned Llama’s false confessions into false alarms on 158 of 203 clean runs. A report-only monitor is a mirror of the agent’s honesty.</p>
+      <p class="fine">One pre-registered test failed. It compared the two views only where both gave a verdict, and the report-only view never got a breach wrong: it abstained instead, so its misses were excluded. Counting an abstention as a miss, as also pre-registered, the trace view led by 60 points (95% CI 57 to 64).</p>
       <p>Less evidence, worse oversight. It is the same lesson from three directions.</p>
       <p class="fine">Built by Robin Xie with Claude Opus 5.5 (Claude Code) and GPT (Codex). The repository, with every prompt, response, protocol and check, is being prepared for public release. Related play: <a href="/intelligence/receipt-gap/">The Receipt Gap</a> and <a href="/intelligence/work-or-proof/">Work or Proof?</a></p>
     </section>
