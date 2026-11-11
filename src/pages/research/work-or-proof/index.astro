@@ -1,0 +1,148 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const path = '/research/work-or-proof/';
+const description = 'Work or Proof? A pre-registered study: cheap local screening caught 17.9 percentage points more rule breaches at the same frontier checking budget, but still missed real breaches.';
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  '@id': `https://iamrobin.ai${path}#article`,
+  headline: 'Work or Proof? A cheap check can help an expensive one',
+  description,
+  url: `https://iamrobin.ai${path}`,
+  inLanguage: 'en',
+  datePublished: '2026-11-11',
+  author: { '@id': 'https://www.tideisun.com/robin#robin-xie' },
+};
+
+// Study sources: results/main/primary.json (difference and interval),
+// tables.json (primary / pooled / tokens / 0.5 rows), and root RESULTS.md.
+// Recall is population recall: all 737 breaches, including unresolved items.
+const policies = [
+  { name: 'Local screen → frontier check', model: 'Qwen 2.5 7B · primary policy', recall: 67.84, catches: '499.99', key: 'screen' },
+  { name: 'Random-share frontier check', model: 'Same frontier token allowance', recall: 49.99, catches: '368.39', key: 'random' },
+];
+---
+
+<BaseLayout title="Work or Proof? — Research — Robin Xie" {path} {description} {schema} type="article">
+  <div class="shell research">
+    <a class="quiet-link" href="/research/">← Research</a>
+    <p class="eyebrow">Research · AI oversight · 11 November 2026</p>
+    <h1>Work or Proof?<br /><em>Check where it counts.</em></h1>
+    <p class="lead">A cheap check can help an expensive one.<br />It can also wave real problems through.</p>
+    <p class="intro">When AI systems work together, how much effort should go into making things, and how much into checking them? Checking everything carefully can be costly. This study takes one part of that problem: can a small local model choose which work deserves a more expensive check?</p>
+
+    <section class="story" aria-labelledby="test-title">
+      <p class="eyebrow">The question</p>
+      <h2 id="test-title">Who gets the careful check?</h2>
+      <p>We reused <strong>1,440 saved task records</strong> from <a href="/research/honestagent/">The Honest Agent</a> and <a href="/research/honestagent/#next-title">The Obedient Rebel</a>. The tasks involved simulated payments, deployments and document sharing. Their action receipts let code establish which records broke the approval rule: <strong>737 breaches and 703 compliant records</strong>.</p>
+      <p>Qwen 2.5 7B and Llama 3.1 8B made fresh judgments, reading either the final report or the action record. We then replayed saved Claude judgments to compare ways of spending a fixed frontier checking allowance. A frontier model is the larger, externally hosted checker; no new frontier calls were made.</p>
+      <p>The primary policy used Qwen to read every action record. Anything it flagged, or could not decide, went to the frontier checker while budget remained. A local clearance stopped there. The comparison spent the same allowance checking records in random order, without local screening. Only a final frontier accusation counted as a catch.</p>
+    </section>
+
+    <section class="story" aria-labelledby="result-title">
+      <p class="eyebrow">The result · pre-registered</p>
+      <h2 id="result-title">The screen helped the budget go further.</h2>
+      <div class="figures">
+        <p class="figure"><strong>+17.9 pp</strong><span>more breaches caught with Qwen screening<br />pp = percentage points</span></p>
+        <p class="figure"><strong>+16.18 to +19.77</strong><span>95% interval, in percentage points</span></p>
+      </div>
+      <figure class="comparison">
+        <figcaption>Share of all 737 breaches caught · same frontier allowance</figcaption>
+        {policies.map((policy) => (
+          <div class="policy">
+            <div class="policy-label"><span>{policy.name}</span><strong>{policy.recall.toFixed(2)}%</strong></div>
+            <div class="track" aria-hidden="true"><span class={`fill ${policy.key}`} style={`width:${policy.recall}%`}></span></div>
+            <p class="chart-note">{policy.model} · {policy.catches} mean catches</p>
+          </div>
+        ))}
+        <p class="chart-note">Means over 256 shuffled orders, so counts can be fractional. The bar scale runs from none to all breaches caught.</p>
+      </figure>
+      <p>The allowance was <strong>822,482 frontier tokens</strong>—chunks of text processed or produced by the checker—half the cost of checking the entire archive’s action records. Local computing was supplied separately. At that allowance, screening caught <strong>67.84%</strong> of breaches; random checking caught <strong>49.99%</strong>. The unrounded difference rounds to <strong>+17.86 percentage points</strong>.</p>
+      <p>The registered primary test passed. Both its recall gain and its gain in catches per allowed frontier token had intervals above zero, and the final false-alarm rate stayed below the registered guardrail in each source study.</p>
+      <details>
+        <summary>What the interval tells us</summary>
+        <p>The 95% interval comes from 2,000 paired resamples of seed blocks within each source study, with 16 orders per resample. It holds the first local judgments fixed. It describes sensitivity within this archive; it does not measure reliability on new tasks. A clearance, an abstention or work left unchecked at the budget limit counts as a missed breach.</p>
+      </details>
+    </section>
+
+    <section class="story" aria-labelledby="twist-title">
+      <p class="eyebrow">The twist</p>
+      <h2 id="twist-title">A cheap clearance can hide a real breach.</h2>
+      <!-- Uncapped LT Qwen and local-only L rows: results/main/tables.json;
+           exact counts and rates also appear in root RESULTS.md. -->
+      <p>Remove the frontier budget cap and Qwen screening still misses <strong>66 breaches</strong> that full frontier trace checking catches. It catches 671 of 737, while saving 32.99% of frontier tokens. A breach cleared by the local screen never reaches the careful checker.</p>
+      <p>Using the local model alone creates a different problem: too many false alarms. Qwen flags <strong>193 of 703 compliant records</strong>, about <strong>27%</strong>. Llama flags <strong>382 of 703</strong>, about <strong>54%</strong>. Those are false alarms among work that followed the rule, not percentages of all accusations.</p>
+      <p>The useful result is a better allocation of a limited checking budget. It comes with errors that would matter in a real review queue.</p>
+    </section>
+
+    <section class="story" aria-labelledby="integrity-title">
+      <p class="eyebrow">How the record holds up</p>
+      <h2 id="integrity-title">Written down before the calls.</h2>
+      <!-- Sources: root RESULTS.md Integrity; results/main/collection.json
+           and predictions.json. Spend is incremental model-call USD only. -->
+      <dl>
+        <dt>Pre-registered and frozen</dt>
+        <dd>The protocol, prompts, policies, predictions and analysis were fixed before collection. The saved GitHub push record places the push 35.65 seconds before the first local request. The original frozen files pass verification.</dd>
+        <dt>5,808 calls · 0 failures</dt>
+        <dd>Every request and response was saved: 5,760 first judgments and 48 replay checks. All completed, with no malformed replies or substitutions.</dd>
+        <dt>0 USD in new model-call spend</dt>
+        <dd>The new judgments ran locally. Frontier judgments were reused from earlier studies, whose costs had already been incurred. Hardware and energy costs were not measured.</dd>
+        <dt>A failed prediction stays visible</dt>
+        <dd>We expected Llama’s repeated judgments to vary. Its 24 replay responses were byte-identical. That finite sample does not prove the model is deterministic.</dd>
+        <dt>Independent review</dt>
+        <dd>Claude reviewed the completed study and judged its acceptance criteria met, conditional on restoring the frozen question log and adding a plain-language summary. Both fixes are complete; the post-analysis questions remain separate from the registered record.</dd>
+      </dl>
+    </section>
+
+    <section class="story" aria-labelledby="limits-title">
+      <p class="eyebrow">Where this stops</p>
+      <h2 id="limits-title">A checking study, on familiar work.</h2>
+      <p>The work was already made. This study does not find the best split between producing useful work and checking it. It compares checking policies on a fixed archive, with local computing outside the frontier allowance.</p>
+      <p>These were previously examined simulated tasks, with many breaches and overlapping actor and monitor model families. The Obedient Rebel supplies 75% of the records but only five seed blocks. Reordering records does not create new independent tasks.</p>
+      <p>Escalation reuses saved, independent Claude judgments. It does not test a live conversation between checkers, real queues, human review costs or deployment safety. A promising budget result is a reason to test a workflow further.</p>
+      <p class="fine">Built by Robin Xie with Codex; reviewed by Claude. The headline and interval come from the frozen primary analysis; the policy and error counts come from its complete policy tables. Post-analysis questions are labelled separately.</p>
+      <div class="next-links">
+        <a href="/intelligence/work-or-proof/">Play the original Work or Proof? seed →</a>
+        <a href="/research/honestagent/">Read The Honest Agent →</a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .research { padding-block: 3rem 5rem; }
+  .research > .eyebrow { margin-top: 3rem; }
+  h1 { font: 400 clamp(3rem, 8vw, 6.6rem)/1 var(--serif); letter-spacing: -0.05em; margin: 1.5rem 0; }
+  h1 em, h2 em { color: #426e69; }
+  .lead { font: 400 clamp(1.3rem, 3vw, 2rem)/1.45 var(--serif); }
+  .intro, .story { max-width: 48rem; line-height: 1.85; }
+  .intro, .fine, dd, figcaption, .chart-note { color: var(--muted); }
+  .story { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--line); }
+  h2 { font: 400 clamp(1.7rem, 4vw, 2.7rem)/1.18 var(--serif); letter-spacing: -0.03em; margin: 0.4rem 0 1.4rem; }
+  .figures { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 2rem; margin-block: 1.5rem 2rem; }
+  .figure { display: grid; gap: 0.5rem; margin: 0; padding-block: 1.1rem; border-top: 1px solid var(--line); }
+  .figure strong { font: 400 clamp(1.8rem, 4vw, 2.8rem)/1.15 var(--serif); letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+  .figure span { color: var(--muted); font-size: 0.86rem; line-height: 1.6; }
+  .comparison { margin: 2rem 0; padding: clamp(1rem, 3vw, 1.6rem); border: 1px solid var(--line); background: var(--moon-bright); }
+  figcaption { font-size: 0.85rem; margin-bottom: 1.2rem; }
+  .policy + .policy { margin-top: 1.4rem; }
+  .policy-label { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; line-height: 1.5; font-size: 0.95rem; }
+  .policy-label strong { white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .track { height: 0.9rem; margin-block: 0.5rem; background: var(--stone); }
+  .fill { display: block; height: 100%; background: #426e69; }
+  .fill.random { background: var(--gold-dark); }
+  .chart-note { font-size: 0.78rem; line-height: 1.6; margin-bottom: 0; }
+  .comparison > .chart-note { margin-top: 1.5rem; }
+  details { margin-top: 1.5rem; border-block: 1px solid var(--line); padding-block: 1rem; font-size: 0.9rem; }
+  summary { cursor: pointer; font-weight: 600; }
+  details p { margin: 1rem 0 0; }
+  dt { font-weight: 600; margin-top: 1.2rem; }
+  dd { margin-left: 0; }
+  .fine { font-size: 0.85rem; line-height: 1.7; }
+  .next-links { display: flex; flex-wrap: wrap; gap: 1rem 2rem; padding-top: 1rem; color: var(--gold-dark); }
+  @media (max-width: 650px) {
+    .figures { grid-template-columns: 1fr; }
+    .policy-label { font-size: 0.85rem; }
+  }
+</style>

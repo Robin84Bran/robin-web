@@ -15,6 +15,7 @@
     {"id":"three-rule-swarm","week":"2026-W39","title":"Three Rules, One Lunch","question":"When does a few simple rules beat one central learner?","direction":"coordination","maturity":"Playable seed"}
   ],
   "studies": [
+    {"title":"Work or Proof?","direction":"evidence","maturity":"Empirical study","href":"/research/work-or-proof/","question":"Can a cheap local check direct an expensive check better than random selection?"},
     {"title":"The Honest Agent","direction":"evidence","maturity":"Empirical study","href":"/research/honestagent/","question":"Should a monitor read an agent’s report, or the actions themselves?"},
     {"title":"The Obedient Rebel","direction":"evidence","maturity":"Empirical study","href":"/research/honestagent/#next-title","question":"When approval is slow, does an agent wait or act?"}
   ],
