@@ -1,0 +1,180 @@
+{
+  "levels": [
+    {
+      "level": "101 · Notice",
+      "title": "AI Swarm",
+      "question": "Flocks, hives and networks: see how local action becomes collective form.",
+      "href": "/intelligence/swarm/",
+      "action": "Watch the patterns"
+    },
+    {
+      "level": "201 · Test",
+      "title": "Eight Small Worlds",
+      "question": "Cooperation, memory, attention and taste. Change one rule and compare.",
+      "href": "/intelligence/swarm-lab/",
+      "action": "Enter Swarm Lab"
+    },
+    {
+      "level": "301 · Coordinate",
+      "title": "Agent Swarm Lab",
+      "question": "Six worlds of sensing, delegation, adaptation and recovery under constraints.",
+      "href": "/intelligence/agent-swarm/",
+      "action": "Meet the agents"
+    }
+  ],
+  "themes": [
+    {
+      "title": "Cooperation & coordination",
+      "question": "What can local rules build together?",
+      "connection": "From shared benefits to embodied teams: communication has a cost, and the coordination rule matters.",
+      "worlds": [
+        {
+          "id": "cell-city",
+          "title": "The city of freeloaders",
+          "question": "Can mixing and assortment sustain a shared benefit?",
+          "level": "201",
+          "href": "/intelligence/swarm-lab/cell-city/"
+        },
+        {
+          "id": "self-assembly",
+          "title": "A body without a blueprint",
+          "question": "Can local adhesion reconnect the particles left after damage?",
+          "level": "201",
+          "href": "/intelligence/swarm-lab/self-assembly/"
+        },
+        {
+          "id": "roach-emergence",
+          "title": "Roach Emergence",
+          "question": "When does local signaling earn its energy cost?",
+          "level": "301",
+          "href": "/intelligence/agent-swarm/roach-emergence/"
+        }
+      ]
+    },
+    {
+      "title": "Memory & shared evidence",
+      "question": "What survives the hand-off?",
+      "connection": "Retaining a useful lesson and repeating a shared mistake are both forms of memory. Track sources as well as agreement.",
+      "worlds": [
+        {
+          "id": "memory-islands",
+          "title": "The island that forgot the manual",
+          "question": "What transfers when a learner carries skills and failure memory?",
+          "level": "201",
+          "href": "/intelligence/swarm-lab/memory-islands/"
+        },
+        {
+          "id": "attention-windows",
+          "title": "Many Small Windows vs. One Big Eye",
+          "question": "What do local windows see—and miss—when a pattern crosses their boundaries?",
+          "level": "201",
+          "href": "/intelligence/swarm-lab/attention-windows/"
+        },
+        {
+          "id": "shared-reality",
+          "title": "Shared Reality",
+          "question": "Can agents agree without becoming confidently wrong together?",
+          "level": "301",
+          "href": "/intelligence/agent-swarm/shared-reality/"
+        },
+        {
+          "id": "learn-forget-evolve",
+          "title": "Learn, Forget, Evolve",
+          "question": "Can a changing policy adapt to a new world and still pass the old one?",
+          "level": "301",
+          "href": "/intelligence/agent-swarm/learn-forget-evolve/"
+        }
+      ]
+    },
+    {
+      "title": "Resilience & finite budgets",
+      "question": "What keeps working after a failure?",
+      "connection": "Compare delivered work, recovery and resource costs together. Survival alone can hide a shrinking reserve.",
+      "worlds": [
+        {
+          "id": "mars-jar",
+          "title": "Mars in a jar",
+          "question": "Does surviving on stored resources count as independence?",
+          "level": "201",
+          "href": "/intelligence/swarm-lab/mars-jar/"
+        },
+        {
+          "id": "asteroid-button",
+          "title": "Asteroid Button",
+          "question": "Does distribution help when damage is spatially correlated?",
+          "level": "301",
+          "href": "/intelligence/agent-swarm/asteroid-button/"
+        },
+        {
+          "id": "ocean-swarm",
+          "title": "Ocean Swarm",
+          "question": "When does local repair need a little central help?",
+          "level": "301",
+          "href": "/intelligence/agent-swarm/ocean-swarm/"
+        },
+        {
+          "id": "tuna-redux",
+          "title": "TUNA Redux",
+          "question": "Commander, local swarm, or bounded hybrid: which trade-offs appear after an outage?",
+          "level": "201",
+          "href": "/intelligence/swarm-lab/tuna-redux/"
+        }
+      ]
+    },
+    {
+      "title": "Exploration & selection",
+      "question": "Who saves the strange idea?",
+      "connection": "Generating variety is one lever; deciding what gets heard is another. Planning should also earn its cost against simpler rules.",
+      "worlds": [
+        {
+          "id": "known-trap",
+          "title": "The Already Known Trap",
+          "question": "What goes unseen when a familiar label lowers inspection priority?",
+          "level": "201",
+          "href": "/intelligence/swarm-lab/known-trap/"
+        },
+        {
+          "id": "taste-drift",
+          "title": "Taste Drift",
+          "question": "Can unusual ideas survive a judge that keeps choosing the familiar?",
+          "level": "201",
+          "href": "/intelligence/swarm-lab/taste-drift/"
+        },
+        {
+          "id": "shared-channel",
+          "title": "Shared Channel",
+          "question": "When does following popularity collapse independent search?",
+          "level": "201",
+          "href": "/intelligence/swarm-lab/shared-channel/"
+        },
+        {
+          "id": "minimum-intelligence",
+          "title": "Minimum Intelligence",
+          "question": "How much model planning earns its cost in the same physical world?",
+          "level": "301",
+          "href": "/intelligence/agent-swarm/minimum-intelligence/"
+        }
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "kind": "Hardware 101",
+      "title": "The machine beneath the model",
+      "question": "From silicon to systems: what actually runs an AI?",
+      "href": "/intelligence/hardware/"
+    },
+    {
+      "kind": "AIDC 101",
+      "title": "The infrastructure beneath intelligence",
+      "question": "Follow compute, power, cooling and networks through an AI data centre.",
+      "href": "/intelligence/aidc101/"
+    },
+    {
+      "kind": "LLM 101",
+      "title": "Attention Is All You Need",
+      "question": "See how attention connects words—and how a transformer learns what matters.",
+      "href": "/intelligence/attention_all_you_need/"
+    }
+  ]
+}
