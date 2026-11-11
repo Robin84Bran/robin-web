@@ -1,6 +1,6 @@
 # BTC Probability Atlas
 
-Canonical page: https://iamrobin.ai/resonance/btc_probability_atlas/
+Canonical page: https://iamrobin.ai/asymmetry/btc_probability_atlas/
 
 This four-language static research page presents dated public-market forecasts
 for BTC, ETH, SOL, XRP, BNB and TRX. English is the default. The page-level
@@ -32,11 +32,11 @@ configuration is unchanged.
 
 ## Source map and verification
 
-- `src/pages/resonance/btc_probability_atlas.astro`: page and shared SEO helper.
+- `src/pages/asymmetry/btc_probability_atlas.astro`: page and shared SEO helper.
 - `src/components/probability-atlas/atlas-body.html`: approved chart interface.
 - `public/resonance/btc_probability_atlas/`: per-asset JSON, metadata, CSS, JS
   and a `release.json` with artifact and source-receipt hashes.
-- `src/components/IdentityDirectory.astro`: Resonance discovery link.
+- `src/components/IdentityDirectory.astro`: Asymmetry discovery link; the old Resonance page URL redirects.
 - Sitemap and robot discovery include the exact canonical page.
 
 Run the complete `pnpm run release:check`, production dependency audit and

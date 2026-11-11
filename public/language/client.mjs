@@ -88,10 +88,10 @@ function nativeSimulationLanguage(lang) {
   // Professional names and navigation meanings should not become e.g. "Ms."
   // -> "multiple sclerosis", "Portfolio" -> "folder", or TideiSun -> a noun.
   const chrome = {
-    en: ['Home', 'Portfolio', 'Books', 'Doors', 'Identity', 'Asymmetry', 'Meaning', 'Resonance', 'Ouroboros', 'Binary', 'Intelligence', 'Network'],
-    'zh-CN': ['首页', '项目', '书籍', '八扇门', '身份', '不对称', '意义', '共鸣', '衔尾蛇', '二进制', '智能', '连接'],
-    'zh-TW': ['首頁', '項目', '書籍', '八扇門', '身份', '不對稱', '意義', '共鳴', '銜尾蛇', '二進制', '智慧', '連結'],
-    ja: ['ホーム', 'プロジェクト', '書籍', '八つの扉', 'アイデンティティ', '非対称性', '意味', '共鳴', 'ウロボロス', 'バイナリー', '知性', 'つながり'],
+    en: ['Home', 'Portfolio', 'Books', 'Doors', 'Identity', 'Asymmetry', 'Meaning', 'Research', 'Ouroboros', 'Binary', 'Intelligence', 'Network'],
+    'zh-CN': ['首页', '项目', '书籍', '八扇门', '身份', '不对称', '意义', '研究', '衔尾蛇', '二进制', '智能', '连接'],
+    'zh-TW': ['首頁', '項目', '書籍', '八扇門', '身份', '不對稱', '意義', '研究', '銜尾蛇', '二進制', '智慧', '連結'],
+    ja: ['ホーム', 'プロジェクト', '書籍', '八つの扉', 'アイデンティティ', '非対称性', '意味', '研究', 'ウロボロス', 'バイナリー', '知性', 'つながり'],
   }[lang] || [];
   document.querySelectorAll('.site-header .nav-list > li > a').forEach((node, i) => { if (chrome[i]) node.textContent = chrome[i]; });
   const doors = document.querySelector('.site-header .doors-nav summary');
