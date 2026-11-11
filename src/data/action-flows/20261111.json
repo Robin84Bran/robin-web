@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "updated": "2026-11-11",
+  "signalCount": 8,
+  "briefingPath": "/ouroboros/202611/20261111/",
+  "actionItemPath": "/ouroboros/202611/20261111/action_item/",
+  "hero": "/daily-briefing/20261111/hero.webp",
+  "ogImage": "/daily-briefing/20261111/og.webp",
+  "actionHero": "/action-item/20261111/hero.webp",
+  "actions": [
+    {"signal": 1, "priority": "NOW", "status": "READY", "visualValue": "$2/$10", "visualLabel": "introductory input/output price per million tokens", "sources": [{"label": "Google", "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/"}]},
+    {"signal": 2, "priority": "NEXT", "status": "WATCHING", "visualValue": "96%", "visualLabel": "reported automotive-kitting POC success", "sources": [{"label": "Google DeepMind", "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/"}]},
+    {"signal": 3, "priority": "WATCH", "status": "WATCHING", "visualValue": "-$385.6M", "visualLabel": "complete-session BTC plus ETH ETF flow", "sources": [{"label": "Farside BTC", "url": "https://farside.co.uk/btc/"}, {"label": "Farside ETH", "url": "https://farside.co.uk/eth/"}]},
+    {"signal": 4, "priority": "WATCH", "status": "UNKNOWN", "visualValue": "early 2027", "visualLabel": "planned venue timing, not a live market", "sources": [{"label": "Formation Securities", "url": "https://www.prnewswire.com/news-releases/formation-securities-notifies-sec-of-intent-to-operate-first-tokenized-securities-venue-on-solana-302932902.html"}]},
+    {"signal": 5, "deepDiveAvailable": true, "priority": "NOW", "status": "READY", "visualValue": "100 edits", "visualLabel": "one revision chain requiring one evidence trail", "sources": [{"label": "ByteDance Seed", "url": "https://seed.bytedance.com/en/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5"}, {"label": "Action Item", "url": "https://iamrobin.ai/ouroboros/202611/20261111/action_item/"}]},
+    {"signal": 6, "priority": "NEXT", "status": "WATCHING", "visualValue": "33MW", "visualLabel": "commercially operating versus 396MW contracted", "sources": [{"label": "Fervo Energy", "url": "https://ir.fervoenergy.com/news-releases/news-release-details/fervo-energy-reports-third-quarter-2026-results"}]},
+    {"signal": 7, "priority": "WATCH", "status": "WATCHING", "visualValue": "$26B", "visualLabel": "conditional concurrent private placement", "sources": [{"label": "SEC S-1/A", "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm"}]},
+    {"signal": 8, "priority": "WATCH", "status": "WATCHING", "visualValue": "$7.466B", "visualLabel": "quarterly operating-cash-flow versus cash-capex gap", "sources": [{"label": "SEC earnings exhibit", "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000461/coreweave3q26earningspress.htm"}]}
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, November 11, 2026",
+      "description": "Eight bounded actions test agent economics, robot support cost, capital flows, tokenized markets, media provenance, power delivery, IPO financing and infrastructure cash conversion.",
+      "centralJudgment": "Capability claims become useful only when accepted outcomes, delivery stages and cash conversion remain observable.",
+      "fieldLine": "Eight signals. Signal 5 opens today’s evidence-trail method for high-volume visual editing.",
+      "inLanguage": "en", "languageSlug": "", "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "Frontier Models and Agents", "title": "Price one accepted agent outcome", "why": "Lower token prices and specialization matter only when total accepted-result cost and intervention are visible.", "steps": ["Run one frozen task with a single-agent configuration.", "Run it again with specialized agents and record every retry."], "done": "Total cost, human minutes and recovery are recorded for both runs."},
+        {"signal": 2, "domain": "Physical AI and Robotics", "title": "Measure support behind the success rate", "why": "A partner proof of concept does not establish continuous-shift economics.", "steps": ["Track continuous operating hours and interventions.", "Convert them into human-support cost per accepted item."], "done": "The 96% claim has an attributable operating denominator or remains UNKNOWN."},
+        {"signal": 3, "domain": "Crypto Capital Flows", "title": "Wait for a complete session", "why": "Incomplete fund reporting can make a displayed zero look more conclusive than it is.", "steps": ["Freeze the last complete BTC and ETH ETF session.", "Reconcile the next complete session with stablecoin supply."], "done": "Stabilization is recorded only when at least two of three measures turn positive."},
+        {"signal": 4, "domain": "Stablecoins FinTech and Payments", "title": "Observe the first live liquidity pool", "why": "A notified plan is not yet a functioning securities market.", "steps": ["Capture production participant and settlement rules.", "Measure fees and inventory losses during market closures."], "done": "Net return and participation limits are observable from a live pool."},
+        {"signal": 5, "domain": "Content and Distribution", "title": "Preserve every visual revision", "why": "Rapid editing compounds learning only when evidence, prompts, outputs and approvals stay linked.", "steps": ["Publish Astra’s exact reviewed article in four languages.", "Archive two LinkedIn openings for Robin’s manual use."], "done": "The released asset can be traced to its original evidence and approval decision."},
+        {"signal": 6, "domain": "AI Infrastructure", "title": "Separate operating power from contracted power", "why": "Commercial operation, test export, commissioning and future contracts are different asset states.", "steps": ["Track blocks two and three to commercial operation.", "Update replication time and cost per kilowatt."], "done": "Every block has a dated operating state and attributed cost evidence."},
+        {"signal": 7, "domain": "Late Stage Private Markets", "title": "Wait for financing to close", "why": "A conditional placement is not received cash or completed liquidity.", "steps": ["Record final IPO pricing and closing.", "Verify completion of the concurrent placement separately."], "done": "Valuation and financing records use completed rather than proposed amounts."},
+        {"signal": 8, "domain": "Public Equities", "title": "Reconcile prepayments with cash investment", "why": "Revenue growth can coexist with a much larger infrastructure funding gap.", "steps": ["Track actual customer prepayment receipts.", "Update operating cash flow and cash capital expenditure quarterly."], "done": "The funding gap separates received cash from management expectations."}
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年11月11日",
+      "description": "八项有边界的行动，检验智能体经济性、机器人支持成本、资本流、代币化市场、媒体溯源、电力交付、IPO融资与基础设施现金转化。",
+      "centralJudgment": "只有当验收结果、交付阶段与现金转化可观察时，能力主张才会变得有用。",
+      "fieldLine": "八个信号。信号5展开今天面向高频视觉编辑的证据链方法。",
+      "inLanguage": "zh-Hans", "languageSlug": "zh-hans", "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "前沿模型与智能体", "title": "为一次验收结果定价", "why": "只有当验收总成本与人工介入可见时，低代币价格和专业分工才有意义。", "steps": ["用单智能体配置运行一个冻结任务。", "再用专业智能体运行并记录每次重试。"], "done": "两次运行的总成本、人工分钟与恢复均已记录。"},
+        {"signal": 2, "domain": "物理AI与机器人", "title": "测量成功率背后的支持", "why": "合作方概念验证不能证明连续班次的经济性。", "steps": ["跟踪连续运行小时与人工介入。", "换算为每件验收物品的人力支持成本。"], "done": "96%的主张具备可归因的运行分母，否则保持未知。"},
+        {"signal": 3, "domain": "加密资本流", "title": "等待完整交易日", "why": "基金报告不完整会让显示为零的数据显得过度确定。", "steps": ["冻结最近一个完整的BTC和ETH ETF交易日。", "把下一个完整交易日与稳定币供应量核对。"], "done": "只有三项指标中至少两项转正才记录企稳。"},
+        {"signal": 4, "domain": "稳定币 金融科技与支付", "title": "观察首个真实流动性池", "why": "已通知的计划尚不是正在运行的证券市场。", "steps": ["获取生产环境的参与者与结算规则。", "测量闭市期间的费用与库存损失。"], "done": "可从真实池观察净回报与参与限制。"},
+        {"signal": 5, "domain": "内容与分发", "title": "保留每一次视觉修订", "why": "只有证据、提示词、输出与审批持续关联，快速编辑才会积累学习。", "steps": ["以四种语言发布Astra的精确审校文章。", "归档两个LinkedIn开头供Robin手动使用。"], "done": "发布资产可追溯至原始证据与审批决定。"},
+        {"signal": 6, "domain": "AI基础设施", "title": "分开运营电力与签约电力", "why": "商业运营、测试送电、调试与未来合同是不同资产状态。", "steps": ["跟踪第二和第三区块进入商业运营。", "更新复制周期与每千瓦成本。"], "done": "每个区块都有带日期的状态与可归因成本证据。"},
+        {"signal": 7, "domain": "后期私募市场", "title": "等待融资真正完成", "why": "有条件的配售不是已收现金或已完成流动性。", "steps": ["记录IPO最终定价与交割。", "单独核实同期配售的完成。"], "done": "估值与融资记录使用已完成而非拟议金额。"},
+        {"signal": 8, "domain": "公开市场股票", "title": "核对预付款与现金投资", "why": "收入增长可以与更大的基础设施资金缺口并存。", "steps": ["跟踪实际收到的客户预付款。", "按季度更新经营现金流与现金资本开支。"], "done": "资金缺口分开已收现金与管理层预期。"}
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年11月11日",
+      "description": "八項有邊界的行動，檢驗智能體經濟性、機器人支援成本、資本流、代幣化市場、媒體溯源、電力交付、IPO融資與基礎設施現金轉化。",
+      "centralJudgment": "只有當驗收結果、交付階段與現金轉化可觀察時，能力主張才會變得有用。",
+      "fieldLine": "八個信號。信號5展開今天面向高頻視覺編輯的證據鏈方法。",
+      "inLanguage": "zh-Hant", "languageSlug": "zh-hant", "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "前沿模型與智能體", "title": "為一次驗收結果定價", "why": "只有當驗收總成本與人工介入可見時，低代幣價格和專業分工才有意義。", "steps": ["用單智能體配置執行一個凍結任務。", "再用專業智能體執行並記錄每次重試。"], "done": "兩次執行的總成本、人工分鐘與恢復均已記錄。"},
+        {"signal": 2, "domain": "物理AI與機器人", "title": "測量成功率背後的支援", "why": "合作方概念驗證不能證明連續班次的經濟性。", "steps": ["追蹤連續運行小時與人工介入。", "換算為每件驗收物品的人力支援成本。"], "done": "96%的主張具備可歸因的運行分母，否則保持未知。"},
+        {"signal": 3, "domain": "加密資本流", "title": "等待完整交易日", "why": "基金報告不完整會讓顯示為零的數據顯得過度確定。", "steps": ["凍結最近一個完整的BTC和ETH ETF交易日。", "把下一個完整交易日與穩定幣供應量核對。"], "done": "只有三項指標中至少兩項轉正才記錄企穩。"},
+        {"signal": 4, "domain": "穩定幣 金融科技與支付", "title": "觀察首個真實流動性池", "why": "已通知的計劃尚不是正在運行的證券市場。", "steps": ["取得生產環境的參與者與結算規則。", "測量閉市期間的費用與庫存損失。"], "done": "可從真實池觀察淨回報與參與限制。"},
+        {"signal": 5, "domain": "內容與分發", "title": "保留每一次視覺修訂", "why": "只有證據、提示詞、輸出與審批持續關聯，快速編輯才會累積學習。", "steps": ["以四種語言發布Astra的精確審校文章。", "歸檔兩個LinkedIn開頭供Robin手動使用。"], "done": "發布資產可追溯至原始證據與審批決定。"},
+        {"signal": 6, "domain": "AI基礎設施", "title": "分開營運電力與簽約電力", "why": "商業營運、測試送電、調試與未來合約是不同資產狀態。", "steps": ["追蹤第二和第三區塊進入商業營運。", "更新複製週期與每千瓦成本。"], "done": "每個區塊都有帶日期的狀態與可歸因成本證據。"},
+        {"signal": 7, "domain": "後期私募市場", "title": "等待融資真正完成", "why": "有條件的配售不是已收現金或已完成流動性。", "steps": ["記錄IPO最終定價與交割。", "單獨核實同期配售的完成。"], "done": "估值與融資記錄使用已完成而非擬議金額。"},
+        {"signal": 8, "domain": "公開市場股票", "title": "核對預付款與現金投資", "why": "收入增長可以與更大的基礎設施資金缺口並存。", "steps": ["追蹤實際收到的客戶預付款。", "按季度更新營運現金流與現金資本開支。"], "done": "資金缺口分開已收現金與管理層預期。"}
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー 2026年11月11日",
+      "description": "8つの限定された行動で、エージェント経済性、ロボット支援費、資本フロー、トークン化市場、メディア来歴、電力供給、IPO資金調達、インフラの現金転換を検証する。",
+      "centralJudgment": "能力の主張は、受入済み成果、供給段階、現金転換が観測できて初めて役に立つ。",
+      "fieldLine": "8つのシグナル。シグナル5は大量の画像編集に対する証拠履歴の方法を開く。",
+      "inLanguage": "ja", "languageSlug": "ja", "translationReview": "PASS",
+      "actions": [
+        {"signal": 1, "domain": "フロンティアモデルとエージェント", "title": "受入済み成果1件を価格化する", "why": "低いトークン価格と専門化は、受入総コストと介入が見える場合にだけ意味を持つ。", "steps": ["単一エージェント構成で凍結タスクを1件実行する。", "専門エージェントで再実行し全再試行を記録する。"], "done": "両実行の総コスト、人手時間、復旧が記録される。"},
+        {"signal": 2, "domain": "フィジカルAIとロボティクス", "title": "成功率の背後の支援を測る", "why": "提携先の概念実証は連続シフトの経済性を証明しない。", "steps": ["連続稼働時間と介入を追跡する。", "受入品1件当たりの人手支援費に換算する。"], "done": "96%の主張に帰属可能な運用分母が付くか、不明のまま残る。"},
+        {"signal": 3, "domain": "暗号資産の資本フロー", "title": "完全な取引日を待つ", "why": "ファンド報告が未完だと表示上のゼロが過度に確定的に見える。", "steps": ["直近の完全なBTC・ETH ETF取引日を凍結する。", "次の完全な取引日をステーブルコイン供給と照合する。"], "done": "3指標中2つ以上がプラスになった時だけ安定化を記録する。"},
+        {"signal": 4, "domain": "ステーブルコイン フィンテック 決済", "title": "最初の実稼働プールを観測する", "why": "通知された計画はまだ稼働中の証券市場ではない。", "steps": ["本番の参加者規則と決済規則を取得する。", "市場休場中の手数料と在庫損失を測る。"], "done": "実稼働プールから純収益と参加制限を観測できる。"},
+        {"signal": 5, "domain": "コンテンツと配信", "title": "すべての画像修正を保存する", "why": "証拠、指示、出力、承認がつながって初めて高速編集が学習を蓄積する。", "steps": ["Astraの正確な査読済み記事を4言語で公開する。", "Robinが手動利用するLinkedIn冒頭文2本を保存する。"], "done": "公開資産を元証拠と承認判断まで追跡できる。"},
+        {"signal": 6, "domain": "AIインフラ", "title": "稼働電力と契約電力を分ける", "why": "商業運転、試験送電、試運転、将来契約は異なる資産状態である。", "steps": ["第2・第3ブロックの商業運転移行を追跡する。", "複製期間と1kW当たりコストを更新する。"], "done": "各ブロックに日付付き状態と帰属可能なコスト証拠がある。"},
+        {"signal": 7, "domain": "レイトステージ未公開市場", "title": "資金調達の完了を待つ", "why": "条件付き私募は受領済み現金でも完了済み流動性でもない。", "steps": ["IPOの最終価格と完了を記録する。", "同時私募の完了を別に検証する。"], "done": "評価額と資金調達記録が提案額ではなく完了額を使う。"},
+        {"signal": 8, "domain": "上場株式", "title": "前受金と現金投資を照合する", "why": "売上成長と、より大きなインフラ資金不足は同時に起こり得る。", "steps": ["実際の顧客前受金を追跡する。", "営業キャッシュフローと現金設備投資を四半期ごとに更新する。"], "done": "資金不足が受領済み現金と経営陣予想を分けて示す。"}
+      ]
+    }
+  }
+}
