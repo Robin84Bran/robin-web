@@ -15,7 +15,7 @@ const indexableRoutes = new Set([
   '/intelligence/council/autonomous-engineering/',
   '/intelligence/council/million-good-questions/',
   '/intelligence/council/customer-sends-agent/',
-  '/research/', '/research/honestagent/', '/research/work-or-proof/',
+  '/research/', '/research/honestagent/', '/research/work-or-proof/', '/research/signal-or-silence/',
   '/asymmetry/quant_lab/',
   '/', '/about/', '/identity/', '/network/', '/asymmetry/btc_probability_atlas/', '/resonance/eval/ai_berkshire/', '/intelligence/three-rule-swarm/', '/intelligence/one-door/', '/intelligence/receipt-gap/', '/intelligence/portable-self/', '/intelligence/signal-or-silence/', '/intelligence/useful-core/', '/intelligence/bridge-or-bus/', '/intelligence/work-or-proof/',
   '/zh-hans/', '/zh-hans/about/', '/zh-hans/network/',
@@ -128,7 +128,7 @@ if (existsSync(dist)) {
   const binaryStoryRoutes = [...routes.keys()].filter(route=>/^\/binary\/stories\/[a-z0-9-]+\/(?:zh-hans\/|zh-hant\/|ja\/)?$/.test(route));
   const publicationRoutes = [...articleRoutes, ...actionFlowPublications, ...blogPublications, ...specialRoutes, ...binaryStoryRoutes];
   for (const route of [...publicationRoutes, ...diaryRoutes]) indexableRoutes.add(route);
-  check(routes.size === 62 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length + agentSwarmRoutes.length, `expected ${62 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length + agentSwarmRoutes.length} HTML routes, found ${routes.size}.`);
+  check(routes.size === 63 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length + agentSwarmRoutes.length, `expected ${63 + publicationRoutes.length + diaryRoutes.length + arcadeRoutes.length + agentSwarmRoutes.length} HTML routes, found ${routes.size}.`);
   for (const route of agentSwarmRoutes) check(routes.has(route), `missing Agent Swarm route: ${route}`);
 
   for (const route of arcadeRoutes) check(routes.has(route), `missing arcade route: ${route}`);
