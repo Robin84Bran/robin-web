@@ -12,7 +12,7 @@
     {"id":"portable-self","week":"2026-W42","title":"The Portable Self","question":"Which habits should travel with an agent into a different body?","direction":"memory","maturity":"Playable seed"},
     {"id":"receipt-gap","week":"2026-W41","title":"The Receipt Gap","question":"The work happened. The receipt vanished. Should an agent try again?","direction":"coordination","maturity":"Protocol drafted"},
     {"id":"one-door","week":"2026-W40","title":"One Door, Many Hands","question":"Does splitting the same capacity across more bodies make it more resilient?","direction":"memory","maturity":"Playable seed"},
-    {"id":"three-rule-swarm","week":"2026-W39","title":"Three Rules, One Lunch","question":"When does a few simple rules beat one central learner?","direction":"coordination","maturity":"Playable seed"}
+    {"id":"three-rule-swarm","week":"2026-W39","title":"Three Rules, One Lunch","question":"When does sharing observations help workers search?","direction":"coordination","maturity":"Empirical study","href":"/research/three-rules-one-lunch/"}
   ],
   "studies": [
     {"title":"Signal or Silence","direction":"evidence","maturity":"Empirical study","href":"/research/signal-or-silence/","question":"Can an AI judge say ‘can’t tell’ when the evidence cannot decide, and only then?"},

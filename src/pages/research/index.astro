@@ -2,9 +2,10 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import programme from '../../data/research-programme.json';
 const {directions, experiments, studies} = programme;
+const studyCount = studies.length + experiments.filter(e=>e.maturity==='Empirical study').length;
 const path='/research/';
 const description='A research programme on evidence and oversight, coordination and delegation, and memory, adaptation and resilience. Explore the studies and every weekly playable seed.';
-const schema={'@context':'https://schema.org','@type':'CollectionPage',name:'Research — Robin Xie',url:`https://iamrobin.ai${path}`,description,inLanguage:'en',hasPart:[...studies.map(s=>({'@type':'Article',name:s.title,url:`https://iamrobin.ai${s.href}`})),...experiments.map(e=>({'@type':'LearningResource',name:e.title,url:`https://iamrobin.ai/intelligence/${e.id}/`}))]};
+const schema={'@context':'https://schema.org','@type':'CollectionPage',name:'Research — Robin Xie',url:`https://iamrobin.ai${path}`,description,inLanguage:'en',hasPart:[...studies.map(s=>({'@type':'Article',name:s.title,url:`https://iamrobin.ai${s.href}`})),...experiments.map(e=>({'@type':e.maturity==='Empirical study'?'Article':'LearningResource',name:e.title,url:`https://iamrobin.ai${e.href??`/intelligence/${e.id}/`}`}))]};
 ---
 <BaseLayout title="Research — Robin Xie" {path} {description} {schema}>
   <main class="shell research-programme">
@@ -14,7 +15,7 @@ const schema={'@context':'https://schema.org','@type':'CollectionPage',name:'Res
       <p>Three connected questions. Small worlds to explore them. Studies to put them to the test.</p>
     </header>
     <nav class="programme-index" aria-label="Research directions">{directions.map((d,i)=><a href={`#${d.id}`}><span>0{i+1}</span>{d.title}</a>)}</nav>
-    <p class="catalogue-note">{experiments.length} weekly experiments · {studies.length} studies · One growing programme</p>
+    <p class="catalogue-note">{experiments.length} weekly experiments · {studyCount} studies · One growing programme</p>
     <section class="question-map" aria-label="Research programme: agency under constraints">
       <div class="central-question"><p>Our shared question</p><h2>Agency under<br /><em>constraints</em></h2><span>What can a system know,<br />and what should it do next?</span><span class="central-stem" aria-hidden="true"></span></div>
       {directions.map(d=><section id={d.id} class={`direction direction-${d.id}`} aria-labelledby={`${d.id}-title`}>
@@ -24,7 +25,7 @@ const schema={'@context':'https://schema.org','@type':'CollectionPage',name:'Res
         <p class="central-question-copy">{d.question}</p>
         <ul class="research-items">
           {studies.filter(s=>s.direction===d.id).map(s=><li data-research-study><a href={s.href}><span class="item-title">{s.title} <span aria-hidden="true">→</span></span><small class="maturity">{s.maturity}</small></a></li>)}
-          {experiments.filter(e=>e.direction===d.id).map(e=><li data-research-seed={e.id}><a href={`/intelligence/${e.id}/`}><span class="item-title">{e.title} <span aria-hidden="true">→</span></span><small class="maturity">{e.maturity}<span class="week"> · {e.week}</span></small></a></li>)}
+          {experiments.filter(e=>e.direction===d.id).map(e=><li data-research-seed={e.id}><a href={e.href??`/intelligence/${e.id}/`}><span class="item-title">{e.title} <span aria-hidden="true">→</span></span><small class="maturity">{e.maturity}<span class="week"> · {e.week}</span></small></a></li>)}
         </ul>
       </section>)}
     </section>
