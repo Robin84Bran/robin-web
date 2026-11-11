@@ -22,6 +22,21 @@ const policies = [
   { name: 'Local screen → frontier check', model: 'Qwen 2.5 7B · primary policy', recall: 67.84, catches: '499.99', key: 'screen' },
   { name: 'Random-share frontier check', model: 'Same frontier token allowance', recall: 49.99, catches: '368.39', key: 'random' },
 ];
+
+// Secondary counts: RESULTS.md, Full censuses (trace policies C, L and LT).
+// Primary means: Every policy at the primary token cap (LT · Qwen and X).
+// Frontier census tokens are consumed totals; primary tokens are the shared cap.
+const checkingStrategies = [
+  { id: 'A', name: 'Claude checks everything', caught: '737 / 737 (100%)', alarms: '8 / 703 (1.1%)', frontier: '1,644,965', saving: 'Full census', local: 'None', recall: 100, fpr: 8 / 703 * 100, primary: false, label: 'A · Claude all', labelX: 110, labelY: 40, anchor: 'start', leader: '80,34 104,34' },
+  { id: 'B', name: 'Qwen checks everything, alone', caught: '669 / 737 (90.8%)', alarms: '193 / 703 (27.5%)', frontier: '0', saving: 'Local compute only', local: 'Qwen · 1,440 checks', recall: 669 / 737 * 100, fpr: 193 / 703 * 100, primary: false, label: 'B · Qwen alone', labelX: 217, labelY: 125, anchor: 'middle', leader: '' },
+  { id: 'C', name: 'Llama checks everything, alone', caught: '671 / 737 (91.0%)', alarms: '382 / 703 (54.3%)', frontier: '0', saving: 'Local compute only', local: 'Llama · 1,440 checks', recall: 671 / 737 * 100, fpr: 382 / 703 * 100, primary: false, label: 'C · Llama alone', labelX: 345, labelY: 205, anchor: 'middle', leader: '378,177 378,185' },
+  { id: 'D', name: 'Qwen screen → Claude, no budget limit', caught: '671 / 737 (91.0%)', alarms: '8 / 703 (1.1%)', frontier: '1,102,365', saving: '33% fewer than Claude all', local: 'Qwen · 1,440 checks', recall: 671 / 737 * 100, fpr: 8 / 703 * 100, primary: false, label: 'D · Qwen → Claude, no cap', labelX: 90, labelY: 184, anchor: 'start', leader: '80,178 84,178' },
+  { id: 'E', name: 'Llama screen → Claude, no budget limit', caught: '734 / 737 (99.6%)', alarms: '8 / 703 (1.1%)', frontier: '1,524,395', saving: '7% fewer than Claude all', local: 'Llama · 1,440 checks', recall: 734 / 737 * 100, fpr: 8 / 703 * 100, primary: false, label: 'E · Llama → Claude, no cap', labelX: 110, labelY: 77, anchor: 'start', leader: '92,71 104,71' },
+  { id: 'P', name: 'Qwen screen → Claude, half budget', caught: '67.8% · mean 499.99 / 737', alarms: 'Mean 5.9 / 703 (0.8%)', frontier: '822,482 cap', saving: 'Half the Claude-all allowance', local: 'Qwen · 1,440 checks', recall: 67.84, fpr: 0.84, primary: true, label: 'P · Qwen → Claude, half budget', labelX: 80, labelY: 239, anchor: 'start', leader: '70,233 74,233' },
+  { id: 'R', name: 'Random Claude, half budget', caught: '50.0% · mean 368.39 / 737', alarms: 'Mean 4.0 / 703 (0.6%)', frontier: '822,482 cap', saving: 'Same primary allowance', local: 'None', recall: 49.99, fpr: 0.57, primary: true, label: 'R · Random Claude, half budget', labelX: 80, labelY: 293, anchor: 'start', leader: '70,287 74,287' },
+];
+const plotX = (rate: number) => 52 + rate * 6;
+const plotY = (rate: number) => 420 - rate * 3;
 ---
 
 <BaseLayout title="Work or Proof? — Research — Robin Xie" {path} {description} {schema} type="article">
@@ -31,6 +46,84 @@ const policies = [
     <h1>Work or Proof?<br /><em>Check where it counts.</em></h1>
     <p class="lead">A cheap check can help an expensive one.<br />It can also wave real problems through.</p>
     <p class="intro">When AI systems work together, how much effort should go into making things, and how much into checking them? Checking everything carefully can be costly. This study takes one part of that problem: can a small local model choose which work deserves a more expensive check?</p>
+
+    <section class="story hypothesis" aria-labelledby="hypothesis-title">
+      <h2 id="hypothesis-title">Hypothesis</h2>
+      <p>At the same frontier budget, letting a free local model choose which runs get the expensive check catches more rule breaches than checking at random.</p>
+      <p><strong>Pre-registered prediction: held (+17.9 pp, 95% interval +16.2 to +19.8).</strong></p>
+      <p class="chart-note">“Free” means no new model-call charge; local hardware and energy costs were not measured. The primary comparison gives both policies the same frontier allowance.</p>
+    </section>
+
+    <section class="story" aria-labelledby="baselines-title">
+      <p class="eyebrow">Benefit and cost, side by side</p>
+      <h2 id="baselines-title">Five ways to check 1,440 runs</h2>
+      <p>What if Claude checks everything? What if Qwen checks everything alone? Here are five full-census strategies, followed by the <strong>pre-registered primary</strong> comparison at half the frontier budget. Every strategy reads action records.</p>
+      <p id="strategy-table-note" class="chart-note">Caught: share of all 737 breaches. False alarms: share of all 703 clean runs. Frontier tokens and local compute are separate costs. On a narrow screen, scroll the table sideways.</p>
+      <div class="strategy-table-wrap" role="region" aria-labelledby="baselines-title" aria-describedby="strategy-table-note" tabindex="0">
+        <table class="strategy-table">
+          <caption>Five full-census strategies and the primary half-budget pair</caption>
+          <thead>
+            <tr><th scope="col">Strategy</th><th scope="col">Breaches caught</th><th scope="col">False alarms</th><th scope="col">Frontier tokens</th><th scope="col">Local compute</th></tr>
+          </thead>
+          <tbody>
+            {checkingStrategies.map((strategy) => (
+              <tr class:list={{ 'primary-row': strategy.primary }}>
+                <th scope="row"><span>{strategy.id} · {strategy.name}</span><small>{strategy.primary ? 'Pre-registered primary' : 'Secondary (full census)'}</small></th>
+                <td>{strategy.caught}</td>
+                <td>{strategy.alarms}</td>
+                <td>{strategy.frontier}<small>{strategy.saving}</small></td>
+                <td>{strategy.local}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="chart-note">Primary rows are means over 256 shuffled orders. Their 822,482 tokens are an allowance, not exact consumption; full-census rows show total frontier tokens. All frontier judgments were saved Claude judgments, replayed here. Local compute is outside that allowance. Unchecked or unresolved breaches count as missed; a low false-alarm rate does not mean all clean runs were cleared.</p>
+
+      <figure class="comparison tradeoff">
+        <figcaption id="tradeoff-caption">Breaches caught versus false alarms · higher and further left is better</figcaption>
+        <svg class="tradeoff-plot" viewBox="0 50 440 430" role="img" aria-labelledby="tradeoff-title tradeoff-desc">
+          <title id="tradeoff-title">Seven checking outcomes, including the primary half-budget pair</title>
+          <desc id="tradeoff-desc">The horizontal axis is false alarms among clean runs, from 0 to 60 percent. The vertical axis is breaches caught, from 0 to 100 percent. A: Claude checks everything, 1.1 percent false alarms and 100 percent caught. B: Qwen alone, 27.5 and 90.8 percent. C: Llama alone, 54.3 and 91.0 percent. D: uncapped Qwen then Claude, 1.1 and 91.0 percent. E: uncapped Llama then Claude, 1.1 and 99.6 percent, nearly overlapping A. The primary pair is highlighted with filled squares and bold labels: P, half-budget Qwen then Claude, 0.8 and 67.8 percent; R, half-budget random Claude, 0.6 and 50.0 percent. Costs are in the preceding table.</desc>
+          <text class="axis-title" x="18" y="262.5" text-anchor="middle" transform="rotate(-90 18 262.5)">Breaches caught (%) ↑</text>
+          {[0, 25, 50, 75, 100].map((tick) => (
+            <g class="plot-grid">
+              <line x1="52" x2="412" y1={plotY(tick)} y2={plotY(tick)} />
+              <text x="43" y={plotY(tick) + 5} text-anchor="end">{tick}</text>
+            </g>
+          ))}
+          <path class="plot-axis" d="M52 105V420H412" />
+          {[0, 20, 40, 60].map((tick) => (
+            <g class="plot-grid">
+              <line x1={plotX(tick)} x2={plotX(tick)} y1="420" y2="426" />
+              <text x={plotX(tick)} y="447" text-anchor="middle">{tick}</text>
+            </g>
+          ))}
+          <text class="axis-title" x="232" y="475" text-anchor="middle">False-alarm rate (%) →</text>
+          {checkingStrategies.map((strategy) => {
+            const placement = {
+              A: { labelX: 90, labelY: 76, anchor: 'start', leader: '80,70 84,70' },
+              B: { labelX: plotX(strategy.fpr), labelY: plotY(strategy.recall) + 27, anchor: 'middle', leader: '' },
+              C: { labelX: 405, labelY: plotY(strategy.recall) + 27, anchor: 'end', leader: '' },
+              D: { labelX: 90, labelY: 212, anchor: 'start', leader: '80,206 84,206' },
+              E: { labelX: 90, labelY: 110, anchor: 'start', leader: '80,104 84,104' },
+            }[strategy.id] ?? strategy;
+            return (
+              <g class:list={{ 'plot-strategy': true, 'plot-primary': strategy.primary }}>
+                {placement.leader && <polyline class="plot-leader" points={`${plotX(strategy.fpr)},${plotY(strategy.recall)} ${placement.leader}`} />}
+                {strategy.primary
+                  ? <rect class="plot-point" x={plotX(strategy.fpr) - 5} y={plotY(strategy.recall) - 5} width="10" height="10" />
+                  : <circle class="plot-point" cx={plotX(strategy.fpr)} cy={plotY(strategy.recall)} r={strategy.id === 'E' ? 3 : 5} />}
+                <text x={placement.labelX} y={placement.labelY} text-anchor={placement.anchor}>{strategy.label}</text>
+              </g>
+            );
+          })}
+        </svg>
+        <p class="chart-note"><strong>Filled squares P and R: pre-registered primary.</strong> Open circles A–E: secondary full censuses. Claude-all and uncapped Llama → Claude nearly overlap at the top left (100% versus 99.6% caught). Letters match the table; the figure shows errors and catches, while the table also shows compute cost.</p>
+      </figure>
+      <p>Qwen alone catches more breaches than the capped two-stage system because it checks all 1,440 runs and its own accusations count. But it cries wolf on <strong>27.5% of clean runs</strong>. Adding Claude after Qwen cuts the false alarms to <strong>1.1%</strong> without a cap, but Claude cannot rescue the <strong>66 breaches Qwen already cleared</strong>; at half budget, some escalations also go unchecked.</p>
+      <p>Llama is the paranoid screen: it sends <strong>92% of runs</strong> to Claude. With no cap it loses only <strong>3 breaches</strong>, but saves just <strong>7% of frontier tokens</strong>. Catching almost everything leaves little checking cost to save.</p>
+    </section>
 
     <section class="story" aria-labelledby="test-title">
       <p class="eyebrow">The question</p>
@@ -119,6 +212,26 @@ const policies = [
   .intro, .story { max-width: 48rem; line-height: 1.85; }
   .intro, .fine, dd, figcaption, .chart-note { color: var(--muted); }
   .story { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--line); }
+  .hypothesis { margin-top: 2rem; }
+  .strategy-table-wrap { overflow-x: auto; margin-top: 1.2rem; }
+  .strategy-table-wrap:focus-visible { outline: 2px solid var(--gold-dark); outline-offset: 4px; }
+  .strategy-table { width: 100%; min-width: 46rem; border-collapse: collapse; font-size: 0.85rem; line-height: 1.6; font-variant-numeric: tabular-nums; }
+  .strategy-table caption { text-align: left; color: var(--muted); padding-bottom: 0.8rem; }
+  .strategy-table th, .strategy-table td { text-align: left; vertical-align: top; padding: 1rem 0.8rem; border-bottom: 1px solid var(--line); }
+  .strategy-table thead th { font-weight: 600; border-top: 1px solid var(--line); }
+  .strategy-table tbody th { min-width: 13rem; font-weight: 400; }
+  .strategy-table td { min-width: 7.5rem; }
+  .strategy-table small { display: block; color: var(--muted); margin-top: 0.3rem; font-size: 0.75rem; }
+  .strategy-table .primary-row { background: var(--moon-bright); }
+  .strategy-table .primary-row th { border-left: 3px solid var(--gold-dark); font-weight: 600; }
+  .tradeoff-plot { display: block; width: 100%; max-width: 36rem; height: auto; margin-inline: auto; overflow: visible; font: 16px var(--sans); }
+  .tradeoff-plot text { fill: var(--ink); }
+  .plot-grid line { stroke: var(--line); }
+  .plot-grid text, .tradeoff-plot .axis-title { fill: var(--muted); }
+  .plot-axis, .plot-leader { fill: none; stroke: var(--muted); stroke-width: 1; }
+  .plot-point { fill: var(--moon-bright); stroke: var(--ink); stroke-width: 1.8; }
+  .plot-primary .plot-point { fill: var(--gold-dark); stroke: var(--gold-dark); }
+  .plot-primary text { font-weight: 700; }
   h2 { font: 400 clamp(1.7rem, 4vw, 2.7rem)/1.18 var(--serif); letter-spacing: -0.03em; margin: 0.4rem 0 1.4rem; }
   .figures { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 2rem; margin-block: 1.5rem 2rem; }
   .figure { display: grid; gap: 0.5rem; margin: 0; padding-block: 1.1rem; border-top: 1px solid var(--line); }
