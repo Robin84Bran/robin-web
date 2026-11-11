@@ -13,7 +13,9 @@ test('both hubs expose every registered weekly experiment without a hidden archi
   for(const e of programme.experiments){
     const route=`/intelligence/${e.id}/`;
     assert.ok(intelligence.includes(`href="${route}"`),route+' missing from library');
-    assert.ok(research.includes(`href="${route}"`),route+' missing from programme');
+    const researchRoute=e.href??route;
+    assert.ok(research.includes(`href="${researchRoute}"`),researchRoute+' missing from programme');
+    assert.ok(existsSync(new URL('../../dist'+researchRoute+'index.html',import.meta.url)),researchRoute+' must resolve');
     assert.ok(existsSync(new URL('../../dist'+route+'index.html',import.meta.url)),route+' must remain playable');
     assert.ok(programme.directions.some(d=>d.id===e.direction));
     assert.match(e.week,/^\d{4}-W\d{2}$/);

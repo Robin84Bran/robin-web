@@ -1,0 +1,285 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const path = '/research/three-rules-one-lunch/';
+const description = 'Three Rules, One Lunch: sharing observations helped every model, but the primary joint test failed. Every local search policy fell below random; Claude shared workers beat the tested scripts.';
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  '@id': `https://iamrobin.ai${path}#article`,
+  headline: 'Three Rules, One Lunch — Sharing helped. The primary test failed.',
+  description,
+  url: `https://iamrobin.ai${path}`,
+  inLanguage: 'en',
+  datePublished: '2026-11-12',
+  author: { '@id': 'https://www.tideisun.com/robin#robin-xie' },
+};
+
+// Sources: three-rules-one-lunch/v0.2/build/analysis-final/{tables,baselines}.csv
+// and v0.2/RESULTS.md. Y is reward / 12,000, including all scheduled slots.
+// Locals are v0.2, seeds 0–99; Claude is the unchanged v0.1 cohort, seeds 0–19.
+const regimes = ['Private', 'Shared', 'Central'];
+const models = [
+  { id: 'qwen7b', name: 'Qwen 2.5 7B', cohort: 'v0.2 · 100 seeds · primary worker comparison', n: 100, y: [0.046675, 0.05374916666666667, 0.1962525], h: [0.05, 0.05583333333333332, 0.20916666666666664], valid: [100, 100, 100] },
+  { id: 'llama8b', name: 'Llama 3.1 8B', cohort: 'v0.2 · 100 seeds · secondary', n: 100, y: [0.0666566666666667, 0.08721833333333333, 0.2372641666666667], h: [0.07416666666666667, 0.09916666666666664, 0.24416666666666678], valid: [100, 100, 100] },
+  { id: 'qwen1b', name: 'Qwen 2.5 1.5B', cohort: 'v0.2 · 100 seeds · secondary', n: 100, y: [0.17612083333333342, 0.19602083333333328, 0.25540083333333324], h: [0.18666666666666665, 0.2108333333333333, 0.27416666666666667], valid: [100, 100, 100] },
+  { id: 'claude', name: 'Claude Opus 5.5', cohort: 'v0.1 retained · 20 seeds · descriptive', n: 20, y: [0.3959625, 0.465675, 0.4247708333333334], h: [0.4708333333333333, 0.5458333333333334, 0.5166666666666667], valid: [20, 20, 17] },
+];
+const baselines = [
+  { name: 'Random', key: 'random', local: 0.3014958333333334, claude: 0.2612 },
+  { name: 'Greedy-private', key: 'greedy-private', local: 0.3107733333333333, claude: 0.31638333333333335 },
+  { name: 'Greedy-shared', key: 'greedy-shared', local: 0.33135583333333335, claude: 0.32405416666666664 },
+];
+const controlsFor = (model: typeof models[number]) => baselines.map((b) => ({ ...b, y: model.n === 20 ? b.claude : b.local }));
+const plotY = (value: number) => 300 - value * 500;
+const fixed = (value: number) => value.toFixed(4);
+const percent = (value: number) => `${(value * 100).toFixed(2)}%`;
+---
+
+<BaseLayout title="Three Rules, One Lunch — Research — Robin Xie" {path} {description} {schema} type="article">
+  <div class="shell research">
+    <a class="quiet-link" href="/research/">← Research</a>
+    <p class="eyebrow">Research · Coordination and delegation · 12 November 2026</p>
+    <h1>Three Rules,<br />One Lunch<br /><em>Sharing helped.<br />The test failed.</em></h1>
+    <p class="lead">More shared evidence helped every model a little.<br />Every local search policy still earned less than random.</p>
+    <p class="intro">Three workers look for food. Each can keep its discoveries private, share them with the others, or give way to one central planner. Sharing raised mean reward for all four models. But the primary joint test failed, the smallest Qwen beat the larger Qwen, and central planning helped every local model. Claude’s shared workers earned more than every tested search script.</p>
+
+    <section class="story hypothesis" aria-labelledby="hypothesis-title">
+      <h2 id="hypothesis-title">Hypothesis</h2>
+      <p>Giving workers one another’s faithful observations helps them earn more reward than keeping each worker’s observations private.</p>
+      <p><strong>Registered primary prediction: Qwen 7B sharing would pass the joint benefit test. It failed.</strong> Mean reward improved, but the interval for productive-query yield included zero. That leaves the joint evidence inconclusive.</p>
+      <p class="chart-note">v0.2 predictions were re-registered after seeing v0.1. Llama and Qwen 1.5B passed their secondary joint calculations; neither replaces the primary. Claude is descriptive, with 20 seeds retained from v0.1.</p>
+    </section>
+
+    <section class="story" aria-labelledby="baselines-title">
+      <p class="eyebrow">Models beside simple scripts</p>
+      <h2 id="baselines-title">A small gain can still leave a large gap.</h2>
+      <p>Shared Qwen 7B earned just <strong>16.2% of greedy-shared’s reward</strong>. Qwen 1.5B reached <strong>59.2%</strong>, beating Qwen 7B in every regime. Central planning improved reward for all three local models, but even their central arms stayed below random.</p>
+
+      <figure class="comparison" aria-describedby="reward-chart-note">
+        <figcaption>Mean reward by model and regime · higher is better</figcaption>
+        <p class="chart-note scale-note">All panels use the same 0–0.50 scale. The full-information oracle is <strong>1.00</strong>, above the plotted range.</p>
+        <div class="chart-grid">
+          {models.map((model) => (
+            <div class="model-panel">
+              <h3>{model.name}</h3>
+              <p class="chart-note cohort">{model.cohort}</p>
+              <svg class="reward-plot" viewBox="0 0 360 345" role="img" aria-labelledby={`${model.id}-title ${model.id}-desc`}>
+                <title id={`${model.id}-title`}>{model.name}: mean reward by regime</title>
+                <desc id={`${model.id}-desc`}>{regimes.map((r, i) => `${r}: ${fixed(model.y[i])}`).join('; ')}. Horizontal script references on the same {model.n} seeds: {controlsFor(model).map((b) => `${b.name}: ${fixed(b.y)}`).join('; ')}. The full-information oracle is 1.00, outside the displayed 0 to 0.50 range. All scheduled opportunities count, including nulls and failures.</desc>
+                <text class="axis-title" x="45" y="23">Mean reward · Y</text>
+                {[0, 0.1, 0.2, 0.3, 0.4, 0.5].map((tick) => (
+                  <g class="plot-grid">
+                    <line x1="45" x2="345" y1={plotY(tick)} y2={plotY(tick)} />
+                    <text x="36" y={plotY(tick) + 5} text-anchor="end">{tick.toFixed(1)}</text>
+                  </g>
+                ))}
+                <path class="plot-axis" d="M45 50V300H345" />
+                {model.y.map((value, i) => (
+                  <g class={`regime regime-${i}`}>
+                    <rect x={72 + i * 96} y={plotY(value)} width="48" height={value * 500} />
+                    <text class="bar-value" x={96 + i * 96} y={plotY(value) - 10} text-anchor="middle">{value.toFixed(3)}</text>
+                    <text x={96 + i * 96} y="327" text-anchor="middle">{regimes[i]}</text>
+                  </g>
+                ))}
+                {controlsFor(model).map((b) => (
+                  <line class={`reference ${b.key}`} x1="45" x2="345" y1={plotY(b.y)} y2={plotY(b.y)} />
+                ))}
+              </svg>
+              <ul class="reference-key" aria-label={`Script reference lines for ${model.name}`}>
+                {controlsFor(model).map((b) => <li><span class={`swatch ${b.key}`} aria-hidden="true"></span><span>{b.name}</span><strong>{fixed(b.y)}</strong></li>)}
+              </ul>
+            </div>
+          ))}
+        </div>
+        <p id="reward-chart-note" class="chart-note">Bars are means, not confidence intervals. Y = total reward / 12,000: mean reward per allowed query divided by 1,000. Multiply Y by 1,000 for raw mean reward. Locals use seeds 0–99; Claude uses 0–19. Reference lines use each model’s exact seed set; their values differ between cohorts.</p>
+      </figure>
+
+      <p><strong>Claude’s shared workers beat every tested script</strong>: Y = <strong>0.4657</strong>, versus 0.3241 for greedy-shared and 0.3404 for greedy-central. The oracle remains higher at 1.00. Claude’s sharing gain was +0.0697, but its 95% interval crossed zero (−0.0004 to +0.1372). These twenty worlds support a descriptive result, not a general superiority claim.</p>
+      <p>The local sharing gains were also available from a simple script. Greedy-shared gained <strong>+0.0206</strong> over greedy-private: about the same point gain as Llama and Qwen 1.5B, and more than Qwen 7B’s +0.0071. Sharing alone establishes no special reasoning mechanism.</p>
+
+      <p id="results-table-note" class="chart-note">All scheduled opportunities remain in the scores. H is the share earning at least 500; intentional nulls and technical or missing slots count as misses. Validity measures reply format and completion, not good search. On a narrow screen, scroll the tables sideways.</p>
+      <div class="strategy-table-wrap" role="region" aria-labelledby="results-caption" aria-describedby="results-table-note" tabindex="0">
+        <table class="strategy-table">
+          <caption id="results-caption">Every model and regime · reward, productive yield and validity</caption>
+          <thead><tr><th scope="col">Model / regime</th><th scope="col">Mean Y</th><th scope="col">Productive H</th><th scope="col">Valid episodes</th><th scope="col">Y / greedy-private</th><th scope="col">Y / greedy-shared</th></tr></thead>
+          <tbody>
+            {models.flatMap((model) => regimes.map((regime, i) => (
+              <tr class:list={{ 'primary-row': model.id === 'qwen7b' && i < 2 }}>
+                <th scope="row">{model.name} · {regime.toLowerCase()}<small>{model.n === 20 ? 'v0.1 · descriptive' : 'v0.2'}</small></th>
+                <td>{fixed(model.y[i])}</td><td>{percent(model.h[i])}</td><td>{model.valid[i]} / {model.n}</td>
+                <td>{(model.y[i] / controlsFor(model)[1].y).toFixed(3)}×</td><td>{(model.y[i] / controlsFor(model)[2].y).toFixed(3)}×</td>
+              </tr>
+            )))}
+          </tbody>
+        </table>
+      </div>
+      <div class="strategy-table-wrap" role="region" aria-labelledby="scripts-caption" tabindex="0">
+        <table class="strategy-table script-table">
+          <caption id="scripts-caption">Code controls · same worlds, no model calls</caption>
+          <thead><tr><th scope="col">Policy</th><th scope="col">Mean Y · 100 local seeds</th><th scope="col">Mean Y · 20 Claude seeds</th></tr></thead>
+          <tbody>
+            {baselines.map((b) => <tr><th scope="row">{b.name}</th><td>{fixed(b.local)}</td><td>{fixed(b.claude)}</td></tr>)}
+            <tr><th scope="row">Greedy-central</th><td>0.3349</td><td>0.3404</td></tr>
+            <tr><th scope="row">All-null</th><td>0.0000</td><td>0.0000</td></tr>
+            <tr><th scope="row">Full-information oracle<small>Privileged ceiling</small></th><td>1.0000</td><td>1.0000</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="chart-note">Random queries uniformly. Greedy policies repeat the best visible receipt, with no reset or decay; central chooses all three slots. The oracle sees the entire current field. It is a ceiling, not a fair search competitor.</p>
+    </section>
+
+    <section class="story" aria-labelledby="test-title">
+      <p class="eyebrow">The question</p>
+      <h2 id="test-title">Who should see a discovery?</h2>
+      <p>The world is a wrapping <strong>8 × 6 grid</strong>. Each episode allows <strong>four rounds and twelve query opportunities</strong>. Food rewards range from 0 to 1,000 and do not run out: finding a good cell and repeating it earns reward again. Before round three, food relocates. Models know relocation will happen, but do not know the new locations or the hidden reward formula.</p>
+      <p>Private workers see only their own earlier query receipts. Shared workers see everyone’s earlier receipts. A central planner sees all earlier receipts and chooses three cells in one call. No one sees another query’s result within the same round. The workers are separate, stateless calls to the same model; they do not chat.</p>
+      <p>Each local model ran all three regimes on the same 100 worlds. Claude’s earlier twenty-world cohort was retained once, without new frontier calls. Central used <strong>400 local calls per model</strong>, versus <strong>1,200 per worker regime</strong>. Its output quota, histories and token use also differ, so equal query opportunities do not mean equal compute.</p>
+    </section>
+
+    <section class="story" aria-labelledby="result-title">
+      <p class="eyebrow">The result · registered primary</p>
+      <h2 id="result-title">Reward rose. Productive yield was inconclusive.</h2>
+      <div class="figures">
+        <p class="figure"><strong>+0.007074</strong><span>Qwen 7B shared − private reward Y<br />95% interval +0.001811 to +0.012940</span></p>
+        <p class="figure"><strong>+0.005833</strong><span>Qwen 7B shared − private productive yield H<br />95% interval −0.001667 to +0.013333</span></p>
+      </div>
+      <p>The joint rule required positive lower bounds for <strong>both</strong> reward and productive yield. The second interval includes zero, so the primary failed. All technical gates passed: both worker arms had 100 valid episodes and all 100 pairs were complete. Formatting no longer prevented an answer; the evidence did not establish the entire benefit claim.</p>
+      <details>
+        <summary>The registered rule and interval method</summary>
+        <p>Both 95% lower bounds had to exceed zero; each worker regime needed at least 95 valid episodes, all 200 had to be attempted, at least 95 pairs had to be technically complete, and the complete-pair reward interval also needed a positive lower bound. Complete-pair and all-slot reward intervals were identical here.</p>
+        <p>The frozen analysis used 10,000 paired seed-block bootstrap draws, keeping within-seed outcomes together and repeated blocks repeated. These intervals describe variation over this synthetic generator and the saved first responses. They do not cover all model-sampling uncertainty or real deployments.</p>
+      </details>
+    </section>
+
+    <section class="story" aria-labelledby="format-title">
+      <p class="eyebrow">v0.1 → v0.2</p>
+      <h2 id="format-title">Valid actions can still do very little.</h2>
+      <p>v0.1 used local JSON mode. Qwen 7B and Llama’s worker regimes had <strong>zero valid episodes</strong>; Qwen 1.5B had 0/100 private and 1/100 shared. The original primary was blocked by the interface. Those failed outputs remain in the record.</p>
+      <p>v0.2 made one change: local calls used the <strong>exact JSON Schema for constrained decoding</strong>, replacing generic JSON mode. Prompts, seeds, scoring, validator and analysis stayed fixed. All <strong>900 local episodes</strong> completed validly. Claude already used schema-constrained output; its <strong>60 v0.1 episodes</strong> were retained, with 20 seeds per regime and 17/20 valid central episodes.</p>
+      <p>But Qwen 7B’s private/shared workers deliberately skipped <strong>83.9% / 82.0%</strong> of opportunities with valid null actions. Llama skipped <strong>77.8% / 70.7%</strong>. The smaller Qwen acted more often and earned more. Validity is an interface result, not a search success rate. The version comparison is post hoc, not a randomized test of decoding.</p>
+    </section>
+
+    <section class="story" aria-labelledby="relocation-title">
+      <p class="eyebrow">After the food moves · descriptive</p>
+      <h2 id="relocation-title">Shared memory can also go stale.</h2>
+      <p>The simple shared greedy gained overall, but earned less after relocation than greedy-private: <strong>0.2389 versus 0.3162</strong> on the 100 local worlds. It kept old receipts without a phase reset. That pattern is consistent with stale memory in this particular script; no improved adaptive script was tested.</p>
+      <p>Qwen 7B workers never queried a true old peak after relocation, yet shared post-relocation reward was just <strong>0.0113</strong>. Avoiding old peaks while mostly skipping queries is weak evidence of adaptation. Claude shared revisited true old peaks nine times versus four privately, but revisited its best <em>observed</em> old cells four times versus sixteen privately. Those are different measures, not established causes of reward.</p>
+    </section>
+
+    <section class="story" aria-labelledby="predictions-title">
+      <p class="eyebrow">Predictions stay visible</p>
+      <h2 id="predictions-title">The smaller model broke the forecast.</h2>
+      <p>These directions were registered again after v0.1 was known. Claude’s sharing result was already observed; the all-model validity forecast was already known to fail.</p>
+      <div class="strategy-table-wrap" role="region" aria-labelledby="predictions-caption" tabindex="0">
+        <table class="strategy-table prediction-table">
+          <caption id="predictions-caption">All seven predictions · original and combined outcomes</caption>
+          <thead><tr><th scope="col">Prediction</th><th scope="col">v0.1</th><th scope="col">v0.2 combined</th></tr></thead>
+          <tbody>
+            <tr class="primary-row"><th scope="row">P1 · Qwen 7B sharing passes the joint rule</th><td>Failed</td><td>Failed · productive-yield interval includes zero.</td></tr>
+            <tr><th scope="row">P2 · Llama sharing raises Y and H</th><td>Failed</td><td>Held · +0.020562 Y and +0.025000 H; secondary intervals positive.</td></tr>
+            <tr><th scope="row">P3 · Central ≥ shared reward in Qwen 7B and Llama</th><td>Held</td><td>Held · +0.142503 and +0.150046 Y.</td></tr>
+            <tr><th scope="row">P4 · Shared beats private after relocation in both larger locals</th><td>Failed</td><td>Held · +0.006597 and +0.031283 post-Y.</td></tr>
+            <tr><th scope="row">P5 · Qwen 1.5B shared earns less than Qwen 7B shared</th><td>Failed</td><td>Failed · 0.1960 is greater than 0.0537.</td></tr>
+            <tr><th scope="row">P6 · Claude shared earns more than private</th><td>Held</td><td>Held descriptively · already observed; interval crosses zero.</td></tr>
+            <tr><th scope="row">P7 · Every model/regime has ≥95% valid episodes</th><td>Failed</td><td>Failed · locals 900/900; retained Claude central 17/20 (85%).</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="story" aria-labelledby="integrity-title">
+      <p class="eyebrow">How the record holds up</p>
+      <h2 id="integrity-title">The failed version stays beside the follow-up.</h2>
+      <dl>
+        <dt>900 new local episodes · 60 retained Claude episodes</dt>
+        <dd>All 960 scheduled outcomes remain; 957 are valid whole episodes. Claude central retains one harness-caused loss and two generated output-limit failures. Nothing was regenerated to improve those scores.</dd>
+        <dt>USD 7.09 in model-call accounting</dt>
+        <dd>Total historical settled accounting is USD 7.089251, including failed paid calls. v0.2 added USD 0 in paid calls. This is conservative saved CLI/token accounting, not verified cash billing. Local hardware, energy and subscription opportunity costs were not priced.</dd>
+        <dt>Frozen inputs · reproducible outputs</dt>
+        <dd>Scientific inputs were frozen before their collections. A fresh copied-evidence rebuild reproduced all seven v0.2 outputs and all five original v0.1 outputs byte for byte. Original v0.1 files and the frozen v0.2 inputs remain intact.</dd>
+        <dt>One follow-up, then stop</dt>
+        <dd>v0.2 followed the disclosed interface failure. Predictions informed by those results remain labelled; there was no further round to pursue a pass.</dd>
+      </dl>
+    </section>
+
+    <section class="story" aria-labelledby="limits-title">
+      <p class="eyebrow">Where this stops</p>
+      <h2 id="limits-title">A small search world, not a general law of teams.</h2>
+      <p>These deterministic, smooth, non-depleting worlds have 48 cells, no movement cost, no collisions and announced relocation. Repeated queries earn again. Real teams face constraints this world omits. Workers are stateless copies of one model, not independently trained agents.</p>
+      <p>Central planning changes calls, quotas, histories and tokens as well as the decision structure. It establishes no equal-compute or equal-dollar advantage. The three local models reuse the same hundred worlds; Claude uses only the first twenty and comes from an earlier collection.</p>
+      <p>The gains and baseline comparisons establish no internal reasoning mechanism. Post hoc interpretations of null actions and stale memory remain hypotheses. Secondary successes cannot rescue the primary failure, and Claude’s descriptive script advantage does not establish a general frontier-model advantage.</p>
+      <p class="fine">Built with Codex; reviewed by Claude. Values follow the combined v0.2 results report and frozen tables, with the original Claude cohort retained once. Version comparisons and behavioral interpretations are post hoc. Full phase tables, intervals, deviations and all twenty Claude seeds are in the study record.</p>
+      <div class="next-links">
+        <a href="https://github.com/Robin84Bran/research">Research repository on GitHub →</a>
+        <a href="/intelligence/three-rule-swarm/">Play the original Three Rules, One Lunch seed →</a>
+        <a href="/research/signal-or-silence/">Read Signal or Silence →</a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .research { padding-block: 3rem 5rem; }
+  .research > .eyebrow { margin-top: 3rem; }
+  h1 { font: 400 clamp(2.6rem, 7vw, 6rem)/1.03 var(--serif); letter-spacing: -0.05em; margin: 1.5rem 0; }
+  h1 em { color: var(--gold-dark); }
+  .lead { font: 400 clamp(1.3rem, 3vw, 2rem)/1.45 var(--serif); }
+  .intro, .story { max-width: 48rem; line-height: 1.85; }
+  .intro, .fine, dd, figcaption, .chart-note { color: var(--muted); }
+  .story { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--line); }
+  .hypothesis { margin-top: 2rem; }
+  h2 { font: 400 clamp(1.7rem, 4vw, 2.7rem)/1.18 var(--serif); letter-spacing: -0.03em; margin: 0.4rem 0 1.4rem; }
+  .figures { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 2rem; margin-block: 1.5rem 2rem; }
+  .figure { display: grid; gap: 0.5rem; margin: 0; padding-block: 1.1rem; border-top: 1px solid var(--line); }
+  .figure strong { font: 400 clamp(1.8rem, 4vw, 2.8rem)/1.15 var(--serif); letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+  .figure span { color: var(--muted); font-size: 0.86rem; line-height: 1.6; }
+  .comparison { margin: 2rem 0; padding: clamp(0.75rem, 2vw, 1.4rem); border: 1px solid var(--line); background: var(--moon-bright); }
+  figcaption { font-size: 0.9rem; margin-bottom: 0.5rem; }
+  .chart-note { font-size: 0.8rem; line-height: 1.6; }
+  .scale-note { margin-top: 0; }
+  .chart-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem 1.5rem; margin-block: 1.5rem; }
+  .model-panel { min-width: 0; }
+  .model-panel h3 { margin: 0; font-size: 1rem; font-weight: 600; }
+  .cohort { min-height: 2.6em; margin: 0.25rem 0 0; }
+  .reward-plot { display: block; width: 100%; max-width: 24rem; height: auto; margin-inline: auto; font: 16px var(--sans); font-variant-numeric: tabular-nums; }
+  .reward-plot text { fill: var(--ink); }
+  .plot-grid line { stroke: var(--line); }
+  .plot-grid text, .reward-plot .axis-title { fill: var(--muted); }
+  .plot-axis { fill: none; stroke: var(--muted); }
+  .regime-0 rect { fill: var(--muted); }
+  .regime-1 rect { fill: var(--gold-dark); }
+  .regime-2 rect { fill: var(--ink); }
+  .bar-value { font-weight: 600; }
+  .reference { stroke: var(--ink); stroke-width: 1.5; fill: none; }
+  .reference.random { stroke-dasharray: 2 4; }
+  .reference.greedy-private { stroke-dasharray: 8 4; }
+  .reference-key { list-style: none; margin: 0; padding: 0; font-size: 0.8rem; line-height: 1.7; }
+  .reference-key li { display: grid; grid-template-columns: 2rem 1fr auto; align-items: center; gap: 0.5rem; }
+  .reference-key strong { font-weight: 400; font-variant-numeric: tabular-nums; }
+  .swatch { border-top: 2px solid var(--ink); }
+  .swatch.random { border-top-style: dotted; }
+  .swatch.greedy-private { border-top-style: dashed; }
+  .strategy-table-wrap { max-width: 100%; overflow-x: auto; margin-top: 1.2rem; }
+  .strategy-table-wrap:focus-visible { outline: 2px solid var(--gold-dark); outline-offset: 4px; }
+  .strategy-table { width: 100%; min-width: 48rem; border-collapse: collapse; font-size: 0.85rem; line-height: 1.6; font-variant-numeric: tabular-nums; }
+  .strategy-table caption { text-align: left; color: var(--muted); padding-bottom: 0.8rem; }
+  .strategy-table th, .strategy-table td { text-align: left; vertical-align: top; padding: 1rem 0.8rem; border-bottom: 1px solid var(--line); }
+  .strategy-table thead th { font-weight: 600; border-top: 1px solid var(--line); }
+  .strategy-table tbody th { min-width: 13rem; font-weight: 400; }
+  .strategy-table small { display: block; color: var(--muted); margin-top: 0.3rem; font-size: 0.75rem; }
+  .strategy-table .primary-row { background: var(--moon-bright); }
+  .strategy-table .primary-row th { border-left: 3px solid var(--gold-dark); font-weight: 600; }
+  .script-table, .prediction-table { min-width: 38rem; }
+  details { margin-top: 1.5rem; border-block: 1px solid var(--line); padding-block: 1rem; font-size: 0.9rem; }
+  summary { cursor: pointer; font-weight: 600; }
+  details p { margin: 1rem 0 0; }
+  dt { font-weight: 600; margin-top: 1.2rem; }
+  dd { margin-left: 0; }
+  .fine { font-size: 0.85rem; line-height: 1.7; }
+  .next-links { display: flex; flex-wrap: wrap; gap: 1rem 2rem; padding-top: 1rem; color: var(--gold-dark); }
+  @media (max-width: 650px) {
+    .figures, .chart-grid { grid-template-columns: 1fr; }
+    .cohort { min-height: 0; }
+  }
+</style>
