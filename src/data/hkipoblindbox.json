@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-05T01:00:48.463997+00:00",
+  "generated_at": "2026-11-11T09:29:29.839218+00:00",
   "money_mode": "SIMULATED",
   "forecasts": [
     {
@@ -257,7 +257,12 @@
         0.16310066161094977
       ],
       "target_return": 0.1,
-      "score": null
+      "score": {
+        "exact_hit": false,
+        "brier": 0.9405830612415306,
+        "target_touched": true,
+        "ordinal_partial_credit": 0.33333333333333337
+      }
     },
     {
       "case_id": "HKEX-PENDING-00054-8b49c42e",
@@ -334,7 +339,7 @@
     {
       "case_id": "HKEX-PENDING-02065-57e5cb12",
       "stock_code": "02065",
-      "issuer_name": "Amicro Technology Co., Ltd.",
+      "issuer_name": "Amicro Technology Co., Ltd",
       "listing_date": "2026-11-12",
       "mode": "FORWARD",
       "frozen_at": "2026-10-31T01:47:33.899920+00:00",
@@ -352,7 +357,7 @@
     {
       "case_id": "HKEX-PENDING-06935-a64987fb",
       "stock_code": "06935",
-      "issuer_name": "ADASPACE",
+      "issuer_name": "Adaspace Technology Co., Ltd.",
       "listing_date": "2026-11-13",
       "mode": "FORWARD",
       "frozen_at": "2026-11-05T01:00:34.295791+00:00",
