@@ -4,12 +4,13 @@ import {readFileSync,existsSync} from 'node:fs';
 const read=p=>readFileSync(new URL('../../'+p,import.meta.url),'utf8');
 const discovery=JSON.parse(read('src/data/intelligence-discovery.json'));
 const catalogue=JSON.parse(read('public/agent-swarm/catalog.json'));
+const programme=JSON.parse(read('src/data/research-programme.json'));
 const html=read('dist/intelligence/index.html');
 test('five sections preserve the weekly collection and expose all discovery paths',()=>{
   const ids=['experiments','open-council','supply-chain','the-swarm','field-guides'];
   let previous=-1;
   for(const id of ids){const position=html.indexOf(`id="${id}"`);assert.ok(position>previous,id);previous=position;assert.ok(html.includes(`href="#${id}"`));}
-  assert.equal((html.match(/data-weekly-experiment=/g)||[]).length,8);
+  assert.equal((html.match(/data-weekly-experiment=/g)||[]).length,programme.experiments.length);
   const worlds=discovery.themes.flatMap(t=>t.worlds);
   assert.equal(worlds.length,15);assert.equal(new Set(worlds.map(w=>w.id)).size,15);
   for(const item of [...worlds,...discovery.levels,...discovery.guides]){
