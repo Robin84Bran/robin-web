@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">When does the AI factory clock start?</title>
+  <desc id="desc">A timeline connecting contract, site work and a running workload.</desc>
+  <rect width="1200" height="630" fill="#f3f0e8"/>
+  <path d="M0 110H1200M0 490H1200M135 0V630M1065 0V630" stroke="#d8d3c7" stroke-width="1"/>
+  <text x="135" y="92" fill="#857d70" font-family="Arial, Helvetica, sans-serif" font-size="17" letter-spacing="4">DAILY SPECIAL · SIGNAL 6</text>
+  <text x="135" y="210" fill="#171716" font-family="Georgia, Times New Roman, serif" font-size="59">When does the AI factory</text>
+  <text x="135" y="280" fill="#171716" font-family="Georgia, Times New Roman, serif" font-size="59">clock start?</text>
+  <line x1="180" y1="395" x2="1020" y2="395" stroke="#252522" stroke-width="3"/>
+  <circle cx="180" cy="395" r="11" fill="#6b5cff"/>
+  <circle cx="600" cy="395" r="11" fill="#f0a34a"/>
+  <circle cx="1020" cy="395" r="11" fill="#23936f"/>
+  <text x="180" y="438" text-anchor="middle" fill="#393733" font-family="Arial, Helvetica, sans-serif" font-size="18">CONTRACT</text>
+  <text x="600" y="438" text-anchor="middle" fill="#393733" font-family="Arial, Helvetica, sans-serif" font-size="18">SITE WORK</text>
+  <text x="1020" y="438" text-anchor="middle" fill="#393733" font-family="Arial, Helvetica, sans-serif" font-size="18">RUNNING WORKLOAD</text>
+  <text x="135" y="555" fill="#171716" font-family="Georgia, Times New Roman, serif" font-size="28">12–16 weeks needs two dated endpoints.</text>
+  <text x="1065" y="590" text-anchor="end" fill="#857d70" font-family="Arial, Helvetica, sans-serif" font-size="15" letter-spacing="2">IAMROBIN.AI · 12 NOV 2026</text>
+</svg>
