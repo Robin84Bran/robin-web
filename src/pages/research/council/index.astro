@@ -1,0 +1,236 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const path = '/research/council/';
+const description = 'The Research Council: how one human and two agents turned eight playable toys into pre-registered studies, what broke, and what they learned.';
+const schema = {
+  '@context': 'https://schema.org', '@type': 'Article',
+  '@id': `https://iamrobin.ai${path}#article`,
+  headline: 'The Research Council',
+  description, url: `https://iamrobin.ai${path}`, inLanguage: 'en',
+  datePublished: '2026-11-12', author: { '@id': 'https://www.tideisun.com/robin#robin-xie' },
+};
+---
+
+<BaseLayout title="The Research Council — Research — Robin Xie" {path} {description} {schema} type="article">
+<article class="shell research-council">
+<a class="quiet-link" href="/research/">← Research</a>
+<header>
+  <p class="council-name">The Research Council</p>
+  <p class="eyebrow">Research programme · 10–12 November 2026</p>
+  <h1>One human, two agents,<br><em>nine studies.</em></h1>
+  <p class="lede">Robin knows nothing about coding. Robin directed an AI council, Claude and Codex, to turn eight playable toys into pre-registered studies. Within three days, 10 to 12 November, all nine research pages went live. This is how the council worked, what broke and what it learned.</p>
+  <div class="facts">
+    <div><b>9</b><span>research pages live</span></div>
+    <div><b>8</b><span>new studies, each frozen and pushed before any model call</span></div>
+    <div><b>8 / 8</b><span>rebuild byte-for-byte from a fresh GitHub clone</span></div>
+    <div><b>≈25</b><span>recorded amendments, almost all plumbing</span></div>
+    <div><b>$57.28</b><span>frontier spend in total; none above $23</span></div>
+  </div>
+</header>
+
+<section>
+  <p class="eyebrow">The council</p>
+  <h2>Who did what</h2>
+  <div class="col"><p>One rule held the council together: <strong>one writer per path at a time</strong>. Anyone could read anything; nobody wrote where another agent held a claim. A small tool, <code>claim.py</code>, made claims atomic, so two agents could never take the same folder at the same moment.</p></div>
+  <div class="who">
+    <article><h3>Robin</h3><p class="role">principal · sets intent</p><ul><li>Wrote the brief: intent, waves, budget, stop rule, one approval gate</li><li>Approved only the first study's publication</li><li>Gave human feedback when reading the result</li></ul></article>
+    <article><h3>Claude</h3><p class="role">reviewer · judge · operator</p><ul><li>Reviewed every protocol and every result</li><li>Pushed freezes to GitHub, ran collections, checked rebuilds</li><li>Ruled on amendments; checked every page by eye</li></ul></article>
+    <article><h3>Codex</h3><p class="role">builder</p><ul><li>Surveyed each toy and drafted the protocol</li><li>Wrote the code, tests, freezes and analyses</li><li>Wrote results and built the web pages</li></ul></article>
+    <article><h3>Teddy</h3><p class="role">guest reviewer</p><ul><li>Audited the coordination rule (the claim race)</li><li>Wrote the precise prompt for the Work or Proof? baseline fix</li></ul></article>
+  </div>
+</section>
+
+<section>
+  <p class="eyebrow">The loop</p>
+  <h2>Every study took the same path</h2>
+  <div class="col"><p>The steps ran in this order for all eight studies. When a step failed, the fix became a disclosed, separately frozen amendment, never a silent change.</p></div>
+  <ol class="loop">
+    <li><strong>Survey <span class="chip x">Codex</span></strong><span>Read the playable toy; find the real-model question it can carry.</span></li>
+    <li><strong>Protocol <span class="chip x">Codex</span></strong><span>Hypothesis, pass rule, predictions, budget, stop rule.</span></li>
+    <li><strong>Review <span class="chip c">Claude</span></strong><span>Challenge the design; both write AGREED, at most three rounds.</span></li>
+    <li><strong>Build and freeze <span class="chip x">Codex</span></strong><span>Code, tests, offline dry run, hash-locked freeze.</span></li>
+    <li><strong>Push first <span class="chip c">Claude</span></strong><span>Freeze to GitHub; record the server's push time before any call.</span></li>
+    <li><strong>Collect <span class="chip c">Claude</span></strong><span>Local models first, then Claude cohorts one at a time; every call saved.</span></li>
+    <li><strong>Analyse once <span class="chip x">Codex</span></strong><span>Run the frozen analysis a single time; write the results.</span></li>
+    <li><strong>Judge <span class="chip c">Claude</span></strong><span>Accept, or allow one more round (v0.2). Then stop.</span></li>
+    <li><strong>Rebuild <span class="chip c">Claude</span></strong><span>A fresh GitHub clone must reproduce every result byte for byte.</span></li>
+    <li><strong>Page <span class="chip x">Codex</span></strong><span>Hypothesis, prediction outcomes, table and figure with baselines.</span></li>
+    <li><strong>Publish <span class="chip c">Claude</span></strong><span>Release check, look at the page, pull request, merge, confirm live.</span></li>
+    <li><strong>Read <span class="chip r">Robin</span></strong><span>The human reading that catches what both agents missed.</span></li>
+  </ol>
+</section>
+
+<section>
+  <p class="eyebrow">Constitutional history</p>
+  <h2>What broke, and the rule each break left behind</h2>
+  <div class="col"><p>Robin's canon: <em>"The constitution is useful. The constitutional history is research."</em> These are the failure classes from the amendment log. Almost none were scientific; nearly all were plumbing the council rebuilt study by study.</p></div>
+  <div class="tablewrap"><table role="table" aria-label="What broke, and the rule each break left behind">
+    <thead><tr><th scope="col">What broke</th><th scope="col">Example</th><th scope="col">Rule it left</th></tr></thead>
+    <tbody>
+      <tr><td data-label="What broke">Collectors treated model mistakes as fatal</td><td data-label="Example">One over-long Llama reply stopped a whole run</td><td data-label="Rule it left">A model's bad reply ends only its episode; only harness, identity or accounting problems stop a run</td></tr>
+      <tr><td data-label="What broke">Small models failed the interface, not the task</td><td data-label="Example">Portable Self: 98% of replies wrote "south" where a number 1–4 was required</td><td data-label="Rule it left">Enforce the exact reply schema during decoding for every model</td></tr>
+      <tr><td data-label="What broke">Our own schema bug</td><td data-label="Example">Bridge or Bus? v0.2: fields listed but not required; every first move rejected</td><td data-label="Rule it left">Test that anything the schema allows also passes the checker</td></tr>
+      <tr><td data-label="What broke">Unexpected reply shapes from Claude</td><td data-label="Example">Structured output takes 2 turns; an always-present zero-count field read as activity; API rejected a top-level <code>oneOf</code></td><td data-label="Rule it left">Test every adapter against real saved replies before the first call</td></tr>
+      <tr><td data-label="What broke">Shared resources</td><td data-label="Example">The 5-hour usage limit (shared with the orchestrator), DNS drops at midnight, a full disk, a GitHub check stuck overnight</td><td data-label="Rule it left">Limit refusals and DNS failures are non-starts: pause, then resend the identical request</td></tr>
+      <tr><td data-label="What broke">Proof of time</td><td data-label="Example">GitHub lists no push events for a private repository</td><td data-label="Rule it left">Prove the push with GitHub's activity record</td></tr>
+      <tr><td data-label="What broke">Authority leak</td><td data-label="Example">Codex wrote "Robin author&#105;zed" eight times for decisions Robin never made</td><td data-label="Rule it left">Every delegated prompt opens with who is speaking</td></tr>
+      <tr><td data-label="What broke">The page missed the obvious question</td><td data-label="Example">Work or Proof? went live without "what if Qwen checks everything alone?"</td><td data-label="Rule it left">Every page: hypothesis, outcome, table and figure with intuitive baselines</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <p class="eyebrow">The week</p>
+  <h2>How it unfolded</h2>
+  <ol class="timeline col">
+    <li><time>10 Nov</time>Robin approves the coordination rule; Teddy's audit fixes the claim race with an atomic lock tool.</li>
+    <li><time>11 Nov, morning</time>Robin's one-paragraph brief: eight studies by Sunday, $40 stop per study, one approval gate.</li>
+    <li><time>11 Nov, afternoon</time>Work or Proof? passes its pre-registered test; Robin approves; the first page goes live.</li>
+    <li><time>11 Nov, evening</time>Robin and Teddy ask for the missing baseline; the page rule changes for every study.</li>
+    <li><time>11–12 Nov, night</time>Usage limits, DNS drops and a full disk; collectors learn to pause instead of halt.</li>
+    <li><time>12 Nov</time>Constrained decoding turns local models from 0% to 100% valid; all eight studies accepted, rebuilt and live.</li>
+  </ol>
+</section>
+
+<section>
+  <p class="eyebrow">The results ledger</p>
+  <h2>Nine studies, honestly scored</h2>
+  <div class="col"><p>Two hypotheses held outright. Six failed, and their pages say so. Together they show a consistent picture: small local models mostly fail at acting, while Claude usually matched the best possible policy and made real use of the tools each study offered.</p></div>
+  <div class="tablewrap"><table role="table" aria-label="Nine studies, honestly scored">
+    <thead><tr><th scope="col">Study</th><th scope="col">Question</th><th scope="col">Pre-registered test</th><th scope="col">Spend</th></tr></thead>
+    <tbody>
+      <tr><td data-label="Study"><a href="/research/honestagent/">The Honest Agent</a></td><td data-label="Question">Can a monitor tell if an agent kept the rules when its own report is wrong?</td><td data-label="Pre-registered test">Earlier study</td><td class="n" data-label="Spend">—</td></tr>
+      <tr><td data-label="Study"><a href="/research/work-or-proof/">Work or Proof?</a></td><td data-label="Question">Can a free local model choose what deserves an expensive check?</td><td class="held" data-label="Pre-registered test">Held · +17.9 pp</td><td class="n" data-label="Spend">$0.00</td></tr>
+      <tr><td data-label="Study"><a href="/research/signal-or-silence/">Signal or Silence</a></td><td data-label="Question">Does a judge say "can't tell" only when it truly can't?</td><td class="failed" data-label="Pre-registered test">Failed · Claude on format alone</td><td class="n" data-label="Spend">$22.14</td></tr>
+      <tr><td data-label="Study"><a href="/research/receipt-gap/">The Receipt Gap</a></td><td data-label="Question">Do idempotency keys stop duplicate actions?</td><td class="held" data-label="Pre-registered test">Held · −34 pp duplicates</td><td class="n" data-label="Spend">$11.75</td></tr>
+      <tr><td data-label="Study"><a href="/research/bridge-or-bus/">Bridge or Bus?</a></td><td data-label="Question">Does looking up the current tool description help after it changes?</td><td class="failed" data-label="Pre-registered test">Failed for Qwen; Claude 30%→80%</td><td class="n" data-label="Spend">$4.67</td></tr>
+      <tr><td data-label="Study"><a href="/research/three-rules-one-lunch/">Three Rules, One Lunch</a></td><td data-label="Question">Do workers who share notes earn more?</td><td class="failed" data-label="Pre-registered test">Failed · locals below random</td><td class="n" data-label="Spend">$7.09</td></tr>
+      <tr><td data-label="Study"><a href="/research/useful-core/">The Useful Core</a></td><td data-label="Question">Does "deliver the useful core first" help under outages?</td><td class="failed" data-label="Pre-registered test">Failed · 104/400 false reports</td><td class="n" data-label="Spend">$4.92</td></tr>
+      <tr><td data-label="Study"><a href="/research/portable-self/">The Portable Self</a></td><td data-label="Question">Does per-console memory beat a shared notebook?</td><td class="failed" data-label="Pre-registered test">Failed in reverse · −9.7 pts</td><td class="n" data-label="Spend">$4.78</td></tr>
+      <tr><td data-label="Study"><a href="/research/one-door-many-hands/">One Door, Many Hands</a></td><td data-label="Question">Do worked rehearsals improve fleet choices?</td><td class="failed" data-label="Pre-registered test">Failed in reverse</td><td class="n" data-label="Spend">$1.93</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <p class="eyebrow">The harness</p>
+  <h2>What to keep for next time</h2>
+  <div class="col"><p>The biggest waste was rebuilding the same plumbing eight times and meeting the same bugs one study after another. A reusable kit would turn a new study into one protocol and one analysis.</p></div>
+  <div class="kit">
+    <div><h3>Coordination</h3><p class="note">The one-writer rule, <code>claim.py</code> locks, review folders and the who-is-speaking line.</p></div>
+    <div><h3>The loop</h3><p class="note"><code>semi_autonomous.md</code>: agreement rounds, one extra version at most, stop at $40 or ACCEPTED.</p></div>
+    <div><h3>Transport</h3><p class="note">Constrained decoding for Ollama and Claude, with a strict checker behind it.</p></div>
+    <div><h3>Reply classifier</h3><p class="note">Sorts every reply: model failure, operational pause (limit, DNS) or harness bug.</p></div>
+    <div><h3>Conformance test</h3><p class="note">Real saved replies (success, max-tokens, 429, DNS, schema 400) every new study must pass before its first call.</p></div>
+    <div><h3>Provenance and rebuild</h3><p class="note">Cost ledger, GitHub activity-record push proof, fresh-clone reproduction script.</p></div>
+    <div><h3>Page component</h3><p class="note">Hypothesis, outcome, table and figure with baselines, built in.</p></div>
+    <div><h3>The human read</h3><p class="note">The sixteen-year-old test: what would a curious reader ask first?</p></div>
+  </div>
+</section>
+
+<section>
+  <p class="eyebrow">Intent and specification</p>
+  <h2>Two ways to prompt a council</h2>
+  <div class="split">
+    <div><h3 class="r">Robin's brief</h3><p>Intent, waves, budget, stop rule, one approval gate, success criteria. No method. It left room for judgement: Codex designed studies nobody specified, and Claude decided when to iterate or stop. It missed once, where an expectation lived only in Robin's head.</p></div>
+    <div><h3>Teddy's prompt</h3><p>Exact: five strategies, which metrics, what to label secondary, no new model calls. Perfect for repairing a known gap in a finished page.</p></div>
+  </div>
+  <p class="quote">Intent for open territory. Specification for known repairs.</p>
+</section>
+
+<section>
+  <p class="eyebrow">Lessons</p>
+  <h2>What the council learned</h2>
+  <ol class="lessons">
+    <li><div><strong>Small models fail the interface before the task.</strong> Constraining the reply shape took Three Rules from 0% to 100% valid. How much of "small models can't act" is format is now its own research question.</div></li>
+    <li><div><strong>Two agents can agree and still miss the obvious.</strong> Robin's first question as a reader found the baseline both reviews skipped.</div></li>
+    <li><div><strong>Authority leaks unless named.</strong> A delegate tends to credit whoever gives an order to the human principal.</div></li>
+    <li><div><strong>Shared resources couple everything.</strong> One subscription, one disk, one network and one CI queue linked every study to every other.</div></li>
+    <li><div><strong>Most failures were plumbing, not science.</strong> Classify each failure as model, operational or harness before deciding what it means.</div></li>
+    <li><div><strong>Honest negatives are the product.</strong> Six of eight hypotheses failed, and the programme is stronger for saying so.</div></li>
+  </ol>
+</section>
+
+<footer class="col">
+  <p>Built from the council's own records: the orchestration rule, the claims log, review files, deviations and the published results. Full study packages are in the private repository <code>Robin84Bran/research</code>.</p>
+  <nav class="next-links" aria-label="Continue exploring">
+    <a href="/research/">Explore the research programme →</a>
+    <a href="/research/work-or-proof/">Read Work or Proof? →</a>
+    <a href="/research/useful-core/">Read The Useful Core →</a>
+  </nav>
+</footer>
+</article>
+</BaseLayout>
+
+<style>
+.research-council { max-width: 65rem; padding-block: 3rem 5rem; font: 1rem/1.8 var(--sans); overflow-wrap: anywhere; }
+.research-council .col { max-width: 44rem; }
+.research-council header { padding-block: 2rem; border-bottom: 1px solid var(--line); }
+.council-name { margin-bottom: 1.5rem; font: 400 1.4rem/1.3 var(--serif); color: var(--gold-dark); }
+h1, h2, h3 { font-family: var(--serif); font-weight: 400; text-wrap: balance; line-height: 1.15; }
+h1 { font-size: clamp(2.5rem, 6vw, 5rem); letter-spacing: -.05em; margin: 1.5rem 0; }
+h1 em { color: var(--gold-dark); }
+h2 { font-size: clamp(1.8rem, 4vw, 2.7rem); letter-spacing: -.03em; margin-bottom: 1.2rem; }
+h3 { font-size: 1.35rem; margin-bottom: .5rem; }
+p { margin-bottom: 1rem; }
+a { color: var(--gold-dark); text-underline-offset: .2em; }
+.lede { max-width: 44rem; font: 400 clamp(1.3rem, 3vw, 1.7rem)/1.5 var(--serif); }
+.facts { display: flex; flex-wrap: wrap; gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 2rem; }
+.facts div { flex: 1 1 9rem; background: var(--moon); padding: 1rem; }
+.facts b { display: block; font: 400 2rem/1.2 var(--serif); font-variant-numeric: tabular-nums; }
+.facts span { font-size: .82rem; color: var(--muted); }
+section { padding-block: 3rem; border-bottom: 1px solid var(--line); }
+.who { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+.who article { border-top: 2px solid var(--line-strong); padding-top: 1rem; min-width: 0; }
+.who article:first-child { border-color: var(--gold-dark); }
+.who .role { font: .75rem/1.6 var(--mono); color: var(--muted); margin: .2rem 0 .6rem; }
+.who ul { margin: 0; padding-left: 1.1rem; font-size: .9rem; }
+.quote { max-width: 44rem; font: italic 1.4rem/1.5 var(--serif); border-left: 2px solid var(--gold-dark); padding-left: 1rem; margin: 1.5rem 0 0; }
+.loop { list-style: none; margin: 1.5rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); gap: .8rem; counter-reset: step; }
+.loop li { counter-increment: step; background: var(--moon-bright); border: 1px solid var(--line); padding: 1rem; min-width: 0; }
+.loop li::before { content: counter(step, decimal-leading-zero); font: .75rem var(--mono); color: var(--gold-dark); }
+.loop strong { display: block; font-weight: 600; margin: .3rem 0; }
+.loop li > span { font-size: .9rem; color: var(--muted); }
+.chip { display: inline-block; font: .68rem/1.5 var(--mono); padding: 1px 7px; border: 1px solid var(--line-strong); border-radius: 99px; margin-left: .3rem; vertical-align: 1px; }
+.r { color: var(--gold-dark); }
+.note { font-size: .9rem; color: var(--muted); }
+.tablewrap { margin-top: 1.5rem; border: 1px solid var(--line); }
+table { border-collapse: collapse; width: 100%; table-layout: fixed; font-size: .9rem; line-height: 1.7; }
+table[aria-label="Nine studies, honestly scored"] th:nth-child(1) { width: 21%; }
+table[aria-label="Nine studies, honestly scored"] th:nth-child(2) { width: 36%; }
+table[aria-label="Nine studies, honestly scored"] th:nth-child(3) { width: 31%; }
+table[aria-label="Nine studies, honestly scored"] th:nth-child(4) { width: 12%; }
+th, td { text-align: left; padding: .8rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font: 600 .68rem/1.6 var(--sans); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); background: var(--moon-bright); }
+tr:last-child td { border-bottom: 0; }
+td.n { font-variant-numeric: tabular-nums; }
+.held { color: #42665b; font-weight: 600; }
+.failed { color: var(--gold-dark); font-weight: 600; }
+.timeline { list-style: none; padding: 0; margin: 1.5rem 0 0; border-left: 1px solid var(--line-strong); }
+.timeline li { position: relative; padding: 0 0 1.3rem 1.5rem; }
+.timeline li:last-child { padding-bottom: 0; }
+.timeline li::before { content: ''; position: absolute; left: -5px; top: .55em; width: 9px; height: 9px; border-radius: 50%; background: var(--moon); border: 2px solid var(--gold-dark); }
+.timeline time { font: .75rem/1.6 var(--mono); color: var(--muted); display: block; margin-bottom: .3rem; }
+.kit { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: 1rem; margin-top: 1.5rem; }
+.kit div { border-top: 1px solid var(--line-strong); padding-top: 1rem; min-width: 0; }
+.kit p { margin-bottom: 0; }
+code { font: .85em var(--mono); }
+.lessons { counter-reset: lesson; list-style: none; padding: 0; margin: 1.5rem 0 0; display: grid; gap: 1.5rem; max-width: 46rem; }
+.lessons li { counter-increment: lesson; display: grid; grid-template-columns: 2rem minmax(0, 1fr); gap: .5rem; }
+.lessons li::before { content: counter(lesson); font: 400 1.8rem/1 var(--serif); color: var(--gold-dark); }
+.split { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+.split div { min-width: 0; }
+footer { padding-top: 2rem; font-size: .85rem; color: var(--muted); }
+.next-links { display: flex; flex-wrap: wrap; gap: 1rem 2rem; margin-top: 1.5rem; }
+@media (max-width: 680px) {
+  .research-council { padding-top: 1.5rem; }
+  section { padding-block: 2.5rem; }
+  table, tbody, tr, td { display: block; }
+  thead { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  tr + tr { border-top: 1px solid var(--line-strong); }
+  td { border: 0; }
+  td::before { display: block; margin-bottom: .3rem; content: attr(data-label); color: var(--muted); font: 600 .65rem/1.7 var(--sans); letter-spacing: .04em; text-transform: uppercase; }
+  td > a { min-width: 0; }
+}
+</style>
