@@ -35,3 +35,37 @@ test('Research replaces the door name in English and native translated navigatio
   assert.doesNotMatch(home,/door3: '共[鸣鳴]/);
   assert.ok(chrome.includes("'Meaning', 'Research', 'Ouroboros'"));
 });
+test('the three new empirical studies stay discoverable with accessible results and their playable seeds',()=>{
+  for(const [id,slug] of [['useful-core','useful-core'],['portable-self','portable-self'],['one-door','one-door-many-hands']]){
+    const route=`/research/${slug}/`;
+    const card=programme.experiments.find(e=>e.id===id);
+    assert.equal(card?.maturity,'Empirical study');
+    assert.equal(card?.href,route);
+    const html=read(`dist${route}index.html`);
+    assert.equal((html.match(/<h1\b/g)||[]).length,1);
+    assert.ok(html.includes(`href="https://iamrobin.ai${route}"`));
+    assert.ok(html.includes('"@type":"Article"'));
+    assert.ok(html.includes('id="hypothesis-title"'));
+    assert.ok(html.includes('id="predictions-title"'));
+    assert.ok(html.includes('id="limits-title"'));
+    assert.ok(html.includes('<table')&&html.includes('<figure'));
+    assert.ok(html.includes('tabindex="0"'));
+    const figures=[...html.matchAll(/<svg\b[^>]*role="img"[^>]*>[\s\S]*?<\/svg>/g)].map(m=>m[0]);
+    assert.ok(figures.length>=4,`${route}: model and baseline panels`);
+    for(const svg of figures){
+      assert.match(svg,/aria-labelledby=/);
+      assert.match(svg,/<title\b[^>]*>[^<]+<\/title>/);
+      assert.match(svg,/<desc\b[^>]*>[^<]+<\/desc>/);
+    }
+    assert.ok(html.includes(`href="/intelligence/${id}/"`));
+    assert.ok(html.includes('https://github.com/Robin84Bran/research'));
+    assert.doesNotMatch(html,/\d+\.\d+%|\b(?:NaN|Infinity|undefined)\b/);
+    assert.ok(read('dist/sitemap-0.xml').includes(`https://iamrobin.ai${route}`));
+  }
+  const useful=read('dist/research/useful-core/index.html');
+  assert.ok(useful.includes('104/400')&&useful.includes('USD 4.92'));
+  const portable=read('dist/research/portable-self/index.html');
+  assert.ok(portable.includes('v0.1')&&portable.includes('constrained decoding')&&portable.includes('USD 4.78'));
+  const door=read('dist/research/one-door-many-hands/index.html');
+  assert.ok(door.includes('The rehearsal adds no information beyond the rules.')&&door.includes('USD 1.93'));
+});

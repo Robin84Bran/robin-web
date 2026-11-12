@@ -1,0 +1,100 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import StudyResults from '../../../components/StudyResults.astro';
+import results from '../../../data/one-door-many-hands-study.json';
+import '../../../styles/research-study.css';
+
+const path = '/research/one-door-many-hands/';
+const description = 'One Door, Many Hands: redundant delivery rehearsals lowered local optimal-choice rates. An always-one-carrier script beat every local model under independent failures. The primary prediction failed.';
+const evidence = 'https://github.com/Robin84Bran/research/tree/main/one-door-many-hands/delivery';
+const schema = {
+  '@context': 'https://schema.org', '@type': 'Article',
+  '@id': `https://iamrobin.ai${path}#article`,
+  headline: 'One Door, Many Hands — The rehearsal made planning worse.',
+  description, url: `https://iamrobin.ai${path}`, inLanguage: 'en',
+  datePublished: '2026-11-12', author: { '@id': 'https://www.tideisun.com/robin#robin-xie' },
+};
+---
+
+<BaseLayout title="One Door, Many Hands — Research — Robin Xie" {path} {description} {schema} type="article">
+  <div class="shell empirical-study">
+    <a class="quiet-link" href="/research/">← Research</a>
+    <p class="eyebrow">Research · Fleet planning · 12 November 2026</p>
+    <h1>One Door,<br />Many Hands<br /><em>The rehearsal<br />made planning worse.</em></h1>
+    <p class="lead">The same capacity can travel in one body, six, or twenty-four.<br />Which split gives the best chance of meeting a deadline?</p>
+    <p class="intro">Under independent failures, every local model chose an optimal fleet less often after seeing a delivery rehearsal. Qwen 7B fell from <strong>103/300 (34%) to 64/300 (21%)</strong>. A trivial script that always chooses one carrier was optimal in 168/300 cases (56%), beating every local model in either evidence arm.</p>
+
+    <section class="story hypothesis" aria-labelledby="hypothesis-title">
+      <h2 id="hypothesis-title">Hypothesis</h2>
+      <p>Adding failure-free worked examples of deliveries helps models choose fleets that maximize the chance of meeting a deadline, compared with complete written rules alone.</p>
+      <p><strong>The primary joint test failed in the opposite direction. P3 held; P1, P2, P4 and P5 failed.</strong> Qwen’s independent-failure optimal-choice rate fell by 13 percentage points, while mean expected deadline regret rose from 0.2742 to 0.3841. All four actors passed the technical-validity gates.</p>
+      <p class="finding"><strong>The rehearsal adds no information beyond the rules.</strong>A pass would mean models use worked examples better than complete written rules in this task. The rehearsal is a deterministic, failure-free illustration; it supplies no evidence about future damage.</p>
+    </section>
+
+    <section class="story" aria-labelledby="test-title">
+      <p class="eyebrow">The question</p>
+      <h2 id="test-title">More survivors need not mean more delivered work.</h2>
+      <p>Each fleet has total capacity 24: one carrier carrying 24 units, six carrying four each, or 24 carrying one each. A door admits only <strong>one, six or 24 bodies in total</strong> before the deadline. Damage happens once, before dispatch; each survivor crosses at most once. A narrow door can make many small survivors useless for the target.</p>
+      <p>The objective is to maximize the <strong>probability of delivering at least the target by the deadline</strong>. It is not to maximize expected work or survivor count. Under independent failures, carriers fail separately. Under common damage, they all survive or all fail together. The damage probability and complete rules are given in both arms.</p>
+      <p><strong>Rules only</strong> presents the written mechanics. <strong>Rules + rehearsal</strong> adds the failure-free crossing and payload calculation for every fleet at that door. This changes length, salience and redundant computed information together. It does not add a hidden fact or an optimal-choice label.</p>
+      <p>Each local actor made 1,200 one-shot decisions: 100 numeric blocks × three doors × two failure types × two evidence arms. Claude used a preselected ten-block subset, 120 decisions. All <strong>3,720 scheduled decisions</strong> were attempted. No model executed a real team.</p>
+    </section>
+
+    <section class="story" aria-labelledby="results-title">
+      <p class="eyebrow">Models beside simple policies</p>
+      <h2 id="results-title">The one-carrier rule beats every local arm.</h2>
+      <p>On the local independent-failure grid, <strong>always 1 carrier</strong> is optimal 56% of the time with mean regret about 0.10. Uniform random is optimal 33% of the time with regret about 0.25. The local models’ independent results sit around or below that chance reference. Their rehearsal arms all have lower optimal-choice rates and higher regret than their rules-only arms.</p>
+      <p>Claude was optimal in <strong>29/30 independent choices (97%)</strong> and <strong>30/30 common-damage choices (100%)</strong>, in both arms. Its 118 valid non-null choices were all exact optima. The two penalized independent episodes were an output-limit failure and a provider structured-output rejection; they do not show a wrong fleet choice.</p>
+      <StudyResults panels={results.panels} metric="Optimal-choice rate O*" regret note="Optimal counts use all assigned decisions: nulls and technical failures are misses. Mean R* is expected deadline regret: the oracle’s success probability minus the assigned choice’s value; lower is better. Model and code references use identical blocks and equal door weights. Code policies execute completely but have no model-episode validity (—). Random rows show exact expectations, rather than observed counts." />
+      <p class="chart-note">Filled gold bars show optimal-choice rates, outlined bars show code references, and the dark bars beneath show regret. Each code policy is identical across evidence arms. Always-1 and oracle were frozen before collection; random is a post hoc exact expectation over the three legal fleets, with no sampled sequence or added seeds. Claude-grid baseline values differ because its block subset differs.</p>
+      <p>Under common damage, every feasible fleet ties at success probability 1−p. One carrier is feasible and optimal in every cell. Multiple fleets tie in 200/300 local common-damage cells, explaining random’s higher 67% optimal rate there. These ties do not show hidden redundancy.</p>
+    </section>
+
+    <section class="story" aria-labelledby="primary-title">
+      <p class="eyebrow">The registered comparison</p>
+      <h2 id="primary-title">The measured effect points the other way.</h2>
+      <p>The confirmatory comparison is Qwen 7B under independent damage. D_R is rules regret minus rehearsal regret: positive would mean benefit. Instead it was <strong>−0.10990 [−0.13904, −0.08071]</strong>. D_O is rehearsal minus rules optimal-choice rate: <strong>−13.00 percentage points [−20.33, −6.00]</strong>.</p>
+      <p>All 600 primary decisions were attempted, all were schema-valid, and none abstained. The complete-valid-pair sensitivity retains all 300 pairs and gives the same result. The registered benefit threshold, both interval checks and rehearsal optimal-rate requirement failed. This is a scientific failure with adequate technical coverage.</p>
+      <p>Intervals use the frozen 10,000 paired-block bootstrap resamples, retaining all three doors within each selected block. Other actors and failure-mode contrasts are descriptive. Llama’s common-damage optimal rate rose by one choice (162 to 163), while its regret still increased; the independent-failure deterioration is the all-local result.</p>
+    </section>
+
+    <section class="story" aria-labelledby="predictions-title">
+      <p class="eyebrow">Predictions stay visible</p>
+      <h2 id="predictions-title">The capacity mistake was predictable.</h2>
+      <ol class="predictions">
+        <li><strong>P1 · Failed.</strong> Qwen 7B would pass the joint improvement rule. Both primary outcomes worsened; rehearsal was optimal in 64/300 choices.</li>
+        <li><strong>P2 · Failed.</strong> With one admission and independent damage, Qwen rehearsal would be optimal in at least 90% of choices. It was optimal in 2/100 (2%).</li>
+        <li><strong>P3 · Held.</strong> With six admissions and independent damage, rules-only Qwen would choose 24 carriers at least 10% of the time. It did so in 36/100 (36%); six one-unit crossings cannot meet a target of at least seven.</li>
+        <li><strong>P4 · Failed.</strong> Qwen common-damage rehearsal would be optimal at least 90% of the time. It reached 93/300 (31%).</li>
+        <li><strong>P5 · Failed.</strong> Llama and Claude would each show positive D_R and D_O. Llama’s independent outcomes worsened; Claude tied at zero on both contrasts.</li>
+      </ol>
+    </section>
+
+    <section class="story" aria-labelledby="record-title">
+      <p class="eyebrow">How the record holds up</p>
+      <h2 id="record-title">Valid decisions can still miss the objective.</h2>
+      <dl>
+        <dt>USD 1.93 in model-call accounting</dt>
+        <dd>Settled API-equivalent spend is USD 1.925098, with zero open money holds. Cash billing is unknown. Local inference accounting is zero; hardware, electricity, subscriptions and opportunity costs were not measured.</dd>
+        <dt>3,600 valid local replies · 118/120 valid Claude replies</dt>
+        <dd>Every actor passed its registered technical gates. Qwen’s 87 intentional nulls occurred under common damage: 57 rules-only and 30 rehearsal. They remain separate from Claude’s two technical misses. Three operational nonstarts were resumed without resending generated replies.</dd>
+        <dt>Frozen record, independently rebuilt</dt>
+        <dd>The filtered-copy rebuild reproduced the raw-evidence analysis and all nine generated report artifacts byte for byte. The frozen full suite passed 94 tests with one historical recovery-fixture error; that test passed against its reconstructed original D3 baseline. The failed completed-state log remains disclosed.</dd>
+      </dl>
+    </section>
+
+    <section class="story" aria-labelledby="limits-title">
+      <p class="eyebrow">Where this stops</p>
+      <h2 id="limits-title">A planning test, with no working swarm.</h2>
+      <p>This is one-shot fleet selection in a fixed one-wave simulator. It does not test actual teams, queuing, retries, repairs, return trips or real tool resilience. Blocks are nearby numeric variants, and each prompt has one saved generation. Intervals describe that grid, not all tasks or full generation variance.</p>
+      <p>The deterioration is consistent with models misusing the failure-free representation, prompt length, attention or objective confusion. Those mechanisms were not isolated. Claude’s near-ceiling tie does not establish that rehearsals are universally useless; its smaller, fixed subset cannot support a general model ranking. Rehearsal uses more input, so there is no equal-token or cost-adjusted superiority claim.</p>
+      <p class="fine">Built with Codex; reviewed by Claude. The primary scientific prediction failed; all technical gates passed. Percentage labels are rounded from exact counts or the explicitly labelled random expectation. Mean regret is displayed to four decimal places.</p>
+      <div class="next-links">
+        <a href="https://github.com/Robin84Bran/research">Research repository on GitHub →</a>
+        <a href={`${evidence}/RESULTS.md`}>Results and reproduction evidence →</a>
+        <a href="/intelligence/one-door/">Play One Door, Many Hands →</a>
+        <a href="/research/useful-core/">Read The Useful Core →</a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>

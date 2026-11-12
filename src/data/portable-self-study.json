@@ -1,0 +1,1105 @@
+{
+  "source": "portable-self/v0.2/collection/delivery/{episodes,baseline-seeds}.csv \u00b7 exact counts underlying RESULTS.md",
+  "panels": [
+    {
+      "id": "qwen7b-different-stable",
+      "title": "Qwen 2.5 7B \u00b7 different-stable",
+      "note": "100 matched seed blocks \u00b7 16 actions and four returns per episode",
+      "rows": [
+        {
+          "label": "Keyed routing",
+          "score": {
+            "count": 98,
+            "total": 1600
+          },
+          "secondary": {
+            "count": 3,
+            "total": 400
+          },
+          "valid": {
+            "count": 62,
+            "total": 100
+          }
+        },
+        {
+          "label": "Shared notebook",
+          "score": {
+            "count": 253,
+            "total": 1600
+          },
+          "secondary": {
+            "count": 12,
+            "total": 400
+          },
+          "valid": {
+            "count": 87,
+            "total": 100
+          }
+        },
+        {
+          "label": "Discard notes",
+          "score": {
+            "count": 64,
+            "total": 1600
+          },
+          "secondary": {
+            "count": 0,
+            "total": 400
+          },
+          "valid": {
+            "count": 87,
+            "total": 100
+          }
+        },
+        {
+          "label": "Random (seeded)",
+          "score": {
+            "count": 409,
+            "total": 1600
+          },
+          "secondary": {
+            "count": 1,
+            "total": 400
+          },
+          "baseline": true
+        },
+        {
+          "label": "Last-console script",
+          "score": {
+            "count": 657,
+            "total": 1600
+          },
+          "secondary": {
+            "count": 100,
+            "total": 400
+          },
+          "baseline": true
+        },
+        {
+          "label": "Keyed-ledger script",
+          "score": {
+            "count": 1600,
+            "total": 1600
+          },
+          "secondary": {
+            "count": 400,
+            "total": 400
+          },
+          "baseline": true
+        },
+        {
+          "label": "Oracle",
+          "score": {
+            "count": 1600,
+            "total": 1600
+          },
+          "secondary": {
+            "count": 400,
+            "total": 400
+          },
+          "baseline": true
+        }
+      ]
+    },
+    {
+      "id": "qwen7b-same-stable",
+      "title": "Qwen 2.5 7B \u00b7 same-stable",
+      "note": "20 matched seed blocks \u00b7 16 actions and four returns per episode",
+      "rows": [
+        {
+          "label": "Keyed routing",
+          "score": {
+            "count": 25,
+            "total": 320
+          },
+          "secondary": {
+            "count": 1,
+            "total": 80
+          },
+          "valid": {
+            "count": 14,
+            "total": 20
+          }
+        },
+        {
+          "label": "Shared notebook",
+          "score": {
+            "count": 157,
+            "total": 320
+          },
+          "secondary": {
+            "count": 26,
+            "total": 80
+          },
+          "valid": {
+            "count": 20,
+            "total": 20
+          }
+        },
+        {
+          "label": "Discard notes",
+          "score": {
+            "count": 13,
+            "total": 320
+          },
+          "secondary": {
+            "count": 0,
+            "total": 80
+          },
+          "valid": {
+            "count": 18,
+            "total": 20
+          }
+        },
+        {
+          "label": "Random (seeded)",
+          "score": {
+            "count": 87,
+            "total": 320
+          },
+          "secondary": {
+            "count": 0,
+            "total": 80
+          },
+          "baseline": true
+        },
+        {
+          "label": "Last-console script",
+          "score": {
+            "count": 320,
+            "total": 320
+          },
+          "secondary": {
+            "count": 80,
+            "total": 80
+          },
+          "baseline": true
+        },
+        {
+          "label": "Keyed-ledger script",
+          "score": {
+            "count": 320,
+            "total": 320
+          },
+          "secondary": {
+            "count": 80,
+            "total": 80
+          },
+          "baseline": true
+        },
+        {
+          "label": "Oracle",
+          "score": {
+            "count": 320,
+            "total": 320
+          },
+          "secondary": {
+            "count": 80,
+            "total": 80
+          },
+          "baseline": true
+        }
+      ]
+    },
+    {
+      "id": "qwen7b-stale-remap",
+      "title": "Qwen 2.5 7B \u00b7 stale-remap",
+      "note": "20 matched seed blocks \u00b7 16 actions and four returns per episode",
+      "rows": [
+        {
+          "label": "Keyed routing",
+          "score": {
+            "count": 11,
+            "total": 320
+          },
+          "secondary": {
+            "count": 0,
+            "total": 80
+          },
+          "valid": {
+            "count": 12,
+            "total": 20
+          }
+        },
+        {
+          "label": "Shared notebook",
+          "score": {
+            "count": 44,
+            "total": 320
+          },
+          "secondary": {
+            "count": 1,
+            "total": 80
+          },
+          "valid": {
+            "count": 18,
+            "total": 20
+          }
+        },
+        {
+          "label": "Discard notes",
+          "score": {
+            "count": 17,
+            "total": 320
+          },
+          "secondary": {
+            "count": 0,
+            "total": 80
+          },
+          "valid": {
+            "count": 18,
+            "total": 20
+          }
+        },
+        {
+          "label": "Random (seeded)",
+          "score": {
+            "count": 86,
+            "total": 320
+          },
+          "secondary": {
+            "count": 2,
+            "total": 80
+          },
+          "baseline": true
+        },
+        {
+          "label": "Last-console script",
+          "score": {
+            "count": 55,
+            "total": 320
+          },
+          "secondary": {
+            "count": 3,
+            "total": 80
+          },
+          "baseline": true
+        },
+        {
+          "label": "Keyed-ledger script",
+          "score": {
+            "count": 0,
+            "total": 320
+          },
+          "secondary": {
+            "count": 0,
+            "total": 80
+          },
+          "baseline": true
+        },
+        {
+          "label": "Oracle",
+          "score": {
+            "count": 320,
+            "total": 320
+          },
+          "secondary": {
+            "count": 80,
+            "total": 80
+          },
+          "baseline": true
+        }
+      ]
+    },
+    {
+      "id": "llama8b-different-stable",
+      "title": "Llama 3.1 8B \u00b7 different-stable",
+      "note": "100 matched seed blocks \u00b7 16 actions and four returns per episode",
+      "rows": [
+        {
+          "label": "Keyed routing",
+          "score": {
+            "count": 14,
+            "total": 1600
+          },
+          "secondary": {
+            "count": 0,
+            "total": 400
+          },
+          "valid": {
+            "count": 33,
+            "total": 100
+          }
+        },
+        {
+          "label": "Shared notebook",
+          "score": {
+            "count": 10,
+            "total": 1600
+          },
+          "secondary": {
+            "count": 0,
+            "total": 400
+          },
+          "valid": {
+            "count": 62,
+            "total": 100
+          }
+        },
+        {
+          "label": "Discard notes",
+          "score": {
+            "count": 0,
+            "total": 1600
+          },
+          "secondary": {
+            "count": 0,
+            "total": 400
+          },
+          "valid": {
+            "count": 37,
+            "total": 100
+          }
+        },
+        {
+          "label": "Random (seeded)",
+          "score": {
+            "count": 409,
+            "total": 1600
+          },
+          "secondary": {
+            "count": 1,
+            "total": 400
+          },
+          "baseline": true
+        },
+        {
+          "label": "Last-console script",
+          "score": {
+            "count": 657,
+            "total": 1600
+          },
+          "secondary": {
+            "count": 100,
+            "total": 400
+          },
+          "baseline": true
+        },
+        {
+          "label": "Keyed-ledger script",
+          "score": {
+            "count": 1600,
+            "total": 1600
+          },
+          "secondary": {
+            "count": 400,
+            "total": 400
+          },
+          "baseline": true
+        },
+        {
+          "label": "Oracle",
+          "score": {
+            "count": 1600,
+            "total": 1600
+          },
+          "secondary": {
+            "count": 400,
+            "total": 400
+          },
+          "baseline": true
+        }
+      ]
+    },
+    {
+      "id": "llama8b-same-stable",
+      "title": "Llama 3.1 8B \u00b7 same-stable",
+      "note": "20 matched seed blocks \u00b7 16 actions and four returns per episode",
+      "rows": [
+        {
+          "label": "Keyed routing",
+          "score": {
+            "count": 5,
+            "total": 320
+          },
+          "secondary": {
+            "count": 0,
+            "total": 80
+          },
+          "valid": {
+            "count": 7,
+            "total": 20
+          }
+        },
+        {
+          "label": "Shared notebook",
+          "score": {
+            "count": 1,
+            "total": 320
+          },
+          "secondary": {
+            "count": 0,
+            "total": 80
+          },
+          "valid": {
+            "count": 14,
+            "total": 20
+          }
+        },
+        {
+          "label": "Discard notes",
+          "score": {
+            "count": 0,
+            "total": 320
+          },
+          "secondary": {
+            "count": 0,
+            "total": 80
+          },
+          "valid": {
+            "count": 2,
+            "total": 20
+          }
+        },
+        {
+          "label": "Random (seeded)",
+          "score": {
+            "count": 87,
+            "total": 320
+          },
+          "secondary": {
+            "count": 0,
+            "total": 80
+          },
+          "baseline": true
+        },
+        {
+          "label": "Last-console script",
+          "score": {
+            "count": 320,
+            "total": 320
+          },
+          "secondary": {
+            "count": 80,
+            "total": 80
+          },
+          "baseline": true
+        },
+        {
+          "label": "Keyed-ledger script",
+          "score": {
+            "count": 320,
+            "total": 320
+          },
+          "secondary": {
+            "count": 80,
+            "total": 80
+          },
+          "baseline": true
+        },
+        {
+          "label": "Oracle",
+          "score": {
+            "count": 320,
+            "total": 320
+          },
+          "secondary": {
+            "count": 80,
+            "total": 80
+          },
+          "baseline": true
+        }
+      ]
+    },
+    {
+      "id": "llama8b-stale-remap",
+      "title": "Llama 3.1 8B \u00b7 stale-remap",
+      "note": "20 matched seed blocks \u00b7 16 actions and four returns per episode",
+      "rows": [
+        {
+          "label": "Keyed routing",
+          "score": {
+            "count": 3,
+            "total": 320
+          },
+          "secondary": {
+            "count": 0,
+            "total": 80
+          },
+          "valid": {
+            "count": 9,
+            "total": 20
+          }
+        },
+        {
+          "label": "Shared notebook",
+          "score": {
+            "count": 0,
+            "total": 320
+          },
+          "secondary": {
+            "count": 0,
+            "total": 80
+          },
+          "valid": {
+            "count": 13,
+            "total": 20
+          }
+        },
+        {
+          "label": "Discard notes",
+          "score": {
+            "count": 0,
+            "total": 320
+          },
+          "secondary": {
+            "count": 0,
+            "total": 80
+          },
+          "valid": {
+            "count": 8,
+            "total": 20
+          }
+        },
+        {
+          "label": "Random (seeded)",
+          "score": {
+            "count": 86,
+            "total": 320
+          },
+          "secondary": {
+            "count": 2,
+            "total": 80
+          },
+          "baseline": true
+        },
+        {
+          "label": "Last-console script",
+          "score": {
+            "count": 55,
+            "total": 320
+          },
+          "secondary": {
+            "count": 3,
+            "total": 80
+          },
+          "baseline": true
+        },
+        {
+          "label": "Keyed-ledger script",
+          "score": {
+            "count": 0,
+            "total": 320
+          },
+          "secondary": {
+            "count": 0,
+            "total": 80
+          },
+          "baseline": true
+        },
+        {
+          "label": "Oracle",
+          "score": {
+            "count": 320,
+            "total": 320
+          },
+          "secondary": {
+            "count": 80,
+            "total": 80
+          },
+          "baseline": true
+        }
+      ]
+    },
+    {
+      "id": "qwen1b-different-stable",
+      "title": "Qwen 2.5 1.5B \u00b7 different-stable",
+      "note": "20 matched seed blocks \u00b7 16 actions and four returns per episode",
+      "rows": [
+        {
+          "label": "Keyed routing",
+          "score": {
+            "count": 5,
+            "total": 320
+          },
+          "secondary": {
+            "count": 0,
+            "total": 80
+          },
+          "valid": {
+            "count": 11,
+            "total": 20
+          }
+        },
+        {
+          "label": "Shared notebook",
+          "score": {
+            "count": 16,
+            "total": 320
+          },
+          "secondary": {
+            "count": 1,
+            "total": 80
+          },
+          "valid": {
+            "count": 14,
+            "total": 20
+          }
+        },
+        {
+          "label": "Discard notes",
+          "score": {
+            "count": 19,
+            "total": 320
+          },
+          "secondary": {
+            "count": 1,
+            "total": 80
+          },
+          "valid": {
+            "count": 13,
+            "total": 20
+          }
+        },
+        {
+          "label": "Random (seeded)",
+          "score": {
+            "count": 78,
+            "total": 320
+          },
+          "secondary": {
+            "count": 0,
+            "total": 80
+          },
+          "baseline": true
+        },
+        {
+          "label": "Last-console script",
+          "score": {
+            "count": 128,
+            "total": 320
+          },
+          "secondary": {
+            "count": 20,
+            "total": 80
+          },
+          "baseline": true
+        },
+        {
+          "label": "Keyed-ledger script",
+          "score": {
+            "count": 320,
+            "total": 320
+          },
+          "secondary": {
+            "count": 80,
+            "total": 80
+          },
+          "baseline": true
+        },
+        {
+          "label": "Oracle",
+          "score": {
+            "count": 320,
+            "total": 320
+          },
+          "secondary": {
+            "count": 80,
+            "total": 80
+          },
+          "baseline": true
+        }
+      ]
+    },
+    {
+      "id": "qwen1b-same-stable",
+      "title": "Qwen 2.5 1.5B \u00b7 same-stable",
+      "note": "20 matched seed blocks \u00b7 16 actions and four returns per episode",
+      "rows": [
+        {
+          "label": "Keyed routing",
+          "score": {
+            "count": 4,
+            "total": 320
+          },
+          "secondary": {
+            "count": 0,
+            "total": 80
+          },
+          "valid": {
+            "count": 13,
+            "total": 20
+          }
+        },
+        {
+          "label": "Shared notebook",
+          "score": {
+            "count": 22,
+            "total": 320
+          },
+          "secondary": {
+            "count": 0,
+            "total": 80
+          },
+          "valid": {
+            "count": 15,
+            "total": 20
+          }
+        },
+        {
+          "label": "Discard notes",
+          "score": {
+            "count": 12,
+            "total": 320
+          },
+          "secondary": {
+            "count": 1,
+            "total": 80
+          },
+          "valid": {
+            "count": 11,
+            "total": 20
+          }
+        },
+        {
+          "label": "Random (seeded)",
+          "score": {
+            "count": 87,
+            "total": 320
+          },
+          "secondary": {
+            "count": 0,
+            "total": 80
+          },
+          "baseline": true
+        },
+        {
+          "label": "Last-console script",
+          "score": {
+            "count": 320,
+            "total": 320
+          },
+          "secondary": {
+            "count": 80,
+            "total": 80
+          },
+          "baseline": true
+        },
+        {
+          "label": "Keyed-ledger script",
+          "score": {
+            "count": 320,
+            "total": 320
+          },
+          "secondary": {
+            "count": 80,
+            "total": 80
+          },
+          "baseline": true
+        },
+        {
+          "label": "Oracle",
+          "score": {
+            "count": 320,
+            "total": 320
+          },
+          "secondary": {
+            "count": 80,
+            "total": 80
+          },
+          "baseline": true
+        }
+      ]
+    },
+    {
+      "id": "qwen1b-stale-remap",
+      "title": "Qwen 2.5 1.5B \u00b7 stale-remap",
+      "note": "20 matched seed blocks \u00b7 16 actions and four returns per episode",
+      "rows": [
+        {
+          "label": "Keyed routing",
+          "score": {
+            "count": 5,
+            "total": 320
+          },
+          "secondary": {
+            "count": 0,
+            "total": 80
+          },
+          "valid": {
+            "count": 11,
+            "total": 20
+          }
+        },
+        {
+          "label": "Shared notebook",
+          "score": {
+            "count": 15,
+            "total": 320
+          },
+          "secondary": {
+            "count": 0,
+            "total": 80
+          },
+          "valid": {
+            "count": 14,
+            "total": 20
+          }
+        },
+        {
+          "label": "Discard notes",
+          "score": {
+            "count": 27,
+            "total": 320
+          },
+          "secondary": {
+            "count": 0,
+            "total": 80
+          },
+          "valid": {
+            "count": 13,
+            "total": 20
+          }
+        },
+        {
+          "label": "Random (seeded)",
+          "score": {
+            "count": 86,
+            "total": 320
+          },
+          "secondary": {
+            "count": 2,
+            "total": 80
+          },
+          "baseline": true
+        },
+        {
+          "label": "Last-console script",
+          "score": {
+            "count": 55,
+            "total": 320
+          },
+          "secondary": {
+            "count": 3,
+            "total": 80
+          },
+          "baseline": true
+        },
+        {
+          "label": "Keyed-ledger script",
+          "score": {
+            "count": 0,
+            "total": 320
+          },
+          "secondary": {
+            "count": 0,
+            "total": 80
+          },
+          "baseline": true
+        },
+        {
+          "label": "Oracle",
+          "score": {
+            "count": 320,
+            "total": 320
+          },
+          "secondary": {
+            "count": 80,
+            "total": 80
+          },
+          "baseline": true
+        }
+      ]
+    },
+    {
+      "id": "claude-different-stable",
+      "title": "Claude \u00b7 different-stable",
+      "note": "10 matched seed blocks \u00b7 16 actions and four returns per episode",
+      "rows": [
+        {
+          "label": "Keyed routing",
+          "score": {
+            "count": 160,
+            "total": 160
+          },
+          "secondary": {
+            "count": 40,
+            "total": 40
+          },
+          "valid": {
+            "count": 10,
+            "total": 10
+          }
+        },
+        {
+          "label": "Shared notebook",
+          "score": {
+            "count": 160,
+            "total": 160
+          },
+          "secondary": {
+            "count": 40,
+            "total": 40
+          },
+          "valid": {
+            "count": 10,
+            "total": 10
+          }
+        },
+        {
+          "label": "Discard notes",
+          "score": {
+            "count": 0,
+            "total": 160
+          },
+          "secondary": {
+            "count": 0,
+            "total": 40
+          },
+          "valid": {
+            "count": 9,
+            "total": 10
+          }
+        },
+        {
+          "label": "Random (seeded)",
+          "score": {
+            "count": 37,
+            "total": 160
+          },
+          "secondary": {
+            "count": 0,
+            "total": 40
+          },
+          "baseline": true
+        },
+        {
+          "label": "Last-console script",
+          "score": {
+            "count": 66,
+            "total": 160
+          },
+          "secondary": {
+            "count": 10,
+            "total": 40
+          },
+          "baseline": true
+        },
+        {
+          "label": "Keyed-ledger script",
+          "score": {
+            "count": 160,
+            "total": 160
+          },
+          "secondary": {
+            "count": 40,
+            "total": 40
+          },
+          "baseline": true
+        },
+        {
+          "label": "Oracle",
+          "score": {
+            "count": 160,
+            "total": 160
+          },
+          "secondary": {
+            "count": 40,
+            "total": 40
+          },
+          "baseline": true
+        }
+      ]
+    },
+    {
+      "id": "claude-stale-remap",
+      "title": "Claude \u00b7 stale-remap",
+      "note": "10 matched seed blocks \u00b7 16 actions and four returns per episode",
+      "rows": [
+        {
+          "label": "Keyed routing",
+          "score": {
+            "count": 0,
+            "total": 160
+          },
+          "secondary": {
+            "count": 0,
+            "total": 40
+          },
+          "valid": {
+            "count": 10,
+            "total": 10
+          }
+        },
+        {
+          "label": "Shared notebook",
+          "score": {
+            "count": 0,
+            "total": 160
+          },
+          "secondary": {
+            "count": 0,
+            "total": 40
+          },
+          "valid": {
+            "count": 10,
+            "total": 10
+          }
+        },
+        {
+          "label": "Discard notes",
+          "score": {
+            "count": 0,
+            "total": 160
+          },
+          "secondary": {
+            "count": 0,
+            "total": 40
+          },
+          "valid": {
+            "count": 10,
+            "total": 10
+          }
+        },
+        {
+          "label": "Random (seeded)",
+          "score": {
+            "count": 43,
+            "total": 160
+          },
+          "secondary": {
+            "count": 1,
+            "total": 40
+          },
+          "baseline": true
+        },
+        {
+          "label": "Last-console script",
+          "score": {
+            "count": 28,
+            "total": 160
+          },
+          "secondary": {
+            "count": 2,
+            "total": 40
+          },
+          "baseline": true
+        },
+        {
+          "label": "Keyed-ledger script",
+          "score": {
+            "count": 0,
+            "total": 160
+          },
+          "secondary": {
+            "count": 0,
+            "total": 40
+          },
+          "baseline": true
+        },
+        {
+          "label": "Oracle",
+          "score": {
+            "count": 160,
+            "total": 160
+          },
+          "secondary": {
+            "count": 40,
+            "total": 40
+          },
+          "baseline": true
+        }
+      ]
+    }
+  ]
+}

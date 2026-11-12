@@ -1,0 +1,19 @@
+.empirical-study { padding-block: 3rem 5rem; }
+.empirical-study > .eyebrow { margin-top: 3rem; }
+.empirical-study h1 { font: 400 clamp(3rem, 8vw, 6.6rem)/1 var(--serif); letter-spacing: -0.05em; margin: 1.5rem 0; overflow-wrap: break-word; }
+.empirical-study h1 em { color: var(--gold-dark); }
+.empirical-study .lead { font: 400 clamp(1.3rem, 3vw, 2rem)/1.45 var(--serif); }
+.empirical-study .intro, .empirical-study .story { max-width: 48rem; line-height: 1.85; }
+.empirical-study .intro, .empirical-study .fine, .empirical-study dd, .empirical-study .chart-note { color: var(--muted); }
+.empirical-study .story { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--line); }
+.empirical-study .hypothesis { margin-top: 2rem; }
+.empirical-study h2 { font: 400 clamp(1.7rem, 4vw, 2.7rem)/1.18 var(--serif); letter-spacing: -0.03em; margin: 0.4rem 0 1.4rem; }
+.empirical-study .chart-note { font-size: 0.78rem; line-height: 1.6; }
+.empirical-study .finding { border-left: 3px solid var(--gold-dark); padding: 1rem 1.2rem; background: var(--moon-bright); }
+.empirical-study .finding strong { font: 400 clamp(2rem, 5vw, 3.3rem)/1.1 var(--serif); display: block; margin-bottom: 0.6rem; font-variant-numeric: tabular-nums; }
+.empirical-study .predictions { padding-left: 1.4rem; }
+.empirical-study .predictions li { padding-left: 0.3rem; margin-top: 0.7rem; }
+.empirical-study dt { font-weight: 600; margin-top: 1.2rem; }
+.empirical-study dd { margin-left: 0; }
+.empirical-study .fine { font-size: 0.85rem; line-height: 1.7; }
+.empirical-study .next-links { display: flex; flex-wrap: wrap; gap: 1rem 2rem; padding-top: 1rem; color: var(--gold-dark); }

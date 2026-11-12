@@ -1,0 +1,100 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import StudyResults from '../../../components/StudyResults.astro';
+import results from '../../../data/useful-core-study.json';
+import '../../../styles/research-study.css';
+
+const path = '/research/useful-core/';
+const description = 'The Useful Core: all 900 local episodes delivered nothing, while 104/400 outage reports falsely claimed full delivery. Fallback instructions failed the joint test; simple scripts reached the ceiling.';
+const evidence = 'https://github.com/Robin84Bran/research/tree/main/useful-core/collection/delivery';
+const schema = {
+  '@context': 'https://schema.org', '@type': 'Article',
+  '@id': `https://iamrobin.ai${path}#article`,
+  headline: 'The Useful Core — A useful artifact is not a delivery.',
+  description, url: `https://iamrobin.ai${path}`, inLanguage: 'en',
+  datePublished: '2026-11-12', author: { '@id': 'https://www.tideisun.com/robin#robin-xie' },
+};
+---
+
+<BaseLayout title="The Useful Core — Research — Robin Xie" {path} {description} {schema} type="article">
+  <div class="shell empirical-study">
+    <a class="quiet-link" href="/research/">← Research</a>
+    <p class="eyebrow">Research · Useful fallback · 12 November 2026</p>
+    <h1>The Useful Core<br /><em>A useful artifact<br />is not a delivery.</em></h1>
+    <p class="lead">The tools can break. Some work can still be useful.<br />Does asking for the useful core first help an agent deliver it?</p>
+    <p class="intro">None of the three local models delivered any utility in any condition: <strong>900 episodes, zero useful deliveries</strong>. Qwen 7B produced valid replies in 285/300 episodes and still delivered nothing. Claude reached the assigned world ceiling in 58/60 episodes through the same simulator; its other two episodes ended in transport errors. The local floor is observable behaviour within this interface, rather than an unreachable scoring ceiling.</p>
+
+    <section class="story hypothesis" aria-labelledby="hypothesis-title">
+      <h2 id="hypothesis-title">Hypothesis</h2>
+      <p>Prioritizing useful fallback delivery increases Qwen 7B’s delivered and accurately reported utility during tool outages.</p>
+      <p><strong>The primary joint test failed. P1–P6 failed; P7 held.</strong> Fallback minus full-priority delivered utility and accurately reported utility were both zero, with 95% intervals [0, 0]. Full-priority technical coverage also missed the registered threshold.</p>
+      <p class="finding"><strong>104/400 · 26%</strong>Qwen 7B and Llama falsely reported full delivery in 104 of their 400 scheduled outage episodes, despite known empty deliveries. Qwen contributed 64/200 (32%); Llama 40/200 (20%). These were valid, determinate reports contradicting the simulator record. Missing reports are a separate outcome. This establishes false reports, without establishing intent or deception.</p>
+    </section>
+
+    <section class="story" aria-labelledby="test-title">
+      <p class="eyebrow">The question</p>
+      <h2 id="test-title">Making something is not sending it.</h2>
+      <p>An agent has six action decisions to prepare and explicitly deliver a result. Full delivery is worth 12 assigned utility units; a reduced result is worth six; the useful core is worth two; no delivery earns zero. Merely obtaining a useful artifact earns nothing until it is delivered. A final report separately says what was delivered.</p>
+      <p><strong>Full priority</strong> asks for the full job. <strong>Fallback first</strong> asks for the useful core first, then the full job. Both framings have the same tools, permissions and six-action quota. Calm worlds allow all 12 units; early outages cap delivery at two; late outages cap it at six. Scores always divide by 12, so the outage ceilings remain visible.</p>
+      <p>Each local model ran 50 paired seeds in each framing and world: 300 episodes per actor. Claude ran ten seeds per cell, 60 episodes total. All <strong>960 scheduled episodes</strong> were attempted and have known replayed delivery truth.</p>
+    </section>
+
+    <section class="story" aria-labelledby="results-title">
+      <p class="eyebrow">Models beside simple scripts</p>
+      <h2 id="results-title">Valid replies. Empty deliveries.</h2>
+      <p>Claude’s fallback framing matched the oracle in every world: <strong>100% of full utility in calm, 17% in early outage, 50% in late outage</strong>. Full-priority scores were 90%, 15% and 50%. Its two full-priority transport failures explain that apparent framing gain; the complete-block outage contrast is zero. They are operational failures, not evidence of worse fallback reasoning.</p>
+      <p>The <strong>highest-feasible script</strong> reaches the oracle ceiling with receipt-only actions and the same quota. Full-only works in calm worlds and fails under outages; core-only survives but caps utility at 17%. These secondary diagnostics need no model calls. No random policy exists in the frozen design.</p>
+      <StudyResults panels={results.panels} metric="Delivered utility Y" secondary="Accurately reported H" note="Y = delivered utility / 12 per episode. Table fractions are summed utility units / (12 × scheduled episodes), not delivery success counts. H credits those units only with an accurate final report; here H equals Y in every model cell. Validity concerns reply contracts, not delivery. Scripts and oracle have no report phase, so H and model validity are unavailable (—)." />
+      <p class="chart-note">Script rows use all 50 local seeds, including Claude’s ten-seed subset; values are invariant across framings and seeds within each world. All scripted action sequences satisfy the simulator contract. The oracle alone sees hidden tool health.</p>
+    </section>
+
+    <section class="story" aria-labelledby="primary-title">
+      <p class="eyebrow">The registered comparison</p>
+      <h2 id="primary-title">Zero benefit, with a coverage shortfall.</h2>
+      <p>The primary averages early and late outages within each of Qwen 7B’s 50 seed blocks. Both ΔY and ΔH were <strong>0 [0, 0]</strong>. Technical completion was 100/100 fallback versus 90/100 full, below the required 95/100 in both arms. There were 45 complete blocks, enough for the count requirement, but their positive-effect check also failed.</p>
+      <p>Intervals use the frozen 10,000 paired seed-block bootstrap draws. An observed floor on three repeated synthetic structures produces degenerate intervals; it does not establish equivalence or rule out useful fallback instructions on other interfaces.</p>
+      <p>Qwen obtained 385 useful artifact kinds and Llama 300 without delivering them. This post hoc observation is consistent with interface and receipt-state tracking difficulties; the experiment did not isolate that mechanism. Fewer full claims under fallback also did not establish accurate reporting: Qwen’s outage report accuracy stayed 0/100 in each arm.</p>
+    </section>
+
+    <section class="story" aria-labelledby="predictions-title">
+      <p class="eyebrow">Predictions stay visible</p>
+      <h2 id="predictions-title">The false-full forecast held.</h2>
+      <ol class="predictions">
+        <li><strong>P1 · Failed.</strong> Fallback would improve Qwen 7B’s outage delivery and accurately reported utility under the joint rule. Both effects were zero; coverage failed.</li>
+        <li><strong>P2 · Failed.</strong> Llama would replicate positive Y and H signs. Both differences were zero; ties fail.</li>
+        <li><strong>P3 · Failed.</strong> Qwen would deliver the full result in at least 90% of each calm arm. It did so in 0/50 episodes in each.</li>
+        <li><strong>P4 · Failed.</strong> Fallback would reduce Qwen’s repeated failed calls. It made 47 repeated failures across 100 outage episodes, versus zero under full priority.</li>
+        <li><strong>P5 · Failed.</strong> Qwen 1.5B fallback outage H would be lower than Qwen 7B’s. Both were zero.</li>
+        <li><strong>P6 · Failed.</strong> Claude’s framing ΔY would be nonnegative and smaller than Qwen’s. Its observed +0.0083 exceeded zero, entirely associated with an early/full transport loss.</li>
+        <li><strong>P7 · Held.</strong> At least one Qwen 7B or Llama outage report would falsely claim full delivery. There were 104/400.</li>
+      </ol>
+    </section>
+
+    <section class="story" aria-labelledby="record-title">
+      <p class="eyebrow">How the record holds up</p>
+      <h2 id="record-title">The failures remain in the denominator.</h2>
+      <dl>
+        <dt>USD 4.92 in model-call accounting</dt>
+        <dd>Settled API-equivalent spend is USD 4.924020, all Claude, with no outstanding holds. Local model-call accounting is zero; hardware and time were not priced. This is audited saved usage accounting; cash billing is unknown.</dd>
+        <dt>Preserved errors and operational amendments</dt>
+        <dd>Two Claude transport failures remain Y=H=0. One exact-zero usage-limit refusal was an operational nonstart with an identical-request resume. Episode-local schema and length failures were retained. A1/D1/D2 records preserve the original inputs, stops and dispositions.</dd>
+        <dt>Offline, byte-identical rebuild</dt>
+        <dd>The filtered-copy rebuild reproduced the frozen analysis byte for byte. Delivery tables and traces link back to all 960 episodes; reproduction needs Python’s standard library, with no model calls.</dd>
+      </dl>
+    </section>
+
+    <section class="story" aria-labelledby="limits-title">
+      <p class="eyebrow">Where this stops</p>
+      <h2 id="limits-title">An operational floor in a small world.</h2>
+      <p>Seeds vary identifiers, receipts and local sampling across three structural worlds; they do not supply new dependency graphs. Utilities 12/6/2/0 are assigned values, not measured human benefit. Local calls used JSON mode with independent strict validation, without schema-constrained decoding; Qwen 1.5B failed its first action’s reference contract in all 300 episodes. Its zeros chiefly describe interface failure.</p>
+      <p>Qwen 7B’s 285 technically complete episodes still delivered nothing. Claude’s success demonstrates that this harness can award utility, but provider, interface and runtime differences prevent a causal model-family ranking. Sixty descriptive Claude episodes cannot establish production reliability or a general framing advantage.</p>
+      <p class="fine">Built with Codex; reviewed by Claude. The joint scientific prediction failed. Percentages are rounded from exact utility totals or episode counts; the current delivery report supersedes frozen historical root status text.</p>
+      <div class="next-links">
+        <a href="https://github.com/Robin84Bran/research">Research repository on GitHub →</a>
+        <a href={`${evidence}/RESULTS.md`}>Results and reproduction evidence →</a>
+        <a href="/intelligence/useful-core/">Play The Useful Core seed →</a>
+        <a href="/research/one-door-many-hands/">Read One Door, Many Hands →</a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>

@@ -1,0 +1,110 @@
+---
+interface Score { count: number; total: number }
+interface Row {
+  label: string;
+  score: Score;
+  secondary?: Score;
+  regret?: number;
+  valid?: Score;
+  baseline?: boolean;
+  expected?: boolean;
+}
+interface Panel { id: string; title: string; note: string; rows: Row[] }
+interface Props {
+  panels: Panel[];
+  metric: string;
+  secondary?: string;
+  regret?: boolean;
+  note: string;
+}
+const { panels, metric, secondary, regret = false, note } = Astro.props;
+const fraction = (s: Score) => s.count / s.total;
+const percent = (s: Score) => `${Math.round(100 * fraction(s))}%`;
+const score = (s: Score) => `${s.count}/${s.total} · ${percent(s)}`;
+const display = (r: Row) => r.expected ? `${percent(r.score)} · exact expectation` : score(r.score);
+---
+
+<p id="results-table-note" class="chart-note">{note} Percentages are rounded from exact totals. On a narrow screen, scroll the table sideways.</p>
+<div class="study-table-wrap" role="region" aria-labelledby="results-caption" aria-describedby="results-table-note" tabindex="0">
+  <table class="study-table">
+    <caption id="results-caption">Every scheduled model condition, with matched code references</caption>
+    <thead><tr><th scope="col">Actor / condition</th><th scope="col">Arm or policy</th><th scope="col">{metric} ↑</th>{secondary && <th scope="col">{secondary} ↑</th>}{regret && <th scope="col">Mean regret ↓</th>}<th scope="col">Valid model episodes</th></tr></thead>
+    {panels.map((panel) => (
+      <tbody>
+        {panel.rows.map((row, i) => (
+          <tr class:list={{ 'baseline-row': row.baseline }}>
+            {i === 0 && <th scope="rowgroup" rowspan={panel.rows.length}>{panel.title}<small>{panel.note}</small></th>}
+            <th scope="row">{row.label}{row.baseline && <small>Code reference</small>}</th>
+            <td>{display(row)}</td>
+            {secondary && <td>{row.secondary ? score(row.secondary) : '—'}</td>}
+            {regret && <td>{row.regret?.toFixed(4)}</td>}
+            <td>{row.valid ? score(row.valid) : '—'}</td>
+          </tr>
+        ))}
+      </tbody>
+    ))}
+  </table>
+</div>
+
+<figure class="study-comparison" aria-labelledby="outcomes-caption">
+  <figcaption id="outcomes-caption"><strong>{metric} by actor and condition{regret ? ', beside mean regret' : ''}</strong><br />The same outcomes and denominators as the table. Higher {metric} is better{regret ? '; lower regret is better' : ''}.</figcaption>
+  <p class="chart-note">Filled bars: model arms. Outlined bars: code references. Every {metric} scale runs from 0 to 100%{regret ? '; every regret scale runs from 0 to 1' : ''}. Bars show descriptive levels, without inferred error bars.</p>
+  <div class="study-chart-grid">
+    {panels.map((panel) => {
+      const step = regret ? 79 : 57;
+      const height = 48 + panel.rows.length * step;
+      return (
+        <div class="study-panel">
+          <h3>{panel.title}</h3>
+          <p class="chart-note">{panel.note}</p>
+          <svg class="study-plot" viewBox={`0 0 380 ${height}`} role="img" aria-labelledby={`${panel.id}-title ${panel.id}-desc`}>
+            <title id={`${panel.id}-title`}>{panel.title}: {metric}{regret ? ' and regret' : ''}</title>
+            <desc id={`${panel.id}-desc`}>{panel.rows.map((row) => `${row.label}${row.baseline ? ' (code reference)' : ''}: ${metric} ${display(row)}${regret ? `, regret ${row.regret?.toFixed(4)}` : ''}.`).join(' ')} Exact totals and model validity appear in the table.</desc>
+            {panel.rows.map((row, i) => (
+              <g>
+                <text x="0" y={23 + i * step}>{row.label}</text>
+                <rect class="study-track" x="0" y={31 + i * step} width="284" height="13" />
+                <rect class:list={['study-bar', { 'study-reference': row.baseline }]} x="0" y={31 + i * step} width={284 * fraction(row.score)} height="13" />
+                <text x="378" y={43 + i * step} text-anchor="end">{percent(row.score)}</text>
+                {regret && <g>
+                  <rect class="study-track" x="0" y={53 + i * step} width="284" height="9" />
+                  <rect class="study-regret" x="0" y={53 + i * step} width={284 * (row.regret ?? 0)} height="9" />
+                  <text class="study-secondary" x="378" y={65 + i * step} text-anchor="end">{row.regret?.toFixed(4)}</text>
+                </g>}
+              </g>
+            ))}
+            <text class="study-secondary" x="0" y={height - 5}>0</text>
+            <text class="study-secondary" x="284" y={height - 5} text-anchor="end">{regret ? '100% / regret 1' : '100%'}</text>
+          </svg>
+        </div>
+      );
+    })}
+  </div>
+</figure>
+
+<style>
+  .study-table-wrap { overflow-x: auto; margin-top: 1.2rem; }
+  .study-table { width: 100%; min-width: 45rem; border-collapse: collapse; font-size: 0.83rem; line-height: 1.6; font-variant-numeric: tabular-nums; }
+  .study-table caption { text-align: left; color: var(--muted); padding-bottom: 0.8rem; }
+  .study-table th, .study-table td { text-align: left; vertical-align: top; padding: 0.85rem 0.7rem; border-bottom: 1px solid var(--line); }
+  .study-table thead th { border-top: 1px solid var(--line); }
+  .study-table tbody th { min-width: 10rem; font-weight: 400; }
+  .study-table td { min-width: 8rem; white-space: nowrap; }
+  .study-table small { display: block; font-size: 0.72rem; color: var(--muted); margin-top: 0.2rem; }
+  .baseline-row { background: var(--moon-bright); }
+  .study-comparison { margin: 2rem 0; padding: clamp(0.75rem, 3vw, 1.6rem); border: 1px solid var(--line); background: var(--moon-bright); }
+  figcaption { font-size: 0.85rem; color: var(--muted); margin-bottom: 1rem; }
+  .chart-note { font-size: 0.78rem; line-height: 1.6; color: var(--muted); }
+  .study-chart-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem 1.5rem; margin-top: 1.5rem; }
+  .study-panel { min-width: 0; border-top: 1px solid var(--line); padding-top: 1rem; }
+  h3 { font-size: 0.95rem; margin: 0 0 0.3rem; }
+  .study-panel p { margin-bottom: 0.5rem; }
+  .study-plot { display: block; width: 100%; height: auto; font: 17px var(--sans); font-variant-numeric: tabular-nums; }
+  .study-plot text { fill: var(--ink); }
+  .study-plot .study-secondary { fill: var(--muted); font-size: 15px; }
+  .study-track { fill: var(--stone); }
+  .study-bar { fill: var(--gold-dark); }
+  .study-reference { fill: none; stroke: var(--ink); stroke-width: 2; }
+  .study-regret { fill: var(--ink); }
+  @media (max-width: 650px) { .study-chart-grid { grid-template-columns: 1fr; } }
+</style>
