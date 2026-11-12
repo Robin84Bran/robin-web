@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import CouncilWorkflowDiagram from '../../../components/CouncilWorkflowDiagram.astro';
 
 const path = '/research/council/';
 const description = 'The Research Council: how one human and three main AI agents, with supporting sub-agents, turned eight playable toys into pre-registered studies, what broke, and what they learned.';
@@ -19,7 +20,7 @@ const schema = {
   <p class="council-name">The Research Council</p>
   <p class="eyebrow">Research programme · 10–12 November 2026</p>
   <h1>One human, three main AI agents,<br><em>nine studies.</em></h1>
-  <p class="lede">Robin knows nothing about coding. Robin directed an AI council, Teddy, Claude and Codex, with supporting sub-agents, to turn eight playable toys into pre-registered studies. Within three days, 10 to 12 November, all nine research pages went live. This is how the council worked, what broke and what it learned.</p>
+  <p class="lede">Robin has not coded in decades. Robin directed an AI council, Teddy, Claude and Codex, with supporting sub-agents, to turn eight playable toys into pre-registered studies. Within three days, 10 to 12 November, all nine research pages went live. This is how the council worked, what broke and what it learned.</p>
   <div class="facts">
     <div><b>9</b><span>research pages live</span></div>
     <div><b>8</b><span>new studies, each frozen and pushed before any model call</span></div>
@@ -40,6 +41,8 @@ const schema = {
     <article><h3>Teddy</h3><p class="role">research partner · critical reviewer</p><ul><li>Explored research questions and challenged assumptions with Robin</li><li>Audited the coordination rule (the claim race)</li><li>Wrote the precise prompt for the Work or Proof? baseline fix</li></ul></article>
   </div>
 </section>
+
+<CouncilWorkflowDiagram />
 
 <section>
   <p class="eyebrow">The loop</p>

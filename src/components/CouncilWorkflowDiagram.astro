@@ -1,0 +1,51 @@
+---
+const roles = [
+  {name:'Robin',role:'Intent · judgment',lines:['Sets direction and the brief','Reads findings; asks what’s next']},
+  {name:'Teddy',role:'Explore · challenge',lines:['Explores rival explanations','Questions the framing']},
+  {name:'Codex',role:'Build · analyse',lines:['Protocol, code and analysis','Turns evidence into pages']},
+  {name:'Claude',role:'Review · verify',lines:['Reviews, collects and rebuilds','Judges findings and release']},
+];
+const widePositions = [[60,70],[570,70],[60,335],[570,335]];
+---
+<section class="role-map-section" aria-labelledby="role-map-title">
+  <p class="eyebrow">The collaboration</p>
+  <h2 id="role-map-title">Four roles. One learning loop.</h2>
+  <figure class="role-diagram">
+    <svg class="map-wide" viewBox="0 0 960 580" width="960" height="580" role="img" aria-labelledby="council-map-wide-title council-map-wide-desc">
+      <title id="council-map-wide-title">The four-role Research Council</title>
+      <desc id="council-map-wide-desc">Robin and Teddy explore and challenge questions together. Robin’s brief goes to Codex. Codex and Claude exchange design, evidence and review. Findings return to Robin and Teddy and begin another question.</desc>
+      <defs><marker id="council-arrow-wide" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 9 5 1 9" /></marker></defs>
+      <g class="connections" marker-end="url(#council-arrow-wide)">
+        <path d="M390 137H560" marker-start="url(#council-arrow-wide)" />
+        <path d="M220 230V325" />
+        <path d="M390 400H560" />
+        <path d="M560 448H390" />
+        <path class="return-path" d="M730 495V530H24V28H220V60" />
+      </g>
+      <g class="connector-labels"><text x="475" y="116" text-anchor="middle">Explore &amp; challenge</text><text x="240" y="283">Robin’s brief</text><text x="475" y="382" text-anchor="middle">Design &amp; evidence</text><text x="475" y="473" text-anchor="middle">Review &amp; revise</text><text x="480" y="561" text-anchor="middle">Findings return to the council → new questions begin</text></g>
+      {roles.map((r,i)=>{const [x,y]=widePositions[i];return <g class={`role-card role-${r.name.toLowerCase()}`} data-role-card={r.name}>
+        <rect x={x} y={y} width="320" height="150" rx="3" />
+        <text class="map-name" x={x+24} y={y+40}>{r.name}</text>
+        <text class="map-role" x={x+24} y={y+64}>{r.role}</text>
+        <text class="map-detail" x={x+24} y={y+99}>{r.lines[0]}<tspan x={x+24} dy="23">{r.lines[1]}</tspan></text>
+      </g>;})}
+    </svg>
+    <svg class="map-tall" viewBox="0 0 360 1080" width="360" height="1080" role="img" aria-labelledby="council-map-tall-title council-map-tall-desc">
+      <title id="council-map-tall-title">The four-role Research Council</title>
+      <desc id="council-map-tall-desc">Robin and Teddy shape and challenge the questions. Robin sets the brief. Codex builds and analyses, exchanging review with Claude. Findings return to the council and start a new question. This is a role map; the detailed study sequence follows below.</desc>
+      <defs><marker id="council-arrow-tall" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 9 5 1 9" /></marker></defs>
+      <g class="connections" marker-end="url(#council-arrow-tall)"><path d="M192 215V290" marker-start="url(#council-arrow-tall)" /><path d="M192 460V535" /><path d="M192 705V780" marker-start="url(#council-arrow-tall)" /><path class="return-path" d="M192 950V1004H18V20H192V45" /></g>
+      <g class="connector-labels tall-labels"><rect x="72" y="239" width="240" height="27" /><text x="192" y="258" text-anchor="middle">Explore &amp; challenge</text><rect x="72" y="484" width="240" height="27" /><text x="192" y="503" text-anchor="middle">Robin’s brief → build</text><rect x="72" y="729" width="240" height="27" /><text x="192" y="748" text-anchor="middle">Review ↔ revise</text><text x="192" y="1040" text-anchor="middle">Findings → new questions</text></g>
+      {roles.map((r,i)=>{const x=42,y=55+i*245;return <g class={`role-card role-${r.name.toLowerCase()}`} data-role-card={r.name}>
+        <rect x={x} y={y} width="300" height="150" rx="3" />
+        <text class="map-name" x={x+24} y={y+40}>{r.name}</text>
+        <text class="map-role" x={x+24} y={y+64}>{r.role}</text>
+        <text class="map-detail" x={x+24} y={y+99}>{r.lines[0]}<tspan x={x+24} dy="23">{r.lines[1]}</tspan></text>
+      </g>;})}
+    </svg>
+    <figcaption>Robin and Teddy shape the questions. Codex builds and analyses; Claude reviews and verifies. Findings return to the council and open the next question. Supporting sub-agents work within these main roles.</figcaption>
+  </figure>
+</section>
+<style>
+.role-map-section{padding-block:3rem;border-bottom:1px solid var(--line)}.role-map-section>.eyebrow{margin-bottom:1rem}.role-map-section h2{font:400 clamp(1.8rem,4vw,2.7rem)/1.15 var(--serif);letter-spacing:-.03em;margin:0 0 1.2rem;text-wrap:balance}.role-diagram{margin:1.5rem 0 0}.role-diagram svg{display:block;width:100%;height:auto;overflow:visible}.role-diagram .map-tall{display:none;max-width:25rem;margin-inline:auto}.connections path,.role-diagram marker path{fill:none;stroke:#55796b;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}.connections .return-path{stroke:#a18250;stroke-dasharray:5 5}.role-card rect{fill:var(--moon-bright);stroke:var(--line-strong);stroke-width:1.2}.role-robin rect{stroke:#a18250}.map-name{font:400 29px var(--serif);fill:currentColor}.map-role{font:500 11px var(--sans);letter-spacing:1.1px;text-transform:uppercase;fill:#806538}.map-detail{font:400 15px var(--sans);fill:#575b51}.connector-labels text{font:400 14px var(--sans);fill:#42665b}.tall-labels text{font-size:16px}.tall-labels rect{fill:var(--moon);stroke:none}.role-diagram figcaption{max-width:48rem;font:.85rem/1.8 var(--sans);color:var(--muted);margin-top:1rem}@media(max-width:900px){.role-map-section{padding-block:2.5rem}.role-diagram .map-wide{display:none}.role-diagram .map-tall{display:block}}
+</style>
