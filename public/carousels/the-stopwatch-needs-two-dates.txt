@@ -1,0 +1,15 @@
+A stopwatch needs two dates.
+
+Torus says Foundry can move from contract to running AI workloads in 12–16 weeks. The design is plausible: factory assembly can compress the work visible at a data-center site.
+
+But the public materials use two starting labels—contract to token and dirt to token—and the accepted finish changes across Foundry's three commercial models.
+
+That matters because first workload, reliable service, utilization and revenue are different events.
+
+The smallest useful next proof is a customer delivery receipt: one deployment, one commercial model, one dated start and one dated accepted finish. A later operating window can then test reliability and economics.
+
+The system may compress the build. The evidence still needs to start the clock.
+
+Full story and sources: https://iamrobin.ai/binary/stories/the-stopwatch-needs-two-dates/
+
+#AIInfrastructure #DataCenters #Energy #AIEconomics #Inference
