@@ -18,6 +18,7 @@ export default defineConfig({
       filter: (page) => {
         const path = new URL(page).pathname;
         return [
+          '/research/council/',
           '/intelligence/council/autonomous-engineering/',
           '/intelligence/council/million-good-questions/',
           '/intelligence/council/customer-sends-agent/',

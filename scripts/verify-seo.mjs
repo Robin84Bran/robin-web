@@ -12,6 +12,7 @@ const identityAliases = ['Bin Xie', 'Bin “Robin” Xie', 'Bin Robin Xie', 'Xie
 const proofAnchors = ['engineering-record', 'payments-record', 'tidebit-record'];
 const portfolioDisclaimer = 'An attention field — subjects I study, not a record of affiliations or holdings.';
 const indexableRoutes = new Set([
+  '/research/council/',
   '/intelligence/council/autonomous-engineering/',
   '/intelligence/council/million-good-questions/',
   '/intelligence/council/customer-sends-agent/',
