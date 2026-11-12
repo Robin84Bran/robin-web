@@ -4,6 +4,21 @@ import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
 const read=p=>readFileSync(new URL('../../'+p,import.meta.url),'utf8');
 const programme=JSON.parse(read('src/data/research-programme.json'));
+test('the Research Council workflow is published and linked without becoming a study',()=>{
+  const route='/research/council/';
+  assert.ok(existsSync(new URL('../../dist'+route+'index.html',import.meta.url)));
+  const council=read('dist'+route+'index.html');
+  const research=read('dist/research/index.html');
+  assert.match(research, /<section\b[^>]*class="council-workflow"[\s\S]*?href="\/research\/council\/"/);
+  assert.match(research, /<nav\b[^>]*class="research-outlinks"[\s\S]*?href="\/research\/council\/"/);
+  assert.equal((council.match(/<h1\b/g)||[]).length,1);
+  assert.ok(council.includes('"@type":"Article"'));
+  assert.ok(council.includes(`href="https://iamrobin.ai${route}"`));
+  for(const href of ['/research/','/research/work-or-proof/','/research/useful-core/'])assert.ok(council.includes(`href="${href}"`));
+  assert.ok(read('dist/sitemap-0.xml').includes(`https://iamrobin.ai${route}`));
+  assert.equal(programme.studies.some(s=>s.href===route),false);
+  assert.equal(programme.experiments.some(e=>e.href===route),false);
+});
 test('both hubs expose every registered weekly experiment without a hidden archive',()=>{
   const intelligence=read('dist/intelligence/index.html'),research=read('dist/research/index.html');
   assert.ok(programme.experiments.length>=8);
