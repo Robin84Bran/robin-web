@@ -1,0 +1,529 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-12",
+  "updated": "2026-11-12",
+  "signalCount": 8,
+  "briefingPath": "/ouroboros/202611/20261112/",
+  "actionItemPath": "/ouroboros/202611/20261112/action_item/",
+  "hero": "/daily-briefing/20261112/hero.webp",
+  "ogImage": "/daily-briefing/20261112/og.webp",
+  "actionHero": "/action-item/20261112/hero.webp",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NOW",
+      "status": "READY",
+      "visualValue": "4 layers",
+      "visualLabel": "canonical, schema, profile and correction route",
+      "sources": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/introducing-businesses-chatgpt/"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "NEXT",
+      "status": "WATCHING",
+      "visualValue": "50 robots",
+      "visualLabel": "contemplated, not ordered or accepted",
+      "sources": [
+        {
+          "label": "Arrive AI",
+          "url": "https://www.newswire.com/news/arrive-ai-announces-strategic-investment-in-ottonomy-to-accelerate-22887472"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "-$96.3M",
+      "visualLabel": "complete-session BTC plus ETH ETF flow",
+      "sources": [
+        {
+          "label": "Farside BTC",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "Farside ETH",
+          "url": "https://farside.co.uk/eth/"
+        },
+        {
+          "label": "DefiLlama",
+          "url": "https://defillama.com/stablecoins"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "DAX 40",
+      "visualLabel": "onchain coverage requiring rights and redemption checks",
+      "sources": [
+        {
+          "label": "Payward",
+          "url": "https://www.payward.com/newsroom"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "deepDiveAvailable": true,
+      "priority": "NOW",
+      "status": "READY",
+      "visualValue": "1 source",
+      "visualLabel": "owned canonical behind every platform copy",
+      "sources": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/introducing-businesses-chatgpt/"
+        },
+        {
+          "label": "Action Item",
+          "url": "https://iamrobin.ai/ouroboros/202611/20261112/action_item/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "WATCHING",
+      "visualValue": "12–16 weeks",
+      "visualLabel": "provider-claimed contract-to-operation window",
+      "sources": [
+        {
+          "label": "Torus",
+          "url": "https://www.torus.co/news/torus-launches-modular-ai-infrastructure-foundry"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$1.3B",
+      "visualLabel": "reported valuation without audited operating denominator",
+      "sources": [
+        {
+          "label": "Reuters",
+          "url": "https://www.marketscreener.com/news/automation-startup-rox-raises-100-million-at-1-3-billion-valuation-ce785edbdf8df221"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "UNKNOWN",
+      "visualValue": ">1T tokens",
+      "visualLabel": "third-party workload claim not verified by AMD",
+      "sources": [
+        {
+          "label": "AMD",
+          "url": "https://newsroom.amd.com/news/ai-new-electricity-meter-running/"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, November 12, 2026",
+      "description": "Eight bounded actions test attributable AI identity, accepted robot scale, capital flows, tokenized rights, source provenance, compute delivery, private-market economics and outcome-level infrastructure cost.",
+      "centralJudgment": "A useful interface keeps authorship, acceptance and economic evidence visible at every handoff.",
+      "fieldLine": "Eight signals. Signal 5 opens today’s method for keeping AI discovery traceable to an owned source.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Map every public identity field",
+          "why": "A platform claim is useful only when it resolves to an owned, dated source.",
+          "steps": [
+            "List the canonical identity and contact claims on iamrobin.ai.",
+            "Map each claim to schema, platform copy and correction owner."
+          ],
+          "done": "Every public field has a source, date and correction route."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "Count accepted robots, not a framework",
+          "why": "A contemplated deployment does not establish operating scale.",
+          "steps": [
+            "Record accepted robots at each disclosed site.",
+            "Track operating hours, human takeovers and on-time delivery."
+          ],
+          "done": "Scale is counted only with an accepted-unit and operating denominator."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows",
+          "title": "Wait for two complete confirmations",
+          "why": "An incomplete row or near-zero day cannot establish stabilization.",
+          "steps": [
+            "Freeze the next complete BTC and ETH ETF session.",
+            "Compare it with stablecoin supply and repeat once."
+          ],
+          "done": "At least two measures turn positive in two successive complete observations."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins FinTech and Payments",
+          "title": "Test the legal and redemption path",
+          "why": "Round-the-clock access is not equivalent to direct share ownership.",
+          "steps": [
+            "Choose one DAX 40 xStock without trading.",
+            "Compare rights, custody, spreads, dividends and redemption with the underlying."
+          ],
+          "done": "Every economic and legal difference is documented from attributable terms."
+        },
+        {
+          "signal": 5,
+          "domain": "Content and Distribution",
+          "title": "Keep every AI doorway traceable",
+          "why": "Discovery can grow without blurring who authored or verified a claim.",
+          "steps": [
+            "Publish Astra’s exact Sol-checked article in four languages.",
+            "Archive two LinkedIn openings for Robin’s manual use."
+          ],
+          "done": "The platform copy traces to a dated canonical and visible correction path."
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure",
+          "title": "Measure contract-to-token delivery",
+          "why": "A provider schedule and capital announcement are not accepted compute.",
+          "steps": [
+            "Record the first disclosed customer’s contract and interconnection dates.",
+            "Track actual go-live, utilization, outages and delivered cost."
+          ],
+          "done": "Forecast and acceptance states are dated and separately attributable."
+        },
+        {
+          "signal": 7,
+          "domain": "Late Stage Private Markets",
+          "title": "Wait for operating denominators",
+          "why": "A large valuation and growth multiple do not reveal retention or efficient growth.",
+          "steps": [
+            "Record absolute ARR when disclosed.",
+            "Add net retention, customer concentration and cost per qualified opportunity."
+          ],
+          "done": "The valuation can be compared with attributable recurring economics."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities",
+          "title": "Price accepted outcomes, not token volume",
+          "why": "A third-party token count and claimed saving do not establish business value.",
+          "steps": [
+            "Run one frozen task with a single-model route.",
+            "Compare cache-aware routing on cost, latency, failures and human recovery."
+          ],
+          "done": "Both routes report total cost per accepted result with intervention."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年11月12日",
+      "description": "八项有边界的行动，检验可归属 AI 身份、已验收机器人规模、资本流、代币化权利、来源追溯、计算交付、私募经济性与结果级基础设施成本。",
+      "centralJudgment": "有用的界面会在每次交接中保留作者、验收与经济证据。",
+      "fieldLine": "八个信号。信号5展开今天让 AI 发现可回溯至自有来源的方法。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与智能体",
+          "title": "映射每个公开身份字段",
+          "why": "平台说法只有在可回溯至自有、带日期的来源时才有用。",
+          "steps": [
+            "列出 iamrobin.ai 的权威身份与联系信息。",
+            "把每项说法映射到 schema、平台副本和纠错负责人。"
+          ],
+          "done": "每个公开字段都有来源、日期和纠错路径。"
+        },
+        {
+          "signal": 2,
+          "domain": "物理 AI 与机器人",
+          "title": "只计算已验收机器人",
+          "why": "设想中的部署不能证明运营规模。",
+          "steps": [
+            "记录每个披露地点已验收的机器人。",
+            "跟踪运行时长、人工接管与准时交付。"
+          ],
+          "done": "只有具备验收单位与运营分母时才计算规模。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流",
+          "title": "等待两次完整确认",
+          "why": "不完整数据或接近零的一天不能证明企稳。",
+          "steps": [
+            "冻结下一个完整的 BTC 与 ETH ETF 交易日。",
+            "与稳定币供应比较并再重复一次。"
+          ],
+          "done": "至少两项指标在连续两次完整观察中转正。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币 金融科技与支付",
+          "title": "检验法律权利与赎回路径",
+          "why": "全天候交易不等同于直接持股。",
+          "steps": [
+            "不交易，选择一只 DAX 40 xStock。",
+            "比较其权利、托管、价差、股息与赎回。"
+          ],
+          "done": "所有经济与法律差异均由可归属条款记录。"
+        },
+        {
+          "signal": 5,
+          "domain": "内容与分发",
+          "title": "让每个 AI 入口都可追溯",
+          "why": "发现可以增长，但不应模糊谁写下或验证了说法。",
+          "steps": [
+            "以四种语言发布 Astra 的 Sol 审校原文。",
+            "归档两个 LinkedIn 开场供 Robin 手动使用。"
+          ],
+          "done": "平台副本可追溯至带日期的权威来源与可见纠错路径。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基础设施",
+          "title": "测量从签约到 token 的交付",
+          "why": "供应商时间表与融资公告不是已验收计算。",
+          "steps": [
+            "记录首个披露客户的签约与并网日期。",
+            "跟踪实际上线、利用率、停机与交付成本。"
+          ],
+          "done": "预测与验收状态均有日期并分别归属。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私募市场",
+          "title": "等待运营分母",
+          "why": "高估值与增长倍数不能说明留存或增长效率。",
+          "steps": [
+            "披露后记录绝对 ARR。",
+            "加入净留存、客户集中度与每个合格机会成本。"
+          ],
+          "done": "估值可与可归属的经常性经济指标比较。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场股票",
+          "title": "为验收结果而非 token 量定价",
+          "why": "第三方 token 数量与节省主张不能证明业务价值。",
+          "steps": [
+            "以单模型路由运行一个冻结任务。",
+            "在成本、延迟、失败与人工恢复上比较缓存感知路由。"
+          ],
+          "done": "两条路由都报告每个验收结果的总成本与介入。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年11月12日",
+      "description": "八項有邊界的行動，檢驗可歸屬 AI 身分、已驗收機器人規模、資本流、代幣化權利、來源追溯、計算交付、私募經濟性與結果級基礎設施成本。",
+      "centralJudgment": "有用的介面會在每次交接中保留作者、驗收與經濟證據。",
+      "fieldLine": "八個信號。信號5展開今天讓 AI 發現可回溯至自有來源的方法。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与智能体",
+          "title": "映射每个公开身份欄位",
+          "why": "平台說法只有在可回溯至自有、带日期的來源时才有用。",
+          "steps": [
+            "列出 iamrobin.ai 的权威身份与联系信息。",
+            "把每项說法映射到 schema、平台副本和糾錯负责人。"
+          ],
+          "done": "每个公开欄位都有來源、日期和糾錯路径。"
+        },
+        {
+          "signal": 2,
+          "domain": "物理 AI 与機器人",
+          "title": "只計算已驗收機器人",
+          "why": "設想中的部署不能证明營運规模。",
+          "steps": [
+            "記錄每个揭露地点已驗收的機器人。",
+            "跟踪執行时长、人工接管与准时交付。"
+          ],
+          "done": "只有具备驗收单位与營運分母时才計算规模。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流",
+          "title": "等待两次完整确认",
+          "why": "不完整資料或接近零的一天不能证明企稳。",
+          "steps": [
+            "冻结下一个完整的 BTC 与 ETH ETF 交易日。",
+            "与稳定币供應比較并再重复一次。"
+          ],
+          "done": "至少两项指标在連續两次完整观察中转正。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币 金融科技与支付",
+          "title": "检验法律權利与赎回路径",
+          "why": "全天候交易不等同于直接持股。",
+          "steps": [
+            "不交易，选择一只 DAX 40 xStock。",
+            "比較其權利、托管、价差、股息与赎回。"
+          ],
+          "done": "所有經濟与法律差异均由可歸屬条款記錄。"
+        },
+        {
+          "signal": 5,
+          "domain": "内容与分发",
+          "title": "让每个 AI 入口都可追溯",
+          "why": "發現可以成長，但不应模糊谁写下或验证了說法。",
+          "steps": [
+            "以四种语言發布 Astra 的 Sol 审校原文。",
+            "歸檔两个 LinkedIn 开场供 Robin 手動使用。"
+          ],
+          "done": "平台副本可追溯至带日期的权威來源与可见糾錯路径。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基础设施",
+          "title": "测量从簽約到 token 的交付",
+          "why": "供應商時間表与融资公告不是已驗收計算。",
+          "steps": [
+            "記錄首个揭露客戶的簽約与并网日期。",
+            "跟踪实际上线、使用率、停機与交付成本。"
+          ],
+          "done": "预测与驗收狀態均有日期并分别歸屬。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私募市場",
+          "title": "等待營運分母",
+          "why": "高估值与成長倍数不能说明留存或成長效率。",
+          "steps": [
+            "揭露后記錄绝对 ARR。",
+            "加入净留存、客戶集中度与每个合格机会成本。"
+          ],
+          "done": "估值可与可歸屬的经常性經濟指标比較。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市場股票",
+          "title": "为驗收结果而非 token 量定价",
+          "why": "第三方 token 數量与節省主张不能证明業務价值。",
+          "steps": [
+            "以单模型路由執行一个冻结任务。",
+            "在成本、延遲、失败与人工恢復上比較缓存感知路由。"
+          ],
+          "done": "兩條路由都报告每个驗收结果的總成本与介入。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー 2026年11月12日",
+      "description": "8つの限定された行動で、帰属可能なAI ID、受入済みロボット規模、資本フロー、トークン化権利、出所、計算資源の供給、未公開市場の経済性、成果単位のインフラ費用を検証する。",
+      "centralJudgment": "有用なインターフェースは、すべての受け渡しで執筆者、受入、経済証拠を見える状態に保つ。",
+      "fieldLine": "8つのシグナル。シグナル5はAI発見を所有された情報源まで追跡可能にする方法を開く。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "フロンティアモデルとエージェント",
+          "title": "すべての公開ID項目を対応づける",
+          "why": "プラットフォーム上の主張は、所有され日付のある情報源に結びつく場合に有用となる。",
+          "steps": [
+            "iamrobin.ai の正本となるID情報と連絡先を列挙する。",
+            "各主張をschema、プラットフォームのコピー、訂正責任者に対応づける。"
+          ],
+          "done": "すべての公開項目に情報源、日付、訂正経路がある。"
+        },
+        {
+          "signal": 2,
+          "domain": "フィジカルAIとロボティクス",
+          "title": "受入済みロボットだけを数える",
+          "why": "想定された配備は運用規模を証明しない。",
+          "steps": [
+            "各開示拠点の受入済みロボットを記録する。",
+            "稼働時間、人手介入、定時配送を追跡する。"
+          ],
+          "done": "受入単位と運用分母がある場合だけ規模を数える。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資本フロー",
+          "title": "完全な確認を2回待つ",
+          "why": "不完全な行やほぼゼロの1日では安定化を証明できない。",
+          "steps": [
+            "次の完全なBTC・ETH ETF取引日を凍結する。",
+            "ステーブルコイン供給と比較し、もう一度繰り返す。"
+          ],
+          "done": "完全な観測2回で少なくとも2指標がプラスになる。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコイン フィンテック 決済",
+          "title": "法的権利と償還経路を検証する",
+          "why": "24時間取引は株式の直接保有と同じではない。",
+          "steps": [
+            "取引せずDAX 40 xStockを1つ選ぶ。",
+            "権利、保管、スプレッド、配当、償還を原株と比べる。"
+          ],
+          "done": "すべての経済・法的差異が帰属可能な条件から記録される。"
+        },
+        {
+          "signal": 5,
+          "domain": "コンテンツと配信",
+          "title": "すべてのAI入口を追跡可能にする",
+          "why": "発見を伸ばしても、誰が主張を執筆・検証したかを曖昧にしてはならない。",
+          "steps": [
+            "Solが検証したAstraの原文を4言語で公開する。",
+            "Robinが手動利用するLinkedIn冒頭文2本を保存する。"
+          ],
+          "done": "プラットフォームのコピーが日付付き正本と訂正経路までたどれる。"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラ",
+          "title": "契約からtokenまでの供給を測る",
+          "why": "提供者の予定と資金発表は受入済み計算資源ではない。",
+          "steps": [
+            "最初に開示された顧客の契約日と接続日を記録する。",
+            "実稼働、利用率、停止、供給コストを追跡する。"
+          ],
+          "done": "予測と受入状態が日付付きで別々に帰属される。"
+        },
+        {
+          "signal": 7,
+          "domain": "レイトステージ未公開市場",
+          "title": "運用分母を待つ",
+          "why": "高い評価額と成長倍率だけでは継続率や効率を示せない。",
+          "steps": [
+            "開示時に絶対ARRを記録する。",
+            "純継続率、顧客集中、適格案件当たりコストを加える。"
+          ],
+          "done": "評価額を帰属可能な継続経済性と比較できる。"
+        },
+        {
+          "signal": 8,
+          "domain": "上場株式",
+          "title": "token量ではなく受入成果を価格化する",
+          "why": "第三者のtoken数と削減主張は事業価値を証明しない。",
+          "steps": [
+            "単一モデル経路で凍結タスクを1件実行する。",
+            "コスト、遅延、失敗、人手復旧でキャッシュ対応経路と比べる。"
+          ],
+          "done": "両経路が受入成果当たり総コストと介入を報告する。"
+        }
+      ]
+    }
+  }
+}
+
