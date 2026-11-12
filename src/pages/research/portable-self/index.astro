@@ -1,0 +1,113 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import StudyResults from '../../../components/StudyResults.astro';
+import results from '../../../data/portable-self-study.json';
+import '../../../styles/research-study.css';
+
+const path = '/research/portable-self/';
+const description = 'The Portable Self: Qwen 7B did better with a shared notebook than automatic keyed routing. Claude used either memory perfectly on stable consoles, then failed after remapping. v0.2 follows a stopped interface cohort.';
+const evidence = 'https://github.com/Robin84Bran/research/tree/main/portable-self/v0.2/collection/delivery';
+const schema = {
+  '@context': 'https://schema.org', '@type': 'Article',
+  '@id': `https://iamrobin.ai${path}#article`,
+  headline: 'The Portable Self — The shared notebook won.',
+  description, url: `https://iamrobin.ai${path}`, inLanguage: 'en',
+  datePublished: '2026-11-12', author: { '@id': 'https://www.tideisun.com/robin#robin-xie' },
+};
+---
+
+<BaseLayout title="The Portable Self — Research — Robin Xie" {path} {description} {schema} type="article">
+  <div class="shell empirical-study">
+    <a class="quiet-link" href="/research/">← Research</a>
+    <p class="eyebrow">Research · Memory and routing · 12 November 2026</p>
+    <h1>The Portable Self<br /><em>The shared<br />notebook won.</em></h1>
+    <p class="lead">Four consoles. Four sets of controls.<br />Should each console automatically receive its own notes?</p>
+    <p class="intro">Automatic routing lost the primary comparison. Qwen 7B made 98/1,600 correct return actions with keyed notes (6%) versus 253/1,600 with a shared notebook (16%). When all consoles used the same mapping, the shared notebook reached 157/320 (49%), versus 25/320 (8%) keyed. Llama and Qwen 1.5B barely used memory successfully at all.</p>
+
+    <section class="story hypothesis" aria-labelledby="hypothesis-title">
+      <h2 id="hypothesis-title">Hypothesis</h2>
+      <p>Automatically routing a model’s own notes to the right console improves its later actions compared with letting it manage a shared notebook.</p>
+      <p><strong>The primary joint test failed in the opposite direction. P3 and P5 held; P1, P2, P4, P6 and P7 failed.</strong> Qwen 7B keyed minus shared correct-action yield was <strong>−9.69 percentage points [−13.13, −6.31]</strong>. All four joint conditions failed.</p>
+      <p class="chart-note">These are re-registered v0.2 predictions, informed by the stopped v0.1 cohort. v0.2 used phase-specific JSON-Schema-constrained decoding. The versions remain separate.</p>
+    </section>
+
+    <section class="story" aria-labelledby="test-title">
+      <p class="eyebrow">The question</p>
+      <h2 id="test-title">A note must survive, and still be right.</h2>
+      <p>Each stateless model call visits one of four labelled consoles. Calibration shows what each of four controls does, then allows one note-writing call. Four return visits each ask for four controls, giving <strong>16 planned return actions and four complete returns</strong> per episode. Calibration demonstrations are identical across arms and do not count as model successes. Return feedback is withheld until the episode ends.</p>
+      <p><strong>Keyed routing</strong> automatically stores and retrieves the current console’s note. <strong>Shared notebook</strong> lets the model manage shared storage. <strong>Discard</strong> throws notes away. The persistent arms have equal total storage and write opportunities, but expose different amounts of text at retrieval; routing and context size are confounded.</p>
+      <dl>
+        <dt>Different-stable</dt><dd>Each console keeps its own distinct control mapping. This is the primary condition.</dd>
+        <dt>Same-stable</dt><dd>All consoles share one stable mapping, reducing the need to route notes.</dd>
+        <dt>Stale-remap</dt><dd>Labels persist but the controls change after calibration. Stored notes become wrong; no remap announcement is sent.</dd>
+      </dl>
+      <p>Qwen 7B and Llama use 100 seeds per primary arm and 20 per other condition. Qwen 1.5B uses 20 throughout. Claude uses ten for different-stable and stale-remap; <strong>Claude same-stable was never scheduled</strong>. All 1,080 v0.2 episodes were attempted: 1,020 local and 60 Claude.</p>
+    </section>
+
+    <section class="story" aria-labelledby="results-title">
+      <p class="eyebrow">Models beside memory scripts</p>
+      <h2 id="results-title">Memory helped Claude. Stale memory failed it.</h2>
+      <p>On different stable consoles, Claude got <strong>160/160 actions and 40/40 complete returns</strong> correct with either keyed or shared memory. Discard produced no correct actions. After remapping, both persistent arms gave <strong>160/160 wrong actions</strong>: the model remembered notes that no longer described the world. Memory without drift detection failed in this task.</p>
+      <p>The <strong>keyed-ledger script</strong> also solves stable worlds and fails after remapping. The last-console script remembers only the latest demonstration; it solves same-stable worlds but loses information when mappings differ. A seeded uniform random policy supplies a matched chance reference, while the oracle sees the remapped truth and always succeeds.</p>
+      <StudyResults panels={results.panels} metric="Correct-action yield Y" secondary="Complete returns F" note="Y counts correct actions / (16 × scheduled episodes); F counts fully correct returns / (4 × scheduled episodes). Abstentions and technical or missing actions are operational misses, with unavailable factual correctness left unknown. Discard is the model baseline. Code policies use each actor’s exact seed set; their model-episode validity is unavailable (—), while deterministic policy execution is complete." />
+      <p class="chart-note">Random is a seeded sample, with 25% expected per action and 1/256 expected complete random return. Its displayed values are observed counts on the matched seeds. Scripts are standalone frozen policies, not additional model memory arms. The oracle is privileged; it alone sees the changed mapping.</p>
+    </section>
+
+    <section class="story" aria-labelledby="primary-title">
+      <p class="eyebrow">The registered comparison</p>
+      <h2 id="primary-title">The loss survives the complete-pair check.</h2>
+      <p>Qwen’s primary keyed-minus-shared ΔY was −9.69 points, rather than the required gain of at least ten points. Complete returns were 3/400 keyed versus 12/400 shared: ΔF <strong>−2.25 points [−4.25, −0.50]</strong>. Both intervals have negative upper bounds.</p>
+      <p>All 200 primary episodes were attempted, but keyed validity was 62/100 and shared 87/100; both needed at least 95/100. Only 53 complete pairs remained, below the required 95. Their ΔY was also negative: <strong>−9.79 points [−14.51, −5.43]</strong>. That sensitivity does not rescue the primary.</p>
+      <p>Intervals use 10,000 paired seed-block bootstrap resamples and the frozen RNG seed. The unit is the whole seed block, not individual actions. The reported levels and secondary comparisons describe these synthetic tasks and saved first responses.</p>
+    </section>
+
+    <section class="story" aria-labelledby="versions-title">
+      <p class="eyebrow">v0.1 → v0.2</p>
+      <h2 id="versions-title">Decoding improved. Reliability stayed limited.</h2>
+      <p>v0.1 was stopped after outcomes exposed an interface failure. Disk retained <strong>288 invalid terminals</strong> and one partial episode, all from Qwen 7B; 282/288 terminals (98%) failed at the control field. Of 1,080 planned episodes, 289 were attempted and 791 never started. None was wholly valid. Unavailable return facts remain unknown; those zeros cannot establish a memory effect.</p>
+      <p>v0.2 changed provider-side, phase-specific <strong>JSON Schema constrained decoding</strong>, with exposure and P1–P7 re-registered before its calls. It was an outcome-informed follow-up. Prompts, task and scientific analysis stayed fixed. Whole-episode validity rose to <strong>695/1,080 (64%)</strong>, measuring eight compliant replies rather than correct actions.</p>
+      <p>Llama’s keyed/shared memory cells still ranged from 33% to 70% whole-episode validity; its same-stable discard arm was 2/20 (10%). Most technically valid Claude episodes succeeded in stable worlds but failed after remapping. Formatting and useful memory are separate questions. Do not pool the versions or retry the stopped partial episode.</p>
+    </section>
+
+    <section class="story" aria-labelledby="predictions-title">
+      <p class="eyebrow">Predictions stay visible</p>
+      <h2 id="predictions-title">Two held. The routing advantage did not.</h2>
+      <ol class="predictions">
+        <li><strong>P1 · Failed.</strong> Qwen 7B would pass the joint primary rule. All four conditions failed.</li>
+        <li><strong>P2 · Failed.</strong> Llama would have positive stable ΔY and ΔF. ΔY was +0.25 points; ΔF tied at zero.</li>
+        <li><strong>P3 · Held.</strong> Stable keyed notes would beat discard in Qwen 7B and Llama. Correct-action yield gains were +2.125 and +0.875 points.</li>
+        <li><strong>P4 · Failed.</strong> Keyed-minus-shared advantage would be smaller in same-stable worlds on matched seeds 0–19. This held for Qwen, but failed for Llama.</li>
+        <li><strong>P5 · Held.</strong> Stale keyed notes would yield fewer correct actions than stable keyed notes on seeds 0–19, in both Qwen 7B and Llama. The frozen episode-level Y rule was used, despite the short prediction’s “first-return” wording.</li>
+        <li><strong>P6 · Failed.</strong> Claude keyed would beat shared in stable worlds. Both reached 160/160 correct actions; a tie fails the forecast.</li>
+        <li><strong>P7 · Failed.</strong> Every cell would have at least 95% valid whole episodes. Only 6/33 cells met that threshold.</li>
+      </ol>
+    </section>
+
+    <section class="story" aria-labelledby="record-title">
+      <p class="eyebrow">How the record holds up</p>
+      <h2 id="record-title">The stopped cohort remains visible.</h2>
+      <dl>
+        <dt>USD 4.78 in model-call accounting</dt>
+        <dd>Settled API-equivalent exposure is USD 4.775331, with zero current money holds or unsettled calls. Saved v0.1 paid exposure is zero. Cash billing is unknown; local hardware, energy, subscriptions and opportunity cost were not priced. A separate v0.1 local-time hold remains in the historical record.</dd>
+        <dt>Operational events kept separate</dt>
+        <dd>An exact-zero usage-limit refusal and a pre-generation DNS/envelope failure have preserved dispositions. The DNS episode was never replaced. All 1,080 current terminals are sealed; low validity remains a finding.</dd>
+        <dt>Byte-identical independent rebuild</dt>
+        <dd>The filtered-copy replay matched all 3,894,883 analysis bytes. The frozen offline suite passed 138/139 tests; one historical STOP fixture fails against completed collection state. The failed log is retained; the saved-evidence rebuild is checked separately.</dd>
+      </dl>
+    </section>
+
+    <section class="story" aria-labelledby="limits-title">
+      <p class="eyebrow">Where this stops</p>
+      <h2 id="limits-title">Routing is not a portable self.</h2>
+      <p>This is a synthetic note-retention task with strict storage limits and no return-feedback recovery. Routing also changes visible context, so this experiment does not isolate an indexing mechanism. Low validity, abstentions and different runtime settings limit attribution. Llama and Qwen 1.5B’s low yield does not identify a general memory capacity.</p>
+      <p>Claude’s ten seed blocks are descriptive. Stable saturation does not establish keyed/shared equivalence, and stale-note use does not prove a semantic memory mechanism. No consciousness, personality, embodiment or production reliability claim follows. The v0.2 follow-up does not erase the v0.1 stop.</p>
+      <p class="fine">Built with Codex; reviewed by Claude. Primary joint prediction: failed. The delivery was accepted by the final reviewer; the registered technical-validity criteria still failed. Percentages are rounded from exact counts, with evidence links preserving full precision.</p>
+      <div class="next-links">
+        <a href="https://github.com/Robin84Bran/research">Research repository on GitHub →</a>
+        <a href={`${evidence}/RESULTS.md`}>Results and reproduction evidence →</a>
+        <a href="/intelligence/portable-self/">Play The Portable Self seed →</a>
+        <a href="/research/useful-core/">Read The Useful Core →</a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>

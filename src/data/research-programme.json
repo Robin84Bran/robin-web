@@ -7,11 +7,11 @@
   "experiments": [
     {"id":"work-or-proof","week":"2026-W46","title":"Work or Proof?","question":"How much of a team should make work, and how much should check it?","direction":"evidence","maturity":"Playable seed"},
     {"id":"bridge-or-bus","week":"2026-W45","title":"Bridge or Bus?","question":"How should tools connect when their interfaces keep changing?","direction":"coordination","maturity":"Empirical study","href":"/research/bridge-or-bus/"},
-    {"id":"useful-core","week":"2026-W44","title":"The Useful Core","question":"What stays useful when parts of a system break?","direction":"memory","maturity":"Playable seed"},
+    {"id":"useful-core","week":"2026-W44","title":"The Useful Core","question":"What stays useful when parts of a system break?","direction":"memory","maturity":"Empirical study","href":"/research/useful-core/"},
     {"id":"signal-or-silence","week":"2026-W43","title":"Signal or Silence","question":"When should a missing heartbeat become an honest ‘unknown’?","direction":"evidence","maturity":"Playable seed"},
-    {"id":"portable-self","week":"2026-W42","title":"The Portable Self","question":"Which habits should travel with an agent into a different body?","direction":"memory","maturity":"Playable seed"},
+    {"id":"portable-self","week":"2026-W42","title":"The Portable Self","question":"Which habits should travel with an agent into a different body?","direction":"memory","maturity":"Empirical study","href":"/research/portable-self/"},
     {"id":"receipt-gap","week":"2026-W41","title":"The Receipt Gap","question":"The work happened. The receipt vanished. Should an agent try again?","direction":"coordination","maturity":"Empirical study","href":"/research/receipt-gap/"},
-    {"id":"one-door","week":"2026-W40","title":"One Door, Many Hands","question":"Does splitting the same capacity across more bodies make it more resilient?","direction":"memory","maturity":"Playable seed"},
+    {"id":"one-door","week":"2026-W40","title":"One Door, Many Hands","question":"Does splitting the same capacity across more bodies make it more resilient?","direction":"memory","maturity":"Empirical study","href":"/research/one-door-many-hands/"},
     {"id":"three-rule-swarm","week":"2026-W39","title":"Three Rules, One Lunch","question":"When does sharing observations help workers search?","direction":"coordination","maturity":"Empirical study","href":"/research/three-rules-one-lunch/"}
   ],
   "studies": [

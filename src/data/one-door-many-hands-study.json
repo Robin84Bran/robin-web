@@ -1,0 +1,477 @@
+{
+  "source": "one-door-many-hands/delivery/{headline,baseline-cells}.csv \u00b7 headline and matched baseline levels in RESULTS.md",
+  "panels": [
+    {
+      "id": "qwen7b-independent",
+      "title": "Qwen 2.5 7B \u00b7 independent failures",
+      "note": "300 assigned choices per evidence arm \u00b7 100 seed blocks",
+      "rows": [
+        {
+          "label": "Rules only",
+          "score": {
+            "count": 103,
+            "total": 300
+          },
+          "regret": 0.2741974853063768,
+          "valid": {
+            "count": 300,
+            "total": 300
+          }
+        },
+        {
+          "label": "Rules + rehearsal",
+          "score": {
+            "count": 64,
+            "total": 300
+          },
+          "regret": 0.3840950538933552,
+          "valid": {
+            "count": 300,
+            "total": 300
+          }
+        },
+        {
+          "label": "Always 1 carrier",
+          "score": {
+            "count": 168,
+            "total": 300
+          },
+          "regret": 0.1010001804711921,
+          "baseline": true
+        },
+        {
+          "label": "Random (post hoc)",
+          "score": {
+            "count": 1,
+            "total": 3
+          },
+          "regret": 0.25197408869167454,
+          "baseline": true,
+          "expected": true
+        },
+        {
+          "label": "Oracle",
+          "score": {
+            "count": 300,
+            "total": 300
+          },
+          "regret": 0.0,
+          "baseline": true
+        }
+      ]
+    },
+    {
+      "id": "qwen7b-common",
+      "title": "Qwen 2.5 7B \u00b7 common damage",
+      "note": "300 assigned choices per evidence arm \u00b7 100 seed blocks",
+      "rows": [
+        {
+          "label": "Rules only",
+          "score": {
+            "count": 123,
+            "total": 300
+          },
+          "regret": 0.3143999999999997,
+          "valid": {
+            "count": 300,
+            "total": 300
+          }
+        },
+        {
+          "label": "Rules + rehearsal",
+          "score": {
+            "count": 93,
+            "total": 300
+          },
+          "regret": 0.3617999999999999,
+          "valid": {
+            "count": 300,
+            "total": 300
+          }
+        },
+        {
+          "label": "Always 1 carrier",
+          "score": {
+            "count": 300,
+            "total": 300
+          },
+          "regret": 0.0,
+          "baseline": true
+        },
+        {
+          "label": "Random (post hoc)",
+          "score": {
+            "count": 2,
+            "total": 3
+          },
+          "regret": 0.17666666666666667,
+          "baseline": true,
+          "expected": true
+        },
+        {
+          "label": "Oracle",
+          "score": {
+            "count": 300,
+            "total": 300
+          },
+          "regret": 0.0,
+          "baseline": true
+        }
+      ]
+    },
+    {
+      "id": "llama8b-independent",
+      "title": "Llama 3.1 8B \u00b7 independent failures",
+      "note": "300 assigned choices per evidence arm \u00b7 100 seed blocks",
+      "rows": [
+        {
+          "label": "Rules only",
+          "score": {
+            "count": 118,
+            "total": 300
+          },
+          "regret": 0.25070073440789387,
+          "valid": {
+            "count": 300,
+            "total": 300
+          }
+        },
+        {
+          "label": "Rules + rehearsal",
+          "score": {
+            "count": 86,
+            "total": 300
+          },
+          "regret": 0.29938515745305583,
+          "valid": {
+            "count": 300,
+            "total": 300
+          }
+        },
+        {
+          "label": "Always 1 carrier",
+          "score": {
+            "count": 168,
+            "total": 300
+          },
+          "regret": 0.1010001804711921,
+          "baseline": true
+        },
+        {
+          "label": "Random (post hoc)",
+          "score": {
+            "count": 1,
+            "total": 3
+          },
+          "regret": 0.25197408869167454,
+          "baseline": true,
+          "expected": true
+        },
+        {
+          "label": "Oracle",
+          "score": {
+            "count": 300,
+            "total": 300
+          },
+          "regret": 0.0,
+          "baseline": true
+        }
+      ]
+    },
+    {
+      "id": "llama8b-common",
+      "title": "Llama 3.1 8B \u00b7 common damage",
+      "note": "300 assigned choices per evidence arm \u00b7 100 seed blocks",
+      "rows": [
+        {
+          "label": "Rules only",
+          "score": {
+            "count": 162,
+            "total": 300
+          },
+          "regret": 0.241,
+          "valid": {
+            "count": 300,
+            "total": 300
+          }
+        },
+        {
+          "label": "Rules + rehearsal",
+          "score": {
+            "count": 163,
+            "total": 300
+          },
+          "regret": 0.24733333333333338,
+          "valid": {
+            "count": 300,
+            "total": 300
+          }
+        },
+        {
+          "label": "Always 1 carrier",
+          "score": {
+            "count": 300,
+            "total": 300
+          },
+          "regret": 0.0,
+          "baseline": true
+        },
+        {
+          "label": "Random (post hoc)",
+          "score": {
+            "count": 2,
+            "total": 3
+          },
+          "regret": 0.17666666666666667,
+          "baseline": true,
+          "expected": true
+        },
+        {
+          "label": "Oracle",
+          "score": {
+            "count": 300,
+            "total": 300
+          },
+          "regret": 0.0,
+          "baseline": true
+        }
+      ]
+    },
+    {
+      "id": "qwen1b-independent",
+      "title": "Qwen 2.5 1.5B \u00b7 independent failures",
+      "note": "300 assigned choices per evidence arm \u00b7 100 seed blocks",
+      "rows": [
+        {
+          "label": "Rules only",
+          "score": {
+            "count": 52,
+            "total": 300
+          },
+          "regret": 0.35715406772934943,
+          "valid": {
+            "count": 300,
+            "total": 300
+          }
+        },
+        {
+          "label": "Rules + rehearsal",
+          "score": {
+            "count": 45,
+            "total": 300
+          },
+          "regret": 0.3671063052126702,
+          "valid": {
+            "count": 300,
+            "total": 300
+          }
+        },
+        {
+          "label": "Always 1 carrier",
+          "score": {
+            "count": 168,
+            "total": 300
+          },
+          "regret": 0.1010001804711921,
+          "baseline": true
+        },
+        {
+          "label": "Random (post hoc)",
+          "score": {
+            "count": 1,
+            "total": 3
+          },
+          "regret": 0.25197408869167454,
+          "baseline": true,
+          "expected": true
+        },
+        {
+          "label": "Oracle",
+          "score": {
+            "count": 300,
+            "total": 300
+          },
+          "regret": 0.0,
+          "baseline": true
+        }
+      ]
+    },
+    {
+      "id": "qwen1b-common",
+      "title": "Qwen 2.5 1.5B \u00b7 common damage",
+      "note": "300 assigned choices per evidence arm \u00b7 100 seed blocks",
+      "rows": [
+        {
+          "label": "Rules only",
+          "score": {
+            "count": 121,
+            "total": 300
+          },
+          "regret": 0.3119333333333332,
+          "valid": {
+            "count": 300,
+            "total": 300
+          }
+        },
+        {
+          "label": "Rules + rehearsal",
+          "score": {
+            "count": 115,
+            "total": 300
+          },
+          "regret": 0.3211333333333332,
+          "valid": {
+            "count": 300,
+            "total": 300
+          }
+        },
+        {
+          "label": "Always 1 carrier",
+          "score": {
+            "count": 300,
+            "total": 300
+          },
+          "regret": 0.0,
+          "baseline": true
+        },
+        {
+          "label": "Random (post hoc)",
+          "score": {
+            "count": 2,
+            "total": 3
+          },
+          "regret": 0.17666666666666667,
+          "baseline": true,
+          "expected": true
+        },
+        {
+          "label": "Oracle",
+          "score": {
+            "count": 300,
+            "total": 300
+          },
+          "regret": 0.0,
+          "baseline": true
+        }
+      ]
+    },
+    {
+      "id": "claude-independent",
+      "title": "Claude Opus 5.5 \u00b7 independent failures",
+      "note": "30 assigned choices per evidence arm \u00b7 10 seed blocks",
+      "rows": [
+        {
+          "label": "Rules only",
+          "score": {
+            "count": 29,
+            "total": 30
+          },
+          "regret": 0.024957527168395072,
+          "valid": {
+            "count": 29,
+            "total": 30
+          }
+        },
+        {
+          "label": "Rules + rehearsal",
+          "score": {
+            "count": 29,
+            "total": 30
+          },
+          "regret": 0.024957527168395072,
+          "valid": {
+            "count": 29,
+            "total": 30
+          }
+        },
+        {
+          "label": "Always 1 carrier",
+          "score": {
+            "count": 18,
+            "total": 30
+          },
+          "regret": 0.09420505954192561,
+          "baseline": true
+        },
+        {
+          "label": "Random (post hoc)",
+          "score": {
+            "count": 1,
+            "total": 3
+          },
+          "regret": 0.2500427787377553,
+          "baseline": true,
+          "expected": true
+        },
+        {
+          "label": "Oracle",
+          "score": {
+            "count": 30,
+            "total": 30
+          },
+          "regret": 0.0,
+          "baseline": true
+        }
+      ]
+    },
+    {
+      "id": "claude-common",
+      "title": "Claude Opus 5.5 \u00b7 common damage",
+      "note": "30 assigned choices per evidence arm \u00b7 10 seed blocks",
+      "rows": [
+        {
+          "label": "Rules only",
+          "score": {
+            "count": 30,
+            "total": 30
+          },
+          "regret": 0.0,
+          "valid": {
+            "count": 30,
+            "total": 30
+          }
+        },
+        {
+          "label": "Rules + rehearsal",
+          "score": {
+            "count": 30,
+            "total": 30
+          },
+          "regret": 0.0,
+          "valid": {
+            "count": 30,
+            "total": 30
+          }
+        },
+        {
+          "label": "Always 1 carrier",
+          "score": {
+            "count": 30,
+            "total": 30
+          },
+          "regret": 0.0,
+          "baseline": true
+        },
+        {
+          "label": "Random (post hoc)",
+          "score": {
+            "count": 2,
+            "total": 3
+          },
+          "regret": 0.17666666666666664,
+          "baseline": true,
+          "expected": true
+        },
+        {
+          "label": "Oracle",
+          "score": {
+            "count": 30,
+            "total": 30
+          },
+          "regret": 0.0,
+          "baseline": true
+        }
+      ]
+    }
+  ]
+}
