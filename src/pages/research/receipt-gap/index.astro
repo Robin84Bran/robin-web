@@ -1,0 +1,331 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const path = '/research/receipt-gap/';
+const description = 'The Receipt Gap: keys reduced duplicate actions, but local models almost never finished all four jobs exactly once. Qwen passed the safety comparison and failed reliable reporting.';
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  '@id': `https://iamrobin.ai${path}#article`,
+  headline: 'The Receipt Gap — Fewer duplicates. Still unfinished.',
+  description,
+  url: `https://iamrobin.ai${path}`,
+  inLanguage: 'en',
+  datePublished: '2026-11-12',
+  author: { '@id': 'https://www.tideisun.com/robin#robin-xie' },
+};
+
+// Source: receipt-gap/v0.2/delivery/headline.csv and RESULTS.md.
+// Both versions use all planned episodes at 50% receipt loss, pooling the two
+// equally sized framings for display. D = actual duplicates, S = exact-once.
+// Validity is a complete valid action trajectory; reports have separate gates.
+const actors = [
+  { id: 'qwen7b', name: 'Qwen 7B', detail: 'Qwen 2.5 7B · registered primary actor', n: 100, arms: [
+    { toolkit: 'Plain', v02: { d: 100, s: 0, valid: 100 }, v01: { d: 94, s: 0, valid: 94 } },
+    { toolkit: 'Keyed', v02: { d: 62, s: 2, valid: 96 }, v01: { d: 75, s: 1, valid: 99 } },
+    { toolkit: 'Status check', v02: { d: 100, s: 0, valid: 100 }, v01: { d: 25, s: 0, valid: 25 } },
+  ] },
+  { id: 'llama8b', name: 'Llama 8B', detail: 'Llama 3.1 8B · secondary replication', n: 100, arms: [
+    { toolkit: 'Plain', v02: { d: 100, s: 0, valid: 100 }, v01: { d: 0, s: 0, valid: 2 } },
+    { toolkit: 'Keyed', v02: { d: 28, s: 0, valid: 100 }, v01: { d: 0, s: 0, valid: 2 } },
+    { toolkit: 'Status check', v02: { d: 100, s: 0, valid: 100 }, v01: { d: 4, s: 0, valid: 67 } },
+  ] },
+  { id: 'qwen1b', name: 'Qwen 1.5B', detail: 'Qwen 2.5 1.5B · reference actor', n: 100, arms: [
+    { toolkit: 'Plain', v02: { d: 100, s: 0, valid: 100 }, v01: { d: 4, s: 0, valid: 0 } },
+    { toolkit: 'Keyed', v02: { d: 3, s: 0, valid: 14 }, v01: { d: 0, s: 1, valid: 10 } },
+    { toolkit: 'Status check', v02: { d: 100, s: 0, valid: 100 }, v01: { d: 0, s: 0, valid: 0 } },
+  ] },
+  { id: 'claude', name: 'Claude', detail: 'Claude · descriptive comparison, 10 seed blocks', n: 20, arms: [
+    { toolkit: 'Plain', v02: { d: 0, s: 10, valid: 20 }, v01: { d: 0, s: 10, valid: 20 } },
+    { toolkit: 'Keyed', v02: { d: 0, s: 20, valid: 20 }, v01: { d: 0, s: 20, valid: 20 } },
+    { toolkit: 'Status check', v02: { d: 0, s: 18, valid: 20 }, v01: { d: 0, s: 11, valid: 12 } },
+  ] },
+];
+const rate = (count: number, n: number) => count / n * 100;
+const score = (count: number, n: number) => `${count}/${n} (${rate(count, n).toFixed(0)}%)`;
+const metrics = [
+  { key: 'd' as const, label: 'Duplicates ↓', x: 8 },
+  { key: 's' as const, label: 'Exact once ↑', x: 210 },
+];
+
+// The review's 6 met / 10 failed counts the 16 actor-specific v0.2 forecasts.
+// Source: delivery/predictions.csv; v0.1 forecasts are a separate registration.
+const predictions = [
+  { id: 'P1', prediction: 'Each local actor duplicates in ≥30% of valid plain episodes.', outcome: 'Met · all three locals (3 met)' },
+  { id: 'P2', prediction: 'Original-key reuse: Qwen 7B and Llama <50%; Claude >90%.', outcome: 'Qwen and Claude met; Llama failed (2 met, 1 failed)' },
+  { id: 'P3', prediction: 'Qwen fails the safety comparison despite fewer keyed duplicates.', outcome: 'Failed · the safety comparison passed (1 failed)' },
+  { id: 'P4', prediction: 'Status check cuts duplicates more than keys for Qwen 7B and Llama.', outcome: 'Failed · both actors (2 failed)' },
+  { id: 'P5', prediction: 'Payment wording produces fewer plain duplicates than notification wording.', outcome: 'Failed · all three locals tied (3 failed)' },
+  { id: 'P6', prediction: 'More than half of duplicate episodes contain an explicit denial.', outcome: 'Failed · all three locals (3 failed)' },
+  { id: 'P7', prediction: 'Claude keyed has zero duplicates and ≥75% exact-once completion.', outcome: 'Met · 0/20 duplicates, 20/20 exact once (1 met)' },
+];
+---
+
+<BaseLayout title="The Receipt Gap — Research — Robin Xie" {path} {description} {schema} type="article">
+  <div class="shell research">
+    <a class="quiet-link" href="/research/">← Research</a>
+    <p class="eyebrow">Research · Agent coordination · 12 November 2026</p>
+    <h1>The Receipt Gap<br /><em>Fewer duplicates.<br />Still unfinished.</em></h1>
+    <p class="lead">The work happened. The confirmation vanished.<br />Should an agent try again?</p>
+    <p class="intro">Keys helped agents avoid repeating an action. They did much less to help local models finish the job. In the revised test, every local model duplicated in every plain-send and status-check run. Claude never duplicated, and finished all four jobs exactly once in every keyed run.</p>
+
+    <section class="story hypothesis" aria-labelledby="hypothesis-title">
+      <h2 id="hypothesis-title">Hypothesis</h2>
+      <p>When confirmations can get lost, offering an idempotency key cuts duplicate actions without hurting completion. An idempotency key is a reusable ticket: repeat the same job with the same key, and the receiver suppresses a second effect.</p>
+      <p><strong>The registered safety comparison held for Qwen 7B in v0.2. Reliable duplicate reporting failed.</strong> The combined claim, “safer and reliably reported,” failed. Across the 16 actor-specific forecasts, <strong>6 met and 10 failed</strong>.</p>
+      <p class="chart-note">v0.2 is the main result here. The fixed primary comparison is Qwen 7B, keyed minus plain, at 50% receipt loss. Llama is the secondary replication, Qwen 1.5B a reference, and Claude descriptive. v0.1 remains visible as an earlier, separate registration.</p>
+    </section>
+
+    <section class="story" aria-labelledby="test-title">
+      <p class="eyebrow">The question</p>
+      <h2 id="test-title">A missing receipt is not a failed action.</h2>
+      <p>Each episode asked a model to complete four simulated jobs, described as payments or notifications. A request could disappear before reaching the receiver (20% request loss). A confirmation could disappear after the action happened (50% receipt loss in the main condition). The model had ten action decisions, then reported whether everything was done and whether anything duplicated. No real payment or message occurred.</p>
+      <p><strong>Plain</strong> offered ordinary sends. <strong>Keyed</strong> added the reusable ticket. <strong>Status check</strong> added a reliable query telling the agent whether a job had happened at least once. A status answer did not reveal whether the job had duplicated.</p>
+      <p>Each version attempted 1,860 episodes: 600 for each local model and 60 for Claude. Local models used 50 seed blocks; Claude used ten. The two wordings and toolkits shared paired scenarios. Local actors also had 0% receipt-loss controls; request loss still applied. Claude had no zero-loss control.</p>
+    </section>
+
+    <section class="story" aria-labelledby="results-title">
+      <p class="eyebrow">Benefit and cost, side by side</p>
+      <h2 id="results-title">Fewer repeats can still mean unfinished work.</h2>
+      <p>With keys, Qwen 7B duplicated in <strong>62%</strong> of v0.2 runs and Llama in <strong>28%</strong>, down from 100% with plain sends. But Qwen finished all four jobs exactly once in only <strong>2%</strong>; Llama never did. Qwen 1.5B’s keyed duplicate rate was only 3%, alongside <strong>14% valid action trajectories and zero exact-once completions</strong>. That low duplicate rate does not establish safety.</p>
+      <p id="results-table-note" class="chart-note">50% receipt loss. Each local arm: 100 episodes; each Claude arm: 20. Duplicates means at least one repeated effect. Exact once requires all four jobs once each and a valid action trajectory. Both use all planned episodes, including failures. On a narrow screen, scroll the table sideways.</p>
+      <div class="table-wrap" role="region" aria-labelledby="results-title" aria-describedby="results-table-note" tabindex="0">
+        <table class="results-table">
+          <caption>Actor × toolkit · v0.2 main results and v0.1 secondary context</caption>
+          <thead>
+            <tr><th scope="col">Actor / toolkit</th><th scope="col">v0.2 duplicates ↓</th><th scope="col">v0.2 exact once ↑</th><th scope="col">v0.2 valid actions</th><th class="secondary" scope="col">v0.1 duplicates</th><th class="secondary" scope="col">v0.1 exact once</th><th class="secondary" scope="col">v0.1 valid actions</th></tr>
+          </thead>
+          {actors.map((actor) => (
+            <tbody>
+              {actor.arms.map((arm) => (
+                <tr class:list={{ 'primary-row': actor.id === 'qwen7b' && arm.toolkit === 'Keyed' }}>
+                  <th scope="row">{actor.name} · {arm.toolkit}<small>{actor.id === 'qwen7b' && arm.toolkit === 'Keyed' ? 'Registered primary vs plain' : actor.detail}</small></th>
+                  <td>{score(arm.v02.d, actor.n)}</td><td>{score(arm.v02.s, actor.n)}</td><td>{score(arm.v02.valid, actor.n)}</td>
+                  <td class="secondary">{score(arm.v01.d, actor.n)}</td><td class="secondary">{score(arm.v01.s, actor.n)}</td><td class="secondary">{score(arm.v01.valid, actor.n)}</td>
+                </tr>
+              ))}
+            </tbody>
+          ))}
+        </table>
+      </div>
+      <p class="chart-note">Actual duplicate counts retain known effects before an episode failed. Zero observed repeats in an aborted episode does not mean delivery succeeded. All saved terminal worlds have known truth. Pooling the equally sized wordings is a post hoc display choice over registered cells, with no new tests.</p>
+
+      <figure class="comparison" aria-labelledby="outcomes-caption">
+        <figcaption id="outcomes-caption"><strong>Duplicate rate and exact-once completion</strong><br />Same actors and denominators as the table. All scales run from 0 to 100%.</figcaption>
+        <p class="chart-note chart-key"><span class="legend main-key" aria-hidden="true"></span>Filled: v0.2 main results. <span class="legend old-key" aria-hidden="true"></span>Grey outline: v0.1 secondary context. Duplicates are better low; exact-once completion is better high.</p>
+        <div class="chart-grid">
+          {actors.map((actor) => (
+            <div class="actor-chart">
+              <h3>{actor.name}</h3>
+              <p class="chart-note">{actor.detail}</p>
+              <svg class="results-plot" viewBox="0 0 400 345" role="img" aria-labelledby={`${actor.id}-title ${actor.id}-desc`}>
+                <title id={`${actor.id}-title`}>{actor.name}: duplicates and exact-once completion, by toolkit and version</title>
+                <desc id={`${actor.id}-desc`}>{actor.arms.map((arm) => `${arm.toolkit}: v0.2 duplicates ${score(arm.v02.d, actor.n)}, exact once ${score(arm.v02.s, actor.n)}; v0.1 duplicates ${score(arm.v01.d, actor.n)}, exact once ${score(arm.v01.s, actor.n)}.`).join(' ')} Each pair of bars shows v0.2 filled above v0.1 outlined. Valid-action counts are in the table.</desc>
+                {metrics.map((metric) => (
+                  <g>
+                    <text class="metric-title" x={metric.x} y="24">{metric.label}</text>
+                    <text class="axis-label" x={metric.x} y="44">0</text>
+                    <text class="axis-label" x={metric.x + 128} y="44" text-anchor="end">100%</text>
+                  </g>
+                ))}
+                {actor.arms.map((arm, index) => {
+                  const y = 72 + index * 94;
+                  return (
+                    <g>
+                      <text class="toolkit-label" x="8" y={y}>{arm.toolkit}</text>
+                      {metrics.map((metric) => (
+                        <g>
+                          <rect class="plot-track" x={metric.x} y={y + 12} width="128" height="12" />
+                          <rect class="plot-bar" x={metric.x} y={y + 12} width={rate(arm.v02[metric.key], actor.n) * 1.28} height="12" />
+                          <text x={metric.x + 184} y={y + 24} text-anchor="end">{Math.round(rate(arm.v02[metric.key], actor.n))}%</text>
+                          <rect class="plot-track" x={metric.x} y={y + 38} width="128" height="12" />
+                          <rect class="old-bar" x={metric.x} y={y + 38} width={rate(arm.v01[metric.key], actor.n) * 1.28} height="12" />
+                          <text class="secondary" x={metric.x + 184} y={y + 50} text-anchor="end">{Math.round(rate(arm.v01[metric.key], actor.n))}%</text>
+                        </g>
+                      ))}
+                    </g>
+                  );
+                })}
+              </svg>
+            </div>
+          ))}
+        </div>
+        <p class="chart-note">These bars show observed rates, without inferred error bars. The registered primary interval is highlighted below. “v0.2 main” identifies the version; it does not turn secondary or descriptive arms into primary tests.</p>
+      </figure>
+      <p>Claude’s result was different: <strong>zero duplicates</strong> in all three toolkits, with exact-once completion of <strong>100% keyed, 90% status check and 50% plain</strong>. In plain runs it sent each job once, then stopped rather than risk repeating an effect; requests lost before execution left work unfinished. Keys made retries useful in this sample. Twenty keyed episodes do not establish a general safety guarantee.</p>
+    </section>
+
+    <section class="story" aria-labelledby="primary-title">
+      <p class="eyebrow">The result · pre-registered primary</p>
+      <h2 id="primary-title">The safety comparison passed. Completion stayed at 2%.</h2>
+      <div class="figures">
+        <p class="figure"><strong>−34 pp</strong><span>keyed minus plain: duplicates or action failure<br />95% interval −40 to −27 pp</span></p>
+        <p class="figure"><strong>+2 pp</strong><span>exact-once completion: 0% → 2%<br />95% interval 0 to +5 pp</span></p>
+      </div>
+      <figure class="comparison primary-comparison">
+        <figcaption><strong>Qwen 7B · keyed minus plain · v0.2 primary</strong><br />Duplicate-or-action-failure difference, in percentage points</figcaption>
+        <svg class="interval-plot" viewBox="0 0 400 145" role="img" aria-labelledby="interval-title interval-desc">
+          <title id="interval-title">Primary difference: minus 34 percentage points, 95% interval minus 40 to minus 27</title>
+          <desc id="interval-desc">The registered conservative endpoint counts a duplicate or an invalid action trajectory as failure. Its keyed-minus-plain difference is minus 34 percentage points, with a 95% interval from minus 40 to minus 27, entirely below zero. The axis runs from minus 50 to zero. This is distinct from the raw duplicate rate plotted above.</desc>
+          <line class="plot-axis" x1="32" x2="362" y1="92" y2="92" />
+          {[-50, -40, -30, -20, -10, 0].map((tick) => (
+            <g>
+              <line class="plot-axis" x1={32 + (tick + 50) * 6.6} x2={32 + (tick + 50) * 6.6} y1="88" y2="97" />
+              <text x={32 + (tick + 50) * 6.6} y="119" text-anchor="middle">{tick}</text>
+            </g>
+          ))}
+          <line class="zero-line" x1="362" x2="362" y1="28" y2="92" />
+          <path class="interval-line" d="M98 48V72M98 60H183.8M183.8 48V72" />
+          <circle class="interval-point" cx="137.6" cy="60" r="6" />
+          <text class="interval-label" x="137.6" y="30" text-anchor="middle">−34 [−40, −27]</text>
+        </svg>
+        <p class="chart-note">pp = percentage points. This is D*, the registered penalty endpoint: 100% plain versus 66% keyed. A technical failure is penalized here; it is not being called an observed duplicate.</p>
+      </figure>
+      <p>The full rule also required the <strong>actual duplicate difference</strong> to have an interval below zero, at least 95 complete pairs, at least 95% valid actions in each pooled arm, all 200 episodes attempted, and a completion interval whose lower bound stayed strictly above −10 pp. All passed in v0.2.</p>
+      <p>On the <strong>96 valid complete pairs</strong>, the actual duplicate difference was <strong>−35.42 pp [−41.94, −28.57]</strong>. Across all 100 episodes per arm, it was −38 pp (62% minus 100%). These are different denominators; neither replaces the highlighted −34 pp penalty endpoint. Plain action validity was 100/100; keyed was 96/100.</p>
+      <p>Passing a ten-point completion tolerance says little about useful delivery when the baseline is zero. In v0.1 the same primary safety rule failed on technical coverage, despite a negative duplicate estimate.</p>
+      <details>
+        <summary>How the intervals were calculated</summary>
+        <p>The frozen analysis used 10,000 whole-seed bootstrap resamples, master seed 20261112, and percentile 95% intervals. Paired wordings and toolkits stayed together, including multiplicity when a seed was sampled more than once. The primary used 50 seed blocks; these intervals describe sensitivity within this simulator and saved first responses. They are not deployment error bounds.</p>
+      </details>
+    </section>
+
+    <section class="story" aria-labelledby="reporting-title">
+      <p class="eyebrow">The other half of the claim</p>
+      <h2 id="reporting-title">The agent rarely told us it had duplicated.</h2>
+      <p>Across Qwen 7B’s 300 main-condition v0.2 episodes, it admitted duplicates in only <strong>9 of 262 duplicate episodes (3.4%)</strong>. It got both report answers right in just <strong>2 of 300 episodes (0.7%)</strong>. The registered reporting test failed, so the combined safety-and-reporting claim failed too.</p>
+      <p>An admission required <code>any_duplicate:true</code> when a duplicate really happened. A null answer or missing report counted as a miss. This measures accurate reporting under the task’s rules, not intention or deliberate deception. The forecast that most duplicate episodes would contain an explicit denial also failed: abstention and absence are different from denial.</p>
+      <p>Claude had no duplicate episodes, so its duplicate-admission rate is <strong>UNKNOWN (0/0)</strong>, not 100%. Its joint report correctness was 23/60 (38.3%), despite perfect action validity. In the keyed arm, all 20 episodes finished exactly once, but only 7/20 final reports got both answers right.</p>
+    </section>
+
+    <section class="story" aria-labelledby="versions-title">
+      <p class="eyebrow">What changed between versions</p>
+      <h2 id="versions-title">A valid reply is not a good next action.</h2>
+      <p>v0.1 mostly exposed interface failures: for example, only 2% of Llama’s plain and keyed runs had valid action trajectories. v0.2 constrained action reply shapes during decoding. Most local action trajectories then became valid, yet every local plain and status-check arm still duplicated in every main-condition episode.</p>
+      <p>Keys work when the agent keeps the same key for a job’s retries. Qwen 7B reused the original nonnull key on <strong>46.0%</strong> of keyed retries; Llama on <strong>76.2%</strong>. Claude did so on <strong>100%</strong>. Merely offering a key did not make local retry behavior reliable. Status queries also needed to guide the next action: Llama retried 59 times after a <code>done</code> answer in the main check arm.</p>
+      <p class="chart-note">The constrained interface did not eliminate all failures: Qwen 1.5B’s keyed action validity remained 14%. Across-version changes are descriptive; no paired causal test of decoding was registered, and Claude also had a disclosed provider-schema amendment. These observations do not identify an internal mechanism.</p>
+      <details>
+        <summary>Could a simple program do better in this simulator?</summary>
+        <p>Post hoc scripted baselines on the same 50 local seed blocks had zero duplicates with keys or status checks, completing 72% and 90% exactly once respectively. A hidden-state oracle completed 100%. These were simulator-only descriptive additions, not registered model comparisons. Their reports used hidden code truth, so reporting scores are ceilings, not fair comparisons with the agents. They cannot rescue the registered outcomes.</p>
+      </details>
+    </section>
+
+    <section class="story" aria-labelledby="predictions-title">
+      <p class="eyebrow">Forecasts kept visible</p>
+      <h2 id="predictions-title">6 met. 10 failed.</h2>
+      <p>The v0.2 forecasts were registered after seeing v0.1. The tally counts actor-specific predictions within these seven groups. A failed forecast is separate from a failed scientific test: predicting failure and then observing a pass still misses the forecast.</p>
+      <div class="table-wrap" role="region" aria-labelledby="predictions-title" tabindex="0">
+        <table class="prediction-table">
+          <caption>Pre-registered v0.2 predictions and observed outcomes</caption>
+          <thead><tr><th scope="col">Prediction</th><th scope="col">Outcome</th></tr></thead>
+          <tbody>
+            {predictions.map((prediction) => (
+              <tr><th scope="row">{prediction.id} · {prediction.prediction}</th><td>{prediction.outcome}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="story" aria-labelledby="integrity-title">
+      <p class="eyebrow">How the record holds up</p>
+      <h2 id="integrity-title">Complete, with the failures retained.</h2>
+      <dl>
+        <dt>Independent final review</dt>
+        <dd>Claude accepted the study as complete under the agreed stop rule: v0.2 was the last version. That completion decision keeps the scientific outcomes separate: safety comparison passed, reporting failed, combined claim failed. Technical acceptance passed in 28/42 v0.2 cells, up from 8/42 in v0.1; the full technical criterion remained unmet.</dd>
+        <dt>A pooled pass can hide a failed cell</dt>
+        <dd>The per-cell gate required at least 95% valid actions and reports. Qwen 7B’s keyed action validity was 96/100 overall but 46/50 in the payment wording, at both receipt-loss levels. That framing cell failed even though the pooled primary arm passed its action-validity threshold.</dd>
+        <dt>Analysis adapter disclosed</dt>
+        <dd>The original frozen entry point stopped before scoring on a stale provenance allowlist. A disclosed load-only adapter handled the final version’s receipt while leaving scoring and statistics unchanged. Its v0.1 regression was byte-identical; the final review confirmed a byte-identical fresh-copy rebuild. Historical failures and amendments remain in the record.</dd>
+        <dt>Operational events kept separate</dt>
+        <dd>One zero-generation DNS non-start and one zero-cost schema harness non-start were archived separately from v0.2’s 1,860 active terminal episodes. They are not model mistakes or duplicate outcomes. Offline verification retained two fixture errors (144/146 passed); no new run was used to replace unfavorable evidence.</dd>
+        <dt>USD 11.75 in accounted model-call spend</dt>
+        <dd>Cumulative settled accounting was USD 11.754519: USD 5.660781 for v0.1 and USD 6.093738 for v0.2. An additional <strong>USD 0.29 in retained holds</strong> (USD 0.293888) remained outstanding, giving USD 12.048407 exposure. These are conservative API-equivalent figures, not verified cash invoices. Actual cash billing, local hardware and energy costs are UNKNOWN.</dd>
+      </dl>
+    </section>
+
+    <section class="story" aria-labelledby="limits-title">
+      <p class="eyebrow">Where this stops</p>
+      <h2 id="limits-title">Four simulated jobs. No production guarantee.</h2>
+      <p>The receiver recorded permanent key bindings and effects atomically. The study did not test key expiry, ledger resets, delayed or in-flight requests, receiver failures, real APIs, adversarial receivers or multi-agent handoffs. Exact-once delivery here is a simulator outcome, not a provider guarantee.</p>
+      <p>The small, fixed model samples and ten-decision horizon limit generalisation. Local validity failures mix interface adherence, decoding limits and decision behavior. Claude’s ten seed blocks are descriptive; zero observed duplicates cannot establish a zero deployment rate. A status check reveals at-least-once execution, not the full effect history.</p>
+      <p>The practical lesson is to evaluate duplicate prevention, completion and reporting together. A tool can reduce repeated effects while the agent leaves almost everything unfinished or cannot say what happened.</p>
+      <p class="fine">Built by Robin Xie with Codex; reviewed by Claude. Counts, intervals and forecasts follow the combined v0.2 delivery report; the final review supplies the completion decision. Earlier versions and post hoc additions remain labelled. No further version was run.</p>
+      <div class="next-links">
+        <a href="https://github.com/Robin84Bran/research">Research repository on GitHub →</a>
+        <a href="/intelligence/receipt-gap/">Play the original Receipt Gap seed →</a>
+        <a href="/research/signal-or-silence/">Read Signal or Silence →</a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .research { padding-block: 3rem 5rem; }
+  .research > .eyebrow { margin-top: 3rem; }
+  h1 { font: 400 clamp(3rem, 8vw, 6.6rem)/1 var(--serif); letter-spacing: -0.05em; margin: 1.5rem 0; }
+  h1 em { color: var(--gold-dark); }
+  .lead { font: 400 clamp(1.3rem, 3vw, 2rem)/1.45 var(--serif); }
+  .intro, .story { max-width: 48rem; line-height: 1.85; }
+  .intro, .fine, dd, figcaption, .chart-note, .secondary { color: var(--muted); }
+  .story { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--line); }
+  .hypothesis { margin-top: 2rem; }
+  h2 { font: 400 clamp(1.7rem, 4vw, 2.7rem)/1.18 var(--serif); letter-spacing: -0.03em; margin: 0.4rem 0 1.4rem; }
+  .table-wrap { max-width: 100%; overflow-x: auto; margin-top: 1.2rem; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.85rem; line-height: 1.6; font-variant-numeric: tabular-nums; }
+  .results-table { min-width: 65rem; }
+  caption { text-align: left; color: var(--muted); padding-bottom: 0.8rem; }
+  th, td { text-align: left; vertical-align: top; padding: 1rem 0.8rem; border-bottom: 1px solid var(--line); }
+  thead th { font-weight: 600; border-top: 1px solid var(--line); }
+  tbody th { min-width: 13rem; font-weight: 400; }
+  td { min-width: 7rem; }
+  table small { display: block; color: var(--muted); margin-top: 0.3rem; font-size: 0.75rem; }
+  .primary-row { background: var(--moon-bright); }
+  .primary-row th { border-left: 3px solid var(--gold-dark); font-weight: 600; }
+  .prediction-table { min-width: 36rem; }
+  .prediction-table tbody th { width: 58%; }
+  .comparison { margin: 2rem 0; padding: clamp(0.75rem, 3vw, 1.6rem); border: 1px solid var(--line); background: var(--moon-bright); }
+  figcaption { font-size: 0.85rem; margin-bottom: 1.2rem; }
+  .chart-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+  .actor-chart { min-width: 0; padding-top: 1rem; border-top: 1px solid var(--line); }
+  .actor-chart h3 { margin: 0; font-size: 1rem; font-weight: 600; }
+  .actor-chart > p { margin-top: 0.3rem; }
+  .results-plot, .interval-plot { display: block; width: 100%; height: auto; font: 17px var(--sans); font-variant-numeric: tabular-nums; }
+  svg text { fill: var(--ink); }
+  svg .axis-label, svg .secondary { fill: var(--muted); }
+  .metric-title, .toolkit-label { font-weight: 600; }
+  .plot-track { fill: var(--stone); }
+  .plot-bar { fill: var(--gold-dark); }
+  .old-bar { fill: none; stroke: var(--muted); stroke-width: 1.5; }
+  .legend { display: inline-block; width: 1rem; height: 0.55rem; margin-inline: 0.2rem; }
+  .main-key { background: var(--gold-dark); }
+  .old-key { border: 1.5px solid var(--muted); }
+  .figures { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 2rem; margin-block: 1.5rem 2rem; }
+  .figure { display: grid; gap: 0.5rem; margin: 0; padding-block: 1.1rem; border-top: 1px solid var(--line); }
+  .figure strong { font: 400 clamp(1.8rem, 4vw, 2.8rem)/1.15 var(--serif); letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+  .figure span { color: var(--muted); font-size: 0.86rem; line-height: 1.6; }
+  .primary-comparison { border-left: 3px solid var(--gold-dark); }
+  .interval-plot { max-width: 30rem; margin-inline: auto; }
+  .plot-axis, .zero-line { stroke: var(--muted); }
+  .zero-line { stroke-dasharray: 4 4; }
+  .interval-line { fill: none; stroke: var(--gold-dark); stroke-width: 3; }
+  .interval-point { fill: var(--gold-dark); }
+  .interval-label { font-weight: 700; }
+  .chart-note { font-size: 0.78rem; line-height: 1.6; margin-bottom: 0; }
+  .comparison > .chart-note { margin-top: 1.5rem; }
+  .comparison > .chart-key { margin-top: 0; }
+  details { margin-top: 1.5rem; border-block: 1px solid var(--line); padding-block: 1rem; font-size: 0.9rem; }
+  summary { cursor: pointer; font-weight: 600; }
+  details p { margin: 1rem 0 0; }
+  dt { font-weight: 600; margin-top: 1.2rem; }
+  dd { margin-left: 0; }
+  code { overflow-wrap: anywhere; }
+  .fine { font-size: 0.85rem; line-height: 1.7; }
+  .next-links { display: flex; flex-wrap: wrap; gap: 1rem 2rem; padding-top: 1rem; color: var(--gold-dark); }
+  @media (max-width: 650px) {
+    .figures, .chart-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 380px) {
+    .results-plot { font-size: 19px; }
+  }
+</style>
