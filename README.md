@@ -378,3 +378,18 @@ and a source ZIP live under `public/work-or-proof/`. Canonical research:
 `06_intelligence/AI_research/AI_swarm/16_work_or_proof/`. Accepted, rejected,
 expired, blocked, idle and queued outcomes remain separate; the model is not a
 worker or model productivity benchmark.
+
+### Weekly learning paths
+
+For every new weekly experiment, update `src/data/research-programme.json` and
+add its age-10 explanation to `src/data/research-kid-edition.json` in the same
+release. Include `ExperimentResearchLinks` on the playable page. Both hubs,
+the game and the Kid chapter must stay connected. Before an empirical study is
+published, omit `study` from its chapter and describe only the actual simulation
+findings. Keep the study marked upcoming.
+
+When verified research becomes ready, update its catalogue destination and
+the chapter's `study`, measured finding and limitations together. Include the
+study's return link to the game. The normal release checks reject missing
+chapters, inconsistent study destinations and broken return paths. Cadences,
+research-specific execution approvals and frozen evidence stay unchanged.

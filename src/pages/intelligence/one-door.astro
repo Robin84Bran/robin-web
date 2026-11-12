@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import ExperimentResearchLinks from '../../components/ExperimentResearchLinks.astro';
 const path='/intelligence/one-door/';
 const description='One large carrier, six medium ones, or twenty-four small ones? Play a fixed-capacity experiment in failures, queues and useful work. Inspect all 640 seeded runs.';
 const schema={'@context':'https://schema.org','@type':'LearningResource',name:'One Door, Many Hands',url:`https://iamrobin.ai${path}`,description,inLanguage:'en',learningResourceType:'Interactive simulation',educationalUse:'Experiment'};
@@ -54,6 +55,7 @@ const schema={'@context':'https://schema.org','@type':'LearningResource',name:'O
   </section>
  </div>
  <script is:inline type="module" src="/one-door/client.mjs"></script>
+<ExperimentResearchLinks {path} />
 </BaseLayout>
 <style>
  .experiment{padding-block:3rem 5rem}.experiment>.eyebrow{margin-top:3rem}h1{font:400 clamp(3.5rem,8vw,7rem)/1 var(--serif);letter-spacing:-.05em;margin:1.5rem 0}h1 em{color:#426e69}.lead{font:400 clamp(1.3rem,3vw,2rem)/1.45 var(--serif)}.intro,.story{max-width:48rem;line-height:1.85}.intro,.fine,dd{color:var(--muted)}.playground{margin-block:2.5rem;padding:clamp(1rem,3vw,2rem);border:1px solid var(--line);background:#f7f3eb;border-radius:12px}form{display:flex;flex-wrap:wrap;gap:1rem}label{display:grid;gap:.4rem;font-size:.8rem}select,input[type=number],button{font:inherit;min-height:44px;padding:.65rem;border:1px solid #b8b3a6;border-radius:5px;background:#fffdf7;color:#292822}input[type=number]{max-width:9rem}.buttons{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.2rem}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #a96d29;outline-offset:3px}#play{background:#326d63;color:white}#lab-status{font-size:.85rem;min-height:2.5em}canvas{display:block;width:100%;height:auto}.time{margin-block:1rem}.time input{width:100%;min-height:44px;accent-color:#326d63}.fine{font-size:.8rem;line-height:1.7}.story h2{font:400 clamp(1.6rem,4vw,2.5rem)/1.2 var(--serif);margin-top:2.5rem}dt{font-weight:600;margin-top:1rem}dd{margin-left:0}.downloads{display:flex;flex-wrap:wrap;gap:1rem;font-size:.9rem}.table-wrap{overflow-x:auto;margin-block:1.5rem}table{border-collapse:collapse;width:100%;font-size:.85rem}caption{text-align:left;color:var(--muted);font-size:.8rem;padding-bottom:.7rem}th,td{text-align:left;padding:.75rem .5rem;border-bottom:1px solid var(--line)}th{font-weight:500}td{font-variant-numeric:tabular-nums}@media(max-width:480px){form{display:grid;grid-template-columns:1fr 1fr}label,select{min-width:0}table{font-size:.75rem}th,td{padding:.65rem .3rem}.playground{margin-inline:-.3rem}}

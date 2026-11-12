@@ -1,0 +1,16 @@
+---
+import programme from '../data/research-programme.json';
+import chapters from '../data/research-kid-edition.json';
+interface Props { path: string; }
+const experiment=programme.experiments.find(e=>`/intelligence/${e.id}/`===Astro.props.path);
+const study=experiment&&(experiment.href??programme.studies.find(s=>s.title===experiment.title)?.href);
+const chapter=experiment&&chapters.find(q=>q.id===experiment.id);
+---
+{experiment&&<nav class="shell learning-path" data-learning-path={experiment.id} aria-label={`${experiment.title} research resources`}>
+  <p>Keep exploring</p>
+  {chapter&&<a href={`/research/kid-edition/#${experiment.id}`}>Kid edition ↗</a>}
+  {study?<a href={study}>Empirical study →</a>:<span>Empirical study · upcoming</span>}
+</nav>}
+<style>
+.learning-path{display:flex;align-items:baseline;gap:.7rem 1.6rem;flex-wrap:wrap;border-top:1px solid var(--line);padding-block:1.3rem 2.5rem}.learning-path p{margin:0;color:var(--gold-dark);font:.65rem/1.6 var(--sans);letter-spacing:.1em;text-transform:uppercase}.learning-path a{font:400 1rem/1.8 var(--serif);color:#42665b;text-underline-offset:4px}.learning-path span{font:.8rem/1.8 var(--sans);color:var(--muted)}.learning-path a:focus-visible{outline:2px solid #42665b;outline-offset:4px}
+</style>

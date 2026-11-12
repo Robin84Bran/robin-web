@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import ExperimentResearchLinks from '../../components/ExperimentResearchLinks.astro';
 const path='/intelligence/three-rule-swarm/';
 const description='A crowd with three rules, one centralized learner, and a lunch that moves. Play a seeded search experiment with equal observation budgets and inspect all 192 runs.';
 const schema={'@context':'https://schema.org','@type':'LearningResource',name:'Three Rules, One Lunch',url:`https://iamrobin.ai${path}`,description,inLanguage:'en',learningResourceType:'Interactive simulation',educationalUse:'Experiment'};
@@ -36,6 +37,7 @@ const schema={'@context':'https://schema.org','@type':'LearningResource',name:'T
   </section>
  </div>
  <script is:inline type="module" src="/three-rule-swarm/client.mjs"></script>
+<ExperimentResearchLinks {path} />
 </BaseLayout>
 <style>
  .experiment{padding-block:3rem 5rem}.experiment>.eyebrow{margin-top:3rem}h1{font:400 clamp(3.5rem,8vw,7rem)/1 var(--serif);letter-spacing:-.05em;margin:1.5rem 0}h1 em{color:#426e69}.lead{font:400 clamp(1.3rem,3vw,2rem)/1.45 var(--serif)}.intro,.story{max-width:48rem;line-height:1.85}.intro,.fine,dd{color:var(--muted)}.playground{margin-block:2.5rem;padding:clamp(1rem,3vw,2rem);border:1px solid var(--line);background:#f5f1e8;border-radius:12px}form{display:flex;flex-wrap:wrap;gap:1rem}label{display:grid;gap:.4rem;font-size:.8rem}select,input[type=number],button{font:inherit;padding:.65rem;border:1px solid #c8c3b6;border-radius:5px;background:#fffdf7;color:#292822}input[type=number]{max-width:8rem}.check{display:flex;align-items:center}.buttons{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.2rem}button{cursor:pointer}#play{background:#426e69;color:white}#lab-status{font-size:.85rem}.canvas-wrap{overflow-x:auto}canvas{display:block;width:100%;min-width:750px;height:auto}.time{margin-block:1rem}.time input{width:100%;accent-color:#426e69}.scores{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.scores :global(div){display:grid;gap:.3rem}.scores :global(strong){font-size:.85rem}.scores :global(b){font:400 2rem var(--serif)}.scores :global(span){font-size:.75rem;color:var(--muted)}.fine{font-size:.8rem;line-height:1.7}.story h2{font:400 clamp(1.6rem,4vw,2.5rem)/1.2 var(--serif);margin-top:2.5rem}dt{font-weight:600;margin-top:1rem}dd{margin-left:0}.downloads{font-size:.9rem}@media(max-width:480px){.scores{gap:.5rem}.scores :global(strong){font-size:.73rem}}
