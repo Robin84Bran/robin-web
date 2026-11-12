@@ -18,7 +18,7 @@ draft: false
 translationReview: "PASS"
 sourceSignal: 6
 researchScope: "對 Torus Foundry 公布的從合約到 token 交付基準進行有邊界的公開資料研究；本研究沒有簽訂合約、購買設備、測試部署、聯絡公司、配置資本或執行底層基建決策。"
-artifactSha256: "7eab9d48694ef11f62b5ad9f478307f4c442bb9fc676b31d4f23279d9b9f83aa"
+artifactSha256: "4e6debc0e322f91018ecc1c70d8da27447ad049b27b4d02764318e1a76afc6dc"
 evidenceSources: ["https://www.torus.co/news/torus-launches-modular-ai-infrastructure-foundry", "https://www.torus.co/torus-foundry", "https://hydrahost.com/blog/news/hydra-host-raises-100m-series-a/", "https://hydrahost.com/blog/news/"]
 ---
 

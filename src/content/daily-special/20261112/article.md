@@ -18,7 +18,7 @@ draft: false
 translationReview: "PASS"
 sourceSignal: 6
 researchScope: "A bounded public-source examination of Torus Foundry's stated contract-to-token delivery benchmark; no contract, purchase, deployment test, company contact, capital allocation or underlying infrastructure decision was executed."
-artifactSha256: "7eab9d48694ef11f62b5ad9f478307f4c442bb9fc676b31d4f23279d9b9f83aa"
+artifactSha256: "4e6debc0e322f91018ecc1c70d8da27447ad049b27b4d02764318e1a76afc6dc"
 evidenceSources: ["https://www.torus.co/news/torus-launches-modular-ai-infrastructure-foundry", "https://www.torus.co/torus-foundry", "https://hydrahost.com/blog/news/hydra-host-raises-100m-series-a/", "https://hydrahost.com/blog/news/"]
 ---
 
