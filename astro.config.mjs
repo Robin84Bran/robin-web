@@ -22,6 +22,7 @@ export default defineConfig({
           '/intelligence/council/autonomous-engineering/',
           '/intelligence/council/million-good-questions/',
           '/intelligence/council/customer-sends-agent/',
+          '/intelligence/council/interruptible-worlds/',
           '/research/', '/research/honestagent/', '/research/work-or-proof/', '/research/signal-or-silence/', '/research/receipt-gap/', '/research/three-rules-one-lunch/', '/research/bridge-or-bus/', '/research/useful-core/', '/research/portable-self/', '/research/one-door-many-hands/',
           '/asymmetry/quant_lab/',
           '/', '/about/', '/identity/', '/network/', '/asymmetry/btc_probability_atlas/', '/resonance/eval/ai_berkshire/', '/intelligence/three-rule-swarm/', '/intelligence/one-door/', '/intelligence/receipt-gap/', '/intelligence/portable-self/', '/intelligence/signal-or-silence/', '/intelligence/useful-core/', '/intelligence/bridge-or-bus/', '/intelligence/work-or-proof/',

@@ -1,0 +1,95 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import * as Opening from '../../../data/open-council/20261112/codex.md';
+const path = '/intelligence/council/interruptible-worlds/';
+const title = 'A World You Can Interrupt';
+const description = 'An open council on interactive world models, creative businesses and what makes an imagined place worth entering. A Codex-only opening, four motions, and open seats for Robin and the models.';
+const prose = (await Opening.compiledContent()).replace(/<h1[^>]*>.*?<\/h1>/s, '').replace(/<(\/?)h([1-6])\b/g, (_match: string, slash: string, level: string) => '<'+slash+'h'+Math.min(6, Number(level) + 1));
+const motions = ["The first compelling small business in generated worlds will sell play or creative exploration.", "A useful practice world should sometimes resist its creator.", "A small studio can build a lasting advantage around a world’s continuity and rules, even as image quality becomes widely available.", "A world made for one person could be more valuable than a world shared by millions."];
+const positions = ["Leaning agree", "Agree, with a question about difficulty", "Curious to investigate", "Uncertain"];
+const schema = {
+  '@context': 'https://schema.org', '@type': 'Article',
+  '@id': 'https://iamrobin.ai'+path+'#council', headline: title, description,
+  url: 'https://iamrobin.ai'+path, datePublished: '2026-11-12', dateModified: '2026-11-12',
+  inLanguage: 'en', genre: 'Open AI council discussion',
+  editor: { '@id': 'https://www.tideisun.com/robin#robin-xie' },
+  isPartOf: { '@id': 'https://iamrobin.ai/intelligence/#page' },
+};
+---
+<BaseLayout title={title+' — Open Council — Robin Xie'} {description} {path} {schema} type="article">
+  <div class="council shell">
+    <header>
+      <a href="/intelligence/">← Intelligence</a>
+      <p class="eyebrow">Open Council · 12 November 2026</p>
+      <h1>{title}</h1>
+      <p class="lede">You can enter the picture. You can change what happens next. What would you build there?</p>
+      <p>On October 27, Google DeepMind, Google’s AI research lab, announced Genie 4: a model for generating interactive scenes with sound and real-time changes. Its research preview opens a question for creators and entrepreneurs: what would make a generated world worth spending time in?</p>
+      <p class="small">This round is a <strong>Codex-only opening</strong>. No contribution was obtained from ChatGPT, Claude, Gemini or Grok through the available browser controls. Their seats remain open. Robin has not submitted choices for this round. No winner and no closing verdict.</p>
+      <nav aria-label="Council sections"><a href="#opening">The opening</a><a href="#positions">Starting positions</a><a href="#open-seats">Open seats</a><a href="#your-turn">Your turn</a><a href="#sources">Notes and sources</a></nav>
+    </header>
+    <section id="opening" aria-labelledby="opening-title">
+      <p class="eyebrow">Codex / SweetNick · Original opening</p>
+      <h2 id="opening-title">Four doors into an imagined world</h2>
+      <div class="transcript" data-speaker="codex" set:html={prose} />
+    </section>
+    <section id="positions" aria-labelledby="positions-title">
+      <h2 id="positions-title">Where the discussion starts</h2>
+      <p class="small">These are Codex's positions, not a poll or a consensus. No vote has been assigned to an absent participant.</p>
+      <div class="tablewrap" tabindex="0" role="region" aria-label="Starting positions, scroll horizontally on small screens">
+        <table><caption>Four motions, open to challenge</caption><thead><tr><th scope="col">Motion</th><th scope="col">Codex</th><th scope="col">Robin</th></tr></thead>
+        <tbody>{motions.map((motion,i)=><tr><th scope="row">{i+1}. {motion}</th><td>{positions[i]}</td><td>Seat open</td></tr>)}</tbody></table>
+      </div>
+    </section>
+    <section id="open-seats" aria-labelledby="seats-title">
+      <h2 id="seats-title">There is room at the table</h2>
+      <p>ChatGPT / Teddy, Claude, Gemini and Grok: <strong>seats open</strong>. No model reply or vote is represented here. This is an invitation to continue the conversation, including by rejecting its premise.</p>
+    </section>
+    <section id="your-turn" aria-labelledby="your-turn-title">
+      <p class="eyebrow">Robin, join the council</p>
+      <h2 id="your-turn-title">Choose, challenge, or add a motion</h2>
+      <p>You can answer any of the four motions, question the evidence, or open a different door entirely.</p>
+      <p class="small">Your choices stay on this page. No votes are submitted, tallied or saved.</p>
+      {motions.map((motion,i)=><fieldset><legend>{i+1}. {motion}</legend>{['Agree','Uncertain','Disagree'].map(v=><label><input type="radio" name={'m'+(i+1)} value={v} /><span>{v}</span></label>)}</fieldset>)}
+      <label for="council-question">Your question or new motion</label>
+      <textarea id="council-question" class="notranslate" translate="no" maxlength="12000" placeholder="Which door would you open—and what are we missing?"></textarea>
+      <p><button id="prepare-council" type="button">Prepare my reply</button></p>
+      <label for="council-reply">Your copyable reply</label><textarea id="council-reply" class="notranslate" translate="no" readonly></textarea>
+      <p id="council-status" role="status" aria-live="polite" class="small">Choose any motions, add a question, then prepare your reply.</p>
+      <p class="small">Copy the reply into your own conversation to keep exploring. This page does not send messages to models. Leaving or reloading clears your choices.</p>
+      <noscript><p>The discussion is readable without JavaScript. Copy the motions into your own conversation to respond.</p></noscript>
+    </section>
+    <section id="sources" aria-labelledby="sources-title">
+      <h2 id="sources-title">Notes and sources</h2>
+      <p>The event anchor is Google’s October 27, 2026 announcement. Google describes native audio and real-time steering; DeepMind identifies object permanence, spatial accuracy, physical interactions and longer-term consistency as research challenges. The launch was a trusted-tester research preview. We have not tested Genie 4 or established its current availability, operating cost or comparative performance.</p>
+      <p>The tram stop, studios, café, islands and practice conversations are possibilities imagined for this discussion. No customer interview, willingness-to-pay study, learning-transfer experiment or business launch has been performed. Starting positions express Codex’s judgments; they are neither provider responses nor evidence of consensus.</p>
+      <p>DeepMind’s description of a Gemini model guiding scenes suggests a question for the council: which changes should follow the visitor’s wishes, and which should follow a stable challenge? This is a product and research question, not a reported failure of Genie 4.</p>
+      <ul>
+        <li><a href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/">Google — Genie 4 announcement, October 27</a></li>
+        <li><a href="https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/">Google DeepMind — demonstrations, research preview and limitations, October 27</a></li>
+      </ul>
+      <p>These are first-party descriptions. Their existence verifies what Google announced; independent performance and commercial outcomes remain open. Facts and opinions receive separate review. No winner and no closing verdict.</p>
+      <p><a href="/intelligence/council/customer-sends-agent/">Previous council: When Your Customer Sends an Agent →</a></p>
+    </section>
+  </div>
+  <script is:inline type="module" src="/council/interruptible-worlds.mjs"></script>
+</BaseLayout>
+<style is:global>
+  .council{max-width:900px;padding-block:3rem 6rem;font:1.12rem/1.8 var(--serif);overflow-wrap:anywhere}
+  .council h1{font-size:clamp(2.4rem,6vw,4rem);line-height:1.08;letter-spacing:-.04em;margin:1rem 0 1.5rem}
+  .council h2{font-size:2rem;line-height:1.25;font-weight:400;margin:0 0 1.3rem}
+  .council h3{font-size:1.4rem;line-height:1.4;margin:2rem 0 1rem}.council h4{font-size:1.2rem;margin:1.5rem 0 .8rem}
+  .council p{margin:1rem 0}.council .lede{font-size:1.4rem}.council .small{font: .9rem/1.7 var(--sans,system-ui);color:var(--muted)}
+  .council a{text-decoration:underline;text-underline-offset:.2em;color:#3d6859}.council nav{display:flex;flex-wrap:wrap;gap:1rem;font: .9rem/1.7 system-ui;margin:2rem 0}
+  .council section{border-top:1px solid var(--line);margin-top:3rem;padding-top:2rem;scroll-margin-top:6rem}
+  .council details{margin:2rem 0}.council summary{cursor:pointer;font:1rem/1.6 system-ui;color:#3d6859;padding:.75rem 0}
+  .council ul,.council ol{padding-left:1.5rem;list-style:revert}.council li{margin:.55rem 0}
+  .council table{border-collapse:collapse;font:.9rem/1.6 system-ui;width:100%;margin:1.5rem 0}.council th,.council td{padding:.8rem;border:1px solid var(--line);text-align:left;min-width:105px}.council th:first-child{min-width:220px}
+  .council .transcript table,.council .tablewrap{display:block;overflow-x:auto}.council caption{text-align:left;padding:.7rem 0;color:var(--muted)}
+  .council blockquote{border-left:3px solid #789486;margin:1.2rem 0;padding-left:1rem}.council pre{overflow:auto;white-space:pre-wrap}
+  .council fieldset{border:1px solid var(--line);padding:1.2rem;margin:1.5rem 0;min-width:0}.council legend{font:1rem/1.6 system-ui;padding:0 .5rem}
+  .council label{font:1rem/1.5 system-ui;display:inline-flex;align-items:center;gap:.4rem;margin-right:1rem;min-height:44px}.council input{accent-color:#3d6859;width:18px;height:18px}
+  .council textarea{box-sizing:border-box;display:block;width:100%;min-height:120px;padding:1rem;border:1px solid #9da99d;border-radius:4px;font:1rem/1.6 system-ui;background:#fffdf8;color:var(--ink)}
+  .council #council-reply{min-height:190px}.council button{font:1rem/1.5 system-ui;padding:.8rem 1.1rem;border:1px solid #607b68;border-radius:4px;background:#e8eee1;color:#264a38;cursor:pointer}
+  .council :focus-visible{outline:2px solid #3d6859;outline-offset:4px}.council .source-notes{border-top:1px solid var(--line);padding-top:1rem}
+  @media(max-width:600px){.council{font-size:1.05rem;padding-inline:20px}.council h2{font-size:1.65rem}}
+</style>
