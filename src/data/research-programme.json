@@ -21,6 +21,7 @@
     {"title":"The Obedient Rebel","direction":"evidence","maturity":"Empirical study","href":"/research/honestagent/#next-title","question":"When approval is slow, does an agent wait or act?"}
   ],
   "councils": [
+    {"title":"A World You Can Interrupt","date":"2026-11-12","displayDate":"12 Nov 2026","slug":"interruptible-worlds"},
     {"title":"When Your Customer Sends an Agent","date":"2026-11-05","displayDate":"5 Nov 2026","slug":"customer-sends-agent"},
     {"title":"Who Buys a Million Good Questions?","date":"2026-10-29","displayDate":"29 Oct 2026","slug":"million-good-questions"},
     {"title":"The Dawn of Autonomous Engineering","date":"2026-10-22","displayDate":"22 Oct 2026","slug":"autonomous-engineering"}

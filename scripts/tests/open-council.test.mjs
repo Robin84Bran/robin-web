@@ -6,7 +6,7 @@ import { prepareReply } from '../../public/council/reply.mjs';
 const read = path => readFileSync(new URL('../../' + path, import.meta.url), 'utf8');
 const path = '/intelligence/council/autonomous-engineering/';
 
-for (const slug of ['million-good-questions', 'customer-sends-agent']) {
+for (const slug of ['million-good-questions', 'customer-sends-agent', 'interruptible-worlds']) {
 test(`${slug} council keeps empty seats and replies bound to its own topic`, async () => {
   const route = `/intelligence/council/${slug}/`;
   const { prepareReply: prepareWeeklyReply } = await import(`../../public/council/${slug}.mjs`);
