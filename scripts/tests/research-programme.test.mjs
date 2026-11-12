@@ -84,3 +84,25 @@ test('the three new empirical studies stay discoverable with accessible results 
   const door=read('dist/research/one-door-many-hands/index.html');
   assert.ok(door.includes('The rehearsal adds no information beyond the rules.')&&door.includes('USD 1.93'));
 });
+
+test('each research topic appears once with its playable and empirical destinations',()=>{
+  const html=read('dist/research/index.html');
+  const items=[...html.matchAll(/<li\b[^>]*data-research-topic="([^"]+)"[^>]*>[\s\S]*?<\/li>/g)].map(m=>({id:m[1],html:m[0]}));
+  const distinctTitles=new Set([...programme.experiments,...programme.studies].map(x=>x.title));
+  assert.equal(items.length,distinctTitles.size);
+  for(const e of programme.experiments){
+    const item=items.find(x=>x.id===e.id);assert.ok(item,e.id);
+    assert.ok(item.html.includes(`href="/intelligence/${e.id}/"`),e.id+' playable seed');
+    const study=e.href??programme.studies.find(s=>s.title===e.title)?.href;
+    if(study){assert.ok(item.html.includes(`href="${study}"`),e.id+' empirical study');assert.ok(existsSync(new URL('../../dist'+study.split('#')[0]+'index.html',import.meta.url)));}
+    else assert.ok(item.html.includes('Empirical study · upcoming'));
+    assert.ok(item.html.includes('Playable seed'));
+  }
+  for(const [id,play,study] of [['honest-agent','work-or-proof','/research/honestagent/'],['obedient-rebel','receipt-gap','/research/honestagent/#next-title']]){
+    const item=items.find(x=>x.id===id);assert.ok(item?.html.includes('Related play'));assert.ok(item.html.includes(`href="/intelligence/${play}/"`));assert.ok(item.html.includes(`href="${study}"`));
+  }
+  const schemas=[...html.matchAll(/<script\b[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].flatMap(m=>{const x=JSON.parse(m[1]);return x['@graph']??[x];});
+  const collection=schemas.find(x=>x['@type']==='CollectionPage');assert.ok(collection);
+  const playable=collection.hasPart.filter(x=>x['@type']==='LearningResource');
+  assert.deepEqual(playable.map(x=>x.url).sort(),programme.experiments.map(e=>`https://iamrobin.ai/intelligence/${e.id}/`).sort());
+});
