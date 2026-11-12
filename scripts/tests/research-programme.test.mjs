@@ -106,3 +106,62 @@ test('each research topic appears once with its playable and empirical destinati
   const playable=collection.hasPart.filter(x=>x['@type']==='LearningResource');
   assert.deepEqual(playable.map(x=>x.url).sort(),programme.experiments.map(e=>`https://iamrobin.ai/intelligence/${e.id}/`).sort());
 });
+
+test('weekly library rows offer separate playable, empirical and Kid edition destinations',()=>{
+  const html=read('dist/intelligence/index.html');
+  const rows=[...html.matchAll(/<li\b[^>]*data-weekly-experiment="([^"]+)"[^>]*>([\s\S]*?)<\/li>/g)];
+  assert.equal(rows.length,programme.experiments.length);
+  const guide=read('dist/research/kid-edition/index.html');
+  const explained=JSON.parse(read('src/data/research-kid-edition.json'));
+  for(const e of programme.experiments){
+    const row=rows.find(m=>m[1]===e.id)?.[2];assert.ok(row,e.id);
+    const primary=row.match(/<a\b[^>]*class="experiment-row"[^>]*>([\s\S]*?)<\/a>/);
+    assert.ok(primary);assert.doesNotMatch(primary[1],/<a\b/,'resource links cannot be nested in the game link');
+    const study=e.href??programme.studies.find(s=>s.title===e.title)?.href;
+    if(study)assert.match(row,new RegExp('data-experiment-study[^>]*href="'+study+'"'));
+    if(!explained.some(q=>q.id===e.id)){assert.ok(!row.includes(`href="/research/kid-edition/#${e.id}"`),'Future seeds must not advertise an unwritten guide');continue;}
+    assert.ok(row.includes(`href="/research/kid-edition/#${e.id}"`));
+    assert.ok(guide.includes(`id="${e.id}"`),'Kid link must resolve to a section');
+    const topic=[...read('dist/research/index.html').matchAll(/<li\b[^>]*data-research-topic="([^"]+)"[^>]*>([\s\S]*?)<\/li>/g)].find(m=>m[1]===e.id);
+    assert.ok(topic?.[2].includes(`href="/research/kid-edition/#${e.id}"`));
+  }
+});
+
+test('Kid edition keeps every named question discoverable and separates play from measured findings',()=>{
+  const entries=JSON.parse(read('src/data/research-kid-edition.json'));
+  const html=read('dist/research/kid-edition/index.html');
+  const titles=new Set([...programme.studies,...programme.experiments].map(x=>x.title));
+  assert.ok(entries.length>=10);
+  assert.equal(new Set(entries.map(x=>x.title)).size,entries.length);
+  for(const q of entries)assert.ok(titles.has(q.title),'Each explanation belongs to a registered question');
+  assert.equal(new Set(entries.map(x=>x.id)).size,entries.length);
+  assert.equal((html.match(/data-kid-topic=/g)||[]).length,entries.length);
+  const guide=html.match(/<main\b[^>]*class="shell kid-guide"[^>]*>([\s\S]*?)<\/main>/)?.[1];assert.ok(guide);
+  assert.equal((guide.match(/<details\b/g)||[]).length,entries.length);
+  assert.equal((guide.match(/<summary\b/g)||[]).length,entries.length);
+  for(const q of entries){
+    assert.ok(programme.directions.some(d=>d.id===q.direction));
+    for(const href of [q.play,q.study]){
+      const [path,fragment]=href.split('#');
+      const target=read(`dist${path}index.html`);
+      if(fragment)assert.ok(target.includes(`id="${fragment}"`),href);
+      assert.ok(html.includes(`href="${href}"`),href);
+    }
+    assert.ok(q.imagine&&q.question&&q.finding&&q.wonder);
+  }
+  assert.equal((html.match(/<h1\b/g)||[]).length,1);
+  assert.ok(html.includes('href="https://iamrobin.ai/research/kid-edition/"'));
+  assert.ok(read('dist/sitemap-0.xml').includes('https://iamrobin.ai/research/kid-edition/'));
+  assert.doesNotMatch(html,/\/Users\/|private_reviews|chatgpt\.com\/c\/|6af33178|ad8a673c/);
+  assert.ok(html.includes('Real life can work differently.'));
+});
+
+test('Research Council counts Teddy as a main agent while preserving the historical study totals',()=>{
+  const council=read('dist/research/council/index.html');
+  const hub=read('dist/research/index.html');
+  assert.doesNotMatch(council+hub,/one human and two agents|One human, two agents|guest reviewer/);
+  assert.ok(council.includes('Teddy, Claude and Codex, with supporting sub-agents'));
+  assert.ok(council.includes('research partner · critical reviewer'));
+  assert.ok(council.includes('nine studies.')&&council.includes('$57.28'));
+  assert.ok(hub.includes('three main AI agents, with supporting sub-agents'));
+});

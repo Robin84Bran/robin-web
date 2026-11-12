@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import programme from '../../data/research-programme.json';
+import kidQuestions from '../../data/research-kid-edition.json';
 const {directions, experiments, studies} = programme;
 const relatedPlay: Record<string, string> = {
   'The Honest Agent': '/intelligence/work-or-proof/',
@@ -31,7 +32,7 @@ const schema={'@context':'https://schema.org','@type':'CollectionPage',name:'Res
     <header class="research-heading">
       <p class="eyebrow">04 / 08 · Research <span>The connected questions</span></p>
       <h1>What allows intelligent systems to act reliably?</h1>
-      <p>Three connected questions. Small worlds to explore them. Studies to put them to the test.</p>
+      <p>Three connected questions. Small worlds to explore them. Studies to put them to the test.</p><p><a class="quiet-link" href="/research/kid-edition/">New here? Try the Kid edition →</a></p>
     </header>
     <nav class="programme-index" aria-label="Research directions">{directions.map((d,i)=><a href={`#${d.id}`}><span>0{i+1}</span>{d.title}</a>)}</nav>
     <p class="catalogue-note">{experiments.length} weekly experiments · {studyCount} studies · One growing programme</p>
@@ -49,6 +50,7 @@ const schema={'@context':'https://schema.org','@type':'CollectionPage',name:'Res
             <nav class="topic-links" aria-label={`${t.title} resources`}>
               {t.seedHref?<a data-topic-play href={t.seedHref} aria-label={`${t.seedLabel}: ${t.title}`}>{t.seedLabel} <span aria-hidden="true">↗</span></a>:<span class="pending-link">Playable seed · upcoming</span>}
               {t.studyHref?<a data-topic-study href={t.studyHref} aria-label={`Empirical study: ${t.title}`}>Empirical study <span aria-hidden="true">→</span></a>:<span class="pending-link">Empirical study · upcoming</span>}
+              {kidQuestions.some(q=>q.id===t.id)&&<a data-topic-kid href={`/research/kid-edition/#${t.id}`} aria-label={`Kid edition: ${t.title}`}>Kid edition <span aria-hidden="true">↗</span></a>}
             </nav>
           </li>)}
         </ul>
@@ -62,7 +64,7 @@ const schema={'@context':'https://schema.org','@type':'CollectionPage',name:'Res
     <section class="council-workflow" aria-labelledby="council-title">
       <p class="eyebrow">How this research is made</p>
       <h2 id="council-title">The Research Council</h2>
-      <p>How one human and two agents made the studies, what broke, and what they learned.</p>
+      <p>How one human and three main AI agents, with supporting sub-agents, made the studies, what broke, and what they learned.</p>
       <a class="quiet-link" href="/research/council/">See the workflow →</a>
     </section>
     <section class="research-loop" aria-labelledby="loop-title">
