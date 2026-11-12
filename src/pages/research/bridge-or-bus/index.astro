@@ -1,0 +1,277 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const path = '/research/bridge-or-bus/';
+const description = 'Bridge or Bus? Current tool descriptions were available, but local models never looked them up. Claude showed descriptive gains after some interface changes; every model failed the joint test.';
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  '@id': `https://iamrobin.ai${path}#article`,
+  headline: 'Bridge or Bus? — A manual helps only if you use it.',
+  description,
+  url: `https://iamrobin.ai${path}`,
+  inLanguage: 'en',
+  datePublished: '2026-11-12',
+  author: { '@id': 'https://www.tideisun.com/robin#robin-xie' },
+};
+
+// Source: bridge-or-bus/v0.2/build/results.json, cohorts.*.cells.*.counts.Sstar
+// and n. Order within each arm: stable, rename, unit, required. R1 is excluded.
+// Script baselines: frozen bob_baselines.py, replayed over seeds 0–49 in both arms.
+const worlds = ['Stable', 'Rename', 'Unit', 'Required'];
+const actors = [
+  { id: 'qwen7b', name: 'Qwen 2.5 7B', note: 'Primary · n=50/cell · r2', n: 50, stale: [5, 0, 6, 3], registry: [2, 0, 2, 10] },
+  { id: 'claude', name: 'Claude', note: 'Descriptive · n=10/cell · r3', n: 10, stale: [10, 3, 6, 9], registry: [10, 8, 9, 9] },
+  { id: 'llama8b', name: 'Llama 3.1 8B', note: 'Secondary · n=50/cell · r2', n: 50, stale: [0, 0, 0, 0], registry: [0, 0, 0, 0] },
+  { id: 'qwen1b', name: 'Qwen 2.5 1.5B', note: 'Secondary · n=50/cell · r2', n: 50, stale: [0, 0, 0, 0], registry: [0, 0, 0, 0] },
+];
+const baselines = [
+  { id: 'reactive', name: 'Reactive script', note: 'Code baseline · n=50/cell', n: 50, stale: [50, 50, 50, 50], registry: [50, 50, 50, 50] },
+  { id: 'oracle', name: 'Oracle script', note: 'Code baseline · n=50/cell', n: 50, stale: [50, 50, 50, 50], registry: [50, 50, 50, 50] },
+  { id: 'fixed-v0', name: 'Fixed-v0 script', note: 'Code baseline · n=50/cell', n: 50, stale: [50, 0, 50, 0], registry: [50, 0, 50, 0] },
+];
+const percent = (count: number, n: number) => `${Math.round(100 * count / n)}%`;
+const outcome = (count: number, n: number) => `${count}/${n} · ${percent(count, n)}`;
+const arms = ['stale', 'registry'] as const;
+const predictions = [
+  { id: 'P1', actor: 'Qwen 7B', forecast: 'Stable/stale success ≥90%', held: false, result: `5/50 (${percent(5, 50)})` },
+  { id: 'P1', actor: 'Llama 8B', forecast: 'Stable/stale success ≥90%', held: false, result: `0/50 (${percent(0, 50)})` },
+  { id: 'P2', actor: 'Qwen 7B', forecast: 'Pass the entire joint rule', held: false, result: 'Gain +2 pp [−4, +8]; completion, stable and reporting gates also fail.' },
+  { id: 'P2', actor: 'Llama 8B', forecast: 'Positive registry gain across drift worlds', held: false, result: '0/150 in both arms; gain 0 pp.' },
+  { id: 'P3', actor: 'Qwen 7B', forecast: 'Rename and required-field gains each exceed the unit gain', held: true, result: '0 pp and +14 pp each exceed −8 pp. No description lookups.' },
+  { id: 'P3', actor: 'Llama 8B', forecast: 'Rename and required-field gains each exceed the unit gain', held: false, result: 'All three gains are 0 pp; ties fail.' },
+  { id: 'P4', actor: 'Qwen 7B', forecast: 'Describe in ≥70% of registry drift episodes', held: false, result: `0/150 (${percent(0, 150)})` },
+  { id: 'P4', actor: 'Llama 8B', forecast: 'Describe in ≥70% of registry drift episodes', held: false, result: `0/150 (${percent(0, 150)})` },
+  { id: 'P5', actor: 'Claude · descriptive', forecast: 'Registry drift success ≥90%; gain smaller than Qwen’s', held: false, result: `26/30 (${percent(26, 30)}); gain +27 pp versus Qwen’s +2 pp.` },
+  { id: 'P6', actor: 'Qwen 7B', forecast: 'Truthful reports ≥90%; deliberate null reports ≤5% in registry drift', held: false, result: `Truthful 22/150 (${percent(22, 150)}); null 14/150 (${percent(14, 150)}).` },
+  { id: 'P6', actor: 'Llama 8B', forecast: 'Truthful reports ≥90%; deliberate null reports ≤5% in registry drift', held: false, result: `Truthful 114/150 (${percent(114, 150)}); null 27/150 (${percent(27, 150)}).` },
+  { id: 'P6', actor: 'Qwen 1.5B', forecast: 'Truthful reports ≥90%; deliberate null reports ≤5% in registry drift', held: false, result: `Truthful 68/150 (${percent(68, 150)}); null 44/150 (${percent(44, 150)}).` },
+  { id: 'P6', actor: 'Claude · descriptive', forecast: 'Truthful reports ≥90%; deliberate null reports ≤5% in registry drift', held: false, result: `Truthful 26/30 (${percent(26, 30)}); null 0/30 (${percent(0, 30)}).` },
+];
+---
+
+<BaseLayout title="Bridge or Bus? — Research — Robin Xie" {path} {description} {schema} type="article">
+  <div class="shell research">
+    <a class="quiet-link" href="/research/">← Research</a>
+    <p class="eyebrow">Research · Tool interfaces · 12 November 2026</p>
+    <h1>Bridge or Bus?<br /><em>A manual helps<br />only if you use it.</em></h1>
+    <p class="lead">The tool changed. The current description was one call away.<br />The local models never asked for it.</p>
+    <p class="intro">An agent looks up a weight, converts it, then submits an answer. Between the lookup and the next step, the tool can change: an argument gets renamed, a unit changes, or a new field becomes compulsory. Does access to the current manual help the agent finish correctly?</p>
+
+    <section class="story hypothesis" aria-labelledby="hypothesis-title">
+      <h2 id="hypothesis-title">Hypothesis</h2>
+      <p>Letting an agent look up the current tool description improves successful completion after an interface changes.</p>
+      <p><strong>The primary Qwen 7B test failed. Every model failed the joint rule.</strong> The local models produced valid output in the corrected study, but none used the description lookup. Claude showed descriptive gains after renaming and unit changes, while failing the technical validity gate.</p>
+      <p class="chart-note">The joint rule requires completion, truthful acknowledgment, stable-world competence, valid trajectories and reports, and few false completion claims. A gain in one cell does not earn a pass.</p>
+    </section>
+
+    <section class="story" aria-labelledby="test-title">
+      <p class="eyebrow">What we tested instead, and why</p>
+      <h2 id="test-title">Can an agent use the current manual?</h2>
+      <p>The original <a href="/intelligence/bridge-or-bus/">Bridge or Bus playable seed</a> asks whether tools should connect through direct adapters or a shared translation hub. This study takes a smaller, cheaper information-access question: does permission to “look up the current tool description” help after an interface changes? It compares stale descriptions with optional registry access; it does not compare adapters with a hub.</p>
+      <p>Both arms start with the same old descriptions and a warning that tools may change. The <strong>stale</strong> arm can keep working and learn from error messages. The <strong>registry</strong> arm may also call <code>describe</code> for a current description. That lookup uses one of the same <strong>six decisions</strong>; updates are never automatic. Both arms receive the same tool errors.</p>
+      <dl>
+        <dt>Stable</dt><dd>The interface stays the same.</dd>
+        <dt>Rename</dt><dd>Conversion now expects <code>mass_g</code> instead of <code>grams</code>.</dd>
+        <dt>Unit</dt><dd>Conversion returns milligrams instead of grams; submission still expects grams.</dd>
+        <dt>Required</dt><dd>Submission now also needs <code>revision=1</code>.</dd>
+      </dl>
+      <p>There are <strong>1,280 valid-study assignments</strong>: 400 for each of three local models and 80 for Claude. Each local cell has 50 seeds; each Claude cell has 10. The intervention happens after the first successful lookup. Episodes that never reach that step stay in the denominator.</p>
+    </section>
+
+    <section class="story" aria-labelledby="results-title">
+      <p class="eyebrow">The result · all assigned episodes</p>
+      <h2 id="results-title">Access did not guarantee use.</h2>
+      <p>Qwen 7B completed <strong>28 of 400</strong> assignments. Llama 8B and Qwen 1.5B completed <strong>0 of 400 each</strong>: they looped through lookups without ever converting. All three local models had valid trajectories and reports throughout r2, but <strong>zero description lookups</strong>. Formatting improved; task performance remained poor.</p>
+      <figure class="comparison">
+        <figcaption id="success-caption">Successful completion (S*) by actor, arm and world · higher is better</figcaption>
+        <p class="chart-note chart-key"><span class="key stale-key" aria-hidden="true"></span> Stale (S) <span class="key registry-key" aria-hidden="true"></span> Registry (R). Every pair uses a 0–100% scale. Labels show rounded percentages; exact counts follow below.</p>
+        <div class="chart-grid">
+          {[...actors, ...baselines].map((actor) => (
+            <div class="actor-chart">
+              <h3>{actor.name}</h3>
+              <p class="chart-note actor-note">{actor.note}</p>
+              <svg class="results-plot" viewBox="0 0 380 310" role="img" aria-labelledby={`chart-${actor.id}-title chart-${actor.id}-desc`}>
+                <title id={`chart-${actor.id}-title`}>{actor.name}: successful completion by world and arm</title>
+                <desc id={`chart-${actor.id}-desc`}>{actor.note}. {worlds.map((world, i) => `${world}: stale ${actor.stale[i]} of ${actor.n}, ${percent(actor.stale[i], actor.n)}; registry ${actor.registry[i]} of ${actor.n}, ${percent(actor.registry[i], actor.n)}.`).join(' ')}</desc>
+                {worlds.map((world, i) => (
+                  <g>
+                    <text class="world-label" x="0" y={24 + i * 67}>{world}</text>
+                    {arms.map((arm, j) => (
+                      <g>
+                        <text class="arm-label" x="88" y={24 + i * 67 + j * 25}>{arm === 'stale' ? 'S' : 'R'}</text>
+                        <rect class="plot-track" x="105" y={10 + i * 67 + j * 25} width="206" height="17" />
+                        <rect class={`plot-bar ${arm}-bar`} x="105" y={10 + i * 67 + j * 25} width={206 * actor[arm][i] / actor.n} height="17" />
+                        <text class="value-label" x="376" y={24 + i * 67 + j * 25} text-anchor="end">{percent(actor[arm][i], actor.n)}</text>
+                      </g>
+                    ))}
+                  </g>
+                ))}
+                <text class="axis-label" x="105" y="300">0%</text>
+                <text class="axis-label" x="311" y="300" text-anchor="end">100%</text>
+              </svg>
+            </div>
+          ))}
+        </div>
+        <p class="chart-note">S* counts a correct, accepted submission, verified by replay of the action record. All assigned episodes count; technical failures count as misses. A model’s claim that it finished cannot create success. All outcomes here are known.</p>
+      </figure>
+      <details open>
+        <summary>Exact counts behind the figure</summary>
+        <p id="counts-note" class="chart-note">Each cell is stale / registry, with counts and rounded rates. On a narrow screen, scroll the table sideways.</p>
+        <div class="strategy-table-wrap" role="region" aria-labelledby="results-title" aria-describedby="counts-note" tabindex="0">
+          <table class="strategy-table">
+            <caption>S* · stale / registry in every cell</caption>
+            <thead><tr><th scope="col">Actor</th>{worlds.map((world) => <th scope="col">{world}</th>)}</tr></thead>
+            <tbody>
+              {[...actors, ...baselines].map((actor) => (
+                <tr class:list={{ 'primary-row': actor.id === 'qwen7b' }}>
+                  <th scope="row">{actor.name}<small>{actor.note}</small></th>
+                  {worlds.map((_, i) => <td><span>S: {outcome(actor.stale[i], actor.n)}</span><br /><span>R: {outcome(actor.registry[i], actor.n)}</span></td>)}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </details>
+      <p><strong>The reactive script succeeds in every world, in both arms.</strong> It handles the documented errors and units without a registry lookup. The oracle script also succeeds everywhere, using advance knowledge of the world. These are programmed controls, not model runs.</p>
+      <p>The fixed-v0 script fails after rename and required-field drift. It still succeeds after unit drift because it submits the original looked-up mass in grams. That shortcut is allowed: this unit test does not force an agent to derive its answer from the changed conversion output.</p>
+    </section>
+
+    <section class="story" aria-labelledby="primary-title">
+      <p class="eyebrow">The primary comparison · pre-registered</p>
+      <h2 id="primary-title">Two points more. Far short of the rule.</h2>
+      <p>Across the three changing worlds, Qwen 7B succeeds in <strong>12/150 registry assignments ({percent(12, 150)})</strong> and <strong>9/150 stale assignments ({percent(9, 150)})</strong>: a <strong>+2 percentage-point</strong> difference, with a 95% interval of <strong>−4 to +8 points</strong>. The registered rule required at least +10 points with a lower bound above zero, plus the other gates.</p>
+      <p>Registry success is only <strong>2/50 ({percent(2, 50)})</strong> even when nothing changes. Qwen also claims completion falsely on <strong>114/150 registry drift assignments ({percent(114, 150)})</strong>. Its only favourable world contrast is the required-field change: <strong>10/50 versus 3/50</strong>. Since it never asks for a description, this cannot be explained as successful use of the registry.</p>
+      <details>
+        <summary>How the comparison was calculated</summary>
+        <p>The primary analysis gives equal weight to rename, unit and required worlds within each seed, then averages over 50 seed blocks. Its interval uses 10,000 paired seed-block resamples, keeping worlds and arms together. Successful acknowledgment additionally requires a valid <code>submitted:true</code> report; here its primary counts match S*. The interval describes this synthetic sample, not reliability on new tasks.</p>
+      </details>
+    </section>
+
+    <section class="story" aria-labelledby="claude-title">
+      <p class="eyebrow">Claude · descriptive · n=10/cell</p>
+      <h2 id="claude-title">A visible contrast. A failed validity gate.</h2>
+      <div class="figures">
+        <p class="figure"><strong>{percent(8, 10)} vs {percent(3, 10)}</strong><span>Rename · registry 8/10, stale 3/10<br />+50 percentage points · descriptive</span></p>
+        <p class="figure"><strong>{percent(9, 10)} vs {percent(6, 10)}</strong><span>Unit · registry 9/10, stale 6/10<br />+30 percentage points · descriptive</span></p>
+      </div>
+      <p>Claude succeeds on all stable assignments and on <strong>9/10 in both required-field arms</strong>. Across drift worlds it succeeds on <strong>26/30 registry assignments ({percent(26, 30)})</strong>, against <strong>18/30 stale ({percent(18, 30)})</strong>. These are descriptive results from ten seed blocks; they do not rescue the primary local test.</p>
+      <p>Access and use differ here too. Claude asks for descriptions in <strong>19/30 registry drift episodes</strong>: nine unit episodes, nine required-field episodes and only one rename episode. The rename contrast therefore does not establish that reading the new description caused the gain.</p>
+      <p>Only <strong>64/80</strong> Claude trajectories and reports are valid. Validity ranges from <strong>3/10 to 10/10 per cell</strong>, failing the required per-cell threshold of 95%. Technical failures remain misses. Claude makes zero false completion claims in these assignments, but this small sample does not establish a generally reliable workflow.</p>
+    </section>
+
+    <section class="story" aria-labelledby="predictions-title">
+      <p class="eyebrow">Predictions stay visible</p>
+      <h2 id="predictions-title">One of thirteen forecasts held.</h2>
+      <p>These forecasts were re-registered after seeing v0.1, before the valid v0.2 collections. P3 held for Qwen because its rename and required-field contrasts exceeded its negative unit contrast. That narrow ordering did not establish useful registry access.</p>
+      <p id="predictions-note" class="chart-note">A truthful report can say that work did not finish. It cannot raise successful completion. Null is a deliberate “can’t tell”; an invalid or missing report is a separate failure. All drift-report denominators include every assigned registry drift episode. Scroll sideways on a narrow screen.</p>
+      <div class="strategy-table-wrap" role="region" aria-labelledby="predictions-title" aria-describedby="predictions-note" tabindex="0">
+        <table class="strategy-table prediction-table">
+          <caption>All 13 model-specific pre-registered v0.2 forecasts · pp = percentage points</caption>
+          <thead><tr><th scope="col">Forecast / actor</th><th scope="col">Prediction</th><th scope="col">Outcome</th></tr></thead>
+          <tbody>
+            {predictions.map((prediction) => (
+              <tr class:list={{ 'held-row': prediction.held }}>
+                <th scope="row">{prediction.id} · {prediction.actor}</th>
+                <td>{prediction.forecast}</td>
+                <td><strong>{prediction.held ? 'Held' : 'Failed'}</strong> · {prediction.result}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="story" aria-labelledby="history-title">
+      <p class="eyebrow">How the record holds up</p>
+      <h2 id="history-title">The broken runs stay in the record.</h2>
+      <dl>
+        <dt>v0.1 · interface failures</dt>
+        <dd>All 1,200 local episodes produced zero correct accepted submissions; every local cell failed the technical gate. Independent replay found zero legal replies falsely rejected among 953 rejected replies. Claude’s v0.1 cohort was held. This version could not answer the intended information-access question.</dd>
+        <dt>v0.2-r1 · void because of our schema bug</dt>
+        <dd>Incomplete schema branches let the decoder emit partial action objects. All 1,200 local episodes stopped before an accepted action. These are excluded harness incidents, not evidence of model performance. Their original bytes, costs and failures remain preserved.</dd>
+        <dt>v0.2-r2 / r3 · valid collections, failed scientific tests</dt>
+        <dd>R2 closes the broken schema branches and supplies the 1,200 local assignments shown above. R3 adapts the provider schema for Claude’s 80 assignments while retaining strict validation and the r2 local record. Technical failures within a valid collection still count. The versions are kept separate; neither a repaired harness nor completed collection earns a scientific pass.</dd>
+        <dt>Informed follow-up forecasts</dt>
+        <dd>The v0.2 predictions were registered after inspecting v0.1. Only Qwen’s P3 world-order forecast held; every other model-specific forecast failed, including Claude’s forecast. They were not blind predictions.</dd>
+        <dt>Final review · accepted as complete, primary joint test failed</dt>
+        <dd>Claude’s final review accepted the study as complete under the final v0.2 stop rule, with r1 excluded. An independently rebuilt filtered copy reproduced the analysis byte-for-byte. Completion leaves the failed scientific test and Claude’s unmet technical validity gate visible.</dd>
+        <dt>USD 4.67 in accounted model-call spend</dt>
+        <dd>The ledger totals USD 4.667178, with no unresolved money holds. This is model-call accounting, not a verified cash invoice. Local hardware, energy and subscription opportunity costs were not measured. One definite zero-usage rate-limit refusal was a non-start; its saved request was resumed.</dd>
+      </dl>
+    </section>
+
+    <section class="story" aria-labelledby="limits-title">
+      <p class="eyebrow">Where this stops</p>
+      <h2 id="limits-title">A small tool task, with useful shortcuts.</h2>
+      <p>This is a synthetic, three-tool task with six decisions and simple, disclosed error messages. The reactive script shows that registry access is unnecessary to solve these worlds. The study does not establish the best integration architecture, production reliability, or a ranking of model families.</p>
+      <p>Correct unit answers can come from retaining the original lookup or dividing the milligram result by 1,000. The submitted numbers are identical, so the action record cannot identify which calculation occurred. Exclusive counts for those routes remain unknown.</p>
+      <p>Claude has only ten seeds per cell; locals have fifty. Output constraints and transports also differ. Do not turn this small descriptive contrast into a general causal or capability claim. Better formatting does not ensure competent action, and providing a manual does not ensure an agent will consult it.</p>
+      <p class="fine">Built with Codex; reviewed by Claude. The figure uses exact successful-submission counts from the frozen v0.2 analysis, with percentages rounded from those counts. Historical v0.1 outcomes and the void r1 incident remain separate.</p>
+      <div class="next-links">
+        <a href="https://github.com/Robin84Bran/research">Research repository on GitHub →</a>
+        <a href="/intelligence/bridge-or-bus/">Play the original Bridge or Bus seed →</a>
+        <a href="/research/receipt-gap/">Read The Receipt Gap →</a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .research { padding-block: 3rem 5rem; }
+  .research > .eyebrow { margin-top: 3rem; }
+  h1 { font: 400 clamp(3rem, 8vw, 6.6rem)/1 var(--serif); letter-spacing: -0.05em; margin: 1.5rem 0; }
+  h1 em { color: var(--gold-dark); }
+  .lead { font: 400 clamp(1.3rem, 3vw, 2rem)/1.45 var(--serif); }
+  .intro, .story { max-width: 48rem; line-height: 1.85; }
+  .intro, .fine, dd, figcaption, .chart-note { color: var(--muted); }
+  .story { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--line); }
+  .hypothesis { margin-top: 2rem; }
+  h2 { font: 400 clamp(1.7rem, 4vw, 2.7rem)/1.18 var(--serif); letter-spacing: -0.03em; margin: 0.4rem 0 1.4rem; }
+  .comparison { margin: 2rem 0; padding: clamp(0.75rem, 3vw, 1.6rem); border: 1px solid var(--line); background: var(--moon-bright); }
+  figcaption { font-size: 0.85rem; margin-bottom: 1.2rem; }
+  .chart-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem 1.5rem; margin-top: 1.5rem; }
+  .actor-chart { min-width: 0; padding-top: 1rem; border-top: 1px solid var(--line); }
+  .actor-chart h3 { margin: 0; font-size: 0.95rem; font-weight: 600; }
+  .actor-note { margin: 0.2rem 0 0.9rem; }
+  .results-plot { display: block; width: 100%; height: auto; font: 16px var(--sans); font-variant-numeric: tabular-nums; }
+  .results-plot text { fill: var(--ink); }
+  .results-plot .axis-label, .results-plot .arm-label { fill: var(--muted); }
+  .plot-track { fill: var(--stone); }
+  .stale-bar { fill: var(--ink); }
+  .registry-bar { fill: var(--gold-dark); }
+  .key { display: inline-block; width: 0.75rem; height: 0.75rem; margin-right: 0.25rem; }
+  .stale-key { background: var(--ink); }
+  .registry-key { background: var(--gold-dark); margin-left: 0.75rem; }
+  .chart-note { font-size: 0.78rem; line-height: 1.6; margin-bottom: 0; }
+  .comparison > .chart-note:last-child { margin-top: 1.5rem; }
+  .strategy-table-wrap { overflow-x: auto; margin-top: 1.2rem; }
+  .strategy-table-wrap:focus-visible { outline: 2px solid var(--gold-dark); outline-offset: 4px; }
+  .strategy-table { width: 100%; min-width: 48rem; border-collapse: collapse; font-size: 0.85rem; line-height: 1.6; font-variant-numeric: tabular-nums; }
+  .strategy-table caption { text-align: left; color: var(--muted); padding-bottom: 0.8rem; }
+  .strategy-table th, .strategy-table td { text-align: left; vertical-align: top; padding: 1rem 0.8rem; border-bottom: 1px solid var(--line); }
+  .strategy-table thead th { font-weight: 600; border-top: 1px solid var(--line); }
+  .strategy-table tbody th { min-width: 12rem; font-weight: 400; }
+  .strategy-table td { min-width: 8rem; white-space: nowrap; }
+  .strategy-table small { display: block; color: var(--muted); margin-top: 0.3rem; font-size: 0.75rem; }
+  .strategy-table .primary-row { background: var(--moon-bright); }
+  .strategy-table .primary-row th { border-left: 3px solid var(--gold-dark); font-weight: 600; }
+  .prediction-table { min-width: 48rem; }
+  .prediction-table td { white-space: normal; min-width: 15rem; }
+  .prediction-table .held-row { background: var(--moon-bright); }
+  .figures { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 2rem; margin-block: 1.5rem 2rem; }
+  .figure { display: grid; gap: 0.5rem; margin: 0; padding-block: 1.1rem; border-top: 1px solid var(--line); }
+  .figure strong { font: 400 clamp(1.8rem, 4vw, 2.8rem)/1.15 var(--serif); letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+  .figure span { color: var(--muted); font-size: 0.86rem; line-height: 1.6; }
+  details { margin-top: 1.5rem; border-block: 1px solid var(--line); padding-block: 1rem; font-size: 0.9rem; }
+  summary { cursor: pointer; font-weight: 600; }
+  details p { margin: 1rem 0 0; }
+  dt { font-weight: 600; margin-top: 1.2rem; }
+  dd { margin-left: 0; }
+  code { overflow-wrap: anywhere; }
+  .fine { font-size: 0.85rem; line-height: 1.7; }
+  .next-links { display: flex; flex-wrap: wrap; gap: 1rem 2rem; padding-top: 1rem; color: var(--gold-dark); }
+  @media (max-width: 650px) {
+    .figures, .chart-grid { grid-template-columns: 1fr; }
+  }
+</style>
