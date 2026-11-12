@@ -1,5 +1,6 @@
 import './intelligence-discovery.test.mjs';
 import test from 'node:test';
+import { checkLearningPaths } from '../lib/check-learning-paths.mjs';
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
 const read=p=>readFileSync(new URL('../../'+p,import.meta.url),'utf8');
@@ -141,7 +142,7 @@ test('Kid edition keeps every named question discoverable and separates play fro
   assert.equal((guide.match(/<summary\b/g)||[]).length,entries.length);
   for(const q of entries){
     assert.ok(programme.directions.some(d=>d.id===q.direction));
-    for(const href of [q.play,q.study]){
+    for(const href of [q.play,q.study].filter(Boolean)){
       const [path,fragment]=href.split('#');
       const target=read(`dist${path}index.html`);
       if(fragment)assert.ok(target.includes(`id="${fragment}"`),href);
@@ -164,4 +165,32 @@ test('Research Council counts Teddy as a main agent while preserving the histori
   assert.ok(council.includes('research partner · critical reviewer'));
   assert.ok(council.includes('nine studies.')&&council.includes('$57.28'));
   assert.ok(hub.includes('three main AI agents, with supporting sub-agents'));
+});
+
+test('every weekly publication keeps both hubs, Kid chapter, game and ready study connected',()=>{
+  const chapters=JSON.parse(read('src/data/research-kid-edition.json'));
+  assert.equal(checkLearningPaths(programme,chapters,route=>read(`dist${route}index.html`)).experiments,programme.experiments.length);
+});
+
+test('a future seed needs its own chapter; a later study needs matching links in both directions',()=>{
+  const e={id:'new-question',title:'A new question',direction:'evidence'},p={experiments:[e],studies:[]};
+  const play='/intelligence/new-question/',kid='/research/kid-edition/#new-question',study='/research/new-question/';
+  const a=href=>`<a href="${href}">Read</a>`;
+  const q={...e,play,imagine:'Imagine the situation',question:'What would you do?',finding:'Recorded simulation finding',wonder:'What changes the result?'};
+  const pages={
+    '/intelligence/':`<li data-weekly-experiment="new-question">${a(play)}${a(kid)}</li>`,
+    '/research/':`<li data-research-topic="new-question">${a(play)}${a(kid)}Empirical study · upcoming</li>`,
+    '/research/kid-edition/':`<article id="new-question">${a(play)}</article>`,
+    [play]:a(kid)+'Empirical study · upcoming',
+  };
+  const readPage=route=>pages[route]??'';
+  assert.throws(()=>checkLearningPaths(p,[],readPage),/Kid edition chapter required/);
+  assert.doesNotThrow(()=>checkLearningPaths(p,[q],readPage));
+  e.href=study;
+  assert.throws(()=>checkLearningPaths(p,[q],readPage),/chapter study does not match/);
+  q.study=study;q.finding='Verified model-study finding';
+  for(const route of ['/intelligence/','/research/'])pages[route]=pages[route].replace('</li>',a(study)+'</li>');
+  pages[play]+=a(study);pages['/research/kid-edition/']+=a(study);pages[study]='The measured study';
+  assert.throws(()=>checkLearningPaths(p,[q],readPage),/study missing return to game/);
+  pages[study]+=a(play);assert.doesNotThrow(()=>checkLearningPaths(p,[q],readPage));
 });
