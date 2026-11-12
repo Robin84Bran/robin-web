@@ -208,3 +208,17 @@ test('the Council role map sits between responsibilities and study sequence with
   }
   assert.doesNotMatch(diagram,/<canvas\b|<script\b/);
 });
+
+test('Robin briefs both leads directly and each lead can call on the other in both diagram views',()=>{
+  const html=read('dist/research/council/index.html');
+  const diagram=html.match(/<section\b[^>]*aria-labelledby="role-map-title"[^>]*>([\s\S]*?)<\/section>/)?.[1];assert.ok(diagram);
+  const views=[...diagram.matchAll(/<svg\b[^>]*role="img"[^>]*>([\s\S]*?)<\/svg>/g)];
+  for(const view of views){
+    const order=[...view[1].matchAll(/data-role-card="([^"]+)"/g)].map(m=>m[1]);
+    assert.deepEqual(order,['Robin','Teddy','Claude','Codex']);
+    for(const edge of ['Robin-Claude','Robin-Codex','Claude-Codex','Codex-Claude'])assert.ok(view[1].includes(`data-role-edge="${edge}"`),edge);
+    assert.ok(view[1].includes('Research lead')&&view[1].includes('Website lead'));
+    assert.ok(view[1].includes('Can call on Codex')&&view[1].includes('Can call on Claude'));
+    assert.doesNotMatch(view[1],/data-role-edge="Teddy-Claude"|data-role-edge="Teddy-Codex"/);
+  }
+});
