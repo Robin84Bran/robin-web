@@ -2,10 +2,29 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import programme from '../../data/research-programme.json';
 const {directions, experiments, studies} = programme;
-const studyCount = studies.length + experiments.filter(e=>e.maturity==='Empirical study').length;
+const relatedPlay: Record<string, string> = {
+  'The Honest Agent': '/intelligence/work-or-proof/',
+  'The Obedient Rebel': '/intelligence/receipt-gap/',
+};
+const topics = [
+  ...studies.filter(s=>!experiments.some(e=>e.title===s.title)).map(s=>({
+    id:s.title.toLowerCase().replace(/^the /,'').replace(/ /g,'-'), title:s.title, direction:s.direction,
+    seedId:undefined as string | undefined, seedHref:relatedPlay[s.title], seedLabel:'Related play',
+    studyHref:s.href, week:undefined as string | undefined,
+  })),
+  ...experiments.map(e=>({
+    id:e.id, title:e.title, direction:e.direction, seedId:e.id,
+    seedHref:`/intelligence/${e.id}/`, seedLabel:'Playable seed',
+    studyHref:e.href??studies.find(s=>s.title===e.title)?.href, week:e.week,
+  })),
+];
+const studyCount = topics.filter(t=>t.studyHref).length;
 const path='/research/';
 const description='A research programme on evidence and oversight, coordination and delegation, and memory, adaptation and resilience. Explore the studies and every weekly playable seed.';
-const schema={'@context':'https://schema.org','@type':'CollectionPage',name:'Research — Robin Xie',url:`https://iamrobin.ai${path}`,description,inLanguage:'en',hasPart:[...studies.map(s=>({'@type':'Article',name:s.title,url:`https://iamrobin.ai${s.href}`})),...experiments.map(e=>({'@type':e.maturity==='Empirical study'?'Article':'LearningResource',name:e.title,url:`https://iamrobin.ai${e.href??`/intelligence/${e.id}/`}`}))]};
+const schema={'@context':'https://schema.org','@type':'CollectionPage',name:'Research — Robin Xie',url:`https://iamrobin.ai${path}`,description,inLanguage:'en',hasPart:topics.flatMap(t=>[
+  ...(t.seedHref&&t.seedId?[{'@type':'LearningResource',name:t.title,url:`https://iamrobin.ai${t.seedHref}`}]:[]),
+  ...(t.studyHref?[{'@type':'Article',name:t.title,url:`https://iamrobin.ai${t.studyHref}`}]:[]),
+])};
 ---
 <BaseLayout title="Research — Robin Xie" {path} {description} {schema}>
   <main class="shell research-programme">
@@ -24,8 +43,14 @@ const schema={'@context':'https://schema.org','@type':'CollectionPage',name:'Res
         <p class="short-question">{d.shortQuestion}</p>
         <p class="central-question-copy">{d.question}</p>
         <ul class="research-items">
-          {studies.filter(s=>s.direction===d.id).map(s=><li data-research-study><a href={s.href}><span class="item-title">{s.title} <span aria-hidden="true">→</span></span><small class="maturity">{s.maturity}</small></a></li>)}
-          {experiments.filter(e=>e.direction===d.id).map(e=><li data-research-seed={e.id}><a href={e.href??`/intelligence/${e.id}/`}><span class="item-title">{e.title} <span aria-hidden="true">→</span></span><small class="maturity">{e.maturity}<span class="week"> · {e.week}</span></small></a></li>)}
+          {topics.filter(t=>t.direction===d.id).map(t=><li data-research-topic={t.id} data-research-seed={t.seedId} data-research-study={t.studyHref?true:undefined}>
+            <span class="item-title">{t.title}</span>
+            {t.week&&<small class="maturity"><span class="week">{t.week}</span></small>}
+            <nav class="topic-links" aria-label={`${t.title} resources`}>
+              {t.seedHref?<a data-topic-play href={t.seedHref} aria-label={`${t.seedLabel}: ${t.title}`}>{t.seedLabel} <span aria-hidden="true">↗</span></a>:<span class="pending-link">Playable seed · upcoming</span>}
+              {t.studyHref?<a data-topic-study href={t.studyHref} aria-label={`Empirical study: ${t.title}`}>Empirical study <span aria-hidden="true">→</span></a>:<span class="pending-link">Empirical study · upcoming</span>}
+            </nav>
+          </li>)}
         </ul>
       </section>)}
     </section>
@@ -44,7 +69,7 @@ const schema={'@context':'https://schema.org','@type':'CollectionPage',name:'Res
       <h2 id="loop-title" class="eyebrow">From exploration to investigation</h2>
       <ol><li>Playable question</li><li>Frozen study</li><li>Findings</li><li>New questions</li></ol>
     </section>
-    <div class="programme-footnote"><p>A playable seed explores a mechanism. “Protocol drafted” means a study is designed and has not yet run. Empirical studies report actual model runs within their stated limits.</p><p>New weekly experiments join this map as the programme grows.</p></div>
+    <div class="programme-footnote"><p>A playable seed explores a mechanism. “Protocol drafted” means a study is designed and has not yet run. Empirical studies report actual model runs within their stated limits.</p><p>New weekly experiments join this map as the programme grows. Honest Agent and Obedient Rebel link to related playable experiments.</p></div>
     <nav class="research-outlinks" aria-label="Continue exploring"><a href="/intelligence/">Playable worlds in Intelligence →</a><a href="#evidence">Explore the studies →</a><a href="/research/council/">The Research Council →</a></nav>
   </main>
 </BaseLayout>
@@ -62,4 +87,6 @@ const schema={'@context':'https://schema.org','@type':'CollectionPage',name:'Res
 .research-programme{padding-block:2.8rem 4rem}.research-heading .eyebrow>span{margin-left:1rem;padding-left:1rem;border-left:1px solid var(--line);color:var(--muted)}.research-heading h1{font:400 clamp(2.3rem,3.8vw,3.3rem)/1.1 var(--serif);letter-spacing:-.04em;margin:1.5rem 0 1rem}.research-heading>p:last-child{font:1rem/1.7 var(--sans);color:var(--muted);margin-bottom:1.5rem;max-width:52rem}.programme-index{display:flex;flex-wrap:wrap;gap:.6rem 1.8rem;padding-block:1.1rem;border-block:1px solid var(--line)}.programme-index a{text-decoration:none;font:400 .83rem/1.5 var(--sans);color:#42665b}.programme-index span{font-size:.6rem;color:var(--gold-dark);margin-right:.6rem}.catalogue-note{font-size:.66rem;letter-spacing:.08em;color:var(--muted);margin:1rem 0 0;text-align:right}.question-map{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(14rem,.9fr) minmax(0,1fr);gap:1rem 2.7rem;margin:1.5rem 0 3rem}.central-question{grid-column:2;grid-row:1;align-self:center;text-align:center;border:1px solid var(--line-strong);border-radius:50%;padding:2.8rem .8rem;position:relative}.central-question:before,.central-question:after{content:'';position:absolute;top:50%;width:2.7rem;border-top:1px solid var(--gold);opacity:.55}.central-question:before{right:100%}.central-question:after{left:100%}.central-question p{font:.58rem/1.5 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--gold-dark);margin-bottom:.8rem}.central-question h2{font:italic 400 clamp(1.8rem,3vw,2.65rem)/1.12 var(--serif);letter-spacing:-.035em;margin:0 0 .8rem}.central-question h2 em{font-style:inherit}.central-question>span{font:.7rem/1.6 var(--sans);color:var(--muted)}.central-question .central-stem{position:absolute;top:100%;left:50%;height:6rem;border-left:1px solid var(--gold);opacity:.5}.direction{scroll-margin-top:2rem}.direction-evidence{grid-column:1;grid-row:1}.direction-coordination{grid-column:3;grid-row:1}.direction-memory{grid-column:1/-1;grid-row:2;max-width:62rem;width:100%;justify-self:center;text-align:center;border-top:1px solid var(--line);padding-top:1.2rem;margin-top:.4rem}.direction>img{width:170px;height:113px;object-fit:contain;margin:0 auto .4rem;mix-blend-mode:multiply}.direction-evidence>img{margin-left:0}.direction-coordination>img{margin-right:0}.direction>h2{font:400 clamp(1.45rem,2vw,1.9rem)/1.13 var(--serif);letter-spacing:-.02em;color:#42665b;margin:0 0 .4rem}.short-question{font:italic 1.3rem/1.3 var(--serif);margin:0 0 .6rem}.central-question-copy{font:.76rem/1.65 var(--sans);color:var(--muted);margin:0 0 .5rem;max-width:29rem}.direction-memory .central-question-copy{max-width:none}.direction-memory>img{width:155px;height:83px}.research-items{padding:0;margin:0;list-style:none}.research-items li{border-top:1px solid var(--line);padding:.9rem 0}.research-items a{text-decoration:none;display:block}.item-title{font:400 1.25rem/1.22 var(--serif);display:block;letter-spacing:-.015em}.item-title>span{color:var(--gold-dark);white-space:nowrap}.maturity{display:block;font:600 .57rem/1.5 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--gold-dark);margin-top:.4rem}.maturity .week{font-weight:400;color:var(--muted);letter-spacing:.03em;white-space:nowrap}.direction-memory .research-items{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem;text-align:left;margin-top:1rem}.featured-study{display:grid;grid-template-columns:1fr 1.2fr auto;gap:2.2rem;align-items:center;border-block:1px solid var(--line);padding-block:2rem}.featured-study .eyebrow{font-size:.65rem}.featured-study h2{font:400 2.3rem/1.1 var(--serif);margin:0;letter-spacing:-.03em}.featured-study>p{font:.88rem/1.7 var(--sans);color:var(--muted);margin:0;padding-left:1.5rem;border-left:1px solid var(--line)}.featured-study>a{background:#45665c;color:var(--moon-bright);border-radius:2rem;padding:.75rem 1.2rem;font:400 1rem/1.4 var(--serif);text-decoration:none;white-space:nowrap}.research-loop{display:flex;align-items:center;gap:2rem;padding-block:2rem;border-bottom:1px solid var(--line)}.research-loop h2{margin:0;max-width:13rem;font-size:.65rem;line-height:1.6}.research-loop ol{padding:0;margin:0;list-style:none;display:flex;justify-content:space-between;gap:2rem;flex:1}.research-loop li{font:400 1.2rem/1.4 var(--serif)}.research-loop li+li:before{content:'→';color:var(--gold-dark);margin-right:1.5rem}.programme-footnote{display:flex;gap:3rem;padding-top:1.2rem;font:.72rem/1.7 var(--sans);color:var(--muted)}.programme-footnote p:first-child{max-width:44rem}.research-outlinks{display:flex;justify-content:center;gap:2rem;margin:1.8rem 0 .5rem}.research-outlinks a{font:italic 1.05rem/1.5 var(--serif);color:#42665b;text-decoration:none}a:hover{text-decoration:underline;text-underline-offset:.25em}
 @media(max-width:1000px){.question-map{grid-template-columns:minmax(0,1fr) 12rem minmax(0,1fr);gap:1rem 1.4rem}.central-question{padding:2.1rem .5rem}.central-question:before,.central-question:after{width:1.4rem}.central-question h2{font-size:1.9rem}.direction>h2{font-size:1.5rem}.item-title{font-size:1.14rem}.week{display:block}.featured-study{gap:1rem;grid-template-columns:1fr 1.2fr}.featured-study>a{grid-column:2;width:fit-content}.research-loop{display:block}.research-loop h2{max-width:none;margin-bottom:1rem}.research-loop ol{gap:.7rem}.research-loop li{font-size:1.1rem}.research-loop li+li:before{margin-right:.7rem}}
 @media(max-width:720px){.research-programme{padding-top:1.8rem}.research-heading .eyebrow{font-size:.6rem}.research-heading .eyebrow>span{margin-left:.6rem;padding-left:.6rem}.research-heading h1{font-size:2.7rem;line-height:1.07}.wide-break{display:none}.research-heading>p:last-child{font-size:.9rem}.programme-index{display:grid;gap:.6rem}.programme-index a{font-size:.78rem}.catalogue-note{text-align:left;font-size:.6rem}.question-map{display:flex;flex-direction:column;gap:1.6rem}.central-question{order:0;align-self:center;max-width:19rem;width:100%;padding:2rem 1rem;margin-block:1rem}.central-question:before,.central-question:after,.central-question .central-stem{display:none}.direction{order:1;border-top:1px solid var(--line);padding-top:1.5rem}.direction>img,.direction-evidence>img,.direction-coordination>img{width:135px;height:90px;margin:0 0 .6rem}.direction h2{font-size:1.8rem}.direction .central-question-copy{font-size:.82rem}.direction-memory{text-align:left;max-width:none;margin:0}.direction-memory .research-items{display:block;margin-top:0}.direction-memory>img{height:90px}.item-title{font-size:1.35rem}.research-items li{padding:1rem 0}.week{display:inline}.maturity{font-size:.59rem}.featured-study{grid-template-columns:1fr;gap:1.2rem}.featured-study h2{font-size:2.2rem}.featured-study>p{padding:0;border:0}.featured-study>a{grid-column:1}.research-loop ol{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.research-loop li+li:before{content:none}.research-loop li{font-size:1.15rem}.programme-footnote{display:block;padding-top:1.3rem}.research-outlinks{flex-direction:column;gap:.8rem;margin-top:1rem}}
+.topic-links{display:flex;flex-wrap:wrap;gap:.4rem 1.1rem;margin-top:.55rem;align-items:center}.topic-links a{font:400 .76rem/1.65 var(--sans);color:#42665b;text-decoration:underline;text-decoration-color:#42665b55;text-underline-offset:.25em;min-height:28px;display:inline-flex;align-items:center;gap:.3rem}.topic-links a:focus-visible{outline:2px solid #42665b;outline-offset:4px}.pending-link{font:.72rem/1.65 var(--sans);color:var(--muted)}
+@media(max-width:720px){.topic-links{gap:.3rem 1.3rem}.topic-links a{font-size:.84rem;min-height:40px}}
 </style>
