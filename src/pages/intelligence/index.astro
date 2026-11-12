@@ -37,7 +37,7 @@ const schema = {'@context':'https://schema.org','@type':'CollectionPage',name:'I
         <section id="experiments" aria-labelledby="experiments-title">
           <div class="section-heading"><h2 id="experiments-title">Experiments</h2><span>01 · Play</span></div>
           <article class="featured-experiment">
-            <div><p class="eyebrow">This week · {featured.week}</p><h3>{featured.title}</h3><p>{featured.question}</p><a class="text-link" href={`/intelligence/${featured.id}/`}>Play the experiment →</a><nav class="experiment-resources featured-resources" aria-label={`${featured.title} research resources`}>{studyFor(featured)&&<a href={studyFor(featured)}>Empirical study →</a>}<a href={`/research/kid-edition/#${featured.id}`}>Kid edition ↗</a></nav></div>
+            <div><p class="eyebrow">This week · {featured.week}</p><h3>{featured.title}</h3><p>{featured.question}</p><a class="text-link" href={`/intelligence/${featured.id}/`}>Play the experiment →</a><nav class="experiment-resources featured-resources" aria-label={`${featured.title} research resources`}>{studyFor(featured)&&<a href={studyFor(featured)}>Empirical study →</a>}{kidQuestions.some(q=>q.id===featured.id)&&<a href={`/research/kid-edition/#${featured.id}`}>Kid edition ↗</a>}</nav></div>
             <img src="/programme/work-or-proof.webp" alt="" width="440" height="294" fetchpriority="high" />
           </article>
           <p class="research-invitation"><strong>Put AI to work. Find out what holds.</strong> Check what happened. Work together. Keep going when things change. <a href="/research/kid-edition/">Take the Kid edition tour →</a></p>

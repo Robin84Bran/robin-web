@@ -112,12 +112,14 @@ test('weekly library rows offer separate playable, empirical and Kid edition des
   const rows=[...html.matchAll(/<li\b[^>]*data-weekly-experiment="([^"]+)"[^>]*>([\s\S]*?)<\/li>/g)];
   assert.equal(rows.length,programme.experiments.length);
   const guide=read('dist/research/kid-edition/index.html');
+  const explained=JSON.parse(read('src/data/research-kid-edition.json'));
   for(const e of programme.experiments){
     const row=rows.find(m=>m[1]===e.id)?.[2];assert.ok(row,e.id);
     const primary=row.match(/<a\b[^>]*class="experiment-row"[^>]*>([\s\S]*?)<\/a>/);
     assert.ok(primary);assert.doesNotMatch(primary[1],/<a\b/,'resource links cannot be nested in the game link');
     const study=e.href??programme.studies.find(s=>s.title===e.title)?.href;
     if(study)assert.match(row,new RegExp('data-experiment-study[^>]*href="'+study+'"'));
+    if(!explained.some(q=>q.id===e.id)){assert.ok(!row.includes(`href="/research/kid-edition/#${e.id}"`),'Future seeds must not advertise an unwritten guide');continue;}
     assert.ok(row.includes(`href="/research/kid-edition/#${e.id}"`));
     assert.ok(guide.includes(`id="${e.id}"`),'Kid link must resolve to a section');
     const topic=[...read('dist/research/index.html').matchAll(/<li\b[^>]*data-research-topic="([^"]+)"[^>]*>([\s\S]*?)<\/li>/g)].find(m=>m[1]===e.id);
@@ -129,7 +131,9 @@ test('Kid edition keeps every named question discoverable and separates play fro
   const entries=JSON.parse(read('src/data/research-kid-edition.json'));
   const html=read('dist/research/kid-edition/index.html');
   const titles=new Set([...programme.studies,...programme.experiments].map(x=>x.title));
-  assert.deepEqual(new Set(entries.map(x=>x.title)),titles);
+  assert.ok(entries.length>=10);
+  assert.equal(new Set(entries.map(x=>x.title)).size,entries.length);
+  for(const q of entries)assert.ok(titles.has(q.title),'Each explanation belongs to a registered question');
   assert.equal(new Set(entries.map(x=>x.id)).size,entries.length);
   assert.equal((html.match(/data-kid-topic=/g)||[]).length,entries.length);
   const guide=html.match(/<main\b[^>]*class="shell kid-guide"[^>]*>([\s\S]*?)<\/main>/)?.[1];assert.ok(guide);
