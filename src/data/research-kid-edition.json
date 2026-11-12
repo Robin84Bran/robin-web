@@ -86,7 +86,7 @@
     "study": "/research/useful-core/",
     "imagine": "You are making a class newsletter. The photo tool breaks. Can you still deliver a useful page of news before the bell?",
     "question": "If some tools fail, does asking for the useful part first help an AI deliver something that matters?",
-    "finding": "The three smaller models delivered no useful work across 900 runs in this setup. Claude reached the task’s best possible result in 58 of 60 runs; its other two runs lost their connection. The useful-part-first idea did not pass its main test. This study tested interrupted work, rather than shorter memory notes.",
+    "finding": "The three smaller models delivered no useful work across 900 runs in this setup. Claude reached the task’s best possible result in 58 of 60 runs; its other two runs lost their connection. The useful-part-first idea did not pass its main test.",
     "wonder": "Which part of your project would still be useful if the fancy tools stopped working?"
   },
   {
