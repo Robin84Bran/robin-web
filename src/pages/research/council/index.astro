@@ -2,7 +2,7 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 
 const path = '/research/council/';
-const description = 'The Research Council: how one human and two agents turned eight playable toys into pre-registered studies, what broke, and what they learned.';
+const description = 'The Research Council: how one human and three main AI agents, with supporting sub-agents, turned eight playable toys into pre-registered studies, what broke, and what they learned.';
 const schema = {
   '@context': 'https://schema.org', '@type': 'Article',
   '@id': `https://iamrobin.ai${path}#article`,
@@ -18,8 +18,8 @@ const schema = {
 <header>
   <p class="council-name">The Research Council</p>
   <p class="eyebrow">Research programme · 10–12 November 2026</p>
-  <h1>One human, two agents,<br><em>nine studies.</em></h1>
-  <p class="lede">Robin knows nothing about coding. Robin directed an AI council, Claude and Codex, to turn eight playable toys into pre-registered studies. Within three days, 10 to 12 November, all nine research pages went live. This is how the council worked, what broke and what it learned.</p>
+  <h1>One human, three main AI agents,<br><em>nine studies.</em></h1>
+  <p class="lede">Robin knows nothing about coding. Robin directed an AI council, Teddy, Claude and Codex, with supporting sub-agents, to turn eight playable toys into pre-registered studies. Within three days, 10 to 12 November, all nine research pages went live. This is how the council worked, what broke and what it learned.</p>
   <div class="facts">
     <div><b>9</b><span>research pages live</span></div>
     <div><b>8</b><span>new studies, each frozen and pushed before any model call</span></div>
@@ -37,7 +37,7 @@ const schema = {
     <article><h3>Robin</h3><p class="role">principal · sets intent</p><ul><li>Wrote the brief: intent, waves, budget, stop rule, one approval gate</li><li>Approved only the first study's publication</li><li>Gave human feedback when reading the result</li></ul></article>
     <article><h3>Claude</h3><p class="role">reviewer · judge · operator</p><ul><li>Reviewed every protocol and every result</li><li>Pushed freezes to GitHub, ran collections, checked rebuilds</li><li>Ruled on amendments; checked every page by eye</li></ul></article>
     <article><h3>Codex</h3><p class="role">builder</p><ul><li>Surveyed each toy and drafted the protocol</li><li>Wrote the code, tests, freezes and analyses</li><li>Wrote results and built the web pages</li></ul></article>
-    <article><h3>Teddy</h3><p class="role">guest reviewer</p><ul><li>Audited the coordination rule (the claim race)</li><li>Wrote the precise prompt for the Work or Proof? baseline fix</li></ul></article>
+    <article><h3>Teddy</h3><p class="role">research partner · critical reviewer</p><ul><li>Explored research questions and challenged assumptions with Robin</li><li>Audited the coordination rule (the claim race)</li><li>Wrote the precise prompt for the Work or Proof? baseline fix</li></ul></article>
   </div>
 </section>
 
@@ -57,7 +57,7 @@ const schema = {
     <li><strong>Rebuild <span class="chip c">Claude</span></strong><span>A fresh GitHub clone must reproduce every result byte for byte.</span></li>
     <li><strong>Page <span class="chip x">Codex</span></strong><span>Hypothesis, prediction outcomes, table and figure with baselines.</span></li>
     <li><strong>Publish <span class="chip c">Claude</span></strong><span>Release check, look at the page, pull request, merge, confirm live.</span></li>
-    <li><strong>Read <span class="chip r">Robin</span></strong><span>The human reading that catches what both agents missed.</span></li>
+    <li><strong>Read <span class="chip r">Robin</span></strong><span>The human reading that catches what Claude and Codex missed.</span></li>
   </ol>
 </section>
 
@@ -144,7 +144,7 @@ const schema = {
   <h2>What the council learned</h2>
   <ol class="lessons">
     <li><div><strong>Small models fail the interface before the task.</strong> Constraining the reply shape took Three Rules from 0% to 100% valid. How much of "small models can't act" is format is now its own research question.</div></li>
-    <li><div><strong>Two agents can agree and still miss the obvious.</strong> Robin's first question as a reader found the baseline both reviews skipped.</div></li>
+    <li><div><strong>Claude and Codex can agree and still miss the obvious.</strong> Robin's first question as a reader found the baseline both reviews skipped.</div></li>
     <li><div><strong>Authority leaks unless named.</strong> A delegate tends to credit whoever gives an order to the human principal.</div></li>
     <li><div><strong>Shared resources couple everything.</strong> One subscription, one disk, one network and one CI queue linked every study to every other.</div></li>
     <li><div><strong>Most failures were plumbing, not science.</strong> Classify each failure as model, operational or harness before deciding what it means.</div></li>

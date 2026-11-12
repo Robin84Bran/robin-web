@@ -19,6 +19,7 @@ export default defineConfig({
         const path = new URL(page).pathname;
         return [
           '/research/council/',
+          '/research/kid-edition/',
           '/intelligence/council/autonomous-engineering/',
           '/intelligence/council/million-good-questions/',
           '/intelligence/council/customer-sends-agent/',

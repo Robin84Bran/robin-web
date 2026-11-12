@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import programme from '../../data/research-programme.json';
+import questions from '../../data/research-kid-edition.json';
+const path='/research/kid-edition/';
+const description='Ten small AI research questions, explained through pizza, homework, robots and games. Make a guess, reveal the findings, then try the playable experiment.';
+const labels: Record<string,string>={evidence:'Check what happened.',coordination:'Work together.',memory:'Keep going when things change.'};
+const schema={'@context':'https://schema.org','@type':'LearningResource',name:'Kid edition — Put AI to work. Find out what holds.',description,url:`https://iamrobin.ai${path}`,inLanguage:'en',learningResourceType:'Visual explanation',educationalLevel:'Age 10 and up',hasPart:questions.map(q=>({'@type':'LearningResource',name:q.title,url:`https://iamrobin.ai${path}#${q.id}`}))};
+---
+<BaseLayout title="Kid edition — Robin’s AI Research" {path} {description} {schema}>
+  <main class="shell kid-guide">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/research/">Research</a><span aria-hidden="true">/</span><a href="/intelligence/">Intelligence</a></nav>
+    <header>
+      <p class="eyebrow">Kid edition · For curious people, age 10 and up</p>
+      <h1>Put AI to work.<br /><em>Find out what holds.</em></h1>
+      <p class="lede">Can a robot check homework, order your pizza, and finish the class newsletter when a tool breaks? Let’s find out.</p>
+      <p>These ten questions belong to one adventure: learning when we can give AI a job and trust what comes back. First, try a little game. Then see what happened when researchers gave real AI models a related test.</p>
+      <p class="reading-note">Make a guess before opening each result. The games follow rules we wrote. The studies measure what particular models did in small computer worlds. Real life can work differently.</p>
+    </header>
+    <nav class="tour" aria-label="Choose a question">{programme.directions.map((d,i)=><div><p><span>0{i+1}</span>{labels[d.id]}</p><ul>{questions.filter(q=>q.direction===d.id).map(q=><li><a href={`#${q.id}`}>{q.title}</a></li>)}</ul></div>)}</nav>
+    {programme.directions.map((d,i)=><section class="chapter" aria-labelledby={`${d.id}-title`}>
+      <div class="chapter-heading"><p class="eyebrow">0{i+1} · {d.title}</p><h2 id={`${d.id}-title`}>{labels[d.id]}</h2></div>
+      {questions.filter(q=>q.direction===d.id).map(q=><article id={q.id} data-kid-topic={q.id}>
+        <h3>{q.title}</h3><p class="imagine">{q.imagine}</p>
+        <p>{q.question}</p>
+        <details><summary>What happened in the study?</summary><p>{q.finding}</p><a href={q.study}>Read the empirical study →</a></details>
+        <p class="wonder"><span>Your move</span>{q.wonder}</p>
+        <nav class="resources" aria-label={`${q.title} resources`}><a href={q.play}>{q.related?'Try related play':'Play the experiment'} ↗</a><a href={q.study}>Empirical study →</a></nav>
+      </article>)}
+    </section>)}
+    <aside class="club" aria-labelledby="club-title"><p class="eyebrow">Meet the research club</p><h2 id="club-title">Who asks the next question?</h2><p>Robin works with three main AI agents: Teddy, Claude and Codex, with supporting sub-agents. They ask questions, build tests, check results and sometimes catch mistakes the others missed.</p><p>A failed idea can start a better experiment. Which result would you challenge? What would you try next?</p><a href="/research/council/">See how the Research Council works →</a></aside>
+    <footer class="guide-notes"><p>Ten named study questions across nine research pages; the Obedient Rebel shares the Honest Agent page. Eight questions also have their own weekly playable seed. The Research Council describes how the work is made.</p><p>Each result above links to its methods, model names and limits. “Smaller models” refers to the local models tested in that study. These results do not rank every AI or prove how a product will behave.</p><nav class="resources" aria-label="Continue exploring"><a href="/research/">Explore the Research programme →</a><a href="/intelligence/">Find a world to play →</a></nav></footer>
+  </main>
+</BaseLayout>
+<style>
+.kid-guide{max-width:1060px;padding-block:2.5rem 5rem}.breadcrumbs{display:flex;gap:.8rem;color:var(--muted);font-size:.8rem;margin-bottom:2.6rem}.breadcrumbs a{text-decoration:none}header{max-width:760px}header h1{font:400 clamp(2.8rem,6.5vw,5rem)/1.08 var(--serif);letter-spacing:-.04em;margin:1rem 0 1.5rem}h1 em{color:#42665b;font-weight:400}.lede{font:400 1.5rem/1.5 var(--serif)}header>p:not(.eyebrow):not(.lede){font-size:.96rem;line-height:1.8}.reading-note{color:var(--muted);border-left:2px solid var(--line);padding-left:1rem}.tour{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2rem;margin:3rem 0 4rem;border-block:1px solid var(--line);padding:1.3rem 0 1.7rem}.tour p{font:400 1.2rem/1.4 var(--serif);margin:.3rem 0 1rem}.tour p span{display:block;color:var(--gold-dark);font:.65rem/2 var(--sans);letter-spacing:.12em}.tour ul{list-style:none;margin:0;padding:0}.tour li{margin:.65rem 0;font-size:.82rem}.tour a{text-underline-offset:4px;text-decoration-color:var(--line)}.chapter{margin-block:3.5rem}.chapter-heading{border-bottom:1px solid var(--line);padding-bottom:1rem}.chapter-heading .eyebrow{color:var(--gold-dark);font-size:.65rem}h2{font:400 clamp(1.8rem,3.5vw,2.5rem)/1.2 var(--serif);letter-spacing:-.02em;margin:.6rem 0}.chapter article{margin-left:16%;padding:2rem 0;border-bottom:1px solid var(--line);scroll-margin-top:2rem}.chapter h3{font:400 1.9rem/1.2 var(--serif);margin:.25rem 0 1rem}.chapter article>p{line-height:1.8;font-size:.95rem;max-width:43rem}.chapter .imagine{font:400 1.22rem/1.65 var(--serif);color:#42665b}details{background:#e9eee655;border:1px solid var(--line);margin:1.3rem 0;padding:.9rem 1.1rem}summary{cursor:pointer;font-size:.84rem;font-weight:500;min-height:28px}details p{line-height:1.8;font-size:.9rem}details a{font-size:.82rem;color:#42665b}.wonder span{display:block;font:.6rem/2 var(--sans);text-transform:uppercase;letter-spacing:.13em;color:var(--gold-dark)}.resources{display:flex;gap:.8rem 1.5rem;flex-wrap:wrap}.resources a,.club>a{font:400 .98rem/1.6 var(--serif);color:#42665b;text-underline-offset:4px}.club{border-block:1px solid var(--line);padding:1.5rem 0 2rem;margin-top:4rem}.club p:not(.eyebrow){max-width:42rem;font-size:.94rem;line-height:1.8}.guide-notes{font-size:.76rem;line-height:1.8;color:var(--muted);padding-top:1.3rem}.guide-notes .resources{margin-top:1.6rem}a:focus-visible,summary:focus-visible{outline:2px solid #42665b;outline-offset:5px}@media(max-width:700px){.tour{grid-template-columns:1fr;gap:1rem;margin-block:2rem}.tour>div+div{border-top:1px solid var(--line);padding-top:1rem}.chapter article{margin-left:0}.kid-guide{padding-top:1.6rem}.chapter{margin-block:2.5rem}.lede{font-size:1.3rem}.breadcrumbs{margin-bottom:2rem}}
+</style>

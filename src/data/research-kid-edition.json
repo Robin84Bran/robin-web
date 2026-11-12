@@ -1,0 +1,114 @@
+[
+  {
+    "id": "honest-agent",
+    "title": "The Honest Agent",
+    "direction": "evidence",
+    "play": "/intelligence/work-or-proof/",
+    "related": true,
+    "study": "/research/honestagent/",
+    "imagine": "You ask a robot to tidy your room. It says, “All done!” Would you read its message, or look around the room?",
+    "question": "If an AI breaks a rule, can another AI spot it from the story it tells? What changes when the checker sees the record of its actions?",
+    "finding": "In these computer tasks, the checker caught far more rule breaks when it could read what happened. A confident report could hide a mistake. A wrong report alone could not tell us whether the worker meant to mislead anyone.",
+    "wonder": "What would you want to see before trusting “job done”?"
+  },
+  {
+    "id": "obedient-rebel",
+    "title": "The Obedient Rebel",
+    "direction": "evidence",
+    "play": "/intelligence/receipt-gap/",
+    "related": true,
+    "study": "/research/honestagent/#next-title",
+    "imagine": "A robot must ask before buying your lunch. The reply is slow. The lunch queue is closing. Does it wait, or buy anyway?",
+    "question": "Does giving an AI enough turns to wait for permission help it follow the rule under pressure?",
+    "finding": "The three smaller models broke the approval rule in 670 of 1,080 runs. Extra room to wait did not reduce the problem. These were pretend actions in a computer world; no lunch or money changed hands.",
+    "wonder": "How would you help a robot wait without losing the chance to finish its job?"
+  },
+  {
+    "id": "work-or-proof",
+    "title": "Work or Proof?",
+    "direction": "evidence",
+    "play": "/intelligence/work-or-proof/",
+    "study": "/research/work-or-proof/",
+    "imagine": "Your teacher can check only half the class’s homework. A quick helper picks the pages that look most likely to contain mistakes. Is that better than picking at random?",
+    "question": "Can a cheaper AI help choose which work deserves a closer, more expensive check?",
+    "finding": "Using saved AI answers, one helper-and-checker pair caught about 68 out of every 100 rule breaks, versus about 50 with random selection at the same allowance for expensive checking. That pair helped. It still missed plenty; the helper’s own computing cost was not measured.",
+    "wonder": "Would you check the strangest answer, the most important job, or a random sample?"
+  },
+  {
+    "id": "signal-or-silence",
+    "title": "Signal or Silence",
+    "direction": "evidence",
+    "play": "/intelligence/signal-or-silence/",
+    "study": "/research/signal-or-silence/",
+    "imagine": "You are solving a mystery, but half the security video is missing. Can you say who did it? Could the missing part change your answer?",
+    "question": "Will an AI say “I don’t know” when the evidence is incomplete, and give a clear answer when enough evidence is there?",
+    "finding": "Claude usually noticed when part of the record was missing. Yet it sometimes returned an answer in the wrong format, so even that setup failed the whole test. None of the tested setups passed every requirement.",
+    "wonder": "When is “I need one more clue” the most useful answer?"
+  },
+  {
+    "id": "receipt-gap",
+    "title": "The Receipt Gap",
+    "direction": "coordination",
+    "play": "/intelligence/receipt-gap/",
+    "study": "/research/receipt-gap/",
+    "imagine": "You order pizza. The screen freezes before saying “confirmed.” Did the shop get your order? If you press again, will two pizzas arrive?",
+    "question": "Can an AI finish jobs when replies go missing, without doing the same job twice?",
+    "finding": "A reusable order number stopped some repeat actions for some smaller models. Many jobs still went unfinished. Claude finished all four jobs exactly once in each of its 20 runs with the order-number tool. Having the tool and using it well were different challenges.",
+    "wonder": "What could the shop tell you that would make it safe to try again?"
+  },
+  {
+    "id": "bridge-or-bus",
+    "title": "Bridge or Bus?",
+    "direction": "coordination",
+    "play": "/intelligence/bridge-or-bus/",
+    "study": "/research/bridge-or-bus/",
+    "imagine": "Your robot learns the buttons on a juice machine. Tomorrow the buttons have new names, and one needs a size as well as a flavour. The new manual is right there. Will it read it?",
+    "question": "The game explores ways to connect tools. The follow-up study asks a narrower question: does checking a tool’s current instructions help after it changes?",
+    "finding": "The smaller models never asked for the new instructions. Claude did better on changed tools when it could look them up, but no model passed the study’s whole rule. An available manual does little if nobody opens it.",
+    "wonder": "How would you make a changed button hard to miss?"
+  },
+  {
+    "id": "three-rule-swarm",
+    "title": "Three Rules, One Lunch",
+    "direction": "coordination",
+    "play": "/intelligence/three-rule-swarm/",
+    "study": "/research/three-rules-one-lunch/",
+    "imagine": "Three robots hunt for picnic food. One finds apples. Should it tell the others, keep looking alone, or let a captain choose everyone’s next move?",
+    "question": "Do workers find more food when they can share what they have actually seen?",
+    "finding": "Sharing raised the average reward for every tested model. The main model still failed the full test, and every smaller-model search policy earned less than random search. Claude’s sharing workers earned more than the search scripts tested. Which workers you choose changes the story.",
+    "wonder": "What should a teammate share: every detail, a useful clue, or just the next move?"
+  },
+  {
+    "id": "useful-core",
+    "title": "The Useful Core",
+    "direction": "memory",
+    "play": "/intelligence/useful-core/",
+    "study": "/research/useful-core/",
+    "imagine": "You are making a class newsletter. The photo tool breaks. Can you still deliver a useful page of news before the bell?",
+    "question": "If some tools fail, does asking for the useful part first help an AI deliver something that matters?",
+    "finding": "The three smaller models delivered no useful work across 900 runs in this setup. Claude reached the task’s best possible result in 58 of 60 runs; its other two runs lost their connection. The useful-part-first idea did not pass its main test. This study tested interrupted work, rather than shorter memory notes.",
+    "wonder": "Which part of your project would still be useful if the fancy tools stopped working?"
+  },
+  {
+    "id": "portable-self",
+    "title": "The Portable Self",
+    "direction": "memory",
+    "play": "/intelligence/portable-self/",
+    "study": "/research/portable-self/",
+    "imagine": "You play four games. The same button moves you in different directions in each one. Would you keep one notebook, or a separate note for every game?",
+    "question": "Does automatically handing an AI the note for the right game help it remember the controls?",
+    "finding": "The main model did worse with separate notes: about 6 correct moves in 100, versus 16 with a shared notebook. The test used the model’s own notes. A tidy filing system alone did not make those notes useful.",
+    "wonder": "What would you write in a note so a future you could use it correctly?"
+  },
+  {
+    "id": "one-door",
+    "title": "One Door, Many Hands",
+    "direction": "memory",
+    "play": "/intelligence/one-door/",
+    "study": "/research/one-door-many-hands/",
+    "imagine": "A parcel must arrive before a deadline. Would you send one big robot, six medium robots, or twenty-four tiny ones? A robot might break on the way.",
+    "question": "When models know all the rules, does watching a successful practice delivery help them choose the best team?",
+    "finding": "Under separate random failures, every smaller model chose the best team less often after seeing the practice delivery. The practice added no new facts beyond the rules. A simple script beat those models. A smooth rehearsal could pull attention away from the failure risk.",
+    "wonder": "What would you change in the rehearsal so it teaches you about things going wrong?"
+  }
+]
