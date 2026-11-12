@@ -194,3 +194,17 @@ test('a future seed needs its own chapter; a later study needs matching links in
   assert.throws(()=>checkLearningPaths(p,[q],readPage),/study missing return to game/);
   pages[study]+=a(play);assert.doesNotThrow(()=>checkLearningPaths(p,[q],readPage));
 });
+
+test('the Council role map sits between responsibilities and study sequence with accessible vector views',()=>{
+  const html=read('dist/research/council/index.html');
+  const diagram=html.match(/<section\b[^>]*aria-labelledby="role-map-title"[^>]*>([\s\S]*?)<\/section>/)?.[1];assert.ok(diagram);
+  const before=html.indexOf('Who did what'),middle=html.indexOf('id="role-map-title"'),after=html.indexOf('Every study took the same path');
+  assert.ok(before<middle&&middle<after,'role map must bridge the two existing sections');
+  const views=[...diagram.matchAll(/<svg\b[^>]*role="img"[^>]*>([\s\S]*?)<\/svg>/g)];assert.equal(views.length,2);
+  for(const view of views){
+    assert.match(view[0],/aria-labelledby=/);assert.match(view[1],/<title\b/);assert.match(view[1],/<desc\b/);
+    for(const role of ['Robin','Teddy','Codex','Claude'])assert.ok(view[1].includes(`data-role-card="${role}"`));
+    assert.match(view[1],/marker-end=/);
+  }
+  assert.doesNotMatch(diagram,/<canvas\b|<script\b/);
+});
