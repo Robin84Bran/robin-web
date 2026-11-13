@@ -1,0 +1,540 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-13",
+  "updated": "2026-11-13",
+  "signalCount": 8,
+  "briefingPath": "/ouroboros/202611/20261113/",
+  "actionItemPath": "/ouroboros/202611/20261113/action_item/",
+  "hero": "/daily-briefing/20261113/hero.webp",
+  "ogImage": "/daily-briefing/20261113/og.webp",
+  "actionHero": "/action-item/20261113/hero.webp",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NOW",
+      "status": "READY",
+      "visualValue": "24% less",
+      "visualLabel": "vendor-reported Orchestrator quota use on one benchmark",
+      "sources": [
+        {
+          "label": "Google",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "NEXT",
+      "status": "WATCHING",
+      "visualValue": "up to 1,000",
+      "visualLabel": "conditional four-year LOI, not a firm robot order",
+      "sources": [
+        {
+          "label": "GXO",
+          "url": "https://investors.gxo.com/news-releases/news-release-details/gxo-and-apptronik-expand-partnership-scale-humanoid-deployment"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "-$444.6M",
+      "visualLabel": "complete November 11 combined BTC and ETH ETF net flow",
+      "sources": [
+        {
+          "label": "Farside BTC",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "Farside ETH",
+          "url": "https://farside.co.uk/eth/"
+        },
+        {
+          "label": "DefiLlama",
+          "url": "https://defillama.com/stablecoins"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "WATCHING",
+      "visualValue": "$50M",
+      "visualLabel": "initial provision versus up to $100M conditional capacity",
+      "sources": [
+        {
+          "label": "Securitize and Ethena",
+          "url": "https://www.prnewswire.com/news-releases/securitize-and-ethena-launch-100-million-liquidity-facility-for-blackrocks-buidl-302937776.html"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "deepDiveAvailable": true,
+      "priority": "NOW",
+      "status": "READY",
+      "visualValue": "14%",
+      "visualLabel": "declared annual dividend rate, subject to issuer conditions",
+      "sources": [
+        {
+          "label": "CHADx announcement",
+          "url": "https://www.globenewswire.com/news-release/2026/11/11/3401110/0/en/defi-development-corp-announces-chad-preferred-stock-now-tokenized-in-partnership-with-xstocks.html"
+        },
+        {
+          "label": "SEC dividend disclosure",
+          "url": "https://www.sec.gov/Archives/edgar/data/1805526/000180552626000147/dfdv-exx991_11226.htm"
+        },
+        {
+          "label": "SEC Form 8-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/1805526/000180552626000166/dfdv-20261112.htm"
+        },
+        {
+          "label": "Action Item",
+          "url": "https://iamrobin.ai/ouroboros/202611/20261113/action_item/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "WATCHING",
+      "visualValue": "$1.545B",
+      "visualLabel": "financing capacity, not fully drawn cash",
+      "sources": [
+        {
+          "label": "Rowan financing release",
+          "url": "https://finance.yahoo.com/technology/articles/rowan-digital-infrastructure-secures-1-142400031.html"
+        },
+        {
+          "label": "Rowan scale disclosures",
+          "url": "https://rowan.com/"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$500M",
+      "visualLabel": "closed Series F with company operating metrics attributed",
+      "sources": [
+        {
+          "label": "Agile Robots",
+          "url": "https://www.agile-robots.com/en/news/detail/physical-ai-leader-agile-robots-raises-500-million-series-f-funding/"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "UNKNOWN",
+      "visualValue": "221 patients",
+      "visualLabel": "retrospective intended-use analysis requiring prospective validation",
+      "sources": [
+        {
+          "label": "Nature Medicine",
+          "url": "https://www.nature.com/articles/s41591-026-04716-9"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, November 13, 2026",
+      "description": "Eight bounded actions test model-routing productivity, accepted robot scale, complete capital flows, funded liquidity, dividend cash provenance, infrastructure delivery, humanoid adoption and prospective biomarker utility.",
+      "centralJudgment": "Announcements become decision evidence only when accepted outcomes, funded amounts, operating states and validation boundaries remain visible.",
+      "fieldLine": "Eight signals. Signal 5 opens today’s cash-source map for a tokenized preferred dividend.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Test routing on one frozen task",
+          "why": "Provider speed and quota measurements do not establish RobinOS productivity.",
+          "steps": [
+            "Run one frozen task through Carbon, Hydrogen and Orchestrator.",
+            "Record accepted output, elapsed time, quota or cost, retries and human minutes."
+          ],
+          "done": "All three routes have comparable accepted-outcome and intervention records."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "Count robots only after acceptance",
+          "why": "An LOI for up to 1,000 units is not a firm order or operating fleet.",
+          "steps": [
+            "Record each trial start, site and accepted Apollo unit.",
+            "Track operating hours, human takeovers, safety events and productivity."
+          ],
+          "done": "Every counted robot has a dated acceptance and operating denominator."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows",
+          "title": "Wait for complete flow sessions",
+          "why": "Partial fund rows can turn missing reports into a false market signal.",
+          "steps": [
+            "Freeze the November 11 BTC and ETH totals as the latest complete session.",
+            "Reconcile the next complete session with stablecoin supply before inferring stabilization."
+          ],
+          "done": "Every comparison uses complete rows and keeps investor motives UNKNOWN."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins FinTech and Payments",
+          "title": "Map funded and conditional liquidity",
+          "why": "A $100 million ceiling is not $100 million of continuously funded liquidity.",
+          "steps": [
+            "Separate the initial USDC and BUIDL provision from conditional capacity.",
+            "Track eligibility, redemption, settlement time and facility replenishment without trading."
+          ],
+          "done": "Each liquidity layer has an attributable amount, condition and settlement state."
+        },
+        {
+          "signal": 5,
+          "domain": "Content and Distribution",
+          "title": "Trace the dividend to cash",
+          "why": "A memorable token wrapper does not remove the issuer economics behind a payment.",
+          "steps": [
+            "Publish Astra’s exact Sol-checked article in four languages.",
+            "Archive two LinkedIn openings for Robin’s manual use."
+          ],
+          "done": "The canonical separates declared distributions from staking, operating and financing cash."
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure",
+          "title": "Separate credit capacity from operations",
+          "why": "Financing facilities, pipeline gigawatts, leased capacity and operating capacity are different states.",
+          "steps": [
+            "Record drawn and undrawn financing as disclosures become available.",
+            "Track land, power, equipment, leased megawatts and operating megawatts separately."
+          ],
+          "done": "Every dollar and megawatt has an attributable financing or operating state."
+        },
+        {
+          "signal": 7,
+          "domain": "Late Stage Private Markets",
+          "title": "Require a humanoid delivery denominator",
+          "why": "Portfolio installations and factory nameplate capacity do not establish humanoid adoption.",
+          "steps": [
+            "Separate broad installed robotic solutions from humanoid shipments.",
+            "Track accepted units, utilization, support cost and customer concentration."
+          ],
+          "done": "Valuation can be compared with attributable humanoid delivery and operating evidence."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Markets and AI Life Sciences",
+          "title": "Wait for prospective biomarker validation",
+          "why": "A retrospective optimized threshold does not prove clinical utility in prospective selection.",
+          "steps": [
+            "Record a prospectively specified threshold and validation cohort.",
+            "Compare interaction, outcomes and calibration without treating within-arm association as randomized efficacy."
+          ],
+          "done": "Clinical use remains UNKNOWN until prospective selection evidence is reported."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年11月13日",
+      "description": "八项边界明确的行动，检验模型路由生产力、已验收机器人规模、完整资本流、资金已落实的流动性、股息现金来源、基础设施交付、人形机器人采用情况，以及生物标志物的前瞻性效用。",
+      "centralJudgment": "只有在已验收成果、已落实资金金额、运营状态和验证边界均清晰可见时，公告才会成为决策证据。",
+      "fieldLine": "八个信号。信号 5 展开今天的代币化优先股股息现金来源图谱。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与智能体",
+          "title": "在一项冻结任务上测试路由",
+          "why": "服务商的速度和配额测量并不能证明 RobinOS 的生产力。",
+          "steps": [
+            "让同一项冻结任务分别通过 Carbon、Hydrogen 和 Orchestrator 运行。",
+            "记录已验收输出、耗时、配额或成本、重试次数和人工耗时。"
+          ],
+          "done": "三条路由均有可比较的已验收成果和人工干预记录。"
+        },
+        {
+          "signal": 2,
+          "domain": "物理 AI 与机器人",
+          "title": "只在验收后计入机器人",
+          "why": "一份涉及最多 1,000 台的意向书，并不等同于确定订单或在运营的机器人队伍。",
+          "steps": [
+            "记录每次试验的启动时间、场址和已验收的 Apollo 机器人。",
+            "跟踪运行时长、人工接管、安全事件和生产力。"
+          ],
+          "done": "每一台计入统计的机器人都有注明日期的验收记录和运营分母。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流",
+          "title": "等待完整的资金流统计期",
+          "why": "不完整的基金数据行可能把漏报变成虚假的市场信号。",
+          "steps": [
+            "将 11 月 11 日的 BTC 和 ETH 总额冻结为最新完整统计期的数据。",
+            "在推断企稳之前，将下一完整统计期的数据与稳定币供应量交叉核对。"
+          ],
+          "done": "每项比较均使用完整数据行，并将投资者动机保留为 UNKNOWN。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币、金融科技与支付",
+          "title": "梳理已注资与附条件的流动性",
+          "why": "1 亿美元的上限，并不等于持续获得 1 亿美元的资金支持。",
+          "steps": [
+            "将初始提供的 USDC 和 BUIDL 与附条件容量分开记录。",
+            "在不进行交易的前提下，跟踪适用资格、赎回、结算时间和流动性设施的资金补充。"
+          ],
+          "done": "每一层流动性都有明确归属的金额、条件和结算状态。"
+        },
+        {
+          "signal": 5,
+          "domain": "内容与分发",
+          "title": "将股息追溯到现金",
+          "why": "令人印象深刻的代币封装，并不会抹去这笔支付背后的发行人经济实质。",
+          "steps": [
+            "以四种语言发布 Astra 经 Sol 核验的定稿文章。",
+            "归档两则 LinkedIn 开场文案，供 Robin 手动使用。"
+          ],
+          "done": "权威版本将已宣告的分配与质押、经营和融资现金区分开来。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基础设施",
+          "title": "将信贷容量与运营分开",
+          "why": "融资安排、开发管线中的吉瓦规模、租赁容量和运营容量处于不同状态。",
+          "steps": [
+            "随着披露信息发布，记录已提取和未提取的融资额度。",
+            "分别跟踪土地、电力、设备、已租赁兆瓦和运营中兆瓦。"
+          ],
+          "done": "每一美元和每一兆瓦都对应一项可归属的融资或运营状态。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私募市场",
+          "title": "要求提供人形机器人交付分母",
+          "why": "投资组合层面的安装量和工厂铭牌产能，都不能证明人形机器人采用情况。",
+          "steps": [
+            "将广义的已安装机器人解决方案与人形机器人出货量分开记录。",
+            "跟踪已验收台数、利用率、支持成本和客户集中度。"
+          ],
+          "done": "估值可与可归属的人形机器人交付和运营证据对照。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场与 AI 生命科学",
+          "title": "等待生物标志物的前瞻性验证",
+          "why": "回顾性优化得到的阈值，并不能证明其在前瞻性筛选中的临床效用。",
+          "steps": [
+            "记录前瞻性预先规定的阈值和验证队列。",
+            "比较交互作用、结局和校准，且不将组内关联视为随机化疗效。"
+          ],
+          "done": "在前瞻性筛选证据公布前，临床用途仍为 UNKNOWN。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流｜2026年11月13日",
+      "description": "八項有邊界的行動，檢驗模型路由生產力、獲驗收的機器人規模、完整資本流、已注資流動性、股息現金來源、基礎設施交付、人形機器人採用情況，以及前瞻性生物標記效用。",
+      "centralJudgment": "只有在驗收結果、已注資金額、營運狀態與驗證邊界清晰可見時，公告才會成為決策證據。",
+      "fieldLine": "八個訊號。訊號5展開今日代幣化優先股股息的現金來源圖。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與智能體",
+          "title": "以一項凍結任務測試路由",
+          "why": "供應商的速度和配額測量，不能證明 RobinOS 的生產力。",
+          "steps": [
+            "透過 Carbon、Hydrogen 和 Orchestrator 分別執行同一項凍結任務。",
+            "記錄獲驗收的輸出、經過時間、配額或成本、重試次數和人工分鐘。"
+          ],
+          "done": "三條路由都有可比較的獲驗收結果和人工介入紀錄。"
+        },
+        {
+          "signal": 2,
+          "domain": "具身智能與機器人",
+          "title": "只在驗收後計算機器人",
+          "why": "一份最多1,000台的意向書，並非確定訂單或營運中的機器人隊伍。",
+          "steps": [
+            "記錄每次試驗的開始日期、地點和獲驗收的 Apollo 數量。",
+            "追蹤營運時數、人工接管、安全事件和生產力。"
+          ],
+          "done": "每台計入的機器人都有註明日期的驗收紀錄和營運分母。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本流",
+          "title": "等待完整的資金流時段",
+          "why": "不完整的基金資料列，可能把未報告的資料變成錯誤的市場訊號。",
+          "steps": [
+            "凍結11月11日的 BTC 和 ETH 總額，作為最新的完整時段。",
+            "在推斷市場企穩之前，把下一個完整時段與穩定幣供應量對賬。"
+          ],
+          "done": "每項比較都採用完整資料列，並把投資者動機維持為 UNKNOWN。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣、金融科技與支付",
+          "title": "區分已注資與附條件流動性",
+          "why": "1億美元的上限，不等於持續注資1億美元的流動性。",
+          "steps": [
+            "把最初提供的 USDC 和 BUIDL，與附條件的額外容量分開記錄。",
+            "追蹤資格、贖回、結算時間和融資安排的資金補充情況，全程不進行交易。"
+          ],
+          "done": "每一層流動性都有可歸屬的金額、條件和結算狀態。"
+        },
+        {
+          "signal": 5,
+          "domain": "內容與分發",
+          "title": "追溯股息至現金",
+          "why": "容易記住的代幣包裝，不會消除付款背後的發行人經濟實況。",
+          "steps": [
+            "以四種語言發布經 Sol 核查的 Astra 定稿。",
+            "封存兩個 LinkedIn 開場稿，供 Robin 手動使用。"
+          ],
+          "done": "主版本明確區分已宣布的分派與質押、營運及融資現金。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基礎設施",
+          "title": "區分信貸額度與營運狀態",
+          "why": "融資安排、管線吉瓦數、已出租容量和營運中容量，分屬不同狀態。",
+          "steps": [
+            "隨披露資料公布，分別記錄已提取和未提取的融資。",
+            "分別追蹤土地、電力、設備、已出租兆瓦和營運中兆瓦。"
+          ],
+          "done": "每一美元和每一兆瓦都有可歸屬的融資或營運狀態。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私募市場",
+          "title": "要求人形機器人交付分母",
+          "why": "產品組合安裝量和工廠銘牌產能，不能證明人形機器人的採用情況。",
+          "steps": [
+            "把廣泛安裝的機器人解決方案與人形機器人出貨量分開記錄。",
+            "追蹤獲驗收數量、使用率、支援成本和客戶集中度。"
+          ],
+          "done": "估值可以與可歸屬的人形機器人交付及營運證據比較。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場與 AI 生命科學",
+          "title": "等待前瞻性生物標記驗證",
+          "why": "回溯研究得出的最佳化閾值，不能證明前瞻性篩選中的臨床效用。",
+          "steps": [
+            "記錄預先指定的前瞻性閾值和驗證隊列。",
+            "比較交互作用、結果和校準情況，不把治療組內關聯視為隨機試驗療效。"
+          ],
+          "done": "在前瞻性篩選證據公布之前，臨床用途維持為 UNKNOWN。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー 2026年11月13日",
+      "description": "8つの範囲を限定した行動で、モデルルーティングの生産性、受入済みロボットの規模、完全な資本フロー、資金拠出済みの流動性、配当資金の出所、インフラ供給、人型ロボットの普及、前向き検証におけるバイオマーカーの有用性を検証する。",
+      "centralJudgment": "発表が意思決定の証拠になるのは、受入済みの成果、資金拠出済みの金額、稼働状態、検証の境界が見える状態に保たれる場合だけである。",
+      "fieldLine": "8つのシグナル。シグナル5は、トークン化された優先配当について、今日の資金源の地図を開く。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "フロンティアモデルとエージェント",
+          "title": "固定した1つのタスクでルーティングを検証する",
+          "why": "提供者が示す速度とクォータの測定値だけでは、RobinOSの生産性は立証できない。",
+          "steps": [
+            "固定した1つのタスクをCarbon、Hydrogen、Orchestratorのそれぞれで実行する。",
+            "受入済みの出力、経過時間、クォータまたはコスト、再試行、人手の所要時間を記録する。"
+          ],
+          "done": "3つの経路すべてについて、比較可能な受入成果と介入の記録がそろう。"
+        },
+        {
+          "signal": 2,
+          "domain": "フィジカルAIとロボティクス",
+          "title": "ロボットは受入後にだけ数える",
+          "why": "最大1,000台を対象とするLOIは、確定注文でも稼働中のフリートでもない。",
+          "steps": [
+            "各試験の開始日、実施場所、受入済みのApollo台数を記録する。",
+            "稼働時間、人手介入、安全上の事象、生産性を追跡する。"
+          ],
+          "done": "数に含めるすべてのロボットに、日付付きの受入記録と稼働分母がある。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資本フロー",
+          "title": "完全なフローがそろった取引日を待つ",
+          "why": "一部しかそろっていないファンドの行は、未報告を誤った市場シグナルに変えかねない。",
+          "steps": [
+            "11月11日のBTCとETHの合計を、最新の完全な取引日として凍結する。",
+            "安定化を推論する前に、次の完全な取引日の数値をステーブルコイン供給量と照合する。"
+          ],
+          "done": "すべての比較で完全な行を使い、投資家の動機はUNKNOWNのまま保つ。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコイン フィンテック 決済",
+          "title": "資金拠出済みと条件付きの流動性を分けて示す",
+          "why": "1億ドルの上限枠は、継続的に資金拠出された1億ドルの流動性ではない。",
+          "steps": [
+            "USDCとBUIDLの初期拠出分を、条件付きの供給能力から分ける。",
+            "取引は行わず、利用資格、償還、決済時間、ファシリティの再補充を追跡する。"
+          ],
+          "done": "流動性の各層に、帰属可能な金額、条件、決済状態がある。"
+        },
+        {
+          "signal": 5,
+          "domain": "コンテンツと配信",
+          "title": "配当を現金までたどる",
+          "why": "記憶に残るトークンの外装があっても、支払いを支える発行会社の経済性は消えない。",
+          "steps": [
+            "Solが検証したAstraの原文を4言語で公開する。",
+            "Robinが手動で使うLinkedInの冒頭文を2本保存する。"
+          ],
+          "done": "正本が、宣言された分配と、ステーキング、営業活動、資金調達による現金を区別している。"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラ",
+          "title": "信用供与枠と稼働を分ける",
+          "why": "融資ファシリティ、パイプライン上のギガワット、賃借済み容量、稼働中の容量は、それぞれ異なる状態である。",
+          "steps": [
+            "開示され次第、実行済みと未実行の融資額を記録する。",
+            "土地、電力、機器、賃借済みメガワット、稼働中のメガワットを別々に追跡する。"
+          ],
+          "done": "すべてのドルとメガワットに、帰属可能な資金調達状態または稼働状態がある。"
+        },
+        {
+          "signal": 7,
+          "domain": "レイトステージ未公開市場",
+          "title": "人型ロボットの納入実績を測る分母を求める",
+          "why": "ポートフォリオ全体の導入実績と工場の銘板能力だけでは、人型ロボットの普及は立証できない。",
+          "steps": [
+            "広範なロボットソリューションの導入実績と、人型ロボットの出荷台数を分ける。",
+            "受入済み台数、利用率、サポート費用、顧客集中度を追跡する。"
+          ],
+          "done": "評価額を、帰属可能な人型ロボットの納入実績と稼働証拠に照らして比較できる。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場とAIライフサイエンス",
+          "title": "バイオマーカーの前向き検証を待つ",
+          "why": "後ろ向き解析で最適化された閾値は、前向き選択における臨床的有用性を証明しない。",
+          "steps": [
+            "前向きに規定された閾値と検証コホートを記録する。",
+            "群内の関連をランダム化による有効性とみなさず、交互作用、アウトカム、キャリブレーションを比較する。"
+          ],
+          "done": "前向き選択の証拠が報告されるまで、臨床利用はUNKNOWNのままとする。"
+        }
+      ]
+    }
+  }
+}
