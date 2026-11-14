@@ -1,0 +1,13 @@
+The token moves. The underlying stays at DTC.
+
+That is the useful surprise inside DTCC's Tokenization Service. The underlying security remains in DTC custody while a 1:1-backed digital twin can move between registered wallets.
+
+The architecture has two layers: a stable custody anchor and a new movement rail. Public execution does not automatically mean public access; today's service still limits participation to eligible DTC participants and registered wallets.
+
+Production is current on Canton and DTCC's private Besu environment. The Solana connection is a plan for the second half of 2027. The reviewed record does not yet contain an attributable completed DTS transaction there.
+
+A first transaction can prove the rail works. Lower cost or greater liquidity will need repeated measurement.
+
+Full story and sources: https://iamrobin.ai/binary/stories/the-token-moves-the-underlying-stays/
+
+#Tokenization #MarketInfrastructure #Solana #DigitalAssets #DTCC
