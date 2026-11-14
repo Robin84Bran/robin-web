@@ -30,10 +30,14 @@ test('Atlas data URLs retain compatibility and are not redirected as pages', asy
 });
 
 
-test('Honest Agent source stays unchanged apart from route, imports and back link', async () => {
+test('Honest Agent preserves the original study before the commentary appendix', async () => {
   const { readFileSync } = await import('node:fs');
   const { createHash } = await import('node:crypto');
-  const original = readFileSync(new URL('../../src/pages/research/honestagent/index.astro', import.meta.url), 'utf8')
+  const page = readFileSync(new URL('../../src/pages/research/honestagent/index.astro', import.meta.url), 'utf8');
+  const appendix = page.match(/\n    <section class="story" aria-labelledby="robin-and-teddy">[\s\S]*?<\/section>\n/);
+  assert.ok(appendix, 'the labelled commentary appendix must be present');
+  assert.ok(page.slice(appendix.index + appendix[0].length).startsWith('  </div>\n</BaseLayout>'), 'the appendix must come last');
+  const original = page.replace(appendix[0], '')
     .replaceAll("from '../../../", "from '../../")
     .replace("const path = '/research/honestagent/';", "const path = '/research/';")
     .replace('href="/research/">← Research', 'href="/intelligence/">← Intelligence');
