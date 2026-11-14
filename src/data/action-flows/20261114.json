@@ -1,0 +1,556 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-14",
+  "updated": "2026-11-14",
+  "signalCount": 8,
+  "briefingPath": "/ouroboros/202611/20261114/",
+  "actionItemPath": "/ouroboros/202611/20261114/action_item/",
+  "hero": "/daily-briefing/20261114/hero.webp",
+  "ogImage": "/daily-briefing/20261114/og.webp",
+  "actionHero": "/action-item/20261114/hero.webp",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NEXT",
+      "status": "WATCHING",
+      "visualValue": "under 10s",
+      "visualLabel": "provider-claimed 4K generation time, not an accepted workflow result",
+      "sources": [
+        {
+          "label": "MiniMax",
+          "url": "https://www.minimax.io/blog/minimax-h3-image"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "NOW",
+      "status": "READY",
+      "visualValue": "555/1,200",
+      "visualLabel": "provider-reported simulated task completions on RoboLab-120",
+      "sources": [
+        {
+          "label": "Runway release",
+          "url": "https://runway.com/news/company-news/praxis-1-is-now-available"
+        },
+        {
+          "label": "Runway report",
+          "url": "https://runway.com/research/praxis-1-video-pretraining-to-robot-control"
+        },
+        {
+          "label": "Praxis-1 code",
+          "url": "https://github.com/runwayml/praxis-1-oss"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "-$356.5M",
+      "visualLabel": "complete November 12 combined BTC, ETH and SOL ETF net flow",
+      "sources": [
+        {
+          "label": "Farside BTC",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "Farside ETH",
+          "url": "https://farside.co.uk/eth/"
+        },
+        {
+          "label": "Farside SOL",
+          "url": "https://farside.co.uk/sol/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "WATCHING",
+      "visualValue": "H2 2027",
+      "visualLabel": "targeted Solana availability, not a live connection",
+      "sources": [
+        {
+          "label": "DTCC announcement",
+          "url": "https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-to-connect-with-solana"
+        },
+        {
+          "label": "DTCC service hub",
+          "url": "https://www.dtcc.com/products-and-services/digital-assets/tokenization/hub"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "deepDiveAvailable": true,
+      "priority": "NOW",
+      "status": "READY",
+      "visualValue": "50 trials",
+      "visualLabel": "proposed bounded acceptance record, not a completed experiment",
+      "sources": [
+        {
+          "label": "Runway release",
+          "url": "https://runway.com/news/company-news/praxis-1-is-now-available"
+        },
+        {
+          "label": "Runway report",
+          "url": "https://runway.com/research/praxis-1-video-pretraining-to-robot-control"
+        },
+        {
+          "label": "Praxis-1 code",
+          "url": "https://github.com/runwayml/praxis-1-oss"
+        },
+        {
+          "label": "Action Item",
+          "url": "https://iamrobin.ai/ouroboros/202611/20261114/action_item/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "WATCHING",
+      "visualValue": "$215M",
+      "visualLabel": "binding prepayment and early-development funding linked to a non-binding 600 MW LOI",
+      "sources": [
+        {
+          "label": "Fermi release",
+          "url": "https://www.sec.gov/Archives/edgar/data/2071778/000121390026118351/ea031197701ex99-1.htm"
+        },
+        {
+          "label": "Fermi Form 10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/2071778/000207177826000058/frmi-20260930.htm"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$300M",
+      "visualLabel": "Series C at a stated $3 billion valuation without disclosed revenue",
+      "sources": [
+        {
+          "label": "CapitalG",
+          "url": "https://capitalg.com/insights/doubling-down-on-langchain/"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "UNKNOWN",
+      "visualValue": "Nov 17",
+      "visualLabel": "next earnings date after an immediate interim CEO transition",
+      "sources": [
+        {
+          "label": "NVIDIA Form 8-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm"
+        },
+        {
+          "label": "NVIDIA filed release",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvidiaannouncesceotransiti.htm"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, November 14, 2026",
+      "description": "Eight bounded actions test image-model productivity, robot-policy acceptance, complete ETF flows, tokenization delivery, shop-floor evidence, infrastructure financing, agent-platform economics and leadership-transition effects.",
+      "centralJudgment": "Access, announcements and capital become decision evidence only when accepted outcomes, complete denominators, binding states and operating consequences stay visible.",
+      "fieldLine": "Eight signals. Signal 5 opens today’s bounded shop-floor acceptance design for an open-weight robot model.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Benchmark one frozen visual brief",
+          "why": "Provider speed and resolution claims do not establish useful workflow productivity.",
+          "steps": [
+            "Freeze one representative brief, reference set and acceptance rubric.",
+            "Record accepted output, elapsed time, retries, intervention and total compute cost."
+          ],
+          "done": "The model has an accepted-output record with complete time, cost and intervention evidence."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "Test one robot task end to end",
+          "why": "Simulation and a provider-run station comparison do not establish performance on a new machine.",
+          "steps": [
+            "Freeze one low-energy task, checkpoint, robot, object set, camera and instruction.",
+            "Run fifty controlled attempts and preserve completion, recovery, intervention, time and cost."
+          ],
+          "done": "All fifty attempts have a complete acceptance, recovery and cost record."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows",
+          "title": "Wait for complete flow sessions",
+          "why": "Partial fund rows can turn missing reports into a false cross-asset signal.",
+          "steps": [
+            "Freeze November 12 as the latest complete BTC, ETH and SOL session.",
+            "Compare only after every selected fund row has reported or is explicitly unavailable."
+          ],
+          "done": "Every comparison uses complete sessions and keeps investor motives UNKNOWN."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins FinTech and Payments",
+          "title": "Track tokenization from plan to transaction",
+          "why": "A targeted 2027 network connection is a roadmap, not live market infrastructure.",
+          "steps": [
+            "Track eligible assets, participant access, technical documentation and launch status separately.",
+            "Require an attributable first Solana transaction before calling the connection live."
+          ],
+          "done": "Asset scope, access, documentation and a completed transaction are all evidenced."
+        },
+        {
+          "signal": 5,
+          "domain": "Content and Distribution",
+          "title": "Turn open access into acceptance evidence",
+          "why": "Downloadable weights open the door; complete trials determine what a robot policy has earned the right to do.",
+          "steps": [
+            "Publish Astra’s exact Sol-checked article in four languages.",
+            "Archive two LinkedIn openings for Robin’s manual use."
+          ],
+          "done": "The canonical separates model access from task-specific acceptance and preserves the proposed fifty-trial record."
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure",
+          "title": "Keep the infrastructure evidence ladder intact",
+          "why": "Prepayments, development agreements, LOIs, leases, power, construction and revenue are different states.",
+          "steps": [
+            "Record the $200 million prepayment and $15 million development funding separately from the non-binding 600 MW LOI.",
+            "Track lease status, financed construction, energized capacity, accepted service and collected revenue in order."
+          ],
+          "done": "Every dollar and megawatt has an attributable agreement, financing or operating state."
+        },
+        {
+          "signal": 7,
+          "domain": "Late Stage Private Markets",
+          "title": "Ask what supports the agent-platform valuation",
+          "why": "Funding, downloads and customer counts do not reveal recurring revenue quality or capital efficiency.",
+          "steps": [
+            "Request ARR, net retention, paid conversion, gross margin and customer concentration.",
+            "Separate model-provider costs, observability economics, primary capital and any secondary sale."
+          ],
+          "done": "The stated valuation can be compared with attributable business-quality evidence."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Markets and AI Infrastructure",
+          "title": "Measure the succession through operations",
+          "why": "A filed interim appointment establishes governance change, while operating effects remain UNKNOWN.",
+          "steps": [
+            "Track the permanent-search timing, executive retention and capital-allocation disclosures.",
+            "After earnings, separate customer, product-roadmap and operating evidence from market reaction."
+          ],
+          "done": "Leadership effects remain UNKNOWN until attributable operating evidence is reported."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年11月14日",
+      "description": "八项边界明确的行动，检验图像模型生产力、机器人策略验收、完整 ETF 资金流、代币化交付、车间证据、基础设施融资、智能体平台经济性，以及领导层交接的运营影响。",
+      "centralJudgment": "只有在已验收成果、完整分母、协议是否具约束力以及运营后果都清晰可见时，访问权限、公告与资本才会成为决策证据。",
+      "fieldLine": "八个信号。信号 5 展开今天这套面向开放权重机器人模型、边界明确的车间验收设计。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与智能体",
+          "title": "用一份冻结的视觉简报进行基准测试",
+          "why": "服务商宣称的速度和分辨率，并不能证明工作流具备实际生产力。",
+          "steps": [
+            "冻结一份有代表性的简报、一组参考资料和一套验收标准。",
+            "记录验收通过的输出、总耗时、重试次数、人工干预和总算力成本。"
+          ],
+          "done": "该模型具备一份验收通过的输出记录，且时间、成本和人工干预证据完整。"
+        },
+        {
+          "signal": 2,
+          "domain": "物理 AI 与机器人",
+          "title": "端到端测试一项机器人任务",
+          "why": "仿真和服务商自行运行的工位对比，并不能证明模型在一台新机器上的表现。",
+          "steps": [
+            "冻结一项低能耗任务、一个模型检查点、一台机器人、一组物体、一部相机和一条指令。",
+            "进行五十次受控尝试，并完整记录完成、恢复、人工干预、用时和成本。"
+          ],
+          "done": "五十次尝试均具备完整的验收、恢复和成本记录。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流",
+          "title": "等待完整的资金流统计期",
+          "why": "部分基金数据行可能把漏报变成虚假的跨资产信号。",
+          "steps": [
+            "将 11 月 12 日冻结为 BTC、ETH 和 SOL 的最新完整统计期。",
+            "仅在所选基金的每一行均已上报或明确标记为不可得后再进行比较。"
+          ],
+          "done": "每次比较均使用完整统计期，并将投资者动机保留为 UNKNOWN。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币、金融科技与支付",
+          "title": "跟踪代币化从计划走向交易",
+          "why": "计划于 2027 年实现的网络连接只是路线图，并非已投入使用的市场基础设施。",
+          "steps": [
+            "分别跟踪符合条件的资产、参与者访问权限、技术文档和上线状态。",
+            "必须有可归属的首笔 Solana 交易，才能把该连接称为已上线。"
+          ],
+          "done": "资产范围、访问权限、文档和一笔已完成的交易均有证据支持。"
+        },
+        {
+          "signal": 5,
+          "domain": "内容与分发",
+          "title": "将开放访问转化为验收证据",
+          "why": "可下载的权重只是打开大门；完整试验才能证明一项机器人策略有资格做什么。",
+          "steps": [
+            "以四种语言发布 Astra 经 Sol 核验的定稿文章。",
+            "归档两则 LinkedIn 开场文案，供 Robin 手动使用。"
+          ],
+          "done": "权威版本将模型访问与具体任务验收区分开来，并保留拟议的五十次试验记录。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基础设施",
+          "title": "保持基础设施证据阶梯完整",
+          "why": "预付款、开发协议、意向书、租约、供电、施工和收入处于不同状态。",
+          "steps": [
+            "将 2 亿美元预付款和 1,500 万美元开发资金，与不具约束力的 600 MW 意向书分别记录。",
+            "依次跟踪租约状态、已获融资的施工、已通电容量、已验收服务和实际回款。"
+          ],
+          "done": "每一美元和每一兆瓦都对应可归属的协议、融资或运营状态。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私募市场",
+          "title": "追问什么支撑智能体平台估值",
+          "why": "融资、下载量和客户数并不能揭示经常性收入的质量或资本效率。",
+          "steps": [
+            "索取 ARR、净留存率、付费转化率、毛利率和客户集中度。",
+            "分别列明模型提供商成本、可观测性业务的经济性、一级市场融资以及任何二级股份出售。"
+          ],
+          "done": "所述估值可以与可归属的业务质量证据进行比较。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场与 AI 基础设施",
+          "title": "用运营表现衡量领导层交接",
+          "why": "申报文件中的临时任命确认了治理变动，但运营影响仍为 UNKNOWN。",
+          "steps": [
+            "跟踪正式接任者的搜寻时间表、高管留任情况和资本配置披露。",
+            "财报发布后，将客户、产品路线图和运营证据与市场反应分开。"
+          ],
+          "done": "在可归属的运营证据公布前，领导层交接的影响仍为 UNKNOWN。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流｜2026年11月14日",
+      "description": "八項有邊界的行動，檢驗影像模型生產力、機器人策略驗收、完整 ETF 資金流、代幣化交付、生產現場證據、基礎設施融資、智能體平台經濟效益，以及領導層交接的營運影響。",
+      "centralJudgment": "只有在獲驗收成果、完整分母、協議約束狀態和營運後果都清晰可見時，存取權、公告與資本才會成為決策證據。",
+      "fieldLine": "八個訊號。訊號5展開今日針對開放權重機器人模型、有明確邊界的生產現場驗收設計。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與智能體",
+          "title": "以一份凍結視覺簡報進行基準測試",
+          "why": "供應商聲稱的速度和解像度，不能證明工作流程具備實際生產力。",
+          "steps": [
+            "凍結一份具代表性的簡報、一組參考資料和一套驗收標準。",
+            "記錄獲驗收的輸出、總耗時、重試次數、人工介入和總算力成本。"
+          ],
+          "done": "模型已有一份獲驗收的輸出紀錄，時間、成本和人工介入證據完整。"
+        },
+        {
+          "signal": 2,
+          "domain": "具身智能與機器人",
+          "title": "端到端測試一項機器人任務",
+          "why": "模擬與供應商自行進行的工作站比較，不能證明模型在一台新機器上的表現。",
+          "steps": [
+            "凍結一項低能耗任務、一個模型檢查點、一台機器人、一組物件、一部相機和一項指令。",
+            "進行五十次受控嘗試，並保留完成、恢復、人工介入、耗時和成本紀錄。"
+          ],
+          "done": "五十次嘗試全都有完整的驗收、恢復和成本紀錄。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本流",
+          "title": "等待完整的資金流時段",
+          "why": "不完整的基金資料列，可能把未報告資料變成錯誤的跨資產訊號。",
+          "steps": [
+            "把11月12日凍結為 BTC、ETH 和 SOL 的最新完整時段。",
+            "只有在每個選定基金資料列均已報告或明確列為無法取得後，才作比較。"
+          ],
+          "done": "每項比較都採用完整時段，並把投資者動機維持為 UNKNOWN。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣、金融科技與支付",
+          "title": "追蹤代幣化由計劃走到交易",
+          "why": "目標在2027年接通網路，只是路線圖，不是正在運作的市場基礎設施。",
+          "steps": [
+            "分別追蹤合資格資產、參與者存取權、技術文件和上線狀態。",
+            "必須出現一筆可歸屬的首宗 Solana 交易，才能把這項連接列為已上線。"
+          ],
+          "done": "資產範圍、存取權、文件和已完成交易全都有證據支持。"
+        },
+        {
+          "signal": 5,
+          "domain": "內容與分發",
+          "title": "把公開存取轉化為驗收證據",
+          "why": "可下載權重只是打開大門；完整試驗才證明機器人策略有資格執行哪些工作。",
+          "steps": [
+            "以四種語言發布 Astra 經 Sol 核查的定稿。",
+            "封存兩個 LinkedIn 開場稿，供 Robin 手動使用。"
+          ],
+          "done": "主版本區分模型存取與特定任務驗收，並保留擬議的五十次試驗紀錄。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基礎設施",
+          "title": "完整保留基礎設施證據階梯",
+          "why": "預付款、開發協議、意向書、租約、供電、施工和收入，分屬不同狀態。",
+          "steps": [
+            "把2億美元預付款和1,500萬美元開發資金，與不具約束力的600 MW意向書分開記錄。",
+            "依次追蹤租約狀態、已獲融資的施工、已通電容量、獲驗收服務和已收收入。"
+          ],
+          "done": "每一美元和每一兆瓦都有可歸屬的協議、融資或營運狀態。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私募市場",
+          "title": "追問智能體平台估值的支撐",
+          "why": "融資、下載量和客戶數目，不能揭示經常性收入質素或資本效率。",
+          "steps": [
+            "索取 ARR、淨留存率、付費轉化率、毛利率和客戶集中度。",
+            "分別列明模型供應商成本、可觀測性業務的經濟效益、一級市場融資和任何二級股份出售。"
+          ],
+          "done": "所述估值可以與可歸屬的業務質素證據比較。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場與 AI 基礎設施",
+          "title": "從營運表現衡量領導層交接",
+          "why": "申報文件中的臨時任命證實治理改變，但營運影響仍為 UNKNOWN。",
+          "steps": [
+            "追蹤永久人選搜尋時間表、管理層留任情況和資本配置披露。",
+            "業績發布後，把客戶、產品路線圖和營運證據，與市場反應分開。"
+          ],
+          "done": "在可歸屬的營運證據公布前，領導層交接的影響維持為 UNKNOWN。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー 2026年11月14日",
+      "description": "8つの範囲を限定した行動で、画像モデルの生産性、ロボット方策の検収、完全なETFフロー、トークン化の実装、製造現場の証拠、インフラ資金調達、エージェント基盤の経済性、経営移行の影響を検証する。",
+      "centralJudgment": "アクセス、発表、資本が意思決定の証拠になるのは、受入済みの成果、完全な分母、法的拘束力のある状態、事業上の帰結が見える状態に保たれる場合だけである。",
+      "fieldLine": "8つのシグナル。シグナル5は、オープンウェイトのロボットモデルに対する、今日の範囲を限定した製造現場の検収設計を開く。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "フロンティアモデルとエージェント",
+          "title": "一つの固定したビジュアル要件で性能を測る",
+          "why": "提供者による速度と解像度の主張だけでは、ワークフローにおける有用な生産性は立証できない。",
+          "steps": [
+            "代表的な要件、参照画像一式、受入基準を一つ固定する。",
+            "受入済みの成果物、経過時間、再試行、介入、総計算費用を記録する。"
+          ],
+          "done": "受入済み成果物について、時間、費用、介入の証拠が完全にそろった記録がある。"
+        },
+        {
+          "signal": 2,
+          "domain": "フィジカルAIとロボティクス",
+          "title": "一つのロボットタスクを最初から最後まで試験する",
+          "why": "シミュレーションと提供者実施のステーション比較だけでは、新しい機械での性能は立証できない。",
+          "steps": [
+            "低エネルギーのタスク、チェックポイント、ロボット、物体一式、カメラ、指示を一つ固定する。",
+            "管理された試行を50回実施し、完了、復旧、介入、時間、費用をすべて保存する。"
+          ],
+          "done": "50回すべての試行に、検収、復旧、費用の完全な記録がある。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資本フロー",
+          "title": "完全なフローがそろった取引日を待つ",
+          "why": "一部しかそろっていないファンドの行は、未報告を誤った資産横断シグナルに変えかねない。",
+          "steps": [
+            "11月12日を、BTC、ETH、SOLの最新の完全な取引日として凍結する。",
+            "選んだファンドの全行が報告済みとなるか、入手不能であることが明示されてから比較する。"
+          ],
+          "done": "すべての比較で完全な取引日を使い、投資家の動機はUNKNOWNのまま保つ。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコイン フィンテック 決済",
+          "title": "トークン化を計画から取引まで追う",
+          "why": "2027年を目標とするネットワーク接続はロードマップであり、稼働中の市場インフラではない。",
+          "steps": [
+            "適格資産、参加者のアクセス、技術文書、開始状況を別々に追跡する。",
+            "接続が稼働したと判断する前に、帰属可能な最初のSolana取引を確認する。"
+          ],
+          "done": "資産範囲、アクセス、文書、完了済み取引のすべてに証拠がある。"
+        },
+        {
+          "signal": 5,
+          "domain": "コンテンツと配信",
+          "title": "オープンアクセスを検収証拠へ変える",
+          "why": "ダウンロード可能な重みは扉を開くが、ロボット方策が何を任せるに値するかは、完全な試行によって決まる。",
+          "steps": [
+            "Solが検証したAstraの原文を4言語で公開する。",
+            "Robinが手動で使うLinkedInの冒頭文を2本保存する。"
+          ],
+          "done": "正本がモデルへのアクセスとタスク固有の検収を分け、提案する50回の試行記録を保持している。"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラ",
+          "title": "インフラの証拠ラダーを崩さない",
+          "why": "前払金、開発契約、意向書、リース、電力、建設、売上は、それぞれ異なる状態である。",
+          "steps": [
+            "2億ドルの前払金と1,500万ドルの開発資金を、法的拘束力のない600 MWの意向書と分けて記録する。",
+            "リースの状態、資金調達済みの建設、通電済み容量、検収済みサービス、回収済み売上金を順に追跡する。"
+          ],
+          "done": "すべてのドルとメガワットに、帰属可能な契約、資金調達、稼働のいずれかの状態がある。"
+        },
+        {
+          "signal": 7,
+          "domain": "レイトステージ未公開市場",
+          "title": "エージェント基盤の評価額を何が支えるかを問う",
+          "why": "資金調達額、ダウンロード数、顧客数からは、継続収益の質も資本効率も分からない。",
+          "steps": [
+            "ARR、売上高純継続率、有料転換率、粗利益率、顧客集中度を求める。",
+            "モデル提供者への費用、可観測性の経済性、プライマリー資金、セカンダリー売却を分ける。"
+          ],
+          "done": "公表評価額を、帰属可能な事業品質の証拠と比較できる。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場とAIインフラ",
+          "title": "事業運営の変化で後継者移行を測る",
+          "why": "提出書類に記載された暫定就任はガバナンスの変化を立証するが、事業への影響はUNKNOWNのままである。",
+          "steps": [
+            "正式CEOの選定時期、主要幹部の残留、資本配分の開示を追跡する。",
+            "決算後、顧客、製品ロードマップ、事業運営の証拠を市場反応と分けて評価する。"
+          ],
+          "done": "帰属可能な事業運営の証拠が報告されるまで、リーダー交代の影響はUNKNOWNのままとする。"
+        }
+      ]
+    }
+  }
+}
