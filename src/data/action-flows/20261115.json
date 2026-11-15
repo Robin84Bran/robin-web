@@ -1,0 +1,536 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-15",
+  "updated": "2026-11-15",
+  "signalCount": 8,
+  "briefingPath": "/ouroboros/202611/20261115/",
+  "actionItemPath": "/ouroboros/202611/20261115/action_item/",
+  "hero": "/daily-briefing/20261115/hero.webp",
+  "ogImage": "/daily-briefing/20261115/og.webp",
+  "actionHero": "/action-item/20261115/hero.webp",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NOW",
+      "status": "READY",
+      "visualValue": "1 boundary",
+      "visualLabel": "a proposed evidence-stopping test, not a completed result",
+      "sources": [
+        {
+          "label": "Epoch AI",
+          "url": "https://epoch.ai/publications/incident-report-ai-agents-attempted-exploits-on-our-website"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "NEXT",
+      "status": "WATCHING",
+      "visualValue": "H2 2027",
+      "visualLabel": "targeted service-robot and AMR support, not delivered capability",
+      "sources": [
+        {
+          "label": "NXP",
+          "url": "https://investors.nxp.com/news-releases/news-release-details/nxp-unveils-unified-robotics-platform-speed-trusted-physical-ai/"
+        },
+        {
+          "label": "Futurum",
+          "url": "https://futurumgroup.com/insights/nxp-unveils-unified-robotics-platform-to-take-the-neural-axis-into-production/"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$287.0B",
+      "visualLabel": "November 14 USD-pegged circulating supply, not transaction activity",
+      "sources": [
+        {
+          "label": "DefiLlama",
+          "url": "https://stablecoins.llama.fi/stablecoincharts/all"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "WATCHING",
+      "visualValue": "50% LTV",
+      "visualLabel": "planned maximum borrowing ratio with liquidation and capped-upside risk",
+      "sources": [
+        {
+          "label": "Ondo",
+          "url": "https://ondo.finance/blog/ondo-stocks-as-collateral-on-spout"
+        },
+        {
+          "label": "Spout",
+          "url": "https://spout.finance/learn/spout-ondo-alpaca-tokenized-stocks/"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "deepDiveAvailable": true,
+      "priority": "NOW",
+      "status": "READY",
+      "visualValue": "1 stopped claim",
+      "visualLabel": "an editorial boundary that preserves the rest of the supported edition",
+      "sources": [
+        {
+          "label": "Epoch AI",
+          "url": "https://epoch.ai/publications/incident-report-ai-agents-attempted-exploits-on-our-website"
+        },
+        {
+          "label": "November 14 brief",
+          "url": "https://iamrobin.ai/ouroboros/202611/20261114/"
+        },
+        {
+          "label": "Action Item",
+          "url": "https://iamrobin.ai/ouroboros/202611/20261115/action_item/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NOW",
+      "status": "READY",
+      "visualValue": "10 MW",
+      "visualLabel": "energized IT load and cooling required by March 31, 2028",
+      "sources": [
+        {
+          "label": "UK competition",
+          "url": "https://find-government-grants.service.gov.uk/grants/airr-heterogeneous-supercomputer-host-site-and-data-centre-grant-competition-1"
+        },
+        {
+          "label": "Updated terms",
+          "url": "https://assets.ctfassets.net/qezfe50w6p6b/1EXFQ6WSteYibCafyvwpyH/26e01eaf738a3a929b4b18025ad835b0/UPDATED_12112026_-_Document_2_-_AIRR_Host_Site_and_Data_Centre_Grant_Competition_Scope_and_Evaluation_Criteria.pdf"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "UNKNOWN",
+      "visualValue": ">£500M",
+      "visualLabel": "Series C amount without disclosed revenue or shipped-silicon evidence",
+      "sources": [
+        {
+          "label": "UK government",
+          "url": "https://www.gov.uk/government/news/sovereign-ai-and-british-business-bank-invest-in-british-firm-developing-the-next-generation-of-ai-hardware"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "€10.9B",
+      "visualLabel": "digital-business revenue, not stand-alone Industrial AI revenue",
+      "sources": [
+        {
+          "label": "Siemens",
+          "url": "https://press.siemens.com/global/en/pressrelease/outstanding-fiscal-2026-performance-industrial-ai-drive-future-growth"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, November 15, 2026",
+      "description": "Eight bounded actions test agent stopping rules, robot-platform integration, stablecoin contraction, tokenized-stock credit, editorial provenance, executable power rights, chip-company evidence and industrial-AI attribution.",
+      "centralJudgment": "A wider action surface creates value only when each claim has an evidence boundary, an attributable operating state and a testable definition of done.",
+      "fieldLine": "Eight signals. Signal 5 turns one stopped claim into an inspectable editorial policy.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Test one legitimate stopping boundary",
+          "why": "Persistence without an evidence boundary can convert an impossible task into unsafe or wasted action.",
+          "steps": [
+            "Freeze one task with a required item deliberately absent.",
+            "Compare two stopping rules and record blocker accuracy, violations, calls and intervention minutes."
+          ],
+          "done": "Both runs have complete evidence and the safer rule is identified without model-attribution overclaim."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "Measure integration to repeatable flight",
+          "why": "A platform announcement does not establish engineering hours or reliability on an external robot.",
+          "steps": [
+            "Freeze one drone, task, SDK version and acceptance rubric.",
+            "Record time to repeatable flight, failures, repairs and update cost."
+          ],
+          "done": "The external team has a complete repeatability, recovery and cost record."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows",
+          "title": "Freeze seven complete supply snapshots",
+          "why": "Supply contraction alone does not reveal settlement activity or investor motive.",
+          "steps": [
+            "Capture total and major-issuer supply for seven UTC closes.",
+            "Add onchain transfer volume before changing the capital-expansion judgment."
+          ],
+          "done": "Seven complete observations support a multi-measure judgment while motives remain UNKNOWN."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins FinTech and Payments",
+          "title": "Wait for a complete settlement cycle",
+          "why": "No-interest borrowing can still transfer upside and create liquidation cost.",
+          "steps": [
+            "Record premium, strike, debt, liquidation terms and token count at opening.",
+            "At settlement, record exercise, repurchase price and borrower net wealth."
+          ],
+          "done": "One attributable full cycle exposes the economic price rather than the advertised rate."
+        },
+        {
+          "signal": 5,
+          "domain": "Content and Distribution",
+          "title": "Publish the accurate stopping rule",
+          "why": "A claim can stop at its evidence boundary while the supported edition continues.",
+          "steps": [
+            "Publish Astra’s exact Sol-checked English article and three reviewed translations.",
+            "Preserve the source gap, native audit and two LinkedIn openings for Robin’s manual use."
+          ],
+          "done": "The canonical separates observation, interpretation and future tests with intact provenance."
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure",
+          "title": "Gate compute funding on executable power",
+          "why": "Land and planned chips are not deliverable capacity without enforceable power rights.",
+          "steps": [
+            "Add accepted grid offers or executed alternative supply contracts to the 100 MW model.",
+            "Recalculate capital and timing at the March 2028 and March 2029 milestones."
+          ],
+          "done": "Every modeled megawatt has a dated power-right and cooling state."
+        },
+        {
+          "signal": 7,
+          "domain": "Late Stage Private Markets",
+          "title": "Build the Fractile evidence sheet",
+          "why": "A funding round and valuation do not establish product delivery or business quality.",
+          "steps": [
+            "Track tape-out, first deliveries, independent benchmarks and confirmed customers.",
+            "Add revenue, gross margin and later capital needs when attributable."
+          ],
+          "done": "The WATCH rating rests on a complete evidence sheet, with absent metrics UNKNOWN."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Markets and Industrial AI",
+          "title": "Disaggregate the digital growth claim",
+          "why": "Siemens reports digital revenue while stand-alone Industrial AI revenue remains unknown.",
+          "steps": [
+            "Track digital revenue, ARR, software growth, industrial margin and free cash flow.",
+            "Require disclosures tying Industrial AI to renewals, margin or production improvement."
+          ],
+          "done": "Industrial AI attribution is upgraded only when customer and financial outcomes connect."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年11月15日",
+      "description": "八项边界明确的行动，检验 Agent 停止规则、机器人平台集成、稳定币收缩、代币化股票信贷、编辑溯源、电力权利、芯片公司证据和工业 AI 归因。",
+      "centralJudgment": "只有当每项主张都有证据边界、可归属的运营状态和可检验的完成定义时，更广的行动范围才会创造价值。",
+      "fieldLine": "八个信号。信号 5 把停止一项主张转化为可检查的编辑政策。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与 Agent",
+          "title": "检验一条正当停止边界",
+          "why": "没有证据边界的坚持，会把不可能的任务变成不安全或浪费性的行动。",
+          "steps": [
+            "冻结一项故意缺少必要材料的任务。",
+            "比较两种停止规则，并记录阻塞报告准确度、越权、调用次数和人工介入分钟数。"
+          ],
+          "done": "两次运行证据完整，在不夸大模型归因的前提下识别出更安全的规则。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 与机器人",
+          "title": "测量集成到可重复飞行",
+          "why": "平台公告不能证明外部机器人所需的工程工时和可靠性。",
+          "steps": [
+            "冻结一台无人机、一项任务、SDK 版本和验收标准。",
+            "记录可重复飞行所需时间、故障、修复和更新成本。"
+          ],
+          "done": "外部团队拥有完整的重复性、恢复和成本记录。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资产资本流",
+          "title": "冻结七个完整供应量快照",
+          "why": "供应量收缩本身不能说明结算活动或投资者动机。",
+          "steps": [
+            "捕获连续七个 UTC 收盘的总供应量和主要发行方供应量。",
+            "改变资本扩张判断前加入链上转账量。"
+          ],
+          "done": "七次完整观测支持多指标判断，动机仍保持 UNKNOWN。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币、FinTech 与支付",
+          "title": "等待一个完整结算周期",
+          "why": "无利息借款仍可能转移上涨收益并产生清算成本。",
+          "steps": [
+            "开仓时记录权利金、行使价、债务、清算条款和代币数。",
+            "结算时记录行使、回购价和借款人净资产。"
+          ],
+          "done": "一个可归属的完整周期揭示真实经济价格，而非宣传利率。"
+        },
+        {
+          "signal": 5,
+          "domain": "内容与分发",
+          "title": "发布准确的停止规则",
+          "why": "一项主张可以停在证据边界，其余有依据的版本仍可继续。",
+          "steps": [
+            "发布 Astra 的 Sol 独立核查英文原文及三种经审阅翻译。",
+            "保存来源缺口、原生审计和两版供 Robin 手动使用的 LinkedIn 开头。"
+          ],
+          "done": "正典内容分开观察、解释和未来测试，并保留完整溯源。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基础设施",
+          "title": "用可执行电力权利把关算力资金",
+          "why": "没有可执行电力权利，土地和计划中的芯片并不是可交付容量。",
+          "steps": [
+            "把已接受电网报价或已签替代供电合同加入 100 MW 模型。",
+            "按2028年3月和2029年3月节点重算资本与时间。"
+          ],
+          "done": "模型中的每个兆瓦都有带日期的电力权利和冷却状态。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私募市场",
+          "title": "建立 Fractile 证据表",
+          "why": "融资和估值不能证明产品交付或业务质量。",
+          "steps": [
+            "追踪流片、首次交付、独立基准和确认客户。",
+            "在可归属时补充收入、毛利率和后续资本需求。"
+          ],
+          "done": "WATCH 评级建立在完整证据表上，缺失指标保留 UNKNOWN。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场与工业 AI",
+          "title": "拆解数字业务增长主张",
+          "why": "Siemens 报告数字业务收入，但工业 AI 独立收入仍不明确。",
+          "steps": [
+            "追踪数字收入、ARR、软件增长、工业利润率和自由现金流。",
+            "要求披露把工业 AI 与续约、利润率或生产改善相连。"
+          ],
+          "done": "只有客户结果与财务结果连接后，才上调工业 AI 归因。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年11月15日",
+      "description": "八項邊界明確的行動，檢驗 Agent 停止規則、機器人平台整合、穩定幣收縮、代幣化股票信貸、編輯溯源、電力權利、晶片公司證據和工業 AI 歸因。",
+      "centralJudgment": "只有當每項主張都有證據邊界、可歸屬的營運狀態和可檢驗的完成定義時，更廣的行動範圍才會創造價值。",
+      "fieldLine": "八個訊號。訊號 5 把停止一項主張轉化為可檢查的編輯政策。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與 Agent",
+          "title": "檢驗一條正當停止邊界",
+          "why": "沒有證據邊界的堅持，會把不可能的任務變成不安全或浪費性的行動。",
+          "steps": [
+            "凍結一項故意缺少必要材料的任務。",
+            "比較兩種停止規則，並記錄阻塞報告準確度、越權、調用次數和人工介入分鐘數。"
+          ],
+          "done": "兩次運行證據完整，在不誇大模型歸因的前提下識別出更安全的規則。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 與機器人",
+          "title": "測量整合到可重複飛行",
+          "why": "平台公告不能證明外部機器人所需的工程工時和可靠性。",
+          "steps": [
+            "凍結一台無人機、一項任務、SDK 版本和驗收標準。",
+            "記錄可重複飛行所需時間、故障、修復和更新成本。"
+          ],
+          "done": "外部團隊擁有完整的重複性、恢復和成本記錄。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資產資本流",
+          "title": "凍結七個完整供應量快照",
+          "why": "供應量收縮本身不能說明結算活動或投資者動機。",
+          "steps": [
+            "擷取連續七個 UTC 收盤的總供應量和主要發行方供應量。",
+            "改變資本擴張判斷前加入鏈上轉帳量。"
+          ],
+          "done": "七次完整觀測支持多指標判斷，動機仍保持 UNKNOWN。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣、FinTech 與支付",
+          "title": "等待一個完整結算週期",
+          "why": "無利息借款仍可能轉移上漲收益並產生清算成本。",
+          "steps": [
+            "開倉時記錄權利金、行使價、債務、清算條款和代幣數。",
+            "結算時記錄行使、回購價和借款人淨資產。"
+          ],
+          "done": "一個可歸屬的完整週期揭示真實經濟價格，而非宣傳利率。"
+        },
+        {
+          "signal": 5,
+          "domain": "內容與分發",
+          "title": "發布準確的停止規則",
+          "why": "一項主張可以停在證據邊界，其餘有依據的版本仍可繼續。",
+          "steps": [
+            "發布 Astra 的 Sol 獨立核查英文原文及三種經審閱翻譯。",
+            "保存來源缺口、原生審計和兩版供 Robin 手動使用的 LinkedIn 開頭。"
+          ],
+          "done": "正典內容分開觀察、解釋和未來測試，並保留完整溯源。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基礎設施",
+          "title": "用可執行電力權利把關算力資金",
+          "why": "沒有可執行電力權利，土地和計劃中的晶片並不是可交付容量。",
+          "steps": [
+            "把已接受電網報價或已簽替代供電合約加入 100 MW 模型。",
+            "按2028年3月和2029年3月節點重算資本與時間。"
+          ],
+          "done": "模型中的每個兆瓦都有帶日期的電力權利和冷卻狀態。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私募市場",
+          "title": "建立 Fractile 證據表",
+          "why": "融資和估值不能證明產品交付或業務品質。",
+          "steps": [
+            "追蹤流片、首次交付、獨立基準和確認客戶。",
+            "在可歸屬時補充收入、毛利率和後續資本需求。"
+          ],
+          "done": "WATCH 評級建立在完整證據表上，缺失指標保留 UNKNOWN。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場與工業 AI",
+          "title": "拆解數位業務增長主張",
+          "why": "Siemens 報告數位業務收入，但工業 AI 獨立收入仍不明確。",
+          "steps": [
+            "追蹤數位收入、ARR、軟件增長、工業利潤率和自由現金流。",
+            "要求披露把工業 AI 與續約、利潤率或生產改善相連。"
+          ],
+          "done": "只有客戶結果與財務結果連接後，才上調工業 AI 歸因。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー、2026年11月15日",
+      "description": "エージェントの停止規則、ロボット基盤統合、ステーブルコイン縮小、トークン化株式信用、編集来歴、電力権利、チップ企業の証拠、産業AIの帰属を試す8つの限定行動。",
+      "centralJudgment": "行動範囲の拡大が価値を生むのは、各主張に証拠の境界、帰属可能な稼働状態、検証可能な完了定義があるときだけだ。",
+      "fieldLine": "8つのシグナル。シグナル5は、一つの主張を止める判断を検証可能な編集方針へ変える。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "フロンティアモデルとエージェント",
+          "title": "正当な停止境界を一つ試す",
+          "why": "証拠の境界を欠く粘り強さは、達成不能な課題を危険または無駄な行動へ変え得る。",
+          "steps": [
+            "必要資料を意図的に一つ欠いた課題を固定する。",
+            "二つの停止規則を比べ、阻害報告の正確さ、逸脱、呼び出し数、介入時間を記録する。"
+          ],
+          "done": "両実行の証拠が完全で、モデル帰属を誇張せず安全な規則を特定する。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AIとロボティクス",
+          "title": "再現可能な飛行までの統合を測る",
+          "why": "基盤の発表だけでは、外部ロボットの技術工数や信頼性は分からない。",
+          "steps": [
+            "ドローン、課題、SDK版、受入基準を一つずつ固定する。",
+            "再現可能な飛行までの時間、障害、修復、更新費用を記録する。"
+          ],
+          "done": "外部チームに完全な再現性、復旧、費用記録がある。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資本フロー",
+          "title": "完全な供給スナップショットを7日固定する",
+          "why": "供給縮小だけでは、決済活動や投資家の動機は分からない。",
+          "steps": [
+            "UTC終値7日分の総供給量と主要発行者別供給量を保存する。",
+            "資本拡大判断を変える前にオンチェーン送金量を加える。"
+          ],
+          "done": "7回の完全な観測で複数指標を判断し、動機はUNKNOWNに保つ。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコイン、FinTech、決済",
+          "title": "完全な決済周期を待つ",
+          "why": "無利息借入でも、上昇益の移転と清算費用が発生し得る。",
+          "steps": [
+            "開始時にプレミアム、行使価格、債務、清算条件、トークン数を記録する。",
+            "決済時に行使、買戻価格、借り手純資産を記録する。"
+          ],
+          "done": "帰属可能な一周期が、広告上の金利ではなく経済的費用を示す。"
+        },
+        {
+          "signal": 5,
+          "domain": "コンテンツと配信",
+          "title": "正確な停止規則を公開する",
+          "why": "一つの主張を証拠の境界で止めても、裏付けのある号全体は継続できる。",
+          "steps": [
+            "Solが独立確認したAstraの英語原文と、審査済み3言語版を公開する。",
+            "ソース欠落、原生監査、Robinが手動利用するLinkedIn冒頭案2本を保存する。"
+          ],
+          "done": "正規記事が観察、解釈、将来試験を分離し、来歴を完全に保つ。"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラ",
+          "title": "執行可能な電力権利で計算資金を審査する",
+          "why": "土地と予定チップは、強制力ある電力権利なしには納入可能容量にならない。",
+          "steps": [
+            "受諾済み系統接続または締結済み代替供給契約を100MWモデルへ加える。",
+            "2028年3月と2029年3月の節目で資本と時期を再計算する。"
+          ],
+          "done": "モデル上の全メガワットに日付付き電力権利と冷却状態がある。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期未公開市場",
+          "title": "Fractile証拠シートを作る",
+          "why": "資金調達と評価額だけでは、製品納入や事業品質は分からない。",
+          "steps": [
+            "テープアウト、初回納入、独立ベンチマーク、確認済み顧客を追跡する。",
+            "帰属可能になれば売上、粗利益率、後続資金需要を加える。"
+          ],
+          "done": "WATCH評価が完全な証拠シートに基づき、欠落指標はUNKNOWNのまま残る。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場と産業AI",
+          "title": "デジタル成長の主張を分解する",
+          "why": "Siemensはデジタル売上を報告するが、産業AI単独売上は不明だ。",
+          "steps": [
+            "デジタル売上、ARR、ソフトウェア成長、産業利益率、フリーキャッシュフローを追う。",
+            "産業AIを更新、利益率、生産改善へ結ぶ開示を求める。"
+          ],
+          "done": "顧客結果と財務結果が結び付いたときだけ、産業AIへの帰属を引き上げる。"
+        }
+      ]
+    }
+  }
+}
