@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { Content as Story } from '../../../content/flash-crash-long-illustrated.md';
+import chapters from '../../../data/flash-crash-chapters.json';
+const title='The Alligator, the Cat, and the Committee — Flash Crash Lab';
+const description='A tragicomedy in several acts. Narrated by Robin, written by Teddy, illustrated for the web.';
+const path='/asymmetry/flash-crash-lab/the-alligator/';
+const schema={"@context":"https://schema.org","@type":"Article","headline":'The Alligator, the Cat, and the Committee',description,url:`https://iamrobin.ai${path}`,"datePublished":"2026-11-16","dateModified":"2026-11-16","author":{"@id":"https://www.tideisun.com/robin#robin-xie"},"image":"https://iamrobin.ai/asymmetry/flash-crash-lab/story/00-prologue.webp","inLanguage":"en","creditText":"Narrated by Robin; long story written by Teddy; short account written by Codex. AI-generated illustrations."};
+---
+<BaseLayout {schema} {title} {description} {path} image="/asymmetry/flash-crash-lab/story/00-prologue.webp" imageAlt="An alligator and an AI cat consider a perfectly reasonable idea" type="article">
+  <article class="long-read">
+    <a class="back" href="/asymmetry/flash-crash-lab/#story">← Flash Crash Lab · results and the Codex short version</a>
+    <header><p class="eyebrow">Robin & Teddy · The long version</p><h1>The Alligator, the Cat, and the Committee</h1><p class="subtitle">How I Built a Trading Bot, Lost Control of the Engineering Department, and Accidentally Appointed an AI Research Director</p><p class="credit">Narrated by Robin · Written by Teddy · 2026</p></header>
+    <details class="contents"><summary>The chapters</summary><nav aria-label="Story chapters">{chapters.map(chapter=><a href={`#${chapter.anchor}`}>{chapter.title}</a>)}</nav></details>
+    <aside class="editor-note">This account keeps security details private and explains the different result scopes. Illustrations are imagined scenes, not documentary evidence.</aside>
+    <div class="story prose"><Story /></div>
+    <footer><a href="/asymmetry/flash-crash-lab/#story">Return to the short version and the ledger →</a><p>Narrated by Robin. Written by Teddy. AI-generated illustrations.</p></footer>
+  </article>
+</BaseLayout>
+<style>
+  .long-read{width:min(100% - 2rem,68rem);margin:auto;padding:2rem 0 5rem;}.draft{font-size:.8rem;border:1px solid var(--line);padding:.7rem 1rem;color:var(--muted);}.back{display:block;margin:1.5rem 0;color:var(--gold-dark);font-size:.9rem;}header{max-width:51rem;margin:4rem auto 3rem;text-align:center;}.eyebrow{text-transform:uppercase;letter-spacing:.15em;color:var(--gold-dark);font-size:.75rem;}h1{font-family:var(--serif);font-size:clamp(2.7rem,6vw,4.7rem);font-weight:500;line-height:1.07;letter-spacing:-.035em;margin:1.4rem 0;text-wrap:balance;}.subtitle{font-family:var(--serif);font-size:1.3rem;line-height:1.6;color:var(--muted);}.credit{font-size:.82rem;margin-top:1.7rem;color:var(--muted);}.contents,.editor-note{max-width:43rem;margin:1.5rem auto;padding:1rem 1.2rem;border:1px solid var(--line);font-size:.85rem;line-height:1.6;color:var(--muted);}summary{cursor:pointer;color:var(--ink);}nav{display:grid;gap:.55rem;padding-top:1rem;}a{color:var(--gold-dark);text-underline-offset:.2em;}.editor-note{border:0;padding:0 1rem;font-style:italic;}.story{max-width:43rem;margin:3rem auto;}.story :global(h2){font-family:var(--serif);font-weight:500;font-size:clamp(1.8rem,4vw,2.5rem);line-height:1.2;margin:4rem 0 1.4rem;text-wrap:balance;}.story :global(p){font-size:1.12rem;line-height:1.85;margin:1.1rem 0;}.story :global(.chapter-anchor){display:block;scroll-margin-top:2rem;}.story :global(.chapter-art){margin:1.5rem -5rem 2.5rem;}.story :global(.chapter-art img){display:block;width:100%;height:auto;border-radius:2px;}.story :global(strong){font-weight:600;}footer{max-width:43rem;margin:4rem auto;border-top:1px solid var(--line);padding-top:2rem;}footer p{font-size:.8rem;line-height:1.6;color:var(--muted);}@media(max-width:55rem){.story :global(.chapter-art){margin:1.5rem 0 2rem;}}@media(max-width:40rem){header{margin:2.5rem auto;}.story :global(p){font-size:1.05rem;}.story :global(h2){margin-top:3rem;}}
+</style>

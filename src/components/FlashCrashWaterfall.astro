@@ -1,0 +1,38 @@
+---
+import data from '../data/flash-crash.json';
+const fmt=(n:number)=>`${n>0?'+':''}${n.toFixed(1)}R`;
+const years=data.years.map(row=>row.year);
+---
+<figure class="waterfall" data-waterfall>
+  <div class="heading"><h3>What each quarter contributed</h3><label>Year <select data-year aria-label="Waterfall year">{years.map(year=><option value={year} selected={year===2026}>{year}</option>)}</select></label></div>
+  <p>Each bar bridges the previous total to the next. Green adds R; rust subtracts R. Before costs.</p>
+  {years.map(year=>{
+    const rows=data.points.filter(p=>Number(p.date.slice(0,4))===year);
+    const opening=rows[0].cumulative_R-rows[0].gross_R;
+    const values=[opening,...rows.map(p=>p.cumulative_R)];
+    const low=Math.floor(Math.min(...values)/5)*5-2,high=Math.ceil(Math.max(...values)/5)*5+3;
+    const y=(n:number)=>220-(n-low)/(high-low)*160;
+    return <div data-waterfall-year={year} hidden={year!==2026}>
+      <svg viewBox="0 0 360 280" role="img" aria-label={`${year} quarterly contributions, ${rows.map(p=>`Q${Math.floor(Number(p.date.slice(5,7))/3)} ${fmt(p.gross_R)}`).join(', ')} before costs`}>
+        {[0,1,2,3].map(i=>{const value=low+(high-low)*i/3;return <g><line x1="45" x2="340" y1={y(value)} y2={y(value)} stroke="#dedbd5"/><text x="40" y={y(value)+4} text-anchor="end">{value.toFixed(0)}R</text></g>})}
+        <text x="45" y="28">Opening total {fmt(opening)}</text>
+        {rows.map((p,i)=>{
+          const prior=p.cumulative_R-p.gross_R, x=55+i*72;
+          return <g><line x1={x-8} x2={x+48} y1={y(prior)} y2={y(prior)} stroke="#aaa49b" stroke-dasharray="2 3"/><rect x={x} y={y(Math.max(prior,p.cumulative_R))} width="40" height={Math.max(1,Math.abs(y(prior)-y(p.cumulative_R)))} fill={p.gross_R>=0?'#327b70':'#b57461'}/><text x={x+20} y={y(Math.max(prior,p.cumulative_R))-8} text-anchor="middle">{fmt(p.gross_R)}</text><text x={x+20} y="246" text-anchor="middle">Q{Math.floor((Number(p.date.slice(5,7))-1)/3)+1}</text></g>;
+        })}
+      </svg>
+      <figcaption>{year}: {fmt(rows.reduce((sum,p)=>sum+p.gross_R,0))} contributed · closing total {fmt(rows.at(-1)!.cumulative_R)}.{year===2026?' Q4 covers records through November 16.':''}{year===2020?' Records start in September.':''}</figcaption>
+    </div>;
+  })}
+</figure>
+<script>
+  document.querySelectorAll<HTMLElement>('[data-waterfall]').forEach(root=>{
+    root.querySelector<HTMLSelectElement>('[data-year]')!.addEventListener('change',event=>{
+      const year=(event.target as HTMLSelectElement).value;
+      root.querySelectorAll<HTMLElement>('[data-waterfall-year]').forEach(panel=>{panel.hidden=panel.dataset.waterfallYear!==year;});
+    });
+  });
+</script>
+<style>
+  .waterfall{margin:1.5rem 0;padding:1rem;border:1px solid var(--line);background:#faf8f4;}.heading{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;}h3{font-family:var(--serif);font-size:1.35rem;font-weight:500;margin:0;}p,figcaption,label{font-size:.83rem;color:var(--muted);line-height:1.5;}select{font:inherit;padding:.35rem;background:transparent;border:1px solid var(--line);color:var(--ink);}svg{display:block;width:100%;max-width:650px;margin:auto;}svg text{font:12px system-ui;fill:#616b70;}[hidden]{display:none;}figcaption{margin-top:.7rem;}@media(max-width:40rem){.waterfall{padding:.5rem;}}
+</style>

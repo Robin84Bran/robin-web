@@ -1,0 +1,27 @@
+period,gross_R,cumulative_R,segment
+2020-Q3,-1.0,-1.0,Historical backtest
+2020-Q4,-1.0,-2.0,Historical backtest
+2021-Q1,0,-2.0,Historical backtest
+2021-Q2,0.5,-1.5,Historical backtest
+2021-Q3,0.5,-1.0,Historical backtest
+2021-Q4,-2.0,-3.0,Historical backtest
+2022-Q1,6.0,3.0,Historical backtest
+2022-Q2,16.5,19.5,Historical backtest
+2022-Q3,16.0,35.5,Historical backtest
+2022-Q4,2.0,37.5,Historical backtest
+2023-Q1,3.5,41.0,Historical backtest
+2023-Q2,0,41.0,Historical backtest
+2023-Q3,6.0,47.0,Historical backtest
+2023-Q4,0,47.0,Historical backtest
+2024-Q1,0,47.0,Historical backtest
+2024-Q2,6.0,53.0,Historical backtest
+2024-Q3,8.0,61.0,Historical backtest
+2024-Q4,0.0,61.0,Historical backtest
+2025-Q1,-2.0,59.0,Historical backtest
+2025-Q2,-1.0,58.0,Historical backtest
+2025-Q3,7.0,65.0,Historical backtest
+2025-Q4,3.0,68.0,Historical backtest
+2026-Q1,5.0,73.0,2026 reconstruction
+2026-Q2,11.0,84.0,2026 reconstruction
+2026-Q3,-3.5,80.5,2026 reconstruction
+2026-Q4,9.0,89.5,2026 reconstruction

@@ -1,0 +1,158 @@
+[
+  {
+    "date": "2020-09-30",
+    "gross_R": -1.0,
+    "cumulative_R": -1.0,
+    "segment": "Historical backtest"
+  },
+  {
+    "date": "2020-12-31",
+    "gross_R": -1.0,
+    "cumulative_R": -2.0,
+    "segment": "Historical backtest"
+  },
+  {
+    "date": "2021-03-31",
+    "gross_R": 0,
+    "cumulative_R": -2.0,
+    "segment": "Historical backtest"
+  },
+  {
+    "date": "2021-06-30",
+    "gross_R": 0.5,
+    "cumulative_R": -1.5,
+    "segment": "Historical backtest"
+  },
+  {
+    "date": "2021-09-30",
+    "gross_R": 0.5,
+    "cumulative_R": -1.0,
+    "segment": "Historical backtest"
+  },
+  {
+    "date": "2021-12-31",
+    "gross_R": -2.0,
+    "cumulative_R": -3.0,
+    "segment": "Historical backtest"
+  },
+  {
+    "date": "2022-03-31",
+    "gross_R": 6.0,
+    "cumulative_R": 3.0,
+    "segment": "Historical backtest"
+  },
+  {
+    "date": "2022-06-30",
+    "gross_R": 16.5,
+    "cumulative_R": 19.5,
+    "segment": "Historical backtest"
+  },
+  {
+    "date": "2022-09-30",
+    "gross_R": 16.0,
+    "cumulative_R": 35.5,
+    "segment": "Historical backtest"
+  },
+  {
+    "date": "2022-12-31",
+    "gross_R": 2.0,
+    "cumulative_R": 37.5,
+    "segment": "Historical backtest"
+  },
+  {
+    "date": "2023-03-31",
+    "gross_R": 3.5,
+    "cumulative_R": 41.0,
+    "segment": "Historical backtest"
+  },
+  {
+    "date": "2023-06-30",
+    "gross_R": 0,
+    "cumulative_R": 41.0,
+    "segment": "Historical backtest"
+  },
+  {
+    "date": "2023-09-30",
+    "gross_R": 6.0,
+    "cumulative_R": 47.0,
+    "segment": "Historical backtest"
+  },
+  {
+    "date": "2023-12-31",
+    "gross_R": 0,
+    "cumulative_R": 47.0,
+    "segment": "Historical backtest"
+  },
+  {
+    "date": "2024-03-31",
+    "gross_R": 0,
+    "cumulative_R": 47.0,
+    "segment": "Historical backtest"
+  },
+  {
+    "date": "2024-06-30",
+    "gross_R": 6.0,
+    "cumulative_R": 53.0,
+    "segment": "Historical backtest"
+  },
+  {
+    "date": "2024-09-30",
+    "gross_R": 8.0,
+    "cumulative_R": 61.0,
+    "segment": "Historical backtest"
+  },
+  {
+    "date": "2024-12-31",
+    "gross_R": 0.0,
+    "cumulative_R": 61.0,
+    "segment": "Historical backtest"
+  },
+  {
+    "date": "2025-03-31",
+    "gross_R": -2.0,
+    "cumulative_R": 59.0,
+    "segment": "Historical backtest"
+  },
+  {
+    "date": "2025-06-30",
+    "gross_R": -1.0,
+    "cumulative_R": 58.0,
+    "segment": "Historical backtest"
+  },
+  {
+    "date": "2025-09-30",
+    "gross_R": 7.0,
+    "cumulative_R": 65.0,
+    "segment": "Historical backtest"
+  },
+  {
+    "date": "2025-12-31",
+    "gross_R": 3.0,
+    "cumulative_R": 68.0,
+    "segment": "Historical backtest"
+  },
+  {
+    "date": "2026-03-31",
+    "gross_R": 5.0,
+    "cumulative_R": 73.0,
+    "segment": "2026 reconstruction"
+  },
+  {
+    "date": "2026-06-30",
+    "gross_R": 11.0,
+    "cumulative_R": 84.0,
+    "segment": "2026 reconstruction"
+  },
+  {
+    "date": "2026-09-30",
+    "gross_R": -3.5,
+    "cumulative_R": 80.5,
+    "segment": "2026 reconstruction"
+  },
+  {
+    "date": "2026-11-16",
+    "gross_R": 9.0,
+    "cumulative_R": 89.5,
+    "segment": "2026 reconstruction"
+  }
+]

@@ -1,0 +1,124 @@
+---
+import data from '../data/flash-crash.json';
+interface Props { year?: number; interactive?: boolean; }
+const {year, interactive=true}=Astro.props;
+const base=year?(data.points.filter(p=>Number(p.date.slice(0,4))<year).at(-1)?.cumulative_R??0):0;
+const points=year?[
+  {date:`${year}-01-01`,gross_R:0,cumulative_R:0,segment:'2026 reconstruction'},
+  ...data.points.filter(p=>Number(p.date.slice(0,4))===year).map(p=>({...p,cumulative_R:p.cumulative_R-base}))
+]:data.points;
+const start=Date.parse(year?`${year}-01-01`:'2020-09-01');
+const end=Date.parse(year?`${year}-12-31`:'2026-12-31');
+const minimum=year?0:-5, maximum=year?25:105;
+const views=[
+  {id:'wide',width:1000,height:325,left:65,span:870,top:30,bottom:270,font:12},
+  {id:'narrow',width:360,height:300,left:42,span:290,top:32,bottom:245,font:12},
+];
+const segments=year?['2026 reconstruction']:['Historical backtest','2026 reconstruction'];
+const ticks=year?[
+  {date:`${year}-01-01`,label:'Jan 1'},
+  ...points.slice(1).map((p,i)=>({date:p.date,label:`Q${i+1}`}))
+]:[{date:'2020-09-01',label:'2020'},...['2022','2024','2026'].map(y=>({date:`${y}-01-01`,label:y}))];
+const valueTicks=year?[0,5,10,15,20,25]:[0,25,50,75,100];
+const fmt=(n:number)=>`${n>=0?'+':''}${n.toFixed(1)}R`;
+---
+<div class="timeline-player" data-flash-timeline={interactive?'':undefined}>
+  {views.map(v=>{
+    const x=(date:string)=>v.left+(Date.parse(date)-start)/(end-start)*v.span;
+    const y=(r:number)=>v.bottom-(r-minimum)/(maximum-minimum)*(v.bottom-v.top);
+    return <svg class={v.id} viewBox={`0 0 ${v.width} ${v.height}`} role="img"
+      aria-label={year?`${year} quarterly replay, starting at zero on January 1 and ending at ${fmt(points.at(-1)!.cumulative_R)} before costs`:'Quarterly gross R from 2020 to 2026, with directly labelled backtest and reconstructed segments'}
+      data-chart data-left={v.left} data-span={v.span} data-top={v.top} data-bottom={v.bottom}>
+      <defs><clipPath id={`flash-reveal-${year??'all'}-${v.id}`}><rect data-reveal x="0" y="0" width={v.width} height={v.height} /></clipPath></defs>
+      {valueTicks.map(value=><g><line x1={v.left} x2={v.left+v.span} y1={y(value)} y2={y(value)} stroke="#d9d5cd" /><text x={v.left-10} y={y(value)+4} text-anchor="end" font-size={v.font}>{value}R</text></g>)}
+      {ticks.map(t=><text x={x(t.date)} y={v.bottom+28} text-anchor="middle" font-size={v.font}>{t.label}</text>)}
+      {!year&&<g><line x1={x('2026-01-01')} x2={x('2026-01-01')} y1={v.top} y2={v.bottom} stroke="#a9a39a" stroke-dasharray="2 4" /><text x={x('2026-01-01')-6} y={v.bottom-8} text-anchor="end" font-size={v.font}>2026 records →</text></g>}
+      <g clip-path={`url(#flash-reveal-${year??'all'}-${v.id})`}>
+        {segments.map(segment=>{
+          const rows=points.filter(p=>p.segment===segment);
+          if(!year && segment==='2026 reconstruction')rows.unshift(data.points.find(p=>p.date==='2025-12-31')!);
+          const d=rows.map((p,i)=>i?`H${x(p.date)} V${y(p.cumulative_R)}`:`M${x(p.date)} ${y(p.cumulative_R)}`).join(' ');
+          return <path d={d} fill="none" stroke={segment==='Historical backtest'?'#233e50':'#327b70'} stroke-width={v.id==='narrow'?2.2:2.5} />;
+        })}
+      </g>
+      {segments.map(segment=>{
+        const last=points.filter(p=>p.segment===segment).at(-1)!;
+        return <text data-end-date={last.date} x={x(last.date)-3} y={Math.max(17,y(last.cumulative_R)-12)} text-anchor="end" class="end-label" fill={segment==='Historical backtest'?'#233e50':'#327b70'} font-size={v.font}>{segment==='Historical backtest'?'Backtest':year?fmt(last.cumulative_R):'2026'}</text>;
+      })}
+      <circle data-cursor cx={x(points.at(-1)!.date)} cy={y(points.at(-1)!.cumulative_R)} r={v.id==='narrow'?3.5:5} fill="#327b70" />
+    </svg>;
+  })}
+  {interactive?<>
+    <div class="player-controls">
+      <button type="button" data-play>Play the timeline</button>
+      <label class="scrubber">Quarter <input aria-valuetext={`Q4 2026 · ${fmt(data.combined_gross_R)} before costs`} data-scrub type="range" min="1" max={points.length} value={points.length} aria-label="Inspect the quarterly timeline" /></label>
+      <output data-readout aria-live="off">Q4 2026 · {fmt(data.combined_gross_R)} before costs</output>
+    </div>
+    <p class="player-note">Play the quarterly steps or inspect each quarter. Steps update at quarter ends, not at individual trade times. Early 2026 is rebuilt from saved scans and candles. Detailed trading rules stay private.</p>
+    <script type="application/json" data-ledger set:html={JSON.stringify({points,start,end,minimum,maximum})} />
+  </>:<p class="player-note">Cumulative gross R from a zero starting point on January 1. Costs excluded; final quarter shown through November 16.</p>}
+</div>
+<script>
+  document.querySelectorAll<HTMLElement>('[data-flash-timeline]').forEach(root=>{
+    const data=JSON.parse(root.querySelector('[data-ledger]')!.textContent||'{}') as {points:Array<{date:string;cumulative_R:number;segment:string}>;start:number;end:number;minimum:number;maximum:number};
+    const rows=data.points;
+    const slider=root.querySelector<HTMLInputElement>('[data-scrub]')!;
+    const button=root.querySelector<HTMLButtonElement>('[data-play]')!;
+    const output=root.querySelector<HTMLOutputElement>('[data-readout]')!;
+    let frame:number|undefined;
+    let position=rows.length-1;
+    let previousTime:number|undefined;
+    let elapsed=0;
+    const reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
+    const stop=()=>{
+      if(frame!==undefined)cancelAnimationFrame(frame);
+      frame=undefined;previousTime=undefined;position=Math.floor(position);draw();button.textContent='Play the timeline';
+    };
+    const draw=()=>{
+      const index=Math.floor(position),p=rows[index],next=rows[Math.min(index+1,rows.length-1)];
+      const fraction=position-index;
+      // Only the reveal cursor interpolates. The readout always shows a recorded quarter.
+      const time=Date.parse(p.date)+(Date.parse(next.date)-Date.parse(p.date))*fraction;
+      const value=p.cumulative_R;
+      slider.value=String(index+1);
+      root.querySelectorAll<SVGSVGElement>('[data-chart]').forEach(chart=>{
+        const left=Number(chart.dataset.left),span=Number(chart.dataset.span),top=Number(chart.dataset.top),bottom=Number(chart.dataset.bottom);
+        const px=left+(time-data.start)/(data.end-data.start)*span;
+        const py=bottom-(value-data.minimum)/(data.maximum-data.minimum)*(bottom-top);
+        chart.querySelector('[data-cursor]')!.setAttribute('cx',String(px));chart.querySelector('[data-cursor]')!.setAttribute('cy',String(py));
+        chart.querySelector('[data-reveal]')!.setAttribute('width',String(px+.1));
+        chart.querySelectorAll<SVGTextElement>('[data-end-date]').forEach(label=>{label.style.visibility=Date.parse(label.dataset.endDate!)<=time?'visible':'hidden';});
+      });
+      const date=new Date(p.date+'T00:00:00Z');const label=`Q${Math.floor(date.getUTCMonth()/3)+1} ${date.getUTCFullYear()}`;
+      output.textContent=`${label} · ${p.cumulative_R>=0?'+':''}${p.cumulative_R.toFixed(1)}R before costs`;
+      slider.setAttribute('aria-valuetext',output.textContent);
+    };
+    const advance=(time:number)=>{
+      const delta=previousTime===undefined?0:Math.min(time-previousTime,100);
+      previousTime=time;
+      if(reduced.matches){
+        elapsed+=delta;
+        if(elapsed>=1000){position=Math.min(Math.floor(position)+1,rows.length-1);elapsed=0;}
+      }else position=Math.min(position+delta/650,rows.length-1);
+      draw();
+      if(position>=rows.length-1)stop();
+      else frame=requestAnimationFrame(advance);
+    };
+    slider.addEventListener('input',()=>{const selected=Number(slider.value)-1;stop();position=selected;elapsed=0;draw();});
+    button.addEventListener('click',()=>{
+      if(frame!==undefined){stop();return;}
+      if(position>=rows.length-1){position=0;elapsed=0;}
+      draw();button.textContent='Pause';frame=requestAnimationFrame(advance);
+    });
+    reduced.addEventListener('change',()=>{stop();position=Math.floor(position);elapsed=0;draw();});
+    document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();});
+  });
+</script>
+<style>
+  .timeline-player{padding:1rem;border:1px solid var(--line);background:#faf8f4;}svg{display:block;width:100%;height:auto;}svg text{font-family:system-ui;fill:#616b70;}svg .end-label{font-weight:650;paint-order:stroke;stroke:#faf8f4;stroke-width:4px;}svg.narrow{display:none;}
+  .player-controls{display:flex;gap:1rem;align-items:center;flex-wrap:wrap;font-size:.86rem;}
+  button{border:1px solid var(--ink);background:var(--ink);color:var(--paper,#faf8f4);padding:.6rem .8rem;cursor:pointer;border-radius:3px;font:inherit;min-width:9rem;}
+  .scrubber{display:flex;align-items:center;gap:.7rem;flex:1;min-width:200px;}input{flex:1;accent-color:#327b70;min-width:70px;}output{flex-basis:100%;font-variant-numeric:tabular-nums;}
+  .player-note{font-size:.83rem;color:var(--muted);line-height:1.5;margin:.7rem 0 0;}
+  @media(max-width:40rem){.timeline-player{padding:.5rem;}svg.wide{display:none;}svg.narrow{display:block;}svg .end-label{stroke-width:3px;}}
+</style>

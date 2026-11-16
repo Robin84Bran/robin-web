@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1080pt" height="432pt" viewBox="0 0 1080 432" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-16T19:19:28.930012</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 432
+L 1080 432
+L 1080 0
+L 0 0
+z
+" style="fill: #faf8f4"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 86.4 345.6
+L 972 345.6
+L 972 138.24
+L 86.4 138.24
+z
+" style="fill: #faf8f4"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1"/>
+     <g id="text_1">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #626b70" x="133.131488" y="357.457422" transform="rotate(-0 133.131488 357.457422)">2021</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2"/>
+     <g id="text_2">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #626b70" x="272.942907" y="357.457422" transform="rotate(-0 272.942907 357.457422)">2022</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3"/>
+     <g id="text_3">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #626b70" x="412.754325" y="357.457422" transform="rotate(-0 412.754325 357.457422)">2023</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4"/>
+     <g id="text_4">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #626b70" x="552.565744" y="357.457422" transform="rotate(-0 552.565744 357.457422)">2024</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5"/>
+     <g id="text_5">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #626b70" x="692.760208" y="357.457422" transform="rotate(-0 692.760208 357.457422)">2025</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6"/>
+     <g id="text_6">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #626b70" x="832.571626" y="357.457422" transform="rotate(-0 832.571626 357.457422)">2026</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_7">
+      <path d="M 86.4 330.060737
+L 972 330.060737
+" clip-path="url(#p22aaaf150f)" style="fill: none; stroke: #dfddd6; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8"/>
+     <g id="text_7">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #626b70" x="82.9" y="334.239448" transform="rotate(-0 82.9 334.239448)">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_9">
+      <path d="M 86.4 289.302015
+L 972 289.302015
+" clip-path="url(#p22aaaf150f)" style="fill: none; stroke: #dfddd6; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10"/>
+     <g id="text_8">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #626b70" x="82.9" y="293.480726" transform="rotate(-0 82.9 293.480726)">20</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_11">
+      <path d="M 86.4 248.543292
+L 972 248.543292
+" clip-path="url(#p22aaaf150f)" style="fill: none; stroke: #dfddd6; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12"/>
+     <g id="text_9">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #626b70" x="82.9" y="252.722003" transform="rotate(-0 82.9 252.722003)">40</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_13">
+      <path d="M 86.4 207.78457
+L 972 207.78457
+" clip-path="url(#p22aaaf150f)" style="fill: none; stroke: #dfddd6; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_14"/>
+     <g id="text_10">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #626b70" x="82.9" y="211.963281" transform="rotate(-0 82.9 211.963281)">60</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_15">
+      <path d="M 86.4 167.025848
+L 972 167.025848
+" clip-path="url(#p22aaaf150f)" style="fill: none; stroke: #dfddd6; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_16"/>
+     <g id="text_11">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #626b70" x="82.9" y="171.204559" transform="rotate(-0 82.9 171.204559)">80</text>
+     </g>
+    </g>
+    <g id="text_12">
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #233e50" x="62.259922" y="241.92" transform="rotate(-90 62.259922 241.92)">Cumulative gross R</text>
+    </g>
+   </g>
+   <g id="line2d_17">
+    <path d="M 86.4 330.060737
+L 972 330.060737
+" clip-path="url(#p22aaaf150f)" style="fill: none; stroke: #89969b; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_18">
+    <path d="M 97.508304 332.098673
+L 132.748443 334.136609
+L 167.222491 334.136609
+L 202.079585 333.117641
+L 237.319723 332.098673
+L 272.559862 336.174545
+L 307.03391 323.946929
+L 341.891003 290.320983
+L 377.131142 257.714005
+L 412.37128 253.638133
+L 446.845329 246.505356
+L 481.702422 246.505356
+L 516.942561 234.27774
+L 552.182699 234.27774
+L 587.039792 234.27774
+L 621.896886 222.050123
+L 657.137024 205.746634
+L 692.377163 205.746634
+L 726.851211 209.822506
+L 761.708304 211.860442
+L 796.948443 197.594889
+L 832.188581 191.481081
+" clip-path="url(#p22aaaf150f)" style="fill: none; stroke: #233e50; stroke-width: 2.1; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_19">
+    <path d="M 832.188581 191.481081
+L 866.66263 181.2914
+L 901.519723 158.874103
+L 936.759862 166.00688
+L 954.762976 147.665455
+" clip-path="url(#p22aaaf150f)" style="fill: none; stroke: #327b70; stroke-width: 2.1; stroke-linecap: square"/>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #233e50" x="966.762976" y="147.665455" transform="rotate(-0 966.762976 147.665455)">+89.5R</text>
+   </g>
+   <g id="legend_1">
+    <g id="line2d_20">
+     <path d="M 96.3 152.648281
+L 107.3 152.648281
+L 118.3 152.648281
+" style="fill: none; stroke: #233e50; stroke-width: 2.1; stroke-linecap: square"/>
+    </g>
+    <g id="text_14">
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #233e50" x="127.1" y="156.498281" transform="rotate(-0 127.1 156.498281)">Historical backtest</text>
+    </g>
+    <g id="line2d_21">
+     <path d="M 96.3 169.149141
+L 107.3 169.149141
+L 118.3 169.149141
+" style="fill: none; stroke: #327b70; stroke-width: 2.1; stroke-linecap: square"/>
+    </g>
+    <g id="text_15">
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #233e50" x="127.1" y="172.999141" transform="rotate(-0 127.1 172.999141)">2026 reconstruction</text>
+    </g>
+   </g>
+  </g>
+  <g id="text_16">
+   <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #233e50" x="86.4" y="34.56" transform="rotate(-0 86.4 34.56)">FLASH CRASH LAB</text>
+  </g>
+  <g id="text_17">
+   <text style="font-size: 29px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #233e50" x="86.4" y="86.4" transform="rotate(-0 86.4 86.4)">Follow the ledger through time</text>
+  </g>
+  <g id="text_18">
+   <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #626b70" x="86.4" y="125.28" transform="rotate(-0 86.4 125.28)">2020–2026 · quarterly gross-R summaries · costs excluded</text>
+  </g>
+  <g id="text_19">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #626b70" x="86.4" y="401.76" transform="rotate(-0 86.4 401.76)">Historical backtest through 2025, followed by reconstructed 2026 results. Records begin September 2020.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p22aaaf150f">
+   <rect x="86.4" y="138.24" width="885.6" height="207.36"/>
+  </clipPath>
+ </defs>
+</svg>

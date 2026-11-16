@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import FlashCrashWaterfall from '../../components/FlashCrashWaterfall.astro';
+import FlashCrashTimeline from '../../components/FlashCrashTimeline.astro';
+import { Content as Story } from '../../content/flash-crash-story.md';
+import results from '../../data/flash-crash.json';
+const path='/asymmetry/flash-crash-lab/';
+const title='Flash Crash Lab — From an idea to a trading lab';
+const description='A human returning to code, AI agents, and a Bitcoin trading experiment. Explore the results, then the story behind them.';
+const asset=(name:string)=>`${path}${name}`;
+const fmt=(n:number)=>`${n>0?'+':''}${n.toFixed(1)}R`;
+const schema={"@context":"https://schema.org","@type":"Article","headline":'Flash Crash Lab',description,url:`https://iamrobin.ai${path}`,"datePublished":"2026-11-16","dateModified":"2026-11-16","author":{"@id":"https://www.tideisun.com/robin#robin-xie"},"image":"https://iamrobin.ai/asymmetry/flash-crash-lab/timeline.png","inLanguage":"en","creditText":"Narrated by Robin; long story written by Teddy; short account written by Codex. AI-generated illustrations."};
+---
+<BaseLayout {schema} {title} {description} {path} image={asset('timeline.png')} imageAlt="Flash Crash Lab quarterly replay results from 2020 through 2026" type="article">
+  <article class="lab-page">
+    <div class="draft-banner">Research snapshot · 16 November 2026</div>
+    <header class="hero">
+      <a href="/asymmetry/">← Asymmetry</a>
+      <p class="eyebrow">Human × AI · An ongoing experiment</p>
+      <h1>Flash Crash Lab</h1>
+      <p class="standfirst">After decades away from coding, I worked with AI agents to turn an idea into a trading lab.</p>
+      <div class="index-links"><a href="#timeline">Overall view</a><a href="#replays">Year by year</a><a href="#story">Robin &amp; Teddy’s story</a></div>
+    </header>
+
+    <section id="timeline" class="timeline-section">
+      <p class="eyebrow">Overall view</p><h2>Follow the ledger through time</h2>
+      <p>Saved backtests through 2025, followed by 2026 rebuilt from the lab’s records. The line shows research results before costs.</p>
+      <p>Across {results.closed} closed simulated trades, the total is <strong>{fmt(results.combined_gross_R)} before costs</strong>. One simulated position is still open. These figures do not measure a live account’s return.</p>
+      <FlashCrashTimeline />
+      <FlashCrashWaterfall />
+      <p class="small"><a href={asset('timeline.pdf')}>Download the timeline</a> · <a href={asset('results.csv')}>Quarterly results CSV</a></p>
+      <details class="method"><summary>How to read these numbers</summary>
+        <p>R measures a result against the loss planned at the initial stop. A +2R result means twice that planned risk, before the costs excluded here. It is not a percentage return on the account. Actual losses can exceed planned risk.</p>
+        <p>Records begin in September 2020. The earlier years use saved backtest results. Early 2026 replays the intended logic after a software bug was corrected. It includes setups the original code would have blocked. We recovered the original January–May scan table, then continued with the later recorded signal hours. We counted each signal once and reapplied the position limit in time order. The overlapping February backtest entries were replaced by the recovered replay.</p>
+        <p>The January–May table covers its full scheduled scan window. Some missing price levels were recovered later from case records. Some later recording interruptions remain, so other setups may be missing. The 2026 results are reconstructed from saved records and candles; exact executable fills and intrabar paths are unavailable.</p>
+        <p>All figures are gross. Fees, spread, slippage and funding have not been deducted. Quarterly summaries keep the detailed trading mechanics private. Historical testing and later reconstruction do not prove future profitability.</p>
+      </details>
+    </section>
+
+    <section id="replays" class="results-section">
+      <p class="eyebrow">A closer look</p><h2>Year by year</h2>
+      <p>The years use the same ruler, R. Each result appears in the year it closed, so this table adds up to the timeline above.</p>
+      <div class="table-scroll"><table>
+        <caption>Closed results by exit year · before costs</caption>
+        <thead><tr><th scope="col">Year</th><th scope="col">Closed trades</th><th scope="col">Gross R</th><th scope="col">Record</th></tr></thead>
+        <tbody>{results.years.map(y=><tr><th scope="row"><a href={asset(`${y.year}.svg`)}>{y.year}</a></th><td>{y.closed}</td><td>{fmt(y.gross_R)}</td><td>{y.coverage}</td></tr>)}</tbody>
+      </table></div>
+      <h3>2026 forward replay</h3>
+      <FlashCrashTimeline year={2026} interactive={false} />
+      <p class="small"><a href={asset('2026.pdf')}>Download 2026 figure</a>. Earlier yearly figures open from the table.</p>
+      <p class="small">The 2026 figure is reconstructed from saved scans and candles. The earlier figures rebuild saved backtest results. None is a record of fully net live returns.</p>
+    </section>
+
+    <section id="story" class="story-section">
+      <p class="eyebrow">The people behind the line</p><h2>Robin, Teddy and the alligator</h2>
+      <div class="reading-paths"><a class="long-story-link" href="/asymmetry/flash-crash-lab/the-alligator/"><img src="/asymmetry/flash-crash-lab/story/00-prologue.webp" srcset="/asymmetry/flash-crash-lab/story/00-prologue-640.webp 640w, /asymmetry/flash-crash-lab/story/00-prologue.webp 1280w" sizes="(max-width: 40rem) calc(100vw - 4rem), 340px" width="1536" height="1024" loading="lazy" alt="An alligator, a black cat and a quietly unreasonable idea."/><span><small>The long version · Narrated by Robin, written by Teddy</small><strong>The Alligator, the Cat, and the Committee</strong><em>A tragicomedy in several acts. Read the illustrated story →</em></span></a></div><p class="small">The short version · Written by Codex · preserved below. Read either account of the same experiment.</p>
+      <div class="story prose" aria-label="The story of Flash Crash Lab"><Story /></div>
+    </section>
+
+    <footer class="lab-notes">
+      <h2>An experiment still in progress</h2>
+      <p>The short account draws on four archived Robin–Teddy conversations and the project storybooks. Robin and Teddy’s longer account is available above.</p>
+      <p>Snapshot dated 16 November 2026, using replay candles completed by 16:00 Hong Kong time. Quarter-end updates will be prepared for review before publication.</p>
+      <p class="small">Research only. No trading controls are connected to this page.</p>
+    </footer>
+  </article>
+</BaseLayout>
+<style>
+  .lab-page{width:min(100% - 2rem,66rem);margin:0 auto;padding:2rem 0 5rem;}
+  a{color:var(--gold-dark);text-underline-offset:.2em;}a:hover{text-decoration:underline;}
+  .draft-banner{font-size:.8rem;letter-spacing:.035em;color:var(--muted);border:1px solid var(--line);padding:.7rem 1rem;}
+  .hero{padding:1.5rem 0 1.25rem;max-width:55rem;}.eyebrow{font-size:.78rem;letter-spacing:.15em;text-transform:uppercase;font-weight:650;color:var(--gold-dark);margin:1.5rem 0 .7rem;}
+  h1,h2,h3{font-family:var(--serif);font-weight:500;text-wrap:balance;}h1{font-size:clamp(2.7rem,6vw,4.4rem);line-height:1.02;letter-spacing:-.035em;margin:0 0 1rem;}
+  .standfirst{font-family:var(--serif);font-size:clamp(1.15rem,2.2vw,1.3rem);line-height:1.5;max-width:45rem;color:var(--muted);}
+  .index-links{display:flex;gap:1.6rem;flex-wrap:wrap;margin-top:1rem;font-size:.9rem;}
+  .long-story-link{display:grid;grid-template-columns:minmax(120px,35%) 1fr;align-items:center;gap:1.4rem;border:1px solid var(--line);padding:1rem;margin:1.5rem 0 2rem;text-decoration:none;}.long-story-link img{width:100%;height:auto;}.long-story-link small,.long-story-link strong,.long-story-link em{display:block;}.long-story-link small{font-size:.75rem;color:var(--muted);}.long-story-link strong{font-family:var(--serif);font-size:1.7rem;font-weight:500;margin:.6rem 0;}.long-story-link em{font-size:.85rem;color:var(--muted);font-style:normal;}@media(max-width:40rem){.long-story-link{grid-template-columns:1fr;}}
+  .story{max-width:43rem;margin:0 auto 4rem;}.story :global(h1){display:none;}.story :global(h2){font-family:var(--serif);font-weight:500;font-size:2rem;line-height:1.2;margin:2.8rem 0 .9rem;}
+  p,.story :global(p){font-size:1.05rem;line-height:1.8;margin:1rem 0;}.story :global(p){font-size:1.12rem;}
+  .results-section,.timeline-section,.story-section,.lab-notes{border-top:1px solid var(--line);padding-top:1rem;margin-top:3rem;scroll-margin-top:2rem;}h2{font-size:clamp(1.8rem,4vw,2.65rem);line-height:1.15;margin:.8rem 0 1.3rem;}h3{font-size:1.8rem;margin:2.5rem 0 1rem;}
+  .hero + .timeline-section{margin-top:1rem;}
+  .results-section>p,.timeline-section>p,.lab-notes>p{max-width:48rem;}figure{margin:1.6rem 0;}figure img{width:100%;height:auto;display:block;border:1px solid var(--line);}figcaption,.small{font-size:.86rem!important;color:var(--muted);line-height:1.6;margin:.7rem 0;}
+  details{border:1px solid var(--line);padding:1rem 1.2rem;margin:.75rem 0;}summary{cursor:pointer;font-weight:550;line-height:1.5;}summary span{float:right;color:var(--muted);font-variant-numeric:tabular-nums;}.method{background:rgba(148,128,91,.035);}.method p{font-size:.95rem;max-width:52rem;}
+  .table-scroll{overflow-x:auto;}table{border-collapse:collapse;width:100%;font-size:.92rem;font-variant-numeric:tabular-nums;}caption{text-align:left;color:var(--muted);font-size:.85rem;margin-bottom:.8rem;}th,td{text-align:left;border-bottom:1px solid var(--line);padding:.8rem .6rem;white-space:nowrap;}th{font-weight:550;}td:nth-child(2),td:nth-child(3){text-align:right;}
+  .lab-notes{max-width:48rem;margin-left:auto;margin-right:auto;}.lab-notes h2{font-size:1.8rem;}
+  @media(max-width:40rem){.hero{padding:2rem 0;}h1 br{display:none;}.index-links{gap:1rem;}p,.story :global(p){font-size:1.02rem;}details{padding:.8rem;}th,td{padding:.65rem .4rem;font-size:.83rem;}summary span{float:none;margin-left:.5rem;}}
+  @media print{.draft-banner{border-color:#888;}.hero{padding:1rem 0;}h1{font-size:3rem;}.index-links{display:none;}details{break-inside:avoid;}figure{break-inside:avoid;}}
+</style>
