@@ -29,28 +29,28 @@ thesis: "Set-and-forget becomes possible when the operator can classify expected
 T001 and T002 lose on paper. Execution is messy. Confidence falls faster than Bitcoin.
 
 **Act II: A Perfectly Reasonable Human Reaction, Also Known as Overengineering**  
-T003 and T004 wobble. Suddenly we invent G1, no stacking, ATR targets, timecaps, blockers, and several elegant ways to improve an animal we may not yet understand.
+T003 and T004 wobble. Suddenly we invent G1, a shorter-horizon redesign, tighter constraints, and several elegant ways to improve an animal we may not yet understand.
 
 **Act III: The Dead Crocodile Sits Up**  
 T005–T008, ugly in the G1 universe, quietly wins in the old M0 universe. The suspect returns to the crime scene carrying four receipts.
 
 **Act IV: Archaeology**  
-We stop reading our own markdown mythology and interrogate Python. The true creature emerges: 1-hour soul, 15-minute heartbeat.
+We stop reading our own markdown mythology and interrogate Python. The true creature emerges: a patient strategic soul beneath a busy operational heartbeat.
 
 **Act V: The Stop Loss Is Not a Stop Loss**  
-The mysterious wide stops turn out to be structural 1-hour swing highs, often sitting exactly where Robin’s human eye had already marked supply.
+The mysterious wide stops turn out to follow market structure, often sitting where Robin’s human eye had already marked supply.
 
 **Act VI: Worst-Case Therapy**  
-Seven-year sandbox evidence shows the animal can lose five times in a row and draw down 5.5R with StopMove_B1. No-StopMove earns slightly more and makes the operator want to move to a monastery.
+Seven-year sandbox evidence shows the animal can lose five times in a row and draw down 5.5R with the protective-stop policy. The alternative stop policy earns slightly more and makes the operator want to move to a monastery.
 
 **Act VII: Return of the Old King**  
-P4 restores M0, but at R=1500, with StopMove_B1, three logical legs, no clever blocker, no timecap, and a black-box recorder. P4 is P1 with memory.
+P4 restores M0, with deliberate risk limits, bounded exposure, and a black-box recorder. P4 is P1 with memory.
 
 ## Five Courts of Law
 
 I thought I was debugging a trading strategy. By early June, I realized I had been debugging something far more dangerous: my own interpretation of pain.
 
-The story begins on May 18, when the first two Flash Crash production signals, T001 and T002, fired. They did not lose much actual money because execution itself was still stumbling over its shoelaces. There were leverage assumptions, max-size constraints, S4 reporting oddities, and exchange mechanics that production code understood only approximately. But in the research ledger, T001 and T002 were losers.
+The story begins on May 18, when the first two Flash Crash production signals, T001 and T002, fired. They did not lose much actual money because execution itself was still stumbling over its shoelaces. There were leverage assumptions, max-size constraints, signal-reporting oddities, and exchange mechanics that production code understood only approximately. But in the research ledger, T001 and T002 were losers.
 
 And psychologically, that was enough. I began to doubt the crocodile. This was the first mistake.
 
@@ -62,11 +62,11 @@ And then there is the most dramatic court of all: the human nervous system.
 
 In May, these courts were not sufficiently separated. So when execution was immature, I began prosecuting the strategy. T003 and T004 arrived a few days later and did not improve morale. One appeared favorable for a while and later lost. Another showed limited favorable excursions. The trades felt slow, sticky and unsatisfying.
 
-I began asking perfectly intelligent questions. Was the 3R target too ambitious? Was the system waiting too long? Was stacking trades a form of automated stupidity?Were we shorting after the move had already happened? Could we harvest only the first bite?
+I began asking perfectly intelligent questions. Was the target too ambitious? Was the system waiting too long? Was stacking trades a form of automated stupidity? Were we shorting after the move had already happened? Could we harvest only the first bite?
 
 ## Optimizing for the Operator
 
-The answers became G1. G1 was elegant. It compressed the target using ATR. It prohibited stacking. It imposed a 24-hour timecap. It treated the signal as a release detector rather than a prophecy of apocalypse. The philosophy sounded almost poetic: The signal predicts release, not apocalypse. Harvest the first bite, then move on.
+The answers became G1. G1 was elegant. It pursued a shorter, more constrained encounter with the market. It treated the signal as a release detector rather than a prophecy of apocalypse. The philosophy sounded almost poetic: The signal predicts release, not apocalypse. Harvest the first bite, then move on.
 
 I liked G1 because it solved psychological problems. Time pain. Giveback pain. Stacking pain. Late-entry pain. Bottom-tick pain. The terrible feeling of watching a short position float around for several days while Bitcoin does absolutely nothing useful. G1 gave those pains names. That was valuable. But there is a subtle danger in optimization: sometimes we accidentally optimize for the operator instead of the strategy.
 
@@ -78,7 +78,7 @@ All four worked. I remember staring at the results.
 
 Wait. What?
 
-The ugly trades survived because their stops were enormous. At first, "enormous" sounded like an accusation. Looking closer, M0 was not using some arbitrary wide stop because the programmer had forgotten risk management. It was using a 1-hour structural stop. The stop was the most recent confirmed 1-hour swing high, with a fallback to the previous 20 completed hourly highs. This was the moment the old crocodile suddenly became intelligent.
+The ugly trades survived because their stops were enormous. At first, "enormous" sounded like an accusation. Looking closer, M0 was not using some arbitrary wide stop because the programmer had forgotten risk management. It was using a structural invalidation boundary, rather than treating every uncomfortable price movement as evidence that the idea was wrong. This was the moment the old crocodile suddenly became intelligent.
 
 M0 was not saying: "If the price goes against me a little, I am wrong."
 
@@ -90,15 +90,15 @@ Flash crashes are not polite. They break, bounce, squeeze weak shorts, fake repa
 
 M0 gave the market room to misbehave without declaring the thesis dead.
 
-## A One-Hour Soul
+## The Creature’s Own Rhythm
 
-Then something even stranger happened. I began reviewing the stop levels visually. Many of them sat exactly where I would have drawn a 1-hour supply zone. Months earlier, I had experimented with what I jokingly called the "wait for the rabbit" Zone + MA99 idea: do not chase price; wait for price to approach a structural area and let the market reveal itself. The program knew nothing about my eyes. Yet its confirmed swing-high stops often landed near the same supply structures I had been marking manually. The human chart reader and the machine were speaking different dialects of the same language.
+Then something even stranger happened. I began reviewing the stop levels visually. Many of them sat exactly where I would have drawn a supply zone. Months earlier, I had experimented with what I jokingly called the "wait for the rabbit" price-zone idea: do not chase price; wait for price to approach a structural area and let the market reveal itself. The program knew nothing about my eyes. Yet its structural stops often landed near the same supply structures I had been marking manually. The human chart reader and the machine were speaking different dialects of the same language.
 
-That was when the entire project rotated in my head. Maybe the crocodile was not crude. Maybe I had misunderstood its species. M0 was not a 15-minute scalper. It had a 1-hour soul and a 15-minute heartbeat. The scheduler woke every fifteen minutes, but it looked at the latest fixed 1-hour candle bucket and its structural features. The entry used the latest partial 1-hour close snapshot, effectively the current market price at the scan. The signal architecture lived in a 1-hour structure.
+That was when the entire project rotated in my head. Maybe the crocodile was not crude. Maybe I had misunderstood its species. M0 was not the impatient creature I had imagined. Its strategic horizon differed from the rhythm of its operational checks. The machine could inspect the market frequently without demanding that the thesis resolve immediately.
 
 This also explained stacking. From a single-trade perspective, stacking looked psychologically terrible. The next entry might be lower. The exchange might merge the positions into one average net entry. It could feel like the system was chasing the market downward.
 
-But viewed as a campaign, stacking became more coherent. The first signal says the structure is fragile.The second signal says the structure remains fragile. The third says the market has still not been repaired. The trades are separate logical legs inside the same structural campaign. Suddenly T005–T008 were no longer four embarrassing trades. They were one story.
+But viewed as a campaign, stacking became more coherent. An initial signal says the structure is fragile. Later observations may say that the market has still not repaired itself. The trades are separate logical legs inside the same structural campaign. Suddenly T005–T008 were no longer four embarrassing trades. They were one story.
 
 This was the beginning of my real lesson. My discomfort had been real. But I had interpreted the discomfort incorrectly.
 
@@ -108,21 +108,21 @@ Sometimes pain actually means: "You do not yet understand the strategy's worst-c
 
 ## Worst-Case Therapy
 
-So we stopped designing new crocodiles and started studying the old ones. We looked at the seven-year sandbox. M0 with StopMove_B1, max three open logical positions, fixed 3R target, produced roughly 103 trades and 77R in that historical sandbox. More important than the total return was the shape of suffering. Maximum drawdown: about 5.5R. Maximum consecutive losses: five. Average duration: roughly sixty hours. Some drawdowns took months to recover.This was the map I had been missing. Then we compared the version without StopMove_B1. Raw return improved slightly, from roughly 77R to 79R, yet the maximum drawdown rose from 5.5R from 10R.  From a Pareto frontier, M0 with StopMove_B1 wins with an edge: psychological tradeoff and system survivability. 
+So we stopped designing new crocodiles and started studying the old ones. We looked at the seven-year sandbox. M0 under the historical research configuration produced roughly 103 trades and 77R in that historical sandbox. More important than the total return was the shape of suffering. Maximum drawdown: about 5.5R. Maximum consecutive losses: five. Average duration: roughly sixty hours. Some drawdowns took months to recover. This was the map I had been missing. Then we compared the version under the alternative stop policy. Raw return improved slightly, from roughly 77R to 79R, yet the maximum drawdown rose from 5.5R to 10R.  From a Pareto frontier, M0 with the protective-stop policy wins with an edge: psychological tradeoff and system survivability.
 
 ## The Blocker That Failed
 
-Then, because we are human and apparently incapable of seeing an elegant pattern without attempting to improve it, we discovered blockers. One blocker looked beautiful. Zero winners were blocked. Six losers were eliminated. Higher total R, lower drawdown. We became excited for approximately five minutes. Then we tested it dynamically. A raw candidate winner appeared among the blocked trades. We tested the cleaner N4 blocker against the production fossil slice. It blocked T008, a winner. The blocker was escorted politely out of the building. This may have been one of the most mature moments in the entire project: By not trying to outsmart myself, the alligator was saved from another surgery.
+Then, because we are human and apparently incapable of seeing an elegant pattern without attempting to improve it, we discovered blockers. One blocker looked beautiful. Zero winners were blocked. Six losers were eliminated. Higher total R, lower drawdown. We became excited for approximately five minutes. Then we tested it dynamically. A raw candidate winner appeared among the blocked trades. We tested a cleaner candidate blocker against the production fossil slice. It blocked T008, a winner. The blocker was escorted politely out of the building. This may have been one of the most mature moments in the entire project: By not trying to outsmart myself, the alligator was saved from another surgery.
 
 ## P4 Is P1 With Memory
 
-By June 9, the design had converged. Production V4: M0 real-money track. Maximum three logical positions. StopMove_B1 on. No blocker. No timecap. G1 demoted to shadow research. On paper, this looked suspiciously like Production V1.
+By June 9, the design had converged. Production V4: M0 real-money track, with agreed exposure limits and operational safeguards. G1 demoted to shadow research. On paper, this looked suspiciously like Production V1.
 
 Had we spent three weeks running in a circle?
 
 Yes. And no.
 
-P4 restored P1's strategy soul. But P1 had almost no memory. P4 had an entire nervous system including a scan snapshot, signal row, opportunity ledger, lifecycle update, each campaign state, exchange order readback, logical leg, protection order, StopMove state, and reconciliation report.  P4 = P1 with memory.  The old crocodile returned to the swamp, with camera recorders. 
+P4 restored P1's strategy soul. But P1 had almost no memory. P4 had an entire nervous system including a scan snapshot, signal row, opportunity ledger, lifecycle update, each campaign state, exchange order readback, logical leg, protection order, protective-stop state, and reconciliation report.  P4 = P1 with memory.  The old crocodile returned to the swamp, with camera recorders.
 
 ## The Contract With Pain
 
@@ -140,7 +140,7 @@ A worst-case map becomes useful only when it is written as an operating contract
 
 The contract also separated several kinds of discomfort that my nervous system had previously compressed into one alarm. A clean strategic loss belonged to the hypothesis. An exchange rejection belonged to execution. A local-versus-exchange mismatch belonged to reconciliation. Missing telemetry belonged to evidence quality. Each failure had a different owner, a different escalation path, and a different right to stop the experiment.
 
-That separation mattered because a human can tolerate more uncertainty when its jurisdiction is clear. I did not need to feel calm during every drawdown. I needed to know which law applied, how much capital remained at risk, and what evidence would authorize intervention. Smaller R made the accepted loss path survivable. StopMove_B1 reduced the depth of historical suffering without amputating the strategy. The three-leg cap kept one campaign from becoming an empire. The black-box recorder made future disagreements reconstructable.
+That separation mattered because a human can tolerate more uncertainty when its jurisdiction is clear. I did not need to feel calm during every drawdown. I needed to know which law applied, how much capital remained at risk, and what evidence would authorize intervention. Smaller R made the accepted loss path survivable. The protective-stop policy reduced the depth of historical suffering without amputating the strategy. The exposure cap kept one campaign from becoming an empire. The black-box recorder made future disagreements reconstructable.
 
 The result was less exciting than a clever new signal. It was also far more valuable. P4 did not eliminate fear. It stopped fear from acquiring root access to the strategy. That is the actual meaning of set-and-forget: the system continues under pre-agreed law while the operator is uncomfortable, and it stops automatically when reality crosses a boundary that was defined before the pain arrived.
 
