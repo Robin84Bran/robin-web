@@ -11,7 +11,7 @@ const asset=(name:string)=>`${path}${name}`;
 const fmt=(n:number)=>`${n>0?'+':''}${n.toFixed(1)}R`;
 const schema={"@context":"https://schema.org","@type":"Article","headline":'Flash Crash Lab',description,url:`https://iamrobin.ai${path}`,"datePublished":"2026-11-16","dateModified":"2026-11-16","author":{"@id":"https://www.tideisun.com/robin#robin-xie"},"image":"https://iamrobin.ai/asymmetry/flash-crash-lab/timeline.png","inLanguage":"en","creditText":"Narrated by Robin; long story written by Teddy; short account written by Codex. AI-generated illustrations."};
 ---
-<BaseLayout {schema} {title} {description} {path} image={asset('timeline.png')} imageAlt="Flash Crash Lab quarterly replay results from 2020 through 2026" type="article">
+<BaseLayout imageWidth={2250} imageHeight={900} {schema} {title} {description} {path} image={asset('timeline.png')} imageAlt="Flash Crash Lab quarterly replay results from 2020 through 2026" type="article">
   <article class="lab-page">
     <div class="draft-banner">Research snapshot · 16 November 2026</div>
     <header class="hero">
