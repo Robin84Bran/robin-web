@@ -1,0 +1,537 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-16",
+  "updated": "2026-11-16",
+  "signalCount": 8,
+  "briefingPath": "/ouroboros/202611/20261116/",
+  "actionItemPath": "/ouroboros/202611/20261116/action_item/",
+  "hero": "/daily-briefing/20261116/hero.webp",
+  "ogImage": "/daily-briefing/20261116/og.webp",
+  "actionHero": "/action-item/20261116/hero.webp",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NOW",
+      "status": "READY",
+      "visualValue": "35–40%",
+      "visualLabel": "customer-reported Astra speed gain, not an autonomous completion rate",
+      "sources": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/business/customer-stories/shield/"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "NEXT",
+      "status": "WATCHING",
+      "visualValue": "96%",
+      "visualLabel": "provider-reported kitting success in one Mercedes-Benz PoC",
+      "sources": [
+        {
+          "label": "Google DeepMind",
+          "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "−$1.464B",
+      "visualLabel": "combined weekly US spot BTC and ETH ETF flow",
+      "sources": [
+        {
+          "label": "Farside BTC",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "Farside ETH",
+          "url": "https://farside.co.uk/eth/"
+        },
+        {
+          "label": "DefiLlama",
+          "url": "https://stablecoins.llama.fi/stablecoincharts/all"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "WATCHING",
+      "visualValue": "49.8%",
+      "visualLabel": "reported US stock-perp volume outside regular NYSE hours",
+      "sources": [
+        {
+          "label": "Pyth",
+          "url": "https://www.pyth.network/blog/october-rwa-perp-report-the-market-after-the-bell"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "deepDiveAvailable": true,
+      "priority": "NOW",
+      "status": "READY",
+      "visualValue": "$6.5B",
+      "visualLabel": "signed 15-year lease value that terminated before closing",
+      "sources": [
+        {
+          "label": "Fermi August announcement",
+          "url": "https://investor.fermiamerica.com/fermi-announces-binding-lease-agreement-with-tensorwave"
+        },
+        {
+          "label": "Fermi 10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/2071778/000207177826000058/frmi-20260930.htm"
+        },
+        {
+          "label": "Action Item",
+          "url": "https://iamrobin.ai/ouroboros/202611/20261116/action_item/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NOW",
+      "status": "WATCHING",
+      "visualValue": "600 MW",
+      "visualLabel": "nonbinding powered-land proposal with definitive lease pending",
+      "sources": [
+        {
+          "label": "Fermi 10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/2071778/000207177826000058/frmi-20260930.htm"
+        },
+        {
+          "label": "Fermi release",
+          "url": "https://archive.fast-edgar.com/20261112/AO22N22DLC22U27Z2I2B2WY2KNLMC222Z282/ea031197701ex99-1.htm"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "UNKNOWN",
+      "visualValue": "$290M",
+      "visualLabel": "Series C amount without disclosed contract economics",
+      "sources": [
+        {
+          "label": "Q-CTRL",
+          "url": "https://q-ctrl.com/blog/q-ctrl-secures-us-290-million-series-c-funding-led-by-salesforce-ventures-to-accelerate-the-convergence-of-quantum-and-ai"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "NEXT",
+      "status": "READY",
+      "visualValue": "SP7",
+      "visualLabel": "shipping server platform, with cloud availability still later",
+      "sources": [
+        {
+          "label": "AMD",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1305/amd-showcases-6th-gen-amd-epyc-processors-to-lead-next-era-of-ai-and-enterprise-computing"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, November 16, 2026",
+      "description": "Eight bounded actions test legacy-workflow autonomy, factory robotics, crypto flows, overnight stock perps, contract closing, powered-land economics, quantum-control evidence and shipped server performance.",
+      "centralJudgment": "Practical autonomy and infrastructure value appear only when provider claims cross a complete denominator, a contract boundary or an operating test.",
+      "fieldLine": "Eight signals. Signal 5 separates the signed promise from closing and operation.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Instrument one legacy workflow",
+          "why": "A faster customer case does not reveal unattended completion or recovery economics.",
+          "steps": [
+            "Freeze one no-API workflow and its starting state.",
+            "Record completion, recovery, intervention minutes and cost across 100 runs."
+          ],
+          "done": "A complete denominator separates useful autonomy from faster partial execution."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "Reproduce the kitting PoC boundary",
+          "why": "A provider-reported success rate needs trial count, object mix and failure evidence.",
+          "steps": [
+            "Freeze task, robot, objects, lighting and time limit.",
+            "Run a held-out trial set and preserve every failure and intervention."
+          ],
+          "done": "The result is independently repeatable with a complete denominator and safety record."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows",
+          "title": "Keep flows and settlement separate",
+          "why": "ETF outflows and stablecoin supply contraction do not identify investor motives or total activity.",
+          "steps": [
+            "Freeze daily ETF and stablecoin observations for seven closes.",
+            "Add settlement volume and issuer composition before changing the regime call."
+          ],
+          "done": "A multi-measure record supports the judgment while identity and motive stay UNKNOWN."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins FinTech and Payments",
+          "title": "Measure the overnight stock-perp market",
+          "why": "Reported volume outside exchange hours does not establish durable liquidity.",
+          "steps": [
+            "Track spreads, depth, liquidations and open interest by session.",
+            "Compare one volatile event across regular and off-hours windows."
+          ],
+          "done": "The WATCH view changes only after executable liquidity and repeat participation are observed."
+        },
+        {
+          "signal": 5,
+          "domain": "Content and Distribution",
+          "title": "Publish the four-state contract test",
+          "why": "A signed headline can end before closing, while a replacement structure remains unfinished.",
+          "steps": [
+            "Publish Astra’s exact Sol-checked article and reviewed translations.",
+            "Track announced, signed, closed and operating as separate evidence fields."
+          ],
+          "done": "The canonical preserves the contract chronology without inventing cause, cash receipt or capacity."
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure",
+          "title": "Rebuild the 600MW economics",
+          "why": "Powered land moves construction work and financing risk differently from a turnkey lease.",
+          "steps": [
+            "Model customer prepayment timing, refund rights and developer obligations.",
+            "Gate every megawatt on power, construction responsibility and definitive lease status."
+          ],
+          "done": "The model does not combine the 222MW and 600MW structures or count pending capacity as operating."
+        },
+        {
+          "signal": 7,
+          "domain": "Late Stage Private Markets",
+          "title": "Build the Q-CTRL evidence sheet",
+          "why": "A large funding round and provider performance claim do not establish contract quality.",
+          "steps": [
+            "Track independent field performance, paid contracts and renewal evidence.",
+            "Add revenue, gross margin and procurement cycle when attributable."
+          ],
+          "done": "Absent commercial metrics remain UNKNOWN and company claims stay labeled."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Markets and Industrial AI",
+          "title": "Benchmark shipped EPYC on real agent work",
+          "why": "Shipping hardware is stronger than a roadmap, but thread counts are not completed tasks.",
+          "steps": [
+            "Freeze one concurrent agent workload and software stack.",
+            "Measure completed tasks, watts, failure rate and total cost against the incumbent."
+          ],
+          "done": "A repeatable workload shows whether the platform improves useful compute per dollar and watt."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年11月16日",
+      "description": "八项边界明确的行动，检验旧系统自主性、工厂机器人、加密资金流、隔夜股票永续合约、合同交割、powered land 经济性、量子控制证据和服务器实测表现。",
+      "centralJudgment": "只有当供应商主张跨过完整分母、合同边界或运营测试时，实用自主性与基础设施价值才成立。",
+      "fieldLine": "八个信号。信号5把已签承诺与交割、运营分开。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与 Agent",
+          "title": "测量一项旧系统工作流",
+          "why": "更快的客户案例没有给出无人干预完成率或恢复经济性。",
+          "steps": [
+            "冻结一项无 API 工作流及其起始状态。",
+            "在100次运行中记录完成、恢复、人工分钟数和成本。"
+          ],
+          "done": "完整分母把有效自主性与更快的部分执行区分开。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 与机器人",
+          "title": "复现拣选 PoC 的边界",
+          "why": "供应商报告的成功率需要试验次数、物体组合与失败证据。",
+          "steps": [
+            "冻结任务、机器人、物体、光照和时限。",
+            "运行留出试验并保存每次失败与介入。"
+          ],
+          "done": "结果可独立重复，且有完整分母与安全记录。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流动",
+          "title": "把资金流与结算分开",
+          "why": "ETF 流出和稳定币供应收缩不能识别动机或全部活动。",
+          "steps": [
+            "冻结七个收盘日的 ETF 与稳定币观察。",
+            "改变判断前加入结算量与发行方构成。"
+          ],
+          "done": "多指标记录支持判断，身份与动机保持 UNKNOWN。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币、金融科技与支付",
+          "title": "测量隔夜股票永续市场",
+          "why": "交易时段外成交量不等于持久流动性。",
+          "steps": [
+            "按时段跟踪价差、深度、清算与未平仓量。",
+            "比较一次波动事件在正常与非正常时段的表现。"
+          ],
+          "done": "只有可执行流动性和重复参与出现后才改变 WATCH。"
+        },
+        {
+          "signal": 5,
+          "domain": "内容与分发",
+          "title": "发布四状态合同检验",
+          "why": "已签署标题可以在交割前终止，替代结构也可能仍未完成。",
+          "steps": [
+            "发布 Astra 原文、Sol 检查结果及三份审校译文。",
+            "把宣布、签署、交割和运营设为独立证据字段。"
+          ],
+          "done": "正文保留合同时间线，不虚构原因、收款或能力。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基础设施",
+          "title": "重建600MW经济模型",
+          "why": "Powered land 与交钥匙租约分配建设和融资风险的方式不同。",
+          "steps": [
+            "建模预付款时间、退款权和开发商义务。",
+            "让每兆瓦通过电力、建设责任和最终租约状态门槛。"
+          ],
+          "done": "模型不合并222MW与600MW，也不把待定能力算作运营。"
+        },
+        {
+          "signal": 7,
+          "domain": "晚期私募市场",
+          "title": "建立 Q-CTRL 证据表",
+          "why": "巨额融资和公司性能主张不能证明合同质量。",
+          "steps": [
+            "跟踪独立现场表现、付费合同与续约。",
+            "在可归属时加入收入、毛利和采购周期。"
+          ],
+          "done": "缺失商业指标保持 UNKNOWN，公司主张保留标签。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场与工业 AI",
+          "title": "在真实 Agent 工作上测试 EPYC",
+          "why": "硬件出货比路线图更强，但线程数不等于完成任务。",
+          "steps": [
+            "冻结一项并行 Agent 负载与软件栈。",
+            "对比完成任务、功耗、失败率和总成本。"
+          ],
+          "done": "可重复负载显示平台能否改善每美元、每瓦的有效计算。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年11月16日",
+      "description": "八項邊界明確的行動，檢驗舊系統自主性、工廠機器人、加密資金流、隔夜股票永續合約、合約交割、powered land 經濟性、量子控制證據和伺服器實測表現。",
+      "centralJudgment": "只有當供應商主張跨過完整分母、合約邊界或營運測試時，實用自主性與基礎設施價值才成立。",
+      "fieldLine": "八個訊號。訊號5把已簽承諾與交割、營運分開。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與 Agent",
+          "title": "测量一项旧系统工作流",
+          "why": "更快的客户案例没有给出无人干预完成率或恢复经济性。",
+          "steps": [
+            "冻结一项无 API 工作流及其起始状态。",
+            "在100次執行中记录完成、恢复、人工分钟数和成本。"
+          ],
+          "done": "完整分母把有效自主性与更快的部分执行区分开。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 與機器人",
+          "title": "复现拣选 PoC 的边界",
+          "why": "供應商报告的成功率需要试验次数、物体组合与失败证据。",
+          "steps": [
+            "冻结任务、机器人、物体、光照和时限。",
+            "執行留出试验并保存每次失败与介入。"
+          ],
+          "done": "结果可独立重复，且有完整分母与安全记录。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本流動",
+          "title": "把资金流与结算分开",
+          "why": "ETF 流出和穩定幣供应收缩不能识别动机或全部活动。",
+          "steps": [
+            "冻结七个收盘日的 ETF 与穩定幣观察。",
+            "改变判断前加入结算量与发行方构成。"
+          ],
+          "done": "多指标记录支持判断，身份与动机保持 UNKNOWN。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣、金融科技與支付",
+          "title": "测量隔夜股票永续市场",
+          "why": "交易时段外成交量不等于持久流動性。",
+          "steps": [
+            "按时段跟踪价差、深度、清算与未平仓量。",
+            "比较一次波动事件在正常与非正常时段的表现。"
+          ],
+          "done": "只有可执行流動性和重复参与出现后才改变 WATCH。"
+        },
+        {
+          "signal": 5,
+          "domain": "內容與發佈",
+          "title": "发布四状态合約检验",
+          "why": "已簽署标题可以在交割前终止，替代结构也可能仍未完成。",
+          "steps": [
+            "发布 Astra 原文、Sol 检查结果及三份审校译文。",
+            "把宣布、簽署、交割和營運设为独立证据字段。"
+          ],
+          "done": "正文保留合約时间线，不虚构原因、收款或能力。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基礎設施",
+          "title": "重建600MW经济模型",
+          "why": "Powered land 与交钥匙租约分配建设和融资风险的方式不同。",
+          "steps": [
+            "建模预付款时间、退款权和开发商义务。",
+            "让每兆瓦通过电力、建设责任和最终租约状态门槛。"
+          ],
+          "done": "模型不合并222MW与600MW，也不把待定能力算作營運。"
+        },
+        {
+          "signal": 7,
+          "domain": "晚期私募市場",
+          "title": "建立 Q-CTRL 证据表",
+          "why": "巨额融资和公司性能主张不能证明合約质量。",
+          "steps": [
+            "跟踪独立现场表现、付费合約与续约。",
+            "在可归属时加入收入、毛利和采购周期。"
+          ],
+          "done": "缺失商业指标保持 UNKNOWN，公司主张保留标签。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場與工業 AI",
+          "title": "在真实 Agent 工作上测试 EPYC",
+          "why": "硬件出货比路线图更强，但執行緒数不等于完成任务。",
+          "steps": [
+            "冻结一项并行 Agent 负载与軟體栈。",
+            "对比完成任务、功耗、失败率和总成本。"
+          ],
+          "done": "可重复负载显示平台能否改善每美元、每瓦的有效计算。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー 2026年11月16日",
+      "description": "旧システム自律化、工場ロボット、暗号資産フロー、夜間株式パーペチュアル、契約クロージング、powered land の経済性、量子制御、出荷済みサーバーを検証する八つの限定行動。",
+      "centralJudgment": "実用的な自律性とインフラ価値は、提供者の主張が完全な分母、契約境界、または稼働試験を通過して初めて成立する。",
+      "fieldLine": "八つのシグナル。シグナル5は署名済みの約束をクロージングと稼働から分ける。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "フロンティアモデルとエージェント",
+          "title": "一つの旧式ワークフローを計測する",
+          "why": "顧客事例の高速化だけでは無人完了率や復旧経済性は分からない。",
+          "steps": [
+            "APIのない一つの業務と初期状態を固定する。",
+            "100回で完了、復旧、介入時間、費用を記録する。"
+          ],
+          "done": "完全な分母で有効な自律性と高速な部分実行を分ける。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI とロボティクス",
+          "title": "キッティングPoCの境界を再現する",
+          "why": "提供者の成功率には試行数、物体構成、失敗証拠が要る。",
+          "steps": [
+            "タスク、ロボット、物体、照明、制限時間を固定する。",
+            "留保試験を行い、全失敗と介入を保存する。"
+          ],
+          "done": "完全な分母と安全記録を伴い独立再現できる。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資金フロー",
+          "title": "フローと決済を分ける",
+          "why": "ETF流出と供給減だけでは動機や全活動を特定できない。",
+          "steps": [
+            "七営業日のETFとステーブルコインを固定する。",
+            "判断変更前に決済量と発行者構成を加える。"
+          ],
+          "done": "複数指標で判断し、主体と動機はUNKNOWNに保つ。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコイン・FinTech・決済",
+          "title": "夜間株式パーペチュアルを測る",
+          "why": "時間外出来高は持続的流動性を証明しない。",
+          "steps": [
+            "時間帯別のスプレッド、板、清算、建玉を追う。",
+            "一つの変動局面を通常時間と時間外で比べる。"
+          ],
+          "done": "執行可能な流動性と反復参加を確認後にWATCHを変える。"
+        },
+        {
+          "signal": 5,
+          "domain": "コンテンツと配信",
+          "title": "四状態の契約テストを公開する",
+          "why": "署名済み見出しはクロージング前に終わり、代替構造も未完成になり得る。",
+          "steps": [
+            "Astra原文、Sol検証、三つの校閲済み翻訳を公開する。",
+            "発表、署名、クロージング、稼働を別の証拠欄にする。"
+          ],
+          "done": "原因、入金、能力を創作せず契約経緯を保存する。"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラ",
+          "title": "600MWの経済性を組み直す",
+          "why": "Powered land はターンキー契約と建設・資金リスクの配分が違う。",
+          "steps": [
+            "前払い時期、返金権、開発者義務をモデル化する。",
+            "全MWを電力、建設責任、最終契約状態でゲートする。"
+          ],
+          "done": "222MWと600MWを合算せず、未確定容量を稼働扱いしない。"
+        },
+        {
+          "signal": 7,
+          "domain": "レイトステージ未公開市場",
+          "title": "Q-CTRL証拠表を作る",
+          "why": "大型調達と企業の性能主張は契約品質を証明しない。",
+          "steps": [
+            "独立現場性能、有償契約、更新証拠を追う。",
+            "帰属可能な売上、粗利、調達周期を追加する。"
+          ],
+          "done": "欠けた商業指標はUNKNOWN、企業主張はラベル付きに保つ。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場と産業AI",
+          "title": "実作業でEPYCを測る",
+          "why": "出荷済み機器はロードマップより強いが、スレッド数は完了タスクではない。",
+          "steps": [
+            "並行Agent負荷とソフトウェアスタックを固定する。",
+            "完了、電力、失敗率、総費用を既存機と比べる。"
+          ],
+          "done": "反復可能な負荷でドル・ワット当たり有効計算を判定する。"
+        }
+      ]
+    }
+  }
+}
+
