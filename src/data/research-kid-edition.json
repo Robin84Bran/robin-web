@@ -1,5 +1,15 @@
 [
   {
+    "id": "checkpoint-or-restart",
+    "title": "Checkpoint or Restart?",
+    "direction": "coordination",
+    "play": "/intelligence/checkpoint-or-restart/",
+    "imagine": "You are halfway through a big puzzle when someone asks for urgent help. Do you finish the puzzle, sweep it away and start later, or take a moment to save where every piece belongs?",
+    "question": "When urgent work interrupts a job, when is saving your place worth the time it costs?",
+    "finding": "In this scripted queue, saving one tick kept more completed value on average at the default setting. When saving cost three ticks, dropping the old work did better. During the busiest storm, restart narrowly beat checkpoint. These are toy rules, not results from real people or AI models.",
+    "wonder": "Your move: what would make a job important enough to interrupt, and what would you save first?"
+  },
+  {
     "id": "honest-agent",
     "title": "The Honest Agent",
     "direction": "evidence",

@@ -379,6 +379,20 @@ and a source ZIP live under `public/work-or-proof/`. Canonical research:
 expired, blocked, idle and queued outcomes remain separate; the model is not a
 worker or model productivity benchmark.
 
+## Weekly Intelligence — Checkpoint or Restart?
+
+`/intelligence/checkpoint-or-restart/` is the 2026-W47 experiment: four
+pre-emption policies receive the same urgent arrivals and equal one-action-per-
+tick clocks. It retains 1,152 matched worlds / 4,608 policy outcomes across
+interruption pressure, checkpoint cost, deadlines and job length. Run
+`pnpm run test:checkpoint-or-restart` after a build. Public source, frozen
+contract, complete results and source ZIP live under
+`public/checkpoint-or-restart/`. Canonical research:
+`06_intelligence/AI_research/AI_swarm/17_checkpoint_or_restart/`. Completed
+value, missed urgency, discarded progress and save actions stay separate; no
+empirical model study has run, and the toy is not a workforce or financial
+benchmark.
+
 ### Weekly learning paths
 
 For every new weekly experiment, update `src/data/research-programme.json` and
