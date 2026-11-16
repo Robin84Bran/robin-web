@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-13T09:06:46.513803+00:00",
+  "generated_at": "2026-11-16T01:25:49.335225+00:00",
   "money_mode": "SIMULATED",
   "forecasts": [
     {
@@ -383,6 +383,24 @@
         0.3588596354173864,
         0.23193544710599548,
         0.1259183226662429
+      ],
+      "target_return": 0.1,
+      "score": null
+    },
+    {
+      "case_id": "HKEX-20261124-09941",
+      "stock_code": "09941",
+      "issuer_name": "Beijing Sinotau International Pharmaceutical Technology Co., Ltd. - B",
+      "listing_date": "2026-11-24",
+      "mode": "FORWARD",
+      "frozen_at": "2026-11-16T01:24:04.543279+00:00",
+      "model_version": "six_lens_prior_v0.1",
+      "commitment": "5f878f0a90e09f02b5c39d370c3d55e16adb817837d334b3e8484cc9b3bc90a3",
+      "probabilities": [
+        0.30044589668409616,
+        0.3620346516642525,
+        0.22257579459263532,
+        0.1149436570590159
       ],
       "target_return": 0.1,
       "score": null
