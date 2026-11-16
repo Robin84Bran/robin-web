@@ -17,3 +17,6 @@ dist/
 output/
 *.log
 pnpm-debug.log*
+
+# Private story originals belong in the Flash Crash project, never this public checkout.
+src/content/flash-crash-long-original.md
