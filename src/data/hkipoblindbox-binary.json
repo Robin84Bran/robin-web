@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T09:06:46.559131+00:00",
+  "generated_at": "2026-11-16T01:25:49.375756+00:00",
   "version": "binary-exec-v1.0",
   "forecasts": [
     {
@@ -289,6 +289,22 @@
       "prospectus_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1105/2026110500055.pdf",
       "participation": "SUBSCRIBE",
       "commitment": "4041bb59eee2cb5c1fc99e6c4648423e8795dc52ad2907dac515e91e93b340c0"
+    },
+    {
+      "stock_code": "09941",
+      "issuer_name": "Beijing Sinotau International Pharmaceutical Technology Co., Ltd. - B",
+      "listing_date": "2026-11-24",
+      "prediction": "YES",
+      "version": "binary-exec-v1.0",
+      "frozen_at": "2026-11-16T01:24:04.850181+00:00",
+      "target_at_offer_high": 74.8,
+      "target_at_offer_low": 57.2,
+      "offer_high": 68.0,
+      "offer_low": 52.0,
+      "target_formula": "ceil_to_listing_day_tick(1.10 * FINAL_ISSUE_PRICE)",
+      "prospectus_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1116/2026111600011.pdf",
+      "participation": "SUBSCRIBE",
+      "commitment": "4f38cc450f9932f3eb8097346f678aed9e6b92572c87d14da31fe9cd1de3ee53"
     }
   ],
   "scope": "Independent five-session layer; original three-session experiment preserved",
@@ -311,11 +327,11 @@
     "unseen": false
   },
   "forward": {
-    "forecasts": 18,
+    "forecasts": 19,
     "reviewed_paths": 15,
     "yes_d5": 7,
     "no_d5": 5,
-    "pending_d5": 6,
+    "pending_d5": 7,
     "source_note": "Single-vendor completed daily bars; official final issue prices and independent opening-price checks. Market counterfactuals, not personal fills."
   }
 }
