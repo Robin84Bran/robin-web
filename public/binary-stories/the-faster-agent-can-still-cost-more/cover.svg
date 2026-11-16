@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">The faster agent can still cost more</title>
+  <desc id="desc">A browser run passes through execution, destination readback and acceptance while model, runtime and technician costs accumulate before accepted completions become the denominator.</desc>
+  <rect width="1600" height="900" fill="#0B1228"/>
+  <text x="96" y="90" fill="#61D4D7" font-family="Arial, sans-serif" font-size="24" letter-spacing="5">BINARY / INVEST</text>
+  <text x="96" y="177" fill="#F4F1E9" font-family="Georgia, serif" font-size="68">The faster agent</text>
+  <text x="96" y="254" fill="#F4F1E9" font-family="Georgia, serif" font-size="68">can still cost more.</text>
+  <text x="99" y="309" fill="#B8C1D8" font-family="Arial, sans-serif" font-size="27">The stopwatch measures a run. The ledger measures accepted work.</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="96" y="382" width="330" height="132" rx="18" fill="#121D3A" stroke="#61D4D7" stroke-width="3"/>
+    <text x="128" y="431" fill="#61D4D7" font-size="20" font-weight="700" letter-spacing="2">01 / EXECUTE</text>
+    <text x="128" y="478" fill="#F4F1E9" font-size="28" font-weight="700">Click · type · retry</text>
+    <rect x="635" y="382" width="330" height="132" rx="18" fill="#121D3A" stroke="#D8B86B" stroke-width="3"/>
+    <text x="667" y="431" fill="#D8B86B" font-size="20" font-weight="700" letter-spacing="2">02 / READ BACK</text>
+    <text x="667" y="478" fill="#F4F1E9" font-size="28" font-weight="700">Check the real state</text>
+    <rect x="1174" y="382" width="330" height="132" rx="18" fill="#121D3A" stroke="#61D4D7" stroke-width="3"/>
+    <text x="1206" y="431" fill="#61D4D7" font-size="20" font-weight="700" letter-spacing="2">03 / ACCEPT</text>
+    <text x="1206" y="478" fill="#F4F1E9" font-size="28" font-weight="700">Count the outcome</text>
+    <line x1="426" y1="448" x2="635" y2="448" stroke="#61D4D7" stroke-width="5"/>
+    <path d="M614 434 L638 448 L614 462" fill="none" stroke="#61D4D7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="965" y1="448" x2="1174" y2="448" stroke="#61D4D7" stroke-width="5"/>
+    <path d="M1153 434 L1177 448 L1153 462" fill="none" stroke="#61D4D7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="96" y="585" width="1408" height="152" rx="18" fill="#121D3A" stroke="#24304E" stroke-width="2"/>
+    <text x="134" y="633" fill="#D8B86B" font-size="20" font-weight="700" letter-spacing="2">UNIT ECONOMICS</text>
+    <text x="134" y="691" fill="#F4F1E9" font-size="34" font-weight="700">MODEL + RUNTIME + TECHNICIAN COST</text>
+    <line x1="958" y1="644" x2="958" y2="709" stroke="#D8B86B" stroke-width="3"/>
+    <text x="1000" y="691" fill="#F4F1E9" font-size="34" font-weight="700">ACCEPTED COMPLETIONS</text>
+    <text x="800" y="783" text-anchor="middle" fill="#B8C1D8" font-size="24">Every attempt stays visible. Zero accepted outcomes never becomes a cheap-looking ratio.</text>
+  </g>
+  <line x1="96" y1="835" x2="1504" y2="835" stroke="#24304E" stroke-width="2"/>
+  <text x="96" y="868" fill="#8390AA" font-family="Arial, sans-serif" font-size="19">Company-reported speed · proposed 100-run measurement · no experiment executed</text>
+  <text x="1504" y="868" text-anchor="end" fill="#F4F1E9" font-family="Arial, sans-serif" font-size="20">IAmRobin.ai</text>
+</svg>
