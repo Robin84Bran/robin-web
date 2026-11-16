@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-16T01:25:49.335225+00:00",
+  "generated_at": "2026-11-16T09:42:02.981223+00:00",
   "money_mode": "SIMULATED",
   "forecasts": [
     {
@@ -349,7 +349,12 @@
         0.16310066161094977
       ],
       "target_return": 0.1,
-      "score": null
+      "score": {
+        "exact_hit": true,
+        "brier": 0.5780796706473904,
+        "target_touched": false,
+        "ordinal_partial_credit": 1.0
+      }
     },
     {
       "case_id": "HKEX-PENDING-02065-57e5cb12",
@@ -367,7 +372,12 @@
         0.13760380237861514
       ],
       "target_return": 0.1,
-      "score": null
+      "score": {
+        "exact_hit": false,
+        "brier": 0.9987674273280075,
+        "target_touched": true,
+        "ordinal_partial_credit": 0.33333333333333337
+      }
     },
     {
       "case_id": "HKEX-PENDING-06935-a64987fb",
