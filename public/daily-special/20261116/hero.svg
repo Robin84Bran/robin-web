@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#111417"/>
+  <g fill="none" stroke="#d5cfbe" stroke-width="2" opacity="0.62">
+    <path d="M88 88H1512V812H88Z"/>
+    <path d="M800 88V812" opacity="0.18"/>
+  </g>
+  <text x="118" y="160" fill="#87a9a3" font-family="Arial, Helvetica, sans-serif" font-size="24" letter-spacing="4">DAILY SPECIAL · SIGNAL 1</text>
+  <text x="118" y="278" fill="#f0eadc" font-family="Georgia, serif" font-size="74">What happens after</text>
+  <text x="118" y="366" fill="#f0eadc" font-family="Georgia, serif" font-size="74">an AI clicks Finish?</text>
+  <text x="118" y="438" fill="#b9b2a2" font-family="Arial, Helvetica, sans-serif" font-size="27">One frozen workflow · one hundred visible attempts</text>
+  <g transform="translate(862 154)" fill="none" stroke="#d5cfbe" stroke-width="2">
+    <rect width="36" height="36" rx="4"/><rect x="50" width="36" height="36" rx="4"/><rect x="100" width="36" height="36" rx="4"/><rect x="150" width="36" height="36" rx="4"/><rect x="200" width="36" height="36" rx="4"/><rect x="250" width="36" height="36" rx="4"/><rect x="300" width="36" height="36" rx="4"/><rect x="350" width="36" height="36" rx="4"/><rect x="400" width="36" height="36" rx="4"/><rect x="450" width="36" height="36" rx="4"/>
+    <g transform="translate(0 50)"><use href="#row"/></g>
+    <g transform="translate(0 100)"><use href="#row"/></g>
+    <g transform="translate(0 150)"><use href="#row"/></g>
+    <g transform="translate(0 200)"><use href="#row"/></g>
+    <g transform="translate(0 250)"><use href="#row"/></g>
+    <g transform="translate(0 300)"><use href="#row"/></g>
+    <g transform="translate(0 350)"><use href="#row"/></g>
+    <g transform="translate(0 400)"><use href="#row"/></g>
+    <g transform="translate(0 450)"><use href="#row"/></g>
+  </g>
+  <defs><g id="row"><rect width="36" height="36" rx="4"/><rect x="50" width="36" height="36" rx="4"/><rect x="100" width="36" height="36" rx="4"/><rect x="150" width="36" height="36" rx="4"/><rect x="200" width="36" height="36" rx="4"/><rect x="250" width="36" height="36" rx="4"/><rect x="300" width="36" height="36" rx="4"/><rect x="350" width="36" height="36" rx="4"/><rect x="400" width="36" height="36" rx="4"/><rect x="450" width="36" height="36" rx="4"/></g></defs>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#d5cfbe">
+    <text x="118" y="672">COMPLETION</text><text x="340" y="672">RECOVERY</text><text x="522" y="672">INTERVENTION</text><text x="754" y="672">COST</text>
+  </g>
+  <text x="118" y="756" fill="#87a9a3" font-family="Arial, Helvetica, sans-serif" font-size="22" letter-spacing="2">PROPOSED MEASUREMENT DESIGN · EXPERIMENT UNEXECUTED</text>
+</svg>
