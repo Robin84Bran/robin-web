@@ -1,0 +1,16 @@
+A faster agent can still be the expensive one.
+
+Shield reports GPT-6 Astra was 35–40% faster on average than its earlier computer-use models, with fewer failures, fewer timeouts and less technician effort. Those are promising company-reported signals.
+
+The operating question begins one step later: what did the whole system spend to produce work that passed an independent final-state check?
+
+Cost per accepted completion = model + browser/runtime + active technician cost, divided by accepted autonomous completions.
+
+That denominator keeps retries, human rescues, safe stops, false completions and failures visible. If accepted outcomes are zero, the ratio is unavailable; the spend does not disappear.
+
+The proposed 100-run study has not been executed. It is a measurement design, not a result.
+
+Full story and sources: https://iamrobin.ai/binary/stories/the-faster-agent-can-still-cost-more/
+
+#AIAgents #ComputerUse #UnitEconomics #AgentReliability #Automation
+
