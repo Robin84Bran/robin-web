@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#111417"/>
+  <rect x="56" y="56" width="1088" height="518" fill="none" stroke="#d5cfbe" stroke-width="2" opacity="0.62"/>
+  <text x="82" y="118" fill="#87a9a3" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="3">DAILY SPECIAL · SIGNAL 1</text>
+  <text x="82" y="220" fill="#f0eadc" font-family="Georgia, serif" font-size="58">Who gives an AI agent</text>
+  <text x="82" y="288" fill="#f0eadc" font-family="Georgia, serif" font-size="58">the keys?</text>
+  <text x="82" y="344" fill="#b9b2a2" font-family="Arial, Helvetica, sans-serif" font-size="22">The badge reader lives outside the worker</text>
+  <g transform="translate(812 152)" fill="none" stroke="#d5cfbe" stroke-width="5">
+    <rect x="132" y="0" width="150" height="244" rx="14"/>
+    <circle cx="207" cy="120" r="12" fill="#87a9a3" stroke="none"/><path d="M207 132v42"/>
+    <circle cx="28" cy="120" r="28"/><path d="M56 120h128m-38 0v30m-38-30v20"/>
+  </g>
+  <text x="82" y="490" fill="#87a9a3" font-family="Arial, Helvetica, sans-serif" font-size="19" letter-spacing="1.5">WRITE ARTIFACT: ALLOW · CHANGE AUTHORITY: DENY</text>
+</svg>
