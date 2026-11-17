@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">The agent cannot issue its own badge</title>
+  <desc id="desc">A governed action path separates untrusted content, a working agent, a reviewer and an external enforcement boundary.</desc>
+  <rect width="1600" height="900" fill="#0b1228"/>
+  <path d="M112 95h98" stroke="#d8b86b" stroke-width="8"/>
+  <text x="112" y="160" fill="#61d4d7" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" letter-spacing="3">BINARY / BUILD</text>
+  <text x="112" y="278" fill="#f4f1e9" font-family="Georgia, serif" font-size="78" font-weight="700">The agent cannot</text>
+  <text x="112" y="370" fill="#f4f1e9" font-family="Georgia, serif" font-size="78" font-weight="700">issue its own badge.</text>
+  <text x="112" y="430" fill="#b9c3d7" font-family="Arial, Helvetica, sans-serif" font-size="30">Information can propose. An external system decides and enforces.</text>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="112" y="520" width="280" height="180" rx="8" fill="#192640" stroke="#61d4d7" stroke-width="3"/>
+    <text x="144" y="578" fill="#61d4d7" font-size="24" font-weight="700">CONTENT</text>
+    <text x="144" y="630" fill="#f4f1e9" font-size="30" font-weight="700">Can inform</text>
+    <text x="144" y="670" fill="#b9c3d7" font-size="24">Cannot grant capability</text>
+
+    <path d="M410 610h76" stroke="#61d4d7" stroke-width="4"/>
+    <path d="M474 596l18 14-18 14" fill="none" stroke="#61d4d7" stroke-width="4"/>
+
+    <rect x="506" y="520" width="280" height="180" rx="8" fill="#192640" stroke="#61d4d7" stroke-width="3"/>
+    <text x="538" y="578" fill="#61d4d7" font-size="24" font-weight="700">WORKING AGENT</text>
+    <text x="538" y="630" fill="#f4f1e9" font-size="30" font-weight="700">Can propose</text>
+    <text x="538" y="670" fill="#b9c3d7" font-size="24">Cannot rewrite the lock</text>
+
+    <path d="M804 610h76" stroke="#61d4d7" stroke-width="4"/>
+    <path d="M868 596l18 14-18 14" fill="none" stroke="#61d4d7" stroke-width="4"/>
+
+    <rect x="900" y="520" width="280" height="180" rx="8" fill="#192640" stroke="#d8b86b" stroke-width="5"/>
+    <text x="932" y="578" fill="#d8b86b" font-size="24" font-weight="700">REVIEW</text>
+    <text x="932" y="630" fill="#f4f1e9" font-size="30" font-weight="700">Should it run?</text>
+    <text x="932" y="670" fill="#b9c3d7" font-size="24">Intent + risk</text>
+
+    <path d="M1198 610h76" stroke="#61d4d7" stroke-width="4"/>
+    <path d="M1262 596l18 14-18 14" fill="none" stroke="#61d4d7" stroke-width="4"/>
+
+    <rect x="1294" y="520" width="194" height="180" rx="8" fill="#f4f1e9"/>
+    <text x="1318" y="578" fill="#0b1228" font-size="23" font-weight="700">ENFORCE</text>
+    <text x="1318" y="630" fill="#0b1228" font-size="29" font-weight="700">Can it run?</text>
+    <text x="1318" y="670" fill="#52627b" font-size="19">Policy + sandbox</text>
+  </g>
+
+  <text x="112" y="810" fill="#f4f1e9" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">The reviewer is not the lock.</text>
+  <text x="1448" y="840" fill="#b9c3d7" font-family="Arial, Helvetica, sans-serif" font-size="24" text-anchor="end">IAmRobin.ai</text>
+</svg>
