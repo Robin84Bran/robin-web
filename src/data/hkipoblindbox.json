@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-16T09:42:02.981223+00:00",
+  "generated_at": "2026-11-17T10:00:26.405847+00:00",
   "money_mode": "SIMULATED",
   "forecasts": [
     {
@@ -395,7 +395,12 @@
         0.1259183226662429
       ],
       "target_return": 0.1,
-      "score": null
+      "score": {
+        "exact_hit": true,
+        "brier": 0.5609617375037224,
+        "target_touched": false,
+        "ordinal_partial_credit": 1.0
+      }
     },
     {
       "case_id": "HKEX-20261124-09941",
