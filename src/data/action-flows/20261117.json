@@ -1,0 +1,544 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-17",
+  "updated": "2026-11-17",
+  "signalCount": 8,
+  "briefingPath": "/ouroboros/202611/20261117/",
+  "actionItemPath": "/ouroboros/202611/20261117/action_item/",
+  "hero": "/daily-briefing/20261117/hero.webp",
+  "ogImage": "/daily-briefing/20261117/og.webp",
+  "actionHero": "/action-item/20261117/hero.webp",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NOW",
+      "status": "READY",
+      "visualValue": "500+ agents",
+      "visualLabel": "internal pilot; intervention-free completion and cost per successful task remain UNKNOWN",
+      "sources": [
+        {
+          "label": "OpenAI technical account",
+          "url": "https://developers.openai.com/blog/securing-persistent-agents-like-openclaw-at-openai"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "UNKNOWN",
+      "visualValue": "400+ hours",
+      "visualLabel": "vendor-reported operation; customer log, takeover rate and contract value remain UNKNOWN",
+      "sources": [
+        {
+          "label": "Galileo Robotics announcement",
+          "url": "https://www.prnewswire.com/news-releases/galileo-c1-w-robot-dog-deployed-in-polish-warehouses-setting-overseas-benchmark-for-domestic-embodied-intelligence-302940191.html"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "NEXT",
+      "status": "WATCHING",
+      "visualValue": "Partial ETF rows",
+      "visualLabel": "November 16 BTC and ETH totals remain provisional while fund cells are missing",
+      "sources": [
+        {
+          "label": "Farside Bitcoin ETF",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "Farside Ethereum ETF",
+          "url": "https://farside.co.uk/eth/"
+        },
+        {
+          "label": "DefiLlama stablecoins",
+          "url": "https://defillama.com/stablecoins"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "NEXT",
+      "status": "UNKNOWN",
+      "visualValue": "Realized yield UNKNOWN",
+      "visualLabel": "deposits, net returns and the contribution of incentives, fees and losses are undisclosed",
+      "sources": [
+        {
+          "label": "Bitget announcement",
+          "url": "https://www.bitget.com/blog/articles/bitget-rtoken-earn-rqqq-rspy-launch"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "deepDiveAvailable": true,
+      "priority": "NOW",
+      "status": "READY",
+      "visualValue": "Archive → story",
+      "visualLabel": "a publishing assignment about material, decision and consequence",
+      "sources": [
+        {
+          "label": "Google announcement",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/interactive-sites/"
+        },
+        {
+          "label": "Google–Marvell article",
+          "url": "https://iamrobin.ai/ouroboros/202608/20260820/action_item/"
+        },
+        {
+          "label": "Robin's public positioning",
+          "url": "https://iamrobin.ai/"
+        },
+        {
+          "label": "Action Item",
+          "url": "https://iamrobin.ai/ouroboros/202611/20261117/action_item/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "WATCHING",
+      "visualValue": "$5B / 647 MW",
+      "visualLabel": "signed gross asset value and IT capacity; closing and shareholder return remain unverified",
+      "sources": [
+        {
+          "label": "SEC 10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/2100161/000210016126000016/bxdc-20260930.htm"
+        },
+        {
+          "label": "Blackstone announcement",
+          "url": "https://www.blackstone.com/news/press/blackstone-digital-infrastructure-trust-announces-5-billion-acquisition-of-stabilized-data-center-portfolio/"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "UNKNOWN",
+      "visualValue": "$130M Series D",
+      "visualLabel": "financing disclosed; disease-specific benefit, revenue, valuation and accessible allocation remain UNKNOWN",
+      "sources": [
+        {
+          "label": "Galvanize announcement",
+          "url": "https://www.prnewswire.com/news-releases/galvanize-therapeutics-raises-130-million-in-oversubscribed-series-d-financing-to-accelerate-commercial-growth-and-advance-pef-innovation-302939618.html"
+        },
+        {
+          "label": "Wilson Sonsini transaction note",
+          "url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-galvanize-therapeutics-on-oversubscribed-dollar130-million-series-d.html"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "192 Vera CPUs",
+      "visualLabel": "announced rack configuration; delivered price and independent cost per scientific task remain UNKNOWN",
+      "sources": [
+        {
+          "label": "NVIDIA announcement",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-expands-vera-cpu-platform-to-accelerate-scientific-discovery"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, November 17, 2026",
+      "description": "Eight actions examine agent permissions, robot operating evidence, incomplete capital flows, onchain yield, editorial storytelling, data-center economics, clinical outcomes and scientific computing.",
+      "centralJudgment": "Capability and transaction claims become useful decisions only when permissions, complete denominators, customer records, realized returns and operating outcomes are visible.",
+      "fieldLine": "Eight signals. Signal 5 opens today’s Action Item on the difference between an archive and a story.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Test one agent's permission boundary",
+          "why": "A persistent agent can work safely only if it cannot grant itself more authority.",
+          "steps": [
+            "Choose one persistent RobinOS agent and freeze its current permissions and control-layer rules.",
+            "Have it attempt a self-authority change in a controlled test; retain the block and attributable log."
+          ],
+          "done": "The attempted change is blocked and the record identifies the agent, requested change and control that stopped it."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "Wait for a customer operating record",
+          "why": "Vendor-reported hours do not establish the takeover rate, recovery burden or customer economics.",
+          "steps": [
+            "Keep the reported 400-plus hours separate from customer validation.",
+            "Request a customer-published continuous log with human takeovers, recoveries and service interruptions."
+          ],
+          "done": "Customer validation remains UNKNOWN until an attributable operating record supplies those measures."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows",
+          "title": "Close the incomplete ETF rows",
+          "why": "Missing fund cells make the latest BTC and ETH flow totals provisional.",
+          "steps": [
+            "Check every November 16 BTC and ETH fund cell for a reported value or an explicit unavailable mark.",
+            "Freeze the completed totals before classifying the new week's capital direction."
+          ],
+          "done": "The classification cites complete rows and keeps any unresolved cell UNKNOWN."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins, FinTech and Payments",
+          "title": "Attribute realized onchain yield",
+          "why": "A variable yield attached to familiar ETF exposure cannot be evaluated without its actual sources and losses.",
+          "steps": [
+            "Create a record with net borrower interest, incentives, fees and losses as separate rows.",
+            "Fill each row only from published realized results; retain UNKNOWN for undisclosed values."
+          ],
+          "done": "A sourced realized-yield record explains the net result without treating advertised yield as earned return."
+        },
+        {
+          "signal": 5,
+          "domain": "Content and Visibility",
+          "title": "Explain why an archive still needs a story",
+          "why": "Generated interfaces can organize sources, while readers still need an explanation of which decision changed the consequence.",
+          "steps": [
+            "Publish the Action Item explaining Google's feature, the distinct jobs of timelines and stories, and the Google–Marvell example through material, decision and consequence.",
+            "Archive a LinkedIn derivative titled “A Timeline Still Needs a Story” for Robin's manual publication."
+          ],
+          "done": "The canonical Action Item ends by asking readers which turning point changed their judgment, and the derivative is archived."
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure",
+          "title": "Model the building deal after closing",
+          "why": "The stated capitalization rate does not by itself establish shareholder return after financing and property obligations.",
+          "steps": [
+            "Record the $1.9 billion equity contribution, roughly $2.5 billion project debt, AWS's retained interest and the 12-year weighted-average initial lease term.",
+            "Add rent growth and maintenance and upgrade duties; estimate shareholder return when closing documents complete the record."
+          ],
+          "done": "The model separates signed terms from closing evidence and shows a sourced return estimate."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-Stage Private Markets",
+          "title": "Separate procedure adoption from efficacy",
+          "why": "Procedure counts and registry enrollment do not establish benefit for a specific disease.",
+          "steps": [
+            "Record Aliya's reported procedure count and PROPEL enrollment as adoption evidence.",
+            "Wait for patient results with a defined comparator, endpoint and effect size before assessing disease-specific efficacy."
+          ],
+          "done": "Clinical benefit remains UNKNOWN until comparable patient outcomes support it."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities and AI Systems",
+          "title": "Measure cost per scientific task",
+          "why": "Vendor tests and projected gains do not show realized customer performance or purchase economics.",
+          "steps": [
+            "Track Vera rack shipment and obtain a customer purchase price when disclosed.",
+            "Compare independent application results using total cost per completed scientific task."
+          ],
+          "done": "The comparison uses delivered systems, independent results and an attributable total cost."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年11月17日",
+      "description": "八项行动分别检验智能体权限、机器人运营证据、不完整的资金流、链上收益、编辑叙事、数据中心经济性、临床结果与科学计算。",
+      "centralJudgment": "只有权限边界、完整统计口径、客户记录、实际回报和运营结果清晰可见时，能力与交易声明才能支撑决策。",
+      "fieldLine": "八个信号。信号 5 展开今天的行动文章：资料归档与讲好故事有何不同。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与智能体",
+          "title": "测试一名智能体的权限边界",
+          "why": "持久运行的智能体只有无法自行扩大权限，才能在明确边界内工作。",
+          "steps": [
+            "选定一名持续运行的 RobinOS 智能体，冻结其现有权限和控制层规则。",
+            "在受控测试中让它尝试修改自身权限，保留拦截结果和可归属日志。"
+          ],
+          "done": "权限变更被拦截，记录能够指出智能体、所请求的变更及实施拦截的控制措施。"
+        },
+        {
+          "signal": 2,
+          "domain": "物理 AI 与机器人",
+          "title": "等待客户发布运营记录",
+          "why": "厂商报告的运行时数无法证明人工接管率、故障恢复负担或客户经济性。",
+          "steps": [
+            "将所报告的四百多小时运行时间与客户验证分开记录。",
+            "索取客户发布的连续运行日志，其中包括人工接管、故障恢复和服务中断。"
+          ],
+          "done": "在获得可归属且包含这些指标的客户运营记录前，客户验证状态仍为 UNKNOWN。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流",
+          "title": "补齐尚未完整的 ETF 数据行",
+          "why": "部分基金单元格缺失，使最新的 BTC 与 ETH 资金流总额仍属暂定值。",
+          "steps": [
+            "逐一核对 11 月 16 日 BTC 与 ETH 基金的数值，确认已上报或明确标记为不可得。",
+            "数据行完整后冻结总额，再判断新一周的资金方向。"
+          ],
+          "done": "资金方向判断引用完整数据行，任何仍未解决的单元格保留为 UNKNOWN。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币、金融科技与支付",
+          "title": "拆解实际链上收益",
+          "why": "若不知道实际收入来源与损失，就无法评估附着于熟悉 ETF 敞口的浮动收益。",
+          "steps": [
+            "建立记录，分别列出借款利息净额、激励、费用和损失。",
+            "仅依据已公布的实际结果填写各项；未披露的数值保留为 UNKNOWN。"
+          ],
+          "done": "有来源支持的实际收益记录能够解释净结果，且不会把宣传收益率当作已赚取回报。"
+        },
+        {
+          "signal": 5,
+          "domain": "内容与可见度",
+          "title": "说明归档应用为何仍需要故事",
+          "why": "生成式界面可以整理资料，但读者仍需要理解哪项决策改变了后果。",
+          "steps": [
+            "发布行动文章，解释 Google 的实际功能、时间线与故事各自的作用，并用 Google–Marvell 文章呈现资料、决策与后果。",
+            "归档一篇题为《时间线仍需要故事》的 LinkedIn 衍生稿，供 Robin 手动发布。"
+          ],
+          "done": "权威行动文章以“哪个转折点改变了你的判断”作结，衍生稿已归档。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基础设施",
+          "title": "交割后再测算数据中心交易回报",
+          "why": "所述资本化率本身不能说明扣除融资和物业义务后的股东回报。",
+          "steps": [
+            "分别记录 19 亿美元股权出资、约 25 亿美元项目债务、AWS 保留的权益及加权平均初始租期十二年的安排。",
+            "补充租金增长、维护与升级责任；待交割文件补全事实后估算股东回报。"
+          ],
+          "done": "模型将已签署条款与交割证据分开，并给出有来源支持的回报估算。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私募市场",
+          "title": "将手术采用量与疗效分开",
+          "why": "手术次数与登记研究入组人数不能证明对某种特定疾病的治疗获益。",
+          "steps": [
+            "将 Aliya 报告的手术次数及 PROPEL 入组人数记录为采用证据。",
+            "在评估特定疾病疗效前，等待明确列出对照组、终点和效应量的患者结果。"
+          ],
+          "done": "在可比较的患者结果提供支持前，临床获益仍为 UNKNOWN。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场与 AI 系统",
+          "title": "衡量每项科学任务的成本",
+          "why": "厂商测试和预测增益无法说明客户实际性能或采购经济性。",
+          "steps": [
+            "跟踪 Vera 机架实际出货，并在披露后取得客户采购价格。",
+            "使用独立应用测试结果，比较每项已完成科学任务的总成本。"
+          ],
+          "done": "比较基于已交付系统、独立测试结果和可归属的总成本。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年11月17日",
+      "description": "八項行動分別檢驗智能體權限、機械人營運證據、尚未完整的資金流、鏈上收益、編輯敘事、數據中心經濟效益、臨床結果與科學運算。",
+      "centralJudgment": "只有權限邊界、完整統計口徑、客戶紀錄、實際回報和營運結果清晰可見時，能力與交易聲明才能支持決策。",
+      "fieldLine": "八個訊號。訊號 5 展開今天的行動文章：資料歸檔與講述故事有何不同。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與智能體",
+          "title": "測試一名智能體的權限邊界",
+          "why": "持續運作的智能體只有無法自行擴大權限，才能在明確邊界內工作。",
+          "steps": [
+            "選定一名持續運作的 RobinOS 智能體，固定其現有權限與控制層規則。",
+            "在受控測試中讓它嘗試修改自身權限，保留攔截結果及可追溯的紀錄。"
+          ],
+          "done": "權限變更遭到攔截，紀錄能指出智能體、所要求的變更及執行攔截的控制措施。"
+        },
+        {
+          "signal": 2,
+          "domain": "物理 AI 與機械人",
+          "title": "等待客戶發佈營運紀錄",
+          "why": "廠商報告的運作時數無法證明人工接管率、故障恢復負擔或客戶經濟效益。",
+          "steps": [
+            "把所報告的四百多小時運作時間與客戶驗證分開記錄。",
+            "索取客戶發佈的連續運作紀錄，當中包括人工接管、故障恢復及服務中斷。"
+          ],
+          "done": "在取得可追溯且包含這些指標的客戶營運紀錄前，客戶驗證狀態仍為 UNKNOWN。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本流",
+          "title": "補齊尚未完整的 ETF 數據列",
+          "why": "部分基金欄位缺失，使最新的 BTC 與 ETH 資金流總額仍屬暫定數字。",
+          "steps": [
+            "逐一核對 11 月 16 日 BTC 與 ETH 基金的數值，確認已上報或明確標示為無法取得。",
+            "待數據列完整後固定總額，再判斷新一週的資金方向。"
+          ],
+          "done": "資金方向判斷引用完整數據列，任何尚未解決的欄位保留為 UNKNOWN。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣、金融科技與支付",
+          "title": "拆解實際鏈上收益",
+          "why": "若不知道實際收入來源與損失，就無法評估附着於熟悉 ETF 敞口的浮動收益。",
+          "steps": [
+            "建立紀錄，分別列出借款利息淨額、獎勵、費用及損失。",
+            "只根據已公佈的實際結果填寫各項；未披露的數值保留為 UNKNOWN。"
+          ],
+          "done": "有來源支持的實際收益紀錄能解釋淨結果，且不會把宣傳收益率當作已賺取回報。"
+        },
+        {
+          "signal": 5,
+          "domain": "內容與可見度",
+          "title": "說明歸檔應用為何仍需要故事",
+          "why": "生成式介面可以整理資料，但讀者仍需要理解哪項決策改變了後果。",
+          "steps": [
+            "發佈行動文章，解釋 Google 的實際功能、時間線與故事各自的作用，並以 Google–Marvell 文章呈現資料、決策與後果。",
+            "歸檔一篇題為《時間線仍需要故事》的 LinkedIn 衍生稿，供 Robin 手動發佈。"
+          ],
+          "done": "權威行動文章以「哪個轉折點改變了你的判斷」作結，衍生稿已歸檔。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基礎設施",
+          "title": "交割後再估算數據中心交易回報",
+          "why": "所述資本化率本身不能說明扣除融資和物業責任後的股東回報。",
+          "steps": [
+            "分別記錄 19 億美元股權出資、約 25 億美元項目債務、AWS 保留的權益，以及加權平均初始租期十二年的安排。",
+            "補充租金增長、維護與升級責任；待交割文件補全事實後估算股東回報。"
+          ],
+          "done": "模型把已簽署條款與交割證據分開，並給出有來源支持的回報估算。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私募市場",
+          "title": "把手術採用量與療效分開",
+          "why": "手術次數與登記研究入組人數不能證明對某種特定疾病的治療效益。",
+          "steps": [
+            "把 Aliya 報告的手術次數及 PROPEL 入組人數記錄為採用證據。",
+            "在評估特定疾病療效前，等待明確列出對照組、終點和效應量的患者結果。"
+          ],
+          "done": "在可比較的患者結果提供支持前，臨床效益仍為 UNKNOWN。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場與 AI 系統",
+          "title": "衡量每項科學任務的成本",
+          "why": "廠商測試和預測增益無法說明客戶實際效能或採購經濟效益。",
+          "steps": [
+            "追蹤 Vera 機架實際出貨，並在披露後取得客戶採購價格。",
+            "使用獨立應用測試結果，比較每項已完成科學任務的總成本。"
+          ],
+          "done": "比較基於已交付系統、獨立測試結果及可追溯的總成本。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクションフロー、2026年11月17日",
+      "description": "8つの行動を通じて、エージェントの権限、ロボットの稼働記録、不完全な資金フロー、オンチェーン利回り、編集上の物語、データセンターの採算、臨床結果、科学計算を検証する。",
+      "centralJudgment": "能力や取引に関する主張を判断材料にするには、権限の境界、欠けのない集計、顧客の記録、実現した収益、運用上の成果が見えていなければならない。",
+      "fieldLine": "8つのシグナル。シグナル5では、資料のアーカイブと物語の違いを扱う本日のアクション記事を読む。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "先端モデルとエージェント",
+          "title": "エージェントの権限境界を一つ試す",
+          "why": "常時稼働するエージェントが安全に働くには、自分で権限を広げられないことが必要だ。",
+          "steps": [
+            "RobinOSの常時稼働エージェントを一つ選び、現在の権限と制御層の規則を固定する。",
+            "管理された試験で自己権限の変更を試みさせ、遮断結果と追跡可能なログを残す。"
+          ],
+          "done": "変更が遮断され、どのエージェントのどの要求を、どの制御が止めたか記録で確認できる。"
+        },
+        {
+          "signal": 2,
+          "domain": "フィジカルAIとロボティクス",
+          "title": "顧客による稼働記録を待つ",
+          "why": "メーカーが報告する稼働時間だけでは、人による介入率、復旧負担、顧客側の採算は分からない。",
+          "steps": [
+            "報告された400時間超の稼働実績を、顧客による検証とは分けて記録する。",
+            "人による介入、復旧、サービス停止を含む連続稼働ログを顧客側に求める。"
+          ],
+          "done": "これらの指標を含む出所の明確な顧客記録が得られるまで、顧客による検証はUNKNOWNのままにする。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資金フロー",
+          "title": "ETFの未完成の集計行を確定する",
+          "why": "ファンド別の欄に欠落があるため、直近のBTCとETHの資金フロー合計は暫定値だ。",
+          "steps": [
+            "11月16日のBTCとETHの各ファンド欄について、数値の報告または取得不能の明示を確認する。",
+            "全体が揃ってから合計を固定し、新しい週の資金の方向を分類する。"
+          ],
+          "done": "分類には欠落のない集計を使い、未解決の欄はUNKNOWNとして残す。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコイン・金融技術・決済",
+          "title": "実現したオンチェーン利回りを分解する",
+          "why": "身近なETFへの投資持分に変動利回りを付けても、収益源と損失の実績がなければ評価できない。",
+          "steps": [
+            "借り手からの純受取利息、インセンティブ、手数料、損失を別々の行に記録する。",
+            "公表された実績だけで各行を埋め、未開示の数値はUNKNOWNとする。"
+          ],
+          "done": "出典のある実現利回りの記録で純収益を説明でき、提示利回りを獲得済みの収益と取り違えない。"
+        },
+        {
+          "signal": 5,
+          "domain": "コンテンツと発見可能性",
+          "title": "アーカイブにも物語が必要な理由を示す",
+          "why": "生成された画面は資料を整理できるが、どの判断が結果を変えたかは別途説明が必要だ。",
+          "steps": [
+            "Googleの実際の機能、年表と物語の異なる役割を説明し、Google–Marvellの記事を資料・判断・結果の順で示すアクション記事を公開する。",
+            "「年表にも物語が必要だ」と題したLinkedIn向け派生原稿を、Robinによる手動公開用に保存する。"
+          ],
+          "done": "正規の記事は「どの転機があなたの判断を変えたか」と読者に問いかけて終わり、派生原稿も保存されている。"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラ",
+          "title": "取引完了後にデータセンターの収益を試算する",
+          "why": "公表されたキャップレートだけでは、資金調達や不動産の維持義務を踏まえた株主リターンは分からない。",
+          "steps": [
+            "19億ドルの出資、約25億ドルのプロジェクト債務、AWSの持分、加重平均で当初12年の賃貸期間を別々に記録する。",
+            "賃料の伸びと維持・設備更新の責任を加え、取引完了時の資料が揃ってから株主リターンを試算する。"
+          ],
+          "done": "モデルは署名済み条件と取引完了の証拠を区別し、出典に基づく収益試算を示す。"
+        },
+        {
+          "signal": 7,
+          "domain": "未上場企業の後期投資市場",
+          "title": "施術の普及と治療効果を分ける",
+          "why": "施術件数や登録研究の参加者数だけでは、特定の疾患に対する効果は証明できない。",
+          "steps": [
+            "Aliyaが報告する施術件数とPROPELの登録者数を、採用状況の証拠として記録する。",
+            "疾患別の治療効果を判断する前に、比較対象、評価項目、効果の大きさが明確な患者結果を待つ。"
+          ],
+          "done": "比較可能な患者結果が裏付けるまで、臨床上の利益はUNKNOWNとする。"
+        },
+        {
+          "signal": 8,
+          "domain": "上場株式とAIシステム",
+          "title": "科学計算の一タスク当たり費用を測る",
+          "why": "メーカーによる試験や性能予測では、顧客環境での実績や購入費用は分からない。",
+          "steps": [
+            "Veraラックの実際の出荷を追い、開示された時点で顧客の購入価格を確認する。",
+            "独立したアプリケーション試験の結果を使い、完了した科学計算タスク一件当たりの総費用を比較する。"
+          ],
+          "done": "比較は納入済みシステム、独立した結果、出所の明確な総費用に基づく。"
+        }
+      ]
+    }
+  }
+}
