@@ -1,0 +1,20 @@
+The agent cannot issue its own badge.
+
+A persistent agent can read a page, email, file or summary that sounds authoritative. That content may be useful. It may also be a prompt injection. Either way, the text should not be able to grant the capability it describes.
+
+A useful architecture separates three roles:
+
+1. Content supplies information.
+2. A separate reviewer judges supported boundary requests against intent and risk.
+3. An external enforcement layer controls filesystem, process, network, identity and secrets.
+
+The reviewer is not the lock. OpenAI's current documentation says automatic review does not override network restrictions, and enabling review alone does not configure a self-hosted sandbox.
+
+That separation creates the paradox: more useful autonomy can require less authority inside the working agent.
+
+The source fixture tested only two synthetic requests. It demonstrates decision placement, not a security failure rate or production guarantee.
+
+Full story and sources: https://iamrobin.ai/binary/stories/the-agent-cannot-issue-its-own-badge/
+
+#AIAgents #AgentSecurity #PromptInjection #ControlPlane #Automation
+
