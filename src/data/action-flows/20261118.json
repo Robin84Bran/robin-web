@@ -1,0 +1,532 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-18",
+  "updated": "2026-11-18",
+  "signalCount": 8,
+  "briefingPath": "/ouroboros/202611/20261118/",
+  "actionItemPath": "/ouroboros/202611/20261118/action_item/",
+  "hero": "/daily-briefing/20261118/hero.webp",
+  "ogImage": "/daily-briefing/20261118/og.webp",
+  "actionHero": "/action-item/20261118/hero.webp",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NOW",
+      "status": "READY",
+      "visualValue": "40% below Standard",
+      "visualLabel": "eight-hour model-token rate; end-to-end delivery economics remain UNKNOWN",
+      "sources": [
+        {
+          "label": "OpenAI release",
+          "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/"
+        },
+        {
+          "label": "Background mode",
+          "url": "https://developers.openai.com/api/docs/guides/background"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "UNKNOWN",
+      "visualValue": "11 hubs / 8 cities",
+      "visualLabel": "vendor-reported deployment; robot count, takeover rate and unit cost remain UNKNOWN",
+      "sources": [
+        {
+          "label": "ROBOTERA announcement",
+          "url": "https://www.prnewswire.com/news-releases/robotera-expands-humanoid-robot-deployment-across-china-posts-guangdong-network-reaching-eight-cities-province-wide-302941865.html"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "NEXT",
+      "status": "WATCHING",
+      "visualValue": "BTC +$7.9M / ETH −$8.4M",
+      "visualLabel": "complete November 16 rows; November 17 remains incomplete",
+      "sources": [
+        {
+          "label": "Farside Bitcoin ETF",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "Farside Ethereum ETF",
+          "url": "https://farside.co.uk/eth/"
+        },
+        {
+          "label": "DefiLlama stablecoins",
+          "url": "https://defillama.com/stablecoins"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "WATCH",
+      "status": "UNKNOWN",
+      "visualValue": "100 USDC + 5% fee",
+      "visualLabel": "scheduled application terms; allocation, issuance and redemption evidence remain pending",
+      "sources": [
+        {
+          "label": "Binance announcement",
+          "url": "https://www.binance.com/en/support/announcement/detail/81e5668f2453429593002ad515a06b4c"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "deepDiveAvailable": true,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "visualValue": "Two clocks",
+      "visualLabel": "exact Astra article and four reviewed languages prepared under the protected publication gates",
+      "sources": [
+        {
+          "label": "OpenAI background mode",
+          "url": "https://developers.openai.com/api/docs/guides/background"
+        },
+        {
+          "label": "Action Item",
+          "url": "https://iamrobin.ai/ouroboros/202611/20261118/action_item/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "WATCHING",
+      "visualValue": "60MW / spring 2027",
+      "visualLabel": "signed vendor-reported lease; delivered power, financing close and customer acceptance remain unverified",
+      "sources": [
+        {
+          "label": "Giga Energy announcement",
+          "url": "https://www.gigaenergy.com/news/giga-news-hunt-county-deal"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "UNKNOWN",
+      "visualValue": "$5B Series C",
+      "visualLabel": "financing announced; valuation, preferences, revenue and human clinical outcomes remain UNKNOWN",
+      "sources": [
+        {
+          "label": "Isomorphic Labs announcement",
+          "url": "https://www.isomorphiclabs.com/articles/isomorphic-labs-announces-series-c-investment-round"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "NEXT",
+      "status": "WATCHING",
+      "visualValue": "$130B / 71–72%",
+      "visualLabel": "next-quarter revenue and gross-margin guidance; simultaneous delivery remains future evidence",
+      "sources": [
+        {
+          "label": "NVIDIA investor release",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, November 18, 2026",
+      "description": "Eight actions separate response pricing, vendor claims, market flows, token rights, workflow delivery, infrastructure acceptance, clinical progress and earnings guidance.",
+      "centralJudgment": "Today’s evidence becomes actionable when the completion boundary and the next observable gate are explicit.",
+      "fieldLine": "Eight signals. Signal 5 opens today’s Action Item on the two clocks of overnight AI.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Price one successful overnight task",
+          "why": "A response discount changes one cost component; the useful result also includes tools, recovery and review.",
+          "steps": [
+            "Freeze one representative task with one acceptance rule.",
+            "Run Sol and Astra through the full workflow and record successful-delivery cost, handoff minutes and recoveries."
+          ],
+          "done": "The default route follows observed successful-delivery economics."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "Wait for customer operating evidence",
+          "why": "Deployment breadth and vendor throughput do not establish intervention or parcel economics.",
+          "steps": [
+            "Preserve the 11 hubs and 1,500-parcel rate as vendor claims.",
+            "Upgrade only with customer-attributed uptime, takeovers and accepted-parcel cost."
+          ],
+          "done": "The operating status remains UNKNOWN until customer records close those fields."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows",
+          "title": "Watch three complete capital sessions",
+          "why": "The complete Bitcoin and Ether rows nearly offset while stablecoin supply is still contracting.",
+          "steps": [
+            "Exclude incomplete November 17 fund cells.",
+            "Track three complete sessions for joint BTC, ETH and stablecoin improvement."
+          ],
+          "done": "Capital re-entry is upgraded only when all three measures improve."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins, FinTech and Payments",
+          "title": "Reconcile the first completed allocation",
+          "why": "The interface supplies price exposure while legal ownership and shareholder rights remain separate.",
+          "steps": [
+            "After the window closes, preserve one real allocation receipt.",
+            "Reconcile backing, redemption terms, delivered quantity and total fees."
+          ],
+          "done": "The record states the rights and cost actually delivered."
+        },
+        {
+          "signal": 5,
+          "domain": "Content and Visibility",
+          "title": "Publish the two-clock boundary",
+          "why": "An initial-response target and a successfully delivered workflow measure different parts of autonomy.",
+          "steps": [
+            "Publish Astra’s exact Action Item after the Sol factual/context PASS.",
+            "Keep the LinkedIn derivative archived for Robin’s manual use."
+          ],
+          "done": "The canonical four-language article and private derivative are preserved."
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure",
+          "title": "Track power and customer acceptance",
+          "why": "A lease and construction method become operating evidence when power and acceptance arrive.",
+          "steps": [
+            "Set spring 2027 as the precommitted Project Clay checkpoint.",
+            "Record delivered power, financing close and customer acceptance separately."
+          ],
+          "done": "The factory-first claim advances only after power and acceptance are evidenced."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-stage Private Markets",
+          "title": "Wait for a registered human trial",
+          "why": "Large financing extends the runway while patient benefit still depends on clinical execution.",
+          "steps": [
+            "Track the first candidate’s public trial registration.",
+            "Confirm enrollment before upgrading the platform to clinical execution."
+          ],
+          "done": "The state remains preclinical until registration and enrollment are verifiable."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities and AI Systems",
+          "title": "Test revenue and margin together",
+          "why": "The guidance asks whether scale and value capture can arrive in the same quarter.",
+          "steps": [
+            "Freeze $130 billion plus or minus 3% as the revenue range.",
+            "Check the same quarter against the 71–72% gross-margin range."
+          ],
+          "done": "Scale and margin are confirmed together only if both ranges are met."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年11月18日",
+      "description": "八项行动区分响应定价、厂商披露、资金流、代币权利、流程交付、基础设施验收、临床进展与业绩指引。",
+      "centralJudgment": "只有把完成边界与下一道可观察门槛说清，今天的证据才可执行。",
+      "fieldLine": "八个信号。信号5展开今天关于夜间AI两只时钟的行动文章。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与智能体",
+          "title": "给一项成功的夜间任务定价",
+          "why": "响应折扣只改变一个成本组成；有用成果还包括工具、恢复与审阅。",
+          "steps": [
+            "冻结一项代表性任务和一个验收规则。",
+            "让 Sol 与 Astra 跑完整流程，记录成功交付成本、人工接手分钟与恢复次数。"
+          ],
+          "done": "默认路由由观察到的成功交付经济性决定。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 与机器人",
+          "title": "等待客户运营证据",
+          "why": "部署广度与厂商吞吐量不能证明人工介入或单位包裹经济。",
+          "steps": [
+            "把11个枢纽与每小时1,500件保留为厂商披露。",
+            "只在客户披露可用率、接管和合格包裹成本后升级。"
+          ],
+          "done": "客户记录补齐这些字段前，运营状态保持 UNKNOWN。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流",
+          "title": "观察三个完整资本交易日",
+          "why": "完整的 Bitcoin 与 Ether 数据几乎抵消，而稳定币供应仍在收缩。",
+          "steps": [
+            "排除尚未完整的11月17日基金栏位。",
+            "连续观察三个完整交易日的 BTC、ETH 与稳定币共同改善。"
+          ],
+          "done": "只有三项同时改善，才升级资本回流判断。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币、金融科技与支付",
+          "title": "核对首份完成分配",
+          "why": "界面提供价格敞口，法律所有权与股东权利仍然分开。",
+          "steps": [
+            "窗口结束后保存一份真实分配收据。",
+            "核对支持资产、赎回条款、到账数量和总费用。"
+          ],
+          "done": "记录明确实际交付的权利与成本。"
+        },
+        {
+          "signal": 5,
+          "domain": "内容与可见度",
+          "title": "发布两只时钟的边界",
+          "why": "初始响应目标与成功交付的流程衡量自主性的不同部分。",
+          "steps": [
+            "在 Sol 事实与语境检查 PASS 后发布 Astra 原文。",
+            "把 LinkedIn 衍生稿存档，留给 Robin 手动发布。"
+          ],
+          "done": "四语 canonical 文章与私人衍生稿均已保存。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基础设施",
+          "title": "追踪通电与客户验收",
+          "why": "租约与施工方法要等通电和验收后才成为运营证据。",
+          "steps": [
+            "把2027年春设为 Project Clay 的预设检查点。",
+            "分别记录电力交付、融资闭合与客户验收。"
+          ],
+          "done": "只有通电和验收都有证据，才升级工厂化主张。"
+        },
+        {
+          "signal": 7,
+          "domain": "晚期私募",
+          "title": "等待注册的人体试验",
+          "why": "巨额融资延长跑道，患者获益仍取决于临床执行。",
+          "steps": [
+            "追踪首个候选药物的公开试验注册。",
+            "确认入组后再升级为临床执行。"
+          ],
+          "done": "注册与入组可核验前，状态保持临床前。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场与 AI 系统",
+          "title": "同时检验收入与毛利率",
+          "why": "指引检验规模与价值捕获能否在同一季度兑现。",
+          "steps": [
+            "冻结1,300亿美元上下3%的收入区间。",
+            "把同一季度与71%至72%的毛利率区间核对。"
+          ],
+          "done": "只有两个区间同时达成，才确认规模与利润率。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年11月18日",
+      "description": "八項行動區分回應定價、廠商披露、資金流、代幣權利、流程交付、基礎設施驗收、臨床進展與業績指引。",
+      "centralJudgment": "只有把完成邊界與下一道可觀察門檻說清，今天的證據才可執行。",
+      "fieldLine": "八個信號。信號5展開今天關於夜間AI兩座時鐘的行動文章。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與智能體",
+          "title": "為一項成功的夜間任務定價",
+          "why": "回應折扣只改變一個成本組成；有用成果還包括工具、恢復與審閱。",
+          "steps": [
+            "凍結一項代表性任務和一個驗收規則。",
+            "讓 Sol 與 Astra 跑完整流程，記錄成功交付成本、人工接手分鐘與恢復次數。"
+          ],
+          "done": "預設路由由觀察到的成功交付經濟性決定。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 與機器人",
+          "title": "等待客戶營運證據",
+          "why": "部署廣度與廠商吞吐量不能證明人工介入或單位包裹經濟。",
+          "steps": [
+            "把11個樞紐與每小時1,500件保留為廠商披露。",
+            "只在客戶披露可用率、接管和合格包裹成本後升級。"
+          ],
+          "done": "客戶紀錄補齊這些欄位前，營運狀態保持 UNKNOWN。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本流",
+          "title": "觀察三個完整資本交易日",
+          "why": "完整的 Bitcoin 與 Ether 數據幾乎抵銷，而穩定幣供應仍在收縮。",
+          "steps": [
+            "排除尚未完整的11月17日基金欄位。",
+            "連續觀察三個完整交易日的 BTC、ETH 與穩定幣共同改善。"
+          ],
+          "done": "只有三項同時改善，才升級資本回流判斷。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣、金融科技與支付",
+          "title": "核對首份完成分配",
+          "why": "介面提供價格曝險，法律所有權與股東權利仍然分開。",
+          "steps": [
+            "窗口結束後保存一份真實分配收據。",
+            "核對支持資產、贖回條款、到帳數量和總費用。"
+          ],
+          "done": "紀錄明確實際交付的權利與成本。"
+        },
+        {
+          "signal": 5,
+          "domain": "內容與可見度",
+          "title": "發布兩座時鐘的邊界",
+          "why": "初始回應目標與成功交付的流程衡量自主性的不同部分。",
+          "steps": [
+            "在 Sol 事實與語境檢查 PASS 後發布 Astra 原文。",
+            "把 LinkedIn 衍生稿存檔，留給 Robin 手動發布。"
+          ],
+          "done": "四語 canonical 文章與私人衍生稿均已保存。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基礎設施",
+          "title": "追蹤通電與客戶驗收",
+          "why": "租約與施工方法要等通電和驗收後才成為營運證據。",
+          "steps": [
+            "把2027年春設為 Project Clay 的預設檢查點。",
+            "分別記錄電力交付、融資閉合與客戶驗收。"
+          ],
+          "done": "只有通電和驗收都有證據，才升級工廠化主張。"
+        },
+        {
+          "signal": 7,
+          "domain": "晚期私募",
+          "title": "等待註冊的人體試驗",
+          "why": "巨額融資延長跑道，患者獲益仍取決於臨床執行。",
+          "steps": [
+            "追蹤首個候選藥物的公開試驗註冊。",
+            "確認入組後再升級為臨床執行。"
+          ],
+          "done": "註冊與入組可核驗前，狀態保持臨床前。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場與 AI 系統",
+          "title": "同時檢驗收入與毛利率",
+          "why": "指引檢驗規模與價值捕獲能否在同一季度兌現。",
+          "steps": [
+            "凍結1,300億美元上下3%的收入區間。",
+            "把同一季度與71%至72%的毛利率區間核對。"
+          ],
+          "done": "只有兩個區間同時達成，才確認規模與利潤率。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー 2026年11月18日",
+      "description": "八つの行動で応答価格、ベンダー主張、資金フロー、トークン権利、工程引き渡し、インフラ受入、臨床進捗、業績見通しを分ける。",
+      "centralJudgment": "完了境界と次の観測可能なゲートを明示して初めて、今日の証拠は行動に使える。",
+      "fieldLine": "八つのシグナル。シグナル5は夜間AIの二つの時計を扱う本日のAction Itemへ続く。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "フロンティアモデルとエージェント",
+          "title": "成功した夜間タスク一件の費用を測る",
+          "why": "応答の割引が変えるのは費用の一部で、有用な成果にはツール、復旧、レビューも含まれる。",
+          "steps": [
+            "代表的なタスク一件と合格条件を固定する。",
+            "SolとAstraで全工程を走らせ、成功時の費用、人の介入時間、復旧回数を記録する。"
+          ],
+          "done": "既定ルートは観測した成功時の経済性で決める。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AIとロボティクス",
+          "title": "顧客の運用記録を待つ",
+          "why": "展開拠点数とベンダーの処理速度だけでは介入率や荷物一個の経済性は分からない。",
+          "steps": [
+            "11拠点と毎時1,500個をベンダーの主張として保存する。",
+            "顧客が稼働率、介入、合格荷物の費用を示した後にのみ評価を上げる。"
+          ],
+          "done": "顧客記録が揃うまで運用状態は UNKNOWN のままとする。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資本フロー",
+          "title": "完全な三取引日を観察する",
+          "why": "完全なBitcoinとEtherの数字はほぼ相殺し、ステーブルコイン供給は縮小している。",
+          "steps": [
+            "未完成の11月17日行を除外する。",
+            "BTC、ETH、ステーブルコインがそろって改善する完全な三取引日を追う。"
+          ],
+          "done": "三つが同時に改善した場合のみ資本再流入へ引き上げる。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコイン、FinTech、決済",
+          "title": "最初の完了配分を照合する",
+          "why": "画面が与えるのは価格エクスポージャーで、法的所有権と株主権は別にある。",
+          "steps": [
+            "窓口終了後に実際の配分領収書を一件保存する。",
+            "裏付け、償還条件、受取数量、総費用を照合する。"
+          ],
+          "done": "実際に届いた権利と費用が記録される。"
+        },
+        {
+          "signal": 5,
+          "domain": "コンテンツと可視性",
+          "title": "二つの時計の境界を公開する",
+          "why": "初回応答の目標と成功した引き渡しは、自律性の異なる部分を測る。",
+          "steps": [
+            "Solの事実・文脈チェックがPASSしたAstra原文を公開する。",
+            "LinkedIn派生稿はRobinの手動投稿用に保管する。"
+          ],
+          "done": "四言語のcanonical記事と非公開派生稿が保存される。"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラ",
+          "title": "通電と顧客受入を追う",
+          "why": "リースと建設方法は、通電と受入がそろって運用証拠になる。",
+          "steps": [
+            "2027年春をProject Clayの事前チェックポイントにする。",
+            "電力供給、資金調達完了、顧客受入を別々に記録する。"
+          ],
+          "done": "電力と受入の証拠がそろった後に工場方式の評価を上げる。"
+        },
+        {
+          "signal": 7,
+          "domain": "レイトステージ未公開市場",
+          "title": "登録された人試験を待つ",
+          "why": "大型資金調達は滑走路を延ばすが、患者利益は臨床実行に依存する。",
+          "steps": [
+            "最初の候補薬の公開試験登録を追う。",
+            "登録と被験者組入れを確認してから臨床実行へ引き上げる。"
+          ],
+          "done": "登録と組入れが検証できるまで前臨床のままとする。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開株式とAIシステム",
+          "title": "売上高と粗利率を同時に検証する",
+          "why": "ガイダンスは規模と価値獲得が同じ四半期に届くかを問う。",
+          "steps": [
+            "1,300億ドルの上下3%を売上高レンジとして固定する。",
+            "同じ四半期を71%から72%の粗利率レンジと照合する。"
+          ],
+          "done": "両方の範囲を満たした場合のみ規模と利益率を確認する。"
+        }
+      ]
+    }
+  }
+}
