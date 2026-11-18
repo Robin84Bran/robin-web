@@ -40,13 +40,11 @@
     "test:work-or-proof": "node --test public/work-or-proof/tests.mjs && node public/work-or-proof/batch.mjs --verify && node scripts/test-work-or-proof-render.mjs",
     "test:checkpoint-or-restart": "node --test public/checkpoint-or-restart/tests.mjs && node public/checkpoint-or-restart/batch.mjs --verify && node scripts/test-checkpoint-or-restart-render.mjs"
   },
-  "dependencies": {
+  "devDependencies": {
     "@astrojs/check": "^0.9.9",
     "@astrojs/sitemap": "^3.7.3",
+    "@openai/sites-vite-plugin": "0.1.0",
     "astro": "^7.4.7",
     "typescript": "^5.9.3"
-  },
-  "devDependencies": {
-    "@openai/sites-vite-plugin": "0.1.0"
   }
 }
