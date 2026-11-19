@@ -1,0 +1,24 @@
+The robot passed 99%. The cost column is blank.
+
+GlobalFoundries and Boston Dynamics report that two Spot robots in Singapore completed more than 90,000 inspections with 99% mission success. That is substantial operating evidence.
+
+But a mission is a route containing many actions. The public score does not tell us how many inspection readings were accurate, how often a person intervened, or what the fully loaded programme cost per successful inspection.
+
+The useful economic path has five gates:
+
+1. Mission completed.
+2. Inspection captured.
+3. Reading correct.
+4. Maintenance action useful.
+5. Value exceeds fully loaded cost.
+
+The first gate has a published rate. The later rates are not public. That does not prove poor economics. It means the economics are still ungraded.
+
+A buyer-side denominator should include robots, payloads, docks, software, integration, maintenance, monitoring, spares and human time—and count only inspections that deliver usable, accurate data into the maintenance workflow.
+
+Keep the 99%. Just do not let it fill the cost column by itself.
+
+Full story and sources: https://iamrobin.ai/binary/stories/the-robot-passed-99-the-cost-column-is-blank/
+
+#PhysicalAI #Robotics #Manufacturing #UnitEconomics #IndustrialAutomation
+

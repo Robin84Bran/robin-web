@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">The robot passed 99 percent. The cost column is blank.</title>
+  <desc id="desc">A five-stage evidence funnel shows mission completion as reported, while inspection capture, reading accuracy, useful action and economic value remain undisclosed.</desc>
+  <rect width="1600" height="900" fill="#0B1228"/>
+  <g opacity="0.13" stroke="#61D4D7" stroke-width="1">
+    <path d="M0 150H1600M0 300H1600M0 450H1600M0 600H1600M0 750H1600"/>
+    <path d="M200 0V900M400 0V900M600 0V900M800 0V900M1000 0V900M1200 0V900M1400 0V900"/>
+  </g>
+  <text x="110" y="105" fill="#61D4D7" font-family="Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="4">BINARY / INVEST</text>
+  <text x="110" y="275" fill="#D8B86B" font-family="Georgia, serif" font-size="164" font-weight="700">99%</text>
+  <text x="110" y="350" fill="#F4F1E9" font-family="Arial, sans-serif" font-size="48" font-weight="700">mission success</text>
+  <line x1="110" y1="402" x2="660" y2="402" stroke="#61D4D7" stroke-width="5"/>
+  <text x="110" y="492" fill="#F4F1E9" font-family="Georgia, serif" font-size="58">The cost column</text>
+  <text x="110" y="563" fill="#F4F1E9" font-family="Georgia, serif" font-size="58">is still blank.</text>
+  <text x="110" y="665" fill="#A9B4CC" font-family="Arial, sans-serif" font-size="25">Route completion is operating evidence.</text>
+  <text x="110" y="704" fill="#A9B4CC" font-family="Arial, sans-serif" font-size="25">It is not yet unit economics.</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="870" y="104" width="570" height="108" rx="14" fill="#153B4A" stroke="#61D4D7" stroke-width="3"/>
+    <text x="906" y="150" fill="#61D4D7" font-size="21" font-weight="700" letter-spacing="2">1 · REPORTED</text>
+    <text x="906" y="188" fill="#F4F1E9" font-size="31" font-weight="700">Mission completed</text>
+    <path d="M1155 212V244" stroke="#D8B86B" stroke-width="4"/>
+    <path d="M1143 234l12 14 12-14" fill="none" stroke="#D8B86B" stroke-width="4"/>
+    <rect x="920" y="250" width="470" height="102" rx="14" fill="#111C34" stroke="#52617E" stroke-width="2"/>
+    <text x="954" y="290" fill="#A9B4CC" font-size="20" font-weight="700" letter-spacing="2">2 · NOT DISCLOSED</text>
+    <text x="954" y="329" fill="#F4F1E9" font-size="29" font-weight="700">Inspection captured</text>
+    <path d="M1155 352V384" stroke="#52617E" stroke-width="3"/>
+    <path d="M1143 374l12 14 12-14" fill="none" stroke="#52617E" stroke-width="3"/>
+    <rect x="970" y="390" width="370" height="96" rx="14" fill="#111C34" stroke="#52617E" stroke-width="2"/>
+    <text x="1004" y="428" fill="#A9B4CC" font-size="19" font-weight="700" letter-spacing="2">3 · NOT DISCLOSED</text>
+    <text x="1004" y="463" fill="#F4F1E9" font-size="27" font-weight="700">Reading correct</text>
+    <path d="M1155 486V518" stroke="#52617E" stroke-width="3"/>
+    <path d="M1143 508l12 14 12-14" fill="none" stroke="#52617E" stroke-width="3"/>
+    <rect x="1020" y="524" width="270" height="92" rx="14" fill="#111C34" stroke="#52617E" stroke-width="2"/>
+    <text x="1048" y="560" fill="#A9B4CC" font-size="18" font-weight="700">4 · UNKNOWN</text>
+    <text x="1048" y="594" fill="#F4F1E9" font-size="25" font-weight="700">Action useful</text>
+    <path d="M1155 616V648" stroke="#52617E" stroke-width="3"/>
+    <path d="M1143 638l12 14 12-14" fill="none" stroke="#52617E" stroke-width="3"/>
+    <rect x="1060" y="654" width="190" height="98" rx="14" fill="#241F24" stroke="#D8B86B" stroke-width="2"/>
+    <text x="1085" y="690" fill="#D8B86B" font-size="17" font-weight="700">5 · UNGRADED</text>
+    <text x="1085" y="724" fill="#F4F1E9" font-size="23" font-weight="700">Value &gt; cost</text>
+  </g>
+  <text x="1452" y="850" fill="#F4F1E9" text-anchor="end" font-family="Arial, sans-serif" font-size="22" letter-spacing="1">IAmRobin.ai</text>
+</svg>
