@@ -251,7 +251,7 @@ function normalizeDailyStructure(markdown) {
     .replace(/\r\n?|\u2028|\u2029/g, '\n')
     // Copied editions can put several semantic fields in one paragraph.
     // Split only sentence-boundary labels, preserving their text and URLs.
-    .replace(/([.!?。！？])[^\S\n]*(?=(?:\*\*)?(?:Inference|Why Robin should care|One Action|推断|推斷|推論|Robin\s*(?:为何|為何).*?(?:在意|关注|關心)|Robinへの意味)[:：])/g, '$1\n\n')
+    .replace(/([.!?。！？])[^\S\n]*(?=(?:\*\*)?(?:Fact|事实|事實|事実|Inference|Why Robin should care|One Action|推断|推斷|推論|Robin\s*(?:为何|為何).*?(?:在意|关注|關心)|Robinへの意味)[:：])/g, '$1\n\n')
     // Bound bare URLs before adjacent prose punctuation so Markdown does not
     // turn a copied sentence into part of the destination. Existing links stay intact.
     .replace(/(?<![<("])(https?:\/\/[^\s<>()，。—–]+)(?=[，。—–])/g, '<$1>')
@@ -450,7 +450,7 @@ function dailyFormattingContract(markdown) {
   const body = articleBody(markdown);
   const lines = body.replace(/\r\n?/g, '\n').split('\n');
   const sections = sectionCount(markdown);
-  const fieldPattern = /^(?:\*\*)?(?:Date|日期|日付|Fact|Inference|Why Robin should care|One Action|事实|推断|事實|推斷|事実|推論|Robin\s*(?:为何|為何).*?(?:在意|关注|關心)|Robin.*?意味|(?:唯一|一項|一项|一つ).*?(?:行動|行动|決策|决策))[^\n]*?(?:[:：—])/i;
+  const fieldPattern = /^(?:\*\*)?(?:Dates?|日期|日付|Fact|Inference|[^:\uff1a\n]{0,50}Why Robin should care|One Action|事实|推断|事實|推斷|事実|推論|[^:\uff1a\n]{0,50}Robin\s*(?:为何|為何).*?(?:在意|关注|關心)|[^:\uff1a\n]{0,50}Robin.*?(?:意味|理由)|(?:唯一|一項|一项|一つ).*?(?:行動|行动|決策|决策))[^\n]*?(?:[:：—])/i;
   const fieldIndexes = lines.flatMap((line, index) => fieldPattern.test(line) ? [index] : []);
   const checks = {
     noLeakedEmphasis: !body.includes('**</u>') && !/^\*\*\s*[•·]/m.test(body),

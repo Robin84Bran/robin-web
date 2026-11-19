@@ -1,0 +1,540 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-19",
+  "updated": "2026-11-19",
+  "signalCount": 8,
+  "briefingPath": "/ouroboros/202611/20261119/",
+  "actionItemPath": "/ouroboros/202611/20261119/action_item/",
+  "hero": "/daily-briefing/20261119/hero.webp",
+  "ogImage": "/daily-briefing/20261119/og.webp",
+  "actionHero": "/action-item/20261119/hero.webp",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "NOW",
+      "status": "READY",
+      "visualValue": "$3 / $0.15 / $15",
+      "visualLabel": "input, cached input and output per million tokens; RobinOS delivery economics remain unmeasured",
+      "sources": [
+        {
+          "label": "Google announcement",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "NEXT",
+      "status": "WATCHING",
+      "visualValue": "900 km / 90,000 / 99%",
+      "visualLabel": "vendor-reported Singapore distance, inspections and mission success; takeover rate and full cost remain UNKNOWN",
+      "sources": [
+        {
+          "label": "GlobalFoundries announcement",
+          "url": "https://gf.com/news-and-events/news/boston-dynamics-and-globalfoundries-expand-robotics-collaboration/"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "NEXT",
+      "status": "WATCHING",
+      "visualValue": "-$269M / -1.10%",
+      "visualLabel": "complete November 17 BTC and ETH ETF flows plus November 18 seven-day stablecoin change",
+      "sources": [
+        {
+          "label": "Farside Bitcoin ETF",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "Farside Ethereum ETF",
+          "url": "https://farside.co.uk/eth/"
+        },
+        {
+          "label": "DefiLlama stablecoins",
+          "url": "https://defillama.com/stablecoins"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "$3.43M / $350K",
+      "visualLabel": "campaign TVL and incentives; borrowing retention and post-incentive economics remain UNKNOWN",
+      "sources": [
+        {
+          "label": "Gauntlet mechanism",
+          "url": "https://www.gauntlet.xyz/resources/okx-wallet-integrates-gauntlet-usdc-earn"
+        },
+        {
+          "label": "OKX campaign",
+          "url": "https://web3.okx.com/pt-br/earn/activity/88"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "deepDiveAvailable": true,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "visualValue": "Consensus needs a source",
+      "visualLabel": "exact Astra article passed the separate Sol factual/context audit and four-language review",
+      "sources": [
+        {
+          "label": "Perplexity Multiagent",
+          "url": "https://www.perplexity.ai/en-GB/hub/blog/introducing-computer-multiagent"
+        },
+        {
+          "label": "Shared-workspace engineering",
+          "url": "https://www.perplexity.ai/en-GB/hub/blog/building-shared-workspaces-for-people-and-agents"
+        },
+        {
+          "label": "Action Item",
+          "url": "https://iamrobin.ai/ouroboros/202611/20261119/action_item/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "NEXT",
+      "status": "WATCHING",
+      "visualValue": "65 MW / up to $7.5B",
+      "visualLabel": "first phase and contract value; funded cash, project finance and service date remain separate gates",
+      "sources": [
+        {
+          "label": "SEC release",
+          "url": "https://www.sec.gov/Archives/edgar/data/1549084/000149315226052998/ex99-1.htm"
+        },
+        {
+          "label": "SEC 8-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/1549084/000149315226052998/form8-k.htm"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "UNKNOWN",
+      "visualValue": "$71.5M Series C",
+      "visualLabel": "financing and capacity claims announced; valuation, revenue, concentration and unit economics remain UNKNOWN",
+      "sources": [
+        {
+          "label": "Ansa announcement",
+          "url": "https://www.businesswire.com/news/home/20261118601923/en/Ansa-Biotechnologies-Raises-71.5-Million-in-Oversubscribed-Series-C-Round-to-Scale-Guaranteed-DNA-Synthesis"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "UNKNOWN",
+      "visualValue": "44% integration-ready",
+      "visualLabel": "customer-specific provider evaluation; pricing, migration cost and renewal evidence remain UNKNOWN",
+      "sources": [
+        {
+          "label": "Microsoft AI announcement",
+          "url": "https://microsoft.ai/?post_type=new"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, November 19, 2026",
+      "description": "Eight actions turn model correction, factory robotics, capital flows, collateral, multiagent review, infrastructure finance, DNA manufacturing and licensed weights into observable gates.",
+      "centralJudgment": "Today’s useful boundary is the difference between a promising headline and the next independent piece of completion evidence.",
+      "fieldLine": "Eight signals. Signal 5 opens today’s Action Item on why consensus still needs a source.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Benchmark correction, not the leaderboard",
+          "why": "Mid-task adaptation is useful only when it improves verified delivery under a changed requirement.",
+          "steps": [
+            "Freeze one historical task with a documented requirement change.",
+            "Compare Neon, Sol and Astra on final quality, total cost and human intervention minutes."
+          ],
+          "done": "A default model changes only after the same acceptance rule shows the better delivered result."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "Request the missing operating denominator",
+          "why": "Distance, inspection count and mission success form a baseline, but do not reveal interventions or cost.",
+          "steps": [
+            "Preserve the Singapore figures as GlobalFoundries-reported evidence.",
+            "Ask for human takeovers per thousand inspections and fully loaded cost."
+          ],
+          "done": "Atlas trial evidence remains separate from Spot operations."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows",
+          "title": "Wait for three complete capital sessions",
+          "why": "Complete ETF rows and stablecoin supply still point to broad contraction.",
+          "steps": [
+            "Exclude incomplete November 18 ETF cells.",
+            "Track three complete sessions of positive combined BTC and ETH flows plus positive stablecoin growth."
+          ],
+          "done": "Capital is upgraded to provisional re-entry only when all three conditions hold."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins, FinTech and Payments",
+          "title": "Measure borrowing after incentives",
+          "why": "Vault TVL shows supply, not outstanding loans or organic demand.",
+          "steps": [
+            "Freeze the campaign TVL and incentive amount as context.",
+            "At day 30 after incentives, record NVDAx-backed loans, liquidation losses and net supplier yield."
+          ],
+          "done": "Product adoption advances only on post-incentive use and loss evidence."
+        },
+        {
+          "signal": 5,
+          "domain": "Content and Visibility",
+          "title": "Publish the independent-review protocol",
+          "why": "Shared context speeds coordination and can also propagate one unchecked claim.",
+          "steps": [
+            "Publish Astra’s exact article after the separate Sol factual/context PASS.",
+            "Keep the LinkedIn derivative archived for Robin’s manual use."
+          ],
+          "done": "The four-language canonical article preserves sources, counterexamples and human coordination cost."
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure",
+          "title": "Reconcile financing into separate layers",
+          "why": "Contract value, financing capacity and funded cash are not interchangeable.",
+          "steps": [
+            "Track actual cash and the project-financing gap for the first 65 MW.",
+            "Record customer credit support and first-service date separately."
+          ],
+          "done": "The first phase advances only when each financing and delivery gate has its own evidence."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-stage Private Markets",
+          "title": "Keep DNA manufacturing at WATCH",
+          "why": "Funding and capacity expansion locate a bottleneck but do not establish durable economics.",
+          "steps": [
+            "Request twelve-month repeat-order and on-time-delivery rates.",
+            "Add free-order trigger rate and order contribution margin."
+          ],
+          "done": "Upgrade to INVESTIGATE only when all four operating measures are available."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities and AI Systems",
+          "title": "Wait for the first paid licensed-weights case",
+          "why": "A customer-specific evaluation shows possibility, not general economics.",
+          "steps": [
+            "Record full deployment and migration cost.",
+            "Track Azure consumption and renewal status for the same customer."
+          ],
+          "done": "Value capture is confirmed only when paid use and renewal evidence arrive together."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年11月19日",
+      "description": "八项行动把模型纠错、工厂机器人、资本流、抵押品、多代理审查、基础设施融资、DNA 制造与权重授权转成可观察门槛。",
+      "centralJudgment": "今天的关键边界，是区分吸引人的标题与下一项独立的完成证据。",
+      "fieldLine": "八个信号。信号5展开今天关于“共识仍需来源”的行动文章。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与代理",
+          "title": "检验纠错能力，不追排行榜",
+          "why": "任务中途适应只有在需求改变后仍能提高已核验交付，才有价值。",
+          "steps": [
+            "冻结一个有明确需求变更记录的历史任务。",
+            "用最终质量、总成本与人工介入分钟比较 Neon、Sol 和 Astra。"
+          ],
+          "done": "只有同一验收规则显示更好的交付结果，才更改默认模型。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 与机器人",
+          "title": "补齐运营分母",
+          "why": "里程、巡检次数与任务成功率建立了基线，却没有说明人工接管和成本。",
+          "steps": [
+            "把新加坡数据保留为 GlobalFoundries 披露。",
+            "索取每千次巡检的人工接管次数与全成本。"
+          ],
+          "done": "Atlas 试验必须与 Spot 运营数据分开记录。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流",
+          "title": "等待三个完整资本交易日",
+          "why": "完整 ETF 数据和稳定币供应仍指向广泛收缩。",
+          "steps": [
+            "排除 11 月 18 日尚未填报的 ETF 栏位。",
+            "连续追踪三个完整交易日：BTC 与 ETH 合计流入为正，稳定币增长也为正。"
+          ],
+          "done": "三项条件同时成立，才升级为初步回流。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币、金融科技与支付",
+          "title": "在激励结束后测借款",
+          "why": "金库 TVL 说明供给，不等于未偿贷款或自然需求。",
+          "steps": [
+            "冻结活动 TVL 与激励金额作为背景。",
+            "激励结束后第 30 天记录 NVDAx 抵押贷款、清算损失与供给方净收益。"
+          ],
+          "done": "只有补贴后的使用与损失证据，才能升级产品采用判断。"
+        },
+        {
+          "signal": 5,
+          "domain": "内容与可见度",
+          "title": "发布独立审查协议",
+          "why": "共享上下文加快协作，也可能传播同一个未经核实的说法。",
+          "steps": [
+            "在 Sol 独立事实与语境检查 PASS 后发布 Astra 原文。",
+            "把 LinkedIn 衍生稿归档，留给 Robin 手动使用。"
+          ],
+          "done": "四语 canonical 文章保留来源、反例与人工协调成本。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基础设施",
+          "title": "把融资拆成独立层次核对",
+          "why": "合同价值、融资额度与已到位现金不能互换。",
+          "steps": [
+            "追踪首期 65MW 的实际现金与项目融资缺口。",
+            "分别记录客户信用支持与首次服务日期。"
+          ],
+          "done": "每一道融资与交付门槛都有独立证据后，首期项目才升级。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私募",
+          "title": "把 DNA 制造维持在 WATCH",
+          "why": "融资与产能扩张指向真实瓶颈，却不能证明长期经济性。",
+          "steps": [
+            "索取十二个月复购率与按时交付率。",
+            "补充免费订单触发率与订单贡献利润率。"
+          ],
+          "done": "四项运营指标齐全后，才升级到 INVESTIGATE。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场与 AI 系统",
+          "title": "等待首个付费权重授权案例",
+          "why": "客户特定评估说明可能性，不能代表普遍经济性。",
+          "steps": [
+            "记录完整部署与迁移成本。",
+            "追踪同一客户的 Azure 用量与续约状态。"
+          ],
+          "done": "付费使用与续约证据同时出现，才确认价值捕获。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年11月19日",
+      "description": "八項行動把模型糾錯、工廠機器人、資本流、抵押品、多代理審查、基礎設施融資、DNA 製造與權重授權轉成可觀察門檻。",
+      "centralJudgment": "今天的關鍵邊界，是區分吸引人的標題與下一項獨立的完成證據。",
+      "fieldLine": "八個訊號。訊號5展開今天關於「共識仍需來源」的行動文章。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與代理",
+          "title": "檢驗糾錯能力，不追排行榜",
+          "why": "任務途中適應只有在需求改變後仍能提高已核驗交付，才有價值。",
+          "steps": [
+            "凍結一個有明確需求變更紀錄的歷史任務。",
+            "用最終品質、總成本與人工介入分鐘比較 Neon、Sol 和 Astra。"
+          ],
+          "done": "只有同一驗收規則顯示更好的交付結果，才更改預設模型。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 與機器人",
+          "title": "補齊營運分母",
+          "why": "里程、巡檢次數與任務成功率建立了基線，卻沒有說明人工接管和成本。",
+          "steps": [
+            "把新加坡數據保留為 GlobalFoundries 披露。",
+            "索取每千次巡檢的人工接管次數與完整成本。"
+          ],
+          "done": "Atlas 試驗必須與 Spot 營運數據分開記錄。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本流",
+          "title": "等待三個完整資本交易日",
+          "why": "完整 ETF 數據和穩定幣供應仍指向廣泛收縮。",
+          "steps": [
+            "排除 11 月 18 日尚未填報的 ETF 欄位。",
+            "連續追蹤三個完整交易日：BTC 與 ETH 合計流入為正，穩定幣增長也為正。"
+          ],
+          "done": "三項條件同時成立，才升級為初步回流。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣、金融科技與支付",
+          "title": "在獎勵結束後測借款",
+          "why": "金庫 TVL 說明供給，不等於未償貸款或自然需求。",
+          "steps": [
+            "凍結活動 TVL 與獎勵金額作為背景。",
+            "獎勵結束後第 30 天記錄 NVDAx 抵押貸款、清算損失與供應方淨收益。"
+          ],
+          "done": "只有補貼後的使用與損失證據，才能升級產品採用判斷。"
+        },
+        {
+          "signal": 5,
+          "domain": "內容與可見度",
+          "title": "發布獨立審查協議",
+          "why": "共享上下文加快協作，也可能傳播同一個未經核實的說法。",
+          "steps": [
+            "在 Sol 獨立事實與語境檢查 PASS 後發布 Astra 原文。",
+            "把 LinkedIn 衍生稿歸檔，留給 Robin 手動使用。"
+          ],
+          "done": "四語 canonical 文章保留來源、反例與人工協調成本。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基礎設施",
+          "title": "把融資拆成獨立層次核對",
+          "why": "合約價值、融資額度與已到位現金不能互換。",
+          "steps": [
+            "追蹤首期 65MW 的實際現金與專案融資缺口。",
+            "分別記錄客戶信用支持與首次服務日期。"
+          ],
+          "done": "每一道融資與交付門檻都有獨立證據後，首期專案才升級。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私募",
+          "title": "把 DNA 製造維持在 WATCH",
+          "why": "融資與產能擴張指向真實瓶頸，卻不能證明長期經濟性。",
+          "steps": [
+            "索取十二個月回購率與準時交付率。",
+            "補充免費訂單觸發率與訂單貢獻利潤率。"
+          ],
+          "done": "四項營運指標齊全後，才升級到 INVESTIGATE。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場與 AI 系統",
+          "title": "等待首個付費權重授權案例",
+          "why": "客戶特定評估說明可能性，不能代表普遍經濟性。",
+          "steps": [
+            "記錄完整部署與遷移成本。",
+            "追蹤同一客戶的 Azure 用量與續約狀態。"
+          ],
+          "done": "付費使用與續約證據同時出現，才確認價值捕獲。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー 2026年11月19日",
+      "description": "八つの行動でモデル修正、工場ロボット、資本フロー、担保、複数エージェント検証、インフラ金融、DNA製造、ウェイト提供を観測可能なゲートへ変える。",
+      "centralJudgment": "今日の境界は、魅力的な見出しと、次に必要な独立した完了証拠を分けることだ。",
+      "fieldLine": "八つのシグナル。シグナル5は、合意にも出典が必要な理由を扱う本日の Action Item へ続く。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "フロンティアモデルとエージェント",
+          "title": "順位ではなく修正対応を検証する",
+          "why": "途中の条件変更への適応は、検証済みの納品結果を改善して初めて価値を持つ。",
+          "steps": [
+            "要件変更の記録がある過去の仕事を一件固定する。",
+            "最終品質、総費用、人の介入時間で Neon、Sol、Astra を比較する。"
+          ],
+          "done": "同じ合格条件で納品結果が改善した場合のみ既定モデルを変える。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AIとロボティクス",
+          "title": "運用の分母を補う",
+          "why": "距離、点検回数、任務成功率は基準になるが、人の引き継ぎと費用は分からない。",
+          "steps": [
+            "シンガポールの数字を GlobalFoundries の開示として保存する。",
+            "点検千回当たりの人の引き継ぎ回数と総費用を求める。"
+          ],
+          "done": "Atlas の試験は Spot の運用実績と分けて記録する。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資本フロー",
+          "title": "完全な三取引日を待つ",
+          "why": "完全な ETF データとステーブルコイン供給は、なお幅広い縮小を示す。",
+          "steps": [
+            "11月18日の未報告 ETF 欄を除外する。",
+            "BTC と ETH の合計流入、ステーブルコイン成長が三取引日連続でプラスか追う。"
+          ],
+          "done": "三条件がそろった場合のみ暫定的な再流入へ引き上げる。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコイン、FinTech、決済",
+          "title": "報奨終了後の借入を測る",
+          "why": "金庫の TVL は供給を示すが、融資残高や自然需要ではない。",
+          "steps": [
+            "キャンペーン TVL と報奨額を背景として固定する。",
+            "終了30日後に NVDAx 担保融資、清算損失、供給者の純利回りを記録する。"
+          ],
+          "done": "報奨後の利用と損失の証拠がそろって初めて採用判断を上げる。"
+        },
+        {
+          "signal": 5,
+          "domain": "コンテンツと可視性",
+          "title": "独立検証の手順を公開する",
+          "why": "文脈の共有は協力を速める一方、未確認の主張も全体へ広げる。",
+          "steps": [
+            "Sol の独立した事実・文脈チェックが PASS した Astra 原文を公開する。",
+            "LinkedIn 派生稿は Robin の手動利用向けに保管する。"
+          ],
+          "done": "四言語の canonical 記事が出典、反例、人の調整費用を保存する。"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラ",
+          "title": "資金調達を別々の層で照合する",
+          "why": "契約価値、調達枠、実際の現金は同じ数字ではない。",
+          "steps": [
+            "最初の 65MW の実入金とプロジェクト融資不足を追う。",
+            "顧客の信用補完と初回サービス日を別々に記録する。"
+          ],
+          "done": "各資金・納品ゲートに固有の証拠がそろってから第一期を進める。"
+        },
+        {
+          "signal": 7,
+          "domain": "レイトステージ未公開市場",
+          "title": "DNA 製造を WATCH に保つ",
+          "why": "資金と能力拡大はボトルネックを示すが、持続的な経済性は証明しない。",
+          "steps": [
+            "12カ月の再注文率と納期遵守率を求める。",
+            "無料注文の発生率と注文単位の貢献利益率を加える。"
+          ],
+          "done": "四つの運用指標がそろった場合のみ INVESTIGATE へ上げる。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開株式とAIシステム",
+          "title": "最初の有料ウェイト案件を待つ",
+          "why": "顧客別評価は可能性を示すだけで、一般的な経済性ではない。",
+          "steps": [
+            "導入と移行の総費用を記録する。",
+            "同じ顧客の Azure 利用量と更新状況を追う。"
+          ],
+          "done": "有料利用と更新の証拠が同時に届いて初めて価値獲得を確認する。"
+        }
+      ]
+    }
+  }
+}
