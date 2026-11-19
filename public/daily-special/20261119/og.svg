@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">What Spot's factory rounds really tell us</title>
+  <desc id="desc">An inspection route with several measurement points and the figures 90,000 plus and 99 percent.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f5f1e9"/><stop offset="1" stop-color="#e7dfd0"/></linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#1b2b2f" stroke-opacity=".07"/></pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#paper)"/><rect width="1200" height="630" fill="url(#grid)"/>
+  <text x="76" y="78" fill="#a85136" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="4">DAILY SPECIAL · SIGNAL 2</text>
+  <text x="76" y="164" fill="#16282d" font-family="Georgia, 'Times New Roman', serif" font-size="56">What Spot’s factory</text>
+  <text x="76" y="228" fill="#16282d" font-family="Georgia, 'Times New Roman', serif" font-size="56">rounds really tell us</text>
+  <path d="M82 354 C210 236 340 250 456 352 S684 474 816 330 S1018 262 1114 330" fill="none" stroke="#1c5963" stroke-width="9" stroke-linecap="round"/>
+  <g fill="#f8f5ee" stroke="#c15d3d" stroke-width="6"><circle cx="170" cy="295" r="16"/><circle cx="330" cy="281" r="16"/><circle cx="480" cy="370" r="16"/><circle cx="664" cy="424" r="16"/><circle cx="837" cy="315" r="16"/><circle cx="1036" cy="294" r="16"/></g>
+  <text x="76" y="526" fill="#16282d" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700">90,000+ / 99%</text>
+  <text x="76" y="570" fill="#59696c" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="2">INSPECTIONS · MISSION SUCCESS · HUMAN HELP · COST</text>
+</svg>

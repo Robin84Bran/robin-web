@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Mission, inspection, takeover and cost</title>
+  <desc id="desc">A restrained map of an inspection route passing measurement points inside a semiconductor factory.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4f0e7"/>
+      <stop offset="1" stop-color="#e7e0d2"/>
+    </linearGradient>
+    <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse">
+      <path d="M 56 0 L 0 0 0 56" fill="none" stroke="#1b2b2f" stroke-opacity=".07" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#1a2b30" flood-opacity=".12"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#paper)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <g opacity=".22" fill="#c96c4a">
+    <circle cx="136" cy="138" r="4"/><circle cx="1464" cy="762" r="4"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="110" y="108" width="1380" height="684" rx="18" fill="#f9f7f1" stroke="#21363b" stroke-opacity=".18"/>
+  </g>
+  <g transform="translate(180 170)">
+    <text x="0" y="0" fill="#a85136" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="4">DAILY SPECIAL · SIGNAL 2</text>
+    <text x="0" y="74" fill="#16282d" font-family="Georgia, 'Times New Roman', serif" font-size="62" font-weight="400">What the route leaves out</text>
+    <text x="0" y="118" fill="#4f6266" font-family="Arial, Helvetica, sans-serif" font-size="22">Mission success is one layer. Inspection quality, human help and cost are three more.</text>
+  </g>
+  <g transform="translate(220 410)">
+    <path d="M0 160 C160 18 310 38 450 154 S730 290 900 130 S1080 52 1160 112" fill="none" stroke="#1c5963" stroke-width="10" stroke-linecap="round"/>
+    <path d="M0 160 C160 18 310 38 450 154 S730 290 900 130 S1080 52 1160 112" fill="none" stroke="#d5e0de" stroke-width="3" stroke-linecap="round" stroke-dasharray="3 23"/>
+    <g fill="#f9f7f1" stroke="#c15d3d" stroke-width="6">
+      <circle cx="90" cy="96" r="18"/><circle cx="252" cy="65" r="18"/><circle cx="428" cy="139" r="18"/>
+      <circle cx="610" cy="231" r="18"/><circle cx="792" cy="205" r="18"/><circle cx="936" cy="101" r="18"/><circle cx="1110" cy="91" r="18"/>
+    </g>
+    <g fill="#16282d" font-family="Arial, Helvetica, sans-serif">
+      <text x="0" y="280" font-size="88" font-weight="700">90,000+</text>
+      <text x="0" y="318" font-size="18" letter-spacing="3">REPORTED INSPECTIONS</text>
+      <text x="505" y="280" font-size="88" font-weight="700">99%</text>
+      <text x="505" y="318" font-size="18" letter-spacing="3">REPORTED MISSION SUCCESS</text>
+      <text x="900" y="280" font-size="88" font-weight="700">2</text>
+      <text x="900" y="318" font-size="18" letter-spacing="3">MISSING DENOMINATORS</text>
+    </g>
+  </g>
+  <text x="180" y="750" fill="#59696c" font-family="Arial, Helvetica, sans-serif" font-size="17" letter-spacing="2">TAKEOVERS PER 1,000 INSPECTIONS · FULLY LOADED COST PER SUCCESS</text>
+</svg>
