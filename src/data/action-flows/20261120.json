@@ -1,0 +1,528 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-20",
+  "updated": "2026-11-20",
+  "signalCount": 8,
+  "briefingPath": "/ouroboros/202611/20261120/",
+  "actionItemPath": "/ouroboros/202611/20261120/action_item/",
+  "hero": "/daily-briefing/20261120/hero.webp",
+  "ogImage": "/daily-briefing/20261120/og.webp",
+  "actionHero": "/action-item/20261120/hero.webp",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-18",
+      "visualLabel": "The 16-pair offline result and provider-run production tests do not establish general autonomous learning or RobinOS outcomes.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.perplexity.ai/en-GB/hub/blog/self-improving-skills"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-19",
+      "visualLabel": "No named production customer, reproducible cost definition or intervention dataset was disclosed.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.aptiv.com/en/newsroom/article/aptiv-introduces-next-generation-adas-platform-purpose-built-for-the-ai-era"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-17",
+      "visualLabel": "Trading was described as exploration; price, capital invested and revenue conversion were undisclosed.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.coingecko.com/learn/next-chapter-of-growth-solana-foundation"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://solana.com/news/coingecko-backed-by-solana-foundation"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-19",
+      "visualLabel": "Listings do not establish direct share ownership, executable depth, price convergence or continuous redemption.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.gate.com/announcements/article/102882"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://www.lbank.info/support/articles/2123455946817544192"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "deepDiveAvailable": true,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "visualValue": "2026-11-18",
+      "visualLabel": "No controlled RobinOS study has yet measured whether a retained skill improves quality, cost and boundary adherence.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.perplexity.ai/en-GB/hub/blog/self-improving-skills"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://github.com/Robin84Bran/honest-agent/blob/main/v0.3/PROTOCOL.md"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-19",
+      "visualLabel": "Public proposal and lease text, financing and energized capacity remain unavailable.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://searchlightnm.org/navajo-nation-council-to-weigh-data-center-in-san-juan-county/"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-18",
+      "visualLabel": "Valuation, preferences, revenue, allocation and clinical efficacy are unavailable.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://vitrivaxbio.com/vitrivax-announces-87-million-series-c-financing-to-advance-lyme-disease-vaccine-candidate/"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-18",
+      "visualLabel": "The announcement does not establish a new 18A customer, contract value or external foundry revenue.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.intel.com/content/www/us/en/newsroom/news/corporate/microsoft-azure-infrastructure-collaboration.html"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, November 20, 2026",
+      "description": "Eight bounded actions turn today’s evidence into observable next gates.",
+      "centralJudgment": "A procedure earns durable authority only through replay, boundary checks and reversibility.",
+      "fieldLine": "Eight signals. Signal 5 opens today’s Action Item on procedural memory.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Remembering how to work, not just what you said",
+          "why": "Inference / Why Robin should care: RobinOS’s durable advantage could lie in retained, testable procedural memory. The valuable architecture is proposal, validation and activation—not turning one lucky success into a permanent rule.",
+          "steps": [
+            "One Action: Compare one recurring RobinOS workflow before and after a skill revision on identical historical tasks, retaining the revision only if quality, cost and intervention improve overall.",
+            "One Action: Compare one recurring RobinOS workflow before and after a skill revision on identical historical tasks, retaining the revision only if quality, cost and intervention improve overall."
+          ],
+          "done": "One Action: Compare one recurring RobinOS workflow before and after a skill revision on identical historical tasks, retaining the revision only if quality, cost and intervention improve overall."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "“Half the cost” remains a claim to test",
+          "why": "Inference / Why Robin should care: This pass verified no new operating evidence within seven days sufficient to replace already-covered cases, so PRISM remains a watchpoint. Supply-chain integration, validation costs and delivered vehicles will explain US–China competitiveness better than platform branding.",
+          "steps": [
+            "One Action: Require a named production program with system costs, operating domain and driver-intervention data before accepting the cost claim.",
+            "One Action: Require a named production program with system costs, operating domain and driver-intervention data before accepting the cost claim."
+          ],
+          "done": "One Action: Require a named production program with system costs, operating domain and driver-intervention data before accepting the cost claim."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows and Web3 Health",
+          "title": "CoinGecko moves toward participation, beyond discovery",
+          "why": "Inference / Why Robin should care: This evidences competition for distribution inside crypto, not fresh industry inflows. “Capital follows attention” becomes testable through conversion from research to transactions and recurring revenue, while preserving cross-chain data credibility.",
+          "steps": [
+            "One Action: Track conversion and fee disclosures for the first live trading feature, separating monetized existing traffic from genuinely new users.",
+            "One Action: Track conversion and fee disclosures for the first live trading feature, separating monetized existing traffic from genuinely new users."
+          ],
+          "done": "One Action: Track conversion and fee disclosures for the first live trading feature, separating monetized existing traffic from genuinely new users."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins, FinTech and Token Rails",
+          "title": "IPO-day exposure reaches a USDT trading pair",
+          "why": "Inference / Why Robin should care: The interesting change is distribution speed and trading-hour boundaries. This is secondary access to an Ondo product, not Anthropic directly issuing shares or allocating an IPO. Announcements alone establish neither executable depth nor sustained activity.",
+          "steps": [
+            "One Action: During the first US-market weekend closure, observe whether executable spreads and actual minting/redemption keep ANTON pricing convergent.",
+            "One Action: During the first US-market weekend closure, observe whether executable spreads and actual minting/redemption keep ANTON pricing convergent."
+          ],
+          "done": "One Action: During the first US-market weekend closure, observe whether executable spreads and actual minting/redemption keep ANTON pricing convergent."
+        },
+        {
+          "signal": 5,
+          "domain": "Content and Visibility",
+          "title": "Who checks what the agent learned?",
+          "why": "Inference / Why Robin should care: This connects directly with Honest Agent and your AI Council work. SunTV’s OPC editorial experiment can invite counterexamples and retain revisions around a distinctive, source-grounded question.",
+          "steps": [
+            "One Action: One separate publishing assignment:",
+            "One Action: One separate publishing assignment:"
+          ],
+          "done": "One Action: One separate publishing assignment:"
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure",
+          "title": "A data center is also a local capital agreement",
+          "why": "Inference / Why Robin should care: Token Factories require enforceable arrangements over land, local benefits and capital responsibilities alongside power. Your relevant contribution is evaluating that complex financing and partnership structure, rather than routine permitting or construction management.",
+          "steps": [
+            "One Action: Examine the public proposal and leases when released for explicit local benefits, infrastructure-payment responsibilities and exit provisions.",
+            "One Action: Examine the public proposal and leases when released for explicit local benefits, infrastructure-payment responsibilities and exit provisions."
+          ],
+          "done": "One Action: Examine the public proposal and leases when released for explicit local benefits, infrastructure-payment responsibilities and exit provisions."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-stage Private Markets",
+          "title": "VitriVax moves from technology platform to vaccine developer",
+          "why": "Inference / Why Robin should care: Owning clinical assets changes a platform’s capital intensity and risk. No verified AI contribution is claimed. Valuation, preferences, revenue, accessible allocation and detailed capital expenditure are unknown; clinical safety, efficacy and manufacturing scale are major risks. Licensing, acquisition or IPO are inferred exits. WATCH.",
+          "steps": [
+            "One Action: Reassess upon registration of the first human trial, examining dose, safety and immunogenicity endpoints.",
+            "One Action: Reassess upon registration of the first human trial, examining dose, safety and immunogenicity endpoints."
+          ],
+          "done": "One Action: Reassess upon registration of the first human trial, examining dose, safety and immunogenicity endpoints."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities and AI Systems",
+          "title": "Intel’s evidence is packaging, not an imagined process-node victory",
+          "why": "Inference / Why Robin should care: Packaging, CPUs and memory systems can capture value independently of leading-edge process dominance.",
+          "steps": [
+            "One Action: Track the Azure EMIB program’s first production date and contribution to external Intel Foundry revenue to establish cash-flow conversion.",
+            "One Action: Track the Azure EMIB program’s first production date and contribution to external Intel Foundry revenue to establish cash-flow conversion."
+          ],
+          "done": "One Action: Track the Azure EMIB program’s first production date and contribution to external Intel Foundry revenue to establish cash-flow conversion."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年11月20日",
+      "description": "八项有边界的行动，把今天的证据转成可观察的下一道门槛。",
+      "centralJudgment": "一套做法只有通过回放、边界核验并可回滚，才值得长期保留。",
+      "fieldLine": "八个信号。信号5展开今天关于程序性记忆的行动文章。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与代理",
+          "title": "代理开始记住“怎么做”，而不只是“你说过什么”",
+          "why": "推断／Robin为何在意： RobinOS 的长期优势可能来自可保留、可检验的程序性记忆。这里最有价值的设计是“提出修改—验证—激活”，而不是允许代理把一次偶然成功直接写成永久规则。",
+          "steps": [
+            "One Action： 挑一个反复执行的 RobinOS 流程，对同一历史任务集比较技能修改前后的交付质量、成本与人类介入，只有净改善才保留新版。",
+            "One Action： 挑一个反复执行的 RobinOS 流程，对同一历史任务集比较技能修改前后的交付质量、成本与人类介入，只有净改善才保留新版。"
+          ],
+          "done": "One Action： 挑一个反复执行的 RobinOS 流程，对同一历史任务集比较技能修改前后的交付质量、成本与人类介入，只有净改善才保留新版。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 与机器人",
+          "title": "“成本减半”目前仍是待验证命题",
+          "why": "推断／Robin为何在意： 本次七日窗口内，未核实到可替代已报道案例的新运营证据，因此把它保留为观察点，不升级为商业突破。比较中美物理 AI 时，供应链集成、验证成本和车辆交付，比平台名称更有解释力。",
+          "steps": [
+            "One Action： 等待首个具名量产项目披露 PRISM 的系统成本、运行范围及驾驶员接管数据，再判断“成本减半”是否成立。",
+            "One Action： 等待首个具名量产项目披露 PRISM 的系统成本、运行范围及驾驶员接管数据，再判断“成本减半”是否成立。"
+          ],
+          "done": "One Action： 等待首个具名量产项目披露 PRISM 的系统成本、运行范围及驾驶员接管数据，再判断“成本减半”是否成立。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流与 Web3 健康",
+          "title": "CoinGecko 的下一步：从发现资产到参与交易",
+          "why": "推断／Robin为何在意： 这是行业内部争夺分发入口的证据，不是新增资金流入的证明。“资本跟随注意力”的假设，在这里有了可检验路径：研究入口能否转化为真实交易与持续收入，同时维持跨链数据可信度？",
+          "steps": [
+            "One Action： 跟踪首个上线交易功能的转化率与收费披露，区分现有流量商业化和真正新增用户。",
+            "One Action： 跟踪首个上线交易功能的转化率与收费披露，区分现有流量商业化和真正新增用户。"
+          ],
+          "done": "One Action： 跟踪首个上线交易功能的转化率与收费披露，区分现有流量商业化和真正新增用户。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币、金融科技与代币轨道",
+          "title": "IPO 当天，股票敞口已经进入 USDT 交易对",
+          "why": "推断／Robin为何在意： 有趣的是上市分发速度与交易时间边界正在变化，而非又多一个股票代码。这是 Ondo 产品的二级交易入口，不能等同 Anthropic 直接发股或 IPO 获配；公告也尚不能证明可执行深度或持续成交。",
+          "steps": [
+            "One Action： 观察美股首次周末休市时，ANTON 的可执行买卖价差与实际申赎能否让价格保持收敛。",
+            "One Action： 观察美股首次周末休市时，ANTON 的可执行买卖价差与实际申赎能否让价格保持收敛。"
+          ],
+          "done": "One Action： 观察美股首次周末休市时，ANTON 的可执行买卖价差与实际申赎能否让价格保持收敛。"
+        },
+        {
+          "signal": 5,
+          "domain": "内容与可见度",
+          "title": "代理学会了流程，谁来检查它学对没有？",
+          "why": "推断／Robin为何在意： 这与 Honest Agent 和你的 AI Council 研究直接相连，也适合 SunTV 的 OPC 编辑实验：用可核查的事件提出独特问题，让读者参与寻找反例，并保留修订过程。",
+          "steps": [
+            "One Action： 一个独立发布任务：",
+            "One Action： 一个独立发布任务："
+          ],
+          "done": "One Action： 一个独立发布任务："
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基础设施",
+          "title": "一座数据中心，首先也是一项地方资本协议",
+          "why": "推断／Robin为何在意： Token Factory 不只需要电力，还需要土地、地方收益与资本责任形成可执行安排。对你的职业路径，相关价值是评估这种复杂资本结构和合作条件，而非承担常规许可或驻场建设管理。",
+          "steps": [
+            "One Action： 等待公开议案和租约文本，核对地方收益、基础设施付款责任与退出条款是否明确。",
+            "One Action： 等待公开议案和租约文本，核对地方收益、基础设施付款责任与退出条款是否明确。"
+          ],
+          "done": "One Action： 等待公开议案和租约文本，核对地方收益、基础设施付款责任与退出条款是否明确。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私募",
+          "title": "VitriVax：从疫苗技术平台走向自有候选药",
+          "why": "推断／Robin为何在意： 值得观察的是平台公司承担自有临床资产后，资本强度与风险如何变化；并无已核实的 AI 技术贡献，不强贴 AI 标签。估值、优先权、收入、可参与份额及具体资本开支均未知；临床、安全性与制造放大是主要风险，授权、收购或 IPO 是潜在退出推断。WATCH。",
+          "steps": [
+            "One Action： 以首个人体试验注册及其剂量、安全性和免疫原性终点作为下一次重新评估节点。",
+            "One Action： 以首个人体试验注册及其剂量、安全性和免疫原性终点作为下一次重新评估节点。"
+          ],
+          "done": "One Action： 以首个人体试验注册及其剂量、安全性和免疫原性终点作为下一次重新评估节点。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场与 AI 系统",
+          "title": "Intel 的真实信号是封装订单，不是想象中的制程胜利",
+          "why": "推断／Robin为何在意：  先进封装、CPU 和内存系统可以分别捕获价值，不必等待最先进制程全面胜出。",
+          "steps": [
+            "One Action： 跟踪 Azure EMIB 项目首次量产时间与 Intel Foundry 对外收入贡献，验证合作是否转成可见现金流。",
+            "One Action： 跟踪 Azure EMIB 项目首次量产时间与 Intel Foundry 对外收入贡献，验证合作是否转成可见现金流。"
+          ],
+          "done": "One Action： 跟踪 Azure EMIB 项目首次量产时间与 Intel Foundry 对外收入贡献，验证合作是否转成可见现金流。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年11月20日",
+      "description": "八項有邊界的行動，把今天的證據轉成可觀察的下一道門檻。",
+      "centralJudgment": "一套做法只有通過回放、邊界核驗並可回滾，才值得長期保留。",
+      "fieldLine": "八個訊號。訊號5展開今天關於程序性記憶的行動文章。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與代理",
+          "title": "代理開始記住“怎麼做”，而不只是“你說過什麼”",
+          "why": "推斷／Robin爲何在意： RobinOS 的長期優勢可能來自可保留、可檢驗的程序性記憶。這裏最有價值的設計是“提出修改—驗證—激活”，而不是允許代理把一次偶然成功直接寫成永久規則。",
+          "steps": [
+            "One Action： 挑一個反覆執行的 RobinOS 流程，對同一歷史任務集比較技能修改前後的交付質量、成本與人類介入，只有淨改善才保留新版。",
+            "One Action： 挑一個反覆執行的 RobinOS 流程，對同一歷史任務集比較技能修改前後的交付質量、成本與人類介入，只有淨改善才保留新版。"
+          ],
+          "done": "One Action： 挑一個反覆執行的 RobinOS 流程，對同一歷史任務集比較技能修改前後的交付質量、成本與人類介入，只有淨改善才保留新版。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 與機器人",
+          "title": "“成本減半”目前仍是待驗證命題",
+          "why": "推斷／Robin爲何在意： 本次七日窗口內，未覈實到可替代已報道案例的新運營證據，因此把它保留爲觀察點，不升級爲商業突破。比較中美物理 AI 時，供應鏈集成、驗證成本和車輛交付，比平臺名稱更有解釋力。",
+          "steps": [
+            "One Action： 等待首個具名量產項目披露 PRISM 的系統成本、運行範圍及駕駛員接管數據，再判斷“成本減半”是否成立。",
+            "One Action： 等待首個具名量產項目披露 PRISM 的系統成本、運行範圍及駕駛員接管數據，再判斷“成本減半”是否成立。"
+          ],
+          "done": "One Action： 等待首個具名量產項目披露 PRISM 的系統成本、運行範圍及駕駛員接管數據，再判斷“成本減半”是否成立。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本流與 Web3 健康",
+          "title": "CoinGecko 的下一步：從發現資產到參與交易",
+          "why": "推斷／Robin爲何在意： 這是行業內部爭奪分發入口的證據，不是新增資金流入的證明。“資本跟隨注意力”的假設，在這裏有了可檢驗路徑：研究入口能否轉化爲真實交易與持續收入，同時維持跨鏈數據可信度？",
+          "steps": [
+            "One Action： 跟蹤首個上線交易功能的轉化率與收費披露，區分現有流量商業化和真正新增用戶。",
+            "One Action： 跟蹤首個上線交易功能的轉化率與收費披露，區分現有流量商業化和真正新增用戶。"
+          ],
+          "done": "One Action： 跟蹤首個上線交易功能的轉化率與收費披露，區分現有流量商業化和真正新增用戶。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣、金融科技與代幣軌道",
+          "title": "IPO 當天，股票敞口已經進入 USDT 交易對",
+          "why": "推斷／Robin爲何在意： 有趣的是上市分發速度與交易時間邊界正在變化，而非又多一個股票代碼。這是 Ondo 產品的二級交易入口，不能等同 Anthropic 直接發股或 IPO 獲配；公告也尚不能證明可執行深度或持續成交。",
+          "steps": [
+            "One Action： 觀察美股首次週末休市時，ANTON 的可執行買賣價差與實際申贖能否讓價格保持收斂。",
+            "One Action： 觀察美股首次週末休市時，ANTON 的可執行買賣價差與實際申贖能否讓價格保持收斂。"
+          ],
+          "done": "One Action： 觀察美股首次週末休市時，ANTON 的可執行買賣價差與實際申贖能否讓價格保持收斂。"
+        },
+        {
+          "signal": 5,
+          "domain": "內容與可見度",
+          "title": "代理學會了流程，誰來檢查它學對沒有？",
+          "why": "推斷／Robin爲何在意： 這與 Honest Agent 和你的 AI Council 研究直接相連，也適合 SunTV 的 OPC 編輯實驗：用可覈查的事件提出獨特問題，讓讀者參與尋找反例，並保留修訂過程。",
+          "steps": [
+            "One Action： 一個獨立發佈任務：",
+            "One Action： 一個獨立發佈任務："
+          ],
+          "done": "One Action： 一個獨立發佈任務："
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基礎設施",
+          "title": "一座數據中心，首先也是一項地方資本協議",
+          "why": "推斷／Robin爲何在意： Token Factory 不只需要電力，還需要土地、地方收益與資本責任形成可執行安排。對你的職業路徑，相關價值是評估這種複雜資本結構和合作條件，而非承擔常規許可或駐場建設管理。",
+          "steps": [
+            "One Action： 等待公開議案和租約文本，覈對地方收益、基礎設施付款責任與退出條款是否明確。",
+            "One Action： 等待公開議案和租約文本，覈對地方收益、基礎設施付款責任與退出條款是否明確。"
+          ],
+          "done": "One Action： 等待公開議案和租約文本，覈對地方收益、基礎設施付款責任與退出條款是否明確。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私募",
+          "title": "VitriVax：從疫苗技術平臺走向自有候選藥",
+          "why": "推斷／Robin爲何在意： 值得觀察的是平臺公司承擔自有臨牀資產後，資本強度與風險如何變化；並無已覈實的 AI 技術貢獻，不強貼 AI 標籤。估值、優先權、收入、可參與份額及具體資本開支均未知；臨牀、安全性與製造放大是主要風險，授權、收購或 IPO 是潛在退出推斷。WATCH。",
+          "steps": [
+            "One Action： 以首個人體試驗註冊及其劑量、安全性和免疫原性終點作爲下一次重新評估節點。",
+            "One Action： 以首個人體試驗註冊及其劑量、安全性和免疫原性終點作爲下一次重新評估節點。"
+          ],
+          "done": "One Action： 以首個人體試驗註冊及其劑量、安全性和免疫原性終點作爲下一次重新評估節點。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場與 AI 系統",
+          "title": "Intel 的真實信號是封裝訂單，不是想象中的製程勝利",
+          "why": "推斷／Robin爲何在意：  先進封裝、CPU 和內存系統可以分別捕獲價值，不必等待最先進製程全面勝出。",
+          "steps": [
+            "One Action： 跟蹤 Azure EMIB 項目首次量產時間與 Intel Foundry 對外收入貢獻，驗證合作是否轉成可見現金流。",
+            "One Action： 跟蹤 Azure EMIB 項目首次量產時間與 Intel Foundry 對外收入貢獻，驗證合作是否轉成可見現金流。"
+          ],
+          "done": "One Action： 跟蹤 Azure EMIB 項目首次量產時間與 Intel Foundry 對外收入貢獻，驗證合作是否轉成可見現金流。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー 2026年11月20日",
+      "description": "八つの限定された行動で、本日の証拠を観測可能な次のゲートへ変える。",
+      "centralJudgment": "手順が持続的な権限を得るには、再実行、境界確認、可逆性が必要だ。",
+      "fieldLine": "八つのシグナル。シグナル5は手続き記憶を扱う本日のAction Itemへ続く。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "フロンティアモデルとエージェント",
+          "title": "発言だけでなく、仕事の進め方を記憶する",
+          "why": "推論／Robinにとっての意味： RobinOSの持続的な強みは、保持し検証できる手続き記憶にあるかもしれない。重要なのは提案、検証、有効化の設計であり、一度の幸運な成功を恒久的な規則にしないことだ。",
+          "steps": [
+            "One Action： 繰り返し行うRobinOSの作業を一つ選び、同一の過去タスクでスキル改訂前後の品質、費用、人間の介入を比較し、総合的に改善した場合だけ改訂を残す。",
+            "One Action： 繰り返し行うRobinOSの作業を一つ選び、同一の過去タスクでスキル改訂前後の品質、費用、人間の介入を比較し、総合的に改善した場合だけ改訂を残す。"
+          ],
+          "done": "One Action： 繰り返し行うRobinOSの作業を一つ選び、同一の過去タスクでスキル改訂前後の品質、費用、人間の介入を比較し、総合的に改善した場合だけ改訂を残す。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AIとロボティクス",
+          "title": "「コスト半減」は検証待ちの主張",
+          "why": "推論／Robinにとっての意味： この7日間に、既報の事例に代わる新たな運用実績は確認できず、PRISMは引き続き観察対象である。米中の競争力は、製品名よりサプライチェーン統合、検証費用、納車実績によってよく説明できる。",
+          "steps": [
+            "One Action： コスト主張を認める前に、システム費用、運行設計領域、ドライバー介入データを伴う、顧客名を明示した量産プログラムを確認する。",
+            "One Action： コスト主張を認める前に、システム費用、運行設計領域、ドライバー介入データを伴う、顧客名を明示した量産プログラムを確認する。"
+          ],
+          "done": "One Action： コスト主張を認める前に、システム費用、運行設計領域、ドライバー介入データを伴う、顧客名を明示した量産プログラムを確認する。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資本フローとWeb3",
+          "title": "CoinGeckoは発見から取引への参加を探る",
+          "why": "推論／Robinにとっての意味： これは暗号資産業界内での流通経路の争奪を示すもので、新規資金の流入を示すものではない。「資本は注目を追う」という仮説は、調査から取引と継続収益への転換で検証できる。その際、チェーンをまたぐデータの信頼性を保つ必要がある。",
+          "steps": [
+            "One Action： 最初に稼働する取引機能の転換率と手数料開示を追い、既存トラフィックの収益化と真の新規ユーザーを区別する。",
+            "One Action： 最初に稼働する取引機能の転換率と手数料開示を追い、既存トラフィックの収益化と真の新規ユーザーを区別する。"
+          ],
+          "done": "One Action： 最初に稼働する取引機能の転換率と手数料開示を追い、既存トラフィックの収益化と真の新規ユーザーを区別する。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコイン、FinTech、トークン基盤",
+          "title": "IPO当日のエクスポージャーがUSDT取引ペアへ",
+          "why": "推論／Robinにとっての意味： 注目点は流通の速さと取引時間の境界である。これはOndo商品の二次的なアクセス手段で、Anthropicが直接株式を発行したりIPO株を割り当てたりするものではない。発表だけでは実際に約定できる板の厚みや継続的な取引は分からない。",
+          "steps": [
+            "One Action： 米国市場が最初に週末休場する間、実際に約定可能なスプレッドと現実の発行・償還によってANTON価格が収束するかを観察する。",
+            "One Action： 米国市場が最初に週末休場する間、実際に約定可能なスプレッドと現実の発行・償還によってANTON価格が収束するかを観察する。"
+          ],
+          "done": "One Action： 米国市場が最初に週末休場する間、実際に約定可能なスプレッドと現実の発行・償還によってANTON価格が収束するかを観察する。"
+        },
+        {
+          "signal": 5,
+          "domain": "コンテンツと可視性",
+          "title": "エージェントが覚えた手順を誰が検証するのか",
+          "why": "推論／Robinにとっての意味： Honest AgentとあなたのAI Councilの仕事に直接つながる。SunTVのOPC編集実験では、根拠のある独自の問いを通じて反例を募り、改訂の履歴を残せる。",
+          "steps": [
+            "One Action： 独立した一件の出版課題を設定する。",
+            "One Action： 独立した一件の出版課題を設定する。"
+          ],
+          "done": "One Action： 独立した一件の出版課題を設定する。"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラ",
+          "title": "データセンターは地域との資本協定でもある",
+          "why": "推論／Robinにとっての意味： Token Factoriesには電力だけでなく、土地、地元の利益、資本上の責任について執行可能な取り決めが必要だ。あなたの強みは日常的な許認可や建設管理より、複雑な資金調達と提携構造の評価にある。",
+          "steps": [
+            "One Action： 公開された提案と賃貸契約を確認し、地元の利益、インフラ費用の支払責任、撤退条項が明記されているか調べる。",
+            "One Action： 公開された提案と賃貸契約を確認し、地元の利益、インフラ費用の支払責任、撤退条項が明記されているか調べる。"
+          ],
+          "done": "One Action： 公開された提案と賃貸契約を確認し、地元の利益、インフラ費用の支払責任、撤退条項が明記されているか調べる。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期未公開市場",
+          "title": "VitriVaxが技術基盤からワクチン開発企業へ",
+          "why": "推論／Robinにとっての意味： 臨床資産の保有は、プラットフォームの資本負担とリスクを変える。検証されたAIの貢献は主張されていない。評価額、優先権、収益、参加可能な配分、詳細な設備投資は不明で、臨床上の安全性、有効性、製造の拡大が主要リスクである。ライセンス供与、買収、IPOは推測上の出口である。WATCH。",
+          "steps": [
+            "One Action： 最初のヒト試験が登録された時点で、用量、安全性、免疫原性の評価項目を確認して再評価する。",
+            "One Action： 最初のヒト試験が登録された時点で、用量、安全性、免疫原性の評価項目を確認して再評価する。"
+          ],
+          "done": "One Action： 最初のヒト試験が登録された時点で、用量、安全性、免疫原性の評価項目を確認して再評価する。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開株式とAIシステム",
+          "title": "Intelの証拠は先端プロセスではなくパッケージング",
+          "why": "推論／Robinにとっての意味： パッケージング、CPU、メモリーシステムは、最先端プロセスで優位に立つかどうかとは別に価値を生み得る。",
+          "steps": [
+            "One Action： AzureのEMIBプログラムの初回量産時期とIntel Foundryの外部売上への寄与を追い、キャッシュフローへの転換を確かめる。",
+            "One Action： AzureのEMIBプログラムの初回量産時期とIntel Foundryの外部売上への寄与を追い、キャッシュフローへの転換を確かめる。"
+          ],
+          "done": "One Action： AzureのEMIBプログラムの初回量産時期とIntel Foundryの外部売上への寄与を追い、キャッシュフローへの転換を確かめる。"
+        }
+      ]
+    }
+  }
+}
