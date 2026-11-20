@@ -1,0 +1,320 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import data from '../../../data/constitutional-history-study.json';
+
+const path = '/research/constitutional-history/';
+const description = 'The council could count its recorded failures, but unreliable coding left all three blind predictions unknown. Plumbing dominated the classified records.';
+const schema = {
+  '@context': 'https://schema.org', '@type': 'Article',
+  '@id': `https://iamrobin.ai${path}#article`, headline: 'Constitutional History — Did the council learn?',
+  description, url: `https://iamrobin.ai${path}`, inLanguage: 'en', datePublished: '2026-11-20',
+  author: { '@id': 'https://www.tideisun.com/robin#robin-xie' },
+};
+const names: Record<string, string> = {
+  'work-or-proof':'Work or Proof?', 'signal-or-silence':'Signal or Silence', 'receipt-gap':'The Receipt Gap',
+  'bridge-or-bus':'Bridge or Bus?', 'three-rules-one-lunch':'Three Rules, One Lunch',
+  'useful-core':'The Useful Core', 'portable-self':'The Portable Self', 'one-door-many-hands':'One Door, Many Hands',
+};
+const starts = ['11:38','12:12','16:40','16:54','16:54','17:58','17:58','17:58'];
+const measures = [
+  { name:'Failure class', value:data.reliability.primary_class },
+  { name:'Detection stage', value:data.reliability.detected_stage },
+  { name:'Who caught it', value:data.reliability.detector },
+];
+const setup = [
+  ['8 overlapping studies', '63 records: 30 amendments + 33 findings'],
+  ['Two independent, blind coders', 'Fresh Codex + fresh Claude Sonnet'],
+  ['Frozen rulebook → citation check', 'Every nonmissing label needs a source quote'],
+  ['Reliability gate before reconciliation', 'κ ≥ 0.70 AND coverage ≥ 80% on all fields', 'Class · detection stage · who caught it'],
+  ['Frozen analysis, run once', 'Shuffled-order + constant-rate references'],
+];
+const workflow = [
+  ['Survey → protocol → review', 'Both agents agreed; Robin approved'],
+  ['Build stops → lead decisions', 'Source integrity, blinding and H3 reference rule'],
+  ['Freeze → push before coding', 'Robin reconfirmed the approved protocol'],
+  ['Collect independent labels', 'Codex first attempt empty; next attempt completed', 'D1 / D1.1: budget reservation and output ceiling'],
+  ['Admit citations → seal', 'D2 / D2.1: uncited labels become unknown', 'D3 / D3.1: recover the saved successful reply'],
+  ['Analyse once → judge → page', 'Reliability failed; blind predictions unknown'],
+  ['Robin reads → next question ↺', 'Any new coding needs a new exploratory version'],
+];
+const percent = (v: number) => `${Math.round(v * 100)}%`;
+const decimal = (v: number | null) => v === null ? 'Unavailable' : v.toFixed(3);
+---
+<BaseLayout title="Constitutional History — Research — Robin Xie" {path} {description} {schema} type="article">
+<article class="shell history-study">
+  <a class="quiet-link" href="/research/">← Research</a>
+  <header>
+    <p class="eyebrow">Empirical study · The council studies itself</p>
+    <h1>Constitutional History<br /><em>Did the council learn?</em></h1>
+    <p class="lead">Our records let us count the council’s failures, but the coders’ labels did not agree reliably enough, leaving the three blind predictions <strong>unknown</strong>.</p>
+    <p class="intro">Descriptively, plumbing—bugs in the running software or reply interface—made up about three quarters of classified failures, and its share grew over the programme.</p>
+  </header>
+
+  <section aria-labelledby="question-title">
+    <h2 id="question-title">Can a rulebook show that we learned?</h2>
+    <p>When something broke, our <a href="/research/council/">research council</a> wrote it down, corrected it and often added a rule. That history should be more useful than a polished constitution alone: it records why the rules exist.</p>
+    <p>But a new rule is not proof of improvement. Studies overlapped, the work changed, and our records captured some problems better than others. We needed a way to distinguish a learning story from evidence of learning.</p>
+    <p><strong>Did later studies need fewer corrections, did plumbing become less common, did failures recur less after a rule, and did Robin’s reading catch types the agents missed?</strong></p>
+  </section>
+
+  <section aria-labelledby="hypothesis-title">
+    <h2 id="hypothesis-title">The objective and the hypotheses</h2>
+    <p><strong>Objective:</strong> test whether the council’s recorded corrections support its claim to have learned.</p>
+    <ul class="hypotheses">
+      <li><strong>H1(a), known before registration:</strong> later-starting studies needed fewer recorded corrections. This is a description we already knew, so it receives no “held” verdict.</li>
+      <li><strong>H1(b), blind prediction:</strong> plumbing made up a smaller share of later studies’ corrections. It would hold if that share declined and passed the registered adjusted significance test.</li>
+      <li><strong>H2, blind prediction:</strong> a failure type came back less often after its first adopted rule. It would hold if the rate fell across enough reliably dated failure types and passed the adjusted test.</li>
+      <li><strong>H3, blind prediction:</strong> Robin’s reading caught failure types that the agents’ earlier checks missed. It would hold if independent studies showed genuinely new types after documented missed checks and passed the adjusted test.</li>
+    </ul>
+    <p id="predictions-title">We committed to those blind predictions before coding the records. All required reliable labels first; <strong>all are unknown</strong> because that requirement failed. The <a href="#pass-rules">exact pass rules</a> appear below the results.</p>
+  </section>
+
+  <section aria-labelledby="example-title">
+    <h2 id="example-title">What one test looks like</h2>
+    <div class="example">
+      <p class="eyebrow">A real record · Work or Proof?</p>
+      <blockquote>“the live page omitted the most intuitive baselines”</blockquote>
+      <p>The page compared a cheap screen plus an expensive check with random checking. It left out the obvious alternatives: let the cheap model check everything, or let the expensive model check everything. Robin, with Teddy, noticed while reading the delivered page.</p>
+      <p><strong>What the coder saw:</strong> the saved review describing the omission, the earlier agent acceptance and the resulting page rule, with dated supporting context.</p>
+      <dl>
+        <div><dt>Failure class</dt><dd>Measurement: a missing comparison made the evidence harder to interpret.</dd></div>
+        <div><dt>Stage</dt><dd>Read: the human principal was reading delivered work after agent checks.</dd></div>
+        <div><dt>Who caught it</dt><dd>Robin and Teddy jointly.</dd></div>
+        <div><dt>The rule it left</dt><dd>Every page must show the hypothesis, prediction outcome, and a table and figure with intuitive alternatives.</dd></div>
+      </dl>
+      <p>These are the <strong>Codex coder’s labels</strong>, illustrated rather than treated as agreed truth. Every nonmissing label needed a source locator, line span and decisive quotation; an uncited label became unknown. The other coder’s admitted stage and detector labels for this record were unknown.</p>
+      <p class="note">Source: the saved Work or Proof? page-omission review, quoted in the <a href="#example-source">source note</a>. This motivated the human-reading hypothesis; it is not independent confirmation of it.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="setup-title">
+    <h2 id="setup-title">How we tested the history</h2>
+    <p>We counted separately recorded corrections, including preventive changes and repeated dispositions. A record is not necessarily a new failure. Coders linked repeated accounts for the recurrence and human-reading tests.</p>
+    <figure class="diagram">
+      <svg viewBox="0 0 380 610" role="img" aria-labelledby="setup-svg-title setup-svg-desc">
+        <title id="setup-svg-title">Reliable coding had to come before testing learning.</title>
+        <desc id="setup-svg-desc">Eight studies supplied 63 records. Two fresh blind coders applied the frozen rulebook. Citation admission came before a reliability gate requiring kappa of at least 0.70 and 80 percent paired substantive coverage for class, stage and detector. Frozen analysis used shuffled-order and constant-rate references.</desc>
+        {setup.map((lines,i)=><g>
+          <rect class="box" x="8" y={12+i*120} width="364" height="94" rx="3" />
+          <text class="box-title" x="190" y={41+i*120} text-anchor="middle">{lines[0]}</text>
+          <text class="box-detail" x="190" y={66+i*120} text-anchor="middle">{lines[1]}{lines[2]&&<tspan x="190" dy="21">{lines[2]}</tspan>}</text>
+          {i<4&&<path class="arrow" d={`M190 ${108+i*120} v19 m-5 -6 l5 6 5 -6`} />}
+        </g>)}
+      </svg>
+      <figcaption><strong>Reliable coding had to come before testing learning.</strong> Both coders received the same evidence and labelling rules, with hypotheses, thresholds and result commentary removed from their packets.</figcaption>
+    </figure>
+    <p>Coverage means the share of records where both coders gave a substantive label. Cohen’s κ (kappa) measures agreement beyond chance. The gate used κ including unknown labels, as well as coverage; a strong score on a small surviving subset could not rescue it.</p>
+  </section>
+
+  <section aria-labelledby="workflow-title">
+    <h2 id="workflow-title">Our workflow, including the stops</h2>
+    <p>We followed the <a href="/research/council/">council loop</a>, with disclosed stops and separately frozen changes. The saved evidence and original failed attempts stayed intact. <a href="#changes-title">Every change is listed below.</a></p>
+    <figure class="diagram">
+      <svg viewBox="0 0 380 850" role="img" aria-labelledby="workflow-svg-title workflow-svg-desc">
+        <title id="workflow-svg-title">The workflow stopped for build decisions and citation repairs before the single analysis.</title>
+        <desc id="workflow-svg-desc">Survey, protocol and review led to Robin’s approval. Build stopped for source and blinding decisions and the H3 reference rule. Freeze and push preceded coding. Codex’s first attempt was empty. Amendments D1 through D3.1 addressed budgets, citations and saved reply classification. Analysis ran once, then judgment, page and Robin’s reading close the loop.</desc>
+        {workflow.map((lines,i)=><g>
+          <rect class:list={['box',{'changed': [1,3,4].includes(i)}]} x="8" y={8+i*120} width="364" height="98" rx="3" />
+          <text class="box-title" x="190" y={35+i*120} text-anchor="middle">{lines[0]}</text>
+          <text class="box-detail" x="190" y={61+i*120} text-anchor="middle">{lines[1]}{lines[2]&&<tspan x="190" dy="21">{lines[2]}</tspan>}</text>
+          {i<6&&<path class="arrow" d={`M190 ${108+i*120} v19 m-5 -6 l5 6 5 -6`} />}
+        </g>)}
+      </svg>
+      <figcaption><strong>The workflow stopped for build decisions and citation repairs before the single analysis.</strong> Outlined steps mark departures; Robin approved the protocol before the freeze and reconfirmed it before coding.</figcaption>
+    </figure>
+  </section>
+
+  <section aria-labelledby="results-title">
+    <p class="eyebrow">Results · Descriptions and blind predictions kept separate</p>
+    <h2 id="results-title">We could count the records.<br />We could not confirm learning.</h2>
+    <h3>H1(a): were there fewer later corrections?</h3>
+    <p><strong>Known before registration.</strong> Later-starting studies tended to have fewer records, but the studies overlapped and had unequal workloads. “Later” means the first survey claim, not completion order; tied starts share a rank.</p>
+    <figure>
+      <svg viewBox="0 0 380 620" role="img" aria-labelledby="counts-title counts-desc">
+        <title id="counts-title">Later studies tended to have fewer records, a pattern known before registration.</title>
+        <desc id="counts-desc">Counts in first-claim order are 6, 10, 12, 9, 11, 3, 5 and 7. All lie inside the constant-rate 95 percent prediction band of 3 to 14. Both constant-rate and shuffled-order references expect 7.875 records per study. The observed rank correlation is minus 0.49 versus zero for shuffled order.</desc>
+        <text x="10" y="20" class="plot-heading">Records per study · first-claim order</text>
+        <rect class="band" x={20+3*22} y="47" width={11*22} height="470" />
+        {data.studies.map((s,i)=><g>
+          <text x="20" y={47+i*58}>{names[s.study]}</text>
+          <rect class="bar" x="20" y={56+i*58} width={s.n*22} height="14" />
+          <text x={28+s.n*22} y={69+i*58}>{s.n}</text>
+        </g>)}
+        <line class="reference" x1={20+7.875*22} x2={20+7.875*22} y1="51" y2="515" />
+        <text x="20" y="539">0</text><text x="174" y="539">7</text><text x="328" y="539">14</text>
+        <text x="10" y="565">Band: constant-rate 95% range, 3–14</text>
+        <text x="10" y="588">Dashed: both reference means, 7.875</text>
+        <text x="10" y="611">Observed ρ −0.49 · shuffled-order ρ 0</text>
+      </svg>
+      <figcaption><strong>Later studies tended to have fewer records, a pattern known before registration.</strong> All counts fall inside the constant-rate prediction band. Neither baseline adjusts for unequal work or logging.</figcaption>
+    </figure>
+    <div class="tablewrap" role="region" aria-label="Recorded corrections and count baselines" tabindex="0">
+      <table><caption>All selected records, ordered by first survey claim on 11 November 2026 (HKT)</caption>
+        <thead><tr><th scope="col">Study</th><th scope="col">First claim</th><th scope="col">Records</th><th scope="col">Both reference means</th><th scope="col">Constant-rate 95% band</th></tr></thead>
+        <tbody>{data.studies.map((s,i)=><tr><th scope="row">{names[s.study]}</th><td>{starts[i]}</td><td>{s.n} of 63</td><td>7.875 per study</td><td>3–14 per study</td></tr>)}</tbody>
+      </table>
+    </div>
+    <p class="note">Across 8 studies: Spearman’s ρ = −0.49; exact one-sided shuffled-order p = 0.108 (4,356 of 40,320 assignments). Constant-rate check p = 0.107 (10,656 extreme draws of 99,999; Monte Carlo corrected). These are descriptive reference checks, not a blind prediction verdict.</p>
+
+    <h3 id="gate-title">Why are the blind predictions unknown?</h3>
+    <p class="verdict"><strong>H1(b), H2 and H3: UNKNOWN.</strong> Before resolving disagreements, class missed the κ threshold, stage had no paired substantive coverage, and detector missed both thresholds. The frozen rule stops confirmatory evaluation here.</p>
+    <figure>
+      <svg viewBox="0 0 380 490" role="img" aria-labelledby="gate-svg-title gate-svg-desc">
+        <title id="gate-svg-title">All three coding fields failed the reliability gate.</title>
+        <desc id="gate-svg-desc">Class coverage is 53 of 63, 84 percent, with kappa 0.675. Stage coverage is 0 of 63, with kappa zero. Detector coverage is 30 of 63, 48 percent, with kappa 0.593. Required coverage is 80 percent and kappa 0.70. Diamonds show secondary kappa on paired substantive records only: 0.850 for class, unavailable for stage and 1.000 for detector.</desc>
+        <text x="10" y="20" class="plot-heading">Gate failed · required on every field</text>
+        {measures.map((m,i)=><g>
+          <text x="10" y={52+i*120} class="plot-heading">{m.name} · UNKNOWN</text>
+          <text x="10" y={79+i*120}>Coverage</text>
+          <line class="track" x1="115" x2="345" y1={74+i*120} y2={74+i*120} />
+          <line class="threshold" x1={115+230*.8} x2={115+230*.8} y1={63+i*120} y2={85+i*120} />
+          <circle class="point" cx={115+230*m.value.coverage} cy={74+i*120} r="5" />
+          <text x="10" y={110+i*120}>κ (all labels)</text>
+          <line class="track" x1="115" x2="345" y1={105+i*120} y2={105+i*120} />
+          <line class="threshold" x1={115+230*.7} x2={115+230*.7} y1={94+i*120} y2={116+i*120} />
+          <circle class="point" cx={115+230*m.value.including_unknown.kappa} cy={105+i*120} r="5" />
+          {m.value.paired_substantive.kappa!==null&&<path class="secondary" d={`M${115+230*m.value.paired_substantive.kappa} ${98+i*120} l7 7 -7 7 -7 -7 Z`} />}
+        </g>)}
+        <text x="111" y="405">0</text><text x="345" y="405" text-anchor="end">1 / 100%</text>
+        <text x="10" y="431">Solid marks: κ ≥ 0.70 / coverage ≥ 80%</text>
+        <text x="10" y="455">● Gate measure · ◇ paired-only κ (secondary)</text>
+        <text x="10" y="479">H1(b) UNKNOWN · H2 UNKNOWN · H3 UNKNOWN</text>
+      </svg>
+      <figcaption><strong>All three coding fields failed the reliability gate.</strong> High paired-only agreement excluded missing labels; it could not override the original coverage and κ requirements.</figcaption>
+    </figure>
+    <div class="tablewrap" role="region" aria-label="Reliability measures and denominators" tabindex="0">
+      <table><caption>Pre-reconciliation agreement; gate requires κ ≥ 0.70 and coverage ≥ 80% for each field</caption>
+        <thead><tr><th scope="col">Field</th><th scope="col">Paired coverage</th><th scope="col">κ including unknown</th><th scope="col">All-label matches</th><th scope="col">Paired-only κ / matches (secondary)</th><th scope="col">Gate</th></tr></thead>
+        <tbody>{measures.map(m=><tr><th scope="row">{m.name}</th><td>{m.value.paired_substantive.n} / {m.value.including_unknown.n} ({percent(m.value.coverage)})</td><td>{decimal(m.value.including_unknown.kappa)}</td><td>{m.value.including_unknown.matches} / {m.value.including_unknown.n}</td><td>{decimal(m.value.paired_substantive.kappa)} · {m.value.paired_substantive.matches} / {m.value.paired_substantive.n}</td><td>Failed</td></tr>)}</tbody>
+      </table>
+    </div>
+    <p>Both coders faced the same citation rule. Claude’s many uncited labels became unknown. Rule-presence coverage was also 0 of 63, blocking recurrence analysis independently.</p>
+    <div class="tablewrap" role="region" aria-label="Citation admission for both coders" tabindex="0">
+      <table><caption>Citation admission before sealing; citation totals include field and rule citations</caption>
+        <thead><tr><th scope="col">Coder</th><th scope="col">Admitted / input citations</th><th scope="col">Narrowed</th><th scope="col">Dropped</th><th scope="col">Fields downgraded</th></tr></thead>
+        <tbody><tr><th scope="row">Codex</th><td>1,146 / 1,154</td><td>19 / 1,154</td><td>8 / 1,154</td><td>8</td></tr><tr><th scope="row">Claude Sonnet</th><td>142 / 142</td><td>0 / 142</td><td>0 / 142</td><td>372</td></tr></tbody>
+      </table>
+    </div>
+    <p class="note">A downgrade removes a field’s label, not a whole record. Field downgrades are counts, not rates. The separate field-tagged citation counts in the limits below exclude rule citations.</p>
+
+    <h3>H1(b): did plumbing become a smaller share?</h3>
+    <p><strong>Confirmatory outcome: UNKNOWN.</strong> The reconciled labels below are descriptive only. They count a class as known only when the evidence-only reconciliation resolved it; they cannot repair the original gate failure.</p>
+    <figure>
+      <svg viewBox="0 0 380 660" role="img" aria-labelledby="share-title share-desc">
+        <title id="share-title">Plumbing’s share grew descriptively rather than shrinking.</title>
+        <desc id="share-desc">Among reconciled classified records, plumbing shares in first-claim order are 0, 50, 82, 83, 80, 67, 100 and 86 percent. The pooled reference is 75 percent of 48 classified records. Thin ranges show the possible full-record shares if all missing classes were inside or outside plumbing. This is not a confirmatory test.</desc>
+        <text x="10" y="20" class="plot-heading">Descriptive only · not a confirmatory test</text>
+        {data.studies.map((s,i)=><g>
+          <text x="20" y={51+i*65}>{names[s.study]} · {s.known} known of {s.n}</text>
+          <rect class="bar" x="20" y={60+i*65} width={s.share*280} height="13" />
+          {s.share===0&&<circle class="point" cx="20" cy={66.5+i*65} r="3" />}
+          <text x="350" y={73+i*65} text-anchor="end">{percent(s.share)}</text>
+          <line class="reference" x1="230" x2="230" y1={58+i*65} y2={89+i*65} />
+          <line class="range" x1={20+s.possible_share_interval[0]*280} x2={20+s.possible_share_interval[1]*280} y1={82+i*65} y2={82+i*65} />
+        </g>)}
+        <text x="20" y="578">0%</text><text x="230" y="578" text-anchor="middle">75%</text><text x="300" y="578">100%</text>
+        <text x="10" y="608">Dashed: pooled 75% · 48 classified records</text>
+        <text x="10" y="631">Thin line: possible share among all records</text>
+        <text x="10" y="654">Shuffled-order test: unavailable (gate failed)</text>
+      </svg>
+      <figcaption><strong>Plumbing’s share grew descriptively rather than shrinking.</strong> It made up 75% of the 48 classified records; missing classes leave wide uncertainty in some studies. This is not a confirmatory test of H1(b).</figcaption>
+    </figure>
+    <div class="tablewrap" role="region" aria-label="Reconciled plumbing counts and denominators" tabindex="0">
+      <table><caption>Reconciled primary class; plumbing = harness or interface; pooled reference 75% of 48 known</caption>
+        <thead><tr><th scope="col">Study</th><th scope="col">Known of all records</th><th scope="col">Plumbing / known</th><th scope="col">Share</th><th scope="col">Possible share of all records</th></tr></thead>
+        <tbody>{data.studies.map(s=><tr><th scope="row">{names[s.study]}</th><td>{s.known} known of {s.n}</td><td>{s.plumbing} / {s.known}</td><td>{percent(s.share)}</td><td>{percent(s.possible_share_interval[0])}–{percent(s.possible_share_interval[1])}</td></tr>)}</tbody>
+      </table>
+    </div>
+    <p class="note">The possible-share range uses all records as the denominator, assigning every missing class outside or inside plumbing. It is not a confidence interval. The pooled reference is a descriptive comparison; the registered shuffled-order and constant-rate analyses cannot supply a confirmatory plumbing result after the failed gate.</p>
+
+    {[
+      {id:'h2', referenceLabel:'Time shuffle / constant rate: unavailable', title:'H2: did failures recur less after their rules?', answer:'We cannot tell whether rules reduced recurrence.', need:'Reliable class, incident, rule and time labels', reference:'Shuffled incident times; constant rates scaled to active-study hours', reason:'The primary coding gate failed; rule-presence coverage was also absent.'},
+      {id:'h3', referenceLabel:'Detector-label shuffle: unavailable', title:'H3: did Robin catch types the agents missed?', answer:'We cannot confirm that human reading found new failure types.', need:'Reliable class, read stage, detector and prior missed-check evidence', reference:'Within-study shuffled detector labels', reason:'The primary coding gate failed. The motivating page omission cannot stand in for independent cases.'},
+    ].map(h=><div class="unknown-result">
+      <h3>{h.title}</h3>
+      <figure>
+        <svg viewBox="0 0 380 158" role="img" aria-labelledby={`${h.id}-title ${h.id}-desc`}>
+          <title id={`${h.id}-title`}>{h.answer}</title><desc id={`${h.id}-desc`}>Unknown: reliability failed before hypothesis evaluation. Observed effect and p-value are unavailable; reference comparisons were not evaluated.</desc>
+          <rect class="box changed" x="8" y="8" width="364" height="76" rx="3" />
+          <text class="box-title" x="190" y="38" text-anchor="middle">{h.id.toUpperCase()} · UNKNOWN</text>
+          <text x="190" y="65" text-anchor="middle">Reliability gate failed → test stopped</text>
+          <text x="10" y="111">Observed effect: unavailable</text>
+          <text x="10" y="139">{h.referenceLabel}</text>
+        </svg>
+        <figcaption><strong>{h.answer}</strong> {h.reason}</figcaption>
+      </figure>
+      <div class="tablewrap" role="region" aria-label={`${h.id.toUpperCase()} outcome and missing evidence`} tabindex="0">
+        <table><caption>{h.id.toUpperCase()}: unknown is an evidence limit, not a failed prediction</caption><thead><tr><th scope="col">Required evidence</th><th scope="col">Effect / p</th><th scope="col">Eligible denominator</th><th scope="col">Planned references</th></tr></thead><tbody><tr><td>{h.need}</td><td>Unavailable / unavailable</td><td>Unknown; no eligible set evaluated</td><td>{h.reference}; unavailable after gate failure</td></tr></tbody></table>
+      </div>
+    </div>)}
+  </section>
+
+  <section aria-labelledby="limits-title">
+    <h2 id="limits-title">What this does not show</h2>
+    <ul>
+      <li><strong>This is one council’s short history:</strong> 63 records from 8 overlapping studies over about 2 days, not a census of every failure or evidence about councils generally.</li>
+      <li><strong>The coders were fresh sessions, but from the same model families as the participants.</strong> Claude and Codex were also participant-analysts; blinding reduces rather than removes that dependence.</li>
+      <li><strong>Citation discipline changed what was measurable.</strong> Claude supplied 138 field-tagged citations versus Codex’s 1,003. Applying the same uncited-label rule erased many Claude labels, including every usable stage pairing. This gate failure measures admissible coding, not just disagreement about the underlying events.</li>
+      <li><strong>Records are uneven.</strong> Early logging was less systematic; reviews, preventive copying and repeated dispositions affect counts. Active-study hours measure claimed work opportunity, not CPU time or equal effort.</li>
+      <li><strong>Descriptions cannot rescue confirmation.</strong> Reconciled plumbing shares and the pre-known count pattern do not establish that rules caused learning. Actual H2/H3 effects, p-values and eligible denominators remain unavailable.</li>
+      <li><strong>What could change the conclusion:</strong> a new, explicitly exploratory coding version with adequate citations and reliable labels, followed by a longer prospective history with clearer incident times and comparable workloads. The original unknown outcomes would remain.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="changes-title">
+    <h2 id="changes-title">Integrity and changes</h2>
+    <p>Robin approved protocol v0.3 on <strong>14 November 2026</strong> and reconfirmed it on <strong>15 November</strong>, after both agents had agreed. The frozen record was pushed before coding: GitHub’s server activity records <time datetime="2026-11-15T16:28:12Z">15 November 2026, 16:28:12 UTC</time>. Separately frozen amendments were pushed before their affected steps; the frozen analysis ran once.</p>
+    <p><strong>Spend: USD 1.89 of the USD 5 cap.</strong> The settled call cost was USD 1.88766; Codex coding and page building used the subscription.</p>
+    <ul class="changes">
+      <li><strong>Frame revision, before freeze:</strong> review findings joined amendments so an absent early deviation log would not mean zero failures; the widening was chosen knowing Work or Proof? had no deviation entries.</li>
+      <li><strong>Build decision, source integrity:</strong> exact private evidence bytes were retained; a later public derivative must redact machine details.</li>
+      <li><strong>Build decision, blinding:</strong> a documented derivative removed hypotheses and thresholds from the coder rulebook without changing labelling definitions.</li>
+      <li><strong>Build stop, H3 reference:</strong> unknown novelty created by shuffled detector assignments counts as novel in the reference only, a conservative choice that cannot favour H3; observed unknowns still stop the test.</li>
+      <li><strong>D1:</strong> raised the Claude call reservation from USD 0.50 to USD 2.50 to fit the evidence packet and long reply; the USD 5 total cap stayed fixed.</li>
+      <li><strong>D1.1:</strong> explicitly set the output-token ceiling to 128,000 so the single structured reply could finish.</li>
+      <li><strong>Codex attempt:</strong> the first attempt omitted the schema from its prompt and returned no coding; the next attempt coded all 63 records.</li>
+      <li><strong>D2:</strong> mechanically narrowed over-wide citation spans and dropped mismatched quotes, identically for both coders, instead of rejecting an entire submission.</li>
+      <li><strong>D3:</strong> the harness mistook quoted “usage limit” text inside a successful reply for a provider error; reclassified the saved envelope without a new call.</li>
+      <li><strong>D3.1:</strong> corrected the settled-amount guard to match the ledger’s exact recorded amount instead of its rounded display.</li>
+      <li><strong>D2.1:</strong> also made never-cited labels unknown, enforcing the existing citation requirement for both coders before analysis; thresholds and hypotheses stayed fixed.</li>
+    </ul>
+    <p><strong>Disclosure:</strong> while diagnosing D3, the lead glimpsed the first fields of one record in a diagnostic prefix. Before deciding D2.1, the lead counted cited field names and uncited fields per coder, including their unequal citation coverage, without inspecting further label values or any agreement or hypothesis result.</p>
+    <p>The frozen record is held in a <strong>private repository</strong> and will be released in redacted form. There is no public repository link yet. We have not published raw evidence containing machine paths or identifiers.</p>
+  </section>
+
+  <section aria-labelledby="notes-title">
+    <h2 id="notes-title">Notes, definitions and sources</h2>
+    <dl>
+      <div><dt>Plumbing</dt><dd>Harness failures (software that runs, saves or accounts for work) or interface failures (the reply contract). Coordination and scientific errors remain separate classes.</dd></div>
+      <div><dt>Shuffled-order reference</dt><dd>Reorder whole study bundles while keeping each bundle intact. It expects no association with time: ρ = 0 and 7.875 records at each position.</dd></div>
+      <div><dt>Constant-rate reference</dt><dd>A Poisson count model expecting 7.875 records per study, with central 95% prediction limits of 3–14. It is a simple reference, not an equal-workload claim.</dd></div>
+      <div><dt>Unknown</dt><dd>Insufficient admissible evidence to evaluate a registered prediction. Its public effect and p-value are null, not zero. No sensitivities were produced by this analysis run.</dd></div>
+    </dl>
+    <p id="pass-rules"><strong>Exact pass rules:</strong> all blind tests first required κ ≥ 0.70 and ≥ 80% paired substantive coverage on class, stage and detector. H1(b) additionally required ≥ 80% class coverage in every nonempty study, at least 3 nonempty studies and a negative share correlation. H2 required at least 2 evaluable classes, positive exposure before and after adoption, and a positive mean reduction in incident rates. H3 required at least 2 eligible human-reading cases from distinct studies, known class and chronology, positive missed-check evidence, and a novelty fraction of 1. Each also required a one-sided p ≤ 0.05 after Holm adjustment across the 3 blind predictions. H1(a) was excluded from this family.</p>
+    <p id="example-source"><strong>Worked-example citation:</strong> Work or Proof? page-omission review, 11 November 2026, lines 1–8 (saved packet P031): the omission, joint discovery and standing page rule. The example uses the admitted Codex labels; the original review and both coder records remain in the frozen private archive.</p>
+    <p><strong>Evidence:</strong> protocol v0.3 and codebook v0.2; survey and feasibility audit; Robin’s approval records; lead build decisions and amendments; server push activity; citation admission reports; settled ledger; and the single frozen analysis’s results. Numerical displays are transcribed from that analysis and the listed evidence; rounded percentages retain their count denominators.</p>
+    <nav aria-label="Continue reading"><a href="/research/council/">How the council worked →</a><a href="/research/work-or-proof/">Read the worked-example study →</a><a href="/research/">All research →</a></nav>
+  </section>
+</article>
+</BaseLayout>
+
+<style>
+.history-study{max-width:62rem;padding-block:3rem 5rem;font:1rem/1.8 var(--sans);overflow-wrap:anywhere}
+header{padding-block:2rem;border-bottom:1px solid var(--line)}
+h1,h2,h3{font-family:var(--serif);font-weight:400;text-wrap:balance;line-height:1.15}
+h1{font-size:clamp(2.5rem,6vw,4.8rem);letter-spacing:-.045em;margin:1.3rem 0}h1 em{color:var(--gold-dark)}
+h2{font-size:clamp(1.8rem,4vw,2.7rem);letter-spacing:-.03em;margin:0 0 1.2rem}h3{font-size:1.65rem;margin:2.5rem 0 1rem}
+p,ul,dl{max-width:46rem;margin-block:0 1.2rem}.lead{font:400 clamp(1.3rem,3vw,1.7rem)/1.5 var(--serif)}.intro{max-width:42rem}
+section{padding-block:3rem;border-bottom:1px solid var(--line);scroll-margin-top:2rem}a{color:var(--gold-dark);text-underline-offset:.2em}li{margin-bottom:.8rem}ul{padding-left:1.25rem}
+.example{background:var(--moon-bright);border:1px solid var(--line-strong);padding:clamp(1rem,4vw,2rem)}blockquote{font:italic 1.5rem/1.5 var(--serif);margin:1rem 0 1.5rem;padding-left:1rem;border-left:2px solid var(--gold-dark)}
+dl>div{margin-bottom:.8rem}dt{font-weight:600}dd{margin:0}.note,figcaption{font:.88rem/1.7 var(--sans);color:var(--muted)}
+figure{margin:1.5rem 0 2rem;padding:clamp(.5rem,2vw,1.5rem);background:var(--moon-bright);border:1px solid var(--line)}
+figure svg{display:block;width:100%;max-width:31rem;height:auto;margin-inline:auto;color:var(--ink)}.diagram svg{max-width:27rem}figcaption{margin-top:1rem;max-width:46rem}
+svg text{fill:currentColor;font:14px var(--sans)}svg .plot-heading,svg .box-title{font-size:16px;font-weight:600}svg .box-detail{font-size:13px}
+.box{fill:var(--moon);stroke:var(--line-strong);stroke-width:1.2}.box.changed{stroke:var(--gold-dark);stroke-width:2}.arrow{fill:none;stroke:var(--gold-dark);stroke-width:1.5}
+.bar,.point{fill:var(--gold-dark)}.band{fill:var(--gold-dark);opacity:.09}.reference{stroke:var(--ink);stroke-width:1.5;stroke-dasharray:4 4}.range{stroke:var(--ink);stroke-width:2.5;stroke-linecap:round}.track{stroke:var(--line-strong);stroke-width:2}.threshold{stroke:var(--ink);stroke-width:2}.secondary{fill:var(--moon-bright);stroke:var(--gold-dark);stroke-width:2}
+.verdict{padding:1rem 1.2rem;border-left:3px solid var(--gold-dark);background:var(--moon-bright)}
+.tablewrap{max-width:100%;overflow-x:auto;margin:1.5rem 0;overscroll-behavior-x:contain}table{width:100%;border-collapse:collapse;font:.85rem/1.6 var(--sans);text-align:left}caption{text-align:left;color:var(--muted);margin-bottom:.7rem}th,td{padding:.7rem .8rem;border-bottom:1px solid var(--line);vertical-align:top;min-width:7rem}thead th{font-weight:600;color:var(--gold-dark)}tbody th{font-weight:500;min-width:10rem}nav{display:flex;flex-wrap:wrap;gap:.7rem 1.5rem}.changes{max-width:48rem}
+@media(max-width:600px){.history-study{padding-block:1.5rem 3rem}section{padding-block:2rem}figure{margin-inline:0}.tablewrap{font-size:.8rem}h3{font-size:1.45rem}}
+@media(prefers-color-scheme:dark){.history-study{--moon:#211f1c;--moon-bright:#292622;--ink:#eee8df;--muted:#cbc3b7;--gold-dark:#ddbd8a;--line:#514b43;--line-strong:#766c5e;background:var(--moon);color:var(--ink);padding-inline:clamp(.8rem,3vw,2rem)}.band{opacity:.13}}
+</style>

@@ -222,3 +222,35 @@ test('Robin briefs both leads directly and each lead can call on the other in bo
     assert.doesNotMatch(view[1],/data-role-edge="Teddy-Claude"|data-role-edge="Teddy-Codex"/);
   }
 });
+
+test('Constitutional History keeps failed coding gates distinct from descriptive findings',()=>{
+  const route='/research/constitutional-history/';
+  const card=programme.studies.find(s=>s.href===route);
+  assert.equal(card?.maturity,'Empirical study');
+  const html=read(`dist${route}index.html`);
+  const article=html.match(/<article\b[^>]*class="shell history-study"[^>]*>([\s\S]*?)<\/article>/)?.[1];
+  assert.ok(article);
+  assert.equal((html.match(/<h1\b/g)||[]).length,1);
+  assert.ok(html.includes(`href="https://iamrobin.ai${route}"`));
+  assert.ok(html.includes('"@type":"Article"'));
+  let previous=-1;
+  for(const id of ['question-title','hypothesis-title','example-title','setup-title','workflow-title','results-title','limits-title','changes-title','notes-title']){
+    const index=article.indexOf(`id="${id}"`);assert.ok(index>previous,`${id} follows presentation order`);previous=index;
+  }
+  const opening=article.slice(0,article.indexOf('id="example-title"'));
+  assert.doesNotMatch(opening,/\d+(?:\.\d+)?%|κ|p\s*=/,'statistics follow the worked example and diagrams');
+  const figures=[...article.matchAll(/<svg\b[^>]*role="img"[^>]*>[\s\S]*?<\/svg>/g)].map(m=>m[0]);
+  assert.equal(figures.length,7,'setup, workflow, counts, reliability, shares, H2 and H3');
+  for(const svg of figures){assert.match(svg,/aria-labelledby=/);assert.match(svg,/<title\b[^>]*>[^<]+<\/title>/);assert.match(svg,/<desc\b[^>]*>[^<]+<\/desc>/);}
+  assert.equal((article.match(/<table\b/g)||[]).length,6);
+  for(const phrase of ['H1(b), H2 and H3: UNKNOWN','Known before registration','not a confirmatory test','53 / 63','0 / 63','30 / 63','48 classified records','7.875','3–14','138','1,003','USD 1.89','will be released in redacted form'])assert.ok(article.includes(phrase),phrase);
+  const result=JSON.parse(read('src/data/constitutional-history-study.json'));
+  for(const h of ['h1b','h2','h3']){assert.equal(result[h].outcome,'UNKNOWN');assert.equal(result[h].effect,null);assert.equal(result[h].p,null);}
+  assert.equal(result.reliability.primary_gate,false);
+  assert.ok(read('dist/research/index.html').includes(`href="${route}"`));
+  const topic=[...read('dist/research/index.html').matchAll(/<li\b[^>]*data-research-topic="constitutional-history"[^>]*>[\s\S]*?<\/li>/g)][0]?.[0];
+  assert.ok(topic);assert.doesNotMatch(topic,/Playable seed · upcoming/,'Documentary history does not promise an unplanned toy');
+  assert.ok(read('dist/research/council/index.html').includes(`href="${route}"`));
+  assert.ok(read('dist/sitemap-0.xml').includes(`https://iamrobin.ai${route}`));
+  assert.doesNotMatch(article,/\/Users\/|headlessnick|https:\/\/github\.com\/|session[_ -]?id|NaN|Infinity|undefined/);
+});

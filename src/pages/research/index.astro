@@ -46,7 +46,7 @@ const schema={'@context':'https://schema.org','@type':'CollectionPage',name:'Res
             <span class="item-title">{t.title}</span>
             {t.week&&<small class="maturity"><span class="week">{t.week}</span></small>}
             <nav class="topic-links" aria-label={`${t.title} resources`}>
-              {t.seedHref?<a data-topic-play href={t.seedHref} aria-label={`${t.seedLabel}: ${t.title}`}>{t.seedLabel} <span aria-hidden="true">↗</span></a>:<span class="pending-link">Playable seed · upcoming</span>}
+              {t.seedHref&&<a data-topic-play href={t.seedHref} aria-label={`${t.seedLabel}: ${t.title}`}>{t.seedLabel} <span aria-hidden="true">↗</span></a>}
               {t.studyHref?<a data-topic-study href={t.studyHref} aria-label={`Empirical study: ${t.title}`}>Empirical study <span aria-hidden="true">→</span></a>:<span class="pending-link">Empirical study · upcoming</span>}
               {kidQuestions.some(q=>q.id===t.id)&&<a data-topic-kid href={`/research/kid-edition/#${t.id}`} aria-label={`Kid edition: ${t.title}`}>Kid edition <span aria-hidden="true">↗</span></a>}
             </nav>
