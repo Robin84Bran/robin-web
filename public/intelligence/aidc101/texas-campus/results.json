@@ -1,0 +1,92 @@
+[
+  {
+    "scenario": "On time",
+    "portfolio": "Grid",
+    "deadline_peak_IT_MW": "80.0",
+    "unserved_IT_MWh": "896.0",
+    "cost_USD_per_served_IT_MWh": "112.38",
+    "committed_USD": "20000000",
+    "total_year_cost_USD": "52403405.78",
+    "served_IT_MWh": "466304.0"
+  },
+  {
+    "scenario": "On time",
+    "portfolio": "Grid + battery",
+    "deadline_peak_IT_MW": "80.0",
+    "unserved_IT_MWh": "0.0",
+    "cost_USD_per_served_IT_MWh": "112.86",
+    "committed_USD": "44000000",
+    "total_year_cost_USD": "52727006.9",
+    "served_IT_MWh": "467200.0"
+  },
+  {
+    "scenario": "On time",
+    "portfolio": "Grid + firm",
+    "deadline_peak_IT_MW": "80.0",
+    "unserved_IT_MWh": "448.0",
+    "cost_USD_per_served_IT_MWh": "117.36",
+    "committed_USD": "25000000",
+    "total_year_cost_USD": "54777361.22",
+    "served_IT_MWh": "466752.0"
+  },
+  {
+    "scenario": "Supply delay",
+    "portfolio": "Grid",
+    "deadline_peak_IT_MW": "64.0",
+    "unserved_IT_MWh": "6656.0",
+    "cost_USD_per_served_IT_MWh": "111.04",
+    "committed_USD": "20000000",
+    "total_year_cost_USD": "51141101.78",
+    "served_IT_MWh": "460544.0"
+  },
+  {
+    "scenario": "Supply delay",
+    "portfolio": "Grid + battery",
+    "deadline_peak_IT_MW": "80.0",
+    "unserved_IT_MWh": "0.0",
+    "cost_USD_per_served_IT_MWh": "112.86",
+    "committed_USD": "44000000",
+    "total_year_cost_USD": "52727006.9",
+    "served_IT_MWh": "467200.0"
+  },
+  {
+    "scenario": "Supply delay",
+    "portfolio": "Grid + firm",
+    "deadline_peak_IT_MW": "80.0",
+    "unserved_IT_MWh": "448.0",
+    "cost_USD_per_served_IT_MWh": "117.36",
+    "committed_USD": "25000000",
+    "total_year_cost_USD": "54777361.22",
+    "served_IT_MWh": "466752.0"
+  },
+  {
+    "scenario": "Shared substation delay",
+    "portfolio": "Grid",
+    "deadline_peak_IT_MW": "0.0",
+    "unserved_IT_MWh": "76800.0",
+    "cost_USD_per_served_IT_MWh": "113.44",
+    "committed_USD": "20000000",
+    "total_year_cost_USD": "44288084.18",
+    "served_IT_MWh": "390400.0"
+  },
+  {
+    "scenario": "Shared substation delay",
+    "portfolio": "Grid + battery",
+    "deadline_peak_IT_MW": "0.0",
+    "unserved_IT_MWh": "76800.0",
+    "cost_USD_per_served_IT_MWh": "115.1",
+    "committed_USD": "44000000",
+    "total_year_cost_USD": "44934980.55",
+    "served_IT_MWh": "390400.0"
+  },
+  {
+    "scenario": "Shared substation delay",
+    "portfolio": "Grid + firm",
+    "deadline_peak_IT_MW": "0.0",
+    "unserved_IT_MWh": "76800.0",
+    "cost_USD_per_served_IT_MWh": "123.49",
+    "committed_USD": "25000000",
+    "total_year_cost_USD": "48210337.22",
+    "served_IT_MWh": "390400.0"
+  }
+]

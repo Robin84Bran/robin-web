@@ -1,0 +1,10 @@
+scenario,portfolio,deadline_peak_IT_MW,unserved_IT_MWh,cost_USD_per_served_IT_MWh,committed_USD,total_year_cost_USD,served_IT_MWh
+On time,Grid,80.0,896.0,112.38,20000000,52403405.78,466304.0
+On time,Grid + battery,80.0,0.0,112.86,44000000,52727006.9,467200.0
+On time,Grid + firm,80.0,448.0,117.36,25000000,54777361.22,466752.0
+Supply delay,Grid,64.0,6656.0,111.04,20000000,51141101.78,460544.0
+Supply delay,Grid + battery,80.0,0.0,112.86,44000000,52727006.9,467200.0
+Supply delay,Grid + firm,80.0,448.0,117.36,25000000,54777361.22,466752.0
+Shared substation delay,Grid,0.0,76800.0,113.44,20000000,44288084.18,390400.0
+Shared substation delay,Grid + battery,0.0,76800.0,115.1,44000000,44934980.55,390400.0
+Shared substation delay,Grid + firm,0.0,76800.0,123.49,25000000,48210337.22,390400.0
