@@ -1,0 +1,23 @@
+The one-year study does not power the rack.
+
+PJM proposes cutting its grid-study target from two years to one through a new Fast Energization Process. That could be valuable. But the value is easy to misname.
+
+A study can clarify required network work, cost and duration. It can help a weak project withdraw earlier or let a viable project commit with better information. That is option value.
+
+It does not manufacture transformers, issue permits, build substations or commission a data centre.
+
+The useful diligence view keeps three dates separate:
+
+1. Study answer.
+2. Conditional or interim service, if available.
+3. Full requested service after required facilities are built and accepted.
+
+The proposed process also moves readiness forward. For generation developers, the proposed initial deposit is $10,000 per MW. A 100 MW illustration equals $1 million before later decision-point requirements. Large Load customers have different requirements.
+
+The first completed cycle is expected in 2029. Then the real questions become measurable: withdrawals, early-versus-final cost estimates, study duration, time to interim service, time to full service and capital committed before each milestone.
+
+Keep the one-year target. Just do not let the study clock pretend it powered the rack.
+
+Full story and sources: https://iamrobin.ai/binary/stories/the-one-year-study-does-not-power-the-rack/
+
+#AIInfrastructure #DataCenters #ElectricGrid #InfrastructureInvesting #PJM
