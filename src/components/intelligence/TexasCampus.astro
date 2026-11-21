@@ -1,0 +1,90 @@
+---
+import results from '../../../public/intelligence/aidc101/texas-campus/results.json';
+const base = '/intelligence/aidc101/texas-campus/';
+const cases = [
+  {name:'On time', label:'Scheduled delivery', explanation:'80 MW of grid service starts January 1. The final grid tranche arrives January 15. Firm delivery stages are 10 MW on January 1 and another 10 MW on January 15.'},
+  {name:'Supply delay', label:'Grid expansion delayed 90 days', explanation:'The last 20 MW of grid service moves from January 15 to April 15. The firm contract retains its independently reserved upstream delivery rights and original dates.'},
+  {name:'Shared substation delay', label:'Shared substation delayed 60 days', explanation:'The campus energizes March 2. Grid imports, firm delivery and battery charging all depend on this same substation.'}
+];
+const number = (value: string) => Number(value).toLocaleString('en-US');
+---
+<section class="shell texas" id="texas-campus" aria-labelledby="texas-title">
+  <header>
+    <p class="eyebrow">From Megawatts to Compute · Experiment 01</p>
+    <h2 id="texas-title">Three power portfolios.<br />One substation.</h2>
+    <p class="standfirst">A battery covers a 90-day grid expansion delay in this experiment. A delayed substation leaves all three portfolios without power for 60 days.</p>
+    <p class="boundary">Illustrative hourly simulation · First run November 10, 2026 · Reproduced for this page November 21, 2026</p>
+  </header>
+  <p>A 100 MW Texas campus has a January opening target. Compare grid supply, grid plus a four-hour battery, and grid plus staged firm power against the same demand schedule. Follow the delivery path far enough and the three portfolios converge at one piece of infrastructure.</p>
+  <div class="facts">
+    <div><span>Facility demand</span><strong>60 → 100 MW</strong><small>20 off-peak hours, four peak hours daily</small></div>
+    <div><span>Peak IT target</span><strong>80 MW</strong><small>100 facility MW ÷ assumed PUE of 1.25</small></div>
+    <div><span>Battery</span><strong>20 MW / 80 MWh</strong><small>85% round-trip efficiency, initially empty</small></div>
+  </div>
+  <h3>The nine outcomes</h3>
+  <p id="texas-table-note">The deadline is January 31, 2027. “Ready” means minimum IT power served during that day's four peak hours. Annual shortfall and cost cover all 365 days of 2027. Capital is assumed signed power-infrastructure capex before January 1.</p>
+  <div class="table-wrap" tabindex="0" role="region" aria-label="Nine scenario results, horizontally scrollable" aria-describedby="texas-table-note">
+    <table>
+      <caption>One campus, three portfolios, three delivery scenarios</caption>
+      <thead><tr><th scope="col">Scenario / portfolio</th><th scope="col">IT MW at deadline peak</th><th scope="col">Unserved IT MWh</th><th scope="col">Power cost<br />$/served IT MWh</th><th scope="col">Capital committed</th></tr></thead>
+      {cases.map(scenario => <tbody>
+        <tr class="scenario"><th colspan="5" scope="rowgroup">{scenario.label}</th></tr>
+        {results.filter(row => row.scenario === scenario.name).map(row => <tr>
+          <th scope="row">{row.portfolio === 'Grid + firm' ? 'Grid + staged firm power' : row.portfolio === 'Grid + battery' ? 'Grid + four-hour battery' : 'Grid supply'}</th>
+          <td>{number(row.deadline_peak_IT_MW)}</td><td>{number(row.unserved_IT_MWh)}</td><td>{'$'+Number(row.cost_USD_per_served_IT_MWh).toFixed(2)}</td><td>{'$'+Number(row.committed_USD)/1e6+'M'}</td>
+        </tr>)}
+      </tbody>)}
+    </table>
+  </div>
+  <p class="boundary">These are conditional scenario outcomes. Probabilities remain unassigned. Costs use a synthetic price curve and assumed commercial terms. Site agreements and a chronological market replay are needed to calibrate the comparison.</p>
+  <div class="readout">
+    <h3>What the battery buys</h3>
+    <p>The initial grid connection can supply 80 MW. Overnight demand is only 60 MW, leaving room to charge. At peak, the battery supplies the missing 20 MW for four hours, repeating that cycle throughout the grid expansion delay.</p>
+    <p>In that case, the battery serves 6,656 additional IT MWh for $1.59 million of additional modeled annual cost. Recovered compute would need a contribution before power cost of roughly <strong>$238 per additional IT MWh</strong> to cover that increment under these assumptions.</p>
+    <h3>Where diversification ends</h3>
+    <p>The firm contract reserves separate upstream capacity, but delivery still crosses the campus substation. A 60-day delay there removes 76,800 IT MWh from every portfolio. The battery has no charging path, and take-or-pay supply continues to accrue contract costs while the campus is dark.</p>
+    <p>The lower grid-only cost during its expansion delay comes with lost service. Comparing that price alone would reward a portfolio for failing to deliver during expensive hours.</p>
+  </div>
+  <details>
+    <summary>Inspect the assumptions and delivery paths</summary>
+    {cases.map(scenario => <div><h4>{scenario.label}</h4><p>{scenario.explanation}</p></div>)}
+    <p>The firm alternative retains 80 MW of grid rights and replaces the grid expansion with physically deliverable contracted capacity. The grid-expansion stress leaves that independent supply project on schedule. A delay to the firm-power project itself would require an additional case.</p>
+    <p>Peak demand runs from 16:00 through 19:59 on a fixed CST clock. Cooling, compute, network and commissioning are assumed ready whenever power can be delivered. The peak deadline result does not establish 24-hour firm capacity. Annual requested IT energy is 467,200 MWh.</p>
+    <p>Wholesale power costs $45/MWh off peak and $163.32/MWh at peak, plus a $12/MWh import delivery adder. Firm supply costs $75/MWh, take-or-pay, with no resale or damages recovery. The synthetic curve's time-weighted mean equals the published 2023 Houston-zone load-weighted annual benchmark of $64.72/MWh. Those weighting conventions differ, and this campus pays its own load-weighted cost.</p>
+    <p>Common electrical works cost $20M, battery capex adds $24M, and firm connection works add $5M. Annual costs use an 8% capital recovery rate over 20 years for fixed works and 15 years for the battery, plus battery O&amp;M of 2% of its capex. Signed capex excludes IT equipment, buildings, financing carry and recurring energy obligations.</p>
+    <p>Battery losses are booked at charging. Dispatch charges off peak within import and meter limits, then discharges during peak. The model omits forced outages, degradation, demand charges, taxes, ancillary revenues and lost-compute penalties. Changing the daily load shape can change the battery result materially.</p>
+  </details>
+  <details>
+    <summary>Reproduce the run and inspect the evidence</summary>
+    <p>Download and extract the archive, then run <code>python3 simulate.py</code>. Python's standard library is sufficient. Editable assumptions live in <code>inputs.json</code>. The script writes nine summary rows and 78,840 hourly portfolio records. The published outputs were reproduced byte for byte.</p>
+    <ul class="downloads">
+      <li><a href={base+'AI-Power-Portfolio-Texas-v01.zip'} download>Complete reproducible experiment (.zip)</a></li>
+      <li><a href={base+'results.csv'} download>Nine-case results (.csv)</a></li>
+      <li><a href={base+'AI-Power-Portfolio-Texas-v01.zip'} download>Complete hourly ledger (.csv inside ZIP)</a></li>
+      <li><a href={base+'inputs.json'}>Editable input assumptions</a></li>
+      <li><a href={base+'README.md'}>Method and limitations</a></li>
+    </ul>
+    <p>Useful next evidence is the signed utility service agreement, electrical one-line diagram, firm-delivery terms, site tariff, vendor quotes and chronological ERCOT prices. These determine whether the assumed independent rights and cost structure apply to a real campus.</p>
+    <ul>
+      <li><a href="https://www.potomaceconomics.com/wp-content/uploads/2024/05/2023-State-of-the-Market-Report_Final_060624.pdf">ERCOT 2023 State of the Market, Table 1 — annual price benchmark</a></li>
+      <li><a href="https://www.ercot.com/mktinfo/prices">ERCOT market prices — source for a future chronological replay</a></li>
+      <li><a href="https://atb.nlr.gov/electricity/2025/2023/utility-scale_battery_storage">Annual Technology Baseline — battery efficiency benchmark</a></li>
+    </ul>
+  </details>
+</section>
+<style>
+.texas{max-width:76rem;padding-block:3rem 5rem;border-top:1px solid var(--line);scroll-margin-top:5rem}
+.texas header{max-width:55rem}.texas h2{font:400 clamp(2.4rem,5vw,4rem)/1.1 var(--serif);letter-spacing:-.035em;margin:1rem 0}
+.texas .standfirst{font:1.35rem/1.55 var(--serif);color:var(--ink)}.texas p{max-width:60rem;line-height:1.8;color:var(--muted)}
+.texas .boundary{font-size:.85rem}.texas h3{font:400 1.8rem/1.3 var(--serif);margin:2rem 0 .7rem}.texas h4{margin-bottom:.4rem}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;border-block:1px solid var(--line);padding:1.5rem 0;margin:2rem 0}
+.facts span,.facts small{display:block;color:var(--muted);font-size:.85rem;line-height:1.5}.facts strong{display:block;font:400 1.7rem var(--serif);margin:.5rem 0}
+.table-wrap{overflow-x:auto}.texas table{border-collapse:collapse;width:100%;min-width:680px;font-size:.9rem}
+.texas caption{text-align:left;padding-bottom:1rem;color:var(--muted)}.texas th,.texas td{padding:.85rem .7rem;border-bottom:1px solid var(--line);text-align:right;font-variant-numeric:tabular-nums}
+.texas th:first-child{text-align:left}.texas thead th{font-size:.8rem}.texas tbody th{font-weight:400}
+.texas .scenario th{text-align:left;font-weight:600;color:var(--gold-dark);background:var(--moon-bright);padding-top:1.2rem}
+.texas details{border-top:1px solid var(--line);padding:1.2rem 0}.texas summary{cursor:pointer;font-size:1.05rem;min-height:30px}
+.texas a{color:var(--gold-dark);text-underline-offset:.25em}.texas li{margin:.65rem 0;line-height:1.6}
+.texas :focus-visible{outline:2px solid var(--gold-dark);outline-offset:4px}
+@media(max-width:600px){.facts{grid-template-columns:1fr;gap:1rem}.texas{padding-top:2rem}.texas th,.texas td{padding:.7rem .5rem}}
+</style>

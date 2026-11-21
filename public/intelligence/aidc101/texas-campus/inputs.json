@@ -1,0 +1,14 @@
+{
+  "start": "2027-01-01", "days": 365, "deadline_day": 30,
+  "campus_limit_mw": 100, "pue": 1.25,
+  "offpeak_load_mw": 60, "peak_load_mw": 100, "peak_start_hour": 16, "peak_hours": 4,
+  "grid_base_mw": 80, "grid_expansion_mw": 20, "expansion_day": 14,
+  "firm_stage_one_mw": 10, "firm_stage_two_mw": 10,
+  "supply_delay_days": 90, "substation_delay_days": 60,
+  "battery_mw": 20, "battery_deliverable_mwh": 80, "round_trip_efficiency": 0.85,
+  "offpeak_wholesale_per_mwh": 45, "peak_wholesale_per_mwh": 163.32,
+  "delivery_per_mwh_imported": 12, "firm_take_or_pay_per_mwh": 75,
+  "shared_capex": 20000000, "battery_capex": 24000000, "firm_connection_capex": 5000000,
+  "capital_rate": 0.08, "capital_life_years": 20, "battery_life_years": 15,
+  "battery_annual_om_fraction": 0.02
+}
