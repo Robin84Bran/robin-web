@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">The one-year study does not power the rack</title>
+  <desc id="desc">Two parallel clocks separate PJM's proposed one-year grid study from the permits, equipment, construction and commissioning required for full service.</desc>
+  <rect width="1600" height="900" fill="#0B1228"/>
+  <g opacity="0.12" stroke="#61D4D7" stroke-width="1">
+    <path d="M0 150H1600M0 300H1600M0 450H1600M0 600H1600M0 750H1600"/>
+    <path d="M200 0V900M400 0V900M600 0V900M800 0V900M1000 0V900M1200 0V900M1400 0V900"/>
+  </g>
+  <text x="105" y="104" fill="#61D4D7" font-family="Arial, sans-serif" font-size="27" font-weight="700" letter-spacing="4">BINARY / INVEST</text>
+  <text x="105" y="242" fill="#F4F1E9" font-family="Georgia, serif" font-size="68" font-weight="700">The one-year study</text>
+  <text x="105" y="326" fill="#F4F1E9" font-family="Georgia, serif" font-size="68" font-weight="700">does not power the rack.</text>
+  <text x="105" y="410" fill="#A9B4CC" font-family="Arial, sans-serif" font-size="27">A faster answer can move a capital decision.</text>
+  <text x="105" y="452" fill="#A9B4CC" font-family="Arial, sans-serif" font-size="27">Steel, permits and commissioning keep their own clock.</text>
+  <g font-family="Arial, sans-serif">
+    <text x="105" y="548" fill="#61D4D7" font-size="20" font-weight="700" letter-spacing="2">STUDY CLOCK · PROPOSED</text>
+    <line x1="105" y1="612" x2="1450" y2="612" stroke="#61D4D7" stroke-width="8"/>
+    <circle cx="105" cy="612" r="16" fill="#61D4D7"/>
+    <circle cx="525" cy="612" r="16" fill="#61D4D7"/>
+    <circle cx="945" cy="612" r="16" fill="#61D4D7"/>
+    <circle cx="1450" cy="612" r="22" fill="#D8B86B"/>
+    <text x="105" y="656" fill="#F4F1E9" font-size="21">Application</text>
+    <text x="525" y="656" fill="#F4F1E9" font-size="21" text-anchor="middle">Screening</text>
+    <text x="945" y="656" fill="#F4F1E9" font-size="21" text-anchor="middle">Impact study</text>
+    <text x="1450" y="656" fill="#D8B86B" font-size="21" font-weight="700" text-anchor="end">Answer</text>
+    <text x="105" y="724" fill="#D8B86B" font-size="20" font-weight="700" letter-spacing="2">DELIVERY CLOCK · PROJECT-SPECIFIC</text>
+    <rect x="105" y="754" width="250" height="66" rx="12" fill="#17213A" stroke="#52617E" stroke-width="2"/>
+    <rect x="385" y="754" width="250" height="66" rx="12" fill="#17213A" stroke="#52617E" stroke-width="2"/>
+    <rect x="665" y="754" width="250" height="66" rx="12" fill="#17213A" stroke="#52617E" stroke-width="2"/>
+    <rect x="945" y="754" width="250" height="66" rx="12" fill="#17213A" stroke="#52617E" stroke-width="2"/>
+    <rect x="1225" y="754" width="225" height="66" rx="12" fill="#241F24" stroke="#D8B86B" stroke-width="2"/>
+    <text x="230" y="796" fill="#F4F1E9" font-size="21" text-anchor="middle">Permits</text>
+    <text x="510" y="796" fill="#F4F1E9" font-size="21" text-anchor="middle">Equipment</text>
+    <text x="790" y="796" fill="#F4F1E9" font-size="21" text-anchor="middle">Construction</text>
+    <text x="1070" y="796" fill="#F4F1E9" font-size="21" text-anchor="middle">Commissioning</text>
+    <text x="1338" y="796" fill="#D8B86B" font-size="21" font-weight="700" text-anchor="middle">Full service</text>
+  </g>
+  <text x="1490" y="866" fill="#F4F1E9" text-anchor="end" font-family="Arial, sans-serif" font-size="22" letter-spacing="1">IAmRobin.ai</text>
+</svg>
