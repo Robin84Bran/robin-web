@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">The two clocks behind faster grid connections</title>
+  <desc id="desc">Two clock faces connect an engineering study timeline to a slower landscape of substations and transmission towers.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f4f0e7"/><stop offset="1" stop-color="#e5ddce"/></linearGradient>
+    <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse"><path d="M56 0H0V56" fill="none" stroke="#173038" stroke-opacity=".07"/></pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#172b31" flood-opacity=".13"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#paper)"/><rect width="1600" height="900" fill="url(#grid)"/>
+  <rect x="110" y="108" width="1380" height="684" rx="18" fill="#faf8f3" stroke="#20383e" stroke-opacity=".18" filter="url(#shadow)"/>
+  <g transform="translate(180 170)">
+    <text fill="#a85136" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" letter-spacing="4">DAILY SPECIAL · SIGNAL 6</text>
+    <text y="74" fill="#162a30" font-family="Georgia,'Times New Roman',serif" font-size="62">The two clocks behind faster power</text>
+    <text y="118" fill="#53676b" font-family="Arial,Helvetica,sans-serif" font-size="22">A shorter grid study can move capital decisions forward while steel keeps its own time.</text>
+  </g>
+  <g transform="translate(250 390)" fill="none" stroke-linecap="round">
+    <circle cx="220" cy="150" r="132" fill="#f3eee4" stroke="#1d5964" stroke-width="10"/>
+    <circle cx="220" cy="150" r="8" fill="#a85136" stroke="none"/>
+    <path d="M220 150L220 72M220 150L286 184" stroke="#17333a" stroke-width="9"/>
+    <path d="M90 150h24M326 150h24M220 20v24M220 256v24" stroke="#a85136" stroke-width="5"/>
+    <text x="220" y="330" text-anchor="middle" fill="#17333a" stroke="none" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" letter-spacing="3">STUDY CLOCK · 12 MONTH TARGET</text>
+  </g>
+  <path d="M610 540C720 455 805 456 902 508" fill="none" stroke="#c56b48" stroke-width="6" stroke-dasharray="5 18" stroke-linecap="round"/>
+  <g transform="translate(890 385)" fill="none" stroke-linecap="round">
+    <circle cx="220" cy="155" r="138" fill="#edf1ec" stroke="#a85136" stroke-width="10"/>
+    <circle cx="220" cy="155" r="8" fill="#1d5964" stroke="none"/>
+    <path d="M220 155L166 84M220 155L270 83" stroke="#17333a" stroke-width="9"/>
+    <path d="M84 155h25M331 155h25M220 19v25M220 266v25" stroke="#1d5964" stroke-width="5"/>
+    <text x="220" y="336" text-anchor="middle" fill="#17333a" stroke="none" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" letter-spacing="3">DELIVERY CLOCK · PROJECT SPECIFIC</text>
+  </g>
+  <g transform="translate(1070 675)" stroke="#17333a" fill="none" stroke-width="5" opacity=".75">
+    <path d="M0 70L45 0l45 70M22 35h46M8 57h74M45 0v110M-85 110h260"/>
+    <path d="M90 70l38-56 38 56M108 43h40M98 60h60M128 14v96"/>
+  </g>
+  <text x="180" y="750" fill="#5b6d70" font-family="Arial,Helvetica,sans-serif" font-size="17" letter-spacing="2">EARLIER INFORMATION · EARLIER COMMITMENT · SEPARATE PHYSICAL DELIVERY</text>
+</svg>
