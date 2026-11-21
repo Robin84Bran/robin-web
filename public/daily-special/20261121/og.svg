@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">The two clocks behind faster grid connections</title><desc id="desc">A restrained editorial card with two linked clocks for grid study and physical delivery.</desc>
+  <defs><linearGradient id="p" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f4f0e7"/><stop offset="1" stop-color="#e4dccd"/></linearGradient><pattern id="g" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M44 0H0V44" fill="none" stroke="#173038" stroke-opacity=".07"/></pattern></defs>
+  <rect width="1200" height="630" fill="url(#p)"/><rect width="1200" height="630" fill="url(#g)"/><rect x="64" y="60" width="1072" height="510" rx="18" fill="#faf8f3" stroke="#20383e" stroke-opacity=".18"/>
+  <text x="112" y="122" fill="#a85136" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700" letter-spacing="4">DAILY SPECIAL · SIGNAL 6</text>
+  <text x="112" y="205" fill="#162a30" font-family="Georgia,'Times New Roman',serif" font-size="56">The two clocks behind</text><text x="112" y="270" fill="#162a30" font-family="Georgia,'Times New Roman',serif" font-size="56">faster power</text>
+  <text x="112" y="320" fill="#53676b" font-family="Arial,Helvetica,sans-serif" font-size="20">Grid study and physical delivery move on different schedules.</text>
+  <g transform="translate(160 390)" fill="none" stroke-linecap="round"><circle cx="85" cy="75" r="68" fill="#f3eee4" stroke="#1d5964" stroke-width="7"/><path d="M85 75V34M85 75l37 20" stroke="#17333a" stroke-width="7"/><circle cx="85" cy="75" r="6" fill="#a85136" stroke="none"/></g>
+  <path d="M330 464H750" stroke="#c56b48" stroke-width="5" stroke-dasharray="4 16" stroke-linecap="round"/>
+  <g transform="translate(770 390)" fill="none" stroke-linecap="round"><circle cx="85" cy="75" r="68" fill="#edf1ec" stroke="#a85136" stroke-width="7"/><path d="M85 75L54 38M85 75l30-43" stroke="#17333a" stroke-width="7"/><circle cx="85" cy="75" r="6" fill="#1d5964" stroke="none"/></g>
+  <text x="112" y="540" fill="#5b6d70" font-family="Arial,Helvetica,sans-serif" font-size="15" letter-spacing="2">12-MONTH STUDY TARGET · PROJECT-SPECIFIC DELIVERY</text>
+</svg>
