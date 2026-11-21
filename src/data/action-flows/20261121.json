@@ -1,0 +1,532 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-21",
+  "updated": "2026-11-21",
+  "signalCount": 8,
+  "briefingPath": "/ouroboros/202611/20261121/",
+  "actionItemPath": "/ouroboros/202611/20261121/action_item/",
+  "hero": "/daily-briefing/20261121/hero.webp",
+  "ogImage": "/daily-briefing/20261121/og.webp",
+  "actionHero": "/action-item/20261121/hero.webp",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-20",
+      "visualLabel": "Initial access is limited to eligible US-English adult personal accounts on Apple Silicon and macOS 15 or later; autonomous completion, recovery and cost-per-task measures were undisclosed.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-20",
+      "visualLabel": "The January rollout is planned; store count, unit economics and the share of exceptions handled by remote operators were undisclosed.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://tx-inc.com/en/blog/2026/11/19/12836/"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-19",
+      "visualLabel": "November 20 rows were unreported at the cutoff, so the total covers four sessions and does not represent a completed trading week.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://farside.co.uk/eth/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-20",
+      "visualLabel": "The public workflow demonstrates quoting, escrow and delivery; it does not provide an independently verified completed order or quality-acceptance record.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://agent.croo.network/skill"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://aws.amazon.com/blogs/machine-learning/enable-ai-agents-to-pay-for-aws-marketplace-x402-products-with-amazon-bedrock-agentcore-payments/"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "deepDiveAvailable": true,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "visualValue": "2026-11-21",
+      "visualLabel": "No controlled comparison currently establishes which acceptance mechanism best predicts usable work across subjective agent services.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://agent.croo.network/skill"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://aws.amazon.com/blogs/machine-learning/enable-ai-agents-to-pay-for-aws-marketplace-x402-products-with-amazon-bedrock-agentcore-payments/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-16",
+      "visualLabel": "The proposal concerns the projected study process and remains before FERC; it does not guarantee physical energization within one year.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://insidelines.pjm.com/pjm-proposal-would-cut-interconnection-process-time-in-half/"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://www.pjm.com/-/media/DotCom/library/ferc-filings/2026/20261116-er26-411-000.pdf"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-20",
+      "visualLabel": "The financing remained under discussion; company confirmation, final terms, current revenue, gross margin and inference cost were unavailable.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.reuters.com/technology/cognition-ai-talks-be-valued-75-billion-latest-funding-round-bloomberg-news-2026-11-20/"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-20",
+      "visualLabel": "Gross transaction totals include selling stockholder proceeds and precede fees, so the headline total is not equivalent to cash received by Anthropic.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.anthropic.com/news/announcements"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, November 21, 2026",
+      "description": "Eight bounded actions turn today’s evidence into observable next gates.",
+      "centralJudgment": "Agent commerce is not complete when a file arrives; inspectable acceptance decides whether the work is usable.",
+      "fieldLine": "Eight signals. Signal 5 opens today’s Action Item on acceptance in agent commerce.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Frontier models and OPC autonomy: Gemini turns the Mac into a background execution environment",
+          "why": "Inference / Why Robin should care: RobinOS gains a potentially useful pattern: execution without monopolizing the main screen or cursor. Approvals and recovery may still consume the savings; Mac users gain distribution access, while standalone automation tools face platform competition—not demonstrated superiority in autonomy.",
+          "steps": [
+            "One Action: When available on an eligible account, test one local-PDF→extraction→Slides task, recording acceptance, human intervention minutes and recovery after interruption.",
+            "One Action: When available on an eligible account, test one local-PDF→extraction→Slides task, recording acceptance, human intervention minutes and recovery after interruption."
+          ],
+          "done": "One Action: When available on an eligible account, test one local-PDF→extraction→Slides task, recording acceptance, human intervention minutes and recovery after interruption."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "Physical AI: FamilyMart plans national restocking deployment, with teleoperation still inside the loop",
+          "why": "Inference / Why Robin should care: Specialized hardware, operational integration, human fallback and training data offer a commercial path beyond humanoid demonstrations. Japan adds a useful counterexample to US–China comparisons: distribution and operations may matter more than form factor, while evidence remains insufficient for an overall national ranking.",
+          "steps": [
+            "One Action: Track the first January installations’ net weekly labor hours saved per store, after remote-operation and maintenance hours.",
+            "One Action: Track the first January installations’ net weekly labor hours saved per store, after remote-operation and maintenance hours."
+          ],
+          "done": "One Action: Track the first January installations’ net weekly labor hours saved per store, after remote-operation and maintenance hours."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows and Web3 Health",
+          "title": "Crypto capital: $1.3293 billion withdrawn over four sessions; Friday remains unconfirmed",
+          "why": "Inference / Why Robin should care: ETF-channel withdrawal is established; a parallel decline in all on-chain activity, developer adoption or industry revenue is not. Durable growth still requires paying usage, with attention and turnover serving only as leads.",
+          "steps": [
+            "One Action: Add November 20 once reporting is complete to establish the full week’s combined BTC/ETH ETF flows and whether withdrawals persisted into the weekend.",
+            "One Action: Add November 20 once reporting is complete to establish the full week’s combined BTC/ETH ETF flows and whether withdrawals persisted into the weekend."
+          ],
+          "done": "One Action: Add November 20 once reporting is complete to establish the full week’s combined BTC/ETH ETF flows and whether withdrawals persisted into the weekend."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins, FinTech and Token Rails",
+          "title": "Financial imagination: Codex can find subcontractor agents—but who accepts their work?",
+          "why": "Mechanism and inference / Why Robin should care: An agent can procure research or image services from another agent, connecting discovery, ordering, payment and delivery. The provocative gap: escrow can establish payment and timing without establishing accurate research or usable images—verifiable delivery may differ from an acceptable outcome.",
+          "steps": [
+            "One Action: Examine one actual CAP order’s acceptance rules: do they verify that a file arrived, or that the buyer’s requirements were satisfied?",
+            "One Action: Examine one actual CAP order’s acceptance rules: do they verify that a file arrived, or that the buyer’s requirements were satisfied?"
+          ],
+          "done": "One Action: Examine one actual CAP order’s acceptance rules: do they verify that a file arrived, or that the buyer’s requirements were satisfied?"
+        },
+        {
+          "signal": 5,
+          "domain": "Content and Visibility",
+          "title": "iamrobin.ai: Make acceptance the original question behind the agent economy",
+          "why": "Inference / Why Robin should care: This connects financial infrastructure, Honest Agent research and SunTV’s OPC experiment: delivering a draft does not establish fact-checking, and publishing does not establish reader value.",
+          "steps": [
+            "One Action: One publishing assignment for Codex:",
+            "One Action: One publishing assignment for Codex:"
+          ],
+          "done": "One Action: One publishing assignment for Codex:"
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure",
+          "title": "AI infrastructure and career: PJM proposes faster studies—and earlier capital readiness",
+          "why": "Inference / Why Robin should care: Token Factory constraints extend beyond land and GPUs to demonstrable readiness and upgrade-cost allocation. This fits Robin’s engineering–capital allocation intersection: assessing energization, capital commitments and staged exits, rather than returning to on-site civil execution.",
+          "steps": [
+            "One Action: Model capital tied up while awaiting energization for one existing US compute project, separating a one-year study from actual operational dates.",
+            "One Action: Model capital tied up while awaiting energization for one existing US compute project, separating a one-year study from actual operational dates."
+          ],
+          "done": "One Action: Model capital tied up while awaiting energization for one existing US compute project, separating a one-year study from actual operational dates."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-stage Private Markets",
+          "title": "Late-stage private markets: Cognition reportedly seeks $75 billion—negotiation is not completion",
+          "why": "Judgment — WATCH / Why Robin should care: New-round designation, leads, terms, proceeds use, current revenue and accessible allocations are unknown. Autonomous software engineering directly fits Robin’s research, but inference and research costs, competition and dilution determine economics; IPO or acquisition remain possible exits, not an accessible deal.",
+          "steps": [
+            "One Action: When formal terms arrive, require revenue run rate, gross margin and inference costs from the same reporting date before testing the proposed valuation against operating progress.",
+            "One Action: When formal terms arrive, require revenue run rate, gross margin and inference costs from the same reporting date before testing the proposed valuation against operating progress."
+          ],
+          "done": "One Action: When formal terms arrive, require revenue run rate, gross margin and inference costs from the same reporting date before testing the proposed valuation against operating progress."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities and AI Systems",
+          "title": "Public equities: Anthropic closes its financing; the $119.5 billion headline is not all company cash",
+          "why": "Inference / Why Robin should care: Closing reduces financing-completion uncertainty relative to pricing; it establishes neither profitability nor customer revenue from strategic subscribers. This refresh could not reverify final November 20 split-adjusted ANT and QQQ closing series, so it omits relative returns and absolute prices.",
+          "steps": [
+            "One Action: Check the final prospectus for Class N versus public Class A economic rights, resale restrictions and conversion provisions, clarifying which risks each capital class bears.",
+            "One Action: Check the final prospectus for Class N versus public Class A economic rights, resale restrictions and conversion provisions, clarifying which risks each capital class bears."
+          ],
+          "done": "One Action: Check the final prospectus for Class N versus public Class A economic rights, resale restrictions and conversion provisions, clarifying which risks each capital class bears."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年11月21日",
+      "description": "八项有边界的行动，把今天的证据转成可观察的下一道门槛。",
+      "centralJudgment": "文件送达并不代表代理商业已经完成；可检验的验收规则决定工作是否可用。",
+      "fieldLine": "八个信号。信号5展开今天关于代理商业验收的行动文章。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与代理",
+          "title": "前沿模型与 OPC：Gemini 把 Mac 变成后台执行环境",
+          "why": "推断／Robin为何在意： 对 RobinOS，真正的进展是代理执行时不再占用主屏幕与鼠标；但审批和失败后的人工接管，仍可能吃掉节省的时间。Mac 工作流用户获得新入口，独立自动化工具则面临平台分发竞争；这尚不能证明自主性领先。",
+          "steps": [
+            "One Action： 在合资格账户实际开放后，用一项“本地 PDF→信息提取→Slides”任务首测，记录验收是否通过、人工介入分钟和中断后能否续跑。",
+            "One Action： 在合资格账户实际开放后，用一项“本地 PDF→信息提取→Slides”任务首测，记录验收是否通过、人工介入分钟和中断后能否续跑。"
+          ],
+          "done": "One Action： 在合资格账户实际开放后，用一项“本地 PDF→信息提取→Slides”任务首测，记录验收是否通过、人工介入分钟和中断后能否续跑。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 与机器人",
+          "title": "物理 AI：FamilyMart 将补货机器人推向全国，遥操作仍在闭环里",
+          "why": "推断／Robin为何在意： 这是“专用硬件＋门店流程＋人类兜底＋训练数据”的商业路径，比通用人形演示更接近经济闭环。中美机器人的成本和产量比较，也应加入日本这个反例：渠道与运营整合可能比机器人外形更重要，目前证据不足以给各国排总名次。",
+          "steps": [
+            "One Action： 追踪2027年1月首批实际安装门店的每店每周净节省工时，扣除远程操作和维护工时。",
+            "One Action： 追踪2027年1月首批实际安装门店的每店每周净节省工时，扣除远程操作和维护工时。"
+          ],
+          "done": "One Action： 追踪2027年1月首批实际安装门店的每店每周净节省工时，扣除远程操作和维护工时。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流与 Web3 健康",
+          "title": "Crypto 资金：本周前四个交易日撤资13.293亿美元，周五仍待确认",
+          "why": "推断／Robin为何在意： 目前能确认的是 ETF 通道资金撤离，不能由此推出全部链上活动、开发者采用或行业收入同步衰退。下一层持久增长仍须由真实付费使用证明，注意力与交易量只是候选线索。",
+          "steps": [
+            "One Action： 等20日数据齐全后补上最后一行，形成完整一周的 BTC＋ETH ETF 净流量，再判断撤资是否持续到周末前。",
+            "One Action： 等20日数据齐全后补上最后一行，形成完整一周的 BTC＋ETH ETF 净流量，再判断撤资是否持续到周末前。"
+          ],
+          "done": "One Action： 等20日数据齐全后补上最后一行，形成完整一周的 BTC＋ETH ETF 净流量，再判断撤资是否持续到周末前。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币、金融科技与代币轨道",
+          "title": "金融想象力：Codex 可以找“外包代理”，但谁判定交付完成？",
+          "why": "机制与推断／Robin为何在意： 例如，你的代理可以购买另一个代理提供的研究或图片服务，把“发现服务→下单→付款→交付”连接起来。最有趣的争议是：托管能证明付款与超时，却未必能证明研究正确、图片可用——机器可验证的交付，与人愿意接受的成果，可能是两件事。",
+          "steps": [
+            "One Action： 查看一笔真实 CAP 订单的验收规则：它验证的是文件到达，还是买家要求真正满足？",
+            "One Action： 查看一笔真实 CAP 订单的验收规则：它验证的是文件到达，还是买家要求真正满足？"
+          ],
+          "done": "One Action： 查看一笔真实 CAP 订单的验收规则：它验证的是文件到达，还是买家要求真正满足？"
+        },
+        {
+          "signal": 5,
+          "domain": "内容与可见度",
+          "title": "iamrobin.ai：把“代理经济”的验收难题写成 Robin 的原创问题",
+          "why": "推断／Robin为何在意： 这能连接金融基础设施、Honest Agent 研究和 SunTV 的 OPC 实验：新闻稿交付了，不代表事实核实完成；文章发布了，也不代表读者获得了价值。",
+          "steps": [
+            "One Action： 交给 Codex 的单一出版任务：",
+            "One Action： 交给 Codex 的单一出版任务："
+          ],
+          "done": "One Action： 交给 Codex 的单一出版任务："
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基础设施",
+          "title": "AI 基建与职业：PJM 要缩短并网研究，资本准备要求反而提前",
+          "why": "推断／Robin为何在意： Token Factory 的可投资约束，正在从“有没有土地和 GPU”延伸到“谁能证明项目已准备好、谁付升级费用”。这也贴合 Robin 的工程与资本配置交叉路径：判断可送电性、资金承诺及阶段退出条件，而非回到驻场土木。",
+          "steps": [
+            "One Action： 给一个现有美国算力项目做等待送电期间的资本占用敏感性分析，将一年研究期与真实投运日期分开。",
+            "One Action： 给一个现有美国算力项目做等待送电期间的资本占用敏感性分析，将一年研究期与真实投运日期分开。"
+          ],
+          "done": "One Action： 给一个现有美国算力项目做等待送电期间的资本占用敏感性分析，将一年研究期与真实投运日期分开。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私募",
+          "title": "后期私募：Cognition 据报洽谈750亿美元估值，先分清报价与成交",
+          "why": "判断／WATCH／Robin为何在意： 新轮次名称、领投、条款、用途、当前收入及可获得配额均未知。它与 Robin 的自主软件公司研究直接相关，但推理及研发成本、平台竞争和稀释会决定经济性；IPO或战略收购只是可能退出路径，报道不是可访问的投资机会。",
+          "steps": [
+            "One Action： 取得正式新轮条款后，要求同一日期的收入运行率、毛利和推理成本，再检验750亿美元估值是否对应经营进步。",
+            "One Action： 取得正式新轮条款后，要求同一日期的收入运行率、毛利和推理成本，再检验750亿美元估值是否对应经营进步。"
+          ],
+          "done": "One Action： 取得正式新轮条款后，要求同一日期的收入运行率、毛利和推理成本，再检验750亿美元估值是否对应经营进步。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场与 AI 系统",
+          "title": "公开市场：Anthropic 完成交割，1195亿美元总额不全属于公司",
+          "why": "推断／Robin为何在意： 相比定价公告，交割降低了融资完成的不确定性；它没有证明盈利能力，也不等于战略认购者已经贡献客户收入。本轮未能重新核实11月20日 ANT 与 QQQ 的最终拆股调整收盘序列，因此不报相对涨跌或绝对股价。",
+          "steps": [
+            "One Action： 对照最终招股书核实 Class N 与公开 Class A 的经济权利、转售限制及转换条款，厘清两类资本承担的风险。",
+            "One Action： 对照最终招股书核实 Class N 与公开 Class A 的经济权利、转售限制及转换条款，厘清两类资本承担的风险。"
+          ],
+          "done": "One Action： 对照最终招股书核实 Class N 与公开 Class A 的经济权利、转售限制及转换条款，厘清两类资本承担的风险。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年11月21日",
+      "description": "八項有邊界的行動，把今天的證據轉成可觀察的下一道門檻。",
+      "centralJudgment": "檔案送達並不代表代理商業已經完成；可檢驗的驗收規則決定工作是否可用。",
+      "fieldLine": "八個訊號。訊號5展開今天關於代理商業驗收的行動文章。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與代理",
+          "title": "前沿模型與 OPC 自主性：Gemini 讓 Mac 在背景執行任務",
+          "why": "推斷／Robin 為何在意： RobinOS 可借鑑的，是執行任務時不用佔用主畫面或游標；但審批和失敗後的人工處理，仍可能抵消節省的時間。Mac 用戶多了一個入口，獨立自動化工具則面對平台分發競爭；這並未證明 Gemini 的自主能力較強。",
+          "steps": [
+            "One Action： 在合資格帳戶開放使用後，測試一項「本機 PDF→資料擷取→Slides」任務，記錄是否通過驗收、人工介入分鐘數，以及中斷後的恢復情況。",
+            "One Action： 在合資格帳戶開放使用後，測試一項「本機 PDF→資料擷取→Slides」任務，記錄是否通過驗收、人工介入分鐘數，以及中斷後的恢復情況。"
+          ],
+          "done": "One Action： 在合資格帳戶開放使用後，測試一項「本機 PDF→資料擷取→Slides」任務，記錄是否通過驗收、人工介入分鐘數，以及中斷後的恢復情況。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 與機器人",
+          "title": "物理 AI：FamilyMart 計劃全國部署補貨機器人，遙距操作仍在流程中",
+          "why": "推斷／Robin 為何在意： 專用硬件、營運整合、人手後備及訓練數據，構成比人形機器人示範更具體的商業路徑。日本也是中美比較的重要參照：渠道與營運或比外形更關鍵；目前仍不足以為各國作整體排名。",
+          "steps": [
+            "One Action： 追蹤明年1月首批安裝門店的每店每週淨節省工時，扣除遙距操作及維修工時。",
+            "One Action： 追蹤明年1月首批安裝門店的每店每週淨節省工時，扣除遙距操作及維修工時。"
+          ],
+          "done": "One Action： 追蹤明年1月首批安裝門店的每店每週淨節省工時，扣除遙距操作及維修工時。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本流與 Web3 健康",
+          "title": "加密資本：四個交易日流出13.293億美元，週五數據仍未確認",
+          "why": "推斷／Robin 為何在意： ETF 渠道的資金撤離可以確認；所有鏈上活動、開發者採用或行業收入同步下降，則不能由此推斷。持久增長仍須看付費使用，關注度和成交量只能提供線索。",
+          "steps": [
+            "One Action： 待11月20日數據完整後補入，計算整週 BTC／ETH ETF 合計流量，再判斷撤資是否延續至週末前。",
+            "One Action： 待11月20日數據完整後補入，計算整週 BTC／ETH ETF 合計流量，再判斷撤資是否延續至週末前。"
+          ],
+          "done": "One Action： 待11月20日數據完整後補入，計算整週 BTC／ETH ETF 合計流量，再判斷撤資是否延續至週末前。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣、金融科技與代幣軌道",
+          "title": "金融想像力：Codex 可以尋找外包代理，誰負責驗收？",
+          "why": "機制與推斷／Robin 為何在意： 一個代理可向另一個代理採購研究或圖片服務，把搜尋、下單、付款與交付串起來。爭議在於：託管可證明付款和時間，卻未必能證明研究正確或圖片可用。可驗證的交付，未必等於買家可接受的成果。",
+          "steps": [
+            "One Action： 檢視一筆真實 CAP 訂單的驗收規則：它核實檔案已送達，還是買家要求已獲滿足？",
+            "One Action： 檢視一筆真實 CAP 訂單的驗收規則：它核實檔案已送達，還是買家要求已獲滿足？"
+          ],
+          "done": "One Action： 檢視一筆真實 CAP 訂單的驗收規則：它核實檔案已送達，還是買家要求已獲滿足？"
+        },
+        {
+          "signal": 5,
+          "domain": "內容與可見度",
+          "title": "iamrobin.ai：從代理經濟追問「誰說工作完成」",
+          "why": "推斷／Robin 為何在意： 這把金融基建、Honest Agent 研究及 SunTV 的 OPC 實驗連起來：交出初稿不等於完成事實核查；刊登文章也不等於讀者已獲得價值。",
+          "steps": [
+            "One Action： 交給 Codex 的單一出版任務：",
+            "One Action： 交給 Codex 的單一出版任務："
+          ],
+          "done": "One Action： 交給 Codex 的單一出版任務："
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基礎設施",
+          "title": "AI 基建與職業：PJM 擬縮短研究期，也把資本準備要求提前",
+          "why": "推斷／Robin 為何在意： Token Factory 的限制不止土地和 GPU，還包括能否證明項目準備就緒，以及誰負擔升級費用。Robin 的工程與資本配置交會點，是評估通電時程、資本承諾與分階段退出，而非重回工地執行土木工程。",
+          "steps": [
+            "One Action： 為一個現有美國運算項目測算等待通電期間的資本佔用，把一年研究期與實際營運日期分開。",
+            "One Action： 為一個現有美國運算項目測算等待通電期間的資本佔用，把一年研究期與實際營運日期分開。"
+          ],
+          "done": "One Action： 為一個現有美國運算項目測算等待通電期間的資本佔用，把一年研究期與實際營運日期分開。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私募",
+          "title": "後期私募：Cognition 據報洽談750億美元估值，談判尚未成交",
+          "why": "判斷｜WATCH／Robin 為何在意： 新輪次名稱、領投方、條款、資金用途、當前收入及可取得的投資配額均未知。自主軟件工程與 Robin 的研究直接相關，但推理與研發成本、競爭及稀釋才決定經濟性；IPO 或收購只是可能的退出方式，不代表目前有可參與交易。",
+          "steps": [
+            "One Action： 正式條款公布後，要求同一報告日期的收入年化運行率、毛利率與推理成本，再檢驗估值與營運進展是否相符。",
+            "One Action： 正式條款公布後，要求同一報告日期的收入年化運行率、毛利率與推理成本，再檢驗估值與營運進展是否相符。"
+          ],
+          "done": "One Action： 正式條款公布後，要求同一報告日期的收入年化運行率、毛利率與推理成本，再檢驗估值與營運進展是否相符。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場與 AI 系統",
+          "title": "上市股票：Anthropic 融資完成，1,195億美元並非全數進入公司",
+          "why": "推斷／Robin 為何在意： 完成交割比定價時更能確定融資落實，卻不能證明盈利，亦不能證明策略認購者帶來客戶收入。本次更新未能重新核實11月20日 ANT 和 QQQ 的最終拆股調整收市序列，因此不列相對回報或絕對價格。",
+          "steps": [
+            "One Action： 查看最終招股書，核實 Class N 與公開 Class A 的經濟權利、轉售限制及轉換條款，釐清各類資本承擔甚麼風險。",
+            "One Action： 查看最終招股書，核實 Class N 與公開 Class A 的經濟權利、轉售限制及轉換條款，釐清各類資本承擔甚麼風險。"
+          ],
+          "done": "One Action： 查看最終招股書，核實 Class N 與公開 Class A 的經濟權利、轉售限制及轉換條款，釐清各類資本承擔甚麼風險。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー 2026年11月21日",
+      "description": "八つの限定された行動で、本日の証拠を観測可能な次のゲートへ変える。",
+      "centralJudgment": "ファイルの到着だけではエージェント取引は完了しない。検査可能な受入基準が成果物の有用性を決める。",
+      "fieldLine": "八つのシグナル。シグナル5はエージェント取引の受入を扱う本日のAction Itemへ続く。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "フロンティアモデルとエージェント",
+          "title": "先端モデルとOPCの自律性：GeminiがMacの背後で作業する",
+          "why": "推論／Robinにとっての意味： RobinOSが参考にできるのは、画面やカーソルを占有せずに仕事を進める設計だ。ただし承認や復旧に人の時間がかかれば、節約分は減る。Mac利用者には新たな入口となり、独立系の自動化ツールにはプラットフォームとの競争が生じる。自律性での優位が示されたわけではない。",
+          "steps": [
+            "One Action： 対象アカウントで利用できるようになったら、ローカルPDFから情報を抽出しSlidesにまとめるタスクを一件試し、受け入れ可否、人の介入時間、中断後の回復を記録する。",
+            "One Action： 対象アカウントで利用できるようになったら、ローカルPDFから情報を抽出しSlidesにまとめるタスクを一件試し、受け入れ可否、人の介入時間、中断後の回復を記録する。"
+          ],
+          "done": "One Action： 対象アカウントで利用できるようになったら、ローカルPDFから情報を抽出しSlidesにまとめるタスクを一件試し、受け入れ可否、人の介入時間、中断後の回復を記録する。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AIとロボティクス",
+          "title": "フィジカルAI：FamilyMartの全国展開計画、遠隔操作はなお必要",
+          "why": "推論／Robinにとっての意味： 専用の機器、店舗業務との統合、人のバックアップ、訓練データを組み合わせる道筋は、人型ロボットの実演とは違う商業上の手掛かりになる。米中比較には日本も入れるべきだ。形状より販売網と運用が効く可能性がある一方、国全体の順位を付ける証拠は足りない。",
+          "steps": [
+            "One Action： 1月の初期設置店舗について、遠隔操作と保守に使った時間を差し引いた店舗当たりの週次労働時間削減を追う。",
+            "One Action： 1月の初期設置店舗について、遠隔操作と保守に使った時間を差し引いた店舗当たりの週次労働時間削減を追う。"
+          ],
+          "done": "One Action： 1月の初期設置店舗について、遠隔操作と保守に使った時間を差し引いた店舗当たりの週次労働時間削減を追う。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資本フローとWeb3",
+          "title": "暗号資産への資本：4営業日で13億2930万ドル流出、金曜分は未確認",
+          "why": "推論／Robinにとっての意味： ETF経由の資金流出は確認できる。一方、オンチェーン活動全体、開発者の採用、業界収益がそろって落ちたとは言えない。持続的な成長には有料利用の実績が必要で、注目度や取引量は手掛かりにとどまる。",
+          "steps": [
+            "One Action： 11月20日の報告がそろった時点で加え、BTCとETHのETFを合算した週全体のフローと、週末前まで流出が続いたかを確かめる。",
+            "One Action： 11月20日の報告がそろった時点で加え、BTCとETHのETFを合算した週全体のフローと、週末前まで流出が続いたかを確かめる。"
+          ],
+          "done": "One Action： 11月20日の報告がそろった時点で加え、BTCとETHのETFを合算した週全体のフローと、週末前まで流出が続いたかを確かめる。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコイン、FinTech、トークン基盤",
+          "title": "金融の想像力：Codexは仕事を外注できる。誰が検収するのか",
+          "why": "仕組みと推論／Robinにとっての意味： あるエージェントが別のエージェントに調査や画像制作を発注すれば、発見から注文、支払い、納品までつながる。だがエスクローが支払いと期限を扱えても、調査の正確さや画像の実用性までは保証しない。検証可能な納品と、買い手が受け入れる成果は別の出来事だ。",
+          "steps": [
+            "One Action： 実際のCAP注文を一件取り上げ、検収規則がファイルの到着を確認するのか、買い手の要件充足まで確認するのか調べる。",
+            "One Action： 実際のCAP注文を一件取り上げ、検収規則がファイルの到着を確認するのか、買い手の要件充足まで確認するのか調べる。"
+          ],
+          "done": "One Action： 実際のCAP注文を一件取り上げ、検収規則がファイルの到着を確認するのか、買い手の要件充足まで確認するのか調べる。"
+        },
+        {
+          "signal": 5,
+          "domain": "コンテンツと可視性",
+          "title": "iamrobin.ai：エージェント経済の原点に「検収」を置く",
+          "why": "推論／Robinにとっての意味： 金融インフラ、Honest Agentの研究、SunTVのOPC実験を結ぶ問いだ。原稿を届けても事実確認が済んだとは限らず、公開しても読者に価値が届いたとは限らない。",
+          "steps": [
+            "One Action： Codexへの一件の出版課題を設定する。",
+            "One Action： Codexへの一件の出版課題を設定する。"
+          ],
+          "done": "One Action： Codexへの一件の出版課題を設定する。"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラ",
+          "title": "AIインフラとキャリア：PJMは審査短縮を提案、資本準備は前倒し",
+          "why": "推論／Robinにとっての意味： Token Factoryの制約は土地とGPUにとどまらない。着工できる準備を示せるか、系統増強費を誰が払うかが重要になる。Robinの工学と資本配分が交わるのは、通電の見通し、資本コミットメント、段階的な撤退を評価する場面であり、現場の土木施工に戻ることではない。",
+          "steps": [
+            "One Action： 既存の米国計算施設を一件選び、通電を待つ間に拘束される資本を試算する。1年の審査期間と実際の稼働日を分ける。",
+            "One Action： 既存の米国計算施設を一件選び、通電を待つ間に拘束される資本を試算する。1年の審査期間と実際の稼働日を分ける。"
+          ],
+          "done": "One Action： 既存の米国計算施設を一件選び、通電を待つ間に拘束される資本を試算する。1年の審査期間と実際の稼働日を分ける。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期未公開市場",
+          "title": "レイトステージ未公開市場：Cognitionの750億ドル評価は交渉段階",
+          "why": "判断｜WATCH／Robinにとっての意味： 新ラウンドの名称、主幹投資家、条件、資金使途、現在の売上、投資可能な枠は不明だ。自律的なソフトウェア開発はRobinの研究対象と直結するが、推論・研究開発費、競争、希薄化が経済性を左右する。IPOや買収はあり得る出口であって、参加できる案件があるという意味ではない。",
+          "steps": [
+            "One Action： 正式条件が出たら、同じ報告日時点の年換算売上高、粗利益率、推論費用をそろえ、評価額と事業進展を照らす。",
+            "One Action： 正式条件が出たら、同じ報告日時点の年換算売上高、粗利益率、推論費用をそろえ、評価額と事業進展を照らす。"
+          ],
+          "done": "One Action： 正式条件が出たら、同じ報告日時点の年換算売上高、粗利益率、推論費用をそろえ、評価額と事業進展を照らす。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開株式とAIシステム",
+          "title": "上場株式：Anthropicの資金調達は完了、1195億ドル全額が会社資金ではない",
+          "why": "推論／Robinにとっての意味： 決済完了で、価格決定時より資金調達の成立は確かになった。ただし利益が出ていることも、戦略投資家が顧客売上を生んだことも示さない。今回の更新では11月20日のANTとQQQの最終的な株式分割調整後の終値系列を再確認できなかったため、相対リターンも株価も示さない。",
+          "steps": [
+            "One Action： 最終目論見書でClass Nと公開Class Aの経済的権利、転売制限、転換条項を確認し、それぞれの資本が負うリスクを明らかにする。",
+            "One Action： 最終目論見書でClass Nと公開Class Aの経済的権利、転売制限、転換条項を確認し、それぞれの資本が負うリスクを明らかにする。"
+          ],
+          "done": "One Action： 最終目論見書でClass Nと公開Class Aの経済的権利、転売制限、転換条項を確認し、それぞれの資本が負うリスクを明らかにする。"
+        }
+      ]
+    }
+  }
+}
