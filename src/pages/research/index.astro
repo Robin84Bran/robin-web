@@ -31,7 +31,12 @@ const schema={'@context':'https://schema.org','@type':'CollectionPage',name:'Res
     <header class="research-heading">
       <p class="eyebrow">04 / 08 · Research <span>The connected questions</span></p>
       <h1>What allows intelligent systems to act reliably?</h1>
-      <p>Three connected questions. Small worlds to explore them. Studies to put them to the test.</p><p><a class="quiet-link" href="/research/kid-edition/">New here? Try the Kid edition →</a></p>
+      <p>Three connected questions. Small worlds to explore them. Studies to put them to the test.</p>
+      <blockquote class="research-oneliner">
+        <p>I study AI agents that <a href="/research/honestagent/">disown work they actually did</a>, <a href="/research/honestagent/">confess to crimes they never committed</a>, and <a href="/research/portable-self/">confidently remember a world that no longer exists</a>.</p>
+      </blockquote>
+      <p class="research-oneliner-note">First two: small local models (Qwen 2.5, Llama 3.1). Third: Claude, on a synthetic task.</p>
+      <p><a class="quiet-link" href="/research/kid-edition/">New here? Try the Kid edition →</a></p>
     </header>
     <nav class="programme-index" aria-label="Research directions">{directions.map((d,i)=><a href={`#${d.id}`}><span>0{i+1}</span>{d.title}</a>)}</nav>
     <section class="question-map" aria-label="Research programme: agency under constraints">
@@ -80,6 +85,10 @@ const schema={'@context':'https://schema.org','@type':'CollectionPage',name:'Res
   }
 </script>
 <style>
+.research-oneliner { max-width: 52rem; margin: 1.5rem 0 .65rem; padding-left: 1rem; border-left: 1px solid var(--gold); color: var(--ink); font: italic 400 clamp(1.2rem, 2vw, 1.5rem)/1.5 var(--serif); }
+.research-oneliner p { margin: 0; }
+.research-oneliner a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .2em; }
+.research-oneliner-note { max-width: 52rem; margin: 0 0 1rem; color: var(--muted); font: .75rem/1.6 var(--sans); }
 .council-workflow { padding-block: 2rem; border-bottom: 1px solid var(--line); }
 .council-workflow h2 { margin: 0 0 1rem; font: 400 clamp(1.8rem, 4vw, 2.3rem)/1.1 var(--serif); letter-spacing: -.03em; }
 .council-workflow > p:not(.eyebrow) { max-width: 44rem; color: var(--muted); font: .9rem/1.7 var(--sans); }
