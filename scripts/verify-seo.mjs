@@ -126,7 +126,7 @@ if (existsSync(dist)) {
   const actionFlowTranslationRoutes = [...routes.keys()].filter((route) => /^\/ouroboros\/\d{6}\/\d{8}\/actions\/(?:zh-hans|zh-hant|ja)\/$/.test(route));
   const blogRoutes = [...routes.keys()].filter((route) => /^\/ouroboros\/\d{6}\/\d{8}\/blog\/$/.test(route));
   const blogTranslationRoutes = [...routes.keys()].filter((route) => /^\/ouroboros\/\d{6}\/\d{8}\/blog\/(?:zh-hans|zh-hant|ja)\/$/.test(route));
-  const diaryRoutes = [...routes.keys()].filter((route) => /^\/meaning\/diary\/\d{6}\/\d{4}-\d{2}-\d{2}-[a-z0-9-]+\/(?:en\/|zh-hant\/|ja\/)?$/.test(route));
+  const diaryRoutes = [...routes.keys()].filter((route) => /^\/meaning\/diary\/\d{6}\/\d{4}-\d{2}-\d{2}-[a-z0-9-]+\/(?:en\/|zh-hans\/|zh-hant\/|ja\/)?$/.test(route));
   const articleRoutes = [...briefingRoutes, ...briefingTranslationRoutes, ...actionRoutes, ...actionTranslationRoutes];
   const actionFlowPublications = [...actionFlowRoutes, ...actionFlowTranslationRoutes];
   const blogPublications = [...blogRoutes, ...blogTranslationRoutes];

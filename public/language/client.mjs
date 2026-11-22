@@ -11,6 +11,9 @@ const providerKey = '__GT_TRANSLATE_LANGS';
 const supported = new Set(languages.map(([code]) => code));
 const sourceHtmlLang = document.querySelector('meta[name="source-language"]')?.content || document.documentElement.lang;
 const source = normalizeLanguage(sourceHtmlLang);
+const authoredDiaryPacket = document.getElementById('diary-authored-editions');
+const authoredDiaryPaths = authoredDiaryPacket
+  ? Object.fromEntries(Object.entries(JSON.parse(authoredDiaryPacket.textContent)).map(([lang, path]) => [normalizeLanguage(lang), path])) : null;
 const arcade = location.pathname.startsWith('/meaning/Bran_lab/');
 const atlas = location.pathname.startsWith('/asymmetry/btc_probability_atlas/');
 let menu = document.querySelector('#site-language');
@@ -111,6 +114,12 @@ function nativeSimulationLanguage(lang) {
 }
 async function translate(lang) {
   if (busy || !supported.has(lang)) return;
+  const authoredPath = authoredDiaryPaths?.[lang];
+  if (authoredPath) {
+    if (authoredPath !== location.pathname) location.assign(authoredPath);
+    else { restoreTranslator(); selected(source); setStatus('Original authored edition.'); }
+    return;
+  }
   const wasOpen = menu.open;
   busy = true;
   buttons.forEach((button) => { button.disabled = true; });
@@ -189,7 +198,10 @@ const preferred = initialLanguage(source, saved, arcade);
 window.addEventListener('load', () => nativeSimulationLanguage(active === 'auto' ? 'en' : active), { once: true });
 // The arcade is always local-only on arrival, even with a stored preference.
 // Its language choices are an explicit opt-in, not background third-party calls.
-if (arcade) {
+if (authoredDiaryPaths) {
+  setStatus('Authored editions · choose a language to open its page.');
+  editorial.names(source);
+} else if (arcade) {
   setStatus('Game translation is opt-in on each page.');
 } else if (saved !== 'original' && preferred !== source) {
   translate(preferred);
