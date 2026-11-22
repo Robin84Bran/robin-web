@@ -1,0 +1,94 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Black Friday Selloff — Asymmetry — Robin Xie</title><style>:root {
+  --moon: #f6f2eb;
+  --moon-bright: #fdfbf7;
+  --stone: #e8e2d9;
+  --ink: #2e2a26;
+  --muted: #746d65;
+  --gold: #b4915d;
+  --gold-dark: #745a36;
+  --silver: #aab6bf;
+  --sakura: #dfb7c4;
+  --mist: #c9d3da;
+  --line: rgba(83, 74, 65, 0.16);
+  --line-strong: rgba(83, 74, 65, 0.27);
+  --serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  --sans: "Avenir Next", Avenir, "Segoe UI", Helvetica, Arial, sans-serif;
+  --mono: "SFMono-Regular", "SF Mono", Menlo, Consolas, monospace;
+  --shell: min(100% - 2rem, 78rem);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: var(--ink);
+  background: var(--moon);
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 20rem;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: var(--sans);
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0)) 0 0 / 100% 16rem no-repeat,
+    repeating-linear-gradient(0deg, transparent 0 31px, rgba(75, 65, 55, 0.025) 31px 32px),
+    var(--moon);
+}
+
+body::before {
+  position: fixed;
+  z-index: -2;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 13% 8%, rgba(223, 183, 196, 0.24), transparent 22rem),
+    radial-gradient(circle at 89% 27%, rgba(201, 211, 218, 0.25), transparent 28rem),
+    radial-gradient(circle at 58% 88%, rgba(180, 145, 93, 0.09), transparent 26rem);
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p,
+figure,
+ol,
+ul {
+  margin-top: 0;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold-dark);
+  outline-offset: 4px;
+}
+
+
+
+nav,main,footer{max-width:1050px;margin:auto;padding:20px 5%}nav{display:flex;align-items:center;gap:20px;border-bottom:1px solid var(--line)}nav a, .back{text-decoration:none}nav b{margin-right:auto;letter-spacing:.16em}nav b i{display:inline-grid;place-items:center;border:1px solid var(--gold);border-radius:50%;width:32px;height:32px;font:italic 22px var(--serif)}header{padding:52px 0 20px}.tag,figcaption,small,footer,.back{font:12px/1.6 var(--mono);color:var(--gold-dark)}h1,h2,.question,blockquote{font-family:var(--serif);font-weight:400}h1{font-size:clamp(58px,10vw,108px);line-height:.89;letter-spacing:-.055em;margin:20px 0 28px}h1 em{color:var(--gold-dark)}.question{font-size:clamp(24px,4vw,38px);margin:0 0 18px}section{border-top:1px solid var(--line-strong);padding:32px 0}h2{font-size:clamp(30px,5vw,46px);line-height:1.07;letter-spacing:-.03em;margin:10px 0 18px}p,li{max-width:71ch;font-size:17px;line-height:1.65}figure{margin:24px 0 8px}figure img{width:100%;border:1px solid var(--line)}figcaption{padding:9px 0}.scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums}th,td{padding:9px 7px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}th:first-child,td:first-child{text-align:left}th{color:var(--gold-dark)}blockquote{border-left:2px solid var(--gold);margin:24px 0;padding-left:20px;font-size:27px}.metrics{display:flex;gap:clamp(15px,6vw,80px);margin:24px 0}.metrics strong{display:block;font:clamp(34px,6vw,62px) var(--serif)}.metrics span{font-size:13px;color:var(--muted)}summary{cursor:pointer;color:var(--gold-dark);padding:12px 0}footer{border-top:1px solid var(--line)}@media(max-width:560px){nav{gap:12px;font-size:13px}nav b{font-size:12px}header{padding-top:30px}}</style><link rel="canonical" href="https://iamrobin.ai/asymmetry/black-friday-selloff/"><link rel="describedby" href="https://iamrobin.ai/llms.txt" type="text/plain"><meta name="description" content="Which weekdays get the sharpest market moves? A study of S&P 500 selloffs, rallies and sector returns."><meta name="robots" content="index, follow"><meta property="og:url" content="https://iamrobin.ai/asymmetry/black-friday-selloff/"><meta property="og:title" content="Black Friday Selloff"><meta property="og:type" content="article"><meta property="og:image" content="https://iamrobin.ai/asymmetry/black-friday-selloff/weekday-selloffs.png"><meta property="og:image:alt" content="Weekday distribution of sharp selloffs"><meta property="og:description" content="Which weekdays get the sharpest market moves? A study of S&P 500 selloffs, rallies and sector returns."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Black Friday Selloff"><meta name="twitter:description" content="Which weekdays get the sharpest market moves? A study of S&P 500 selloffs, rallies and sector returns."><meta name="twitter:image" content="https://iamrobin.ai/asymmetry/black-friday-selloff/weekday-selloffs.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Black Friday Selloff","url":"https://iamrobin.ai/asymmetry/black-friday-selloff/","author":{"@id":"https://www.tideisun.com/robin#robin-xie"}}</script></head><body>
+<nav><b><i>R</i> ROBIN XIE</b><a href="https://iamrobin.ai/">Home</a><a href="https://iamrobin.ai/asymmetry/">Asymmetry</a></nav><main><a class="back" href="https://iamrobin.ai/asymmetry/">← Asymmetry</a><header><div class="tag">ASYMMETRY FIELD NOTES · 22 NOVEMBER 2026</div><h1>Black Friday<br><em>Selloff.</em></h1><p class="question">Why market always seems to crash on Friday?</p><p>On Sunday in Hong Kong, Friday’s close was still on my screen. The S&amp;P had lost 3.70%. I asked Teddy about Fridays. He counted how often a Friday finished red. I had to stop him. Imagine writing the date of every sharp selloff on a slip of paper and putting the slips in a bowl. How many of the slips say Friday?</p></header>
+<section><span class="tag">01 / THE DENOMINATOR</span><h2>Ten slips in the bowl.</h2><p>We set the cutoff at a 1% drop from the previous New York close. There were 29 slips in the bowl. On the calendar Friday had only 49 of the year’s 250 sessions. In the bowl it had ten.</p><div class="metrics"><div><strong>19.6%</strong><span>Friday’s share of sessions</span></div><div><strong>34.5%</strong><span>Friday’s share of selloffs</span></div></div><p>Both versions of the story were true. Most Fridays finished flat or up. Yet if I remembered a particularly bad day, I had better than a one-in-three chance of remembering a Friday. Remove the November rout that prompted the question and there are still nine Fridays among the other 28 slips.</p><details><summary>The complete one-year weekday count</summary><div class="scroll"><table><thead><tr><th>Weekday</th><th>Sessions</th><th>Down days</th><th>Down ≥1%</th><th>Down ≥2%</th><th>Mean return</th></tr></thead><tbody><tr><td>Mon</td><td>48</td><td>21</td><td>2</td><td>0</td><td>+0.22%</td></tr><tr><td>Tue</td><td>52</td><td>28</td><td>3</td><td>1</td><td>+0.02%</td></tr><tr><td>Wed</td><td>52</td><td>27</td><td>6</td><td>0</td><td>+0.09%</td></tr><tr><td>Thu</td><td>49</td><td>24</td><td>8</td><td>2</td><td>−0.11%</td></tr><tr><td>Fri</td><td>49</td><td>22</td><td>10</td><td>2</td><td>−0.12%</td></tr></tbody></table></div></details>
+<figure><img src="weekday-selloffs.png" alt="Selloff weekday distributions for the S&amp;P 500 and QQQ, and Friday shares for 11 sectors"><figcaption>Fig. 1 · Each bar divides all sharp declines across five weekdays. The heatmap reads across time, one sector per row.</figcaption></figure><p>Pull back a decade and Friday still leads, with 67 of 283 selloffs. Its share falls to 23.7%. These windows sit inside each other. The same November afternoon appears four times.</p></section>
+<section><span class="tag">02 / THE OTHER BOWL</span><h2>Where did the good Fridays go?</h2><p>Now write a slip for every gain of at least 1%. The S&amp;P cash index delivered 27 such days. Friday got two. Monday got nine. Here was a better account of my memory: the week kept ending with conspicuous losses and remarkably few conspicuous wins.</p><div class="scroll"><table><thead><tr><th>S&P cash index rallies</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Total</th></tr></thead><tbody><tr><td>1 year</td><td>9</td><td>3</td><td>7</td><td>6</td><td>2</td><td>27</td></tr><tr><td>3 years</td><td>20</td><td>13</td><td>19</td><td>15</td><td>18</td><td>85</td></tr><tr><td>5 years</td><td>34</td><td>34</td><td>41</td><td>35</td><td>42</td><td>186</td></tr><tr><td>10 years</td><td>67</td><td>64</td><td>70</td><td>62</td><td>72</td><td>335</td></tr></tbody></table></div>
+<p>I could already hear the trade suggesting itself. Buy the Friday panic and collect the Monday bounce. So we looked at the actual weekends. Of those nine big Mondays, only March 23 immediately followed a Friday selloff of at least 1%. Five followed Fridays that had closed green. The two bowls mostly contained different weekends.</p>
+<figure><img src="bullish-weekday-distribution.png" alt="Rally weekday distributions for SPY and QQQ with Friday shares for sectors and selected companies"><figcaption>Fig. 2 · The rally chart uses the tradable ETF SPY, which registered 24 qualifying up days. The cash index registered 27. Friday got two in either series.</figcaption></figure><p>Nvidia had 16 big Fridays among its 84 big up days. AMD had 20 among 108. Someone watching chips could have enjoyed plenty of Friday rallies while someone watching SPY waited most of the year for a third.</p></section>
+<section><span class="tag">03 / THE PAIRED DAYS</span><h2>Give tech the same bad market twice.</h2><p>Technology fell at least 1% on all ten sharp Fridays. Consumer staples did so on none. Before blaming the weekend, we gave each Friday a distinct Monday–Thursday companion, choosing the ten pairs with the smallest combined difference in S&amp;P loss. In both groups the market averaged −1.71%.</p><div class="scroll"><table><thead><tr><th>ETF</th><th>Joined Fri /10</th><th>Joined match /10</th><th>Fri mean %</th><th>Match mean %</th></tr></thead><tbody><tr><td>QQQ Nasdaq-100</td><td>10</td><td>9</td><td>−2.67</td><td>−2.18</td></tr><tr><td>XLK Technology</td><td>10</td><td>9</td><td>−3.39</td><td>−2.71</td></tr><tr><td>XLC Communication</td><td>6</td><td>6</td><td>−1.32</td><td>−1.10</td></tr><tr><td>XLY Discretionary</td><td>7</td><td>7</td><td>−1.60</td><td>−1.92</td></tr><tr><td>XLI Industrials</td><td>7</td><td>6</td><td>−1.27</td><td>−1.93</td></tr><tr><td>XLB Materials</td><td>5</td><td>7</td><td>−1.02</td><td>−1.41</td></tr><tr><td>XLF Financials</td><td>3</td><td>7</td><td>−0.66</td><td>−1.60</td></tr><tr><td>XLRE Real estate</td><td>3</td><td>4</td><td>−0.63</td><td>−0.81</td></tr><tr><td>XLV Health care</td><td>2</td><td>4</td><td>−0.39</td><td>−0.50</td></tr><tr><td>XLU Utilities</td><td>2</td><td>2</td><td>−0.51</td><td>−0.48</td></tr><tr><td>XLE Energy</td><td>1</td><td>2</td><td>+0.63</td><td>+0.11</td></tr><tr><td>XLP Staples</td><td>0</td><td>2</td><td>+0.49</td><td>+0.08</td></tr></tbody></table></div><p>Tech crossed our threshold nine times on the other weekdays too. The distinction was depth: XLK lost an extra 0.68 percentage points on the average Friday. Drop the two most severe Fridays and their matches, and the difference is still 0.43 points. Financials tell a different story. They joined seven matched weekday declines and only three Friday declines.</p></section>
+<section><span class="tag">04 / FOLLOW THE MONEY</span><h2>A chip can stay busy while its owner gets poorer.</h2><p>On June 5, chip stocks were still absorbing Broadcom’s report from earlier in the week. On November 18, a Wednesday, CoreWeave fell as investors weighed Nvidia’s language about financing its customers. Two days later, news of an SEC accounting probe hit Nvidia. A probe is an inquiry. The market had already begun repricing the financing relationship before Friday arrived.</p><p>This is where the calendar meets our TideTrend work. A lab reserves compute. A provider borrows against a contract and buys GPUs. The supplier may also own shares in the buyer. CoreWeave’s quarterly revenue reached $3.66 billion. Alongside $207 million in operating income sat $846 million in net interest expense. An investor can believe every GPU will find work and still ask who carries the bill until the customer pays.</p><p>Read the detailed TideTrend analysis: <a href="https://tidetrend.xyz/research/coreweave-cash-flow-and-recourse/">CoreWeave: Who Finances the Customer Behind the Contract?</a></p><blockquote>Who needs the next dollar of outside financing before their customer pays them?</blockquote><p>I started with a suspicion about Fridays. I’d keep the observation and leave the trade alone. The tape tells us when the losses landed. The contracts give us somewhere to look for who bears them.</p></section>
+<section><span class="tag">RESEARCH NOTES</span><p>Overlapping lookbacks end November 20, 2026. Thresholds use daily close-to-close price moves in New York, including overnight changes. ETF and stock figures use consolidated Alpaca prices with split adjustments and exclude dividends. Sector and stock heatmaps use each instrument’s own event count. XLC began trading in 2018. Ten matched pairs offer descriptive evidence. Matching controls index-loss size alone.</p><p><a href="https://fred.stlouisfed.org/series/SP500">Index closes · FRED</a> · <a href="https://markets.ft.com/data/indices/tearsheet/historical?s=INX:IOM">Final close · FT</a> · <a href="https://tidetrend.xyz/">TideTrend</a> · <a href="https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx">CoreWeave Q3 results</a> · <a href="https://www.reuters.com/business/media-telecom/chip-selloff-erases-over-1-trillion-stock-market-value-2026-06-05/">June chip selloff · Reuters</a> · <a href="https://www.reuters.com/business/view-nasdaq-plunges-5-day-after-anthropic-debut-investors-still-believe-ai-2026-11-20/">November selloff · Reuters</a></p></section></main><footer>I seek. I become. I AM.</footer></body></html>

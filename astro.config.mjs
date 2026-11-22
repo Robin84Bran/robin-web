@@ -14,7 +14,7 @@ export default defineConfig({
   integrations: [
     languagePages(),
     sitemap({
-      customPages: ["https://iamrobin.ai/intelligence/supply-chain-map/", "https://iamrobin.ai/meaning/Bran_lab/", "https://iamrobin.ai/meaning/Bran_lab/SuperRun/", "https://iamrobin.ai/meaning/Bran_lab/GeoDash/", "https://iamrobin.ai/meaning/Bran_lab/PacMan/", "https://iamrobin.ai/meaning/Bran_lab/BlockLab/", "https://iamrobin.ai/meaning/Bran_lab/WonderTrail/", "https://iamrobin.ai/meaning/Bran_lab/KartLab/", "https://iamrobin.ai/meaning/Bran_lab/CloudMunch/", "https://iamrobin.ai/meaning/Bran_lab/BounceTrials/", "https://iamrobin.ai/meaning/Bran_lab/StarboundMath/"],
+      customPages: ["https://iamrobin.ai/asymmetry/black-friday-selloff/", "https://iamrobin.ai/intelligence/supply-chain-map/", "https://iamrobin.ai/meaning/Bran_lab/", "https://iamrobin.ai/meaning/Bran_lab/SuperRun/", "https://iamrobin.ai/meaning/Bran_lab/GeoDash/", "https://iamrobin.ai/meaning/Bran_lab/PacMan/", "https://iamrobin.ai/meaning/Bran_lab/BlockLab/", "https://iamrobin.ai/meaning/Bran_lab/WonderTrail/", "https://iamrobin.ai/meaning/Bran_lab/KartLab/", "https://iamrobin.ai/meaning/Bran_lab/CloudMunch/", "https://iamrobin.ai/meaning/Bran_lab/BounceTrials/", "https://iamrobin.ai/meaning/Bran_lab/StarboundMath/"],
       filter: (page) => {
         const path = new URL(page).pathname;
         return [
@@ -32,7 +32,7 @@ export default defineConfig({
           '/zh-hans/', '/zh-hans/about/', '/zh-hans/network/',
           '/zh-hant/', '/zh-hant/about/', '/zh-hant/network/',
           '/ja/', '/ja/about/', '/ja/network/',
-          '/intelligence/attention_all_you_need/', '/intelligence/aidc101/', '/intelligence/aidc101/101-1/', '/portfolio/', '/books/', '/meaning/', '/ouroboros/', '/ouroboros/execution-ledger/', '/binary/', '/binary/coevolution/', '/asymmetry/hkipoblindbox/',
+          '/intelligence/attention_all_you_need/', '/intelligence/aidc101/', '/intelligence/aidc101/101-1/', '/portfolio/', '/books/', '/meaning/', '/ouroboros/', '/ouroboros/execution-ledger/', '/binary/', '/binary/coevolution/', '/asymmetry/hkipoblindbox/', '/asymmetry/black-friday-selloff/',
         ].includes(path)
           || (modelOlympicsPublic && path === '/asymmetry/model-olympics/')
           || /^\/intelligence\/swarm-lab\/(?:cell-city\/|self-assembly\/|mars-jar\/|memory-islands\/|known-trap\/|attention-windows\/|taste-drift\/|shared-channel\/|tuna-redux\/)?$/.test(path)
