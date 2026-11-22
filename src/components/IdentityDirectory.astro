@@ -330,18 +330,34 @@ const meaningSchemas = isMeaningDirectory
             ))}
           </nav>
         </section>
+      ) : isAsymmetryDirectory ? (
+        <>
+          <p class="asymmetry-intro">Capital simulations and model comparisons. Research only; human judgment remains in the loop.</p>
+          <div class="asymmetry-categories">
+            <section>
+              <h2>Equities</h2>
+              <ul>
+                <li><span></span><a href="/asymmetry/black-friday-selloff/">Black Friday Selloff →</a></li>
+                <li><span></span><a href="/asymmetry/hkipoblindbox/">The HK IPO Blind Box →</a></li>
+              </ul>
+            </section>
+            <section>
+              <h2>Crypto</h2>
+              <ul>
+                <li><span></span><a href="/asymmetry/flash-crash-lab/">Flash Crash Lab →</a></li>
+                <li><span></span><a href="/asymmetry/model-olympics/">Model Olympics →</a></li>
+                <li><span></span><a href="/asymmetry/btc_probability_atlas/">BTC Probability Atlas →</a></li>
+                <li><span></span><a href="/asymmetry/quant_lab/">Quant Screener →</a></li>
+              </ul>
+            </section>
+            <section><h2>Seed</h2></section>
+          </div>
+        </>
       ) : (
         <ul>
-          {isAsymmetryDirectory && <>
-            <li><span></span><a href="/asymmetry/btc_probability_atlas/">BTC Probability Atlas · 概率图谱 →</a></li>
-            <li><span></span><a href="/asymmetry/black-friday-selloff/">Black Friday Selloff →</a></li>
-            <li><span></span><a href="/asymmetry/hkipoblindbox/">The HK IPO Blind Box →</a></li>
-            <li><span></span><a href="/asymmetry/flash-crash-lab/">Flash Crash Lab →</a></li>
-            <li class="directory-future">Capital simulations and model comparisons. Research only; human judgment remains in the loop.</li>
-          </>}
           {entry.projects.map((project) => {
             const href = project === 'Model Olympics' ? '/asymmetry/model-olympics/'
-              : isAsymmetryDirectory && project === 'Quant Lab' ? '/asymmetry/quant_lab/' : undefined;
+              : undefined;
             return <li><span></span>{href ? <a href={href}>{project} →</a> : project}</li>;
           })}
           <li class="directory-future"><span></span>more, as it becomes</li>
@@ -355,5 +371,10 @@ const meaningSchemas = isMeaningDirectory
   </section>
 </BaseLayout>
 <style is:global>
+  .asymmetry-intro { max-width: 48rem; color: var(--muted); line-height: 1.6; }
+  .asymmetry-categories section { margin-block: 2.2rem; }
+  .asymmetry-categories h2 { font: 2rem var(--serif); margin: 0 0 .65rem; }
+  .asymmetry-categories section ul { margin-block: 0; }
+
   .special-empty { max-width: 44rem; margin: 0; padding: 1.2rem 0 1.8rem; color: var(--muted); font-size: .88rem; line-height: 1.7; }
 </style>
