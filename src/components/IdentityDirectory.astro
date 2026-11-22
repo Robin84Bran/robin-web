@@ -355,11 +355,7 @@ const meaningSchemas = isMeaningDirectory
         </>
       ) : (
         <ul>
-          {entry.projects.map((project) => {
-            const href = project === 'Model Olympics' ? '/asymmetry/model-olympics/'
-              : undefined;
-            return <li><span></span>{href ? <a href={href}>{project} →</a> : project}</li>;
-          })}
+          {entry.projects.map((project) => <li><span></span>{project}</li>)}
           <li class="directory-future"><span></span>more, as it becomes</li>
         </ul>
       )
