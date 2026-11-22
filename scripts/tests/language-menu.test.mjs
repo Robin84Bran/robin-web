@@ -168,8 +168,31 @@ test('translation CSP is narrow and equal at edge and static fallback', () => {
     assert.doesNotMatch(text, /unsafe-eval|\*\.google|translate_a\/element/);
   }
   const client = read('public/language/client.mjs');
-  assert.doesNotMatch(client, /location\.(?:href\s*=|assign|replace)|fetch\(/);
+  // Robin explicitly requested authored Diary pages in three languages.
+  // Only that guarded choice may navigate; automatic translation stays on-page.
+  const authoredNavigation = 'if (authoredPath !== location.pathname) location.assign(authoredPath);';
+  assert.equal(client.split(authoredNavigation).length, 2);
+  assert.match(client, /const authoredPath = authoredDiaryPaths\?\.\[lang\];\s+if \(authoredPath\) \{/);
+  assert.doesNotMatch(client.replace(authoredNavigation, ''), /location\.(?:href\s*=|assign|replace)|fetch\(/);
   assert.match(client, /protectPrivateFields/);
   assert.match(client, /translator\.finished/);
   assert.match(client, /45000/);
+});
+
+test('authored Diary language routes are complete, local and isolated from historical pages', () => {
+  const root = new URL('../../dist/', import.meta.url);
+  const base = '/meaning/diary/202611/2026-11-23-the-evolution-of-failure/';
+  const expected = { en: base, 'zh-Hans': base+'zh-hans/', ja: base+'ja/' };
+  for (const route of Object.values(expected)) {
+    const html = readFileSync(new URL(route.slice(1)+'index.html',root),'utf8');
+    const packet = JSON.parse(html.match(/id="diary-authored-editions"[^>]*>(.*?)<\/script>/s)[1]);
+    assert.deepEqual(packet,expected);
+    for (const [lang,path] of Object.entries(packet)) {
+      assert.ok(path.startsWith(base));
+      assert.ok(html.includes(`hreflang="${lang}"`));
+    }
+  }
+  for (const route of ['meaning/', 'meaning/diary/202609/2026-09-07-american-in-hong-kong/']) {
+    assert.doesNotMatch(readFileSync(new URL(route+'index.html',root),'utf8'), /id="diary-authored-editions"/);
+  }
 });
