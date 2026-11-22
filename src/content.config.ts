@@ -140,7 +140,7 @@ const blogTranslation = defineCollection({
 });
 
 const diary = defineCollection({
-  loader: glob({ pattern: '**/{article,en,zh-hant,ja}.md', base: './src/content/diary' }),
+  loader: glob({ pattern: '**/{article,en,zh-hans,zh-hant,ja}.md', base: './src/content/diary' }),
   schema: z.object({
     title: z.string(),
     date: z.coerce.date(),
