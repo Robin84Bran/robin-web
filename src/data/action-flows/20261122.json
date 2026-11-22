@@ -1,0 +1,540 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-22",
+  "updated": "2026-11-22",
+  "signalCount": 8,
+  "briefingPath": "/ouroboros/202611/20261122/",
+  "actionItemPath": "/ouroboros/202611/20261122/action_item/",
+  "hero": "/daily-briefing/20261122/hero.webp",
+  "ogImage": "/daily-briefing/20261122/og.webp",
+  "actionHero": "/action-item/20261122/hero.webp",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-21",
+      "visualLabel": "The official announcement establishes availability by product and plan; it provides no task-level acceptance, intervention or cost comparison for Robin workflows.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://community.openai.com/c/announcements/6"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://help.openai.com/en/articles/9624314-model-release-notes"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-17",
+      "visualLabel": "The financing and product plan are company-reported; customer names, deployed unit count, paid utilization and independent reliability measurements were unavailable.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.prnewswire.com/news-releases/genesis-ai-raises-500m-series-a-at-3-5b-valuation-to-master-human-level-dexterity-in-general-purpose-robots-and-deploy-at-scale-302941249.html"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-20",
+      "visualLabel": "The weekly totals aggregate reported fund rows; dashes remain for some November 20 funds and the tables warn that they update automatically.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://farside.co.uk/eth/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-19",
+      "visualLabel": "Pulsar describes a deposit-to-card workflow; availability varies by region and provider, network or third-party fees may apply, and Pulsar states that it is not a bank.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://trondao.org/announcements/pulsar-enables-usdt-deposits-on-tron-expanding-access-to-everyday-stablecoin-payments"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://pulsar.money/"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "deepDiveAvailable": true,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "visualValue": "2026-11-22",
+      "visualLabel": "Linq reports more than one billion processed messages and customer examples; the public release does not disclose task acceptance rates, error recovery, user-consent failures or cost per completed outcome.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.prnewswire.com/news-releases/linq-raises-90-million-in-new-funding-led-by-andreessen-horowitz-to-build-the-infrastructure-platform-for-ai-agents-302944728.html"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://linqapp.com/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-20",
+      "visualLabel": "Funding availability reduces one financing uncertainty while construction, rack delivery, customer concentration, debt service and utilization remain separate execution risks.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.investing.com/news/stock-market-news/oracle-says-openai-infrastructure-deal-is-fully-funded-after-final-capital-raise-5042771"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001341439/90420ee9-bad1-41ff-a5bc-ab9f9aec910e.pdf"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-18",
+      "visualLabel": "The company disclosed round size and product scope while valuation, revenue, gross margin, burn, customer concentration and financing instrument were unavailable.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.prnewswire.com/news-releases/linq-raises-90-million-in-new-funding-led-by-andreessen-horowitz-to-build-the-infrastructure-platform-for-ai-agents-302944728.html"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-20",
+      "visualLabel": "One volatile session cannot establish long-run value; NVIDIA guidance, leadership transition and Anthropic infrastructure commitments require separate scenario analysis.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://www.investing.com/news/stock-market-news/oracle-says-openai-infrastructure-deal-is-fully-funded-after-final-capital-raise-5042771"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, November 22, 2026",
+      "description": "Eight bounded actions turn today’s evidence into observable next gates.",
+      "centralJudgment": "A conversation can become the interface for action, but consequential state still needs to remain visible.",
+      "fieldLine": "Eight signals. Signal 5 opens today’s Action Item on consent, receipts and recovery in conversational agents.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Frontier models and agents: GPT-6.2 reaches Work and Codex",
+          "why": "Why Robin should care — RobinOS can compare Astra and Sol on one frozen assignment and promote the model that produces acceptable work with less intervention and lower total cost.",
+          "steps": [
+            "One Action — Run the same frozen research-to-publication task once with Astra and once with Sol, recording time to first accepted result, human-intervention minutes and total usage.",
+            "One Action — Run the same frozen research-to-publication task once with Astra and once with Sol, recording time to first accepted result, human-intervention minutes and total usage."
+          ],
+          "done": "One Action — Run the same frozen research-to-publication task once with Astra and once with Sol, recording time to first accepted result, human-intervention minutes and total usage."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "Physical AI and robotics: Genesis AI raises $500 million while deployment evidence develops",
+          "why": "Why Robin should care — Full-stack Physical AI projects are best judged by the usable robot hours that capital creates, with demonstrations serving as early evidence.",
+          "steps": [
+            "One Action — Create an Eno deployment watch that updates only when public evidence gives named customers, paid robot count, accepted weekly operating hours and human-takeover share.",
+            "One Action — Create an Eno deployment watch that updates only when public evidence gives named customers, paid robot count, accepted weekly operating hours and human-takeover share."
+          ],
+          "done": "One Action — Create an Eno deployment watch that updates only when public evidence gives named customers, paid robot count, accepted weekly operating hours and human-takeover share."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows and Web3 Health",
+          "title": "Crypto capital: BTC and ETH ETFs lose $1.467 billion over the completed week",
+          "why": "Why Robin should care — A completed weekly reading is more useful than yesterday’s four-session snapshot, while it still belongs beside stablecoin supply, real fees and usage rather than replacing them.",
+          "steps": [
+            "One Action — Save the same two tables on the next trading day and check whether November 20 dashes fill and whether the $1.4670 billion total changes.",
+            "One Action — Save the same two tables on the next trading day and check whether November 20 dashes fill and whether the $1.4670 billion total changes."
+          ],
+          "done": "One Action — Save the same two tables on the next trading day and check whether November 20 dashes fill and whether the $1.4670 billion total changes."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins, FinTech and Token Rails",
+          "title": "Stablecoins and payments: Pulsar connects TRON USDT to virtual-card spending",
+          "why": "Why Robin should care — iSunOne’s payment imagination needs separate evidence for technical connectivity, usable access and regulated service coverage. A successful deposit is one gate in the full experience.",
+          "steps": [
+            "One Action — Choose one publicly supported region and map a $100-equivalent USDT purchase from wallet to merchant, naming network fee, conversion fee, card provider and refund path.",
+            "One Action — Choose one publicly supported region and map a $100-equivalent USDT purchase from wallet to merchant, naming network fee, conversion fee, card provider and refund path."
+          ],
+          "done": "One Action — Choose one publicly supported region and map a $100-equivalent USDT purchase from wallet to merchant, naming network fee, conversion fee, card provider and refund path."
+        },
+        {
+          "signal": 5,
+          "domain": "Content and Visibility",
+          "title": "iamrobin.ai: When the app becomes a conversation, where is completion visible?",
+          "why": "Why Robin should care — This creates a reader-first iamrobin.ai question: when application buttons disappear, how can a person see what an agent is doing, what it will cost and when the work is complete?",
+          "steps": [
+            "One Action — One authorized publishing assignment:",
+            "One Action — One authorized publishing assignment:"
+          ],
+          "done": "One Action — One authorized publishing assignment:"
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure",
+          "title": "AI infrastructure: Oracle says the OpenAI contract is fully funded",
+          "why": "Why Robin should care — AI-factory capital structure and engineering progress belong on the same map. Funded construction still passes through several acceptance points before it produces high-quality revenue.",
+          "steps": [
+            "One Action — Break the 4.5-gigawatt plan into seven states—financing, permitting, civil works, rack delivery, energization, customer acceptance and utilization—and update only when public evidence changes.",
+            "One Action — Break the 4.5-gigawatt plan into seven states—financing, permitting, civil works, rack delivery, energization, customer acceptance and utilization—and update only when public evidence changes."
+          ],
+          "done": "One Action — Break the 4.5-gigawatt plan into seven states—financing, permitting, civil works, rack delivery, energization, customer acceptance and utilization—and update only when public evidence changes."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-stage Private Markets",
+          "title": "Late-stage private markets: Linq raises $90 million while valuation and economics remain undisclosed",
+          "why": "Why Robin should care — Linq is a relevant OPC infrastructure watch and a research lead. The announcement creates no accessible investment opportunity.",
+          "steps": [
+            "One Action — At the next formal disclosure, require contemporaneous recurring revenue, gross margin, cost per thousand completed tasks and top-five customer concentration.",
+            "One Action — At the next formal disclosure, require contemporaneous recurring revenue, gross margin, cost per thousand completed tasks and top-five customer concentration."
+          ],
+          "done": "One Action — At the next formal disclosure, require contemporaneous recurring revenue, gross margin, cost per thousand completed tasks and top-five customer concentration."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities and AI Systems",
+          "title": "Public equities: strong AI revenue meets a higher risk discount",
+          "why": "Why Robin should care — Capital allocation in AI themes must hold operating progress and entry price together. A strong business can trade inside a market with rapidly rising required returns.",
+          "steps": [
+            "One Action — Build three scenarios for NVIDIA and Anthropic using the same four fields—revenue growth, gross margin, capital expenditure and valuation multiple—and keep the single-day decline out of the buy decision.",
+            "One Action — Build three scenarios for NVIDIA and Anthropic using the same four fields—revenue growth, gross margin, capital expenditure and valuation multiple—and keep the single-day decline out of the buy decision."
+          ],
+          "done": "One Action — Build three scenarios for NVIDIA and Anthropic using the same four fields—revenue growth, gross margin, capital expenditure and valuation multiple—and keep the single-day decline out of the buy decision."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年11月22日",
+      "description": "八项有边界的行动，把今天的证据转成可观察的下一道门槛。",
+      "centralJudgment": "对话可以成为行动界面，但有后果的状态仍需清晰可见。",
+      "fieldLine": "八个信号。信号5展开今天关于对话代理的同意、回执与恢复的行动文章。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与代理",
+          "title": "前沿模型与代理：GPT-6.2 进入 Work 与 Codex",
+          "why": "Robin为何在意： RobinOS 可以把同一份冻结任务分别交给 Astra 与 Sol，以成果质量、介入时间、恢复能力和成本作为选择依据。",
+          "steps": [
+            "One Action： 用同一份冻结的研究到发布任务各运行一次 Astra 与 Sol，记录首次通过验收的时间、人工介入分钟数和总使用量。",
+            "One Action： 用同一份冻结的研究到发布任务各运行一次 Astra 与 Sol，记录首次通过验收的时间、人工介入分钟数和总使用量。"
+          ],
+          "done": "One Action： 用同一份冻结的研究到发布任务各运行一次 Astra 与 Sol，记录首次通过验收的时间、人工介入分钟数和总使用量。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 与机器人",
+          "title": "Physical AI 与机器人：Genesis AI 获得5亿美元，部署证据仍待展开",
+          "why": "Robin为何在意： 这类全栈 Physical AI 项目适合用“资本换来多少可用机器人小时”来判断，而非只看演示视频或估值。",
+          "steps": [
+            "One Action： 建立 Genesis Eno 的部署观察表，下一次更新只记录已命名客户、付费机器人数、每周合格运行小时和人工接管比例。",
+            "One Action： 建立 Genesis Eno 的部署观察表，下一次更新只记录已命名客户、付费机器人数、每周合格运行小时和人工接管比例。"
+          ],
+          "done": "One Action： 建立 Genesis Eno 的部署观察表，下一次更新只记录已命名客户、付费机器人数、每周合格运行小时和人工接管比例。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流与 Web3 健康",
+          "title": "加密资本流：BTC 与 ETH ETF 一周净流出14.67亿美元",
+          "why": "Robin为何在意： 完整一周的数据比昨日四个交易日的中途读数更适合用于风险观察，同时仍需与稳定币供应、真实费用和用户活动分开看。",
+          "steps": [
+            "One Action： 在下一交易日保存同一两张表的快照，并核对11月20日短横线是否补录以及14.67亿美元合计是否修订。",
+            "One Action： 在下一交易日保存同一两张表的快照，并核对11月20日短横线是否补录以及14.67亿美元合计是否修订。"
+          ],
+          "done": "One Action： 在下一交易日保存同一两张表的快照，并核对11月20日短横线是否补录以及14.67亿美元合计是否修订。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币、金融科技与代币轨道",
+          "title": "稳定币与支付：Pulsar 把 TRON USDT 接入虚拟卡消费",
+          "why": "Robin为何在意： iSunOne 的支付想象需要区分技术连通、真实可用和受监管服务范围。一次成功入金只是第一道门。",
+          "steps": [
+            "One Action： 选择一个公开支持地区，画出一笔100美元等值 USDT 从钱包到商户的流程，列明网络费、转换费、卡服务商和退款路径。",
+            "One Action： 选择一个公开支持地区，画出一笔100美元等值 USDT 从钱包到商户的流程，列明网络费、转换费、卡服务商和退款路径。"
+          ],
+          "done": "One Action： 选择一个公开支持地区，画出一笔100美元等值 USDT 从钱包到商户的流程，列明网络费、转换费、卡服务商和退款路径。"
+        },
+        {
+          "signal": 5,
+          "domain": "内容与可见度",
+          "title": "iamrobin.ai：当应用变成一段对话，完成在哪里可见？",
+          "why": "Robin为何在意： 这为 iamrobin.ai 提供一个适合普通读者的问题：应用按钮消失以后，人们如何看见代理正在做什么、花了多少钱、何时算完成？",
+          "steps": [
+            "One Action｜一项已授权的发布任务：",
+            "One Action｜一项已授权的发布任务："
+          ],
+          "done": "One Action｜一项已授权的发布任务："
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基础设施",
+          "title": "AI 基础设施：Oracle 称 OpenAI 合同融资已经到位",
+          "why": "Robin为何在意： AI 工厂的资本结构与工程进度必须放在同一张图里；“有钱建设”与“按期产生高质量收入”之间还有多个验收节点。",
+          "steps": [
+            "One Action： 把4.5GW计划拆成融资、许可、土建、机架交付、通电、客户验收和利用率七个状态，并只在公开证据变化时更新。",
+            "One Action： 把4.5GW计划拆成融资、许可、土建、机架交付、通电、客户验收和利用率七个状态，并只在公开证据变化时更新。"
+          ],
+          "done": "One Action： 把4.5GW计划拆成融资、许可、土建、机架交付、通电、客户验收和利用率七个状态，并只在公开证据变化时更新。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私募",
+          "title": "后期私募：Linq 获得9000万美元，估值和经济性仍未知",
+          "why": "Robin为何在意： 这是一项与 OPC 基础设施直接相关的后期观察对象，也是一条研究线索，而非可获得的投资机会。",
+          "steps": [
+            "One Action： 等待下一份正式披露，要求同一时期的经常性收入、毛利、每千次完成任务的成本和前五大客户收入占比。",
+            "One Action： 等待下一份正式披露，要求同一时期的经常性收入、毛利、每千次完成任务的成本和前五大客户收入占比。"
+          ],
+          "done": "One Action： 等待下一份正式披露，要求同一时期的经常性收入、毛利、每千次完成任务的成本和前五大客户收入占比。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开市场与 AI 系统",
+          "title": "公开市场：强劲 AI 收入遇上更高的风险折价",
+          "why": "Robin为何在意： AI 主题的资本配置需要同时看经营增长与买入价格。优秀业务也可能处在回报要求快速上升的市场里。",
+          "steps": [
+            "One Action： 为 NVIDIA 与 Anthropic 建立三种情景，统一使用收入增长、毛利率、资本开支与估值倍数，避免把单日跌幅直接当成买入信号。",
+            "One Action： 为 NVIDIA 与 Anthropic 建立三种情景，统一使用收入增长、毛利率、资本开支与估值倍数，避免把单日跌幅直接当成买入信号。"
+          ],
+          "done": "One Action： 为 NVIDIA 与 Anthropic 建立三种情景，统一使用收入增长、毛利率、资本开支与估值倍数，避免把单日跌幅直接当成买入信号。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年11月22日",
+      "description": "八項有邊界的行動，把今天的證據轉成可觀察的下一道門檻。",
+      "centralJudgment": "對話可以成為行動介面，但有後果的狀態仍需清楚可見。",
+      "fieldLine": "八個訊號。訊號5展開今天關於對話代理的同意、回執與恢復的行動文章。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與代理",
+          "title": "前沿模型與代理：GPT-6.2 進入 Work 與 Codex",
+          "why": "Robin 為何在意： RobinOS 可讓 Astra 和 Sol 執行同一份凍結任務，按成果質素、介入時間及總成本選用模型。",
+          "steps": [
+            "One Action： 以同一份凍結的研究至發布任務，各測試 Astra 和 Sol 一次，記錄首次獲驗收的時間、人工介入分鐘數和總使用量。",
+            "One Action： 以同一份凍結的研究至發布任務，各測試 Astra 和 Sol 一次，記錄首次獲驗收的時間、人工介入分鐘數和總使用量。"
+          ],
+          "done": "One Action： 以同一份凍結的研究至發布任務，各測試 Astra 和 Sol 一次，記錄首次獲驗收的時間、人工介入分鐘數和總使用量。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 與機器人",
+          "title": "Physical AI 與機械人：Genesis AI 融資5億美元，部署證據仍在累積",
+          "why": "Robin 為何在意： 評估全棧 Physical AI，關鍵是資本換來多少可用機械人小時；演示提供的是早期線索。",
+          "steps": [
+            "One Action： 建立 Eno 部署追蹤表，僅在公開資料出現具名客戶、付費機械人數、每週合格運作小時和人工接管比例時更新。",
+            "One Action： 建立 Eno 部署追蹤表，僅在公開資料出現具名客戶、付費機械人數、每週合格運作小時和人工接管比例時更新。"
+          ],
+          "done": "One Action： 建立 Eno 部署追蹤表，僅在公開資料出現具名客戶、付費機械人數、每週合格運作小時和人工接管比例時更新。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本流與 Web3 健康",
+          "title": "加密資本：BTC 與 ETH ETF 整週流出14.67億美元",
+          "why": "Robin 為何在意： 整週讀數比昨日四個交易日的快照更完整，也應與穩定幣供應、實際手續費及使用情況並列觀察。",
+          "steps": [
+            "One Action： 下個交易日保存同兩張表，核對11月20日的橫線是否補錄，以及14.670億美元合計有否修訂。",
+            "One Action： 下個交易日保存同兩張表，核對11月20日的橫線是否補錄，以及14.670億美元合計有否修訂。"
+          ],
+          "done": "One Action： 下個交易日保存同兩張表，核對11月20日的橫線是否補錄，以及14.670億美元合計有否修訂。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣、金融科技與代幣軌道",
+          "title": "穩定幣與支付：Pulsar 把 TRON USDT 接上虛擬卡消費",
+          "why": "Robin 為何在意： iSunOne 的支付構想須分開驗證技術連通、實際可用性與受監管服務覆蓋。成功入金只是其中一道關口。",
+          "steps": [
+            "One Action： 選一個公開支援的地區，繪出一筆等值100美元的 USDT 由錢包到商戶的流程，列出網絡費、兌換費、卡服務商和退款途徑。",
+            "One Action： 選一個公開支援的地區，繪出一筆等值100美元的 USDT 由錢包到商戶的流程，列出網絡費、兌換費、卡服務商和退款途徑。"
+          ],
+          "done": "One Action： 選一個公開支援的地區，繪出一筆等值100美元的 USDT 由錢包到商戶的流程，列出網絡費、兌換費、卡服務商和退款途徑。"
+        },
+        {
+          "signal": 5,
+          "domain": "內容與可見度",
+          "title": "iamrobin.ai：應用變成對話，完成狀態在哪裏可見？",
+          "why": "Robin 為何在意： 這為 iamrobin.ai 提供一個面向讀者的問題：應用按鈕消失後，用戶如何看見代理正在做甚麼、將花多少錢，以及工作何時完成？",
+          "steps": [
+            "One Action｜ 執行一項已授權的發布任務：",
+            "One Action｜ 執行一項已授權的發布任務："
+          ],
+          "done": "One Action｜ 執行一項已授權的發布任務："
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基礎設施",
+          "title": "AI 基建：Oracle 稱 OpenAI 合約資金已全數到位",
+          "why": "Robin 為何在意： AI 工廠的資本結構與工程進度須放在同一張圖上。從資金到位到產生優質收入，仍有多個驗收節點。",
+          "steps": [
+            "One Action： 把4.5吉瓦計劃拆成融資、許可、土建、機架交付、通電、客戶驗收和使用率七個狀態，只在公開證據變動時更新。",
+            "One Action： 把4.5吉瓦計劃拆成融資、許可、土建、機架交付、通電、客戶驗收和使用率七個狀態，只在公開證據變動時更新。"
+          ],
+          "done": "One Action： 把4.5吉瓦計劃拆成融資、許可、土建、機架交付、通電、客戶驗收和使用率七個狀態，只在公開證據變動時更新。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私募",
+          "title": "後期私募：Linq 融資9000萬美元，估值與經濟性仍待披露",
+          "why": "Robin 為何在意： Linq 值得列入 OPC 基建觀察名單，也是研究線索；這份公告所提供的範圍仍是公司資訊，沒有可參與的投資配額。",
+          "steps": [
+            "One Action： 下次正式披露時，要求同一時點的經常性收入、毛利率、每千項完成任務成本及前五大客戶收入集中度。",
+            "One Action： 下次正式披露時，要求同一時點的經常性收入、毛利率、每千項完成任務成本及前五大客戶收入集中度。"
+          ],
+          "done": "One Action： 下次正式披露時，要求同一時點的經常性收入、毛利率、每千項完成任務成本及前五大客戶收入集中度。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開市場與 AI 系統",
+          "title": "上市股票：強勁 AI 收入遇上更高風險折讓",
+          "why": "Robin 為何在意： 配置 AI 主題資本，須同時看業務進展與買入價。優秀企業也可能身處要求回報急升的市場。",
+          "steps": [
+            "One Action： 為 NVIDIA 和 Anthropic 各建三種情景，統一比較收入增長、毛利率、資本開支及估值倍數，把單日跌幅留在買入決策的風險參考欄。",
+            "One Action： 為 NVIDIA 和 Anthropic 各建三種情景，統一比較收入增長、毛利率、資本開支及估值倍數，把單日跌幅留在買入決策的風險參考欄。"
+          ],
+          "done": "One Action： 為 NVIDIA 和 Anthropic 各建三種情景，統一比較收入增長、毛利率、資本開支及估值倍數，把單日跌幅留在買入決策的風險參考欄。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー 2026年11月22日",
+      "description": "八つの限定された行動で、本日の証拠を観測可能な次のゲートへ変える。",
+      "centralJudgment": "会話は行動のインターフェースになり得るが、結果を伴う状態は明確に見える必要がある。",
+      "fieldLine": "八つのシグナル。シグナル5は会話型エージェントの同意、受領記録、復旧を扱う本日のAction Itemへ続く。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "フロンティアモデルとエージェント",
+          "title": "先端モデルとエージェント：GPT-6.2がWorkとCodexに登場",
+          "why": "Robinにとっての意味： RobinOSは凍結した同一課題でAstraとSolを比較し、品質、介入時間、総費用に基づいて採用を決められる。",
+          "steps": [
+            "One Action： 同じ調査から公開までの課題をAstraとSolで各一回実行し、最初の受入までの時間、人の介入分数、総使用量を記録する。",
+            "One Action： 同じ調査から公開までの課題をAstraとSolで各一回実行し、最初の受入までの時間、人の介入分数、総使用量を記録する。"
+          ],
+          "done": "One Action： 同じ調査から公開までの課題をAstraとSolで各一回実行し、最初の受入までの時間、人の介入分数、総使用量を記録する。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AIとロボティクス",
+          "title": "フィジカルAIとロボット：Genesis AIが5億ドル調達、導入実績はこれから",
+          "why": "Robinにとっての意味： フルスタックのフィジカルAIは、資本が生み出す実用的なロボット稼働時間で見極めたい。実演は初期の証拠となる。",
+          "steps": [
+            "One Action： Enoの導入記録を作り、公開資料に顧客名、有償台数、週当たりの合格稼働時間、人への引き継ぎ割合が出たときに更新する。",
+            "One Action： Enoの導入記録を作り、公開資料に顧客名、有償台数、週当たりの合格稼働時間、人への引き継ぎ割合が出たときに更新する。"
+          ],
+          "done": "One Action： Enoの導入記録を作り、公開資料に顧客名、有償台数、週当たりの合格稼働時間、人への引き継ぎ割合が出たときに更新する。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資本フローとWeb3",
+          "title": "暗号資産への資本：BTCとETHのETFから一週間で14億6700万ドル流出",
+          "why": "Robinにとっての意味： 週全体の集計は昨日の4営業日分より役立つ。ただしステーブルコイン供給、実際の手数料、利用状況と並べて読むべきだ。",
+          "steps": [
+            "One Action： 次の営業日に同じ2表を保存し、11月20日のダッシュが埋まるか、14億6700万ドルの合計が変わるかを確かめる。",
+            "One Action： 次の営業日に同じ2表を保存し、11月20日のダッシュが埋まるか、14億6700万ドルの合計が変わるかを確かめる。"
+          ],
+          "done": "One Action： 次の営業日に同じ2表を保存し、11月20日のダッシュが埋まるか、14億6700万ドルの合計が変わるかを確かめる。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコイン、FinTech、トークン基盤",
+          "title": "ステーブルコインと決済：PulsarがTRONのUSDTをバーチャルカードにつなぐ",
+          "why": "Robinにとっての意味： iSunOneの決済構想では、技術的な接続、利用可能性、規制を受けるサービス範囲を個別に検証したい。入金成功は一つの関門だ。",
+          "steps": [
+            "One Action： 公表済みの対応地域を一つ選び、100ドル相当のUSDTがウォレットから店舗へ届く流れを描く。ネットワーク手数料、交換手数料、カード事業者、返金経路を明記する。",
+            "One Action： 公表済みの対応地域を一つ選び、100ドル相当のUSDTがウォレットから店舗へ届く流れを描く。ネットワーク手数料、交換手数料、カード事業者、返金経路を明記する。"
+          ],
+          "done": "One Action： 公表済みの対応地域を一つ選び、100ドル相当のUSDTがウォレットから店舗へ届く流れを描く。ネットワーク手数料、交換手数料、カード事業者、返金経路を明記する。"
+        },
+        {
+          "signal": 5,
+          "domain": "コンテンツと可視性",
+          "title": "iamrobin.ai：アプリが会話になると、完了はどこで見えるのか",
+          "why": "Robinにとっての意味： iamrobin.aiで読者に問い掛けられる。アプリのボタンが消えたとき、エージェントの作業、費用、完了を人はどう確認するのか。",
+          "steps": [
+            "One Action： 承認済みの出版課題を一件進める。",
+            "One Action： 承認済みの出版課題を一件進める。"
+          ],
+          "done": "One Action： 承認済みの出版課題を一件進める。"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラ",
+          "title": "AIインフラ：Oracle、OpenAIとの契約資金は全額確保と説明",
+          "why": "Robinにとっての意味： AI工場の資本構成と工事の進捗は同じ地図で追うべきだ。資金確保から質の高い売上までには、複数の検収点がある。",
+          "steps": [
+            "One Action： 4.5ギガワット計画を資金調達、許認可、土木工事、ラック納入、通電、顧客受入、稼働率の7段階に分け、公開証拠に変化があった段階だけ更新する。",
+            "One Action： 4.5ギガワット計画を資金調達、許認可、土木工事、ラック納入、通電、顧客受入、稼働率の7段階に分け、公開証拠に変化があった段階だけ更新する。"
+          ],
+          "done": "One Action： 4.5ギガワット計画を資金調達、許認可、土木工事、ラック納入、通電、顧客受入、稼働率の7段階に分け、公開証拠に変化があった段階だけ更新する。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期未公開市場",
+          "title": "レイトステージ未公開市場：Linqが9000万ドル調達、評価額と採算は未公表",
+          "why": "Robinにとっての意味： LinqはOPC基盤の観察対象であり、調査の手掛かりとなる。今回の発表から参加可能な投資案件は確認できない。",
+          "steps": [
+            "One Action： 次の正式開示では、同じ時点の継続売上、粗利益率、完了タスク1000件当たりの費用、上位5顧客への売上集中度を求める。",
+            "One Action： 次の正式開示では、同じ時点の継続売上、粗利益率、完了タスク1000件当たりの費用、上位5顧客への売上集中度を求める。"
+          ],
+          "done": "One Action： 次の正式開示では、同じ時点の継続売上、粗利益率、完了タスク1000件当たりの費用、上位5顧客への売上集中度を求める。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開株式とAIシステム",
+          "title": "上場株式：AI売上の急増とリスク許容度の低下が重なる",
+          "why": "Robinにとっての意味： AI分野への資本配分では、事業の成長と購入価格を一緒に見る。優れた事業でも、市場が求める収益率は急に上がり得る。",
+          "steps": [
+            "One Action： NVIDIAとAnthropicに三つずつシナリオを作り、売上成長率、粗利益率、設備投資、評価倍率を同じ形式で比較する。単日の下落は購入判断のリスク情報として扱う。",
+            "One Action： NVIDIAとAnthropicに三つずつシナリオを作り、売上成長率、粗利益率、設備投資、評価倍率を同じ形式で比較する。単日の下落は購入判断のリスク情報として扱う。"
+          ],
+          "done": "One Action： NVIDIAとAnthropicに三つずつシナリオを作り、売上成長率、粗利益率、設備投資、評価倍率を同じ形式で比較する。単日の下落は購入判断のリスク情報として扱う。"
+        }
+      ]
+    }
+  }
+}
