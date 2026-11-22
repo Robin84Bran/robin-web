@@ -18,7 +18,7 @@ export default function languagePages() {
             const sourceLanguage = html.match(/<html\b[^>]*\blang=["']([^"']+)["']/i)?.[1] || 'en';
             html = html.replace(/<head\b[^>]*>/i, (tag) => `${tag}<meta name="source-language" content="${sourceLanguage}">`);
             html = html.replace(/<\/head>/i, '<link rel="stylesheet" href="/language/menu.css"><script type="module" src="/language/client.mjs"></script></head>');
-            html = html.replace(/<\/body>/i, `${languageMenuMarkup().replace('class="site-language ', 'class="site-language site-language--floating ' )}</body>`);
+            html = html.replace(/<\/body>/i, `${languageMenuMarkup({ englishLabels: path.relative(fileURLToPath(dir), file) === path.join('asymmetry', 'btc_probability_atlas', 'index.html') }).replace('class="site-language ', 'class="site-language site-language--floating ' )}</body>`);
             await writeFile(file, html);
           }
         }
