@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Google's geothermal deal has two different tests</title>
+  <desc id="desc">A calm editorial cross-section separates a conventionally drilled 50 megawatt first phase from a deeper millimeter-wave expansion.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f4f0e7"/><stop offset="1" stop-color="#e2d8c7"/></linearGradient>
+    <linearGradient id="earth" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d7b88c"/><stop offset=".48" stop-color="#b66d4b"/><stop offset="1" stop-color="#6f3140"/></linearGradient>
+    <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse"><path d="M56 0H0V56" fill="none" stroke="#173038" stroke-opacity=".06"/></pattern>
+    <filter id="shadow"><feDropShadow dx="0" dy="16" stdDeviation="22" flood-color="#172b31" flood-opacity=".14"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#paper)"/><rect width="1600" height="900" fill="url(#grid)"/>
+  <rect x="92" y="82" width="1416" height="736" rx="20" fill="#faf8f3" stroke="#20383e" stroke-opacity=".18" filter="url(#shadow)"/>
+  <g transform="translate(160 142)">
+    <text fill="#a85136" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" letter-spacing="4">DAILY SPECIAL · SIGNAL 6</text>
+    <text y="76" fill="#162a30" font-family="Georgia,'Times New Roman',serif" font-size="63">One project. Two engineering tests.</text>
+    <text y="120" fill="#53676b" font-family="Arial,Helvetica,sans-serif" font-size="22">Google buys the first 50 MW. Quaise's distinctive drill comes later.</text>
+  </g>
+  <g transform="translate(160 310)">
+    <path d="M0 165C210 96 420 220 645 154S1060 78 1280 156V450H0Z" fill="url(#earth)" opacity=".94"/>
+    <path d="M0 165C210 96 420 220 645 154S1060 78 1280 156" fill="none" stroke="#355d5e" stroke-width="10"/>
+    <g transform="translate(265 40)">
+      <rect x="-72" y="56" width="144" height="68" rx="8" fill="#ecdfc8" stroke="#17333a" stroke-width="5"/>
+      <path d="M-44 56L0 12l44 44M-58 124v36M58 124v36" fill="none" stroke="#17333a" stroke-width="6"/>
+      <path d="M0 124V356" stroke="#f4ead9" stroke-width="22"/><path d="M0 124V356" stroke="#17333a" stroke-width="5"/>
+      <path d="M-16 190l32 28-32 28 32 28-32 28" fill="none" stroke="#f4ead9" stroke-width="7"/>
+      <circle cx="0" cy="356" r="21" fill="#d99555" stroke="#f4ead9" stroke-width="6"/>
+      <text x="0" y="420" text-anchor="middle" fill="#fff7e9" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" letter-spacing="2">PHASE 1 · 50 MW</text>
+      <text x="0" y="448" text-anchor="middle" fill="#f4ded0" font-family="Arial,Helvetica,sans-serif" font-size="16">CONVENTIONAL DRILLING</text>
+    </g>
+    <path d="M540 80h170" stroke="#a85136" stroke-width="5" stroke-dasharray="5 14" stroke-linecap="round"/>
+    <circle cx="625" cy="80" r="7" fill="#a85136"/>
+    <g transform="translate(965 22)">
+      <rect x="-82" y="74" width="164" height="74" rx="8" fill="#ecdfc8" stroke="#17333a" stroke-width="5"/>
+      <path d="M-50 74L0 24l50 50M-64 148v36M64 148v36" fill="none" stroke="#17333a" stroke-width="6"/>
+      <path d="M0 148V420" stroke="#f4ead9" stroke-width="22"/><path d="M0 148V420" stroke="#17333a" stroke-width="5"/>
+      <path d="M-36 218C-4 236-4 252-36 270M36 288C4 306 4 322 36 340M-36 356C-4 374-4 390-36 408" fill="none" stroke="#ffbd63" stroke-width="10" stroke-linecap="round"/>
+      <circle cx="0" cy="420" r="28" fill="#ee7852" stroke="#ffd28a" stroke-width="8"/>
+      <path d="M0 160v236" stroke="#f0aa4f" stroke-width="4" stroke-dasharray="8 10"/>
+      <text x="0" y="464" text-anchor="middle" fill="#fff7e9" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" letter-spacing="2">PHASE 2 · +200 MW</text>
+      <text x="0" y="492" text-anchor="middle" fill="#f4ded0" font-family="Arial,Helvetica,sans-serif" font-size="16">MILLIMETER-WAVE TEST</text>
+    </g>
+  </g>
+  <text x="160" y="780" fill="#5b6d70" font-family="Arial,Helvetica,sans-serif" font-size="17" letter-spacing="2">A BUYER IS COMMERCIAL EVIDENCE · OPERATIONS AND DEEP DRILLING REQUIRE THEIR OWN DATA</text>
+</svg>
