@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Google bought the power. The new drill comes later.</title>
+  <desc id="desc">A two-stage evidence diagram separates the first 50 megawatts using conventional drilling from a later 200-megawatt millimeter-wave expansion.</desc>
+  <rect width="1200" height="630" fill="#0b1228"/>
+  <path d="M0 487C185 449 317 506 487 478C681 446 742 373 918 392C1028 404 1118 448 1200 433V630H0Z" fill="#121f3d"/>
+  <text x="72" y="80" fill="#61d4d7" font-family="Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="3">BINARY / INVEST</text>
+  <text x="72" y="143" fill="#f4f1e9" font-family="Georgia, serif" font-size="46" font-weight="700">Google bought the power.</text>
+  <text x="72" y="198" fill="#f4f1e9" font-family="Georgia, serif" font-size="46" font-weight="700">The new drill comes later.</text>
+  <line x1="72" y1="234" x2="1128" y2="234" stroke="#344566" stroke-width="2"/>
+  <rect x="72" y="280" width="450" height="210" rx="18" fill="#f4f1e9"/>
+  <text x="106" y="324" fill="#0b1228" font-family="Arial, sans-serif" font-size="21" font-weight="700">PHASE 1 / FIRST RECEIPT</text>
+  <text x="106" y="378" fill="#0b1228" font-family="Georgia, serif" font-size="40" font-weight="700">50 MW</text>
+  <text x="106" y="418" fill="#30405d" font-family="Arial, sans-serif" font-size="24">Conventional drilling</text>
+  <text x="106" y="454" fill="#30405d" font-family="Arial, sans-serif" font-size="20">Google power-purchase agreement</text>
+  <path d="M542 385H650" stroke="#d8b86b" stroke-width="8" stroke-linecap="round"/>
+  <path d="M638 369L660 385L638 401" fill="none" stroke="#d8b86b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="678" y="280" width="450" height="210" rx="18" fill="#142441" stroke="#61d4d7" stroke-width="3"/>
+  <text x="712" y="324" fill="#61d4d7" font-family="Arial, sans-serif" font-size="21" font-weight="700">PHASE 2 / LATER TEST</text>
+  <text x="712" y="378" fill="#f4f1e9" font-family="Georgia, serif" font-size="40" font-weight="700">+200 MW</text>
+  <text x="712" y="418" fill="#f4f1e9" font-family="Arial, sans-serif" font-size="24">Millimeter-wave drilling</text>
+  <text x="712" y="454" fill="#aebbd1" font-family="Arial, sans-serif" font-size="20">First planned commercial use</text>
+  <text x="72" y="570" fill="#aebbd1" font-family="Arial, sans-serif" font-size="18">One project. Two different engineering tests.</text>
+  <text x="1128" y="570" text-anchor="end" fill="#f4f1e9" font-family="Arial, sans-serif" font-size="18" font-weight="700">IAmRobin.ai</text>
+</svg>

@@ -1,0 +1,21 @@
+Google bought the power. The new drill comes later.
+
+Google has agreed to buy 50 MW from Quaise Energy's Project Obsidian in Oregon. The agreement matters: it gives the project a named buyer and a commercial destination.
+
+But the first 50 MW will use conventional drilling. Quaise plans to use its distinctive millimeter-wave system in a later 200 MW expansion.
+
+That creates four different receipts:
+
+1. The PPA identifies the buyer.
+2. Resource work tests the site.
+3. The first plant tests delivered power using conventionally drilled wells.
+4. The expansion tests whether millimeter-wave drilling can create deeper wells reliably and at an attractive total cost.
+
+The drill also has to be judged as part of a completed well. The US Department of Energy says casing and cement can account for as much as half a geothermal well's cost. Penetration speed is important, but it is not the whole bill.
+
+The contrarian reading is not that Google's agreement is weak. It is that a famous customer can help Quaise reach the test of its famous technology without removing the test.
+
+Full story and sources: https://iamrobin.ai/binary/stories/google-bought-the-power-the-new-drill-comes-later/
+
+#AIInfrastructure #Geothermal #DataCenters #Energy #InfrastructureInvesting
+
