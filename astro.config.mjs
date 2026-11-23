@@ -19,6 +19,7 @@ export default defineConfig({
         const path = new URL(page).pathname;
         return [
           '/research/constitutional-history/',
+          '/research/frontier-replication/',
           '/research/council/',
           '/research/kid-edition/',
           '/intelligence/council/autonomous-engineering/',
