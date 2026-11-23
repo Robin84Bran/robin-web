@@ -1,0 +1,79 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'Executive Judgment & Strategic Advisory | Bin “Robin” Xie';
+const description = 'Selective executive judgment, venture strategy, cross-border opportunity development and AI-native execution with Robin Xie.';
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    '@id': 'https://iamrobin.ai/#person',
+    name: 'Bin Robin Xie',
+    url: 'https://iamrobin.ai/',
+    description: 'Engineer, entrepreneur and investor working across technical systems, financial technology, capital and cross-border ventures.'
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: 'Brain-as-a-Service (BaaS): Executive Judgment & Strategic Advisory',
+    description: 'Selective advisory engagements focused on executive decisions, venture assessment, cross-border opportunities and AI-native execution.',
+    provider: { '@id': 'https://iamrobin.ai/#person' },
+    serviceType: 'Executive strategic advisory',
+    areaServed: 'Worldwide',
+    url: 'https://iamrobin.ai/advisory/'
+  }
+];
+---
+<BaseLayout {title} {description} path="/advisory/" {schema}>
+  <div class="baas-page">
+    <section class="baas-hero" aria-labelledby="baas-title">
+      <p class="eyebrow">BIN “ROBIN” XIE · SELECTIVE ENGAGEMENTS</p>
+      <h1 id="baas-title">Judgment is the product.</h1>
+      <p class="subhead">Brain-as-a-Service <span>(BaaS)</span></p>
+      <p class="lede">For consequential decisions at the intersection of engineering, capital, technology and unfamiliar markets.</p>
+      <a class="contact" href="mailto:bin.xie@alumni.rice.edu?subject=Strategic%20advisory%20inquiry">Start a conversation <span aria-hidden="true">↗</span></a>
+    </section>
+    <section class="baas-intro" aria-labelledby="approach">
+      <p class="eyebrow">THE APPROACH</p>
+      <h2 id="approach">A principal, not a pyramid.</h2>
+      <p>I work selectively with founders, investors and organizations facing decisions that do not fit established playbooks. My perspective connects physical engineering, entrepreneurship, financial systems and capital allocation. AI-native research and execution tools extend the work; accountability for judgment remains human.</p>
+      <p>Not every interesting problem requires a full-time executive or a large consulting team. Some require an independent perspective, a sharply defined decision and the ability to turn an idea into a testable next step.</p>
+    </section>
+    <section class="baas-services" aria-labelledby="work">
+      <p class="eyebrow">WAYS TO WORK TOGETHER</p>
+      <h2 id="work">Selective by design.</h2>
+      <div class="service-grid">
+        <article><h3>Executive judgment</h3><p>Independent assessment of strategic alternatives, operating constraints and consequential tradeoffs.</p></article>
+        <article><h3>Venture & capital decisions</h3><p>Technical-commercial diligence, investment hypotheses, failure modes and decision frameworks.</p></article>
+        <article><h3>Cross-Pacific opportunities</h3><p>Explore credible partnerships and market opportunities connecting people, technologies and capital across the U.S. and Asia.</p></article>
+        <article><h3>AI-native execution</h3><p>Scope a measurable outcome, test it with agent-assisted workflows and identify what should be built, bought or stopped.</p></article>
+      </div>
+    </section>
+    <section class="baas-fit" aria-labelledby="fit">
+      <p class="eyebrow">GOOD FIT</p>
+      <h2 id="fit">Bring a real decision.</h2>
+      <p>The best conversations begin with a consequential question, a clear decision owner and a willingness to test assumptions. Engagements may be bounded diagnostics, ongoing strategic advisory or independently negotiated venture collaborations. Scope, availability and commercial terms are discussed privately with qualified prospects.</p>
+      <a class="contact secondary" href="mailto:bin.xie@alumni.rice.edu?subject=Brain-as-a-Service%20inquiry">Discuss a possible engagement <span aria-hidden="true">↗</span></a>
+      <p class="small">For background, explore <a href="/about/">Robin’s story</a> and the research published on this site. No outcome, return or introduction is guaranteed.</p>
+    </section>
+  </div>
+</BaseLayout>
+<style>
+  .baas-page{max-width:1120px;margin:0 auto;padding:clamp(2rem,6vw,5rem) clamp(1.2rem,4vw,3rem) 6rem;color:var(--text-primary,inherit)}
+  .baas-hero{padding:clamp(2rem,7vw,5rem) 0 5rem;border-bottom:1px solid rgba(120,120,120,.24)}
+  .eyebrow{font:600 .72rem/1.5 system-ui,sans-serif;letter-spacing:.19em;text-transform:uppercase;color:#9b835e}
+  h1,h2,h3{font-family:Georgia,serif;letter-spacing:-.035em;font-weight:400}
+  h1{font-size:clamp(3.1rem,8vw,7.5rem);line-height:1.04;max-width:900px;margin:1.4rem 0}
+  .subhead{font:400 clamp(1.35rem,3vw,2.3rem)/1.25 Georgia,serif;margin:0 0 2rem}.subhead span{color:#9b835e}
+  .lede{font-size:clamp(1.1rem,2vw,1.4rem);line-height:1.65;max-width:690px}
+  .contact{display:inline-block;margin-top:1.8rem;padding:.95rem 1.4rem;background:#23352f;color:#fff;border-radius:2px;text-decoration:none;font:600 .9rem system-ui,sans-serif}
+  .contact:hover,.contact:focus-visible{background:#39574c;color:#fff}.contact span{margin-left:1rem}
+  section:not(.baas-hero){padding-top:4rem}
+  h2{font-size:clamp(2rem,4vw,3.3rem);margin:1rem 0 1.5rem}
+  .baas-intro p:not(.eyebrow),.baas-fit p:not(.eyebrow){max-width:760px;line-height:1.85;font-size:1.07rem}
+  .service-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem}
+  .service-grid article{border-top:1px solid rgba(120,120,120,.3);padding:1.4rem 0}
+  h3{font-size:1.6rem;margin:0 0 .7rem}.service-grid p{line-height:1.75}
+  .small{font-size:.87rem!important;opacity:.78;margin-top:2rem}
+  @media(max-width:650px){.service-grid{grid-template-columns:1fr}.baas-hero{padding-bottom:3rem}section:not(.baas-hero){padding-top:3rem}}
+</style>
