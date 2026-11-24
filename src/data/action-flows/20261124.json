@@ -1,0 +1,544 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-24",
+  "updated": "2026-11-24",
+  "signalCount": 8,
+  "briefingPath": "/ouroboros/202611/20261124/",
+  "actionItemPath": "/ouroboros/202611/20261124/action_item/",
+  "hero": "/daily-briefing/20261124/hero.webp",
+  "ogImage": "/daily-briefing/20261124/og.webp",
+  "actionHero": "/action-item/20261124/hero.webp",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-23",
+      "visualLabel": "The controlled Java4Shell demonstration and published design do not establish broad production reliability; security teams retain deployment approval.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://openai.com/index/introducing-shirudo/"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://github.com/shirudo-dev/shirudo"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-23",
+      "visualLabel": "System counts are quarter-end stocks and cannot be divided into a commissioning rate; unit economics and installation-level intervention remain unavailable.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.sec.gov/Archives/edgar/data/1837240/000183724026000047/symboticinvestorpresenta.htm"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://www.sec.gov/Archives/edgar/data/1837240/000183724026000047/q4268-k_ex991.htm"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-23",
+      "visualLabel": "The company-specific purchase does not establish industry-wide crypto flows or on-chain activity.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.sec.gov/Archives/edgar/data/1050446/000119312526470961/mstr-20261123.htm"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-23",
+      "visualLabel": "The 113 figure is the confirmed rollout list, not evidence of active pools, depth, weekend volume, fee income or redemption performance.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.okx.com/en-gb/learn/okxice-tsv-launch-going-live"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "deepDiveAvailable": true,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "visualValue": "2026-11-24",
+      "visualLabel": "The studies differ in age groups, settings, tutor design and outcome measures; the reader exercise can collect examples but cannot produce causal evidence without a randomized protocol.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://rewirefederation.org/news/study-finds-no-learning-difference-between-ai-tutoring-modes-for-adults/"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://arxiv.org/abs/2610.26411"
+        },
+        {
+          "label": "Source 3",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40560616/"
+        },
+        {
+          "label": "Source 4",
+          "url": "https://www.nber.org/papers/w35620"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-23",
+      "visualLabel": "The customer is unnamed, financing terms are incomplete, and H1 2028 delivery remains subject to development, utility and regulatory milestones.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://ir.applieddigital.com/news-events/press-releases/detail/165/applied-digital-secures-new-150-mw-18-year-lease-with"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-23",
+      "visualLabel": "The announcement omits preference terms, use of proceeds, cash burn, durable-resolution economics and any allocation available to Robin.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://sierra.ai/blog/series-f-30b"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-23",
+      "visualLabel": "The 23.98 percentage-point relative move is consistent with a leadership-risk repricing but does not establish causation or change orders, delivery or margin guidance.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nov23pressrelease.htm"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://stockanalysis.com/stocks/nvda/history/"
+        },
+        {
+          "label": "Source 3",
+          "url": "https://stockanalysis.com/etf/qqq/history/"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, November 24, 2026",
+      "description": "Eight bounded actions turn today’s evidence into observable next gates.",
+      "centralJudgment": "Practical autonomy keeps action, approval, clocks and outcomes visible.",
+      "fieldLine": "Eight signals. Signal 5 asks what the learner can solve after the tutor leaves.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Frontier agents: Shirudo lets operators shield Linux before a patch is ready",
+          "why": "Why Robin should care — This is a useful autonomy pattern for RobinOS: an agent can prepare and test a bounded repair, while deployment authority and a hardware-backed receipt remain visible to the operator.",
+          "steps": [
+            "One Action — Run the public quickstart in a disposable VM against its documented example. Record blocked exploit, legitimate requests preserved, operator approval, shield removal and recovery time.",
+            "One Action — Run the public quickstart in a disposable VM against its documented example. Record blocked exploit, legitimate requests preserved, operator approval, shield removal and recovery time."
+          ],
+          "done": "One Action — Run the public quickstart in a disposable VM against its documented example. Record blocked exploit, legitimate requests preserved, operator approval, shield removal and recovery time."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "Physical AI and robotics: Symbotic has 84 systems in deployment and 59 operating",
+          "why": "Why Robin should care — The value of warehouse automation emerges when a project becomes an accepted, continuously operating system. Robin can track that conversion without turning installation counts into invented unit economics.",
+          "steps": [
+            "One Action — Update the same two counts next quarter and test whether net additions to operational systems accelerate from three, while keeping project-level timing UNKNOWN until disclosed.",
+            "One Action — Update the same two counts next quarter and test whether net additions to operational systems accelerate from three, while keeping project-level timing UNKNOWN until disclosed."
+          ],
+          "done": "One Action — Update the same two counts next quarter and test whether net additions to operational systems accelerate from three, while keeping project-level timing UNKNOWN until disclosed."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows and Web3 Health",
+          "title": "Crypto capital flows: about 17 cents of each new equity dollar bought bitcoin",
+          "why": "Why Robin should care — The ratio separates demand for bitcoin from a company’s broader capital-structure work. It says little about total market flows, on-chain use or industry revenue.",
+          "steps": [
+            "One Action — In the next filing, update BTC purchase dollars divided by net common-stock proceeds and compare it with this week’s 16.8%.",
+            "One Action — In the next filing, update BTC purchase dollars divided by net common-stock proceeds and compare it with this week’s 16.8%."
+          ],
+          "done": "One Action — In the next filing, update BTC purchase dollars divided by net common-stock proceeds and compare it with this week’s 16.8%."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins, FinTech and Token Rails",
+          "title": "Token rails: eligible wallets can now make markets in tokenized shares",
+          "why": "Why Robin should care — This turns the gap between a 24/7 venue and a weekday cash market into an observable experiment in fees, adverse selection and security rights.",
+          "steps": [
+            "One Action — Follow the first pool with verifiable weekend trades through Monday’s cash open and calculate whether fees covered inventory loss relative to holding the same starting assets.",
+            "One Action — Follow the first pool with verifiable weekend trades through Monday’s cash open and calculate whether fees covered inventory loss relative to holding the same starting assets."
+          ],
+          "done": "One Action — Follow the first pool with verifiable weekend trades through Monday’s cash open and calculate whether fees covered inventory loss relative to holding the same starting assets."
+        },
+        {
+          "signal": 5,
+          "domain": "Content and Visibility",
+          "title": "iamrobin.ai editorial desk: who learned the math after the chat closed?",
+          "why": "Why Robin should care — SunTV can make this distinction tangible with a small paired exercise and a dated record of counterexamples, while keeping the exercise separate from causal research.",
+          "steps": [
+            "One Action — Publish “Who Learned the Math After the Chat Closed?” with the three studies, an original matched problem pair, a four-point scoring key, and an invitation to solve the second problem after closing the tool.",
+            "One Action — Publish “Who Learned the Math After the Chat Closed?” with the three studies, an original matched problem pair, a four-point scoring key, and an invitation to solve the second problem after closing the tool."
+          ],
+          "done": "One Action — Publish “Who Learned the Math After the Chat Closed?” with the three studies, an original matched problem pair, a four-point scoring key, and an invitation to solve the second problem after closing the tool."
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure",
+          "title": "AI infrastructure: Applied Digital signs 150 MW while delivery remains two years away",
+          "why": "Why Robin should care — Putting energization, rent start and capital cost on one timeline combines Robin’s engineering and capital-allocation strengths.",
+          "steps": [
+            "One Action — Build a one-page case using only the 18-year base term. Compare on-time delivery with a six-month delay and leave debt amount and interest rate as explicit variables.",
+            "One Action — Build a one-page case using only the 18-year base term. Compare on-time delivery with a six-month delay and leave debt amount and interest rate as explicit variables."
+          ],
+          "done": "One Action — Build a one-page case using only the 18-year base term. Compare on-time delivery with a six-month delay and leave debt amount and interest rate as explicit variables."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-stage Private Markets",
+          "title": "Late-stage private markets: Sierra raises $1.75 billion around outcome-priced agents",
+          "why": "Why Robin should care — This is market intelligence rather than an available allocation. A large financing round does not answer whether a resolved case stays resolved after human remediation and reopened tickets.",
+          "steps": [
+            "One Action — Keep the company on WATCH until one cohort discloses contribution profit per lasting resolution after reopened cases, human remediation and inference cost.",
+            "One Action — Keep the company on WATCH until one cohort discloses contribution profit per lasting resolution after reopened cases, human remediation and inference cost."
+          ],
+          "done": "One Action — Keep the company on WATCH until one cohort discloses contribution profit per lasting resolution after reopened cases, human remediation and inference cost."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities",
+          "title": "Public equities: Huang returns and NVIDIA closes 23.98 points ahead of QQQ",
+          "why": "Why Robin should care — Separating a governance repricing from operating evidence prevents a strong daily return from leaking into revenue or margin assumptions.",
+          "steps": [
+            "One Action — Keep operating estimates unchanged and record the reinstatement as a governance event until a later filing changes evidence on orders, deliveries or margins.",
+            "One Action — Keep operating estimates unchanged and record the reinstatement as a governance event until a later filing changes evidence on orders, deliveries or margins."
+          ],
+          "done": "One Action — Keep operating estimates unchanged and record the reinstatement as a governance event until a later filing changes evidence on orders, deliveries or margins."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年11月24日",
+      "description": "八项有边界的行动，把今天的证据转成可观察的下一道门槛。",
+      "centralJudgment": "真实自主性让行动、批准、时钟和结果都保持可见。",
+      "fieldLine": "八个信号。信号5追问导师离开后，学习者还能独立解出什么。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与代理",
+          "title": "前沿智能体：Shirudo 让运营人员在补丁就绪前先保护 Linux",
+          "why": "Robin为何在意 — 这与 RobinOS 的授权边界相似：代理可以准备并测试有边界的修复，部署权与硬件支持的收据仍对运营人员可见。",
+          "steps": [
+            "One Action — 在一次性虚拟机里运行公开 quickstart，记录攻击是否被阻止、正常请求是否保留、运营批准、shield移除和恢复时间。",
+            "One Action — 在一次性虚拟机里运行公开 quickstart，记录攻击是否被阻止、正常请求是否保留、运营批准、shield移除和恢复时间。"
+          ],
+          "done": "One Action — 在一次性虚拟机里运行公开 quickstart，记录攻击是否被阻止、正常请求是否保留、运营批准、shield移除和恢复时间。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 与机器人",
+          "title": "物理 AI 与机器人：Symbotic 有84套系统在部署，59套已运行",
+          "why": "Robin为何在意 — 仓储自动化的价值要到项目成为持续运行、完成验收的系统时才出现。Robin 可以追踪这个转换，而不凭安装数虚构单套经济性。",
+          "steps": [
+            "One Action — 下季更新同样两列，检验已运行系统净增是否从3套加快；项目级投产时间未披露时保持 UNKNOWN。",
+            "One Action — 下季更新同样两列，检验已运行系统净增是否从3套加快；项目级投产时间未披露时保持 UNKNOWN。"
+          ],
+          "done": "One Action — 下季更新同样两列，检验已运行系统净增是否从3套加快；项目级投产时间未披露时保持 UNKNOWN。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流与 Web3 健康",
+          "title": "加密资本流：每一美元新股融资约17美分买入比特币",
+          "why": "Robin为何在意 — 这个比率把比特币需求与公司资本结构调整分开，也不能代表全市场资金流、链上使用或行业收入。",
+          "steps": [
+            "One Action — 下一份文件只更新买 BTC 金额÷普通股净收入，与本周16.8%比较。",
+            "One Action — 下一份文件只更新买 BTC 金额÷普通股净收入，与本周16.8%比较。"
+          ],
+          "done": "One Action — 下一份文件只更新买 BTC 金额÷普通股净收入，与本周16.8%比较。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币、金融科技与代币轨道",
+          "title": "代币轨道：合资格钱包现在可以为代币化股票做市",
+          "why": "Robin为何在意 — 这让24/7场所与工作日现货市场之间的时钟差，变成可观察的费用、逆向选择和证券权利实验。",
+          "steps": [
+            "One Action — 追踪第一个可核实有周末成交的池到周一开盘，计算与持有同样起始资产相比，手续费是否盖过库存损失。",
+            "One Action — 追踪第一个可核实有周末成交的池到周一开盘，计算与持有同样起始资产相比，手续费是否盖过库存损失。"
+          ],
+          "done": "One Action — 追踪第一个可核实有周末成交的池到周一开盘，计算与持有同样起始资产相比，手续费是否盖过库存损失。"
+        },
+        {
+          "signal": 5,
+          "domain": "内容与可见度",
+          "title": "iamrobin.ai 编辑台：聊天窗口关闭后，谁真正学会了数学？",
+          "why": "Robin为何在意 — SunTV 可以用一组小型配对题和带日期的反例记录，让读者亲手看见这一区别；这项读者活动不冒充因果研究。",
+          "steps": [
+            "One Action — 发布《聊天窗口关闭后，谁学会了数学？》，加入三项研究、一组原创配对题、四分评分表，并邀请读者关掉工具后完成第二题。",
+            "One Action — 发布《聊天窗口关闭后，谁学会了数学？》，加入三项研究、一组原创配对题、四分评分表，并邀请读者关掉工具后完成第二题。"
+          ],
+          "done": "One Action — 发布《聊天窗口关闭后，谁学会了数学？》，加入三项研究、一组原创配对题、四分评分表，并邀请读者关掉工具后完成第二题。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基础设施",
+          "title": "AI 基建：Applied Digital 签下150MW，交付仍在约两年后",
+          "why": "Robin为何在意 — 把送电、租金起算与资本成本放在同一条时间线，结合了 Robin 的工程与资本配置优势。",
+          "steps": [
+            "One Action — 只用18年基本期做一页案例，对比按时交付与延期六个月，并把债务金额和利率列为显式变量。",
+            "One Action — 只用18年基本期做一页案例，对比按时交付与延期六个月，并把债务金额和利率列为显式变量。"
+          ],
+          "done": "One Action — 只用18年基本期做一页案例，对比按时交付与延期六个月，并把债务金额和利率列为显式变量。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私募",
+          "title": "后期私募：Sierra 围绕按结果收费的代理融资17.5亿美元",
+          "why": "Robin为何在意 — 这是市场情报，不是可获得的配置。大额融资不能回答工单重开和人工补救之后，一个解决结果是否仍然成立。",
+          "steps": [
+            "One Action — 保持 WATCH，等待一组客户披露扣除重开工单、人工补救和推理成本后的每个持久解决个案贡献利润。",
+            "One Action — 保持 WATCH，等待一组客户披露扣除重开工单、人工补救和推理成本后的每个持久解决个案贡献利润。"
+          ],
+          "done": "One Action — 保持 WATCH，等待一组客户披露扣除重开工单、人工补救和推理成本后的每个持久解决个案贡献利润。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开股票",
+          "title": "上市股票：黄仁勋复职，NVIDIA 收盘跑赢 QQQ 23.98个百分点",
+          "why": "Robin为何在意 — 把治理重估与经营证据分开，可以防止强劲单日回报渗入收入或毛利假设。",
+          "steps": [
+            "One Action — 维持经营预测不变，将复职列为治理事件，直到后续文件改变订单、交付或毛利证据。",
+            "One Action — 维持经营预测不变，将复职列为治理事件，直到后续文件改变订单、交付或毛利证据。"
+          ],
+          "done": "One Action — 维持经营预测不变，将复职列为治理事件，直到后续文件改变订单、交付或毛利证据。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年11月24日",
+      "description": "八項有邊界的行動，把今天的證據轉成可觀察的下一道門檻。",
+      "centralJudgment": "真實自主性讓行動、批准、時鐘和結果都保持可見。",
+      "fieldLine": "八個訊號。訊號5追問導師離開後，學習者還能獨立解出什麼。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與代理",
+          "title": "前沿智能體：Shirudo 讓運營人員在補丁就緒前先保護 Linux",
+          "why": "Robin為何在意 — 這與 RobinOS 的授權邊界相似：代理可以準備並測試有邊界的修復，部署權與硬件支持的收據仍對運營人員可見。",
+          "steps": [
+            "One Action — 在一次性虛擬機裡運行公開 quickstart，記錄攻擊是否被阻止、正常請求是否保留、運營批准、shield移除和恢復時間。",
+            "One Action — 在一次性虛擬機裡運行公開 quickstart，記錄攻擊是否被阻止、正常請求是否保留、運營批准、shield移除和恢復時間。"
+          ],
+          "done": "One Action — 在一次性虛擬機裡運行公開 quickstart，記錄攻擊是否被阻止、正常請求是否保留、運營批准、shield移除和恢復時間。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 與機器人",
+          "title": "物理 AI 與機器人：Symbotic 有84套系統在部署，59套已運行",
+          "why": "Robin為何在意 — 倉儲自動化的價值要到項目成為持續運行、完成驗收的系統時才出現。Robin 可以追蹤這個轉換，而不憑安裝數虛構單套經濟性。",
+          "steps": [
+            "One Action — 下季更新同樣兩列，檢驗已運行系統淨增是否從3套加快；項目級投產時間未披露時保持 UNKNOWN。",
+            "One Action — 下季更新同樣兩列，檢驗已運行系統淨增是否從3套加快；項目級投產時間未披露時保持 UNKNOWN。"
+          ],
+          "done": "One Action — 下季更新同樣兩列，檢驗已運行系統淨增是否從3套加快；項目級投產時間未披露時保持 UNKNOWN。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本流與 Web3 健康",
+          "title": "加密資本流：每一美元新股融資約17美分買入比特幣",
+          "why": "Robin為何在意 — 這個比率把比特幣需求與公司資本結構調整分開，也不能代表全市場資金流、鏈上使用或行業收入。",
+          "steps": [
+            "One Action — 下一份文件只更新買 BTC 金額÷普通股淨收入，與本週16.8%比較。",
+            "One Action — 下一份文件只更新買 BTC 金額÷普通股淨收入，與本週16.8%比較。"
+          ],
+          "done": "One Action — 下一份文件只更新買 BTC 金額÷普通股淨收入，與本週16.8%比較。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣、金融科技與代幣軌道",
+          "title": "代幣軌道：合資格錢包現在可以為代幣化股票做市",
+          "why": "Robin為何在意 — 這讓24/7場所與工作日現貨市場之間的時鐘差，變成可觀察的費用、逆向選擇和證券權利實驗。",
+          "steps": [
+            "One Action — 追蹤第一個可核實有周末成交的池到週一開盤，計算與持有同樣起始資產相比，手續費是否蓋過庫存損失。",
+            "One Action — 追蹤第一個可核實有周末成交的池到週一開盤，計算與持有同樣起始資產相比，手續費是否蓋過庫存損失。"
+          ],
+          "done": "One Action — 追蹤第一個可核實有周末成交的池到週一開盤，計算與持有同樣起始資產相比，手續費是否蓋過庫存損失。"
+        },
+        {
+          "signal": 5,
+          "domain": "內容與可見度",
+          "title": "iamrobin.ai 編輯臺：聊天窗口關閉後，誰真正學會了數學？",
+          "why": "Robin為何在意 — SunTV 可以用一組小型配對題和帶日期的反例記錄，讓讀者親手看見這一區別；這項讀者活動不冒充因果研究。",
+          "steps": [
+            "One Action — 發佈《聊天窗口關閉後，誰學會了數學？》，加入三項研究、一組原創配對題、四分評分表，並邀請讀者關掉工具後完成第二題。",
+            "One Action — 發佈《聊天窗口關閉後，誰學會了數學？》，加入三項研究、一組原創配對題、四分評分表，並邀請讀者關掉工具後完成第二題。"
+          ],
+          "done": "One Action — 發佈《聊天窗口關閉後，誰學會了數學？》，加入三項研究、一組原創配對題、四分評分表，並邀請讀者關掉工具後完成第二題。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基礎設施",
+          "title": "AI 基建：Applied Digital 簽下150MW，交付仍在約兩年後",
+          "why": "Robin為何在意 — 把送電、租金起算與資本成本放在同一條時間線，結合了 Robin 的工程與資本配置優勢。",
+          "steps": [
+            "One Action — 只用18年基本期做一頁案例，對比按時交付與延期六個月，並把債務金額和利率列為顯式變量。",
+            "One Action — 只用18年基本期做一頁案例，對比按時交付與延期六個月，並把債務金額和利率列為顯式變量。"
+          ],
+          "done": "One Action — 只用18年基本期做一頁案例，對比按時交付與延期六個月，並把債務金額和利率列為顯式變量。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私募",
+          "title": "後期私募：Sierra 圍繞按結果收費的代理融資17.5億美元",
+          "why": "Robin為何在意 — 這是市場情報，不是可獲得的配置。大額融資不能回答工單重開和人工補救之後，一個解決結果是否仍然成立。",
+          "steps": [
+            "One Action — 保持 WATCH，等待一組客戶披露扣除重開工單、人工補救和推理成本後的每個持久解決個案貢獻利潤。",
+            "One Action — 保持 WATCH，等待一組客戶披露扣除重開工單、人工補救和推理成本後的每個持久解決個案貢獻利潤。"
+          ],
+          "done": "One Action — 保持 WATCH，等待一組客戶披露扣除重開工單、人工補救和推理成本後的每個持久解決個案貢獻利潤。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開股票",
+          "title": "上市股票：黃仁勳復職，NVIDIA 收盤跑贏 QQQ 23.98個百分點",
+          "why": "Robin為何在意 — 把治理重估與經營證據分開，可以防止強勁單日回報滲入收入或毛利假設。",
+          "steps": [
+            "One Action — 維持經營預測不變，將復職列為治理事件，直到後續文件改變訂單、交付或毛利證據。",
+            "One Action — 維持經營預測不變，將復職列為治理事件，直到後續文件改變訂單、交付或毛利證據。"
+          ],
+          "done": "One Action — 維持經營預測不變，將復職列為治理事件，直到後續文件改變訂單、交付或毛利證據。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー 2026年11月24日",
+      "description": "八つの限定された行動で、本日の証拠を観測可能な次のゲートへ変える。",
+      "centralJudgment": "実用的な自律性は、行動、承認、時計、成果を見える状態に保つ。",
+      "fieldLine": "八つのシグナル。シグナル5は、チューターが去った後に何を独力で解けるかを問う。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "フロンティアモデルとエージェント",
+          "title": "フロンティア・エージェント：Shirudoはパッチ前のLinuxを運用者の承認で守る",
+          "why": "Robinにとっての意味 — RobinOSにも通じる自律性の設計だ。エージェントが限定された修復を準備・検証し、配備権限とハードウェアに裏付けられた記録は運用者から見える状態を保てる。",
+          "steps": [
+            "One Action — 使い捨てVMで公開quickstartの例を実行し、攻撃遮断、正規リクエスト維持、運用者承認、shield解除、復旧時間を記録する。",
+            "One Action — 使い捨てVMで公開quickstartの例を実行し、攻撃遮断、正規リクエスト維持、運用者承認、shield解除、復旧時間を記録する。"
+          ],
+          "done": "One Action — 使い捨てVMで公開quickstartの例を実行し、攻撃遮断、正規リクエスト維持、運用者承認、shield解除、復旧時間を記録する。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AIとロボティクス",
+          "title": "Physical AIとロボティクス：Symboticは84システムを配備中、59システムを稼働中",
+          "why": "Robinにとっての意味 — 倉庫自動化の価値は、案件が受け入れ済みの連続稼働システムへ変わるときに現れる。設置台数から単体採算を作り上げず、その移行を追跡できる。",
+          "steps": [
+            "One Action — 次四半期も同じ二つの数を更新し、稼働中システムの純増が3から加速するかを見る。案件別の時期は開示までUNKNOWNとする。",
+            "One Action — 次四半期も同じ二つの数を更新し、稼働中システムの純増が3から加速するかを見る。案件別の時期は開示までUNKNOWNとする。"
+          ],
+          "done": "One Action — 次四半期も同じ二つの数を更新し、稼働中システムの純増が3から加速するかを見る。案件別の時期は開示までUNKNOWNとする。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資本フローとWeb3",
+          "title": "暗号資産の資本フロー：新株調達1ドルのうち約17セントがBitcoin購入へ",
+          "why": "Robinにとっての意味 — この比率はBitcoin需要と会社の資本構成調整を分ける。市場全体の資金フロー、オンチェーン利用、業界収益を示すものではない。",
+          "steps": [
+            "One Action — 次の提出書類でBTC購入額÷普通株の純手取額だけを更新し、今週の16.8%と比べる。",
+            "One Action — 次の提出書類でBTC購入額÷普通株の純手取額だけを更新し、今週の16.8%と比べる。"
+          ],
+          "done": "One Action — 次の提出書類でBTC購入額÷普通株の純手取額だけを更新し、今週の16.8%と比べる。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコイン、FinTech、トークン基盤",
+          "title": "トークン基盤：適格ウォレットがトークン化株式のマーケットメーカーになれる",
+          "why": "Robinにとっての意味 — 24時間動く場と平日現物市場の時計のずれを、手数料、逆選択、証券上の権利として観察できる実験に変える。",
+          "steps": [
+            "One Action — 週末取引を確認できる最初のプールを月曜の現物開始まで追い、同じ初期資産を保有した場合と比べて手数料が在庫損失を上回ったかを計算する。",
+            "One Action — 週末取引を確認できる最初のプールを月曜の現物開始まで追い、同じ初期資産を保有した場合と比べて手数料が在庫損失を上回ったかを計算する。"
+          ],
+          "done": "One Action — 週末取引を確認できる最初のプールを月曜の現物開始まで追い、同じ初期資産を保有した場合と比べて手数料が在庫損失を上回ったかを計算する。"
+        },
+        {
+          "signal": 5,
+          "domain": "コンテンツと可視性",
+          "title": "iamrobin.ai編集室：チャットを閉じた後、数学を学んだのは誰か",
+          "why": "Robinにとっての意味 — SunTVは小さな対応問題と日付付きの反例記録で差を体験可能にできる。この読者参加を因果研究として扱わない。",
+          "steps": [
+            "One Action — 「チャットを閉じた後、数学を学んだのは誰か」を公開し、3研究、独自の対応問題、4点採点表、ツールを閉じて2問目を解く招待を載せる。",
+            "One Action — 「チャットを閉じた後、数学を学んだのは誰か」を公開し、3研究、独自の対応問題、4点採点表、ツールを閉じて2問目を解く招待を載せる。"
+          ],
+          "done": "One Action — 「チャットを閉じた後、数学を学んだのは誰か」を公開し、3研究、独自の対応問題、4点採点表、ツールを閉じて2問目を解く招待を載せる。"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラ",
+          "title": "AIインフラ：Applied Digitalは150MWを契約、引き渡しは約2年先",
+          "why": "Robinにとっての意味 — 受電、賃料開始、資本コストを一つの時間軸に置けば、Robinの工学と資本配分の強みをつなげられる。",
+          "steps": [
+            "One Action — 18年の基本期間だけで1ページの案件表を作る。予定通りと6カ月遅延を比べ、借入額と金利を明示的な変数にする。",
+            "One Action — 18年の基本期間だけで1ページの案件表を作る。予定通りと6カ月遅延を比べ、借入額と金利を明示的な変数にする。"
+          ],
+          "done": "One Action — 18年の基本期間だけで1ページの案件表を作る。予定通りと6カ月遅延を比べ、借入額と金利を明示的な変数にする。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期未公開市場",
+          "title": "後期未公開市場：成果課金型エージェントのSierraが17.5億ドル調達",
+          "why": "Robinにとっての意味 — これは市場情報であり、利用可能な投資枠ではない。大型調達だけでは、再開案件や人手補正の後も「解決」が維持されるか分からない。",
+          "steps": [
+            "One Action — 一つの顧客群が再開案件、人手補正、推論費を差し引いた持続的解決1件あたりの貢献利益を開示するまでWATCHとする。",
+            "One Action — 一つの顧客群が再開案件、人手補正、推論費を差し引いた持続的解決1件あたりの貢献利益を開示するまでWATCHとする。"
+          ],
+          "done": "One Action — 一つの顧客群が再開案件、人手補正、推論費を差し引いた持続的解決1件あたりの貢献利益を開示するまでWATCHとする。"
+        },
+        {
+          "signal": 8,
+          "domain": "上場株式",
+          "title": "上場株式：Huang復帰、NVIDIAはQQQを23.98ポイント上回る",
+          "why": "Robinにとっての意味 — ガバナンスの再評価と事業証拠を分ければ、強い1日リターンが売上・利益率仮定へ入り込むのを防げる。",
+          "steps": [
+            "One Action — 事業予測を据え置き、後続開示が受注、納入、利益率の証拠を変えるまで復帰をガバナンス事象として記録する。",
+            "One Action — 事業予測を据え置き、後続開示が受注、納入、利益率の証拠を変えるまで復帰をガバナンス事象として記録する。"
+          ],
+          "done": "One Action — 事業予測を据え置き、後続開示が受注、納入、利益率の証拠を変えるまで復帰をガバナンス事象として記録する。"
+        }
+      ]
+    }
+  }
+}

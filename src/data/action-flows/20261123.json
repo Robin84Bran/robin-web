@@ -1,0 +1,536 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-23",
+  "updated": "2026-11-23",
+  "signalCount": 8,
+  "briefingPath": "/ouroboros/202611/20261123/",
+  "actionItemPath": "/ouroboros/202611/20261123/action_item/",
+  "hero": "/daily-briefing/20261123/hero.webp",
+  "ogImage": "/daily-briefing/20261123/og.webp",
+  "actionHero": "/action-item/20261123/hero.webp",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-20",
+      "visualLabel": "The release notes establish the fixes, but provide no RobinOS task-level completion, intervention, latency or cost comparison.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-20",
+      "visualLabel": "The release states the footprint and a 1,500-parcel-per-hour peak claim, while robot count, paid utilization, intervention rate, uptime and cost per accepted parcel were unavailable.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.prnewswire.com/news-releases/robotera-expands-humanoid-robot-deployment-across-china-posts-guangdong-network-reaching-eight-cities-province-wide-302941865.html"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-20",
+      "visualLabel": "The completed-week totals aggregate reported rows; some fund cells remain dashes and the tables update automatically.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://farside.co.uk/bitcoin-etf-flow-all-data/"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://farside.co.uk/ethereum-etf-flow-all-data/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-20",
+      "visualLabel": "The instrument is a perpetual contract, not Oura shares or an IPO allocation; public liquidity and settlement inputs can still change before the halt.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://thedefiant.io/news/defi/tradexyz-to-halt-oura-pre-ipo-perpetual-on-dec-1"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://docs.tradexyz.com/"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "deepDiveAvailable": true,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "visualValue": "2026-11-23",
+      "visualLabel": "The Base log capture covers blocks 60162122 through 61026121; addresses are positions rather than verified people, timing does not prove motive, and gross event flows are not the change in outstanding debt.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://aave.com/blog/coinbase-tokenized-stocks"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://governance.aave.com/t/arfc-deploy-aave-v4-on-base/25427"
+        },
+        {
+          "label": "Source 3",
+          "url": "https://github.com/bgd-labs/aave-address-book/blob/main/src/AaveV4Base.sol"
+        },
+        {
+          "label": "Source 4",
+          "url": "https://basescan.org/address/0x17905Db0e4A3514467539956c084180616AE7B8D"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-17",
+      "visualLabel": "The agreement targets first power no earlier than 2030; the first phase uses conventional drilling and the millimeter-wave extension remains a later technical and commercial milestone.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.quaise.com/news/quaise-energy-signs-50-mw-geothermal-power-purchase-agreement-with-google"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-18",
+      "visualLabel": "The release gives an approximate round size and company-reported customer footprint; valuation, exact proceeds, round instrument, unit economics and customer concentration were unavailable.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.prnewswire.com/news-releases/megarobo-raises-nearly-us200-million-in-new-funding-to-build-intelligence-infrastructure-for-the-physical-world-302944651.html"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-19",
+      "visualLabel": "The target, upfront payment, milestones and royalties are undisclosed, and the collaboration is preclinical research rather than patient evidence.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.merck.com/news/merck-and-isomorphic-labs-enter-strategic-research-collaboration/"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, November 23, 2026",
+      "description": "Eight bounded actions turn today’s evidence into observable next gates.",
+      "centralJudgment": "Autonomous systems earn trust when state, clocks and accepted outcomes stay visible.",
+      "fieldLine": "Eight signals. Signal 5 opens today’s Action Item on a 24/7 loan market using a 24/5 stock-price clock.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Frontier models and agents: Claude Code fixes two reliability failures in multi-agent work",
+          "why": "Why Robin should care: RobinOS runs several bounded agents at once. Lifecycle cleanup and correct shared state determine whether the system is reusable beyond a successful demonstration.",
+          "steps": [
+            "One Action: Repeat one frozen task with two concurrent subtasks and a subagent-owned MCP server ten times, recording orphaned processes, dependency errors and time to first accepted result.",
+            "One Action: Repeat one frozen task with two concurrent subtasks and a subagent-owned MCP server ten times, recording orphaned processes, dependency errors and time to first accepted result."
+          ],
+          "done": "One Action: Repeat one frozen task with two concurrent subtasks and a subagent-owned MCP server ten times, recording orphaned processes, dependency errors and time to first accepted result."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "Physical AI and robotics: China Post expands ROBOTERA humanoids across eight Guangdong cities",
+          "why": "Why Robin should care: Physical AI investment research should translate “locations covered” into accepted robot hours and compare those hours with people and fixed automation.",
+          "steps": [
+            "One Action: Maintain a public deployment ledger that updates only with robot count, accepted parcels per shift, human intervention, downtime and unit cost.",
+            "One Action: Maintain a public deployment ledger that updates only with robot count, accepted parcels per shift, human intervention, downtime and unit cost."
+          ],
+          "done": "One Action: Maintain a public deployment ledger that updates only with robot count, accepted parcels per shift, human intervention, downtime and unit cost."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows and Web3 Health",
+          "title": "Crypto capital: ETFs lose about $1.467 billion for the week, with pressure concentrating in BTC",
+          "why": "Why Robin should care: Direction and composition help Robin distinguish a broad withdrawal in risk appetite from stronger pressure on one asset, without mistaking one channel for the whole market.",
+          "steps": [
+            "One Action: Save both tables on the next trading day and check the November 20 dashes, the $1.4670 billion total and BTC’s share for revisions.",
+            "One Action: Save both tables on the next trading day and check the November 20 dashes, the $1.4670 billion total and BTC’s share for revisions."
+          ],
+          "done": "One Action: Save both tables on the next trading day and check the November 20 dashes, the $1.4670 billion total and BTC’s share for revisions."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins, FinTech and Token Rails",
+          "title": "Stablecoins and tokenized markets: the OURA pre-IPO perpetual enters its shutdown path",
+          "why": "Why Robin should care: Broader access from tokenized markets remains useful only when each product answers three plain questions: what do I own, who settles it and which price governs the exit?",
+          "steps": [
+            "One Action: Before December 1, preserve one snapshot of open interest, trading volume, settlement rules and final TWAP inputs, keeping contract return separate from Oura stock performance.",
+            "One Action: Before December 1, preserve one snapshot of open interest, trading volume, settlement rules and final TWAP inputs, keeping contract return separate from Oura stock performance."
+          ],
+          "done": "One Action: Before December 1, preserve one snapshot of open interest, trading volume, settlement rules and final TWAP inputs, keeping contract return separate from Oura stock performance."
+        },
+        {
+          "signal": 5,
+          "domain": "Content and Visibility",
+          "title": "iamrobin.ai: Who borrows against a stock price that has stopped moving?",
+          "why": "Why Robin should care: This is a reproducible autonomy problem. Agents and users can act around the clock while collateral information does not update around the clock. Product design must make the clock mismatch visible.",
+          "steps": [
+            "One Action — One authorized publishing assignment: write “Who Borrowed Against Friday’s Price?” from the frozen logs, explaining price clocks, position addresses, event flows and visible risk boundaries for https://iamrobin.ai/ouroboros/202611/20261123/action_item/.",
+            "One Action — One authorized publishing assignment: write “Who Borrowed Against Friday’s Price?” from the frozen logs, explaining price clocks, position addresses, event flows and visible risk boundaries for https://iamrobin.ai/ouroboros/202611/20261123/action_item/."
+          ],
+          "done": "One Action — One authorized publishing assignment: write “Who Borrowed Against Friday’s Price?” from the frozen logs, explaining price clocks, position addresses, event flows and visible risk boundaries for https://iamrobin.ai/ouroboros/202611/20261123/action_item/."
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure",
+          "title": "AI infrastructure: Google contracts for 50 MW of geothermal power while advanced drilling remains phase two",
+          "why": "Why Robin should care: AI data centers need reliable low-carbon power. Robin can hold demand commitment, engineering risk and capital timing together without treating future technology as present delivery.",
+          "steps": [
+            "One Action — Track four states: permitting and finance, first conventional-well power, 50 MW commercial delivery, and measured millimeter-wave cost and output.",
+            "One Action — Track four states: permitting and finance, first conventional-well power, 50 MW commercial delivery, and measured millimeter-wave cost and output."
+          ],
+          "done": "One Action — Track four states: permitting and finance, first conventional-well power, 50 MW commercial delivery, and measured millimeter-wave cost and output."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-stage Private Markets",
+          "title": "Late-stage private markets: MegaRobo raises nearly $200 million while customer economics remain missing",
+          "why": "Why Robin should care: This is a public research lead connected to Physical AI and OPC infrastructure, not an accessible investment opportunity. The useful question is how much accepted work each installed system produces.",
+          "steps": [
+            "One Action — At the next disclosure, add only four numbers: recurring revenue, gross margin, annual maintenance cost per system and top-five customer concentration.",
+            "One Action — At the next disclosure, add only four numbers: recurring revenue, gross margin, annual maintenance cost per system and top-five customer concentration."
+          ],
+          "done": "One Action — At the next disclosure, add only four numbers: recurring revenue, gross margin, annual maintenance cost per system and top-five customer concentration."
+        },
+        {
+          "signal": 8,
+          "domain": "AI and Science",
+          "title": "AI and science: Merck and Isomorphic Labs start with one undisclosed oncology target",
+          "why": "Why Robin should care: The agreement connects model capability to a large drugmaker’s experimental and development system. The value chain is legible, while revenue and patient impact remain several gates away.",
+          "steps": [
+            "One Action: Maintain an evidence ladder containing only target disclosure, experimental validation, candidate nomination, IND, clinical readout and economic-term disclosure.",
+            "One Action: Maintain an evidence ladder containing only target disclosure, experimental validation, candidate nomination, IND, clinical readout and economic-term disclosure."
+          ],
+          "done": "One Action: Maintain an evidence ladder containing only target disclosure, experimental validation, candidate nomination, IND, clinical readout and economic-term disclosure."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年11月23日",
+      "description": "八项有边界的行动，把今天的证据转成可观察的下一道门槛。",
+      "centralJudgment": "自主系统只有让状态、时钟和验收结果保持可见，才能积累信任。",
+      "fieldLine": "八个信号。信号5展开今天关于24/7借贷市场与24/5股票价格时钟的行动文章。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与代理",
+          "title": "前沿模型与代理：Claude Code 修复两个会让多代理工作变得不可靠的问题",
+          "why": "Robin为何在意： RobinOS 同时运行多个有边界的代理。生命周期清理和并发状态正确性决定系统能否稳定复用，而不只是演示一次成功。",
+          "steps": [
+            "One Action: 把一个包含两个并发子任务和一个子代理 MCP 服务的冻结任务重复运行十次，记录遗留进程、依赖错误和首次通过时间。",
+            "One Action: 把一个包含两个并发子任务和一个子代理 MCP 服务的冻结任务重复运行十次，记录遗留进程、依赖错误和首次通过时间。"
+          ],
+          "done": "One Action: 把一个包含两个并发子任务和一个子代理 MCP 服务的冻结任务重复运行十次，记录遗留进程、依赖错误和首次通过时间。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 与机器人",
+          "title": "Physical AI 与机器人：中国邮政把 ROBOTERA 人形机器人扩展到广东八座城市",
+          "why": "Robin为何在意： Physical AI 的投资判断需要把“覆盖多少地点”转化成“产生多少可验收机器人小时”，再与人工和固定自动化比较。",
+          "steps": [
+            "One Action: 建立公开部署台账，只在出现机器人数量、每班合格包裹、人工接管、停机时间和单位成本时更新。",
+            "One Action: 建立公开部署台账，只在出现机器人数量、每班合格包裹、人工接管、停机时间和单位成本时更新。"
+          ],
+          "done": "One Action: 建立公开部署台账，只在出现机器人数量、每班合格包裹、人工接管、停机时间和单位成本时更新。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流与 Web3 健康",
+          "title": "加密资本流：ETF 一周净流出约14.67亿美元，压力更集中在 BTC",
+          "why": "Robin为何在意： 资本流的方向和构成可以帮助 Robin 区分“整个风险偏好下降”与“某一资产承受更强卖压”，同时避免把一个指标当成完整市场。",
+          "steps": [
+            "One Action: 下一个交易日保存两张表，并核对11月20日短横线、14.67亿美元总数和 BTC 占比是否修订。",
+            "One Action: 下一个交易日保存两张表，并核对11月20日短横线、14.67亿美元总数和 BTC 占比是否修订。"
+          ],
+          "done": "One Action: 下一个交易日保存两张表，并核对11月20日短横线、14.67亿美元总数和 BTC 占比是否修订。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币、金融科技与代币轨道",
+          "title": "稳定币与代币化市场：OURA 上市前永续合约进入终止流程",
+          "why": "Robin为何在意： 代币化市场的价值来自更广的可达性，但每一种资产都需要回答：我究竟拥有什么、谁负责结算、退出时使用什么价格？",
+          "steps": [
+            "One Action: 在12月1日前保存一次未平仓量、成交量、结算规则和最终 TWAP 输入，把合约收益与 Oura 股票表现分开。",
+            "One Action: 在12月1日前保存一次未平仓量、成交量、结算规则和最终 TWAP 输入，把合约收益与 Oura 股票表现分开。"
+          ],
+          "done": "One Action: 在12月1日前保存一次未平仓量、成交量、结算规则和最终 TWAP 输入，把合约收益与 Oura 股票表现分开。"
+        },
+        {
+          "signal": 5,
+          "domain": "内容与可见度",
+          "title": "iamrobin.ai：周末价格静止时，谁在用股票抵押借款？",
+          "why": "Robin为何在意： 这是一个可复核的自主系统问题：代理或用户可以24/7操作，但抵押品信息并非24/7更新。产品需要把时钟差异变成可见规则。",
+          "steps": [
+            "One Action — 已授权发布任务：撰写 “Who Borrowed Against Friday’s Price?”，用这段冻结日志解释价格时钟、仓位地址、借还事件和可见风险边界；发布到 https://iamrobin.ai/ouroboros/202611/20261123/action_item/ 。",
+            "One Action — 已授权发布任务：撰写 “Who Borrowed Against Friday’s Price?”，用这段冻结日志解释价格时钟、仓位地址、借还事件和可见风险边界；发布到 https://iamrobin.ai/ouroboros/202611/20261123/action_item/ 。"
+          ],
+          "done": "One Action — 已授权发布任务：撰写 “Who Borrowed Against Friday’s Price?”，用这段冻结日志解释价格时钟、仓位地址、借还事件和可见风险边界；发布到 https://iamrobin.ai/ouroboros/202611/20261123/action_item/ 。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基础设施",
+          "title": "AI 基础设施：Google 签下50MW地热电力，先进钻井仍在第二阶段",
+          "why": "Robin为何在意： AI 数据中心需要稳定低碳电力。Robin 可以同时跟踪需求承诺、工程风险和资本时间，不把未来技术当成今天已经交付。",
+          "steps": [
+            "One Action — 为项目建立四个状态：许可与融资、传统井首电、50MW商业交付、毫米波阶段实测成本与产量。",
+            "One Action — 为项目建立四个状态：许可与融资、传统井首电、50MW商业交付、毫米波阶段实测成本与产量。"
+          ],
+          "done": "One Action — 为项目建立四个状态：许可与融资、传统井首电、50MW商业交付、毫米波阶段实测成本与产量。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私募",
+          "title": "后期私募：MegaRobo 获近2亿美元，自动化规模仍需客户经济性证明",
+          "why": "Robin为何在意： 这是一条与 Physical AI 和 OPC 基础设施相关的公开研究线索，而不是可获得的投资机会。判断要从融资故事转向每套系统产生的合格工作。",
+          "steps": [
+            "One Action — 下一次披露只补四个数：经常性收入、毛利、每套系统年维护成本和前五大客户占比。",
+            "One Action — 下一次披露只补四个数：经常性收入、毛利、每套系统年维护成本和前五大客户占比。"
+          ],
+          "done": "One Action — 下一次披露只补四个数：经常性收入、毛利、每套系统年维护成本和前五大客户占比。"
+        },
+        {
+          "signal": 8,
+          "domain": "AI 与科学",
+          "title": "AI 与科学：Merck 与 Isomorphic Labs 从一个未命名肿瘤靶点开始",
+          "why": "Robin为何在意： 这项合作把模型能力与大型药企的实验和开发系统连接起来。价值链清楚，但距离收入和患者影响仍有多道门。",
+          "steps": [
+            "One Action: 建立证据阶梯，只记录靶点公开、实验验证、候选药物提名、IND、临床读出和经济条款披露。",
+            "One Action: 建立证据阶梯，只记录靶点公开、实验验证、候选药物提名、IND、临床读出和经济条款披露。"
+          ],
+          "done": "One Action: 建立证据阶梯，只记录靶点公开、实验验证、候选药物提名、IND、临床读出和经济条款披露。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年11月23日",
+      "description": "八項有邊界的行動，把今天的證據轉成可觀察的下一道門檻。",
+      "centralJudgment": "自主系統只有讓狀態、時鐘和驗收結果保持可見，才能累積信任。",
+      "fieldLine": "八個訊號。訊號5展開今天關於24/7借貸市場與24/5股票價格時鐘的行動文章。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與代理",
+          "title": "前沿模型與代理：Claude Code 修復兩個會令多代理工作變得不可靠的問題",
+          "why": "Robin為何在意： RobinOS 同時運行多個有邊界的代理。生命週期清理和並發狀態正確性決定系統能否穩定重用，而不只是演示一次成功。",
+          "steps": [
+            "One Action: 把一個包含兩個並發子任務和一個子代理 MCP 服務的凍結任務重複運行十次，記錄遺留程序、依賴錯誤和首次通過時間。",
+            "One Action: 把一個包含兩個並發子任務和一個子代理 MCP 服務的凍結任務重複運行十次，記錄遺留程序、依賴錯誤和首次通過時間。"
+          ],
+          "done": "One Action: 把一個包含兩個並發子任務和一個子代理 MCP 服務的凍結任務重複運行十次，記錄遺留程序、依賴錯誤和首次通過時間。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 與機器人",
+          "title": "Physical AI 與機械人：中國郵政把 ROBOTERA 人形機械人擴展到廣東八座城市",
+          "why": "Robin為何在意： Physical AI 的投資判斷需要把「覆蓋多少地點」轉化成「產生多少可驗收機械人小時」，再與人工和固定自動化比較。",
+          "steps": [
+            "One Action: 建立公開部署台賬，只在出現機械人數量、每班合格包裹、人工接管、停機時間和單位成本時更新。",
+            "One Action: 建立公開部署台賬，只在出現機械人數量、每班合格包裹、人工接管、停機時間和單位成本時更新。"
+          ],
+          "done": "One Action: 建立公開部署台賬，只在出現機械人數量、每班合格包裹、人工接管、停機時間和單位成本時更新。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本流與 Web3 健康",
+          "title": "加密資本流：ETF 一週淨流出約14.67億美元，壓力更集中在 BTC",
+          "why": "Robin為何在意： 資本流的方向和構成可以幫助 Robin 區分「整體風險偏好下降」與「某一資產承受更強賣壓」，同時避免把一個指標當成完整市場。",
+          "steps": [
+            "One Action: 下一個交易日保存兩張表，並核對11月20日短橫線、14.67億美元總數和 BTC 佔比是否修訂。",
+            "One Action: 下一個交易日保存兩張表，並核對11月20日短橫線、14.67億美元總數和 BTC 佔比是否修訂。"
+          ],
+          "done": "One Action: 下一個交易日保存兩張表，並核對11月20日短橫線、14.67億美元總數和 BTC 佔比是否修訂。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣、金融科技與代幣軌道",
+          "title": "穩定幣與代幣化市場：OURA 上市前永續合約進入終止流程",
+          "why": "Robin為何在意： 代幣化市場的價值來自更廣的可達性，但每一種資產都需要回答：我究竟擁有甚麼、誰負責結算、退出時使用甚麼價格？",
+          "steps": [
+            "One Action: 在12月1日前保存一次未平倉量、成交量、結算規則和最終 TWAP 輸入，把合約收益與 Oura 股票表現分開。",
+            "One Action: 在12月1日前保存一次未平倉量、成交量、結算規則和最終 TWAP 輸入，把合約收益與 Oura 股票表現分開。"
+          ],
+          "done": "One Action: 在12月1日前保存一次未平倉量、成交量、結算規則和最終 TWAP 輸入，把合約收益與 Oura 股票表現分開。"
+        },
+        {
+          "signal": 5,
+          "domain": "內容與可見度",
+          "title": "iamrobin.ai：週末價格靜止時，誰在用股票抵押借款？",
+          "why": "Robin為何在意： 這是一個可覆核的自主系統問題：代理或用戶可以24/7操作，但抵押品資訊並非24/7更新。產品需要把時鐘差異變成可見規則。",
+          "steps": [
+            "One Action — 已授權發布任務：撰寫 “Who Borrowed Against Friday’s Price?”，用這段凍結日誌解釋價格時鐘、持倉地址、借還事件和可見風險邊界；發布到 https://iamrobin.ai/ouroboros/202611/20261123/action_item/ 。",
+            "One Action — 已授權發布任務：撰寫 “Who Borrowed Against Friday’s Price?”，用這段凍結日誌解釋價格時鐘、持倉地址、借還事件和可見風險邊界；發布到 https://iamrobin.ai/ouroboros/202611/20261123/action_item/ 。"
+          ],
+          "done": "One Action — 已授權發布任務：撰寫 “Who Borrowed Against Friday’s Price?”，用這段凍結日誌解釋價格時鐘、持倉地址、借還事件和可見風險邊界；發布到 https://iamrobin.ai/ouroboros/202611/20261123/action_item/ 。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基礎設施",
+          "title": "AI 基礎設施：Google 簽下50MW地熱電力，先進鑽井仍在第二階段",
+          "why": "Robin為何在意： AI 數據中心需要穩定低碳電力。Robin 可以同時追蹤需求承諾、工程風險和資本時間，不把未來技術當成今天已經交付。",
+          "steps": [
+            "One Action — 為項目建立四個狀態：許可與融資、傳統井首次供電、50MW商業交付、毫米波階段實測成本與產量。",
+            "One Action — 為項目建立四個狀態：許可與融資、傳統井首次供電、50MW商業交付、毫米波階段實測成本與產量。"
+          ],
+          "done": "One Action — 為項目建立四個狀態：許可與融資、傳統井首次供電、50MW商業交付、毫米波階段實測成本與產量。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私募",
+          "title": "後期私募：MegaRobo 獲近2億美元，自動化規模仍需客戶經濟效益證明",
+          "why": "Robin為何在意： 這是一條與 Physical AI 和 OPC 基礎設施相關的公開研究線索，而不是可獲得的投資機會。判斷要從融資故事轉向每套系統產生的合格工作。",
+          "steps": [
+            "One Action — 下一次披露只補四個數：經常性收入、毛利、每套系統年度維護成本和前五大客戶佔比。",
+            "One Action — 下一次披露只補四個數：經常性收入、毛利、每套系統年度維護成本和前五大客戶佔比。"
+          ],
+          "done": "One Action — 下一次披露只補四個數：經常性收入、毛利、每套系統年度維護成本和前五大客戶佔比。"
+        },
+        {
+          "signal": 8,
+          "domain": "AI 與科學",
+          "title": "AI 與科學：Merck 與 Isomorphic Labs 從一個未命名腫瘤靶點開始",
+          "why": "Robin為何在意： 這項合作把模型能力與大型藥企的實驗和開發系統連接起來。價值鏈清楚，但距離收入和患者影響仍有多道關口。",
+          "steps": [
+            "One Action: 建立證據階梯，只記錄靶點公開、實驗驗證、候選藥物提名、IND、臨床讀出和經濟條款披露。",
+            "One Action: 建立證據階梯，只記錄靶點公開、實驗驗證、候選藥物提名、IND、臨床讀出和經濟條款披露。"
+          ],
+          "done": "One Action: 建立證據階梯，只記錄靶點公開、實驗驗證、候選藥物提名、IND、臨床讀出和經濟條款披露。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー 2026年11月23日",
+      "description": "八つの限定された行動で、本日の証拠を観測可能な次のゲートへ変える。",
+      "centralJudgment": "自律システムへの信頼は、状態、時計、受け入れ可能な成果が見えることで育つ。",
+      "fieldLine": "八つのシグナル。シグナル5は、24時間動く融資市場と平日だけ動く株価の時計を扱う本日のAction Itemへ続く。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "フロンティアモデルとエージェント",
+          "title": "先端モデルとエージェント：Claude Codeがマルチエージェントの信頼性を損なう2つの問題を修正",
+          "why": "Robinにとっての意味： RobinOSは境界を設けた複数のエージェントを同時に動かす。ライフサイクルの後始末と共有状態の正しさが、一度の実演を再利用できるシステムへ変える。",
+          "steps": [
+            "One Action: 2つの並行サブタスクと、サブエージェントが所有するMCPサーバーを含む凍結課題を10回実行し、残存プロセス、依存関係エラー、最初の検収までの時間を記録する。",
+            "One Action: 2つの並行サブタスクと、サブエージェントが所有するMCPサーバーを含む凍結課題を10回実行し、残存プロセス、依存関係エラー、最初の検収までの時間を記録する。"
+          ],
+          "done": "One Action: 2つの並行サブタスクと、サブエージェントが所有するMCPサーバーを含む凍結課題を10回実行し、残存プロセス、依存関係エラー、最初の検収までの時間を記録する。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AIとロボティクス",
+          "title": "フィジカルAIとロボット：中国郵政、ROBOTERAの人型ロボットを広東省8都市へ展開",
+          "why": "Robinにとっての意味： フィジカルAIへの投資では、「何拠点をカバーしたか」を検収されたロボット稼働時間に置き換え、人や固定型自動化と比べたい。",
+          "steps": [
+            "One Action: ロボット台数、一勤務当たりの検収済み荷物数、人の介入、停止時間、単位費用が公表されたときだけ更新する導入台帳を作る。",
+            "One Action: ロボット台数、一勤務当たりの検収済み荷物数、人の介入、停止時間、単位費用が公表されたときだけ更新する導入台帳を作る。"
+          ],
+          "done": "One Action: ロボット台数、一勤務当たりの検収済み荷物数、人の介入、停止時間、単位費用が公表されたときだけ更新する導入台帳を作る。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資本フローとWeb3",
+          "title": "暗号資産への資本：ETFから一週間で約14億6700万ドル流出、圧力はBTCに集中",
+          "why": "Robinにとっての意味： 資金の方向と構成を見れば、リスク選好全体の後退と、特定資産への強い売り圧力を分けて考えられる。一つの経路を市場全体と取り違えずに済む。",
+          "steps": [
+            "One Action: 次の取引日に2つの表を保存し、11月20日のダッシュ、14億6700万ドルの合計、BTCの構成比に修正がないか確かめる。",
+            "One Action: 次の取引日に2つの表を保存し、11月20日のダッシュ、14億6700万ドルの合計、BTCの構成比に修正がないか確かめる。"
+          ],
+          "done": "One Action: 次の取引日に2つの表を保存し、11月20日のダッシュ、14億6700万ドルの合計、BTCの構成比に修正がないか確かめる。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコイン、FinTech、トークン基盤",
+          "title": "ステーブルコインとトークン化市場：OURAプレIPO無期限先物が終了手続きへ",
+          "why": "Robinにとっての意味： トークン化市場がアクセスを広げても、各商品が「何を所有するのか」「誰が清算するのか」「退出価格を何が決めるのか」に答えられなければ実用性は乏しい。",
+          "steps": [
+            "One Action: 12月1日までに建玉、取引高、清算規則、最終TWAPの入力値を一度保存し、契約のリターンとOura株の値動きを分けて記録する。",
+            "One Action: 12月1日までに建玉、取引高、清算規則、最終TWAPの入力値を一度保存し、契約のリターンとOura株の値動きを分けて記録する。"
+          ],
+          "done": "One Action: 12月1日までに建玉、取引高、清算規則、最終TWAPの入力値を一度保存し、契約のリターンとOura株の値動きを分けて記録する。"
+        },
+        {
+          "signal": 5,
+          "domain": "コンテンツと可視性",
+          "title": "iamrobin.ai：株価が止まった週末、誰がその株を担保に借りたのか",
+          "why": "Robinにとっての意味： 再現できる自律システムの課題だ。エージェントと利用者は24時間動けても、担保情報は24時間更新されない。製品はこの時計のずれを見せなければならない。",
+          "steps": [
+            "One Action — 承認済みの出版課題として、凍結ログを基に「Who Borrowed Against Friday’s Price?」を書く。価格の時計、ポジションアドレス、イベントフロー、見えるリスク境界を説明し、https://iamrobin.ai/ouroboros/202611/20261123/action_item/ で公開する。",
+            "One Action — 承認済みの出版課題として、凍結ログを基に「Who Borrowed Against Friday’s Price?」を書く。価格の時計、ポジションアドレス、イベントフロー、見えるリスク境界を説明し、https://iamrobin.ai/ouroboros/202611/20261123/action_item/ で公開する。"
+          ],
+          "done": "One Action — 承認済みの出版課題として、凍結ログを基に「Who Borrowed Against Friday’s Price?」を書く。価格の時計、ポジションアドレス、イベントフロー、見えるリスク境界を説明し、https://iamrobin.ai/ouroboros/202611/20261123/action_item/ で公開する。"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラ",
+          "title": "AIインフラ：Googleが地熱50MWを契約、先進掘削は第2段階",
+          "why": "Robinにとっての意味： AIデータセンターには安定した低炭素電力が必要だ。需要の確約、技術リスク、資本の時間軸を同時に見ながら、将来の技術を現在の供給実績と混同せずに済む。",
+          "steps": [
+            "One Action — 許認可と資金調達、従来工法の井戸による初回発電、50MWの商用供給、ミリ波方式の実測費用と出力という4つの状態を追跡する。",
+            "One Action — 許認可と資金調達、従来工法の井戸による初回発電、50MWの商用供給、ミリ波方式の実測費用と出力という4つの状態を追跡する。"
+          ],
+          "done": "One Action — 許認可と資金調達、従来工法の井戸による初回発電、50MWの商用供給、ミリ波方式の実測費用と出力という4つの状態を追跡する。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期未公開市場",
+          "title": "後期未公開市場：MegaRoboが約2億ドル調達、顧客採算は未開示",
+          "why": "Robinにとっての意味： フィジカルAIとOPCインフラにつながる公開調査の手掛かりであり、投資可能な案件ではない。見るべきは各システムが生み出す検収済みの仕事量だ。",
+          "steps": [
+            "One Action — 次回の開示では、継続収益、粗利益率、システム1台当たりの年間保守費用、上位5社への顧客集中度という4つの数字だけを加える。",
+            "One Action — 次回の開示では、継続収益、粗利益率、システム1台当たりの年間保守費用、上位5社への顧客集中度という4つの数字だけを加える。"
+          ],
+          "done": "One Action — 次回の開示では、継続収益、粗利益率、システム1台当たりの年間保守費用、上位5社への顧客集中度という4つの数字だけを加える。"
+        },
+        {
+          "signal": 8,
+          "domain": "AIと科学",
+          "title": "AIと科学：MerckとIsomorphic Labs、非公開のがん標的1件から始動",
+          "why": "Robinにとっての意味： モデルの能力を大手製薬会社の実験・開発体制につなぐ契約だ。価値連鎖は明確だが、収益と患者への効果までは複数の関門が残る。",
+          "steps": [
+            "One Action: 標的の開示、実験的検証、開発候補の選定、IND、臨床結果、経済条件の開示だけを記録する証拠の階段を作る。",
+            "One Action: 標的の開示、実験的検証、開発候補の選定、IND、臨床結果、経済条件の開示だけを記録する証拠の階段を作る。"
+          ],
+          "done": "One Action: 標的の開示、実験的検証、開発候補の選定、IND、臨床結果、経済条件の開示だけを記録する証拠の階段を作る。"
+        }
+      ]
+    }
+  }
+}
