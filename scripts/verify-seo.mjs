@@ -14,6 +14,7 @@ const portfolioDisclaimer = 'An attention field — subjects I study, not a reco
 const indexableRoutes = new Set([
   '/binary/coevolution/',
   '/research/constitutional-history/',
+  '/research/frontier-replication/',
   '/research/council/',
   '/research/kid-edition/',
   '/intelligence/council/autonomous-engineering/',

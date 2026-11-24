@@ -254,3 +254,37 @@ test('Constitutional History keeps failed coding gates distinct from descriptive
   assert.ok(read('dist/sitemap-0.xml').includes(`https://iamrobin.ai${route}`));
   assert.doesNotMatch(article,/\/Users\/|headlessnick|https:\/\/github\.com\/|session[_ -]?id|NaN|Infinity|undefined/);
 });
+
+test('Frontier Replication preserves the registered record, corrected decisions and visible failed gates',()=>{
+  const route='/research/frontier-replication/';
+  const card=programme.studies.find(s=>s.href===route);
+  assert.equal(card?.maturity,'Empirical study');assert.equal(card?.studyNumber,11);
+  const html=read(`dist${route}index.html`);
+  const article=html.match(/<article\b[^>]*class="shell frontier-study"[^>]*>([\s\S]*?)<\/article>/)?.[1];assert.ok(article);
+  assert.equal((html.match(/<h1\b/g)||[]).length,1);
+  assert.ok(html.includes(`href="https://iamrobin.ai${route}"`));assert.ok(html.includes('"@type":"Article"'));
+  let previous=-1;
+  for(const id of ['question-title','hypothesis-title','example-title','setup-title','workflow-title','results-title','limits-title','changes-title','notes-title']){
+    const index=article.indexOf(`id="${id}"`);assert.ok(index>previous,id+' follows presentation order');previous=index;
+  }
+  const opening=article.slice(0,article.indexOf('id="example-title"'));
+  assert.doesNotMatch(opening,/\d+(?:\.\d+)?%|\d+\s*(?:pp|tokens)|p\s*=/,'statistics follow examples');
+  const figures=[...article.matchAll(/<svg\b[^>]*role="img"[^>]*>[\s\S]*?<\/svg>/g)].map(m=>m[0]);
+  assert.equal(figures.length,7,'setup, workflow, WOP effects and gates, WOP baselines, Signal, Door effects and Door coverage');
+  for(const svg of figures){assert.match(svg,/aria-labelledby=/);assert.match(svg,/<title\b[^>]*>[^<]+<\/title>/);assert.match(svg,/<desc\b[^>]*>[^<]+<\/desc>/);}
+  const result=JSON.parse(read('src/data/frontier-replication-study.json'));
+  assert.deepEqual(Object.fromEntries(Object.entries(result.cross_family).map(([s,v])=>[s,v.status])),{door:'UNKNOWN',signal:'PASS',wop:'FAIL'});
+  assert.equal(result.families.gpt.a8.wop.status,'UNKNOWN');assert.equal(result.families.gpt.wop.status,'FAIL');
+  assert.equal(result.families.claude.a8.door.status,'UNKNOWN');assert.equal(result.families.claude.door.status,'UNKNOWN');
+  assert.equal(result.families.gpt.wop.primary.audit_floor_pass,false);
+  assert.equal(result.families.gpt.wop.primary.minimum_audits.X_audited,57);
+  assert.equal(result.families.claude.door.cells['24/rules'].valid,93);
+  assert.equal(result.families.claude.door.cells['24/rehearsal'].valid,90);
+  for(const phrase of ['A8 versus A9','registered once-only record','before seeing those two endpoints','17,656','2,398','822,482','600 of 600','288 complete valid pairs','Descriptive endpoints only','as reported by the CLI','USD 25.84','will be released in redacted form','Study 11']){
+    assert.ok((phrase==='Study 11'?read('dist/research/index.html'):article).includes(phrase),phrase);
+  }
+  for(const a of ['A1','A2','A3','A4','A4.1','A5','A6','A7','A8','A9'])assert.match(article,new RegExp(`<strong[^>]*>${a.replaceAll(".","\\.")}:</strong>`));
+  assert.ok(read('dist/sitemap-0.xml').includes(`https://iamrobin.ai${route}`));
+  assert.ok(read('dist/research/index.html').includes(`href="${route}"`));
+  assert.doesNotMatch(article+JSON.stringify(result),/\/Users\/|headlessnick|session[_ -]?id|[a-f0-9]{64}|NaN|Infinity|undefined/);
+});

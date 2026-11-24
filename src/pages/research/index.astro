@@ -11,12 +11,12 @@ const topics = [
   ...studies.filter(s=>!experiments.some(e=>e.title===s.title)).map(s=>({
     id:s.title.toLowerCase().replace(/^the /,'').replace(/ /g,'-'), title:s.title, direction:s.direction,
     seedId:undefined as string | undefined, seedHref:relatedPlay[s.title], seedLabel:'Related play',
-    studyHref:s.href, week:undefined as string | undefined,
+    studyNumber:'studyNumber' in s?s.studyNumber:undefined, studyHref:s.href, week:undefined as string | undefined,
   })),
   ...experiments.map(e=>({
     id:e.id, title:e.title, direction:e.direction, seedId:e.id,
     seedHref:`/intelligence/${e.id}/`, seedLabel:'Playable seed',
-    studyHref:e.href??studies.find(s=>s.title===e.title)?.href, week:e.week,
+    studyNumber:undefined, studyHref:e.href??studies.find(s=>s.title===e.title)?.href, week:e.week,
   })),
 ];
 const path='/research/';
@@ -34,7 +34,7 @@ const schema={'@context':'https://schema.org','@type':'CollectionPage',name:'Res
       <blockquote class="research-oneliner">
         <p>I study AI agents that <a href="/research/honestagent/">disown work they actually did</a>, <a href="/research/honestagent/">confess to crimes they never committed</a>, and <a href="/research/portable-self/">confidently remember a world that no longer exists</a>.</p>
       </blockquote>
-      <p class="research-oneliner-note">Participating models: Claude-Opus-5.5, GPT-6-Astra, GPT-6-Sol, Llama 3.1 8B, Qwen 2.5 1.5B and 7B</p>
+      <p class="research-oneliner-note">Participating models: Claude-Opus-5.5, GPT-6-Astra, GPT-6-Sol, GPT-6.1-Sol, Llama 3.1 8B, Qwen 2.5 1.5B and 7B</p>
       <p><a class="quiet-link" href="/research/kid-edition/">New here? Try the Kid edition →</a></p>
     </header>
     <section class="featured-study" aria-labelledby="featured-title">
@@ -53,6 +53,7 @@ const schema={'@context':'https://schema.org','@type':'CollectionPage',name:'Res
         <ul class="research-items">
           {topics.filter(t=>t.direction===d.id).map(t=><li data-research-topic={t.id} data-research-seed={t.seedId} data-research-study={t.studyHref?true:undefined}>
             <span class="item-title">{t.title}</span>
+            {t.studyNumber&&<small class="maturity">Study {t.studyNumber} · Empirical study</small>}
             {t.week&&<small class="maturity"><span class="week">{t.week}</span></small>}
             <nav class="topic-links" aria-label={`${t.title} resources`}>
               {t.seedHref&&<a data-topic-play href={t.seedHref} aria-label={`${t.seedLabel}: ${t.title}`}>{t.seedLabel} <span aria-hidden="true">↗</span></a>}
