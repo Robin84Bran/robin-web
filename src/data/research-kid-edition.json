@@ -1,5 +1,15 @@
 [
   {
+    "id": "your-queue-or-mine",
+    "title": "Your Queue or Mine?",
+    "direction": "coordination",
+    "play": "/intelligence/your-queue-or-mine/",
+    "imagine": "Four friends are packing boxes. Three finish their piles, but one friend still has a mountain. They can cross the room to help, but every handoff takes time before packing starts again.",
+    "question": "When should an idle helper take work from somebody else's queue?",
+    "finding": "In this scripted game, helping rescued many jobs when most work landed in one lane. A threshold rule used fewer handoffs. When jobs were already balanced and each handoff cost eight actions, always helping finished fewer jobs than staying put. These are toy rules, not results from real people or AI models.",
+    "wonder": "What would you need to know before moving a job, and how big should the pile be?"
+  },
+  {
     "id": "checkpoint-or-restart",
     "title": "Checkpoint or Restart?",
     "direction": "coordination",
