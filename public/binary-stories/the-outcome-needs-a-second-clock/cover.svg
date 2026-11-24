@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">The outcome needs a second clock</title>
+  <desc id="desc">A service case moves from a contract outcome through a fixed observation window to lasting resolution and contribution economics.</desc>
+  <rect width="1600" height="900" fill="#0B1228"/>
+  <circle cx="1330" cy="150" r="280" fill="#15213f"/>
+  <circle cx="1480" cy="760" r="300" fill="#111b35"/>
+  <text x="104" y="104" fill="#61D4D7" font-family="Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="4">BINARY / INVEST</text>
+  <text x="104" y="182" fill="#F4F1E9" font-family="Georgia, serif" font-size="72" font-weight="700">The outcome needs</text>
+  <text x="104" y="266" fill="#F4F1E9" font-family="Georgia, serif" font-size="72" font-weight="700">a second clock.</text>
+  <text x="106" y="322" fill="#B7C2D9" font-family="Arial, sans-serif" font-size="26">Contract resolution is one receipt. Durability and contribution come later.</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="92" y="420" width="250" height="172" rx="24" fill="#F4F1E9"/>
+    <text x="124" y="468" fill="#516078" font-size="20" font-weight="700" letter-spacing="2">CLOCK 1</text>
+    <text x="124" y="518" fill="#0B1228" font-size="31" font-weight="700">Contract outcome</text>
+    <text x="124" y="558" fill="#516078" font-size="22">Resolved now?</text>
+    <path d="M342 506 H466" stroke="#61D4D7" stroke-width="8"/>
+    <path d="M448 488 L470 506 L448 524" fill="none" stroke="#61D4D7" stroke-width="8"/>
+    <rect x="470" y="420" width="250" height="172" rx="24" fill="#162642" stroke="#61D4D7" stroke-width="3"/>
+    <text x="502" y="468" fill="#61D4D7" font-size="20" font-weight="700" letter-spacing="2">WINDOW</text>
+    <text x="502" y="518" fill="#F4F1E9" font-size="31" font-weight="700">7 or 30 days</text>
+    <text x="502" y="558" fill="#B7C2D9" font-size="22">Returns + reversals</text>
+    <path d="M720 506 H844" stroke="#D8B86B" stroke-width="8"/>
+    <path d="M826 488 L848 506 L826 524" fill="none" stroke="#D8B86B" stroke-width="8"/>
+    <rect x="848" y="420" width="250" height="172" rx="24" fill="#F4F1E9"/>
+    <text x="880" y="468" fill="#8C6A1C" font-size="20" font-weight="700" letter-spacing="2">CLOCK 2</text>
+    <text x="880" y="518" fill="#0B1228" font-size="31" font-weight="700">Lasting result</text>
+    <text x="880" y="558" fill="#516078" font-size="22">Stayed resolved?</text>
+    <path d="M1098 506 H1222" stroke="#61D4D7" stroke-width="8"/>
+    <path d="M1204 488 L1226 506 L1204 524" fill="none" stroke="#61D4D7" stroke-width="8"/>
+    <rect x="1226" y="420" width="282" height="172" rx="24" fill="#D8B86B"/>
+    <text x="1258" y="468" fill="#6D5419" font-size="20" font-weight="700" letter-spacing="2">LEDGER</text>
+    <text x="1258" y="518" fill="#0B1228" font-size="31" font-weight="700">Contribution</text>
+    <text x="1258" y="558" fill="#3B3320" font-size="22">All attempts included</text>
+  </g>
+  <rect x="94" y="690" width="1414" height="2" fill="#2D3A58"/>
+  <text x="104" y="754" fill="#F4F1E9" font-family="Georgia, serif" font-size="34">An invoice can close before the evidence does.</text>
+  <text x="104" y="814" fill="#8F9BB3" font-family="Arial, sans-serif" font-size="22">Company-reported evidence + proposed cohort design · 24 NOV 2026</text>
+  <text x="1390" y="824" fill="#F4F1E9" font-family="Arial, sans-serif" font-size="24" font-weight="700">IAmRobin.ai</text>
+</svg>

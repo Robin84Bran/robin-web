@@ -1,0 +1,11 @@
+Outcome pricing can move software from seats and tokens toward a result. But a result has two clocks.
+
+Clock 1 asks whether the agreed outcome was met. Clock 2 asks whether it stayed resolved through a fixed window.
+
+The economic unit then needs the whole cohort: retained fees minus the variable cost of every attempt, divided by lasting resolutions.
+
+Sierra reports more than $400M ARR and a 64% AOL case-resolution rate. Those company-reported figures establish scale and a named deployment. They do not publish the denominator, reopen window or contribution economics needed for this second clock.
+
+The invoice is one receipt. Time supplies the next.
+
+Read the sourced story and download the carousel at IAmRobin.ai. Website publication does not imply a LinkedIn post.
