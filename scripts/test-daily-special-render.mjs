@@ -62,6 +62,13 @@ ${body.replace('# Synthetic fixture\n','')}`);
     assert.match(html, /03 · Daily Special · Signal 4/);
     assert.match(html, /artifact\.md/);
     assert.match(html, /"@type":"Article"/);
+    const authored = JSON.parse(html.match(/id="diary-authored-editions"[^>]*>(.*?)<\/script>/s)[1]);
+    assert.deepEqual(authored, {
+      en: '/ouroboros/202609/20260923/special/',
+      'zh-Hans': '/ouroboros/202609/20260923/special/zh-hans/',
+      'zh-Hant': '/ouroboros/202609/20260923/special/zh-hant/',
+      ja: '/ouroboros/202609/20260923/special/ja/',
+    });
     assert.ok(readFileSync(join(root, 'dist/sitemap-0.xml'), 'utf8').includes(route));
   }
   // Test tomorrow's follow-through independently of any fabricated daily brief.
