@@ -1,0 +1,548 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-25",
+  "updated": "2026-11-25",
+  "signalCount": 8,
+  "briefingPath": "/ouroboros/202611/20261125/",
+  "actionItemPath": "/ouroboros/202611/20261125/action_item/",
+  "hero": "/daily-briefing/20261125/hero.webp",
+  "ogImage": "/daily-briefing/20261125/og.webp",
+  "actionHero": "/action-item/20261125/hero.webp",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-24",
+      "visualLabel": "The case does not disclose unattended acceptance, infrastructure, retry, or review cost; 0.04 dollars is inference per run, not cost per accepted delivery.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://openai.com/business/customer-stories/ifood/"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-20",
+      "visualLabel": "Revenue mix and whole-fleet profitability are undisclosed; positive unit economics refers to Guangzhou.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://weride.gcs-web.com/news-releases/news-release-details/overseas-revenue-1715-yoy-contributing-nearly-half-total-revenue"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-23",
+      "visualLabel": "The newer November 24 fund rows were incomplete at cutoff, so displayed totals were not treated as zero or final.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://farside.co.uk/BTC/"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://farside.co.uk/ethereum-etf-flow-all-data/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-24",
+      "visualLabel": "This remains a wholesale pilot among named participants, not a retail public-chain product or proof of outside-lender acceptance.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.gold.org/news-and-events/press-releases/world-gold-council-facilitates-first-live-transactions-using-pooled"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "deepDiveAvailable": true,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "visualValue": "2026-11-25",
+      "visualLabel": "No final price, exchange ratio, payment mix, share class or transaction has been verified; all issuance arithmetic is illustrative.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/spcx-20260930.htm"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+        },
+        {
+          "label": "Source 3",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026039276/spaceexplorationtechnologi.htm"
+        },
+        {
+          "label": "Source 4",
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116718/tm2626016d2_ars.pdf"
+        },
+        {
+          "label": "Source 5",
+          "url": "https://www.ft.com/content/2585e45e-9133-4215-a2d8-e1275e1033b9"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-24",
+      "visualLabel": "Minimum purchase commitments are not shipments, recognized revenue, realized margin, or customer capital funding.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://investors.ao-inc.com/2026-11-24-AOI-Announces-Multi-Year-Long-Term-Agreement-with-Tier-1-Hyperscale-Datacenter-Customer?asPDF=1"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-24",
+      "visualLabel": "The 157m dollars is total financing, not an additional raise; customer agreements are not revenue and factory capacity is not output.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.prnewswire.com/news-releases/peak-energy-expands-series-b-total-financing-to-157-million-to-accelerate-manufacturing-amid-growing-customer-backlog-302949087.html"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://peakenergy.com/news/latest/peak-raises-108-million-new-capital"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-24",
+      "visualLabel": "Overall survival is immature; the PFS median difference is not additional survival time and the price move does not establish causation or AI contribution.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.fda.gov/drugs/cancer-approvals/fda-approves-bezuclastinib-combination-sunitinib-advanced-gastrointestinal-stromal-tumors"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://stockanalysis.com/stocks/cogt/history/"
+        },
+        {
+          "label": "Source 3",
+          "url": "https://stockanalysis.com/etf/qqq/history/"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, November 25, 2026",
+      "description": "Eight bounded actions turn today’s evidence into observable next gates.",
+      "centralJudgment": "Measure accepted outcomes and voting power, not only cheap runs and transaction labels.",
+      "fieldLine": "Eight signals. Signal 5 separates economic ownership from voting control.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Frontier agents: iFood reports 25,000 runs. The next number is accepted work.",
+          "why": "Why Robin should care — This is a field comparison for Honest Agent. A correctly formatted completion report lets the next program proceed; it does not establish that the change works. For an OPC, a cheaper model wins only if it does not hand the verification burden back to you.",
+          "steps": [
+            "One Action: Replay a batch of RobinOS maintenance jobs with known acceptance criteria and calculate total cost, including failed reruns, infrastructure and review, divided by independently tested deliveries requiring no rescue from Robin.",
+            "One Action: Replay a batch of RobinOS maintenance jobs with known acceptance criteria and calculate total cost, including failed reruns, infrastructure and review, divided by independently tested deliveries requiring no rescue from Robin."
+          ],
+          "done": "One Action: Replay a batch of RobinOS maintenance jobs with known acceptance criteria and calculate total cost, including failed reruns, infrastructure and review, divided by independently tested deliveries requiring no rescue from Robin."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "Physical AI: WeRide passes RMB 100 million in quarterly robotaxi revenue; over 90% came from overseas",
+          "why": "Why Robin should care — Most commercial revenue came from outside China; the unit-economics milestone came from one Chinese city. Combining them would manufacture a global profitability claim. Neither measure is directly comparable to a US operator’s paid ride count.",
+          "steps": [
+            "One Action: Look for one figure comparable across geographies: contribution profit per paid vehicle-hour in a mature city, after remote assistance and fleet operating costs.",
+            "One Action: Look for one figure comparable across geographies: contribution profit per paid vehicle-hour in a mature city, after remote assistance and fleet operating costs."
+          ],
+          "done": "One Action: Look for one figure comparable across geographies: contribution profit per paid vehicle-hour in a mature city, after remote assistance and fleet operating costs."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows and Web3 Health",
+          "title": "Crypto flows: US spot bitcoin and ether ETFs lost a combined $654.6 million in one session",
+          "why": "Why Robin should care — Capital left both regulated exposure channels, and bitcoin redemptions were concentrated in one fund. That is more precise than “whales are selling.” It does not identify where the money went or show that onchain usage declined.",
+          "steps": [
+            "One Action: On the next completed row, ask: were bitcoin ETFs still net negative excluding IBIT? That distinguishes a single-product redemption from broader withdrawal.",
+            "One Action: On the next completed row, ask: were bitcoin ETFs still net negative excluding IBIT? That distinguishes a single-product redemption from broader withdrawal."
+          ],
+          "done": "One Action: On the next completed row, ask: were bitcoin ETFs still net negative excluding IBIT? That distinguishes a single-product redemption from broader withdrawal."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins, FinTech and Token Rails",
+          "title": "Programmable finance: pledge part of a gold bar without taking it out of the vault",
+          "why": "Why Robin should care — Imagine a borrower short half a bar’s worth of collateral. It can pledge a divisible interest without cutting or moving an entire bar. The more interesting distribution question is whether another lender will accept that interest outside the original arrangement.",
+          "steps": [
+            "One Action: Follow the first lender outside the three pilot firms to accept PGI and disclose its collateral haircut. That discount would say more about the usefulness of the claim than headline turnover.",
+            "One Action: Follow the first lender outside the three pilot firms to accept PGI and disclose its collateral haircut. That discount would say more about the usefulness of the claim than headline turnover."
+          ],
+          "done": "One Action: Follow the first lender outside the three pilot firms to accept PGI and disclose its collateral haircut. That discount would say more about the usefulness of the claim than headline turnover."
+        },
+        {
+          "signal": 5,
+          "domain": "Content and Visibility",
+          "title": "iamrobin.ai editorial desk: if SpaceX buys Tesla, who gains a vote?",
+          "why": "Why Robin should care — Your hypothesis was that Musk would prefer SpaceX as buyer because he has stronger control there. SunTV can turn that into a claim readers can calculate and potentially disprove, which makes for a better story than guessing Tesla’s takeout price.",
+          "steps": [
+            "One Action | Codex publishing assignment: Create “If SpaceX Buys Tesla, Who Gains a Vote?” at the [intended canonical destination](https://iamrobin.ai/ouroboros/202611/20261125/action_item/). Thesis: The buyer’s name does not determine who gains control; the class, quantity and recipients of the shares issued do. Four-part spine: (1) Separate filed facts from FT reporting; (2) reconstruct pre-deal voting rights from the [SpaceX prospectus](https://www.sec.gov/Archives/edgar/data/1181412/000162828026039276/spaceexplorationtechnologi.htm) and [Tesla proxy](https://www.sec.gov/Archives/edgar/data/1318605/000110465926116718/tm2626016d2_ars.pdf); (3) hold hypothetical consideration constant and compare economic ownership and voting power under two share-class scenarios, explicitly labeled as illustrations; (4) publish a dated SunTV source card and retain reader counterexamples and corrections. First derivative: a LinkedIn poll asking whether founder control could *fall* at the same purchase price, linked to the calculation.",
+            "One Action | Codex publishing assignment: Create “If SpaceX Buys Tesla, Who Gains a Vote?” at the [intended canonical destination](https://iamrobin.ai/ouroboros/202611/20261125/action_item/). Thesis: The buyer’s name does not determine who gains control; the class, quantity and recipients of the shares issued do. Four-part spine: (1) Separate filed facts from FT reporting; (2) reconstruct pre-deal voting rights from the [SpaceX prospectus](https://www.sec.gov/Archives/edgar/data/1181412/000162828026039276/spaceexplorationtechnologi.htm) and [Tesla proxy](https://www.sec.gov/Archives/edgar/data/1318605/000110465926116718/tm2626016d2_ars.pdf); (3) hold hypothetical consideration constant and compare economic ownership and voting power under two share-class scenarios, explicitly labeled as illustrations; (4) publish a dated SunTV source card and retain reader counterexamples and corrections. First derivative: a LinkedIn poll asking whether founder control could *fall* at the same purchase price, linked to the calculation."
+          ],
+          "done": "One Action | Codex publishing assignment: Create “If SpaceX Buys Tesla, Who Gains a Vote?” at the [intended canonical destination](https://iamrobin.ai/ouroboros/202611/20261125/action_item/). Thesis: The buyer’s name does not determine who gains control; the class, quantity and recipients of the shares issued do. Four-part spine: (1) Separate filed facts from FT reporting; (2) reconstruct pre-deal voting rights from the [SpaceX prospectus](https://www.sec.gov/Archives/edgar/data/1181412/000162828026039276/spaceexplorationtechnologi.htm) and [Tesla proxy](https://www.sec.gov/Archives/edgar/data/1318605/000110465926116718/tm2626016d2_ars.pdf); (3) hold hypothetical consideration constant and compare economic ownership and voting power under two share-class scenarios, explicitly labeled as illustrations; (4) publish a dated SunTV source card and retain reader counterexamples and corrections. First derivative: a LinkedIn poll asking whether founder control could *fall* at the same purchase price, linked to the calculation."
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure",
+          "title": "AI infrastructure: one optics contract puts finished modules and laser diodes on different buying schedules",
+          "why": "Why Robin should care — A finished optical module and the light source inside it need not command the same margin. Buying them on different schedules raises an engineering and capital-allocation question for the Token Factory: who captures integration value, and who funds capacity and manufacturing yield first? The agreement does not settle that.",
+          "steps": [
+            "One Action: Add a year-by-year module-versus-laser revenue bridge to the Token Factory model and test it against the first actual shipment and gross-margin disclosures.",
+            "One Action: Add a year-by-year module-versus-laser revenue bridge to the Token Factory model and test it against the first actual shipment and gross-margin disclosures."
+          ],
+          "done": "One Action: Add a year-by-year module-versus-laser revenue bridge to the Token Factory model and test it against the first actual shipment and gross-margin disclosures."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-stage Private Markets",
+          "title": "Late-stage private markets: Peak Energy expands its Series B to fund battery deliveries",
+          "why": "Why Robin should care — Passively cooled sodium-ion storage has to prove manufacturing yield, field availability and service cost. Manufacturing absorbs cash before acceptance; delays lengthen that cycle. Valuation, preferences, debt pricing, revenue and an accessible allocation were not disclosed. Strategic acquisition is a plausible exit if deliveries scale.",
+          "steps": [
+            "One Action | WATCH: Wait for the first commercial customer to disclose accepted MWh as a share of contracted MWh before looking for secondary access.",
+            "One Action | WATCH: Wait for the first commercial customer to disclose accepted MWh as a share of contracted MWh before looking for secondary access."
+          ],
+          "done": "One Action | WATCH: Wait for the first commercial customer to disclose accepted MWh as a share of contracted MWh before looking for secondary access."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities",
+          "title": "Public equities and life sciences: Cogent’s approval rests on how long it delayed tumor progression",
+          "why": "Why Robin should care — This is a clinical endpoint against an active treatment, and approval changes commercial access. There is a company-specific fundamental event behind the divergence. The median difference does not mean patients lived 7.3 months longer, and the evidence does not warrant attributing the success to AI.",
+          "steps": [
+            "One Action: Track mature overall survival from PEAK, including how allowed crossover after progression affects its interpretation.",
+            "One Action: Track mature overall survival from PEAK, including how allowed crossover after progression affects its interpretation."
+          ],
+          "done": "One Action: Track mature overall survival from PEAK, including how allowed crossover after progression affects its interpretation."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年11月25日",
+      "description": "八项有边界的行动，把今天的证据转成可观察的下一道门槛。",
+      "centralJudgment": "衡量通过验收的成果与投票权，而不只看廉价运行和交易名称。",
+      "fieldLine": "八个信号。信号5把经济所有权与投票控制权分开。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与代理",
+          "title": "前沿智能体：iFood 跑了 2.5 万次代理任务，下一步该数验收件",
+          "why": "Robin为何在意 — 这给 Honest Agent 提供了一个现实对照：格式正确的完成报告能让下一个程序继续，却不能证明改动有效。对一人公司，较便宜的模型只有在不把验证负担交回给你时才算胜出。",
+          "steps": [
+            "One Action： 回放一批已知验收条件的 RobinOS 维护任务，计算：含失败重跑、基础设施和复核的总成本 ÷ 无需 Robin 补救且通过独立测试的交付数。",
+            "One Action： 回放一批已知验收条件的 RobinOS 维护任务，计算：含失败重跑、基础设施和复核的总成本 ÷ 无需 Robin 补救且通过独立测试的交付数。"
+          ],
+          "done": "One Action： 回放一批已知验收条件的 RobinOS 维护任务，计算：含失败重跑、基础设施和复核的总成本 ÷ 无需 Robin 补救且通过独立测试的交付数。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 与机器人",
+          "title": "物理 AI：文远知行的 Robotaxi 季收入破亿，九成以上来自海外",
+          "why": "Robin为何在意 — 大部分商业收入来自中国以外，单位经济效益的里程碑则来自中国的一座城市。把两者合并，就会制造出全球盈利的说法。这两个指标都不能直接与美国运营商的付费乘次相比。",
+          "steps": [
+            "One Action： 寻找一个跨地区可比的数字：在一座成熟城市，扣除远程协助和车队运营成本后的每付费车小时贡献利润。",
+            "One Action： 寻找一个跨地区可比的数字：在一座成熟城市，扣除远程协助和车队运营成本后的每付费车小时贡献利润。"
+          ],
+          "done": "One Action： 寻找一个跨地区可比的数字：在一座成熟城市，扣除远程协助和车队运营成本后的每付费车小时贡献利润。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流与 Web3 健康",
+          "title": "加密资本流：美国 BTC 与 ETH 现货 ETF 一个交易日合计净流出 6.546 亿美元",
+          "why": "Robin为何在意 — 资金正从这两条受监管的敞口渠道撤出，而且 BTC 赎回高度集中于一家基金。它比「巨鲸在卖」更精确，但不能据此判断赎回资金去了哪里，更不能推出链上应用的真实使用量也在下降。",
+          "steps": [
+            "One Action： 用下一张填齐的基金表检验：剔除 IBIT 后，BTC ETF 合计是否仍净流出？ 这能区分单一产品赎回与更广泛的撤资。",
+            "One Action： 用下一张填齐的基金表检验：剔除 IBIT 后，BTC ETF 合计是否仍净流出？ 这能区分单一产品赎回与更广泛的撤资。"
+          ],
+          "done": "One Action： 用下一张填齐的基金表检验：剔除 IBIT 后，BTC ETF 合计是否仍净流出？ 这能区分单一产品赎回与更广泛的撤资。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币、金融科技与代币轨道",
+          "title": "可编程金融：金条不用出库，也能质押其中一部分",
+          "why": "Robin为何在意 — 假设借款人还缺相当于半根金条的抵押品。它可以质押一份可分割的权益，无须切割或搬动整根金条。更值得关注的流通问题是：另一家贷款人是否会在原有安排之外接受这份权益。",
+          "steps": [
+            "One Action： 跟踪首笔由试点三家以外的贷款人接受 PGI、且公开抵押折扣的交易。折扣比名义成交额更能说明这项权益有多好用。",
+            "One Action： 跟踪首笔由试点三家以外的贷款人接受 PGI、且公开抵押折扣的交易。折扣比名义成交额更能说明这项权益有多好用。"
+          ],
+          "done": "One Action： 跟踪首笔由试点三家以外的贷款人接受 PGI、且公开抵押折扣的交易。折扣比名义成交额更能说明这项权益有多好用。"
+        },
+        {
+          "signal": 5,
+          "domain": "内容与可见度",
+          "title": "iamrobin.ai 编辑台：如果 SpaceX 收购 Tesla，谁会多一票？",
+          "why": "Robin为何在意 — 你的假设是，马斯克会倾向于让 SpaceX 做收购方，因为他在那里拥有更强的控制权。SunTV 可以把它变成读者能够计算、也可能证伪的命题，这比猜测 Tesla 的收购价更适合讲成一个故事。",
+          "steps": [
+            "One Action｜Codex 出版任务：在[预定正篇地址](https://iamrobin.ai/ouroboros/202611/20261125/action_item/)创建《如果 SpaceX 收购 Tesla，谁会多一票？》。论点：收购方的名字不能决定谁增加控制权；决定因素是所发行股份的类别、数量和接收者。四部分主线：（1）区分申报事实与 FT 报道；（2）根据 [SpaceX 招股书](https://www.sec.gov/Archives/edgar/data/1181412/000162828026039276/spaceexplorationtechnologi.htm)与 [Tesla 委托投票文件](https://www.sec.gov/Archives/edgar/data/1318605/000110465926116718/tm2626016d2_ars.pdf)重建交易前的投票权；（3）固定假设对价，比较两种股份类别情景下的经济所有权和投票权，明确标示为示例；（4）发布注明日期的 SunTV 来源卡，保留读者反例与更正。首个衍生内容：在 LinkedIn 发起投票，询问在相同收购价下创始人的控制权是否可能*下降*，并附上计算链接。",
+            "One Action｜Codex 出版任务：在[预定正篇地址](https://iamrobin.ai/ouroboros/202611/20261125/action_item/)创建《如果 SpaceX 收购 Tesla，谁会多一票？》。论点：收购方的名字不能决定谁增加控制权；决定因素是所发行股份的类别、数量和接收者。四部分主线：（1）区分申报事实与 FT 报道；（2）根据 [SpaceX 招股书](https://www.sec.gov/Archives/edgar/data/1181412/000162828026039276/spaceexplorationtechnologi.htm)与 [Tesla 委托投票文件](https://www.sec.gov/Archives/edgar/data/1318605/000110465926116718/tm2626016d2_ars.pdf)重建交易前的投票权；（3）固定假设对价，比较两种股份类别情景下的经济所有权和投票权，明确标示为示例；（4）发布注明日期的 SunTV 来源卡，保留读者反例与更正。首个衍生内容：在 LinkedIn 发起投票，询问在相同收购价下创始人的控制权是否可能*下降*，并附上计算链接。"
+          ],
+          "done": "One Action｜Codex 出版任务：在[预定正篇地址](https://iamrobin.ai/ouroboros/202611/20261125/action_item/)创建《如果 SpaceX 收购 Tesla，谁会多一票？》。论点：收购方的名字不能决定谁增加控制权；决定因素是所发行股份的类别、数量和接收者。四部分主线：（1）区分申报事实与 FT 报道；（2）根据 [SpaceX 招股书](https://www.sec.gov/Archives/edgar/data/1181412/000162828026039276/spaceexplorationtechnologi.htm)与 [Tesla 委托投票文件](https://www.sec.gov/Archives/edgar/data/1318605/000110465926116718/tm2626016d2_ars.pdf)重建交易前的投票权；（3）固定假设对价，比较两种股份类别情景下的经济所有权和投票权，明确标示为示例；（4）发布注明日期的 SunTV 来源卡，保留读者反例与更正。首个衍生内容：在 LinkedIn 发起投票，询问在相同收购价下创始人的控制权是否可能*下降*，并附上计算链接。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基础设施",
+          "title": "AI 基建：一份光通信合同把成品模块和激光器的采购年份分开了",
+          "why": "Robin为何在意 — 成品光模块与其中的光源，未必具有相同的利润率。按不同时间表采购它们，为 Token Factory 提出了一个工程与资本配置问题：谁获得集成价值，谁先为产能与制造良率投入资金？协议没有解决这个问题。",
+          "steps": [
+            "One Action： 给 Token Factory 模型加一张模块与激光器的分年收入桥，并用首次披露的实际出货及毛利率检验它。",
+            "One Action： 给 Token Factory 模型加一张模块与激光器的分年收入桥，并用首次披露的实际出货及毛利率检验它。"
+          ],
+          "done": "One Action： 给 Token Factory 模型加一张模块与激光器的分年收入桥，并用首次披露的实际出货及毛利率检验它。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私募",
+          "title": "后期私募：Peak Energy 扩大 B 轮，把融资重点推向电池交付",
+          "why": "Robin为何在意 — 被动冷却钠离子储能必须证明制造良率、现场可用率和服务成本。制造在验收前就会消耗现金；延误会拉长这个周期。估值、优先权、债务定价、收入和可取得的投资份额均未披露。若交付能扩大规模，战略性收购是合理的可能退出路径。",
+          "steps": [
+            "One Action｜WATCH：等待首个商业客户披露已验收 MWh 占合同 MWh 的比例，再寻找二级市场投资机会。",
+            "One Action｜WATCH：等待首个商业客户披露已验收 MWh 占合同 MWh 的比例，再寻找二级市场投资机会。"
+          ],
+          "done": "One Action｜WATCH：等待首个商业客户披露已验收 MWh 占合同 MWh 的比例，再寻找二级市场投资机会。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开股票",
+          "title": "上市股票与生命科学：Cogent 获批的关键，是肿瘤进展被推迟了多久",
+          "why": "Robin为何在意 — 这是相对于有效治疗的患者临床终点改善，并已改变产品的商业准入。跑赢大盘有明确的公司基本面事件可解释，但不能把中位无进展期差值理解为患者多活了 7.3 个月，也没有证据需要把成功归功于 AI。",
+          "steps": [
+            "One Action： 将下一项临床观察锁定为 PEAK 成熟总生存分析，特别看对照组进展后获准交叉用药如何影响解释。",
+            "One Action： 将下一项临床观察锁定为 PEAK 成熟总生存分析，特别看对照组进展后获准交叉用药如何影响解释。"
+          ],
+          "done": "One Action： 将下一项临床观察锁定为 PEAK 成熟总生存分析，特别看对照组进展后获准交叉用药如何影响解释。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年11月25日",
+      "description": "八項有邊界的行動，把今天的證據轉成可觀察的下一道門檻。",
+      "centralJudgment": "衡量通過驗收的成果與投票權，而不只看廉價執行和交易名稱。",
+      "fieldLine": "八個訊號。訊號5把經濟所有權與投票控制權分開。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與代理",
+          "title": "前沿智能體：iFood 報告執行了 25,000 次，下一個數字是通過驗收的工作",
+          "why": "Robin為何在意 — 這為 Honest Agent 提供了實地對照。格式正確的完成報告能讓下一個程式繼續，卻不能證明改動有效。對一人公司而言，較便宜的模型只有在不把驗證負擔交回給你時才算勝出。",
+          "steps": [
+            "One Action： 重播一批驗收條件已知的 RobinOS 維護任務，計算包含失敗重跑、基礎設施與覆核的總成本，再除以通過獨立測試且無需 Robin 補救的交付數。",
+            "One Action： 重播一批驗收條件已知的 RobinOS 維護任務，計算包含失敗重跑、基礎設施與覆核的總成本，再除以通過獨立測試且無需 Robin 補救的交付數。"
+          ],
+          "done": "One Action： 重播一批驗收條件已知的 RobinOS 維護任務，計算包含失敗重跑、基礎設施與覆核的總成本，再除以通過獨立測試且無需 Robin 補救的交付數。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 與機器人",
+          "title": "物理 AI：文遠知行季度 Robotaxi 收入突破人民幣 1 億元，逾九成來自海外",
+          "why": "Robin為何在意 — 大部分商業收入來自中國以外，單位經濟效益的里程碑則來自中國的一座城市。把兩者合併，就會製造出全球盈利的說法。這兩個指標都不能直接與美國營運商的付費乘次相比。",
+          "steps": [
+            "One Action： 尋找一個跨地區可比的數字：在一座成熟城市，扣除遠端協助和車隊營運成本後，每付費車輛小時的貢獻利潤。",
+            "One Action： 尋找一個跨地區可比的數字：在一座成熟城市，扣除遠端協助和車隊營運成本後，每付費車輛小時的貢獻利潤。"
+          ],
+          "done": "One Action： 尋找一個跨地區可比的數字：在一座成熟城市，扣除遠端協助和車隊營運成本後，每付費車輛小時的貢獻利潤。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本流與 Web3 健康",
+          "title": "加密資本流：美國比特幣與以太幣現貨 ETF 單日合計淨流出 6.546 億美元",
+          "why": "Robin為何在意 — 資金離開了這兩條受監管的投資敞口渠道，而比特幣贖回集中於一隻基金。這比「巨鯨在賣出」更精確。它沒有指出資金去了哪裡，也沒有顯示鏈上使用量下降。",
+          "steps": [
+            "One Action： 在下一列資料填齊後追問：剔除 IBIT，比特幣 ETF 是否仍為淨流出？這能區分單一產品贖回與更廣泛的撤資。",
+            "One Action： 在下一列資料填齊後追問：剔除 IBIT，比特幣 ETF 是否仍為淨流出？這能區分單一產品贖回與更廣泛的撤資。"
+          ],
+          "done": "One Action： 在下一列資料填齊後追問：剔除 IBIT，比特幣 ETF 是否仍為淨流出？這能區分單一產品贖回與更廣泛的撤資。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣、金融科技與代幣軌道",
+          "title": "可程式化金融：金條不用出庫，也能質押其中一部分",
+          "why": "Robin為何在意 — 假設借款人還缺相當於半根金條的抵押品。它可以質押一份可分割的權益，無須切割或搬動整根金條。更值得關注的流通問題是：另一家貸款人是否會在原有安排之外接受這份權益。",
+          "steps": [
+            "One Action： 追蹤第一家在三家試點公司之外、接受 PGI 並披露抵押折扣的貸款人。這個折扣比名義成交額更能說明這份權益的實用性。",
+            "One Action： 追蹤第一家在三家試點公司之外、接受 PGI 並披露抵押折扣的貸款人。這個折扣比名義成交額更能說明這份權益的實用性。"
+          ],
+          "done": "One Action： 追蹤第一家在三家試點公司之外、接受 PGI 並披露抵押折扣的貸款人。這個折扣比名義成交額更能說明這份權益的實用性。"
+        },
+        {
+          "signal": 5,
+          "domain": "內容與可見度",
+          "title": "iamrobin.ai 編輯台：如果 SpaceX 收購 Tesla，誰會多一票？",
+          "why": "Robin為何在意 — 你的假設是，馬斯克會傾向於讓 SpaceX 做收購方，因為他在那裡擁有更強的控制權。SunTV 可以把它變成讀者能夠計算、也可能證偽的命題，這比猜測 Tesla 的收購價更適合講成一個故事。",
+          "steps": [
+            "One Action｜Codex 出版任務：在[預定正篇地址](https://iamrobin.ai/ouroboros/202611/20261125/action_item/)建立《如果 SpaceX 收購 Tesla，誰會多一票？》。論點：收購方的名字不能決定誰增加控制權；決定因素是所發行股份的類別、數量和接收者。四部分主線：（1）區分申報事實與 FT 報道；（2）根據 [SpaceX 招股書](https://www.sec.gov/Archives/edgar/data/1181412/000162828026039276/spaceexplorationtechnologi.htm)與 [Tesla 委託投票文件](https://www.sec.gov/Archives/edgar/data/1318605/000110465926116718/tm2626016d2_ars.pdf)重建交易前的投票權；（3）固定假設對價，比較兩種股份類別情境下的經濟所有權和投票權，明確標示為示例；（4）發布註明日期的 SunTV 來源卡，保留讀者反例與更正。首個衍生內容：在 LinkedIn 發起投票，詢問在相同收購價下創辦人的控制權是否可能*下降*，並附上計算連結。",
+            "One Action｜Codex 出版任務：在[預定正篇地址](https://iamrobin.ai/ouroboros/202611/20261125/action_item/)建立《如果 SpaceX 收購 Tesla，誰會多一票？》。論點：收購方的名字不能決定誰增加控制權；決定因素是所發行股份的類別、數量和接收者。四部分主線：（1）區分申報事實與 FT 報道；（2）根據 [SpaceX 招股書](https://www.sec.gov/Archives/edgar/data/1181412/000162828026039276/spaceexplorationtechnologi.htm)與 [Tesla 委託投票文件](https://www.sec.gov/Archives/edgar/data/1318605/000110465926116718/tm2626016d2_ars.pdf)重建交易前的投票權；（3）固定假設對價，比較兩種股份類別情境下的經濟所有權和投票權，明確標示為示例；（4）發布註明日期的 SunTV 來源卡，保留讀者反例與更正。首個衍生內容：在 LinkedIn 發起投票，詢問在相同收購價下創辦人的控制權是否可能*下降*，並附上計算連結。"
+          ],
+          "done": "One Action｜Codex 出版任務：在[預定正篇地址](https://iamrobin.ai/ouroboros/202611/20261125/action_item/)建立《如果 SpaceX 收購 Tesla，誰會多一票？》。論點：收購方的名字不能決定誰增加控制權；決定因素是所發行股份的類別、數量和接收者。四部分主線：（1）區分申報事實與 FT 報道；（2）根據 [SpaceX 招股書](https://www.sec.gov/Archives/edgar/data/1181412/000162828026039276/spaceexplorationtechnologi.htm)與 [Tesla 委託投票文件](https://www.sec.gov/Archives/edgar/data/1318605/000110465926116718/tm2626016d2_ars.pdf)重建交易前的投票權；（3）固定假設對價，比較兩種股份類別情境下的經濟所有權和投票權，明確標示為示例；（4）發布註明日期的 SunTV 來源卡，保留讀者反例與更正。首個衍生內容：在 LinkedIn 發起投票，詢問在相同收購價下創辦人的控制權是否可能*下降*，並附上計算連結。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基礎設施",
+          "title": "AI 基礎設施：一份光通訊合約讓成品模組與雷射二極體採用不同採購時間表",
+          "why": "Robin為何在意 — 成品光模組與其中的光源，未必具有相同的利潤率。按不同時間表採購它們，為 Token Factory 提出了一個工程與資本配置問題：誰獲得整合價值，誰先為產能與製造良率投入資金？協議沒有解決這個問題。",
+          "steps": [
+            "One Action： 為 Token Factory 模型加入模組與雷射的逐年收入橋，並用首次披露的實際出貨及毛利率檢驗它。",
+            "One Action： 為 Token Factory 模型加入模組與雷射的逐年收入橋，並用首次披露的實際出貨及毛利率檢驗它。"
+          ],
+          "done": "One Action： 為 Token Factory 模型加入模組與雷射的逐年收入橋，並用首次披露的實際出貨及毛利率檢驗它。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私募",
+          "title": "後期私募市場：Peak Energy 擴大 B 輪，為電池交付籌資",
+          "why": "Robin為何在意 — 被動冷卻鈉離子儲能必須證明製造良率、現場可用率及服務成本。製造在驗收前就會消耗現金；延誤會拉長這個週期。估值、優先權、債務定價、收入及可取得的投資份額均未披露。若交付能擴大規模，策略性收購是合理的可能退出路徑。",
+          "steps": [
+            "One Action｜WATCH：等待首個商業客戶披露已驗收 MWh 佔合約 MWh 的比例，再尋找次級市場投資機會。",
+            "One Action｜WATCH：等待首個商業客戶披露已驗收 MWh 佔合約 MWh 的比例，再尋找次級市場投資機會。"
+          ],
+          "done": "One Action｜WATCH：等待首個商業客戶披露已驗收 MWh 佔合約 MWh 的比例，再尋找次級市場投資機會。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開股票",
+          "title": "上市股票與生命科學：Cogent 獲批的依據，是腫瘤進展被延緩了多久",
+          "why": "Robin為何在意 — 這是與有效治療相比的臨床終點，批准也改變了商業准入。走勢分歧背後有公司特定的基本面事件。中位數差距不代表患者多活了 7.3 個月，現有證據也不足以把成功歸功於 AI。",
+          "steps": [
+            "One Action： 追蹤 PEAK 成熟的總存活期資料，包括進展後獲准交叉用藥如何影響解讀。",
+            "One Action： 追蹤 PEAK 成熟的總存活期資料，包括進展後獲准交叉用藥如何影響解讀。"
+          ],
+          "done": "One Action： 追蹤 PEAK 成熟的總存活期資料，包括進展後獲准交叉用藥如何影響解讀。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー 2026年11月25日",
+      "description": "八つの限定された行動で、本日の証拠を観測可能な次のゲートへ変える。",
+      "centralJudgment": "安い実行回数や取引名だけでなく、検収済み成果と議決権を測る。",
+      "fieldLine": "八つのシグナル。シグナル5は経済的所有と議決支配を分ける。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "フロンティアモデルとエージェント",
+          "title": "フロンティア・エージェント：iFoodは25,000回の実行を報告。次に数えるのは検収された仕事",
+          "why": "Robinにとっての意味 — Honest Agentの実地比較になる。正しい形式の完了報告があれば次のプログラムは進めるが、変更が機能する証明にはならない。一人会社にとって安いモデルが勝つのは、検証の負担を自分に戻さない場合だけだ。",
+          "steps": [
+            "One Action： 検収条件が既知のRobinOS保守ジョブを一括で再実行し、失敗後の再実行、インフラ、レビューを含む総コストを、独立したテストに合格しRobinの救援を必要としなかった納品件数で割る。",
+            "One Action： 検収条件が既知のRobinOS保守ジョブを一括で再実行し、失敗後の再実行、インフラ、レビューを含む総コストを、独立したテストに合格しRobinの救援を必要としなかった納品件数で割る。"
+          ],
+          "done": "One Action： 検収条件が既知のRobinOS保守ジョブを一括で再実行し、失敗後の再実行、インフラ、レビューを含む総コストを、独立したテストに合格しRobinの救援を必要としなかった納品件数で割る。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AIとロボティクス",
+          "title": "Physical AI：WeRideの四半期ロボタクシー売上高が1億元を突破、9割超は海外",
+          "why": "Robinにとっての意味 — 商業収入の大半は中国国外からで、ユニットエコノミクスの節目は中国の一都市からだ。両者を合わせると、世界全体が黒字だという主張を作ってしまう。どちらの指標も、米国事業者の有料乗車回数とは直接比較できない。",
+          "steps": [
+            "One Action： 地域をまたいで比較できる一つの数値を探す。成熟した都市における、遠隔支援と車両群の運営費を差し引いた有料稼働1車両・1時間当たりの貢献利益だ。",
+            "One Action： 地域をまたいで比較できる一つの数値を探す。成熟した都市における、遠隔支援と車両群の運営費を差し引いた有料稼働1車両・1時間当たりの貢献利益だ。"
+          ],
+          "done": "One Action： 地域をまたいで比較できる一つの数値を探す。成熟した都市における、遠隔支援と車両群の運営費を差し引いた有料稼働1車両・1時間当たりの貢献利益だ。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資本フローとWeb3",
+          "title": "暗号資産の資金フロー：米国の現物ビットコイン・イーサETFから1日で計6億5,460万ドルが流出",
+          "why": "Robinにとっての意味 — 規制下で投資エクスポージャーを得る二つの経路から資金が離れ、ビットコインの解約は一つのファンドに集中した。「クジラが売っている」より正確な表現だ。資金の行き先は特定できず、オンチェーン利用が減ったことも示さない。",
+          "steps": [
+            "One Action： 次に記入が完了した行で、IBITを除いてもビットコインETFは純流出だったかを問う。一つの商品からの解約か、より広範な資金引き揚げかを区別できる。",
+            "One Action： 次に記入が完了した行で、IBITを除いてもビットコインETFは純流出だったかを問う。一つの商品からの解約か、より広範な資金引き揚げかを区別できる。"
+          ],
+          "done": "One Action： 次に記入が完了した行で、IBITを除いてもビットコインETFは純流出だったかを問う。一つの商品からの解約か、より広範な資金引き揚げかを区別できる。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコイン、FinTech、トークン基盤",
+          "title": "プログラマブル金融：金塊を金庫から出さずに、その一部を担保にする",
+          "why": "Robinにとっての意味 — 借り手が金塊半分相当の担保を不足させているとする。金塊を切断したり丸ごと動かしたりせず、分割可能な権益を担保にできる。流通面でさらに興味深いのは、元の取り決めの外でも別の貸し手がその権益を受け入れるかだ。",
+          "steps": [
+            "One Action： 試験参加3社以外で初めてPGIを受け入れ、担保評価の掛け目による割引率を開示する貸し手を追う。その割引率は、見出しを飾る取引高より、この権利の有用性をよく語るはずだ。",
+            "One Action： 試験参加3社以外で初めてPGIを受け入れ、担保評価の掛け目による割引率を開示する貸し手を追う。その割引率は、見出しを飾る取引高より、この権利の有用性をよく語るはずだ。"
+          ],
+          "done": "One Action： 試験参加3社以外で初めてPGIを受け入れ、担保評価の掛け目による割引率を開示する貸し手を追う。その割引率は、見出しを飾る取引高より、この権利の有用性をよく語るはずだ。"
+        },
+        {
+          "signal": 5,
+          "domain": "コンテンツと可視性",
+          "title": "iamrobin.ai編集部：SpaceXがTeslaを買収したら、誰の議決権が増えるのか",
+          "why": "Robinにとっての意味 — あなたの仮説は、Muskは自分の支配力がより強いSpaceXを買い手に選びたいはず、というものだった。SunTVなら、それを読者が計算し、反証できるかもしれない命題にできる。Teslaの買収価格を推測するより良い物語になる。",
+          "steps": [
+            "One Action｜Codexへの出版課題：[予定の正規公開先](https://iamrobin.ai/ouroboros/202611/20261125/action_item/)に「SpaceXがTeslaを買収したら、誰の議決権が増えるのか」を作成する。主張は、支配力が増す人を決めるのは買い手の名前ではなく、発行株式の種類、数量、受取人だということ。4部構成とする。（1）提出書類の事実とFT報道を分ける。（2）[SpaceXの目論見書](https://www.sec.gov/Archives/edgar/data/1181412/000162828026039276/spaceexplorationtechnologi.htm)と[Teslaの委任状説明書](https://www.sec.gov/Archives/edgar/data/1318605/000110465926116718/tm2626016d2_ars.pdf)から取引前の議決権を再構成する。（3）仮定した対価を一定に保ち、2種類の株式クラスのシナリオで経済的所有権と議決権を比較し、例示であることを明記する。（4）日付入りのSunTV出典カードを公開し、読者の反例と訂正を残す。最初の派生コンテンツは、同じ買収価格でも創業者の支配力が*下がり得るか*を問うLinkedIn投票とし、計算へのリンクを付ける。",
+            "One Action｜Codexへの出版課題：[予定の正規公開先](https://iamrobin.ai/ouroboros/202611/20261125/action_item/)に「SpaceXがTeslaを買収したら、誰の議決権が増えるのか」を作成する。主張は、支配力が増す人を決めるのは買い手の名前ではなく、発行株式の種類、数量、受取人だということ。4部構成とする。（1）提出書類の事実とFT報道を分ける。（2）[SpaceXの目論見書](https://www.sec.gov/Archives/edgar/data/1181412/000162828026039276/spaceexplorationtechnologi.htm)と[Teslaの委任状説明書](https://www.sec.gov/Archives/edgar/data/1318605/000110465926116718/tm2626016d2_ars.pdf)から取引前の議決権を再構成する。（3）仮定した対価を一定に保ち、2種類の株式クラスのシナリオで経済的所有権と議決権を比較し、例示であることを明記する。（4）日付入りのSunTV出典カードを公開し、読者の反例と訂正を残す。最初の派生コンテンツは、同じ買収価格でも創業者の支配力が*下がり得るか*を問うLinkedIn投票とし、計算へのリンクを付ける。"
+          ],
+          "done": "One Action｜Codexへの出版課題：[予定の正規公開先](https://iamrobin.ai/ouroboros/202611/20261125/action_item/)に「SpaceXがTeslaを買収したら、誰の議決権が増えるのか」を作成する。主張は、支配力が増す人を決めるのは買い手の名前ではなく、発行株式の種類、数量、受取人だということ。4部構成とする。（1）提出書類の事実とFT報道を分ける。（2）[SpaceXの目論見書](https://www.sec.gov/Archives/edgar/data/1181412/000162828026039276/spaceexplorationtechnologi.htm)と[Teslaの委任状説明書](https://www.sec.gov/Archives/edgar/data/1318605/000110465926116718/tm2626016d2_ars.pdf)から取引前の議決権を再構成する。（3）仮定した対価を一定に保ち、2種類の株式クラスのシナリオで経済的所有権と議決権を比較し、例示であることを明記する。（4）日付入りのSunTV出典カードを公開し、読者の反例と訂正を残す。最初の派生コンテンツは、同じ買収価格でも創業者の支配力が*下がり得るか*を問うLinkedIn投票とし、計算へのリンクを付ける。"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラ",
+          "title": "AIインフラ：一つの光通信契約が完成モジュールとレーザーダイオードの調達時期を分ける",
+          "why": "Robinにとっての意味 — 完成した光モジュールと、その内部の光源が同じ利益率を得るとは限らない。別の時期に調達することは、Token Factoryに工学と資本配分の問いを投げかける。統合の価値を誰が取り込み、生産能力と製造歩留まりに誰が先に資金を出すのか。契約だけでは答えは出ない。",
+          "steps": [
+            "One Action： Token Factoryモデルにモジュールとレーザーを分けた年別の売上ブリッジを加え、最初の実出荷と粗利益率の開示に照らして検証する。",
+            "One Action： Token Factoryモデルにモジュールとレーザーを分けた年別の売上ブリッジを加え、最初の実出荷と粗利益率の開示に照らして検証する。"
+          ],
+          "done": "One Action： Token Factoryモデルにモジュールとレーザーを分けた年別の売上ブリッジを加え、最初の実出荷と粗利益率の開示に照らして検証する。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期未公開市場",
+          "title": "レイトステージの未公開市場：Peak Energyが電池納入に向けシリーズBを拡大",
+          "why": "Robinにとっての意味 — 受動冷却式ナトリウムイオン蓄電は、製造歩留まり、現場での稼働可能率、サービスコストを実証する必要がある。製造は検収前に現金を吸収し、遅延はその期間を延ばす。評価額、優先権、借入条件の価格、売上高、取得可能な投資枠は開示されていない。納入が拡大すれば、戦略的買収は考えられる出口だ。",
+          "steps": [
+            "One Action｜WATCH：最初の商業顧客が、契約MWhに対する検収済みMWhの比率を開示するまで待ち、その後でセカンダリー市場での取得機会を探す。",
+            "One Action｜WATCH：最初の商業顧客が、契約MWhに対する検収済みMWhの比率を開示するまで待ち、その後でセカンダリー市場での取得機会を探す。"
+          ],
+          "done": "One Action｜WATCH：最初の商業顧客が、契約MWhに対する検収済みMWhの比率を開示するまで待ち、その後でセカンダリー市場での取得機会を探す。"
+        },
+        {
+          "signal": 8,
+          "domain": "上場株式",
+          "title": "上場株と生命科学：Cogentの承認を支えるのは、腫瘍の進行をどれだけ遅らせたか",
+          "why": "Robinにとっての意味 — 有効な治療との比較で測った臨床評価項目であり、承認は商業展開へのアクセスを変える。値動きの乖離の背後には、企業固有のファンダメンタルズ上の出来事がある。中央値の差は患者が7.3カ月長く生きたという意味ではなく、成功をAIに帰するだけの証拠もない。",
+          "steps": [
+            "One Action： PEAKの成熟した全生存期間データを追い、進行後に認められたクロスオーバーが解釈に及ぼす影響も確認する。",
+            "One Action： PEAKの成熟した全生存期間データを追い、進行後に認められたクロスオーバーが解釈に及ぼす影響も確認する。"
+          ],
+          "done": "One Action： PEAKの成熟した全生存期間データを追い、進行後に認められたクロスオーバーが解釈に及ぼす影響も確認する。"
+        }
+      ]
+    }
+  }
+}
