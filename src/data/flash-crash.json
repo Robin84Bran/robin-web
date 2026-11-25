@@ -4,43 +4,57 @@
       "year": 2020,
       "closed": 2,
       "gross_R": -2.0,
-      "coverage": "Records begin September"
+      "coverage": "Records begin September",
+      "max_drawdown_R": 2.0,
+      "longest_losing_run": 2
     },
     {
       "year": 2021,
       "closed": 18,
       "gross_R": -1.0,
-      "coverage": "Saved backtest"
+      "coverage": "Saved backtest",
+      "max_drawdown_R": 5.5,
+      "longest_losing_run": 3
     },
     {
       "year": 2022,
       "closed": 42,
       "gross_R": 40.5,
-      "coverage": "Saved backtest"
+      "coverage": "Saved backtest",
+      "max_drawdown_R": null,
+      "longest_losing_run": null
     },
     {
       "year": 2023,
       "closed": 12,
       "gross_R": 9.5,
-      "coverage": "Saved backtest"
+      "coverage": "Saved backtest",
+      "max_drawdown_R": 5.0,
+      "longest_losing_run": 5
     },
     {
       "year": 2024,
       "closed": 12,
       "gross_R": 14.0,
-      "coverage": "Saved backtest"
+      "coverage": "Saved backtest",
+      "max_drawdown_R": 1.0,
+      "longest_losing_run": 1
     },
     {
       "year": 2025,
       "closed": 14,
       "gross_R": 7.0,
-      "coverage": "Saved backtest"
+      "coverage": "Saved backtest",
+      "max_drawdown_R": 3.0,
+      "longest_losing_run": 3
     },
     {
       "year": 2026,
       "closed": 30,
       "gross_R": 21.5,
-      "coverage": "Reconstructed 2026"
+      "coverage": "Reconstructed 2026",
+      "max_drawdown_R": 8.0,
+      "longest_losing_run": 8
     }
   ],
   "closed": 130,
@@ -208,5 +222,51 @@
     }
   ],
   "aggregation": "quarter",
-  "attribution": "exit year"
+  "attribution": "exit year",
+  "months2026": [
+    {
+      "date": "2026-01-31",
+      "cumulative_R": 0
+    },
+    {
+      "date": "2026-02-28",
+      "cumulative_R": 5.0
+    },
+    {
+      "date": "2026-03-31",
+      "cumulative_R": 5.0
+    },
+    {
+      "date": "2026-04-30",
+      "cumulative_R": 5.0
+    },
+    {
+      "date": "2026-05-31",
+      "cumulative_R": 0.0
+    },
+    {
+      "date": "2026-06-30",
+      "cumulative_R": 16.0
+    },
+    {
+      "date": "2026-07-31",
+      "cumulative_R": 14.5
+    },
+    {
+      "date": "2026-08-31",
+      "cumulative_R": 12.5
+    },
+    {
+      "date": "2026-09-30",
+      "cumulative_R": 12.5
+    },
+    {
+      "date": "2026-10-31",
+      "cumulative_R": 8.5
+    },
+    {
+      "date": "2026-11-16",
+      "cumulative_R": 21.5
+    }
+  ]
 }

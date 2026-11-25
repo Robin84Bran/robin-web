@@ -27,27 +27,34 @@ const schema={"@context":"https://schema.org","@type":"Article","headline":'Flas
       <p>Saved backtests through 2025, followed by 2026 rebuilt from the lab’s records. The line shows research results before costs.</p>
       <p>Across {results.closed} closed simulated trades, the total is <strong>{fmt(results.combined_gross_R)} before costs</strong>. One simulated position is still open. These figures do not measure a live account’s return.</p>
       <FlashCrashTimeline />
+      <p class="small">The 2026 replay’s maximum peak-to-trough drawdown was −8.0R; the longest losing run was 8 closes in exit order. Quarterly points conceal the full dip.</p>
       <FlashCrashWaterfall />
       <p class="small"><a href={asset('timeline.pdf')}>Download the timeline</a> · <a href={asset('results.csv')}>Quarterly results CSV</a></p>
       <details class="method"><summary>How to read these numbers</summary>
         <p>R measures a result against the loss planned at the initial stop. A +2R result means twice that planned risk, before the costs excluded here. It is not a percentage return on the account. Actual losses can exceed planned risk.</p>
         <p>Records begin in September 2020. The earlier years use saved backtest results. Early 2026 replays the intended logic after a software bug was corrected. It includes setups the original code would have blocked. We recovered the original January–May scan table, then continued with the later recorded signal hours. We counted each signal once and reapplied the position limit in time order. The overlapping February backtest entries were replaced by the recovered replay.</p>
         <p>The January–May table covers its full scheduled scan window. Some missing price levels were recovered later from case records. Some later recording interruptions remain, so other setups may be missing. The 2026 results are reconstructed from saved records and candles; exact executable fills and intrabar paths are unavailable.</p>
-        <p>All figures are gross. Fees, spread, slippage and funding have not been deducted. Quarterly summaries keep the detailed trading mechanics private. Historical testing and later reconstruction do not prove future profitability.</p>
+        <p>M0’s rules were fixed on 3 March 2026, when the bot went live. The structural stop and 3R target date from a 27 February spec; the stop-move rule was chosen in testing on 3 March. Later fixes changed execution and record-keeping, not the rules.</p>
+        <p>The January–February 2026 results fall before that date and inside the data used to build the strategy, so they are not forward evidence.</p>
+        <p>The charts and table are gross. Fees, spread, slippage and funding have not been deducted from them. Quarterly summaries keep the detailed trading mechanics private. Historical testing and later reconstruction do not prove future profitability.</p>
       </details>
     </section>
 
     <section id="replays" class="results-section">
       <p class="eyebrow">A closer look</p><h2>Year by year</h2>
-      <p>The years use the same ruler, R. Each result appears in the year it closed, so this table adds up to the timeline above.</p>
+      <p>The years use the same ruler, R. Each result appears in the year it closed, so this table adds up to the timeline above. Drawdown and runs reset at the start of each year and use exit order. In 2022 some opposite outcomes share an exit timestamp, so their order is unavailable.</p>
       <div class="table-scroll"><table>
         <caption>Closed results by exit year · before costs</caption>
-        <thead><tr><th scope="col">Year</th><th scope="col">Closed trades</th><th scope="col">Gross R</th><th scope="col">Record</th></tr></thead>
-        <tbody>{results.years.map(y=><tr><th scope="row"><a href={asset(`${y.year}.svg`)}>{y.year}</a></th><td>{y.closed}</td><td>{fmt(y.gross_R)}</td><td>{y.coverage}</td></tr>)}</tbody>
+        <thead><tr><th scope="col">Year</th><th scope="col">Closed trades</th><th scope="col">Gross R</th><th scope="col">Max drawdown (R)</th><th scope="col">Longest losing run</th><th scope="col">Record</th></tr></thead>
+        <tbody>{results.years.map(y=><tr><th scope="row"><a href={asset(`${y.year}.svg`)}>{y.year}</a></th><td>{y.closed}</td><td>{fmt(y.gross_R)}</td><td>{y.max_drawdown_R === null ? "Unavailable" : `−${y.max_drawdown_R.toFixed(1)}R`}</td><td>{y.longest_losing_run ?? "Unavailable"}</td><td>{y.coverage}</td></tr>)}</tbody>
       </table></div>
-      <h3>2026 forward replay</h3>
-      <FlashCrashTimeline year={2026} interactive={false} />
-      <p class="small"><a href={asset('2026.pdf')}>Download 2026 figure</a>. Earlier yearly figures open from the table.</p>
+      <h3>2026 reconstructed replay</h3>
+      <figure><img src={asset("2026.svg")} alt="2026 cumulative gross R at month ends, showing the July to October decline. Maximum drawdown 8.0R and longest losing run 8 closes."/><figcaption>Month-end snapshots through October; November is through the 16th. The maximum drawdown is measured between individual closes, so its peak can fall between month ends.</figcaption></figure>
+      <p><strong>Illustrative net estimate:</strong> roughly +17.6R after deducting 0.13R per close across 30 closes. The 0.13R is the average modeled cost (fees, spread, slippage and funding) over the lab’s 19 closed paper trades, where it ranged from about −0.03R to +0.44R. This is a modeled estimate, not measured net performance, and earlier years have no comparable cost model.</p>
+      <h3>Recorded ledger and replay: June–October entries</h3>
+      <p>These are different sets of entries, not a controlled comparison of execution costs. The totals use recorded and modeled gross R respectively.</p>
+      <div class="table-scroll"><table><thead><tr><th scope="col">Category</th><th scope="col">Recorded ledger</th><th scope="col">Replay</th></tr></thead><tbody><tr><th scope="row">Entries and gross R</th><td>19 closes · +9.49R</td><td>16 closes · +6.0R</td></tr><tr><th scope="row">Outcome flips</th><td>One loss: −0.98R</td><td>One modeled win: +0.5R; exchange rejected the real stop amendment</td></tr><tr><th scope="row">Capacity admission</th><td>Recorded entry sequence</td><td>Different entries admitted as modeled exits free capacity</td></tr><tr><th scope="row">Fills and timing</th><td>Actual fills and recorded entry times</td><td>Modeled losses and 15-minute entry convention; these differences do not flip outcomes</td></tr><tr><th scope="row">Gross R difference</th><td colspan="2">Replay minus recorded: −3.49R across these different entry sets</td></tr></tbody></table></div>
+      <p class="small">Download the 2026 figure: <a href={asset('2026.svg')}>SVG</a> · <a href={asset('2026.pdf')}>PDF</a> · <a href={asset('2026.png')}>PNG</a>. Earlier yearly figures open from the table.</p>
       <p class="small">The 2026 figure is reconstructed from saved scans and candles. The earlier figures rebuild saved backtest results. None is a record of fully net live returns.</p>
     </section>
 

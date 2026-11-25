@@ -48,7 +48,7 @@ That may sound elaborate for a small hedge. After a machine reports a win that t
 
 Later, the question became whether I could watch a long losing stretch without holding a constitutional convention after every red mark.
 
-The separate recorded ledger contains seven consecutive entry-ordered losses between June and October. That sequence differs from the replay above, which applies one outcome rule to the recovered signals. Those details matter. So does the experience of looking at a long row of red.
+The recorded ledger shows seven losses in a row by entry order between June and October. The replay shows the same stretch: eight losses in a row by exit order and an 8R drawdown, hidden in the old quarterly chart. One outcome differs: in June the exchange rejected a stop move, a real loss the replay counts as a small win. Those details matter. So does the experience of looking at a long row of red.
 
 I began asking whether a loss belonged to the strategy's expected range, whether execution had failed, or whether we still lacked enough evidence to decide. The answer could require a pause. It could also require leaving the hypothesis alone while the experiment continued.
 
