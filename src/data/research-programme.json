@@ -25,6 +25,7 @@
     {"title":"The Obedient Rebel","direction":"evidence","maturity":"Empirical study","href":"/research/honestagent/#next-title","question":"When approval is slow, does an agent wait or act?"}
   ],
   "councils": [
+    {"title":"When Your Assistant Goes First","date":"2026-11-26","displayDate":"26 Nov 2026","slug":"assistant-goes-first"},
     {"title":"When Expertise Fits in a Folder","date":"2026-11-19","displayDate":"19 Nov 2026","slug":"expertise-in-a-folder"},
     {"title":"A World You Can Interrupt","date":"2026-11-12","displayDate":"12 Nov 2026","slug":"interruptible-worlds"},
     {"title":"When Your Customer Sends an Agent","date":"2026-11-05","displayDate":"5 Nov 2026","slug":"customer-sends-agent"},
