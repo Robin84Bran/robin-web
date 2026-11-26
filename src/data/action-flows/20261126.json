@@ -1,0 +1,540 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-26",
+  "updated": "2026-11-26",
+  "signalCount": 8,
+  "briefingPath": "/ouroboros/202611/20261126/",
+  "actionItemPath": "/ouroboros/202611/20261126/action_item/",
+  "hero": "/daily-briefing/20261126/hero.webp",
+  "ogImage": "/daily-briefing/20261126/og.webp",
+  "actionHero": "/action-item/20261126/hero.webp",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-24",
+      "visualLabel": "Token rates alone do not establish cost per medically correct, source-verified claim or replace professional judgment.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://help.openai.com/en/articles/9624314-model-release-notes"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://developers.openai.com/api/docs/pricing"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-25",
+      "visualLabel": "The replacement provision concerns one automotive OEM customer and cannot be attributed to the robotics product line.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1125/2026112501197.pdf"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-26",
+      "visualLabel": "The reference values were not promoted as independently verified facts; missing public access remains UNKNOWN rather than zero.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://farside.co.uk/BTC/"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://farside.co.uk/ethereum-etf-flow-all-data/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-25",
+      "visualLabel": "Aave says it is not a bank, rates vary, funds lack government deposit insurance, and eligibility differs by region.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://aave.com/blog/aave-app-launch"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "deepDiveAvailable": true,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "visualValue": "2026-11-26",
+      "visualLabel": "The private oral recollection in the reference was excluded from the provider fact packet and public factual claims.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://support.apple.com/en-ie/102659"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://iamrobin.ai/research/"
+        },
+        {
+          "label": "Source 3",
+          "url": "https://iamrobin.ai/ouroboros/202609/20260924/special/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-25",
+      "visualLabel": "Visible construction does not by itself establish legal noncompliance, an interconnection date, or energized capacity.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://gov.texas.gov/news/post/governor-abbott-directs-tceq-to-halt-data-center-permits"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://www.houstonchronicle.com/business/energy/article/texas-data-center-permit-abbott-pause-construction-22538385.php"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-23",
+      "visualLabel": "Dose escalation is a safety and tolerability milestone; no comparative efficacy, objective-response, or survival result was disclosed.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.anocca.com/company/news/anocca-announces-dose-escalation-and-advances-multi-product-vidar-1-clinical-programme-in-pancreatic-cancer"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://www.anocca.com/company/news/anocca-raises-sek-440-million-to-advance-clinical-trial-targeting-pancreatic-cancer"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-24",
+      "visualLabel": "Orders, backlog, and recognized revenue are different measures and cannot be added; customer-level cash collection was not disclosed.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000050/exhibit991earnings8kq3fy27.htm"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, November 25, 2026",
+      "description": "Eight bounded actions turn today’s evidence into observable next gates.",
+      "centralJudgment": "Measure accepted outcomes and voting power, not only cheap runs and transaction labels.",
+      "fieldLine": "Eight signals. Signal 5 separates economic ownership from voting control.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Medical evidence search gets its own route",
+          "why": "Why Robin should care: RobinOS can route original-trial retrieval separately from conflict review. The useful productivity measure is a correct claim supported by its source, rather than a cheap token.",
+          "steps": [
+            "One Action: Blind-test ten past clinical claims with Sol-only retrieval and Sol→Astra review. Choose the default route by total cost per correct claim verified against the original source.",
+            "One Action: Blind-test ten past clinical claims with Sol-only retrieval and Sol→Astra review. Choose the default route by total cost per correct claim verified against the original source."
+          ],
+          "done": "One Action: Blind-test ten past clinical claims with Sol-only retrieval and Sol→Astra review. Choose the default route by total cost per correct claim verified against the original source."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "Field costs decide the economics after volume arrives",
+          "why": "Why Robin should care: Mass-production scale has hard numbers. One field-replacement provision was also large enough to alter a quarter's margin. A Physical AI moat needs both installation capacity and a clear boundary around after-sales responsibility.",
+          "steps": [
+            "One Action: In the next filing, check whether the provision is increased, reversed or used. Then update the estimated after-sales cost per installed unit.",
+            "One Action: In the next filing, check whether the provision is increased, reversed or used. Then update the estimated after-sales cost per installed unit."
+          ],
+          "done": "One Action: In the next filing, check whether the provision is increased, reversed or used. Then update the estimated after-sales cost per installed unit."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows and Web3 Health",
+          "title": "The reference signal exists; the public tables could not be reopened",
+          "why": "Why Robin should care: A fund-flow conclusion needs complete fund rows, a clear date and repeatable access. A polished total cannot replace a verifiable table.",
+          "steps": [
+            "One Action: Reopen the Nov 24 fund rows at the next accessible window. Accumulate three-day BTC flows excluding IBIT only after the fund-level rows are complete.",
+            "One Action: Reopen the Nov 24 fund rows at the next accessible window. Accumulate three-day BTC flows excluding IBIT only after the fund-level rows are complete."
+          ],
+          "done": "One Action: Reopen the Nov 24 fund rows at the next accessible window. Accumulate three-day BTC flows excluding IBIT only after the fund-level rows are complete."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins, FinTech and Token Rails",
+          "title": "A bank entry point now feeds an onchain loan market",
+          "why": "Why Robin should care: Banks provide the entry point, a protocol matches credit and the app owns the customer relationship. Retention after promotions and realized risk costs will distinguish distribution from subsidy.",
+          "steps": [
+            "One Action: Track net retained balances after the first promotional periods end, excluding new deposits, and list any security loss or balance-protection payout separately.",
+            "One Action: Track net retained balances after the first promotional periods end, excluding new deposits, and list any security loss or balance-protection payout separately."
+          ],
+          "done": "One Action: Track net retained balances after the first promotional periods end, excluding new deposits, and list any security loss or balance-protection payout separately."
+        },
+        {
+          "signal": 5,
+          "domain": "Content and Visibility",
+          "title": "When does the customer become the project manager?",
+          "why": "Why Robin should care: A service or agent can identify the obstacle correctly while handing coordination back to the customer. Completion should count the extra handoffs a customer must manage to reach the original goal.",
+          "steps": [
+            "One Action: Create “When the Customer Becomes the Project Manager”, using Apple's two public migration paths and the public Honest Agent handoff evidence to distinguish “reported obstacle” from “delivered feasible next step.” Add an anonymized reader-case table that records extra handoffs and steps that genuinely require human authorization.",
+            "One Action: Create “When the Customer Becomes the Project Manager”, using Apple's two public migration paths and the public Honest Agent handoff evidence to distinguish “reported obstacle” from “delivered feasible next step.” Add an anonymized reader-case table that records extra handoffs and steps that genuinely require human authorization."
+          ],
+          "done": "One Action: Create “When the Customer Becomes the Project Manager”, using Apple's two public migration paths and the public Honest Agent handoff evidence to distinguish “reported obstacle” from “delivered feasible next step.” Add an anonymized reader-case table that records extra handoffs and steps that genuinely require human authorization."
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure",
+          "title": "Construction progressed; energization evidence remains separate",
+          "why": "Why Robin should care: Civil work, permits and energization are separate evidence chains. Capacity begins to resemble a rent-producing asset only when an energization date becomes verifiable.",
+          "steps": [
+            "One Action: Split “under construction” in the Power Ledger into site work, applicable permit and verified energization date. Keep MW with an unknown third field out of the base revenue case.",
+            "One Action: Split “under construction” in the Power Ledger into site work, applicable permit and verified energization date. Keep MW with an unknown third field out of the base revenue case."
+          ],
+          "done": "One Action: Split “under construction” in the Power Ledger into site work, applicable permit and verified energization date. Keep MW with an unknown third field out of the base revenue case."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-stage Private Markets",
+          "title": "The first high-dose patient is still an early clinical milestone",
+          "why": "Why Robin should care: Dose escalation clears a safety gate. It does not answer efficacy, manufacturing throughput or commercial economics.",
+          "steps": [
+            "One Action: Wait for the first table showing enrollment, patients actually treated, serious adverse events and durable objective responses by dose before advancing diligence.",
+            "One Action: Wait for the first table showing enrollment, patients actually treated, serious adverse events and durable objective responses by dose before advancing diligence."
+          ],
+          "done": "One Action: Wait for the first table showing enrollment, patients actually treated, serious adverse events and durable objective responses by dose before advancing diligence."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities",
+          "title": "Dell's orders, backlog and revenue are three different promises",
+          "why": "Why Robin should care: The supplier already treats financing, land and power as order-quality inputs. Evidence moves closer to cash as backlog becomes delivered revenue and then collected payment.",
+          "steps": [
+            "One Action: In the next filing, update a backlog→delivered revenue→cash collection bridge. Keep undisclosed AI-customer receipts marked unknown.",
+            "One Action: In the next filing, update a backlog→delivered revenue→cash collection bridge. Keep undisclosed AI-customer receipts marked unknown."
+          ],
+          "done": "One Action: In the next filing, update a backlog→delivered revenue→cash collection bridge. Keep undisclosed AI-customer receipts marked unknown."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年11月25日",
+      "description": "八项有边界的行动，把今天的证据转成可观察的下一道门槛。",
+      "centralJudgment": "衡量通过验收的成果与投票权，而不只看廉价运行和交易名称。",
+      "fieldLine": "八个信号。信号5把经济所有权与投票控制权分开。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与代理",
+          "title": "医疗证据检索有了单独的模型路线",
+          "why": "Robin为何在意： RobinOS 可以把原始试验检索与冲突复核分成两条成本不同的路线。真正的生产力提升要看每条经原文支持的正确断言，而非模型单价。",
+          "steps": [
+            "One Action： 用十条既有临床断言盲测 Sol 单独检索与 Sol→Astra 复核，按每条经原文核实的正确断言所耗总成本决定默认路由。",
+            "One Action： 用十条既有临床断言盲测 Sol 单独检索与 Sol→Astra 复核，按每条经原文核实的正确断言所耗总成本决定默认路由。"
+          ],
+          "done": "One Action： 用十条既有临床断言盲测 Sol 单独检索与 Sol→Astra 复核，按每条经原文核实的正确断言所耗总成本决定默认路由。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 与机器人",
+          "title": "销量增长之后，现场成本决定经济性",
+          "why": "Robin为何在意： 量产能力已经有实数支撑；一次现场换件准备也足以改变整季毛利。Physical AI 的护城河必须同时包含装机能力与售后责任边界。",
+          "steps": [
+            "One Action： 下一份财报核对这笔换件准备是否追加、转回或实际支用，再更新每台已装机设备的售后成本估计。",
+            "One Action： 下一份财报核对这笔换件准备是否追加、转回或实际支用，再更新每台已装机设备的售后成本估计。"
+          ],
+          "done": "One Action： 下一份财报核对这笔换件准备是否追加、转回或实际支用，再更新每台已装机设备的售后成本估计。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流与 Web3 健康",
+          "title": "参考信号存在，公开表格在截稿时无法复核",
+          "why": "Robin为何在意： 资金流结论只有在基金行完整、日期明确且可重复读取时才可进入判断。一个漂亮总数不能替代可复核的明细。",
+          "steps": [
+            "One Action： 在下一个可访问窗口重新读取 11 月 24 日基金行；只有基金级明细完整时，才累计剔除 IBIT 后的三日 BTC 净流量。",
+            "One Action： 在下一个可访问窗口重新读取 11 月 24 日基金行；只有基金级明细完整时，才累计剔除 IBIT 后的三日 BTC 净流量。"
+          ],
+          "done": "One Action： 在下一个可访问窗口重新读取 11 月 24 日基金行；只有基金级明细完整时，才累计剔除 IBIT 后的三日 BTC 净流量。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币、金融科技与代币轨道",
+          "title": "银行入口接上了链上借贷",
+          "why": "Robin为何在意： 银行负责入口，协议撮合信贷，应用掌握客户关系。产品价值要由优惠结束后的留存与风险成本共同证明。",
+          "steps": [
+            "One Action： 追踪首批推广期结束用户的净留存余额率，剔除新入金，并把任何安全事件或余额保护赔付单独列示。",
+            "One Action： 追踪首批推广期结束用户的净留存余额率，剔除新入金，并把任何安全事件或余额保护赔付单独列示。"
+          ],
+          "done": "One Action： 追踪首批推广期结束用户的净留存余额率，剔除新入金，并把任何安全事件或余额保护赔付单独列示。"
+        },
+        {
+          "signal": 5,
+          "domain": "内容与可见度",
+          "title": "顾客从哪一步变成项目经理？",
+          "why": "Robin为何在意： 服务与智能体都可能正确识别障碍，同时把重新协调的工作交还给顾客。完成率需要计入顾客为原目标额外承担的交接。",
+          "steps": [
+            "One Action： 创建 “When the Customer Becomes the Project Manager”／《顾客是从哪一步变成项目经理的？》，用 Apple 的两条公开迁移路线和 Honest Agent 的公开交接证据，定义“报告阻碍”与“交付可行下一步”，并建立一张匿名读者案例表，记录额外交接次数与确实需要人类授权的环节。",
+            "One Action： 创建 “When the Customer Becomes the Project Manager”／《顾客是从哪一步变成项目经理的？》，用 Apple 的两条公开迁移路线和 Honest Agent 的公开交接证据，定义“报告阻碍”与“交付可行下一步”，并建立一张匿名读者案例表，记录额外交接次数与确实需要人类授权的环节。"
+          ],
+          "done": "One Action： 创建 “When the Customer Becomes the Project Manager”／《顾客是从哪一步变成项目经理的？》，用 Apple 的两条公开迁移路线和 Honest Agent 的公开交接证据，定义“报告阻碍”与“交付可行下一步”，并建立一张匿名读者案例表，记录额外交接次数与确实需要人类授权的环节。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基础设施",
+          "title": "工地在推进，送电证据仍要单独核对",
+          "why": "Robin为何在意： 土建、许可与送电是三条不同的证据链。只有送电日期接近可核验，容量才开始接近可产生租金的资产。",
+          "steps": [
+            "One Action： 把 Power Ledger 样本项目的“在建”拆成现场施工、适用许可、可核验送电日期三栏；第三栏未知的 MW 不进入基准收入情景。",
+            "One Action： 把 Power Ledger 样本项目的“在建”拆成现场施工、适用许可、可核验送电日期三栏；第三栏未知的 MW 不进入基准收入情景。"
+          ],
+          "done": "One Action： 把 Power Ledger 样本项目的“在建”拆成现场施工、适用许可、可核验送电日期三栏；第三栏未知的 MW 不进入基准收入情景。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私募",
+          "title": "第一次高剂量给药仍是早期临床里程碑",
+          "why": "Robin为何在意： 允许加量说明项目跨过一个安全门槛；它没有回答疗效、制造吞吐量或商业经济性。",
+          "steps": [
+            "One Action： 等第一张按剂量列出入组人数、实际治疗人数、严重不良事件与持续客观缓解的结果表，再决定是否进入进一步尽调。",
+            "One Action： 等第一张按剂量列出入组人数、实际治疗人数、严重不良事件与持续客观缓解的结果表，再决定是否进入进一步尽调。"
+          ],
+          "done": "One Action： 等第一张按剂量列出入组人数、实际治疗人数、严重不良事件与持续客观缓解的结果表，再决定是否进入进一步尽调。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开股票",
+          "title": "Dell 的订单、积压与收入是三种不同承诺",
+          "why": "Robin为何在意： 供应商自己已经把融资、土地和电力放进订单筛查。真正接近现金的证据要沿积压订单、交付收入和回款逐层前进。",
+          "steps": [
+            "One Action： 下一份季报更新积压订单→已交付收入→现金回收对照表；未分拆的 AI 客户回款保持未知。",
+            "One Action： 下一份季报更新积压订单→已交付收入→现金回收对照表；未分拆的 AI 客户回款保持未知。"
+          ],
+          "done": "One Action： 下一份季报更新积压订单→已交付收入→现金回收对照表；未分拆的 AI 客户回款保持未知。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年11月25日",
+      "description": "八項有邊界的行動，把今天的證據轉成可觀察的下一道門檻。",
+      "centralJudgment": "衡量通過驗收的成果與投票權，而不只看廉價執行和交易名稱。",
+      "fieldLine": "八個訊號。訊號5把經濟所有權與投票控制權分開。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與代理",
+          "title": "醫療證據檢索有了單獨的模型路線",
+          "why": "Robin為何在意： RobinOS 可以把原始試驗檢索與衝突複核分成兩條成本不同的路線。真正的生產力提升要看每條經原文支持的正確斷言，而非模型單價。",
+          "steps": [
+            "One Action： 用十條既有臨牀斷言盲測 Sol 單獨檢索與 Sol→Astra 複核，按每條經原文核實的正確斷言所耗總成本決定默認路由。",
+            "One Action： 用十條既有臨牀斷言盲測 Sol 單獨檢索與 Sol→Astra 複核，按每條經原文核實的正確斷言所耗總成本決定默認路由。"
+          ],
+          "done": "One Action： 用十條既有臨牀斷言盲測 Sol 單獨檢索與 Sol→Astra 複核，按每條經原文核實的正確斷言所耗總成本決定默認路由。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 與機器人",
+          "title": "銷量成長之後，現場成本決定經濟性",
+          "why": "Robin為何在意： 量產能力已經有實數支撐；一次現場換件準備也足以改變整季毛利。Physical AI 的護城河必須同時包含裝機能力與售後責任邊界。",
+          "steps": [
+            "One Action： 下一份財報核對這筆換件準備是否追加、轉回或實際支用，再更新每台已裝機設備的售後成本估計。",
+            "One Action： 下一份財報核對這筆換件準備是否追加、轉回或實際支用，再更新每台已裝機設備的售後成本估計。"
+          ],
+          "done": "One Action： 下一份財報核對這筆換件準備是否追加、轉回或實際支用，再更新每台已裝機設備的售後成本估計。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本流與 Web3 健康",
+          "title": "參考訊號存在，公開表格在截稿時無法複核",
+          "why": "Robin為何在意： 資金流結論只有在基金行完整、日期明確且可重複讀取時才可進入判斷。一個漂亮總數不能替代可複核的明細。",
+          "steps": [
+            "One Action： 在下一個可訪問窗口重新讀取 11 月 24 日基金行；只有基金級明細完整時，才累計剔除 IBIT 後的三日 BTC 淨流量。",
+            "One Action： 在下一個可訪問窗口重新讀取 11 月 24 日基金行；只有基金級明細完整時，才累計剔除 IBIT 後的三日 BTC 淨流量。"
+          ],
+          "done": "One Action： 在下一個可訪問窗口重新讀取 11 月 24 日基金行；只有基金級明細完整時，才累計剔除 IBIT 後的三日 BTC 淨流量。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣、金融科技與代幣軌道",
+          "title": "銀行入口接上了鏈上借貸",
+          "why": "Robin為何在意： 銀行負責入口，協議撮合信貸，應用掌握客户關係。產品價值要由優惠結束後的留存與風險成本共同證明。",
+          "steps": [
+            "One Action： 追蹤首批推廣期結束用户的淨留存餘額率，剔除新入金，並把任何安全事件或餘額保護賠付單獨列示。",
+            "One Action： 追蹤首批推廣期結束用户的淨留存餘額率，剔除新入金，並把任何安全事件或餘額保護賠付單獨列示。"
+          ],
+          "done": "One Action： 追蹤首批推廣期結束用户的淨留存餘額率，剔除新入金，並把任何安全事件或餘額保護賠付單獨列示。"
+        },
+        {
+          "signal": 5,
+          "domain": "內容與可見度",
+          "title": "顧客從哪一步變成項目經理？",
+          "why": "Robin為何在意： 服務與智能體都可能正確識別障礙，同時把重新協調的工作交還給顧客。完成率需要計入顧客為原目標額外承擔的交接。",
+          "steps": [
+            "One Action： 創建 “When the Customer Becomes the Project Manager”／《顧客是從哪一步變成項目經理的？》，用 Apple 的兩條公開遷移路線和 Honest Agent 的公開交接證據，定義“報告阻礙”與“交付可行下一步”，並建立一張匿名讀者案例表，記錄額外交接次數與確實需要人類授權的環節。",
+            "One Action： 創建 “When the Customer Becomes the Project Manager”／《顧客是從哪一步變成項目經理的？》，用 Apple 的兩條公開遷移路線和 Honest Agent 的公開交接證據，定義“報告阻礙”與“交付可行下一步”，並建立一張匿名讀者案例表，記錄額外交接次數與確實需要人類授權的環節。"
+          ],
+          "done": "One Action： 創建 “When the Customer Becomes the Project Manager”／《顧客是從哪一步變成項目經理的？》，用 Apple 的兩條公開遷移路線和 Honest Agent 的公開交接證據，定義“報告阻礙”與“交付可行下一步”，並建立一張匿名讀者案例表，記錄額外交接次數與確實需要人類授權的環節。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基礎設施",
+          "title": "工地在推進，送電證據仍要單獨核對",
+          "why": "Robin為何在意： 土建、許可與送電是三條不同的證據鏈。只有送電日期接近可核驗，容量才開始接近可產生租金的資產。",
+          "steps": [
+            "One Action： 把 Power Ledger 樣本項目的“在建”拆成現場施工、適用許可、可核驗送電日期三欄；第三欄未知的 MW 不進入基準收入情景。",
+            "One Action： 把 Power Ledger 樣本項目的“在建”拆成現場施工、適用許可、可核驗送電日期三欄；第三欄未知的 MW 不進入基準收入情景。"
+          ],
+          "done": "One Action： 把 Power Ledger 樣本項目的“在建”拆成現場施工、適用許可、可核驗送電日期三欄；第三欄未知的 MW 不進入基準收入情景。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私募",
+          "title": "第一次高劑量給藥仍是早期臨牀里程碑",
+          "why": "Robin為何在意： 允許加量説明項目跨過一個安全門檻；它沒有回答療效、製造吞吐量或商業經濟性。",
+          "steps": [
+            "One Action： 等第一張按劑量列出入組人數、實際治療人數、嚴重不良事件與持續客觀緩解的結果表，再決定是否進入進一步盡調。",
+            "One Action： 等第一張按劑量列出入組人數、實際治療人數、嚴重不良事件與持續客觀緩解的結果表，再決定是否進入進一步盡調。"
+          ],
+          "done": "One Action： 等第一張按劑量列出入組人數、實際治療人數、嚴重不良事件與持續客觀緩解的結果表，再決定是否進入進一步盡調。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開股票",
+          "title": "Dell 的訂單、積壓與收入是三種不同承諾",
+          "why": "Robin為何在意： 供應商自己已經把融資、土地和電力放進訂單篩查。真正接近現金的證據要沿積壓訂單、交付收入和回款逐層前進。",
+          "steps": [
+            "One Action： 下一份季報更新積壓訂單→已交付收入→現金回收對照表；未分拆的 AI 客户回款保持未知。",
+            "One Action： 下一份季報更新積壓訂單→已交付收入→現金回收對照表；未分拆的 AI 客户回款保持未知。"
+          ],
+          "done": "One Action： 下一份季報更新積壓訂單→已交付收入→現金回收對照表；未分拆的 AI 客户回款保持未知。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー 2026年11月25日",
+      "description": "八つの限定された行動で、本日の証拠を観測可能な次のゲートへ変える。",
+      "centralJudgment": "安い実行回数や取引名だけでなく、検収済み成果と議決権を測る。",
+      "fieldLine": "八つのシグナル。シグナル5は経済的所有と議決支配を分ける。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "フロンティアモデルとエージェント",
+          "title": "医療エビデンス検索に専用ルート",
+          "why": "Robinにとっての意味： RobinOSは原著論文の探索と、結果が食い違う項目の再検証を別ルートにできる。生産性を測る単位は安いトークンではなく、原文で裏付けられた正しい主張だ。",
+          "steps": [
+            "One Action： 過去の臨床主張10件を使い、Sol単独検索とSol→Astra再検証をブラインド比較する。原文確認済みの正しい主張1件当たりの総費用で標準ルートを決める。",
+            "One Action： 過去の臨床主張10件を使い、Sol単独検索とSol→Astra再検証をブラインド比較する。原文確認済みの正しい主張1件当たりの総費用で標準ルートを決める。"
+          ],
+          "done": "One Action： 過去の臨床主張10件を使い、Sol単独検索とSol→Astra再検証をブラインド比較する。原文確認済みの正しい主張1件当たりの総費用で標準ルートを決める。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AIとロボティクス",
+          "title": "数量が伸びた後は現場費用が採算を決める",
+          "why": "Robinにとっての意味： 量産規模には実数の裏付けがある。同時に、1件の現場交換引当金が四半期採算を大きく動かした。Physical AIの競争力には、設置能力とアフターサービス責任の境界が両方必要になる。",
+          "steps": [
+            "One Action： 次回の開示で引当金の追加、戻入、実使用を確認し、設置済み1台当たりのアフターサービス費用推計を更新する。",
+            "One Action： 次回の開示で引当金の追加、戻入、実使用を確認し、設置済み1台当たりのアフターサービス費用推計を更新する。"
+          ],
+          "done": "One Action： 次回の開示で引当金の追加、戻入、実使用を確認し、設置済み1台当たりのアフターサービス費用推計を更新する。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資本フローとWeb3",
+          "title": "参照シグナルはあるが公開表を再確認できず",
+          "why": "Robinにとっての意味： 資金フローの判断には、完全なファンド別行、明確な日付、再現可能なアクセスが要る。合計値の見栄えより、再確認できる明細が重要だ。",
+          "steps": [
+            "One Action： 次にアクセスできる時点で11月24日のファンド別行を再確認する。明細が揃ってから、IBITを除くBTCの3営業日累計フローを計算する。",
+            "One Action： 次にアクセスできる時点で11月24日のファンド別行を再確認する。明細が揃ってから、IBITを除くBTCの3営業日累計フローを計算する。"
+          ],
+          "done": "One Action： 次にアクセスできる時点で11月24日のファンド別行を再確認する。明細が揃ってから、IBITを除くBTCの3営業日累計フローを計算する。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコイン、FinTech、トークン基盤",
+          "title": "銀行口座の入口がオンチェーン融資市場につながった",
+          "why": "Robinにとっての意味： 銀行が入口を担い、プロトコルが信用を仲介し、アプリが顧客接点を持つ。販促後の残高維持と実際のリスク費用が、流通力と補助金を分ける。",
+          "steps": [
+            "One Action： 最初の販促期間終了後について、新規入金を除いた純残高維持率を追う。セキュリティ損失や残高保護の支払いがあれば別項目で記録する。",
+            "One Action： 最初の販促期間終了後について、新規入金を除いた純残高維持率を追う。セキュリティ損失や残高保護の支払いがあれば別項目で記録する。"
+          ],
+          "done": "One Action： 最初の販促期間終了後について、新規入金を除いた純残高維持率を追う。セキュリティ損失や残高保護の支払いがあれば別項目で記録する。"
+        },
+        {
+          "signal": 5,
+          "domain": "コンテンツと可視性",
+          "title": "顧客はいつプロジェクトマネジャーになるのか",
+          "why": "Robinにとっての意味： サービスやエージェントは障害を正しく見つけても、その後の調整を顧客へ戻す場合がある。完了率には、元の目的を達成するため顧客が引き受けた追加の引き継ぎも含めるべきだ。",
+          "steps": [
+            "One Action： 「When the Customer Becomes the Project Manager」を制作する。Appleが公開する二つの移行経路とHonest Agentの公開引き継ぎ証拠を使い、「障害を報告した」と「実行可能な次の一手を届けた」を区別する。匿名の読者事例表を設け、追加の引き継ぎ回数と、人の承認が本当に必要な工程を記録する。",
+            "One Action： 「When the Customer Becomes the Project Manager」を制作する。Appleが公開する二つの移行経路とHonest Agentの公開引き継ぎ証拠を使い、「障害を報告した」と「実行可能な次の一手を届けた」を区別する。匿名の読者事例表を設け、追加の引き継ぎ回数と、人の承認が本当に必要な工程を記録する。"
+          ],
+          "done": "One Action： 「When the Customer Becomes the Project Manager」を制作する。Appleが公開する二つの移行経路とHonest Agentの公開引き継ぎ証拠を使い、「障害を報告した」と「実行可能な次の一手を届けた」を区別する。匿名の読者事例表を設け、追加の引き継ぎ回数と、人の承認が本当に必要な工程を記録する。"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラ",
+          "title": "工事は進んだが、通電の証拠は別に必要",
+          "why": "Robinにとっての意味： 土木工事、許可、通電は別々の証拠系列だ。検証可能な通電日が近づいて初めて、容量は賃料を生む資産に近づく。",
+          "steps": [
+            "One Action： Power Ledgerの「建設中」を、現場工事、適用許可、確認可能な通電日の3欄に分ける。3番目が不明なMWは基本収益シナリオから外す。",
+            "One Action： Power Ledgerの「建設中」を、現場工事、適用許可、確認可能な通電日の3欄に分ける。3番目が不明なMWは基本収益シナリオから外す。"
+          ],
+          "done": "One Action： Power Ledgerの「建設中」を、現場工事、適用許可、確認可能な通電日の3欄に分ける。3番目が不明なMWは基本収益シナリオから外す。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期未公開市場",
+          "title": "初回高用量投与は初期臨床の節目",
+          "why": "Robinにとっての意味： 増量は安全性ゲートを一つ通過したことを示す。治療効果、製造処理能力、商業採算は今後のデータが答える。",
+          "steps": [
+            "One Action： 用量別の登録人数、実際の治療人数、重篤な有害事象、持続的な客観的奏効を示す最初の表を待ち、その時点で追加調査を判断する。",
+            "One Action： 用量別の登録人数、実際の治療人数、重篤な有害事象、持続的な客観的奏効を示す最初の表を待ち、その時点で追加調査を判断する。"
+          ],
+          "done": "One Action： 用量別の登録人数、実際の治療人数、重篤な有害事象、持続的な客観的奏効を示す最初の表を待ち、その時点で追加調査を判断する。"
+        },
+        {
+          "signal": 8,
+          "domain": "上場株式",
+          "title": "Dellの受注、受注残、売上は三つの異なる約束",
+          "why": "Robinにとっての意味： サプライヤー自身が資金、土地、電力を受注品質の条件として扱っている。受注残が納入売上へ、さらに回収済み現金へ進むほど、証拠はキャッシュに近づく。",
+          "steps": [
+            "One Action： 次回決算で受注残→納入売上→現金回収の対応表を更新する。AI顧客別の回収が開示されない限り、不明のまま記録する。",
+            "One Action： 次回決算で受注残→納入売上→現金回収の対応表を更新する。AI顧客別の回収が開示されない限り、不明のまま記録する。"
+          ],
+          "done": "One Action： 次回決算で受注残→納入売上→現金回収の対応表を更新する。AI顧客別の回収が開示されない限り、不明のまま記録する。"
+        }
+      ]
+    }
+  }
+}
