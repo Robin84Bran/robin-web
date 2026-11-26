@@ -1,0 +1,14 @@
+OpenAI's healthcare configurations can search a dedicated medical-source index. That changes the shelf. It does not fill the scorecard.
+
+The key design problem appears when a Sol-first workflow adds Astra review. If Astra searches again, two things changed: the reader and the retrieval opportunity.
+
+So measure two arms:
+
+1. Astra reviews the same frozen source pack.
+2. Astra reviews and may search again, with every new source and call recorded.
+
+Then keep every material claim in the ledger and compare total workflow cost per source-verified correct claim.
+
+A better shelf is an input. Accuracy is an outcome.
+
+Read the four-language story and download the sourced carousel at IAmRobin.ai. Website publication does not imply a LinkedIn post.

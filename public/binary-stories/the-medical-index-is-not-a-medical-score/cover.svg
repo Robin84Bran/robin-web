@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">The medical index is not a medical score</title>
+  <desc id="desc">A medical search index leads to retrieval, an answer and source verification, while an empty scorecard waits for measured results.</desc>
+  <rect width="1600" height="900" fill="#0B1228"/>
+  <circle cx="1370" cy="120" r="300" fill="#14213D"/>
+  <circle cx="1510" cy="790" r="330" fill="#101B34"/>
+  <text x="104" y="104" fill="#61D4D7" font-family="Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="4">BINARY / BUILD</text>
+  <text x="104" y="184" fill="#F4F1E9" font-family="Georgia, serif" font-size="72" font-weight="700">The medical index is not</text>
+  <text x="104" y="268" fill="#F4F1E9" font-family="Georgia, serif" font-size="72" font-weight="700">a medical score.</text>
+  <text x="106" y="326" fill="#B7C2D9" font-family="Arial, sans-serif" font-size="26">A specialist shelf changes retrieval. Evidence still has to survive the answer.</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="94" y="420" width="280" height="172" rx="24" fill="#F4F1E9"/>
+    <text x="126" y="468" fill="#516078" font-size="20" font-weight="700" letter-spacing="2">SEARCH LAYER</text>
+    <text x="126" y="518" fill="#0B1228" font-size="31" font-weight="700">Medical index</text>
+    <text x="126" y="558" fill="#516078" font-size="22">Choose the shelf</text>
+    <path d="M374 506 H458" stroke="#61D4D7" stroke-width="8"/>
+    <path d="M440 488 L462 506 L440 524" fill="none" stroke="#61D4D7" stroke-width="8"/>
+    <rect x="462" y="420" width="280" height="172" rx="24" fill="#162642" stroke="#61D4D7" stroke-width="3"/>
+    <text x="494" y="468" fill="#61D4D7" font-size="20" font-weight="700" letter-spacing="2">READING LAYER</text>
+    <text x="494" y="518" fill="#F4F1E9" font-size="31" font-weight="700">Retrieve + write</text>
+    <text x="494" y="558" fill="#B7C2D9" font-size="22">Preserve the claim</text>
+    <path d="M742 506 H826" stroke="#D8B86B" stroke-width="8"/>
+    <path d="M808 488 L830 506 L808 524" fill="none" stroke="#D8B86B" stroke-width="8"/>
+    <rect x="830" y="420" width="280" height="172" rx="24" fill="#F4F1E9"/>
+    <text x="862" y="468" fill="#8C6A1C" font-size="20" font-weight="700" letter-spacing="2">EVIDENCE LAYER</text>
+    <text x="862" y="518" fill="#0B1228" font-size="31" font-weight="700">Verify source</text>
+    <text x="862" y="558" fill="#516078" font-size="22">Check every claim</text>
+    <path d="M1110 506 H1194" stroke="#61D4D7" stroke-width="8"/>
+    <path d="M1176 488 L1198 506 L1176 524" fill="none" stroke="#61D4D7" stroke-width="8"/>
+    <rect x="1198" y="420" width="310" height="172" rx="24" fill="#D8B86B"/>
+    <text x="1230" y="468" fill="#6D5419" font-size="20" font-weight="700" letter-spacing="2">SCORECARD</text>
+    <text x="1230" y="518" fill="#0B1228" font-size="31" font-weight="700">Still blank</text>
+    <text x="1230" y="558" fill="#3B3320" font-size="22">No measured lift yet</text>
+  </g>
+  <rect x="94" y="690" width="1414" height="2" fill="#2D3A58"/>
+  <text x="104" y="754" fill="#F4F1E9" font-family="Georgia, serif" font-size="34">A better shelf is an input. Accuracy is an outcome.</text>
+  <text x="104" y="814" fill="#8F9BB3" font-family="Arial, sans-serif" font-size="22">Official OpenAI documentation + proposed blinded comparison · 26 NOV 2026</text>
+  <text x="1390" y="824" fill="#F4F1E9" font-family="Arial, sans-serif" font-size="24" font-weight="700">IAmRobin.ai</text>
+</svg>
