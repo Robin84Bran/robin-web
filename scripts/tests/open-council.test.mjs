@@ -6,7 +6,7 @@ import { prepareReply } from '../../public/council/reply.mjs';
 const read = path => readFileSync(new URL('../../' + path, import.meta.url), 'utf8');
 const path = '/intelligence/council/autonomous-engineering/';
 
-for (const slug of ['million-good-questions', 'customer-sends-agent', 'interruptible-worlds', 'expertise-in-a-folder']) {
+for (const slug of ['million-good-questions', 'customer-sends-agent', 'interruptible-worlds', 'expertise-in-a-folder', 'assistant-goes-first']) {
 test(`${slug} council keeps empty seats and replies bound to its own topic`, async () => {
   const route = `/intelligence/council/${slug}/`;
   const { prepareReply: prepareWeeklyReply } = await import(`../../public/council/${slug}.mjs`);
@@ -25,7 +25,8 @@ test(`${slug} council keeps empty seats and replies bound to its own topic`, asy
   assert.ok(html.includes('rel="canonical" href="https://iamrobin.ai' + route + '"'));
   assert.ok(read('dist/intelligence/index.html').includes(route));
   assert.ok(read('dist/sitemap-0.xml').includes(route));
-  assert.doesNotMatch(html, /https?:\/\/(?:chatgpt|claude|gemini|grok)\.[^\s"<]+|\/Users\/|private_reviews|receipt\.json/);
+  // claude.com publishes primary-source product articles; claude.ai hosts chats.
+  assert.doesNotMatch(html, /https?:\/\/(?:chatgpt\.com|chat\.openai\.com|claude\.ai|gemini\.google\.com|grok\.com)\b[^\s"<]*|\/Users\/|private_reviews|receipt\.json/);
   assert.doesNotMatch(read(`public/council/${slug}.mjs`), /fetch\(|XMLHttpRequest|sendBeacon|localStorage|sessionStorage|innerHTML|\.submit\(/);
 });
 }
