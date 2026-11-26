@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">OpenAI gives medical search a dedicated reading room</title>
+  <desc id="desc">A restrained social card with a medical reading room and empty scorecard.</desc>
+  <rect width="1200" height="630" fill="#f4f0e8"/>
+  <rect x="70" y="62" width="1060" height="506" fill="#fffdf7" stroke="#18332f" stroke-width="3"/>
+  <text x="115" y="150" fill="#a4492f" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="23">DAILY SPECIAL · 26 NOVEMBER 2026</text>
+  <text x="115" y="245" fill="#18332f" font-family="Georgia, serif" font-size="58">A medical reading room</text>
+  <text x="115" y="315" fill="#18332f" font-family="Georgia, serif" font-size="58">and an empty scorecard</text>
+  <path d="M115 395H1085" stroke="#18332f" stroke-width="3"/>
+  <g fill="#e6ded0" stroke="#18332f" stroke-width="2">
+    <rect x="115" y="430" width="80" height="64"/><rect x="213" y="430" width="80" height="64"/><rect x="311" y="430" width="80" height="64"/><rect x="409" y="430" width="80" height="64"/><rect x="507" y="430" width="80" height="64"/><rect x="605" y="430" width="80" height="64"/><rect x="703" y="430" width="80" height="64"/><rect x="801" y="430" width="80" height="64"/><rect x="899" y="430" width="80" height="64"/><rect x="997" y="430" width="80" height="64"/>
+  </g>
+  <text x="115" y="535" fill="#18332f" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="20">SOURCE-VERIFIED RESEARCH · TEST DESIGNED, RESULTS PENDING</text>
+</svg>
