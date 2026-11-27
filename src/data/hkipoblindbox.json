@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-17T10:00:26.405847+00:00",
+  "generated_at": "2026-11-27T01:03:40.026827+00:00",
   "money_mode": "SIMULATED",
   "forecasts": [
     {
@@ -418,7 +418,12 @@
         0.1149436570590159
       ],
       "target_return": 0.1,
-      "score": null
+      "score": {
+        "exact_hit": false,
+        "brier": 0.6831970611084186,
+        "target_touched": false,
+        "ordinal_partial_credit": 0.6666666666666667
+      }
     }
   ],
   "historical": {
