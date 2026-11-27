@@ -70,3 +70,24 @@ history and the original README sections; this tracker preserves both.
 - Existing public routes, weekly experiments and Open Council workflows stay intact.
 - Production release follows required verify, protected merge, Workers Builds and
   exact live-source checks. The verified release event is recorded separately.
+
+
+## 2026-11-27.3 — Eight doors and editorial calendars (private preview)
+
+- Status: **PREVIEW — production deployment held for Robin's review**.
+- Branch: `codex/navigation-calendar-20261127`.
+- Baseline: `71473e79e884f097eaf2acc5e8a3ba069b83f596` (homepage .2).
+- Primary navigation becomes Home · I A M R O B I N, with accessible full door names.
+- Meaning gains 03 Books and 04 Portfolio using the original components, copy,
+  images and interactions; original `/books/` and `/portfolio/` routes remain.
+- Official TideiSun and iSunTV profile links are limited to About and Identity.
+- All four homepage editions link consciousness to Intelligence and include the
+  media, news, dive and mall destinations; regular typography is preserved.
+- Binary and Ouroboros use a shared, dependency-free month calendar with category
+  filters, a selected-day reading list and a complete static archive. Future
+  Binary pipeline items remain separate and folded. Binary closes with 04 Play.
+- Existing publication sources, article routes, weekly workflows and approvals
+  are unchanged. New editions populate the calendars from existing collections.
+- Historical source remains recoverable from the baseline and earlier commits.
+- Production approval, protected merge, Workers Build and live verification:
+  **pending; no deployment performed for this preview**.

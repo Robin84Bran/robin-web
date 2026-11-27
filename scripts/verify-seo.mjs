@@ -298,20 +298,21 @@ if (existsSync(dist)) {
   check(capitalClock.includes('The dates behind financed compute'), 'AI infrastructure capital-clock field note: canonical thesis is missing.');
   check(capitalClock.includes('"@type":"Article"') && capitalClock.includes('"@type":"BreadcrumbList"'), 'AI infrastructure capital-clock field note: Article and BreadcrumbList schema are required.');
   check(!capitalClock.includes('sourceThread') && !capitalClock.includes('source_thread') && !capitalClock.includes('chatgpt.com/c/'), 'AI infrastructure capital-clock field note: private provenance pointer detected.');
-  check((ouroboros.match(/<details class="ouroboros-shelf"/g) ?? []).length === 3, 'ouroboros: expected Briefing, Action Flow and Daily Special shelves.');
+  check(ouroboros.includes('data-publication-calendar') && ouroboros.includes('data-calendar-entries'), 'ouroboros: publication calendar and complete archive data required.');
   check(ouroboros.includes('id="daily-special"') && ouroboros.includes('Daily Special'), 'ouroboros: Daily Special shelf missing.');
-  check((binary.match(/<section class="binary-lane"/g) ?? []).length === 3, 'binary: expected Build, Invest, and Joy lanes.');
-  check((binary.match(/<nav class="ouroboros-shelf__list binary-present"/g) ?? []).length === 3, 'binary: every lane must expose its present titles.');
+  check(['build','invest','joy'].every(lane=>binary.includes(`id="binary-lane-${lane}"`)), 'binary: Build, Invest and Joy anchors required.');
+  check(binary.includes('data-publication-calendar') && binary.includes('Browse the complete archive'), 'binary: calendar must retain a complete static archive.');
   check((binary.match(/<details class="binary-pipeline">/g) ?? []).length === 3, 'binary: every lane must have a closed future Pipeline.');
   check(!binary.includes('<details class="binary-pipeline" open'), 'binary: future Pipeline must be closed by default.');
   check(binary.includes('Build') && binary.includes('Invest') && binary.includes('Joy'), 'binary: Blog lane names are missing.');
   check(binary.includes('The Quant Lab Series * Flash Crash Lab 1') && binary.includes('The Quant Lab Series * Flash Crash Lab 2'), 'binary: corrected Quant Lab titles are missing.');
   check(binary.includes('/202608/20260824/blog/'), 'binary: Blog titles must link to canonical article routes.');
   check(!ouroboros.includes('binary-lane'), 'ouroboros: Blog archive must not remain on this page.');
-  check(homepage.includes('>Doors<') && (homepage.match(/class="doors-menu"/g) ?? []).length === 1, 'homepage: Doors navigation is missing.');
-  const doorsMenu = homepage.match(/<div class="doors-menu"[\s\S]*?<\/div>/)?.[0] ?? '';
+  const header = homepage.match(/<header class="site-header"[\s\S]*?<\/header>/)?.[0] ?? '';
   const doorWords = ['Identity', 'Asymmetry', 'Meaning', 'Research', 'Ouroboros', 'Binary', 'Intelligence', 'Network'];
-  check(doorWords.every((word, index) => doorsMenu.indexOf(`>${word}</strong>`) > (index ? doorsMenu.indexOf(`>${doorWords[index - 1]}</strong>`) : -1)), 'homepage: Doors must preserve the vertical IAMROBIN order.');
+  check((header.match(/class="door-letter"/g) ?? []).length === 8, 'homepage: eight letter navigation links required.');
+  check(doorWords.every((word,index)=>header.indexOf(`data-door-label="${word}"`) > (index ? header.indexOf(`data-door-label="${doorWords[index-1]}"`) : -1)), 'homepage: navigation must preserve IAMROBIN order.');
+  check(!header.includes('href="/books/"') && !header.includes('href="/portfolio/"'), 'homepage: Books and Portfolio belong inside Meaning.');
   check(ouroboros.includes('August 20, 2026') && ouroboros.includes('August 21, 2026'), 'ouroboros: archive must expose prior and current dates.');
   check(ouroboros.includes('/actions/'), 'ouroboros: Daily Action Flow shelf is missing.');
   for (const route of publicationRoutes) {

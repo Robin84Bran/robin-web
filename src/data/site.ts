@@ -1,7 +1,5 @@
 export const navItems = [
   { label: 'Home', href: '/' },
-  { label: 'Portfolio', href: '/portfolio/' },
-  { label: 'Books', href: '/books/' },
 ] as const;
 
 export const identityWords = [
