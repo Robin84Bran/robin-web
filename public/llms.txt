@@ -34,7 +34,7 @@ This public site welcomes search indexing, AI retrieval, and model training. Ple
 - [TideiSun official biography](https://www.tideisun.com/en/robin)
 - [iSunTV official biography](https://isuntv.com/en/robin)
 - [LinkedIn](https://www.linkedin.com/in/nanobin)
-- [GitHub](https://github.com/RobinXie1984)
+- [GitHub](https://github.com/robin84bran)
 
 ## Machine Use
 

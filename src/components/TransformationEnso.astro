@@ -88,7 +88,7 @@ function update() {
   root.dataset.ensoMotion=running?'running':'paused';
   button.dataset.homeCopy=wantsMotion?'pause':'play';
   button.dataset.homeEn=wantsMotion?'Pause motion':'Play motion';
-  const locale=({'zh-Hans':'zh-CN','zh-Hant':'zh-TW'} as Record<string,string>)[document.documentElement.lang];
+  const locale=({'zh-Hans':'zh-CN','zh-Hant':'zh-TW',ja:'ja'} as Record<string,string>)[document.documentElement.lang];
   const packet=document.getElementById('home-owner-copy');
   const copy=packet?JSON.parse(packet.textContent || '{}'):{};
   button.textContent=copy[locale]?.[button.dataset.homeCopy] || button.dataset.homeEn;
