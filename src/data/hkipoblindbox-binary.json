@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T09:04:21.618981+00:00",
+  "generated_at": "2026-11-27T01:03:40.066723+00:00",
   "version": "binary-exec-v1.0",
   "forecasts": [
     {
@@ -328,7 +328,7 @@
   },
   "forward": {
     "forecasts": 19,
-    "reviewed_paths": 15,
+    "reviewed_paths": 16,
     "yes_d5": 7,
     "no_d5": 8,
     "pending_d5": 4,
