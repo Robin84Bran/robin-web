@@ -24,6 +24,7 @@ const { t, a } = homepageCopy(locale);
     <header class="zen-name">
       <p class="eyebrow" {...a("roles", "ENTREPRENEUR · INVESTOR · ENGINEER")}>{t("roles", "ENTREPRENEUR · INVESTOR · ENGINEER")}</p>
       <h1 id="zen-home-title" data-home-html {...a('title','<span>Ms.</span> Robin Xie<small>谢玢 · 謝玢</small>')} set:html={t('title','<span>Ms.</span> Robin Xie<small>谢玢 · 謝玢</small>')} />
+      <a class="zen-about quiet-link" href={identity.aboutPath}><span {...a('aboutLink','Read About Robin')}>{t('aboutLink',identity.aboutLinkLabel)}</span><span aria-hidden="true"> ↗</span></a>
     </header>
 
     <figure class="time-portrait">
@@ -49,3 +50,7 @@ const { t, a } = homepageCopy(locale);
   <IdentityBridge locale={locale} />
   <script is:inline type="application/json" id="home-owner-copy" set:html={JSON.stringify({'zh-CN':homeHans,'zh-TW':homeHant}).replaceAll('<','\\u003c')} />
 </BaseLayout>
+
+<style>
+  .zen-about { display: inline-flex; align-items: center; min-height: 44px; margin-top: .8rem; font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; }
+</style>

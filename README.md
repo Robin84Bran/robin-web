@@ -1,5 +1,13 @@
 # iamrobin.ai — Website v2 / Zen Loop
 
+## Version history
+
+[Website version tracker](docs/WEBSITE_VERSIONS.md) preserves dated upgrades,
+source baselines, review status and actual release receipts. Append a record for
+each future website upgrade and keep the reviewed branch plus tracker in local
+RobinOS2 and this GitHub repository. Preserve older records and Git history.
+The November 27 homepage revision is a preview awaiting Robin's review.
+
 ## Domain redirects — completed October 12, 2026
 
 `iamrobin.net` and `iamrobin.xyz`, including both `www` hosts, permanently

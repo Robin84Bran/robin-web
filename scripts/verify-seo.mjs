@@ -268,7 +268,7 @@ if (existsSync(dist)) {
     check(about.includes(`id="${sector}"`), `about: sector ${sector} missing.`);
   }
   for (const html of [homepage, about]) {
-    check(html.includes('https://github.com/RobinXie1984'), 'identity: public GitHub profile missing.');
+    check(html.includes('https://github.com/robin84bran'), 'identity: public GitHub profile missing.');
     check(!html.includes('medium.com') && !html.includes('GitHub · Quant Lab'), 'identity: retired social profile remains.');
   }
   check(simplifiedHome.includes('谢玢 · ROBIN XIE') && simplifiedHome.includes('调度资本') && simplifiedHome.includes('破晓当下 (NOW)'), 'zh-Hans home: owner-approved Chinese identity copy is missing.');
