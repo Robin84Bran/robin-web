@@ -6,7 +6,8 @@
 source baselines, review status and actual release receipts. Append a record for
 each future website upgrade and keep the reviewed branch plus tracker in local
 RobinOS2 and this GitHub repository. Preserve older records and Git history.
-The November 27 homepage revision is a preview awaiting Robin's review.
+The November 27 homepage revision is owner-approved; its version tracker records
+the regular-weight English, Chinese and Japanese release and verification state.
 
 ## Domain redirects — completed October 12, 2026
 

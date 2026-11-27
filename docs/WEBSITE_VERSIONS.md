@@ -53,3 +53,20 @@ history and the original README sections; this tracker preserves both.
 | 2026-08-21 | [b532d17](https://github.com/Robin84Bran/robin-web/commit/b532d1726326ed768145ba2f99cd7f3d6f837294) | Add Ouroboros daily action flows |
 | 2026-08-21 | [7b20e6e](https://github.com/Robin84Bran/robin-web/commit/7b20e6e5e3fe9eb79cb5782c0e482bc3d859e79b) | Refine Ouroboros archive and publisher typography |
 | 2026-08-20 | [cf237f7](https://github.com/Robin84Bran/robin-web/commit/cf237f7ff57de5e9f423b3299ff4bbfc2d577a2a) | Release iamrobin.ai Website v2 |
+
+
+## 2026-11-27.2 — Approved regular-weight homepage and Japanese edition
+
+- Owner approved the preview and requested production deployment on November 27.
+- Prior preview source: `1c79d921cad8da37ab255bf8b05cac0780d80c14` (record .1 retained).
+- PR: https://github.com/Robin84Bran/robin-web/pull/365.
+- All homepage text uses regular weight in English, both Chinese editions and Japanese;
+  destination links remain links. Earlier Now emphasis tags are removed.
+- Japanese Now uses Robin's supplied seven-paragraph text, including its full ending.
+  Remove only the pasted bold markers around たい and normalize pasted spacing.
+- The Japanese native homepage uses the shared layout and owner-copy language packet;
+  the globe preserves the supplied text during same-page language changes.
+- English and Chinese narrative wording remains the approved version.
+- Existing public routes, weekly experiments and Open Council workflows stay intact.
+- Production release follows required verify, protected merge, Workers Builds and
+  exact live-source checks. The verified release event is recorded separately.

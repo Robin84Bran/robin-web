@@ -84,7 +84,7 @@ test('About uses one structure, all approved paragraphs and intact public links'
 
 test('homepage editions share all owner copy, eight doors and original link destinations', () => {
   const read = p => readFileSync(new URL('../../dist/'+p+'index.html',import.meta.url),'utf8');
-  const pages = ['', 'zh-hans/', 'zh-hant/'].map(read);
+  const pages = ['', 'zh-hans/', 'zh-hant/', 'ja/'].map(read);
   const packet = JSON.parse(pages[0].match(/id="home-owner-copy"[^>]*>(.*?)<\/script>/s)[1]);
   assert.deepEqual(Object.keys(packet['zh-CN']), Object.keys(packet['zh-TW']));
   const labels = ['灵份本真','错位天成','宿旨所向','研究','衔尾回环','零一交织','智能之光','罗网星罗'];
@@ -97,20 +97,22 @@ test('homepage editions share all owner copy, eight doors and original link dest
   for (const [i, html] of pages.entries()) {
     assert.equal((html.match(/<h1\b/g)||[]).length,1);
     assert.equal((html.match(/data-home-copy="past\d"/g)||[]).length,5);
-    assert.equal((html.match(/data-home-copy="now\d"/g)||[]).length,6);
+    assert.equal((html.match(/data-home-copy="now\d"/g)||[]).length,7);
     assert.equal((html.match(/data-home-copy="door\d"/g)||[]).length,8);
     assert.equal((html.match(/data-home-copy="phase\d"/g)||[]).length,4);
     for (const href of links) assert.ok(hrefs(html).includes(href),href);
     assert.match(html,/width="829" height="1122"/);
     if (i) {
-      const copy = packet[i===1?'zh-CN':'zh-TW'];
+      const copy = packet[i===1?'zh-CN':i===2?'zh-TW':'ja'];
       for (const key of ['intro','now1','past0','past1','past2','past3','past4']) {
         assert.ok(html.includes('>'+copy[key]+'</p>'),key+' must be visible, not just in JSON');
       }
     }
   }
+  assert.ok(packet.ja.now6.endsWith('エージェントたちは、今も何かを創り続けている。'));
   for (const copy of Object.values(packet)) {
-    assert.deepEqual(hrefs([0,1,2,3,4,5].map(i=>copy['now'+i]).join('')),links);
+    assert.doesNotMatch(Object.keys(copy).filter(k=>k.startsWith('now')).map(k=>copy[k]).join(''), /<\/?(?:strong|b)\b|\*\*/i);
+    assert.deepEqual(hrefs([0,1,2,3,4,5,6].map(i=>copy['now'+i]).join('')),links);
     assert.doesNotMatch(JSON.stringify(copy),/<(?:script|iframe|img)|on\w+=|javascript:/i);
     assert.doesNotMatch(JSON.stringify(copy),/罗宾|羅賓/);
   }

@@ -1,5 +1,6 @@
 // Owner-authored homepage. September 30 foundation; November 27 Now update.
 import { homeNowHans, homeNowHant } from './homeNow';
+import { homeJapanese } from './homeJapanese';
 // HTML entries contain only our existing presentation tags and public links.
 export const homeHans: Record<string, string> = {
   title: '谢玢<small>ROBIN XIE</small>',
@@ -45,9 +46,9 @@ export const homeHant: Record<string, string> = {
   past4: '沿途之中，我濡墨揮毫、試驗不輟，追尋不同領域間奇妙之牽絆。有些奇思演化為資本遠征，有些凝為親手雕琢之實體。凡此種種，皆將我引向此刻對下一個未知的可能，我依舊懷揣著永不熄滅的好奇。',
 };
 
-export type HomeLocale = 'en' | 'zh-Hans' | 'zh-Hant';
+export type HomeLocale = 'en' | 'zh-Hans' | 'zh-Hant' | 'ja';
 export function homepageCopy(locale: HomeLocale = 'en') {
-  const copy = locale === 'zh-Hans' ? homeHans : locale === 'zh-Hant' ? homeHant : {};
+  const copy = locale === 'zh-Hans' ? homeHans : locale === 'zh-Hant' ? homeHant : locale === 'ja' ? homeJapanese : {};
   return {
     t: (key: string, fallback: string) => copy[key] ?? fallback,
     a: (key: string, fallback: string) => ({ 'data-home-copy': key, 'data-home-en': fallback }),

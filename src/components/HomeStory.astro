@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import IdentityGarden from '../components/IdentityGarden.astro';
 import IdentityBridge from '../components/IdentityBridge.astro';
 import { identityHomeAlternates, identityProfiles } from '../data/identity';
+import { homeJapanese } from '../data/homeJapanese';
 import { createIdentityPageSchemas, createHomeSchemas } from '../lib/seo';
 
 import { homepageCopy, homeHans, homeHant, type HomeLocale } from '../data/homeChinese';
@@ -48,9 +49,14 @@ const { t, a } = homepageCopy(locale);
     <p class="zen-side-note" aria-hidden="true">AMERICAN FRONTIER MIND · JAPANESE ZEN SURFACE</p>
   </section>
   <IdentityBridge locale={locale} />
-  <script is:inline type="application/json" id="home-owner-copy" set:html={JSON.stringify({'zh-CN':homeHans,'zh-TW':homeHant}).replaceAll('<','\\u003c')} />
+  <script is:inline type="application/json" id="home-owner-copy" set:html={JSON.stringify({'zh-CN':homeHans,'zh-TW':homeHant,ja:homeJapanese}).replaceAll('<','\\u003c')} />
 </BaseLayout>
 
 <style>
   .zen-about { display: inline-flex; align-items: center; min-height: 44px; margin-top: .8rem; font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; }
+</style>
+
+<style is:global>
+  /* Owner's regular-weight direction applies to the homepage in every language. */
+  body:has(.zen-home) * { font-weight: 400 !important; }
 </style>
