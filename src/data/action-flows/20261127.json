@@ -1,0 +1,556 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-27",
+  "updated": "2026-11-27",
+  "signalCount": 8,
+  "briefingPath": "/ouroboros/202611/20261127/",
+  "actionItemPath": "/ouroboros/202611/20261127/action_item/",
+  "hero": "/daily-briefing/20261127/hero.webp",
+  "ogImage": "/daily-briefing/20261127/og.webp",
+  "actionHero": "/action-item/20261127/hero.webp",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-23",
+      "visualLabel": "The reported 11.8x reduction is an algorithmic resource estimate for one simulation problem, with researchers selecting and supervising the work.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://arxiv.org/abs/2611.09822"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-26",
+      "visualLabel": "The company release reports about 1,200 parcels per hour in specific testing periods; two reports say throughput surpassed 1,500. The denominator and measurement window are not reconciled.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.prnewswire.com/news-releases/robotera-puts-45-humanoid-robots-into-large-scale-fleet-operations-at-china-post-302951216.html"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://ehangzhou.gov.cn/2026-11/26/c_299807.htm"
+        },
+        {
+          "label": "Source 3",
+          "url": "https://autonews.gasgoo.com/articles/news/45-robotera-m7-embodied-robots-start-work-at-china-post-in-hangzhou-2125945496979783681"
+        },
+        {
+          "label": "Source 4",
+          "url": "https://www.agilityrobotics.com/content/digit-moves-over-100k-totes"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-25",
+      "visualLabel": "One session of listed-product flows does not establish industry-wide capital flight or payment-network usage.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://farside.co.uk/BTC/"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://farside.co.uk/ethereum-etf-flow-all-data/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-26",
+      "visualLabel": "Holder records are not unique buyers or net inflows; ANTx gives price exposure rather than direct share ownership or voting rights.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.theblock.co/newsletters/tokenization-briefing/2026-11-26-tokenized-anthropic-holders-doubled-in-3-days-446013"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://support.kraken.com/articles/anthropic-ipo-access"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "deepDiveAvailable": true,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "visualValue": "2026-11-27",
+      "visualLabel": "A consumed model token measures usage. A prepaid service credit is a restricted contractual balance. Neither item is legal tender.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.federalreserve.gov/releases/H6/current/"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://openai.com/policies/service-credit-terms/"
+        },
+        {
+          "label": "Source 3",
+          "url": "https://bitcoin.org/en/bitcoin-paper"
+        },
+        {
+          "label": "Source 4",
+          "url": "https://iamrobin.ai/ouroboros/202609/20260923/action_item/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-26",
+      "visualLabel": "The just-over-4-trillion-dollar estimate is potential exposure including debt and contractual commitments, rather than annual financing or forecast losses.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.bankofengland.co.uk/financial-stability-report/2026/november-2026"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-24",
+      "visualLabel": "The split, valuation, revenue, renewal economics and debt terms are undisclosed; deployment and fire-detection counts are company claims.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.globenewswire.com/news-release/2026/11/24/3409591/0/en/sensenet-secures-43m-to-expand-its-wildfire-detection-and-intelligence-ecosystem-across-the-us.html"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-25",
+      "visualLabel": "The agreement establishes contracted fees for data and services; it is not clinical evidence of patient survival benefit.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.tempus.com/news/pr/tempus-announces-five-year-extension-of-strategic-oncology-collaboration-with-astra-zeneca/"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://www.sec.gov/Archives/edgar/data/1717115/000119312526466240/d138111d8k.htm"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, November 27, 2026",
+      "description": "Eight bounded actions separate displayed numbers from verified rights and operating outcomes.",
+      "centralJudgment": "Ask what can be proved, transferred, redeemed or enforced tomorrow.",
+      "fieldLine": "Eight signals. Signal 5 maps the rights hidden inside the word token.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Prove it before adding it to shared memory",
+          "why": "Why Robin should care: The transferable design for RobinOS is the right to write into shared memory. A single agent error can affect one run. An unchecked conclusion stored as team knowledge can affect every later run.",
+          "steps": [
+            "Reopen the cited sources and preserve the stated limitation before acting.",
+            "One Action: Replay historical reconciliation failures with two policies: direct lesson writes and ledger-verified lesson writes. Compare total cost and human interventions per correctly resolved case."
+          ],
+          "done": "A dated artifact records the evidence, denominator, result and unresolved gap; otherwise keep this item WATCHING."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "Forty-five postal robots have two throughput stories",
+          "why": "Why Robin should care: A 45-robot fleet establishes clustered deployment. Conflicting throughput definitions leave the economics unresolved. Useful operating evidence needs one window, one denominator, downtime and human assistance.",
+          "steps": [
+            "Reopen the cited sources and preserve the stated limitation before acting.",
+            "One Action: Maintain a comparable table that admits a deployment only when full-shift average, successful items, interventions, downtime and fully loaded cost support one cost-per-successful-item figure."
+          ],
+          "done": "A dated artifact records the evidence, denominator, result and unresolved gap; otherwise keep this item WATCHING."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows and Web3 Health",
+          "title": "BTC and ETH ETFs lost a combined $521.5 million",
+          "why": "Why Robin should care: Capital left the two main US-listed crypto-exposure channels in that session. The figures describe demand for investment exposure. Onchain payments and stablecoin settlement require their own evidence.",
+          "steps": [
+            "Reopen the cited sources and preserve the stated limitation before acting.",
+            "One Action: During the next full trading week, record cumulative BTC and ETH ETF flows beside Visa-adjusted stablecoin settlement volume and test whether investment exposure and network use sustain a divergence."
+          ],
+          "done": "A dated artifact records the evidence, denominator, result and unresolved gap; otherwise keep this item WATCHING."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins, FinTech and Token Rails",
+          "title": "One Anthropic stock now has four onchain wrappers",
+          "why": "Why Robin should care: Four wrappers can display four prices while Nasdaq is closed. The market question is whether a $10,000 sale can find enough bids at the displayed price and settle after fees.",
+          "steps": [
+            "Reopen the cited sources and preserve the stated limitation before acting.",
+            "One Action: At one timestamp, record each wrapper's executable net bid, depth and redemption rights for a $10,000 sale. Record insufficient depth as “no quote.”"
+          ],
+          "done": "A dated artifact records the evidence, denominator, result and unresolved gap; otherwise keep this item WATCHING."
+        },
+        {
+          "signal": 5,
+          "domain": "Content and Visibility",
+          "title": "Can you save an AI token?",
+          "why": "Why Robin should care: SunTV can turn the metaphor into a falsifiable rights map. Consumed tokens record usage. Prepaid credits represent a restricted service balance. A retained, transferable claim accepted by someone else starts to resemble a payment instrument.",
+          "steps": [
+            "Reopen the cited sources and preserve the stated limitation before acting.",
+            "One Action: Create Can You Save an AI Token? at the [English canonical page](https://iamrobin.ai/ouroboros/202611/20261127/action_item/). Use a redacted invoice to separate usage from balance, compare the rights that remain after holding cash, BTC and prepaid credits for one year, test the thesis against a transferable compute contract, and add the strongest reader counterexample to a dated revisions section. Core sources are H.6, OpenAI's terms, the Bitcoin paper and the [SunTV experiment archive](https://iamrobin.ai/ouroboros/202609/20260923/action_item/). Archive a LinkedIn draft asking, “Can you pay another company with last night's unused AI credits?” and invite real settlement evidence."
+          ],
+          "done": "A dated artifact records the evidence, denominator, result and unresolved gap; otherwise keep this item WATCHING."
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure",
+          "title": "Which balance sheet ultimately carries the data center?",
+          "why": "Why Robin should care: A project company can borrow against a tenant's long commitment. Risk is allocated among parent promises, project equity, lenders and equipment residual value. Off-balance-sheet placement makes the final bearer harder to see.",
+          "steps": [
+            "Reopen the cited sources and preserve the stated limitation before acting.",
+            "One Action: Take one public compute-campus lease and diagram how an early tenant exit allocates the rent shortfall among the parent, project equity and lenders, including guarantees and equipment residual value."
+          ],
+          "done": "A dated artifact records the evidence, denominator, result and unresolved gap; otherwise keep this item WATCHING."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-stage Private Markets",
+          "title": "SenseNet's $43 million contains three kinds of capital",
+          "why": "Why Robin should care: Wildfire detection is physical AI with installation and field-maintenance costs. Device count shows reach. Renewal pricing and service cost determine whether reach becomes sustainable economics.",
+          "steps": [
+            "Reopen the cited sources and preserve the stated limitation before acting.",
+            "One Action: Use one utility-customer renewal as the upgrade gate. Move to INVESTIGATE after verifying renewal price, false-alarm rate and field-service cost."
+          ],
+          "done": "A dated artifact records the evidence, denominator, result and unresolved gap; otherwise keep this item WATCHING."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities",
+          "title": "AstraZeneca writes a payment floor into its Tempus renewal",
+          "why": "Why Robin should care: The filing establishes long-term commercial demand for data and services. Evidence about patient survival would come from separate clinical results.",
+          "steps": [
+            "Reopen the cited sources and preserve the stated limitation before acting.",
+            "One Action: At Tempus's next earnings disclosure, separate incremental renewal orders from replaced legacy commitments before revising the revenue forecast."
+          ],
+          "done": "A dated artifact records the evidence, denominator, result and unresolved gap; otherwise keep this item WATCHING."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年11月27日",
+      "description": "八项有边界的行动，把屏幕数字与可验证权利、运营结果分开。",
+      "centralJudgment": "追问明天还能证明、转让、赎回或执行什么。",
+      "fieldLine": "八个信号。信号5画出 token 一词背后的权利。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与智能体",
+          "title": "先证明，再写入共同记忆",
+          "why": "Robin为何在意： 对 RobinOS 来说，最可迁移的设计是共同记忆的写入权。一个智能体的错误影响一次运行；未经验证的结论进入共享经验后，会影响后续每次运行。",
+          "steps": [
+            "行动前重新打开所引来源，并保留已说明的局限。",
+            "One Action： 用一批历史对账故障回放两种流程：直接写入经验，与通过账本校验后写入经验；比较每个正确结案的总成本和人工介入次数。"
+          ],
+          "done": "带日期的产物记录证据、分母、结果和未解决缺口；否则本项保持 WATCHING。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 与机器人",
+          "title": "45台邮政机器人出现了两个吞吐量口径",
+          "why": "Robin为何在意： 45 台同场运行说明集群部署已经发生；互相冲突的吞吐量口径让经济性保持未知。机器人运营证据需要同一时窗、同一分母，并计入停机和人工接管。",
+          "steps": [
+            "行动前重新打开所引来源，并保留已说明的局限。",
+            "One Action： 建立一张同口径表，只接受整班平均、成功件数、人工接管、停机和全成本同时披露的“每个成功处理件成本”。"
+          ],
+          "done": "带日期的产物记录证据、分母、结果和未解决缺口；否则本项保持 WATCHING。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流与 Web3 健康",
+          "title": "感恩节前，BTC与ETH ETF合计净流出5.215亿美元",
+          "why": "Robin为何在意： 这一天的资金从两条主要美国上市加密敞口渠道流出。它描述投资者持仓需求，无法单独说明链上支付或稳定币结算需求。",
+          "steps": [
+            "行动前重新打开所引来源，并保留已说明的局限。",
+            "One Action： 在下一个完整交易周，把 BTC 与 ETH ETF 的累计净流量同 Visa 调整后的稳定币结算量并排记录，检验投资敞口和网络使用是否出现持续背离。"
+          ],
+          "done": "带日期的产物记录证据、分母、结果和未解决缺口；否则本项保持 WATCHING。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币、金融科技与代币轨道",
+          "title": "同一只Anthropic股票出现四种链上包装",
+          "why": "Robin为何在意： 休市时，四种包装可以显示四个价格。真正的市场问题是：一笔 1 万美元卖单能否按屏幕价格找到足够买盘，并在费用后完成结算。",
+          "steps": [
+            "行动前重新打开所引来源，并保留已说明的局限。",
+            "One Action： 在同一时刻记录四种包装对 1 万美元卖单的可执行净买价、深度与赎回权；深度不足时记作“无报价”。"
+          ],
+          "done": "带日期的产物记录证据、分母、结果和未解决缺口；否则本项保持 WATCHING。"
+        },
+        {
+          "signal": 5,
+          "domain": "内容与可见度",
+          "title": "一个AI token，存得住吗？",
+          "why": "Robin为何在意： SunTV 可以把抽象比喻变成一张可反驳的权利地图：用掉的 token 记录消耗；预付额度代表有限服务余额；可转让并由他人接受的权利才开始接近支付工具。",
+          "steps": [
+            "行动前重新打开所引来源，并保留已说明的局限。",
+            "One Action： 创建 Can You Save an AI Token?／《一个 AI token，存得住吗？》，发布至 [英文主页面](https://iamrobin.ai/ouroboros/202611/20261127/action_item/)。用一张脱敏账单区分用量与余额，比较现金、BTC 与预付额度持有一年后的权利，再用可转让算力合约检验论点，并把最强读者反例加入修订栏。主要来源为 H.6、OpenAI 条款、比特币白皮书及 [SunTV 实验档案](https://iamrobin.ai/ouroboros/202609/20260923/action_item/)；首发 LinkedIn 草稿以“你能把昨晚没用完的 AI 额度付给另一家公司吗？”征集结算凭据。"
+          ],
+          "done": "带日期的产物记录证据、分母、结果和未解决缺口；否则本项保持 WATCHING。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基础设施",
+          "title": "数据中心风险最终落在哪张资产负债表？",
+          "why": "Robin为何在意： 项目公司可以依靠租户长期承诺借钱。风险会沿母公司承诺、项目股权、贷款人和设备残值分配；“表外”描述会计位置，也增加了识别最终承担者的难度。",
+          "steps": [
+            "行动前重新打开所引来源，并保留已说明的局限。",
+            "One Action： 选一份公开算力园区租约，画出租户提前退出时租金缺口在母公司、项目股东和贷款人之间的分配顺序，并标出担保与设备残值。"
+          ],
+          "done": "带日期的产物记录证据、分母、结果和未解决缺口；否则本项保持 WATCHING。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私募",
+          "title": "SenseNet的4,300万美元包含三种资金",
+          "why": "Robin为何在意： 野火探测是需要安装和现场维护的实体 AI。设备数量说明覆盖范围；客户续约价格与维护成本才决定规模能否转化为可持续经济性。",
+          "steps": [
+            "行动前重新打开所引来源，并保留已说明的局限。",
+            "One Action： 以一份公用事业客户续约为升级门槛；核实续约价格、误报率和现场维护成本后，才将该公司升级为 INVESTIGATE。"
+          ],
+          "done": "带日期的产物记录证据、分母、结果和未解决缺口；否则本项保持 WATCHING。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开股票",
+          "title": "阿斯利康给Tempus续约写下付款底线",
+          "why": "Robin为何在意： 这份文件证明药企愿意长期购买数据和服务。它属于商业需求证据；患者生存获益需要另外的临床结果。",
+          "steps": [
+            "行动前重新打开所引来源，并保留已说明的局限。",
+            "One Action： 在 Tempus 下一次业绩披露中，把续约收入分成新增订单与替代旧合同两部分，再决定是否调整收入预测。"
+          ],
+          "done": "带日期的产物记录证据、分母、结果和未解决缺口；否则本项保持 WATCHING。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年11月27日",
+      "description": "八項有邊界的行動，把螢幕數字與可驗證權利、營運結果分開。",
+      "centralJudgment": "追問明天還能證明、轉讓、贖回或執行什麼。",
+      "fieldLine": "八個訊號。訊號5畫出 token 一詞背後的權利。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與智慧體",
+          "title": "先證明，再寫入共同記憶",
+          "why": "Robin為何在意： 對 RobinOS 來說，最可遷移的設計是共同記憶的寫入權。一個智慧體的錯誤影響一次執行；未經驗證的結論進入共享經驗後，會影響後續每次執行。",
+          "steps": [
+            "行動前重新開啟所引來源，並保留已說明的限制。",
+            "One Action： 用一批歷史對賬故障回放兩種流程：直接寫入經驗，與透過賬本校驗後寫入經驗；比較每個正確結案的總成本和人工介入次數。"
+          ],
+          "done": "帶日期的產物記錄證據、分母、結果和未解缺口；否則本項維持 WATCHING。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 與機器人",
+          "title": "45臺郵政機器人出現了兩個吞吐量口徑",
+          "why": "Robin為何在意： 45 臺同場執行說明叢集部署已經發生；互相沖突的吞吐量口徑讓經濟性保持未知。機器人運營證據需要同一時窗、同一分母，並計入停機和人工接管。",
+          "steps": [
+            "行動前重新開啟所引來源，並保留已說明的限制。",
+            "One Action： 建立一張同口徑表，只接受整班平均、成功件數、人工接管、停機和全成本同時披露的“每個成功處理件成本”。"
+          ],
+          "done": "帶日期的產物記錄證據、分母、結果和未解缺口；否則本項維持 WATCHING。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本流與 Web3 健康",
+          "title": "感恩節前，BTC與ETH ETF合計淨流出5.215億美元",
+          "why": "Robin為何在意： 這一天的資金從兩條主要美國上市加密敞口渠道流出。它描述投資者持倉需求，無法單獨說明鏈上支付或穩定幣結算需求。",
+          "steps": [
+            "行動前重新開啟所引來源，並保留已說明的限制。",
+            "One Action： 在下一個完整交易周，把 BTC 與 ETH ETF 的累計淨流量同 Visa 調整後的穩定幣結算量並排記錄，檢驗投資敞口和網路使用是否出現持續背離。"
+          ],
+          "done": "帶日期的產物記錄證據、分母、結果和未解缺口；否則本項維持 WATCHING。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣、金融科技與代幣軌道",
+          "title": "同一只Anthropic股票出現四種鏈上包裝",
+          "why": "Robin為何在意： 休市時，四種包裝可以顯示四個價格。真正的市場問題是：一筆 1 萬美元賣單能否按螢幕價格找到足夠買盤，並在費用後完成結算。",
+          "steps": [
+            "行動前重新開啟所引來源，並保留已說明的限制。",
+            "One Action： 在同一時刻記錄四種包裝對 1 萬美元賣單的可執行淨買價、深度與贖回權；深度不足時記作“無報價”。"
+          ],
+          "done": "帶日期的產物記錄證據、分母、結果和未解缺口；否則本項維持 WATCHING。"
+        },
+        {
+          "signal": 5,
+          "domain": "內容與可見度",
+          "title": "一個AI token，存得住嗎？",
+          "why": "Robin為何在意： SunTV 可以把抽象比喻變成一張可反駁的權利地圖：用掉的 token 記錄消耗；預付額度代表有限服務餘額；可轉讓並由他人接受的權利才開始接近支付工具。",
+          "steps": [
+            "行動前重新開啟所引來源，並保留已說明的限制。",
+            "One Action： 建立 Can You Save an AI Token?／《一個 AI token，存得住嗎？》，釋出至 [英文主頁面](https://iamrobin.ai/ouroboros/202611/20261127/action_item/)。用一張脫敏賬單區分用量與餘額，比較現金、BTC 與預付額度持有一年後的權利，再用可轉讓算力合約檢驗論點，並把最強讀者反例加入修訂欄。主要來源為 H.6、OpenAI 條款、比特幣白皮書及 [SunTV 實驗檔案](https://iamrobin.ai/ouroboros/202609/20260923/action_item/)；首發 LinkedIn 草稿以“你能把昨晚沒用完的 AI 額度付給另一家公司嗎？”徵集結算憑據。"
+          ],
+          "done": "帶日期的產物記錄證據、分母、結果和未解缺口；否則本項維持 WATCHING。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基礎設施",
+          "title": "資料中心風險最終落在哪張資產負債表？",
+          "why": "Robin為何在意： 專案公司可以依靠租戶長期承諾借錢。風險會沿母公司承諾、專案股權、貸款人和裝置殘值分配；“表外”描述會計位置，也增加了識別最終承擔者的難度。",
+          "steps": [
+            "行動前重新開啟所引來源，並保留已說明的限制。",
+            "One Action： 選一份公開算力園區租約，畫出租戶提前退出時租金缺口在母公司、專案股東和貸款人之間的分配順序，並標出擔保與裝置殘值。"
+          ],
+          "done": "帶日期的產物記錄證據、分母、結果和未解缺口；否則本項維持 WATCHING。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私募",
+          "title": "SenseNet的4,300萬美元包含三種資金",
+          "why": "Robin為何在意： 野火探測是需要安裝和現場維護的實體 AI。裝置數量說明覆蓋範圍；客戶續約價格與維護成本才決定規模能否轉化為可持續經濟性。",
+          "steps": [
+            "行動前重新開啟所引來源，並保留已說明的限制。",
+            "One Action： 以一份公用事業客戶續約為升級門檻；核實續約價格、誤報率和現場維護成本後，才將該公司升級為 INVESTIGATE。"
+          ],
+          "done": "帶日期的產物記錄證據、分母、結果和未解缺口；否則本項維持 WATCHING。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開股票",
+          "title": "阿斯利康給Tempus續約寫下付款底線",
+          "why": "Robin為何在意： 這份檔案證明藥企願意長期購買資料和服務。它屬於商業需求證據；患者生存獲益需要另外的臨床結果。",
+          "steps": [
+            "行動前重新開啟所引來源，並保留已說明的限制。",
+            "One Action： 在 Tempus 下一次業績披露中，把續約收入分成新增訂單與替代舊合同兩部分，再決定是否調整收入預測。"
+          ],
+          "done": "帶日期的產物記錄證據、分母、結果和未解缺口；否則本項維持 WATCHING。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー 2026年11月27日",
+      "description": "八つの限定行動で、表示数字と検証可能な権利・運用成果を分ける。",
+      "centralJudgment": "明日も証明、移転、償還、執行できるものを問う。",
+      "fieldLine": "八つのシグナル。シグナル5はtokenという語に隠れた権利を描く。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "フロンティアモデルとエージェント",
+          "title": "共有記憶へ入れる前に証明する",
+          "why": "Robinへの意味： RobinOSへ移せる設計は、共有記憶への書き込み権限だ。単独エージェントの誤りは一回の実行へ影響する。未検証の結論がチーム知識になれば、その後の全実行へ影響が広がる。",
+          "steps": [
+            "行動前に引用元を再確認し、明記された制約を残す。",
+            "One Action： 過去の照合障害を、教訓を直接書き込む方式と、台帳検証後に書き込む方式で再生し、正しく解決した一件当たりの総費用と人の介入回数を比較する。"
+          ],
+          "done": "日付入り成果物に証拠、分母、結果、未解決点を記録する。未達ならWATCHINGを維持する。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AIとロボティクス",
+          "title": "45台の郵便ロボットに二つの処理量がある",
+          "why": "Robinへの意味： 45台の同時稼働は集団配備の事実を示す。処理量の定義が食い違うため、経済性は未確定だ。有用な運用証拠には同じ時間窓、同じ分母、停止時間、人の支援が要る。",
+          "steps": [
+            "行動前に引用元を再確認し、明記された制約を残す。",
+            "One Action： シフト全体の平均、成功処理数、人の介入、停止時間、全費用がそろった配備だけを受け入れ、「成功処理一件当たり費用」を比較する表を維持する。"
+          ],
+          "done": "日付入り成果物に証拠、分母、結果、未解決点を記録する。未達ならWATCHINGを維持する。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資本フローとWeb3",
+          "title": "BTCとETHのETFから合計5億2,150万ドルが流出",
+          "why": "Robinへの意味： この一取引日には、米国上場の主要な暗号資産エクスポージャー二経路から資金が出た。この数字は投資エクスポージャー需要を測る。オンチェーン決済とステーブルコイン決済には別の証拠が要る。",
+          "steps": [
+            "行動前に引用元を再確認し、明記された制約を残す。",
+            "One Action： 次の完全な取引週に、BTCとETHのETF累積純フローをVisa調整後のステーブルコイン決済量と並べ、投資需要とネットワーク利用の乖離が続くか検証する。"
+          ],
+          "done": "日付入り成果物に証拠、分母、結果、未解決点を記録する。未達ならWATCHINGを維持する。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコイン、FinTech、トークン基盤",
+          "title": "一つのAnthropic株に四つのオンチェーン包装",
+          "why": "Robinへの意味： Nasdaq休場中でも四つの包装は四つの価格を表示できる。市場としての問いは、1万ドルの売却が表示価格付近で十分な買い注文を見つけ、手数料控除後に決済できるかだ。",
+          "steps": [
+            "行動前に引用元を再確認し、明記された制約を残す。",
+            "One Action： 同じ時刻に、各包装で1万ドルを売る場合の執行可能な純買値、板の厚み、償還権を記録する。厚み不足は「気配なし」と記録する。"
+          ],
+          "done": "日付入り成果物に証拠、分母、結果、未解決点を記録する。未達ならWATCHINGを維持する。"
+        },
+        {
+          "signal": 5,
+          "domain": "コンテンツと可視性",
+          "title": "AI tokenは貯められるか",
+          "why": "Robinへの意味： SunTVは比喩を検証可能な権利マップへ変えられる。消費済みtokenは利用を記録する。前払いクレジットは制限付きサービス残高を表す。保有でき、譲渡でき、相手が受け入れる請求権は、決済手段に近づく。",
+          "steps": [
+            "行動前に引用元を再確認し、明記された制約を残す。",
+            "One Action： Can You Save an AI Token?／「AI tokenは貯められるか」を[英語正規ページ](https://iamrobin.ai/ouroboros/202611/20261127/action_item/)へ作成する。匿名化した請求書で利用量と残高を分け、現金、BTC、前払いクレジットを一年保有した後に残る権利を比較し、譲渡可能な計算資源契約で主張を検証する。最も強い読者の反例を日付付き改訂欄へ加える。主要資料はH.6、OpenAI条件、Bitcoin論文、[SunTV実験アーカイブ](https://iamrobin.ai/ouroboros/202609/20260923/action_item/)である。LinkedIn草稿には「昨夜使わなかったAIクレジットで別会社へ支払えるか」と問い、実際の決済証拠を募る。"
+          ],
+          "done": "日付入り成果物に証拠、分母、結果、未解決点を記録する。未達ならWATCHINGを維持する。"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラ",
+          "title": "データセンターを最終的に背負うバランスシート",
+          "why": "Robinへの意味： プロジェクト会社はテナントの長期約束を基に借り入れられる。リスクは親会社の約束、プロジェクト株主、貸し手、設備残価へ配分される。オフバランス化は最終的な負担者を見えにくくする。",
+          "steps": [
+            "行動前に引用元を再確認し、明記された制約を残す。",
+            "One Action： 公開された計算資源キャンパスの賃貸契約を一つ選び、テナントの早期退出時に賃料不足が親会社、プロジェクト株主、貸し手へどう配分されるかを、保証と設備残価も含めて図示する。"
+          ],
+          "done": "日付入り成果物に証拠、分母、結果、未解決点を記録する。未達ならWATCHINGを維持する。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期未公開市場",
+          "title": "SenseNetの4,300万ドルには三種類の資金が入る",
+          "why": "Robinへの意味： 山火事検知は設置と現場保守を伴うPhysical AIだ。台数は到達範囲を示す。更新価格と保守費用が、到達範囲を持続可能な経済性へ変えられるかを決める。",
+          "steps": [
+            "行動前に引用元を再確認し、明記された制約を残す。",
+            "One Action： WATCH。 電力・水道など公益事業顧客の更新契約を昇格条件にする。更新価格、誤報率、現場保守費用を確認した後にINVESTIGATEへ進める。"
+          ],
+          "done": "日付入り成果物に証拠、分母、結果、未解決点を記録する。未達ならWATCHINGを維持する。"
+        },
+        {
+          "signal": 8,
+          "domain": "上場株式",
+          "title": "AstraZenecaがTempus更新契約へ支払下限を置く",
+          "why": "Robinへの意味： 提出書類はデータとサービスへの長期商業需要を示す。患者生存への効果は別の臨床結果で判断する。",
+          "steps": [
+            "行動前に引用元を再確認し、明記された制約を残す。",
+            "One Action： Tempusの次回業績開示で、更新分を純増注文と旧契約の置換に分けて確認し、収益予測を修正するか決める。"
+          ],
+          "done": "日付入り成果物に証拠、分母、結果、未解決点を記録する。未達ならWATCHINGを維持する。"
+        }
+      ]
+    }
+  }
+}
