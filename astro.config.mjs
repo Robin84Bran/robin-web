@@ -14,7 +14,7 @@ export default defineConfig({
   integrations: [
     languagePages(),
     sitemap({
-      customPages: ["https://iamrobin.ai/asymmetry/black-friday-selloff/", "https://iamrobin.ai/intelligence/supply-chain-map/", "https://iamrobin.ai/meaning/Bran_lab/", "https://iamrobin.ai/meaning/Bran_lab/SuperRun/", "https://iamrobin.ai/meaning/Bran_lab/GeoDash/", "https://iamrobin.ai/meaning/Bran_lab/PacMan/", "https://iamrobin.ai/meaning/Bran_lab/BlockLab/", "https://iamrobin.ai/meaning/Bran_lab/WonderTrail/", "https://iamrobin.ai/meaning/Bran_lab/KartLab/", "https://iamrobin.ai/meaning/Bran_lab/CloudMunch/", "https://iamrobin.ai/meaning/Bran_lab/BounceTrials/", "https://iamrobin.ai/meaning/Bran_lab/StarboundMath/"],
+      customPages: ["https://iamrobin.ai/asymmetry/btc-cycle-hypothesis/", "https://iamrobin.ai/asymmetry/black-friday-selloff/", "https://iamrobin.ai/intelligence/supply-chain-map/", "https://iamrobin.ai/meaning/Bran_lab/", "https://iamrobin.ai/meaning/Bran_lab/SuperRun/", "https://iamrobin.ai/meaning/Bran_lab/GeoDash/", "https://iamrobin.ai/meaning/Bran_lab/PacMan/", "https://iamrobin.ai/meaning/Bran_lab/BlockLab/", "https://iamrobin.ai/meaning/Bran_lab/WonderTrail/", "https://iamrobin.ai/meaning/Bran_lab/KartLab/", "https://iamrobin.ai/meaning/Bran_lab/CloudMunch/", "https://iamrobin.ai/meaning/Bran_lab/BounceTrials/", "https://iamrobin.ai/meaning/Bran_lab/StarboundMath/"],
       filter: (page) => {
         const path = new URL(page).pathname;
         return [
@@ -29,7 +29,7 @@ export default defineConfig({
           '/intelligence/council/expertise-in-a-folder/',
           '/intelligence/council/assistant-goes-first/',
           '/research/', '/research/honestagent/', '/research/work-or-proof/', '/research/signal-or-silence/', '/research/receipt-gap/', '/research/three-rules-one-lunch/', '/research/bridge-or-bus/', '/research/useful-core/', '/research/portable-self/', '/research/one-door-many-hands/',
-          '/asymmetry/quant_lab/', '/asymmetry/flash-crash-lab/', '/asymmetry/flash-crash-lab/the-alligator/',
+          '/asymmetry/btc-cycle-hypothesis/', '/asymmetry/quant_lab/', '/asymmetry/flash-crash-lab/', '/asymmetry/flash-crash-lab/the-alligator/',
           '/', '/about/', '/identity/', '/network/', '/asymmetry/btc_probability_atlas/', '/resonance/eval/ai_berkshire/', '/intelligence/three-rule-swarm/', '/intelligence/one-door/', '/intelligence/receipt-gap/', '/intelligence/portable-self/', '/intelligence/signal-or-silence/', '/intelligence/useful-core/', '/intelligence/bridge-or-bus/', '/intelligence/work-or-proof/', '/intelligence/checkpoint-or-restart/', '/intelligence/your-queue-or-mine/',
           '/zh-hans/', '/zh-hans/about/', '/zh-hans/network/',
           '/zh-hant/', '/zh-hant/about/', '/zh-hant/network/',
