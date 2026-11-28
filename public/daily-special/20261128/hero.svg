@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">A coding agent checks a repaired web page</title>
+  <desc id="desc">A quiet editorial illustration showing a browser window, six defect markers, a code panel and a measuring rule.</desc>
+  <rect width="1600" height="900" fill="#f3efe7"/>
+  <g stroke="#d9d1c3" stroke-width="1" opacity="0.7">
+    <path d="M0 120H1600M0 240H1600M0 360H1600M0 480H1600M0 600H1600M0 720H1600M0 840H1600"/>
+    <path d="M160 0V900M320 0V900M480 0V900M640 0V900M800 0V900M960 0V900M1120 0V900M1280 0V900M1440 0V900"/>
+  </g>
+  <rect x="146" y="142" width="934" height="594" rx="16" fill="#fffdf8" stroke="#25231f" stroke-width="3"/>
+  <path d="M146 214H1080" stroke="#25231f" stroke-width="3"/>
+  <circle cx="192" cy="178" r="10" fill="#cf6a4b"/><circle cx="226" cy="178" r="10" fill="#d9a645"/><circle cx="260" cy="178" r="10" fill="#5d8f78"/>
+  <rect x="206" y="278" width="376" height="42" rx="4" fill="#25231f"/>
+  <rect x="206" y="350" width="616" height="16" rx="8" fill="#b9afa0"/>
+  <rect x="206" y="386" width="530" height="16" rx="8" fill="#d9d1c3"/>
+  <rect x="206" y="446" width="386" height="188" rx="10" fill="#dfe7df" stroke="#5d8f78" stroke-width="2"/>
+  <rect x="634" y="446" width="150" height="52" rx="26" fill="#cf6a4b"/>
+  <rect x="766" y="474" width="150" height="52" rx="26" fill="#25231f"/>
+  <g fill="#cf6a4b" stroke="#fffdf8" stroke-width="4">
+    <circle cx="875" cy="292" r="19"/><circle cx="935" cy="358" r="19"/><circle cx="830" cy="476" r="19"/>
+    <circle cx="573" cy="610" r="19"/><circle cx="212" cy="694" r="19"/><circle cx="1016" cy="688" r="19"/>
+  </g>
+  <g fill="#fffdf8" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle">
+    <text x="875" y="299">1</text><text x="935" y="365">2</text><text x="830" y="483">3</text>
+    <text x="573" y="617">4</text><text x="212" y="701">5</text><text x="1016" y="695">6</text>
+  </g>
+  <rect x="1138" y="188" width="324" height="430" rx="14" fill="#25231f"/>
+  <g fill="none" stroke-linecap="round" stroke-width="12">
+    <path d="M1194 262H1368" stroke="#d9d1c3"/><path d="M1194 314H1408" stroke="#5d8f78"/><path d="M1228 366H1384" stroke="#cf6a4b"/>
+    <path d="M1194 418H1324" stroke="#d9d1c3"/><path d="M1228 470H1410" stroke="#d9a645"/><path d="M1194 522H1352" stroke="#d9d1c3"/>
+  </g>
+  <path d="M1110 686H1470" stroke="#25231f" stroke-width="10"/>
+  <g stroke="#25231f" stroke-width="4"><path d="M1132 660V712M1184 674V700M1236 674V700M1288 660V712M1340 674V700M1392 674V700M1444 660V712"/></g>
+  <text x="146" y="802" fill="#25231f" font-family="Georgia, serif" font-size="44">Eyes. Hands. A measuring tape.</text>
+  <text x="146" y="850" fill="#6d665d" font-family="Arial, sans-serif" font-size="24" letter-spacing="2">DAILY SPECIAL · 28 NOVEMBER 2026</text>
+</svg>
