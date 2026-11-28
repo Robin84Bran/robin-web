@@ -96,14 +96,12 @@ function nativeSimulationLanguage(lang) {
     'zh-TW': ['首頁', '項目', '書籍', '八扇門', '身份', '不對稱', '意義', '研究', '銜尾蛇', '二進制', '智慧', '連結'],
     ja: ['ホーム', 'プロジェクト', '書籍', '八つの扉', 'アイデンティティ', '非対称性', '意味', '研究', 'ウロボロス', 'バイナリー', '知性', 'つながり'],
   }[lang] || [];
-  document.querySelectorAll('.site-header .nav-list > li > a').forEach((node, i) => { if (chrome[i]) node.textContent = chrome[i]; });
-  const doors = document.querySelector('.site-header .doors-nav summary');
-  if (doors && chrome[3]) doors.textContent = chrome[3];
-  document.querySelectorAll('.site-header .doors-menu strong').forEach((node, i) => { if (chrome[i + 4]) node.textContent = chrome[i + 4]; });
-  const homePacket = document.getElementById('home-owner-copy');
-  const homeCopy = homePacket ? JSON.parse(homePacket.textContent)[lang] : null;
-  if (homeCopy) document.querySelectorAll('.site-header .doors-menu strong').forEach((node, i) => {
-    node.textContent = homeCopy['door'+i];
+  const home = document.querySelector('.site-header .nav-list > li > a:not(.door-letter)');
+  if (home && chrome[0]) home.textContent = chrome[0];
+  document.querySelectorAll('.site-header .door-letter').forEach((node, i) => {
+    const label = chrome[i + 4] || node.dataset.doorLabel;
+    node.setAttribute('aria-label', label); node.setAttribute('title', label);
+    node.querySelector('.sr-only').textContent = label;
   });
   const locale = ({ 'zh-CN': 'zh-Hans', 'zh-TW': 'zh-Hant' })[lang] || lang;
   for (const id of ['ab-language', 'af-language', 'ai-berkshire-language', ...(atlas ? ['language'] : [])]) {

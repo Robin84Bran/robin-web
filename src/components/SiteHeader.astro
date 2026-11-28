@@ -26,30 +26,28 @@ const { currentPath } = Astro.props;
             </li>
           ))
         }
-        <li class="doors-nav">
-          <details>
-            <summary aria-label="Open the eight identity doors">Doors</summary>
-            <div class="doors-menu" role="group" aria-label="Identity doors">
-              {identityWords.map((entry) => (
-                <a aria-current={currentPath === `/${entry.slug}/` ? 'page' : undefined} href={`/${entry.slug}/`}>
-                  <span aria-hidden="true">{entry.letter}</span>
-                  <strong>{entry.word}</strong>
-                </a>
-              ))}
-            </div>
-          </details>
-        </li>
+        {identityWords.map((entry) => (
+          <li><a class="door-letter" data-door-label={entry.word} aria-label={entry.word} title={entry.word}
+            aria-current={currentPath.startsWith(`/${entry.slug}/`) ? 'page' : undefined} href={`/${entry.slug}/`}>
+            <span aria-hidden="true">{entry.letter}</span><span class="sr-only">{entry.word}</span>
+          </a></li>
+        ))}
       </ul>
     </nav>
     <div class="github-link official-links" role="group" aria-label="Official profiles">
-      <a href={socialLinks.official} rel="noreferrer" target="_blank">TideiSun <span aria-hidden="true">↗</span></a>
-      <a href={socialLinks.officialIsun} rel="noreferrer" target="_blank">iSunTV <span aria-hidden="true">↗</span></a>
+      {/^\/(?:zh-hans\/|zh-hant\/|ja\/)?(?:about|identity)(?:\/|$)/.test(currentPath) && <><a href={socialLinks.official} rel="noreferrer" target="_blank">TideiSun <span aria-hidden="true">↗</span></a>
+      <a href={socialLinks.officialIsun} rel="noreferrer" target="_blank">iSunTV <span aria-hidden="true">↗</span></a></>}
       <LanguageMenu />
     </div>
   </div>
 </header>
 
 <style>
+  .nav-list { gap: clamp(.7rem, 2vw, 1.5rem); }
+  .nav-list .door-letter { min-width: 1.5rem; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
+  .header-inner { grid-template-columns: auto minmax(0, 1fr) auto; }
+  .header-inner > nav { justify-self: center; }
+  @media(max-width: 640px) { .header-inner { grid-template-columns: 1fr auto; } .header-inner > nav { grid-row: 2; grid-column: 1 / -1; width: 100%; } .nav-list { justify-content: space-between; gap: .3rem; } .official-links { grid-column: 2; grid-row: 1; } }
   .official-links { display: flex; flex-wrap: nowrap; align-items: center; justify-content: flex-end; gap: .4rem .85rem; }
   .official-links a { text-decoration: none; }
 </style>

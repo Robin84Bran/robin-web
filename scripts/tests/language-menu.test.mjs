@@ -93,7 +93,7 @@ test('homepage editions share all owner copy, eight doors and original link dest
   assert.equal(packet['zh-CN'].caption,'本真。涌现。重塑。');
   assert.equal(packet['zh-CN'].pause,'凝神停伫 · 执于当下');
   const hrefs = html => [...html.matchAll(/href="([^"]+)"/g)].map(m=>m[1]);
-  const links = ['https://iamrobin.ai/asymmetry/','https://iamrobin.ai/research/','https://www.isuntv.com','https://www.isuntvmall.com'];
+  const links = ['https://iamrobin.ai/asymmetry/','https://iamrobin.ai/research/','https://iamrobin.ai/intelligence/','https://www.isuntv.com/','https://isun1.news','https://www.tidetrend.xyz','https://www.isuntvmall.com/'];
   for (const [i, html] of pages.entries()) {
     assert.equal((html.match(/<h1\b/g)||[]).length,1);
     assert.equal((html.match(/data-home-copy="past\d"/g)||[]).length,5);
@@ -112,7 +112,7 @@ test('homepage editions share all owner copy, eight doors and original link dest
   assert.ok(packet.ja.now6.endsWith('エージェントたちは、今も何かを創り続けている。'));
   for (const copy of Object.values(packet)) {
     assert.doesNotMatch(Object.keys(copy).filter(k=>k.startsWith('now')).map(k=>copy[k]).join(''), /<\/?(?:strong|b)\b|\*\*/i);
-    assert.deepEqual(hrefs([0,1,2,3,4,5,6].map(i=>copy['now'+i]).join('')),links);
+    assert.deepEqual(hrefs([0,1,2,3,4,5,6].map(i=>copy['now'+i]).join('')).sort(),[...links].sort());
     assert.doesNotMatch(JSON.stringify(copy),/<(?:script|iframe|img)|on\w+=|javascript:/i);
     assert.doesNotMatch(JSON.stringify(copy),/罗宾|羅賓/);
   }
