@@ -1,0 +1,16 @@
+A coding agent can look twice and still stop too early.
+
+GLM-5.4 repeats a 28-layer block across two internal iterations. ZCode adds vision, browser tools and device-size views. Those are meaningful capabilities.
+
+They create two loops:
+
+1. The model revisits its internal representation.
+2. The agent inspects, edits and reopens the page.
+
+A verified repair needs a third loop outside the agent's confidence: frozen acceptance tests, regression checks and a blind review of the final desktop and phone views.
+
+The proposed pilot plants six defects in one disposable page. Every defect stays in the denominator. New regressions and false declarations of completion stay visible too.
+
+The tools are real. The repair score is still blank.
+
+Read the four-language story and download the sourced carousel at IAmRobin.ai. Website publication does not imply a LinkedIn post.
