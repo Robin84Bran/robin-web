@@ -70,3 +70,13 @@ history and the original README sections; this tracker preserves both.
 - Existing public routes, weekly experiments and Open Council workflows stay intact.
 - Production release follows required verify, protected merge, Workers Builds and
   exact live-source checks. The verified release event is recorded separately.
+
+
+## 2026-11-28 — BTC Cycle Hypothesis
+
+- Owner approved the revised private preview for publication on November 28.
+- Baseline: `e1e91297bec50d0c53e4905cac554bda2e81eb6d`.
+- Adds the study to Asymmetry → Crypto immediately after BTC Probability Atlas.
+- Preserves the approved article, original reproduced figures, calculator and
+  published references. Private working documents are not included.
+- Production release follows the protected merge and Workers Builds pipeline.
