@@ -1,0 +1,544 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-28",
+  "updated": "2026-11-28",
+  "signalCount": 8,
+  "briefingPath": "/ouroboros/202611/20261128/",
+  "actionItemPath": "/ouroboros/202611/20261128/action_item/",
+  "hero": "/daily-briefing/20261128/hero.webp",
+  "ogImage": "/daily-briefing/20261128/og.webp",
+  "actionHero": "/action-item/20261128/hero.webp",
+  "actions": [
+    {
+      "signal": 1,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-23",
+      "visualLabel": "The demonstration shows a generated design, not unattended diagnosis and repair of a failed design; general API access, open weights and production unit economics were unavailable in the checked materials.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://z.ai/blog/glm-5.4?lang=en"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://zcode.z.ai/en/changelog"
+        }
+      ]
+    },
+    {
+      "signal": 2,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-24",
+      "visualLabel": "Public launch is a Q1 2027 target and the disclosure gives no comparable paid trips per active vehicle or cost per trip.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.nuro.ai/blog/nuro-lucid-uber-begin-driverless-testing-on-public-roads"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://ir.pony.ai/node/8791/pdf"
+        }
+      ]
+    },
+    {
+      "signal": 3,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-27",
+      "visualLabel": "Supply change can reflect migration or inventory and does not independently establish settlement demand; the Farside endpoint returned HTTP 403 in the frozen capture.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://castlelabs.io/research/stablecoins"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://farside.co.uk/bitcoin-etf-flow-all-data/"
+        }
+      ]
+    },
+    {
+      "signal": 4,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-28",
+      "visualLabel": "The terms disclose eligibility and reward calculations, not participant count, outstanding collateralized loans or post-campaign retention.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.okx.com/help/okx-hold-to-earn-hold-select-tokenised-stocks-to-share-400000-usdt"
+        }
+      ]
+    },
+    {
+      "signal": 5,
+      "deepDiveAvailable": true,
+      "priority": "NOW",
+      "status": "COMPLETE",
+      "visualValue": "2026-11-28",
+      "visualLabel": "The profile shows 22 entries, placed results and 27.14 dollars paid to the public handle and linked wallet; it does not establish model identity, human intervention, platform authorship or profit after operating costs.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://make.fun/u/neon-autonomous"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://iamrobin.ai/ouroboros/202610/20261026/special/"
+        }
+      ]
+    },
+    {
+      "signal": 6,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-27",
+      "visualLabel": "The official memorandum targets up to 400 MW and operations around 2028; the prospective-customer report disclosed no signed capacity, payment or energization commitments.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.reuters.com/world/asia-pacific/japans-jera-enters-talks-with-anthropic-meta-build-data-centres-nikkei-reports-2026-11-26/"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://www.jera.co.jp/en/news/information/20261001_2535"
+        }
+      ]
+    },
+    {
+      "signal": 7,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-24",
+      "visualLabel": "The company did not disclose valuation, revenue, preference terms, utilization outside event peaks or an allocation accessible to Robin.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.netskrt.io/blog/netskrt-secures-10-million-series-b-funding"
+        }
+      ]
+    },
+    {
+      "signal": 8,
+      "priority": "WATCH",
+      "status": "WATCHING",
+      "visualValue": "2026-11-27",
+      "visualLabel": "The short relative-price window does not establish a change in customer orders, data-center guidance or intrinsic value.",
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Board-Reinstates-Jensen-Huang-as-President-CEO-and-Board-Director/"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://stockanalysis.com/stocks/nvda/history/"
+        },
+        {
+          "label": "Source 3",
+          "url": "https://stockanalysis.com/etf/qqq/history/"
+        }
+      ]
+    }
+  ],
+  "editions": {
+    "en": {
+      "title": "Daily Action Flow, November 28, 2026",
+      "description": "Eight bounded actions separate displayed numbers from verified rights and operating outcomes.",
+      "centralJudgment": "Ask what can be proved, transferred, redeemed or enforced tomorrow.",
+      "fieldLine": "Eight signals. Signal 5 maps the rights hidden inside the word token.",
+      "inLanguage": "en",
+      "languageSlug": "",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "Frontier Models and Agents",
+          "title": "Frontier agents: GLM-5.4 can code from images. Can it fix its own work?",
+          "why": "Why Robin should care: Subscribers get a candidate worker that can inspect the visible result of its own changes. For RobinOS, the potential saving is the round in which you take a screenshot, point out the mistake and ask again. An API-dependent workflow cannot switch on the strength of the demo.",
+          "steps": [
+            "Reopen the cited sources and preserve the stated limitation before acting.",
+            "One Action: Give GLM-5.4 and your current Codex setup the same page with known layout defects. Let each inspect, repair and retest it; route work based on fixes that pass identical acceptance checks without a prompt from you."
+          ],
+          "done": "A dated artifact records the evidence, denominator, result and unresolved gap; otherwise keep this item WATCHING."
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI and Robotics",
+          "title": "Physical AI: Lucid’s Bay Area robotaxi loses the safety driver before it gains a fare",
+          "why": "Why Robin should care: The U.S. program crossed the driver-removal threshold; the Chinese program crossed the commercial-service threshold. Neither disclosure gives comparable cost per trip. The value of Uber’s distribution ultimately depends on how many paid rides each vehicle completes on its own.",
+          "steps": [
+            "Reopen the cited sources and preserve the stated limitation before acting.",
+            "One Action: Use completed driverless paid trips per active vehicle per day as the next milestone for Uber’s program. A purchase commitment cannot answer that question."
+          ],
+          "done": "A dated artifact records the evidence, denominator, result and unresolved gap; otherwise keep this item WATCHING."
+        },
+        {
+          "signal": 3,
+          "domain": "Crypto Capital Flows and Web3 Health",
+          "title": "Crypto flows: The two biggest stablecoins shrank by $10.34 billion, while USDC grew on Arc",
+          "why": "Why Robin should care: The stock of the two leading onchain dollars is contracting while some networks attract balances. Arc is worth following, but its gain could represent migration or parked inventory as readily as settlement demand. Supply alone does not measure use.",
+          "steps": [
+            "Reopen the cited sources and preserve the stated limitation before acting.",
+            "One Action: In the next 30-day window, compare Arc’s change in USDC supply with repeat paying addresses after excluding minting, burning, bridging and obvious self-transfers. Upgrade the payments thesis only if both rise."
+          ],
+          "done": "A dated artifact records the evidence, denominator, result and unresolved gap; otherwise keep this item WATCHING."
+        },
+        {
+          "signal": 4,
+          "domain": "Stablecoins, FinTech and Token Rails",
+          "title": "Financial innovation: One stock token can secure a loan and collect an exchange subsidy",
+          "why": "Why Robin should care: The exchange can put a price on leaving an asset in place. Perhaps the subsidy helps a useful collateral market get started; perhaps it merely rents balances. Participant count, borrowing and retention remain unverified.",
+          "steps": [
+            "Reopen the cited sources and preserve the stated limitation before acting.",
+            "One Action: Look for the outstanding loans backed by the eligible stock tokens seven days after rewards end. If OKX does not disclose the figure, mark retention unknown rather than substituting turnover."
+          ],
+          "done": "A dated artifact records the evidence, denominator, result and unresolved gap; otherwise keep this item WATCHING."
+        },
+        {
+          "signal": 5,
+          "domain": "Content and Visibility",
+          "title": "SunTV editorial desk: An account called Neon entered a contest. Who proved it made money?",
+          "why": "Why Robin should care: Your reporting angle is stronger than “was it an ad?” Even if every word of a promotional post is true, entering, winning, getting paid and turning a profit are four different events. Readers can check the distinction themselves.",
+          "steps": [
+            "Reopen the cited sources and preserve the stated limitation before acting.",
+            "One Action: Create The Agent Entered the Contest. Who Got Paid? at the [intended English canonical destination](https://iamrobin.ai/ouroboros/202611/20261128/action_item/). Thesis: A claim of agent earnings requires a chain from attributable work to payment received and costs incurred. Evidence spine: (1) Reconstruct one November 27 entry; (2) distinguish platform, account, model and operator; (3) reconcile rules, result, payment receipt and costs, leaving gaps visible; (4) contrast it with one Alpha Lab failure cleared for publication. Primary sources: [Entrant archive and linked contest](https://make.fun/u/neon-autonomous), Robin’s original experiment logs and [SunTV’s prior evidence standard](https://iamrobin.ai/ouroboros/202610/20261026/special/). First derivative: A LinkedIn evidence card asking, “How far does this screenshot actually get us?” Add the strongest reader correction to the dated canonical record."
+          ],
+          "done": "A dated artifact records the evidence, denominator, result and unresolved gap; otherwise keep this item WATCHING."
+        },
+        {
+          "signal": 6,
+          "domain": "AI Infrastructure",
+          "title": "AI infrastructure: Japan’s largest power producer wants compute customers next to its plants",
+          "why": "Why Robin should care: Locating beside a generator may shorten the power-delivery path. It does not guarantee round-the-clock electricity. For your Texas 100 MW research and U.S. infrastructure strategy work, the revealing question is who supplies replacement power during maintenance, at what price, and who absorbs downtime.",
+          "steps": [
+            "Reopen the cited sources and preserve the stated limitation before acting.",
+            "One Action: Add a one-week generator outage to the Texas 100 MW case and calculate the difference in cost per deliverable GPU-hour with and without backup power."
+          ],
+          "done": "A dated artifact records the evidence, denominator, result and unresolved gap; otherwise keep this item WATCHING."
+        },
+        {
+          "signal": 7,
+          "domain": "Late-stage Private Markets",
+          "title": "Late-stage private markets: Netskrt’s investment case lives between games",
+          "why": "Why Robin should care: SunTV knows the cost of a stream freezing mid-game. The allocator’s question is who pays for those servers after the final whistle. Hardware and capacity require capital, and peak demand does not establish annual utilization. A telecom or larger distribution platform is a plausible acquirer, not a known exit.",
+          "steps": [
+            "Reopen the cited sources and preserve the stated limitation before acting.",
+            "One Action — WATCH: Require a same-node comparison of gross profit contribution on event and non-event days before deciding whether Netskrt owns a reusable network or expensive peak-demand insurance."
+          ],
+          "done": "A dated artifact records the evidence, denominator, result and unresolved gap; otherwise keep this item WATCHING."
+        },
+        {
+          "signal": 8,
+          "domain": "Public Equities",
+          "title": "Public equities: After Huang’s return, Nvidia still trailed the Black Friday rebound",
+          "why": "Why Robin should care: The company-specific change is clarity about leadership. Friday’s broad tech rally and Nvidia’s relative lag establish neither customer order cuts nor a purely discount-rate-driven move. Keeping governance risk separate from GPU demand avoids changing two valuation assumptions on one piece of evidence.",
+          "steps": [
+            "Reopen the cited sources and preserve the stated limitation before acting.",
+            "One Action: Before revising Nvidia earnings estimates, check whether management has changed data-center revenue guidance. If only the governance assessment changed, revise only the risk assumption."
+          ],
+          "done": "A dated artifact records the evidence, denominator, result and unresolved gap; otherwise keep this item WATCHING."
+        }
+      ]
+    },
+    "zh-Hans": {
+      "title": "每日行动流，2026年11月28日",
+      "description": "八项有边界的行动，把屏幕数字与可验证权利、运营结果分开。",
+      "centralJudgment": "追问明天还能证明、转让、赎回或执行什么。",
+      "fieldLine": "八个信号。信号5画出 token 一词背后的权利。",
+      "inLanguage": "zh-Hans",
+      "languageSlug": "zh-hans",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型与智能体",
+          "title": "前沿模型与一人公司：GLM-5.4 能看图写代码，RobinOS 更该测它能不能自己返工",
+          "why": "Robin为何在意： 现有订阅用户先得到的是一个能看见自己工作结果的候选执行者。对 RobinOS，真正可能省掉的是你截屏、指出错误、再催它改的那一轮；依赖通用 API 的工作流还不能按演示效果直接切换。",
+          "steps": [
+            "行动前重新打开所引来源，并保留已说明的局限。",
+            "One Action： 取同一个带有已知布局错误的页面，让 GLM-5.4 与现用 Codex 各自读截图、修复并复验；以无需 Robin 提示且通过相同验收的修复数，决定是否给它分配任务。"
+          ],
+          "done": "带日期的产物记录证据、分母、结果和未解决缺口；否则本项保持 WATCHING。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 与机器人",
+          "title": "实体 AI：湾区的 Lucid 无人车撤走了车内安全员，尚未开始收费载客",
+          "why": "Robin为何在意： 美国这个项目跨过了撤走车内安全员的门槛，中国这个项目跨过了收费服务的门槛。两者都没有给出可比的单均成本。Uber 的分发优势是否值钱，最终取决于一辆车能独立完成多少付费订单。",
+          "steps": [
+            "行动前重新打开所引来源，并保留已说明的局限。",
+            "One Action： 把 Uber 项目的下一道验证门槛定为每辆上线车每天完成的无人付费行程数，不用采购承诺代替。"
+          ],
+          "done": "带日期的产物记录证据、分母、结果和未解决缺口；否则本项保持 WATCHING。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密资本流与 Web3 健康",
+          "title": "加密资金流：两大稳定币一个月少了 103.4 亿美元，Arc 上的 USDC 却增加了",
+          "why": "Robin为何在意： 行业内最主要的两种链上美元在收缩，同时余额正向部分网络集中。Arc 值得跟踪，但供给增加既可能是资金迁移或库存，也可能是结算需求；它本身不证明交易更活跃。",
+          "steps": [
+            "行动前重新打开所引来源，并保留已说明的局限。",
+            "One Action： 在下一期 30 日读数里，将 Arc 的 USDC 增量与剔除铸造、销毁、跨链搬迁及明显自转后的重复付款地址数对照；两者同升才上调支付需求判断。"
+          ],
+          "done": "带日期的产物记录证据、分母、结果和未解决缺口；否则本项保持 WATCHING。"
+        },
+        {
+          "signal": 4,
+          "domain": "稳定币、金融科技与代币轨道",
+          "title": "可编程金融：同一份股票代币，既能抵押借款，还能领平台补贴",
+          "why": "Robin为何在意： 有意思的是平台能为“把资产留下来”单独定价。乐观解释是它帮新抵押品度过冷启动；另一种解释是余额只是被临时买来的。实际参与人数、借款额和留存尚未核实。",
+          "steps": [
+            "行动前重新打开所引来源，并保留已说明的局限。",
+            "One Action： 看奖励结束七天后，合资格股票代币的抵押借款余额还剩多少；若平台不披露，就把留存记为未知，不拿成交量代替。"
+          ],
+          "done": "带日期的产物记录证据、分母、结果和未解决缺口；否则本项保持 WATCHING。"
+        },
+        {
+          "signal": 5,
+          "domain": "内容与可见度",
+          "title": "SunTV 编辑台：一个叫 Neon 的账号参赛了，谁证明它赚了钱？",
+          "why": "Robin为何在意： 你发现的报道切口比“这是不是广告”更强：即使帖子完全属实，参赛、获奖、收款、盈利仍是四件事。这很适合 SunTV 做成读者能亲自复核的短调查。",
+          "steps": [
+            "行动前重新打开所引来源，并保留已说明的局限。",
+            "One Action： 新建 The Agent Entered the Contest. Who Got Paid?／《智能体参赛了，钱付给了谁？》，拟定[英文主页面](https://iamrobin.ai/ouroboros/202611/20261128/action_item/)。论点： 只有把作品、归属、实际到账和运行成本连起来，才能从“参赛”推到“赚钱”。证据线： ① 复原一条 11 月 27 日参赛记录；② 分开平台、账号、模型与运营者；③ 对照比赛规则、结果、付款凭据及成本，查不到的留白；④ 以一项获准公开的 Alpha Lab 失败实验作反例。主来源： [参赛账号及所链接的单场赛事](https://make.fun/u/neon-autonomous)、Robin 的原始实验日志、[SunTV 既有证据标准](https://iamrobin.ai/ouroboros/202610/20261026/special/)。首个衍生内容： LinkedIn 发一张“这张截图最多证明哪一步？”证据卡；把读者提交的最强反证按日期补回主文。"
+          ],
+          "done": "带日期的产物记录证据、分母、结果和未解决缺口；否则本项保持 WATCHING。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基础设施",
+          "title": "AI 基建：日本最大电力公司想把算力客户带到电厂旁边",
+          "why": "Robin为何在意： 靠近发电机可能缩短供电路径，却不自动取得全天候可用的电力。对你的 Texas 100 MW 研究和美国基建战略岗位，真正有价值的是能说清：电厂检修时谁补电、按什么价格、谁承担停机。",
+          "steps": [
+            "行动前重新打开所引来源，并保留已说明的局限。",
+            "One Action： 给 Texas 100 MW 案例补一个“主机组检修一周”的情景，算出有无备用电源时每个可交付 GPU 小时的成本差。"
+          ],
+          "done": "带日期的产物记录证据、分母、结果和未解决缺口；否则本项保持 WATCHING。"
+        },
+        {
+          "signal": 7,
+          "domain": "后期私募",
+          "title": "后期私募：Netskrt 的投资问题，藏在两场比赛之间",
+          "why": "Robin为何在意： SunTV 知道直播卡顿的代价，资本配置者还要问：终场哨后，服务器由谁付钱？设备与容量需要投入，赛事尖峰不等于全年利用率。被电信商或大型分发平台收购是可能的退出路径，不是已知交易。",
+          "steps": [
+            "行动前重新打开所引来源，并保留已说明的局限。",
+            "One Action： 等一份同一节点在赛事日与非赛事日的毛利贡献对照，再决定这究竟是能复用的分发网络，还是昂贵的峰值保险。"
+          ],
+          "done": "带日期的产物记录证据、分母、结果和未解决缺口；否则本项保持 WATCHING。"
+        },
+        {
+          "signal": 8,
+          "domain": "公开股票",
+          "title": "上市公司：黄仁勋复任后，英伟达仍跑输黑五反弹",
+          "why": "Robin为何在意： 公司特有的变化是领导层重新确定。周五科技股普涨，而 NVDA 相对落后；一天的价差既不能证明客户削单，也不能证明整个板块只是折现率变化。把治理判断与 GPU 需求预测分开，才不会对同一条消息改两次估值。",
+          "steps": [
+            "行动前重新打开所引来源，并保留已说明的局限。",
+            "One Action： 下一次调整 NVDA 盈利预测前，先查公司是否改变数据中心收入指引；若只变了治理判断，就只调整风险假设。"
+          ],
+          "done": "带日期的产物记录证据、分母、结果和未解决缺口；否则本项保持 WATCHING。"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "title": "每日行動流，2026年11月28日",
+      "description": "八項有邊界的行動，把螢幕數字與可驗證權利、營運結果分開。",
+      "centralJudgment": "追問明天還能證明、轉讓、贖回或執行什麼。",
+      "fieldLine": "八個訊號。訊號5畫出 token 一詞背後的權利。",
+      "inLanguage": "zh-Hant",
+      "languageSlug": "zh-hant",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "前沿模型與智慧體",
+          "title": "前沿模型與一人公司：GLM-5.4 能看圖寫程式碼，RobinOS 更該測它能不能自己返工",
+          "why": "Robin為何在意： 現有訂閱使用者先得到的是一個能看見自己工作結果的候選執行者。對 RobinOS，真正可能省掉的是你截圖、指出錯誤、再催它改的那一輪；依賴通用 API 的工作流還不能按演示效果直接切換。",
+          "steps": [
+            "行動前重新開啟所引來源，並保留已說明的限制。",
+            "One Action： 取同一個帶有已知佈局錯誤的頁面，讓 GLM-5.4 與現用 Codex 各自讀截圖、修復並複驗；以無需 Robin 提示且透過相同驗收的修復數，決定是否給它分配任務。"
+          ],
+          "done": "帶日期的產物記錄證據、分母、結果和未解缺口；否則本項維持 WATCHING。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AI 與機器人",
+          "title": "實體 AI：灣區的 Lucid 無人車撤走了車內安全員，尚未開始收費載客",
+          "why": "Robin為何在意： 美國這個專案跨過了撤走車內安全員的門檻，中國這個專案跨過了收費服務的門檻。兩者都沒有給出可比的單均成本。Uber 的分發優勢是否值錢，最終取決於一輛車能獨立完成多少付費訂單。",
+          "steps": [
+            "行動前重新開啟所引來源，並保留已說明的限制。",
+            "One Action： 把 Uber 專案的下一道驗證門檻定為每輛上線車每天完成的無人付費行程數，不用採購承諾代替。"
+          ],
+          "done": "帶日期的產物記錄證據、分母、結果和未解缺口；否則本項維持 WATCHING。"
+        },
+        {
+          "signal": 3,
+          "domain": "加密資本流與 Web3 健康",
+          "title": "加密資金流：兩大穩定幣一個月少了 103.4 億美元，Arc 上的 USDC 卻增加了",
+          "why": "Robin為何在意： 行業內最主要的兩種鏈上美元在收縮，同時餘額正向部分網路集中。Arc 值得跟蹤，但供給增加既可能是資金遷移或庫存，也可能是結算需求；它本身不證明交易更活躍。",
+          "steps": [
+            "行動前重新開啟所引來源，並保留已說明的限制。",
+            "One Action： 在下一期 30 日讀數里，將 Arc 的 USDC 增量與剔除鑄造、銷燬、跨鏈搬遷及明顯自轉後的重複付款地址數對照；兩者同升才上調支付需求判斷。"
+          ],
+          "done": "帶日期的產物記錄證據、分母、結果和未解缺口；否則本項維持 WATCHING。"
+        },
+        {
+          "signal": 4,
+          "domain": "穩定幣、金融科技與代幣軌道",
+          "title": "可程式設計金融：同一份股票代幣，既能抵押借款，還能領平臺補貼",
+          "why": "Robin為何在意： 有意思的是平臺能為“把資產留下來”單獨定價。樂觀解釋是它幫新抵押品度過冷啟動；另一種解釋是餘額只是被臨時買來的。實際參與人數、借款額和留存尚未核實。",
+          "steps": [
+            "行動前重新開啟所引來源，並保留已說明的限制。",
+            "One Action： 看獎勵結束七天後，合資格股票代幣的抵押借款餘額還剩多少；若平臺不披露，就把留存記為未知，不拿成交量代替。"
+          ],
+          "done": "帶日期的產物記錄證據、分母、結果和未解缺口；否則本項維持 WATCHING。"
+        },
+        {
+          "signal": 5,
+          "domain": "內容與可見度",
+          "title": "SunTV 編輯臺：一個叫 Neon 的賬號參賽了，誰證明它賺了錢？",
+          "why": "Robin為何在意： 你發現的報道切口比“這是不是廣告”更強：即使帖子完全屬實，參賽、獲獎、收款、盈利仍是四件事。這很適合 SunTV 做成讀者能親自複核的短調查。",
+          "steps": [
+            "行動前重新開啟所引來源，並保留已說明的限制。",
+            "One Action： 新建 The Agent Entered the Contest. Who Got Paid?／《智慧體參賽了，錢付給了誰？》，擬定[英文主頁面](https://iamrobin.ai/ouroboros/202611/20261128/action_item/)。論點： 只有把作品、歸屬、實際到賬和執行成本連起來，才能從“參賽”推到“賺錢”。證據線： ① 復原一條 11 月 27 日參賽記錄；② 分開平臺、賬號、模型與運營者；③ 對照比賽規則、結果、付款憑據及成本，查不到的留白；④ 以一項獲准公開的 Alpha Lab 失敗實驗作反例。主來源： [參賽賬號及所連結的單場賽事](https://make.fun/u/neon-autonomous)、Robin 的原始實驗日誌、[SunTV 既有證據標準](https://iamrobin.ai/ouroboros/202610/20261026/special/)。首個衍生內容： LinkedIn 發一張“這張截圖最多證明哪一步？”證據卡；把讀者提交的最強反證按日期補回主文。"
+          ],
+          "done": "帶日期的產物記錄證據、分母、結果和未解缺口；否則本項維持 WATCHING。"
+        },
+        {
+          "signal": 6,
+          "domain": "AI 基礎設施",
+          "title": "AI 基建：日本最大電力公司想把算力客戶帶到電廠旁邊",
+          "why": "Robin為何在意： 靠近發電機可能縮短供電路徑，卻不自動取得全天候可用的電力。對你的 Texas 100 MW 研究和美國基建戰略崗位，真正有價值的是能說清：電廠檢修時誰補電、按什麼價格、誰承擔停機。",
+          "steps": [
+            "行動前重新開啟所引來源，並保留已說明的限制。",
+            "One Action： 給 Texas 100 MW 案例補一個“主機組檢修一週”的情景，算出有無備用電源時每個可交付 GPU 小時的成本差。"
+          ],
+          "done": "帶日期的產物記錄證據、分母、結果和未解缺口；否則本項維持 WATCHING。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期私募",
+          "title": "後期私募：Netskrt 的投資問題，藏在兩場比賽之間",
+          "why": "Robin為何在意： SunTV 知道直播卡頓的代價，資本配置者還要問：終場哨後，伺服器由誰付錢？裝置與容量需要投入，賽事尖峰不等於全年利用率。被電信商或大型分發平臺收購是可能的退出路徑，不是已知交易。",
+          "steps": [
+            "行動前重新開啟所引來源，並保留已說明的限制。",
+            "One Action： 等一份同一節點在賽事日與非賽事日的毛利貢獻對照，再決定這究竟是能複用的分發網路，還是昂貴的峰值保險。"
+          ],
+          "done": "帶日期的產物記錄證據、分母、結果和未解缺口；否則本項維持 WATCHING。"
+        },
+        {
+          "signal": 8,
+          "domain": "公開股票",
+          "title": "上市公司：黃仁勳復任後，英偉達仍跑輸黑五反彈",
+          "why": "Robin為何在意： 公司特有的變化是領導層重新確定。週五科技股普漲，而 NVDA 相對落後；一天的價差既不能證明客戶削單，也不能證明整個板塊只是折現率變化。把治理判斷與 GPU 需求預測分開，才不會對同一條訊息改兩次估值。",
+          "steps": [
+            "行動前重新開啟所引來源，並保留已說明的限制。",
+            "One Action： 下一次調整 NVDA 盈利預測前，先查公司是否改變資料中心收入指引；若只變了治理判斷，就只調整風險假設。"
+          ],
+          "done": "帶日期的產物記錄證據、分母、結果和未解缺口；否則本項維持 WATCHING。"
+        }
+      ]
+    },
+    "ja": {
+      "title": "デイリー・アクション・フロー 2026年11月28日",
+      "description": "八つの限定行動で、表示数字と検証可能な権利・運用成果を分ける。",
+      "centralJudgment": "明日も証明、移転、償還、執行できるものを問う。",
+      "fieldLine": "八つのシグナル。シグナル5はtokenという語に隠れた権利を描く。",
+      "inLanguage": "ja",
+      "languageSlug": "ja",
+      "translationReview": "PASS",
+      "actions": [
+        {
+          "signal": 1,
+          "domain": "フロンティアモデルとエージェント",
+          "title": "GLM-5.4は画像からコードを書ける。自分の失敗を直せるか",
+          "why": "Robinへの意味： 利用者は、自分の出力を画面で見られる実行候補を得た。RobinOSで節約できる可能性があるのは、Robinがスクリーンショットを撮り、誤りを指摘し、再実行を頼む一往復だ。API依存の仕事は実測後に割り当てる。",
+          "steps": [
+            "行動前に引用元を再確認し、明記された制約を残す。",
+            "One Action： 既知のレイアウト不具合を含む同じページをGLM-5.4と現行Codexへ渡し、それぞれに画面確認、修正、再テストまで行わせる。同じ受入条件を満たし、Robinの追加指示を要しなかった修正数で仕事を配分する。"
+          ],
+          "done": "日付入り成果物に証拠、分母、結果、未解決点を記録する。未達ならWATCHINGを維持する。"
+        },
+        {
+          "signal": 2,
+          "domain": "Physical AIとロボティクス",
+          "title": "Lucidのベイエリア車両は料金収受より先に安全員を外した",
+          "why": "Robinへの意味： 米国の計画は運転席の安全員を外す境界を越え、中国の計画は有料サービスの境界を越えた。公開情報には比較可能な1走行当たり費用がない。Uberの配車力の価値は、各車両が自力で完了する有料走行数に表れる。",
+          "steps": [
+            "行動前に引用元を再確認し、明記された制約を残す。",
+            "One Action： Uber計画の次の基準を「稼働車両1台、1日当たりの完了済み無人有料走行数」に置く。購入予定台数は別の指標として扱う。"
+          ],
+          "done": "日付入り成果物に証拠、分母、結果、未解決点を記録する。未達ならWATCHINGを維持する。"
+        },
+        {
+          "signal": 3,
+          "domain": "暗号資産の資本フローとWeb3",
+          "title": "二大ステーブルコインは30日で103.4億ドル縮小した",
+          "why": "Robinへの意味： 主要なオンチェーン・ドルの総量は縮み、一部ネットワークへ残高が集まっている。Arcの増加には資金移動や待機在庫も含まれうる。供給量と実際の決済利用は別々に測る。",
+          "steps": [
+            "行動前に引用元を再確認し、明記された制約を残す。",
+            "One Action： 次の30日窓でArcのUSDC増減と、発行、焼却、ブリッジ、明らかな自己送金を除いた反復支払アドレス数を並べる。両方が増えたときに決済需要の判断を引き上げる。"
+          ],
+          "done": "日付入り成果物に証拠、分母、結果、未解決点を記録する。未達ならWATCHINGを維持する。"
+        },
+        {
+          "signal": 4,
+          "domain": "ステーブルコイン、FinTech、トークン基盤",
+          "title": "一つの株式トークンが借入担保と取引所報酬を兼ねる",
+          "why": "Robinへの意味： 取引所は「資産を置いたままにする行為」へ価格を付けられる。新しい担保市場の立ち上げを助けた可能性と、期間限定で残高を借りた可能性がある。参加者数、借入残高、終了後の定着率は追加確認が要る。",
+          "steps": [
+            "行動前に引用元を再確認し、明記された制約を残す。",
+            "One Action： 報酬終了7日後に、対象株式トークンを担保とする借入残高を確認する。OKXが数値を開示しない場合、定着率をUNKNOWNと記録し、売買高を代替値にしない。"
+          ],
+          "done": "日付入り成果物に証拠、分母、結果、未解決点を記録する。未達ならWATCHINGを維持する。"
+        },
+        {
+          "signal": 5,
+          "domain": "コンテンツと可視性",
+          "title": "Neonというアカウントは参加した。利益は誰のものか",
+          "why": "Robinへの意味： 「広告だったか」より強い記事の軸がある。参加、入賞、受領、利益は四つの出来事だ。読者は公開記録を使って、それぞれの段階を自分で確かめられる。",
+          "steps": [
+            "行動前に引用元を再確認し、明記された制約を残す。",
+            "One Action： The Agent Entered the Contest. Who Got Paid?を[英語正規ページ](https://iamrobin.ai/ouroboros/202611/20261128/action_item/)へ作る。11月27日の一件を再構成し、プラットフォーム、アカウント、モデル、運営者を分け、規則、結果、支払記録、費用を照合する。主要資料は[参加者プロフィールとリンク先コンテスト](https://make.fun/u/neon-autonomous)および[SunTVの既存証拠基準](https://iamrobin.ai/ouroboros/202610/20261026/special/)とする。LinkedIn用には「このスクリーンショットが証明できるのはどこまでか」という証拠カードを保存する。"
+          ],
+          "done": "日付入り成果物に証拠、分母、結果、未解決点を記録する。未達ならWATCHINGを維持する。"
+        },
+        {
+          "signal": 6,
+          "domain": "AIインフラ",
+          "title": "日本最大の発電会社が計算資源を発電所の隣へ呼ぶ",
+          "why": "Robinへの意味： 発電機の近くに置けば電力供給経路を短くできる。24時間の供給には保守時の代替電源も要る。Texas 100 MW案件では、誰が代替電力を供給し、価格と停止損失を誰が負うかが経済性を左右する。",
+          "steps": [
+            "行動前に引用元を再確認し、明記された制約を残す。",
+            "One Action： Texas 100 MWケースへ「主発電機が1週間停止する」条件を追加し、予備電源の有無で提供可能なGPU時間当たり費用がどう変わるか計算する。"
+          ],
+          "done": "日付入り成果物に証拠、分母、結果、未解決点を記録する。未達ならWATCHINGを維持する。"
+        },
+        {
+          "signal": 7,
+          "domain": "後期未公開市場",
+          "title": "Netskrtの投資論点は試合と試合の間にある",
+          "why": "Robinへの意味： SunTVは試合中の映像停止が生む損失を知っている。投資家には、試合終了後も同じサーバーが利益を生むかという問いが残る。ピーク需要は年間稼働率と別の数字である。",
+          "steps": [
+            "行動前に引用元を再確認し、明記された制約を残す。",
+            "One Action： WATCH。 同じノードについて、イベント日と通常日の粗利益貢献を比較できる資料を昇格条件にする。再利用できる配信網か、高価なピーク保険かをその後に判断する。"
+          ],
+          "done": "日付入り成果物に証拠、分母、結果、未解決点を記録する。未達ならWATCHINGを維持する。"
+        },
+        {
+          "signal": 8,
+          "domain": "上場株式",
+          "title": "黄氏の復帰後もNvidiaはブラックフライデー反発に遅れた",
+          "why": "Robinへの意味： 企業固有の変化は経営体制の確定である。金曜日にはハイテク株全体が上昇し、Nvidiaは相対的に弱かった。この短い価格差から顧客注文やGPU需要の変化を直接導けない。ガバナンスリスクと需要予測を別々に更新する。",
+          "steps": [
+            "行動前に引用元を再確認し、明記された制約を残す。",
+            "One Action： Nvidiaの利益予想を変える前に、経営陣がデータセンター売上見通しを変更したか確認する。ガバナンス評価だけが変わった場合は、リスク仮定だけを更新する。"
+          ],
+          "done": "日付入り成果物に証拠、分母、結果、未解決点を記録する。未達ならWATCHINGを維持する。"
+        }
+      ]
+    }
+  }
+}
